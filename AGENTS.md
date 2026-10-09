@@ -21,7 +21,7 @@ This repository is the implementation handoff for **Structure Test 6**, based on
 - Preserve Audit1 CTOV, IDAS, Cataclysm Spellbooks, biome eligibility, Farmers Structures and other completed source fixes; do not apply tuning twice.
 - Eight selected structure additions are pending third-party JAR download, compatibility and dependency verification.
 - WDA Overworld major frequency 0.80 is the target while End rarity and Bathhouse rarity are preserved.
-- WDA Mushroom Village must be rare and Mushroom Fields-only; Explorify Nether Black Spiral disabled; no WDA Small Blimp or Coliseum.
+- WDA Mushroom Village must be rare and Mushroom Fields-only; **Explorify Black Spiral is user-approved to remain enabled provisionally** pending Nether compatibility testing (9 Oct supersession); no WDA Small Blimp or Coliseum. User approved Structory: Towers v1.0.17 (CF 783522:8396885); actual NeoForge 1.21.1 loader compatibility still needs testing.
 - Do not add Block Factory's Biomes, FDstructure, incompatible/duplicate mineshafts or deferred Test 7 biomes.
 - Do not fake registry IDs, template pools, successful tests, or tool outputs.
 - No unmodified third-party mod JARs in git.
