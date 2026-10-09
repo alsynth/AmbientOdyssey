@@ -7,7 +7,8 @@
     "twigonometry": 1393176,
     "born-in-chaos": 686437,
     "companions-mod": 1300341,
-    "modern-companions": 1391597
+    "modern-companions": 1391597,
+    "dimensional-doors": 284876
   },
   "additions": {
     "biolith": {
@@ -1508,7 +1509,10 @@
     "overrides/config/cristellib/companions/structure_placement_config.json5",
     "overrides/config/cristellib/companions/structure_toggle_config.json5",
     "overrides/config/cristellib/modern_companions/structure_placement_config.json5",
-    "overrides/config/cristellib/modern_companions/structure_toggle_config.json5"
+    "overrides/config/cristellib/modern_companions/structure_toggle_config.json5",
+    "overrides/config/dimdoors-config.json5",
+    "overrides/config/cristellib/dimdoors/structure_placement_config.json5",
+    "overrides/config/cristellib/dimdoors/structure_toggle_config.json5"
   ],
   "default_integrated_patches": true
 }
