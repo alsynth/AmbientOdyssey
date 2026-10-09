@@ -13,3 +13,4 @@ soundCategory_voice:0.7
 guiScale:3
 enableVsync:false
 maxFps:160
+menuBackgroundBlurriness:0
