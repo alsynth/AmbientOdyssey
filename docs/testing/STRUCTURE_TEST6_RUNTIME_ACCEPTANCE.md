@@ -1,5 +1,9 @@
 # Structure Test 6 — Minecraft runtime acceptance plan
 
+> **First runtime blocker (9 Oct 2026):** Startup did **not** complete. Structory: Towers v1.0.17 (`8396885`) is rejected by NeoForge 21.1.252: `Missing ModLoader`. See [first runtime findings](TEST6_RUNTIME_FINDINGS_2026-10-09.md). Test older 1.0.14 in a disposable profile and record new log before resuming this acceptance checklist.
+
+
+
 **Written:** 9 October 2026. **Source:** `structure/test6` (not `main`). **Minecraft:** 1.21.1 / NeoForge 21.1.252. **Status:** static checks passed; **no Test 6 Minecraft client or server runtime acceptance has yet been recorded**.
 
 ## What is ready
