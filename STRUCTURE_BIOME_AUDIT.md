@@ -6,16 +6,16 @@ Updated 9 October 2026. Source version: `0.3.1-structure-test5-audit1`. This is 
 
 The untouched original Test 5 source rebuild matched its original import ZIP byte for byte, passed its 76 scoped gates, and regenerated its audit and three catalogues identically. Original evidence is retained under `evidence/baseline-test5`; `evidence/baseline-reproduction.json` records the rollback hashes.
 
-The expanded audit represents 196 complete binaries: 177 from that original resource snapshot plus 19 newly recovered. There are 26 directly available unique binaries in this continuation, including seven re-supplied baseline JARs. Resource inventories, CRC and SHA evidence are retained; class-reference and extra resource-category inspection are scoped to the supplied binaries. Older binaries have not been freshly re-inspected. 41 logged JAR filenames remain unavailable, listed in `MISSING_JARS.txt`.
+The expanded audit represents 205 complete binaries: 177 from that original resource snapshot plus 19 newly recovered. There are 26 directly available unique binaries in this continuation, including seven re-supplied baseline JARs. Resource inventories, CRC and SHA evidence are retained; class-reference and extra resource-category inspection are scoped to the supplied binaries. Older binaries have not been freshly re-inspected. 41 logged JAR filenames remain unavailable, listed in `MISSING_JARS.txt`.
 
 | Recorded inventory | Count |
 |---|---:|
-| Native structure IDs | 1216 |
-| Native structure-set IDs | 666 |
-| Native template-pool IDs | 4294 |
-| Native biome-tag IDs | 1254 |
-| Catalogue structure rows, including three declared AO sky clones | 1219 |
-| Set catalogue rows, including AO sets and code-only vanilla route | 673 |
+| Native structure IDs | 1503 |
+| Native structure-set IDs | 775 |
+| Native template-pool IDs | 4643 |
+| Native biome-tag IDs | 1404 |
+| Catalogue structure rows, including three declared AO sky clones | 1506 |
+| Set catalogue rows, including AO sets and code-only vanilla route | 784 |
 | Curated donor biomes | 40 Overworld + 2 Nether |
 | Eligibility matrix biome columns | 52 |
 
@@ -29,6 +29,7 @@ Unresolved Minecraft/base-game and optional tag references remain explicit. The 
 
 | Namespace | Native definitions | Changed known curated eligibility | No known curated OW eligibility |
 |---|---:|---:|---:|
+| `additionalstructures` | 198 | 15 | 93 |
 | `adventuredungeons` | 8 | 6 | 2 |
 | `aether` | 4 | 0 | 4 |
 | `aether_villages` | 1 | 0 | 1 |
@@ -37,6 +38,7 @@ Unresolved Minecraft/base-game and optional tag references remain explicit. The 
 | `antiquetradingship` | 1 | 0 | 1 |
 | `apotheosis` | 4 | 1 | 1 |
 | `archaeology_ruins` | 11 | 0 | 11 |
+| `archaion` | 1 | 0 | 0 |
 | `ars_nouveau` | 3 | 0 | 0 |
 | `betterend` | 14 | 0 | 14 |
 | `betterfortresses` | 1 | 0 | 1 |
@@ -46,16 +48,19 @@ Unresolved Minecraft/base-game and optional tag references remain explicit. The 
 | `block_factorys_bosses` | 5 | 2 | 3 |
 | `bosses_of_mass_destruction` | 4 | 1 | 3 |
 | `cataclysm` | 16 | 4 | 12 |
+| `create_easy_structures` | 16 | 15 | 0 |
 | `create_rustic_structures` | 4 | 4 | 0 |
+| `create_structures_arise` | 28 | 19 | 4 |
 | `ctov` | 78 | 32 | 28 |
 | `dungeoncrawl` | 1 | 1 | 0 |
-| `dungeons_arise` | 40 | 12 | 10 |
+| `dungeons_arise` | 40 | 13 | 11 |
 | `dungeons_arise_seven_seas` | 5 | 0 | 0 |
 | `echoes_of_the_end__structures_` | 9 | 0 | 9 |
 | `end_villager_outpost` | 1 | 0 | 1 |
 | `enigmaticlegacyplus` | 1 | 1 | 0 |
 | `eternal_starlight` | 8 | 0 | 4 |
 | `explore_ruins_aether` | 7 | 0 | 7 |
+| `explorify` | 23 | 17 | 5 |
 | `farmers_structures` | 20 | 7 | 9 |
 | `fdbosses` | 3 | 0 | 1 |
 | `floating_islands` | 17 | 15 | 0 |
@@ -85,6 +90,7 @@ Unresolved Minecraft/base-game and optional tag references remain explicit. The 
 | `skyarena` | 2 | 1 | 1 |
 | `skyvillages` | 1 | 1 | 0 |
 | `structory` | 15 | 5 | 2 |
+| `structory_towers` | 21 | 11 | 7 |
 | `supplementaries` | 2 | 0 | 2 |
 | `totw_modded` | 22 | 0 | 17 |
 | `towns_and_towers` | 60 | 0 | 40 |
@@ -96,7 +102,7 @@ CTOV's actual Java/config registration adds 63 enabled village entries and 11 ou
 
 `NATIVE_RESOURCE_COLLISIONS.csv` enumerates 70 IDs supplied by more than one JAR across structures, sets and pools. Snapshot selection order is recorded evidence, not proof of the running pack's priority. In particular, Luki's Grand Capitals and Nature's Spirit both supply `minecraft:villages`, while Luki and Dungeons & Taverns supply `minecraft:village_taiga` with different starts. No arbitrary new winner is forced in this continuation.
 
-The effective membership report records 2 structures with more than one recorded route; `evidence/duplicate-placement-membership-test5.json` contains IDs. There are 16 remaining shared-salt groups in `evidence/shared-placement-salts-test5.json`. Shared salts and membership are review signals; neither alone establishes physical overlap.
+The effective membership report records 3 structures with more than one recorded route; `evidence/duplicate-placement-membership-test5.json` contains IDs. There are 18 remaining shared-salt groups in `evidence/shared-placement-salts-test5.json`. Shared salts and membership are review signals; neither alone establishes physical overlap.
 
 ## Implemented continuation changes
 

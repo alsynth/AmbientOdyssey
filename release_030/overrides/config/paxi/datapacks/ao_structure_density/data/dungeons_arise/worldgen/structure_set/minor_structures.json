@@ -7,7 +7,7 @@
     "frequency": 0.8333333333333334,
     "exclusion_zone": {
       "chunk_count": 10,
-      "other_set": "dungeons_arise:major_structures"
+      "other_set": "ambient_odyssey:wda_major_overworld"
     }
   },
   "structures": [

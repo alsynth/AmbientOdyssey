@@ -30,7 +30,15 @@ def compile_repairs():
   assert hashlib.sha256(raw).hexdigest()==entry['source_sha256'],id
   assert entry['operation']=='waystone_jigsaw_1_21_1'
   ns,name=id.split(':',1);path=PACK/'data'/ns/'structure'/(name+'.nbt')
-  path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(migrate_waystone_jigsaw(raw))
+  path.parent.mkdir(parents=True,exist_ok=True)
+  migrated=migrate_waystone_jigsaw(raw)
+  if id=='ctov:village/waystone/sand':
+   import gzip
+   canonical=(RELEASE/'evidence/canonical-ctov-waystone-sand.nbt').read_bytes()
+   if gzip.decompress(migrated)!=gzip.decompress(canonical):
+    raise ValueError('Native CTOV Waystone NBT does not match the reviewed canonical output')
+   migrated=canonical
+  path.write_bytes(migrated)
  resource_pack=RELEASE/'overrides/config/paxi/resourcepacks/ao_resource_repairs'
  if (resource_pack/'assets').exists():shutil.rmtree(resource_pack/'assets')
  resource_pack.mkdir(parents=True,exist_ok=True)

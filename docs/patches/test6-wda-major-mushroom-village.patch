@@ -1,0 +1,962 @@
+From e97646faa63f73b3d259d14871c762989bd4f18d Mon Sep 17 00:00:00 2001
+From: "Claude (Structure Test 6)" <claude@example.invalid>
+Date: Fri, 9 Oct 2026 18:04:09 +0000
+Subject: [PATCH] Test 6: split WDA majors (Overworld 0.80 / End unchanged),
+ dedicated Mushroom Fields-only Mushroom Village owner, Test 6 gates
+
+---
+ STRUCTURE_BIOME_AUDIT.md                      |   4 +-
+ STRUCTURE_BIOME_MATRIX.csv                    |   2 +-
+ STRUCTURE_REGISTRY_CATALOG.csv                |  42 ++--
+ STRUCTURE_SET_CATALOG.csv                     |   6 +-
+ .../structure-audit-summary-test5.json        |   6 +-
+ .../structure_toggle_config.json5             |  42 ++--
+ .../mushroom_village_biomes.json              |   6 +
+ .../structure_set/large_land_avoid.json       |   2 +-
+ .../structure_set/wda_major_overworld.json    |  91 +++++++
+ .../structure_set/wda_mushroom_village.json   |  15 ++
+ .../structure_set/major_structures.json       |  84 -------
+ .../structure_set/minor_structures.json       |   2 +-
+ release_030/structure-compatibility.json      |  17 +-
+ release_030/structure-density.json            | 225 +++++++++++-------
+ validate_structure_test6.py                   | 128 ++++++++++
+ 15 files changed, 447 insertions(+), 225 deletions(-)
+ create mode 100644 release_030/overrides/config/paxi/datapacks/ao_compatibility/data/dungeons_arise/tags/worldgen/biome/has_structure/mushroom_village_biomes.json
+ create mode 100644 release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_major_overworld.json
+ create mode 100644 release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_mushroom_village.json
+ create mode 100644 validate_structure_test6.py
+
+diff --git a/STRUCTURE_BIOME_AUDIT.md b/STRUCTURE_BIOME_AUDIT.md
+index 09af052..eeb0e28 100644
+--- a/STRUCTURE_BIOME_AUDIT.md
++++ b/STRUCTURE_BIOME_AUDIT.md
+@@ -15,7 +15,7 @@ The expanded audit represents 196 complete binaries: 177 from that original reso
+ | Native template-pool IDs | 4294 |
+ | Native biome-tag IDs | 1254 |
+ | Catalogue structure rows, including three declared AO sky clones | 1219 |
+-| Set catalogue rows, including AO sets and code-only vanilla route | 673 |
++| Set catalogue rows, including AO sets and code-only vanilla route | 675 |
+ | Curated donor biomes | 40 Overworld + 2 Nether |
+ | Eligibility matrix biome columns | 52 |
+ 
+@@ -49,7 +49,7 @@ Unresolved Minecraft/base-game and optional tag references remain explicit. The
+ | `create_rustic_structures` | 4 | 4 | 0 |
+ | `ctov` | 78 | 32 | 28 |
+ | `dungeoncrawl` | 1 | 1 | 0 |
+-| `dungeons_arise` | 40 | 12 | 10 |
++| `dungeons_arise` | 40 | 13 | 11 |
+ | `dungeons_arise_seven_seas` | 5 | 0 | 0 |
+ | `echoes_of_the_end__structures_` | 9 | 0 | 9 |
+ | `end_villager_outpost` | 1 | 0 | 1 |
+diff --git a/STRUCTURE_BIOME_MATRIX.csv b/STRUCTURE_BIOME_MATRIX.csv
+index 9d017d1..d3b56c7 100644
+--- a/STRUCTURE_BIOME_MATRIX.csv
++++ b/STRUCTURE_BIOME_MATRIX.csv
+@@ -235,7 +235,7 @@ dungeons_arise:mining_system,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ dungeons_arise:monastery,1,1,1,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,0,1,1,1,1,0,1,0,0,1,0,0,0,1,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0
+ dungeons_arise:mushroom_house,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+ dungeons_arise:mushroom_mines,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+-dungeons_arise:mushroom_village,1,0,0,1,1,1,0,0,0,1,1,0,0,0,1,1,0,1,1,1,0,1,1,1,0,1,0,0,0,0,0,0,0,0,1,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0
++dungeons_arise:mushroom_village,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+ dungeons_arise:plague_asylum,1,1,0,1,1,1,1,0,1,1,1,0,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,0,1,0,0,0,1,0,1,0,0,1,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0
+ dungeons_arise:scorched_mines,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+ dungeons_arise:shiraz_palace,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+diff --git a/STRUCTURE_REGISTRY_CATALOG.csv b/STRUCTURE_REGISTRY_CATALOG.csv
+index 6cdbc3e..1d69223 100644
+--- a/STRUCTURE_REGISTRY_CATALOG.csv
++++ b/STRUCTURE_REGISTRY_CATALOG.csv
+@@ -206,43 +206,43 @@ ctov:small/village_underground,[Neoforge]ctov-3.6.3.jar,data/ctov/worldgen/struc
+ dungeoncrawl:dungeon,DungeonCrawl-NeoForge-1.21-2.3.17.jar,data/dungeoncrawl/worldgen/structure/dungeon.json,#dungeoncrawl:has_structure/dungeon,underground,Overworld,underground_structures,{},none,dungeoncrawl:dungeons,31,36,biomeswevegone:prairie | regions_unexplored:fen | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:marsh,,False,,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:fen | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:grassy_beach | regions_unexplored:icy_heights | regions_unexplored:maple_forest | regions_unexplored:marsh | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+ dungeons_arise:abandoned_temple,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/abandoned_temple.json,#dungeons_arise:has_structure/abandoned_temple_biomes,underground,Overworld,surface_structures,"{""absolute"":-2}",beard_thin,dungeons_arise:minor_structures,20,20,,,False,forge:is_coniferous,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+ dungeons_arise:aviary,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/aviary.json,#dungeons_arise:has_structure/aviary_biomes,surface/other,End,surface_structures,"{""absolute"":50}",False,dungeons_arise:major_structures,0,0,,,True,,,
+-dungeons_arise:bandit_towers,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/bandit_towers.json,#dungeons_arise:has_structure/bandit_towers_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":135}",False,dungeons_arise:major_structures,0,0,,,False,c:is_badlands,c:is_badlands,
+-dungeons_arise:bandit_village,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/bandit_village.json,#dungeons_arise:has_structure/bandit_village_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":0}",beard_thin,dungeons_arise:major_structures,0,0,,,False,c:is_badlands,c:is_badlands,
++dungeons_arise:bandit_towers,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/bandit_towers.json,#dungeons_arise:has_structure/bandit_towers_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":135}",False,ambient_odyssey:wda_major_overworld,0,0,,,False,c:is_badlands,c:is_badlands,
++dungeons_arise:bandit_village,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/bandit_village.json,#dungeons_arise:has_structure/bandit_village_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":0}",beard_thin,ambient_odyssey:wda_major_overworld,0,0,,,False,c:is_badlands,c:is_badlands,
+ dungeons_arise:bathhouse,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/bathhouse.json,#dungeons_arise:has_structure/bathhouse_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_box,ambient_odyssey:wda_bathhouse,25,27,biomeswevegone:ebony_woods | biomeswevegone:weeping_witch_forest,,False,forge:is_plains | forge:is_snowy,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:weeping_witch_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:icy_heights | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+-dungeons_arise:ceryneian_hind,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/ceryneian_hind.json,#dungeons_arise:has_structure/ceryneian_hind_biomes,underground,Other/undetermined,surface_structures,"{""absolute"":-16}",False,dungeons_arise:major_structures,0,0,,,False,forge:is_desert,forge:is_desert,
++dungeons_arise:ceryneian_hind,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/ceryneian_hind.json,#dungeons_arise:has_structure/ceryneian_hind_biomes,underground,Other/undetermined,surface_structures,"{""absolute"":-16}",False,ambient_odyssey:wda_major_overworld,0,0,,,False,forge:is_desert,forge:is_desert,
+ dungeons_arise:coliseum,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/coliseum.json,#dungeons_arise:has_structure/coliseum_biomes,underground,Overworld,surface_structures,"{""absolute"":-3}",beard_box,,10,10,,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomeswevegone:prairie | biomeswevegone:sakura_grove | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:orchard | regions_unexplored:rocky_meadow
+ dungeons_arise:fishing_hut,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/fishing_hut.json,#dungeons_arise:has_structure/fishing_hut_biomes,underground,Overworld,surface_structures,"{""absolute"":-2}",False,dungeons_arise:minor_structures,1,1,,,False,,,regions_unexplored:grassy_beach
+-dungeons_arise:foundry,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/foundry.json,#dungeons_arise:has_structure/foundry_biomes,underground,Overworld,underground_structures,"{""absolute"":-10}",False,dungeons_arise:major_structures,30,33,biomeswevegone:prairie | regions_unexplored:flower_fields | regions_unexplored:grassland,,False,forge:is_coniferous | forge:is_mountain,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:icy_heights | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
++dungeons_arise:foundry,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/foundry.json,#dungeons_arise:has_structure/foundry_biomes,underground,Overworld,underground_structures,"{""absolute"":-10}",False,ambient_odyssey:wda_major_overworld,30,33,biomeswevegone:prairie | regions_unexplored:flower_fields | regions_unexplored:grassland,,False,forge:is_coniferous | forge:is_mountain,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:icy_heights | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+ dungeons_arise:giant_mushroom,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/giant_mushroom.json,#dungeons_arise:has_structure/giant_mushroom_biomes,underground,Overworld,surface_structures,"{""absolute"":-5}",False,,24,24,,,True,,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow
+ dungeons_arise:greenwood_pub,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/greenwood_pub.json,#dungeons_arise:has_structure/greenwood_pub_biomes,underground,Overworld,surface_structures,"{""absolute"":-18}",True,ambient_odyssey:wda_ordinary_land,18,24,biomesoplenty:highland | biomeswevegone:prairie | natures_spirit:alpine_clearings | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:rocky_meadow,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow
+ dungeons_arise:heavenly_challenger,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/heavenly_challenger.json,#ambient_odyssey:heavenly_end,sky,End,surface_structures,"{""absolute"":200}",False,dungeons_arise:major_structures,20,0,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods,False,forge:is_forest,,
+ dungeons_arise:heavenly_conqueror,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/heavenly_conqueror.json,#ambient_odyssey:heavenly_end,sky,End,surface_structures,"{""absolute"":200}",False,dungeons_arise:major_structures,20,0,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods,False,forge:is_forest,,
+ dungeons_arise:heavenly_rider,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/heavenly_rider.json,#ambient_odyssey:heavenly_end,sky,End,surface_structures,"{""absolute"":200}",False,dungeons_arise:major_structures,20,0,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods,False,forge:is_forest,,
+ dungeons_arise:illager_campsite,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_campsite.json,#dungeons_arise:has_structure/illager_campsite_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_thin,ambient_odyssey:wda_ordinary_land,22,21,,biomeswevegone:maple_taiga,False,forge:is_plains | forge:is_snowy,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:frosted_coniferous_forest | biomeswevegone:prairie | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:icy_heights | regions_unexplored:orchard | regions_unexplored:rocky_meadow | regions_unexplored:spires
+-dungeons_arise:illager_corsair,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_corsair.json,#dungeons_arise:has_structure/illager_corsair_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,dungeons_arise:major_structures,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
+-dungeons_arise:illager_fort,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_fort.json,#dungeons_arise:has_structure/illager_fort_biomes,underground,Overworld,surface_structures,"{""absolute"":-7}",beard_thin,dungeons_arise:major_structures,16,15,,natures_spirit:alpine_clearings,False,forge:is_coniferous | forge:is_snowy,,biomesoplenty:auroral_garden | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:snowblossom_grove | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:shattered_glacier | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:spires
+-dungeons_arise:illager_galley,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_galley.json,#dungeons_arise:has_structure/illager_galley_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,dungeons_arise:major_structures,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
++dungeons_arise:illager_corsair,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_corsair.json,#dungeons_arise:has_structure/illager_corsair_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,ambient_odyssey:wda_major_overworld,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
++dungeons_arise:illager_fort,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_fort.json,#dungeons_arise:has_structure/illager_fort_biomes,underground,Overworld,surface_structures,"{""absolute"":-7}",beard_thin,ambient_odyssey:wda_major_overworld,16,15,,natures_spirit:alpine_clearings,False,forge:is_coniferous | forge:is_snowy,,biomesoplenty:auroral_garden | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:snowblossom_grove | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:shattered_glacier | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:spires
++dungeons_arise:illager_galley,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_galley.json,#dungeons_arise:has_structure/illager_galley_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,ambient_odyssey:wda_major_overworld,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
+ dungeons_arise:illager_windmill,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/illager_windmill.json,#dungeons_arise:has_structure/illager_windmill_biomes,underground,Overworld,surface_structures,"{""absolute"":-2}",False,ambient_odyssey:wda_ordinary_land,10,10,,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomeswevegone:prairie | biomeswevegone:sakura_grove | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:orchard | regions_unexplored:rocky_meadow
+-dungeons_arise:infested_temple,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/infested_temple.json,#dungeons_arise:has_structure/infested_temple_biomes,underground,Overworld,fluid_springs,"{""absolute"":-32}",,dungeons_arise:major_structures,25,25,,,False,forge:is_coniferous | forge:is_snowy,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:frosted_coniferous_forest | biomeswevegone:lush_stacks | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
++dungeons_arise:infested_temple,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/infested_temple.json,#dungeons_arise:has_structure/infested_temple_biomes,underground,Overworld,fluid_springs,"{""absolute"":-32}",,ambient_odyssey:wda_major_overworld,25,25,,,False,forge:is_coniferous | forge:is_snowy,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:frosted_coniferous_forest | biomeswevegone:lush_stacks | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+ dungeons_arise:jungle_tree_house,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/jungle_tree_house.json,#dungeons_arise:has_structure/jungle_tree_house_biomes,underground,Overworld,surface_structures,"{""absolute"":-5}",False,dungeons_arise:minor_structures,3,3,,,False,,,biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods
+-dungeons_arise:keep_kayra,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/keep_kayra.json,#dungeons_arise:has_structure/keep_kayra_biomes,surface/other,Overworld,surface_structures,"{""absolute"":54}",,dungeons_arise:major_structures,4,4,,,False,forge:is_swamp,,biomesoplenty:hot_springs | biomeswevegone:bayou | regions_unexplored:fen | regions_unexplored:marsh
+-dungeons_arise:kisegi_sanctuary,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/kisegi_sanctuary.json,#dungeons_arise:has_structure/kisegi_sanctuary_biomes,underground,Overworld,fluid_springs,"{""absolute"":-32}",,dungeons_arise:major_structures,17,18,biomesoplenty:snowblossom_grove,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:lush_stacks | biomeswevegone:prairie | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:icy_heights | regions_unexplored:orchard | regions_unexplored:rocky_meadow | regions_unexplored:spires
++dungeons_arise:keep_kayra,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/keep_kayra.json,#dungeons_arise:has_structure/keep_kayra_biomes,surface/other,Overworld,surface_structures,"{""absolute"":54}",,ambient_odyssey:wda_major_overworld,4,4,,,False,forge:is_swamp,,biomesoplenty:hot_springs | biomeswevegone:bayou | regions_unexplored:fen | regions_unexplored:marsh
++dungeons_arise:kisegi_sanctuary,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/kisegi_sanctuary.json,#dungeons_arise:has_structure/kisegi_sanctuary_biomes,underground,Overworld,fluid_springs,"{""absolute"":-32}",,ambient_odyssey:wda_major_overworld,17,18,biomesoplenty:snowblossom_grove,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:lush_stacks | biomeswevegone:prairie | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:icy_heights | regions_unexplored:orchard | regions_unexplored:rocky_meadow | regions_unexplored:spires
+ dungeons_arise:lighthouse,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/lighthouse.json,#dungeons_arise:has_structure/lighthouse_biomes,underground,Overworld,surface_structures,"{""absolute"":-1}",False,dungeons_arise:minor_structures,11,11,,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomeswevegone:prairie | biomeswevegone:sakura_grove | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:grassy_beach | regions_unexplored:orchard | regions_unexplored:rocky_meadow
+-dungeons_arise:mechanical_nest,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mechanical_nest.json,#dungeons_arise:has_structure/mechanical_nest_biomes,sky,Overworld,surface_structures,"{""absolute"":190}",False,dungeons_arise:major_structures,18,22,biomesoplenty:hot_springs | biomeswevegone:bayou | regions_unexplored:fen | regions_unexplored:marsh,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:fen | regions_unexplored:maple_forest | regions_unexplored:marsh | regions_unexplored:orchard | regions_unexplored:redwoods
++dungeons_arise:mechanical_nest,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mechanical_nest.json,#dungeons_arise:has_structure/mechanical_nest_biomes,sky,Overworld,surface_structures,"{""absolute"":190}",False,ambient_odyssey:wda_major_overworld,18,22,biomesoplenty:hot_springs | biomeswevegone:bayou | regions_unexplored:fen | regions_unexplored:marsh,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:fen | regions_unexplored:maple_forest | regions_unexplored:marsh | regions_unexplored:orchard | regions_unexplored:redwoods
+ dungeons_arise:merchant_campsite,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/merchant_campsite.json,#dungeons_arise:has_structure/merchant_campsite_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_thin,ambient_odyssey:wda_ordinary_land,10,10,,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomeswevegone:prairie | biomeswevegone:sakura_grove | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:orchard | regions_unexplored:rocky_meadow
+-dungeons_arise:mining_complex,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mining_complex.json,#dungeons_arise:has_structure/mining_complex_biomes,underground,Overworld,underground_structures,"{""absolute"":-5}",bury,dungeons_arise:major_structures,23,30,biomesoplenty:highland | biomeswevegone:prairie | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:rocky_meadow,,False,forge:is_coniferous | forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow
++dungeons_arise:mining_complex,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mining_complex.json,#dungeons_arise:has_structure/mining_complex_biomes,underground,Overworld,underground_structures,"{""absolute"":-5}",bury,ambient_odyssey:wda_major_overworld,23,30,biomesoplenty:highland | biomeswevegone:prairie | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:rocky_meadow,,False,forge:is_coniferous | forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow
+ dungeons_arise:mining_system,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mining_system.json,#dungeons_arise:has_structure/mining_system_biomes,underground,Other/undetermined,underground_structures,"{""absolute"":5}",bury,,0,0,,,False,,,
+-dungeons_arise:monastery,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/monastery.json,#dungeons_arise:has_structure/monastery_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_thin,dungeons_arise:major_structures,20,20,,,False,forge:is_coniferous | forge:is_mountain,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
++dungeons_arise:monastery,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/monastery.json,#dungeons_arise:has_structure/monastery_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_thin,ambient_odyssey:wda_major_overworld,20,20,,,False,forge:is_coniferous | forge:is_mountain,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:shattered_glacier | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+ dungeons_arise:mushroom_house,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mushroom_house.json,#dungeons_arise:has_structure/mushroom_house_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_thin,ambient_odyssey:wda_ordinary_land,18,18,,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods
+-dungeons_arise:mushroom_mines,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mushroom_mines.json,#dungeons_arise:has_structure/mushroom_mines_biomes,underground,Overworld,surface_structures,"{""absolute"":-8}",True,dungeons_arise:major_structures,18,18,,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods
+-dungeons_arise:mushroom_village,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mushroom_village.json,#dungeons_arise:has_structure/mushroom_village_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",beard_thin,dungeons_arise:major_structures,18,18,,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods
+-dungeons_arise:plague_asylum,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/plague_asylum.json,#dungeons_arise:has_structure/plague_asylum_biomes,surface/other,Overworld,strongholds,"{""absolute"":0}",bury,dungeons_arise:major_structures,28,28,,,False,forge:is_coniferous | forge:is_forest | forge:is_mountain,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
+-dungeons_arise:scorched_mines,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/scorched_mines.json,#dungeons_arise:has_structure/scorched_mines_biomes,underground,Other/undetermined,surface_structures,"{""absolute"":-14}",False,dungeons_arise:major_structures,0,0,,,False,forge:is_desert,forge:is_desert,
+-dungeons_arise:shiraz_palace,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/shiraz_palace.json,#dungeons_arise:has_structure/shiraz_palace_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":16}",False,dungeons_arise:major_structures,0,0,,,False,forge:is_desert,forge:is_desert,
++dungeons_arise:mushroom_mines,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mushroom_mines.json,#dungeons_arise:has_structure/mushroom_mines_biomes,underground,Overworld,surface_structures,"{""absolute"":-8}",True,ambient_odyssey:wda_major_overworld,18,18,,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods
++dungeons_arise:mushroom_village,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/mushroom_village.json,#dungeons_arise:has_structure/mushroom_village_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":0}",beard_thin,ambient_odyssey:wda_mushroom_village,18,0,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods,False,forge:is_forest,,
++dungeons_arise:plague_asylum,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/plague_asylum.json,#dungeons_arise:has_structure/plague_asylum_biomes,surface/other,Overworld,strongholds,"{""absolute"":0}",bury,ambient_odyssey:wda_major_overworld,28,28,,,False,forge:is_coniferous | forge:is_forest | forge:is_mountain,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomesoplenty:volcano | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:frozen_pine_taiga | regions_unexplored:icy_heights | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow | regions_unexplored:spires
++dungeons_arise:scorched_mines,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/scorched_mines.json,#dungeons_arise:has_structure/scorched_mines_biomes,underground,Other/undetermined,surface_structures,"{""absolute"":-14}",False,ambient_odyssey:wda_major_overworld,0,0,,,False,forge:is_desert,forge:is_desert,
++dungeons_arise:shiraz_palace,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/shiraz_palace.json,#dungeons_arise:has_structure/shiraz_palace_biomes,surface/other,Other/undetermined,surface_structures,"{""absolute"":16}",False,ambient_odyssey:wda_major_overworld,0,0,,,False,forge:is_desert,forge:is_desert,
+ dungeons_arise:small_blimp,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/small_blimp.json,#dungeons_arise:has_structure/small_blimp_biomes,surface/other,Overworld,surface_structures,"{""absolute"":20}",False,,29,30,biomeswevegone:shattered_glacier,,False,forge:is_coniferous | forge:is_forest | forge:is_plains,,biomesoplenty:auroral_garden | biomesoplenty:highland | biomesoplenty:hot_springs | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:bayou | biomeswevegone:crag_gardens | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:maple_taiga | biomeswevegone:prairie | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:shattered_glacier | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:flower_fields | regions_unexplored:frozen_pine_taiga | regions_unexplored:grassland | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods | regions_unexplored:rocky_meadow
+-dungeons_arise:thornborn_towers,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/thornborn_towers.json,#dungeons_arise:has_structure/thornborn_towers_biomes,surface/other,Overworld,surface_structures,"{""absolute"":130}",False,dungeons_arise:major_structures,18,18,,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods
+-dungeons_arise:typhon,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/typhon.json,#dungeons_arise:has_structure/typhon_biomes,underground,Overworld,surface_structures,"{""absolute"":-4}",False,dungeons_arise:major_structures,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
+-dungeons_arise:undead_pirate_ship,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/undead_pirate_ship.json,#dungeons_arise:has_structure/undead_pirate_ship_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,dungeons_arise:major_structures,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
++dungeons_arise:thornborn_towers,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/thornborn_towers.json,#dungeons_arise:has_structure/thornborn_towers_biomes,surface/other,Overworld,surface_structures,"{""absolute"":130}",False,ambient_odyssey:wda_major_overworld,18,18,,,False,forge:is_forest,,biomesoplenty:auroral_garden | biomesoplenty:ominous_woods | biomesoplenty:pumpkin_patch | biomesoplenty:snowblossom_grove | biomeswevegone:ebony_woods | biomeswevegone:frosted_coniferous_forest | biomeswevegone:redwood_thicket | biomeswevegone:sakura_grove | biomeswevegone:skyris_vale | biomeswevegone:weeping_witch_forest | biomeswevegone:zelkova_forest | natures_spirit:floral_ridges | natures_spirit:windswept_sugi_forest | regions_unexplored:ashen_woodland | regions_unexplored:cold_deciduous_forest | regions_unexplored:maple_forest | regions_unexplored:orchard | regions_unexplored:redwoods
++dungeons_arise:typhon,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/typhon.json,#dungeons_arise:has_structure/typhon_biomes,underground,Overworld,surface_structures,"{""absolute"":-4}",False,ambient_odyssey:wda_major_overworld,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
++dungeons_arise:undead_pirate_ship,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/undead_pirate_ship.json,#dungeons_arise:has_structure/undead_pirate_ship_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,ambient_odyssey:wda_major_overworld,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
+ dungeons_arise:wishing_well,DungeonsArise-1.21.1-2.1.68-release.jar,data/dungeons_arise/worldgen/structure/wishing_well.json,#dungeons_arise:has_structure/wishing_well_biomes,underground,Overworld,surface_structures,"{""absolute"":-7}",False,dungeons_arise:minor_structures,10,10,,,False,forge:is_plains,,biomesoplenty:highland | biomesoplenty:pumpkin_patch | biomeswevegone:prairie | biomeswevegone:sakura_grove | natures_spirit:alpine_clearings | natures_spirit:floral_ridges | regions_unexplored:flower_fields | regions_unexplored:grassland | regions_unexplored:orchard | regions_unexplored:rocky_meadow
+ dungeons_arise_seven_seas:corsair_corvette,DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar,data/dungeons_arise_seven_seas/worldgen/structure/corsair_corvette.json,#dungeons_arise_seven_seas:has_structure/corsair_corvette_biomes,underground,Overworld,surface_structures,"{""absolute"":-2}",False,dungeons_arise_seven_seas:minor_structures,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
+ dungeons_arise_seven_seas:pirate_junk,DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar,data/dungeons_arise_seven_seas/worldgen/structure/pirate_junk.json,#dungeons_arise_seven_seas:has_structure/pirate_junk_biomes,surface/other,Overworld,surface_structures,"{""absolute"":0}",False,dungeons_arise_seven_seas:minor_structures,3,3,,,False,,,biomeswevegone:lush_stacks | regions_unexplored:hyacinth_deeps | regions_unexplored:rocky_reef
+diff --git a/STRUCTURE_SET_CATALOG.csv b/STRUCTURE_SET_CATALOG.csv
+index 4514c37..1b9884b 100644
+--- a/STRUCTURE_SET_CATALOG.csv
++++ b/STRUCTURE_SET_CATALOG.csv
+@@ -30,6 +30,8 @@ ambient_odyssey:heavenly_conqueror_overworld,minecraft:random_spread,84,40,19840
+ ambient_odyssey:heavenly_rider_overworld,minecraft:random_spread,64,28,1984010512,1,,"{""type"":""minecraft:random_spread"",""spacing"":64,""separation"":28,""salt"":1984010512}",ambient_odyssey:heavenly_rider_overworld (weight 1),31,,False,False
+ ambient_odyssey:idas_ordinary_houses,integrated_api:advanced_random_spread,16,8,1984010520,1,,"{""type"":""integrated_api:advanced_random_spread"",""spacing"":16,""separation"":8,""salt"":1984010520,""super_exclusion_zone"":{""chunk_count"":2,""other_set"":""#ambient_odyssey:idas_house_avoid""}}",idas:abandonedhouse (weight 5) | idas:bearclaw_inn (weight 5) | idas:hermits_hollow (weight 4) | idas:hunters_cabin (weight 4) | idas:brickhouse (weight 5) | idas:beekeepers_house (weight 5) | idas:farmhouse (weight 5) | idas:fishermans_lodge (weight 3) | idas:botanist (weight 5) | idas:mason_house (weight 5) | idas:abandoned_vineyard (weight 4) | idas:tudor_pub (weight 3) | idas:wacky_wares (weight 3) | idas:pumpkin_cafe (weight 3),25,c:plains | c:savanna | forge:is_savanna,False,False
+ ambient_odyssey:wda_bathhouse,integrated_api:advanced_random_spread,112,48,1984010502,0.5,,"{""type"":""integrated_api:advanced_random_spread"",""spacing"":112,""separation"":48,""salt"":1984010502,""super_exclusion_zone"":{""chunk_count"":6,""other_set"":""#ambient_odyssey:large_land_avoid""},""frequency"":0.5}",dungeons_arise:bathhouse (weight 1),27,,False,False
++ambient_odyssey:wda_major_overworld,minecraft:random_spread,50,45,1984010503,0.8,,"{""type"":""minecraft:random_spread"",""spacing"":50,""separation"":45,""salt"":1984010503,""frequency"":0.8}",dungeons_arise:bandit_village (weight 1) | dungeons_arise:ceryneian_hind (weight 1) | dungeons_arise:illager_corsair (weight 2) | dungeons_arise:illager_fort (weight 1) | dungeons_arise:illager_galley (weight 2) | dungeons_arise:monastery (weight 1) | dungeons_arise:mushroom_mines (weight 1) | dungeons_arise:scorched_mines (weight 1) | dungeons_arise:typhon (weight 1) | dungeons_arise:undead_pirate_ship (weight 1) | dungeons_arise:bandit_towers (weight 1) | dungeons_arise:foundry (weight 1) | dungeons_arise:thornborn_towers (weight 1) | dungeons_arise:infested_temple (weight 1) | dungeons_arise:mining_complex (weight 1) | dungeons_arise:plague_asylum (weight 1) | dungeons_arise:shiraz_palace (weight 1) | dungeons_arise:keep_kayra (weight 1) | dungeons_arise:mechanical_nest (weight 1) | dungeons_arise:kisegi_sanctuary (weight 1),38,c:is_badlands | forge:is_desert,False,False
++ambient_odyssey:wda_mushroom_village,minecraft:random_spread,40,20,1984010504,0.5,,"{""type"":""minecraft:random_spread"",""spacing"":40,""separation"":20,""salt"":1984010504,""frequency"":0.5}",dungeons_arise:mushroom_village (weight 1),0,,False,False
+ ambient_odyssey:wda_ordinary_land,integrated_api:advanced_random_spread,28,14,1984010501,1,,"{""type"":""integrated_api:advanced_random_spread"",""spacing"":28,""separation"":14,""salt"":1984010501,""super_exclusion_zone"":{""chunk_count"":6,""other_set"":""#ambient_odyssey:large_land_avoid""}}",dungeons_arise:illager_campsite (weight 3) | dungeons_arise:illager_windmill (weight 1) | dungeons_arise:merchant_campsite (weight 3) | dungeons_arise:mushroom_house (weight 2) | dungeons_arise:greenwood_pub (weight 2),30,,False,False
+ antiquetradingship:antique_trading_ship,minecraft:random_spread,50,35,1304155118,1,,"{""salt"":1304155118,""separation"":35,""spacing"":50,""type"":""minecraft:random_spread""}",antiquetradingship:antique_trading_ship (weight 1),0,,False,False
+ apotheosis:towers,minecraft:random_spread,12,6,12121818,1,,"{""salt"":12121818,""separation"":6,""spacing"":12,""type"":""minecraft:random_spread""}",apotheosis:tower_leaf (weight 1) | apotheosis:tower_main (weight 1) | apotheosis:tower_sand (weight 1) | apotheosis:tower_spruce (weight 1),35,,True,False
+@@ -98,8 +100,8 @@ create_rustic_structures:rustic_smithy,minecraft:random_spread,16,8,703989288,1,
+ create_rustic_structures:rustic_well,minecraft:random_spread,12,6,1221516354,1,,"{""salt"":1221516354,""separation"":6,""spacing"":12,""type"":""minecraft:random_spread""}",create_rustic_structures:rustic_well (weight 1),16,,True,False
+ create_rustic_structures:rustic_windmill,minecraft:random_spread,16,8,1297317345,1,,"{""salt"":1297317345,""separation"":8,""spacing"":16,""type"":""minecraft:random_spread""}",create_rustic_structures:rustic_windmill (weight 1),10,,True,False
+ dungeoncrawl:dungeons,minecraft:random_spread,20,9,1984010530,1,,"{""salt"":1984010530,""separation"":9,""spacing"":20,""type"":""minecraft:random_spread""}",dungeoncrawl:dungeon (weight 1),36,,True,False
+-dungeons_arise:major_structures,minecraft:random_spread,50,45,88371663,0.7105263157894737,,"{""salt"":88371663,""separation"":45,""spacing"":50,""type"":""minecraft:random_spread"",""frequency"":0.7105263157894737}",dungeons_arise:bandit_village (weight 1) | dungeons_arise:ceryneian_hind (weight 1) | dungeons_arise:heavenly_rider (weight 1) | dungeons_arise:heavenly_conqueror (weight 1) | dungeons_arise:illager_corsair (weight 2) | dungeons_arise:illager_fort (weight 1) | dungeons_arise:illager_galley (weight 2) | dungeons_arise:monastery (weight 1) | dungeons_arise:mushroom_mines (weight 1) | dungeons_arise:mushroom_village (weight 1) | dungeons_arise:scorched_mines (weight 1) | dungeons_arise:typhon (weight 1) | dungeons_arise:undead_pirate_ship (weight 1) | dungeons_arise:aviary (weight 1) | dungeons_arise:bandit_towers (weight 1) | dungeons_arise:foundry (weight 1) | dungeons_arise:heavenly_challenger (weight 1) | dungeons_arise:thornborn_towers (weight 1) | dungeons_arise:infested_temple (weight 1) | dungeons_arise:mining_complex (weight 1) | dungeons_arise:plague_asylum (weight 1) | dungeons_arise:shiraz_palace (weight 1) | dungeons_arise:keep_kayra (weight 1) | dungeons_arise:mechanical_nest (weight 1) | dungeons_arise:kisegi_sanctuary (weight 1),38,c:is_badlands | forge:is_desert,True,False
+-dungeons_arise:minor_structures,minecraft:random_spread,28,18,342415935,0.8333333333333334,,"{""salt"":342415935,""separation"":18,""spacing"":28,""type"":""minecraft:random_spread"",""frequency"":0.8333333333333334,""exclusion_zone"":{""chunk_count"":10,""other_set"":""dungeons_arise:major_structures""}}",dungeons_arise:fishing_hut (weight 1) | dungeons_arise:wishing_well (weight 1) | dungeons_arise:jungle_tree_house (weight 1) | dungeons_arise:abandoned_temple (weight 1) | dungeons_arise:lighthouse (weight 1),29,,True,False
++dungeons_arise:major_structures,minecraft:random_spread,50,45,88371663,0.7105263157894737,,"{""salt"":88371663,""separation"":45,""spacing"":50,""type"":""minecraft:random_spread"",""frequency"":0.7105263157894737}",dungeons_arise:heavenly_rider (weight 1) | dungeons_arise:heavenly_conqueror (weight 1) | dungeons_arise:aviary (weight 1) | dungeons_arise:heavenly_challenger (weight 1),0,,True,False
++dungeons_arise:minor_structures,minecraft:random_spread,28,18,342415935,0.8333333333333334,,"{""salt"":342415935,""separation"":18,""spacing"":28,""type"":""minecraft:random_spread"",""frequency"":0.8333333333333334,""exclusion_zone"":{""chunk_count"":10,""other_set"":""ambient_odyssey:wda_major_overworld""}}",dungeons_arise:fishing_hut (weight 1) | dungeons_arise:wishing_well (weight 1) | dungeons_arise:jungle_tree_house (weight 1) | dungeons_arise:abandoned_temple (weight 1) | dungeons_arise:lighthouse (weight 1),29,,True,False
+ dungeons_arise_seven_seas:minor_structures,minecraft:random_spread,68,60,98123789,1,,"{""salt"":98123789,""separation"":60,""spacing"":68,""type"":""minecraft:random_spread""}",dungeons_arise_seven_seas:unicorn_galleon (weight 1) | dungeons_arise_seven_seas:pirate_junk (weight 1) | dungeons_arise_seven_seas:small_yacht (weight 1) | dungeons_arise_seven_seas:victory_frigate (weight 1) | dungeons_arise_seven_seas:corsair_corvette (weight 1),3,,True,False
+ echoes_of_the_end__structures_:crying_obsidian_tower,minecraft:random_spread,190,8,1275595292,1,,"{""salt"":1275595292,""separation"":8,""spacing"":190,""type"":""minecraft:random_spread""}",echoes_of_the_end__structures_:crying_obsidian_tower (weight 1),0,,True,False
+ echoes_of_the_end__structures_:end_camp,minecraft:random_spread,130,2,910165693,1,,"{""salt"":910165693,""separation"":2,""spacing"":130,""type"":""minecraft:random_spread""}",echoes_of_the_end__structures_:end_camp (weight 1),0,,True,False
+diff --git a/release_030/evidence/structure-audit-summary-test5.json b/release_030/evidence/structure-audit-summary-test5.json
+index 9f4fb68..6ed65f8 100644
+--- a/release_030/evidence/structure-audit-summary-test5.json
++++ b/release_030/evidence/structure-audit-summary-test5.json
+@@ -122,8 +122,8 @@
+     },
+     "dungeons_arise": {
+       "native": 40,
+-      "changed_eligibility": 12,
+-      "no_curated_ow_after": 10,
++      "changed_eligibility": 13,
++      "no_curated_ow_after": 11,
+       "vanilla_only_direct": 2
+     },
+     "dungeons_arise_seven_seas": {
+@@ -369,6 +369,6 @@
+   "curated_ow_biomes": 40,
+   "matrix_biome_columns": 52,
+   "remaining_native_duplicate_structures": 2,
+-  "effective_structure_sets": 673,
++  "effective_structure_sets": 675,
+   "shared_salt_groups": 16
+ }
+diff --git a/release_030/overrides/config/cristellib/dungeons_arise/structure_toggle_config.json5 b/release_030/overrides/config/cristellib/dungeons_arise/structure_toggle_config.json5
+index 1c6fcd2..81e3115 100644
+--- a/release_030/overrides/config/cristellib/dungeons_arise/structure_toggle_config.json5
++++ b/release_030/overrides/config/cristellib/dungeons_arise/structure_toggle_config.json5
+@@ -2,37 +2,37 @@
+ {
+   "major_structures": {
+     "aviary": true,
+-    "bandit_towers": true,
+-    "bandit_village": true,
+-    "ceryneian_hind": true,
++    "bandit_towers": false,
++    "bandit_village": false,
++    "ceryneian_hind": false,
+     "coliseum": false,
+-    "foundry": true,
++    "foundry": false,
+     "greenwood_pub": false,
+     "heavenly_challenger": true,
+     "heavenly_conqueror": true,
+     "heavenly_rider": true,
+     "illager_campsite": false,
+-    "illager_corsair": true,
+-    "illager_fort": true,
+-    "illager_galley": true,
++    "illager_corsair": false,
++    "illager_fort": false,
++    "illager_galley": false,
+     "illager_windmill": false,
+-    "infested_temple": true,
+-    "keep_kayra": true,
+-    "kisegi_sanctuary": true,
+-    "mechanical_nest": true,
++    "infested_temple": false,
++    "keep_kayra": false,
++    "kisegi_sanctuary": false,
++    "mechanical_nest": false,
+     "merchant_campsite": false,
+-    "mining_complex": true,
+-    "monastery": true,
++    "mining_complex": false,
++    "monastery": false,
+     "mushroom_house": false,
+-    "mushroom_mines": true,
+-    "mushroom_village": true,
+-    "plague_asylum": true,
+-    "scorched_mines": true,
+-    "shiraz_palace": true,
++    "mushroom_mines": false,
++    "mushroom_village": false,
++    "plague_asylum": false,
++    "scorched_mines": false,
++    "shiraz_palace": false,
+     "small_blimp": false,
+-    "thornborn_towers": true,
+-    "typhon": true,
+-    "undead_pirate_ship": true
++    "thornborn_towers": false,
++    "typhon": false,
++    "undead_pirate_ship": false
+   },
+   "minor_structures": {
+     "abandoned_temple": true,
+diff --git a/release_030/overrides/config/paxi/datapacks/ao_compatibility/data/dungeons_arise/tags/worldgen/biome/has_structure/mushroom_village_biomes.json b/release_030/overrides/config/paxi/datapacks/ao_compatibility/data/dungeons_arise/tags/worldgen/biome/has_structure/mushroom_village_biomes.json
+new file mode 100644
+index 0000000..c97e5c6
+--- /dev/null
++++ b/release_030/overrides/config/paxi/datapacks/ao_compatibility/data/dungeons_arise/tags/worldgen/biome/has_structure/mushroom_village_biomes.json
+@@ -0,0 +1,6 @@
++{
++  "replace": true,
++  "values": [
++    "minecraft:mushroom_fields"
++  ]
++}
+diff --git a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/tags/worldgen/structure_set/large_land_avoid.json b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/tags/worldgen/structure_set/large_land_avoid.json
+index f39e4a6..1f7c55a 100644
+--- a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/tags/worldgen/structure_set/large_land_avoid.json
++++ b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/tags/worldgen/structure_set/large_land_avoid.json
+@@ -1,7 +1,7 @@
+ {
+   "replace": true,
+   "values": [
+-    "dungeons_arise:major_structures",
++    "ambient_odyssey:wda_major_overworld",
+     "idas:idas_rare",
+     "integrated_villages:regular_villages"
+   ]
+diff --git a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_major_overworld.json b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_major_overworld.json
+new file mode 100644
+index 0000000..9a4f80f
+--- /dev/null
++++ b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_major_overworld.json
+@@ -0,0 +1,91 @@
++{
++  "structures": [
++    {
++      "structure": "dungeons_arise:bandit_village",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:ceryneian_hind",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:illager_corsair",
++      "weight": 2
++    },
++    {
++      "structure": "dungeons_arise:illager_fort",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:illager_galley",
++      "weight": 2
++    },
++    {
++      "structure": "dungeons_arise:monastery",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:mushroom_mines",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:scorched_mines",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:typhon",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:undead_pirate_ship",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:bandit_towers",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:foundry",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:thornborn_towers",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:infested_temple",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:mining_complex",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:plague_asylum",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:shiraz_palace",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:keep_kayra",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:mechanical_nest",
++      "weight": 1
++    },
++    {
++      "structure": "dungeons_arise:kisegi_sanctuary",
++      "weight": 1
++    }
++  ],
++  "placement": {
++    "type": "minecraft:random_spread",
++    "spacing": 50,
++    "separation": 45,
++    "salt": 1984010503,
++    "frequency": 0.8
++  }
++}
+diff --git a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_mushroom_village.json b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_mushroom_village.json
+new file mode 100644
+index 0000000..a59167e
+--- /dev/null
++++ b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_mushroom_village.json
+@@ -0,0 +1,15 @@
++{
++  "structures": [
++    {
++      "structure": "dungeons_arise:mushroom_village",
++      "weight": 1
++    }
++  ],
++  "placement": {
++    "type": "minecraft:random_spread",
++    "spacing": 40,
++    "separation": 20,
++    "salt": 1984010504,
++    "frequency": 0.5
++  }
++}
+diff --git a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/major_structures.json b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/major_structures.json
+index c49f6dd..c66a0a4 100644
+--- a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/major_structures.json
++++ b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/major_structures.json
+@@ -7,14 +7,6 @@
+     "frequency": 0.7105263157894737
+   },
+   "structures": [
+-    {
+-      "structure": "dungeons_arise:bandit_village",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:ceryneian_hind",
+-      "weight": 1
+-    },
+     {
+       "structure": "dungeons_arise:heavenly_rider",
+       "weight": 1
+@@ -23,89 +15,13 @@
+       "structure": "dungeons_arise:heavenly_conqueror",
+       "weight": 1
+     },
+-    {
+-      "structure": "dungeons_arise:illager_corsair",
+-      "weight": 2
+-    },
+-    {
+-      "structure": "dungeons_arise:illager_fort",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:illager_galley",
+-      "weight": 2
+-    },
+-    {
+-      "structure": "dungeons_arise:monastery",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:mushroom_mines",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:mushroom_village",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:scorched_mines",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:typhon",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:undead_pirate_ship",
+-      "weight": 1
+-    },
+     {
+       "structure": "dungeons_arise:aviary",
+       "weight": 1
+     },
+-    {
+-      "structure": "dungeons_arise:bandit_towers",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:foundry",
+-      "weight": 1
+-    },
+     {
+       "structure": "dungeons_arise:heavenly_challenger",
+       "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:thornborn_towers",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:infested_temple",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:mining_complex",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:plague_asylum",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:shiraz_palace",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:keep_kayra",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:mechanical_nest",
+-      "weight": 1
+-    },
+-    {
+-      "structure": "dungeons_arise:kisegi_sanctuary",
+-      "weight": 1
+     }
+   ]
+ }
+diff --git a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/minor_structures.json b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/minor_structures.json
+index fea2699..efb08ff 100644
+--- a/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/minor_structures.json
++++ b/release_030/overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/minor_structures.json
+@@ -7,7 +7,7 @@
+     "frequency": 0.8333333333333334,
+     "exclusion_zone": {
+       "chunk_count": 10,
+-      "other_set": "dungeons_arise:major_structures"
++      "other_set": "ambient_odyssey:wda_major_overworld"
+     }
+   },
+   "structures": [
+diff --git a/release_030/structure-compatibility.json b/release_030/structure-compatibility.json
+index 36d1d28..022d711 100644
+--- a/release_030/structure-compatibility.json
++++ b/release_030/structure-compatibility.json
+@@ -1576,6 +1576,12 @@
+         "regions_unexplored:cold_deciduous_forest",
+         "regions_unexplored:frozen_pine_taiga"
+       ]
++    },
++    "dungeons_arise:has_structure/mushroom_village_biomes": {
++      "replace": true,
++      "values": [
++        "minecraft:mushroom_fields"
++      ]
+     }
+   },
+   "structures": {
+@@ -4171,6 +4177,15 @@
+         "added_analogue_tag": "#c:is_taiga",
+         "unchanged_fields": "All except biomes"
+       }
+-    ]
++    ],
++    "dungeons_arise:has_structure/mushroom_village_biomes": {
++      "reason": "Test 6 decision: Mushroom Village only in Mushroom Fields (native tag was #minecraft:is_forest + optional other_forests)",
++      "source_paths": [
++        {
++          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
++          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/mushroom_village_biomes.json"
++        }
++      ]
++    }
+   }
+ }
+diff --git a/release_030/structure-density.json b/release_030/structure-density.json
+index 4e9032d..11545c7 100644
+--- a/release_030/structure-density.json
++++ b/release_030/structure-density.json
+@@ -2287,6 +2287,116 @@
+         }
+       },
+       "note": "Ordinary houses gain independent candidates; castles/towers do not compete in this group"
++    },
++    {
++      "id": "ambient_odyssey:wda_major_overworld",
++      "structures": [
++        {
++          "structure": "dungeons_arise:bandit_village",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:ceryneian_hind",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:illager_corsair",
++          "weight": 2
++        },
++        {
++          "structure": "dungeons_arise:illager_fort",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:illager_galley",
++          "weight": 2
++        },
++        {
++          "structure": "dungeons_arise:monastery",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:mushroom_mines",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:scorched_mines",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:typhon",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:undead_pirate_ship",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:bandit_towers",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:foundry",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:thornborn_towers",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:infested_temple",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:mining_complex",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:plague_asylum",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:shiraz_palace",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:keep_kayra",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:mechanical_nest",
++          "weight": 1
++        },
++        {
++          "structure": "dungeons_arise:kisegi_sanctuary",
++          "weight": 1
++        }
++      ],
++      "placement": {
++        "type": "minecraft:random_spread",
++        "spacing": 50,
++        "separation": 45,
++        "salt": 1984010503,
++        "frequency": 0.8
++      },
++      "note": "Overworld-only WDA majors on the native 50/45 grid; frequency 0.80 (was 27/38 = 0.7105 native-equivalent). End members stay on the native set at the unchanged rate."
++    },
++    {
++      "id": "ambient_odyssey:wda_mushroom_village",
++      "structures": [
++        {
++          "structure": "dungeons_arise:mushroom_village",
++          "weight": 1
++        }
++      ],
++      "placement": {
++        "type": "minecraft:random_spread",
++        "spacing": 40,
++        "separation": 20,
++        "salt": 1984010504,
++        "frequency": 0.5
++      },
++      "note": "Dedicated rare owner; biome tag restricted to minecraft:mushroom_fields. Removed from the shared major set."
+     }
+   ],
+   "moogs_note": "MSL 3.4.2 frequency values scale spacing/separation by 1/sqrt(multiplier). Per-structure keys identify structure SETS. Native Cristel Moog spacing files are retained so the multiplier is applied once.",
+@@ -2393,14 +2503,6 @@
+           "frequency": 0.7105263157894737
+         },
+         "structures": [
+-          {
+-            "structure": "dungeons_arise:bandit_village",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:ceryneian_hind",
+-            "weight": 1
+-          },
+           {
+             "structure": "dungeons_arise:heavenly_rider",
+             "weight": 1
+@@ -2409,89 +2511,13 @@
+             "structure": "dungeons_arise:heavenly_conqueror",
+             "weight": 1
+           },
+-          {
+-            "structure": "dungeons_arise:illager_corsair",
+-            "weight": 2
+-          },
+-          {
+-            "structure": "dungeons_arise:illager_fort",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:illager_galley",
+-            "weight": 2
+-          },
+-          {
+-            "structure": "dungeons_arise:monastery",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:mushroom_mines",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:mushroom_village",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:scorched_mines",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:typhon",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:undead_pirate_ship",
+-            "weight": 1
+-          },
+           {
+             "structure": "dungeons_arise:aviary",
+             "weight": 1
+           },
+-          {
+-            "structure": "dungeons_arise:bandit_towers",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:foundry",
+-            "weight": 1
+-          },
+           {
+             "structure": "dungeons_arise:heavenly_challenger",
+             "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:thornborn_towers",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:infested_temple",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:mining_complex",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:plague_asylum",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:shiraz_palace",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:keep_kayra",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:mechanical_nest",
+-            "weight": 1
+-          },
+-          {
+-            "structure": "dungeons_arise:kisegi_sanctuary",
+-            "weight": 1
+           }
+         ]
+       },
+@@ -2504,7 +2530,7 @@
+           "frequency": 0.8333333333333334,
+           "exclusion_zone": {
+             "chunk_count": 10,
+-            "other_set": "dungeons_arise:major_structures"
++            "other_set": "ambient_odyssey:wda_major_overworld"
+           }
+         },
+         "structures": [
+@@ -3100,7 +3126,7 @@
+       "ambient_odyssey:large_land_avoid": {
+         "replace": true,
+         "values": [
+-          "dungeons_arise:major_structures",
++          "ambient_odyssey:wda_major_overworld",
+           "idas:idas_rare",
+           "integrated_villages:regular_villages"
+         ]
+@@ -3125,7 +3151,28 @@
+         "major_structures/greenwood_pub": false,
+         "major_structures/illager_windmill": false,
+         "major_structures/mushroom_house": false,
+-        "minor_structures/bathhouse": false
++        "minor_structures/bathhouse": false,
++        "major_structures/bandit_village": false,
++        "major_structures/ceryneian_hind": false,
++        "major_structures/illager_corsair": false,
++        "major_structures/illager_fort": false,
++        "major_structures/illager_galley": false,
++        "major_structures/monastery": false,
++        "major_structures/mushroom_mines": false,
++        "major_structures/scorched_mines": false,
++        "major_structures/typhon": false,
++        "major_structures/undead_pirate_ship": false,
++        "major_structures/bandit_towers": false,
++        "major_structures/foundry": false,
++        "major_structures/thornborn_towers": false,
++        "major_structures/infested_temple": false,
++        "major_structures/mining_complex": false,
++        "major_structures/plague_asylum": false,
++        "major_structures/shiraz_palace": false,
++        "major_structures/keep_kayra": false,
++        "major_structures/mechanical_nest": false,
++        "major_structures/kisegi_sanctuary": false,
++        "major_structures/mushroom_village": false
+       }
+     },
+     {
+@@ -3162,6 +3209,8 @@
+       "extra_integrated_land_villages"
+     ],
+     "source_reconciliation": "Test 4 toggles and 22/9 Dungeon Crawl incorporated before Test 5 tuning; unrelated overrides retained",
+-    "continuation": "19 additional actual JARs audited. Native-only Cristel reads corroborated; native membership extraction now mirrored in its per-set toggles. Full pack priority still needs runtime confirmation."
++    "continuation": "19 additional actual JARs audited. Native-only Cristel reads corroborated; native membership extraction now mirrored in its per-set toggles. Full pack priority still needs runtime confirmation.",
++    "wda_major_overworld_frequency": 0.8,
++    "wda_major_end_frequency_unchanged": 0.7105263157894737
+   }
+ }
+diff --git a/validate_structure_test6.py b/validate_structure_test6.py
+new file mode 100644
+index 0000000..20d3c9d
+--- /dev/null
++++ b/validate_structure_test6.py
+@@ -0,0 +1,128 @@
++#!/usr/bin/env python3
++"""Structure Test 6 static regression gates (scope: WDA major split + Mushroom Village).
++
++Reads the built import archive only. PASS here is a static source/export result;
++it says nothing about natural generation, density or terrain fit.
++Usage: python3 validate_structure_test6.py --archive build/<import>.zip [--report out.json]
++"""
++import argparse, json, re, sys, zipfile
++
++DP = 'overrides/config/paxi/datapacks/'
++SD = DP + 'ao_structure_density/data/'
++END_MEMBERS = {'dungeons_arise:aviary', 'dungeons_arise:heavenly_rider',
++               'dungeons_arise:heavenly_conqueror', 'dungeons_arise:heavenly_challenger'}
++MV = 'dungeons_arise:mushroom_village'
++# Test 5 audit1 native values that must not drift
++NATIVE_MAJOR = {'salt': 88371663, 'separation': 45, 'spacing': 50, 'frequency': 0.7105263157894737}
++BATHHOUSE = {'spacing': 112, 'separation': 48, 'salt': 1984010502, 'frequency': 0.5}
++
++
++def run(archive):
++    z = zipfile.ZipFile(archive)
++    names = set(z.namelist())
++    J = lambda p: json.loads(z.read(p))
++    checks = []
++
++    def check(name, ok, detail=''):
++        checks.append({'check': name, 'passed': bool(ok), 'detail': detail})
++
++    major = J(SD + 'dungeons_arise/worldgen/structure_set/major_structures.json')
++    minor = J(SD + 'dungeons_arise/worldgen/structure_set/minor_structures.json')
++    ow = J(SD + 'ambient_odyssey/worldgen/structure_set/wda_major_overworld.json')
++    mv = J(SD + 'ambient_odyssey/worldgen/structure_set/wda_mushroom_village.json')
++    bath = J(SD + 'ambient_odyssey/worldgen/structure_set/wda_bathhouse.json')
++    land = J(SD + 'ambient_odyssey/worldgen/structure_set/wda_ordinary_land.json')
++
++    major_ids = {s['structure'] for s in major['structures']}
++    ow_ids = {s['structure'] for s in ow['structures']}
++    check('Native major set is End-only (aviary + 3 Heavenly)', major_ids == END_MEMBERS, sorted(major_ids))
++    check('Native major grid/salt/frequency unchanged (End rate preserved)',
++          all(major['placement'][k] == v for k, v in NATIVE_MAJOR.items()), major['placement'])
++    check('Overworld major owner: 50/45, frequency 0.80',
++          ow['placement']['spacing'] == 50 and ow['placement']['separation'] == 45
++          and ow['placement']['frequency'] == 0.8, ow['placement'])
++    check('Overworld major owner has 20 members and no End member',
++          len(ow_ids) == 20 and not (ow_ids & END_MEMBERS), len(ow_ids))
++    check('Overworld/End major members disjoint, none duplicated', not (ow_ids & major_ids)
++          and len(ow['structures']) == len(ow_ids), '')
++    check('Mushroom Village absent from both major sets', MV not in ow_ids and MV not in major_ids, '')
++    check('Mushroom Village has exactly one dedicated owner',
++          [s['structure'] for s in mv['structures']] == [MV], mv['placement'])
++    check('Mushroom Village grid is rare-style (frequency <= 0.5, bounds valid)',
++          mv['placement']['frequency'] <= 0.5 and 0 <= mv['placement']['separation'] < mv['placement']['spacing'],
++          mv['placement'])
++
++    # every owner of every structure across all AO + native density sets
++    owners = {}
++    for n in names:
++        if n.startswith(SD) and '/worldgen/structure_set/' in n and '/tags/' not in n and n.endswith('.json'):
++            sid = re.sub(r'^.*data/([^/]+)/worldgen/structure_set/(.*)\.json$', r'\1:\2', n)
++            for s in J(n)['structures']:
++                owners.setdefault(s['structure'], []).append(sid)
++    check('Mushroom Village has one placement owner in the density pack',
++          owners.get(MV) == ['ambient_odyssey:wda_mushroom_village'], owners.get(MV))
++    wda_ids = ow_ids | major_ids | {MV}
++    dup = {k: v for k, v in owners.items() if k in wda_ids and len(v) > 1}
++    check('No WDA major structure has two owners in the density pack', not dup, dup)
++
++    salts = {}
++    for n in names:
++        if n.startswith(SD) and '/worldgen/structure_set/' in n and '/tags/' not in n and n.endswith('.json'):
++            salts.setdefault(J(n)['placement'].get('salt'), []).append(n.split('/')[-1])
++    check('New owner salts unique within density pack',
++          len(salts[ow['placement']['salt']]) == 1 and len(salts[mv['placement']['salt']]) == 1,
++          [ow['placement']['salt'], mv['placement']['salt']])
++
++    check('Bathhouse unchanged (112/48, 0.5)', all(bath['placement'][k] == v for k, v in BATHHOUSE.items()), bath['placement'])
++    check('Ordinary WDA set unchanged (28/14, salt 1984010501, 5 members)',
++          land['placement']['spacing'] == 28 and land['placement']['separation'] == 14
++          and land['placement']['salt'] == 1984010501 and len(land['structures']) == 5, '')
++
++    tag = J(DP + 'ao_compatibility/data/dungeons_arise/tags/worldgen/biome/has_structure/mushroom_village_biomes.json')
++    check('Mushroom Village biome tag replaces native with Mushroom Fields only',
++          tag == {'replace': True, 'values': ['minecraft:mushroom_fields']}, tag)
++
++    avoid = J(SD + 'ambient_odyssey/tags/worldgen/structure_set/large_land_avoid.json')
++    check('large_land_avoid points at the Overworld major owner, not the End-only native set',
++          'ambient_odyssey:wda_major_overworld' in avoid['values'] and 'dungeons_arise:major_structures' not in avoid['values'], avoid['values'])
++    check('minor_structures exclusion follows the Overworld major owner',
++          minor['placement']['exclusion_zone']['other_set'] == 'ambient_odyssey:wda_major_overworld', minor['placement']['exclusion_zone'])
++    check('Exclusion target set exists', SD + 'ambient_odyssey/worldgen/structure_set/wda_major_overworld.json' in names, '')
++
++    raw = z.read('overrides/config/cristellib/dungeons_arise/structure_toggle_config.json5').decode()
++    tog = json.loads(raw[raw.index('{'):])['major_structures']
++    off = {k for k, v in tog.items() if v is False}
++    want_off = {i.split(':')[1] for i in ow_ids | {MV}} | {'small_blimp', 'coliseum', 'merchant_campsite',
++                'illager_campsite', 'greenwood_pub', 'illager_windmill', 'mushroom_house'}
++    check('Cristel native toggles off for Overworld majors, Mushroom Village, Blimp, Coliseum, ordinary houses',
++          want_off <= off, sorted(want_off - off))
++    check('Cristel native toggles keep End members enabled',
++          all(tog[i.split(':')[1]] is True for i in END_MEMBERS), {i: tog.get(i.split(':')[1]) for i in END_MEMBERS})
++    rawp = z.read('overrides/config/cristellib/dungeons_arise/structure_placement_config.json5').decode()
++    pl = json.loads(rawp[rawp.index('{'):])['major_structures']
++    check('Cristel native major placement unchanged for End (0.7105)', abs(pl['frequency'] - NATIVE_MAJOR['frequency']) < 1e-12, pl)
++
++    # Heavenly Overworld clones + Farmers untouched
++    for h in ('challenger', 'conqueror', 'rider'):
++        p = SD + f'ambient_odyssey/worldgen/structure_set/heavenly_{h}_overworld.json'
++        check(f'Heavenly {h} Overworld clone set present', p in names, '')
++    farm = [n for n in names if n.startswith(SD + 'farmers_structures/worldgen/structure_set/')]
++    check('Farmers: all 20 sets present, salts 1984020000..19 unchanged',
++          len(farm) == 20 and sorted(J(n)['placement']['salt'] for n in farm) == list(range(1984020000, 1984020020)), len(farm))
++    return {'status': 'PASS (Test 6 scoped static gates; runtime pending)' if all(c['passed'] for c in checks)
++            else 'FAIL', 'gameplay_tested': False, 'check_count': len(checks), 'checks': checks}
++
++
++if __name__ == '__main__':
++    ap = argparse.ArgumentParser(description=__doc__)
++    ap.add_argument('--archive', required=True)
++    ap.add_argument('--report')
++    a = ap.parse_args()
++    r = run(a.archive)
++    if a.report:
++        open(a.report, 'w').write(json.dumps(r, indent=2) + '\n')
++    for c in r['checks']:
++        if not c['passed']:
++            print('FAIL:', c['check'], c['detail'])
++    print(r['status'], r['check_count'], 'checks')
++    sys.exit(0 if r['status'].startswith('PASS') else 1)
+-- 
+2.43.0
+

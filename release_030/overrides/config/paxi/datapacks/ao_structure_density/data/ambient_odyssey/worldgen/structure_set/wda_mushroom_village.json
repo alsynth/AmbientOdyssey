@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:mushroom_village",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 40,
+    "separation": 20,
+    "salt": 1984010504,
+    "frequency": 0.5
+  }
+}

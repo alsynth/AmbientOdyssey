@@ -28,3 +28,4 @@ releases/
 
 # Generated archives/reports are not Git source files.
 build/
+*.pyc

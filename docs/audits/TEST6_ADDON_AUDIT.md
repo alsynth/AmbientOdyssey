@@ -1,0 +1,65 @@
+# Structure Test 6 — approved-addon binary audit (static, from supplied JARs)
+
+Audited 9 October 2026 against the supplied files. Nothing here is a runtime result. Nothing is installed or in the manifest yet.
+Pack: Minecraft 1.21.1, NeoForge 21.1.252, yungsapi 5.1.9, create 6.0.10 (JAR not supplied; manifest pin), Cristel Lib 3.1.7.
+
+## Files supplied and their SHA-256
+
+| JAR | SHA-256 | Matches approved pin? |
+|---|---|---|
+| YungsExtras-1.21.1-NeoForge-5.1.1 | 0cd26474e514f5dc3114aaf5ec7e049bcd285f0c5db191bb45223193f35df70d | yes (5812546) |
+| YungsBridges-1.21.1-NeoForge-5.1.1 | bf93a85422a6b457358c3b56352641a97ec09cc37dec18b2cedcac2bd1ff9bec | yes (5812553) |
+| Structory_Towers_26.2_v1.0.17 | 226d8cb187e0d4fb75571db017c0abb26176aec16586c337a1b5620f3805a372 | **NO**: pin 7078283 is v1.0.14 "1.21.x"; this is CF file 8396885, listed for 26.2 only |
+| archaion-1.21.1-1.4.4 | 15431063b27f43aa5321100bc29acc9b49ab0c97e24e16627a759a0312ea0f11 | yes (8983496) |
+| Explorify v1.6.5 | 2dc76398b48b2aae9b4024642da098b0880125572de160cb5ecf91d102890cad | yes (8082824) |
+| AdditionalStructures 6.3.2 NEO | 0540b1b3ac7c1b93159278d8e3c924b8af371fd3be9be0501e5f478ca8f64e24 | yes (6584803) |
+| Create-Structures-Arise 176.49.49 | a98c1853a4a3ab2b845f19617b8ed6aed682aa77e818c13bae4ab95ebff8bd6e | yes (8837992) |
+| create_easy_structures 0.2a | 8d5949114e9dd506c4a8598f789e63678fdf6b2b90f40a8e6ef2babc6f56029f | yes (6344382) |
+| aaa_particles-neoforge-1.21.1-2.3.3 | 948b3fc4d38d33a817596ad0b2d14c28976f8cfde801041b1c58cf1fef505f98 | dependency; CF project 979809, file 9101011 (filename/version match; released 8 Oct 2026) |
+| echoing_magic 1.0.2 | 117337bcb661388d4baa07128209b1b27b7d4264de0220bf8326e86f28cd8d2c | **not approved**: optional Iron's Spells x Archaion addon, referenced by nothing supplied |
+
+## Dependency closure (from neoforge.mods.toml)
+
+| Mod | Requires | Status |
+|---|---|---|
+| Archaion | aaa_particles >= 2.2.3, neoforge >= 21.1.233, MC [1.21.1,1.21.2] | AAA Particles 2.3.3 satisfies it; **must be added to the manifest** |
+| AAA Particles | neoforge >= 21.1.169; Jar-in-Jar architectury 13.0.8 | pack has architectury 13.0.11 (loader should pick the higher; runtime-check) |
+| YUNG's Bridges / Extras | yungsapi >= 1.21.1-NeoForge-5.1.2 | installed 5.1.9: OK |
+| Create: Structures Arise | create [6.0.10, 6.1.0), neoforge >= 21.1.229 | installed pin 6.0.10: OK (lower bound exact) |
+| Create: Easy Structures | create optional; neoforge >= 21.1.65 | OK |
+| Additional Structures | neoforge >= 21.0, MC [1.21,1.22) | OK |
+| Explorify | MC >= 1.20 only; data namespace `cristellib` | Cristel Lib 3.1.7 installed: OK |
+| Structory: Towers v1.0.17 | MC >= 1.21; pack_format 48 | data-only; file is not the pinned one |
+
+## Collision screen against the installed catalogue (673 set rows, 1,219 structure rows)
+
+No structure-ID, structure-set-ID or salt collisions for any of the six data-driven mods. No `replace: true` on any `minecraft:`/`c:`/`neoforge:` tag they ship. Archaion adds one global loot modifier (`archaion:ancient_keep_map_in_ancient_city`, replace=false).
+
+## Content and placement
+
+| Mod | Structures / sets | Placement | Notes |
+|---|---|---|---|
+| Additional Structures | 198 / 45 | random_spread 10-150, frequency 1.0 | heuristic tag screen: ~34 End and ~17 Nether structures |
+| Create: Structures Arise | 28 / 28 | random_spread 50-200 | 4 Nether (create_bastion, darkcastle, deadlordshouse, obsidiantemple); adds to `minecraft:village` structure tag |
+| Create: Easy Structures | 16 / 16 | random_spread 50-60, frequency 1.0, 16 independent grids | selector `#create_easy_structures:isnotwater` lists vanilla biomes only |
+| Explorify | 23 / 14 | random_spread 24-48, 11 sets frequency < 1 | Black Spiral Nether; `end_shipwreck` is End |
+| Structory: Towers | 21 / 5 | random_spread 33-82, frequency < 1 | 3 Nether + 1 End (file v1.0.17; v1.0.14 not yet inspected) |
+| Archaion | 1 / 1 | custom type `archaion:avoid_trial_chambers`, 48/24 | not a plain random_spread; AO density compiler cannot treat it generically |
+| YUNG's Bridges | feature-based | neoforge:add_features on `#yungsbridges:has_structure/bridge` = `#minecraft:is_river` + optional `#c:river` | not a structure set |
+| YUNG's Extras | feature-based (73 features) | add_features desert/swamp tags; **removes vanilla `minecraft:desert_well`** from desert tag biomes | not a structure set |
+
+## Explorify Black Spiral (identified)
+
+- Structure `explorify:black_spiral`, jigsaw start pool `explorify:bastion_spiral/tower`, tag `#explorify:has_structure/black_spiral` = `#minecraft:has_structure/bastion_remnant`.
+- Own set `explorify:black_spirals`, spacing 40, separation 18, salt 30184232, frequency 1.0. It is the only Explorify set with a Nether selector.
+- Cristel toggle file lists the sets with ENABLE_DISABLE (`explorify:black_spirals`).
+- Planned disable (not yet applied, Explorify not installed): add `explorify:black_spiral` to `integrated_api:disabled_structures` with `required: false`, mirroring the verified Small Blimp/Coliseum mechanism, plus the Cristel set toggle once its exact file schema is confirmed. An empty-tag patch alone is not acceptable.
+
+## Decisions (user, 9 October 2026) and what was done
+
+1. Structory: Towers v1.0.17 kept; pinned as CurseForge 783522:8396885 with a documented game-version override.
+2. Nether/End structures from Additional Structures, Create: Structures Arise, Structory: Towers and Explorify end_shipwreck ship as is.
+3. Biome selectors were extended with curated donors before shipping (`derive_test6_selectors.py`, 38 provider tags + 4 structure-level overrides + the YUNG's Bridges river tag).
+4. Create: Easy Structures density kept as shipped. AAA Particles 2.3.3 kept (CurseForge 979809:9101011).
+5. Black Spiral is left **enabled** by decision. It has not been shown compatible with the Nether stack; fresh-Nether check required. To disable later: add `{"id":"explorify:black_spiral","required":false}` to `integrated_api:disabled_structures`.
+6. `echoing_magic` is not installed.

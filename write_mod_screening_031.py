@@ -51,17 +51,17 @@ def main():
         # preserve deliberate pin edits rather than silently restoring defaults.
         payload = json.loads(authoring.read_text())
         stage = payload['mods']
-        assert len(stage) == 8 and payload['manifest_mutation'] is False
+        assert len(stage) == 9 and payload['manifest_mutation'] is True
     else:
         authoring.write_text(json.dumps({
             'schema': 1, 'scope': 'Approved staged additions; not installed by Test 5 audit1.',
             'manifest_mutation': False, 'mods': stage}, indent=2) + '\n')
     write_csv('APPROVED_STRUCTURE_ADDITIONS.csv', stage)
     (ROOT / 'APPROVED_ADDITION_JARS.txt').write_text(
-        'Eight approved additions: exact proposed binaries to provide for the next audit.\n'
+        'Nine Test 6 projects: the eight approved additions plus the AAA Particles dependency (audited from user-supplied JARs).\n'
         'Separate from the 41 missing existing-profile JARs in MISSING_JARS.txt.\n'
-        'File metadata is verified; checksums, dependency closure and native content await actual JARs.\n\n'
-        + '\n'.join(row['filename'] for row in stage) + '\n')
+        'SHA-256 values are in approved-structure-additions.json; structure content and dependency closure: docs/audits/TEST6_ADDON_AUDIT.md.\n\n'
+        + '\n'.join(row['filename'] for row in stage) + '\n', encoding='utf-8', newline='\n')
 
     installed = []
     for row in snapshot['jars']:
@@ -96,7 +96,7 @@ def main():
                      'dungeon', 'village', 'temple', 'tower', 'ship', 'boss', 'cave', 'ruin', 'trial', 'road', 'river', 'ocean'])
         status = 'Unselected research backlog; current master TODO takes precedence.'
         if name.startswith('Archaion'):
-            status = 'Approved; exact binary/dependencies still pending.'
+            status = 'Approved and installed (Test 6); static audit only.'
         elif name == 'StructureOverlapless':
             status = 'Do not install with current Integrated API arrangement; superseded by master TODO.'
         elif 'Big Globe' in name:
@@ -143,7 +143,7 @@ def main():
     create_table = '\n'.join(f"| {row['candidate']} | {row['structure_evidence']} | {row['decision']} |" for row in create)
     text = f'''# Ambient Odyssey — Structure-provider screening, Test 5 audit1
 
-Updated 9 October 2026. The current master TODO authorizes eight additions; they remain staged because their exact binaries are unavailable. This export repairs the audited existing stack. It does not install unselected Create addons or promote the project to 0.4.0.
+Updated 9 October 2026. The nine Test 6 projects (eight approved additions plus the AAA Particles dependency) are installed in the manifest after a static audit of user-supplied JARs; none is runtime tested. This export repairs the audited existing stack. It does not install unselected Create addons or promote the project to 0.4.0.
 
 ## Evidence and coverage
 
@@ -163,15 +163,15 @@ CTOV has 78 native structure definitions and zero native structure-set JSON file
 
 YUNG's Better End Island changes End generation through EndDragonFight/spike/gateway/platform code rather than standalone structure JSON. Waystones has feature, pool and Lithostitched village integration routes. Both must remain in worldgen screening even when the standalone structure-definition count is zero. Cristel Lib and YUNG's API are frameworks; framework class references alone do not make them independent landmark providers.
 
-## Eight approved additions — metadata selected, installation pending
+## Nine Test 6 projects — installed after static binary audit; not runtime tested
 
 | Mod | CurseForge project / file | Exact proposed JAR |
 |---|---|---|
 {approved_table}
 
-Primary file URLs and verification date are in `APPROVED_STRUCTURE_ADDITIONS.csv` and editable `release_030/approved-structure-additions.json`. All eight have `enabled=false`, `binary_audited=false`, `dependencies_verified=false` and no invented SHA-256. They are absent from the locked candidate manifest. `APPROVED_ADDITION_JARS.txt` provides the separate upload list.
+Primary file URLs and verification date are in `APPROVED_STRUCTURE_ADDITIONS.csv` and editable `release_030/approved-structure-additions.json`. All nine are `enabled=true`, `binary_audited=true`, `dependencies_verified=true` with the SHA-256 of the supplied binary, and pinned in the locked manifest. Structory: Towers is the user-approved v1.0.17 (CurseForge tags it 26.x; documented override).
 
-For each binary, inspect native definitions, placement sets, pools/NBT, tags, features, biome modifiers, builtin packs and registration/mixin code; verify dependencies against the exact installed pins. Select native placement owners before adjusting candidate density. Explorify must remain out of the export until the exact Nether Black Spiral ID and disabling mechanism are verified; no guessed ID or ineffective empty-tag patch is included.
+Native placement is left as shipped (no AO density override). Curated biome selectors were extended deterministically by `derive_test6_selectors.py`. By user decision Explorify's Nether Black Spiral (`explorify:black_spiral`) is NOT disabled; a fresh-Nether compatibility check is required, and the disable route (Integrated API disabled-structures tag) is documented in `docs/audits/TEST6_ADDON_AUDIT.md`.
 
 ## Other Create addons
 

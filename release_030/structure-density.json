@@ -2287,6 +2287,116 @@
         }
       },
       "note": "Ordinary houses gain independent candidates; castles/towers do not compete in this group"
+    },
+    {
+      "id": "ambient_odyssey:wda_major_overworld",
+      "structures": [
+        {
+          "structure": "dungeons_arise:bandit_village",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:ceryneian_hind",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:illager_corsair",
+          "weight": 2
+        },
+        {
+          "structure": "dungeons_arise:illager_fort",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:illager_galley",
+          "weight": 2
+        },
+        {
+          "structure": "dungeons_arise:monastery",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:mushroom_mines",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:scorched_mines",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:typhon",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:undead_pirate_ship",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:bandit_towers",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:foundry",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:thornborn_towers",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:infested_temple",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:mining_complex",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:plague_asylum",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:shiraz_palace",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:keep_kayra",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:mechanical_nest",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:kisegi_sanctuary",
+          "weight": 1
+        }
+      ],
+      "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 50,
+        "separation": 45,
+        "salt": 1984010503,
+        "frequency": 0.8
+      },
+      "note": "Overworld-only WDA majors on the native 50/45 grid; frequency 0.80 (was 27/38 = 0.7105 native-equivalent). End members stay on the native set at the unchanged rate."
+    },
+    {
+      "id": "ambient_odyssey:wda_mushroom_village",
+      "structures": [
+        {
+          "structure": "dungeons_arise:mushroom_village",
+          "weight": 1
+        }
+      ],
+      "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 40,
+        "separation": 20,
+        "salt": 1984010504,
+        "frequency": 0.5
+      },
+      "note": "Dedicated rare owner; biome tag restricted to minecraft:mushroom_fields. Removed from the shared major set."
     }
   ],
   "moogs_note": "MSL 3.4.2 frequency values scale spacing/separation by 1/sqrt(multiplier). Per-structure keys identify structure SETS. Native Cristel Moog spacing files are retained so the multiplier is applied once.",
@@ -2394,14 +2504,6 @@
         },
         "structures": [
           {
-            "structure": "dungeons_arise:bandit_village",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:ceryneian_hind",
-            "weight": 1
-          },
-          {
             "structure": "dungeons_arise:heavenly_rider",
             "weight": 1
           },
@@ -2410,87 +2512,11 @@
             "weight": 1
           },
           {
-            "structure": "dungeons_arise:illager_corsair",
-            "weight": 2
-          },
-          {
-            "structure": "dungeons_arise:illager_fort",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:illager_galley",
-            "weight": 2
-          },
-          {
-            "structure": "dungeons_arise:monastery",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:mushroom_mines",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:mushroom_village",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:scorched_mines",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:typhon",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:undead_pirate_ship",
-            "weight": 1
-          },
-          {
             "structure": "dungeons_arise:aviary",
             "weight": 1
           },
           {
-            "structure": "dungeons_arise:bandit_towers",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:foundry",
-            "weight": 1
-          },
-          {
             "structure": "dungeons_arise:heavenly_challenger",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:thornborn_towers",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:infested_temple",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:mining_complex",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:plague_asylum",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:shiraz_palace",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:keep_kayra",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:mechanical_nest",
-            "weight": 1
-          },
-          {
-            "structure": "dungeons_arise:kisegi_sanctuary",
             "weight": 1
           }
         ]
@@ -2504,7 +2530,7 @@
           "frequency": 0.8333333333333334,
           "exclusion_zone": {
             "chunk_count": 10,
-            "other_set": "dungeons_arise:major_structures"
+            "other_set": "ambient_odyssey:wda_major_overworld"
           }
         },
         "structures": [
@@ -3100,7 +3126,7 @@
       "ambient_odyssey:large_land_avoid": {
         "replace": true,
         "values": [
-          "dungeons_arise:major_structures",
+          "ambient_odyssey:wda_major_overworld",
           "idas:idas_rare",
           "integrated_villages:regular_villages"
         ]
@@ -3125,7 +3151,28 @@
         "major_structures/greenwood_pub": false,
         "major_structures/illager_windmill": false,
         "major_structures/mushroom_house": false,
-        "minor_structures/bathhouse": false
+        "minor_structures/bathhouse": false,
+        "major_structures/bandit_village": false,
+        "major_structures/ceryneian_hind": false,
+        "major_structures/illager_corsair": false,
+        "major_structures/illager_fort": false,
+        "major_structures/illager_galley": false,
+        "major_structures/monastery": false,
+        "major_structures/mushroom_mines": false,
+        "major_structures/scorched_mines": false,
+        "major_structures/typhon": false,
+        "major_structures/undead_pirate_ship": false,
+        "major_structures/bandit_towers": false,
+        "major_structures/foundry": false,
+        "major_structures/thornborn_towers": false,
+        "major_structures/infested_temple": false,
+        "major_structures/mining_complex": false,
+        "major_structures/plague_asylum": false,
+        "major_structures/shiraz_palace": false,
+        "major_structures/keep_kayra": false,
+        "major_structures/mechanical_nest": false,
+        "major_structures/kisegi_sanctuary": false,
+        "major_structures/mushroom_village": false
       }
     },
     {
@@ -3162,6 +3209,8 @@
       "extra_integrated_land_villages"
     ],
     "source_reconciliation": "Test 4 toggles and 22/9 Dungeon Crawl incorporated before Test 5 tuning; unrelated overrides retained",
-    "continuation": "19 additional actual JARs audited. Native-only Cristel reads corroborated; native membership extraction now mirrored in its per-set toggles. Full pack priority still needs runtime confirmation."
+    "continuation": "19 additional actual JARs audited. Native-only Cristel reads corroborated; native membership extraction now mirrored in its per-set toggles. Full pack priority still needs runtime confirmation.",
+    "wda_major_overworld_frequency": 0.8,
+    "wda_major_end_frequency_unchanged": 0.7105263157894737
   }
 }

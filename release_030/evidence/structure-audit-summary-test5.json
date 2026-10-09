@@ -1,5 +1,11 @@
 {
   "provider_summary": {
+    "additionalstructures": {
+      "native": 198,
+      "changed_eligibility": 15,
+      "no_curated_ow_after": 93,
+      "vanilla_only_direct": 17
+    },
     "adventuredungeons": {
       "native": 8,
       "changed_eligibility": 6,
@@ -47,6 +53,12 @@
       "changed_eligibility": 0,
       "no_curated_ow_after": 11,
       "vanilla_only_direct": 11
+    },
+    "archaion": {
+      "native": 1,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
     },
     "ars_nouveau": {
       "native": 3,
@@ -102,11 +114,23 @@
       "no_curated_ow_after": 12,
       "vanilla_only_direct": 15
     },
+    "create_easy_structures": {
+      "native": 16,
+      "changed_eligibility": 15,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 1
+    },
     "create_rustic_structures": {
       "native": 4,
       "changed_eligibility": 4,
       "no_curated_ow_after": 0,
       "vanilla_only_direct": 4
+    },
+    "create_structures_arise": {
+      "native": 28,
+      "changed_eligibility": 19,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 2
     },
     "ctov": {
       "native": 78,
@@ -122,8 +146,8 @@
     },
     "dungeons_arise": {
       "native": 40,
-      "changed_eligibility": 12,
-      "no_curated_ow_after": 10,
+      "changed_eligibility": 13,
+      "no_curated_ow_after": 11,
       "vanilla_only_direct": 2
     },
     "dungeons_arise_seven_seas": {
@@ -161,6 +185,12 @@
       "changed_eligibility": 0,
       "no_curated_ow_after": 7,
       "vanilla_only_direct": 0
+    },
+    "explorify": {
+      "native": 23,
+      "changed_eligibility": 17,
+      "no_curated_ow_after": 5,
+      "vanilla_only_direct": 11
     },
     "farmers_structures": {
       "native": 20,
@@ -336,6 +366,12 @@
       "no_curated_ow_after": 2,
       "vanilla_only_direct": 1
     },
+    "structory_towers": {
+      "native": 21,
+      "changed_eligibility": 11,
+      "no_curated_ow_after": 7,
+      "vanilla_only_direct": 5
+    },
     "supplementaries": {
       "native": 2,
       "changed_eligibility": 0,
@@ -361,14 +397,14 @@
       "vanilla_only_direct": 17
     }
   },
-  "inspected_jars": 196,
-  "native_structures": 1216,
-  "native_structure_sets": 666,
-  "catalogue_rows": 1219,
+  "inspected_jars": 205,
+  "native_structures": 1503,
+  "native_structure_sets": 775,
+  "catalogue_rows": 1506,
   "curated_biomes": 42,
   "curated_ow_biomes": 40,
   "matrix_biome_columns": 52,
-  "remaining_native_duplicate_structures": 2,
-  "effective_structure_sets": 673,
-  "shared_salt_groups": 16
+  "remaining_native_duplicate_structures": 3,
+  "effective_structure_sets": 784,
+  "shared_salt_groups": 18
 }

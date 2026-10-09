@@ -689,6 +689,116 @@
       "isEarlyAccessContent": false,
       "isCompatibleWithClient": true,
       "source": "https://www.curseforge.com/minecraft/mc-mods/amendments/files/8825641"
+    },
+    "test6-yungs-extras": {
+      "id": 5812546,
+      "projectId": 1015146,
+      "fileName": "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "displayName": "YUNG's Extras YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-extras-neoforge/files/5812546"
+    },
+    "test6-yungs-bridges": {
+      "id": 5812553,
+      "projectId": 1015149,
+      "fileName": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "displayName": "YUNG's Bridges YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-bridges-neoforge/files/5812553"
+    },
+    "test6-additional-structures": {
+      "id": 6584803,
+      "projectId": 297680,
+      "fileName": "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+      "displayName": "Additional Structures AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/additional-structures/files/6584803"
+    },
+    "test6-create-structures-arise": {
+      "id": 8837992,
+      "projectId": 1010066,
+      "fileName": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+      "displayName": "Create: Structures Arise Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/create-structures-arise/files/8837992"
+    },
+    "test6-create-easy-structures": {
+      "id": 6344382,
+      "projectId": 949158,
+      "fileName": "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+      "displayName": "Create: Easy Structures create_easy_structures-0.2a-neoforge-1.21.1.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/create-easy-structures/files/6344382"
+    },
+    "test6-explorify": {
+      "id": 8082824,
+      "projectId": 698309,
+      "fileName": "Explorify v1.6.5.mod.jar",
+      "displayName": "Explorify Explorify v1.6.5.mod.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/explorify/files/8082824"
+    },
+    "test6-archaion": {
+      "id": 8983496,
+      "projectId": 1620396,
+      "fileName": "archaion-1.21.1-1.4.4.jar",
+      "displayName": "Archaion archaion-1.21.1-1.4.4.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/archaion/files/8983496"
+    },
+    "test6-structory-towers": {
+      "id": 8396885,
+      "projectId": 783522,
+      "fileName": "Structory_Towers_26.2_v1.0.17.jar",
+      "displayName": "Structory: Towers v1.0.17 ~ Mod",
+      "gameVersions": [
+        "26.2",
+        "NeoForge",
+        "Server"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/8396885",
+      "version_check_override": "User-approved 9 Oct 2026. CurseForge tags file 8396885 for 26.x; the supplied JAR is pack_format 48 with minecraft range [1.21,) and Modrinth lists v1.0.17 for 1.21.x. Same multi-version pattern as the installed Structory_26.2_v1.3.7. Requires fresh-world load confirmation."
+    },
+    "test6-aaa-particles": {
+      "id": 9101011,
+      "projectId": 979809,
+      "fileName": "aaa_particles-neoforge-1.21.1-2.3.3.jar",
+      "displayName": "AAA Particles 2.3.3 (required by Archaion >= 2.2.3)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aaa-particles/files/9101011"
     }
   },
   "optional_integrated_patches": {

@@ -12,5 +12,12 @@
       "mvs:other_wells",
       "mvs:small_tower_well"
     ]
+  },
+  {
+    "structure_id": "structory_towers:quarter_outpost",
+    "effective_sets": [
+      "structory_towers:rare_towers",
+      "structory_towers:towers"
+    ]
   }
 ]

@@ -1,0 +1,13 @@
+{
+  "status": "PASS (scoped static gates; runtime NOT TESTED)",
+  "branch": "structure/test6",
+  "zip_sha256_local": "1383d71ec7178490ddf5b056c29c34fc14cd9ce0d48a972294ca799cf71ccec8",
+  "reference_linux_sha256": "1383d71ec7178490ddf5b056c29c34fc14cd9ce0d48a972294ca799cf71ccec8",
+  "reference_zip_entries_verified": 1081,
+  "manifest_projects": 246,
+  "continuation_passed": 247,
+  "test6_passed": 35,
+  "canonical_ctov_nbt_sha256": "40620134589628ae5e6752bbc231aa4ce75dd6a5d910d9a3e1abb4143ce4ff7c",
+  "full_zip_hash_note": "Compressed ZIP bytes can differ by zlib platform; every decompressed member was byte-validated against the approved reference. Two local builds were byte-identical.",
+  "minecraft_runtime_tested": false
+}

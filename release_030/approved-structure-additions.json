@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "scope": "Approved staged additions; not installed by Test 5 audit1.",
-  "manifest_mutation": false,
+  "scope": "Test 6: eight approved structure mods plus the AAA Particles dependency. Installed in the locked manifest; static binary audit only; no runtime test.",
+  "manifest_mutation": true,
   "mods": [
     {
       "name": "YUNG's Extras",
@@ -13,12 +13,13 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/yungs-extras-neoforge/files/5812546",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "0cd26474e514f5dc3114aaf5ec7e049bcd285f0c5db191bb45223193f35df70d",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Feature-based; removes vanilla minecraft:desert_well in its desert tag biomes. Requires YUNG's API >= 5.1.2.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "YUNG's Bridges",
@@ -30,29 +31,31 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/yungs-bridges-neoforge/files/5812553",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "bf93a85422a6b457358c3b56352641a97ec09cc37dec18b2cedcac2bd1ff9bec",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Feature-based; river tag extended with streamsreflowing:stream. Requires YUNG's API >= 5.1.2 (installed 5.1.9).",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "Structory: Towers",
       "slug": "structory-towers",
       "projectID": 783522,
-      "fileID": 7078283,
-      "filename": "Structory_Towers_1.21.x_v1.0.14.jar",
-      "game_version": "1.21.1",
+      "fileID": 8396885,
+      "filename": "Structory_Towers_26.2_v1.0.17.jar",
+      "game_version": "26.2 (JAR supports 1.21.x)",
       "loader": "NeoForge",
-      "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/7078283",
+      "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/8396885",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "226d8cb187e0d4fb75571db017c0abb26176aec16586c337a1b5620f3805a372",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "User-approved v1.0.17 (CF file 8396885) instead of v1.0.14. Includes 3 Nether + 1 End tower sets as shipped. CurseForge tags this file 26.x; JAR is pack_format 48, minecraft [1.21,), Modrinth lists 1.21.x. Fresh-world load confirmation required.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "Archaion",
@@ -64,12 +67,13 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/archaion/files/8983496",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "15431063b27f43aa5321100bc29acc9b49ab0c97e24e16627a759a0312ea0f11",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Requires AAA Particles >= 2.2.3 (added as pinned dependency, CF 979809:9101011). Custom placement archaion:avoid_trial_chambers.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "Explorify",
@@ -81,12 +85,13 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/explorify/files/8082824",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Identify and disable the exact Nether Black Spiral placement route before installation."
+      "sha256": "2dc76398b48b2aae9b4024642da098b0880125572de160cb5ecf91d102890cad",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "User decision 9 Oct 2026: Black Spiral is NOT disabled by default, provided the Nether mod stack is compatible; explorify:black_spirals (40/18, f=1.0, bastion_remnant biomes) must be checked in a fresh Nether. Disable mechanism if needed: add explorify:black_spiral to integrated_api:disabled_structures (required:false). end_shipwreck (End) ships as is.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "Additional Structures",
@@ -98,12 +103,13 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/additional-structures/files/6584803",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "0540b1b3ac7c1b93159278d8e3c924b8af371fd3be9be0501e5f478ca8f64e24",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Ships as is, including ~51 Nether/End structures. Curated biome selectors extended by derive_test6_selectors.py.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "Create: Structures Arise",
@@ -115,12 +121,13 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/create-structures-arise/files/8837992",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "a98c1853a4a3ab2b845f19617b8ed6aed682aa77e818c13bae4ab95ebff8bd6e",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Ships as is, including 4 Nether structures. Requires Create [6.0.10,6.1.0). Curated selectors extended.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
     },
     {
       "name": "Create: Easy Structures",
@@ -132,12 +139,31 @@
       "loader": "NeoForge",
       "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/create-easy-structures/files/6344382",
       "metadata_verified_date": "2026-10-09",
-      "sha256": null,
-      "enabled": false,
-      "binary_audited": false,
-      "dependencies_verified": false,
-      "status": "BLOCKED_JAR_AUDIT",
-      "special_requirement": "Audit definitions, pools, features, code placement and dependencies before installation."
+      "sha256": "8d5949114e9dd506c4a8598f789e63678fdf6b2b90f40a8e6ef2babc6f56029f",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Ships as is (16 grids at 50-60). Curated selectors extended; density to be judged in a fresh world.",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
+    },
+    {
+      "name": "AAA Particles",
+      "slug": "aaa-particles",
+      "projectID": 979809,
+      "fileID": 9101011,
+      "filename": "aaa_particles-neoforge-1.21.1-2.3.3.jar",
+      "game_version": "1.21.1",
+      "loader": "NeoForge",
+      "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/aaa-particles/files/9101011",
+      "metadata_verified_date": "2026-10-09",
+      "sha256": "948b3fc4d38d33a817596ad0b2d14c28976f8cfde801041b1c58cf1fef505f98",
+      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)",
+      "enabled": true,
+      "binary_audited": true,
+      "dependencies_verified": true,
+      "status": "INSTALLED_STATIC_AUDITED",
+      "special_requirement": "Required dependency of Archaion (>= 2.2.3). Library only; no structures. Jar-in-Jar architectury 13.0.8 vs pack 13.0.11: confirm at launch. 2.3.3 was released 8 Oct 2026."
     }
   ]
 }

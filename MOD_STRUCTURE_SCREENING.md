@@ -1,6 +1,6 @@
 # Ambient Odyssey — Structure-provider screening, Test 5 audit1
 
-Updated 9 October 2026. The current master TODO authorizes eight additions; they remain staged because their exact binaries are unavailable. This export repairs the audited existing stack. It does not install unselected Create addons or promote the project to 0.4.0.
+Updated 9 October 2026. The nine Test 6 projects (eight approved additions plus the AAA Particles dependency) are installed in the manifest after a static audit of user-supplied JARs; none is runtime tested. This export repairs the audited existing stack. It does not install unselected Create addons or promote the project to 0.4.0.
 
 ## Evidence and coverage
 
@@ -38,22 +38,23 @@ CTOV has 78 native structure definitions and zero native structure-set JSON file
 
 YUNG's Better End Island changes End generation through EndDragonFight/spike/gateway/platform code rather than standalone structure JSON. Waystones has feature, pool and Lithostitched village integration routes. Both must remain in worldgen screening even when the standalone structure-definition count is zero. Cristel Lib and YUNG's API are frameworks; framework class references alone do not make them independent landmark providers.
 
-## Eight approved additions — metadata selected, installation pending
+## Nine Test 6 projects — installed after static binary audit; not runtime tested
 
 | Mod | CurseForge project / file | Exact proposed JAR |
 |---|---|---|
 | YUNG's Extras | 1015146 / 5812546 | `YungsExtras-1.21.1-NeoForge-5.1.1.jar` |
 | YUNG's Bridges | 1015149 / 5812553 | `YungsBridges-1.21.1-NeoForge-5.1.1.jar` |
-| Structory: Towers | 783522 / 7078283 | `Structory_Towers_1.21.x_v1.0.14.jar` |
+| Structory: Towers | 783522 / 8396885 | `Structory_Towers_26.2_v1.0.17.jar` |
 | Archaion | 1620396 / 8983496 | `archaion-1.21.1-1.4.4.jar` |
 | Explorify | 698309 / 8082824 | `Explorify v1.6.5.mod.jar` |
 | Additional Structures | 297680 / 6584803 | `AdditionalStructures-1.21-(v.6.3.2-NEO).jar` |
 | Create: Structures Arise | 1010066 / 8837992 | `Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar` |
 | Create: Easy Structures | 949158 / 6344382 | `create_easy_structures-0.2a-neoforge-1.21.1.jar` |
+| AAA Particles | 979809 / 9101011 | `aaa_particles-neoforge-1.21.1-2.3.3.jar` |
 
-Primary file URLs and verification date are in `APPROVED_STRUCTURE_ADDITIONS.csv` and editable `release_030/approved-structure-additions.json`. All eight have `enabled=false`, `binary_audited=false`, `dependencies_verified=false` and no invented SHA-256. They are absent from the locked candidate manifest. `APPROVED_ADDITION_JARS.txt` provides the separate upload list.
+Primary file URLs and verification date are in `APPROVED_STRUCTURE_ADDITIONS.csv` and editable `release_030/approved-structure-additions.json`. All nine are `enabled=true`, `binary_audited=true`, `dependencies_verified=true` with the SHA-256 of the supplied binary, and pinned in the locked manifest. Structory: Towers is the user-approved v1.0.17 (CurseForge tags it 26.x; documented override).
 
-For each binary, inspect native definitions, placement sets, pools/NBT, tags, features, biome modifiers, builtin packs and registration/mixin code; verify dependencies against the exact installed pins. Select native placement owners before adjusting candidate density. Explorify must remain out of the export until the exact Nether Black Spiral ID and disabling mechanism are verified; no guessed ID or ineffective empty-tag patch is included.
+Native placement is left as shipped (no AO density override). Curated biome selectors were extended deterministically by `derive_test6_selectors.py`. By user decision Explorify's Nether Black Spiral (`explorify:black_spiral`) is NOT disabled; a fresh-Nether compatibility check is required, and the disable route (Integrated API disabled-structures tag) is documented in `docs/audits/TEST6_ADDON_AUDIT.md`.
 
 ## Other Create addons
 

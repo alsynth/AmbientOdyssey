@@ -1,7 +1,7 @@
 {
   "replace": true,
   "values": [
-    "dungeons_arise:major_structures",
+    "ambient_odyssey:wda_major_overworld",
     "idas:idas_rare",
     "integrated_villages:regular_villages"
   ]

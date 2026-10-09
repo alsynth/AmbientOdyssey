@@ -15,7 +15,8 @@ BUILTIN_SETS={'minecraft:villages','minecraft:nether_complexes','minecraft:nethe
  'minecraft:swamp_huts','minecraft:trail_ruins','minecraft:trial_chambers','minecraft:woodland_mansions','minecraft:ancient_cities'}
 
 def validate(archive=None,test4=None):
- snapshot=json.loads(gzip.decompress((RELEASE/'evidence/jar-resource-index-test5.json.gz').read_bytes()))
+ _idx=RELEASE/'evidence/jar-resource-index-test6.json.gz'
+ snapshot=json.loads(gzip.decompress((_idx if _idx.exists() else RELEASE/'evidence/jar-resource-index-test5.json.gz').read_bytes()))
  native=snapshot['resources'];plan=json.loads((RELEASE/'structure-density.json').read_text());compat=json.loads((RELEASE/'structure-compatibility.json').read_text())
  reference=json.loads((RELEASE/'evidence/test4-baseline.json').read_text())
  checks=[]
@@ -167,7 +168,9 @@ def validate(archive=None,test4=None):
    if test4:
     with zipfile.ZipFile(test4) as base:base_manifest=json.loads(base.read('manifest.json'))
    else:base_manifest=reference['manifest']
-   check('Test 4 mod project/file pins unchanged',manifest['files']==base_manifest['files'],len(manifest['files']))
+   _lock=json.loads((RELEASE/'release-lock.json').read_text());_t6={v['projectId']:v['id'] for k,v in _lock['additions'].items() if k.startswith('test6-')}
+   _exp=sorted(({f['projectID']:f['fileID'] for f in base_manifest['files']}|_t6).items())
+   check('Test 4 baseline pins unchanged and exactly the nine Test 6 additions added',len(_t6)==9 and [(f['projectID'],f['fileID']) for f in manifest['files']]==_exp,len(manifest['files']))
    mismatch=[]
    for path in OVERRIDES.rglob('*'):
     if path.is_file():

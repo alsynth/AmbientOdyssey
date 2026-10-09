@@ -1,0 +1,95 @@
+[
+  {
+    "file": "AdditionalStructures-1_21-_v_6_3_2-NEO_.jar",
+    "sha256": "0540b1b3ac7c1b93159278d8e3c924b8af371fd3be9be0501e5f478ca8f64e24",
+    "bytes": 1542886,
+    "counts": {
+      "tags/worldgen/biome": 93,
+      "tags/worldgen/structure": 7,
+      "worldgen/structure": 198,
+      "worldgen/structure_set": 45,
+      "worldgen/template_pool": 198
+    }
+  },
+  {
+    "file": "Create-Structures-Arise-1_21_1-NeoForge-176_49_49.jar",
+    "sha256": "a98c1853a4a3ab2b845f19617b8ed6aed682aa77e818c13bae4ab95ebff8bd6e",
+    "bytes": 1843340,
+    "counts": {
+      "tags/worldgen/biome": 18,
+      "worldgen/structure": 28,
+      "worldgen/structure_set": 28,
+      "worldgen/template_pool": 28,
+      "tags/worldgen/structure": 1
+    }
+  },
+  {
+    "file": "Explorify_v1_6_5_mod.jar",
+    "sha256": "2dc76398b48b2aae9b4024642da098b0880125572de160cb5ecf91d102890cad",
+    "bytes": 767884,
+    "counts": {
+      "tags/worldgen/biome": 23,
+      "worldgen/structure": 23,
+      "worldgen/structure_set": 14,
+      "worldgen/template_pool": 57
+    }
+  },
+  {
+    "file": "Structory_Towers_26_2_v1_0_17.jar",
+    "sha256": "226d8cb187e0d4fb75571db017c0abb26176aec16586c337a1b5620f3805a372",
+    "bytes": 491515,
+    "counts": {
+      "tags/worldgen/biome": 17,
+      "tags/worldgen/structure": 1,
+      "worldgen/structure": 21,
+      "worldgen/structure_set": 5,
+      "worldgen/template_pool": 30
+    }
+  },
+  {
+    "file": "YungsBridges-1_21_1-NeoForge-5_1_1.jar",
+    "sha256": "bf93a85422a6b457358c3b56352641a97ec09cc37dec18b2cedcac2bd1ff9bec",
+    "bytes": 136820,
+    "counts": {
+      "tags/worldgen/biome": 5
+    }
+  },
+  {
+    "file": "YungsExtras-1_21_1-NeoForge-5_1_1.jar",
+    "sha256": "0cd26474e514f5dc3114aaf5ec7e049bcd285f0c5db191bb45223193f35df70d",
+    "bytes": 198183,
+    "counts": {
+      "tags/worldgen/biome": 3
+    }
+  },
+  {
+    "file": "aaa_particles-neoforge-1_21_1-2_3_3.jar",
+    "sha256": "948b3fc4d38d33a817596ad0b2d14c28976f8cfde801041b1c58cf1fef505f98",
+    "bytes": 5595791,
+    "counts": {}
+  },
+  {
+    "file": "archaion-1_21_1-1_4_4.jar",
+    "sha256": "15431063b27f43aa5321100bc29acc9b49ab0c97e24e16627a759a0312ea0f11",
+    "bytes": 7255820,
+    "counts": {
+      "recipe": 4,
+      "tags/worldgen/structure": 1,
+      "worldgen/structure": 1,
+      "worldgen/structure_set": 1,
+      "worldgen/template_pool": 6,
+      "tags/item": 8
+    }
+  },
+  {
+    "file": "create_easy_structures-0_2a-neoforge-1_21_1.jar",
+    "sha256": "8d5949114e9dd506c4a8598f789e63678fdf6b2b90f40a8e6ef2babc6f56029f",
+    "bytes": 469490,
+    "counts": {
+      "tags/worldgen/biome": 1,
+      "worldgen/structure": 16,
+      "worldgen/structure_set": 16,
+      "worldgen/template_pool": 30
+    }
+  }
+]

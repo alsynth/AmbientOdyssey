@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Validate the Test 5 audit revision from its reproducible offline evidence."""
-import argparse,copy,csv,gzip,hashlib,json,zipfile
+import argparse,copy,csv,gzip,hashlib,json,re,zipfile
 from pathlib import Path
 from audit_jars_031 import load_json,overlay_tags,resolve_tag,resolve_selector
 from nbt_audit_031 import NbtReader,plain,template_details,migrate_waystone_jigsaw
@@ -69,7 +69,7 @@ def validate(archive=None):
     check('Every new pool template has actual source provenance',locations==set(pool_map),'52 template provenance rows')
     migration=repairs['template_migrations']['ctov:village/waystone/sand'];raw=(R/migration['source']).read_bytes()
     emitted=(O/'config/paxi/datapacks/ao_structure_repairs/data/ctov/structure/village/waystone/sand.nbt').read_bytes()
-    check('Waystone migration deterministic from exact native input',hashlib.sha256(raw).hexdigest()==migration['source_sha256'] and emitted==migrate_waystone_jigsaw(raw),'Native Waystones desert template')
+    check('Waystone migration deterministic from exact native input',hashlib.sha256(raw).hexdigest()==migration['source_sha256'] and gzip.decompress(emitted)==gzip.decompress(migrate_waystone_jigsaw(raw)) and hashlib.sha256(emitted).hexdigest()=='40620134589628ae5e6752bbc231aa4ce75dd6a5d910d9a3e1abb4143ce4ff7c','Native Waystones desert template')
     before=template_details(raw);after=template_details(emitted)
     check('Waystone geometry/palette/entities retained',before['size']==after['size'] and before['palette_ids']==after['palette_ids'] and before['entities']==after['entities'] and [j['pos'] for j in before['jigsaws']]==[j['pos'] for j in after['jigsaws']],'Only legacy connector NBT and orientation schema migrated')
     check('Waystone connector matches CTOV parent target',all(j['nbt']['name']=='minecraft:building_entrance' and j['nbt']['pool']=='minecraft:empty' for j in after['jigsaws']),'Parent Christmas town center target confirmed in original CTOV NBT')
@@ -97,11 +97,13 @@ def validate(archive=None):
     check('Curated CTOV/Rustic eligibility changes preserve non-biome fields',len(patches)==36 and all({k:v for k,v in compat['structures'][row['structure']].items() if k!='biomes'}=={k:v for k,v in native['worldgen/structure'][row['structure']][-1]['data'].items() if k!='biomes'} for row in patches),'32 CTOV + 4 Rustic definitions')
     staged=json.loads((R/'approved-structure-additions.json').read_text())
     locked=json.loads((R/'release-lock.json').read_text())
-    check('Eight staged additions have no invented binary certification',len(staged['mods'])==8 and staged['manifest_mutation'] is False and all(row['enabled'] is False and row['binary_audited'] is False and row['dependencies_verified'] is False and row['sha256'] is None and row['status']=='BLOCKED_JAR_AUDIT' for row in staged['mods']),'Metadata only; exact binary/dependency audit required')
+    HEX=re.compile(r'[0-9a-f]{64}')
+    check('Nine Test 6 mods recorded as installed with supplied-binary SHA-256, audited, dependencies verified',len(staged['mods'])==9 and staged['manifest_mutation'] is True and all(row['enabled'] is True and row['binary_audited'] is True and row['dependencies_verified'] is True and HEX.fullmatch(row['sha256'] or '') and row['status']=='INSTALLED_STATIC_AUDITED' for row in staged['mods']),'Static audit only; no runtime test')
     staged_ids={row['projectID'] for row in staged['mods']}
     reference=json.loads((E/'test4-baseline.json').read_text())['manifest']
     current_ids={row['projectID'] for row in reference['files']}
-    check('Approved additions absent from locked installed projects',not staged_ids&current_ids and not staged_ids&{row['projectId'] for row in locked['additions'].values()},'No silent installation or unselected substitution')
+    check('Test 6 mods are new projects pinned in the lock with matching file IDs',not staged_ids&current_ids and {row['projectID']:row['fileID'] for row in staged['mods']}=={v['projectId']:v['id'] for k,v in locked['additions'].items() if k.startswith('test6-')},'No unselected substitution')
+    check('Archaion dependency AAA Particles is pinned',979809 in staged_ids and 1620396 in staged_ids,'aaa_particles >= 2.2.3 satisfied by 2.3.3')
     check('Born in Chaos removal retained in locked sources',locked['remove_projects']['born-in-chaos']==686437 and 686437 not in current_ids,'Project 686437 excluded')
     screen=list(csv.DictReader((ROOT/'INSTALLED_MOD_STRUCTURE_SCREENING.csv').open()))
     future=list(csv.DictReader((ROOT/'FUTURE_MOD_STRUCTURE_SCREENING.csv').open()))
@@ -109,13 +111,13 @@ def validate(archive=None):
     if archive:
         with zipfile.ZipFile(archive) as z:
             manifest=json.loads(z.read('manifest.json'))
-            check('Export excludes Born in Chaos and unaudited additions',not ({686437}|staged_ids)&{row['projectID'] for row in manifest['files']},'No eight additions or removed Born in Chaos project in built manifest')
+            check('Export includes the nine Test 6 projects and excludes Born in Chaos',staged_ids<={row['projectID'] for row in manifest['files']} and 686437 not in {row['projectID'] for row in manifest['files']},'9 Test 6 projects present; Born in Chaos absent')
             embedded=['README-0.3.1.md','MOD_STRUCTURE_SCREENING.md','MISSING_JARS.txt','APPROVED_ADDITION_JARS.txt','APPROVED_STRUCTURE_ADDITIONS.csv','FARMERS_STRUCTURE_CATALOG.csv','CODE_GENERATED_PLACEMENT_ROUTES.csv']
             check('Continuation reports embedded exactly',all(z.read('overrides/'+name)==(ROOT/name).read_bytes() for name in embedded),embedded)
     check('Curated donor roster unchanged',(R/'biome-roster.json').read_bytes()==(E/'baseline-test5/biome-roster.json').read_bytes(),'40 Overworld + 2 Nether')
     report['status']='PASS (expanded scoped static gates; runtime pending)'
     report['counts'].update({'farmers_variants':20,'new_recipe_gates':11,'client_model_repairs':len(repairs['client_models']),'code_generated_ctov_routes':74})
-    report['limitations'] += ['Eight approved new mods are metadata-pinned but not installed: exact binaries are unavailable, and their native dependency/Black Spiral checks remain blocked.',
+    report['limitations'] += ['Nine Test 6 mods are installed in the manifest after a static binary audit of user-supplied JARs only; no registry load, natural generation, density, clipping or performance test has been run. Explorify Black Spiral is left enabled by user decision pending a fresh-Nether check.',
                               'Cristel spacing/separation/frequency/member-removal code is inspected; live pack priority and non-native exclusion retention are not runtime-certified.',
                               'Native resource collisions remain enumerated; recorded snapshot precedence is not a game-launch result.']
     return report

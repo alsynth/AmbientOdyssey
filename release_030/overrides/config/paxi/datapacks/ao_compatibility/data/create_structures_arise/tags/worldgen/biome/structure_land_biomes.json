@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:pumpkin_patch",
+    "biomesoplenty:snowblossom_grove",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:prairie",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:skyris_vale",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "natures_spirit:floral_ridges",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:grassland",
+    "regions_unexplored:grassy_beach",
+    "regions_unexplored:maple_forest",
+    "regions_unexplored:orchard"
+  ]
+}

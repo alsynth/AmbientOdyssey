@@ -1,0 +1,36 @@
+{
+  "biomes": {
+    "type": "neoforge:or",
+    "values": [
+      [
+        "desert",
+        "plains"
+      ],
+      [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    ]
+  },
+  "max_distance_from_center": 64,
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "size": 1,
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 0
+  },
+  "start_pool": "create_structures_arise:createdesertwell",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "type": "minecraft:jigsaw",
+  "use_expansion_hack": false
+}

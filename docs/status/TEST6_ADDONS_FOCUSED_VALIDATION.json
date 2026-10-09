@@ -1,0 +1,282 @@
+{
+  "status": "PASS (Test 6 scoped static gates; runtime pending)",
+  "gameplay_tested": false,
+  "check_count": 35,
+  "checks": [
+    {
+      "check": "Native major set is End-only (aviary + 3 Heavenly)",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:aviary",
+        "dungeons_arise:heavenly_challenger",
+        "dungeons_arise:heavenly_conqueror",
+        "dungeons_arise:heavenly_rider"
+      ]
+    },
+    {
+      "check": "Native major grid/salt/frequency unchanged (End rate preserved)",
+      "passed": true,
+      "detail": {
+        "salt": 88371663,
+        "separation": 45,
+        "spacing": 50,
+        "type": "minecraft:random_spread",
+        "frequency": 0.7105263157894737
+      }
+    },
+    {
+      "check": "Overworld major owner: 50/45, frequency 0.80",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 50,
+        "separation": 45,
+        "salt": 1984010503,
+        "frequency": 0.8
+      }
+    },
+    {
+      "check": "Overworld major owner has 20 members and no End member",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "check": "Overworld/End major members disjoint, none duplicated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Mushroom Village absent from both major sets",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Mushroom Village has exactly one dedicated owner",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 40,
+        "separation": 20,
+        "salt": 1984010504,
+        "frequency": 0.5
+      }
+    },
+    {
+      "check": "Mushroom Village grid is rare-style (frequency <= 0.5, bounds valid)",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 40,
+        "separation": 20,
+        "salt": 1984010504,
+        "frequency": 0.5
+      }
+    },
+    {
+      "check": "Mushroom Village has one placement owner in the density pack",
+      "passed": true,
+      "detail": [
+        "ambient_odyssey:wda_mushroom_village"
+      ]
+    },
+    {
+      "check": "No WDA major structure has two owners in the density pack",
+      "passed": true,
+      "detail": {}
+    },
+    {
+      "check": "New owner salts unique within density pack",
+      "passed": true,
+      "detail": [
+        1984010503,
+        1984010504
+      ]
+    },
+    {
+      "check": "Bathhouse unchanged (112/48, 0.5)",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 112,
+        "separation": 48,
+        "salt": 1984010502,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        },
+        "frequency": 0.5
+      }
+    },
+    {
+      "check": "Ordinary WDA set unchanged (28/14, salt 1984010501, 5 members)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Mushroom Village biome tag replaces native with Mushroom Fields only",
+      "passed": true,
+      "detail": {
+        "replace": true,
+        "values": [
+          "minecraft:mushroom_fields"
+        ]
+      }
+    },
+    {
+      "check": "large_land_avoid points at the Overworld major owner, not the End-only native set",
+      "passed": true,
+      "detail": [
+        "ambient_odyssey:wda_major_overworld",
+        "idas:idas_rare",
+        "integrated_villages:regular_villages"
+      ]
+    },
+    {
+      "check": "minor_structures exclusion follows the Overworld major owner",
+      "passed": true,
+      "detail": {
+        "chunk_count": 10,
+        "other_set": "ambient_odyssey:wda_major_overworld"
+      }
+    },
+    {
+      "check": "Exclusion target set exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Cristel native toggles off for Overworld majors, Mushroom Village, Blimp, Coliseum, ordinary houses",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Cristel native toggles keep End members enabled",
+      "passed": true,
+      "detail": {
+        "dungeons_arise:heavenly_challenger": true,
+        "dungeons_arise:aviary": true,
+        "dungeons_arise:heavenly_conqueror": true,
+        "dungeons_arise:heavenly_rider": true
+      }
+    },
+    {
+      "check": "Cristel native major placement unchanged for End (0.7105)",
+      "passed": true,
+      "detail": {
+        "salt": 88371663,
+        "separation": 45,
+        "spacing": 50,
+        "frequency": 0.7105263157894737
+      }
+    },
+    {
+      "check": "Heavenly challenger Overworld clone set present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Heavenly conqueror Overworld clone set present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Heavenly rider Overworld clone set present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Farmers: all 20 sets present, salts 1984020000..19 unchanged",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "check": "Manifest pins exactly the nine Test 6 projects, no duplicate projects",
+      "passed": true,
+      "detail": {
+        "pins": 9,
+        "total": 246
+      }
+    },
+    {
+      "check": "Pins match the approved choices (Structory: Towers v1.0.17 by user decision; AAA Particles 2.3.3)",
+      "passed": true,
+      "detail": {
+        "1015146": 5812546,
+        "1015149": 5812553,
+        "297680": 6584803,
+        "1010066": 8837992,
+        "949158": 6344382,
+        "698309": 8082824,
+        "1620396": 8983496,
+        "783522": 8396885,
+        "979809": 9101011
+      }
+    },
+    {
+      "check": "Recorded SHA-256 values equal the audited JAR hashes",
+      "passed": true,
+      "detail": 9
+    },
+    {
+      "check": "No third-party JAR bundled in the export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "Derived selector tags are exported, additive (replace false) and use only roster IDs",
+      "passed": true,
+      "detail": {
+        "tags": 41,
+        "bad": [],
+        "missing": []
+      }
+    },
+    {
+      "check": "No Nether donor leaked into any derived Overworld selector",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Structure-level selector overrides keep every non-biome field and the native selector",
+      "passed": true,
+      "detail": [
+        "create_easy_structures:foresttracks",
+        "create_structures_arise:createdesertwell",
+        "create_structures_arise:createwitchhut",
+        "structory_towers:pillager_lookout"
+      ]
+    },
+    {
+      "check": "Addon structure sets keep their shipped placement (no AO placement override)",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Integrated API disabled list still holds Small Blimp and Coliseum",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:coliseum",
+        "dungeons_arise:small_blimp",
+        "idas:lumber_camp/lumber_camp_bygmahogany",
+        "idas:lumber_camp/lumber_camp_bygredwood"
+      ]
+    },
+    {
+      "check": "Black Spiral is NOT disabled (user decision 9 Oct 2026; runtime Nether check pending)",
+      "passed": true,
+      "detail": "enabled by decision"
+    },
+    {
+      "check": "Curated-biome eligibility floors per addon (regression guard)",
+      "passed": true,
+      "detail": {
+        "additionalstructures": 105,
+        "create_structures_arise": 24,
+        "create_easy_structures": 16,
+        "explorify": 18,
+        "structory_towers": 14,
+        "archaion": 1
+      }
+    }
+  ]
+}

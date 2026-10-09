@@ -6,7 +6,8 @@ from audit_jars_031 import load_json,overlay_tags,resolve_tag,resource_id,resolv
 ROOT=Path(__file__).resolve().parent;R=ROOT/'release_030'
 
 def main(test4=None):
- snapshot=json.loads(gzip.decompress((R/'evidence/jar-resource-index-test5.json.gz').read_bytes()));native=snapshot['resources']
+ idx=R/'evidence/jar-resource-index-test6.json.gz'
+ snapshot=json.loads(gzip.decompress((idx if idx.exists() else R/'evidence/jar-resource-index-test5.json.gz').read_bytes()));native=snapshot['resources']
  roster=json.loads((R/'biome-roster.json').read_text());curated=sorted(ns+':'+n for ns,names in roster.items() for n in names)
  nether={'regions_unexplored:blackstone_basin','regions_unexplored:infernal_holt'};ow=set(curated)-nether
  extras=['ars_nouveau:archwood_forest','streamsreflowing:stream','quark:glimmering_weald','terrablender:deferred_placeholder']+sorted(id for id in native['worldgen/biome'] if id.startswith('alexscaves:'))
@@ -15,6 +16,8 @@ def main(test4=None):
  before_tags=overlay_tags(native['tags/worldgen/biome'],test4) if test4 else json.loads(gzip.decompress((R/'evidence/test4-biome-tag-graph.json.gz').read_bytes()))
  if not test4:
   new_jars=set(json.loads((R/'evidence/jar-audit-coverage-test5.json').read_text()).get('newly_recovered_logged_jars',[]))
+  t6=R/'evidence/test6-addon-jars.json'
+  if t6.exists():new_jars|={r['file'] for r in json.loads(t6.read_text())}
   for id,rows in native['tags/worldgen/biome'].items():
    additions=[row for row in rows if row['jar'] in new_jars]
    if additions:before_tags.setdefault(id,[]).extend(additions)
