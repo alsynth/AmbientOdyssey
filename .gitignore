@@ -1,0 +1,24 @@
+# Python and local development files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local Minecraft test and runtime data, not authoritative source
+.minecraft/
+server_runtime/
+local_mods/
+local_logs/
+local_worlds/
+crash-reports/
+run/
+
+# Locally generated releases; publish the curated outputs as GitHub Release assets
+dist/
+releases/
+*.log

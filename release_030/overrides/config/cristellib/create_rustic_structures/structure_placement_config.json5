@@ -1,0 +1,23 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "rustic_barn": {
+    "salt": 1218093568,
+    "separation": 10,
+    "spacing": 20
+  },
+  "rustic_smithy": {
+    "salt": 703989288,
+    "separation": 8,
+    "spacing": 16
+  },
+  "rustic_well": {
+    "salt": 1221516354,
+    "separation": 6,
+    "spacing": 12
+  },
+  "rustic_windmill": {
+    "salt": 1297317345,
+    "separation": 8,
+    "spacing": 16
+  }
+}

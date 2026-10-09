@@ -1,0 +1,401 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1",
+    "java/lang/Object",
+    "net/minecraft/server/packs/repository/Pack$ResourcesSupplier",
+    "BuiltInPackLoader.java",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader",
+    "buildPack",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPack;Lnet/minecraft/server/packs/PackType;)Lnet/minecraft/server/packs/repository/Pack;",
+    "net/minecraft/server/packs/repository/Pack$Metadata",
+    "net/minecraft/server/packs/repository/Pack",
+    "Metadata",
+    "ResourcesSupplier",
+    "val$pack",
+    "Lnet/minecraft/server/packs/PackResources;",
+    "<init>",
+    "(Lnet/minecraft/server/packs/PackResources;)V",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1;",
+    "openPrimary",
+    "(Lnet/minecraft/server/packs/PackLocationInfo;)Lnet/minecraft/server/packs/PackResources;",
+    "var1",
+    "Lorg/jetbrains/annotations/NotNull;",
+    "Lnet/minecraft/server/packs/PackLocationInfo;",
+    "openFull",
+    "(Lnet/minecraft/server/packs/PackLocationInfo;Lnet/minecraft/server/packs/repository/Pack$Metadata;)Lnet/minecraft/server/packs/PackResources;",
+    "packLocationInfo",
+    "metadata",
+    "overlays",
+    "()Ljava/util/List;",
+    "java/util/List",
+    "isEmpty",
+    "()Z",
+    "java/util/ArrayList",
+    "size",
+    "()I",
+    "(I)V",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "next",
+    "()Ljava/lang/Object;",
+    "java/lang/String",
+    "de/cristelknight/cristellib/builtinpacks/OverlayPack",
+    "createOverlay",
+    "(Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;",
+    "de/cristelknight/cristellib/PlatformHelper",
+    "(Lnet/minecraft/server/packs/PackResources;Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;",
+    "net/minecraft/server/packs/PackResources",
+    "add",
+    "(Ljava/lang/Object;)Z",
+    "net/minecraft/server/packs/CompositePackResources",
+    "(Lnet/minecraft/server/packs/PackResources;Ljava/util/List;)V",
+    "packWithOverlays",
+    "Lde/cristelknight/cristellib/builtinpacks/OverlayPack;",
+    "overlayPack",
+    "overlay",
+    "Ljava/lang/String;",
+    "Lnet/minecraft/server/packs/repository/Pack$Metadata;",
+    "Ljava/util/List<Lnet/minecraft/server/packs/PackResources;>;",
+    "Ljava/util/List;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "Signature",
+    "RuntimeInvisibleAnnotations",
+    "RuntimeInvisibleTypeAnnotations",
+    "MethodParameters",
+    "StackMapTable",
+    "LocalVariableTypeTable",
+    "InnerClasses",
+    "EnclosingMethod",
+    "SourceFile",
+    "NestHost"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Lnet/minecraft/server/packs/PackResources;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 5,
+          "op": "0x2a"
+        },
+        {
+          "offset": 6,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 9,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "openPrimary",
+      "descriptor": "(Lnet/minecraft/server/packs/PackLocationInfo;)Lnet/minecraft/server/packs/PackResources;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "openFull",
+      "descriptor": "(Lnet/minecraft/server/packs/PackLocationInfo;Lnet/minecraft/server/packs/repository/Pack$Metadata;)Lnet/minecraft/server/packs/PackResources;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/server/packs/repository/Pack$Metadata overlays ()Ljava/util/List;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "java/util/List isEmpty ()Z"
+        },
+        {
+          "offset": 9,
+          "op": "ifeq",
+          "args": "0008"
+        },
+        {
+          "offset": 12,
+          "op": "0x2a"
+        },
+        {
+          "offset": 13,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 16,
+          "op": "areturn"
+        },
+        {
+          "offset": 17,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 20,
+          "op": "0x59"
+        },
+        {
+          "offset": 21,
+          "op": "0x2c"
+        },
+        {
+          "offset": 22,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/server/packs/repository/Pack$Metadata overlays ()Ljava/util/List;"
+        },
+        {
+          "offset": 25,
+          "op": "invokeinterface",
+          "reference": "java/util/List size ()I"
+        },
+        {
+          "offset": 30,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> (I)V"
+        },
+        {
+          "offset": 33,
+          "op": "0x4e"
+        },
+        {
+          "offset": 34,
+          "op": "0x2c"
+        },
+        {
+          "offset": 35,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/server/packs/repository/Pack$Metadata overlays ()Ljava/util/List;"
+        },
+        {
+          "offset": 38,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 43,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 47,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 52,
+          "op": "ifeq",
+          "args": "004a"
+        },
+        {
+          "offset": 55,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 57,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 62,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 65,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 67,
+          "op": "0x2a"
+        },
+        {
+          "offset": 68,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 71,
+          "op": "0xc1",
+          "reference": "de/cristelknight/cristellib/builtinpacks/OverlayPack"
+        },
+        {
+          "offset": 74,
+          "op": "ifeq",
+          "args": "0018"
+        },
+        {
+          "offset": 77,
+          "op": "0x2a"
+        },
+        {
+          "offset": 78,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 81,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/builtinpacks/OverlayPack"
+        },
+        {
+          "offset": 84,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 86,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 88,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 90,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/builtinpacks/OverlayPack createOverlay (Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 95,
+          "op": "goto",
+          "args": "000c"
+        },
+        {
+          "offset": 98,
+          "op": "0x2a"
+        },
+        {
+          "offset": 99,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 102,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 104,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/PlatformHelper createOverlay (Lnet/minecraft/server/packs/PackResources;Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 107,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 109,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 111,
+          "op": "0xc6",
+          "args": "000c"
+        },
+        {
+          "offset": 114,
+          "op": "0x2d"
+        },
+        {
+          "offset": 115,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 117,
+          "op": "invokeinterface",
+          "reference": "java/util/List add (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 122,
+          "op": "0x57"
+        },
+        {
+          "offset": 123,
+          "op": "goto",
+          "args": "ffb2"
+        },
+        {
+          "offset": 126,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/CompositePackResources"
+        },
+        {
+          "offset": 129,
+          "op": "0x59"
+        },
+        {
+          "offset": 130,
+          "op": "0x2a"
+        },
+        {
+          "offset": 131,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader$1 val$pack Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 134,
+          "op": "0x2d"
+        },
+        {
+          "offset": 135,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/CompositePackResources <init> (Lnet/minecraft/server/packs/PackResources;Ljava/util/List;)V"
+        },
+        {
+          "offset": 138,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

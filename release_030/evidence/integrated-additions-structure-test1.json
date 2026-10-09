@@ -1,0 +1,128 @@
+{
+  "runtime_launched_here": false,
+  "addons": [
+    {
+      "slug": "integrated-patches",
+      "project_id": 1690092,
+      "file_id": 8995436,
+      "file_name": "integrated_patches v1.2.0-1.21.1.jar",
+      "sha256": "ef4a0e61dc034f7e48606f53216b8641eb903f5694cc804f8b6ec0c645199ac3",
+      "required_dependencies": [
+        {
+          "id": "minecraft",
+          "required_range": "[1.21.1]",
+          "installed_version": "1.21.1"
+        },
+        {
+          "id": "integrated_api",
+          "required_range": "[1.7.0,)",
+          "installed_version": "1.9.0"
+        }
+      ]
+    },
+    {
+      "slug": "integrated-mowzies-mobs",
+      "project_id": 1587709,
+      "file_id": 8960804,
+      "file_name": "IMM v1.3.2-1.21.1.jar",
+      "sha256": "d66ffa5b71ac3f7a36a68571d0d26b20ab4bce416722abf550f85d74da222428",
+      "required_dependencies": [
+        {
+          "id": "minecraft",
+          "required_range": "[1.21.1]",
+          "installed_version": "1.21.1"
+        },
+        {
+          "id": "integrated_api",
+          "required_range": "[1.7.0,)",
+          "installed_version": "1.9.0"
+        },
+        {
+          "id": "mowziesmobs",
+          "required_range": "*",
+          "installed_version": "1.8.2"
+        },
+        {
+          "id": "quark",
+          "required_range": "*",
+          "installed_version": "4.1-487"
+        },
+        {
+          "id": "supplementaries",
+          "required_range": "*",
+          "installed_version": "1.21.1-3.9.9"
+        },
+        {
+          "id": "amendments",
+          "required_range": "*",
+          "installed_version": "1.21-2.1.10"
+        }
+      ]
+    },
+    {
+      "slug": "integrated-bosses-of-mass-destruction",
+      "project_id": 1612974,
+      "file_id": 8895453,
+      "file_name": "IBOMD v1.0.0-1.21.1.jar",
+      "sha256": "219e0d7bb66e07592c91b749b158a16adf59749fdb9adf0a1c0c53d6b0fb6142",
+      "required_dependencies": [
+        {
+          "id": "minecraft",
+          "required_range": "[1.21.1]",
+          "installed_version": "1.21.1"
+        },
+        {
+          "id": "integrated_api",
+          "required_range": "[1.7.0,)",
+          "installed_version": "1.9.0"
+        },
+        {
+          "id": "bosses_of_mass_destruction",
+          "required_range": "*",
+          "installed_version": "1.3.3"
+        },
+        {
+          "id": "quark",
+          "required_range": "*",
+          "installed_version": "4.1-487"
+        },
+        {
+          "id": "supplementaries",
+          "required_range": "*",
+          "installed_version": "1.21.1-3.9.9"
+        },
+        {
+          "id": "amendments",
+          "required_range": "*",
+          "installed_version": "1.21-2.1.10"
+        }
+      ]
+    },
+    {
+      "slug": "amendments",
+      "project_id": 896746,
+      "file_id": 8825641,
+      "file_name": "amendments-1.21-2.1.10-neoforge.jar",
+      "sha256": "a2cbc46342c5f466f3b6e244f8820aa01f9d8381586b2c008b72fb77ae56045e",
+      "required_dependencies": [
+        {
+          "id": "neoforge",
+          "required_range": "*",
+          "installed_version": "21.1.252"
+        },
+        {
+          "id": "minecraft",
+          "required_range": "[1.21.1]",
+          "installed_version": "1.21.1"
+        },
+        {
+          "id": "moonlight",
+          "required_range": "[1.21-3.1.0c,)",
+          "installed_version": "1.21.1-3.7.1"
+        }
+      ]
+    }
+  ],
+  "moog_source": "https://github.com/FinnSetchell/MoogsStructureLib/blob/HEAD/src/main/java/com/finndog/moogs_structures/config/MslConfig.java",
+  "validation_basis": "Exact pinned JAR metadata and previous supplied run roster; no runtime launch in this environment"
+}

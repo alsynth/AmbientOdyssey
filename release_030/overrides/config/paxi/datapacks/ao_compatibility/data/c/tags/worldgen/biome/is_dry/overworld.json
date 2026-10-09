@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:highland",
+    "biomesoplenty:pumpkin_patch",
+    "biomesoplenty:volcano",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:prairie",
+    "biomeswevegone:sakura_grove",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges",
+    "regions_unexplored:ashen_woodland",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:grassland",
+    "regions_unexplored:orchard",
+    "regions_unexplored:rocky_meadow"
+  ]
+}

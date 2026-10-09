@@ -1,0 +1,1042 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/StructureConfigToggle",
+    "de/cristelknight/cristellib/StructureConfig",
+    "StructureConfigToggle.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "structuresForED",
+    "Lcom/google/common/base/Supplier;",
+    "Lcom/google/common/base/Supplier<Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Ljava/util/List<Lnet/minecraft/resources/ResourceLocation;>;>;>;",
+    "enableDisableConfig",
+    "Ljava/util/Map;",
+    "Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;>;",
+    "<init>",
+    "(Ljava/nio/file/Path;)V",
+    "path",
+    "java/util/HashMap",
+    "()V",
+    "java/util/ArrayList",
+    "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+    "this",
+    "Lde/cristelknight/cristellib/StructureConfigToggle;",
+    "Ljava/nio/file/Path;",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;)V",
+    "name",
+    "header",
+    "comments",
+    "structureSetHolders",
+    "de/cristelknight/cristellib/util/FileHelper",
+    "janksonPathFromString",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;",
+    "Ljava/lang/String;",
+    "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;",
+    "Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;",
+    "Ljava/util/List;",
+    "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;)V",
+    "()Ljava/lang/Object;",
+    "lambda$new$0",
+    "(Ljava/util/List;)Ljava/util/Map;",
+    "()Ljava/util/Map;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "get",
+    "(Ljava/util/List;)Lcom/google/common/base/Supplier;",
+    "com/google/common/base/Suppliers",
+    "memoize",
+    "(Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;",
+    "addChanges",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+    "modId",
+    "setLocation",
+    "java/util/Map",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "de/cristelknight/cristellib/config/structure/toggle/ToggleConfig",
+    "hasDisabledStructure",
+    "()Z",
+    "getStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lcom/google/gson/JsonElement;",
+    "com/google/gson/JsonObject",
+    "com/google/gson/JsonElement",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Set for {} {} is not a JsonObject, skipping...",
+    "org/apache/logging/log4j/Logger",
+    "warn",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "removeStructureInSets",
+    "(Lcom/google/gson/JsonObject;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;Lnet/minecraft/resources/ResourceLocation;)V",
+    "de/cristelknight/cristellib/CristelLib",
+    "CONFIG_PACK",
+    "Lde/cristelknight/cristellib/builtinpacks/RuntimePack;",
+    "de/cristelknight/cristellib/builtinpacks/RuntimePack",
+    "addStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+    "structureSet",
+    "Lcom/google/gson/JsonObject;",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "setConfig",
+    "Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;",
+    "structureSetElement",
+    "Lcom/google/gson/JsonElement;",
+    "structures",
+    "(Ljava/lang/String;)Lcom/google/gson/JsonElement;",
+    "getAsJsonArray",
+    "()Lcom/google/gson/JsonArray;",
+    "com/google/gson/JsonArray",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "next",
+    "getAsJsonObject",
+    "()Lcom/google/gson/JsonObject;",
+    "structure",
+    "getAsString",
+    "()Ljava/lang/String;",
+    "net/minecraft/resources/ResourceLocation",
+    "tryParse",
+    "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "java/util/Objects",
+    "requireNonNull",
+    "toDefaultString",
+    "(Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;",
+    "containsStructure",
+    "(Ljava/lang/String;)Z",
+    "{} is not included in: {} for config with path: {}",
+    "getPath",
+    "()Ljava/nio/file/Path;",
+    "error",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "java/lang/String",
+    "isStructureDisabled",
+    "remove",
+    "structureName",
+    "array",
+    "Lcom/google/gson/JsonArray;",
+    "structureIterator",
+    "Ljava/util/Iterator<Lcom/google/gson/JsonElement;>;",
+    "Ljava/util/Iterator;",
+    "writeConfig",
+    "(Z)V",
+    "override",
+    "java/nio/file/Path",
+    "toFile",
+    "()Ljava/io/File;",
+    "java/io/File",
+    "exists",
+    "de/cristelknight/cristellib/config/ConfigManager",
+    "createToggleConfig",
+    "(Lde/cristelknight/cristellib/StructureConfigToggle;)V",
+    "Z",
+    "readConfig",
+    "readToggleConfig",
+    "(Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/Map;",
+    "getDefaultStructureToggles",
+    "()Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Ljava/util/List<Lnet/minecraft/resources/ResourceLocation;>;>;",
+    "com/google/common/base/Supplier",
+    "getToggleConfigs",
+    "()Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;>;",
+    "getConfigKeys",
+    "()Ljava/util/Set;",
+    "()Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;",
+    "keySet",
+    "updateEDConfig",
+    "(Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;)V",
+    "key",
+    "config",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "resetConfigs",
+    "getType",
+    "()Lde/cristelknight/cristellib/config/ConfigType;",
+    "de/cristelknight/cristellib/config/ConfigType",
+    "TOGGLE",
+    "Lde/cristelknight/cristellib/config/ConfigType;",
+    "de/cristelknight/cristellib/config/structure/ReadStructureSets",
+    "readSetsAndAddStructures",
+    "Signature",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "LocalVariableTypeTable",
+    "StackMapTable",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/nio/file/Path;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x1"
+        },
+        {
+          "offset": 3,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 6,
+          "op": "0x59"
+        },
+        {
+          "offset": 7,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 10,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 13,
+          "op": "0x59"
+        },
+        {
+          "offset": 14,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> ()V"
+        },
+        {
+          "offset": 17,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 20,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2c"
+        },
+        {
+          "offset": 2,
+          "op": "0x2b"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/FileHelper janksonPathFromString (Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 6,
+          "op": "0x2d"
+        },
+        {
+          "offset": 7,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 9,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 11,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 14,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x2c"
+        },
+        {
+          "offset": 3,
+          "op": "0x2d"
+        },
+        {
+          "offset": 4,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 6,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfig <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 9,
+          "op": "0x2a"
+        },
+        {
+          "offset": 10,
+          "op": "0x1"
+        },
+        {
+          "offset": 11,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 17,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 72)"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "com/google/common/base/Suppliers memoize (Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;"
+        },
+        {
+          "offset": 25,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle structuresForED Lcom/google/common/base/Supplier;"
+        },
+        {
+          "offset": 28,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addChanges",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 10,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/ToggleConfig"
+        },
+        {
+          "offset": 13,
+          "op": "0x4e"
+        },
+        {
+          "offset": 14,
+          "op": "0x2d"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/ToggleConfig hasDisabledStructure ()Z"
+        },
+        {
+          "offset": 18,
+          "op": "ifne",
+          "args": "0005"
+        },
+        {
+          "offset": 21,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 22,
+          "op": "ireturn"
+        },
+        {
+          "offset": 23,
+          "op": "0x2c"
+        },
+        {
+          "offset": 24,
+          "op": "0x2b"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getStructureSet (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 28,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 30,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 32,
+          "op": "0xc1",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 35,
+          "op": "ifeq",
+          "args": "000d"
+        },
+        {
+          "offset": 38,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 40,
+          "op": "checkcast",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 43,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 45,
+          "op": "goto",
+          "args": "0011"
+        },
+        {
+          "offset": 48,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 51,
+          "op": "ldc",
+          "reference": "Set for {} {} is not a JsonObject, skipping..."
+        },
+        {
+          "offset": 53,
+          "op": "0x2b"
+        },
+        {
+          "offset": 54,
+          "op": "0x2c"
+        },
+        {
+          "offset": 55,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 60,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 61,
+          "op": "ireturn"
+        },
+        {
+          "offset": 62,
+          "op": "0x2a"
+        },
+        {
+          "offset": 63,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 65,
+          "op": "0x2d"
+        },
+        {
+          "offset": 66,
+          "op": "0x2c"
+        },
+        {
+          "offset": 67,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle removeStructureInSets (Lcom/google/gson/JsonObject;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;Lnet/minecraft/resources/ResourceLocation;)V"
+        },
+        {
+          "offset": 70,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/CristelLib CONFIG_PACK Lde/cristelknight/cristellib/builtinpacks/RuntimePack;"
+        },
+        {
+          "offset": 73,
+          "op": "0x2c"
+        },
+        {
+          "offset": 74,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 76,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addStructureSet (Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 79,
+          "op": "0x57"
+        },
+        {
+          "offset": 80,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 81,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "removeStructureInSets",
+      "descriptor": "(Lcom/google/gson/JsonObject;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;Lnet/minecraft/resources/ResourceLocation;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "structures"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject get (Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonElement getAsJsonArray ()Lcom/google/gson/JsonArray;"
+        },
+        {
+          "offset": 9,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 11,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonArray iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 16,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 18,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 20,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 25,
+          "op": "ifeq",
+          "args": "005b"
+        },
+        {
+          "offset": 28,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 30,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 35,
+          "op": "checkcast",
+          "reference": "com/google/gson/JsonElement"
+        },
+        {
+          "offset": 38,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 40,
+          "op": "0x2a"
+        },
+        {
+          "offset": 41,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 43,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonElement getAsJsonObject ()Lcom/google/gson/JsonObject;"
+        },
+        {
+          "offset": 46,
+          "op": "ldc",
+          "reference": "structure"
+        },
+        {
+          "offset": 48,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject get (Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 51,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonElement getAsString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 54,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation tryParse (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 57,
+          "op": "invokestatic",
+          "reference": "java/util/Objects requireNonNull (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 60,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 63,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle toDefaultString (Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;"
+        },
+        {
+          "offset": 66,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 68,
+          "op": "0x2c"
+        },
+        {
+          "offset": 69,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 71,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/ToggleConfig containsStructure (Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 74,
+          "op": "ifne",
+          "args": "0017"
+        },
+        {
+          "offset": 77,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 80,
+          "op": "ldc",
+          "reference": "{} is not included in: {} for config with path: {}"
+        },
+        {
+          "offset": 82,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 84,
+          "op": "0x2d"
+        },
+        {
+          "offset": 85,
+          "op": "0x2a"
+        },
+        {
+          "offset": 86,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getPath ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 89,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger error (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 94,
+          "op": "goto",
+          "args": "ffb4"
+        },
+        {
+          "offset": 97,
+          "op": "0x2c"
+        },
+        {
+          "offset": 98,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 100,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/ToggleConfig isStructureDisabled (Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 103,
+          "op": "ifeq",
+          "args": "000a"
+        },
+        {
+          "offset": 106,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 108,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator remove ()V"
+        },
+        {
+          "offset": 113,
+          "op": "goto",
+          "args": "ffa1"
+        },
+        {
+          "offset": 116,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "writeConfig",
+      "descriptor": "(Z)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x1b"
+        },
+        {
+          "offset": 1,
+          "op": "ifne",
+          "args": "0013"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getPath ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 8,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path toFile ()Ljava/io/File;"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "java/io/File exists ()Z"
+        },
+        {
+          "offset": 16,
+          "op": "ifeq",
+          "args": "0004"
+        },
+        {
+          "offset": 19,
+          "op": "return"
+        },
+        {
+          "offset": 20,
+          "op": "0x2a"
+        },
+        {
+          "offset": 21,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigManager createToggleConfig (Lde/cristelknight/cristellib/StructureConfigToggle;)V"
+        },
+        {
+          "offset": 24,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "readConfig",
+      "descriptor": "(Z)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "0xc6",
+          "args": "0007"
+        },
+        {
+          "offset": 7,
+          "op": "0x1b"
+        },
+        {
+          "offset": 8,
+          "op": "ifeq",
+          "args": "000b"
+        },
+        {
+          "offset": 11,
+          "op": "0x2a"
+        },
+        {
+          "offset": 12,
+          "op": "0x2a"
+        },
+        {
+          "offset": 13,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigManager readToggleConfig (Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/Map;"
+        },
+        {
+          "offset": 16,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 19,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getDefaultStructureToggles",
+      "descriptor": "()Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle structuresForED Lcom/google/common/base/Supplier;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "com/google/common/base/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 9,
+          "op": "checkcast",
+          "reference": "java/util/Map"
+        },
+        {
+          "offset": 12,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getToggleConfigs",
+      "descriptor": "()Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getConfigKeys",
+      "descriptor": "()Ljava/util/Set;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "java/util/Map keySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "updateEDConfig",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2b"
+        },
+        {
+          "offset": 5,
+          "op": "0x2c"
+        },
+        {
+          "offset": 6,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 11,
+          "op": "0x57"
+        },
+        {
+          "offset": 12,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "resetConfigs",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x1"
+        },
+        {
+          "offset": 2,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle enableDisableConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 5,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getType",
+      "descriptor": "()Lde/cristelknight/cristellib/config/ConfigType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigType TOGGLE Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 3,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$new$0",
+      "descriptor": "(Ljava/util/List;)Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/structure/ReadStructureSets readSetsAndAddStructures (Ljava/util/List;)Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

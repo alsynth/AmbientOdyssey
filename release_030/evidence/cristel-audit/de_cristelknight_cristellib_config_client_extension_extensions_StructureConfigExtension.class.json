@@ -1,0 +1,4470 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension",
+    "de/cristelknight/cristellib/config/client/extension/ConfigScreenExtension",
+    "StructureConfigExtension.java",
+    "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry",
+    "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig",
+    "Entry",
+    "java/util/Map$Entry",
+    "java/util/Map",
+    "net/minecraft/network/chat/ClickEvent$Action",
+    "net/minecraft/network/chat/ClickEvent",
+    "Action",
+    "de/cristelknight/cristellib/config/client/extension/ExtensionRegistry$LoadPredicate",
+    "de/cristelknight/cristellib/config/client/extension/ExtensionRegistry",
+    "LoadPredicate",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "clientStructureConfigs",
+    "Ljava/util/Set;",
+    "Ljava/util/Set<Lde/cristelknight/cristellib/config/client/structure/ClientStructureConfig;>;",
+    "SHOULD_LOAD",
+    "Lde/cristelknight/cristellib/config/client/extension/ExtensionRegistry$LoadPredicate;",
+    "$assertionsDisabled",
+    "Z",
+    "<init>",
+    "(Ljava/lang/String;)V",
+    "modId",
+    "java/util/HashSet",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension;",
+    "Ljava/lang/String;",
+    "addToBuilder",
+    "(Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;)V",
+    "builder",
+    "entryBuilder",
+    "de/cristelknight/cristellib/CristelLibRegistry",
+    "getConfigMap",
+    "()Lcom/google/common/collect/ImmutableMap;",
+    "com/google/common/collect/ImmutableMap",
+    "get",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java/util/Set",
+    "sortStructureSets",
+    "(Ljava/util/Set;)Ljava/util/List;",
+    "java/util/List",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "()Z",
+    "next",
+    "()Ljava/lang/Object;",
+    "de/cristelknight/cristellib/StructureConfig",
+    "getType",
+    "()Lde/cristelknight/cristellib/config/ConfigType;",
+    "de/cristelknight/cristellib/config/ConfigType",
+    "PLACEMENT",
+    "Lde/cristelknight/cristellib/config/ConfigType;",
+    "equals",
+    "(Ljava/lang/Object;)Z",
+    "de/cristelknight/cristellib/StructureConfigPlacement",
+    "addPlacementCategory",
+    "(Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/StructureConfigPlacement;)V",
+    "de/cristelknight/cristellib/StructureConfigToggle",
+    "addEDCategory",
+    "(Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/StructureConfigToggle;)V",
+    "structureConfig",
+    "Lde/cristelknight/cristellib/StructureConfig;",
+    "Lme/shedaniel/clothconfig2/api/ConfigBuilder;",
+    "Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;",
+    "cristellib.placementCategoryTitle",
+    "net/minecraft/network/chat/Component",
+    "translatable",
+    "(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;",
+    "me/shedaniel/clothconfig2/api/ConfigBuilder",
+    "getOrCreateCategory",
+    "(Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/api/ConfigCategory;",
+    "addHeader",
+    "(Lde/cristelknight/cristellib/StructureConfig;Lme/shedaniel/clothconfig2/api/ConfigCategory;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;)V",
+    "getPlacementConfigs",
+    "()Ljava/util/Map;",
+    "getDefaultStructurePlacements",
+    "java/util/HashMap",
+    "de/cristelknight/cristellib/util/Util",
+    "sortedKeyList",
+    "(Ljava/util/Map;)Ljava/util/List;",
+    "me/shedaniel/clothconfig2/api/ConfigEntryBuilder",
+    "me/shedaniel/clothconfig2/api/ConfigCategory",
+    "net/minecraft/resources/ResourceLocation",
+    "de/cristelknight/cristellib/config/structure/placement/PlacementConfig",
+    "getWarn",
+    "(Lde/cristelknight/cristellib/StructureConfig;Lnet/minecraft/resources/ResourceLocation;)V",
+    "toDefaultString",
+    "(Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;",
+    "literal",
+    "startSubCategory",
+    "(Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;",
+    "getComments",
+    "de/cristelknight/cristellib/config/client/ScreenBuilder",
+    "tooltip",
+    "(Ljava/lang/String;Ljava/util/Map;)Ljava/util/Optional;",
+    "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder",
+    "setTooltip",
+    "(Ljava/util/Optional;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;",
+    "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig",
+    "frequency",
+    "()D",
+    "frequencyEntry",
+    "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;DDLme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+    "salt",
+    "()I",
+    "intEntry",
+    "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Ljava/lang/String;IILme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+    "separation",
+    "spacing",
+    "(Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;)V",
+    "build",
+    "()Lme/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry;",
+    "addEntry",
+    "(Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Lme/shedaniel/clothconfig2/api/ConfigCategory;",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig",
+    "(Lde/cristelknight/cristellib/StructureConfig;Ljava/util/Map;Ljava/util/Map;)V",
+    "add",
+    "currentConfig",
+    "Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;",
+    "defaultConfig",
+    "structureSetName",
+    "subCategory",
+    "Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;",
+    "clientPlacementConfig",
+    "Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;",
+    "structureSetLocation",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "Lde/cristelknight/cristellib/StructureConfigPlacement;",
+    "placementCategory",
+    "Lme/shedaniel/clothconfig2/api/ConfigCategory;",
+    "placementConfigs",
+    "Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;>;",
+    "Ljava/util/Map;",
+    "defaultPlacementConfigs",
+    "clientPlacementConfigs",
+    "Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;>;",
+    "cristellib.toggleCategoryTitle",
+    "de/cristelknight/cristellib/config/structure/toggle/ToggleConfigTransformer",
+    "mapToNestedStructuresWithValues",
+    "(Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/Map;",
+    "java/lang/String",
+    "",
+    "checkForSingle",
+    "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;Lme/shedaniel/clothconfig2/api/ConfigCategory;Ljava/lang/String;)Z",
+    "addEDSubCategory",
+    "(Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Ljava/util/Map;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;)V",
+    "toDefaultId",
+    "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "de/cristelknight/cristellib/config/client/structure/ClientEDConfig",
+    "(Ljava/util/Map;)V",
+    "structures",
+    "Ljava/util/Map<Ljava/lang/String;Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;>;",
+    "rootSubCategory",
+    "nestedEDConfig",
+    "Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;",
+    "Lde/cristelknight/cristellib/StructureConfigToggle;",
+    "edCategory",
+    "nestedStructureMap",
+    "Ljava/util/Map<Ljava/lang/String;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;>;",
+    "clientEDConfigs",
+    "Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/client/structure/ClientEDConfig;>;",
+    "(Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;>;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;)V",
+    "rootCategory",
+    "parent",
+    "edConfig",
+    "pathPrefix",
+    "entries",
+    "isEmpty",
+    "\u0001/\u0001",
+    "java/lang/invoke/StringConcatFactory",
+    "makeConcatWithConstants",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+    "isBoolean",
+    "value",
+    "()Ljava/lang/Boolean;",
+    "java/lang/Boolean",
+    "booleanValue",
+    "startBooleanToggle",
+    "(Lnet/minecraft/network/chat/Component;Z)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;",
+    "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder",
+    "setDefaultValue",
+    "(Z)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;",
+    "lambda$addEDSubCategory$1",
+    "(Ljava/lang/String;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/Optional;",
+    "()Ljava/util/Optional;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "(Ljava/lang/String;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/function/Supplier;",
+    "setTooltipSupplier",
+    "(Ljava/util/function/Supplier;)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;",
+    "()Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;",
+    "getToggleSubWarn",
+    "(Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;Ljava/lang/String;)Z",
+    "me/shedaniel/clothconfig2/gui/entries/BooleanListEntry",
+    "(Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z",
+    "\u0001.\u0001",
+    "nested",
+    "()Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;",
+    "java/lang/Object",
+    "toggle",
+    "Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;",
+    "Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry;",
+    "fullPath",
+    "key",
+    "Ljava/util/Map<Ljava/lang/String;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry;>;",
+    "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map<Ljava/lang/String;Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;>;Lme/shedaniel/clothconfig2/api/ConfigCategory;Ljava/lang/String;)Z",
+    "size",
+    "values",
+    "()Ljava/util/Collection;",
+    "getFirst",
+    "(Ljava/util/Collection;)Ljava/lang/Object;",
+    "keySet",
+    "()Ljava/util/Set;",
+    "java/lang/AssertionError",
+    "net/minecraft/network/chat/MutableComponent",
+    "java/util/Optional",
+    "orElse",
+    "[Lnet/minecraft/network/chat/Component;",
+    "([Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;",
+    "entry",
+    "component",
+    "onSave",
+    "java/util/ArrayList",
+    "()Lde/cristelknight/cristellib/StructureConfig;",
+    "updatePlacements",
+    "(Lde/cristelknight/cristellib/StructureConfigPlacement;Ljava/util/Map;)V",
+    "updateToggles",
+    "(Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;)V",
+    "writeConfig",
+    "(Z)V",
+    "addSetsToRuntimePack",
+    "(Ljava/util/Collection;)V",
+    "clientStructureConfig",
+    "Lde/cristelknight/cristellib/config/client/structure/ClientStructureConfig;",
+    "configs",
+    "Ljava/util/List<Lde/cristelknight/cristellib/StructureConfig;>;",
+    "Ljava/util/List;",
+    "(Lde/cristelknight/cristellib/StructureConfigPlacement;Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;>;)V",
+    "entrySet",
+    "getKey",
+    "getValue",
+    "toPlacement",
+    "()Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;",
+    "updatePlacement",
+    "(Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;)V",
+    "Ljava/util/Map$Entry<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;>;",
+    "Ljava/util/Map$Entry;",
+    "(Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/client/structure/ClientEDConfig;>;)V",
+    "toED",
+    "()Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;",
+    "updateEDConfig",
+    "(Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;)V",
+    "Ljava/util/Map$Entry<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/client/structure/ClientEDConfig;>;",
+    "configEntry",
+    "name",
+    "defaultValue",
+    "startIntField",
+    "(Lnet/minecraft/network/chat/Component;I)Lme/shedaniel/clothconfig2/impl/builders/IntFieldBuilder;",
+    "me/shedaniel/clothconfig2/impl/builders/IntFieldBuilder",
+    "(I)Lme/shedaniel/clothconfig2/impl/builders/IntFieldBuilder;",
+    "()Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+    "I",
+    "Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+    "startDoubleField",
+    "(Lnet/minecraft/network/chat/Component;D)Lme/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder;",
+    "me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder",
+    "(D)Lme/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder;",
+    "setMin",
+    "setMax",
+    "()Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+    "D",
+    "Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Structure Set: {} has no default config, skipping!\nThis probably indicates that this config file is outdated and should be deleted to re-create it. (Path: {})",
+    "toString",
+    "()Ljava/lang/String;",
+    "getPath",
+    "()Ljava/nio/file/Path;",
+    "org/apache/logging/log4j/Logger",
+    "warn",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "getDefaultStructureToggles",
+    "contains",
+    "Structure: {} has no default config, skipping!\nThis probably indicates that this config file is outdated and should be deleted to re-create it. (Path: {})",
+    "setLocation",
+    "Ljava/util/List<Lnet/minecraft/resources/ResourceLocation;>;",
+    "configCategory",
+    "isAutoGenerated",
+    "de/cristelknight/cristellib/autoconfig/ACInfoData",
+    "currentData",
+    "containsKey",
+    "cristellib.autoCategoryInfo",
+    "MOD_COMPONENT",
+    "Lnet/minecraft/network/chat/Component;",
+    "(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;",
+    "lambda$addHeader$2",
+    "(Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;",
+    "apply",
+    "()Ljava/util/function/UnaryOperator;",
+    "withStyle",
+    "(Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/MutableComponent;",
+    "startTextDescription",
+    "(Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder;",
+    "me/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder",
+    "()Lme/shedaniel/clothconfig2/gui/entries/TextListEntry;",
+    "getHeader",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "header",
+    "=====",
+    "(Ljava/lang/CharSequence;)Z",
+    "lastIndexOf",
+    "(Ljava/lang/String;)I",
+    "substring",
+    "(II)Ljava/lang/String;",
+    "lines",
+    "()Ljava/util/stream/Stream;",
+    "java/util/stream/Stream",
+    "toList",
+    "()Ljava/util/List;",
+    "(I)Ljava/lang/Object;",
+    "isBlank",
+    "removeLast",
+    "java/lang/StringBuilder",
+    "(Ljava/lang/Object;)V",
+    "lambda$getHeader$3",
+    "(Ljava/lang/StringBuilder;Ljava/lang/String;)V",
+    "accept",
+    "(Ljava/lang/StringBuilder;)Ljava/util/function/Consumer;",
+    "forEach",
+    "(Ljava/util/function/Consumer;)V",
+    "\t",
+    "    ",
+    "replace",
+    "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;",
+    "trim",
+    "Ljava/lang/StringBuilder;",
+    "start",
+    "list",
+    "Ljava/util/List<Ljava/lang/String;>;",
+    "separator",
+    "(Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;)Ljava/util/List<Lde/cristelknight/cristellib/StructureConfig;>;",
+    "structureConfigs",
+    "lambda$sortStructureSets$4",
+    "(Ljava/util/List;Lde/cristelknight/cristellib/StructureConfig;)V",
+    "(Lde/cristelknight/cristellib/StructureConfig;)V",
+    "(Ljava/util/List;)Ljava/util/function/Consumer;",
+    "Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;",
+    "sortedList",
+    "priority",
+    "TOGGLE",
+    "addFirst",
+    "addLast",
+    "line",
+    "append",
+    "(Ljava/lang/String;)Ljava/lang/StringBuilder;",
+    "\n",
+    "s",
+    "OPEN_URL",
+    "Lnet/minecraft/network/chat/ClickEvent$Action;",
+    "https://github.com/Cristelknight999/Cristel-Lib/wiki/5.-Controlling-Structure-Auto-Config-(for-Mod-Authors)",
+    "(Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)V",
+    "net/minecraft/network/chat/Style",
+    "withClickEvent",
+    "(Lnet/minecraft/network/chat/ClickEvent;)Lnet/minecraft/network/chat/Style;",
+    "Lnet/minecraft/network/chat/Style;",
+    "lambda$static$0",
+    "(Ljava/lang/String;)Z",
+    "de/cristelknight/cristellib/autoconfig/ACConfig",
+    "de/cristelknight/cristellib/config/simple/ConfigRegistry",
+    "(Ljava/lang/Class;)Ljava/lang/Object;",
+    "disableAutoConfig",
+    "disableAutoConfigScreens",
+    "clientExcludedMods",
+    "acConfig",
+    "Lde/cristelknight/cristellib/autoconfig/ACConfig;",
+    "structureEnabled",
+    "<clinit>",
+    "java/lang/Class",
+    "desiredAssertionStatus",
+    "test",
+    "()Lde/cristelknight/cristellib/config/client/extension/ExtensionRegistry$LoadPredicate;",
+    "Signature",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "StackMapTable",
+    "LocalVariableTypeTable",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/lang/String;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/extension/ConfigScreenExtension <init> (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 5,
+          "op": "0x2a"
+        },
+        {
+          "offset": 6,
+          "op": "new",
+          "reference": "java/util/HashSet"
+        },
+        {
+          "offset": 9,
+          "op": "0x59"
+        },
+        {
+          "offset": 10,
+          "op": "invokespecial",
+          "reference": "java/util/HashSet <init> ()V"
+        },
+        {
+          "offset": 13,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension clientStructureConfigs Ljava/util/Set;"
+        },
+        {
+          "offset": 16,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addToBuilder",
+      "descriptor": "(Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry getConfigMap ()Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension modId Ljava/lang/String;"
+        },
+        {
+          "offset": 8,
+          "op": "invokevirtual",
+          "reference": "com/google/common/collect/ImmutableMap get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 11,
+          "op": "checkcast",
+          "reference": "java/util/Set"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension sortStructureSets (Ljava/util/Set;)Ljava/util/List;"
+        },
+        {
+          "offset": 17,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 22,
+          "op": "0x4e"
+        },
+        {
+          "offset": 23,
+          "op": "0x2d"
+        },
+        {
+          "offset": 24,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 29,
+          "op": "ifeq",
+          "args": "0038"
+        },
+        {
+          "offset": 32,
+          "op": "0x2d"
+        },
+        {
+          "offset": 33,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 38,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/StructureConfig"
+        },
+        {
+          "offset": 41,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getType ()Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 48,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigType PLACEMENT Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 51,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/ConfigType equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 54,
+          "op": "ifeq",
+          "args": "0011"
+        },
+        {
+          "offset": 57,
+          "op": "0x2a"
+        },
+        {
+          "offset": 58,
+          "op": "0x2b"
+        },
+        {
+          "offset": 59,
+          "op": "0x2c"
+        },
+        {
+          "offset": 60,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 62,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement"
+        },
+        {
+          "offset": 65,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension addPlacementCategory (Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/StructureConfigPlacement;)V"
+        },
+        {
+          "offset": 68,
+          "op": "goto",
+          "args": "000e"
+        },
+        {
+          "offset": 71,
+          "op": "0x2a"
+        },
+        {
+          "offset": 72,
+          "op": "0x2b"
+        },
+        {
+          "offset": 73,
+          "op": "0x2c"
+        },
+        {
+          "offset": 74,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 76,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle"
+        },
+        {
+          "offset": 79,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension addEDCategory (Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/StructureConfigToggle;)V"
+        },
+        {
+          "offset": 82,
+          "op": "goto",
+          "args": "ffc5"
+        },
+        {
+          "offset": 85,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addPlacementCategory",
+      "descriptor": "(Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/StructureConfigPlacement;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "cristellib.placementCategoryTitle"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component translatable (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 6,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigBuilder getOrCreateCategory (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 11,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 13,
+          "op": "0x2a"
+        },
+        {
+          "offset": 14,
+          "op": "0x2d"
+        },
+        {
+          "offset": 15,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 17,
+          "op": "0x2c"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension addHeader (Lde/cristelknight/cristellib/StructureConfig;Lme/shedaniel/clothconfig2/api/ConfigCategory;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;)V"
+        },
+        {
+          "offset": 21,
+          "op": "0x2d"
+        },
+        {
+          "offset": 22,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement getPlacementConfigs ()Ljava/util/Map;"
+        },
+        {
+          "offset": 25,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 27,
+          "op": "0x2d"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement getDefaultStructurePlacements ()Ljava/util/Map;"
+        },
+        {
+          "offset": 31,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 33,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 36,
+          "op": "0x59"
+        },
+        {
+          "offset": 37,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 40,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 42,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 44,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util sortedKeyList (Ljava/util/Map;)Ljava/util/List;"
+        },
+        {
+          "offset": 47,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 52,
+          "op": "0x3a",
+          "args": "08"
+        },
+        {
+          "offset": 54,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 56,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 61,
+          "op": "ifeq",
+          "args": "00cc"
+        },
+        {
+          "offset": 64,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 66,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 71,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 74,
+          "op": "0x3a",
+          "args": "09"
+        },
+        {
+          "offset": 76,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 78,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 80,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 85,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig"
+        },
+        {
+          "offset": 88,
+          "op": "0x3a",
+          "args": "0a"
+        },
+        {
+          "offset": 90,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 92,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 94,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 99,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig"
+        },
+        {
+          "offset": 102,
+          "op": "0x3a",
+          "args": "0b"
+        },
+        {
+          "offset": 104,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 106,
+          "op": "0xc7",
+          "args": "000c"
+        },
+        {
+          "offset": 109,
+          "op": "0x2d"
+        },
+        {
+          "offset": 110,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 112,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension getWarn (Lde/cristelknight/cristellib/StructureConfig;Lnet/minecraft/resources/ResourceLocation;)V"
+        },
+        {
+          "offset": 115,
+          "op": "goto",
+          "args": "ffc3"
+        },
+        {
+          "offset": 118,
+          "op": "0x2d"
+        },
+        {
+          "offset": 119,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 121,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement toDefaultString (Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/String;"
+        },
+        {
+          "offset": 124,
+          "op": "0x3a",
+          "args": "0c"
+        },
+        {
+          "offset": 126,
+          "op": "0x2c"
+        },
+        {
+          "offset": 127,
+          "op": "0x19",
+          "args": "0c"
+        },
+        {
+          "offset": 129,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 132,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startSubCategory (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;"
+        },
+        {
+          "offset": 137,
+          "op": "0x3a",
+          "args": "0d"
+        },
+        {
+          "offset": 139,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 141,
+          "op": "0x19",
+          "args": "0c"
+        },
+        {
+          "offset": 143,
+          "op": "0x2d"
+        },
+        {
+          "offset": 144,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement getComments ()Ljava/util/Map;"
+        },
+        {
+          "offset": 147,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder tooltip (Ljava/lang/String;Ljava/util/Map;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 150,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder setTooltip (Ljava/util/Optional;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;"
+        },
+        {
+          "offset": 153,
+          "op": "0x57"
+        },
+        {
+          "offset": 154,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig"
+        },
+        {
+          "offset": 157,
+          "op": "0x59"
+        },
+        {
+          "offset": 158,
+          "op": "0x2a"
+        },
+        {
+          "offset": 159,
+          "op": "0x2c"
+        },
+        {
+          "offset": 160,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 162,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig frequency ()D"
+        },
+        {
+          "offset": 165,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 167,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig frequency ()D"
+        },
+        {
+          "offset": 170,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 172,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension frequencyEntry (Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;DDLme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;"
+        },
+        {
+          "offset": 175,
+          "op": "0x2a"
+        },
+        {
+          "offset": 176,
+          "op": "0x2c"
+        },
+        {
+          "offset": 177,
+          "op": "ldc",
+          "reference": "salt"
+        },
+        {
+          "offset": 179,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 181,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig salt ()I"
+        },
+        {
+          "offset": 184,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 186,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig salt ()I"
+        },
+        {
+          "offset": 189,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 191,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension intEntry (Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Ljava/lang/String;IILme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 194,
+          "op": "0x2a"
+        },
+        {
+          "offset": 195,
+          "op": "0x2c"
+        },
+        {
+          "offset": 196,
+          "op": "ldc",
+          "reference": "separation"
+        },
+        {
+          "offset": 198,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 200,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig separation ()I"
+        },
+        {
+          "offset": 203,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 205,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig separation ()I"
+        },
+        {
+          "offset": 208,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 210,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension intEntry (Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Ljava/lang/String;IILme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 213,
+          "op": "0x2a"
+        },
+        {
+          "offset": 214,
+          "op": "0x2c"
+        },
+        {
+          "offset": 215,
+          "op": "ldc",
+          "reference": "spacing"
+        },
+        {
+          "offset": 217,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 219,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig spacing ()I"
+        },
+        {
+          "offset": 222,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 224,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig spacing ()I"
+        },
+        {
+          "offset": 227,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 229,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension intEntry (Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Ljava/lang/String;IILme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 232,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig <init> (Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;)V"
+        },
+        {
+          "offset": 235,
+          "op": "0x3a",
+          "args": "0e"
+        },
+        {
+          "offset": 237,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 239,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 241,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry;"
+        },
+        {
+          "offset": 244,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigCategory addEntry (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 249,
+          "op": "0x57"
+        },
+        {
+          "offset": 250,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 252,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 254,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 256,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 261,
+          "op": "0x57"
+        },
+        {
+          "offset": 262,
+          "op": "goto",
+          "args": "ff30"
+        },
+        {
+          "offset": 265,
+          "op": "0x2a"
+        },
+        {
+          "offset": 266,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension clientStructureConfigs Ljava/util/Set;"
+        },
+        {
+          "offset": 269,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig"
+        },
+        {
+          "offset": 272,
+          "op": "0x59"
+        },
+        {
+          "offset": 273,
+          "op": "0x2d"
+        },
+        {
+          "offset": 274,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 276,
+          "op": "0x1"
+        },
+        {
+          "offset": 277,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig <init> (Lde/cristelknight/cristellib/StructureConfig;Ljava/util/Map;Ljava/util/Map;)V"
+        },
+        {
+          "offset": 280,
+          "op": "invokeinterface",
+          "reference": "java/util/Set add (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 285,
+          "op": "0x57"
+        },
+        {
+          "offset": 286,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addEDCategory",
+      "descriptor": "(Lme/shedaniel/clothconfig2/api/ConfigBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/StructureConfigToggle;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "ldc_w",
+          "reference": "cristellib.toggleCategoryTitle"
+        },
+        {
+          "offset": 4,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component translatable (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 7,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigBuilder getOrCreateCategory (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 12,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "0x2d"
+        },
+        {
+          "offset": 16,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 18,
+          "op": "0x2c"
+        },
+        {
+          "offset": 19,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension addHeader (Lde/cristelknight/cristellib/StructureConfig;Lme/shedaniel/clothconfig2/api/ConfigCategory;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;)V"
+        },
+        {
+          "offset": 22,
+          "op": "0x2d"
+        },
+        {
+          "offset": 23,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/ToggleConfigTransformer mapToNestedStructuresWithValues (Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/Map;"
+        },
+        {
+          "offset": 26,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 28,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 31,
+          "op": "0x59"
+        },
+        {
+          "offset": 32,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 35,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 37,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 39,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util sortedKeyList (Ljava/util/Map;)Ljava/util/List;"
+        },
+        {
+          "offset": 42,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 47,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 49,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 51,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 56,
+          "op": "ifeq",
+          "args": "008f"
+        },
+        {
+          "offset": 59,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 61,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 66,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 69,
+          "op": "0x3a",
+          "args": "08"
+        },
+        {
+          "offset": 71,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 74,
+          "op": "0x59"
+        },
+        {
+          "offset": 75,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 78,
+          "op": "0x3a",
+          "args": "09"
+        },
+        {
+          "offset": 80,
+          "op": "0x2c"
+        },
+        {
+          "offset": 81,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 83,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 86,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startSubCategory (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;"
+        },
+        {
+          "offset": 91,
+          "op": "0x3a",
+          "args": "0a"
+        },
+        {
+          "offset": 93,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 95,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 97,
+          "op": "0x2d"
+        },
+        {
+          "offset": 98,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getComments ()Ljava/util/Map;"
+        },
+        {
+          "offset": 101,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder tooltip (Ljava/lang/String;Ljava/util/Map;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 104,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder setTooltip (Ljava/util/Optional;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;"
+        },
+        {
+          "offset": 107,
+          "op": "0x57"
+        },
+        {
+          "offset": 108,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 110,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 112,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 117,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig"
+        },
+        {
+          "offset": 120,
+          "op": "0x3a",
+          "args": "0b"
+        },
+        {
+          "offset": 122,
+          "op": "0x2a"
+        },
+        {
+          "offset": 123,
+          "op": "0x2c"
+        },
+        {
+          "offset": 124,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 126,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 128,
+          "op": "0x2d"
+        },
+        {
+          "offset": 129,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 131,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 133,
+          "op": "ldc_w",
+          "reference": ""
+        },
+        {
+          "offset": 136,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension checkForSingle (Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;Lme/shedaniel/clothconfig2/api/ConfigCategory;Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 139,
+          "op": "ifne",
+          "args": "0022"
+        },
+        {
+          "offset": 142,
+          "op": "0x2a"
+        },
+        {
+          "offset": 143,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 145,
+          "op": "0x1"
+        },
+        {
+          "offset": 146,
+          "op": "0x2c"
+        },
+        {
+          "offset": 147,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 149,
+          "op": "ldc_w",
+          "reference": ""
+        },
+        {
+          "offset": 152,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 154,
+          "op": "0x2d"
+        },
+        {
+          "offset": 155,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 157,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension addEDSubCategory (Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Ljava/util/Map;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 160,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 162,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 164,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry;"
+        },
+        {
+          "offset": 167,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigCategory addEntry (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 172,
+          "op": "0x57"
+        },
+        {
+          "offset": 173,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 175,
+          "op": "0x2d"
+        },
+        {
+          "offset": 176,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 178,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle toDefaultId (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 181,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientEDConfig"
+        },
+        {
+          "offset": 184,
+          "op": "0x59"
+        },
+        {
+          "offset": 185,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 187,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientEDConfig <init> (Ljava/util/Map;)V"
+        },
+        {
+          "offset": 190,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 195,
+          "op": "0x57"
+        },
+        {
+          "offset": 196,
+          "op": "goto",
+          "args": "ff6d"
+        },
+        {
+          "offset": 199,
+          "op": "0x2a"
+        },
+        {
+          "offset": 200,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension clientStructureConfigs Ljava/util/Set;"
+        },
+        {
+          "offset": 203,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig"
+        },
+        {
+          "offset": 206,
+          "op": "0x59"
+        },
+        {
+          "offset": 207,
+          "op": "0x2d"
+        },
+        {
+          "offset": 208,
+          "op": "0x1"
+        },
+        {
+          "offset": 209,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 211,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig <init> (Lde/cristelknight/cristellib/StructureConfig;Ljava/util/Map;Ljava/util/Map;)V"
+        },
+        {
+          "offset": 214,
+          "op": "invokeinterface",
+          "reference": "java/util/Set add (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 219,
+          "op": "0x57"
+        },
+        {
+          "offset": 220,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addEDSubCategory",
+      "descriptor": "(Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Ljava/util/Map;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig entries ()Ljava/util/Map;"
+        },
+        {
+          "offset": 5,
+          "op": "0x3a",
+          "args": "09"
+        },
+        {
+          "offset": 7,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 9,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util sortedKeyList (Ljava/util/Map;)Ljava/util/List;"
+        },
+        {
+          "offset": 12,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 17,
+          "op": "0x3a",
+          "args": "0a"
+        },
+        {
+          "offset": 19,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 21,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 26,
+          "op": "ifeq",
+          "args": "00f2"
+        },
+        {
+          "offset": 29,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 31,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 36,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 39,
+          "op": "0x3a",
+          "args": "0b"
+        },
+        {
+          "offset": 41,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 45,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 50,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry"
+        },
+        {
+          "offset": 53,
+          "op": "0x3a",
+          "args": "0c"
+        },
+        {
+          "offset": 55,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 57,
+          "op": "invokevirtual",
+          "reference": "java/lang/String isEmpty ()Z"
+        },
+        {
+          "offset": 60,
+          "op": "ifeq",
+          "args": "0008"
+        },
+        {
+          "offset": 63,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 65,
+          "op": "goto",
+          "args": "000c"
+        },
+        {
+          "offset": 68,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 70,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 72,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 328)"
+        },
+        {
+          "offset": 77,
+          "op": "0x3a",
+          "args": "0d"
+        },
+        {
+          "offset": 79,
+          "op": "0x19",
+          "args": "0c"
+        },
+        {
+          "offset": 81,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry isBoolean ()Z"
+        },
+        {
+          "offset": 84,
+          "op": "ifeq",
+          "args": "0061"
+        },
+        {
+          "offset": 87,
+          "op": "0x2d"
+        },
+        {
+          "offset": 88,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 90,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 93,
+          "op": "0x19",
+          "args": "0c"
+        },
+        {
+          "offset": 95,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry value ()Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 98,
+          "op": "invokevirtual",
+          "reference": "java/lang/Boolean booleanValue ()Z"
+        },
+        {
+          "offset": 101,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startBooleanToggle (Lnet/minecraft/network/chat/Component;Z)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;"
+        },
+        {
+          "offset": 106,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 107,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder setDefaultValue (Z)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;"
+        },
+        {
+          "offset": 110,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 112,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 114,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 116,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 368)"
+        },
+        {
+          "offset": 121,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder setTooltipSupplier (Ljava/util/function/Supplier;)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;"
+        },
+        {
+          "offset": 124,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;"
+        },
+        {
+          "offset": 127,
+          "op": "0x3a",
+          "args": "0e"
+        },
+        {
+          "offset": 129,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 131,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 133,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 135,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 140,
+          "op": "0x57"
+        },
+        {
+          "offset": 141,
+          "op": "0x2a"
+        },
+        {
+          "offset": 142,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 144,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 146,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 148,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension getToggleSubWarn (Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 151,
+          "op": "ifeq",
+          "args": "0006"
+        },
+        {
+          "offset": 154,
+          "op": "goto",
+          "args": "ff79"
+        },
+        {
+          "offset": 157,
+          "op": "0x2c"
+        },
+        {
+          "offset": 158,
+          "op": "0xc7",
+          "args": "000d"
+        },
+        {
+          "offset": 161,
+          "op": "0x2b"
+        },
+        {
+          "offset": 162,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 164,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder add (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z"
+        },
+        {
+          "offset": 167,
+          "op": "0x57"
+        },
+        {
+          "offset": 168,
+          "op": "goto",
+          "args": "000a"
+        },
+        {
+          "offset": 171,
+          "op": "0x2c"
+        },
+        {
+          "offset": 172,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 174,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder add (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z"
+        },
+        {
+          "offset": 177,
+          "op": "0x57"
+        },
+        {
+          "offset": 178,
+          "op": "goto",
+          "args": "0057"
+        },
+        {
+          "offset": 181,
+          "op": "0x2d"
+        },
+        {
+          "offset": 182,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 184,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 187,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startSubCategory (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;"
+        },
+        {
+          "offset": 192,
+          "op": "0x3a",
+          "args": "0e"
+        },
+        {
+          "offset": 194,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 196,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 198,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 200,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 328)"
+        },
+        {
+          "offset": 205,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 207,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getComments ()Ljava/util/Map;"
+        },
+        {
+          "offset": 210,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder tooltip (Ljava/lang/String;Ljava/util/Map;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 213,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder setTooltip (Ljava/util/Optional;)Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;"
+        },
+        {
+          "offset": 216,
+          "op": "0x57"
+        },
+        {
+          "offset": 217,
+          "op": "0x2a"
+        },
+        {
+          "offset": 218,
+          "op": "0x2b"
+        },
+        {
+          "offset": 219,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 221,
+          "op": "0x2d"
+        },
+        {
+          "offset": 222,
+          "op": "0x19",
+          "args": "0c"
+        },
+        {
+          "offset": 224,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry nested ()Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;"
+        },
+        {
+          "offset": 227,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 229,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 231,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 233,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 235,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension addEDSubCategory (Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Ljava/util/Map;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 238,
+          "op": "0x2c"
+        },
+        {
+          "offset": 239,
+          "op": "0xc7",
+          "args": "0010"
+        },
+        {
+          "offset": 242,
+          "op": "0x2b"
+        },
+        {
+          "offset": 243,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 245,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry;"
+        },
+        {
+          "offset": 248,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder add (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z"
+        },
+        {
+          "offset": 251,
+          "op": "0x57"
+        },
+        {
+          "offset": 252,
+          "op": "goto",
+          "args": "000d"
+        },
+        {
+          "offset": 255,
+          "op": "0x2c"
+        },
+        {
+          "offset": 256,
+          "op": "0x19",
+          "args": "0e"
+        },
+        {
+          "offset": 258,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/SubCategoryListEntry;"
+        },
+        {
+          "offset": 261,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder add (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z"
+        },
+        {
+          "offset": 264,
+          "op": "0x57"
+        },
+        {
+          "offset": 265,
+          "op": "goto",
+          "args": "ff0a"
+        },
+        {
+          "offset": 268,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "checkForSingle",
+      "descriptor": "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;Lme/shedaniel/clothconfig2/api/ConfigCategory;Ljava/lang/String;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig entries ()Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "java/util/Map size ()I"
+        },
+        {
+          "offset": 9,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 10,
+          "op": "0x9f",
+          "args": "0005"
+        },
+        {
+          "offset": 13,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 14,
+          "op": "ireturn"
+        },
+        {
+          "offset": 15,
+          "op": "0x2c"
+        },
+        {
+          "offset": 16,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig entries ()Ljava/util/Map;"
+        },
+        {
+          "offset": 19,
+          "op": "0x3a",
+          "args": "08"
+        },
+        {
+          "offset": 21,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 23,
+          "op": "invokeinterface",
+          "reference": "java/util/Map values ()Ljava/util/Collection;"
+        },
+        {
+          "offset": 28,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util getFirst (Ljava/util/Collection;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 31,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry"
+        },
+        {
+          "offset": 34,
+          "op": "0x3a",
+          "args": "09"
+        },
+        {
+          "offset": 36,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 38,
+          "op": "invokeinterface",
+          "reference": "java/util/Map keySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 43,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util getFirst (Ljava/util/Collection;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 46,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 49,
+          "op": "0x3a",
+          "args": "0a"
+        },
+        {
+          "offset": 51,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension $assertionsDisabled Z"
+        },
+        {
+          "offset": 54,
+          "op": "ifne",
+          "args": "0010"
+        },
+        {
+          "offset": 57,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 59,
+          "op": "0xc7",
+          "args": "000b"
+        },
+        {
+          "offset": 62,
+          "op": "new",
+          "reference": "java/lang/AssertionError"
+        },
+        {
+          "offset": 65,
+          "op": "0x59"
+        },
+        {
+          "offset": 66,
+          "op": "invokespecial",
+          "reference": "java/lang/AssertionError <init> ()V"
+        },
+        {
+          "offset": 69,
+          "op": "0xbf"
+        },
+        {
+          "offset": 70,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension $assertionsDisabled Z"
+        },
+        {
+          "offset": 73,
+          "op": "ifne",
+          "args": "0010"
+        },
+        {
+          "offset": 76,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 78,
+          "op": "0xc7",
+          "args": "000b"
+        },
+        {
+          "offset": 81,
+          "op": "new",
+          "reference": "java/lang/AssertionError"
+        },
+        {
+          "offset": 84,
+          "op": "0x59"
+        },
+        {
+          "offset": 85,
+          "op": "invokespecial",
+          "reference": "java/lang/AssertionError <init> ()V"
+        },
+        {
+          "offset": 88,
+          "op": "0xbf"
+        },
+        {
+          "offset": 89,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 91,
+          "op": "invokevirtual",
+          "reference": "java/lang/String isEmpty ()Z"
+        },
+        {
+          "offset": 94,
+          "op": "ifeq",
+          "args": "0008"
+        },
+        {
+          "offset": 97,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 99,
+          "op": "goto",
+          "args": "000c"
+        },
+        {
+          "offset": 102,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 104,
+          "op": "0x19",
+          "args": "0a"
+        },
+        {
+          "offset": 106,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 328)"
+        },
+        {
+          "offset": 111,
+          "op": "0x3a",
+          "args": "0b"
+        },
+        {
+          "offset": 113,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 115,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry isBoolean ()Z"
+        },
+        {
+          "offset": 118,
+          "op": "ifne",
+          "args": "0017"
+        },
+        {
+          "offset": 121,
+          "op": "0x2a"
+        },
+        {
+          "offset": 122,
+          "op": "0x2b"
+        },
+        {
+          "offset": 123,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 125,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry nested ()Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;"
+        },
+        {
+          "offset": 128,
+          "op": "0x2d"
+        },
+        {
+          "offset": 129,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 131,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 133,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 135,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 137,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension checkForSingle (Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Lde/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;Lme/shedaniel/clothconfig2/api/ConfigCategory;Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 140,
+          "op": "ireturn"
+        },
+        {
+          "offset": 141,
+          "op": "0x2d"
+        },
+        {
+          "offset": 142,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 144,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 328)"
+        },
+        {
+          "offset": 149,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 151,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getComments ()Ljava/util/Map;"
+        },
+        {
+          "offset": 154,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder tooltip (Ljava/lang/String;Ljava/util/Map;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 157,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 158,
+          "op": "0xbd",
+          "reference": "net/minecraft/network/chat/MutableComponent"
+        },
+        {
+          "offset": 161,
+          "op": "0x59"
+        },
+        {
+          "offset": 162,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 163,
+          "op": "0x2d"
+        },
+        {
+          "offset": 164,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 167,
+          "op": "0x53"
+        },
+        {
+          "offset": 168,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional orElse (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 171,
+          "op": "checkcast",
+          "reference": "[Lnet/minecraft/network/chat/Component;"
+        },
+        {
+          "offset": 174,
+          "op": "0x3a",
+          "args": "0c"
+        },
+        {
+          "offset": 176,
+          "op": "0x2b"
+        },
+        {
+          "offset": 177,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 179,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 182,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 184,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/toggle/NestedToggleConfig$Entry value ()Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 187,
+          "op": "invokevirtual",
+          "reference": "java/lang/Boolean booleanValue ()Z"
+        },
+        {
+          "offset": 190,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startBooleanToggle (Lnet/minecraft/network/chat/Component;Z)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;"
+        },
+        {
+          "offset": 195,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 196,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder setDefaultValue (Z)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;"
+        },
+        {
+          "offset": 199,
+          "op": "0x19",
+          "args": "0c"
+        },
+        {
+          "offset": 201,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder setTooltip ([Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder;"
+        },
+        {
+          "offset": 204,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/BooleanToggleBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/BooleanListEntry;"
+        },
+        {
+          "offset": 207,
+          "op": "0x3a",
+          "args": "0d"
+        },
+        {
+          "offset": 209,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 211,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 213,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 215,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 220,
+          "op": "0x57"
+        },
+        {
+          "offset": 221,
+          "op": "0x2a"
+        },
+        {
+          "offset": 222,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 224,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 226,
+          "op": "0x2d"
+        },
+        {
+          "offset": 227,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension getToggleSubWarn (Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 230,
+          "op": "ifeq",
+          "args": "0005"
+        },
+        {
+          "offset": 233,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 234,
+          "op": "ireturn"
+        },
+        {
+          "offset": 235,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 237,
+          "op": "0x19",
+          "args": "0d"
+        },
+        {
+          "offset": 239,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigCategory addEntry (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 244,
+          "op": "0x57"
+        },
+        {
+          "offset": 245,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 246,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "onSave",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "0x4c"
+        },
+        {
+          "offset": 8,
+          "op": "0x2a"
+        },
+        {
+          "offset": 9,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension clientStructureConfigs Ljava/util/Set;"
+        },
+        {
+          "offset": 12,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 17,
+          "op": "0x4d"
+        },
+        {
+          "offset": 18,
+          "op": "0x2c"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 24,
+          "op": "ifeq",
+          "args": "0050"
+        },
+        {
+          "offset": 27,
+          "op": "0x2c"
+        },
+        {
+          "offset": 28,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 33,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig"
+        },
+        {
+          "offset": 36,
+          "op": "0x4e"
+        },
+        {
+          "offset": 37,
+          "op": "0x2d"
+        },
+        {
+          "offset": 38,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig structureConfig ()Lde/cristelknight/cristellib/StructureConfig;"
+        },
+        {
+          "offset": 41,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getType ()Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 48,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigType PLACEMENT Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 51,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/ConfigType equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 54,
+          "op": "ifeq",
+          "args": "0013"
+        },
+        {
+          "offset": 57,
+          "op": "0x2a"
+        },
+        {
+          "offset": 58,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 60,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement"
+        },
+        {
+          "offset": 63,
+          "op": "0x2d"
+        },
+        {
+          "offset": 64,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig clientPlacementConfigs ()Ljava/util/Map;"
+        },
+        {
+          "offset": 67,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension updatePlacements (Lde/cristelknight/cristellib/StructureConfigPlacement;Ljava/util/Map;)V"
+        },
+        {
+          "offset": 70,
+          "op": "goto",
+          "args": "0010"
+        },
+        {
+          "offset": 73,
+          "op": "0x2a"
+        },
+        {
+          "offset": 74,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 76,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle"
+        },
+        {
+          "offset": 79,
+          "op": "0x2d"
+        },
+        {
+          "offset": 80,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientStructureConfig clientEDConfigs ()Ljava/util/Map;"
+        },
+        {
+          "offset": 83,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension updateToggles (Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;)V"
+        },
+        {
+          "offset": 86,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 88,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 89,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig writeConfig (Z)V"
+        },
+        {
+          "offset": 92,
+          "op": "0x2b"
+        },
+        {
+          "offset": 93,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 95,
+          "op": "invokeinterface",
+          "reference": "java/util/List add (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 100,
+          "op": "0x57"
+        },
+        {
+          "offset": 101,
+          "op": "goto",
+          "args": "ffad"
+        },
+        {
+          "offset": 104,
+          "op": "0x2b"
+        },
+        {
+          "offset": 105,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/StructureConfig addSetsToRuntimePack (Ljava/util/Collection;)V"
+        },
+        {
+          "offset": 108,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "updatePlacements",
+      "descriptor": "(Lde/cristelknight/cristellib/StructureConfigPlacement;Ljava/util/Map;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "invokeinterface",
+          "reference": "java/util/Map entrySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 6,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 11,
+          "op": "0x4e"
+        },
+        {
+          "offset": 12,
+          "op": "0x2d"
+        },
+        {
+          "offset": 13,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 18,
+          "op": "ifeq",
+          "args": "002c"
+        },
+        {
+          "offset": 21,
+          "op": "0x2d"
+        },
+        {
+          "offset": 22,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 27,
+          "op": "checkcast",
+          "reference": "java/util/Map$Entry"
+        },
+        {
+          "offset": 30,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 32,
+          "op": "0x2b"
+        },
+        {
+          "offset": 33,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 35,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getKey ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 40,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getValue ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 50,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig"
+        },
+        {
+          "offset": 53,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig toPlacement ()Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;"
+        },
+        {
+          "offset": 56,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement updatePlacement (Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;)V"
+        },
+        {
+          "offset": 59,
+          "op": "goto",
+          "args": "ffd1"
+        },
+        {
+          "offset": 62,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "updateToggles",
+      "descriptor": "(Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/util/Map;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "invokeinterface",
+          "reference": "java/util/Map entrySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 6,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 11,
+          "op": "0x4e"
+        },
+        {
+          "offset": 12,
+          "op": "0x2d"
+        },
+        {
+          "offset": 13,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 18,
+          "op": "ifeq",
+          "args": "002c"
+        },
+        {
+          "offset": 21,
+          "op": "0x2d"
+        },
+        {
+          "offset": 22,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 27,
+          "op": "checkcast",
+          "reference": "java/util/Map$Entry"
+        },
+        {
+          "offset": 30,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 32,
+          "op": "0x2b"
+        },
+        {
+          "offset": 33,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 35,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getKey ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 40,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getValue ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 50,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientEDConfig"
+        },
+        {
+          "offset": 53,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientEDConfig toED ()Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;"
+        },
+        {
+          "offset": 56,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle updateEDConfig (Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/toggle/ToggleConfig;)V"
+        },
+        {
+          "offset": 59,
+          "op": "goto",
+          "args": "ffd1"
+        },
+        {
+          "offset": 62,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "intEntry",
+      "descriptor": "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;Ljava/lang/String;IILme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "0x2c"
+        },
+        {
+          "offset": 2,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 5,
+          "op": "0x1d"
+        },
+        {
+          "offset": 6,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startIntField (Lnet/minecraft/network/chat/Component;I)Lme/shedaniel/clothconfig2/impl/builders/IntFieldBuilder;"
+        },
+        {
+          "offset": 11,
+          "op": "0x15",
+          "args": "04"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/IntFieldBuilder setDefaultValue (I)Lme/shedaniel/clothconfig2/impl/builders/IntFieldBuilder;"
+        },
+        {
+          "offset": 16,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/IntFieldBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 19,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 21,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 23,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder add (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z"
+        },
+        {
+          "offset": 28,
+          "op": "0x57"
+        },
+        {
+          "offset": 29,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "frequencyEntry",
+      "descriptor": "(Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;DDLme/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder;)Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "ldc_w",
+          "reference": "frequency"
+        },
+        {
+          "offset": 4,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 7,
+          "op": "0x28"
+        },
+        {
+          "offset": 8,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startDoubleField (Lnet/minecraft/network/chat/Component;D)Lme/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder;"
+        },
+        {
+          "offset": 13,
+          "op": "0x18",
+          "args": "04"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder setDefaultValue (D)Lme/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder;"
+        },
+        {
+          "offset": 18,
+          "op": "0xe"
+        },
+        {
+          "offset": 19,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder setMin (D)Lme/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder;"
+        },
+        {
+          "offset": 22,
+          "op": "0xf"
+        },
+        {
+          "offset": 23,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder setMax (D)Lme/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder;"
+        },
+        {
+          "offset": 26,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/DoubleFieldBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;"
+        },
+        {
+          "offset": 29,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 31,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 33,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 35,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/SubCategoryBuilder add (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Z"
+        },
+        {
+          "offset": 38,
+          "op": "0x57"
+        },
+        {
+          "offset": 39,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 41,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getWarn",
+      "descriptor": "(Lde/cristelknight/cristellib/StructureConfig;Lnet/minecraft/resources/ResourceLocation;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc_w",
+          "reference": "Structure Set: {} has no default config, skipping!\nThis probably indicates that this config file is outdated and should be deleted to re-create it. (Path: {})"
+        },
+        {
+          "offset": 6,
+          "op": "0x2b"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 10,
+          "op": "0x2a"
+        },
+        {
+          "offset": 11,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getPath ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 14,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 19,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getToggleSubWarn",
+      "descriptor": "(Lde/cristelknight/cristellib/StructureConfigToggle;Ljava/lang/String;Ljava/lang/String;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "0x2d"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle toDefaultId (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 5,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 7,
+          "op": "0x2b"
+        },
+        {
+          "offset": 8,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getDefaultStructureToggles ()Ljava/util/Map;"
+        },
+        {
+          "offset": 11,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 13,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 18,
+          "op": "checkcast",
+          "reference": "java/util/List"
+        },
+        {
+          "offset": 21,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 23,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 25,
+          "op": "0xc7",
+          "args": "000b"
+        },
+        {
+          "offset": 28,
+          "op": "0x2b"
+        },
+        {
+          "offset": 29,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 31,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension getWarn (Lde/cristelknight/cristellib/StructureConfig;Lnet/minecraft/resources/ResourceLocation;)V"
+        },
+        {
+          "offset": 34,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 35,
+          "op": "ireturn"
+        },
+        {
+          "offset": 36,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 38,
+          "op": "0x2b"
+        },
+        {
+          "offset": 39,
+          "op": "0x2c"
+        },
+        {
+          "offset": 40,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle toDefaultId (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 43,
+          "op": "invokeinterface",
+          "reference": "java/util/List contains (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 48,
+          "op": "ifne",
+          "args": "0015"
+        },
+        {
+          "offset": 51,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 54,
+          "op": "ldc_w",
+          "reference": "Structure: {} has no default config, skipping!\nThis probably indicates that this config file is outdated and should be deleted to re-create it. (Path: {})"
+        },
+        {
+          "offset": 57,
+          "op": "0x2c"
+        },
+        {
+          "offset": 58,
+          "op": "0x2b"
+        },
+        {
+          "offset": 59,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getPath ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 62,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 67,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 68,
+          "op": "ireturn"
+        },
+        {
+          "offset": 69,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 70,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "addHeader",
+      "descriptor": "(Lde/cristelknight/cristellib/StructureConfig;Lme/shedaniel/clothconfig2/api/ConfigCategory;Lme/shedaniel/clothconfig2/api/ConfigEntryBuilder;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig isAutoGenerated ()Z"
+        },
+        {
+          "offset": 4,
+          "op": "ifeq",
+          "args": "003d"
+        },
+        {
+          "offset": 7,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/autoconfig/ACInfoData currentData Ljava/util/Map;"
+        },
+        {
+          "offset": 10,
+          "op": "0x2a"
+        },
+        {
+          "offset": 11,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension modId Ljava/lang/String;"
+        },
+        {
+          "offset": 14,
+          "op": "invokeinterface",
+          "reference": "java/util/Map containsKey (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 19,
+          "op": "ifne",
+          "args": "002e"
+        },
+        {
+          "offset": 22,
+          "op": "0x2c"
+        },
+        {
+          "offset": 23,
+          "op": "0x2d"
+        },
+        {
+          "offset": 24,
+          "op": "ldc_w",
+          "reference": "cristellib.autoCategoryInfo"
+        },
+        {
+          "offset": 27,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 28,
+          "op": "0xbd",
+          "reference": "java/lang/Object"
+        },
+        {
+          "offset": 31,
+          "op": "0x59"
+        },
+        {
+          "offset": 32,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 33,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants MOD_COMPONENT Lnet/minecraft/network/chat/Component;"
+        },
+        {
+          "offset": 36,
+          "op": "0x53"
+        },
+        {
+          "offset": 37,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component translatable (Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 40,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 601)"
+        },
+        {
+          "offset": 45,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/network/chat/MutableComponent withStyle (Ljava/util/function/UnaryOperator;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 48,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startTextDescription (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder;"
+        },
+        {
+          "offset": 53,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/TextListEntry;"
+        },
+        {
+          "offset": 56,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigCategory addEntry (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 61,
+          "op": "0x57"
+        },
+        {
+          "offset": 62,
+          "op": "goto",
+          "args": "002f"
+        },
+        {
+          "offset": 65,
+          "op": "0x2b"
+        },
+        {
+          "offset": 66,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getHeader ()Ljava/lang/String;"
+        },
+        {
+          "offset": 69,
+          "op": "0xc6",
+          "args": "0028"
+        },
+        {
+          "offset": 72,
+          "op": "0x2b"
+        },
+        {
+          "offset": 73,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getHeader ()Ljava/lang/String;"
+        },
+        {
+          "offset": 76,
+          "op": "invokevirtual",
+          "reference": "java/lang/String isEmpty ()Z"
+        },
+        {
+          "offset": 79,
+          "op": "ifne",
+          "args": "001e"
+        },
+        {
+          "offset": 82,
+          "op": "0x2c"
+        },
+        {
+          "offset": 83,
+          "op": "0x2d"
+        },
+        {
+          "offset": 84,
+          "op": "0x2a"
+        },
+        {
+          "offset": 85,
+          "op": "0x2b"
+        },
+        {
+          "offset": 86,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getHeader ()Ljava/lang/String;"
+        },
+        {
+          "offset": 89,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension getHeader (Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "offset": 92,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 95,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigEntryBuilder startTextDescription (Lnet/minecraft/network/chat/Component;)Lme/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder;"
+        },
+        {
+          "offset": 100,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/impl/builders/TextDescriptionBuilder build ()Lme/shedaniel/clothconfig2/gui/entries/TextListEntry;"
+        },
+        {
+          "offset": 103,
+          "op": "invokeinterface",
+          "reference": "me/shedaniel/clothconfig2/api/ConfigCategory addEntry (Lme/shedaniel/clothconfig2/api/AbstractConfigListEntry;)Lme/shedaniel/clothconfig2/api/ConfigCategory;"
+        },
+        {
+          "offset": 108,
+          "op": "0x57"
+        },
+        {
+          "offset": 109,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getHeader",
+      "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc_w",
+          "reference": "====="
+        },
+        {
+          "offset": 3,
+          "op": "0x4d"
+        },
+        {
+          "offset": 4,
+          "op": "0x2b"
+        },
+        {
+          "offset": 5,
+          "op": "0x2c"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "java/lang/String contains (Ljava/lang/CharSequence;)Z"
+        },
+        {
+          "offset": 9,
+          "op": "ifeq",
+          "args": "006b"
+        },
+        {
+          "offset": 12,
+          "op": "0x2b"
+        },
+        {
+          "offset": 13,
+          "op": "0x2c"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "java/lang/String lastIndexOf (Ljava/lang/String;)I"
+        },
+        {
+          "offset": 17,
+          "op": "0x3e"
+        },
+        {
+          "offset": 18,
+          "op": "0x2b"
+        },
+        {
+          "offset": 19,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 20,
+          "op": "0x1d"
+        },
+        {
+          "offset": 21,
+          "op": "invokevirtual",
+          "reference": "java/lang/String substring (II)Ljava/lang/String;"
+        },
+        {
+          "offset": 24,
+          "op": "0x4c"
+        },
+        {
+          "offset": 25,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 28,
+          "op": "0x59"
+        },
+        {
+          "offset": 29,
+          "op": "0x2b"
+        },
+        {
+          "offset": 30,
+          "op": "invokevirtual",
+          "reference": "java/lang/String lines ()Ljava/util/stream/Stream;"
+        },
+        {
+          "offset": 33,
+          "op": "invokeinterface",
+          "reference": "java/util/stream/Stream toList ()Ljava/util/List;"
+        },
+        {
+          "offset": 38,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> (Ljava/util/Collection;)V"
+        },
+        {
+          "offset": 41,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "invokeinterface",
+          "reference": "java/util/List size ()I"
+        },
+        {
+          "offset": 50,
+          "op": "0x5"
+        },
+        {
+          "offset": 51,
+          "op": "0xa1",
+          "args": "0041"
+        },
+        {
+          "offset": 54,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 56,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 58,
+          "op": "invokeinterface",
+          "reference": "java/util/List size ()I"
+        },
+        {
+          "offset": 63,
+          "op": "0x5"
+        },
+        {
+          "offset": 64,
+          "op": "0x64"
+        },
+        {
+          "offset": 65,
+          "op": "invokeinterface",
+          "reference": "java/util/List get (I)Ljava/lang/Object;"
+        },
+        {
+          "offset": 70,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 73,
+          "op": "invokevirtual",
+          "reference": "java/lang/String isBlank ()Z"
+        },
+        {
+          "offset": 76,
+          "op": "ifeq",
+          "args": "0028"
+        },
+        {
+          "offset": 79,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 81,
+          "op": "invokeinterface",
+          "reference": "java/util/List removeLast ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 86,
+          "op": "0x57"
+        },
+        {
+          "offset": 87,
+          "op": "new",
+          "reference": "java/lang/StringBuilder"
+        },
+        {
+          "offset": 90,
+          "op": "0x59"
+        },
+        {
+          "offset": 91,
+          "op": "invokespecial",
+          "reference": "java/lang/StringBuilder <init> ()V"
+        },
+        {
+          "offset": 94,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 96,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 98,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 100,
+          "op": "invokedynamic",
+          "reference": "(18, 4, 671)"
+        },
+        {
+          "offset": 105,
+          "op": "invokeinterface",
+          "reference": "java/util/List forEach (Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 110,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 112,
+          "op": "invokevirtual",
+          "reference": "java/lang/StringBuilder toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 115,
+          "op": "0x4c"
+        },
+        {
+          "offset": 116,
+          "op": "0x2b"
+        },
+        {
+          "offset": 117,
+          "op": "ldc_w",
+          "reference": "\t"
+        },
+        {
+          "offset": 120,
+          "op": "ldc_w",
+          "reference": "    "
+        },
+        {
+          "offset": 123,
+          "op": "invokevirtual",
+          "reference": "java/lang/String replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;"
+        },
+        {
+          "offset": 126,
+          "op": "invokevirtual",
+          "reference": "java/lang/String trim ()Ljava/lang/String;"
+        },
+        {
+          "offset": 129,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "sortStructureSets",
+      "descriptor": "(Ljava/util/Set;)Ljava/util/List;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "0x4d"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "0x2c"
+        },
+        {
+          "offset": 10,
+          "op": "invokedynamic",
+          "reference": "(18, 5, 704)"
+        },
+        {
+          "offset": 15,
+          "op": "invokeinterface",
+          "reference": "java/util/Set forEach (Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 20,
+          "op": "0x2c"
+        },
+        {
+          "offset": 21,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "priority",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc_w",
+          "reference": "(3, '7fffffff')"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$sortStructureSets$4",
+      "descriptor": "(Ljava/util/List;Lde/cristelknight/cristellib/StructureConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig getType ()Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 4,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigType TOGGLE Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/ConfigType equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 10,
+          "op": "ifeq",
+          "args": "000d"
+        },
+        {
+          "offset": 13,
+          "op": "0x2a"
+        },
+        {
+          "offset": 14,
+          "op": "0x2b"
+        },
+        {
+          "offset": 15,
+          "op": "invokeinterface",
+          "reference": "java/util/List addFirst (Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 20,
+          "op": "goto",
+          "args": "000a"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "0x2b"
+        },
+        {
+          "offset": 25,
+          "op": "invokeinterface",
+          "reference": "java/util/List addLast (Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 30,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$getHeader$3",
+      "descriptor": "(Ljava/lang/StringBuilder;Ljava/lang/String;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 5,
+          "op": "ldc_w",
+          "reference": "\n"
+        },
+        {
+          "offset": 8,
+          "op": "invokevirtual",
+          "reference": "java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;"
+        },
+        {
+          "offset": 11,
+          "op": "0x57"
+        },
+        {
+          "offset": 12,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$addHeader$2",
+      "descriptor": "(Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "new",
+          "reference": "net/minecraft/network/chat/ClickEvent"
+        },
+        {
+          "offset": 4,
+          "op": "0x59"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/network/chat/ClickEvent$Action OPEN_URL Lnet/minecraft/network/chat/ClickEvent$Action;"
+        },
+        {
+          "offset": 8,
+          "op": "ldc_w",
+          "reference": "https://github.com/Cristelknight999/Cristel-Lib/wiki/5.-Controlling-Structure-Auto-Config-(for-Mod-Authors)"
+        },
+        {
+          "offset": 11,
+          "op": "invokespecial",
+          "reference": "net/minecraft/network/chat/ClickEvent <init> (Lnet/minecraft/network/chat/ClickEvent$Action;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/network/chat/Style withClickEvent (Lnet/minecraft/network/chat/ClickEvent;)Lnet/minecraft/network/chat/Style;"
+        },
+        {
+          "offset": 17,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$addEDSubCategory$1",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lde/cristelknight/cristellib/StructureConfigToggle;)Ljava/util/Optional;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 328)"
+        },
+        {
+          "offset": 7,
+          "op": "0x2c"
+        },
+        {
+          "offset": 8,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigToggle getComments ()Ljava/util/Map;"
+        },
+        {
+          "offset": 11,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder tooltip (Ljava/lang/String;Ljava/util/Map;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 14,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$0",
+      "descriptor": "(Ljava/lang/String;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry getConfigMap ()Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 3,
+          "op": "0x2a"
+        },
+        {
+          "offset": 4,
+          "op": "invokevirtual",
+          "reference": "com/google/common/collect/ImmutableMap containsKey (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 7,
+          "op": "ifne",
+          "args": "0005"
+        },
+        {
+          "offset": 10,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 11,
+          "op": "ireturn"
+        },
+        {
+          "offset": 12,
+          "op": "ldc_w",
+          "reference": "de/cristelknight/cristellib/autoconfig/ACConfig"
+        },
+        {
+          "offset": 15,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigRegistry get (Ljava/lang/Class;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 18,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/autoconfig/ACConfig"
+        },
+        {
+          "offset": 21,
+          "op": "0x4c"
+        },
+        {
+          "offset": 22,
+          "op": "0x2b"
+        },
+        {
+          "offset": 23,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/autoconfig/ACConfig disableAutoConfig ()Z"
+        },
+        {
+          "offset": 26,
+          "op": "ifne",
+          "args": "000e"
+        },
+        {
+          "offset": 29,
+          "op": "0x2b"
+        },
+        {
+          "offset": 30,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/autoconfig/ACConfig disableAutoConfigScreens ()Z"
+        },
+        {
+          "offset": 33,
+          "op": "ifne",
+          "args": "0007"
+        },
+        {
+          "offset": 36,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 37,
+          "op": "goto",
+          "args": "0004"
+        },
+        {
+          "offset": 40,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 41,
+          "op": "0x3d"
+        },
+        {
+          "offset": 42,
+          "op": "0x1c"
+        },
+        {
+          "offset": 43,
+          "op": "ifeq",
+          "args": "0014"
+        },
+        {
+          "offset": 46,
+          "op": "0x2b"
+        },
+        {
+          "offset": 47,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/autoconfig/ACConfig clientExcludedMods ()Ljava/util/List;"
+        },
+        {
+          "offset": 50,
+          "op": "0x2a"
+        },
+        {
+          "offset": 51,
+          "op": "invokeinterface",
+          "reference": "java/util/List contains (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 56,
+          "op": "ifne",
+          "args": "0007"
+        },
+        {
+          "offset": 59,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 60,
+          "op": "goto",
+          "args": "0004"
+        },
+        {
+          "offset": 63,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 64,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "java/lang/Class desiredAssertionStatus ()Z"
+        },
+        {
+          "offset": 5,
+          "op": "ifne",
+          "args": "0007"
+        },
+        {
+          "offset": 8,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 9,
+          "op": "goto",
+          "args": "0004"
+        },
+        {
+          "offset": 12,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 13,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension $assertionsDisabled Z"
+        },
+        {
+          "offset": 16,
+          "op": "invokedynamic",
+          "reference": "(18, 6, 778)"
+        },
+        {
+          "offset": 21,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/config/client/extension/extensions/StructureConfigExtension SHOULD_LOAD Lde/cristelknight/cristellib/config/client/extension/ExtensionRegistry$LoadPredicate;"
+        },
+        {
+          "offset": 24,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

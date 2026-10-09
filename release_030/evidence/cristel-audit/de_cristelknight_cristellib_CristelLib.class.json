@@ -1,0 +1,682 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/CristelLib",
+    "java/lang/Object",
+    "CristelLib.java",
+    "java/util/Map$Entry",
+    "java/util/Map",
+    "Entry",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "CONFIG_PACK",
+    "Lde/cristelknight/cristellib/builtinpacks/RuntimePack;",
+    "REGISTRY",
+    "Lde/cristelknight/cristellib/CristelLibRegistry;",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/CristelLib;",
+    "init",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Loading Cristel Lib (Stage 2)",
+    "org/apache/logging/log4j/Logger",
+    "debug",
+    "(Ljava/lang/String;)V",
+    "de/cristelknight/cristellib/CristelLibRegistry",
+    "getConfigs",
+    "()Ljava/util/Set;",
+    "de/cristelknight/cristellib/StructureConfig",
+    "addSetsToRuntimePack",
+    "(Ljava/util/Collection;)V",
+    "preInit",
+    "Loading Cristel Lib (Stage 1)",
+    "de/cristelknight/cristellib/config/simple/datafixer/DataFixer",
+    "registerFixer",
+    "de/cristelknight/cristellib/data/condition/ConditionRegistry",
+    "()Ljava/util/Map;",
+    "com/google/common/collect/ImmutableMap",
+    "copyOf",
+    "(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;",
+    "configs",
+    "Lcom/google/common/collect/ImmutableMap;",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader",
+    "freeze",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig",
+    "update",
+    "(Ljava/lang/Object;)V",
+    "lambda$preInit$0",
+    "(Lde/cristelknight/cristellib/StructureConfig;)V",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "accept",
+    "()Ljava/util/function/Consumer;",
+    "java/util/Set",
+    "forEach",
+    "(Ljava/util/function/Consumer;)V",
+    "allConfigs",
+    "Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;",
+    "Ljava/util/Set;",
+    "()Ljava/util/Map<Ljava/lang/String;Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;>;",
+    "java/util/HashMap",
+    "de/cristelknight/cristellib/PlatformHelper",
+    "getApis",
+    "entrySet",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "()Z",
+    "next",
+    "()Ljava/lang/Object;",
+    "getKey",
+    "java/lang/String",
+    "getValue",
+    "de/cristelknight/cristellib/api/CristelLibAPI",
+    "readAPI",
+    "(Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;Ljava/util/Map;)V",
+    "de/cristelknight/cristellib/util/Util",
+    "readData",
+    "(Ljava/util/Map;Lde/cristelknight/cristellib/CristelLibRegistry;)V",
+    "modId",
+    "Ljava/lang/String;",
+    "api",
+    "Lde/cristelknight/cristellib/api/CristelLibAPI;",
+    "entry",
+    "Ljava/util/Map$Entry<Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;>;",
+    "Ljava/util/Map$Entry;",
+    "Ljava/util/Map<Ljava/lang/String;Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;>;",
+    "Ljava/util/Map;",
+    "(Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;Ljava/util/Map<Ljava/lang/String;Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;>;)V",
+    "java/lang/Throwable",
+    "registerBuiltInPacks",
+    "java/util/HashSet",
+    "registerConfigs",
+    "(Ljava/util/Set;)V",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "registerStructureSets",
+    "(Lde/cristelknight/cristellib/CristelLibRegistry;)V",
+    "setDefaultNamespace",
+    "Mod: {} provides a broken implementation of CristelLibAPI",
+    "error",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "set",
+    "e",
+    "Ljava/lang/Throwable;",
+    "c",
+    "writeConfig",
+    "(Z)V",
+    "Lde/cristelknight/cristellib/StructureConfig;",
+    "<clinit>",
+    "de/cristelknight/cristellib/builtinpacks/RuntimePack",
+    "CRISTEL_LIB_PACK_ID",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "net/minecraft/SharedConstants",
+    "getCurrentVersion",
+    "()Lnet/minecraft/WorldVersion;",
+    "net/minecraft/server/packs/PackType",
+    "SERVER_DATA",
+    "Lnet/minecraft/server/packs/PackType;",
+    "net/minecraft/WorldVersion",
+    "getPackVersion",
+    "(Lnet/minecraft/server/packs/PackType;)I",
+    "Runtime Pack for built-in features",
+    "cristellib",
+    "pack.png",
+    "getResourceStream",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;",
+    "(Lnet/minecraft/resources/ResourceLocation;ILjava/lang/String;Ljava/io/InputStream;)V",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "LocalVariableTypeTable",
+    "StackMapTable",
+    "Signature",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "init",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc",
+          "reference": "Loading Cristel Lib (Stage 2)"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger debug (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 10,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry getConfigs ()Ljava/util/Set;"
+        },
+        {
+          "offset": 13,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/StructureConfig addSetsToRuntimePack (Ljava/util/Collection;)V"
+        },
+        {
+          "offset": 16,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "preInit",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc",
+          "reference": "Loading Cristel Lib (Stage 1)"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger debug (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 10,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/simple/datafixer/DataFixer registerFixer ()V"
+        },
+        {
+          "offset": 13,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/data/condition/ConditionRegistry init ()V"
+        },
+        {
+          "offset": 16,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLib getConfigs ()Ljava/util/Map;"
+        },
+        {
+          "offset": 19,
+          "op": "invokestatic",
+          "reference": "com/google/common/collect/ImmutableMap copyOf (Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 22,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry configs Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader freeze ()V"
+        },
+        {
+          "offset": 28,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig update ()V"
+        },
+        {
+          "offset": 31,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry getConfigs ()Ljava/util/Set;"
+        },
+        {
+          "offset": 34,
+          "op": "0x4b"
+        },
+        {
+          "offset": 35,
+          "op": "0x2a"
+        },
+        {
+          "offset": 36,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 105)"
+        },
+        {
+          "offset": 41,
+          "op": "invokeinterface",
+          "reference": "java/util/Set forEach (Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 46,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getConfigs",
+      "descriptor": "()Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "0x4b"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/PlatformHelper getApis ()Ljava/util/Map;"
+        },
+        {
+          "offset": 11,
+          "op": "invokeinterface",
+          "reference": "java/util/Map entrySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 16,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 21,
+          "op": "0x4c"
+        },
+        {
+          "offset": 22,
+          "op": "0x2b"
+        },
+        {
+          "offset": 23,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 28,
+          "op": "ifeq",
+          "args": "002c"
+        },
+        {
+          "offset": 31,
+          "op": "0x2b"
+        },
+        {
+          "offset": 32,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 37,
+          "op": "checkcast",
+          "reference": "java/util/Map$Entry"
+        },
+        {
+          "offset": 40,
+          "op": "0x4d"
+        },
+        {
+          "offset": 41,
+          "op": "0x2c"
+        },
+        {
+          "offset": 42,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getKey ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 47,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 50,
+          "op": "0x4e"
+        },
+        {
+          "offset": 51,
+          "op": "0x2c"
+        },
+        {
+          "offset": 52,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getValue ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 57,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/api/CristelLibAPI"
+        },
+        {
+          "offset": 60,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 62,
+          "op": "0x2d"
+        },
+        {
+          "offset": 63,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 65,
+          "op": "0x2a"
+        },
+        {
+          "offset": 66,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLib readAPI (Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;Ljava/util/Map;)V"
+        },
+        {
+          "offset": 69,
+          "op": "goto",
+          "args": "ffd1"
+        },
+        {
+          "offset": 72,
+          "op": "0x2a"
+        },
+        {
+          "offset": 73,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/CristelLib REGISTRY Lde/cristelknight/cristellib/CristelLibRegistry;"
+        },
+        {
+          "offset": 76,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util readData (Ljava/util/Map;Lde/cristelknight/cristellib/CristelLibRegistry;)V"
+        },
+        {
+          "offset": 79,
+          "op": "0x2a"
+        },
+        {
+          "offset": 80,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "readAPI",
+      "descriptor": "(Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;Ljava/util/Map;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/api/CristelLibAPI registerBuiltInPacks ()V"
+        },
+        {
+          "offset": 6,
+          "op": "new",
+          "reference": "java/util/HashSet"
+        },
+        {
+          "offset": 9,
+          "op": "0x59"
+        },
+        {
+          "offset": 10,
+          "op": "invokespecial",
+          "reference": "java/util/HashSet <init> ()V"
+        },
+        {
+          "offset": 13,
+          "op": "0x4e"
+        },
+        {
+          "offset": 14,
+          "op": "0x2b"
+        },
+        {
+          "offset": 15,
+          "op": "0x2d"
+        },
+        {
+          "offset": 16,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/api/CristelLibAPI registerConfigs (Ljava/util/Set;)V"
+        },
+        {
+          "offset": 21,
+          "op": "0x2c"
+        },
+        {
+          "offset": 22,
+          "op": "0x2a"
+        },
+        {
+          "offset": 23,
+          "op": "0x2d"
+        },
+        {
+          "offset": 24,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 29,
+          "op": "0x57"
+        },
+        {
+          "offset": 30,
+          "op": "0x2b"
+        },
+        {
+          "offset": 31,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/CristelLib REGISTRY Lde/cristelknight/cristellib/CristelLibRegistry;"
+        },
+        {
+          "offset": 34,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/api/CristelLibAPI registerStructureSets (Lde/cristelknight/cristellib/CristelLibRegistry;)V"
+        },
+        {
+          "offset": 39,
+          "op": "0x2d"
+        },
+        {
+          "offset": 40,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 105)"
+        },
+        {
+          "offset": 45,
+          "op": "invokeinterface",
+          "reference": "java/util/Set forEach (Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 50,
+          "op": "goto",
+          "args": "0010"
+        },
+        {
+          "offset": 53,
+          "op": "0x4e"
+        },
+        {
+          "offset": 54,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 57,
+          "op": "ldc",
+          "reference": "Mod: {} provides a broken implementation of CristelLibAPI"
+        },
+        {
+          "offset": 59,
+          "op": "0x2a"
+        },
+        {
+          "offset": 60,
+          "op": "0x2d"
+        },
+        {
+          "offset": 61,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger error (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 66,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$preInit$0",
+      "descriptor": "(Lde/cristelknight/cristellib/StructureConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig writeConfig (Z)V"
+        },
+        {
+          "offset": 5,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants CRISTEL_LIB_PACK_ID Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 7,
+          "op": "invokestatic",
+          "reference": "net/minecraft/SharedConstants getCurrentVersion ()Lnet/minecraft/WorldVersion;"
+        },
+        {
+          "offset": 10,
+          "op": "getstatic",
+          "reference": "net/minecraft/server/packs/PackType SERVER_DATA Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 13,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/WorldVersion getPackVersion (Lnet/minecraft/server/packs/PackType;)I"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "Runtime Pack for built-in features"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "cristellib"
+        },
+        {
+          "offset": 22,
+          "op": "ldc",
+          "reference": "pack.png"
+        },
+        {
+          "offset": 24,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/PlatformHelper getResourceStream (Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;"
+        },
+        {
+          "offset": 27,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack <init> (Lnet/minecraft/resources/ResourceLocation;ILjava/lang/String;Ljava/io/InputStream;)V"
+        },
+        {
+          "offset": 30,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/CristelLib CONFIG_PACK Lde/cristelknight/cristellib/builtinpacks/RuntimePack;"
+        },
+        {
+          "offset": 33,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry"
+        },
+        {
+          "offset": 36,
+          "op": "0x59"
+        },
+        {
+          "offset": 37,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry <init> ()V"
+        },
+        {
+          "offset": 40,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/CristelLib REGISTRY Lde/cristelknight/cristellib/CristelLibRegistry;"
+        },
+        {
+          "offset": 43,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

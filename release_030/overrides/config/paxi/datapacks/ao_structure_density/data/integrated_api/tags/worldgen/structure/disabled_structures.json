@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "dungeons_arise:small_blimp",
+    "dungeons_arise:coliseum",
+    "idas:lumber_camp/lumber_camp_bygmahogany",
+    "idas:lumber_camp/lumber_camp_bygredwood"
+  ]
+}

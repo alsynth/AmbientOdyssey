@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "biomeswevegone:bayou",
+    "regions_unexplored:fen",
+    "regions_unexplored:marsh"
+  ]
+}

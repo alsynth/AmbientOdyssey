@@ -1,0 +1,36 @@
+[
+  {
+    "template": "data/ctov/structure/pillager_outpost/mountain/base_plate.nbt",
+    "jigsaws": [
+      {
+        "target": "minecraft:entrance",
+        "joint": "aligned",
+        "pool": "ctov:pillager_outpost/mountain/towers",
+        "final_state": "minecraft:air",
+        "name": "minecraft:entrance",
+        "id": "minecraft:jigsaw"
+      }
+    ]
+  },
+  {
+    "template": "data/ctov/structure/village/christmas/town_center.nbt",
+    "jigsaws": [
+      {
+        "joint": "rollable",
+        "name": "minecraft:building_entrance",
+        "pool": "ctov:village/waystone/sand",
+        "final_state": "minecraft:air",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:building_entrance"
+      },
+      {
+        "joint": "rollable",
+        "name": "minecraft:building_entrance",
+        "pool": "ctov:village/waystone/sand",
+        "final_state": "minecraft:air",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:building_entrance"
+      }
+    ]
+  }
+]

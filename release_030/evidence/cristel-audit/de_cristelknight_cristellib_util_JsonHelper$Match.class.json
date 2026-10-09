@@ -1,0 +1,342 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/util/JsonHelper$Match",
+    "Ljava/lang/Enum<Lde/cristelknight/cristellib/util/JsonHelper$Match;>;",
+    "java/lang/Enum",
+    "JsonHelper.java",
+    "de/cristelknight/cristellib/util/JsonHelper",
+    "Match",
+    "MATCH",
+    "Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+    "MATCH_AND_BREAK",
+    "NO_MATCH",
+    "BREAK",
+    "$VALUES",
+    "[Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+    "values",
+    "()[Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+    "clone",
+    "()Ljava/lang/Object;",
+    "valueOf",
+    "(Ljava/lang/String;)Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+    "name",
+    "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;",
+    "Ljava/lang/String;",
+    "<init>",
+    "(Ljava/lang/String;I)V",
+    "()V",
+    "this",
+    "$values",
+    "<clinit>",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "Signature",
+    "InnerClasses",
+    "SourceFile",
+    "NestHost"
+  ],
+  "methods": [
+    {
+      "name": "values",
+      "descriptor": "()[Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match $VALUES [Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "[Lde/cristelknight/cristellib/util/JsonHelper$Match; clone ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "[Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "valueOf",
+      "descriptor": "(Ljava/lang/String;)Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 2,
+          "op": "0x2a"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "java/lang/Enum valueOf (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/lang/String;I)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x1c"
+        },
+        {
+          "offset": 3,
+          "op": "invokespecial",
+          "reference": "java/lang/Enum <init> (Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 6,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "$values",
+      "descriptor": "()[Lde/cristelknight/cristellib/util/JsonHelper$Match;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x7"
+        },
+        {
+          "offset": 1,
+          "op": "0xbd",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 4,
+          "op": "0x59"
+        },
+        {
+          "offset": 5,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 6,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match MATCH Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 9,
+          "op": "0x53"
+        },
+        {
+          "offset": 10,
+          "op": "0x59"
+        },
+        {
+          "offset": 11,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 12,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match MATCH_AND_BREAK Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 15,
+          "op": "0x53"
+        },
+        {
+          "offset": 16,
+          "op": "0x59"
+        },
+        {
+          "offset": 17,
+          "op": "0x5"
+        },
+        {
+          "offset": 18,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match NO_MATCH Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 21,
+          "op": "0x53"
+        },
+        {
+          "offset": 22,
+          "op": "0x59"
+        },
+        {
+          "offset": 23,
+          "op": "0x6"
+        },
+        {
+          "offset": 24,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match BREAK Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 27,
+          "op": "0x53"
+        },
+        {
+          "offset": 28,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "ldc",
+          "reference": "MATCH"
+        },
+        {
+          "offset": 6,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 7,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match <init> (Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 10,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match MATCH Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 13,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 16,
+          "op": "0x59"
+        },
+        {
+          "offset": 17,
+          "op": "ldc",
+          "reference": "MATCH_AND_BREAK"
+        },
+        {
+          "offset": 19,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 20,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match <init> (Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 23,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match MATCH_AND_BREAK Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 26,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 29,
+          "op": "0x59"
+        },
+        {
+          "offset": 30,
+          "op": "ldc",
+          "reference": "NO_MATCH"
+        },
+        {
+          "offset": 32,
+          "op": "0x5"
+        },
+        {
+          "offset": 33,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match <init> (Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 36,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match NO_MATCH Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 39,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match"
+        },
+        {
+          "offset": 42,
+          "op": "0x59"
+        },
+        {
+          "offset": 43,
+          "op": "ldc",
+          "reference": "BREAK"
+        },
+        {
+          "offset": 45,
+          "op": "0x6"
+        },
+        {
+          "offset": 46,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match <init> (Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 49,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match BREAK Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 52,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match $values ()[Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 55,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper$Match $VALUES [Lde/cristelknight/cristellib/util/JsonHelper$Match;"
+        },
+        {
+          "offset": 58,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

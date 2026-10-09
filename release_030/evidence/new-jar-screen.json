@@ -1,0 +1,463 @@
+[
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 1,
+    "counts": {
+      "loot_table": 9,
+      "tags/worldgen/biome": 1,
+      "worldgen/structure": 1,
+      "worldgen/structure_set": 1
+    },
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "853cd59208f17c25188a419b48d1a9fed3acebf676bb1ddd026fa4e7fb56dad4"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 3,
+    "counts": {
+      "loot_table": 151,
+      "tags/entity_type": 1,
+      "tags/worldgen/biome": 52,
+      "tags/worldgen/structure": 13,
+      "worldgen/processor_list": 7,
+      "worldgen/structure": 40,
+      "worldgen/structure_set": 2,
+      "worldgen/template_pool": 166
+    },
+    "crc": "PASS",
+    "default_structure_templates": 877,
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "7eee1eca7e3b2c6c1bede055934f391ae2e8349ffe33e106f451176d2cfcf0e4"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 19,
+      "tags/worldgen/biome": 5,
+      "worldgen/structure": 5,
+      "worldgen/structure_set": 1,
+      "worldgen/template_pool": 10
+    },
+    "crc": "PASS",
+    "default_structure_templates": 36,
+    "jar": "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "549040fbd81d1b33aea38681109685e86d63985785246a831112c4ba5740d2df"
+  },
+  {
+    "classification": "WORLDGEN_DATA_OR_CODE_REVIEW",
+    "code_hits": 39,
+    "counts": {},
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "753337838224c43dfd8070e54b587219847cbcfc3ffcd06128802fa34fb92214"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 12,
+      "tags/worldgen/biome": 1,
+      "worldgen/processor_list": 1,
+      "worldgen/structure": 1,
+      "worldgen/structure_set": 1,
+      "worldgen/template_pool": 6
+    },
+    "crc": "PASS",
+    "default_structure_templates": 20,
+    "jar": "SkyVillages-1.0.6-1.21.x-neoforge-release.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "5ef7b63c6f1999a632085975afa14f00146369c142fd72980d760cbb617dd52f"
+  },
+  {
+    "classification": "WORLDGEN_DATA_OR_CODE_REVIEW",
+    "code_hits": 24,
+    "counts": {
+      "tags/worldgen/structure": 4
+    },
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "375e0b2f988ab4f5bde182166c0f0b102377adc8f823660c24ade08b0b3cde56"
+  },
+  {
+    "classification": "WORLDGEN_DATA_OR_CODE_REVIEW",
+    "code_hits": 25,
+    "counts": {},
+    "crc": "PASS",
+    "default_structure_templates": 41,
+    "jar": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "8005f1ea798d09fc05dad07a21ed1f393a523a718197cdbd37b1ce6d9a17e4a4"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 3,
+    "counts": {
+      "tags/worldgen/biome": 13,
+      "tags/worldgen/structure": 3,
+      "worldgen/structure": 13,
+      "worldgen/structure_set": 1
+    },
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "5625930dfb3240820d6e4ecf55fff0c39f70ce782fad117a4d418251184c7be0"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 8,
+    "counts": {
+      "loot_table": 9,
+      "tags/worldgen/biome": 1,
+      "tags/worldgen/structure": 4,
+      "tags/worldgen/structure_set": 1,
+      "worldgen/processor_list": 1,
+      "worldgen/structure": 1,
+      "worldgen/structure_set": 1,
+      "worldgen/template_pool": 15
+    },
+    "crc": "PASS",
+    "default_structure_templates": 169,
+    "jar": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "5450a64a7036237f449496837e08f3e5b3aa1d7974a10df43944172def75d8ff"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 6,
+    "counts": {
+      "loot_table": 1,
+      "tags/worldgen/biome": 2,
+      "tags/worldgen/structure": 3,
+      "worldgen/processor_list": 1,
+      "worldgen/structure": 2,
+      "worldgen/structure_set": 2,
+      "worldgen/template_pool": 3
+    },
+    "crc": "PASS",
+    "default_structure_templates": 6,
+    "jar": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "888b1e6d1ada21982a75abfb4afb040c9bc2cc68777ec5fcd1199b978e3d4f8d"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 3,
+    "counts": {
+      "lithostitched/worldgen_modifier": 1019,
+      "loot_table": 12,
+      "tags/worldgen/structure": 28,
+      "worldgen/placed_feature": 1,
+      "worldgen/processor_list": 281,
+      "worldgen/structure": 78,
+      "worldgen/template_pool": 181
+    },
+    "crc": "PASS",
+    "default_structure_templates": 2093,
+    "jar": "[Neoforge]ctov-3.6.3.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "4815b19b83541f09cba556e222612bc5ddcc31f7c4ba2198f4b4d6376cca8b2e"
+  },
+  {
+    "classification": "NO_STRUCTURE_ROUTE_DETECTED",
+    "code_hits": 0,
+    "counts": {
+      "loot_modifiers": 12,
+      "loot_table": 12,
+      "recipe": 87,
+      "tags/entity_type": 11,
+      "tags/item": 34
+    },
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "cataclysm_spellbooks-1.1.14-1.21.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "a5a0dcad537954f488c862b3409831e0d12b4dfdc50bbfade298cb3d05dff2cf"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 3,
+      "worldgen/structure": 4,
+      "worldgen/structure_set": 4,
+      "worldgen/template_pool": 4
+    },
+    "crc": "PASS",
+    "default_structure_templates": 8,
+    "jar": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "96fa8fb53efd33586436d3ac411615754a573fe1f0a6d4c11c8b922126fb8fc6"
+  },
+  {
+    "classification": "WORLDGEN_DATA_OR_CODE_REVIEW",
+    "code_hits": 13,
+    "counts": {},
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "cristellib-neoforge-1.21.1-3.1.7.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "11e05dbc97bd3fe1790bd6361747240e314c1dbf40b590ea20cc691dc8396c38"
+  },
+  {
+    "classification": "NO_STRUCTURE_ROUTE_DETECTED",
+    "code_hits": 0,
+    "counts": {},
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "curios-neoforge-9.5.1+1.21.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "a45df2125c26219974aba7507ffc9afe7b83acc941a386af3faacb1cc0056fde"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 270,
+      "tags/entity_type": 1,
+      "tags/item": 5,
+      "tags/worldgen/biome": 48,
+      "tags/worldgen/structure": 39,
+      "worldgen/configured_feature": 20,
+      "worldgen/placed_feature": 19,
+      "worldgen/processor_list": 35,
+      "worldgen/structure": 97,
+      "worldgen/structure_set": 34,
+      "worldgen/template_pool": 336
+    },
+    "crc": "PASS",
+    "default_structure_templates": 3312,
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "1db28e89e0cb76aebe9e40955d1866e8ac1779575d15c2a1e250ac804a762d05"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "tags/worldgen/biome": 3,
+      "worldgen/structure": 9,
+      "worldgen/structure_set": 9,
+      "worldgen/template_pool": 9
+    },
+    "crc": "PASS",
+    "default_structure_templates": 9,
+    "jar": "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "0e6d4f01c732f3ddf05b16036de92f261756b03b2f9ac5f3596ea40ac5e26fe8"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "worldgen/structure": 1,
+      "worldgen/structure_set": 1,
+      "worldgen/template_pool": 1
+    },
+    "crc": "PASS",
+    "default_structure_templates": 1,
+    "jar": "end_villager_outpost-1.0.0-neoforge-1.21.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "65826ea2692cb3c51737d26ce0ae61ac860e5952334ed469fee48e5d9f58bc3c"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 1,
+    "counts": {
+      "loot_table": 171,
+      "recipe": 1,
+      "tags/item": 1,
+      "tags/worldgen/biome": 103,
+      "tags/worldgen/structure": 9,
+      "tags/worldgen/structure_set": 8,
+      "worldgen/processor_list": 26,
+      "worldgen/structure": 84,
+      "worldgen/structure_set": 8,
+      "worldgen/template_pool": 214
+    },
+    "crc": "PASS",
+    "default_structure_templates": 259,
+    "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "7f5031dd90ae0b32d7fe5c6c47c877cac1eb95a178bc78d196cb24c17ce82522"
+  },
+  {
+    "classification": "WORLDGEN_DATA_OR_CODE_REVIEW",
+    "code_hits": 57,
+    "counts": {
+      "tags/worldgen/biome": 48,
+      "tags/worldgen/structure": 2
+    },
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "integrated_api-neoforge-1.21.1-1.9.0.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "80815d73bbb32605fd75ed521f16714ed3682bd4d1367cfabf26b515ba6b7585"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 1,
+    "counts": {
+      "worldgen/structure": 5,
+      "worldgen/structure_set": 5,
+      "worldgen/template_pool": 10
+    },
+    "crc": "PASS",
+    "default_structure_templates": 26,
+    "jar": "sky_whale_ship-neoforge-1.21.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": false,
+    "parse_errors": [],
+    "sha256": "ad128ee14d5af95ed4bc016bd08d8cfc48fd6fa881d9fd06d7de796b137bc6d9"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 16,
+      "tags/worldgen/biome": 66,
+      "tags/worldgen/structure": 4,
+      "worldgen/processor_list": 25,
+      "worldgen/structure": 60,
+      "worldgen/structure_set": 3,
+      "worldgen/template_pool": 187
+    },
+    "crc": "PASS",
+    "default_structure_templates": 837,
+    "jar": "t_and_t-fabric-neoforge-1.13.11.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "270fc0d1c99e54bc15f43d64bdaac60a90cb896efc357af624988e677136440f"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 2,
+      "tags/item": 1,
+      "tags/worldgen/biome": 22,
+      "worldgen/structure": 22,
+      "worldgen/structure_set": 9,
+      "worldgen/template_pool": 38
+    },
+    "crc": "PASS",
+    "default_structure_templates": 38,
+    "jar": "totw_modded-neoforge-1.21-1.0.9.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "64ff8d5a1bd9efb7c3f2974c07176145ce760b25a5b62be0eecc597151be928a"
+  },
+  {
+    "classification": "NO_STRUCTURE_ROUTE_DETECTED",
+    "code_hits": 0,
+    "counts": {
+      "loot_modifiers": 21,
+      "loot_table": 20,
+      "tags/entity_type": 5,
+      "tags/item": 16
+    },
+    "crc": "PASS",
+    "default_structure_templates": 0,
+    "jar": "traveloptics-4.4.0.1-1.21.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [
+      {
+        "error": "Expecting ',' delimiter: line 11 column 5 (char 376)",
+        "jar": "traveloptics-4.4.0.1-1.21.1.jar",
+        "path": "data/traveloptics/tags/entity_type/element_fire.json"
+      }
+    ],
+    "sha256": "0372b4b8593288726fb0d6e8cdb86202a87677d0c2dafeb96cab50bf057ec298"
+  },
+  {
+    "classification": "STRUCTURE_PROVIDER",
+    "code_hits": 0,
+    "counts": {
+      "loot_table": 2,
+      "worldgen/structure": 17,
+      "worldgen/structure_set": 17,
+      "worldgen/template_pool": 17
+    },
+    "crc": "PASS",
+    "default_structure_templates": 46,
+    "jar": "underwater_village-1.0.2-neoforge-1.21.1.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "7d030d22f1b6ce0cdb811c9ca174d496e858132ba1ce6b02b4e4a5fdacab368c"
+  },
+  {
+    "classification": "WORLDGEN_DATA_OR_CODE_REVIEW",
+    "code_hits": 4,
+    "counts": {
+      "lithostitched/worldgen_modifier": 5,
+      "loot_table": 42,
+      "recipe": 54,
+      "tags/item": 13,
+      "tags/worldgen/biome": 10,
+      "worldgen/configured_feature": 10,
+      "worldgen/placed_feature": 10,
+      "worldgen/template_pool": 5
+    },
+    "crc": "PASS",
+    "default_structure_templates": 3,
+    "jar": "waystones-neoforge-1.21.1-21.1.46.jar",
+    "negative_scope": "Root resources and class constant-reference screen; not a formal proof of absence.",
+    "new_to_audit": true,
+    "parse_errors": [],
+    "sha256": "ca76a4457160e8353b1f013a21ab377b264141f466d84ec8952a123058b8af78"
+  }
+]

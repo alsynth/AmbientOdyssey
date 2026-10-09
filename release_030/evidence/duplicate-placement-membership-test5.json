@@ -1,0 +1,16 @@
+[
+  {
+    "structure_id": "mvs:rare_well",
+    "effective_sets": [
+      "mvs:other_wells",
+      "mvs:rare_well"
+    ]
+  },
+  {
+    "structure_id": "mvs:small_tower_well",
+    "effective_sets": [
+      "mvs:other_wells",
+      "mvs:small_tower_well"
+    ]
+  }
+]

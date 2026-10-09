@@ -1,0 +1,266 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPack",
+    "java/lang/Record",
+    "BuiltInPack.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "packResource",
+    "Lnet/minecraft/server/packs/PackResources;",
+    "displayName",
+    "Lnet/minecraft/network/chat/Component;",
+    "supplier",
+    "Ljava/util/function/Supplier;",
+    "Ljava/util/function/Supplier<Ljava/lang/Boolean;>;",
+    "type",
+    "Lnet/minecraft/server/packs/PackType;",
+    "<init>",
+    "(Lnet/minecraft/server/packs/PackResources;Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Lnet/minecraft/server/packs/PackType;)V",
+    "(Lnet/minecraft/server/packs/PackResources;Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier<Ljava/lang/Boolean;>;Lnet/minecraft/server/packs/PackType;)V",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/builtinpacks/BuiltInPack;",
+    "toString",
+    "()Ljava/lang/String;",
+    "packResource;displayName;supplier;type",
+    "java/lang/runtime/ObjectMethods",
+    "bootstrap",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPack;)Ljava/lang/String;",
+    "hashCode",
+    "()I",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPack;)I",
+    "equals",
+    "(Ljava/lang/Object;)Z",
+    "o",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPack;Ljava/lang/Object;)Z",
+    "Ljava/lang/Object;",
+    "()Lnet/minecraft/server/packs/PackResources;",
+    "()Lnet/minecraft/network/chat/Component;",
+    "()Ljava/util/function/Supplier;",
+    "()Ljava/util/function/Supplier<Ljava/lang/Boolean;>;",
+    "()Lnet/minecraft/server/packs/PackType;",
+    "Signature",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "LocalVariableTypeTable",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods",
+    "Record"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Lnet/minecraft/server/packs/PackResources;Lnet/minecraft/network/chat/Component;Ljava/util/function/Supplier;Lnet/minecraft/server/packs/PackType;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Record <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack packResource Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 9,
+          "op": "0x2a"
+        },
+        {
+          "offset": 10,
+          "op": "0x2c"
+        },
+        {
+          "offset": 11,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack displayName Lnet/minecraft/network/chat/Component;"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "0x2d"
+        },
+        {
+          "offset": 16,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack supplier Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 19,
+          "op": "0x2a"
+        },
+        {
+          "offset": 20,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 22,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack type Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 25,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 52)"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "hashCode",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 57)"
+        },
+        {
+          "offset": 6,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 63)"
+        },
+        {
+          "offset": 7,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "packResource",
+      "descriptor": "()Lnet/minecraft/server/packs/PackResources;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack packResource Lnet/minecraft/server/packs/PackResources;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "displayName",
+      "descriptor": "()Lnet/minecraft/network/chat/Component;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack displayName Lnet/minecraft/network/chat/Component;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "supplier",
+      "descriptor": "()Ljava/util/function/Supplier;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack supplier Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "type",
+      "descriptor": "()Lnet/minecraft/server/packs/PackType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPack type Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

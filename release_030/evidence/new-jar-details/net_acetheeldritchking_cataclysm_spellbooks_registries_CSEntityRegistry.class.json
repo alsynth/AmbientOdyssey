@@ -1,0 +1,2524 @@
+{
+  "constants": [
+    "java/lang/Object",
+    "<init>",
+    "()V",
+    "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry",
+    "ENTITIES",
+    "Lnet/neoforged/neoforge/registries/DeferredRegister;",
+    "net/neoforged/neoforge/registries/DeferredRegister",
+    "register",
+    "(Lnet/neoforged/bus/api/IEventBus;)V",
+    "create",
+    "()Lnet/minecraft/world/entity/EntityType$EntityFactory;",
+    "net/minecraft/world/entity/MobCategory",
+    "MISC",
+    "Lnet/minecraft/world/entity/MobCategory;",
+    "net/minecraft/world/entity/EntityType$Builder",
+    "of",
+    "(Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;",
+    "sized",
+    "(FF)Lnet/minecraft/world/entity/EntityType$Builder;",
+    "fireImmune",
+    "()Lnet/minecraft/world/entity/EntityType$Builder;",
+    "com/github/L_Ender/cataclysm/init/ModEntities",
+    "ABYSS_BLAST",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder;",
+    "net/neoforged/neoforge/registries/DeferredHolder",
+    "getRegisteredName",
+    "()Ljava/lang/String;",
+    "build",
+    "(Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;",
+    "MONSTER",
+    "clientTrackingRange",
+    "(I)Lnet/minecraft/world/entity/EntityType$Builder;",
+    "net/acetheeldritchking/cataclysm_spellbooks/CataclysmSpellbooks",
+    "cataclysm_spellbooks",
+    "nameless_sorcerer",
+    "net/minecraft/resources/ResourceLocation",
+    "fromNamespaceAndPath",
+    "(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "toString",
+    "setShouldReceiveVelocityUpdates",
+    "(Z)Lnet/minecraft/world/entity/EntityType$Builder;",
+    "ancient_ancient_remnant",
+    "surveillance_drone",
+    "flash_bang",
+    "disabling_swipe",
+    "summoned_watcher",
+    "summoned_prowler",
+    "LASER_BEAM",
+    "DEATH_LASER_BEAM",
+    "passengerAttachments",
+    "([F)Lnet/minecraft/world/entity/EntityType$Builder;",
+    "phantom_ancient_remnant",
+    "summoned_amethyst_crab",
+    "summoned_aptrgangr",
+    "summoned_elite_draugr",
+    "summoned_royal_draugr",
+    "summoned_draugr",
+    "summoned_koboleton",
+    "summoned_kobolediator",
+    "summoned_ignited_berserker",
+    "summoned_ignited_revenant",
+    "blazing_aoe",
+    "hellish_blade",
+    "infernal_blade",
+    "net/minecraft/core/registries/Registries",
+    "ENTITY_TYPE",
+    "Lnet/minecraft/resources/ResourceKey;",
+    "(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;",
+    "get",
+    "()Ljava/util/function/Supplier;",
+    "(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;",
+    "INFERNAL_BLADE_PROJECTILE",
+    "HELLISH_BLADE_PROJECTILE",
+    "BLAZING_AOE_ENTITY",
+    "SUMMONED_IGNITED_REVENANT",
+    "SUMMONED_IGNITED_BERSERKER",
+    "SUMMONED_KOBOLEDIATOR",
+    "SUMMONED_KOBOLETON",
+    "SUMMONED_DRAUGR",
+    "SUMMONED_ROYAL_DRAUGR",
+    "SUMMONED_ELITE_DRAUGR",
+    "SUMMONED_APTRGANGR",
+    "SUMMONED_AMETHYST_CRAB",
+    "PHANTOM_ANCIENT_REMNANT",
+    "extended_death_laser_beam",
+    "EXTENDED_DEATH_LASER_BEAM",
+    "extended_laser_beam",
+    "EXTENDED_LASER_BEAM",
+    "SUMMONED_PROWLER",
+    "SUMMONED_WATCHER",
+    "DISABLING_SWIPE",
+    "FLASH_BANG_PROJECTILE",
+    "SURVEILLANCE_DRONE",
+    "ANCIENT_ANCIENT_REMNANT",
+    "NAMELESS_SORCERER",
+    "extended_abyss_blast",
+    "EXTENDED_ABYSS_BLAST",
+    "Signature",
+    "Lnet/neoforged/neoforge/registries/DeferredRegister<Lnet/minecraft/world/entity/EntityType<*>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/infernal_blade/InfernalBladeProjectile;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/hellish_blade/HellishBladeProjectile;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/blazing_aoe/BlazingAoE;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedIgnitedRevenant;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedIgnitedBerserker;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedKobolediator;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedKoboleton;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedDraugr;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedRoyalDraugr;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedEliteDraugr;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedAptrgangr;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedAmethystCrab;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedPhantomRemnant;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedDeathLaserBeamEntity;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedLaserBeamEntity;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedProwler;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedWatcher;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/disabling_swipe/DisablingSwipeAoE;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/flash_bang/FlashBangProjectileEntity;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SurveillanceDroneEntity;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/AncientAncientRemnant;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/NamelessSorcerer;>;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/entity/EntityType<*>;Lnet/minecraft/world/entity/EntityType<Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedAbyssBlastEntity;>;>;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "this",
+    "Lnet/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry;",
+    "eventBus",
+    "Lnet/neoforged/bus/api/IEventBus;",
+    "lambda$static$22",
+    "()Lnet/minecraft/world/entity/EntityType;",
+    "lambda$static$21",
+    "lambda$static$20",
+    "lambda$static$19",
+    "lambda$static$18",
+    "lambda$static$17",
+    "lambda$static$16",
+    "lambda$static$15",
+    "lambda$static$14",
+    "lambda$static$13",
+    "lambda$static$12",
+    "lambda$static$11",
+    "lambda$static$10",
+    "lambda$static$9",
+    "lambda$static$8",
+    "lambda$static$7",
+    "lambda$static$6",
+    "lambda$static$5",
+    "lambda$static$4",
+    "lambda$static$3",
+    "lambda$static$2",
+    "lambda$static$1",
+    "lambda$static$0",
+    "<clinit>",
+    "SourceFile",
+    "CSEntityRegistry.java",
+    "BootstrapMethods",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedAbyssBlastEntity",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)V",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedAbyssBlastEntity;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/NamelessSorcerer",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/NamelessSorcerer;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/AncientAncientRemnant",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/AncientAncientRemnant;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SurveillanceDroneEntity",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SurveillanceDroneEntity;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/flash_bang/FlashBangProjectileEntity",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/flash_bang/FlashBangProjectileEntity;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/disabling_swipe/DisablingSwipeAoE",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/disabling_swipe/DisablingSwipeAoE;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedWatcher",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedWatcher;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedProwler",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedProwler;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedLaserBeamEntity",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedLaserBeamEntity;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedDeathLaserBeamEntity",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/extended/ExtendedDeathLaserBeamEntity;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedPhantomRemnant",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedPhantomRemnant;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedAmethystCrab",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedAmethystCrab;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedAptrgangr",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedAptrgangr;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedEliteDraugr",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedEliteDraugr;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedRoyalDraugr",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedRoyalDraugr;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedDraugr",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedDraugr;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedKoboleton",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedKoboleton;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedKobolediator",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedKobolediator;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedIgnitedBerserker",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedIgnitedBerserker;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedIgnitedRevenant",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/mobs/SummonedIgnitedRevenant;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/blazing_aoe/BlazingAoE",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/blazing_aoe/BlazingAoE;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/hellish_blade/HellishBladeProjectile",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/hellish_blade/HellishBladeProjectile;",
+    "net/acetheeldritchking/cataclysm_spellbooks/entity/spells/infernal_blade/InfernalBladeProjectile",
+    "(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/level/Level;)Lnet/acetheeldritchking/cataclysm_spellbooks/entity/spells/infernal_blade/InfernalBladeProjectile;",
+    "()Ljava/lang/Object;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "InnerClasses",
+    "net/minecraft/world/entity/EntityType$EntityFactory",
+    "net/minecraft/world/entity/EntityType",
+    "EntityFactory",
+    "Builder",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "register",
+      "descriptor": "(Lnet/neoforged/bus/api/IEventBus;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 3,
+          "op": "0x2a"
+        },
+        {
+          "offset": 4,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Lnet/neoforged/bus/api/IEventBus;)V"
+        },
+        {
+          "offset": 7,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$22",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3dcccccd')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '3dcccccd')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "getstatic",
+          "reference": "com/github/L_Ender/cataclysm/init/ModEntities ABYSS_BLAST Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 24,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredHolder getRegisteredName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 27,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 30,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$21",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3f19999a')"
+        },
+        {
+          "offset": 13,
+          "op": "0xd"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 17,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 19,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 22,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 24,
+          "op": "ldc",
+          "reference": "nameless_sorcerer"
+        },
+        {
+          "offset": 26,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 29,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 32,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 35,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$20",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '40733333')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40a00000')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "0x10",
+          "args": "08"
+        },
+        {
+          "offset": 23,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 26,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 27,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder setShouldReceiveVelocityUpdates (Z)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 30,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 32,
+          "op": "ldc",
+          "reference": "ancient_ancient_remnant"
+        },
+        {
+          "offset": 34,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 37,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 40,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 43,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$19",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "0xc"
+        },
+        {
+          "offset": 12,
+          "op": "0xc"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 16,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "surveillance_drone"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$18",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 4, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "0xc"
+        },
+        {
+          "offset": 12,
+          "op": "0xc"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 16,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "flash_bang"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$17",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 5, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '40a00000')"
+        },
+        {
+          "offset": 13,
+          "op": "0xc"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 17,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 19,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 22,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 24,
+          "op": "ldc",
+          "reference": "disabling_swipe"
+        },
+        {
+          "offset": 26,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 29,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 32,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 35,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$16",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 6, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3f59999a')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '3f59999a')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "summoned_watcher"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$15",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 7, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '40200000')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40300000')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "summoned_prowler"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$14",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 8, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3ea00000')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '3ea00000')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "getstatic",
+          "reference": "com/github/L_Ender/cataclysm/init/ModEntities LASER_BEAM Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 24,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredHolder getRegisteredName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 27,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 30,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$13",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 9, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3dcccccd')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '3dcccccd')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "getstatic",
+          "reference": "com/github/L_Ender/cataclysm/init/ModEntities DEATH_LASER_BEAM Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 24,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredHolder getRegisteredName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 27,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 30,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$12",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 10, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '408b3333')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40a00000')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 19,
+          "op": "0xbc",
+          "args": "06"
+        },
+        {
+          "offset": 21,
+          "op": "0x59"
+        },
+        {
+          "offset": 22,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "(4, '40900000')"
+        },
+        {
+          "offset": 25,
+          "op": "0x51"
+        },
+        {
+          "offset": 26,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder passengerAttachments ([F)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 29,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 32,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 34,
+          "op": "ldc",
+          "reference": "phantom_ancient_remnant"
+        },
+        {
+          "offset": 36,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 39,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 42,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 45,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$11",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 11, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '40200000')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40266666')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "summoned_amethyst_crab"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$10",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 12, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '4019999a')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40800000')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "summoned_aptrgangr"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$9",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 13, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3f4ccccd')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40266666')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "summoned_elite_draugr"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$8",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 14, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3f79999a')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40033333')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "summoned_royal_draugr"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$7",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 15, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3f19999a')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '3ff9999a')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "summoned_draugr"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$6",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 16, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3f59999a')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '3fcccccd')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "summoned_koboleton"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$5",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 17, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '40200000')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40900000')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 19,
+          "op": "0xbc",
+          "args": "06"
+        },
+        {
+          "offset": 21,
+          "op": "0x59"
+        },
+        {
+          "offset": 22,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "(4, '4060a3d7')"
+        },
+        {
+          "offset": 25,
+          "op": "0x51"
+        },
+        {
+          "offset": 26,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder passengerAttachments ([F)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 29,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 31,
+          "op": "ldc",
+          "reference": "summoned_kobolediator"
+        },
+        {
+          "offset": 33,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 36,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 39,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 42,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$4",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 18, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "0xc"
+        },
+        {
+          "offset": 12,
+          "op": "ldc",
+          "reference": "(4, '4019999a')"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 17,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 22,
+          "op": "ldc",
+          "reference": "summoned_ignited_berserker"
+        },
+        {
+          "offset": 24,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 27,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 30,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 33,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$3",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 19, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MONSTER Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "ldc",
+          "reference": "(4, '3fcccccd')"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "(4, '40333333')"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder fireImmune ()Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "summoned_ignited_revenant"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$2",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 20, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "0xc"
+        },
+        {
+          "offset": 12,
+          "op": "0xc"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 16,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "blazing_aoe"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$1",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 21, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "0xc"
+        },
+        {
+          "offset": 12,
+          "op": "0xc"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 16,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "hellish_blade"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$0",
+      "descriptor": "()Lnet/minecraft/world/entity/EntityType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 22, 20)"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/MobCategory MISC Lnet/minecraft/world/entity/MobCategory;"
+        },
+        {
+          "offset": 8,
+          "op": "invokestatic",
+          "reference": "net/minecraft/world/entity/EntityType$Builder of (Lnet/minecraft/world/entity/EntityType$EntityFactory;Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 11,
+          "op": "0xc"
+        },
+        {
+          "offset": 12,
+          "op": "0xc"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder sized (FF)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 16,
+          "op": "0x10",
+          "args": "40"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder clientTrackingRange (I)Lnet/minecraft/world/entity/EntityType$Builder;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 23,
+          "op": "ldc",
+          "reference": "infernal_blade"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/entity/EntityType$Builder build (Ljava/lang/String;)Lnet/minecraft/world/entity/EntityType;"
+        },
+        {
+          "offset": 34,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/minecraft/core/registries/Registries ENTITY_TYPE Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc",
+          "reference": "cataclysm_spellbooks"
+        },
+        {
+          "offset": 5,
+          "op": "invokestatic",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister create (Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 8,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 11,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 14,
+          "op": "ldc",
+          "reference": "infernal_blade"
+        },
+        {
+          "offset": 16,
+          "op": "invokedynamic",
+          "reference": "(18, 23, 185)"
+        },
+        {
+          "offset": 21,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 24,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry INFERNAL_BLADE_PROJECTILE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 27,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 30,
+          "op": "ldc",
+          "reference": "hellish_blade"
+        },
+        {
+          "offset": 32,
+          "op": "invokedynamic",
+          "reference": "(18, 24, 185)"
+        },
+        {
+          "offset": 37,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 40,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry HELLISH_BLADE_PROJECTILE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 43,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 46,
+          "op": "ldc",
+          "reference": "blazing_aoe"
+        },
+        {
+          "offset": 48,
+          "op": "invokedynamic",
+          "reference": "(18, 25, 185)"
+        },
+        {
+          "offset": 53,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 56,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry BLAZING_AOE_ENTITY Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 59,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 62,
+          "op": "ldc",
+          "reference": "summoned_ignited_revenant"
+        },
+        {
+          "offset": 64,
+          "op": "invokedynamic",
+          "reference": "(18, 26, 185)"
+        },
+        {
+          "offset": 69,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 72,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_IGNITED_REVENANT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 75,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 78,
+          "op": "ldc",
+          "reference": "summoned_ignited_berserker"
+        },
+        {
+          "offset": 80,
+          "op": "invokedynamic",
+          "reference": "(18, 27, 185)"
+        },
+        {
+          "offset": 85,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 88,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_IGNITED_BERSERKER Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 91,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 94,
+          "op": "ldc",
+          "reference": "summoned_kobolediator"
+        },
+        {
+          "offset": 96,
+          "op": "invokedynamic",
+          "reference": "(18, 28, 185)"
+        },
+        {
+          "offset": 101,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 104,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_KOBOLEDIATOR Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 107,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 110,
+          "op": "ldc",
+          "reference": "summoned_koboleton"
+        },
+        {
+          "offset": 112,
+          "op": "invokedynamic",
+          "reference": "(18, 29, 185)"
+        },
+        {
+          "offset": 117,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 120,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_KOBOLETON Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 123,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 126,
+          "op": "ldc",
+          "reference": "summoned_draugr"
+        },
+        {
+          "offset": 128,
+          "op": "invokedynamic",
+          "reference": "(18, 30, 185)"
+        },
+        {
+          "offset": 133,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 136,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_DRAUGR Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 139,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 142,
+          "op": "ldc",
+          "reference": "summoned_royal_draugr"
+        },
+        {
+          "offset": 144,
+          "op": "invokedynamic",
+          "reference": "(18, 31, 185)"
+        },
+        {
+          "offset": 149,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 152,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_ROYAL_DRAUGR Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 155,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 158,
+          "op": "ldc",
+          "reference": "summoned_elite_draugr"
+        },
+        {
+          "offset": 160,
+          "op": "invokedynamic",
+          "reference": "(18, 32, 185)"
+        },
+        {
+          "offset": 165,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 168,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_ELITE_DRAUGR Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 171,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 174,
+          "op": "ldc",
+          "reference": "summoned_aptrgangr"
+        },
+        {
+          "offset": 176,
+          "op": "invokedynamic",
+          "reference": "(18, 33, 185)"
+        },
+        {
+          "offset": 181,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 184,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_APTRGANGR Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 187,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 190,
+          "op": "ldc",
+          "reference": "summoned_amethyst_crab"
+        },
+        {
+          "offset": 192,
+          "op": "invokedynamic",
+          "reference": "(18, 34, 185)"
+        },
+        {
+          "offset": 197,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 200,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_AMETHYST_CRAB Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 203,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 206,
+          "op": "ldc",
+          "reference": "phantom_ancient_remnant"
+        },
+        {
+          "offset": 208,
+          "op": "invokedynamic",
+          "reference": "(18, 35, 185)"
+        },
+        {
+          "offset": 213,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 216,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry PHANTOM_ANCIENT_REMNANT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 219,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 222,
+          "op": "ldc",
+          "reference": "extended_death_laser_beam"
+        },
+        {
+          "offset": 224,
+          "op": "invokedynamic",
+          "reference": "(18, 36, 185)"
+        },
+        {
+          "offset": 229,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 232,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry EXTENDED_DEATH_LASER_BEAM Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 235,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 238,
+          "op": "ldc",
+          "reference": "extended_laser_beam"
+        },
+        {
+          "offset": 240,
+          "op": "invokedynamic",
+          "reference": "(18, 37, 185)"
+        },
+        {
+          "offset": 245,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 248,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry EXTENDED_LASER_BEAM Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 251,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 254,
+          "op": "ldc",
+          "reference": "summoned_prowler"
+        },
+        {
+          "offset": 256,
+          "op": "invokedynamic",
+          "reference": "(18, 38, 185)"
+        },
+        {
+          "offset": 261,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 264,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_PROWLER Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 267,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 270,
+          "op": "ldc",
+          "reference": "summoned_watcher"
+        },
+        {
+          "offset": 272,
+          "op": "invokedynamic",
+          "reference": "(18, 39, 185)"
+        },
+        {
+          "offset": 277,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 280,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SUMMONED_WATCHER Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 283,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 286,
+          "op": "ldc",
+          "reference": "disabling_swipe"
+        },
+        {
+          "offset": 288,
+          "op": "invokedynamic",
+          "reference": "(18, 40, 185)"
+        },
+        {
+          "offset": 293,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 296,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry DISABLING_SWIPE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 299,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 302,
+          "op": "ldc",
+          "reference": "flash_bang"
+        },
+        {
+          "offset": 304,
+          "op": "invokedynamic",
+          "reference": "(18, 41, 185)"
+        },
+        {
+          "offset": 309,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 312,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry FLASH_BANG_PROJECTILE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 315,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 318,
+          "op": "ldc",
+          "reference": "surveillance_drone"
+        },
+        {
+          "offset": 320,
+          "op": "invokedynamic",
+          "reference": "(18, 42, 185)"
+        },
+        {
+          "offset": 325,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 328,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry SURVEILLANCE_DRONE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 331,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 334,
+          "op": "ldc",
+          "reference": "ancient_ancient_remnant"
+        },
+        {
+          "offset": 336,
+          "op": "invokedynamic",
+          "reference": "(18, 43, 185)"
+        },
+        {
+          "offset": 341,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 344,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ANCIENT_ANCIENT_REMNANT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 347,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 350,
+          "op": "ldc",
+          "reference": "nameless_sorcerer"
+        },
+        {
+          "offset": 352,
+          "op": "invokedynamic",
+          "reference": "(18, 44, 185)"
+        },
+        {
+          "offset": 357,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 360,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry NAMELESS_SORCERER Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 363,
+          "op": "getstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry ENTITIES Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 366,
+          "op": "ldc_w",
+          "reference": "extended_abyss_blast"
+        },
+        {
+          "offset": 369,
+          "op": "invokedynamic",
+          "reference": "(18, 45, 185)"
+        },
+        {
+          "offset": 374,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 377,
+          "op": "putstatic",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/registries/CSEntityRegistry EXTENDED_ABYSS_BLAST Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 380,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

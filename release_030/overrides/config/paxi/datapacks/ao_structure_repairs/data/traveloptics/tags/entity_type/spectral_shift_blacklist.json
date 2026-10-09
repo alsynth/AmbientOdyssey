@@ -1,0 +1,51 @@
+{
+  "__comment": "Spectral Shift necklace modification on Spectral Blink spell will not work on mentioned entities",
+  "replace": true,
+  "values": [
+    "minecraft:ender_dragon",
+    "minecraft:wither",
+    "cataclysm:ender_guardian",
+    "cataclysm:maledictus",
+    "cataclysm:the_leviathan",
+    "cataclysm:ignis",
+    "cataclysm:the_harbinger",
+    "cataclysm:netherite_monstrosity",
+    "cataclysm:ancient_remnant",
+    {
+      "id": "cataclysm_spellbooks:ancient_ancient_remnant",
+      "required": false
+    },
+    {
+      "id": "iceandfire:ice_dragon",
+      "required": false
+    },
+    {
+      "id": "iceandfire:fire_dragon",
+      "required": false
+    },
+    {
+      "id": "iceandfire:lightning_dragon",
+      "required": false
+    },
+    {
+      "id": "alexsmobs:void_worm",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:frostmaw",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:umvuthi",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:ferrous_wroughtnaut",
+      "required": false
+    },
+    {
+      "id": "mowziesmobs:sculptor",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:auroral_garden",
+    "biomesoplenty:ominous_woods",
+    "biomesoplenty:snowblossom_grove",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:frosted_coniferous_forest",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:skyris_vale",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "natures_spirit:windswept_sugi_forest",
+    "regions_unexplored:ashen_woodland",
+    "regions_unexplored:cold_deciduous_forest",
+    "regions_unexplored:maple_forest",
+    "regions_unexplored:orchard",
+    "regions_unexplored:redwoods"
+  ]
+}

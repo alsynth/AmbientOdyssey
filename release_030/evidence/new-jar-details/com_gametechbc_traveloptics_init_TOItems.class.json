@@ -1,0 +1,1373 @@
+{
+  "constants": [
+    "java/lang/Object",
+    "<init>",
+    "()V",
+    "com/gametechbc/traveloptics/init/TOItems",
+    "ITEMS",
+    "Lnet/neoforged/neoforge/registries/DeferredRegister;",
+    "net/neoforged/neoforge/registries/DeferredRegister",
+    "register",
+    "(Lnet/neoforged/bus/api/IEventBus;)V",
+    "getEntries",
+    "()Ljava/util/Collection;",
+    "io/redspace/ironsspellbooks/item/SpellBook",
+    "com/gametechbc/traveloptics/config/SpellsConfig",
+    "shellboundSpellSlots",
+    "Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;",
+    "net/neoforged/neoforge/common/ModConfigSpec$IntValue",
+    "get",
+    "()Ljava/lang/Object;",
+    "java/lang/Integer",
+    "intValue",
+    "()I",
+    "(I)V",
+    "io/redspace/ironsspellbooks/item/weapons/AttributeContainer",
+    "io/redspace/ironsspellbooks/api/registry/AttributeRegistry",
+    "MAX_MANA",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder;",
+    "shellboundMaxMana",
+    "Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;",
+    "net/neoforged/neoforge/common/ModConfigSpec$DoubleValue",
+    "java/lang/Double",
+    "doubleValue",
+    "()D",
+    "net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation",
+    "ADD_VALUE",
+    "Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;",
+    "(Lnet/minecraft/core/Holder;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V",
+    "NATURE_SPELL_POWER",
+    "shellboundNatureSpellPower",
+    "ADD_MULTIPLIED_BASE",
+    "COOLDOWN_REDUCTION",
+    "shellboundCooldownReduction",
+    "withSpellbookAttributes",
+    "([Lio/redspace/ironsspellbooks/item/weapons/AttributeContainer;)Lio/redspace/ironsspellbooks/item/curios/CurioBaseItem;",
+    "net/minecraft/core/registries/Registries",
+    "ITEM",
+    "Lnet/minecraft/resources/ResourceKey;",
+    "com/gametechbc/traveloptics/TravelopticsMod",
+    "traveloptics",
+    "create",
+    "(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;",
+    "verdant_spellweave_ingot",
+    "()Ljava/util/function/Supplier;",
+    "(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;",
+    "VERDANT_SPELLWEAVE_INGOT",
+    "crimson_spellweave_ingot",
+    "CRIMSON_SPELLWEAVE_INGOT",
+    "eldritch_spellweave_ingot",
+    "ELDRITCH_SPELLWEAVE_INGOT",
+    "abyssal_spellweave_ingot",
+    "ABYSSAL_SPELLWEAVE_INGOT",
+    "evokated_spellweave_ingot",
+    "EVOKATED_SPELLWEAVE_INGOT",
+    "celestial_spellweave_ingot",
+    "CELESTIAL_SPELLWEAVE_INGOT",
+    "pyro_spellweave_ingot",
+    "PYRO_SPELLWEAVE_INGOT",
+    "cryo_spellweave_ingot",
+    "CRYO_SPELLWEAVE_INGOT",
+    "lightning_spellweave_ingot",
+    "LIGHTNING_SPELLWEAVE_INGOT",
+    "void_spellweave_ingot",
+    "VOID_SPELLWEAVE_INGOT",
+    "abyssal_tentacle",
+    "ABYSSAL_TENTACLE",
+    "desert_jewel_fragment",
+    "DESERT_JEWEL_FRAGMENT",
+    "flame_tempered_handguard",
+    "FLAME_TEMPERED_HANDGUARD",
+    "kyrexi_claws",
+    "KYREXI_CLAWS",
+    "last_glow",
+    "LAST_GLOW",
+    "echo_winglet",
+    "ECHO_WINGLET",
+    "aqua_scroll_dummy",
+    "AQUA_SCROLL_DUMMY",
+    "archive_of_abyssal_secrets",
+    "ARCHIVE_OF_ABYSSAL_SECRETS",
+    "chronicles_of_the_firelord",
+    "CHRONICLES_OF_THE_FIRELORD",
+    "the_accused_codex",
+    "THE_ACCUSED_CODEX",
+    "shellbound",
+    "SHELLBOUND",
+    "aetherial_despair_ring",
+    "AETHERIAL_DESPAIR_RING",
+    "Ljava/util/function/Supplier;",
+    "amulet_of_spectral_shift",
+    "AMULET_OF_SPECTRAL_SHIFT",
+    "nightstalkers_band",
+    "NIGHTSTALKERS_BAND",
+    "azure_ignition_bracelet",
+    "AZURE_IGNITION_BRACELET",
+    "energy_unbound_necklace",
+    "ENERGY_UNBOUND_NECKLACE",
+    "sigil_of_the_spider_sorcerer",
+    "SIGIL_OF_THE_SPIDER_SORCERER",
+    "firestorm_ring",
+    "FIRESTORM_RING",
+    "mechanized_wraithblade",
+    "MECHANIZED_WRAITHBLADE",
+    "cursed_wraithblade",
+    "CURSED_WRAITHBLADE",
+    "infernal_devastator",
+    "INFERNAL_DEVASTATOR",
+    "infernal_devastator_level_one",
+    "INFERNAL_DEVASTATOR_LEVEL_ONE",
+    "infernal_devastator_level_two",
+    "INFERNAL_DEVASTATOR_LEVEL_TWO",
+    "infernal_devastator_level_three",
+    "INFERNAL_DEVASTATOR_LEVEL_THREE",
+    "Signature",
+    "Lnet/neoforged/neoforge/registries/DeferredRegister<Lnet/minecraft/world/item/Item;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/Item;>;",
+    "Ljava/util/function/Supplier<Lio/redspace/ironsspellbooks/item/curios/CurioBaseItem;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lcom/gametechbc/traveloptics/item/bossweapon/mechanized_wraithblade/MechanizedWraithbladeItem;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lcom/gametechbc/traveloptics/item/bossweapon/cursed_wraithblade/CursedWraithbladeItem;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorItem;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelOneItem;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelTwoItem;>;",
+    "Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelThreeItem;>;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "this",
+    "Lcom/gametechbc/traveloptics/init/TOItems;",
+    "eventBus",
+    "Lnet/neoforged/bus/api/IEventBus;",
+    "getTOItems",
+    "()Ljava/util/Collection<Lnet/neoforged/neoforge/registries/DeferredHolder<Lnet/minecraft/world/item/Item;+Lnet/minecraft/world/item/Item;>;>;",
+    "lambda$static$0",
+    "()Lnet/minecraft/world/item/Item;",
+    "<clinit>",
+    "SourceFile",
+    "TOItems.java",
+    "BootstrapMethods",
+    "com/gametechbc/traveloptics/item/items/VerdantSpellweaveItem",
+    "com/gametechbc/traveloptics/item/items/CrimsonSpellweaveItem",
+    "com/gametechbc/traveloptics/item/items/EldritchSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/AbyssalSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/EvokatedSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/CelestialSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/PyroSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/CryoSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/LightningSpellweaveIngotItem",
+    "com/gametechbc/traveloptics/item/items/VoidSpellweaveItem",
+    "com/gametechbc/traveloptics/item/items/AbyssalTentacleItem",
+    "com/gametechbc/traveloptics/item/items/DesertJewelFragmentItem",
+    "com/gametechbc/traveloptics/item/items/FlameTemperedHandguardItem",
+    "com/gametechbc/traveloptics/item/items/KyrexiClawsItem",
+    "com/gametechbc/traveloptics/item/items/LastGlowItem",
+    "com/gametechbc/traveloptics/item/items/EchoWingletItem",
+    "com/gametechbc/traveloptics/item/items/AquaScrollDummyItem",
+    "com/gametechbc/traveloptics/item/spellbook/ArchiveOfAbyssalSecretsSpellbook",
+    "com/gametechbc/traveloptics/item/spellbook/ChroniclesOfTheFirelordSpellbook",
+    "com/gametechbc/traveloptics/item/spellbook/TheAccusedCodexSpellbook",
+    "com/gametechbc/traveloptics/item/talent_curios/AetherialDespairRingItem",
+    "()Lio/redspace/ironsspellbooks/item/curios/CurioBaseItem;",
+    "com/gametechbc/traveloptics/item/talent_curios/AmuletOfSpectralShiftItem",
+    "com/gametechbc/traveloptics/item/talent_curios/NighstalkersBandItem",
+    "com/gametechbc/traveloptics/item/talent_curios/AzureIgnitionBraceletItem",
+    "com/gametechbc/traveloptics/item/talent_curios/EnergyUnboundNecklaceItem",
+    "com/gametechbc/traveloptics/item/talent_curios/SigilOfTheSpiderSorcererItem",
+    "com/gametechbc/traveloptics/item/talent_curios/FirestormRingItem",
+    "com/gametechbc/traveloptics/item/bossweapon/mechanized_wraithblade/MechanizedWraithbladeItem",
+    "()Lcom/gametechbc/traveloptics/item/bossweapon/mechanized_wraithblade/MechanizedWraithbladeItem;",
+    "com/gametechbc/traveloptics/item/bossweapon/cursed_wraithblade/CursedWraithbladeItem",
+    "()Lcom/gametechbc/traveloptics/item/bossweapon/cursed_wraithblade/CursedWraithbladeItem;",
+    "com/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorItem",
+    "()Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorItem;",
+    "com/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelOneItem",
+    "()Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelOneItem;",
+    "com/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelTwoItem",
+    "()Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelTwoItem;",
+    "com/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelThreeItem",
+    "()Lcom/gametechbc/traveloptics/item/bossweapon/infernal_devastator/InfernalDevastatorLevelThreeItem;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "InnerClasses",
+    "net/neoforged/neoforge/common/ModConfigSpec",
+    "IntValue",
+    "DoubleValue",
+    "net/minecraft/world/entity/ai/attributes/AttributeModifier",
+    "Operation",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "register",
+      "descriptor": "(Lnet/neoforged/bus/api/IEventBus;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 3,
+          "op": "0x2a"
+        },
+        {
+          "offset": 4,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Lnet/neoforged/bus/api/IEventBus;)V"
+        },
+        {
+          "offset": 7,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getTOItems",
+      "descriptor": "()Ljava/util/Collection;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister getEntries ()Ljava/util/Collection;"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$0",
+      "descriptor": "()Lnet/minecraft/world/item/Item;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "io/redspace/ironsspellbooks/item/SpellBook"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/config/SpellsConfig shellboundSpellSlots Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$IntValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 10,
+          "op": "checkcast",
+          "reference": "java/lang/Integer"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 16,
+          "op": "invokespecial",
+          "reference": "io/redspace/ironsspellbooks/item/SpellBook <init> (I)V"
+        },
+        {
+          "offset": 19,
+          "op": "0x6"
+        },
+        {
+          "offset": 20,
+          "op": "0xbd",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer"
+        },
+        {
+          "offset": 23,
+          "op": "0x59"
+        },
+        {
+          "offset": 24,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 25,
+          "op": "new",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer"
+        },
+        {
+          "offset": 28,
+          "op": "0x59"
+        },
+        {
+          "offset": 29,
+          "op": "getstatic",
+          "reference": "io/redspace/ironsspellbooks/api/registry/AttributeRegistry MAX_MANA Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 32,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/config/SpellsConfig shellboundMaxMana Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;"
+        },
+        {
+          "offset": 35,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$DoubleValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 38,
+          "op": "checkcast",
+          "reference": "java/lang/Double"
+        },
+        {
+          "offset": 41,
+          "op": "invokevirtual",
+          "reference": "java/lang/Double doubleValue ()D"
+        },
+        {
+          "offset": 44,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation ADD_VALUE Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;"
+        },
+        {
+          "offset": 47,
+          "op": "invokespecial",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer <init> (Lnet/minecraft/core/Holder;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V"
+        },
+        {
+          "offset": 50,
+          "op": "0x53"
+        },
+        {
+          "offset": 51,
+          "op": "0x59"
+        },
+        {
+          "offset": 52,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 53,
+          "op": "new",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer"
+        },
+        {
+          "offset": 56,
+          "op": "0x59"
+        },
+        {
+          "offset": 57,
+          "op": "getstatic",
+          "reference": "io/redspace/ironsspellbooks/api/registry/AttributeRegistry NATURE_SPELL_POWER Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 60,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/config/SpellsConfig shellboundNatureSpellPower Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;"
+        },
+        {
+          "offset": 63,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$DoubleValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 66,
+          "op": "checkcast",
+          "reference": "java/lang/Double"
+        },
+        {
+          "offset": 69,
+          "op": "invokevirtual",
+          "reference": "java/lang/Double doubleValue ()D"
+        },
+        {
+          "offset": 72,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation ADD_MULTIPLIED_BASE Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;"
+        },
+        {
+          "offset": 75,
+          "op": "invokespecial",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer <init> (Lnet/minecraft/core/Holder;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V"
+        },
+        {
+          "offset": 78,
+          "op": "0x53"
+        },
+        {
+          "offset": 79,
+          "op": "0x59"
+        },
+        {
+          "offset": 80,
+          "op": "0x5"
+        },
+        {
+          "offset": 81,
+          "op": "new",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer"
+        },
+        {
+          "offset": 84,
+          "op": "0x59"
+        },
+        {
+          "offset": 85,
+          "op": "getstatic",
+          "reference": "io/redspace/ironsspellbooks/api/registry/AttributeRegistry COOLDOWN_REDUCTION Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 88,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/config/SpellsConfig shellboundCooldownReduction Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;"
+        },
+        {
+          "offset": 91,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$DoubleValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 94,
+          "op": "checkcast",
+          "reference": "java/lang/Double"
+        },
+        {
+          "offset": 97,
+          "op": "invokevirtual",
+          "reference": "java/lang/Double doubleValue ()D"
+        },
+        {
+          "offset": 100,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation ADD_MULTIPLIED_BASE Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;"
+        },
+        {
+          "offset": 103,
+          "op": "invokespecial",
+          "reference": "io/redspace/ironsspellbooks/item/weapons/AttributeContainer <init> (Lnet/minecraft/core/Holder;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V"
+        },
+        {
+          "offset": 106,
+          "op": "0x53"
+        },
+        {
+          "offset": 107,
+          "op": "invokevirtual",
+          "reference": "io/redspace/ironsspellbooks/item/SpellBook withSpellbookAttributes ([Lio/redspace/ironsspellbooks/item/weapons/AttributeContainer;)Lio/redspace/ironsspellbooks/item/curios/CurioBaseItem;"
+        },
+        {
+          "offset": 110,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/minecraft/core/registries/Registries ITEM Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc",
+          "reference": "traveloptics"
+        },
+        {
+          "offset": 5,
+          "op": "invokestatic",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister create (Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 8,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 11,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 14,
+          "op": "ldc",
+          "reference": "verdant_spellweave_ingot"
+        },
+        {
+          "offset": 16,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 112)"
+        },
+        {
+          "offset": 21,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 24,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems VERDANT_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 27,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 30,
+          "op": "ldc",
+          "reference": "crimson_spellweave_ingot"
+        },
+        {
+          "offset": 32,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 112)"
+        },
+        {
+          "offset": 37,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 40,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems CRIMSON_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 43,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 46,
+          "op": "ldc",
+          "reference": "eldritch_spellweave_ingot"
+        },
+        {
+          "offset": 48,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 112)"
+        },
+        {
+          "offset": 53,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 56,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ELDRITCH_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 59,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 62,
+          "op": "ldc",
+          "reference": "abyssal_spellweave_ingot"
+        },
+        {
+          "offset": 64,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 112)"
+        },
+        {
+          "offset": 69,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 72,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ABYSSAL_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 75,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 78,
+          "op": "ldc",
+          "reference": "evokated_spellweave_ingot"
+        },
+        {
+          "offset": 80,
+          "op": "invokedynamic",
+          "reference": "(18, 4, 112)"
+        },
+        {
+          "offset": 85,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 88,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems EVOKATED_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 91,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 94,
+          "op": "ldc",
+          "reference": "celestial_spellweave_ingot"
+        },
+        {
+          "offset": 96,
+          "op": "invokedynamic",
+          "reference": "(18, 5, 112)"
+        },
+        {
+          "offset": 101,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 104,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems CELESTIAL_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 107,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 110,
+          "op": "ldc",
+          "reference": "pyro_spellweave_ingot"
+        },
+        {
+          "offset": 112,
+          "op": "invokedynamic",
+          "reference": "(18, 6, 112)"
+        },
+        {
+          "offset": 117,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 120,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems PYRO_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 123,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 126,
+          "op": "ldc",
+          "reference": "cryo_spellweave_ingot"
+        },
+        {
+          "offset": 128,
+          "op": "invokedynamic",
+          "reference": "(18, 7, 112)"
+        },
+        {
+          "offset": 133,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 136,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems CRYO_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 139,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 142,
+          "op": "ldc",
+          "reference": "lightning_spellweave_ingot"
+        },
+        {
+          "offset": 144,
+          "op": "invokedynamic",
+          "reference": "(18, 8, 112)"
+        },
+        {
+          "offset": 149,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 152,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems LIGHTNING_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 155,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 158,
+          "op": "ldc",
+          "reference": "void_spellweave_ingot"
+        },
+        {
+          "offset": 160,
+          "op": "invokedynamic",
+          "reference": "(18, 9, 112)"
+        },
+        {
+          "offset": 165,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 168,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems VOID_SPELLWEAVE_INGOT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 171,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 174,
+          "op": "ldc",
+          "reference": "abyssal_tentacle"
+        },
+        {
+          "offset": 176,
+          "op": "invokedynamic",
+          "reference": "(18, 10, 112)"
+        },
+        {
+          "offset": 181,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 184,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ABYSSAL_TENTACLE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 187,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 190,
+          "op": "ldc",
+          "reference": "desert_jewel_fragment"
+        },
+        {
+          "offset": 192,
+          "op": "invokedynamic",
+          "reference": "(18, 11, 112)"
+        },
+        {
+          "offset": 197,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 200,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems DESERT_JEWEL_FRAGMENT Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 203,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 206,
+          "op": "ldc",
+          "reference": "flame_tempered_handguard"
+        },
+        {
+          "offset": 208,
+          "op": "invokedynamic",
+          "reference": "(18, 12, 112)"
+        },
+        {
+          "offset": 213,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 216,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems FLAME_TEMPERED_HANDGUARD Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 219,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 222,
+          "op": "ldc",
+          "reference": "kyrexi_claws"
+        },
+        {
+          "offset": 224,
+          "op": "invokedynamic",
+          "reference": "(18, 13, 112)"
+        },
+        {
+          "offset": 229,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 232,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems KYREXI_CLAWS Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 235,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 238,
+          "op": "ldc",
+          "reference": "last_glow"
+        },
+        {
+          "offset": 240,
+          "op": "invokedynamic",
+          "reference": "(18, 14, 112)"
+        },
+        {
+          "offset": 245,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 248,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems LAST_GLOW Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 251,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 254,
+          "op": "ldc",
+          "reference": "echo_winglet"
+        },
+        {
+          "offset": 256,
+          "op": "invokedynamic",
+          "reference": "(18, 15, 112)"
+        },
+        {
+          "offset": 261,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 264,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ECHO_WINGLET Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 267,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 270,
+          "op": "ldc",
+          "reference": "aqua_scroll_dummy"
+        },
+        {
+          "offset": 272,
+          "op": "invokedynamic",
+          "reference": "(18, 16, 112)"
+        },
+        {
+          "offset": 277,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 280,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems AQUA_SCROLL_DUMMY Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 283,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 286,
+          "op": "ldc",
+          "reference": "archive_of_abyssal_secrets"
+        },
+        {
+          "offset": 288,
+          "op": "invokedynamic",
+          "reference": "(18, 17, 112)"
+        },
+        {
+          "offset": 293,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 296,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ARCHIVE_OF_ABYSSAL_SECRETS Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 299,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 302,
+          "op": "ldc",
+          "reference": "chronicles_of_the_firelord"
+        },
+        {
+          "offset": 304,
+          "op": "invokedynamic",
+          "reference": "(18, 18, 112)"
+        },
+        {
+          "offset": 309,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 312,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems CHRONICLES_OF_THE_FIRELORD Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 315,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 318,
+          "op": "ldc",
+          "reference": "the_accused_codex"
+        },
+        {
+          "offset": 320,
+          "op": "invokedynamic",
+          "reference": "(18, 19, 112)"
+        },
+        {
+          "offset": 325,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 328,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems THE_ACCUSED_CODEX Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 331,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 334,
+          "op": "ldc",
+          "reference": "shellbound"
+        },
+        {
+          "offset": 336,
+          "op": "invokedynamic",
+          "reference": "(18, 20, 112)"
+        },
+        {
+          "offset": 341,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 344,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems SHELLBOUND Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 347,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 350,
+          "op": "ldc",
+          "reference": "aetherial_despair_ring"
+        },
+        {
+          "offset": 352,
+          "op": "invokedynamic",
+          "reference": "(18, 21, 112)"
+        },
+        {
+          "offset": 357,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 360,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems AETHERIAL_DESPAIR_RING Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 363,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 366,
+          "op": "ldc",
+          "reference": "amulet_of_spectral_shift"
+        },
+        {
+          "offset": 368,
+          "op": "invokedynamic",
+          "reference": "(18, 22, 112)"
+        },
+        {
+          "offset": 373,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 376,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems AMULET_OF_SPECTRAL_SHIFT Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 379,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 382,
+          "op": "ldc",
+          "reference": "nightstalkers_band"
+        },
+        {
+          "offset": 384,
+          "op": "invokedynamic",
+          "reference": "(18, 23, 112)"
+        },
+        {
+          "offset": 389,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 392,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems NIGHTSTALKERS_BAND Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 395,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 398,
+          "op": "ldc_w",
+          "reference": "azure_ignition_bracelet"
+        },
+        {
+          "offset": 401,
+          "op": "invokedynamic",
+          "reference": "(18, 24, 112)"
+        },
+        {
+          "offset": 406,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 409,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems AZURE_IGNITION_BRACELET Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 412,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 415,
+          "op": "ldc_w",
+          "reference": "energy_unbound_necklace"
+        },
+        {
+          "offset": 418,
+          "op": "invokedynamic",
+          "reference": "(18, 25, 112)"
+        },
+        {
+          "offset": 423,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 426,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ENERGY_UNBOUND_NECKLACE Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 429,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 432,
+          "op": "ldc_w",
+          "reference": "sigil_of_the_spider_sorcerer"
+        },
+        {
+          "offset": 435,
+          "op": "invokedynamic",
+          "reference": "(18, 26, 112)"
+        },
+        {
+          "offset": 440,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 443,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems SIGIL_OF_THE_SPIDER_SORCERER Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 446,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 449,
+          "op": "ldc_w",
+          "reference": "firestorm_ring"
+        },
+        {
+          "offset": 452,
+          "op": "invokedynamic",
+          "reference": "(18, 27, 112)"
+        },
+        {
+          "offset": 457,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 460,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems FIRESTORM_RING Ljava/util/function/Supplier;"
+        },
+        {
+          "offset": 463,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 466,
+          "op": "ldc_w",
+          "reference": "mechanized_wraithblade"
+        },
+        {
+          "offset": 469,
+          "op": "invokedynamic",
+          "reference": "(18, 28, 112)"
+        },
+        {
+          "offset": 474,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 477,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems MECHANIZED_WRAITHBLADE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 480,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 483,
+          "op": "ldc_w",
+          "reference": "cursed_wraithblade"
+        },
+        {
+          "offset": 486,
+          "op": "invokedynamic",
+          "reference": "(18, 29, 112)"
+        },
+        {
+          "offset": 491,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 494,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems CURSED_WRAITHBLADE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 497,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 500,
+          "op": "ldc_w",
+          "reference": "infernal_devastator"
+        },
+        {
+          "offset": 503,
+          "op": "invokedynamic",
+          "reference": "(18, 30, 112)"
+        },
+        {
+          "offset": 508,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 511,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems INFERNAL_DEVASTATOR Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 514,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 517,
+          "op": "ldc_w",
+          "reference": "infernal_devastator_level_one"
+        },
+        {
+          "offset": 520,
+          "op": "invokedynamic",
+          "reference": "(18, 31, 112)"
+        },
+        {
+          "offset": 525,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 528,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems INFERNAL_DEVASTATOR_LEVEL_ONE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 531,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 534,
+          "op": "ldc_w",
+          "reference": "infernal_devastator_level_two"
+        },
+        {
+          "offset": 537,
+          "op": "invokedynamic",
+          "reference": "(18, 32, 112)"
+        },
+        {
+          "offset": 542,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 545,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems INFERNAL_DEVASTATOR_LEVEL_TWO Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 548,
+          "op": "getstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems ITEMS Lnet/neoforged/neoforge/registries/DeferredRegister;"
+        },
+        {
+          "offset": 551,
+          "op": "ldc_w",
+          "reference": "infernal_devastator_level_three"
+        },
+        {
+          "offset": 554,
+          "op": "invokedynamic",
+          "reference": "(18, 33, 112)"
+        },
+        {
+          "offset": 559,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/registries/DeferredRegister register (Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 562,
+          "op": "putstatic",
+          "reference": "com/gametechbc/traveloptics/init/TOItems INFERNAL_DEVASTATOR_LEVEL_THREE Lnet/neoforged/neoforge/registries/DeferredHolder;"
+        },
+        {
+          "offset": 565,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,870 @@
+[
+  {
+    "salt": 2,
+    "sets": [
+      {
+        "set": "alexscaves:acid_pit",
+        "placement": {
+          "salt": 2,
+          "separation": 3,
+          "spacing": 6,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "alexscaves:ocean_trench",
+        "placement": {
+          "salt": 2,
+          "separation": 1,
+          "spacing": 2,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 3,
+    "sets": [
+      {
+        "set": "alexscaves:cake_cave",
+        "placement": {
+          "salt": 3,
+          "separation": 5,
+          "spacing": 6,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "alexscaves:ferrocave",
+        "placement": {
+          "salt": 3,
+          "separation": 3,
+          "spacing": 6,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 783,
+    "sets": [
+      {
+        "set": "nova_structures:badlands_miner_outpost",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 783,
+          "separation": 12,
+          "spacing": 60,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "nova_structures:badlands_miner_outpost_mineshafts",
+        "placement": {
+          "salt": 783,
+          "separation": 12,
+          "spacing": 60,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "nova_structures:taverns",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 783,
+          "separation": 15,
+          "spacing": 40,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:snowblossom_grove",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:grassland",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:spires"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 239021,
+    "sets": [
+      {
+        "set": "nova_structures:desert_ruins",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 239021,
+          "separation": 12,
+          "spacing": 80,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "nova_structures:jungle_ruins",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 239021,
+          "separation": 12,
+          "spacing": 80,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 474578,
+    "sets": [
+      {
+        "set": "mns:bridge_1",
+        "placement": {
+          "salt": 474578,
+          "separation": 70,
+          "spacing": 90,
+          "type": "moogs_structures:advanced_random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "mns:bridge_4",
+        "placement": {
+          "salt": 474578,
+          "separation": 70,
+          "spacing": 90,
+          "type": "moogs_structures:advanced_random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 499672,
+    "sets": [
+      {
+        "set": "bosses_of_mass_destruction:gauntlet_arena",
+        "placement": {
+          "salt": 499672,
+          "separation": 16,
+          "spacing": 32,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "bosses_of_mass_destruction:obsidilith_arena",
+        "placement": {
+          "salt": 499672,
+          "separation": 32,
+          "spacing": 64,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 4533232,
+    "sets": [
+      {
+        "set": "nova_structures:illager_camp",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 4533232,
+          "separation": 32,
+          "spacing": 50,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomesoplenty:volcano",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:frozen_pine_taiga",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:muddy_river",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:spires"
+        ]
+      },
+      {
+        "set": "nova_structures:nether_camps",
+        "placement": {
+          "salt": 4533232,
+          "separation": 10,
+          "spacing": 20,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 5456445,
+    "sets": [
+      {
+        "set": "fdbosses:chesed_arena",
+        "placement": {
+          "salt": 5456445,
+          "separation": 32,
+          "spacing": 65,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomesoplenty:volcano",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:lush_stacks",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:prairie",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:frozen_pine_taiga",
+          "regions_unexplored:grassland",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:hyacinth_deeps",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:muddy_river",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:rocky_reef",
+          "regions_unexplored:spires"
+        ]
+      },
+      {
+        "set": "fdbosses:geburah_arena",
+        "placement": {
+          "salt": 5456445,
+          "separation": 50,
+          "spacing": 100,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 7407930,
+    "sets": [
+      {
+        "set": "iceandfire:cyclops_cave",
+        "placement": {
+          "salt": 7407930,
+          "separation": 5,
+          "spacing": 14,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "regions_unexplored:grassy_beach"
+        ]
+      },
+      {
+        "set": "iceandfire:pixie_village",
+        "placement": {
+          "salt": 7407930,
+          "separation": 4,
+          "spacing": 8,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 10387312,
+    "sets": [
+      {
+        "set": "minecraft:villages",
+        "placement": {
+          "salt": 10387312,
+          "separation": 8,
+          "spacing": 34,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomesoplenty:volcano",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:prairie",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:weeping_witch_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:frozen_pine_taiga",
+          "regions_unexplored:grassland",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:spires"
+        ]
+      },
+      {
+        "set": "nova_structures:villages_birch",
+        "placement": {
+          "salt": 10387312,
+          "separation": 8,
+          "spacing": 34,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "nova_structures:villages_jungle",
+        "placement": {
+          "salt": 10387312,
+          "separation": 8,
+          "spacing": 34,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "nova_structures:villages_swamp",
+        "placement": {
+          "salt": 10387312,
+          "separation": 8,
+          "spacing": 34,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:hot_springs",
+          "biomeswevegone:bayou",
+          "regions_unexplored:fen",
+          "regions_unexplored:marsh"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 78409300,
+    "sets": [
+      {
+        "set": "nova_structures:shrine_tower",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 15,
+            "other_set": "minecraft:strongholds"
+          },
+          "salt": 78409300,
+          "separation": 312,
+          "spacing": 600,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomesoplenty:volcano",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:spires"
+        ]
+      },
+      {
+        "set": "nova_structures:shrines",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 15,
+            "other_set": "minecraft:strongholds"
+          },
+          "salt": 78409300,
+          "separation": 26,
+          "spacing": 50,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomesoplenty:volcano",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:spires"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 100922847,
+    "sets": [
+      {
+        "set": "mns:medium_house",
+        "placement": {
+          "salt": 100922847,
+          "separation": 34,
+          "spacing": 43,
+          "type": "moogs_structures:advanced_random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "mns:medium_house_2",
+        "placement": {
+          "salt": 100922847,
+          "separation": 36,
+          "spacing": 44,
+          "type": "moogs_structures:advanced_random_spread"
+        },
+        "curated_ow_biomes": []
+      }
+    ]
+  },
+  {
+    "salt": 213742069,
+    "sets": [
+      {
+        "set": "towns_and_towers:other",
+        "placement": {
+          "salt": 213742069,
+          "separation": 16,
+          "spacing": 32,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "towns_and_towers:towers",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "towns_and_towers:towns"
+          },
+          "frequency": 0.2,
+          "frequency_reduction_method": "legacy_type_1",
+          "salt": 213742069,
+          "separation": 12,
+          "spacing": 48,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:highland",
+          "biomesoplenty:pumpkin_patch",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:prairie",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:zelkova_forest",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:redwoods"
+        ]
+      },
+      {
+        "set": "towns_and_towers:towns",
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 5,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 213742069,
+          "separation": 12,
+          "spacing": 51,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:highland",
+          "biomesoplenty:pumpkin_patch",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:prairie",
+          "biomeswevegone:zelkova_forest",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:redwoods"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 411702122,
+    "sets": [
+      {
+        "set": "repurposed_structures:outposts_ocean",
+        "placement": {
+          "salt": 411702122,
+          "separation": 32,
+          "spacing": 67,
+          "super_exclusion_zone": {
+            "chunk_count": 5,
+            "other_set": "#repurposed_structures:ocean_outpost_avoid"
+          },
+          "type": "repurposed_structures:advanced_random_spread"
+        },
+        "curated_ow_biomes": [
+          "regions_unexplored:hyacinth_deeps"
+        ]
+      },
+      {
+        "set": "repurposed_structures:outposts_overworld",
+        "placement": {
+          "salt": 411702122,
+          "separation": 16,
+          "spacing": 32,
+          "super_exclusion_zone": {
+            "chunk_count": 5,
+            "other_set": "#repurposed_structures:overworld_outpost_avoid"
+          },
+          "type": "repurposed_structures:advanced_random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:snowblossom_grove",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:frozen_pine_taiga",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:spires"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 598017285,
+    "sets": [
+      {
+        "set": "graveyard:small_desert_graveyard_structure",
+        "placement": {
+          "salt": 598017285,
+          "separation": 21,
+          "spacing": 24,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": []
+      },
+      {
+        "set": "graveyard:small_graveyard_structure",
+        "placement": {
+          "salt": 598017285,
+          "separation": 14,
+          "spacing": 15,
+          "type": "minecraft:random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:highland",
+          "biomesoplenty:pumpkin_patch",
+          "biomeswevegone:prairie",
+          "biomeswevegone:sakura_grove",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:grassland",
+          "regions_unexplored:orchard",
+          "regions_unexplored:rocky_meadow"
+        ]
+      }
+    ]
+  },
+  {
+    "salt": 1982700828,
+    "sets": [
+      {
+        "set": "integrated_villages:air_villages",
+        "placement": {
+          "salt": 1982700828,
+          "separation": 45,
+          "spacing": 65,
+          "super_exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "#integrated_villages:air_village_avoid"
+          },
+          "type": "integrated_api:advanced_random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomesoplenty:volcano",
+          "biomeswevegone:bayou",
+          "biomeswevegone:crag_gardens",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:lush_stacks",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:prairie",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:shattered_glacier",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:frozen_pine_taiga",
+          "regions_unexplored:grassland",
+          "regions_unexplored:grassy_beach",
+          "regions_unexplored:hyacinth_deeps",
+          "regions_unexplored:icy_heights",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:muddy_river",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:rocky_reef",
+          "regions_unexplored:spires"
+        ]
+      },
+      {
+        "set": "integrated_villages:regular_villages",
+        "placement": {
+          "salt": 1982700828,
+          "separation": 14,
+          "spacing": 22,
+          "super_exclusion_zone": {
+            "chunk_count": 6,
+            "other_set": "#integrated_villages:village_avoid"
+          },
+          "type": "integrated_api:advanced_random_spread"
+        },
+        "curated_ow_biomes": [
+          "biomesoplenty:auroral_garden",
+          "biomesoplenty:highland",
+          "biomesoplenty:hot_springs",
+          "biomesoplenty:ominous_woods",
+          "biomesoplenty:pumpkin_patch",
+          "biomesoplenty:snowblossom_grove",
+          "biomeswevegone:bayou",
+          "biomeswevegone:ebony_woods",
+          "biomeswevegone:frosted_coniferous_forest",
+          "biomeswevegone:lush_stacks",
+          "biomeswevegone:maple_taiga",
+          "biomeswevegone:prairie",
+          "biomeswevegone:redwood_thicket",
+          "biomeswevegone:sakura_grove",
+          "biomeswevegone:skyris_vale",
+          "biomeswevegone:weeping_witch_forest",
+          "biomeswevegone:zelkova_forest",
+          "natures_spirit:alpine_clearings",
+          "natures_spirit:floral_ridges",
+          "natures_spirit:windswept_sugi_forest",
+          "regions_unexplored:ashen_woodland",
+          "regions_unexplored:cold_deciduous_forest",
+          "regions_unexplored:fen",
+          "regions_unexplored:flower_fields",
+          "regions_unexplored:frozen_pine_taiga",
+          "regions_unexplored:grassland",
+          "regions_unexplored:hyacinth_deeps",
+          "regions_unexplored:maple_forest",
+          "regions_unexplored:marsh",
+          "regions_unexplored:orchard",
+          "regions_unexplored:redwoods",
+          "regions_unexplored:rocky_meadow",
+          "regions_unexplored:rocky_reef"
+        ]
+      }
+    ]
+  }
+]

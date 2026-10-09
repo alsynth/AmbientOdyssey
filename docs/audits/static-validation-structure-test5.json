@@ -1,0 +1,1997 @@
+{
+  "status": "PASS (expanded scoped static gates; runtime pending)",
+  "gameplay_tested": false,
+  "checks": [
+    {
+      "check": "Generated JSON and Minecraft 1.21.1 pack formats",
+      "passed": true,
+      "detail": 339
+    },
+    {
+      "check": "Added modded biome IDs exist in inspected registry resources",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "check": "New required nested biome-tag references exist",
+      "passed": true,
+      "detail": [
+        "ambient_odyssey:sky_land_and_river"
+      ]
+    },
+    {
+      "check": "Structure selector create_rustic_structures:rustic_barn",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:plains",
+            "minecraft:sunflower_plains",
+            "minecraft:meadow"
+          ],
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector create_rustic_structures:rustic_smithy",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:birch_forest",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:old_growth_birch_forest"
+          ],
+          "#c:is_forest"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector create_rustic_structures:rustic_well",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:birch_forest",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:old_growth_birch_forest"
+          ],
+          "#c:is_forest"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector create_rustic_structures:rustic_windmill",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:meadow",
+            "minecraft:plains",
+            "minecraft:sunflower_plains"
+          ],
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_christmas",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_dark_forest",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_plains",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_plains_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_snowy_igloo",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_swamp",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_swamp_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_taiga",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:large/village_taiga_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_christmas",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_dark_forest",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_plains",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_plains_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_snowy_igloo",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_swamp",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_swamp_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_taiga",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:medium/village_taiga_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:pillager_outpost_dark_forest",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:pillager_outpost_plains",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:pillager_outpost_snowy",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:pillager_outpost_swamp",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:pillager_outpost_taiga",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_christmas",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_dark_forest",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_plains",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_plains_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_snowy_igloo",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_swamp",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_swamp_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_taiga",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector ctov:small/village_taiga_fortified",
+      "passed": true,
+      "detail": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      }
+    },
+    {
+      "check": "Structure selector sky_whale_ship:frozen_whale",
+      "passed": true,
+      "detail": "#ambient_odyssey:frozen_sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whale",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whalearena",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whalelight",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whaleship",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector dungeons_arise:heavenly_challenger",
+      "passed": true,
+      "detail": "#ambient_odyssey:heavenly_end"
+    },
+    {
+      "check": "Structure selector dungeons_arise:heavenly_conqueror",
+      "passed": true,
+      "detail": "#ambient_odyssey:heavenly_end"
+    },
+    {
+      "check": "Structure selector dungeons_arise:heavenly_rider",
+      "passed": true,
+      "detail": "#ambient_odyssey:heavenly_end"
+    },
+    {
+      "check": "All newly emitted nested structure selector tags exist",
+      "passed": true,
+      "detail": "Nested NeoForge holder sets included"
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 72,
+        "separation": 32,
+        "salt": 1984010510
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 84,
+        "separation": 40,
+        "salt": 1984010511
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 64,
+        "separation": 28,
+        "salt": 1984010512
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:idas_ordinary_houses",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 16,
+        "separation": 8,
+        "salt": 1984010520,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#ambient_odyssey:idas_house_avoid"
+        }
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:idas_ordinary_houses",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:wda_bathhouse",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 112,
+        "separation": 48,
+        "salt": 1984010502,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        },
+        "frequency": 0.5
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:wda_bathhouse",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:wda_ordinary_land",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 28,
+        "separation": 14,
+        "salt": 1984010501,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        }
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:wda_ordinary_land",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "check": "Placement bounds dungeons_arise:major_structures",
+      "passed": true,
+      "detail": {
+        "salt": 88371663,
+        "separation": 45,
+        "spacing": 50,
+        "type": "minecraft:random_spread",
+        "frequency": 0.7105263157894737
+      }
+    },
+    {
+      "check": "Positive structure weights dungeons_arise:major_structures",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "check": "Placement bounds dungeons_arise:minor_structures",
+      "passed": true,
+      "detail": {
+        "salt": 342415935,
+        "separation": 18,
+        "spacing": 28,
+        "type": "minecraft:random_spread",
+        "frequency": 0.8333333333333334,
+        "exclusion_zone": {
+          "chunk_count": 10,
+          "other_set": "dungeons_arise:major_structures"
+        }
+      }
+    },
+    {
+      "check": "Positive structure weights dungeons_arise:minor_structures",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "check": "Placement bounds farmers_structures:aethers_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020000,
+        "separation": 17,
+        "spacing": 31,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:aethers_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:afterdark_farms_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020001,
+        "separation": 20,
+        "spacing": 45,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:afterdark_farms_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:aquacultures_beach_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020002,
+        "separation": 21,
+        "spacing": 45,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:aquacultures_beach_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:aquacultures_cod_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020003,
+        "separation": 27,
+        "spacing": 55,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:aquacultures_cod_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:aquacultures_common_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020004,
+        "separation": 18,
+        "spacing": 33,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:aquacultures_common_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:cacaos_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020005,
+        "separation": 21,
+        "spacing": 45,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:cacaos_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:cooks_moss_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020006,
+        "separation": 10,
+        "spacing": 11,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:cooks_moss_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:cooks_nether_1_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020007,
+        "separation": 15,
+        "spacing": 21,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:cooks_nether_1_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:cooks_nether_2_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020008,
+        "separation": 20,
+        "spacing": 26,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:cooks_nether_2_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:cooks_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020009,
+        "separation": 22,
+        "spacing": 28,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:cooks_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:deeper_farms_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020010,
+        "separation": 20,
+        "spacing": 45,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:deeper_farms_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:fishs_stew_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020011,
+        "separation": 12,
+        "spacing": 25,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:fishs_stew_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:flesh_farms_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020012,
+        "separation": 20,
+        "spacing": 45,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:flesh_farms_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:honey_cake_farms_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020013,
+        "separation": 20,
+        "spacing": 45,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:honey_cake_farms_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:ratatouilles_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020014,
+        "separation": 20,
+        "spacing": 31,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:ratatouilles_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:shepherd_farms_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020015,
+        "separation": 85,
+        "spacing": 99,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:shepherd_farms_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:squids_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020016,
+        "separation": 15,
+        "spacing": 26,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:squids_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:sushus_with_all",
+      "passed": true,
+      "detail": {
+        "exclusion_zone": {
+          "chunk_count": 8,
+          "other_set": "minecraft:villages"
+        },
+        "salt": 1984020017,
+        "separation": 17,
+        "spacing": 38,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:sushus_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:undergardens_sea_with_all",
+      "passed": true,
+      "detail": {
+        "salt": 1984020018,
+        "separation": 84,
+        "spacing": 109,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:undergardens_sea_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds farmers_structures:undergardens_with_all",
+      "passed": true,
+      "detail": {
+        "salt": 1984020019,
+        "separation": 56,
+        "spacing": 67,
+        "type": "minecraft:random_spread"
+      }
+    },
+    {
+      "check": "Positive structure weights farmers_structures:undergardens_with_all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds idas:idas_common",
+      "passed": true,
+      "detail": {
+        "salt": 169480670,
+        "separation": 8,
+        "spacing": 15,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#idas:common_avoid"
+        },
+        "type": "integrated_api:advanced_random_spread",
+        "frequency": 0.4537037037037037
+      }
+    },
+    {
+      "check": "Positive structure weights idas:idas_common",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "check": "Placement bounds idas:idas_small",
+      "passed": true,
+      "detail": {
+        "salt": 169480673,
+        "separation": 12,
+        "spacing": 18,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#idas:small_avoid"
+        },
+        "type": "integrated_api:advanced_random_spread",
+        "frequency": 0.8860759493670886
+      }
+    },
+    {
+      "check": "Positive structure weights idas:idas_small",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "check": "All emitted structure-set references exist",
+      "passed": true,
+      "detail": 116
+    },
+    {
+      "check": "Native template provenance ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": "dungeons_arise:heavenly_challenger"
+    },
+    {
+      "check": "Native template provenance ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": "dungeons_arise:heavenly_conqueror"
+    },
+    {
+      "check": "Native template provenance ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": "dungeons_arise:heavenly_rider"
+    },
+    {
+      "check": "Blimp/Coliseum absent from every inspected effective placement set",
+      "passed": true,
+      "detail": {
+        "dungeons_arise:small_blimp": [],
+        "dungeons_arise:coliseum": []
+      }
+    },
+    {
+      "check": "Verified Integrated API global generation safeguard",
+      "passed": true,
+      "detail": "DisableStructuresMixin HEAD returns false for tagged structures"
+    },
+    {
+      "check": "Native Blimp/Coliseum toggles disabled",
+      "passed": true,
+      "detail": "both false"
+    },
+    {
+      "check": "Bathhouse retained on AO owner and removed from native Cristel owner",
+      "passed": true,
+      "detail": [
+        "ambient_odyssey:wda_bathhouse"
+      ]
+    },
+    {
+      "check": "Single placement owner for new ordinary/sky/bathhouse groups",
+      "passed": true,
+      "detail": {
+        "ambient_odyssey:heavenly_challenger_overworld": [
+          "ambient_odyssey:heavenly_challenger_overworld"
+        ],
+        "ambient_odyssey:heavenly_conqueror_overworld": [
+          "ambient_odyssey:heavenly_conqueror_overworld"
+        ],
+        "ambient_odyssey:heavenly_rider_overworld": [
+          "ambient_odyssey:heavenly_rider_overworld"
+        ],
+        "dungeons_arise:bathhouse": [
+          "ambient_odyssey:wda_bathhouse"
+        ],
+        "dungeons_arise:greenwood_pub": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:illager_campsite": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:illager_windmill": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:merchant_campsite": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:mushroom_house": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "idas:abandoned_vineyard": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:abandonedhouse": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:bearclaw_inn": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:beekeepers_house": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:botanist": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:brickhouse": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:farmhouse": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:fishermans_lodge": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:hermits_hollow": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:hunters_cabin": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:mason_house": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:pumpkin_cafe": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:tudor_pub": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:wacky_wares": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ]
+      }
+    },
+    {
+      "check": "Obsolete Test 1\u20134 placement grids removed",
+      "passed": true,
+      "detail": [
+        "extra_wda_land_and_sky",
+        "extra_wda_heavenly_ships",
+        "extra_idas_landmarks",
+        "extra_integrated_land_villages",
+        "extra_wda_small_blimp"
+      ]
+    },
+    {
+      "check": "No curated Nether leak c:is_overworld",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "No curated Nether leak minecraft:is_overworld",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "No curated Nether leak ambient_odyssey:sky_land",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "No curated Nether leak ambient_odyssey:sky_land_and_river",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Sky Villages retains explicit river and Streams eligibility",
+      "passed": true,
+      "detail": [
+        "minecraft:frozen_river",
+        "minecraft:river",
+        "regions_unexplored:muddy_river",
+        "streamsreflowing:stream"
+      ]
+    },
+    {
+      "check": "Sky Villages has no ocean biome selectors",
+      "passed": true,
+      "detail": "land + rivers"
+    },
+    {
+      "check": "No End/Nether multiplication ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "check": "No End/Nether multiplication ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "check": "No End/Nether multiplication ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "check": "Native End branch dungeons_arise:heavenly_challenger",
+      "passed": true,
+      "detail": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands"
+      ]
+    },
+    {
+      "check": "Native End branch dungeons_arise:heavenly_conqueror",
+      "passed": true,
+      "detail": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands"
+      ]
+    },
+    {
+      "check": "Native End branch dungeons_arise:heavenly_rider",
+      "passed": true,
+      "detail": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands"
+      ]
+    },
+    {
+      "check": "New AO placement salts are distinct",
+      "passed": true,
+      "detail": [
+        1984010501,
+        1984010502,
+        1984010510,
+        1984010511,
+        1984010512,
+        1984010520
+      ]
+    },
+    {
+      "check": "New AO salts do not collide with inspected native sets",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Dungeon Crawl effective native placement settings",
+      "passed": true,
+      "detail": {
+        "salt": 1984010530,
+        "separation": 9,
+        "spacing": 20
+      }
+    },
+    {
+      "check": "Exclusion graph ambient_odyssey:wda_ordinary_land",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:major_structures",
+        "idas:idas_rare",
+        "integrated_villages:regular_villages"
+      ]
+    },
+    {
+      "check": "Exclusion graph ambient_odyssey:wda_bathhouse",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:major_structures",
+        "idas:idas_rare",
+        "integrated_villages:regular_villages"
+      ]
+    },
+    {
+      "check": "Exclusion graph ambient_odyssey:idas_ordinary_houses",
+      "passed": true,
+      "detail": [
+        "idas:idas_common",
+        "idas:idas_ocean",
+        "idas:idas_rare",
+        "idas:idas_small",
+        "idas:idas_underground_rare",
+        "minecraft:villages"
+      ]
+    },
+    {
+      "check": "Original pool repairs have real native templates and matching connector evidence",
+      "passed": true,
+      "detail": "Original 4 pools, 33 native templates retained"
+    },
+    {
+      "check": "Every repaired pool template has connector audit provenance",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "check": "Artifacts native slot membership restored artifacts:slot/all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Artifacts native slot membership restored artifacts:slot/belt",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "check": "Artifacts native slot membership restored artifacts:slot/hands",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "check": "Simply More recipe syntax repair compiled",
+      "passed": true,
+      "detail": "native contents, valid JSON"
+    },
+    {
+      "check": "Integrated Stronghold ownership preserved",
+      "passed": true,
+      "detail": "MTR stronghold disabled"
+    },
+    {
+      "check": "Unrelated Test 4 config/assets preserved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "CurseForge ZIP CRC and unique safe paths",
+      "passed": true,
+      "detail": 1033
+    },
+    {
+      "check": "CurseForge root manifest and no bundled mod JARs",
+      "passed": true,
+      "detail": "manifest.json at archive root"
+    },
+    {
+      "check": "Pinned game/loader/version",
+      "passed": true,
+      "detail": {
+        "version": "1.21.1",
+        "modLoaders": [
+          {
+            "id": "neoforge-21.1.252",
+            "primary": true
+          }
+        ],
+        "recommendedRam": 8192
+      }
+    },
+    {
+      "check": "Test 4 mod project/file pins unchanged",
+      "passed": true,
+      "detail": 237
+    },
+    {
+      "check": "Export matches every compiled source override",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Required Test 5 supporting documents embedded",
+      "passed": true,
+      "detail": [
+        "STRUCTURE_TEST5_CHANGELOG.md",
+        "STRUCTURE_BIOME_AUDIT.md",
+        "STRUCTURE_TEST5_VALIDATION.md",
+        "STRUCTURE_TEST5_INSTALL.md",
+        "TANS_OPEN_FIELD_TUNING_PLAN.md",
+        "TODO.md"
+      ]
+    },
+    {
+      "check": "Expanded audit coverage reconciles 177 + 19 and 60 - 19",
+      "passed": true,
+      "detail": {
+        "audited": 196,
+        "missing": 41
+      }
+    },
+    {
+      "check": "No duplicate audited binaries",
+      "passed": true,
+      "detail": "SHA-256 deduplication"
+    },
+    {
+      "check": "Untouched Test 5 reproduced and original catalogues regenerated",
+      "passed": true,
+      "detail": "abe813ca2765e83a6b5c8c75c9d159e7612ccaf6755143c6e646f322374c45e0"
+    },
+    {
+      "check": "Cristel extraction toggles dungeons_arise:major_structures",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:coliseum",
+        "dungeons_arise:greenwood_pub",
+        "dungeons_arise:illager_campsite",
+        "dungeons_arise:illager_windmill",
+        "dungeons_arise:merchant_campsite",
+        "dungeons_arise:mushroom_house",
+        "dungeons_arise:small_blimp"
+      ]
+    },
+    {
+      "check": "Cristel native placement fields agree dungeons_arise:major_structures",
+      "passed": true,
+      "detail": "spacing/separation/frequency"
+    },
+    {
+      "check": "Cristel extraction toggles dungeons_arise:minor_structures",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:bathhouse"
+      ]
+    },
+    {
+      "check": "Cristel native placement fields agree dungeons_arise:minor_structures",
+      "passed": true,
+      "detail": "spacing/separation/frequency"
+    },
+    {
+      "check": "Cristel extraction toggles idas:idas_common",
+      "passed": true,
+      "detail": [
+        "idas:abandoned_vineyard",
+        "idas:abandonedhouse",
+        "idas:bearclaw_inn",
+        "idas:beekeepers_house",
+        "idas:botanist",
+        "idas:brickhouse",
+        "idas:farmhouse",
+        "idas:fishermans_lodge",
+        "idas:hermits_hollow",
+        "idas:hunters_cabin",
+        "idas:mason_house",
+        "idas:pumpkin_cafe",
+        "idas:tudor_pub",
+        "idas:wacky_wares"
+      ]
+    },
+    {
+      "check": "Cristel native placement fields agree idas:idas_common",
+      "passed": true,
+      "detail": "spacing/separation/frequency"
+    },
+    {
+      "check": "Cristel extraction toggles idas:idas_small",
+      "passed": true,
+      "detail": [
+        "idas:lumber_camp/lumber_camp_bygmahogany",
+        "idas:lumber_camp/lumber_camp_bygredwood",
+        "idas:sunken_ship/sunken_ship_ruins"
+      ]
+    },
+    {
+      "check": "Cristel native placement fields agree idas:idas_small",
+      "passed": true,
+      "detail": "spacing/separation/frequency"
+    },
+    {
+      "check": "Farmers placement and restrictions aethers_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 45,
+        "candidate_spacing": 31
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:aether",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions afterdark_farms_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 64,
+        "candidate_spacing": 45
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:afterdark_farms",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions aquacultures_beach_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 65,
+        "candidate_spacing": 45
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:aquacultures_beach",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions aquacultures_cod_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 78,
+        "candidate_spacing": 55
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:aquacultures_cod",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions aquacultures_common_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 48,
+        "candidate_spacing": 33
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:aquacultures_common",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions cacaos_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 65,
+        "candidate_spacing": 45
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:cacaos",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions cooks_moss_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 16,
+        "candidate_spacing": 11
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:cooks_moss",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions cooks_nether_1_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 30,
+        "candidate_spacing": 21
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:cooks_nether_1",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions cooks_nether_2_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 37,
+        "candidate_spacing": 26
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:cooks_nether_2",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions cooks_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 40,
+        "candidate_spacing": 28
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:cooks",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions deeper_farms_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 64,
+        "candidate_spacing": 45
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:deeper_farms",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions fishs_stew_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 36,
+        "candidate_spacing": 25
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:fishs_stew",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions flesh_farms_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 64,
+        "candidate_spacing": 45
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:flesh_farms",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions honey_cake_farms_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 64,
+        "candidate_spacing": 45
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:honey_cake_farms",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions ratatouilles_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 44,
+        "candidate_spacing": 31
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:ratatouilles",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions shepherd_farms_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 141,
+        "candidate_spacing": 99
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:shepherd_farms",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions squids_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 38,
+        "candidate_spacing": 26
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:squids",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions sushus_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 54,
+        "candidate_spacing": 38
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:sushis",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions undergardens_sea_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 155,
+        "candidate_spacing": 109
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:undergardens_sea",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "Farmers placement and restrictions undergardens_with_all",
+      "passed": true,
+      "detail": {
+        "native_spacing": 95,
+        "candidate_spacing": 67
+      }
+    },
+    {
+      "check": "Farmers native dimension/height definition unchanged farmers_structures:undergardens",
+      "passed": true,
+      "detail": "No structure definition or biome-tag edits in this pass"
+    },
+    {
+      "check": "All 20 Farmers salts unique and independent",
+      "passed": true,
+      "detail": [
+        1984020000,
+        1984020001,
+        1984020002,
+        1984020003,
+        1984020004,
+        1984020005,
+        1984020006,
+        1984020007,
+        1984020008,
+        1984020009,
+        1984020010,
+        1984020011,
+        1984020012,
+        1984020013,
+        1984020014,
+        1984020015,
+        1984020016,
+        1984020017,
+        1984020018,
+        1984020019
+      ]
+    },
+    {
+      "check": "D&T genuine empty choice minecraft:illager_mansion/illager_mansion_room_basement",
+      "passed": true,
+      "detail": 20
+    },
+    {
+      "check": "Every new pool template has actual source provenance",
+      "passed": true,
+      "detail": "52 template provenance rows"
+    },
+    {
+      "check": "Waystone migration deterministic from exact native input",
+      "passed": true,
+      "detail": "Native Waystones desert template"
+    },
+    {
+      "check": "Waystone geometry/palette/entities retained",
+      "passed": true,
+      "detail": "Only legacy connector NBT and orientation schema migrated"
+    },
+    {
+      "check": "Waystone connector matches CTOV parent target",
+      "passed": true,
+      "detail": "Parent Christmas town center target confirmed in original CTOV NBT"
+    },
+    {
+      "check": "Mansion basement rooms preserved with real empty choice",
+      "passed": true,
+      "detail": "49 present NBT rooms and native processors; all native weights retained"
+    },
+    {
+      "check": "Exactly 11 proven absent-item recipes gated",
+      "passed": true,
+      "detail": "Native recipe payloads retained; no invented registry keys"
+    },
+    {
+      "check": "Traveloptics fire tag strict JSON and replacement semantics",
+      "passed": true,
+      "detail": "Missing comma repaired"
+    },
+    {
+      "check": "Actual Ancient Ancient Remnant namespace traveloptics:aerial_collapse_dr",
+      "passed": true,
+      "detail": "CSEntityRegistry registration verified"
+    },
+    {
+      "check": "Actual Ancient Ancient Remnant namespace traveloptics:spectral_blink_blacklist",
+      "passed": true,
+      "detail": "CSEntityRegistry registration verified"
+    },
+    {
+      "check": "Actual Ancient Ancient Remnant namespace traveloptics:spectral_shift_blacklist",
+      "passed": true,
+      "detail": "CSEntityRegistry registration verified"
+    },
+    {
+      "check": "Client repair pack format and model payloads",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "check": "Every client model has native resource evidence",
+      "passed": true,
+      "detail": "33 native model hashes and recorded changes"
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:engineers_power_glove",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:engineers_power_glove"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:excel_upgrade_cooldown",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:excel_upgrade_cooldown",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:excel_upgrade_mana",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:excel_upgrade_mana",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:excel_upgrade_resistence",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:excel_upgrade_resistence",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:mechanical_brace",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:mechanical_brace",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:murasama",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:mechanical_scrap",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:murasama_blade"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:the_berserker_upgrade",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:the_berserker"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:the_combuster_upgrade",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:the_combuster"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:the_nightstalker_upgrade",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:the_nightstalker"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:the_ordeal_upgrade",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:engineers_power_glove",
+        "cataclysm_spellbooks:gauntlet_of_power"
+      ]
+    },
+    {
+      "check": "Disabled recipe native payload retained cataclysm_spellbooks:the_subjugator_upgrade",
+      "passed": true,
+      "detail": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:gauntlet_of_power"
+      ]
+    },
+    {
+      "check": "Loot alias matches the real native payload without duplicate registration",
+      "passed": true,
+      "detail": "Native global list references only the missing alias, not both resources"
+    },
+    {
+      "check": "Curated CTOV/Rustic eligibility changes preserve non-biome fields",
+      "passed": true,
+      "detail": "32 CTOV + 4 Rustic definitions"
+    },
+    {
+      "check": "Eight staged additions have no invented binary certification",
+      "passed": true,
+      "detail": "Metadata only; exact binary/dependency audit required"
+    },
+    {
+      "check": "Approved additions absent from locked installed projects",
+      "passed": true,
+      "detail": "No silent installation or unselected substitution"
+    },
+    {
+      "check": "Born in Chaos removal retained in locked sources",
+      "passed": true,
+      "detail": "Project 686437 excluded"
+    },
+    {
+      "check": "Screening coverage and its scopes preserved",
+      "passed": true,
+      "detail": "196 resource rows; 26 current binary screens; 166 description-only candidates"
+    },
+    {
+      "check": "Export excludes Born in Chaos and unaudited additions",
+      "passed": true,
+      "detail": "No eight additions or removed Born in Chaos project in built manifest"
+    },
+    {
+      "check": "Continuation reports embedded exactly",
+      "passed": true,
+      "detail": [
+        "README-0.3.1.md",
+        "MOD_STRUCTURE_SCREENING.md",
+        "MISSING_JARS.txt",
+        "APPROVED_ADDITION_JARS.txt",
+        "APPROVED_STRUCTURE_ADDITIONS.csv",
+        "FARMERS_STRUCTURE_CATALOG.csv",
+        "CODE_GENERATED_PLACEMENT_ROUTES.csv"
+      ]
+    },
+    {
+      "check": "Curated donor roster unchanged",
+      "passed": true,
+      "detail": "40 Overworld + 2 Nether"
+    }
+  ],
+  "counts": {
+    "inspected_jars": 196,
+    "native_structure_definitions": 1216,
+    "native_structure_set_definitions": 666,
+    "generated_json": 339,
+    "new_declared_structure_clones": 3,
+    "independent_sets": 6,
+    "farmers_variants": 20,
+    "new_recipe_gates": 11,
+    "client_model_repairs": 33,
+    "code_generated_ctov_routes": 74
+  },
+  "limitations": [
+    "mods1.zip and mods3.zip full transfers failed HTTP 403; complete CRC-verified JAR members from their retrieved prefixes were audited.",
+    "Unretrieved tail JARs, registry load, worldgen execution, actual density, clipping and performance remain uncertified.",
+    "Native Minecraft tag definitions are not in the uploaded mod JARs; native graph reports explicitly retain unresolved base-game/optional tags.",
+    "Eight approved new mods are metadata-pinned but not installed: exact binaries are unavailable, and their native dependency/Black Spiral checks remain blocked.",
+    "Cristel spacing/separation/frequency/member-removal code is inspected; live pack priority and non-native exclusion retention are not runtime-certified.",
+    "Native resource collisions remain enumerated; recorded snapshot precedence is not a game-launch result."
+  ]
+}

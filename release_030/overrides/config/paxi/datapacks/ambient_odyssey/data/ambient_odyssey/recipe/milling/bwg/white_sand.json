@@ -1,0 +1,21 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:white_sand"
+    }
+  ],
+  "processing_time": 50,
+  "results": [
+    {
+      "chance": 0.125,
+      "id": "minecraft:white_dye"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ]
+}

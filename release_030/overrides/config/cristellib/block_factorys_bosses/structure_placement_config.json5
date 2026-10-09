@@ -1,0 +1,28 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "dragon_tower": {
+    "salt": 178711064,
+    "separation": 16,
+    "spacing": 60
+  },
+  "kraken_ship": {
+    "salt": 496078896,
+    "separation": 24,
+    "spacing": 52
+  },
+  "sandworm_nest": {
+    "salt": 1779810129,
+    "separation": 20,
+    "spacing": 32
+  },
+  "underworld_arena": {
+    "salt": 565960105,
+    "separation": 40,
+    "spacing": 48
+  },
+  "yeti_hideout": {
+    "salt": 787478644,
+    "separation": 16,
+    "spacing": 22
+  }
+}

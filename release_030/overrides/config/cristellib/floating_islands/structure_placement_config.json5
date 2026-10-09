@@ -1,0 +1,18 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "dungeon_islands": {
+    "salt": 1694760031,
+    "separation": 35,
+    "spacing": 55
+  },
+  "peaceful_islands": {
+    "salt": 1694760032,
+    "separation": 24,
+    "spacing": 38
+  },
+  "villager_islands": {
+    "salt": 1694760033,
+    "separation": 42,
+    "spacing": 60
+  }
+}

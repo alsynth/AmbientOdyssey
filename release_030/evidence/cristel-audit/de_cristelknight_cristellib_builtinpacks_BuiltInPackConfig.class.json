@@ -1,0 +1,854 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig",
+    "java/lang/Record",
+    "BuiltInPackConfig.java",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig$1",
+    "com/mojang/serialization/codecs/RecordCodecBuilder$Instance",
+    "com/mojang/serialization/codecs/RecordCodecBuilder",
+    "Instance",
+    "com/mojang/datafixers/Products$P3",
+    "com/mojang/datafixers/Products",
+    "P3",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "defaultPacks",
+    "Ljava/util/List;",
+    "Ljava/util/List<Ljava/lang/String;>;",
+    "disabledPacks",
+    "hideAllPacksInScreen",
+    "Z",
+    "CODEC",
+    "Lcom/mojang/serialization/Codec;",
+    "Lcom/mojang/serialization/Codec<Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;>;",
+    "SETTINGS",
+    "Lde/cristelknight/cristellib/config/simple/ConfigSettings;",
+    "Lde/cristelknight/cristellib/config/simple/ConfigSettings<Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;>;",
+    "<init>",
+    "(Ljava/util/List;Ljava/util/List;Z)V",
+    "(Ljava/util/List<Ljava/lang/String;>;Ljava/util/List<Ljava/lang/String;>;Z)V",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;",
+    "update",
+    "de/cristelknight/cristellib/config/simple/ConfigRegistry",
+    "get",
+    "(Ljava/lang/Class;)Ljava/lang/Object;",
+    "java/util/ArrayList",
+    "()Ljava/util/List;",
+    "(Ljava/util/Collection;)V",
+    "de/cristelknight/cristellib/config/simple/ConfigSettings",
+    "getDefault",
+    "()Ljava/lang/Object;",
+    "java/util/List",
+    "retainAll",
+    "(Ljava/util/Collection;)Z",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "()Z",
+    "next",
+    "java/lang/String",
+    "contains",
+    "(Ljava/lang/Object;)Z",
+    "add",
+    "updateAndSave",
+    "(Ljava/lang/Object;)V",
+    "item",
+    "Ljava/lang/String;",
+    "config",
+    "changed",
+    "toString",
+    "()Ljava/lang/String;",
+    "defaultPacks;disabledPacks;hideAllPacksInScreen",
+    "java/lang/runtime/ObjectMethods",
+    "bootstrap",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;)Ljava/lang/String;",
+    "hashCode",
+    "()I",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;)I",
+    "equals",
+    "o",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;Ljava/lang/Object;)Z",
+    "Ljava/lang/Object;",
+    "()Ljava/util/List<Ljava/lang/String;>;",
+    "lambda$static$0",
+    "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;",
+    "builder",
+    "com/mojang/serialization/Codec",
+    "STRING",
+    "Lcom/mojang/serialization/codecs/PrimitiveCodec;",
+    "list",
+    "(Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;",
+    "fieldOf",
+    "(Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;)Ljava/util/List;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "apply",
+    "()Ljava/util/function/Function;",
+    "com/mojang/serialization/MapCodec",
+    "forGetter",
+    "(Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;",
+    "BOOL",
+    "com/mojang/serialization/codecs/PrimitiveCodec",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;)Ljava/lang/Boolean;",
+    "group",
+    "(Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/Products$P3;",
+    "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "(Ljava/util/List;Ljava/util/List;Ljava/lang/Boolean;)Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;",
+    "()Lcom/mojang/datafixers/util/Function3;",
+    "(Lcom/mojang/datafixers/kinds/Applicative;Lcom/mojang/datafixers/util/Function3;)Lcom/mojang/datafixers/kinds/App;",
+    "Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;",
+    "<clinit>",
+    "create",
+    "(Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;",
+    "cristellib",
+    "Built-in Packs",
+    "run",
+    "()Ljava/lang/Runnable;",
+    "registerWithScreen",
+    "(Ljava/lang/Class;Lde/cristelknight/cristellib/config/simple/ConfigSettings;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Runnable;)V",
+    "Signature",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "LocalVariableTypeTable",
+    "MethodParameters",
+    "StackMapTable",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods",
+    "NestMembers",
+    "Record"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/util/List;Ljava/util/List;Z)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Record <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig defaultPacks Ljava/util/List;"
+        },
+        {
+          "offset": 9,
+          "op": "0x2a"
+        },
+        {
+          "offset": 10,
+          "op": "0x2c"
+        },
+        {
+          "offset": 11,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig disabledPacks Ljava/util/List;"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "0x1d"
+        },
+        {
+          "offset": 16,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig hideAllPacksInScreen Z"
+        },
+        {
+          "offset": 19,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "update",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 2,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigRegistry get (Ljava/lang/Class;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 5,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 8,
+          "op": "0x4b"
+        },
+        {
+          "offset": 9,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 12,
+          "op": "0x59"
+        },
+        {
+          "offset": 13,
+          "op": "0x2a"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig defaultPacks ()Ljava/util/List;"
+        },
+        {
+          "offset": 17,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> (Ljava/util/Collection;)V"
+        },
+        {
+          "offset": 20,
+          "op": "0x4c"
+        },
+        {
+          "offset": 21,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 24,
+          "op": "0x59"
+        },
+        {
+          "offset": 25,
+          "op": "0x2a"
+        },
+        {
+          "offset": 26,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig disabledPacks ()Ljava/util/List;"
+        },
+        {
+          "offset": 29,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> (Ljava/util/Collection;)V"
+        },
+        {
+          "offset": 32,
+          "op": "0x4d"
+        },
+        {
+          "offset": 33,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 34,
+          "op": "0x3e"
+        },
+        {
+          "offset": 35,
+          "op": "0x2b"
+        },
+        {
+          "offset": 36,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig SETTINGS Lde/cristelknight/cristellib/config/simple/ConfigSettings;"
+        },
+        {
+          "offset": 39,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigSettings getDefault ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 44,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 47,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig defaultPacks ()Ljava/util/List;"
+        },
+        {
+          "offset": 50,
+          "op": "invokeinterface",
+          "reference": "java/util/List retainAll (Ljava/util/Collection;)Z"
+        },
+        {
+          "offset": 55,
+          "op": "ifeq",
+          "args": "0005"
+        },
+        {
+          "offset": 58,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 59,
+          "op": "0x3e"
+        },
+        {
+          "offset": 60,
+          "op": "0x2c"
+        },
+        {
+          "offset": 61,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig SETTINGS Lde/cristelknight/cristellib/config/simple/ConfigSettings;"
+        },
+        {
+          "offset": 64,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigSettings getDefault ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 69,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 72,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig defaultPacks ()Ljava/util/List;"
+        },
+        {
+          "offset": 75,
+          "op": "invokeinterface",
+          "reference": "java/util/List retainAll (Ljava/util/Collection;)Z"
+        },
+        {
+          "offset": 80,
+          "op": "ifeq",
+          "args": "0005"
+        },
+        {
+          "offset": 83,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 84,
+          "op": "0x3e"
+        },
+        {
+          "offset": 85,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig SETTINGS Lde/cristelknight/cristellib/config/simple/ConfigSettings;"
+        },
+        {
+          "offset": 88,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigSettings getDefault ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 93,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 96,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig defaultPacks ()Ljava/util/List;"
+        },
+        {
+          "offset": 99,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 104,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 106,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 108,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 113,
+          "op": "ifeq",
+          "args": "0033"
+        },
+        {
+          "offset": 116,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 118,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 123,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 126,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 128,
+          "op": "0x2b"
+        },
+        {
+          "offset": 129,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 131,
+          "op": "invokeinterface",
+          "reference": "java/util/List contains (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 136,
+          "op": "ifne",
+          "args": "0019"
+        },
+        {
+          "offset": 139,
+          "op": "0x2c"
+        },
+        {
+          "offset": 140,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 142,
+          "op": "invokeinterface",
+          "reference": "java/util/List contains (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 147,
+          "op": "ifne",
+          "args": "000e"
+        },
+        {
+          "offset": 150,
+          "op": "0x2b"
+        },
+        {
+          "offset": 151,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 153,
+          "op": "invokeinterface",
+          "reference": "java/util/List add (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 158,
+          "op": "0x57"
+        },
+        {
+          "offset": 159,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 160,
+          "op": "0x3e"
+        },
+        {
+          "offset": 161,
+          "op": "goto",
+          "args": "ffc9"
+        },
+        {
+          "offset": 164,
+          "op": "0x1d"
+        },
+        {
+          "offset": 165,
+          "op": "ifeq",
+          "args": "0013"
+        },
+        {
+          "offset": 168,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 171,
+          "op": "0x59"
+        },
+        {
+          "offset": 172,
+          "op": "0x2b"
+        },
+        {
+          "offset": 173,
+          "op": "0x2c"
+        },
+        {
+          "offset": 174,
+          "op": "0x2a"
+        },
+        {
+          "offset": 175,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig hideAllPacksInScreen ()Z"
+        },
+        {
+          "offset": 178,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig <init> (Ljava/util/List;Ljava/util/List;Z)V"
+        },
+        {
+          "offset": 181,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigRegistry updateAndSave (Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 184,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 129)"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "hashCode",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 134)"
+        },
+        {
+          "offset": 6,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 139)"
+        },
+        {
+          "offset": 7,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "defaultPacks",
+      "descriptor": "()Ljava/util/List;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig defaultPacks Ljava/util/List;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "disabledPacks",
+      "descriptor": "()Ljava/util/List;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig disabledPacks Ljava/util/List;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "hideAllPacksInScreen",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig hideAllPacksInScreen Z"
+        },
+        {
+          "offset": 4,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$static$0",
+      "descriptor": "(Lcom/mojang/serialization/codecs/RecordCodecBuilder$Instance;)Lcom/mojang/datafixers/kinds/App;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getstatic",
+          "reference": "com/mojang/serialization/Codec STRING Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+        },
+        {
+          "offset": 4,
+          "op": "invokestatic",
+          "reference": "com/mojang/serialization/Codec list (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+        },
+        {
+          "offset": 7,
+          "op": "ldc",
+          "reference": "defaultPacks"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "com/mojang/serialization/Codec fieldOf (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+        },
+        {
+          "offset": 14,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 175)"
+        },
+        {
+          "offset": 19,
+          "op": "invokevirtual",
+          "reference": "com/mojang/serialization/MapCodec forGetter (Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+        },
+        {
+          "offset": 22,
+          "op": "getstatic",
+          "reference": "com/mojang/serialization/Codec STRING Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+        },
+        {
+          "offset": 25,
+          "op": "invokestatic",
+          "reference": "com/mojang/serialization/Codec list (Lcom/mojang/serialization/Codec;)Lcom/mojang/serialization/Codec;"
+        },
+        {
+          "offset": 28,
+          "op": "ldc",
+          "reference": "disabledPacks"
+        },
+        {
+          "offset": 30,
+          "op": "invokeinterface",
+          "reference": "com/mojang/serialization/Codec fieldOf (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+        },
+        {
+          "offset": 35,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 175)"
+        },
+        {
+          "offset": 40,
+          "op": "invokevirtual",
+          "reference": "com/mojang/serialization/MapCodec forGetter (Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+        },
+        {
+          "offset": 43,
+          "op": "getstatic",
+          "reference": "com/mojang/serialization/Codec BOOL Lcom/mojang/serialization/codecs/PrimitiveCodec;"
+        },
+        {
+          "offset": 46,
+          "op": "ldc",
+          "reference": "hideAllPacksInScreen"
+        },
+        {
+          "offset": 48,
+          "op": "invokeinterface",
+          "reference": "com/mojang/serialization/codecs/PrimitiveCodec fieldOf (Ljava/lang/String;)Lcom/mojang/serialization/MapCodec;"
+        },
+        {
+          "offset": 53,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 175)"
+        },
+        {
+          "offset": 58,
+          "op": "invokevirtual",
+          "reference": "com/mojang/serialization/MapCodec forGetter (Ljava/util/function/Function;)Lcom/mojang/serialization/codecs/RecordCodecBuilder;"
+        },
+        {
+          "offset": 61,
+          "op": "invokevirtual",
+          "reference": "com/mojang/serialization/codecs/RecordCodecBuilder$Instance group (Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;Lcom/mojang/datafixers/kinds/App;)Lcom/mojang/datafixers/Products$P3;"
+        },
+        {
+          "offset": 64,
+          "op": "0x2a"
+        },
+        {
+          "offset": 65,
+          "op": "invokedynamic",
+          "reference": "(18, 4, 207)"
+        },
+        {
+          "offset": 70,
+          "op": "invokevirtual",
+          "reference": "com/mojang/datafixers/Products$P3 apply (Lcom/mojang/datafixers/kinds/Applicative;Lcom/mojang/datafixers/util/Function3;)Lcom/mojang/datafixers/kinds/App;"
+        },
+        {
+          "offset": 73,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 5, 175)"
+        },
+        {
+          "offset": 5,
+          "op": "invokestatic",
+          "reference": "com/mojang/serialization/codecs/RecordCodecBuilder create (Ljava/util/function/Function;)Lcom/mojang/serialization/Codec;"
+        },
+        {
+          "offset": 8,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig CODEC Lcom/mojang/serialization/Codec;"
+        },
+        {
+          "offset": 11,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig$1"
+        },
+        {
+          "offset": 14,
+          "op": "0x59"
+        },
+        {
+          "offset": 15,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig$1 <init> ()V"
+        },
+        {
+          "offset": 18,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig SETTINGS Lde/cristelknight/cristellib/config/simple/ConfigSettings;"
+        },
+        {
+          "offset": 21,
+          "op": "ldc",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 23,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig SETTINGS Lde/cristelknight/cristellib/config/simple/ConfigSettings;"
+        },
+        {
+          "offset": 26,
+          "op": "ldc",
+          "reference": "cristellib"
+        },
+        {
+          "offset": 28,
+          "op": "ldc",
+          "reference": "Built-in Packs"
+        },
+        {
+          "offset": 30,
+          "op": "invokedynamic",
+          "reference": "(18, 6, 236)"
+        },
+        {
+          "offset": 35,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/simple/ConfigRegistry registerWithScreen (Ljava/lang/Class;Lde/cristelknight/cristellib/config/simple/ConfigSettings;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Runnable;)V"
+        },
+        {
+          "offset": 38,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "placement": {
+    "salt": 169480673,
+    "separation": 12,
+    "spacing": 18,
+    "super_exclusion_zone": {
+      "chunk_count": 2,
+      "other_set": "#idas:small_avoid"
+    },
+    "type": "integrated_api:advanced_random_spread",
+    "frequency": 0.8860759493670886
+  },
+  "structures": [
+    {
+      "structure": "idas:cottage",
+      "weight": 3
+    },
+    {
+      "structure": "idas:animal_den/forest_den",
+      "weight": 3
+    },
+    {
+      "structure": "idas:animal_den/polar_bear_den",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_oak",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_spruce",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_birch",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_jungle",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_acacia",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_dark_oak",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_bopredwood",
+      "weight": 3
+    },
+    {
+      "structure": "idas:lumber_camp/lumber_camp_bopmahogany",
+      "weight": 3
+    },
+    {
+      "structure": "idas:desert_camp/desert_camp",
+      "weight": 3
+    },
+    {
+      "structure": "idas:desert_camp/desert_camp_red",
+      "weight": 3
+    },
+    {
+      "structure": "idas:desert_camp/desert_camp_orange",
+      "weight": 3
+    },
+    {
+      "structure": "idas:desert_camp/desert_camp_bygwindswept",
+      "weight": 3
+    },
+    {
+      "structure": "idas:ancient_statue/ancient_statue_plains",
+      "weight": 3
+    },
+    {
+      "structure": "idas:ancient_statue/ancient_statue_jungle",
+      "weight": 3
+    },
+    {
+      "structure": "idas:ancient_statue/ancient_statue_desert",
+      "weight": 2
+    },
+    {
+      "structure": "idas:washing_camp",
+      "weight": 3
+    },
+    {
+      "structure": "idas:desert_market/desert_market",
+      "weight": 2
+    },
+    {
+      "structure": "idas:desert_market/desert_market_red",
+      "weight": 2
+    },
+    {
+      "structure": "idas:desert_market/desert_market_orange",
+      "weight": 2
+    },
+    {
+      "structure": "idas:pillager_camp",
+      "weight": 3
+    },
+    {
+      "structure": "idas:snifferhenge",
+      "weight": 1
+    },
+    {
+      "structure": "idas:train_ruins",
+      "weight": 2
+    },
+    {
+      "structure": "idas:frozen_crypt",
+      "weight": 1
+    },
+    {
+      "structure": "idas:abandoned_lighthouse",
+      "weight": 1
+    }
+  ]
+}

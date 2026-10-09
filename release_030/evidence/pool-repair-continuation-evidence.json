@@ -1,0 +1,474 @@
+[
+  {
+    "pool": "ctov:pillager_outpost/mountain/towers",
+    "source_pool": "ctov:pillager_outpost/mountain/tower",
+    "jar": "[Neoforge]ctov-3.6.3.jar",
+    "template": "data/ctov/structure/pillager_outpost/mountain/tower.nbt",
+    "template_sha256": "4d619de10dcb983159be69499de8d3174c7fe51860068ca402a6f73a3e191367",
+    "connector_evidence": [
+      {
+        "state": 47,
+        "pos": [
+          6,
+          1,
+          0
+        ],
+        "nbt": {
+          "target": "minecraft:entrance",
+          "joint": "aligned",
+          "pool": "minecraft:empty",
+          "final_state": "minecraft:air",
+          "name": "minecraft:entrance",
+          "id": "minecraft:jigsaw"
+        }
+      }
+    ],
+    "operation": "Alias exact native singular tower pool"
+  },
+  {
+    "pool": "ctov:village/waystone/sand",
+    "template": "data/ctov/structure/village/waystone/sand.nbt",
+    "source_jar": "waystones-neoforge-1.21.1-21.1.46.jar",
+    "source_template": "data/waystones/structure/village/desert/waystone.nbt",
+    "source_sha256": "88488c210fe34985fca3d55213f4aac39291b88b82f2d36a1c064638bb64a907",
+    "compiled_template_sha256": "e5d44c3d9b476d0bf16165bca77414bccb353c3bcb048e13f8c723327ecd2af8",
+    "connector_evidence": [
+      {
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "state": 4,
+        "nbt": {
+          "id": "minecraft:jigsaw",
+          "name": "minecraft:building_entrance",
+          "target": "minecraft:empty",
+          "pool": "minecraft:empty",
+          "joint": "aligned",
+          "final_state": "minecraft:air"
+        }
+      }
+    ],
+    "operation": "Native desert Waystones asset with migrated legacy jigsaw NBT; same block palette and entity content"
+  },
+  {
+    "pool": "ctov:village/common/waystone/sand",
+    "template": "data/ctov/structure/village/waystone/sand.nbt",
+    "source_jar": "waystones-neoforge-1.21.1-21.1.46.jar",
+    "source_template": "data/waystones/structure/village/desert/waystone.nbt",
+    "source_sha256": "88488c210fe34985fca3d55213f4aac39291b88b82f2d36a1c064638bb64a907",
+    "compiled_template_sha256": "e5d44c3d9b476d0bf16165bca77414bccb353c3bcb048e13f8c723327ecd2af8",
+    "connector_evidence": [
+      {
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "state": 4,
+        "nbt": {
+          "id": "minecraft:jigsaw",
+          "name": "minecraft:building_entrance",
+          "target": "minecraft:empty",
+          "pool": "minecraft:empty",
+          "joint": "aligned",
+          "final_state": "minecraft:air"
+        }
+      }
+    ],
+    "operation": "Native desert Waystones asset with migrated legacy jigsaw NBT; same block palette and entity content"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement1.nbt",
+    "template_sha256": "5256181abc6ec8593b706e2cfbc5e067580b7dc516806a1965f6b5543a67404a",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement2.nbt",
+    "template_sha256": "c430f56f891784a262072b497e4964b326b0095b283106c73ce1225b6d115b3f",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement3.nbt",
+    "template_sha256": "0aaabf4b330dd5b4fa45727d086c346fcc91a2fcaca7c2e66ecd3f25b6090483",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement4.nbt",
+    "template_sha256": "9d4a5cab9b032104b14aa08909f0c9ac40994ab4a0850f53791eaefea3883a49",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement5.nbt",
+    "template_sha256": "a2157039d8b8234fc1bb82e8302fefd6409e4cd10605b4489ecd8b2c08c2a02e",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement6.nbt",
+    "template_sha256": "d2a524f2967f07a231ec535122fe648d8bf4f7917b4e3032b1f4d320d1444561",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement7.nbt",
+    "template_sha256": "a7bf564222e0c174695daaa2b39757e4e2c5828bc6ecfec5528d94185fa2459b",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement8.nbt",
+    "template_sha256": "28b409c922bef7a2f3c5edfa8f953d9522ebb14b65876cc376fed84d72e337ea",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement9.nbt",
+    "template_sha256": "6347a1313d9930fea478f9cd88fc83188e75db4499ff19327fcc2763e3e2e427",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement10.nbt",
+    "template_sha256": "bd00ab8d4b5e6d1509fb2256c8c2fcdbe90f93bafbf1255958131c8985de2253",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement11.nbt",
+    "template_sha256": "97944a9755b18aebf1b7c540c78859ed7daa879f0a8fc98ed2163ae190fbae27",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement12.nbt",
+    "template_sha256": "ab53bbebb75a54a242450b2778489fe9a1aed47851c8ef68ac03bf47b509c5c2",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement13.nbt",
+    "template_sha256": "2a0a8926c7543fadba1c409f37e18642b76239234a152d9f8fad9bd862fa1df8",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement14.nbt",
+    "template_sha256": "4aeec3b93d509ff4936662d323bf7c91463e0d5491e88956a8d2af23021f87d5",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement15.nbt",
+    "template_sha256": "7208cfb1aa064968a391e2ce32ed021584196b51f806841e1f58ef09c526cff0",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement16.nbt",
+    "template_sha256": "01c0313b599ea7a04f01fed586d5ddc5c34ab869dde3ff7b964e61e09cc9d3d8",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement17.nbt",
+    "template_sha256": "d9d34110282f256f26b75ca5e9702c0391c905f464024c87fc43d8c140d7c0af",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement18.nbt",
+    "template_sha256": "e5184d37868c847d7716a8ad0ce5868ffb3f4eeedb5bd75e221cb4b8c90b82b7",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement19.nbt",
+    "template_sha256": "dc98daaa059724e6559a98c39bfdeec3a2ba035eda31d7f346dbfc201e571e61",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement20.nbt",
+    "template_sha256": "701d10585d2533edceacd04d2a1b99f653ec2bca1815ed21b47a3f80a34188da",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement21.nbt",
+    "template_sha256": "d3781932acccae03fb9ebc7567abc8be2edae58e23957bc766fa55a82c69abd7",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement22.nbt",
+    "template_sha256": "f05117bb16aea8f5dea1a830eb9c4e619c434811034d29b9ce0b058023c00c06",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement23.nbt",
+    "template_sha256": "423780f336f4cd3074a5e06a9958fcf8eb4ea84db489c131f1967e01fe4e8fa4",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement24.nbt",
+    "template_sha256": "189aa2c97a20b112417f9f76796346955c44e140211792e346340e1d0941980d",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement25.nbt",
+    "template_sha256": "5be4b52893fa315f7c37e00447a5539795803970742471b6ce19e18b1a79f1bc",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement26.nbt",
+    "template_sha256": "a59112da7bbb7217600de42761223e8004016f71867c422a1aa2670eb81e14d5",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement27.nbt",
+    "template_sha256": "bb41a728c1bcedf9986b754f9371691f5fde0fa5d2638ec6e93f8d904e23ab54",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement28.nbt",
+    "template_sha256": "cde7120b770bb83b2c3b40b734789c14be3cab38d86edcc83f483a789864c56d",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement29.nbt",
+    "template_sha256": "af15c1f2df9432e8b27fec2f53dfb37fb5fece25afd07ae031a0223c816afe4f",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_small_room_basement30.nbt",
+    "template_sha256": "ff527e19dbf0b20551da2f4c801fb68fe39e2ba58e2f046b30322d990783663d",
+    "processor": "minecraft:illager_manor_main_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement1.nbt",
+    "template_sha256": "5e1d59cfdd3b2cc5f1a6ec8e16aa026b63a028f1aba4e60ce91985a9daa0407f",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement2.nbt",
+    "template_sha256": "dbb88b1dc8152e539799ba8f60e97f229e5aefba5d55d9c95e1e16906bab39e8",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement3.nbt",
+    "template_sha256": "efea4aad0cc7afdaf5bab128252c146448a6028825004bcde861d82afadc0351",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement4.nbt",
+    "template_sha256": "df8c6fcdcb1a826f6996e3f3a9ab6a29f53b841ab0194e5a744a625a15fdb0c5",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement5.nbt",
+    "template_sha256": "31bc9f4049a39848ea1a1bdf1a2a2c6fd319c5c202369ff19a593d6f65f7e031",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement6.nbt",
+    "template_sha256": "1f82a437fc2ac6965e0a9d87c5dedf13d3dfe2db9727f36e0549db5b0a3c08f7",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement7.nbt",
+    "template_sha256": "df7341c3917a59fe5aa1ad94def1f17d6be9abcfb79874d49f554d22b898b7a4",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement8.nbt",
+    "template_sha256": "63bc677453e27db4f7a76db4f9ffd09073fc59f0ab0cb36d5692c65df2e2f805",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement9.nbt",
+    "template_sha256": "587418b8148408092d8f77856ca9fed8bff5d54605f8c83522e13d66c86a37b9",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement10.nbt",
+    "template_sha256": "0404695fb501e2d385515fbef1c7c207f2647f0bd5c5a2285c8b0079d5d56e1b",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement11.nbt",
+    "template_sha256": "975a43d1258e9bf2e6609c3e57d23cbb43f9da18b826085fcc27cc8ac8a43b81",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement12.nbt",
+    "template_sha256": "5805735535091b47253302d16ec3575d6dca785b9d8c04e617da5e33cf2580c5",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement13.nbt",
+    "template_sha256": "7fd85a1bff13674ceff764328f11779a50edb877c69233a1888cbb1d9c29a29a",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement14.nbt",
+    "template_sha256": "11224c35dcb43468533bad3337c973c87cb9c4c86389e7f980871db6a5460918",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement15.nbt",
+    "template_sha256": "035560cfe6675b99d5b17335bbaee9c13e78c7ed029b5fb06682f3eb426c4272",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement16.nbt",
+    "template_sha256": "b2566dc1a4b2ca742cdf519b00064f95b6f8e81c9f70e67f5959b5c27b0657a4",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement17.nbt",
+    "template_sha256": "127b277e96337685bc63ced768df4d34d956e89b535f7ecb71f883c217abfd3b",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement18.nbt",
+    "template_sha256": "4968581dde736190c5ea67bc68abc5a3d722b040f2812f920db3c314cc7610bf",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  },
+  {
+    "pool": "minecraft:illager_mansion/illager_mansion_room_basement",
+    "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "template": "data/minecraft/structure/illager_mansion/mansion_middle_room_basement19.nbt",
+    "template_sha256": "383515ec0027a79618b2db8b0c217a7da2752eb7d042f168b6b252a1bce4a409",
+    "processor": "minecraft:illager_manor_room_degradation",
+    "operation": "Preserve native basement room, weight, processor and geometry"
+  }
+]

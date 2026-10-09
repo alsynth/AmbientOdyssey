@@ -1,0 +1,12 @@
+{
+  "file": "biolith-neoforge-3.0.14.jar",
+  "projectId": 852512,
+  "fileId": 8435635,
+  "sha256": "ded9169efb903198046cf44cf91a290ec836ed83a28e29179087eb860e0e6ce9",
+  "minecraftRange": "[1.21.1,1.21.2)",
+  "neoforgeRange": "[21.1.22,)",
+  "datapackPath": "data/{namespace}/biolith/biome_placement.json",
+  "globalConfigPath": "defaultconfigs/biolith/general.json",
+  "otherRequiredMods": [],
+  "verification": "Downloaded published JAR, inspected embedded mod metadata and decompiled the placement loader, codecs, normalization and config path. FTF 1.0.0 includes Biolith compatibility mixins. Runtime test pending."
+}

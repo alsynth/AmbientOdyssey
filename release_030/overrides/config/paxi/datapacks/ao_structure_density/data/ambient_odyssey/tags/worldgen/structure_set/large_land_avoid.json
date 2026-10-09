@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "dungeons_arise:major_structures",
+    "idas:idas_rare",
+    "integrated_villages:regular_villages"
+  ]
+}

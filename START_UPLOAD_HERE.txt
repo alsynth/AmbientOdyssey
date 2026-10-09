@@ -1,0 +1,25 @@
+Ambient Odyssey — initial GitHub upload
+========================================
+
+1. Create an EMPTY PRIVATE repository:
+   https://github.com/new
+   Owner: alsynth
+   Repository name: Ambient-Odyssey
+   Do NOT select Add README, .gitignore or License.
+
+2. Download and extract the GitHub-ready ZIP. It contains this file and UPLOAD_TO_GITHUB.ps1.
+
+3. Install Git for Windows and Git LFS if not already installed.
+   Open PowerShell in the extracted Ambient_Odyssey_GitHub_Ready directory and run:
+
+   powershell -ExecutionPolicy Bypass -File .\UPLOAD_TO_GITHUB.ps1
+
+4. When Git prompts for login, authenticate in the browser. Do not paste tokens into ChatGPT.
+
+5. Visit https://github.com/alsynth/Ambient-Odyssey and confirm the files are present.
+   Verify that the 73.5 MB Tans Huge Trees archive uploaded via Git LFS.
+
+6. Tell ChatGPT the repository is created / initial push completed. The connected GitHub
+   app can then read changes and help manage branches, commits, files and pull requests.
+
+No mod JARs are included, and Test 6 has NOT been implemented yet.

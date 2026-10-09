@@ -1,0 +1,4606 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/builtinpacks/RuntimePack",
+    "java/lang/Object",
+    "net/minecraft/server/packs/PackResources",
+    "RuntimePack.java",
+    "net/minecraft/server/packs/PackResources$ResourceOutput",
+    "ResourceOutput",
+    "java/util/Map$Entry",
+    "java/util/Map",
+    "Entry",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "GSON",
+    "Lcom/google/gson/Gson;",
+    "waiting",
+    "Ljava/util/concurrent/locks/Lock;",
+    "data",
+    "Ljava/util/Map;",
+    "Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/Supplier<[B>;>;",
+    "assets",
+    "root",
+    "Ljava/util/Map<Ljava/util/List<Ljava/lang/String;>;Ljava/util/function/Supplier<[B>;>;",
+    "packVersion",
+    "I",
+    "id",
+    "Ljava/lang/String;",
+    "metadata",
+    "Lnet/minecraft/server/packs/PackLocationInfo;",
+    "<init>",
+    "(Lnet/minecraft/resources/ResourceLocation;ILjava/lang/String;Ljava/io/InputStream;)V",
+    "version",
+    "description",
+    "imageStream",
+    "Lorg/jetbrains/annotations/Nullable;",
+    "()V",
+    "java/util/concurrent/locks/ReentrantLock",
+    "java/util/concurrent/ConcurrentHashMap",
+    "net/minecraft/resources/ResourceLocation",
+    "toString",
+    "()Ljava/lang/String;",
+    "net/minecraft/server/packs/PackLocationInfo",
+    "net/minecraft/network/chat/Component",
+    "literal",
+    "(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;",
+    "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource",
+    "java/util/Optional",
+    "empty",
+    "()Ljava/util/Optional;",
+    "(Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackSource;Ljava/util/Optional;)V",
+    "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil",
+    "extractImageBytes",
+    "(Ljava/io/InputStream;)[B",
+    "pack.png",
+    "addRootResource",
+    "(Ljava/lang/String;[B)[B",
+    "java/lang/String",
+    "java/io/InputStream",
+    "pack.mcmeta",
+    "hasRootResource",
+    "([Ljava/lang/String;)Z",
+    "com/google/gson/JsonObject",
+    "pack_format",
+    "java/lang/Integer",
+    "valueOf",
+    "(I)Ljava/lang/Integer;",
+    "addProperty",
+    "(Ljava/lang/String;Ljava/lang/Number;)V",
+    "min_format",
+    "max_format",
+    "(Ljava/lang/String;Ljava/lang/String;)V",
+    "pack",
+    "add",
+    "(Ljava/lang/String;Lcom/google/gson/JsonElement;)V",
+    "serializeJson",
+    "(Lcom/google/gson/JsonObject;)[B",
+    "image",
+    "[B",
+    "object",
+    "Lcom/google/gson/JsonObject;",
+    "this",
+    "Lde/cristelknight/cristellib/builtinpacks/RuntimePack;",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "Ljava/io/InputStream;",
+    "getSys",
+    "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;",
+    "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/Supplier<[B>;>;",
+    "side",
+    "net/minecraft/server/packs/PackType",
+    "CLIENT_RESOURCES",
+    "Lnet/minecraft/server/packs/PackType;",
+    "addStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+    "identifier",
+    "set",
+    "worldgen/structure_set",
+    "addDataForJsonLocation",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+    "removeStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;)Z",
+    "removeDataForJsonLocation",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+    "addBiome",
+    "biome",
+    "worldgen/biome",
+    "addStructure",
+    "structure",
+    "worldgen/structure",
+    "addLootTable",
+    "table",
+    "loot_tables",
+    "addDataForJsonLocationFromPath",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;Ljava/lang/String;)[B",
+    "prefix",
+    "fromSubPath",
+    "fromModID",
+    "de/cristelknight/cristellib/util/JsonHelper",
+    "getElement",
+    "(Ljava/lang/String;Ljava/lang/String;)Lcom/google/gson/JsonElement;",
+    "com/google/gson/JsonElement",
+    "json",
+    "addAndSerializeDataForLocation",
+    "(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+    "removeDataForLocation",
+    "(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+    "end",
+    "getNamespace",
+    "getPath",
+    "\u0001/\u0001.\u0001",
+    "java/lang/invoke/StringConcatFactory",
+    "makeConcatWithConstants",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+    "fromNamespaceAndPath",
+    "(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "addData",
+    "(Lnet/minecraft/resources/ResourceLocation;[B)[B",
+    "removeData",
+    "path",
+    "lock",
+    "()Ljava/lang/Object;",
+    "lambda$addData$0",
+    "([B)[B",
+    "()[B",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "get",
+    "([B)Ljava/util/function/Supplier;",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "java/util/concurrent/locks/Lock",
+    "unlock",
+    "java/lang/Throwable",
+    "addImageAsset",
+    "(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;Ljava/lang/String;)[B",
+    "modId",
+    "subPath",
+    "de/cristelknight/cristellib/PlatformHelper",
+    "getResourceStream",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;",
+    "addAsset",
+    "stream",
+    "asset",
+    "lambda$addAsset$1",
+    "remove",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "removeAsset",
+    "(Lnet/minecraft/resources/ResourceLocation;)V",
+    "/",
+    "split",
+    "(Ljava/lang/String;)[Ljava/lang/String;",
+    "java/util/Arrays",
+    "asList",
+    "([Ljava/lang/Object;)Ljava/util/List;",
+    "lambda$addRootResource$2",
+    "getRootResource",
+    "([Ljava/lang/String;)Lnet/minecraft/server/packs/resources/IoSupplier;",
+    "([Ljava/lang/String;)Lnet/minecraft/server/packs/resources/IoSupplier<Ljava/io/InputStream;>;",
+    "strings",
+    "Lorg/jetbrains/annotations/NotNull;",
+    "java/util/function/Supplier",
+    "lambda$getRootResource$3",
+    "(Ljava/util/function/Supplier;)Ljava/io/InputStream;",
+    "()Ljava/io/InputStream;",
+    "(Ljava/util/function/Supplier;)Lnet/minecraft/server/packs/resources/IoSupplier;",
+    "[Ljava/lang/String;",
+    "supplier",
+    "Ljava/util/function/Supplier<[B>;",
+    "Ljava/util/function/Supplier;",
+    "containsKey",
+    "(Ljava/lang/Object;)Z",
+    "getResource",
+    "(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/server/packs/resources/IoSupplier;",
+    "(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/server/packs/resources/IoSupplier<Ljava/io/InputStream;>;",
+    "packType",
+    "lambda$getResource$4",
+    "getResourceAsJson",
+    "(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Lcom/google/gson/JsonObject;",
+    "location",
+    "java/io/IOException",
+    "java/lang/NullPointerException",
+    "java/io/InputStreamReader",
+    "net/minecraft/server/packs/resources/IoSupplier",
+    "java/nio/charset/StandardCharsets",
+    "UTF_8",
+    "Ljava/nio/charset/Charset;",
+    "(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V",
+    "net/minecraft/util/GsonHelper",
+    "parse",
+    "(Ljava/io/Reader;)Lcom/google/gson/JsonObject;",
+    "java/lang/Exception",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Couldn't get JsonObject from location: {}",
+    "org/apache/logging/log4j/Logger",
+    "error",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "jsonObject",
+    "ex",
+    "Ljava/lang/Exception;",
+    "Lnet/minecraft/server/packs/resources/IoSupplier<Ljava/io/InputStream;>;",
+    "Lnet/minecraft/server/packs/resources/IoSupplier;",
+    "hasData",
+    "hasAsset",
+    "listResources",
+    "(Lnet/minecraft/server/packs/PackType;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/server/packs/PackResources$ResourceOutput;)V",
+    "namespace",
+    "resourceOutput",
+    "keySet",
+    "()Ljava/util/Set;",
+    "java/util/Set",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "()Z",
+    "next",
+    "equals",
+    "\u0001/",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "contains",
+    "(Ljava/lang/CharSequence;)Z",
+    "lambda$listResources$5",
+    "accept",
+    "(Ljava/lang/Object;Ljava/lang/Object;)V",
+    "inputSupplier",
+    "Lnet/minecraft/server/packs/PackResources$ResourceOutput;",
+    "getNamespaces",
+    "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Set;",
+    "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Set<Ljava/lang/String;>;",
+    "java/util/HashSet",
+    "namespaces",
+    "Ljava/util/Set<Ljava/lang/String;>;",
+    "Ljava/util/Set;",
+    "getMetadataSection",
+    "(Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;)Ljava/lang/Object;",
+    "<T:Ljava/lang/Object;>(Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer<TT;>;)TT;",
+    "metadataSectionSerializer",
+    "net/minecraft/server/packs/metadata/MetadataSectionSerializer",
+    "java/lang/RuntimeException",
+    "(Ljava/lang/Throwable;)V",
+    "net/minecraft/server/packs/FilePackResources",
+    "getMetadataFromStream",
+    "(Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;Ljava/io/InputStream;)Ljava/lang/Object;",
+    "getMetadataSectionName",
+    "fromJson",
+    "(Lcom/google/gson/JsonObject;)Ljava/lang/Object;",
+    "features",
+    "net/minecraft/server/packs/FeatureFlagsMetadataSection",
+    "TYPE",
+    "Lnet/minecraft/server/packs/metadata/MetadataSectionType;",
+    "net/minecraft/world/flag/FeatureFlags",
+    "DEFAULT_FLAGS",
+    "Lnet/minecraft/world/flag/FeatureFlagSet;",
+    "(Lnet/minecraft/world/flag/FeatureFlagSet;)V",
+    "net/minecraft/server/packs/metadata/MetadataSectionType",
+    "toJson",
+    "(Ljava/lang/Object;)Lcom/google/gson/JsonObject;",
+    "'{}' is an unsupported metadata key",
+    "debug",
+    "(Ljava/lang/String;Ljava/lang/Object;)V",
+    "e",
+    "Ljava/io/IOException;",
+    "Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer<TT;>;",
+    "Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;",
+    "()Lnet/minecraft/server/packs/PackLocationInfo;",
+    "packId",
+    "clear",
+    "(Lnet/minecraft/server/packs/PackType;)V",
+    "close",
+    "Closing Runtime Pack: {}",
+    "dumpToFolder",
+    "(Ljava/nio/file/Path;)V",
+    "output",
+    "entrySet",
+    "getKey",
+    "java/util/List",
+    "",
+    "toArray",
+    "([Ljava/lang/Object;)[Ljava/lang/Object;",
+    "java/nio/file/Paths",
+    "(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;",
+    "java/nio/file/Path",
+    "resolve",
+    "(Ljava/nio/file/Path;)Ljava/nio/file/Path;",
+    "getParent",
+    "()Ljava/nio/file/Path;",
+    "java/nio/file/attribute/FileAttribute",
+    "java/nio/file/Files",
+    "createDirectories",
+    "(Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;",
+    "getValue",
+    "java/nio/file/OpenOption",
+    "java/nio/file/StandardOpenOption",
+    "CREATE",
+    "Ljava/nio/file/StandardOpenOption;",
+    "TRUNCATE_EXISTING",
+    "write",
+    "(Ljava/nio/file/Path;[B[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;",
+    "pathParts",
+    "Ljava/util/List<Ljava/lang/String;>;",
+    "Ljava/util/List;",
+    "filePath",
+    "Ljava/nio/file/Path;",
+    "entry",
+    "Ljava/util/Map$Entry<Ljava/util/List<Ljava/lang/String;>;Ljava/util/function/Supplier<[B>;>;",
+    "Ljava/util/Map$Entry;",
+    "rl",
+    "Ljava/util/Map$Entry<Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/Supplier<[B>;>;",
+    "java/io/ByteArrayInputStream",
+    "([B)V",
+    "<clinit>",
+    "com/google/gson/GsonBuilder",
+    "disableHtmlEscaping",
+    "()Lcom/google/gson/GsonBuilder;",
+    "create",
+    "()Lcom/google/gson/Gson;",
+    "Signature",
+    "Code",
+    "StackMapTable",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "RuntimeInvisibleTypeAnnotations",
+    "RuntimeInvisibleParameterAnnotations",
+    "MethodParameters",
+    "LocalVariableTypeTable",
+    "RuntimeInvisibleAnnotations",
+    "Exceptions",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;ILjava/lang/String;Ljava/io/InputStream;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "new",
+          "reference": "java/util/concurrent/locks/ReentrantLock"
+        },
+        {
+          "offset": 8,
+          "op": "0x59"
+        },
+        {
+          "offset": 9,
+          "op": "invokespecial",
+          "reference": "java/util/concurrent/locks/ReentrantLock <init> ()V"
+        },
+        {
+          "offset": 12,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 15,
+          "op": "0x2a"
+        },
+        {
+          "offset": 16,
+          "op": "new",
+          "reference": "java/util/concurrent/ConcurrentHashMap"
+        },
+        {
+          "offset": 19,
+          "op": "0x59"
+        },
+        {
+          "offset": 20,
+          "op": "invokespecial",
+          "reference": "java/util/concurrent/ConcurrentHashMap <init> ()V"
+        },
+        {
+          "offset": 23,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack data Ljava/util/Map;"
+        },
+        {
+          "offset": 26,
+          "op": "0x2a"
+        },
+        {
+          "offset": 27,
+          "op": "new",
+          "reference": "java/util/concurrent/ConcurrentHashMap"
+        },
+        {
+          "offset": 30,
+          "op": "0x59"
+        },
+        {
+          "offset": 31,
+          "op": "invokespecial",
+          "reference": "java/util/concurrent/ConcurrentHashMap <init> ()V"
+        },
+        {
+          "offset": 34,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack assets Ljava/util/Map;"
+        },
+        {
+          "offset": 37,
+          "op": "0x2a"
+        },
+        {
+          "offset": 38,
+          "op": "new",
+          "reference": "java/util/concurrent/ConcurrentHashMap"
+        },
+        {
+          "offset": 41,
+          "op": "0x59"
+        },
+        {
+          "offset": 42,
+          "op": "invokespecial",
+          "reference": "java/util/concurrent/ConcurrentHashMap <init> ()V"
+        },
+        {
+          "offset": 45,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack root Ljava/util/Map;"
+        },
+        {
+          "offset": 48,
+          "op": "0x2a"
+        },
+        {
+          "offset": 49,
+          "op": "0x1c"
+        },
+        {
+          "offset": 50,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack packVersion I"
+        },
+        {
+          "offset": 53,
+          "op": "0x2a"
+        },
+        {
+          "offset": 54,
+          "op": "0x2b"
+        },
+        {
+          "offset": 55,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 58,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack id Ljava/lang/String;"
+        },
+        {
+          "offset": 61,
+          "op": "0x2a"
+        },
+        {
+          "offset": 62,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/PackLocationInfo"
+        },
+        {
+          "offset": 65,
+          "op": "0x59"
+        },
+        {
+          "offset": 66,
+          "op": "0x2a"
+        },
+        {
+          "offset": 67,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack id Ljava/lang/String;"
+        },
+        {
+          "offset": 70,
+          "op": "0x2d"
+        },
+        {
+          "offset": 71,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 74,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource"
+        },
+        {
+          "offset": 77,
+          "op": "0x59"
+        },
+        {
+          "offset": 78,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource <init> ()V"
+        },
+        {
+          "offset": 81,
+          "op": "invokestatic",
+          "reference": "java/util/Optional empty ()Ljava/util/Optional;"
+        },
+        {
+          "offset": 84,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/PackLocationInfo <init> (Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackSource;Ljava/util/Optional;)V"
+        },
+        {
+          "offset": 87,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack metadata Lnet/minecraft/server/packs/PackLocationInfo;"
+        },
+        {
+          "offset": 90,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 92,
+          "op": "0xc6",
+          "args": "0018"
+        },
+        {
+          "offset": 95,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 97,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil extractImageBytes (Ljava/io/InputStream;)[B"
+        },
+        {
+          "offset": 100,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 102,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 104,
+          "op": "0xc6",
+          "args": "000c"
+        },
+        {
+          "offset": 107,
+          "op": "0x2a"
+        },
+        {
+          "offset": 108,
+          "op": "ldc",
+          "reference": "pack.png"
+        },
+        {
+          "offset": 110,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 112,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addRootResource (Ljava/lang/String;[B)[B"
+        },
+        {
+          "offset": 115,
+          "op": "0x57"
+        },
+        {
+          "offset": 116,
+          "op": "0x2a"
+        },
+        {
+          "offset": 117,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 118,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 121,
+          "op": "0x59"
+        },
+        {
+          "offset": 122,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 123,
+          "op": "ldc",
+          "reference": "pack.mcmeta"
+        },
+        {
+          "offset": 125,
+          "op": "0x53"
+        },
+        {
+          "offset": 126,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack hasRootResource ([Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 129,
+          "op": "ifne",
+          "args": "005c"
+        },
+        {
+          "offset": 132,
+          "op": "new",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 135,
+          "op": "0x59"
+        },
+        {
+          "offset": 136,
+          "op": "invokespecial",
+          "reference": "com/google/gson/JsonObject <init> ()V"
+        },
+        {
+          "offset": 139,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 141,
+          "op": "new",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 144,
+          "op": "0x59"
+        },
+        {
+          "offset": 145,
+          "op": "invokespecial",
+          "reference": "com/google/gson/JsonObject <init> ()V"
+        },
+        {
+          "offset": 148,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 150,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 152,
+          "op": "ldc",
+          "reference": "pack_format"
+        },
+        {
+          "offset": 154,
+          "op": "0x2a"
+        },
+        {
+          "offset": 155,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack packVersion I"
+        },
+        {
+          "offset": 158,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 161,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 164,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 166,
+          "op": "ldc",
+          "reference": "min_format"
+        },
+        {
+          "offset": 168,
+          "op": "0x2a"
+        },
+        {
+          "offset": 169,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack packVersion I"
+        },
+        {
+          "offset": 172,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 175,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 178,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 180,
+          "op": "ldc",
+          "reference": "max_format"
+        },
+        {
+          "offset": 182,
+          "op": "0x2a"
+        },
+        {
+          "offset": 183,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack packVersion I"
+        },
+        {
+          "offset": 186,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 189,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 192,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 194,
+          "op": "ldc",
+          "reference": "description"
+        },
+        {
+          "offset": 196,
+          "op": "0x2d"
+        },
+        {
+          "offset": 197,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 200,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 202,
+          "op": "ldc",
+          "reference": "pack"
+        },
+        {
+          "offset": 204,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 206,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject add (Ljava/lang/String;Lcom/google/gson/JsonElement;)V"
+        },
+        {
+          "offset": 209,
+          "op": "0x2a"
+        },
+        {
+          "offset": 210,
+          "op": "ldc",
+          "reference": "pack.mcmeta"
+        },
+        {
+          "offset": 212,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 214,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil serializeJson (Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 217,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addRootResource (Ljava/lang/String;[B)[B"
+        },
+        {
+          "offset": 220,
+          "op": "0x57"
+        },
+        {
+          "offset": 221,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getSys",
+      "descriptor": "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "getstatic",
+          "reference": "net/minecraft/server/packs/PackType CLIENT_RESOURCES Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 4,
+          "op": "0xa6",
+          "args": "000a"
+        },
+        {
+          "offset": 7,
+          "op": "0x2a"
+        },
+        {
+          "offset": 8,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack assets Ljava/util/Map;"
+        },
+        {
+          "offset": 11,
+          "op": "goto",
+          "args": "0007"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack data Ljava/util/Map;"
+        },
+        {
+          "offset": 18,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "addStructureSet",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "worldgen/structure_set"
+        },
+        {
+          "offset": 3,
+          "op": "0x2b"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addDataForJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 8,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "removeStructureSet",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "worldgen/structure_set"
+        },
+        {
+          "offset": 3,
+          "op": "0x2b"
+        },
+        {
+          "offset": 4,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack removeDataForJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z"
+        },
+        {
+          "offset": 7,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "addBiome",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "worldgen/biome"
+        },
+        {
+          "offset": 3,
+          "op": "0x2b"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addDataForJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 8,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "addStructure",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "worldgen/structure"
+        },
+        {
+          "offset": 3,
+          "op": "0x2b"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addDataForJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 8,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "addLootTable",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "loot_tables"
+        },
+        {
+          "offset": 3,
+          "op": "0x2b"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addDataForJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 8,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "addDataForJsonLocationFromPath",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;Ljava/lang/String;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 2,
+          "op": "0x2d"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/JsonHelper getElement (Ljava/lang/String;Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 6,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 8,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 10,
+          "op": "0xc1",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 13,
+          "op": "ifeq",
+          "args": "0013"
+        },
+        {
+          "offset": 16,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 18,
+          "op": "checkcast",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 21,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "0x2b"
+        },
+        {
+          "offset": 25,
+          "op": "0x2c"
+        },
+        {
+          "offset": 26,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addDataForJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 31,
+          "op": "areturn"
+        },
+        {
+          "offset": 32,
+          "op": "0x1"
+        },
+        {
+          "offset": 33,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "addDataForJsonLocation",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "ldc",
+          "reference": "json"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "0x2d"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addAndSerializeDataForLocation (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "removeDataForJsonLocation",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "ldc",
+          "reference": "json"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack removeDataForLocation (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z"
+        },
+        {
+          "offset": 8,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "addAndSerializeDataForLocation",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2d"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "0x2d"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 10,
+          "op": "0x2c"
+        },
+        {
+          "offset": 11,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 233)"
+        },
+        {
+          "offset": 16,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 19,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 21,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil serializeJson (Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 24,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addData (Lnet/minecraft/resources/ResourceLocation;[B)[B"
+        },
+        {
+          "offset": 27,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "removeDataForLocation",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2d"
+        },
+        {
+          "offset": 2,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "0x2d"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 10,
+          "op": "0x2c"
+        },
+        {
+          "offset": 11,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 233)"
+        },
+        {
+          "offset": 16,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 19,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack removeData (Lnet/minecraft/resources/ResourceLocation;)Z"
+        },
+        {
+          "offset": 22,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "addData",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;[B)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack data Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "0x2c"
+        },
+        {
+          "offset": 10,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 268)"
+        },
+        {
+          "offset": 15,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 20,
+          "op": "0x57"
+        },
+        {
+          "offset": 21,
+          "op": "0x2c"
+        },
+        {
+          "offset": 22,
+          "op": "0x4e"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 27,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 32,
+          "op": "0x2d"
+        },
+        {
+          "offset": 33,
+          "op": "areturn"
+        },
+        {
+          "offset": 34,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 36,
+          "op": "0x2a"
+        },
+        {
+          "offset": 37,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 40,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 45,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 47,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "addImageAsset",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;Ljava/lang/String;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "0x2d"
+        },
+        {
+          "offset": 2,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/PlatformHelper getResourceStream (Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;"
+        },
+        {
+          "offset": 5,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 7,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 9,
+          "op": "0xc7",
+          "args": "0005"
+        },
+        {
+          "offset": 12,
+          "op": "0x1"
+        },
+        {
+          "offset": 13,
+          "op": "areturn"
+        },
+        {
+          "offset": 14,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 16,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil extractImageBytes (Ljava/io/InputStream;)[B"
+        },
+        {
+          "offset": 19,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 21,
+          "op": "0x2a"
+        },
+        {
+          "offset": 22,
+          "op": "0x2b"
+        },
+        {
+          "offset": 23,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addAsset (Lnet/minecraft/resources/ResourceLocation;[B)[B"
+        },
+        {
+          "offset": 28,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "addAsset",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;[B)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack assets Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "0x2c"
+        },
+        {
+          "offset": 10,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 268)"
+        },
+        {
+          "offset": 15,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 20,
+          "op": "0x57"
+        },
+        {
+          "offset": 21,
+          "op": "0x2c"
+        },
+        {
+          "offset": 22,
+          "op": "0x4e"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 27,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 32,
+          "op": "0x2d"
+        },
+        {
+          "offset": 33,
+          "op": "areturn"
+        },
+        {
+          "offset": 34,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 36,
+          "op": "0x2a"
+        },
+        {
+          "offset": 37,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 40,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 45,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 47,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "removeData",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack data Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "java/util/Map remove (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 14,
+          "op": "0xc6",
+          "args": "0007"
+        },
+        {
+          "offset": 17,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 18,
+          "op": "goto",
+          "args": "0004"
+        },
+        {
+          "offset": 21,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 22,
+          "op": "0x3d"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 27,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 32,
+          "op": "0x1c"
+        },
+        {
+          "offset": 33,
+          "op": "ireturn"
+        },
+        {
+          "offset": 34,
+          "op": "0x4e"
+        },
+        {
+          "offset": 35,
+          "op": "0x2a"
+        },
+        {
+          "offset": 36,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 39,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 44,
+          "op": "0x2d"
+        },
+        {
+          "offset": 45,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "removeAsset",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack assets Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "java/util/Map remove (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 14,
+          "op": "0x57"
+        },
+        {
+          "offset": 15,
+          "op": "0x2a"
+        },
+        {
+          "offset": 16,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 24,
+          "op": "goto",
+          "args": "000f"
+        },
+        {
+          "offset": 27,
+          "op": "0x4d"
+        },
+        {
+          "offset": 28,
+          "op": "0x2a"
+        },
+        {
+          "offset": 29,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 32,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 37,
+          "op": "0x2c"
+        },
+        {
+          "offset": 38,
+          "op": "0xbf"
+        },
+        {
+          "offset": 39,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addRootResource",
+      "descriptor": "(Ljava/lang/String;[B)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack root Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "ldc_w",
+          "reference": "/"
+        },
+        {
+          "offset": 12,
+          "op": "invokevirtual",
+          "reference": "java/lang/String split (Ljava/lang/String;)[Ljava/lang/String;"
+        },
+        {
+          "offset": 15,
+          "op": "invokestatic",
+          "reference": "java/util/Arrays asList ([Ljava/lang/Object;)Ljava/util/List;"
+        },
+        {
+          "offset": 18,
+          "op": "0x2c"
+        },
+        {
+          "offset": 19,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 268)"
+        },
+        {
+          "offset": 24,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 29,
+          "op": "0x57"
+        },
+        {
+          "offset": 30,
+          "op": "0x2c"
+        },
+        {
+          "offset": 31,
+          "op": "0x4e"
+        },
+        {
+          "offset": 32,
+          "op": "0x2a"
+        },
+        {
+          "offset": 33,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 36,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 41,
+          "op": "0x2d"
+        },
+        {
+          "offset": 42,
+          "op": "areturn"
+        },
+        {
+          "offset": 43,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "0x2a"
+        },
+        {
+          "offset": 46,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 49,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 54,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 56,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "getRootResource",
+      "descriptor": "([Ljava/lang/String;)Lnet/minecraft/server/packs/resources/IoSupplier;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack root Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "invokestatic",
+          "reference": "java/util/Arrays asList ([Ljava/lang/Object;)Ljava/util/List;"
+        },
+        {
+          "offset": 12,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 17,
+          "op": "checkcast",
+          "reference": "java/util/function/Supplier"
+        },
+        {
+          "offset": 20,
+          "op": "0x4d"
+        },
+        {
+          "offset": 21,
+          "op": "0x2c"
+        },
+        {
+          "offset": 22,
+          "op": "0xc7",
+          "args": "0010"
+        },
+        {
+          "offset": 25,
+          "op": "0x1"
+        },
+        {
+          "offset": 26,
+          "op": "0x4e"
+        },
+        {
+          "offset": 27,
+          "op": "0x2a"
+        },
+        {
+          "offset": 28,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 31,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 36,
+          "op": "0x2d"
+        },
+        {
+          "offset": 37,
+          "op": "areturn"
+        },
+        {
+          "offset": 38,
+          "op": "0x2c"
+        },
+        {
+          "offset": 39,
+          "op": "invokedynamic",
+          "reference": "(18, 4, 341)"
+        },
+        {
+          "offset": 44,
+          "op": "0x4e"
+        },
+        {
+          "offset": 45,
+          "op": "0x2a"
+        },
+        {
+          "offset": 46,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 49,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 54,
+          "op": "0x2d"
+        },
+        {
+          "offset": 55,
+          "op": "areturn"
+        },
+        {
+          "offset": 56,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 58,
+          "op": "0x2a"
+        },
+        {
+          "offset": 59,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 62,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 67,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 69,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "hasRootResource",
+      "descriptor": "([Ljava/lang/String;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack root Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "invokestatic",
+          "reference": "java/util/Arrays asList ([Ljava/lang/Object;)Ljava/util/List;"
+        },
+        {
+          "offset": 12,
+          "op": "invokeinterface",
+          "reference": "java/util/Map containsKey (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 17,
+          "op": "0x3d"
+        },
+        {
+          "offset": 18,
+          "op": "0x2a"
+        },
+        {
+          "offset": 19,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 22,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 27,
+          "op": "0x1c"
+        },
+        {
+          "offset": 28,
+          "op": "ireturn"
+        },
+        {
+          "offset": 29,
+          "op": "0x4e"
+        },
+        {
+          "offset": 30,
+          "op": "0x2a"
+        },
+        {
+          "offset": 31,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 34,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 39,
+          "op": "0x2d"
+        },
+        {
+          "offset": 40,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "getResource",
+      "descriptor": "(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/server/packs/resources/IoSupplier;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getSys (Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;"
+        },
+        {
+          "offset": 9,
+          "op": "0x2c"
+        },
+        {
+          "offset": 10,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "op": "checkcast",
+          "reference": "java/util/function/Supplier"
+        },
+        {
+          "offset": 18,
+          "op": "0x4e"
+        },
+        {
+          "offset": 19,
+          "op": "0x2d"
+        },
+        {
+          "offset": 20,
+          "op": "0xc7",
+          "args": "0012"
+        },
+        {
+          "offset": 23,
+          "op": "0x1"
+        },
+        {
+          "offset": 24,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 26,
+          "op": "0x2a"
+        },
+        {
+          "offset": 27,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 30,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 35,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 37,
+          "op": "areturn"
+        },
+        {
+          "offset": 38,
+          "op": "0x2d"
+        },
+        {
+          "offset": 39,
+          "op": "invokedynamic",
+          "reference": "(18, 5, 341)"
+        },
+        {
+          "offset": 44,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 46,
+          "op": "0x2a"
+        },
+        {
+          "offset": 47,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 50,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 55,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 57,
+          "op": "areturn"
+        },
+        {
+          "offset": 58,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 60,
+          "op": "0x2a"
+        },
+        {
+          "offset": 61,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 64,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 69,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 71,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "getResourceAsJson",
+      "descriptor": "(Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Lcom/google/gson/JsonObject;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x2c"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getResource (Lnet/minecraft/server/packs/PackType;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/server/packs/resources/IoSupplier;"
+        },
+        {
+          "offset": 6,
+          "op": "0x4e"
+        },
+        {
+          "offset": 7,
+          "op": "new",
+          "reference": "java/io/InputStreamReader"
+        },
+        {
+          "offset": 10,
+          "op": "0x59"
+        },
+        {
+          "offset": 11,
+          "op": "0x2d"
+        },
+        {
+          "offset": 12,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/resources/IoSupplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 17,
+          "op": "checkcast",
+          "reference": "java/io/InputStream"
+        },
+        {
+          "offset": 20,
+          "op": "getstatic",
+          "reference": "java/nio/charset/StandardCharsets UTF_8 Ljava/nio/charset/Charset;"
+        },
+        {
+          "offset": 23,
+          "op": "invokespecial",
+          "reference": "java/io/InputStreamReader <init> (Ljava/io/InputStream;Ljava/nio/charset/Charset;)V"
+        },
+        {
+          "offset": 26,
+          "op": "invokestatic",
+          "reference": "net/minecraft/util/GsonHelper parse (Ljava/io/Reader;)Lcom/google/gson/JsonObject;"
+        },
+        {
+          "offset": 29,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 31,
+          "op": "goto",
+          "args": "0015"
+        },
+        {
+          "offset": 34,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 36,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 39,
+          "op": "ldc_w",
+          "reference": "Couldn't get JsonObject from location: {}"
+        },
+        {
+          "offset": 42,
+          "op": "0x2c"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 45,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger error (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 50,
+          "op": "0x1"
+        },
+        {
+          "offset": 51,
+          "op": "areturn"
+        },
+        {
+          "offset": 52,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 54,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "hasData",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack data Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "java/util/Map containsKey (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 14,
+          "op": "0x3d"
+        },
+        {
+          "offset": 15,
+          "op": "0x2a"
+        },
+        {
+          "offset": 16,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 24,
+          "op": "0x1c"
+        },
+        {
+          "offset": 25,
+          "op": "ireturn"
+        },
+        {
+          "offset": 26,
+          "op": "0x4e"
+        },
+        {
+          "offset": 27,
+          "op": "0x2a"
+        },
+        {
+          "offset": 28,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 31,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 36,
+          "op": "0x2d"
+        },
+        {
+          "offset": 37,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "hasAsset",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack assets Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "java/util/Map containsKey (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 14,
+          "op": "0x3d"
+        },
+        {
+          "offset": 15,
+          "op": "0x2a"
+        },
+        {
+          "offset": 16,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 24,
+          "op": "0x1c"
+        },
+        {
+          "offset": 25,
+          "op": "ireturn"
+        },
+        {
+          "offset": 26,
+          "op": "0x4e"
+        },
+        {
+          "offset": 27,
+          "op": "0x2a"
+        },
+        {
+          "offset": 28,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 31,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 36,
+          "op": "0x2d"
+        },
+        {
+          "offset": 37,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "listResources",
+      "descriptor": "(Lnet/minecraft/server/packs/PackType;Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/server/packs/PackResources$ResourceOutput;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getSys (Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "java/util/Map keySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 14,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 19,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 21,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 23,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 28,
+          "op": "ifeq",
+          "args": "005c"
+        },
+        {
+          "offset": 31,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 33,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 38,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 41,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 43,
+          "op": "0x2a"
+        },
+        {
+          "offset": 44,
+          "op": "0x2b"
+        },
+        {
+          "offset": 45,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getSys (Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;"
+        },
+        {
+          "offset": 48,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 50,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 55,
+          "op": "checkcast",
+          "reference": "java/util/function/Supplier"
+        },
+        {
+          "offset": 58,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 60,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 62,
+          "op": "0xc7",
+          "args": "0006"
+        },
+        {
+          "offset": 65,
+          "op": "goto",
+          "args": "ffd4"
+        },
+        {
+          "offset": 68,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 70,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 73,
+          "op": "0x2c"
+        },
+        {
+          "offset": 74,
+          "op": "invokevirtual",
+          "reference": "java/lang/String equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 77,
+          "op": "ifeq",
+          "args": "0028"
+        },
+        {
+          "offset": 80,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 82,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 85,
+          "op": "0x2d"
+        },
+        {
+          "offset": 86,
+          "op": "invokedynamic",
+          "reference": "(18, 6, 445)"
+        },
+        {
+          "offset": 91,
+          "op": "invokevirtual",
+          "reference": "java/lang/String contains (Ljava/lang/CharSequence;)Z"
+        },
+        {
+          "offset": 94,
+          "op": "ifeq",
+          "args": "0017"
+        },
+        {
+          "offset": 97,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 99,
+          "op": "invokedynamic",
+          "reference": "(18, 7, 341)"
+        },
+        {
+          "offset": 104,
+          "op": "0x3a",
+          "args": "08"
+        },
+        {
+          "offset": 106,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 108,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 110,
+          "op": "0x19",
+          "args": "08"
+        },
+        {
+          "offset": 112,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/PackResources$ResourceOutput accept (Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 117,
+          "op": "goto",
+          "args": "ffa0"
+        },
+        {
+          "offset": 120,
+          "op": "0x2a"
+        },
+        {
+          "offset": 121,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 124,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 129,
+          "op": "goto",
+          "args": "0011"
+        },
+        {
+          "offset": 132,
+          "op": "0x3a",
+          "args": "09"
+        },
+        {
+          "offset": 134,
+          "op": "0x2a"
+        },
+        {
+          "offset": 135,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 138,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 143,
+          "op": "0x19",
+          "args": "09"
+        },
+        {
+          "offset": 145,
+          "op": "0xbf"
+        },
+        {
+          "offset": 146,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getNamespaces",
+      "descriptor": "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Set;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "new",
+          "reference": "java/util/HashSet"
+        },
+        {
+          "offset": 7,
+          "op": "0x59"
+        },
+        {
+          "offset": 8,
+          "op": "invokespecial",
+          "reference": "java/util/HashSet <init> ()V"
+        },
+        {
+          "offset": 11,
+          "op": "0x4d"
+        },
+        {
+          "offset": 12,
+          "op": "0x2a"
+        },
+        {
+          "offset": 13,
+          "op": "0x2b"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getSys (Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;"
+        },
+        {
+          "offset": 17,
+          "op": "invokeinterface",
+          "reference": "java/util/Map keySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 22,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 27,
+          "op": "0x4e"
+        },
+        {
+          "offset": 28,
+          "op": "0x2d"
+        },
+        {
+          "offset": 29,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 34,
+          "op": "ifeq",
+          "args": "001d"
+        },
+        {
+          "offset": 37,
+          "op": "0x2d"
+        },
+        {
+          "offset": 38,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 43,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 46,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 48,
+          "op": "0x2c"
+        },
+        {
+          "offset": 49,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 51,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 54,
+          "op": "invokeinterface",
+          "reference": "java/util/Set add (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 59,
+          "op": "0x57"
+        },
+        {
+          "offset": 60,
+          "op": "goto",
+          "args": "ffe0"
+        },
+        {
+          "offset": 63,
+          "op": "0x2c"
+        },
+        {
+          "offset": 64,
+          "op": "0x4e"
+        },
+        {
+          "offset": 65,
+          "op": "0x2a"
+        },
+        {
+          "offset": 66,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 69,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 74,
+          "op": "0x2d"
+        },
+        {
+          "offset": 75,
+          "op": "areturn"
+        },
+        {
+          "offset": 76,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 78,
+          "op": "0x2a"
+        },
+        {
+          "offset": 79,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 82,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 87,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 89,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "getMetadataSection",
+      "descriptor": "(Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;)Ljava/lang/Object;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x1"
+        },
+        {
+          "offset": 1,
+          "op": "0x4d"
+        },
+        {
+          "offset": 2,
+          "op": "0x2a"
+        },
+        {
+          "offset": 3,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 4,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 7,
+          "op": "0x59"
+        },
+        {
+          "offset": 8,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 9,
+          "op": "ldc",
+          "reference": "pack.mcmeta"
+        },
+        {
+          "offset": 11,
+          "op": "0x53"
+        },
+        {
+          "offset": 12,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getRootResource ([Ljava/lang/String;)Lnet/minecraft/server/packs/resources/IoSupplier;"
+        },
+        {
+          "offset": 15,
+          "op": "0x4e"
+        },
+        {
+          "offset": 16,
+          "op": "0x2d"
+        },
+        {
+          "offset": 17,
+          "op": "0xc6",
+          "args": "000d"
+        },
+        {
+          "offset": 20,
+          "op": "0x2d"
+        },
+        {
+          "offset": 21,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/resources/IoSupplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 26,
+          "op": "checkcast",
+          "reference": "java/io/InputStream"
+        },
+        {
+          "offset": 29,
+          "op": "0x4d"
+        },
+        {
+          "offset": 30,
+          "op": "goto",
+          "args": "000d"
+        },
+        {
+          "offset": 33,
+          "op": "0x4e"
+        },
+        {
+          "offset": 34,
+          "op": "new",
+          "reference": "java/lang/RuntimeException"
+        },
+        {
+          "offset": 37,
+          "op": "0x59"
+        },
+        {
+          "offset": 38,
+          "op": "0x2d"
+        },
+        {
+          "offset": 39,
+          "op": "invokespecial",
+          "reference": "java/lang/RuntimeException <init> (Ljava/lang/Throwable;)V"
+        },
+        {
+          "offset": 42,
+          "op": "0xbf"
+        },
+        {
+          "offset": 43,
+          "op": "0x2c"
+        },
+        {
+          "offset": 44,
+          "op": "0xc6",
+          "args": "0009"
+        },
+        {
+          "offset": 47,
+          "op": "0x2b"
+        },
+        {
+          "offset": 48,
+          "op": "0x2c"
+        },
+        {
+          "offset": 49,
+          "op": "invokestatic",
+          "reference": "net/minecraft/server/packs/FilePackResources getMetadataFromStream (Lnet/minecraft/server/packs/metadata/MetadataSectionSerializer;Ljava/io/InputStream;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 52,
+          "op": "areturn"
+        },
+        {
+          "offset": 53,
+          "op": "0x2b"
+        },
+        {
+          "offset": 54,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/metadata/MetadataSectionSerializer getMetadataSectionName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 59,
+          "op": "ldc",
+          "reference": "pack"
+        },
+        {
+          "offset": 61,
+          "op": "invokevirtual",
+          "reference": "java/lang/String equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 64,
+          "op": "ifeq",
+          "args": "002a"
+        },
+        {
+          "offset": 67,
+          "op": "new",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 70,
+          "op": "0x59"
+        },
+        {
+          "offset": 71,
+          "op": "invokespecial",
+          "reference": "com/google/gson/JsonObject <init> ()V"
+        },
+        {
+          "offset": 74,
+          "op": "0x4e"
+        },
+        {
+          "offset": 75,
+          "op": "0x2d"
+        },
+        {
+          "offset": 76,
+          "op": "ldc",
+          "reference": "pack_format"
+        },
+        {
+          "offset": 78,
+          "op": "0x2a"
+        },
+        {
+          "offset": 79,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack packVersion I"
+        },
+        {
+          "offset": 82,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 85,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 88,
+          "op": "0x2d"
+        },
+        {
+          "offset": 89,
+          "op": "ldc",
+          "reference": "description"
+        },
+        {
+          "offset": 91,
+          "op": "0x2a"
+        },
+        {
+          "offset": 92,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack id Ljava/lang/String;"
+        },
+        {
+          "offset": 95,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/String;)V"
+        },
+        {
+          "offset": 98,
+          "op": "0x2b"
+        },
+        {
+          "offset": 99,
+          "op": "0x2d"
+        },
+        {
+          "offset": 100,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/metadata/MetadataSectionSerializer fromJson (Lcom/google/gson/JsonObject;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 105,
+          "op": "areturn"
+        },
+        {
+          "offset": 106,
+          "op": "0x2b"
+        },
+        {
+          "offset": 107,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/metadata/MetadataSectionSerializer getMetadataSectionName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 112,
+          "op": "ldc_w",
+          "reference": "features"
+        },
+        {
+          "offset": 115,
+          "op": "invokevirtual",
+          "reference": "java/lang/String equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 118,
+          "op": "ifeq",
+          "args": "001c"
+        },
+        {
+          "offset": 121,
+          "op": "0x2b"
+        },
+        {
+          "offset": 122,
+          "op": "getstatic",
+          "reference": "net/minecraft/server/packs/FeatureFlagsMetadataSection TYPE Lnet/minecraft/server/packs/metadata/MetadataSectionType;"
+        },
+        {
+          "offset": 125,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/FeatureFlagsMetadataSection"
+        },
+        {
+          "offset": 128,
+          "op": "0x59"
+        },
+        {
+          "offset": 129,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/flag/FeatureFlags DEFAULT_FLAGS Lnet/minecraft/world/flag/FeatureFlagSet;"
+        },
+        {
+          "offset": 132,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/FeatureFlagsMetadataSection <init> (Lnet/minecraft/world/flag/FeatureFlagSet;)V"
+        },
+        {
+          "offset": 135,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/metadata/MetadataSectionType toJson (Ljava/lang/Object;)Lcom/google/gson/JsonObject;"
+        },
+        {
+          "offset": 140,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/metadata/MetadataSectionSerializer fromJson (Lcom/google/gson/JsonObject;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 145,
+          "op": "areturn"
+        },
+        {
+          "offset": 146,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 149,
+          "op": "ldc_w",
+          "reference": "'{}' is an unsupported metadata key"
+        },
+        {
+          "offset": 152,
+          "op": "0x2b"
+        },
+        {
+          "offset": 153,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/metadata/MetadataSectionSerializer getMetadataSectionName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 158,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger debug (Ljava/lang/String;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 163,
+          "op": "0x1"
+        },
+        {
+          "offset": 164,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "location",
+      "descriptor": "()Lnet/minecraft/server/packs/PackLocationInfo;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack metadata Lnet/minecraft/server/packs/PackLocationInfo;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "packId",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack id Ljava/lang/String;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lock",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock lock ()V"
+        },
+        {
+          "offset": 9,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "descriptor": "(Lnet/minecraft/server/packs/PackType;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack getSys (Lnet/minecraft/server/packs/PackType;)Ljava/util/Map;"
+        },
+        {
+          "offset": 9,
+          "op": "invokeinterface",
+          "reference": "java/util/Map clear ()V"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 18,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 23,
+          "op": "goto",
+          "args": "000f"
+        },
+        {
+          "offset": 26,
+          "op": "0x4d"
+        },
+        {
+          "offset": 27,
+          "op": "0x2a"
+        },
+        {
+          "offset": 28,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 31,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 36,
+          "op": "0x2c"
+        },
+        {
+          "offset": 37,
+          "op": "0xbf"
+        },
+        {
+          "offset": 38,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "close",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc_w",
+          "reference": "Closing Runtime Pack: {}"
+        },
+        {
+          "offset": 6,
+          "op": "0x2a"
+        },
+        {
+          "offset": 7,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack id Ljava/lang/String;"
+        },
+        {
+          "offset": 10,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger debug (Ljava/lang/String;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 15,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "dumpToFolder",
+      "descriptor": "(Ljava/nio/file/Path;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack lock ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack root Ljava/util/Map;"
+        },
+        {
+          "offset": 8,
+          "op": "invokeinterface",
+          "reference": "java/util/Map entrySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 13,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 18,
+          "op": "0x4d"
+        },
+        {
+          "offset": 19,
+          "op": "0x2c"
+        },
+        {
+          "offset": 20,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 25,
+          "op": "ifeq",
+          "args": "006d"
+        },
+        {
+          "offset": 28,
+          "op": "0x2c"
+        },
+        {
+          "offset": 29,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 34,
+          "op": "checkcast",
+          "reference": "java/util/Map$Entry"
+        },
+        {
+          "offset": 37,
+          "op": "0x4e"
+        },
+        {
+          "offset": 38,
+          "op": "0x2d"
+        },
+        {
+          "offset": 39,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getKey ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 44,
+          "op": "checkcast",
+          "reference": "java/util/List"
+        },
+        {
+          "offset": 47,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 49,
+          "op": "0x2b"
+        },
+        {
+          "offset": 50,
+          "op": "ldc_w",
+          "reference": ""
+        },
+        {
+          "offset": 53,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 55,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 56,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 59,
+          "op": "invokeinterface",
+          "reference": "java/util/List toArray ([Ljava/lang/Object;)[Ljava/lang/Object;"
+        },
+        {
+          "offset": 64,
+          "op": "checkcast",
+          "reference": "[Ljava/lang/String;"
+        },
+        {
+          "offset": 67,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 70,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path resolve (Ljava/nio/file/Path;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 75,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 77,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 79,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path getParent ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 84,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 85,
+          "op": "0xbd",
+          "reference": "java/nio/file/attribute/FileAttribute"
+        },
+        {
+          "offset": 88,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files createDirectories (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 91,
+          "op": "0x57"
+        },
+        {
+          "offset": 92,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 94,
+          "op": "0x2d"
+        },
+        {
+          "offset": 95,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getValue ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 100,
+          "op": "checkcast",
+          "reference": "java/util/function/Supplier"
+        },
+        {
+          "offset": 103,
+          "op": "invokeinterface",
+          "reference": "java/util/function/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 108,
+          "op": "checkcast",
+          "reference": "[B"
+        },
+        {
+          "offset": 111,
+          "op": "0x5"
+        },
+        {
+          "offset": 112,
+          "op": "0xbd",
+          "reference": "java/nio/file/OpenOption"
+        },
+        {
+          "offset": 115,
+          "op": "0x59"
+        },
+        {
+          "offset": 116,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 117,
+          "op": "getstatic",
+          "reference": "java/nio/file/StandardOpenOption CREATE Ljava/nio/file/StandardOpenOption;"
+        },
+        {
+          "offset": 120,
+          "op": "0x53"
+        },
+        {
+          "offset": 121,
+          "op": "0x59"
+        },
+        {
+          "offset": 122,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 123,
+          "op": "getstatic",
+          "reference": "java/nio/file/StandardOpenOption TRUNCATE_EXISTING Ljava/nio/file/StandardOpenOption;"
+        },
+        {
+          "offset": 126,
+          "op": "0x53"
+        },
+        {
+          "offset": 127,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files write (Ljava/nio/file/Path;[B[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 130,
+          "op": "0x57"
+        },
+        {
+          "offset": 131,
+          "op": "goto",
+          "args": "ff90"
+        },
+        {
+          "offset": 134,
+          "op": "0x2a"
+        },
+        {
+          "offset": 135,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack data Ljava/util/Map;"
+        },
+        {
+          "offset": 138,
+          "op": "invokeinterface",
+          "reference": "java/util/Map entrySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 143,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 148,
+          "op": "0x4d"
+        },
+        {
+          "offset": 149,
+          "op": "0x2c"
+        },
+        {
+          "offset": 150,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 155,
+          "op": "ifeq",
+          "args": "0073"
+        },
+        {
+          "offset": 158,
+          "op": "0x2c"
+        },
+        {
+          "offset": 159,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 164,
+          "op": "checkcast",
+          "reference": "java/util/Map$Entry"
+        },
+        {
+          "offset": 167,
+          "op": "0x4e"
+        },
+        {
+          "offset": 168,
+          "op": "0x2d"
+        },
+        {
+          "offset": 169,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getKey ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 174,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 177,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 179,
+          "op": "0x2b"
+        },
+        {
+          "offset": 180,
+          "op": "ldc_w",
+          "reference": "data"
+        },
+        {
+          "offset": 183,
+          "op": "0x5"
+        },
+        {
+          "offset": 184,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 187,
+          "op": "0x59"
+        },
+        {
+          "offset": 188,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 189,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 191,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 194,
+          "op": "0x53"
+        },
+        {
+          "offset": 195,
+          "op": "0x59"
+        },
+        {
+          "offset": 196,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 197,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 199,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 202,
+          "op": "0x53"
+        },
+        {
+          "offset": 203,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 206,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path resolve (Ljava/nio/file/Path;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 211,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 213,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 215,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path getParent ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 220,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 221,
+          "op": "0xbd",
+          "reference": "java/nio/file/attribute/FileAttribute"
+        },
+        {
+          "offset": 224,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files createDirectories (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 227,
+          "op": "0x57"
+        },
+        {
+          "offset": 228,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 230,
+          "op": "0x2d"
+        },
+        {
+          "offset": 231,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getValue ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 236,
+          "op": "checkcast",
+          "reference": "java/util/function/Supplier"
+        },
+        {
+          "offset": 239,
+          "op": "invokeinterface",
+          "reference": "java/util/function/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 244,
+          "op": "checkcast",
+          "reference": "[B"
+        },
+        {
+          "offset": 247,
+          "op": "0x5"
+        },
+        {
+          "offset": 248,
+          "op": "0xbd",
+          "reference": "java/nio/file/OpenOption"
+        },
+        {
+          "offset": 251,
+          "op": "0x59"
+        },
+        {
+          "offset": 252,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 253,
+          "op": "getstatic",
+          "reference": "java/nio/file/StandardOpenOption CREATE Ljava/nio/file/StandardOpenOption;"
+        },
+        {
+          "offset": 256,
+          "op": "0x53"
+        },
+        {
+          "offset": 257,
+          "op": "0x59"
+        },
+        {
+          "offset": 258,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 259,
+          "op": "getstatic",
+          "reference": "java/nio/file/StandardOpenOption TRUNCATE_EXISTING Ljava/nio/file/StandardOpenOption;"
+        },
+        {
+          "offset": 262,
+          "op": "0x53"
+        },
+        {
+          "offset": 263,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files write (Ljava/nio/file/Path;[B[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 266,
+          "op": "0x57"
+        },
+        {
+          "offset": 267,
+          "op": "goto",
+          "args": "ff8a"
+        },
+        {
+          "offset": 270,
+          "op": "0x2a"
+        },
+        {
+          "offset": 271,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack assets Ljava/util/Map;"
+        },
+        {
+          "offset": 274,
+          "op": "invokeinterface",
+          "reference": "java/util/Map entrySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 279,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 284,
+          "op": "0x4d"
+        },
+        {
+          "offset": 285,
+          "op": "0x2c"
+        },
+        {
+          "offset": 286,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 291,
+          "op": "ifeq",
+          "args": "0073"
+        },
+        {
+          "offset": 294,
+          "op": "0x2c"
+        },
+        {
+          "offset": 295,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 300,
+          "op": "checkcast",
+          "reference": "java/util/Map$Entry"
+        },
+        {
+          "offset": 303,
+          "op": "0x4e"
+        },
+        {
+          "offset": 304,
+          "op": "0x2d"
+        },
+        {
+          "offset": 305,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getKey ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 310,
+          "op": "checkcast",
+          "reference": "net/minecraft/resources/ResourceLocation"
+        },
+        {
+          "offset": 313,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 315,
+          "op": "0x2b"
+        },
+        {
+          "offset": 316,
+          "op": "ldc_w",
+          "reference": "assets"
+        },
+        {
+          "offset": 319,
+          "op": "0x5"
+        },
+        {
+          "offset": 320,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 323,
+          "op": "0x59"
+        },
+        {
+          "offset": 324,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 325,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 327,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 330,
+          "op": "0x53"
+        },
+        {
+          "offset": 331,
+          "op": "0x59"
+        },
+        {
+          "offset": 332,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 333,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 335,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 338,
+          "op": "0x53"
+        },
+        {
+          "offset": 339,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 342,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path resolve (Ljava/nio/file/Path;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 347,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 349,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 351,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path getParent ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 356,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 357,
+          "op": "0xbd",
+          "reference": "java/nio/file/attribute/FileAttribute"
+        },
+        {
+          "offset": 360,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files createDirectories (Ljava/nio/file/Path;[Ljava/nio/file/attribute/FileAttribute;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 363,
+          "op": "0x57"
+        },
+        {
+          "offset": 364,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 366,
+          "op": "0x2d"
+        },
+        {
+          "offset": 367,
+          "op": "invokeinterface",
+          "reference": "java/util/Map$Entry getValue ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 372,
+          "op": "checkcast",
+          "reference": "java/util/function/Supplier"
+        },
+        {
+          "offset": 375,
+          "op": "invokeinterface",
+          "reference": "java/util/function/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 380,
+          "op": "checkcast",
+          "reference": "[B"
+        },
+        {
+          "offset": 383,
+          "op": "0x5"
+        },
+        {
+          "offset": 384,
+          "op": "0xbd",
+          "reference": "java/nio/file/OpenOption"
+        },
+        {
+          "offset": 387,
+          "op": "0x59"
+        },
+        {
+          "offset": 388,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 389,
+          "op": "getstatic",
+          "reference": "java/nio/file/StandardOpenOption CREATE Ljava/nio/file/StandardOpenOption;"
+        },
+        {
+          "offset": 392,
+          "op": "0x53"
+        },
+        {
+          "offset": 393,
+          "op": "0x59"
+        },
+        {
+          "offset": 394,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 395,
+          "op": "getstatic",
+          "reference": "java/nio/file/StandardOpenOption TRUNCATE_EXISTING Ljava/nio/file/StandardOpenOption;"
+        },
+        {
+          "offset": 398,
+          "op": "0x53"
+        },
+        {
+          "offset": 399,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files write (Ljava/nio/file/Path;[B[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 402,
+          "op": "0x57"
+        },
+        {
+          "offset": 403,
+          "op": "goto",
+          "args": "ff8a"
+        },
+        {
+          "offset": 406,
+          "op": "0x2a"
+        },
+        {
+          "offset": 407,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 410,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 415,
+          "op": "goto",
+          "args": "0011"
+        },
+        {
+          "offset": 418,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 420,
+          "op": "0x2a"
+        },
+        {
+          "offset": 421,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack waiting Ljava/util/concurrent/locks/Lock;"
+        },
+        {
+          "offset": 424,
+          "op": "invokeinterface",
+          "reference": "java/util/concurrent/locks/Lock unlock ()V"
+        },
+        {
+          "offset": 429,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 431,
+          "op": "0xbf"
+        },
+        {
+          "offset": 432,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$listResources$5",
+      "descriptor": "(Ljava/util/function/Supplier;)Ljava/io/InputStream;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/io/ByteArrayInputStream"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "java/util/function/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 10,
+          "op": "checkcast",
+          "reference": "[B"
+        },
+        {
+          "offset": 13,
+          "op": "invokespecial",
+          "reference": "java/io/ByteArrayInputStream <init> ([B)V"
+        },
+        {
+          "offset": 16,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$getResource$4",
+      "descriptor": "(Ljava/util/function/Supplier;)Ljava/io/InputStream;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/io/ByteArrayInputStream"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "java/util/function/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 10,
+          "op": "checkcast",
+          "reference": "[B"
+        },
+        {
+          "offset": 13,
+          "op": "invokespecial",
+          "reference": "java/io/ByteArrayInputStream <init> ([B)V"
+        },
+        {
+          "offset": 16,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$getRootResource$3",
+      "descriptor": "(Ljava/util/function/Supplier;)Ljava/io/InputStream;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/io/ByteArrayInputStream"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "java/util/function/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 10,
+          "op": "checkcast",
+          "reference": "[B"
+        },
+        {
+          "offset": 13,
+          "op": "invokespecial",
+          "reference": "java/io/ByteArrayInputStream <init> ([B)V"
+        },
+        {
+          "offset": 16,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$addRootResource$2",
+      "descriptor": "([B)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$addAsset$1",
+      "descriptor": "([B)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$addData$0",
+      "descriptor": "([B)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "com/google/gson/GsonBuilder"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "com/google/gson/GsonBuilder <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/GsonBuilder disableHtmlEscaping ()Lcom/google/gson/GsonBuilder;"
+        },
+        {
+          "offset": 10,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/GsonBuilder create ()Lcom/google/gson/Gson;"
+        },
+        {
+          "offset": 13,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack GSON Lcom/google/gson/Gson;"
+        },
+        {
+          "offset": 16,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

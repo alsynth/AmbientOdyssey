@@ -1,0 +1,371 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig",
+    "java/lang/Record",
+    "ClientPlacementConfig.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "frequency",
+    "Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+    "salt",
+    "Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+    "separation",
+    "spacing",
+    "<init>",
+    "(Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;)V",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;",
+    "toPlacement",
+    "()Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;",
+    "de/cristelknight/cristellib/config/structure/placement/PlacementConfig",
+    "me/shedaniel/clothconfig2/gui/entries/DoubleListEntry",
+    "getValue",
+    "()Ljava/lang/Double;",
+    "java/lang/Double",
+    "doubleValue",
+    "()D",
+    "me/shedaniel/clothconfig2/gui/entries/IntegerListEntry",
+    "()Ljava/lang/Integer;",
+    "java/lang/Integer",
+    "intValue",
+    "()I",
+    "(DIII)V",
+    "toString",
+    "()Ljava/lang/String;",
+    "frequency;salt;separation;spacing",
+    "java/lang/runtime/ObjectMethods",
+    "bootstrap",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;",
+    "(Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;)Ljava/lang/String;",
+    "hashCode",
+    "(Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;)I",
+    "equals",
+    "(Ljava/lang/Object;)Z",
+    "o",
+    "(Lde/cristelknight/cristellib/config/client/structure/ClientPlacementConfig;Ljava/lang/Object;)Z",
+    "Ljava/lang/Object;",
+    "()Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+    "()Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods",
+    "Record"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Record <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2b"
+        },
+        {
+          "offset": 6,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig frequency Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;"
+        },
+        {
+          "offset": 9,
+          "op": "0x2a"
+        },
+        {
+          "offset": 10,
+          "op": "0x2c"
+        },
+        {
+          "offset": 11,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig salt Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "0x2d"
+        },
+        {
+          "offset": 16,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig separation Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 19,
+          "op": "0x2a"
+        },
+        {
+          "offset": 20,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 22,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig spacing Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 25,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "toPlacement",
+      "descriptor": "()Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig frequency Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;"
+        },
+        {
+          "offset": 8,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/gui/entries/DoubleListEntry getValue ()Ljava/lang/Double;"
+        },
+        {
+          "offset": 11,
+          "op": "invokevirtual",
+          "reference": "java/lang/Double doubleValue ()D"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig salt Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 18,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/gui/entries/IntegerListEntry getValue ()Ljava/lang/Integer;"
+        },
+        {
+          "offset": 21,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 24,
+          "op": "0x2a"
+        },
+        {
+          "offset": 25,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig separation Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/gui/entries/IntegerListEntry getValue ()Ljava/lang/Integer;"
+        },
+        {
+          "offset": 31,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 34,
+          "op": "0x2a"
+        },
+        {
+          "offset": 35,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig spacing Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 38,
+          "op": "invokevirtual",
+          "reference": "me/shedaniel/clothconfig2/gui/entries/IntegerListEntry getValue ()Ljava/lang/Integer;"
+        },
+        {
+          "offset": 41,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 44,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig <init> (DIII)V"
+        },
+        {
+          "offset": 47,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 78)"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "hashCode",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 82)"
+        },
+        {
+          "offset": 6,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 88)"
+        },
+        {
+          "offset": 7,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "frequency",
+      "descriptor": "()Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig frequency Lme/shedaniel/clothconfig2/gui/entries/DoubleListEntry;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "salt",
+      "descriptor": "()Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig salt Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "separation",
+      "descriptor": "()Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig separation Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "spacing",
+      "descriptor": "()Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/config/client/structure/ClientPlacementConfig spacing Lme/shedaniel/clothconfig2/gui/entries/IntegerListEntry;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

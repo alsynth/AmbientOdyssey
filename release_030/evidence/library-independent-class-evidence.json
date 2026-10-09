@@ -1,0 +1,1914 @@
+{
+  "StreamsReflowing-1.21.1-neoforge-2.14.4.jar::dev/streamsreflowing/worldgen/compat/RTFBridge.class": {
+    "constants": [
+      "",
+      "()Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;",
+      "()Ljava/lang/String;",
+      "()V",
+      "()Z",
+      "(Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;)V",
+      "(Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;Ljava/lang/Object;I)V",
+      "(Ljava/lang/Object;)I",
+      "(Ljava/lang/Object;)Ldev/streamsreflowing/worldgen/compat/RTFBridge$Handle;",
+      "(Ljava/lang/Object;)Ljava/lang/Object;",
+      "(Ljava/lang/Object;)Z",
+      "(Ljava/lang/Object;)[B",
+      "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+      "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;",
+      "(Ljava/lang/String;)V",
+      "(Ljava/lang/String;)Z",
+      "(Ljava/lang/String;Ljava/lang/Object;)V",
+      "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+      "(ZZ)Z",
+      "([B)[B",
+      "([Ljava/lang/String;)V",
+      ", no flow field",
+      "<clinit>",
+      "<init>",
+      "Code",
+      "FTFRandomState",
+      "Handle",
+      "InnerClasses",
+      "LOG",
+      "Ldev/streamsreflowing/platform/services/IPlatformHelper;",
+      "Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;",
+      "Ljava/lang/Class;",
+      "Ljava/lang/Object;",
+      "Ljava/lang/reflect/Field;",
+      "Ljava/lang/reflect/Method;",
+      "Ljava/util/Map;",
+      "Ljava/util/Map<Ljava/lang/Object;Ljava/lang/Object;>;",
+      "Ljava/util/concurrent/atomic/AtomicBoolean;",
+      "Lorg/slf4j/Logger;",
+      "NestMembers",
+      "PLATFORM",
+      "RTFRandomState",
+      "Signature",
+      "StackMapTable",
+      "Streams Reflowing: RTF handle failed ({}).",
+      "Streams Reflowing: ReTerraForged bridge available ({}{}).",
+      "Streams Reflowing: ReTerraForged is installed but its terrain was not available when this world's streams were prepared, so heights are being read the slow way. If stream generation is slow here, please report this line.",
+      "Streams Reflowing: ReTerraForged is installed but this build of it could not be read, so its terrain, its rivers and their current are all being left alone. This usually means the two mods need a compatibility update -- please report it.",
+      "Streams Reflowing: no ReTerraForged bridge for {} ({}).",
+      "Streams Reflowing: reading terrain and rivers from ReTerraForged for this world.",
+      "Streams Reflowing: this build of ReTerraForged does not publish the flow of its own rivers, so those rivers will look still. Streams' own rivers are unaffected. If you expected a current there, please report this line.",
+      "Surface",
+      "Z",
+      "[B",
+      "[Ljava/lang/String;",
+      "[[Ljava/lang/String;",
+      "a",
+      "available",
+      "b",
+      "booleanValue",
+      "c",
+      "compareAndSet",
+      "convert",
+      "d",
+      "debug",
+      "dev/streamsreflowing/Constants",
+      "dev/streamsreflowing/flow/RTFFlowUnderlay",
+      "dev/streamsreflowing/platform/Services",
+      "dev/streamsreflowing/platform/services/IPlatformHelper",
+      "dev/streamsreflowing/worldgen/compat/RTFBridge",
+      "dev/streamsreflowing/worldgen/compat/RTFBridge$Handle",
+      "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface",
+      "e",
+      "etcodehome.freeterraforged",
+      "f",
+      "flowUnderlay",
+      "freeterraforged",
+      "freeterraforged$getFlowField",
+      "g",
+      "get",
+      "getBoolean",
+      "getInt",
+      "h",
+      "handleFor",
+      "info",
+      "invoke",
+      "isInstance",
+      "isModLoaded",
+      "java/lang/Boolean",
+      "java/lang/Class",
+      "java/lang/LinkageError",
+      "java/lang/Object",
+      "java/lang/ReflectiveOperationException",
+      "java/lang/RuntimeException",
+      "java/lang/String",
+      "java/lang/Throwable",
+      "java/lang/reflect/Field",
+      "java/lang/reflect/Method",
+      "java/util/Map",
+      "java/util/WeakHashMap",
+      "java/util/concurrent/atomic/AtomicBoolean",
+      "l",
+      "m",
+      "n",
+      "o",
+      "org/slf4j/Logger",
+      "put",
+      "raccoonman.reterraforged",
+      "reterraforged",
+      "reterraforged$getFlowField",
+      "reterraforgedCompat",
+      "streamsreflowing.nortf",
+      "toString",
+      "warn"
+    ],
+    "methods": [
+      {
+        "name": "<init>",
+        "descriptor": "()V",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "0x2a"
+          },
+          {
+            "offset": 1,
+            "op": "invokespecial",
+            "reference": "java/lang/Object <init> ()V"
+          },
+          {
+            "offset": 4,
+            "op": "return"
+          }
+        ]
+      },
+      {
+        "name": "a",
+        "descriptor": "()Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge b Z"
+          },
+          {
+            "offset": 3,
+            "op": "ifne",
+            "args": "008b"
+          },
+          {
+            "offset": 6,
+            "op": "ldc",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge"
+          },
+          {
+            "offset": 8,
+            "op": "0x59"
+          },
+          {
+            "offset": 9,
+            "op": "0x4b"
+          },
+          {
+            "offset": 10,
+            "op": "0xc2"
+          },
+          {
+            "offset": 11,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge b Z"
+          },
+          {
+            "offset": 14,
+            "op": "ifne",
+            "args": "0074"
+          },
+          {
+            "offset": 17,
+            "op": "ldc",
+            "reference": "streamsreflowing.nortf"
+          },
+          {
+            "offset": 19,
+            "op": "invokestatic",
+            "reference": "java/lang/Boolean getBoolean (Ljava/lang/String;)Z"
+          },
+          {
+            "offset": 22,
+            "op": "ifne",
+            "args": "0068"
+          },
+          {
+            "offset": 25,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge a [[Ljava/lang/String;"
+          },
+          {
+            "offset": 28,
+            "op": "0x4c"
+          },
+          {
+            "offset": 29,
+            "op": "0x2b"
+          },
+          {
+            "offset": 30,
+            "op": "0xbe"
+          },
+          {
+            "offset": 31,
+            "op": "0x3d"
+          },
+          {
+            "offset": 32,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 33,
+            "op": "0x3e"
+          },
+          {
+            "offset": 34,
+            "op": "0x1d"
+          },
+          {
+            "offset": 35,
+            "op": "0x1c"
+          },
+          {
+            "offset": 36,
+            "op": "0xa2",
+            "args": "0054"
+          },
+          {
+            "offset": 39,
+            "op": "0x2b"
+          },
+          {
+            "offset": 40,
+            "op": "0x1d"
+          },
+          {
+            "offset": 41,
+            "op": "0x32"
+          },
+          {
+            "offset": 42,
+            "op": "0x3a",
+            "args": "04"
+          },
+          {
+            "offset": 44,
+            "op": "new",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface"
+          },
+          {
+            "offset": 47,
+            "op": "0x59"
+          },
+          {
+            "offset": 48,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 50,
+            "op": "invokespecial",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface <init> ([Ljava/lang/String;)V"
+          },
+          {
+            "offset": 53,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge c Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 56,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 59,
+            "op": "ldc",
+            "reference": "Streams Reflowing: ReTerraForged bridge available ({}{})."
+          },
+          {
+            "offset": 61,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 63,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 64,
+            "op": "0x32"
+          },
+          {
+            "offset": 65,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge c Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 68,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface l Ljava/lang/Class;"
+          },
+          {
+            "offset": 71,
+            "op": "0xc7",
+            "args": "0008"
+          },
+          {
+            "offset": 74,
+            "op": "ldc",
+            "reference": ", no flow field"
+          },
+          {
+            "offset": 76,
+            "op": "goto",
+            "args": "0005"
+          },
+          {
+            "offset": 79,
+            "op": "ldc",
+            "reference": ""
+          },
+          {
+            "offset": 81,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger debug (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+          },
+          {
+            "offset": 86,
+            "op": "goto",
+            "args": "0022"
+          },
+          {
+            "offset": 89,
+            "op": "0x3a",
+            "args": "05"
+          },
+          {
+            "offset": 91,
+            "op": "0x1"
+          },
+          {
+            "offset": 92,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge c Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 95,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 98,
+            "op": "ldc",
+            "reference": "Streams Reflowing: no ReTerraForged bridge for {} ({})."
+          },
+          {
+            "offset": 100,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 102,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 103,
+            "op": "0x32"
+          },
+          {
+            "offset": 104,
+            "op": "0x19",
+            "args": "05"
+          },
+          {
+            "offset": 106,
+            "op": "invokevirtual",
+            "reference": "java/lang/Throwable toString ()Ljava/lang/String;"
+          },
+          {
+            "offset": 109,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger debug (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+          },
+          {
+            "offset": 114,
+            "op": "0x84",
+            "args": "0301"
+          },
+          {
+            "offset": 117,
+            "op": "goto",
+            "args": "ffad"
+          },
+          {
+            "offset": 120,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge c Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 123,
+            "op": "invokestatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge a (Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;)V"
+          },
+          {
+            "offset": 126,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 127,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge b Z"
+          },
+          {
+            "offset": 130,
+            "op": "0x2a"
+          },
+          {
+            "offset": 131,
+            "op": "0xc3"
+          },
+          {
+            "offset": 132,
+            "op": "goto",
+            "args": "000a"
+          },
+          {
+            "offset": 135,
+            "op": "0x3a",
+            "args": "06"
+          },
+          {
+            "offset": 137,
+            "op": "0x2a"
+          },
+          {
+            "offset": 138,
+            "op": "0xc3"
+          },
+          {
+            "offset": 139,
+            "op": "0x19",
+            "args": "06"
+          },
+          {
+            "offset": 141,
+            "op": "0xbf"
+          },
+          {
+            "offset": 142,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge c Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 145,
+            "op": "areturn"
+          }
+        ]
+      },
+      {
+        "name": "a",
+        "descriptor": "(Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;)V",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "0x2a"
+          },
+          {
+            "offset": 1,
+            "op": "0xc6",
+            "args": "0004"
+          },
+          {
+            "offset": 4,
+            "op": "return"
+          },
+          {
+            "offset": 5,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 6,
+            "op": "0x3c"
+          },
+          {
+            "offset": 7,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge d [Ljava/lang/String;"
+          },
+          {
+            "offset": 10,
+            "op": "0x4d"
+          },
+          {
+            "offset": 11,
+            "op": "0x2c"
+          },
+          {
+            "offset": 12,
+            "op": "0xbe"
+          },
+          {
+            "offset": 13,
+            "op": "0x3e"
+          },
+          {
+            "offset": 14,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 15,
+            "op": "0x36",
+            "args": "04"
+          },
+          {
+            "offset": 17,
+            "op": "0x15",
+            "args": "04"
+          },
+          {
+            "offset": 19,
+            "op": "0x1d"
+          },
+          {
+            "offset": 20,
+            "op": "0xa2",
+            "args": "001c"
+          },
+          {
+            "offset": 23,
+            "op": "0x2c"
+          },
+          {
+            "offset": 24,
+            "op": "0x15",
+            "args": "04"
+          },
+          {
+            "offset": 26,
+            "op": "0x32"
+          },
+          {
+            "offset": 27,
+            "op": "0x3a",
+            "args": "05"
+          },
+          {
+            "offset": 29,
+            "op": "0x1b"
+          },
+          {
+            "offset": 30,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/platform/Services PLATFORM Ldev/streamsreflowing/platform/services/IPlatformHelper;"
+          },
+          {
+            "offset": 33,
+            "op": "0x19",
+            "args": "05"
+          },
+          {
+            "offset": 35,
+            "op": "invokeinterface",
+            "reference": "dev/streamsreflowing/platform/services/IPlatformHelper isModLoaded (Ljava/lang/String;)Z"
+          },
+          {
+            "offset": 40,
+            "op": "0x80"
+          },
+          {
+            "offset": 41,
+            "op": "0x3c"
+          },
+          {
+            "offset": 42,
+            "op": "0x84",
+            "args": "0401"
+          },
+          {
+            "offset": 45,
+            "op": "goto",
+            "args": "ffe4"
+          },
+          {
+            "offset": 48,
+            "op": "goto",
+            "args": "0005"
+          },
+          {
+            "offset": 51,
+            "op": "0x4d"
+          },
+          {
+            "offset": 52,
+            "op": "return"
+          },
+          {
+            "offset": 53,
+            "op": "0x1b"
+          },
+          {
+            "offset": 54,
+            "op": "ifeq",
+            "args": "000d"
+          },
+          {
+            "offset": 57,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 60,
+            "op": "ldc",
+            "reference": "Streams Reflowing: ReTerraForged is installed but this build of it could not be read, so its terrain, its rivers and their current are all being left alone. This usually means the two mods need a compatibility update -- please report it."
+          },
+          {
+            "offset": 62,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger warn (Ljava/lang/String;)V"
+          },
+          {
+            "offset": 67,
+            "op": "return"
+          }
+        ]
+      },
+      {
+        "name": "available",
+        "descriptor": "()Z",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "invokestatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge a ()Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 3,
+            "op": "0x4b"
+          },
+          {
+            "offset": 4,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/platform/Services PLATFORM Ldev/streamsreflowing/platform/services/IPlatformHelper;"
+          },
+          {
+            "offset": 7,
+            "op": "invokeinterface",
+            "reference": "dev/streamsreflowing/platform/services/IPlatformHelper reterraforgedCompat ()Z"
+          },
+          {
+            "offset": 12,
+            "op": "ifeq",
+            "args": "0012"
+          },
+          {
+            "offset": 15,
+            "op": "0x2a"
+          },
+          {
+            "offset": 16,
+            "op": "0xc6",
+            "args": "000e"
+          },
+          {
+            "offset": 19,
+            "op": "0x2a"
+          },
+          {
+            "offset": 20,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface l Ljava/lang/Class;"
+          },
+          {
+            "offset": 23,
+            "op": "0xc6",
+            "args": "0007"
+          },
+          {
+            "offset": 26,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 27,
+            "op": "goto",
+            "args": "0004"
+          },
+          {
+            "offset": 30,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 31,
+            "op": "ireturn"
+          }
+        ]
+      },
+      {
+        "name": "flowUnderlay",
+        "descriptor": "(Ljava/lang/Object;)[B",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/platform/Services PLATFORM Ldev/streamsreflowing/platform/services/IPlatformHelper;"
+          },
+          {
+            "offset": 3,
+            "op": "invokeinterface",
+            "reference": "dev/streamsreflowing/platform/services/IPlatformHelper reterraforgedCompat ()Z"
+          },
+          {
+            "offset": 8,
+            "op": "ifne",
+            "args": "0005"
+          },
+          {
+            "offset": 11,
+            "op": "0x1"
+          },
+          {
+            "offset": 12,
+            "op": "areturn"
+          },
+          {
+            "offset": 13,
+            "op": "invokestatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge a ()Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 16,
+            "op": "0x4c"
+          },
+          {
+            "offset": 17,
+            "op": "0x2b"
+          },
+          {
+            "offset": 18,
+            "op": "0xc6",
+            "args": "0019"
+          },
+          {
+            "offset": 21,
+            "op": "0x2b"
+          },
+          {
+            "offset": 22,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface l Ljava/lang/Class;"
+          },
+          {
+            "offset": 25,
+            "op": "0xc6",
+            "args": "0012"
+          },
+          {
+            "offset": 28,
+            "op": "0x2a"
+          },
+          {
+            "offset": 29,
+            "op": "0xc6",
+            "args": "000e"
+          },
+          {
+            "offset": 32,
+            "op": "0x2b"
+          },
+          {
+            "offset": 33,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface l Ljava/lang/Class;"
+          },
+          {
+            "offset": 36,
+            "op": "0x2a"
+          },
+          {
+            "offset": 37,
+            "op": "invokevirtual",
+            "reference": "java/lang/Class isInstance (Ljava/lang/Object;)Z"
+          },
+          {
+            "offset": 40,
+            "op": "ifne",
+            "args": "0005"
+          },
+          {
+            "offset": 43,
+            "op": "0x1"
+          },
+          {
+            "offset": 44,
+            "op": "areturn"
+          },
+          {
+            "offset": 45,
+            "op": "0x2b"
+          },
+          {
+            "offset": 46,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface m Ljava/lang/reflect/Method;"
+          },
+          {
+            "offset": 49,
+            "op": "0x2a"
+          },
+          {
+            "offset": 50,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 51,
+            "op": "0xbd",
+            "reference": "java/lang/Object"
+          },
+          {
+            "offset": 54,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 57,
+            "op": "0x4d"
+          },
+          {
+            "offset": 58,
+            "op": "0x2c"
+          },
+          {
+            "offset": 59,
+            "op": "0xc6",
+            "args": "0018"
+          },
+          {
+            "offset": 62,
+            "op": "0x2b"
+          },
+          {
+            "offset": 63,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface n Ljava/lang/reflect/Method;"
+          },
+          {
+            "offset": 66,
+            "op": "0x2c"
+          },
+          {
+            "offset": 67,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 68,
+            "op": "0xbd",
+            "reference": "java/lang/Object"
+          },
+          {
+            "offset": 71,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 74,
+            "op": "checkcast",
+            "reference": "java/lang/Boolean"
+          },
+          {
+            "offset": 77,
+            "op": "invokevirtual",
+            "reference": "java/lang/Boolean booleanValue ()Z"
+          },
+          {
+            "offset": 80,
+            "op": "ifne",
+            "args": "0005"
+          },
+          {
+            "offset": 83,
+            "op": "0x1"
+          },
+          {
+            "offset": 84,
+            "op": "areturn"
+          },
+          {
+            "offset": 85,
+            "op": "0x2b"
+          },
+          {
+            "offset": 86,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface o Ljava/lang/reflect/Method;"
+          },
+          {
+            "offset": 89,
+            "op": "0x2c"
+          },
+          {
+            "offset": 90,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 91,
+            "op": "0xbd",
+            "reference": "java/lang/Object"
+          },
+          {
+            "offset": 94,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 97,
+            "op": "checkcast",
+            "reference": "[B"
+          },
+          {
+            "offset": 100,
+            "op": "invokestatic",
+            "reference": "dev/streamsreflowing/flow/RTFFlowUnderlay convert ([B)[B"
+          },
+          {
+            "offset": 103,
+            "op": "areturn"
+          },
+          {
+            "offset": 104,
+            "op": "0x4d"
+          },
+          {
+            "offset": 105,
+            "op": "0x1"
+          },
+          {
+            "offset": 106,
+            "op": "areturn"
+          }
+        ]
+      },
+      {
+        "name": "handleFor",
+        "descriptor": "(Ljava/lang/Object;)Ldev/streamsreflowing/worldgen/compat/RTFBridge$Handle;",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/platform/Services PLATFORM Ldev/streamsreflowing/platform/services/IPlatformHelper;"
+          },
+          {
+            "offset": 3,
+            "op": "invokeinterface",
+            "reference": "dev/streamsreflowing/platform/services/IPlatformHelper reterraforgedCompat ()Z"
+          },
+          {
+            "offset": 8,
+            "op": "ifne",
+            "args": "0005"
+          },
+          {
+            "offset": 11,
+            "op": "0x1"
+          },
+          {
+            "offset": 12,
+            "op": "areturn"
+          },
+          {
+            "offset": 13,
+            "op": "invokestatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge a ()Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;"
+          },
+          {
+            "offset": 16,
+            "op": "0x4c"
+          },
+          {
+            "offset": 17,
+            "op": "0x2b"
+          },
+          {
+            "offset": 18,
+            "op": "0xc6",
+            "args": "0007"
+          },
+          {
+            "offset": 21,
+            "op": "0x2a"
+          },
+          {
+            "offset": 22,
+            "op": "0xc7",
+            "args": "0005"
+          },
+          {
+            "offset": 25,
+            "op": "0x1"
+          },
+          {
+            "offset": 26,
+            "op": "areturn"
+          },
+          {
+            "offset": 27,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge e Ljava/util/Map;"
+          },
+          {
+            "offset": 30,
+            "op": "0x59"
+          },
+          {
+            "offset": 31,
+            "op": "0x4d"
+          },
+          {
+            "offset": 32,
+            "op": "0xc2"
+          },
+          {
+            "offset": 33,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge e Ljava/util/Map;"
+          },
+          {
+            "offset": 36,
+            "op": "0x2a"
+          },
+          {
+            "offset": 37,
+            "op": "invokeinterface",
+            "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 42,
+            "op": "0x4e"
+          },
+          {
+            "offset": 43,
+            "op": "0x2d"
+          },
+          {
+            "offset": 44,
+            "op": "0xc6",
+            "args": "0015"
+          },
+          {
+            "offset": 47,
+            "op": "0x2d"
+          },
+          {
+            "offset": 48,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge f Ljava/lang/Object;"
+          },
+          {
+            "offset": 51,
+            "op": "0xa6",
+            "args": "0007"
+          },
+          {
+            "offset": 54,
+            "op": "0x1"
+          },
+          {
+            "offset": 55,
+            "op": "goto",
+            "args": "0007"
+          },
+          {
+            "offset": 58,
+            "op": "0x2d"
+          },
+          {
+            "offset": 59,
+            "op": "checkcast",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Handle"
+          },
+          {
+            "offset": 62,
+            "op": "0x2c"
+          },
+          {
+            "offset": 63,
+            "op": "0xc3"
+          },
+          {
+            "offset": 64,
+            "op": "areturn"
+          },
+          {
+            "offset": 65,
+            "op": "0x2c"
+          },
+          {
+            "offset": 66,
+            "op": "0xc3"
+          },
+          {
+            "offset": 67,
+            "op": "goto",
+            "args": "000a"
+          },
+          {
+            "offset": 70,
+            "op": "0x3a",
+            "args": "04"
+          },
+          {
+            "offset": 72,
+            "op": "0x2c"
+          },
+          {
+            "offset": 73,
+            "op": "0xc3"
+          },
+          {
+            "offset": 74,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 76,
+            "op": "0xbf"
+          },
+          {
+            "offset": 77,
+            "op": "0x1"
+          },
+          {
+            "offset": 78,
+            "op": "0x4d"
+          },
+          {
+            "offset": 79,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 80,
+            "op": "0x3e"
+          },
+          {
+            "offset": 81,
+            "op": "0x2b"
+          },
+          {
+            "offset": 82,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface a Ljava/lang/Class;"
+          },
+          {
+            "offset": 85,
+            "op": "0x2a"
+          },
+          {
+            "offset": 86,
+            "op": "invokevirtual",
+            "reference": "java/lang/Class isInstance (Ljava/lang/Object;)Z"
+          },
+          {
+            "offset": 89,
+            "op": "ifeq",
+            "args": "0075"
+          },
+          {
+            "offset": 92,
+            "op": "0x2b"
+          },
+          {
+            "offset": 93,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface b Ljava/lang/reflect/Method;"
+          },
+          {
+            "offset": 96,
+            "op": "0x2a"
+          },
+          {
+            "offset": 97,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 98,
+            "op": "0xbd",
+            "reference": "java/lang/Object"
+          },
+          {
+            "offset": 101,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 104,
+            "op": "0x3a",
+            "args": "04"
+          },
+          {
+            "offset": 106,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 108,
+            "op": "0xc7",
+            "args": "0008"
+          },
+          {
+            "offset": 111,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 112,
+            "op": "0x3e"
+          },
+          {
+            "offset": 113,
+            "op": "goto",
+            "args": "005d"
+          },
+          {
+            "offset": 116,
+            "op": "0x2b"
+          },
+          {
+            "offset": 117,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface c Ljava/lang/reflect/Field;"
+          },
+          {
+            "offset": 120,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 122,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Field get (Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 125,
+            "op": "0x3a",
+            "args": "05"
+          },
+          {
+            "offset": 127,
+            "op": "0x2b"
+          },
+          {
+            "offset": 128,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface d Ljava/lang/reflect/Field;"
+          },
+          {
+            "offset": 131,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 133,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Field get (Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 136,
+            "op": "0x3a",
+            "args": "06"
+          },
+          {
+            "offset": 138,
+            "op": "0x19",
+            "args": "05"
+          },
+          {
+            "offset": 140,
+            "op": "0xc6",
+            "args": "0042"
+          },
+          {
+            "offset": 143,
+            "op": "0x19",
+            "args": "06"
+          },
+          {
+            "offset": 145,
+            "op": "0xc6",
+            "args": "003d"
+          },
+          {
+            "offset": 148,
+            "op": "new",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Handle"
+          },
+          {
+            "offset": 151,
+            "op": "0x59"
+          },
+          {
+            "offset": 152,
+            "op": "0x2b"
+          },
+          {
+            "offset": 153,
+            "op": "0x19",
+            "args": "05"
+          },
+          {
+            "offset": 155,
+            "op": "0x2b"
+          },
+          {
+            "offset": 156,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface e Ljava/lang/reflect/Field;"
+          },
+          {
+            "offset": 159,
+            "op": "0x19",
+            "args": "06"
+          },
+          {
+            "offset": 161,
+            "op": "invokevirtual",
+            "reference": "java/lang/reflect/Field getInt (Ljava/lang/Object;)I"
+          },
+          {
+            "offset": 164,
+            "op": "invokespecial",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Handle <init> (Ldev/streamsreflowing/worldgen/compat/RTFBridge$Surface;Ljava/lang/Object;I)V"
+          },
+          {
+            "offset": 167,
+            "op": "0x4d"
+          },
+          {
+            "offset": 168,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 171,
+            "op": "ldc",
+            "reference": "Streams Reflowing: reading terrain and rivers from ReTerraForged for this world."
+          },
+          {
+            "offset": 173,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger info (Ljava/lang/String;)V"
+          },
+          {
+            "offset": 178,
+            "op": "0x2b"
+          },
+          {
+            "offset": 179,
+            "op": "getfield",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge$Surface l Ljava/lang/Class;"
+          },
+          {
+            "offset": 182,
+            "op": "0xc7",
+            "args": "0018"
+          },
+          {
+            "offset": 185,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge h Ljava/util/concurrent/atomic/AtomicBoolean;"
+          },
+          {
+            "offset": 188,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 189,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 190,
+            "op": "invokevirtual",
+            "reference": "java/util/concurrent/atomic/AtomicBoolean compareAndSet (ZZ)Z"
+          },
+          {
+            "offset": 193,
+            "op": "ifeq",
+            "args": "000d"
+          },
+          {
+            "offset": 196,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 199,
+            "op": "ldc",
+            "reference": "Streams Reflowing: this build of ReTerraForged does not publish the flow of its own rivers, so those rivers will look still. Streams' own rivers are unaffected. If you expected a current there, please report this line."
+          },
+          {
+            "offset": 201,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger warn (Ljava/lang/String;)V"
+          },
+          {
+            "offset": 206,
+            "op": "goto",
+            "args": "0014"
+          },
+          {
+            "offset": 209,
+            "op": "0x3a",
+            "args": "04"
+          },
+          {
+            "offset": 211,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 214,
+            "op": "ldc",
+            "reference": "Streams Reflowing: RTF handle failed ({})."
+          },
+          {
+            "offset": 216,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 218,
+            "op": "invokevirtual",
+            "reference": "java/lang/Throwable toString ()Ljava/lang/String;"
+          },
+          {
+            "offset": 221,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger debug (Ljava/lang/String;Ljava/lang/Object;)V"
+          },
+          {
+            "offset": 226,
+            "op": "0x1d"
+          },
+          {
+            "offset": 227,
+            "op": "ifeq",
+            "args": "0008"
+          },
+          {
+            "offset": 230,
+            "op": "invokestatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge b ()V"
+          },
+          {
+            "offset": 233,
+            "op": "0x1"
+          },
+          {
+            "offset": 234,
+            "op": "areturn"
+          },
+          {
+            "offset": 235,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge e Ljava/util/Map;"
+          },
+          {
+            "offset": 238,
+            "op": "0x59"
+          },
+          {
+            "offset": 239,
+            "op": "0x3a",
+            "args": "04"
+          },
+          {
+            "offset": 241,
+            "op": "0xc2"
+          },
+          {
+            "offset": 242,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge e Ljava/util/Map;"
+          },
+          {
+            "offset": 245,
+            "op": "0x2a"
+          },
+          {
+            "offset": 246,
+            "op": "0x2c"
+          },
+          {
+            "offset": 247,
+            "op": "0xc7",
+            "args": "0009"
+          },
+          {
+            "offset": 250,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge f Ljava/lang/Object;"
+          },
+          {
+            "offset": 253,
+            "op": "goto",
+            "args": "0004"
+          },
+          {
+            "offset": 256,
+            "op": "0x2c"
+          },
+          {
+            "offset": 257,
+            "op": "invokeinterface",
+            "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+          },
+          {
+            "offset": 262,
+            "op": "0x57"
+          },
+          {
+            "offset": 263,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 265,
+            "op": "0xc3"
+          },
+          {
+            "offset": 266,
+            "op": "goto",
+            "args": "000b"
+          },
+          {
+            "offset": 269,
+            "op": "0x3a",
+            "args": "07"
+          },
+          {
+            "offset": 271,
+            "op": "0x19",
+            "args": "04"
+          },
+          {
+            "offset": 273,
+            "op": "0xc3"
+          },
+          {
+            "offset": 274,
+            "op": "0x19",
+            "args": "07"
+          },
+          {
+            "offset": 276,
+            "op": "0xbf"
+          },
+          {
+            "offset": 277,
+            "op": "0x2c"
+          },
+          {
+            "offset": 278,
+            "op": "areturn"
+          }
+        ]
+      },
+      {
+        "name": "b",
+        "descriptor": "()V",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge g Ljava/util/concurrent/atomic/AtomicBoolean;"
+          },
+          {
+            "offset": 3,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 4,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 5,
+            "op": "invokevirtual",
+            "reference": "java/util/concurrent/atomic/AtomicBoolean compareAndSet (ZZ)Z"
+          },
+          {
+            "offset": 8,
+            "op": "ifeq",
+            "args": "000d"
+          },
+          {
+            "offset": 11,
+            "op": "getstatic",
+            "reference": "dev/streamsreflowing/Constants LOG Lorg/slf4j/Logger;"
+          },
+          {
+            "offset": 14,
+            "op": "ldc",
+            "reference": "Streams Reflowing: ReTerraForged is installed but its terrain was not available when this world's streams were prepared, so heights are being read the slow way. If stream generation is slow here, please report this line."
+          },
+          {
+            "offset": 16,
+            "op": "invokeinterface",
+            "reference": "org/slf4j/Logger warn (Ljava/lang/String;)V"
+          },
+          {
+            "offset": 21,
+            "op": "return"
+          }
+        ]
+      },
+      {
+        "name": "<clinit>",
+        "descriptor": "()V",
+        "operations": [
+          {
+            "offset": 0,
+            "op": "0x5"
+          },
+          {
+            "offset": 1,
+            "op": "0xbd",
+            "reference": "[Ljava/lang/String;"
+          },
+          {
+            "offset": 4,
+            "op": "0x59"
+          },
+          {
+            "offset": 5,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 6,
+            "op": "0x6"
+          },
+          {
+            "offset": 7,
+            "op": "0xbd",
+            "reference": "java/lang/String"
+          },
+          {
+            "offset": 10,
+            "op": "0x59"
+          },
+          {
+            "offset": 11,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 12,
+            "op": "ldc",
+            "reference": "raccoonman.reterraforged"
+          },
+          {
+            "offset": 14,
+            "op": "0x53"
+          },
+          {
+            "offset": 15,
+            "op": "0x59"
+          },
+          {
+            "offset": 16,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 17,
+            "op": "ldc",
+            "reference": "RTFRandomState"
+          },
+          {
+            "offset": 19,
+            "op": "0x53"
+          },
+          {
+            "offset": 20,
+            "op": "0x59"
+          },
+          {
+            "offset": 21,
+            "op": "0x5"
+          },
+          {
+            "offset": 22,
+            "op": "ldc",
+            "reference": "reterraforged$getFlowField"
+          },
+          {
+            "offset": 24,
+            "op": "0x53"
+          },
+          {
+            "offset": 25,
+            "op": "0x53"
+          },
+          {
+            "offset": 26,
+            "op": "0x59"
+          },
+          {
+            "offset": 27,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 28,
+            "op": "0x6"
+          },
+          {
+            "offset": 29,
+            "op": "0xbd",
+            "reference": "java/lang/String"
+          },
+          {
+            "offset": 32,
+            "op": "0x59"
+          },
+          {
+            "offset": 33,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 34,
+            "op": "ldc",
+            "reference": "etcodehome.freeterraforged"
+          },
+          {
+            "offset": 36,
+            "op": "0x53"
+          },
+          {
+            "offset": 37,
+            "op": "0x59"
+          },
+          {
+            "offset": 38,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 39,
+            "op": "ldc",
+            "reference": "FTFRandomState"
+          },
+          {
+            "offset": 41,
+            "op": "0x53"
+          },
+          {
+            "offset": 42,
+            "op": "0x59"
+          },
+          {
+            "offset": 43,
+            "op": "0x5"
+          },
+          {
+            "offset": 44,
+            "op": "ldc",
+            "reference": "freeterraforged$getFlowField"
+          },
+          {
+            "offset": 46,
+            "op": "0x53"
+          },
+          {
+            "offset": 47,
+            "op": "0x53"
+          },
+          {
+            "offset": 48,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge a [[Ljava/lang/String;"
+          },
+          {
+            "offset": 51,
+            "op": "0x5"
+          },
+          {
+            "offset": 52,
+            "op": "0xbd",
+            "reference": "java/lang/String"
+          },
+          {
+            "offset": 55,
+            "op": "0x59"
+          },
+          {
+            "offset": 56,
+            "op": "iconst_0"
+          },
+          {
+            "offset": 57,
+            "op": "ldc",
+            "reference": "reterraforged"
+          },
+          {
+            "offset": 59,
+            "op": "0x53"
+          },
+          {
+            "offset": 60,
+            "op": "0x59"
+          },
+          {
+            "offset": 61,
+            "op": "iconst_1"
+          },
+          {
+            "offset": 62,
+            "op": "ldc",
+            "reference": "freeterraforged"
+          },
+          {
+            "offset": 64,
+            "op": "0x53"
+          },
+          {
+            "offset": 65,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge d [Ljava/lang/String;"
+          },
+          {
+            "offset": 68,
+            "op": "new",
+            "reference": "java/util/WeakHashMap"
+          },
+          {
+            "offset": 71,
+            "op": "0x59"
+          },
+          {
+            "offset": 72,
+            "op": "invokespecial",
+            "reference": "java/util/WeakHashMap <init> ()V"
+          },
+          {
+            "offset": 75,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge e Ljava/util/Map;"
+          },
+          {
+            "offset": 78,
+            "op": "new",
+            "reference": "java/lang/Object"
+          },
+          {
+            "offset": 81,
+            "op": "0x59"
+          },
+          {
+            "offset": 82,
+            "op": "invokespecial",
+            "reference": "java/lang/Object <init> ()V"
+          },
+          {
+            "offset": 85,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge f Ljava/lang/Object;"
+          },
+          {
+            "offset": 88,
+            "op": "new",
+            "reference": "java/util/concurrent/atomic/AtomicBoolean"
+          },
+          {
+            "offset": 91,
+            "op": "0x59"
+          },
+          {
+            "offset": 92,
+            "op": "invokespecial",
+            "reference": "java/util/concurrent/atomic/AtomicBoolean <init> ()V"
+          },
+          {
+            "offset": 95,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge g Ljava/util/concurrent/atomic/AtomicBoolean;"
+          },
+          {
+            "offset": 98,
+            "op": "new",
+            "reference": "java/util/concurrent/atomic/AtomicBoolean"
+          },
+          {
+            "offset": 101,
+            "op": "0x59"
+          },
+          {
+            "offset": 102,
+            "op": "invokespecial",
+            "reference": "java/util/concurrent/atomic/AtomicBoolean <init> ()V"
+          },
+          {
+            "offset": 105,
+            "op": "putstatic",
+            "reference": "dev/streamsreflowing/worldgen/compat/RTFBridge h Ljava/util/concurrent/atomic/AtomicBoolean;"
+          },
+          {
+            "offset": 108,
+            "op": "return"
+          }
+        ]
+      }
+    ]
+  }
+}

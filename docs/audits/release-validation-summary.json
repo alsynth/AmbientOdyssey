@@ -1,0 +1,58 @@
+{
+  "status": "PASS (expanded scoped static gates and archive/source rebuild checks)",
+  "gameplay_tested": false,
+  "scoped_check_count": 238,
+  "python_scripts_syntax_checked": 17,
+  "counts": {
+    "inspected_jars": 196,
+    "native_structure_definitions": 1216,
+    "native_structure_set_definitions": 666,
+    "generated_json": 339,
+    "new_declared_structure_clones": 3,
+    "independent_sets": 6,
+    "farmers_variants": 20,
+    "new_recipe_gates": 11,
+    "client_model_repairs": 33,
+    "code_generated_ctov_routes": 74
+  },
+  "import_archive": {
+    "filename": "Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip",
+    "size_bytes": 69705129,
+    "sha256": "97d0a261808b7672a4a8dd0a7a0d61ce8a7eca7d27fb6c2b053450b3b4c2f75f",
+    "crc": "PASS",
+    "members": 1033
+  },
+  "source_archive": {
+    "filename": "Ambient-Odyssey-v0.3.1-sources-test5-audit1.zip",
+    "size_bytes": 71484021,
+    "sha256": "618ff01f180e645d5f5dbc48e1ee50ddcc4963b6317399b645ac703a76df3172",
+    "crc": "PASS",
+    "members": 1160
+  },
+  "clean_source_archive_rebuild": "byte-for-byte identical",
+  "clean_rebuild_scoped_check_count": 238,
+  "audit_report_and_three_catalogue_rebuild": "byte-for-byte identical",
+  "screening_report_and_catalogues_rebuild": "byte-for-byte identical",
+  "source_changes": {
+    "filename": "SOURCE_CHANGES.csv",
+    "rows": 220,
+    "scope": "All changed/new/deleted packaged source files except the change report itself, whose own hash cannot be self-referential."
+  },
+  "coverage": {
+    "original_resource_audit": 177,
+    "new_complete_binary_audits": 19,
+    "expanded_resource_audit": 196,
+    "current_complete_binary_screens": 26,
+    "missing_existing_profile_jars": 41,
+    "approved_additions_not_installed": 8
+  },
+  "coverage_inventory": "evidence/jar-audit-coverage-test5.json",
+  "limitations": [
+    "mods1.zip and mods3.zip full transfers failed HTTP 403; complete CRC-verified JAR members from their retrieved prefixes were audited.",
+    "Unretrieved tail JARs, registry load, worldgen execution, actual density, clipping and performance remain uncertified.",
+    "Native Minecraft tag definitions are not in the uploaded mod JARs; native graph reports explicitly retain unresolved base-game/optional tags.",
+    "Eight approved new mods are metadata-pinned but not installed: exact binaries are unavailable, and their native dependency/Black Spiral checks remain blocked.",
+    "Cristel spacing/separation/frequency/member-removal code is inspected; live pack priority and non-native exclusion retention are not runtime-certified.",
+    "Native resource collisions remain enumerated; recorded snapshot precedence is not a game-launch result."
+  ]
+}

@@ -1,0 +1,4176 @@
+{
+  "version": "0.3.1-structure-test5-audit1",
+  "biome_tags": {
+    "adventuredungeons:bygonedungeon": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:pumpkin_patch",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:prairie",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:maple_forest",
+        "regions_unexplored:orchard",
+        "regions_unexplored:redwoods",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "adventuredungeons:coldlair": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "adventuredungeons:murkydungeon": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:hot_springs",
+        "biomeswevegone:bayou",
+        "regions_unexplored:fen",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "adventuredungeons:ruins_snow": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga"
+      ]
+    },
+    "adventuredungeons:ruins_standard": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:maple_forest",
+        "regions_unexplored:orchard",
+        "regions_unexplored:redwoods",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "adventuredungeons:trialrooms": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow",
+        "regions_unexplored:spires"
+      ]
+    },
+    "block_factorys_bosses:dragon_tower": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:hot_springs",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "block_factorys_bosses:yeti_hideout": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "bosses_of_mass_destruction:collections/cold": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "bosses_of_mass_destruction:has_structure/void_blossom": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "cataclysm:has_structure/frosted_prison_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "dungeoncrawl:has_structure/dungeon": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "dungeons_arise:collections/other_cherry": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "dungeons_arise:has_structure/bathhouse_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "dungeons_arise:has_structure/foundry_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland"
+      ]
+    },
+    "dungeons_arise:has_structure/giant_mushroom_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "dungeons_arise:has_structure/greenwood_pub_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "dungeons_arise:has_structure/heavenly_challenger_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "dungeons_arise:has_structure/heavenly_conqueror_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "dungeons_arise:has_structure/heavenly_rider_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "dungeons_arise:has_structure/mechanical_nest_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:hot_springs",
+        "biomeswevegone:bayou",
+        "regions_unexplored:fen",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "dungeons_arise:has_structure/mining_complex_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "dungeons_arise:has_structure/small_blimp_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "enigmaticlegacyplus:has_structure/spellstone_hut": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland"
+      ]
+    },
+    "farmers_structures:is_aquaculture_cod_spawn": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "farmers_structures:is_aquaculture_common_spawn": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland"
+      ]
+    },
+    "farmers_structures:is_cook_moss_spawn": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:sakura_grove"
+      ]
+    },
+    "farmers_structures:is_cook_spawn": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard"
+      ]
+    },
+    "farmers_structures:is_squid_spawn": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "floating_islands:has_structure/amethyst_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/camp_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/cemetery_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/cherry_island_with_shrine": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:sakura_grove"
+      ]
+    },
+    "floating_islands:has_structure/drifting_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/flower_island2": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/hut_with_waystone": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/nether_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/paradise_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/pillager_camp": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/shrine": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/spider_ruin": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/steampunk_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/tower_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "floating_islands:has_structure/witch_island": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/bamboo_hut": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods"
+      ]
+    },
+    "formationsoverworld:has_structure/cobble_hole": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "formationsoverworld:has_structure/copper_spire": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/farmland_field": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/fountain": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/graveyard": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/hobbit_hole": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/ice_spire": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "formationsoverworld:has_structure/igloo": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga"
+      ]
+    },
+    "formationsoverworld:has_structure/offering": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/small_house": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/small_statue": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/stone_ore_spikes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland"
+      ]
+    },
+    "formationsoverworld:has_structure/stone_tower": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland"
+      ]
+    },
+    "formationsoverworld:has_structure/tiny_house": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/tower_remnant": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/wagon": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "formationsoverworld:has_structure/well": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "friendsandfoes:collections/snowy_forest": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga"
+      ]
+    },
+    "friendsandfoes:collections/snowy_mountains": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "friendsandfoes:collections/snowy_plains": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "graveyard:has_structure/altar": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "graveyard:has_structure/haunted_house": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:weeping_witch_forest",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "graveyard:has_structure/large_graveyard": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "graveyard:has_structure/medium_graveyard": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "natures_spirit:floral_ridges",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:maple_forest",
+        "regions_unexplored:orchard",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "graveyard:has_structure/memorial_tree": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:sakura_grove",
+        "regions_unexplored:maple_forest"
+      ]
+    },
+    "graveyard:has_structure/mushroom_grave": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods"
+      ]
+    },
+    "iceandfire:structure_gen/fire": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:bayou",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "iceandfire:structure_gen/hydra_cave": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:hot_springs",
+        "biomeswevegone:bayou",
+        "regions_unexplored:fen",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "iceandfire:structure_gen/ice": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "iceandfire:structure_gen/lightning": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:hot_springs",
+        "regions_unexplored:fen",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "iceandfire:structure_gen/mausoleum": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "iceandfire:structure_gen/pixie_village": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:maple_taiga",
+        "regions_unexplored:flower_fields"
+      ]
+    },
+    "idas:collections/idasbirch_forests": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:sakura_grove",
+        "regions_unexplored:maple_forest"
+      ]
+    },
+    "idas:collections/idasdark_oak_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "idas:collections/idasfloral": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "idas:collections/idasflower_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "idas:collections/idasgiant_taigas": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest"
+      ]
+    },
+    "idas:collections/idasgiant_trees": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest"
+      ]
+    },
+    "idas:collections/idasmeadows": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "idas:collections/idasplains": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "idas:collections/idasregular_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "idas:collections/idasrivers": {
+      "replace": false,
+      "values": [
+        "regions_unexplored:muddy_river"
+      ]
+    },
+    "idas:collections/idassnowy_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest"
+      ]
+    },
+    "idas:collections/idassnowy_mountains": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "idas:collections/idassnowy_plains": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "idas:collections/idasspooky_forests": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "idas:collections/idastaigas": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "integrated_stronghold:has_structure/integrated_stronghold": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "integrated_villages:collections/any_taiga": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "integrated_villages:collections/dark_oak_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "integrated_villages:collections/floral": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "integrated_villages:collections/mangroves": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "integrated_villages:collections/plains": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "integrated_villages:collections/regular_forests": {
+      "replace": false,
+      "values": [
+        "ars_nouveau:archwood_forest",
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "integrated_villages:collections/snowy_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest"
+      ]
+    },
+    "integrated_villages:collections/taigas": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "irons_spellbooks:has_structure/catacombs": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "irons_spellbooks:has_structure/impaled_icebreaker": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "irons_spellbooks:has_structure/mountain_tower": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga"
+      ]
+    },
+    "mss:has_structure/birch_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:orchard",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "mss:has_structure/mangrove_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "mvs:is_dark_forest": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "mvs:primary_wood_type/cherry": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:sakura_grove"
+      ]
+    },
+    "mvs:primary_wood_type/mangrove": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "philipsruins:has_structure/ancient_crypt_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:hot_springs",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:bayou",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "philipsruins:has_structure/ancient_ruins_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "philipsruins:has_structure/ancient_towers_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "philipsruins:has_structure/field_stone_ruins_rocks_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomeswevegone:prairie",
+        "biomeswevegone:shattered_glacier",
+        "natures_spirit:alpine_clearings",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "philipsruins:has_structure/level_two_ruins_biomes": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:hot_springs",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:shattered_glacier",
+        "biomeswevegone:weeping_witch_forest",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:marsh",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow",
+        "regions_unexplored:spires"
+      ]
+    },
+    "philipsruins:has_structure/lost_soul_city_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "philipsruins:has_structure/pumpkin_ruins_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "regions_unexplored:fen",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "philipsruins:has_structure/rare_ruin_biomes": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "repurposed_structures:collections/any_taiga": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "repurposed_structures:collections/bamboos": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods"
+      ]
+    },
+    "repurposed_structures:collections/floral": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:snowblossom_grove"
+      ]
+    },
+    "repurposed_structures:collections/giant_taigas": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest"
+      ]
+    },
+    "repurposed_structures:collections/giant_trees": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest"
+      ]
+    },
+    "repurposed_structures:collections/mangroves": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:bayou",
+        "regions_unexplored:marsh"
+      ]
+    },
+    "repurposed_structures:collections/meadows": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "repurposed_structures:collections/regular_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "repurposed_structures:collections/snowy_forests": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest"
+      ]
+    },
+    "repurposed_structures:collections/snowy_mountains": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier",
+        "regions_unexplored:icy_heights",
+        "regions_unexplored:spires"
+      ]
+    },
+    "repurposed_structures:collections/snowy_plains": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:shattered_glacier"
+      ]
+    },
+    "repurposed_structures:collections/spooky_forests": {
+      "replace": false,
+      "values": [
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "repurposed_structures:collections/taigas": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:redwood_thicket",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:redwoods"
+      ]
+    },
+    "structory:has_structure/chapel": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:highland",
+        "biomesoplenty:pumpkin_patch",
+        "biomeswevegone:prairie",
+        "biomeswevegone:sakura_grove",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:grassland",
+        "regions_unexplored:orchard",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "structory:has_structure/old_manor": {
+      "replace": false,
+      "values": [
+        "biomesoplenty:ominous_woods",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:weeping_witch_forest"
+      ]
+    },
+    "idas:has_structure/archmages_tower_biomes": {
+      "replace": false,
+      "values": [
+        "ars_nouveau:archwood_forest"
+      ]
+    },
+    "idas:has_structure/wizardtower_biomes": {
+      "replace": false,
+      "values": [
+        "ars_nouveau:archwood_forest"
+      ]
+    },
+    "idas:has_structure/hermits_hollow_biomes": {
+      "replace": false,
+      "values": [
+        "ars_nouveau:archwood_forest"
+      ]
+    },
+    "dungeons_arise:collections/other_forests": {
+      "replace": false,
+      "values": [
+        "ars_nouveau:archwood_forest"
+      ]
+    },
+    "idas:has_structure/byg_redwood_biomes": {
+      "replace": true,
+      "values": []
+    },
+    "idas:has_structure/bygmohogany_biomes": {
+      "replace": true,
+      "values": []
+    },
+    "aether_villages:collections/ancient_aether_biomes": {
+      "replace": true,
+      "values": []
+    },
+    "aether_villages:collections/aether_redux_biomes": {
+      "replace": true,
+      "values": []
+    },
+    "ambient_odyssey:sky_land": {
+      "replace": true,
+      "values": [
+        "ars_nouveau:archwood_forest",
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:highland",
+        "biomesoplenty:hot_springs",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:pumpkin_patch",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:prairie",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:cherry_grove",
+        "minecraft:dark_forest",
+        "minecraft:desert",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:meadow",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:plains",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:snowy_plains",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "minecraft:taiga",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:ashen_woodland",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:frozen_pine_taiga",
+        "regions_unexplored:grassland",
+        "regions_unexplored:maple_forest",
+        "regions_unexplored:marsh",
+        "regions_unexplored:orchard",
+        "regions_unexplored:redwoods",
+        "regions_unexplored:rocky_meadow"
+      ]
+    },
+    "ambient_odyssey:sky_land_and_river": {
+      "replace": true,
+      "values": [
+        "ars_nouveau:archwood_forest",
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:highland",
+        "biomesoplenty:hot_springs",
+        "biomesoplenty:ominous_woods",
+        "biomesoplenty:pumpkin_patch",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:bayou",
+        "biomeswevegone:crag_gardens",
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:maple_taiga",
+        "biomeswevegone:prairie",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:skyris_vale",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:zelkova_forest",
+        "minecraft:bamboo_jungle",
+        "minecraft:birch_forest",
+        "minecraft:cherry_grove",
+        "minecraft:dark_forest",
+        "minecraft:desert",
+        "minecraft:flower_forest",
+        "minecraft:forest",
+        "minecraft:frozen_river",
+        "minecraft:jungle",
+        "minecraft:mangrove_swamp",
+        "minecraft:meadow",
+        "minecraft:old_growth_birch_forest",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:plains",
+        "minecraft:river",
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "minecraft:snowy_plains",
+        "minecraft:snowy_taiga",
+        "minecraft:sparse_jungle",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "minecraft:taiga",
+        "natures_spirit:alpine_clearings",
+        "natures_spirit:floral_ridges",
+        "natures_spirit:windswept_sugi_forest",
+        "regions_unexplored:ashen_woodland",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:fen",
+        "regions_unexplored:flower_fields",
+        "regions_unexplored:frozen_pine_taiga",
+        "regions_unexplored:grassland",
+        "regions_unexplored:maple_forest",
+        "regions_unexplored:marsh",
+        "regions_unexplored:muddy_river",
+        "regions_unexplored:orchard",
+        "regions_unexplored:redwoods",
+        "regions_unexplored:rocky_meadow",
+        "streamsreflowing:stream"
+      ]
+    },
+    "ambient_odyssey:heavenly_end": {
+      "replace": true,
+      "values": [
+        "minecraft:end_midlands",
+        "minecraft:end_highlands"
+      ]
+    },
+    "skyvillages:has_structure/skyvillage": {
+      "replace": true,
+      "values": [
+        "#ambient_odyssey:sky_land_and_river"
+      ]
+    },
+    "ambient_odyssey:frozen_sky_land": {
+      "replace": true,
+      "values": [
+        "biomesoplenty:auroral_garden",
+        "biomesoplenty:snowblossom_grove",
+        "biomeswevegone:frosted_coniferous_forest",
+        "biomeswevegone:maple_taiga",
+        "minecraft:grove",
+        "minecraft:old_growth_pine_taiga",
+        "minecraft:old_growth_spruce_taiga",
+        "minecraft:snowy_taiga",
+        "minecraft:taiga",
+        "regions_unexplored:cold_deciduous_forest",
+        "regions_unexplored:frozen_pine_taiga"
+      ]
+    }
+  },
+  "structures": {
+    "sky_whale_ship:frozen_whale": {
+      "biomes": "#ambient_odyssey:frozen_sky_land",
+      "max_distance_from_center": 128,
+      "size": 7,
+      "spawn_overrides": {},
+      "start_height": {
+        "max_inclusive": {
+          "absolute": 240
+        },
+        "min_inclusive": {
+          "absolute": 180
+        },
+        "type": "minecraft:uniform"
+      },
+      "start_pool": "sky_whale_ship:frozen_whale",
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "sky_whale_ship:whale": {
+      "biomes": "#ambient_odyssey:sky_land",
+      "max_distance_from_center": 128,
+      "size": 7,
+      "spawn_overrides": {},
+      "start_height": {
+        "max_inclusive": {
+          "absolute": 220
+        },
+        "min_inclusive": {
+          "absolute": 180
+        },
+        "type": "minecraft:uniform"
+      },
+      "start_pool": "sky_whale_ship:whale",
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "sky_whale_ship:whalearena": {
+      "biomes": "#ambient_odyssey:sky_land",
+      "max_distance_from_center": 128,
+      "size": 7,
+      "spawn_overrides": {},
+      "start_height": {
+        "max_inclusive": {
+          "absolute": 220
+        },
+        "min_inclusive": {
+          "absolute": 180
+        },
+        "type": "minecraft:uniform"
+      },
+      "start_pool": "sky_whale_ship:whalearena",
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "sky_whale_ship:whalelight": {
+      "biomes": "#ambient_odyssey:sky_land",
+      "max_distance_from_center": 128,
+      "size": 7,
+      "spawn_overrides": {},
+      "start_height": {
+        "max_inclusive": {
+          "absolute": 220
+        },
+        "min_inclusive": {
+          "absolute": 180
+        },
+        "type": "minecraft:uniform"
+      },
+      "start_pool": "sky_whale_ship:whalelight",
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "sky_whale_ship:whaleship": {
+      "biomes": "#ambient_odyssey:sky_land",
+      "max_distance_from_center": 128,
+      "size": 7,
+      "spawn_overrides": {},
+      "start_height": {
+        "max_inclusive": {
+          "absolute": 220
+        },
+        "min_inclusive": {
+          "absolute": 180
+        },
+        "type": "minecraft:uniform"
+      },
+      "start_pool": "sky_whale_ship:whaleship",
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "create_rustic_structures:rustic_barn": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:plains",
+            "minecraft:sunflower_plains",
+            "minecraft:meadow"
+          ],
+          "#c:is_plains"
+        ]
+      },
+      "max_distance_from_center": 64,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "create_rustic_structures:rustic_barn",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "create_rustic_structures:rustic_smithy": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:birch_forest",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:old_growth_birch_forest"
+          ],
+          "#c:is_forest"
+        ]
+      },
+      "max_distance_from_center": 64,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "create_rustic_structures:rustic_smithy",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "create_rustic_structures:rustic_well": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:birch_forest",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:old_growth_birch_forest"
+          ],
+          "#c:is_forest"
+        ]
+      },
+      "max_distance_from_center": 64,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "create_rustic_structures:rustic_well",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "create_rustic_structures:rustic_windmill": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          [
+            "minecraft:meadow",
+            "minecraft:plains",
+            "minecraft:sunflower_plains"
+          ],
+          "#c:is_plains"
+        ]
+      },
+      "max_distance_from_center": 64,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "create_rustic_structures:rustic_windmill",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": false
+    },
+    "ctov:large/village_christmas": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/christmas/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_dark_forest": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/halloween/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_plains": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/plains/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_plains_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/plains_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_snowy_igloo": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/snowy_igloo/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_swamp": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/swamp/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_swamp_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/swamp_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_taiga": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/taiga/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:large/village_taiga_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/taiga_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_christmas": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/christmas/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_dark_forest": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/halloween/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_plains": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/plains/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_plains_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/plains_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_snowy_igloo": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/snowy_igloo/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_swamp": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/swamp/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_swamp_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/swamp_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_taiga": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/taiga/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:medium/village_taiga_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/taiga_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:pillager_outpost_dark_forest": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:pillager",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:evoker",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:vindicator",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:witch",
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:pillager_outpost/dark_forest/base_plates",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:pillager_outpost_plains": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:pillager",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:evoker",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:vindicator",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:witch",
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:pillager_outpost/plains/base_plates",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:pillager_outpost_snowy": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:pillager",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:evoker",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:vindicator",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:witch",
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:pillager_outpost/snowy/base_plates",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:pillager_outpost_swamp": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 5,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:pillager",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:evoker",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:vindicator",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:witch",
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:pillager_outpost/swamp/base_plates",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:pillager_outpost_taiga": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 2,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:pillager",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:evoker",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:vindicator",
+              "weight": 1
+            },
+            {
+              "maxCount": 1,
+              "minCount": 1,
+              "type": "minecraft:witch",
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:pillager_outpost/taiga/base_plates",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_christmas": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/christmas/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_dark_forest": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/woodland_mansion",
+          "#c:is_spooky"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/halloween/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_plains": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/plains/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_plains_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_plains",
+          "#c:is_plains"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/plains_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_snowy_igloo": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_snowy",
+          "#c:is_snowy"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/snowy_igloo/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_swamp": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/swamp/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_swamp_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/ruined_portal_swamp",
+          "#c:is_swamp"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/swamp_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_taiga": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/taiga/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    },
+    "ctov:small/village_taiga_fortified": {
+      "biomes": {
+        "type": "neoforge:or",
+        "values": [
+          "#minecraft:has_structure/village_taiga",
+          "#c:is_taiga"
+        ]
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "pool_aliases": [],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 4,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "ctov:village/taiga_fortified/town_centers",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "type": "lithostitched:jigsaw",
+      "use_expansion_hack": true
+    }
+  },
+  "item_tags": {
+    "artifacts:slot/all": {
+      "replace": false,
+      "values": [
+        "artifacts:whoopee_cushion"
+      ]
+    },
+    "artifacts:slot/belt": {
+      "replace": false,
+      "values": [
+        "artifacts:antidote_vessel",
+        "artifacts:chorus_totem",
+        "artifacts:cloud_in_a_bottle",
+        "artifacts:crystal_heart",
+        "artifacts:helium_flamingo",
+        "artifacts:obsidian_skull",
+        "artifacts:universal_attractor",
+        "artifacts:warp_drive"
+      ]
+    },
+    "artifacts:slot/hands": {
+      "replace": false,
+      "values": [
+        "artifacts:digging_claws",
+        "artifacts:feral_claws",
+        "artifacts:fire_gauntlet",
+        "artifacts:golden_hook",
+        "artifacts:onion_ring",
+        "artifacts:pickaxe_heater",
+        "artifacts:pocket_piston",
+        "artifacts:power_glove",
+        "artifacts:vampiric_glove",
+        "artifacts:withered_bracelet"
+      ]
+    }
+  },
+  "provenance": {
+    "adventuredungeons:bygonedungeon": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+          "path": "data/adventuredungeons/tags/worldgen/biome/bygonedungeon.json"
+        }
+      ]
+    },
+    "adventuredungeons:coldlair": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+          "path": "data/adventuredungeons/tags/worldgen/biome/coldlair.json"
+        }
+      ]
+    },
+    "adventuredungeons:murkydungeon": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+          "path": "data/adventuredungeons/tags/worldgen/biome/murkydungeon.json"
+        }
+      ]
+    },
+    "adventuredungeons:ruins_snow": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+          "path": "data/adventuredungeons/tags/worldgen/biome/ruins_snow.json"
+        }
+      ]
+    },
+    "adventuredungeons:ruins_standard": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+          "path": "data/adventuredungeons/tags/worldgen/biome/ruins_standard.json"
+        }
+      ]
+    },
+    "adventuredungeons:trialrooms": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+          "path": "data/adventuredungeons/tags/worldgen/biome/trialrooms.json"
+        }
+      ]
+    },
+    "block_factorys_bosses:dragon_tower": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+          "path": "data/block_factorys_bosses/tags/worldgen/biome/dragon_tower.json"
+        }
+      ]
+    },
+    "block_factorys_bosses:yeti_hideout": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+          "path": "data/block_factorys_bosses/tags/worldgen/biome/yeti_hideout.json"
+        }
+      ]
+    },
+    "bosses_of_mass_destruction:collections/cold": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/tags/worldgen/biome/collections/cold.json"
+        }
+      ]
+    },
+    "bosses_of_mass_destruction:has_structure/void_blossom": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/tags/worldgen/biome/has_structure/void_blossom.json"
+        },
+        {
+          "jar": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/tags/worldgen/biome/has_structure/void_blossom.json"
+        }
+      ]
+    },
+    "cataclysm:has_structure/frosted_prison_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/tags/worldgen/biome/has_structure/frosted_prison_biomes.json"
+        }
+      ]
+    },
+    "dungeoncrawl:has_structure/dungeon": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
+          "path": "data/dungeoncrawl/tags/worldgen/biome/has_structure/dungeon.json"
+        }
+      ]
+    },
+    "dungeons_arise:collections/other_cherry": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/collections/other_cherry.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/bathhouse_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/bathhouse_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/foundry_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/foundry_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/giant_mushroom_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/giant_mushroom_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/greenwood_pub_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/greenwood_pub_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/heavenly_challenger_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/heavenly_challenger_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/heavenly_conqueror_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/heavenly_conqueror_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/heavenly_rider_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/heavenly_rider_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/mechanical_nest_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/mechanical_nest_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/mining_complex_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/mining_complex_biomes.json"
+        }
+      ]
+    },
+    "dungeons_arise:has_structure/small_blimp_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/tags/worldgen/biome/has_structure/small_blimp_biomes.json"
+        }
+      ]
+    },
+    "enigmaticlegacyplus:has_structure/spellstone_hut": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "enigmaticlegacyplus-1.21.1-1.1.2.jar",
+          "path": "data/enigmaticlegacyplus/tags/worldgen/biome/has_structure/spellstone_hut.json"
+        }
+      ]
+    },
+    "farmers_structures:is_aquaculture_cod_spawn": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+          "path": "data/farmers_structures/tags/worldgen/biome/is_aquaculture_cod_spawn.json"
+        }
+      ]
+    },
+    "farmers_structures:is_aquaculture_common_spawn": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+          "path": "data/farmers_structures/tags/worldgen/biome/is_aquaculture_common_spawn.json"
+        }
+      ]
+    },
+    "farmers_structures:is_cook_moss_spawn": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+          "path": "data/farmers_structures/tags/worldgen/biome/is_cook_moss_spawn.json"
+        }
+      ]
+    },
+    "farmers_structures:is_cook_spawn": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+          "path": "data/farmers_structures/tags/worldgen/biome/is_cook_spawn.json"
+        }
+      ]
+    },
+    "farmers_structures:is_squid_spawn": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+          "path": "data/farmers_structures/tags/worldgen/biome/is_squid_spawn.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/amethyst_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/amethyst_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/camp_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/camp_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/cemetery_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/cemetery_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/cherry_island_with_shrine": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/cherry_island_with_shrine.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/drifting_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/drifting_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/flower_island2": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/flower_island2.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/hut_with_waystone": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/hut_with_waystone.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/nether_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/nether_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/paradise_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/paradise_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/pillager_camp": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/pillager_camp.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/shrine": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/shrine.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/spider_ruin": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/spider_ruin.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/steampunk_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/steampunk_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/tower_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/tower_island.json"
+        }
+      ]
+    },
+    "floating_islands:has_structure/witch_island": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+          "path": "data/floating_islands/tags/worldgen/biome/has_structure/witch_island.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/bamboo_hut": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/bamboo_hut.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/cobble_hole": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/cobble_hole.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/copper_spire": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/copper_spire.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/farmland_field": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/farmland_field.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/fountain": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/fountain.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/graveyard": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/graveyard.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/hobbit_hole": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/hobbit_hole.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/ice_spire": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/ice_spire.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/igloo": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/igloo.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/offering": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/offering.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/small_house": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/small_house.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/small_statue": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/small_statue.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/stone_ore_spikes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/stone_ore_spikes.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/stone_tower": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/stone_tower.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/tiny_house": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/tiny_house.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/tower_remnant": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/tower_remnant.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/wagon": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/wagon.json"
+        }
+      ]
+    },
+    "formationsoverworld:has_structure/well": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+          "path": "data/formationsoverworld/tags/worldgen/biome/has_structure/well.json"
+        }
+      ]
+    },
+    "friendsandfoes:collections/snowy_forest": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+          "path": "data/friendsandfoes/tags/worldgen/biome/collections/snowy_forest.json"
+        }
+      ]
+    },
+    "friendsandfoes:collections/snowy_mountains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+          "path": "data/friendsandfoes/tags/worldgen/biome/collections/snowy_mountains.json"
+        }
+      ]
+    },
+    "friendsandfoes:collections/snowy_plains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+          "path": "data/friendsandfoes/tags/worldgen/biome/collections/snowy_plains.json"
+        }
+      ]
+    },
+    "graveyard:has_structure/altar": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+          "path": "data/graveyard/tags/worldgen/biome/has_structure/altar.json"
+        }
+      ]
+    },
+    "graveyard:has_structure/haunted_house": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+          "path": "data/graveyard/tags/worldgen/biome/has_structure/haunted_house.json"
+        }
+      ]
+    },
+    "graveyard:has_structure/large_graveyard": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+          "path": "data/graveyard/tags/worldgen/biome/has_structure/large_graveyard.json"
+        }
+      ]
+    },
+    "graveyard:has_structure/medium_graveyard": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+          "path": "data/graveyard/tags/worldgen/biome/has_structure/medium_graveyard.json"
+        }
+      ]
+    },
+    "graveyard:has_structure/memorial_tree": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+          "path": "data/graveyard/tags/worldgen/biome/has_structure/memorial_tree.json"
+        }
+      ]
+    },
+    "graveyard:has_structure/mushroom_grave": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+          "path": "data/graveyard/tags/worldgen/biome/has_structure/mushroom_grave.json"
+        }
+      ]
+    },
+    "iceandfire:structure_gen/fire": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/tags/worldgen/biome/structure_gen/fire.json"
+        }
+      ]
+    },
+    "iceandfire:structure_gen/hydra_cave": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/tags/worldgen/biome/structure_gen/hydra_cave.json"
+        }
+      ]
+    },
+    "iceandfire:structure_gen/ice": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/tags/worldgen/biome/structure_gen/ice.json"
+        }
+      ]
+    },
+    "iceandfire:structure_gen/lightning": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/tags/worldgen/biome/structure_gen/lightning.json"
+        }
+      ]
+    },
+    "iceandfire:structure_gen/mausoleum": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/tags/worldgen/biome/structure_gen/mausoleum.json"
+        }
+      ]
+    },
+    "iceandfire:structure_gen/pixie_village": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/tags/worldgen/biome/structure_gen/pixie_village.json"
+        }
+      ]
+    },
+    "idas:collections/idasbirch_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasbirch_forests.json"
+        }
+      ]
+    },
+    "idas:collections/idasdark_oak_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasdark_oak_forests.json"
+        }
+      ]
+    },
+    "idas:collections/idasfloral": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasfloral.json"
+        }
+      ]
+    },
+    "idas:collections/idasflower_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasflower_forests.json"
+        }
+      ]
+    },
+    "idas:collections/idasgiant_taigas": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasgiant_taigas.json"
+        }
+      ]
+    },
+    "idas:collections/idasgiant_trees": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasgiant_trees.json"
+        }
+      ]
+    },
+    "idas:collections/idasmeadows": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasmeadows.json"
+        }
+      ]
+    },
+    "idas:collections/idasplains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasplains.json"
+        }
+      ]
+    },
+    "idas:collections/idasregular_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasregular_forests.json"
+        }
+      ]
+    },
+    "idas:collections/idasrivers": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasrivers.json"
+        }
+      ]
+    },
+    "idas:collections/idassnowy_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idassnowy_forests.json"
+        }
+      ]
+    },
+    "idas:collections/idassnowy_mountains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idassnowy_mountains.json"
+        }
+      ]
+    },
+    "idas:collections/idassnowy_plains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idassnowy_plains.json"
+        }
+      ]
+    },
+    "idas:collections/idasspooky_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idasspooky_forests.json"
+        }
+      ]
+    },
+    "idas:collections/idastaigas": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+          "path": "data/idas/tags/worldgen/biome/collections/idastaigas.json"
+        }
+      ]
+    },
+    "integrated_stronghold:has_structure/integrated_stronghold": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+          "path": "data/integrated_stronghold/tags/worldgen/biome/has_structure/integrated_stronghold.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/any_taiga": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/any_taiga.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/dark_oak_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/dark_oak_forests.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/floral": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/floral.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/mangroves": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/mangroves.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/plains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/plains.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/regular_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/regular_forests.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/snowy_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/snowy_forests.json"
+        }
+      ]
+    },
+    "integrated_villages:collections/taigas": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+          "path": "data/integrated_villages/tags/worldgen/biome/collections/taigas.json"
+        }
+      ]
+    },
+    "irons_spellbooks:has_structure/catacombs": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+          "path": "data/irons_spellbooks/tags/worldgen/biome/has_structure/catacombs.json"
+        }
+      ]
+    },
+    "irons_spellbooks:has_structure/impaled_icebreaker": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+          "path": "data/irons_spellbooks/tags/worldgen/biome/has_structure/impaled_icebreaker.json"
+        }
+      ]
+    },
+    "irons_spellbooks:has_structure/mountain_tower": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+          "path": "data/irons_spellbooks/tags/worldgen/biome/has_structure/mountain_tower.json"
+        }
+      ]
+    },
+    "mss:has_structure/birch_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+          "path": "data/mss/tags/worldgen/biome/has_structure/birch_biomes.json"
+        }
+      ]
+    },
+    "mss:has_structure/mangrove_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+          "path": "data/mss/tags/worldgen/biome/has_structure/mangrove_biomes.json"
+        }
+      ]
+    },
+    "mvs:is_dark_forest": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+          "path": "data/mvs/tags/worldgen/biome/is_dark_forest.json"
+        }
+      ]
+    },
+    "mvs:primary_wood_type/cherry": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+          "path": "data/mvs/tags/worldgen/biome/primary_wood_type/cherry.json"
+        }
+      ]
+    },
+    "mvs:primary_wood_type/mangrove": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+          "path": "data/mvs/tags/worldgen/biome/primary_wood_type/mangrove.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/ancient_crypt_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/ancient_crypt_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/ancient_ruins_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/ancient_ruins_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/ancient_towers_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/ancient_towers_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/field_stone_ruins_rocks_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/field_stone_ruins_rocks_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/level_two_ruins_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/level_two_ruins_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/lost_soul_city_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/lost_soul_city_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/pumpkin_ruins_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/pumpkin_ruins_biomes.json"
+        }
+      ]
+    },
+    "philipsruins:has_structure/rare_ruin_biomes": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+          "path": "data/philipsruins/tags/worldgen/biome/has_structure/rare_ruin_biomes.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/any_taiga": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/any_taiga.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/bamboos": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/bamboos.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/floral": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/floral.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/giant_taigas": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/giant_taigas.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/giant_trees": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/giant_trees.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/mangroves": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/mangroves.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/meadows": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/meadows.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/regular_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/regular_forests.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/snowy_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/snowy_forests.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/snowy_mountains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/snowy_mountains.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/snowy_plains": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/snowy_plains.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/spooky_forests": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/spooky_forests.json"
+        }
+      ]
+    },
+    "repurposed_structures:collections/taigas": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+          "path": "data/repurposed_structures/tags/worldgen/biome/collections/taigas.json"
+        }
+      ]
+    },
+    "structory:has_structure/chapel": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Structory_26.2_v1.3.7.jar",
+          "path": "data/structory/tags/worldgen/biome/has_structure/chapel.json"
+        }
+      ]
+    },
+    "structory:has_structure/old_manor": {
+      "reason": "Climate/landform analogues for direct vanilla biome leaves",
+      "source_paths": [
+        {
+          "jar": "Structory_26.2_v1.3.7.jar",
+          "path": "data/structory/tags/worldgen/biome/has_structure/old_manor.json"
+        }
+      ]
+    },
+    "idas:has_structure/byg_redwood_biomes": {
+      "reason": "Unavailable optional provider or obsolete BYG asset variant; keep the collection empty, not invalid"
+    },
+    "idas:has_structure/bygmohogany_biomes": {
+      "reason": "Unavailable optional provider or obsolete BYG asset variant; keep the collection empty, not invalid"
+    },
+    "aether_villages:collections/ancient_aether_biomes": {
+      "reason": "Unavailable optional provider or obsolete BYG asset variant; keep the collection empty, not invalid"
+    },
+    "aether_villages:collections/aether_redux_biomes": {
+      "reason": "Unavailable optional provider or obsolete BYG asset variant; keep the collection empty, not invalid"
+    },
+    "artifacts:slot/all": {
+      "reason": "Restore native Artifacts slot members cleared by RAR-Compat",
+      "source_paths": [
+        {
+          "jar": "artifacts-neoforge-13.2.5.jar",
+          "path": "data/artifacts/tags/item/slot/all.json"
+        }
+      ]
+    },
+    "artifacts:slot/belt": {
+      "reason": "Restore native Artifacts slot members cleared by RAR-Compat",
+      "source_paths": [
+        {
+          "jar": "artifacts-neoforge-13.2.5.jar",
+          "path": "data/artifacts/tags/item/slot/belt.json"
+        }
+      ]
+    },
+    "artifacts:slot/hands": {
+      "reason": "Restore native Artifacts slot members cleared by RAR-Compat",
+      "source_paths": [
+        {
+          "jar": "artifacts-neoforge-13.2.5.jar",
+          "path": "data/artifacts/tags/item/slot/hands.json"
+        }
+      ]
+    },
+    "continuation_native_structures": [
+      {
+        "structure": "create_rustic_structures:rustic_barn",
+        "native_selector": [
+          "plains",
+          "sunflower_plains",
+          "meadow"
+        ],
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "create_rustic_structures:rustic_smithy",
+        "native_selector": [
+          "birch_forest",
+          "flower_forest",
+          "forest",
+          "old_growth_birch_forest"
+        ],
+        "added_analogue_tag": "#c:is_forest",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "create_rustic_structures:rustic_well",
+        "native_selector": [
+          "birch_forest",
+          "flower_forest",
+          "forest",
+          "old_growth_birch_forest"
+        ],
+        "added_analogue_tag": "#c:is_forest",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "create_rustic_structures:rustic_windmill",
+        "native_selector": [
+          "meadow",
+          "plains",
+          "sunflower_plains"
+        ],
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_christmas",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_dark_forest",
+        "native_selector": "#minecraft:has_structure/woodland_mansion",
+        "added_analogue_tag": "#c:is_spooky",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_plains",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_plains_fortified",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_snowy_igloo",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_swamp",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_swamp_fortified",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_taiga",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:large/village_taiga_fortified",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_christmas",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_dark_forest",
+        "native_selector": "#minecraft:has_structure/woodland_mansion",
+        "added_analogue_tag": "#c:is_spooky",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_plains",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_plains_fortified",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_snowy_igloo",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_swamp",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_swamp_fortified",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_taiga",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:medium/village_taiga_fortified",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:pillager_outpost_dark_forest",
+        "native_selector": "#minecraft:has_structure/woodland_mansion",
+        "added_analogue_tag": "#c:is_spooky",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:pillager_outpost_plains",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:pillager_outpost_snowy",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:pillager_outpost_swamp",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:pillager_outpost_taiga",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_christmas",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_dark_forest",
+        "native_selector": "#minecraft:has_structure/woodland_mansion",
+        "added_analogue_tag": "#c:is_spooky",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_plains",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_plains_fortified",
+        "native_selector": "#minecraft:has_structure/village_plains",
+        "added_analogue_tag": "#c:is_plains",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_snowy_igloo",
+        "native_selector": "#minecraft:has_structure/village_snowy",
+        "added_analogue_tag": "#c:is_snowy",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_swamp",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_swamp_fortified",
+        "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+        "added_analogue_tag": "#c:is_swamp",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_taiga",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      },
+      {
+        "structure": "ctov:small/village_taiga_fortified",
+        "native_selector": "#minecraft:has_structure/village_taiga",
+        "added_analogue_tag": "#c:is_taiga",
+        "unchanged_fields": "All except biomes"
+      }
+    ]
+  }
+}

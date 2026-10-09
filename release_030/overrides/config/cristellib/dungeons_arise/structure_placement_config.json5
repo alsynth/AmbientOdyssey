@@ -1,0 +1,15 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "major_structures": {
+    "salt": 88371663,
+    "separation": 45,
+    "spacing": 50,
+    "frequency": 0.7105263157894737
+  },
+  "minor_structures": {
+    "salt": 342415935,
+    "separation": 18,
+    "spacing": 28,
+    "frequency": 0.8333333333333334
+  }
+}

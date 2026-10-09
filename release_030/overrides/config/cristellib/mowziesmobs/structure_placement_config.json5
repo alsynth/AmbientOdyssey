@@ -1,0 +1,23 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "frostmaw_spawns": {
+    "salt": 23317578,
+    "separation": 6,
+    "spacing": 18
+  },
+  "monasteries": {
+    "salt": 37312139,
+    "separation": 6,
+    "spacing": 18
+  },
+  "umvuthana_groves": {
+    "salt": 23311138,
+    "separation": 6,
+    "spacing": 18
+  },
+  "wrought_chambers": {
+    "salt": 23217347,
+    "separation": 5,
+    "spacing": 15
+  }
+}

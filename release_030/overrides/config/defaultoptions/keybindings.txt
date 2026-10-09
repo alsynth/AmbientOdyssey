@@ -1,0 +1,3 @@
+key_key.ftbchunks.map:key.keyboard.unknown:NONE
+key_key.mute_microphone:key.keyboard.j:NONE
+key_accessories.key.open_accessories_screen:key.keyboard.o:NONE

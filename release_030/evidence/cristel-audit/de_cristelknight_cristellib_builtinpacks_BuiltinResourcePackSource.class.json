@@ -1,0 +1,210 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource",
+    "java/lang/Record",
+    "net/minecraft/server/packs/repository/PackSource",
+    "BuiltinResourcePackSource.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource;",
+    "shouldAddAutomatically",
+    "()Z",
+    "decorate",
+    "(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;",
+    "packName",
+    "Lorg/jetbrains/annotations/NotNull;",
+    "cristellib.nameAndSource",
+    "java/lang/Object",
+    "net/minecraft/network/chat/Component",
+    "translatable",
+    "(Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;",
+    "net/minecraft/ChatFormatting",
+    "GRAY",
+    "Lnet/minecraft/ChatFormatting;",
+    "net/minecraft/network/chat/MutableComponent",
+    "withStyle",
+    "(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;",
+    "Lnet/minecraft/network/chat/Component;",
+    "toString",
+    "()Ljava/lang/String;",
+    "",
+    "java/lang/runtime/ObjectMethods",
+    "bootstrap",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/TypeDescriptor;Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/invoke/MethodHandle;)Ljava/lang/Object;",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource;)Ljava/lang/String;",
+    "hashCode",
+    "()I",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource;)I",
+    "equals",
+    "(Ljava/lang/Object;)Z",
+    "o",
+    "(Lde/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource;Ljava/lang/Object;)Z",
+    "Ljava/lang/Object;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "RuntimeInvisibleAnnotations",
+    "RuntimeInvisibleTypeAnnotations",
+    "RuntimeInvisibleParameterAnnotations",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods",
+    "Record"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Record <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "shouldAddAutomatically",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 1,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "decorate",
+      "descriptor": "(Lnet/minecraft/network/chat/Component;)Lnet/minecraft/network/chat/Component;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "cristellib.nameAndSource"
+        },
+        {
+          "offset": 2,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 3,
+          "op": "0xbd",
+          "reference": "java/lang/Object"
+        },
+        {
+          "offset": 6,
+          "op": "0x59"
+        },
+        {
+          "offset": 7,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 8,
+          "op": "0x2b"
+        },
+        {
+          "offset": 9,
+          "op": "0x53"
+        },
+        {
+          "offset": 10,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component translatable (Ljava/lang/String;[Ljava/lang/Object;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 13,
+          "op": "getstatic",
+          "reference": "net/minecraft/ChatFormatting GRAY Lnet/minecraft/ChatFormatting;"
+        },
+        {
+          "offset": 16,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/network/chat/MutableComponent withStyle (Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 19,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "toString",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 60)"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "hashCode",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 65)"
+        },
+        {
+          "offset": 6,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "equals",
+      "descriptor": "(Ljava/lang/Object;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 71)"
+        },
+        {
+          "offset": 7,
+          "op": "ireturn"
+        }
+      ]
+    }
+  ]
+}

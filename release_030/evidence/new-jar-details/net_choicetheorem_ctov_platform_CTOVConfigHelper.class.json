@@ -1,0 +1,206 @@
+{
+  "constants": [
+    "net/choicetheorem/ctov/platform/CTOVConfigHelper",
+    "java/lang/Object",
+    "CTOVConfigHelper.java",
+    "<init>",
+    "()V",
+    "this",
+    "Lnet/choicetheorem/ctov/platform/CTOVConfigHelper;",
+    "generatesmallVillage",
+    "()Z",
+    "Ldev/architectury/injectables/annotations/ExpectPlatform;",
+    "Ldev/architectury/injectables/annotations/ExpectPlatform$Transformed;",
+    "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl",
+    "generatemediumVillage",
+    "generatelargeVillage",
+    "generatePillagerOutpost",
+    "smallVillageWeight",
+    "()I",
+    "mediumVillageWeight",
+    "largeVillageWeight",
+    "OutpostWeight",
+    "enabledvillage",
+    "()Ljava/util/List;",
+    "()Ljava/util/List<+Ljava/lang/String;>;",
+    "enabledpillageroutpost",
+    "()[Ljava/lang/String;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "RuntimeInvisibleAnnotations",
+    "Signature",
+    "SourceFile"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "generatesmallVillage",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl generatesmallVillage ()Z"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "generatemediumVillage",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl generatemediumVillage ()Z"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "generatelargeVillage",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl generatelargeVillage ()Z"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "generatePillagerOutpost",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl generatePillagerOutpost ()Z"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "smallVillageWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl smallVillageWeight ()I"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "mediumVillageWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl mediumVillageWeight ()I"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "largeVillageWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl largeVillageWeight ()I"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "OutpostWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl OutpostWeight ()I"
+        },
+        {
+          "offset": 3,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "enabledvillage",
+      "descriptor": "()Ljava/util/List;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl enabledvillage ()Ljava/util/List;"
+        },
+        {
+          "offset": 3,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "enabledpillageroutpost",
+      "descriptor": "()[Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl enabledpillageroutpost ()[Ljava/lang/String;"
+        },
+        {
+          "offset": 3,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

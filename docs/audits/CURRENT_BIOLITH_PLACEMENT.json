@@ -1,0 +1,650 @@
+{
+  "additions": [],
+  "removals": [],
+  "replacements": [
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:plains",
+      "biome": "biomeswevegone:prairie",
+      "proportion": 0.883720930233
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:plains",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.773255813953
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:plains",
+      "biome": "regions_unexplored:flower_fields",
+      "proportion": 0.331395348837
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:plains",
+      "biome": "biomeswevegone:skyris_vale",
+      "proportion": 0.220930232558
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sunflower_plains",
+      "biome": "regions_unexplored:flower_fields",
+      "proportion": 0.904761904762
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sunflower_plains",
+      "biome": "biomeswevegone:sakura_grove",
+      "proportion": 0.452380952381
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sunflower_plains",
+      "biome": "biomesoplenty:pumpkin_patch",
+      "proportion": 0.271428571429
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sunflower_plains",
+      "biome": "regions_unexplored:orchard",
+      "proportion": 0.090476190476
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sunflower_plains",
+      "biome": "biomeswevegone:skyris_vale",
+      "proportion": 0.090476190476
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:flower_forest",
+      "biome": "regions_unexplored:flower_fields",
+      "proportion": 0.904761904762
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:flower_forest",
+      "biome": "biomeswevegone:sakura_grove",
+      "proportion": 0.452380952381
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:flower_forest",
+      "biome": "biomesoplenty:pumpkin_patch",
+      "proportion": 0.271428571429
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:flower_forest",
+      "biome": "regions_unexplored:orchard",
+      "proportion": 0.090476190476
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:flower_forest",
+      "biome": "biomeswevegone:skyris_vale",
+      "proportion": 0.090476190476
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:forest",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.850746268657
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:forest",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.708955223881
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:forest",
+      "biome": "biomeswevegone:zelkova_forest",
+      "proportion": 0.567164179104
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:forest",
+      "biome": "regions_unexplored:maple_forest",
+      "proportion": 0.425373134328
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:forest",
+      "biome": "biomeswevegone:weeping_witch_forest",
+      "proportion": 0.283582089552
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:birch_forest",
+      "biome": "biomeswevegone:zelkova_forest",
+      "proportion": 0.883720930233
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:birch_forest",
+      "biome": "biomeswevegone:sakura_grove",
+      "proportion": 0.773255813953
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:birch_forest",
+      "biome": "regions_unexplored:maple_forest",
+      "proportion": 0.552325581395
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:old_growth_birch_forest",
+      "biome": "biomeswevegone:zelkova_forest",
+      "proportion": 0.883720930233
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:old_growth_birch_forest",
+      "biome": "biomeswevegone:sakura_grove",
+      "proportion": 0.773255813953
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:old_growth_birch_forest",
+      "biome": "regions_unexplored:maple_forest",
+      "proportion": 0.552325581395
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "biomeswevegone:prairie",
+      "proportion": 0.993757802747
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.124219725343
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "natures_spirit:floral_ridges",
+      "proportion": 0.124219725343
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "biomeswevegone:prairie",
+      "proportion": 0.993757802747
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.124219725343
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "natures_spirit:floral_ridges",
+      "proportion": 0.124219725343
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "biomeswevegone:prairie",
+      "proportion": 0.993344425957
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.132445923461
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "natures_spirit:floral_ridges",
+      "proportion": 0.198668885191
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:crag_gardens",
+      "proportion": 0.99094612947
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.54051607062
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.27025803531
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:crag_gardens",
+      "proportion": 0.99094612947
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.54051607062
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.27025803531
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:crag_gardens",
+      "proportion": 0.99094612947
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.54051607062
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.27025803531
+    }
+  ],
+  "sub_biomes": [
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:prairie",
+      "biome": "natures_spirit:alpine_clearings",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "regions_unexplored:grassland",
+      "biome": "natures_spirit:alpine_clearings",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "regions_unexplored:flower_fields",
+      "biome": "natures_spirit:alpine_clearings",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomesoplenty:pumpkin_patch",
+      "biome": "natures_spirit:alpine_clearings",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "regions_unexplored:grassland",
+      "biome": "biomeswevegone:prairie",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": -0.15,
+            "max": 0.1999
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:skyris_vale",
+      "biome": "biomeswevegone:prairie",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": 0.2001
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:ebony_woods",
+      "biome": "regions_unexplored:maple_forest",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:redwood_thicket",
+      "biome": "biomeswevegone:maple_taiga",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:ebony_woods",
+      "biome": "biomeswevegone:weeping_witch_forest",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": -0.15,
+            "max": 0.1999
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:redwood_thicket",
+      "biome": "biomeswevegone:sakura_grove",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": -0.15,
+            "max": 0.1999
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:zelkova_forest",
+      "biome": "biomeswevegone:sakura_grove",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": -0.1499,
+            "max": 0.1999
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "regions_unexplored:maple_forest",
+      "biome": "biomeswevegone:ebony_woods",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": 0.2001
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:zelkova_forest",
+      "biome": "biomeswevegone:ebony_woods",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": 0.2001
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:weeping_witch_forest",
+      "biome": "biomeswevegone:ebony_woods",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": 0.2001
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:sakura_grove",
+      "biome": "biomeswevegone:ebony_woods",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": 0.2001
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:sakura_grove",
+      "biome": "biomeswevegone:zelkova_forest",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "regions_unexplored:maple_forest",
+      "biome": "biomeswevegone:zelkova_forest",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "biomeswevegone:weeping_witch_forest",
+      "biome": "biomeswevegone:zelkova_forest",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": -0.1501
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "natures_spirit:floral_ridges",
+      "biome": "natures_spirit:windswept_sugi_forest",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "max": 0.1999
+          }
+        ]
+      }
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "natures_spirit:floral_ridges",
+      "biome": "biomeswevegone:prairie",
+      "criterion": {
+        "type": "biolith:all_of",
+        "criteria": [
+          {
+            "type": "biolith:original",
+            "biome": "#ambient_odyssey:replaced_surface_biomes"
+          },
+          {
+            "type": "biolith:value",
+            "parameter": "temperature",
+            "min": 0.5501
+          }
+        ]
+      }
+    }
+  ]
+}

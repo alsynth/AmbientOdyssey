@@ -1,0 +1,617 @@
+{
+  "status": "PASS (scoped static gates)",
+  "gameplay_tested": false,
+  "checks": [
+    {
+      "check": "Generated JSON and Minecraft 1.21.1 pack formats",
+      "passed": true,
+      "detail": 263
+    },
+    {
+      "check": "Added modded biome IDs exist in inspected registry resources",
+      "passed": true,
+      "detail": 37
+    },
+    {
+      "check": "New required nested biome-tag references exist",
+      "passed": true,
+      "detail": [
+        "ambient_odyssey:sky_land_and_river"
+      ]
+    },
+    {
+      "check": "Structure selector sky_whale_ship:frozen_whale",
+      "passed": true,
+      "detail": "#ambient_odyssey:frozen_sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whale",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whalearena",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whalelight",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector sky_whale_ship:whaleship",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": "#ambient_odyssey:sky_land"
+    },
+    {
+      "check": "Structure selector dungeons_arise:heavenly_challenger",
+      "passed": true,
+      "detail": "#ambient_odyssey:heavenly_end"
+    },
+    {
+      "check": "Structure selector dungeons_arise:heavenly_conqueror",
+      "passed": true,
+      "detail": "#ambient_odyssey:heavenly_end"
+    },
+    {
+      "check": "Structure selector dungeons_arise:heavenly_rider",
+      "passed": true,
+      "detail": "#ambient_odyssey:heavenly_end"
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 72,
+        "separation": 32,
+        "salt": 1984010510
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 84,
+        "separation": 40,
+        "salt": 1984010511
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": {
+        "type": "minecraft:random_spread",
+        "spacing": 64,
+        "separation": 28,
+        "salt": 1984010512
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:idas_ordinary_houses",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 16,
+        "separation": 8,
+        "salt": 1984010520,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#ambient_odyssey:idas_house_avoid"
+        }
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:idas_ordinary_houses",
+      "passed": true,
+      "detail": 14
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:wda_bathhouse",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 112,
+        "separation": 48,
+        "salt": 1984010502,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        },
+        "frequency": 0.5
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:wda_bathhouse",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Placement bounds ambient_odyssey:wda_ordinary_land",
+      "passed": true,
+      "detail": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 28,
+        "separation": 14,
+        "salt": 1984010501,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        }
+      }
+    },
+    {
+      "check": "Positive structure weights ambient_odyssey:wda_ordinary_land",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "check": "Placement bounds dungeons_arise:major_structures",
+      "passed": true,
+      "detail": {
+        "salt": 88371663,
+        "separation": 45,
+        "spacing": 50,
+        "type": "minecraft:random_spread",
+        "frequency": 0.7105263157894737
+      }
+    },
+    {
+      "check": "Positive structure weights dungeons_arise:major_structures",
+      "passed": true,
+      "detail": 25
+    },
+    {
+      "check": "Placement bounds dungeons_arise:minor_structures",
+      "passed": true,
+      "detail": {
+        "salt": 342415935,
+        "separation": 18,
+        "spacing": 28,
+        "type": "minecraft:random_spread",
+        "frequency": 0.8333333333333334,
+        "exclusion_zone": {
+          "chunk_count": 10,
+          "other_set": "dungeons_arise:major_structures"
+        }
+      }
+    },
+    {
+      "check": "Positive structure weights dungeons_arise:minor_structures",
+      "passed": true,
+      "detail": 5
+    },
+    {
+      "check": "Placement bounds idas:idas_common",
+      "passed": true,
+      "detail": {
+        "salt": 169480670,
+        "separation": 8,
+        "spacing": 15,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#idas:common_avoid"
+        },
+        "type": "integrated_api:advanced_random_spread",
+        "frequency": 0.4537037037037037
+      }
+    },
+    {
+      "check": "Positive structure weights idas:idas_common",
+      "passed": true,
+      "detail": 16
+    },
+    {
+      "check": "Placement bounds idas:idas_small",
+      "passed": true,
+      "detail": {
+        "salt": 169480673,
+        "separation": 12,
+        "spacing": 18,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#idas:small_avoid"
+        },
+        "type": "integrated_api:advanced_random_spread",
+        "frequency": 0.8860759493670886
+      }
+    },
+    {
+      "check": "Positive structure weights idas:idas_small",
+      "passed": true,
+      "detail": 27
+    },
+    {
+      "check": "All emitted structure-set references exist",
+      "passed": true,
+      "detail": 96
+    },
+    {
+      "check": "Native template provenance ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": "dungeons_arise:heavenly_challenger"
+    },
+    {
+      "check": "Native template provenance ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": "dungeons_arise:heavenly_conqueror"
+    },
+    {
+      "check": "Native template provenance ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": "dungeons_arise:heavenly_rider"
+    },
+    {
+      "check": "Blimp/Coliseum absent from every inspected effective placement set",
+      "passed": true,
+      "detail": {
+        "dungeons_arise:small_blimp": [],
+        "dungeons_arise:coliseum": []
+      }
+    },
+    {
+      "check": "Verified Integrated API global generation safeguard",
+      "passed": true,
+      "detail": "DisableStructuresMixin HEAD returns false for tagged structures"
+    },
+    {
+      "check": "Native Blimp/Coliseum toggles disabled",
+      "passed": true,
+      "detail": "both false"
+    },
+    {
+      "check": "Bathhouse retained",
+      "passed": true,
+      "detail": [
+        "ambient_odyssey:wda_bathhouse"
+      ]
+    },
+    {
+      "check": "Single placement owner for new ordinary/sky/bathhouse groups",
+      "passed": true,
+      "detail": {
+        "ambient_odyssey:heavenly_challenger_overworld": [
+          "ambient_odyssey:heavenly_challenger_overworld"
+        ],
+        "ambient_odyssey:heavenly_conqueror_overworld": [
+          "ambient_odyssey:heavenly_conqueror_overworld"
+        ],
+        "ambient_odyssey:heavenly_rider_overworld": [
+          "ambient_odyssey:heavenly_rider_overworld"
+        ],
+        "dungeons_arise:bathhouse": [
+          "ambient_odyssey:wda_bathhouse"
+        ],
+        "dungeons_arise:greenwood_pub": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:illager_campsite": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:illager_windmill": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:merchant_campsite": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "dungeons_arise:mushroom_house": [
+          "ambient_odyssey:wda_ordinary_land"
+        ],
+        "idas:abandoned_vineyard": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:abandonedhouse": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:bearclaw_inn": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:beekeepers_house": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:botanist": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:brickhouse": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:farmhouse": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:fishermans_lodge": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:hermits_hollow": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:hunters_cabin": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:mason_house": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:pumpkin_cafe": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:tudor_pub": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ],
+        "idas:wacky_wares": [
+          "ambient_odyssey:idas_ordinary_houses"
+        ]
+      }
+    },
+    {
+      "check": "Obsolete Test 1\u20134 placement grids removed",
+      "passed": true,
+      "detail": [
+        "extra_wda_land_and_sky",
+        "extra_wda_heavenly_ships",
+        "extra_idas_landmarks",
+        "extra_integrated_land_villages",
+        "extra_wda_small_blimp"
+      ]
+    },
+    {
+      "check": "No curated Nether leak c:is_overworld",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "No curated Nether leak minecraft:is_overworld",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "No curated Nether leak ambient_odyssey:sky_land",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "No curated Nether leak ambient_odyssey:sky_land_and_river",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Sky Villages retains explicit river and Streams eligibility",
+      "passed": true,
+      "detail": [
+        "minecraft:frozen_river",
+        "minecraft:river",
+        "regions_unexplored:muddy_river",
+        "streamsreflowing:stream"
+      ]
+    },
+    {
+      "check": "Sky Villages has no ocean biome selectors",
+      "passed": true,
+      "detail": "land + rivers"
+    },
+    {
+      "check": "No End/Nether multiplication ambient_odyssey:heavenly_challenger_overworld",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "check": "No End/Nether multiplication ambient_odyssey:heavenly_conqueror_overworld",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "check": "No End/Nether multiplication ambient_odyssey:heavenly_rider_overworld",
+      "passed": true,
+      "detail": 54
+    },
+    {
+      "check": "Native End branch dungeons_arise:heavenly_challenger",
+      "passed": true,
+      "detail": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands"
+      ]
+    },
+    {
+      "check": "Native End branch dungeons_arise:heavenly_conqueror",
+      "passed": true,
+      "detail": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands"
+      ]
+    },
+    {
+      "check": "Native End branch dungeons_arise:heavenly_rider",
+      "passed": true,
+      "detail": [
+        "minecraft:end_highlands",
+        "minecraft:end_midlands"
+      ]
+    },
+    {
+      "check": "New AO placement salts are distinct",
+      "passed": true,
+      "detail": [
+        1984010501,
+        1984010502,
+        1984010510,
+        1984010511,
+        1984010512,
+        1984010520
+      ]
+    },
+    {
+      "check": "New AO salts do not collide with inspected native sets",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Dungeon Crawl effective native placement settings",
+      "passed": true,
+      "detail": {
+        "salt": 1984010530,
+        "separation": 9,
+        "spacing": 20
+      }
+    },
+    {
+      "check": "Exclusion graph ambient_odyssey:wda_ordinary_land",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:major_structures",
+        "idas:idas_rare",
+        "integrated_villages:regular_villages"
+      ]
+    },
+    {
+      "check": "Exclusion graph ambient_odyssey:wda_bathhouse",
+      "passed": true,
+      "detail": [
+        "dungeons_arise:major_structures",
+        "idas:idas_rare",
+        "integrated_villages:regular_villages"
+      ]
+    },
+    {
+      "check": "Exclusion graph ambient_odyssey:idas_ordinary_houses",
+      "passed": true,
+      "detail": [
+        "idas:idas_common",
+        "idas:idas_ocean",
+        "idas:idas_rare",
+        "idas:idas_small",
+        "idas:idas_underground_rare",
+        "minecraft:villages"
+      ]
+    },
+    {
+      "check": "Pool repairs have real native templates and matching connector evidence",
+      "passed": true,
+      "detail": "4 pools, 33 verified native templates"
+    },
+    {
+      "check": "Every repaired pool template has connector audit provenance",
+      "passed": true,
+      "detail": 33
+    },
+    {
+      "check": "Artifacts native slot membership restored artifacts:slot/all",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "check": "Artifacts native slot membership restored artifacts:slot/belt",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "check": "Artifacts native slot membership restored artifacts:slot/hands",
+      "passed": true,
+      "detail": 10
+    },
+    {
+      "check": "Simply More recipe syntax repair compiled",
+      "passed": true,
+      "detail": "native contents, valid JSON"
+    },
+    {
+      "check": "Integrated Stronghold ownership preserved",
+      "passed": true,
+      "detail": "MTR stronghold disabled"
+    },
+    {
+      "check": "Unrelated Test 4 config/assets preserved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "CurseForge ZIP CRC and unique safe paths",
+      "passed": true,
+      "detail": 915
+    },
+    {
+      "check": "CurseForge root manifest and no bundled mod JARs",
+      "passed": true,
+      "detail": "manifest.json at archive root"
+    },
+    {
+      "check": "Pinned game/loader/version",
+      "passed": true,
+      "detail": {
+        "version": "1.21.1",
+        "modLoaders": [
+          {
+            "id": "neoforge-21.1.252",
+            "primary": true
+          }
+        ],
+        "recommendedRam": 8192
+      }
+    },
+    {
+      "check": "Test 4 mod project/file pins unchanged",
+      "passed": true,
+      "detail": 237
+    },
+    {
+      "check": "Export matches every compiled source override",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "Required Test 5 supporting documents embedded",
+      "passed": true,
+      "detail": [
+        "STRUCTURE_TEST5_CHANGELOG.md",
+        "STRUCTURE_BIOME_AUDIT.md",
+        "STRUCTURE_TEST5_VALIDATION.md",
+        "STRUCTURE_TEST5_INSTALL.md",
+        "TANS_OPEN_FIELD_TUNING_PLAN.md",
+        "TODO.md"
+      ]
+    }
+  ],
+  "counts": {
+    "inspected_jars": 177,
+    "native_structure_definitions": 908,
+    "native_structure_set_definitions": 584,
+    "generated_json": 263,
+    "new_declared_structure_clones": 3,
+    "independent_sets": 6
+  },
+  "limitations": [
+    "mods1.zip and mods3.zip full transfers failed HTTP 403; complete CRC-verified JAR members from their retrieved prefixes were audited.",
+    "Unretrieved tail JARs, registry load, worldgen execution, actual density, clipping and performance remain uncertified.",
+    "Native Minecraft tag definitions are not in the uploaded mod JARs; native graph reports explicitly retain unresolved base-game/optional tags."
+  ]
+}

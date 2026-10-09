@@ -1,0 +1,1114 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/StructureConfigPlacement",
+    "de/cristelknight/cristellib/StructureConfig",
+    "StructureConfigPlacement.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "structurePlacement",
+    "Lcom/google/common/base/Supplier;",
+    "Lcom/google/common/base/Supplier<Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;>;>;",
+    "placementConfig",
+    "Ljava/util/Map;",
+    "Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;>;",
+    "<init>",
+    "(Ljava/nio/file/Path;)V",
+    "path",
+    "java/util/HashMap",
+    "()V",
+    "java/util/ArrayList",
+    "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+    "this",
+    "Lde/cristelknight/cristellib/StructureConfigPlacement;",
+    "Ljava/nio/file/Path;",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;)V",
+    "name",
+    "header",
+    "comments",
+    "structureSetHolders",
+    "de/cristelknight/cristellib/util/FileHelper",
+    "janksonPathFromString",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;",
+    "Ljava/lang/String;",
+    "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;",
+    "Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;",
+    "Ljava/util/List;",
+    "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;)V",
+    "()Ljava/lang/Object;",
+    "lambda$new$0",
+    "(Ljava/util/List;)Ljava/util/Map;",
+    "()Ljava/util/Map;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "get",
+    "(Ljava/util/List;)Lcom/google/common/base/Supplier;",
+    "com/google/common/base/Suppliers",
+    "memoize",
+    "(Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;",
+    "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Lde/cristelknight/cristellib/config/ConfigType;Ljava/util/List;)V",
+    "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Lde/cristelknight/cristellib/config/ConfigType;Ljava/util/List<Lde/cristelknight/cristellib/data/codec/StructureSetData;>;)V",
+    "type",
+    "Lde/cristelknight/cristellib/config/ConfigType;",
+    "updatePlacementsInSet",
+    "(Lcom/google/gson/JsonObject;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;Lnet/minecraft/resources/ResourceLocation;)V",
+    "structureSet",
+    "setLocation",
+    "placement",
+    "com/google/gson/JsonObject",
+    "(Ljava/lang/String;)Lcom/google/gson/JsonElement;",
+    "com/google/gson/JsonElement",
+    "getAsJsonObject",
+    "()Lcom/google/gson/JsonObject;",
+    "salt",
+    "de/cristelknight/cristellib/config/structure/placement/PlacementConfig",
+    "()I",
+    "java/lang/Integer",
+    "valueOf",
+    "(I)Ljava/lang/Integer;",
+    "addProperty",
+    "(Ljava/lang/String;Ljava/lang/Number;)V",
+    "spacing",
+    "separation",
+    "frequency",
+    "()D",
+    "has",
+    "(Ljava/lang/String;)Z",
+    "getAsDouble",
+    "java/lang/Double",
+    "(D)Ljava/lang/Double;",
+    "Lcom/google/gson/JsonObject;",
+    "Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "p",
+    "newF",
+    "D",
+    "addChanges",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+    "modId",
+    "java/util/Map",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "getDefaultStructurePlacements",
+    "equals",
+    "(Ljava/lang/Object;)Z",
+    "getStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lcom/google/gson/JsonElement;",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Set for {} {} is not a JsonObject, skipping...",
+    "org/apache/logging/log4j/Logger",
+    "warn",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "de/cristelknight/cristellib/CristelLib",
+    "CONFIG_PACK",
+    "Lde/cristelknight/cristellib/builtinpacks/RuntimePack;",
+    "de/cristelknight/cristellib/builtinpacks/RuntimePack",
+    "addStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B",
+    "setConfig",
+    "structureSetElement",
+    "Lcom/google/gson/JsonElement;",
+    "writeConfig",
+    "(Z)V",
+    "override",
+    "getPath",
+    "()Ljava/nio/file/Path;",
+    "java/nio/file/Path",
+    "toFile",
+    "()Ljava/io/File;",
+    "java/io/File",
+    "exists",
+    "()Z",
+    "de/cristelknight/cristellib/config/ConfigManager",
+    "createPlacementConfig",
+    "(Lde/cristelknight/cristellib/StructureConfigPlacement;)V",
+    "Z",
+    "readConfig",
+    "readPlacementConfig",
+    "(Lde/cristelknight/cristellib/StructureConfigPlacement;)Ljava/util/Map;",
+    "()Ljava/util/Map<Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;>;",
+    "com/google/common/base/Supplier",
+    "getPlacementConfigs",
+    "getConfigKeys",
+    "()Ljava/util/Set;",
+    "()Ljava/util/Set<Lnet/minecraft/resources/ResourceLocation;>;",
+    "keySet",
+    "updatePlacement",
+    "(Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;)V",
+    "key",
+    "config",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "resetConfigs",
+    "getType",
+    "()Lde/cristelknight/cristellib/config/ConfigType;",
+    "de/cristelknight/cristellib/config/ConfigType",
+    "PLACEMENT",
+    "de/cristelknight/cristellib/config/structure/ReadStructureSets",
+    "readSetsAndAddPlacements",
+    "Signature",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "LocalVariableTypeTable",
+    "StackMapTable",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/nio/file/Path;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x1"
+        },
+        {
+          "offset": 3,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 6,
+          "op": "0x59"
+        },
+        {
+          "offset": 7,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 10,
+          "op": "new",
+          "reference": "java/util/ArrayList"
+        },
+        {
+          "offset": 13,
+          "op": "0x59"
+        },
+        {
+          "offset": 14,
+          "op": "invokespecial",
+          "reference": "java/util/ArrayList <init> ()V"
+        },
+        {
+          "offset": 17,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 20,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2c"
+        },
+        {
+          "offset": 2,
+          "op": "0x2b"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/FileHelper janksonPathFromString (Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 6,
+          "op": "0x2d"
+        },
+        {
+          "offset": 7,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 9,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 11,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 14,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x2c"
+        },
+        {
+          "offset": 3,
+          "op": "0x2d"
+        },
+        {
+          "offset": 4,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 6,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfig <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 9,
+          "op": "0x2a"
+        },
+        {
+          "offset": 10,
+          "op": "0x1"
+        },
+        {
+          "offset": 11,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 17,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 72)"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "com/google/common/base/Suppliers memoize (Lcom/google/common/base/Supplier;)Lcom/google/common/base/Supplier;"
+        },
+        {
+          "offset": 25,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement structurePlacement Lcom/google/common/base/Supplier;"
+        },
+        {
+          "offset": 28,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "<init>",
+      "descriptor": "(Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Lde/cristelknight/cristellib/config/ConfigType;Ljava/util/List;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x2c"
+        },
+        {
+          "offset": 3,
+          "op": "0x2d"
+        },
+        {
+          "offset": 4,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 6,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement <init> (Ljava/nio/file/Path;Ljava/lang/String;Ljava/util/Map;Ljava/util/List;)V"
+        },
+        {
+          "offset": 9,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "updatePlacementsInSet",
+      "descriptor": "(Lcom/google/gson/JsonObject;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;Lnet/minecraft/resources/ResourceLocation;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "placement"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject get (Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonElement getAsJsonObject ()Lcom/google/gson/JsonObject;"
+        },
+        {
+          "offset": 9,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 11,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 13,
+          "op": "ldc",
+          "reference": "salt"
+        },
+        {
+          "offset": 15,
+          "op": "0x2c"
+        },
+        {
+          "offset": 16,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig salt ()I"
+        },
+        {
+          "offset": 19,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 22,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 25,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 27,
+          "op": "ldc",
+          "reference": "spacing"
+        },
+        {
+          "offset": 29,
+          "op": "0x2c"
+        },
+        {
+          "offset": 30,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig spacing ()I"
+        },
+        {
+          "offset": 33,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 36,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 39,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 41,
+          "op": "ldc",
+          "reference": "separation"
+        },
+        {
+          "offset": 43,
+          "op": "0x2c"
+        },
+        {
+          "offset": 44,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig separation ()I"
+        },
+        {
+          "offset": 47,
+          "op": "invokestatic",
+          "reference": "java/lang/Integer valueOf (I)Ljava/lang/Integer;"
+        },
+        {
+          "offset": 50,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 53,
+          "op": "0x2c"
+        },
+        {
+          "offset": 54,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig frequency ()D"
+        },
+        {
+          "offset": 57,
+          "op": "0x39",
+          "args": "05"
+        },
+        {
+          "offset": 59,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 61,
+          "op": "ldc",
+          "reference": "frequency"
+        },
+        {
+          "offset": 63,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject has (Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 66,
+          "op": "ifne",
+          "args": "000a"
+        },
+        {
+          "offset": 69,
+          "op": "0x18",
+          "args": "05"
+        },
+        {
+          "offset": 71,
+          "op": "0xf"
+        },
+        {
+          "offset": 72,
+          "op": "0x97"
+        },
+        {
+          "offset": 73,
+          "op": "ifeq",
+          "args": "0029"
+        },
+        {
+          "offset": 76,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 78,
+          "op": "ldc",
+          "reference": "frequency"
+        },
+        {
+          "offset": 80,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject has (Ljava/lang/String;)Z"
+        },
+        {
+          "offset": 83,
+          "op": "ifeq",
+          "args": "0013"
+        },
+        {
+          "offset": 86,
+          "op": "0x18",
+          "args": "05"
+        },
+        {
+          "offset": 88,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 90,
+          "op": "ldc",
+          "reference": "frequency"
+        },
+        {
+          "offset": 92,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject get (Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 95,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonElement getAsDouble ()D"
+        },
+        {
+          "offset": 98,
+          "op": "0x97"
+        },
+        {
+          "offset": 99,
+          "op": "ifeq",
+          "args": "000f"
+        },
+        {
+          "offset": 102,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 104,
+          "op": "ldc",
+          "reference": "frequency"
+        },
+        {
+          "offset": 106,
+          "op": "0x18",
+          "args": "05"
+        },
+        {
+          "offset": 108,
+          "op": "invokestatic",
+          "reference": "java/lang/Double valueOf (D)Ljava/lang/Double;"
+        },
+        {
+          "offset": 111,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/JsonObject addProperty (Ljava/lang/String;Ljava/lang/Number;)V"
+        },
+        {
+          "offset": 114,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addChanges",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 10,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig"
+        },
+        {
+          "offset": 13,
+          "op": "0x4e"
+        },
+        {
+          "offset": 14,
+          "op": "0x2a"
+        },
+        {
+          "offset": 15,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement getDefaultStructurePlacements ()Ljava/util/Map;"
+        },
+        {
+          "offset": 18,
+          "op": "0x2c"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 24,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig"
+        },
+        {
+          "offset": 27,
+          "op": "0x2d"
+        },
+        {
+          "offset": 28,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/structure/placement/PlacementConfig equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 31,
+          "op": "ifeq",
+          "args": "0005"
+        },
+        {
+          "offset": 34,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 35,
+          "op": "ireturn"
+        },
+        {
+          "offset": 36,
+          "op": "0x2c"
+        },
+        {
+          "offset": 37,
+          "op": "0x2b"
+        },
+        {
+          "offset": 38,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement getStructureSet (Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Lcom/google/gson/JsonElement;"
+        },
+        {
+          "offset": 41,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 43,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 45,
+          "op": "0xc1",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 48,
+          "op": "ifeq",
+          "args": "000d"
+        },
+        {
+          "offset": 51,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 53,
+          "op": "checkcast",
+          "reference": "com/google/gson/JsonObject"
+        },
+        {
+          "offset": 56,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 58,
+          "op": "goto",
+          "args": "0011"
+        },
+        {
+          "offset": 61,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 64,
+          "op": "ldc",
+          "reference": "Set for {} {} is not a JsonObject, skipping..."
+        },
+        {
+          "offset": 66,
+          "op": "0x2b"
+        },
+        {
+          "offset": 67,
+          "op": "0x2c"
+        },
+        {
+          "offset": 68,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 73,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 74,
+          "op": "ireturn"
+        },
+        {
+          "offset": 75,
+          "op": "0x2a"
+        },
+        {
+          "offset": 76,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 78,
+          "op": "0x2d"
+        },
+        {
+          "offset": 79,
+          "op": "0x2c"
+        },
+        {
+          "offset": 80,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement updatePlacementsInSet (Lcom/google/gson/JsonObject;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;Lnet/minecraft/resources/ResourceLocation;)V"
+        },
+        {
+          "offset": 83,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/CristelLib CONFIG_PACK Lde/cristelknight/cristellib/builtinpacks/RuntimePack;"
+        },
+        {
+          "offset": 86,
+          "op": "0x2c"
+        },
+        {
+          "offset": 87,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 89,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack addStructureSet (Lnet/minecraft/resources/ResourceLocation;Lcom/google/gson/JsonObject;)[B"
+        },
+        {
+          "offset": 92,
+          "op": "0x57"
+        },
+        {
+          "offset": 93,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 94,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "writeConfig",
+      "descriptor": "(Z)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x1b"
+        },
+        {
+          "offset": 1,
+          "op": "ifne",
+          "args": "0013"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement getPath ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 8,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path toFile ()Ljava/io/File;"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "java/io/File exists ()Z"
+        },
+        {
+          "offset": 16,
+          "op": "ifeq",
+          "args": "0004"
+        },
+        {
+          "offset": 19,
+          "op": "return"
+        },
+        {
+          "offset": 20,
+          "op": "0x2a"
+        },
+        {
+          "offset": 21,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigManager createPlacementConfig (Lde/cristelknight/cristellib/StructureConfigPlacement;)V"
+        },
+        {
+          "offset": 24,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "readConfig",
+      "descriptor": "(Z)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "0xc6",
+          "args": "0007"
+        },
+        {
+          "offset": 7,
+          "op": "0x1b"
+        },
+        {
+          "offset": 8,
+          "op": "ifeq",
+          "args": "000b"
+        },
+        {
+          "offset": 11,
+          "op": "0x2a"
+        },
+        {
+          "offset": 12,
+          "op": "0x2a"
+        },
+        {
+          "offset": 13,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigManager readPlacementConfig (Lde/cristelknight/cristellib/StructureConfigPlacement;)Ljava/util/Map;"
+        },
+        {
+          "offset": 16,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 19,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getDefaultStructurePlacements",
+      "descriptor": "()Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement structurePlacement Lcom/google/common/base/Supplier;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "com/google/common/base/Supplier get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 9,
+          "op": "checkcast",
+          "reference": "java/util/Map"
+        },
+        {
+          "offset": 12,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getPlacementConfigs",
+      "descriptor": "()Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getConfigKeys",
+      "descriptor": "()Ljava/util/Set;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "java/util/Map keySet ()Ljava/util/Set;"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "updatePlacement",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lde/cristelknight/cristellib/config/structure/placement/PlacementConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "getfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2b"
+        },
+        {
+          "offset": 5,
+          "op": "0x2c"
+        },
+        {
+          "offset": 6,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 11,
+          "op": "0x57"
+        },
+        {
+          "offset": 12,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "resetConfigs",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x1"
+        },
+        {
+          "offset": 2,
+          "op": "putfield",
+          "reference": "de/cristelknight/cristellib/StructureConfigPlacement placementConfig Ljava/util/Map;"
+        },
+        {
+          "offset": 5,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getType",
+      "descriptor": "()Lde/cristelknight/cristellib/config/ConfigType;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/config/ConfigType PLACEMENT Lde/cristelknight/cristellib/config/ConfigType;"
+        },
+        {
+          "offset": 3,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$new$0",
+      "descriptor": "(Ljava/util/List;)Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/structure/ReadStructureSets readSetsAndAddPlacements (Ljava/util/List;)Ljava/util/Map;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

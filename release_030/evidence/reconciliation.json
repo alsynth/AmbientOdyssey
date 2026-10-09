@@ -1,0 +1,38 @@
+[
+  {
+    "path": "BIOME-COMPATIBILITY-TEST2.md",
+    "kind": "test4-only"
+  },
+  {
+    "path": "CHANGELOG.md",
+    "kind": "test4-only"
+  },
+  {
+    "path": "STRUCTURE-DENSITY-TEST1.md",
+    "kind": "test4-only"
+  },
+  {
+    "path": "STRUCTURE-TEST3-NOTES.md",
+    "kind": "test4-only"
+  },
+  {
+    "path": "TESTING-0.3.1.md",
+    "kind": "test4-only"
+  },
+  {
+    "path": "config/cristellib/dungeoncrawl/structure_placement_config.json5",
+    "kind": "different"
+  },
+  {
+    "path": "config/cristellib/dungeons_arise/structure_toggle_config.json5",
+    "kind": "different"
+  },
+  {
+    "path": "config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/extra_wda_heavenly_ships.json",
+    "kind": "test4-only"
+  },
+  {
+    "path": "config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/extra_wda_land_and_sky.json",
+    "kind": "different"
+  }
+]

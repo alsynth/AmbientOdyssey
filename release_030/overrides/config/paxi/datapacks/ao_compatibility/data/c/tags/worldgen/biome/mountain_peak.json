@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:highland",
+    "biomesoplenty:volcano",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:shattered_glacier",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges",
+    "natures_spirit:windswept_sugi_forest",
+    "regions_unexplored:icy_heights",
+    "regions_unexplored:rocky_meadow",
+    "regions_unexplored:spires"
+  ]
+}

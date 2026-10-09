@@ -1,0 +1,36 @@
+{
+  "audited_jars": 196,
+  "missing_logged_jars": 41,
+  "new_jars": 19,
+  "new_parse_errors": [
+    {
+      "error": "Expecting ',' delimiter: line 11 column 5 (char 376)",
+      "jar": "traveloptics-4.4.0.1-1.21.1.jar",
+      "path": "data/traveloptics/tags/entity_type/element_fire.json"
+    }
+  ],
+  "resource_counts": {
+    "lithostitched/worldgen_modifier": 1024,
+    "loot_modifiers": 32,
+    "loot_table": 408,
+    "recipe": 141,
+    "tags/entity_type": 17,
+    "tags/item": 1688,
+    "tags/worldgen/biome": 1254,
+    "tags/worldgen/structure": 239,
+    "tags/worldgen/structure_set": 35,
+    "worldgen/biome": 348,
+    "worldgen/configured_feature": 30,
+    "worldgen/placed_feature": 30,
+    "worldgen/processor_list": 343,
+    "worldgen/structure": 1216,
+    "worldgen/structure_set": 666,
+    "worldgen/template_pool": 4294
+  },
+  "scope": {
+    "baseline": "177 complete CRC-verified JARs from original Test 5 audit",
+    "current_complete_local_jars": 26,
+    "extended_categories_scope": "New JARs only; original snapshot was limited to its recorded categories.",
+    "new_complete_jars": 19
+  }
+}

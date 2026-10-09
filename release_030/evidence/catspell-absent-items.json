@@ -1,0 +1,172 @@
+{
+  "registered_item_literals": [
+    "abyss_spell_book",
+    "abyssal_manuscript",
+    "abyssal_rune",
+    "abyssal_upgrade_orb",
+    "abyssal_warlock_boots",
+    "abyssal_warlock_chestplate",
+    "abyssal_warlock_helmet",
+    "abyssal_warlock_leggings",
+    "abyssal_warlock_mask",
+    "adapter",
+    "amber_staff",
+    "ancient_amber",
+    "ancient_ancient_remnant_spawn_egg",
+    "arcane_cog",
+    "blessed_crystallized_manuscript",
+    "bloom_stone_chestplate",
+    "bloom_stone_greaves",
+    "bloom_stone_hat",
+    "bloom_stone_skirt",
+    "bloom_stone_staff",
+    "burning_knowledge_fragment",
+    "burning_manuscript",
+    "cataclysm_spellbooks",
+    "codex_of_malice_spell_book",
+    "coral_staff",
+    "crystallized_manuscript",
+    "cursium_mage_boots",
+    "cursium_mage_chestplate",
+    "cursium_mage_circlet",
+    "cursium_mage_elytra",
+    "cursium_mage_skirt",
+    "desert_spell_book",
+    "disc_driver",
+    "encoded_print",
+    "engineer_boots",
+    "engineer_hood",
+    "engineer_leggings",
+    "engineer_suit",
+    "excelsius_greaves",
+    "excelsius_leggings",
+    "excelsius_power_chestplate",
+    "excelsius_power_visors",
+    "excelsius_resist_chestplate",
+    "excelsius_resist_visors",
+    "excelsius_speed_chestplate",
+    "excelsius_speed_visors",
+    "frozen_knowledge_fragment",
+    "frozen_tablet",
+    "hellfire_forge",
+    "hieroglyph_manuscript",
+    "ignis_boots",
+    "ignis_chestplate",
+    "ignis_chestplate_elytra",
+    "ignis_helmet",
+    "ignis_leggings",
+    "ignis_spell_book",
+    "leviathans_blessing",
+    "monstrous_flamberge",
+    "monstrous_wizard_hat",
+    "necklace_of_the_past",
+    "necklace_of_thoth",
+    "oracle_shulker_shell_script",
+    "pharaoh_chestplate",
+    "pharaoh_greaves",
+    "pharaoh_helmet",
+    "pharaoh_leggings",
+    "soul_brazier",
+    "spellstealer",
+    "spirit_sunderer",
+    "strange_disc",
+    "strange_disc_fragment",
+    "technomancy_rune",
+    "technomancy_upgrade_orb",
+    "void_staff"
+  ],
+  "affected_recipes": [
+    {
+      "recipe": "cataclysm_spellbooks:engineers_power_glove",
+      "absent_items": [
+        "cataclysm_spellbooks:engineers_power_glove"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:excel_upgrade_cooldown",
+      "absent_items": [
+        "cataclysm_spellbooks:excel_upgrade_cooldown",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:excel_upgrade_mana",
+      "absent_items": [
+        "cataclysm_spellbooks:excel_upgrade_mana",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:excel_upgrade_resistence",
+      "absent_items": [
+        "cataclysm_spellbooks:excel_upgrade_resistence",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:mechanical_brace",
+      "absent_items": [
+        "cataclysm_spellbooks:mechanical_brace",
+        "cataclysm_spellbooks:mechanical_scrap"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:murasama",
+      "absent_items": [
+        "cataclysm_spellbooks:mechanical_scrap",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:murasama_blade"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:the_berserker_upgrade",
+      "absent_items": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:the_berserker"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:the_combuster_upgrade",
+      "absent_items": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:the_combuster"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:the_nightstalker_upgrade",
+      "absent_items": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:mechanical_weapon_parts",
+        "cataclysm_spellbooks:the_nightstalker"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:the_ordeal_upgrade",
+      "absent_items": [
+        "cataclysm_spellbooks:engineers_power_glove",
+        "cataclysm_spellbooks:gauntlet_of_power"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    },
+    {
+      "recipe": "cataclysm_spellbooks:the_subjugator_upgrade",
+      "absent_items": [
+        "cataclysm_spellbooks:gauntlet_of_gattling",
+        "cataclysm_spellbooks:gauntlet_of_power"
+      ],
+      "action": "Skip uncraftable native recipe with NeoForge condition; preserve payload; no fabricated replacements"
+    }
+  ],
+  "loot_modifier_alias": "Existing global list points to absent prison suffix; exact present native cursed_pyramid_modifier reused, existing table verified."
+}

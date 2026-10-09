@@ -1,0 +1,15 @@
+{
+  "source_archive_sha256": "547223d454a3923b5711099f43a0aa92766d2d997042b379a2efaf9177fef43b",
+  "import_archive_sha256": "abe813ca2765e83a6b5c8c75c9d159e7612ccaf6755143c6e646f322374c45e0",
+  "fresh_rebuild_sha256": "abe813ca2765e83a6b5c8c75c9d159e7612ccaf6755143c6e646f322374c45e0",
+  "scoped_static_checks": 76,
+  "gameplay_tested": false,
+  "original_catalogue_regeneration": {
+    "STRUCTURE_BIOME_AUDIT.md": true,
+    "STRUCTURE_REGISTRY_CATALOG.csv": true,
+    "STRUCTURE_SET_CATALOG.csv": true,
+    "STRUCTURE_BIOME_MATRIX.csv": true
+  },
+  "python": "3.12.14",
+  "external_python_dependencies": []
+}

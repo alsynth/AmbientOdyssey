@@ -1,0 +1,445 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/neoforge/client/CristelLibNeoForgeClient",
+    "java/lang/Object",
+    "CristelLibNeoForgeClient.java",
+    "Lnet/neoforged/fml/common/EventBusSubscriber;",
+    "modid",
+    "cristellib",
+    "value",
+    "Lnet/neoforged/api/distmarker/Dist;",
+    "CLIENT",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/neoforge/client/CristelLibNeoForgeClient;",
+    "registerMainConfigScreen",
+    "net/neoforged/fml/ModLoadingContext",
+    "get",
+    "()Lnet/neoforged/fml/ModLoadingContext;",
+    "net/neoforged/neoforge/client/gui/IConfigScreenFactory",
+    "()Ljava/lang/Object;",
+    "lambda$registerMainConfigScreen$1",
+    "()Lnet/neoforged/neoforge/client/gui/IConfigScreenFactory;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "()Ljava/util/function/Supplier;",
+    "registerExtensionPoint",
+    "(Ljava/lang/Class;Ljava/util/function/Supplier;)V",
+    "addOtherConfigScreens",
+    "de/cristelknight/cristellib/config/client/ScreenBuilder",
+    "allModsWithScreen",
+    "()Ljava/util/Set;",
+    "java/util/Set",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Iterator",
+    "hasNext",
+    "()Z",
+    "next",
+    "java/lang/String",
+    "net/neoforged/fml/ModList",
+    "()Lnet/neoforged/fml/ModList;",
+    "getModContainerById",
+    "(Ljava/lang/String;)Ljava/util/Optional;",
+    "java/util/Optional",
+    "isEmpty",
+    "net/neoforged/fml/ModContainer",
+    "getCustomExtension",
+    "(Ljava/lang/Class;)Ljava/util/Optional;",
+    "isPresent",
+    "(Lnet/neoforged/fml/ModContainer;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;",
+    "lambda$addOtherConfigScreens$2",
+    "(Ljava/lang/String;Lnet/neoforged/fml/ModContainer;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;",
+    "createScreen",
+    "(Ljava/lang/String;)Lnet/neoforged/neoforge/client/gui/IConfigScreenFactory;",
+    "(Ljava/lang/Class;Lnet/neoforged/fml/IExtensionPoint;)V",
+    "container",
+    "Ljava/util/Optional<+Lnet/neoforged/fml/ModContainer;>;",
+    "Ljava/util/Optional;",
+    "modId",
+    "Ljava/lang/String;",
+    "onLoadComplete",
+    "(Lnet/neoforged/fml/event/lifecycle/FMLLoadCompleteEvent;)V",
+    "event",
+    "Lnet/neoforged/bus/api/SubscribeEvent;",
+    "de/cristelknight/cristellib/util/Util",
+    "isClothConfigLoaded",
+    "run",
+    "()Ljava/lang/Runnable;",
+    "net/neoforged/fml/event/lifecycle/FMLLoadCompleteEvent",
+    "enqueueWork",
+    "(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;",
+    "Lnet/neoforged/fml/event/lifecycle/FMLLoadCompleteEvent;",
+    "mc",
+    "screenFactory",
+    "(Ljava/lang/String;)V",
+    "create",
+    "(Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;",
+    "Lnet/neoforged/fml/ModContainer;",
+    "Lnet/minecraft/client/gui/screens/Screen;",
+    "lambda$registerMainConfigScreen$0",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "StackMapTable",
+    "LocalVariableTypeTable",
+    "RuntimeVisibleAnnotations",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "registerMainConfigScreen",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/neoforged/fml/ModLoadingContext get ()Lnet/neoforged/fml/ModLoadingContext;"
+        },
+        {
+          "offset": 3,
+          "op": "ldc",
+          "reference": "net/neoforged/neoforge/client/gui/IConfigScreenFactory"
+        },
+        {
+          "offset": 5,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 48)"
+        },
+        {
+          "offset": 10,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModLoadingContext registerExtensionPoint (Ljava/lang/Class;Ljava/util/function/Supplier;)V"
+        },
+        {
+          "offset": 13,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "addOtherConfigScreens",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder allModsWithScreen ()Ljava/util/Set;"
+        },
+        {
+          "offset": 3,
+          "op": "invokeinterface",
+          "reference": "java/util/Set iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 8,
+          "op": "0x4b"
+        },
+        {
+          "offset": 9,
+          "op": "0x2a"
+        },
+        {
+          "offset": 10,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 15,
+          "op": "ifeq",
+          "args": "0046"
+        },
+        {
+          "offset": 18,
+          "op": "0x2a"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 24,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 27,
+          "op": "0x4c"
+        },
+        {
+          "offset": 28,
+          "op": "invokestatic",
+          "reference": "net/neoforged/fml/ModList get ()Lnet/neoforged/fml/ModList;"
+        },
+        {
+          "offset": 31,
+          "op": "0x2b"
+        },
+        {
+          "offset": 32,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModList getModContainerById (Ljava/lang/String;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 35,
+          "op": "0x4d"
+        },
+        {
+          "offset": 36,
+          "op": "0x2c"
+        },
+        {
+          "offset": 37,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional isEmpty ()Z"
+        },
+        {
+          "offset": 40,
+          "op": "ifne",
+          "args": "ffe1"
+        },
+        {
+          "offset": 43,
+          "op": "0x2c"
+        },
+        {
+          "offset": 44,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 47,
+          "op": "checkcast",
+          "reference": "net/neoforged/fml/ModContainer"
+        },
+        {
+          "offset": 50,
+          "op": "ldc",
+          "reference": "net/neoforged/neoforge/client/gui/IConfigScreenFactory"
+        },
+        {
+          "offset": 52,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModContainer getCustomExtension (Ljava/lang/Class;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 55,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional isPresent ()Z"
+        },
+        {
+          "offset": 58,
+          "op": "ifeq",
+          "args": "0006"
+        },
+        {
+          "offset": 61,
+          "op": "goto",
+          "args": "ffcc"
+        },
+        {
+          "offset": 64,
+          "op": "0x2c"
+        },
+        {
+          "offset": 65,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 68,
+          "op": "checkcast",
+          "reference": "net/neoforged/fml/ModContainer"
+        },
+        {
+          "offset": 71,
+          "op": "ldc",
+          "reference": "net/neoforged/neoforge/client/gui/IConfigScreenFactory"
+        },
+        {
+          "offset": 73,
+          "op": "0x2b"
+        },
+        {
+          "offset": 74,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 112)"
+        },
+        {
+          "offset": 79,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModContainer registerExtensionPoint (Ljava/lang/Class;Lnet/neoforged/fml/IExtensionPoint;)V"
+        },
+        {
+          "offset": 82,
+          "op": "goto",
+          "args": "ffb7"
+        },
+        {
+          "offset": 85,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "onLoadComplete",
+      "descriptor": "(Lnet/neoforged/fml/event/lifecycle/FMLLoadCompleteEvent;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util isClothConfigLoaded ()Z"
+        },
+        {
+          "offset": 3,
+          "op": "ifne",
+          "args": "0004"
+        },
+        {
+          "offset": 6,
+          "op": "return"
+        },
+        {
+          "offset": 7,
+          "op": "0x2a"
+        },
+        {
+          "offset": 8,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 137)"
+        },
+        {
+          "offset": 13,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/event/lifecycle/FMLLoadCompleteEvent enqueueWork (Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;"
+        },
+        {
+          "offset": 16,
+          "op": "0x57"
+        },
+        {
+          "offset": 17,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$addOtherConfigScreens$2",
+      "descriptor": "(Ljava/lang/String;Lnet/neoforged/fml/ModContainer;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder <init> (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 8,
+          "op": "0x2c"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder create (Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;"
+        },
+        {
+          "offset": 12,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$registerMainConfigScreen$1",
+      "descriptor": "()Lnet/neoforged/neoforge/client/gui/IConfigScreenFactory;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 161)"
+        },
+        {
+          "offset": 5,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$registerMainConfigScreen$0",
+      "descriptor": "(Lnet/neoforged/fml/ModContainer;Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "ldc",
+          "reference": "cristellib"
+        },
+        {
+          "offset": 6,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder <init> (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 9,
+          "op": "0x2b"
+        },
+        {
+          "offset": 10,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/config/client/ScreenBuilder create (Lnet/minecraft/client/gui/screens/Screen;)Lnet/minecraft/client/gui/screens/Screen;"
+        },
+        {
+          "offset": 13,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

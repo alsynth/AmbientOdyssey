@@ -1,0 +1,1521 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/neoforge/PlatformHelperImpl",
+    "java/lang/Object",
+    "PlatformHelperImpl.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/neoforge/PlatformHelperImpl;",
+    "getConfigDirectory",
+    "()Ljava/nio/file/Path;",
+    "net/neoforged/fml/loading/FMLPaths",
+    "CONFIGDIR",
+    "Lnet/neoforged/fml/loading/FMLPaths;",
+    "get",
+    "getResourceStream",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;",
+    "modId",
+    "subPath",
+    "java/io/IOException",
+    "getResourceDirectory",
+    "(Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;",
+    "java/nio/file/Path",
+    "java/nio/file/OpenOption",
+    "java/nio/file/Files",
+    "newInputStream",
+    "(Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Couldn't create Input Stream for Path {}",
+    "org/apache/logging/log4j/Logger",
+    "warn",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "java/lang/String",
+    "java/io/InputStream",
+    "inputStream",
+    "Ljava/io/InputStream;",
+    "e",
+    "Ljava/io/IOException;",
+    "Ljava/lang/String;",
+    "pathC",
+    "Ljava/nio/file/Path;",
+    "registerBuiltinResourcePack",
+    "(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/Component;)Lcom/mojang/datafixers/util/Pair;",
+    "(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/Component;)Lcom/mojang/datafixers/util/Pair<Lnet/minecraft/server/packs/PackResources;Lnet/minecraft/server/packs/PackResources;>;",
+    "id",
+    "displayName",
+    "net/minecraft/resources/ResourceLocation",
+    "getNamespace",
+    "()Ljava/lang/String;",
+    "getPath",
+    "net/minecraft/server/packs/PackLocationInfo",
+    "toString",
+    "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource",
+    "java/util/Optional",
+    "empty",
+    "()Ljava/util/Optional;",
+    "(Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackSource;Ljava/util/Optional;)V",
+    "net/minecraft/server/packs/PathPackResources",
+    "(Lnet/minecraft/server/packs/PackLocationInfo;Ljava/nio/file/Path;)V",
+    "com/mojang/datafixers/util/Pair",
+    "net/minecraft/server/packs/PackType",
+    "SERVER_DATA",
+    "Lnet/minecraft/server/packs/PackType;",
+    "getNamespaces",
+    "(Lnet/minecraft/server/packs/PackType;)Ljava/util/Set;",
+    "java/util/Set",
+    "isEmpty",
+    "()Z",
+    "net/minecraft/network/chat/Component",
+    "net/minecraft/server/packs/PackResources",
+    "CLIENT_RESOURCES",
+    "(Ljava/lang/Object;Ljava/lang/Object;)V",
+    "Couldn't find path: {} in container for modID: {} for pack with display name: {}",
+    "debug",
+    "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V",
+    "metadata",
+    "Lnet/minecraft/server/packs/PackLocationInfo;",
+    "server",
+    "Lnet/minecraft/server/packs/PathPackResources;",
+    "client",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "Lnet/minecraft/network/chat/Component;",
+    "modID",
+    "path",
+    "totalPath",
+    "createOverlay",
+    "(Lnet/minecraft/server/packs/PackResources;Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;",
+    "pack",
+    "overlay",
+    "de/cristelknight/cristellib/neoforge/mixin/PathPackResourcesAccessor",
+    "Couldn't create overlay for Pack: {}, because it does not support overlays",
+    "packId",
+    "(Ljava/lang/String;Ljava/lang/Object;)V",
+    "location",
+    "()Lnet/minecraft/server/packs/PackLocationInfo;",
+    "cristellib$getRoot",
+    "resolve",
+    "(Ljava/lang/String;)Ljava/nio/file/Path;",
+    "accessor",
+    "Lde/cristelknight/cristellib/neoforge/mixin/PathPackResourcesAccessor;",
+    "Lnet/minecraft/server/packs/PackResources;",
+    "getModDisplayName",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "net/neoforged/fml/ModList",
+    "()Lnet/neoforged/fml/ModList;",
+    "getModContainerById",
+    "(Ljava/lang/String;)Ljava/util/Optional;",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "lambda$getModDisplayName$0",
+    "(Lnet/neoforged/fml/ModContainer;)Ljava/lang/String;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "apply",
+    "()Ljava/util/function/Function;",
+    "map",
+    "(Ljava/util/function/Function;)Ljava/util/Optional;",
+    "orElse",
+    "getPlatform",
+    "()Lde/cristelknight/cristellib/util/Platform;",
+    "de/cristelknight/cristellib/util/Platform",
+    "NEO_FORGE",
+    "Lde/cristelknight/cristellib/util/Platform;",
+    "isClient",
+    "net/neoforged/fml/loading/FMLEnvironment",
+    "dist",
+    "Lnet/neoforged/api/distmarker/Dist;",
+    "net/neoforged/api/distmarker/Dist",
+    "findInModFiles",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/function/Consumer;)V",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Predicate<Ljava/nio/file/Path;>;Ljava/util/function/Consumer<Ljava/lang/String;>;)V",
+    "startingFolder",
+    "fileFilter",
+    "consumer",
+    "getModFile",
+    "(Ljava/lang/String;)Lnet/neoforged/neoforgespi/locating/IModFile;",
+    "net/neoforged/neoforgespi/locating/IModFile",
+    "de/cristelknight/cristellib/data/PathFinder",
+    "walk",
+    "(Ljava/nio/file/Path;Ljava/util/function/Predicate;Ljava/util/function/Consumer;)V",
+    "java/lang/RuntimeException",
+    "Error while trying to walk through mod files",
+    "getWithPrefix",
+    "(Ljava/lang/String;Ljava/lang/Throwable;)V",
+    "Ljava/util/function/Predicate<Ljava/nio/file/Path;>;",
+    "Ljava/util/function/Predicate;",
+    "Ljava/util/function/Consumer<Ljava/lang/String;>;",
+    "Ljava/util/function/Consumer;",
+    "file",
+    "Lnet/neoforged/neoforgespi/locating/IModFile;",
+    "getApis",
+    "()Ljava/util/Map;",
+    "()Ljava/util/Map<Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;>;",
+    "java/util/HashMap",
+    "de/cristelknight/cristellib/api/CristelPlugin",
+    "de/cristelknight/cristellib/api/CristelLibAPI",
+    "de/cristelknight/cristellib/neoforge/extraapiutil/APIFinder",
+    "scanForAPIs",
+    "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;",
+    "java/util/List",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/Map",
+    "java/util/Iterator",
+    "hasNext",
+    "next",
+    "()Ljava/lang/Object;",
+    "getFirst",
+    "getSecond",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "apiPair",
+    "Lcom/mojang/datafixers/util/Pair<Ljava/util/List<Ljava/lang/String;>;Lde/cristelknight/cristellib/api/CristelLibAPI;>;",
+    "Lcom/mojang/datafixers/util/Pair;",
+    "apiMap",
+    "Ljava/util/Map<Ljava/lang/String;Lde/cristelknight/cristellib/api/CristelLibAPI;>;",
+    "Ljava/util/Map;",
+    "apis",
+    "Ljava/util/List<Lcom/mojang/datafixers/util/Pair<Ljava/util/List<Ljava/lang/String;>;Lde/cristelknight/cristellib/api/CristelLibAPI;>;>;",
+    "Ljava/util/List;",
+    "isDevelopmentEnvironment",
+    "net/neoforged/fml/loading/FMLLoader",
+    "isProduction",
+    "de/cristelknight/cristellib/neoforge/ModLoadingUtilImpl",
+    "getPreLoadedModInfo",
+    "(Ljava/lang/String;)Lnet/neoforged/fml/loading/moddiscovery/ModInfo;",
+    "Mod info for modId: {} is null",
+    "net/neoforged/fml/loading/moddiscovery/ModInfo",
+    "getOwningFile",
+    "()Lnet/neoforged/fml/loading/moddiscovery/ModFileInfo;",
+    "net/neoforged/fml/loading/moddiscovery/ModFileInfo",
+    "getFile",
+    "()Lnet/neoforged/fml/loading/moddiscovery/ModFile;",
+    "net/neoforged/fml/ModContainer",
+    "Mod container for modId: {} is null",
+    "getModInfo",
+    "()Lnet/neoforged/neoforgespi/language/IModInfo;",
+    "net/neoforged/neoforgespi/language/IModInfo",
+    "()Lnet/neoforged/neoforgespi/language/IModFileInfo;",
+    "net/neoforged/neoforgespi/language/IModFileInfo",
+    "()Lnet/neoforged/neoforgespi/locating/IModFile;",
+    "info",
+    "Lnet/neoforged/fml/loading/moddiscovery/ModInfo;",
+    "container",
+    "Lnet/neoforged/fml/ModContainer;",
+    "modList",
+    "Lnet/neoforged/fml/ModList;",
+    "Lorg/jetbrains/annotations/Nullable;",
+    "findResource",
+    "([Ljava/lang/String;)Ljava/nio/file/Path;",
+    "Path for subPath: {} in modId: {} is null",
+    "getDisplayName",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "StackMapTable",
+    "MethodParameters",
+    "Signature",
+    "LocalVariableTypeTable",
+    "RuntimeInvisibleAnnotations",
+    "RuntimeInvisibleTypeAnnotations",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getConfigDirectory",
+      "descriptor": "()Ljava/nio/file/Path;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/neoforged/fml/loading/FMLPaths CONFIGDIR Lnet/neoforged/fml/loading/FMLPaths;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/loading/FMLPaths get ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getResourceStream",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/InputStream;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/PlatformHelperImpl getResourceDirectory (Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 5,
+          "op": "0x4e"
+        },
+        {
+          "offset": 6,
+          "op": "0x2d"
+        },
+        {
+          "offset": 7,
+          "op": "0xc7",
+          "args": "0005"
+        },
+        {
+          "offset": 10,
+          "op": "0x1"
+        },
+        {
+          "offset": 11,
+          "op": "areturn"
+        },
+        {
+          "offset": 12,
+          "op": "0x2d"
+        },
+        {
+          "offset": 13,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 14,
+          "op": "0xbd",
+          "reference": "java/nio/file/OpenOption"
+        },
+        {
+          "offset": 17,
+          "op": "invokestatic",
+          "reference": "java/nio/file/Files newInputStream (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;"
+        },
+        {
+          "offset": 20,
+          "op": "0x4d"
+        },
+        {
+          "offset": 21,
+          "op": "goto",
+          "args": "0014"
+        },
+        {
+          "offset": 24,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 26,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 29,
+          "op": "ldc",
+          "reference": "Couldn't create Input Stream for Path {}"
+        },
+        {
+          "offset": 31,
+          "op": "0x2d"
+        },
+        {
+          "offset": 32,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 34,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 39,
+          "op": "0x1"
+        },
+        {
+          "offset": 40,
+          "op": "areturn"
+        },
+        {
+          "offset": 41,
+          "op": "0x2c"
+        },
+        {
+          "offset": 42,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "registerBuiltinResourcePack",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/network/chat/Component;)Lcom/mojang/datafixers/util/Pair;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 4,
+          "op": "0x4d"
+        },
+        {
+          "offset": 5,
+          "op": "0x2a"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 9,
+          "op": "0x4e"
+        },
+        {
+          "offset": 10,
+          "op": "0x2c"
+        },
+        {
+          "offset": 11,
+          "op": "0x2a"
+        },
+        {
+          "offset": 12,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 15,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/PlatformHelperImpl getResourceDirectory (Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 18,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 20,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 22,
+          "op": "0xc6",
+          "args": "0069"
+        },
+        {
+          "offset": 25,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/PackLocationInfo"
+        },
+        {
+          "offset": 28,
+          "op": "0x59"
+        },
+        {
+          "offset": 29,
+          "op": "0x2a"
+        },
+        {
+          "offset": 30,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation toString ()Ljava/lang/String;"
+        },
+        {
+          "offset": 33,
+          "op": "0x2b"
+        },
+        {
+          "offset": 34,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource"
+        },
+        {
+          "offset": 37,
+          "op": "0x59"
+        },
+        {
+          "offset": 38,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltinResourcePackSource <init> ()V"
+        },
+        {
+          "offset": 41,
+          "op": "invokestatic",
+          "reference": "java/util/Optional empty ()Ljava/util/Optional;"
+        },
+        {
+          "offset": 44,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/PackLocationInfo <init> (Ljava/lang/String;Lnet/minecraft/network/chat/Component;Lnet/minecraft/server/packs/repository/PackSource;Ljava/util/Optional;)V"
+        },
+        {
+          "offset": 47,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 49,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/PathPackResources"
+        },
+        {
+          "offset": 52,
+          "op": "0x59"
+        },
+        {
+          "offset": 53,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 55,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 57,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/PathPackResources <init> (Lnet/minecraft/server/packs/PackLocationInfo;Ljava/nio/file/Path;)V"
+        },
+        {
+          "offset": 60,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 62,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/PathPackResources"
+        },
+        {
+          "offset": 65,
+          "op": "0x59"
+        },
+        {
+          "offset": 66,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 68,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 70,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/PathPackResources <init> (Lnet/minecraft/server/packs/PackLocationInfo;Ljava/nio/file/Path;)V"
+        },
+        {
+          "offset": 73,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 75,
+          "op": "new",
+          "reference": "com/mojang/datafixers/util/Pair"
+        },
+        {
+          "offset": 78,
+          "op": "0x59"
+        },
+        {
+          "offset": 79,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 81,
+          "op": "getstatic",
+          "reference": "net/minecraft/server/packs/PackType SERVER_DATA Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 84,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/server/packs/PathPackResources getNamespaces (Lnet/minecraft/server/packs/PackType;)Ljava/util/Set;"
+        },
+        {
+          "offset": 87,
+          "op": "invokeinterface",
+          "reference": "java/util/Set isEmpty ()Z"
+        },
+        {
+          "offset": 92,
+          "op": "ifeq",
+          "args": "0007"
+        },
+        {
+          "offset": 95,
+          "op": "0x1"
+        },
+        {
+          "offset": 96,
+          "op": "goto",
+          "args": "0005"
+        },
+        {
+          "offset": 99,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 101,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 103,
+          "op": "getstatic",
+          "reference": "net/minecraft/server/packs/PackType CLIENT_RESOURCES Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 106,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/server/packs/PathPackResources getNamespaces (Lnet/minecraft/server/packs/PackType;)Ljava/util/Set;"
+        },
+        {
+          "offset": 109,
+          "op": "invokeinterface",
+          "reference": "java/util/Set isEmpty ()Z"
+        },
+        {
+          "offset": 114,
+          "op": "ifeq",
+          "args": "0007"
+        },
+        {
+          "offset": 117,
+          "op": "0x1"
+        },
+        {
+          "offset": 118,
+          "op": "goto",
+          "args": "0005"
+        },
+        {
+          "offset": 121,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 123,
+          "op": "invokespecial",
+          "reference": "com/mojang/datafixers/util/Pair <init> (Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 126,
+          "op": "areturn"
+        },
+        {
+          "offset": 127,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 130,
+          "op": "ldc",
+          "reference": "Couldn't find path: {} in container for modID: {} for pack with display name: {}"
+        },
+        {
+          "offset": 132,
+          "op": "0x2d"
+        },
+        {
+          "offset": 133,
+          "op": "0x2c"
+        },
+        {
+          "offset": 134,
+          "op": "0x2b"
+        },
+        {
+          "offset": 135,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger debug (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 140,
+          "op": "0x1"
+        },
+        {
+          "offset": 141,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "createOverlay",
+      "descriptor": "(Lnet/minecraft/server/packs/PackResources;Ljava/lang/String;)Lnet/minecraft/server/packs/PackResources;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0xc1",
+          "reference": "de/cristelknight/cristellib/neoforge/mixin/PathPackResourcesAccessor"
+        },
+        {
+          "offset": 4,
+          "op": "ifeq",
+          "args": "000b"
+        },
+        {
+          "offset": 7,
+          "op": "0x2a"
+        },
+        {
+          "offset": 8,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/neoforge/mixin/PathPackResourcesAccessor"
+        },
+        {
+          "offset": 11,
+          "op": "0x4d"
+        },
+        {
+          "offset": 12,
+          "op": "goto",
+          "args": "0015"
+        },
+        {
+          "offset": 15,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 18,
+          "op": "ldc",
+          "reference": "Couldn't create overlay for Pack: {}, because it does not support overlays"
+        },
+        {
+          "offset": 20,
+          "op": "0x2a"
+        },
+        {
+          "offset": 21,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/PackResources packId ()Ljava/lang/String;"
+        },
+        {
+          "offset": 26,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 31,
+          "op": "0x1"
+        },
+        {
+          "offset": 32,
+          "op": "areturn"
+        },
+        {
+          "offset": 33,
+          "op": "new",
+          "reference": "net/minecraft/server/packs/PathPackResources"
+        },
+        {
+          "offset": 36,
+          "op": "0x59"
+        },
+        {
+          "offset": 37,
+          "op": "0x2a"
+        },
+        {
+          "offset": 38,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/server/packs/PackResources location ()Lnet/minecraft/server/packs/PackLocationInfo;"
+        },
+        {
+          "offset": 43,
+          "op": "0x2c"
+        },
+        {
+          "offset": 44,
+          "op": "invokeinterface",
+          "reference": "de/cristelknight/cristellib/neoforge/mixin/PathPackResourcesAccessor cristellib$getRoot ()Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 49,
+          "op": "0x2b"
+        },
+        {
+          "offset": 50,
+          "op": "invokeinterface",
+          "reference": "java/nio/file/Path resolve (Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 55,
+          "op": "invokespecial",
+          "reference": "net/minecraft/server/packs/PathPackResources <init> (Lnet/minecraft/server/packs/PackLocationInfo;Ljava/nio/file/Path;)V"
+        },
+        {
+          "offset": 58,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getModDisplayName",
+      "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/neoforged/fml/ModList get ()Lnet/neoforged/fml/ModList;"
+        },
+        {
+          "offset": 3,
+          "op": "0x2a"
+        },
+        {
+          "offset": 4,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModList getModContainerById (Ljava/lang/String;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 7,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 209)"
+        },
+        {
+          "offset": 12,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional map (Ljava/util/function/Function;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 15,
+          "op": "0x2a"
+        },
+        {
+          "offset": 16,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional orElse (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 19,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 22,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getPlatform",
+      "descriptor": "()Lde/cristelknight/cristellib/util/Platform;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/util/Platform NEO_FORGE Lde/cristelknight/cristellib/util/Platform;"
+        },
+        {
+          "offset": 3,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "isClient",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/neoforged/fml/loading/FMLEnvironment dist Lnet/neoforged/api/distmarker/Dist;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/api/distmarker/Dist isClient ()Z"
+        },
+        {
+          "offset": 6,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "findInModFiles",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Predicate;Ljava/util/function/Consumer;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/PlatformHelperImpl getModFile (Ljava/lang/String;)Lnet/neoforged/neoforgespi/locating/IModFile;"
+        },
+        {
+          "offset": 4,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 6,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 8,
+          "op": "0xc7",
+          "args": "0004"
+        },
+        {
+          "offset": 11,
+          "op": "return"
+        },
+        {
+          "offset": 12,
+          "op": "0x2a"
+        },
+        {
+          "offset": 13,
+          "op": "0x2b"
+        },
+        {
+          "offset": 14,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/PlatformHelperImpl getResourceDirectory (Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 17,
+          "op": "0x2c"
+        },
+        {
+          "offset": 18,
+          "op": "0x2d"
+        },
+        {
+          "offset": 19,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/data/PathFinder walk (Ljava/nio/file/Path;Ljava/util/function/Predicate;Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 22,
+          "op": "goto",
+          "args": "0015"
+        },
+        {
+          "offset": 25,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 27,
+          "op": "new",
+          "reference": "java/lang/RuntimeException"
+        },
+        {
+          "offset": 30,
+          "op": "0x59"
+        },
+        {
+          "offset": 31,
+          "op": "ldc_w",
+          "reference": "Error while trying to walk through mod files"
+        },
+        {
+          "offset": 34,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/Constants getWithPrefix (Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "offset": 37,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 39,
+          "op": "invokespecial",
+          "reference": "java/lang/RuntimeException <init> (Ljava/lang/String;Ljava/lang/Throwable;)V"
+        },
+        {
+          "offset": 42,
+          "op": "0xbf"
+        },
+        {
+          "offset": 43,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getApis",
+      "descriptor": "()Ljava/util/Map;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "0x4b"
+        },
+        {
+          "offset": 8,
+          "op": "ldc_w",
+          "reference": "de/cristelknight/cristellib/api/CristelPlugin"
+        },
+        {
+          "offset": 11,
+          "op": "ldc_w",
+          "reference": "de/cristelknight/cristellib/api/CristelLibAPI"
+        },
+        {
+          "offset": 14,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/extraapiutil/APIFinder scanForAPIs (Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;"
+        },
+        {
+          "offset": 17,
+          "op": "0x4c"
+        },
+        {
+          "offset": 18,
+          "op": "0x2b"
+        },
+        {
+          "offset": 19,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 24,
+          "op": "0x4d"
+        },
+        {
+          "offset": 25,
+          "op": "0x2c"
+        },
+        {
+          "offset": 26,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 31,
+          "op": "ifeq",
+          "args": "0031"
+        },
+        {
+          "offset": 34,
+          "op": "0x2c"
+        },
+        {
+          "offset": 35,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 40,
+          "op": "checkcast",
+          "reference": "com/mojang/datafixers/util/Pair"
+        },
+        {
+          "offset": 43,
+          "op": "0x4e"
+        },
+        {
+          "offset": 44,
+          "op": "0x2d"
+        },
+        {
+          "offset": 45,
+          "op": "invokevirtual",
+          "reference": "com/mojang/datafixers/util/Pair getFirst ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 48,
+          "op": "checkcast",
+          "reference": "java/util/List"
+        },
+        {
+          "offset": 51,
+          "op": "invokeinterface",
+          "reference": "java/util/List getFirst ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 56,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 59,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 61,
+          "op": "0x2a"
+        },
+        {
+          "offset": 62,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 64,
+          "op": "0x2d"
+        },
+        {
+          "offset": 65,
+          "op": "invokevirtual",
+          "reference": "com/mojang/datafixers/util/Pair getSecond ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 68,
+          "op": "checkcast",
+          "reference": "de/cristelknight/cristellib/api/CristelLibAPI"
+        },
+        {
+          "offset": 71,
+          "op": "invokeinterface",
+          "reference": "java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 76,
+          "op": "0x57"
+        },
+        {
+          "offset": 77,
+          "op": "goto",
+          "args": "ffcc"
+        },
+        {
+          "offset": 80,
+          "op": "0x2a"
+        },
+        {
+          "offset": 81,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "isDevelopmentEnvironment",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/neoforged/fml/loading/FMLLoader isProduction ()Z"
+        },
+        {
+          "offset": 3,
+          "op": "ifne",
+          "args": "0007"
+        },
+        {
+          "offset": 6,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 7,
+          "op": "goto",
+          "args": "0004"
+        },
+        {
+          "offset": 10,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 11,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "getModFile",
+      "descriptor": "(Ljava/lang/String;)Lnet/neoforged/neoforgespi/locating/IModFile;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "net/neoforged/fml/ModList get ()Lnet/neoforged/fml/ModList;"
+        },
+        {
+          "offset": 3,
+          "op": "0x4c"
+        },
+        {
+          "offset": 4,
+          "op": "0x2b"
+        },
+        {
+          "offset": 5,
+          "op": "0xc7",
+          "args": "0025"
+        },
+        {
+          "offset": 8,
+          "op": "0x2a"
+        },
+        {
+          "offset": 9,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/ModLoadingUtilImpl getPreLoadedModInfo (Ljava/lang/String;)Lnet/neoforged/fml/loading/moddiscovery/ModInfo;"
+        },
+        {
+          "offset": 12,
+          "op": "0x4e"
+        },
+        {
+          "offset": 13,
+          "op": "0x2d"
+        },
+        {
+          "offset": 14,
+          "op": "0xc7",
+          "args": "0011"
+        },
+        {
+          "offset": 17,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 20,
+          "op": "ldc_w",
+          "reference": "Mod info for modId: {} is null"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 29,
+          "op": "0x1"
+        },
+        {
+          "offset": 30,
+          "op": "areturn"
+        },
+        {
+          "offset": 31,
+          "op": "0x2d"
+        },
+        {
+          "offset": 32,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/loading/moddiscovery/ModInfo getOwningFile ()Lnet/neoforged/fml/loading/moddiscovery/ModFileInfo;"
+        },
+        {
+          "offset": 35,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/loading/moddiscovery/ModFileInfo getFile ()Lnet/neoforged/fml/loading/moddiscovery/ModFile;"
+        },
+        {
+          "offset": 38,
+          "op": "0x4d"
+        },
+        {
+          "offset": 39,
+          "op": "goto",
+          "args": "0031"
+        },
+        {
+          "offset": 42,
+          "op": "0x2b"
+        },
+        {
+          "offset": 43,
+          "op": "0x2a"
+        },
+        {
+          "offset": 44,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModList getModContainerById (Ljava/lang/String;)Ljava/util/Optional;"
+        },
+        {
+          "offset": 47,
+          "op": "0x1"
+        },
+        {
+          "offset": 48,
+          "op": "invokevirtual",
+          "reference": "java/util/Optional orElse (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 51,
+          "op": "checkcast",
+          "reference": "net/neoforged/fml/ModContainer"
+        },
+        {
+          "offset": 54,
+          "op": "0x4e"
+        },
+        {
+          "offset": 55,
+          "op": "0x2d"
+        },
+        {
+          "offset": 56,
+          "op": "0xc7",
+          "args": "0011"
+        },
+        {
+          "offset": 59,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 62,
+          "op": "ldc_w",
+          "reference": "Mod container for modId: {} is null"
+        },
+        {
+          "offset": 65,
+          "op": "0x2a"
+        },
+        {
+          "offset": 66,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 71,
+          "op": "0x1"
+        },
+        {
+          "offset": 72,
+          "op": "areturn"
+        },
+        {
+          "offset": 73,
+          "op": "0x2d"
+        },
+        {
+          "offset": 74,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModContainer getModInfo ()Lnet/neoforged/neoforgespi/language/IModInfo;"
+        },
+        {
+          "offset": 77,
+          "op": "invokeinterface",
+          "reference": "net/neoforged/neoforgespi/language/IModInfo getOwningFile ()Lnet/neoforged/neoforgespi/language/IModFileInfo;"
+        },
+        {
+          "offset": 82,
+          "op": "invokeinterface",
+          "reference": "net/neoforged/neoforgespi/language/IModFileInfo getFile ()Lnet/neoforged/neoforgespi/locating/IModFile;"
+        },
+        {
+          "offset": 87,
+          "op": "0x4d"
+        },
+        {
+          "offset": 88,
+          "op": "0x2c"
+        },
+        {
+          "offset": 89,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getResourceDirectory",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;)Ljava/nio/file/Path;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/PlatformHelperImpl getModFile (Ljava/lang/String;)Lnet/neoforged/neoforgespi/locating/IModFile;"
+        },
+        {
+          "offset": 4,
+          "op": "0x4d"
+        },
+        {
+          "offset": 5,
+          "op": "0x2c"
+        },
+        {
+          "offset": 6,
+          "op": "0xc7",
+          "args": "0005"
+        },
+        {
+          "offset": 9,
+          "op": "0x1"
+        },
+        {
+          "offset": 10,
+          "op": "areturn"
+        },
+        {
+          "offset": 11,
+          "op": "0x2c"
+        },
+        {
+          "offset": 12,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 13,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 16,
+          "op": "0x59"
+        },
+        {
+          "offset": 17,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 18,
+          "op": "0x2b"
+        },
+        {
+          "offset": 19,
+          "op": "0x53"
+        },
+        {
+          "offset": 20,
+          "op": "invokeinterface",
+          "reference": "net/neoforged/neoforgespi/locating/IModFile findResource ([Ljava/lang/String;)Ljava/nio/file/Path;"
+        },
+        {
+          "offset": 25,
+          "op": "0x4e"
+        },
+        {
+          "offset": 26,
+          "op": "0x2d"
+        },
+        {
+          "offset": 27,
+          "op": "0xc7",
+          "args": "0010"
+        },
+        {
+          "offset": 30,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 33,
+          "op": "ldc_w",
+          "reference": "Path for subPath: {} in modId: {} is null"
+        },
+        {
+          "offset": 36,
+          "op": "0x2b"
+        },
+        {
+          "offset": 37,
+          "op": "0x2a"
+        },
+        {
+          "offset": 38,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 43,
+          "op": "0x2d"
+        },
+        {
+          "offset": 44,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$getModDisplayName$0",
+      "descriptor": "(Lnet/neoforged/fml/ModContainer;)Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/fml/ModContainer getModInfo ()Lnet/neoforged/neoforgespi/language/IModInfo;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "net/neoforged/neoforgespi/language/IModInfo getDisplayName ()Ljava/lang/String;"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

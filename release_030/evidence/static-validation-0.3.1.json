@@ -1,0 +1,22 @@
+{
+  "minecraft": "1.21.1",
+  "neoforge": "21.1.252",
+  "projects": 235,
+  "new_project": "Biolith 3.0.14 (852512/8435635)",
+  "other_mod_pins_changed_from_0302": false,
+  "curated_biome_resource_ids_verified": 42,
+  "vanilla_targets": 12,
+  "replacement_rules": 43,
+  "temperature_guards": 20,
+  "ftf_continent_scale": 6500,
+  "ftf_river_count": 15,
+  "ftf_preset_fields_checked_against_pinned_codecs": true,
+  "ftf_changes_from_captured_template": [
+    "world.continent.continentScale: 4000 -> 6500",
+    "rivers.riverCount: 10 -> 15",
+    "presentation timestamp"
+  ],
+  "zip_integrity_and_locked_manifest": "passed",
+  "runtime_launch": "not performed; awaiting user",
+  "global_biome_area_percentages": "not measured; pool weights are nominal only"
+}

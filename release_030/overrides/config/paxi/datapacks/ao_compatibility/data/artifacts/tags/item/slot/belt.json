@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "artifacts:antidote_vessel",
+    "artifacts:chorus_totem",
+    "artifacts:cloud_in_a_bottle",
+    "artifacts:crystal_heart",
+    "artifacts:helium_flamingo",
+    "artifacts:obsidian_skull",
+    "artifacts:universal_attractor",
+    "artifacts:warp_drive"
+  ]
+}

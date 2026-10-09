@@ -1,0 +1,53 @@
+{
+  "biomes": {
+    "type": "neoforge:or",
+    "values": [
+      "#minecraft:has_structure/woodland_mansion",
+      "#c:is_spooky"
+    ]
+  },
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 80,
+  "pool_aliases": [],
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "size": 4,
+  "spawn_overrides": {
+    "monster": {
+      "bounding_box": "full",
+      "spawns": [
+        {
+          "maxCount": 1,
+          "minCount": 1,
+          "type": "minecraft:pillager",
+          "weight": 1
+        },
+        {
+          "maxCount": 1,
+          "minCount": 1,
+          "type": "minecraft:evoker",
+          "weight": 1
+        },
+        {
+          "maxCount": 1,
+          "minCount": 1,
+          "type": "minecraft:vindicator",
+          "weight": 1
+        },
+        {
+          "maxCount": 1,
+          "minCount": 1,
+          "type": "minecraft:witch",
+          "weight": 1
+        }
+      ]
+    }
+  },
+  "start_height": {
+    "absolute": 0
+  },
+  "start_pool": "ctov:pillager_outpost/dark_forest/base_plates",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "type": "minecraft:jigsaw",
+  "use_expansion_hack": true
+}

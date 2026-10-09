@@ -1,0 +1,25 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:rose_petal_block"
+    }
+  ],
+  "processing_time": 50,
+  "results": [
+    {
+      "count": 18,
+      "id": "minecraft:red_dye"
+    },
+    {
+      "chance": 0.45,
+      "id": "minecraft:green_dye"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ]
+}

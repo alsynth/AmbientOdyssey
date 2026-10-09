@@ -1,0 +1,12 @@
+Eight approved additions: exact proposed binaries to provide for the next audit.
+Separate from the 41 missing existing-profile JARs in MISSING_JARS.txt.
+File metadata is verified; checksums, dependency closure and native content await actual JARs.
+
+YungsExtras-1.21.1-NeoForge-5.1.1.jar
+YungsBridges-1.21.1-NeoForge-5.1.1.jar
+Structory_Towers_1.21.x_v1.0.14.jar
+archaion-1.21.1-1.4.4.jar
+Explorify v1.6.5.mod.jar
+AdditionalStructures-1.21-(v.6.3.2-NEO).jar
+Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar
+create_easy_structures-0.2a-neoforge-1.21.1.jar

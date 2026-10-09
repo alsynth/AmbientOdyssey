@@ -1,0 +1,135 @@
+{
+	id: "22B8E2BBB1F60AF4"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			count: 8
+			id: "72892AD800D9696E"
+			item: {
+				count: 1
+				id: "minecraft:baked_potato"
+			}
+		}
+		{
+			count: 8
+			id: "75D4365CBD5BD9D5"
+			item: {
+				count: 1
+				id: "minecraft:carrot"
+			}
+		}
+		{
+			count: 6
+			id: "55C86694E9A91CB5"
+			item: {
+				count: 1
+				id: "minecraft:golden_carrot"
+			}
+		}
+		{
+			count: 8
+			id: "0F6FB230B3910101"
+			item: {
+				count: 1
+				id: "minecraft:bread"
+			}
+		}
+		{
+			count: 8
+			id: "26398D9502C03365"
+			item: {
+				count: 1
+				id: "minecraft:apple"
+			}
+		}
+		{
+			count: 2
+			id: "37BF6691D4C21D7E"
+			item: {
+				count: 1
+				id: "minecraft:golden_apple"
+			}
+		}
+		{
+			count: 8
+			id: "6A8ACF19B0AF363D"
+			item: {
+				count: 1
+				id: "minecraft:cooked_beef"
+			}
+		}
+		{
+			count: 8
+			id: "4ED7EBDE93677FDE"
+			item: {
+				count: 1
+				id: "minecraft:cooked_chicken"
+			}
+		}
+		{
+			count: 8
+			id: "34E9097943C7A8F8"
+			item: {
+				count: 1
+				id: "minecraft:cooked_porkchop"
+			}
+		}
+		{
+			count: 8
+			id: "266342D40854B042"
+			item: {
+				count: 1
+				id: "minecraft:cooked_cod"
+			}
+		}
+		{
+			count: 8
+			id: "776CDBC8E380D019"
+			item: {
+				count: 1
+				id: "minecraft:cooked_salmon"
+			}
+		}
+		{
+			count: 8
+			id: "38414B3620BB5C4B"
+			item: {
+				count: 1
+				id: "minecraft:beetroot_soup"
+			}
+		}
+		{
+			count: 8
+			id: "5E84D28B8931060E"
+			item: {
+				count: 1
+				id: "minecraft:mushroom_stew"
+			}
+		}
+		{
+			count: 8
+			id: "052C4FD6CCF3892B"
+			item: {
+				count: 1
+				id: "minecraft:honey_bottle"
+			}
+		}
+		{
+			count: 2
+			id: "0320D053ED71E9BD"
+			item: {
+				count: 1
+				id: "minecraft:pumpkin_pie"
+			}
+		}
+		{
+			count: 8
+			id: "332627A250BC6791"
+			item: {
+				count: 1
+				id: "minecraft:cookie"
+			}
+		}
+	]
+}

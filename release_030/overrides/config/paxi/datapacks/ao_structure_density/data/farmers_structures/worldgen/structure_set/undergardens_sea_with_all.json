@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1984020018,
+    "separation": 84,
+    "spacing": 109,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "farmers_structures:undergardens_sea",
+      "weight": 1
+    }
+  ]
+}

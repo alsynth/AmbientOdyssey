@@ -1,0 +1,374 @@
+{
+  "provider_summary": {
+    "adventuredungeons": {
+      "native": 8,
+      "changed_eligibility": 6,
+      "no_curated_ow_after": 2,
+      "vanilla_only_direct": 7
+    },
+    "aether": {
+      "native": 4,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 0
+    },
+    "aether_villages": {
+      "native": 1,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 0
+    },
+    "alexscaves": {
+      "native": 14,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 13,
+      "vanilla_only_direct": 0
+    },
+    "ambient_odyssey": {
+      "native": 0,
+      "changed_eligibility": 3,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "antiquetradingship": {
+      "native": 1,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 1
+    },
+    "apotheosis": {
+      "native": 4,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 0
+    },
+    "archaeology_ruins": {
+      "native": 11,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 11,
+      "vanilla_only_direct": 11
+    },
+    "ars_nouveau": {
+      "native": 3,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "betterend": {
+      "native": 14,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 14,
+      "vanilla_only_direct": 0
+    },
+    "betterfortresses": {
+      "native": 1,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 0
+    },
+    "bettermineshafts": {
+      "native": 13,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 9,
+      "vanilla_only_direct": 2
+    },
+    "betterwitchhuts": {
+      "native": 2,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "biomeswevegone": {
+      "native": 18,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 12,
+      "vanilla_only_direct": 0
+    },
+    "block_factorys_bosses": {
+      "native": 5,
+      "changed_eligibility": 2,
+      "no_curated_ow_after": 3,
+      "vanilla_only_direct": 5
+    },
+    "bosses_of_mass_destruction": {
+      "native": 4,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 3,
+      "vanilla_only_direct": 1
+    },
+    "cataclysm": {
+      "native": 16,
+      "changed_eligibility": 4,
+      "no_curated_ow_after": 12,
+      "vanilla_only_direct": 15
+    },
+    "create_rustic_structures": {
+      "native": 4,
+      "changed_eligibility": 4,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 4
+    },
+    "ctov": {
+      "native": 78,
+      "changed_eligibility": 32,
+      "no_curated_ow_after": 28,
+      "vanilla_only_direct": 3
+    },
+    "dungeoncrawl": {
+      "native": 1,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "dungeons_arise": {
+      "native": 40,
+      "changed_eligibility": 12,
+      "no_curated_ow_after": 10,
+      "vanilla_only_direct": 2
+    },
+    "dungeons_arise_seven_seas": {
+      "native": 5,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "echoes_of_the_end__structures_": {
+      "native": 9,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 9,
+      "vanilla_only_direct": 7
+    },
+    "end_villager_outpost": {
+      "native": 1,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 1
+    },
+    "enigmaticlegacyplus": {
+      "native": 1,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "eternal_starlight": {
+      "native": 8,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 0
+    },
+    "explore_ruins_aether": {
+      "native": 7,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 7,
+      "vanilla_only_direct": 0
+    },
+    "farmers_structures": {
+      "native": 20,
+      "changed_eligibility": 7,
+      "no_curated_ow_after": 9,
+      "vanilla_only_direct": 3
+    },
+    "fdbosses": {
+      "native": 3,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 0
+    },
+    "floating_islands": {
+      "native": 17,
+      "changed_eligibility": 15,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 1
+    },
+    "formationsoverworld": {
+      "native": 30,
+      "changed_eligibility": 18,
+      "no_curated_ow_after": 3,
+      "vanilla_only_direct": 8
+    },
+    "friendsandfoes": {
+      "native": 4,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 0
+    },
+    "graveyard": {
+      "native": 17,
+      "changed_eligibility": 7,
+      "no_curated_ow_after": 5,
+      "vanilla_only_direct": 4
+    },
+    "iceandfire": {
+      "native": 13,
+      "changed_eligibility": 9,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 2
+    },
+    "idas": {
+      "native": 84,
+      "changed_eligibility": 51,
+      "no_curated_ow_after": 24,
+      "vanilla_only_direct": 3
+    },
+    "illagerwarship": {
+      "native": 1,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 1
+    },
+    "incendium": {
+      "native": 9,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 9,
+      "vanilla_only_direct": 1
+    },
+    "integrated_stronghold": {
+      "native": 1,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "integrated_villages": {
+      "native": 12,
+      "changed_eligibility": 5,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 0
+    },
+    "irons_spellbooks": {
+      "native": 9,
+      "changed_eligibility": 4,
+      "no_curated_ow_after": 2,
+      "vanilla_only_direct": 0
+    },
+    "mes": {
+      "native": 25,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 25,
+      "vanilla_only_direct": 0
+    },
+    "minecraft": {
+      "native": 8,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 6,
+      "vanilla_only_direct": 1
+    },
+    "mns": {
+      "native": 52,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 52,
+      "vanilla_only_direct": 15
+    },
+    "mowziesmobs": {
+      "native": 4,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "mss": {
+      "native": 35,
+      "changed_eligibility": 3,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 1
+    },
+    "mtr": {
+      "native": 6,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 3,
+      "vanilla_only_direct": 0
+    },
+    "mvs": {
+      "native": 130,
+      "changed_eligibility": 16,
+      "no_curated_ow_after": 14,
+      "vanilla_only_direct": 11
+    },
+    "natures_spirit": {
+      "native": 4,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 0
+    },
+    "nova_structures": {
+      "native": 96,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 41,
+      "vanilla_only_direct": 7
+    },
+    "pasterdream": {
+      "native": 115,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 111,
+      "vanilla_only_direct": 6
+    },
+    "philipsruins": {
+      "native": 17,
+      "changed_eligibility": 12,
+      "no_curated_ow_after": 4,
+      "vanilla_only_direct": 11
+    },
+    "repurposed_structures": {
+      "native": 107,
+      "changed_eligibility": 35,
+      "no_curated_ow_after": 47,
+      "vanilla_only_direct": 0
+    },
+    "sky_whale_ship": {
+      "native": 5,
+      "changed_eligibility": 5,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "skyarena": {
+      "native": 2,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 1,
+      "vanilla_only_direct": 0
+    },
+    "skyvillages": {
+      "native": 1,
+      "changed_eligibility": 1,
+      "no_curated_ow_after": 0,
+      "vanilla_only_direct": 0
+    },
+    "structory": {
+      "native": 15,
+      "changed_eligibility": 5,
+      "no_curated_ow_after": 2,
+      "vanilla_only_direct": 1
+    },
+    "supplementaries": {
+      "native": 2,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 2,
+      "vanilla_only_direct": 0
+    },
+    "totw_modded": {
+      "native": 22,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 17,
+      "vanilla_only_direct": 1
+    },
+    "towns_and_towers": {
+      "native": 60,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 40,
+      "vanilla_only_direct": 3
+    },
+    "underwater_village": {
+      "native": 17,
+      "changed_eligibility": 0,
+      "no_curated_ow_after": 17,
+      "vanilla_only_direct": 17
+    }
+  },
+  "inspected_jars": 196,
+  "native_structures": 1216,
+  "native_structure_sets": 666,
+  "catalogue_rows": 1219,
+  "curated_biomes": 42,
+  "curated_ow_biomes": 40,
+  "matrix_biome_columns": 52,
+  "remaining_native_duplicate_structures": 2,
+  "effective_structure_sets": 673,
+  "shared_salt_groups": 16
+}

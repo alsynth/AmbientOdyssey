@@ -1,0 +1,373 @@
+{
+  "constants": [
+    "net/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl",
+    "java/lang/Object",
+    "CTOVConfigHelperImpl.java",
+    "net/neoforged/neoforge/common/ModConfigSpec$BooleanValue",
+    "net/neoforged/neoforge/common/ModConfigSpec",
+    "BooleanValue",
+    "net/neoforged/neoforge/common/ModConfigSpec$IntValue",
+    "IntValue",
+    "net/neoforged/neoforge/common/ModConfigSpec$ConfigValue",
+    "ConfigValue",
+    "<init>",
+    "()V",
+    "this",
+    "Lnet/choicetheorem/ctov/platform/neoforge/CTOVConfigHelperImpl;",
+    "generatesmallVillage",
+    "()Z",
+    "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge",
+    "GENERATE_SMALL_VILLAGES",
+    "Lnet/neoforged/neoforge/common/ModConfigSpec$BooleanValue;",
+    "get",
+    "()Ljava/lang/Object;",
+    "java/lang/Boolean",
+    "booleanValue",
+    "generatemediumVillage",
+    "GENERATE_MEDIUM_VILLAGES",
+    "generatelargeVillage",
+    "GENERATE_LARGE_VILLAGES",
+    "generatePillagerOutpost",
+    "GENERATE_PILLAGER_OUTPOST",
+    "smallVillageWeight",
+    "()I",
+    "SMALL_VILLAGE_WEIGHT",
+    "Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;",
+    "java/lang/Integer",
+    "intValue",
+    "mediumVillageWeight",
+    "MEDIUM_VILLAGE_WEIGHT",
+    "largeVillageWeight",
+    "LARGE_VILLAGE_WEIGHT",
+    "OutpostWeight",
+    "OUTPOST_WEIGHT",
+    "enabledvillage",
+    "()Ljava/util/List;",
+    "()Ljava/util/List<+Ljava/lang/String;>;",
+    "Lorg/jetbrains/annotations/NotNull;",
+    "ENABLED_VILLAGES",
+    "Lnet/neoforged/neoforge/common/ModConfigSpec$ConfigValue;",
+    "java/util/List",
+    "enabledpillageroutpost",
+    "ENABLED_PILLAGER_OUTPOST",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "Signature",
+    "RuntimeInvisibleAnnotations",
+    "RuntimeInvisibleTypeAnnotations",
+    "InnerClasses",
+    "SourceFile"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "generatesmallVillage",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge GENERATE_SMALL_VILLAGES Lnet/neoforged/neoforge/common/ModConfigSpec$BooleanValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$BooleanValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Boolean"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Boolean booleanValue ()Z"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "generatemediumVillage",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge GENERATE_MEDIUM_VILLAGES Lnet/neoforged/neoforge/common/ModConfigSpec$BooleanValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$BooleanValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Boolean"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Boolean booleanValue ()Z"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "generatelargeVillage",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge GENERATE_LARGE_VILLAGES Lnet/neoforged/neoforge/common/ModConfigSpec$BooleanValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$BooleanValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Boolean"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Boolean booleanValue ()Z"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "generatePillagerOutpost",
+      "descriptor": "()Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge GENERATE_PILLAGER_OUTPOST Lnet/neoforged/neoforge/common/ModConfigSpec$BooleanValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$BooleanValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Boolean"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Boolean booleanValue ()Z"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "smallVillageWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge SMALL_VILLAGE_WEIGHT Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$IntValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Integer"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "mediumVillageWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge MEDIUM_VILLAGE_WEIGHT Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$IntValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Integer"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "largeVillageWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge LARGE_VILLAGE_WEIGHT Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$IntValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Integer"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "OutpostWeight",
+      "descriptor": "()I",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge OUTPOST_WEIGHT Lnet/neoforged/neoforge/common/ModConfigSpec$IntValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$IntValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/lang/Integer"
+        },
+        {
+          "offset": 9,
+          "op": "invokevirtual",
+          "reference": "java/lang/Integer intValue ()I"
+        },
+        {
+          "offset": 12,
+          "op": "ireturn"
+        }
+      ]
+    },
+    {
+      "name": "enabledvillage",
+      "descriptor": "()Ljava/util/List;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge ENABLED_VILLAGES Lnet/neoforged/neoforge/common/ModConfigSpec$ConfigValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$ConfigValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/util/List"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "enabledpillageroutpost",
+      "descriptor": "()Ljava/util/List;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "net/choicetheorem/ctov/registry/neoforge/CTOVConfigNeoForge ENABLED_PILLAGER_OUTPOST Lnet/neoforged/neoforge/common/ModConfigSpec$ConfigValue;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/common/ModConfigSpec$ConfigValue get ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 6,
+          "op": "checkcast",
+          "reference": "java/util/List"
+        },
+        {
+          "offset": 9,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

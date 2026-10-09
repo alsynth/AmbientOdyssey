@@ -1,0 +1,410 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil",
+    "java/lang/Object",
+    "RuntimePackUtil.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/util/runtimepack/RuntimePackUtil;",
+    "extractImageBytes",
+    "(Ljava/io/InputStream;)[B",
+    "imageStream",
+    "Lorg/jetbrains/annotations/Nullable;",
+    "java/io/IOException",
+    "java/io/InputStream",
+    "readAllBytes",
+    "()[B",
+    "close",
+    "de/cristelknight/cristellib/Constants",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "Couldn't get image for a RuntimePack",
+    "org/apache/logging/log4j/Logger",
+    "warn",
+    "(Ljava/lang/String;)V",
+    "bytes",
+    "[B",
+    "e",
+    "Ljava/io/IOException;",
+    "Ljava/io/InputStream;",
+    "serializeJson",
+    "(Lcom/google/gson/JsonObject;)[B",
+    "object",
+    "de/cristelknight/cristellib/util/runtimepack/UnsafeByteArrayOutputStream",
+    "java/io/OutputStreamWriter",
+    "java/nio/charset/StandardCharsets",
+    "UTF_8",
+    "Ljava/nio/charset/Charset;",
+    "(Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V",
+    "de/cristelknight/cristellib/builtinpacks/RuntimePack",
+    "GSON",
+    "Lcom/google/gson/Gson;",
+    "com/google/gson/Gson",
+    "toJson",
+    "(Lcom/google/gson/JsonElement;Ljava/lang/Appendable;)V",
+    "com/google/gson/JsonObject",
+    "java/lang/RuntimeException",
+    "Failed to serialize JsonObject",
+    "getWithPrefix",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "(Ljava/lang/String;Ljava/lang/Throwable;)V",
+    "getBytes",
+    "Lcom/google/gson/JsonObject;",
+    "ubaos",
+    "Lde/cristelknight/cristellib/util/runtimepack/UnsafeByteArrayOutputStream;",
+    "writer",
+    "Ljava/io/OutputStreamWriter;",
+    "getLocationForStructureSet",
+    "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;",
+    "location",
+    "worldgen/structure_set",
+    "createJsonLocation",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "prefix",
+    "identifier",
+    "json",
+    "createIdentifier",
+    "(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;",
+    "Ljava/lang/String;",
+    "end",
+    "net/minecraft/resources/ResourceLocation",
+    "getNamespace",
+    "()Ljava/lang/String;",
+    "getPath",
+    "\u0001/\u0001.\u0001",
+    "java/lang/invoke/StringConcatFactory",
+    "makeConcatWithConstants",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;",
+    "fromNamespaceAndPath",
+    "(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "StackMapTable",
+    "RuntimeInvisibleTypeAnnotations",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "extractImageBytes",
+      "descriptor": "(Ljava/io/InputStream;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "java/io/InputStream readAllBytes ()[B"
+        },
+        {
+          "offset": 4,
+          "op": "0x4c"
+        },
+        {
+          "offset": 5,
+          "op": "0x2a"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "java/io/InputStream close ()V"
+        },
+        {
+          "offset": 9,
+          "op": "0x2b"
+        },
+        {
+          "offset": 10,
+          "op": "areturn"
+        },
+        {
+          "offset": 11,
+          "op": "0x4c"
+        },
+        {
+          "offset": 12,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 15,
+          "op": "ldc",
+          "reference": "Couldn't get image for a RuntimePack"
+        },
+        {
+          "offset": 17,
+          "op": "invokeinterface",
+          "reference": "org/apache/logging/log4j/Logger warn (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 22,
+          "op": "0x1"
+        },
+        {
+          "offset": 23,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "serializeJson",
+      "descriptor": "(Lcom/google/gson/JsonObject;)[B",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/UnsafeByteArrayOutputStream"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/UnsafeByteArrayOutputStream <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "0x4c"
+        },
+        {
+          "offset": 8,
+          "op": "new",
+          "reference": "java/io/OutputStreamWriter"
+        },
+        {
+          "offset": 11,
+          "op": "0x59"
+        },
+        {
+          "offset": 12,
+          "op": "0x2b"
+        },
+        {
+          "offset": 13,
+          "op": "getstatic",
+          "reference": "java/nio/charset/StandardCharsets UTF_8 Ljava/nio/charset/Charset;"
+        },
+        {
+          "offset": 16,
+          "op": "invokespecial",
+          "reference": "java/io/OutputStreamWriter <init> (Ljava/io/OutputStream;Ljava/nio/charset/Charset;)V"
+        },
+        {
+          "offset": 19,
+          "op": "0x4d"
+        },
+        {
+          "offset": 20,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/RuntimePack GSON Lcom/google/gson/Gson;"
+        },
+        {
+          "offset": 23,
+          "op": "0x2a"
+        },
+        {
+          "offset": 24,
+          "op": "0x2c"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "com/google/gson/Gson toJson (Lcom/google/gson/JsonElement;Ljava/lang/Appendable;)V"
+        },
+        {
+          "offset": 28,
+          "op": "0x2c"
+        },
+        {
+          "offset": 29,
+          "op": "invokevirtual",
+          "reference": "java/io/OutputStreamWriter close ()V"
+        },
+        {
+          "offset": 32,
+          "op": "goto",
+          "args": "0012"
+        },
+        {
+          "offset": 35,
+          "op": "0x4e"
+        },
+        {
+          "offset": 36,
+          "op": "new",
+          "reference": "java/lang/RuntimeException"
+        },
+        {
+          "offset": 39,
+          "op": "0x59"
+        },
+        {
+          "offset": 40,
+          "op": "ldc",
+          "reference": "Failed to serialize JsonObject"
+        },
+        {
+          "offset": 42,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/Constants getWithPrefix (Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "offset": 45,
+          "op": "0x2d"
+        },
+        {
+          "offset": 46,
+          "op": "invokespecial",
+          "reference": "java/lang/RuntimeException <init> (Ljava/lang/String;Ljava/lang/Throwable;)V"
+        },
+        {
+          "offset": 49,
+          "op": "0xbf"
+        },
+        {
+          "offset": 50,
+          "op": "0x2b"
+        },
+        {
+          "offset": 51,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/UnsafeByteArrayOutputStream getBytes ()[B"
+        },
+        {
+          "offset": 54,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getLocationForStructureSet",
+      "descriptor": "(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "worldgen/structure_set"
+        },
+        {
+          "offset": 2,
+          "op": "0x2a"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil createJsonLocation (Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "createJsonLocation",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "json"
+        },
+        {
+          "offset": 3,
+          "op": "0x2b"
+        },
+        {
+          "offset": 4,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/runtimepack/RuntimePackUtil createIdentifier (Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 7,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "createIdentifier",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/resources/ResourceLocation;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getNamespace ()Ljava/lang/String;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2a"
+        },
+        {
+          "offset": 5,
+          "op": "0x2c"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/resources/ResourceLocation getPath ()Ljava/lang/String;"
+        },
+        {
+          "offset": 9,
+          "op": "0x2b"
+        },
+        {
+          "offset": 10,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 141)"
+        },
+        {
+          "offset": 15,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 18,
+          "op": "areturn"
+        }
+      ]
+    }
+  ]
+}

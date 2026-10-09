@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ambient_odyssey:heavenly_rider_overworld",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 64,
+    "separation": 28,
+    "salt": 1984010512
+  }
+}

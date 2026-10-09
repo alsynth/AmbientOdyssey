@@ -1,0 +1,4102 @@
+{
+  "version": "0.3.1-structure-test5",
+  "template_pools": {
+    "dungeons_arise:underworld/foundry/foundry_corridor_gears": {
+      "elements": [
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:foundry/foundry_corridor_gear_0",
+            "processors": "minecraft:empty",
+            "projection": "rigid"
+          },
+          "weight": 3
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:foundry/foundry_corridor_gear_1",
+            "processors": "minecraft:empty",
+            "projection": "rigid"
+          },
+          "weight": 3
+        }
+      ],
+      "fallback": "minecraft:empty",
+      "name": "dungeons_arise:underworld/foundry/foundry_corridor_gears"
+    },
+    "dungeons_arise:mechanical_nest/mechanical_nest_decoration": {
+      "elements": [
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_0",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_1",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_2",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_3",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_4",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_5",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_6",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_7",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_8",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_9",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_10",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_11",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_12",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_13",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_14",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_15",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_16",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_17",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_18",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_19",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "dungeons_arise:mechanical_nest/mechanical_nest_deco_library_20",
+            "processors": "dungeons_arise:mechanical_nest_main",
+            "projection": "rigid"
+          },
+          "weight": 1
+        }
+      ],
+      "fallback": "dungeons_arise:mechanical_nest/mechanical_nest_decorations",
+      "name": "dungeons_arise:mechanical_nest/mechanical_nest_decoration"
+    },
+    "integrated_villages:cabin_village/villager_random": {
+      "elements": [
+        {
+          "element": {
+            "element_type": "minecraft:empty_pool_element",
+            "projection": "rigid"
+          },
+          "weight": 3
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/mobs/cabin_village_villager",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 3
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/mobs/cabin_village_villager_baby",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/mobs/cabin_village_villager_nitwit",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        }
+      ],
+      "fallback": "minecraft:empty",
+      "name": "integrated_villages:cabin_village/villager_random"
+    },
+    "integrated_villages:cabin_village/house/fisherman_lecturn": {
+      "fallback": "minecraft:empty",
+      "elements": [
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn1",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn2",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn3",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn4",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn5",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn6",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        },
+        {
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn7",
+            "processors": "integrated_villages:cabin_village_processor",
+            "projection": "rigid"
+          },
+          "weight": 1
+        }
+      ],
+      "name": "integrated_villages:cabin_village/house/fisherman_lecturn"
+    },
+    "ctov:pillager_outpost/mountain/towers": {
+      "name": "ctov:pillager_outpost/mountain/towers",
+      "fallback": "minecraft:empty",
+      "elements": [
+        {
+          "weight": 1,
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "projection": "rigid",
+            "location": "ctov:pillager_outpost/mountain/tower",
+            "processors": "minecraft:empty"
+          }
+        }
+      ]
+    },
+    "ctov:village/waystone/sand": {
+      "name": "ctov:village/waystone/sand",
+      "fallback": "minecraft:empty",
+      "elements": [
+        {
+          "weight": 1,
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "ctov:village/waystone/sand",
+            "projection": "rigid",
+            "processors": "minecraft:empty"
+          }
+        }
+      ]
+    },
+    "ctov:village/common/waystone/sand": {
+      "name": "ctov:village/common/waystone/sand",
+      "fallback": "minecraft:empty",
+      "elements": [
+        {
+          "weight": 1,
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "ctov:village/waystone/sand",
+            "projection": "rigid",
+            "processors": "minecraft:empty"
+          }
+        }
+      ]
+    },
+    "minecraft:illager_mansion/illager_mansion_room_basement": {
+      "name": "minecraft:illager_mansion/illager_mansion_room_basement",
+      "fallback": "minecraft:empty",
+      "elements": [
+        {
+          "weight": 20,
+          "element": {
+            "element_type": "minecraft:empty_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement1",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement2",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement3",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement4",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement5",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement6",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement7",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement8",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement9",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement10",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement11",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement12",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement13",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement14",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement15",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement16",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement17",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement18",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement19",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement20",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement21",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement22",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement23",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement24",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement25",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement26",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement27",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement28",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement29",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_small_room_basement30",
+            "processors": "illager_manor_main_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement1",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement2",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement3",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement4",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement5",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement6",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement7",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement8",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement9",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement10",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement11",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 5,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement12",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement13",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement14",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement15",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement16",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement17",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement18",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        },
+        {
+          "weight": 1,
+          "element": {
+            "location": "minecraft:illager_mansion/mansion_middle_room_basement19",
+            "processors": "illager_manor_room_degradation",
+            "projection": "rigid",
+            "element_type": "minecraft:single_pool_element"
+          }
+        }
+      ]
+    }
+  },
+  "provenance": [
+    {
+      "pool": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+      "reason": "Both native gear templates have the exact connector requested by the crossing template",
+      "source": "dungeons_arise:underworld/foundry/foundry_corridor_deco",
+      "empty_pool": false
+    },
+    {
+      "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+      "reason": "Singular legacy path: use native library decorations matching the tower connector",
+      "source": "dungeons_arise:mechanical_nest/mechanical_nest_decorations",
+      "empty_pool": false
+    },
+    {
+      "pool": "integrated_villages:cabin_village/villager_random",
+      "reason": "Legacy path alias of existing native villager pool, retaining its weighted empty outcome",
+      "source": "integrated_villages:cabin_village/mobs/villager_random",
+      "empty_pool": false
+    },
+    {
+      "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+      "reason": "All seven native lectern templates exist and have the exact requested lecturn connector",
+      "source": "integrated_villages:cabin_village/house/fisherman_bottom",
+      "empty_pool": false
+    },
+    {
+      "recipe": "simplymore:matterbane_clean",
+      "reason": "Remove the verified extra trailing closing brace from the installed Simply More JSON; recipe contents unchanged",
+      "source": "simplymore-forge-1.3.0_alpha.jar:data/simplymore/recipe/matterbane_clean.json"
+    }
+  ],
+  "recipes": {
+    "simplymore:matterbane_clean": {
+      "type": "simplymore:matterbane_clean",
+      "ingredients": [
+        {
+          "item": "simplymore:matterbane"
+        }
+      ],
+      "result": {
+        "id": "simplymore:matterbane",
+        "count": 1
+      }
+    },
+    "cataclysm_spellbooks:engineers_power_glove": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "l l",
+        "l l",
+        "ggg"
+      ],
+      "key": {
+        "l": {
+          "item": "minecraft:leather"
+        },
+        "g": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:engineers_power_glove",
+        "count": 1
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:excel_upgrade_cooldown": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "sss",
+        "sus",
+        "sss"
+      ],
+      "key": {
+        "s": {
+          "item": "cataclysm_spellbooks:mechanical_scrap"
+        },
+        "u": {
+          "item": "irons_spellbooks:cooldown_upgrade_orb"
+        }
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:excel_upgrade_cooldown",
+        "count": 1
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:excel_upgrade_mana": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "sss",
+        "sus",
+        "sss"
+      ],
+      "key": {
+        "s": {
+          "item": "cataclysm_spellbooks:mechanical_scrap"
+        },
+        "u": {
+          "item": "irons_spellbooks:mana_upgrade_orb"
+        }
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:excel_upgrade_mana",
+        "count": 1
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:excel_upgrade_resistence": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "sss",
+        "sus",
+        "sss"
+      ],
+      "key": {
+        "s": {
+          "item": "cataclysm_spellbooks:mechanical_scrap"
+        },
+        "u": {
+          "item": "irons_spellbooks:protection_upgrade_orb"
+        }
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:excel_upgrade_resistence",
+        "count": 1
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:mechanical_brace": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "irons_spellbooks:cooldown_ring"
+      },
+      "addition": {
+        "item": "cataclysm_spellbooks:mechanical_scrap"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:mechanical_brace"
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:murasama": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "  s",
+        " m ",
+        "w  "
+      ],
+      "key": {
+        "w": {
+          "item": "cataclysm:witherite_ingot"
+        },
+        "m": {
+          "item": "cataclysm_spellbooks:mechanical_weapon_parts"
+        },
+        "s": {
+          "item": "cataclysm_spellbooks:mechanical_scrap"
+        }
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:murasama_blade",
+        "count": 1
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:the_berserker_upgrade": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "cataclysm_spellbooks:gauntlet_of_gattling"
+        },
+        {
+          "item": "cataclysm:cursium_ingot"
+        },
+        {
+          "item": "cataclysm_spellbooks:mechanical_weapon_parts"
+        }
+      ],
+      "result": {
+        "id": "cataclysm_spellbooks:the_berserker"
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:the_combuster_upgrade": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "cataclysm_spellbooks:gauntlet_of_gattling"
+        },
+        {
+          "item": "cataclysm:ignitium_ingot"
+        },
+        {
+          "item": "cataclysm_spellbooks:mechanical_weapon_parts"
+        }
+      ],
+      "result": {
+        "id": "cataclysm_spellbooks:the_combuster"
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:the_nightstalker_upgrade": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "cataclysm_spellbooks:gauntlet_of_gattling"
+        },
+        {
+          "item": "irons_spellbooks:blood_vial"
+        },
+        {
+          "item": "cataclysm_spellbooks:mechanical_weapon_parts"
+        }
+      ],
+      "result": {
+        "id": "cataclysm_spellbooks:the_nightstalker"
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:the_ordeal_upgrade": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm_spellbooks:engineers_power_glove"
+      },
+      "addition": {
+        "item": "cataclysm:witherite_ingot"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:gauntlet_of_power"
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    },
+    "cataclysm_spellbooks:the_subjugator_upgrade": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm_spellbooks:gauntlet_of_power"
+      },
+      "addition": {
+        "item": "cataclysm:laser_gatling"
+      },
+      "result": {
+        "id": "cataclysm_spellbooks:gauntlet_of_gattling"
+      },
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:false"
+        }
+      ]
+    }
+  },
+  "template_migrations": {
+    "ctov:village/waystone/sand": {
+      "source": "native-template-inputs/waystones-desert-waystone.nbt",
+      "source_sha256": "88488c210fe34985fca3d55213f4aac39291b88b82f2d36a1c064638bb64a907",
+      "operation": "waystone_jigsaw_1_21_1",
+      "native_jar": "waystones-neoforge-1.21.1-21.1.46.jar",
+      "native_path": "data/waystones/structure/village/desert/waystone.nbt"
+    }
+  },
+  "additional_resources": {
+    "loot_modifiers": {
+      "cataclysm_spellbooks:archaeology/cursed_pyramid_prison_modifier": {
+        "type": "neoforge:add_table",
+        "conditions": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "neoforge:loot_table_id",
+                "loot_table_id": "cataclysm:archaeology/cursed_pyramid"
+              }
+            ]
+          }
+        ],
+        "table": "cataclysm_spellbooks:archaeology/additional_cursed_pyramid_archaeology_loot"
+      }
+    },
+    "tags/entity_type": {
+      "traveloptics:aerial_collapse_dr": {
+        "__comment": "Entities in this tag takes modified hp% damage when configured through config",
+        "replace": true,
+        "values": [
+          "minecraft:ender_dragon",
+          "minecraft:wither",
+          "cataclysm:ender_guardian",
+          "cataclysm:maledictus",
+          "cataclysm:the_leviathan",
+          "cataclysm:ignis",
+          "cataclysm:the_harbinger",
+          "cataclysm:netherite_monstrosity",
+          "cataclysm:ancient_remnant",
+          {
+            "id": "cataclysm_spellbooks:ancient_ancient_remnant",
+            "required": false
+          },
+          {
+            "id": "iceandfire:ice_dragon",
+            "required": false
+          },
+          {
+            "id": "iceandfire:fire_dragon",
+            "required": false
+          },
+          {
+            "id": "iceandfire:lightning_dragon",
+            "required": false
+          },
+          {
+            "id": "alexsmobs:void_worm",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:frostmaw",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:umvuthi",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:ferrous_wroughtnaut",
+            "required": false
+          }
+        ]
+      },
+      "traveloptics:element_fire": {
+        "__comment": "Entities in this tag are considered as fire element and thus take more damage from Aqua spells",
+        "replace": true,
+        "values": [
+          "cataclysm:ignis",
+          "cataclysm:netherite_ministrosity",
+          "cataclysm:netherite_monstrosity",
+          {
+            "id": "cataclysm:old_netherite_monstrosity",
+            "required": false
+          },
+          "cataclysm:ignited_berserker",
+          "cataclysm:ignited_revenant",
+          "irons_spellbooks:pyromancer",
+          "minecraft:blaze",
+          "minecraft:magma_cube",
+          "minecraft:strider",
+          {
+            "id": "iceandfire:fire_dragon",
+            "required": false
+          }
+        ]
+      },
+      "traveloptics:spectral_blink_blacklist": {
+        "__comment": "Spectral Blink will not work on mentioned entities",
+        "replace": true,
+        "values": [
+          "minecraft:ender_dragon",
+          "minecraft:wither",
+          "cataclysm:ender_guardian",
+          "cataclysm:maledictus",
+          "cataclysm:the_leviathan",
+          "cataclysm:ignis",
+          "cataclysm:the_harbinger",
+          "cataclysm:netherite_monstrosity",
+          "cataclysm:ancient_remnant",
+          {
+            "id": "cataclysm_spellbooks:ancient_ancient_remnant",
+            "required": false
+          },
+          {
+            "id": "iceandfire:ice_dragon",
+            "required": false
+          },
+          {
+            "id": "iceandfire:fire_dragon",
+            "required": false
+          },
+          {
+            "id": "iceandfire:lightning_dragon",
+            "required": false
+          },
+          {
+            "id": "alexsmobs:void_worm",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:frostmaw",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:umvuthi",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:ferrous_wroughtnaut",
+            "required": false
+          }
+        ]
+      },
+      "traveloptics:spectral_shift_blacklist": {
+        "__comment": "Spectral Shift necklace modification on Spectral Blink spell will not work on mentioned entities",
+        "replace": true,
+        "values": [
+          "minecraft:ender_dragon",
+          "minecraft:wither",
+          "cataclysm:ender_guardian",
+          "cataclysm:maledictus",
+          "cataclysm:the_leviathan",
+          "cataclysm:ignis",
+          "cataclysm:the_harbinger",
+          "cataclysm:netherite_monstrosity",
+          "cataclysm:ancient_remnant",
+          {
+            "id": "cataclysm_spellbooks:ancient_ancient_remnant",
+            "required": false
+          },
+          {
+            "id": "iceandfire:ice_dragon",
+            "required": false
+          },
+          {
+            "id": "iceandfire:fire_dragon",
+            "required": false
+          },
+          {
+            "id": "iceandfire:lightning_dragon",
+            "required": false
+          },
+          {
+            "id": "alexsmobs:void_worm",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:frostmaw",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:umvuthi",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:ferrous_wroughtnaut",
+            "required": false
+          },
+          {
+            "id": "mowziesmobs:sculptor",
+            "required": false
+          }
+        ]
+      }
+    }
+  },
+  "client_models": {
+    "assets/traveloptics/models/displaysettings/abyssal_tidecaller_display.json": {
+      "credit": "Made with Blockbench",
+      "parent": "builtin/entity",
+      "texture_size": [
+        32,
+        32
+      ],
+      "display": {
+        "thirdperson_righthand": {
+          "translation": [
+            0,
+            -10,
+            0
+          ]
+        },
+        "thirdperson_lefthand": {
+          "translation": [
+            0,
+            -10,
+            0
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -7.5,
+            0,
+            -71.6
+          ],
+          "translation": [
+            -12,
+            -3.25,
+            0
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -7.5,
+            0,
+            -71.6
+          ],
+          "translation": [
+            -12,
+            -3.25,
+            0
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "ground": {
+          "scale": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        },
+        "gui": {
+          "rotation": [
+            90,
+            46.25,
+            -90
+          ],
+          "translation": [
+            -6.75,
+            -6.5,
+            0
+          ],
+          "scale": [
+            0.57,
+            0.57,
+            0.57
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            90,
+            -45,
+            90
+          ],
+          "translation": [
+            8,
+            -7.75,
+            0
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        }
+      },
+      "textures": {
+        "particle": "traveloptics:models/item/abyssal_tidecaller"
+      }
+    },
+    "assets/traveloptics/models/displaysettings/infernal_devastator_display.json": {
+      "credit": "Made with Blockbench",
+      "parent": "builtin/entity",
+      "texture_size": [
+        64,
+        64
+      ],
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -164,
+            90,
+            -106
+          ],
+          "translation": [
+            1.5,
+            -1.75,
+            -6.5
+          ],
+          "scale": [
+            0.95,
+            0.95,
+            0.95
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -164,
+            90,
+            -106
+          ],
+          "translation": [
+            1.5,
+            -1.75,
+            -6.5
+          ],
+          "scale": [
+            0.95,
+            0.95,
+            0.95
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -72.15,
+            0.51,
+            -165.33
+          ],
+          "translation": [
+            1,
+            0,
+            -7.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -76.38,
+            -1.04,
+            -165.49
+          ],
+          "translation": [
+            0.5,
+            0,
+            -7.5
+          ],
+          "scale": [
+            0.85,
+            0.85,
+            0.85
+          ]
+        },
+        "ground": {
+          "scale": [
+            0.6,
+            0.6,
+            0.6
+          ]
+        },
+        "gui": {
+          "rotation": [
+            0,
+            0,
+            -45
+          ],
+          "translation": [
+            -6.75,
+            -6,
+            0
+          ],
+          "scale": [
+            0.68,
+            0.68,
+            0.68
+          ]
+        },
+        "head": {
+          "rotation": [
+            180,
+            0,
+            180
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            -90,
+            47.75,
+            90
+          ],
+          "translation": [
+            7.25,
+            -7.25,
+            0
+          ],
+          "scale": [
+            0.9,
+            0.9,
+            0.9
+          ]
+        }
+      },
+      "textures": {
+        "particle": "traveloptics:models/item/infernal_devastator"
+      }
+    },
+    "assets/traveloptics/models/displaysettings/mechanized_wraithblade_display.json": {
+      "credit": "Made with Blockbench",
+      "parent": "builtin/entity",
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -87,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            -2,
+            2.75
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -87,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            -2,
+            2.75
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -66,
+            0,
+            18
+          ],
+          "translation": [
+            3,
+            0,
+            9
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -66,
+            0,
+            18
+          ],
+          "translation": [
+            3,
+            0,
+            9
+          ]
+        },
+        "ground": {
+          "translation": [
+            0,
+            -2.75,
+            0
+          ]
+        },
+        "gui": {
+          "rotation": [
+            90,
+            44.75,
+            -90
+          ],
+          "translation": [
+            -6.25,
+            -6.25,
+            0
+          ],
+          "scale": [
+            0.96,
+            0.96,
+            0.96
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            -90,
+            44.5,
+            90
+          ],
+          "translation": [
+            7.75,
+            -8,
+            0
+          ],
+          "scale": [
+            1.17,
+            1.17,
+            1.17
+          ]
+        }
+      },
+      "textures": {
+        "particle": "traveloptics:models/item/mechanized_wraithblade"
+      }
+    },
+    "assets/traveloptics/models/displaysettings/scourge_of_the_sands_display.json": {
+      "credit": "Made with Blockbench",
+      "parent": "builtin/entity",
+      "texture_size": [
+        32,
+        32
+      ],
+      "display": {
+        "thirdperson_righthand": {
+          "translation": [
+            0,
+            -4.5,
+            0.5
+          ]
+        },
+        "thirdperson_lefthand": {
+          "translation": [
+            0,
+            -4.5,
+            0.5
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            1.5,
+            -70
+          ],
+          "translation": [
+            -9,
+            -1.25,
+            0
+          ],
+          "scale": [
+            0.66,
+            0.66,
+            0.66
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            1.5,
+            -70
+          ],
+          "translation": [
+            -9,
+            -1.25,
+            0
+          ],
+          "scale": [
+            0.66,
+            0.66,
+            0.66
+          ]
+        },
+        "ground": {
+          "translation": [
+            0,
+            3,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "gui": {
+          "rotation": [
+            90,
+            44.5,
+            -90
+          ],
+          "translation": [
+            -2.25,
+            -2.25,
+            0
+          ],
+          "scale": [
+            0.47,
+            0.47,
+            0.47
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            90,
+            -44.25,
+            90
+          ],
+          "translation": [
+            2.75,
+            -2.5,
+            0
+          ],
+          "scale": [
+            0.58,
+            0.58,
+            0.58
+          ]
+        }
+      },
+      "textures": {
+        "particle": "traveloptics:models/item/scourge_of_the_sands"
+      }
+    },
+    "assets/traveloptics/models/displaysettings/thorns_of_oblivion_display.json": {
+      "credit": "Made with Blockbench",
+      "parent": "builtin/entity",
+      "texture_size": [
+        32,
+        32
+      ],
+      "display": {
+        "thirdperson_righthand": {
+          "translation": [
+            0,
+            -4.5,
+            0.5
+          ]
+        },
+        "thirdperson_lefthand": {
+          "translation": [
+            0,
+            -4.5,
+            0.5
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            0,
+            1.5,
+            -70
+          ],
+          "translation": [
+            -9,
+            -1.25,
+            0
+          ],
+          "scale": [
+            0.66,
+            0.66,
+            0.66
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            0,
+            1.5,
+            -70
+          ],
+          "translation": [
+            -9,
+            -1.25,
+            0
+          ],
+          "scale": [
+            0.66,
+            0.66,
+            0.66
+          ]
+        },
+        "ground": {
+          "translation": [
+            0,
+            3,
+            0
+          ],
+          "scale": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "gui": {
+          "rotation": [
+            90,
+            44.5,
+            -90
+          ],
+          "translation": [
+            -2.25,
+            -2.25,
+            0
+          ],
+          "scale": [
+            0.47,
+            0.47,
+            0.47
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            90,
+            -44.25,
+            90
+          ],
+          "translation": [
+            2.75,
+            -2.5,
+            0
+          ],
+          "scale": [
+            0.58,
+            0.58,
+            0.58
+          ]
+        }
+      },
+      "textures": {
+        "particle": "traveloptics:models/item/scourge_of_the_sands"
+      }
+    },
+    "assets/traveloptics/models/displaysettings/titanlords_scepter_display.json": {
+      "credit": "Made with Blockbench",
+      "parent": "builtin/entity",
+      "texture_size": [
+        32,
+        32
+      ],
+      "display": {
+        "thirdperson_righthand": {
+          "translation": [
+            0,
+            -10.25,
+            0
+          ]
+        },
+        "thirdperson_lefthand": {
+          "translation": [
+            0,
+            -10.25,
+            0
+          ]
+        },
+        "firstperson_righthand": {
+          "translation": [
+            1,
+            -6.25,
+            0
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.78
+          ]
+        },
+        "firstperson_lefthand": {
+          "translation": [
+            1,
+            -6.25,
+            0
+          ],
+          "scale": [
+            0.78,
+            0.78,
+            0.78
+          ]
+        },
+        "ground": {
+          "scale": [
+            0.7,
+            0.7,
+            0.7
+          ]
+        },
+        "gui": {
+          "rotation": [
+            -90,
+            -41.5,
+            -90
+          ],
+          "translation": [
+            -6.25,
+            -6.25,
+            0
+          ],
+          "scale": [
+            0.62,
+            0.62,
+            0.62
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            -90,
+            45,
+            90
+          ],
+          "translation": [
+            7.25,
+            -8,
+            0
+          ],
+          "scale": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      },
+      "textures": {
+        "particle": "traveloptics:models/item/titanlords_scepter"
+      }
+    },
+    "assets/traveloptics/models/item/guide_to_watery_whispers.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:item/spellbooks/guide_to_watery_whispers_model"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:item/spellbooks/guide_to_watery_whispers_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/harbingers_wrath.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:item/weapon/harbingers_wrath_model"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:item/weapon/harbingers_wrath_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/harbingers_wrath_level_one.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:item/weapon/harbingers_wrath_model"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:item/weapon/harbingers_wrath_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/harbingers_wrath_level_three.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:item/weapon/harbingers_wrath_model"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:item/weapon/harbingers_wrath_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/harbingers_wrath_level_two.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:item/weapon/harbingers_wrath_model"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:item/weapon/harbingers_wrath_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/infernal_devastator.json": {
+      "parent": "traveloptics:displaysettings/infernal_devastator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/infernal_devastator"
+      }
+    },
+    "assets/traveloptics/models/item/infernal_devastator_level_one.json": {
+      "parent": "traveloptics:displaysettings/infernal_devastator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/infernal_devastator"
+      }
+    },
+    "assets/traveloptics/models/item/infernal_devastator_level_three.json": {
+      "parent": "traveloptics:displaysettings/infernal_devastator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/infernal_devastator"
+      }
+    },
+    "assets/traveloptics/models/item/infernal_devastator_level_two.json": {
+      "parent": "traveloptics:displaysettings/infernal_devastator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/infernal_devastator"
+      }
+    },
+    "assets/traveloptics/models/item/mechanized_wraithblade.json": {
+      "parent": "traveloptics:displaysettings/mechanized_wraithblade_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/mechanized_wraithblade"
+      }
+    },
+    "assets/traveloptics/models/item/scourge_of_the_sands.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/scourge_of_the_sands_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/scourge_of_the_sands_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/scourge_of_the_sands_level_one.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/scourge_of_the_sands_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/scourge_of_the_sands_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/scourge_of_the_sands_level_three.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/scourge_of_the_sands_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/scourge_of_the_sands_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/scourge_of_the_sands_level_two.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/scourge_of_the_sands_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/scourge_of_the_sands_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/the_obliterator.json": {
+      "parent": "traveloptics:displaysettings/the_obliterator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/the_obliterator"
+      }
+    },
+    "assets/traveloptics/models/item/the_obliterator_level_one.json": {
+      "parent": "traveloptics:displaysettings/the_obliterator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/the_obliterator"
+      }
+    },
+    "assets/traveloptics/models/item/the_obliterator_level_three.json": {
+      "parent": "traveloptics:displaysettings/the_obliterator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/the_obliterator"
+      }
+    },
+    "assets/traveloptics/models/item/the_obliterator_level_two.json": {
+      "parent": "traveloptics:displaysettings/the_obliterator_display",
+      "textures": {
+        "layer0": "traveloptics:models/item/the_obliterator"
+      }
+    },
+    "assets/traveloptics/models/item/thorns_of_oblivion.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/thorns_of_oblivion_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/thorns_of_oblivion_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/thorns_of_oblivion_level_one.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/thorns_of_oblivion_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/thorns_of_oblivion_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/thorns_of_oblivion_level_three.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/thorns_of_oblivion_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/thorns_of_oblivion_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/thorns_of_oblivion_level_two.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/thorns_of_oblivion_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/thorns_of_oblivion_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/voidstrike_reaper.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/voidstrike_reaper_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/voidstrike_reaper_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/voidstrike_reaper_level_one.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/voidstrike_reaper_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/voidstrike_reaper_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/voidstrike_reaper_level_three.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/voidstrike_reaper_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/voidstrike_reaper_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/voidstrike_reaper_level_two.json": {
+      "parent": "minecraft:item/handheld",
+      "loader": "neoforge:separate_transforms",
+      "base": {
+        "parent": "traveloptics:displaysettings/voidstrike_reaper_display"
+      },
+      "perspectives": {
+        "gui": {
+          "parent": "traveloptics:displaysettings/voidstrike_reaper_gui"
+        }
+      }
+    },
+    "assets/traveloptics/models/item/weapon/cursed_wraithblade_model.json": {
+      "warning": "Made by GameTechBC for T.O Tweaks mod, others are NOT allowed to use this model for their own project. You project might be taken down.",
+      "texture_size": [
+        64,
+        64
+      ],
+      "parent": "minecraft:item/handheld",
+      "ambientocclusion": true,
+      "textures": {
+        "0": "traveloptics:block/cursed_wraithblade",
+        "particle": "traveloptics:block/cursed_wraithblade"
+      },
+      "elements": [
+        {
+          "from": [
+            8.1125,
+            2.85,
+            7.4375
+          ],
+          "to": [
+            9.0125,
+            6.525,
+            8.5625
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              6.5,
+              2.85,
+              7.0625
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                9,
+                3,
+                9.5,
+                5.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                8,
+                0,
+                8.75,
+                2.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                9,
+                8,
+                9.5,
+                10.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                8,
+                3,
+                8.75,
+                5.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                12.5,
+                0.75,
+                12,
+                0
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                1.5,
+                12,
+                1,
+                12.75
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.225,
+            6.3,
+            7.55
+          ],
+          "to": [
+            8.9,
+            15.975,
+            8.45
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              6.5,
+              6.3,
+              7.0625
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                6,
+                0,
+                6.5,
+                6.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                7,
+                0,
+                7.5,
+                6.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                6,
+                7,
+                6.5,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                7,
+                7,
+                7.5,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                9.5,
+                13.5,
+                9,
+                13
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                13.5,
+                9,
+                13,
+                9.5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.114,
+            1.87039,
+            7.86561
+          ],
+          "to": [
+            9.011,
+            2.57989,
+            9.96261
+          ],
+          "rotation": {
+            "angle": 22.5,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              2.01889,
+              10.37661
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                13,
+                0,
+                13.5,
+                0.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                11,
+                6,
+                12.5,
+                6.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                13,
+                2,
+                13.5,
+                2.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                11,
+                7,
+                12.5,
+                7.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                8.5,
+                12.5,
+                8,
+                11
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                11.5,
+                8,
+                11,
+                9.5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.1125,
+            0.07143,
+            9.49826
+          ],
+          "to": [
+            9.0125,
+            2.69643,
+            10.21076
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              0.18393,
+              9.64826
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                10,
+                0,
+                10.5,
+                1.75
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                10,
+                2,
+                10.5,
+                3.75
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                10,
+                4,
+                10.5,
+                5.75
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                10,
+                8,
+                10.5,
+                9.75
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                13.5,
+                4.5,
+                13,
+                4
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                13.5,
+                5,
+                13,
+                5.5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.114,
+            0.26043,
+            5.78726
+          ],
+          "to": [
+            9.011,
+            0.96993,
+            10.20926
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              0.82143,
+              5.14826
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                8,
+                13,
+                8.5,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                8,
+                6,
+                11,
+                6.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                13,
+                8,
+                13.5,
+                8.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                8,
+                7,
+                11,
+                7.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                8.5,
+                11,
+                8,
+                8
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                9.5,
+                0,
+                9,
+                3
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.1125,
+            0.1039,
+            5.77267
+          ],
+          "to": [
+            9.0125,
+            2.7289,
+            6.48517
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              0.2164,
+              5.92267
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                10,
+                10,
+                10.5,
+                11.75
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                11,
+                0,
+                11.5,
+                1.75
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                11,
+                2,
+                11.5,
+                3.75
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                11,
+                4,
+                11.5,
+                5.75
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                13.5,
+                6.5,
+                13,
+                6
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                13.5,
+                7,
+                13,
+                7.5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.114,
+            2.62039,
+            5.87811
+          ],
+          "to": [
+            9.011,
+            3.32989,
+            7.97511
+          ],
+          "rotation": {
+            "angle": -22.5,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              2.76889,
+              7.33911
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                3,
+                13,
+                3.5,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                11,
+                10,
+                12.5,
+                10.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                13,
+                3,
+                13.5,
+                3.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                11,
+                11,
+                12.5,
+                11.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                9.5,
+                12.5,
+                9,
+                11
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                0.5,
+                12,
+                0,
+                13.5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            3.83682,
+            5.80081
+          ],
+          "to": [
+            8.7485,
+            4.24632,
+            7.89781
+          ],
+          "rotation": {
+            "angle": -22.5,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              1.72159,
+              7.98029
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                0,
+                14,
+                0.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                12,
+                1,
+                13.5,
+                1.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                14,
+                0,
+                14.25,
+                0.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                2,
+                12,
+                3.5,
+                12.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                12.25,
+                3.5,
+                12,
+                2
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                4.25,
+                12,
+                4,
+                13.5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.375,
+            3.64275,
+            6.68363
+          ],
+          "to": [
+            8.75,
+            5.63025,
+            7.09613
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              1.72159,
+              7.98029
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                11,
+                12,
+                11.25,
+                13.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                12,
+                12,
+                12.25,
+                13.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                1,
+                13,
+                1.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                2,
+                13,
+                2.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                9.25,
+                14.25,
+                9,
+                14
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                9,
+                14,
+                9.25
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            3.56855,
+            4.30169
+          ],
+          "to": [
+            8.7485,
+            4.65305,
+            4.71119
+          ],
+          "rotation": {
+            "angle": 45,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              1.72159,
+              7.98029
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                13,
+                10,
+                13.25,
+                10.75
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                13,
+                11,
+                13.25,
+                11.75
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                13,
+                12,
+                13.25,
+                12.75
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                13,
+                13,
+                13.25,
+                13.75
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                10.25,
+                14.25,
+                10,
+                14
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                10,
+                14,
+                10.25
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.375,
+            1.15909,
+            4.99904
+          ],
+          "to": [
+            8.75,
+            3.22159,
+            5.41154
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              1.72159,
+              7.98029
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                12,
+                4,
+                12.25,
+                5.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                5,
+                12,
+                5.25,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                12,
+                8,
+                12.25,
+                9.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                10,
+                12,
+                10.25,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                14.25,
+                1.25,
+                14,
+                1
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                2,
+                14,
+                2.25
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            1.85909,
+            5.01268
+          ],
+          "to": [
+            8.7485,
+            2.34359,
+            5.23468
+          ],
+          "rotation": {
+            "angle": -22.5,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              1.72159,
+              7.98029
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                3,
+                14,
+                3.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                14,
+                3,
+                14.25,
+                3.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                4,
+                14,
+                4.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                14,
+                4,
+                14.25,
+                4.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                5.25,
+                14.25,
+                5,
+                14
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                5,
+                14,
+                5.25
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            0.79861,
+            5.1801
+          ],
+          "to": [
+            8.7485,
+            1.24561,
+            5.4021
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              1.72159,
+              7.98029
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                6,
+                14,
+                6.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                14,
+                6,
+                14.25,
+                6.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                7,
+                14,
+                7.25,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                14,
+                7,
+                14.25,
+                7.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                8.25,
+                14.25,
+                8,
+                14
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                8,
+                14,
+                8.25
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.375,
+            1.15909,
+            10.58846
+          ],
+          "to": [
+            8.75,
+            3.22159,
+            11.00096
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              1.72159,
+              8.01971
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                12.25,
+                8,
+                12,
+                9.5
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                5.25,
+                12,
+                5,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                12.25,
+                4,
+                12,
+                5.5
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                10.25,
+                12,
+                10,
+                13.5
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                14.25,
+                1,
+                14,
+                1.25
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                2.25,
+                14,
+                2
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            1.85909,
+            10.76532
+          ],
+          "to": [
+            8.7485,
+            2.34359,
+            10.98732
+          ],
+          "rotation": {
+            "angle": 22.5,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              1.72159,
+              8.01971
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                4.25,
+                14,
+                4,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                14.25,
+                3,
+                14,
+                3.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                3.25,
+                14,
+                3,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                14.25,
+                4,
+                14,
+                4.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                5.25,
+                14,
+                5,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                5.25,
+                14,
+                5
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            0.79861,
+            10.5979
+          ],
+          "to": [
+            8.7485,
+            1.24561,
+            10.8199
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              1.72159,
+              8.01971
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                7.25,
+                14,
+                7,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                14.25,
+                6,
+                14,
+                6.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                6.25,
+                14,
+                6,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                14.25,
+                7,
+                14,
+                7.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                8.25,
+                14,
+                8,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                8.25,
+                14,
+                8
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            3.56855,
+            11.28881
+          ],
+          "to": [
+            8.7485,
+            4.65305,
+            11.69831
+          ],
+          "rotation": {
+            "angle": -45,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              1.72159,
+              8.01971
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                13.25,
+                12,
+                13,
+                12.75
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                13.25,
+                11,
+                13,
+                11.75
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                13.25,
+                10,
+                13,
+                10.75
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                13.25,
+                13,
+                13,
+                13.75
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                10.25,
+                14,
+                10,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                10.25,
+                14,
+                10
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.375,
+            3.64275,
+            8.90387
+          ],
+          "to": [
+            8.75,
+            5.63025,
+            9.31637
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              1.72159,
+              8.01971
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                1.25,
+                13,
+                1,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                12.25,
+                12,
+                12,
+                13.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                11.25,
+                12,
+                11,
+                13.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                2.25,
+                13,
+                2,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                9.25,
+                14,
+                9,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                14.25,
+                9.25,
+                14,
+                9
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.3765,
+            3.83682,
+            8.10219
+          ],
+          "to": [
+            8.7485,
+            4.24632,
+            10.19919
+          ],
+          "rotation": {
+            "angle": 22.5,
+            "axis": "x",
+            "origin": [
+              8.5625,
+              1.72159,
+              8.01971
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                14.25,
+                0,
+                14,
+                0.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                13.5,
+                1,
+                12,
+                1.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                0.25,
+                14,
+                0,
+                14.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                3.5,
+                12,
+                2,
+                12.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                12.25,
+                2,
+                12,
+                3.5
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                4.25,
+                13.5,
+                4,
+                12
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.5625,
+            2.2125,
+            3.3875
+          ],
+          "to": [
+            8.5625,
+            18.975,
+            8
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              14.2125,
+              8
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                0,
+                0,
+                3,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                3,
+                0,
+                6,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                0,
+                3,
+                0,
+                0
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                0,
+                0,
+                0,
+                3
+              ],
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            4.0625,
+            2.2125,
+            8
+          ],
+          "to": [
+            8.675,
+            18.975,
+            8
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.675,
+              14.2125,
+              8
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                0,
+                0,
+                3,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                3,
+                0,
+                6,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                0,
+                3,
+                0,
+                0
+              ],
+              "rotation": 270,
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                0,
+                0,
+                0,
+                3
+              ],
+              "rotation": 90,
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.45,
+            2.2125,
+            8
+          ],
+          "to": [
+            13.0625,
+            18.975,
+            8
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.45,
+              14.2125,
+              8
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                3,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                6,
+                0,
+                3,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                0,
+                0,
+                0,
+                3
+              ],
+              "rotation": 270,
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                0,
+                3,
+                0,
+                0
+              ],
+              "rotation": 90,
+              "texture": "#0"
+            }
+          }
+        },
+        {
+          "from": [
+            8.5625,
+            2.2125,
+            8
+          ],
+          "to": [
+            8.5625,
+            18.975,
+            12.6125
+          ],
+          "rotation": {
+            "angle": 0,
+            "axis": "y",
+            "origin": [
+              8.5625,
+              14.2125,
+              8
+            ]
+          },
+          "faces": {
+            "north": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "east": {
+              "uv": [
+                3,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "south": {
+              "uv": [
+                0,
+                0,
+                0,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "west": {
+              "uv": [
+                6,
+                0,
+                3,
+                11.25
+              ],
+              "texture": "#0"
+            },
+            "up": {
+              "uv": [
+                0,
+                0,
+                0,
+                3
+              ],
+              "texture": "#0"
+            },
+            "down": {
+              "uv": [
+                0,
+                3,
+                0,
+                0
+              ],
+              "texture": "#0"
+            }
+          }
+        }
+      ],
+      "display": {
+        "thirdperson_righthand": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            -2,
+            -5.5
+          ]
+        },
+        "thirdperson_lefthand": {
+          "rotation": [
+            -90,
+            0,
+            0
+          ],
+          "translation": [
+            0,
+            -2,
+            -5.5
+          ]
+        },
+        "firstperson_righthand": {
+          "rotation": [
+            -66.6,
+            6.19,
+            -2.67
+          ],
+          "translation": [
+            0,
+            4,
+            1
+          ]
+        },
+        "firstperson_lefthand": {
+          "rotation": [
+            -66.6,
+            6.19,
+            -2.67
+          ],
+          "translation": [
+            0,
+            4,
+            1
+          ]
+        },
+        "ground": {
+          "translation": [
+            0,
+            2.25,
+            0
+          ]
+        },
+        "gui": {
+          "rotation": [
+            -90,
+            -42.25,
+            -90
+          ],
+          "translation": [
+            -1,
+            -1,
+            0
+          ],
+          "scale": [
+            0.96,
+            0.96,
+            0.96
+          ]
+        },
+        "head": {
+          "translation": [
+            0,
+            4,
+            0
+          ]
+        },
+        "fixed": {
+          "rotation": [
+            90,
+            -45,
+            90
+          ],
+          "translation": [
+            1,
+            -1.25,
+            0
+          ],
+          "scale": [
+            1.17,
+            1.17,
+            1.17
+          ]
+        }
+      }
+    }
+  }
+}

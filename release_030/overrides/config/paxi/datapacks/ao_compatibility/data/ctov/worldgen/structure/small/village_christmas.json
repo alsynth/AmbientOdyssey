@@ -1,0 +1,23 @@
+{
+  "biomes": {
+    "type": "neoforge:or",
+    "values": [
+      "#minecraft:has_structure/village_snowy",
+      "#c:is_snowy"
+    ]
+  },
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 80,
+  "pool_aliases": [],
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "size": 4,
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 0
+  },
+  "start_pool": "ctov:village/christmas/town_centers",
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
+  "type": "lithostitched:jigsaw",
+  "use_expansion_hack": true
+}

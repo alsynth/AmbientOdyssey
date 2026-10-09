@@ -1,0 +1,240 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/Constants",
+    "java/lang/Object",
+    "Constants.java",
+    "MC_ID",
+    "Ljava/lang/String;",
+    "minecraft",
+    "MOD_ID",
+    "cristellib",
+    "MOD_NAME",
+    "Cristel Lib",
+    "MOD_COMPONENT",
+    "Lnet/minecraft/network/chat/Component;",
+    "LOG",
+    "Lorg/apache/logging/log4j/Logger;",
+    "CRISTEL_LIB_PACK_ID",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/Constants;",
+    "getWithPrefix",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "message",
+    "[%s] %s",
+    "java/lang/String",
+    "format",
+    "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;",
+    "id",
+    "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "path",
+    "net/minecraft/resources/ResourceLocation",
+    "fromNamespaceAndPath",
+    "(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "<clinit>",
+    "net/minecraft/network/chat/Component",
+    "literal",
+    "(Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;",
+    "net/minecraft/ChatFormatting",
+    "LIGHT_PURPLE",
+    "Lnet/minecraft/ChatFormatting;",
+    "net/minecraft/network/chat/MutableComponent",
+    "withStyle",
+    "(Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;",
+    "UNDERLINE",
+    "org/apache/logging/log4j/LogManager",
+    "getLogger",
+    "(Ljava/lang/String;)Lorg/apache/logging/log4j/Logger;",
+    "runtime_pack",
+    "ConstantValue",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "SourceFile"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getWithPrefix",
+      "descriptor": "(Ljava/lang/String;)Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "[%s] %s"
+        },
+        {
+          "offset": 2,
+          "op": "0x5"
+        },
+        {
+          "offset": 3,
+          "op": "0xbd",
+          "reference": "java/lang/Object"
+        },
+        {
+          "offset": 6,
+          "op": "0x59"
+        },
+        {
+          "offset": 7,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 8,
+          "op": "ldc",
+          "reference": "cristellib"
+        },
+        {
+          "offset": 10,
+          "op": "0x53"
+        },
+        {
+          "offset": 11,
+          "op": "0x59"
+        },
+        {
+          "offset": 12,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 13,
+          "op": "0x2a"
+        },
+        {
+          "offset": 14,
+          "op": "0x53"
+        },
+        {
+          "offset": 15,
+          "op": "invokestatic",
+          "reference": "java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+        },
+        {
+          "offset": 18,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "id",
+      "descriptor": "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "cristellib"
+        },
+        {
+          "offset": 2,
+          "op": "0x2a"
+        },
+        {
+          "offset": 3,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 6,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "Cristel Lib"
+        },
+        {
+          "offset": 2,
+          "op": "invokestatic",
+          "reference": "net/minecraft/network/chat/Component literal (Ljava/lang/String;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 5,
+          "op": "getstatic",
+          "reference": "net/minecraft/ChatFormatting LIGHT_PURPLE Lnet/minecraft/ChatFormatting;"
+        },
+        {
+          "offset": 8,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/network/chat/MutableComponent withStyle (Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 11,
+          "op": "getstatic",
+          "reference": "net/minecraft/ChatFormatting UNDERLINE Lnet/minecraft/ChatFormatting;"
+        },
+        {
+          "offset": 14,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/network/chat/MutableComponent withStyle (Lnet/minecraft/ChatFormatting;)Lnet/minecraft/network/chat/MutableComponent;"
+        },
+        {
+          "offset": 17,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/Constants MOD_COMPONENT Lnet/minecraft/network/chat/Component;"
+        },
+        {
+          "offset": 20,
+          "op": "ldc",
+          "reference": "Cristel Lib"
+        },
+        {
+          "offset": 22,
+          "op": "invokestatic",
+          "reference": "org/apache/logging/log4j/LogManager getLogger (Ljava/lang/String;)Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 25,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/Constants LOG Lorg/apache/logging/log4j/Logger;"
+        },
+        {
+          "offset": 28,
+          "op": "ldc",
+          "reference": "runtime_pack"
+        },
+        {
+          "offset": 30,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/Constants id (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 33,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/Constants CRISTEL_LIB_PACK_ID Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 36,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

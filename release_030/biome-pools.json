@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "description": "Authoring settings. Run python3 compile_worldgen_031.py after editing; the mod reads the generated Paxi datapack.",
+  "dimension": "minecraft:overworld",
+  "pools": [
+    {
+      "name": "plains",
+      "targets": [
+        "minecraft:plains"
+      ],
+      "vanilla_percent": 5,
+      "biomes": {
+        "biomeswevegone:prairie": 40,
+        "regions_unexplored:grassland": 35,
+        "regions_unexplored:flower_fields": 15,
+        "biomeswevegone:skyris_vale": 10
+      }
+    },
+    {
+      "name": "flowering_open",
+      "targets": [
+        "minecraft:sunflower_plains",
+        "minecraft:flower_forest"
+      ],
+      "vanilla_percent": 5,
+      "biomes": {
+        "regions_unexplored:flower_fields": 50,
+        "biomeswevegone:sakura_grove": 25,
+        "biomesoplenty:pumpkin_patch": 15,
+        "regions_unexplored:orchard": 5,
+        "biomeswevegone:skyris_vale": 5
+      }
+    },
+    {
+      "name": "forest",
+      "targets": [
+        "minecraft:forest"
+      ],
+      "vanilla_percent": 5,
+      "biomes": {
+        "biomeswevegone:ebony_woods": 30,
+        "biomeswevegone:redwood_thicket": 25,
+        "biomeswevegone:zelkova_forest": 20,
+        "regions_unexplored:maple_forest": 15,
+        "biomeswevegone:weeping_witch_forest": 10
+      }
+    },
+    {
+      "name": "birch",
+      "targets": [
+        "minecraft:birch_forest",
+        "minecraft:old_growth_birch_forest"
+      ],
+      "vanilla_percent": 5,
+      "biomes": {
+        "biomeswevegone:zelkova_forest": 40,
+        "biomeswevegone:sakura_grove": 35,
+        "regions_unexplored:maple_forest": 25
+      }
+    },
+    {
+      "name": "savanna",
+      "targets": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau"
+      ],
+      "vanilla_percent": 0.5,
+      "biomes": {
+        "biomeswevegone:prairie": 80,
+        "regions_unexplored:grassland": 10,
+        "natures_spirit:floral_ridges": 10
+      }
+    },
+    {
+      "name": "windswept_savanna",
+      "targets": [
+        "minecraft:windswept_savanna"
+      ],
+      "vanilla_percent": 0.5,
+      "biomes": {
+        "biomeswevegone:prairie": 75,
+        "regions_unexplored:grassland": 10,
+        "natures_spirit:floral_ridges": 15
+      }
+    },
+    {
+      "name": "jungle",
+      "targets": [
+        "minecraft:jungle",
+        "minecraft:sparse_jungle",
+        "minecraft:bamboo_jungle"
+      ],
+      "vanilla_percent": 0.5,
+      "biomes": {
+        "biomeswevegone:crag_gardens": 55,
+        "biomeswevegone:ebony_woods": 30,
+        "biomeswevegone:redwood_thicket": 15
+      }
+    }
+  ],
+  "climate_guards": [
+    {
+      "targets": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:grassland",
+        "regions_unexplored:flower_fields",
+        "biomesoplenty:pumpkin_patch"
+      ],
+      "biome": "natures_spirit:alpine_clearings",
+      "temperature": {
+        "max": -0.1501
+      },
+      "reason": "Cold non-frozen plains slots use the selected cool open biome."
+    },
+    {
+      "targets": [
+        "regions_unexplored:grassland"
+      ],
+      "biome": "biomeswevegone:prairie",
+      "temperature": {
+        "min": -0.15,
+        "max": 0.1999
+      },
+      "reason": "RU Grassland natively requires temperature >= 0.2."
+    },
+    {
+      "targets": [
+        "biomeswevegone:skyris_vale"
+      ],
+      "biome": "biomeswevegone:prairie",
+      "temperature": {
+        "min": 0.2001
+      },
+      "reason": "Do not extend cool Skyris Vale into warm plains."
+    },
+    {
+      "targets": [
+        "biomeswevegone:ebony_woods"
+      ],
+      "biome": "regions_unexplored:maple_forest",
+      "temperature": {
+        "max": -0.1501
+      },
+      "reason": "Cool forest fallback."
+    },
+    {
+      "targets": [
+        "biomeswevegone:redwood_thicket"
+      ],
+      "biome": "biomeswevegone:maple_taiga",
+      "temperature": {
+        "max": -0.1501
+      },
+      "reason": "Cool wooded fallback."
+    },
+    {
+      "targets": [
+        "biomeswevegone:ebony_woods"
+      ],
+      "biome": "biomeswevegone:weeping_witch_forest",
+      "temperature": {
+        "min": -0.15,
+        "max": 0.1999
+      },
+      "reason": "Temperate forest fallback."
+    },
+    {
+      "targets": [
+        "biomeswevegone:redwood_thicket"
+      ],
+      "biome": "biomeswevegone:sakura_grove",
+      "temperature": {
+        "min": -0.15,
+        "max": 0.1999
+      },
+      "reason": "Temperate woodland fallback."
+    },
+    {
+      "targets": [
+        "biomeswevegone:zelkova_forest"
+      ],
+      "biome": "biomeswevegone:sakura_grove",
+      "temperature": {
+        "min": -0.1499,
+        "max": 0.1999
+      },
+      "reason": "Keep the cool Zelkova selection in cool slots."
+    },
+    {
+      "targets": [
+        "regions_unexplored:maple_forest",
+        "biomeswevegone:zelkova_forest",
+        "biomeswevegone:weeping_witch_forest",
+        "biomeswevegone:sakura_grove"
+      ],
+      "biome": "biomeswevegone:ebony_woods",
+      "temperature": {
+        "min": 0.2001
+      },
+      "reason": "Warm forest/birch fallbacks use a retained warm forest."
+    },
+    {
+      "targets": [
+        "biomeswevegone:sakura_grove",
+        "regions_unexplored:maple_forest",
+        "biomeswevegone:weeping_witch_forest"
+      ],
+      "biome": "biomeswevegone:zelkova_forest",
+      "temperature": {
+        "max": -0.1501
+      },
+      "reason": "Cool deciduous selection, limited to replacement-origin biomes."
+    },
+    {
+      "targets": [
+        "natures_spirit:floral_ridges"
+      ],
+      "biome": "natures_spirit:windswept_sugi_forest",
+      "temperature": {
+        "max": 0.1999
+      },
+      "reason": "Nature's Spirit places Floral Ridges in warm windswept slots and Sugi in temperate windswept slots."
+    },
+    {
+      "targets": [
+        "natures_spirit:floral_ridges"
+      ],
+      "biome": "biomeswevegone:prairie",
+      "temperature": {
+        "min": 0.5501
+      },
+      "reason": "The selected pool has no native hot/dry savanna donor; use a warm open biome instead."
+    }
+  ],
+  "desired_rarity": {
+    "biomesoplenty:volcano": "rare; native placement only",
+    "biomeswevegone:skyris_vale": "uncommon",
+    "biomesoplenty:snowblossom_grove": "uncommon; native placement only",
+    "natures_spirit:floral_ridges": "uncommon"
+  }
+}

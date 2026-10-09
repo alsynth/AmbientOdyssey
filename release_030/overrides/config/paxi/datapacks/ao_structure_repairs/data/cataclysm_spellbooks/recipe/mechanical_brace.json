@@ -1,0 +1,17 @@
+{
+  "type": "cataclysm:weapon_fusion",
+  "base": {
+    "item": "irons_spellbooks:cooldown_ring"
+  },
+  "addition": {
+    "item": "cataclysm_spellbooks:mechanical_scrap"
+  },
+  "result": {
+    "id": "cataclysm_spellbooks:mechanical_brace"
+  },
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:false"
+    }
+  ]
+}

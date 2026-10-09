@@ -1,0 +1,147 @@
+{
+  "constants": [
+    "com/craisinlord/integrated_api/mixins/structures/DisableStructuresMixin",
+    "java/lang/Object",
+    "DisableStructuresMixin.java",
+    "Lorg/spongepowered/asm/mixin/Mixin;",
+    "value",
+    "Lnet/minecraft/world/level/chunk/ChunkGenerator;",
+    "net/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry",
+    "net/minecraft/world/level/levelgen/structure/StructureSet",
+    "StructureSelectionEntry",
+    "<init>",
+    "()V",
+    "this",
+    "Lcom/craisinlord/integrated_api/mixins/structures/DisableStructuresMixin;",
+    "integrated_api_disableTaggedStructures",
+    "(Lnet/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;JLnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/SectionPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+    "(Lnet/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;JLnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/SectionPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;)V",
+    "structureSetEntry",
+    "structureManager",
+    "registryAccess",
+    "randomState",
+    "structureTemplateManager",
+    "seed",
+    "chunkAccess",
+    "chunkPos",
+    "sectionPos",
+    "cir",
+    "Lorg/spongepowered/asm/mixin/injection/Inject;",
+    "method",
+    "tryGenerateStructure",
+    "at",
+    "Lorg/spongepowered/asm/mixin/injection/At;",
+    "HEAD",
+    "cancellable",
+    "structure",
+    "()Lnet/minecraft/core/Holder;",
+    "com/craisinlord/integrated_api/modinit/IATags",
+    "DISABLED_STRUCTURES",
+    "Lnet/minecraft/tags/TagKey;",
+    "net/minecraft/core/Holder",
+    "is",
+    "(Lnet/minecraft/tags/TagKey;)Z",
+    "java/lang/Boolean",
+    "valueOf",
+    "(Z)Ljava/lang/Boolean;",
+    "org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable",
+    "setReturnValue",
+    "(Ljava/lang/Object;)V",
+    "Lnet/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry;",
+    "Lnet/minecraft/world/level/StructureManager;",
+    "Lnet/minecraft/core/RegistryAccess;",
+    "Lnet/minecraft/world/level/levelgen/RandomState;",
+    "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;",
+    "J",
+    "Lnet/minecraft/world/level/chunk/ChunkAccess;",
+    "Lnet/minecraft/world/level/ChunkPos;",
+    "Lnet/minecraft/core/SectionPos;",
+    "Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/lang/Boolean;>;",
+    "Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "StackMapTable",
+    "LocalVariableTypeTable",
+    "Signature",
+    "RuntimeVisibleAnnotations",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "RuntimeInvisibleAnnotations"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "integrated_api_disableTaggedStructures",
+      "descriptor": "(Lnet/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/core/RegistryAccess;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplateManager;JLnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/ChunkPos;Lnet/minecraft/core/SectionPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "net/minecraft/world/level/levelgen/structure/StructureSet$StructureSelectionEntry structure ()Lnet/minecraft/core/Holder;"
+        },
+        {
+          "offset": 4,
+          "op": "getstatic",
+          "reference": "com/craisinlord/integrated_api/modinit/IATags DISABLED_STRUCTURES Lnet/minecraft/tags/TagKey;"
+        },
+        {
+          "offset": 7,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/core/Holder is (Lnet/minecraft/tags/TagKey;)Z"
+        },
+        {
+          "offset": 12,
+          "op": "ifeq",
+          "args": "000c"
+        },
+        {
+          "offset": 15,
+          "op": "0x19",
+          "args": "0b"
+        },
+        {
+          "offset": 17,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 18,
+          "op": "invokestatic",
+          "reference": "java/lang/Boolean valueOf (Z)Ljava/lang/Boolean;"
+        },
+        {
+          "offset": 21,
+          "op": "invokevirtual",
+          "reference": "org/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable setReturnValue (Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 24,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

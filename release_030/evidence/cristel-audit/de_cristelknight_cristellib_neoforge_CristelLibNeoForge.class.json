@@ -1,0 +1,192 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/neoforge/CristelLibNeoForge",
+    "java/lang/Object",
+    "CristelLibNeoForge.java",
+    "Lnet/neoforged/fml/common/Mod;",
+    "value",
+    "cristellib",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "<init>",
+    "(Lnet/neoforged/bus/api/IEventBus;)V",
+    "eventBus",
+    "()V",
+    "de/cristelknight/cristellib/CristelLib",
+    "preInit",
+    "init",
+    "(Ljava/lang/Object;)V",
+    "injectPackRepositories",
+    "(Lnet/neoforged/neoforge/event/AddPackFindersEvent;)V",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "accept",
+    "(Lde/cristelknight/cristellib/neoforge/CristelLibNeoForge;)Ljava/util/function/Consumer;",
+    "net/neoforged/bus/api/IEventBus",
+    "addListener",
+    "(Ljava/util/function/Consumer;)V",
+    "net/neoforged/fml/loading/FMLEnvironment",
+    "dist",
+    "Lnet/neoforged/api/distmarker/Dist;",
+    "net/neoforged/api/distmarker/Dist",
+    "isClient",
+    "()Z",
+    "de/cristelknight/cristellib/util/Util",
+    "isClothConfigLoaded",
+    "de/cristelknight/cristellib/neoforge/client/CristelLibNeoForgeClient",
+    "registerMainConfigScreen",
+    "this",
+    "Lde/cristelknight/cristellib/neoforge/CristelLibNeoForge;",
+    "Lnet/neoforged/bus/api/IEventBus;",
+    "event",
+    "net/neoforged/neoforge/event/AddPackFindersEvent",
+    "getPackType",
+    "()Lnet/minecraft/server/packs/PackType;",
+    "java/util/Objects",
+    "requireNonNull",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "addRepositorySource",
+    "(Lnet/minecraft/server/packs/repository/RepositorySource;)V",
+    "(Lnet/neoforged/neoforge/event/AddPackFindersEvent;)Ljava/util/function/Consumer;",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader",
+    "registerEachPackAsSource",
+    "(Lnet/minecraft/server/packs/PackType;Ljava/util/function/Consumer;)V",
+    "Lnet/neoforged/neoforge/event/AddPackFindersEvent;",
+    "Code",
+    "StackMapTable",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "RuntimeVisibleAnnotations",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Lnet/neoforged/bus/api/IEventBus;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLib preInit ()V"
+        },
+        {
+          "offset": 7,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLib init ()V"
+        },
+        {
+          "offset": 10,
+          "op": "0x2b"
+        },
+        {
+          "offset": 11,
+          "op": "0x2a"
+        },
+        {
+          "offset": 12,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 45)"
+        },
+        {
+          "offset": 17,
+          "op": "invokeinterface",
+          "reference": "net/neoforged/bus/api/IEventBus addListener (Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 22,
+          "op": "getstatic",
+          "reference": "net/neoforged/fml/loading/FMLEnvironment dist Lnet/neoforged/api/distmarker/Dist;"
+        },
+        {
+          "offset": 25,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/api/distmarker/Dist isClient ()Z"
+        },
+        {
+          "offset": 28,
+          "op": "ifeq",
+          "args": "000c"
+        },
+        {
+          "offset": 31,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/util/Util isClothConfigLoaded ()Z"
+        },
+        {
+          "offset": 34,
+          "op": "ifeq",
+          "args": "0006"
+        },
+        {
+          "offset": 37,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/neoforge/client/CristelLibNeoForgeClient registerMainConfigScreen ()V"
+        },
+        {
+          "offset": 40,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "injectPackRepositories",
+      "descriptor": "(Lnet/neoforged/neoforge/event/AddPackFindersEvent;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "net/neoforged/neoforge/event/AddPackFindersEvent getPackType ()Lnet/minecraft/server/packs/PackType;"
+        },
+        {
+          "offset": 4,
+          "op": "0x2b"
+        },
+        {
+          "offset": 5,
+          "op": "0x59"
+        },
+        {
+          "offset": 6,
+          "op": "invokestatic",
+          "reference": "java/util/Objects requireNonNull (Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 9,
+          "op": "0x57"
+        },
+        {
+          "offset": 10,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 98)"
+        },
+        {
+          "offset": 15,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader registerEachPackAsSource (Lnet/minecraft/server/packs/PackType;Ljava/util/function/Consumer;)V"
+        },
+        {
+          "offset": 18,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

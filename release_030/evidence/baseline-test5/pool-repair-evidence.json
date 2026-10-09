@@ -1,0 +1,200 @@
+[
+  {
+    "pool": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+    "template": "data/dungeons_arise/structure/foundry/foundry_corridor_gear_0.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:foundry_corridor_gear"
+  },
+  {
+    "pool": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+    "template": "data/dungeons_arise/structure/foundry/foundry_corridor_gear_1.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:foundry_corridor_gear"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_0.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_1.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_2.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_3.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_4.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_5.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_6.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_7.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_8.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_9.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_10.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_11.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_12.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_13.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_14.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_15.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_16.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_17.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_18.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_19.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_deco_library_20.nbt",
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "connector_name": "dungeons_arise:mechanical_nest_deco_0_library"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "template": "data/integrated_villages/structure/cabin_village/mobs/cabin_village_villager.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:villager"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "template": "data/integrated_villages/structure/cabin_village/mobs/cabin_village_villager_baby.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:villager"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "template": "data/integrated_villages/structure/cabin_village/mobs/cabin_village_villager_nitwit.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:villager"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn1.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn2.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn3.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn4.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn5.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn6.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  },
+  {
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_lecturn7.nbt",
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "connector_name": "integrated_villages:lecturn"
+  }
+]

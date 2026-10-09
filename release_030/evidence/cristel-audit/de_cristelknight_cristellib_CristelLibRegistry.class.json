@@ -1,0 +1,652 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/CristelLibRegistry",
+    "java/lang/Object",
+    "CristelLibRegistry.java",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "configs",
+    "Lcom/google/common/collect/ImmutableMap;",
+    "Lcom/google/common/collect/ImmutableMap<Ljava/lang/String;Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;>;",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/CristelLibRegistry;",
+    "getConfigMap",
+    "()Lcom/google/common/collect/ImmutableMap;",
+    "()Lcom/google/common/collect/ImmutableMap<Ljava/lang/String;Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;>;",
+    "com/google/common/collect/ImmutableMap",
+    "isEmpty",
+    "()Z",
+    "java/lang/RuntimeException",
+    "Tried to access Registry before initialized.",
+    "de/cristelknight/cristellib/Constants",
+    "getWithPrefix",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "(Ljava/lang/String;)V",
+    "getConfigs",
+    "()Ljava/util/Set;",
+    "()Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;",
+    "values",
+    "()Lcom/google/common/collect/ImmutableCollection;",
+    "com/google/common/collect/ImmutableCollection",
+    "stream",
+    "()Ljava/util/stream/Stream;",
+    "(Ljava/lang/Object;)Ljava/lang/Object;",
+    "java/util/Collection",
+    "(Ljava/util/Set;)Ljava/util/stream/Stream;",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "apply",
+    "()Ljava/util/function/Function;",
+    "java/util/stream/Stream",
+    "flatMap",
+    "(Ljava/util/function/Function;)Ljava/util/stream/Stream;",
+    "java/util/stream/Collectors",
+    "toSet",
+    "()Ljava/util/stream/Collector;",
+    "collect",
+    "(Ljava/util/stream/Collector;)Ljava/lang/Object;",
+    "java/util/Set",
+    "registerSetToConfig",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;[Lde/cristelknight/cristellib/StructureConfig;)V",
+    "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List<Ljava/lang/String;>;[Lde/cristelknight/cristellib/StructureConfig;)V",
+    "modId",
+    "namespace",
+    "sets",
+    "minecraft",
+    "java/lang/String",
+    "equals",
+    "(Ljava/lang/Object;)Z",
+    "java/util/List",
+    "lambda$registerSetToConfig$0",
+    "(ZLjava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "(ZLjava/lang/String;)Ljava/util/function/Function;",
+    "map",
+    "toList",
+    "()Ljava/util/List;",
+    "(Ljava/lang/String;Ljava/util/List;[Lde/cristelknight/cristellib/StructureConfig;)V",
+    "Ljava/lang/String;",
+    "Ljava/util/List<Ljava/lang/String;>;",
+    "Ljava/util/List;",
+    "[Lde/cristelknight/cristellib/StructureConfig;",
+    "isMC",
+    "Z",
+    "(Ljava/lang/String;Ljava/util/List<Lnet/minecraft/resources/ResourceLocation;>;[Lde/cristelknight/cristellib/StructureConfig;)V",
+    "de/cristelknight/cristellib/data/codec/StructureSetData",
+    "(Ljava/lang/String;Ljava/util/List;)V",
+    "de/cristelknight/cristellib/StructureConfig",
+    "addSet",
+    "(Lde/cristelknight/cristellib/data/codec/StructureSetData;)V",
+    "config",
+    "Lde/cristelknight/cristellib/StructureConfig;",
+    "Ljava/util/List<Lnet/minecraft/resources/ResourceLocation;>;",
+    "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;[Lde/cristelknight/cristellib/StructureConfig;)V",
+    "set",
+    "of",
+    "(Ljava/lang/Object;)Ljava/util/List;",
+    "Lnet/minecraft/resources/ResourceLocation;",
+    "string",
+    "net/minecraft/resources/ResourceLocation",
+    "withDefaultNamespace",
+    "fromNamespaceAndPath",
+    "(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+    "<clinit>",
+    "Signature",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "StackMapTable",
+    "LocalVariableTypeTable",
+    "MethodParameters",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getConfigMap",
+      "descriptor": "()Lcom/google/common/collect/ImmutableMap;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry configs Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "com/google/common/collect/ImmutableMap isEmpty ()Z"
+        },
+        {
+          "offset": 6,
+          "op": "ifne",
+          "args": "0007"
+        },
+        {
+          "offset": 9,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry configs Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 12,
+          "op": "areturn"
+        },
+        {
+          "offset": 13,
+          "op": "new",
+          "reference": "java/lang/RuntimeException"
+        },
+        {
+          "offset": 16,
+          "op": "0x59"
+        },
+        {
+          "offset": 17,
+          "op": "ldc",
+          "reference": "Tried to access Registry before initialized."
+        },
+        {
+          "offset": 19,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/Constants getWithPrefix (Ljava/lang/String;)Ljava/lang/String;"
+        },
+        {
+          "offset": 22,
+          "op": "invokespecial",
+          "reference": "java/lang/RuntimeException <init> (Ljava/lang/String;)V"
+        },
+        {
+          "offset": 25,
+          "op": "0xbf"
+        }
+      ]
+    },
+    {
+      "name": "getConfigs",
+      "descriptor": "()Ljava/util/Set;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry getConfigMap ()Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 3,
+          "op": "invokevirtual",
+          "reference": "com/google/common/collect/ImmutableMap values ()Lcom/google/common/collect/ImmutableCollection;"
+        },
+        {
+          "offset": 6,
+          "op": "invokevirtual",
+          "reference": "com/google/common/collect/ImmutableCollection stream ()Ljava/util/stream/Stream;"
+        },
+        {
+          "offset": 9,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 76)"
+        },
+        {
+          "offset": 14,
+          "op": "invokeinterface",
+          "reference": "java/util/stream/Stream flatMap (Ljava/util/function/Function;)Ljava/util/stream/Stream;"
+        },
+        {
+          "offset": 19,
+          "op": "invokestatic",
+          "reference": "java/util/stream/Collectors toSet ()Ljava/util/stream/Collector;"
+        },
+        {
+          "offset": 22,
+          "op": "invokeinterface",
+          "reference": "java/util/stream/Stream collect (Ljava/util/stream/Collector;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 27,
+          "op": "checkcast",
+          "reference": "java/util/Set"
+        },
+        {
+          "offset": 30,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "registerSetToConfig",
+      "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;[Lde/cristelknight/cristellib/StructureConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2c"
+        },
+        {
+          "offset": 1,
+          "op": "0xc6",
+          "args": "000c"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "ldc",
+          "reference": "minecraft"
+        },
+        {
+          "offset": 7,
+          "op": "invokevirtual",
+          "reference": "java/lang/String equals (Ljava/lang/Object;)Z"
+        },
+        {
+          "offset": 10,
+          "op": "ifeq",
+          "args": "0007"
+        },
+        {
+          "offset": 13,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 14,
+          "op": "goto",
+          "args": "0004"
+        },
+        {
+          "offset": 17,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 18,
+          "op": "0x36",
+          "args": "05"
+        },
+        {
+          "offset": 20,
+          "op": "0x2a"
+        },
+        {
+          "offset": 21,
+          "op": "0x2b"
+        },
+        {
+          "offset": 22,
+          "op": "0x2d"
+        },
+        {
+          "offset": 23,
+          "op": "invokeinterface",
+          "reference": "java/util/List stream ()Ljava/util/stream/Stream;"
+        },
+        {
+          "offset": 28,
+          "op": "0x15",
+          "args": "05"
+        },
+        {
+          "offset": 30,
+          "op": "0x2c"
+        },
+        {
+          "offset": 31,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 121)"
+        },
+        {
+          "offset": 36,
+          "op": "invokeinterface",
+          "reference": "java/util/stream/Stream map (Ljava/util/function/Function;)Ljava/util/stream/Stream;"
+        },
+        {
+          "offset": 41,
+          "op": "invokeinterface",
+          "reference": "java/util/stream/Stream toList ()Ljava/util/List;"
+        },
+        {
+          "offset": 46,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 48,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry registerSetToConfig (Ljava/lang/String;Ljava/util/List;[Lde/cristelknight/cristellib/StructureConfig;)V"
+        },
+        {
+          "offset": 51,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "registerSetToConfig",
+      "descriptor": "(Ljava/lang/String;Ljava/util/List;[Lde/cristelknight/cristellib/StructureConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2d"
+        },
+        {
+          "offset": 1,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 3,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 5,
+          "op": "0xbe"
+        },
+        {
+          "offset": 6,
+          "op": "0x36",
+          "args": "05"
+        },
+        {
+          "offset": 8,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 9,
+          "op": "0x36",
+          "args": "06"
+        },
+        {
+          "offset": 11,
+          "op": "0x15",
+          "args": "06"
+        },
+        {
+          "offset": 13,
+          "op": "0x15",
+          "args": "05"
+        },
+        {
+          "offset": 15,
+          "op": "0xa2",
+          "args": "001e"
+        },
+        {
+          "offset": 18,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 20,
+          "op": "0x15",
+          "args": "06"
+        },
+        {
+          "offset": 22,
+          "op": "0x32"
+        },
+        {
+          "offset": 23,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 25,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 27,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/data/codec/StructureSetData"
+        },
+        {
+          "offset": 30,
+          "op": "0x59"
+        },
+        {
+          "offset": 31,
+          "op": "0x2b"
+        },
+        {
+          "offset": 32,
+          "op": "0x2c"
+        },
+        {
+          "offset": 33,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/data/codec/StructureSetData <init> (Ljava/lang/String;Ljava/util/List;)V"
+        },
+        {
+          "offset": 36,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig addSet (Lde/cristelknight/cristellib/data/codec/StructureSetData;)V"
+        },
+        {
+          "offset": 39,
+          "op": "0x84",
+          "args": "0601"
+        },
+        {
+          "offset": 42,
+          "op": "goto",
+          "args": "ffe1"
+        },
+        {
+          "offset": 45,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "registerSetToConfig",
+      "descriptor": "(Ljava/lang/String;Lnet/minecraft/resources/ResourceLocation;[Lde/cristelknight/cristellib/StructureConfig;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2d"
+        },
+        {
+          "offset": 1,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 3,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 5,
+          "op": "0xbe"
+        },
+        {
+          "offset": 6,
+          "op": "0x36",
+          "args": "05"
+        },
+        {
+          "offset": 8,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 9,
+          "op": "0x36",
+          "args": "06"
+        },
+        {
+          "offset": 11,
+          "op": "0x15",
+          "args": "06"
+        },
+        {
+          "offset": 13,
+          "op": "0x15",
+          "args": "05"
+        },
+        {
+          "offset": 15,
+          "op": "0xa2",
+          "args": "0021"
+        },
+        {
+          "offset": 18,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 20,
+          "op": "0x15",
+          "args": "06"
+        },
+        {
+          "offset": 22,
+          "op": "0x32"
+        },
+        {
+          "offset": 23,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 25,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 27,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/data/codec/StructureSetData"
+        },
+        {
+          "offset": 30,
+          "op": "0x59"
+        },
+        {
+          "offset": 31,
+          "op": "0x2b"
+        },
+        {
+          "offset": 32,
+          "op": "0x2c"
+        },
+        {
+          "offset": 33,
+          "op": "invokestatic",
+          "reference": "java/util/List of (Ljava/lang/Object;)Ljava/util/List;"
+        },
+        {
+          "offset": 36,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/data/codec/StructureSetData <init> (Ljava/lang/String;Ljava/util/List;)V"
+        },
+        {
+          "offset": 39,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/StructureConfig addSet (Lde/cristelknight/cristellib/data/codec/StructureSetData;)V"
+        },
+        {
+          "offset": 42,
+          "op": "0x84",
+          "args": "0601"
+        },
+        {
+          "offset": 45,
+          "op": "goto",
+          "args": "ffde"
+        },
+        {
+          "offset": 48,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$registerSetToConfig$0",
+      "descriptor": "(ZLjava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x1a"
+        },
+        {
+          "offset": 1,
+          "op": "ifeq",
+          "args": "000a"
+        },
+        {
+          "offset": 4,
+          "op": "0x2c"
+        },
+        {
+          "offset": 5,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation withDefaultNamespace (Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 8,
+          "op": "goto",
+          "args": "0008"
+        },
+        {
+          "offset": 11,
+          "op": "0x2b"
+        },
+        {
+          "offset": 12,
+          "op": "0x2c"
+        },
+        {
+          "offset": 13,
+          "op": "invokestatic",
+          "reference": "net/minecraft/resources/ResourceLocation fromNamespaceAndPath (Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"
+        },
+        {
+          "offset": 16,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "<clinit>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "invokestatic",
+          "reference": "com/google/common/collect/ImmutableMap of ()Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 3,
+          "op": "putstatic",
+          "reference": "de/cristelknight/cristellib/CristelLibRegistry configs Lcom/google/common/collect/ImmutableMap;"
+        },
+        {
+          "offset": 6,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

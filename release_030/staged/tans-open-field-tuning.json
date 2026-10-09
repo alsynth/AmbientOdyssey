@@ -1,0 +1,26 @@
+{
+  "status": "STAGED ONLY \u2014 not active in Structure Test 5",
+  "biomes": [
+    "biomeswevegone:prairie",
+    "regions_unexplored:grassland",
+    "regions_unexplored:flower_fields",
+    "biomesoplenty:pumpkin_patch",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges"
+  ],
+  "native_controls": {
+    "rarity": "lower numeric value means rarer",
+    "minimum_distance": "avoid large increases because the native config warns about region pre-location cost",
+    "group_size": "cap the open-field variant at 1\u20132 to prevent giant dense groups",
+    "persistence": "use [LOCK] on edited rules"
+  },
+  "proposal": {
+    "open_field_rarity_multiplier": 0.25,
+    "open_field_group_size": [
+      1,
+      2
+    ],
+    "dense_exception": "minecraft:taiga and one deliberately selected forest; user choice remains open"
+  },
+  "implementation_gate": "Use separate native custom-preset/rule variants for the open-field and forest forms, sharing shape assets. Do not reduce the single existing all-biome rule globally and call that biome-specific tuning."
+}

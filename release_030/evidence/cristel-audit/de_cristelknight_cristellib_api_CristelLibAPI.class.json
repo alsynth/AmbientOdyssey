@@ -1,0 +1,60 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/api/CristelLibAPI",
+    "java/lang/Object",
+    "CristelLibAPI.java",
+    "registerConfigs",
+    "(Ljava/util/Set;)V",
+    "(Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;)V",
+    "sets",
+    "this",
+    "Lde/cristelknight/cristellib/api/CristelLibAPI;",
+    "Ljava/util/Set<Lde/cristelknight/cristellib/StructureConfig;>;",
+    "Ljava/util/Set;",
+    "registerStructureSets",
+    "(Lde/cristelknight/cristellib/CristelLibRegistry;)V",
+    "registry",
+    "Lde/cristelknight/cristellib/CristelLibRegistry;",
+    "registerBuiltInPacks",
+    "()V",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "LocalVariableTypeTable",
+    "Signature",
+    "MethodParameters",
+    "SourceFile"
+  ],
+  "methods": [
+    {
+      "name": "registerConfigs",
+      "descriptor": "(Ljava/util/Set;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "registerStructureSets",
+      "descriptor": "(Lde/cristelknight/cristellib/CristelLibRegistry;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "registerBuiltInPacks",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

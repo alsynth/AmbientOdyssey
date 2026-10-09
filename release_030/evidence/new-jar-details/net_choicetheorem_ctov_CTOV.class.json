@@ -1,0 +1,876 @@
+{
+  "constants": [
+    "net/choicetheorem/ctov/CTOV",
+    "java/lang/Object",
+    "CTOV.java",
+    "net/minecraft/core/HolderLookup$RegistryLookup",
+    "net/minecraft/core/HolderLookup",
+    "RegistryLookup",
+    "net/minecraft/core/Holder$Reference",
+    "net/minecraft/core/Holder",
+    "Reference",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "MOD_ID",
+    "Ljava/lang/String;",
+    "ctov",
+    "<init>",
+    "()V",
+    "this",
+    "Lnet/choicetheorem/ctov/CTOV;",
+    "init",
+    "registerstructure",
+    "(Lnet/minecraft/server/MinecraftServer;)V",
+    "server",
+    "java/lang/String",
+    "beach",
+    "dark_forest",
+    "desert",
+    "jungle",
+    "badlands",
+    "mountain",
+    "plains",
+    "savanna",
+    "snowy",
+    "swamp",
+    "taiga",
+    "java/util/List",
+    "of",
+    "([Ljava/lang/Object;)Ljava/util/List;",
+    "dev/worldgen/lithostitched/api/event/AddWorldgenModifiersEvent",
+    "EVENT",
+    "Ldev/worldgen/lithostitched/impl/event/LithostitchedEvent;",
+    "(Lnet/minecraft/core/RegistryAccess;Ljava/util/function/BiConsumer;)V",
+    "lambda$registerstructure$0",
+    "(Ljava/util/List;Lnet/minecraft/core/RegistryAccess;Ljava/util/function/BiConsumer;)V",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "addModifiers",
+    "(Ljava/util/List;)Ldev/worldgen/lithostitched/api/event/AddWorldgenModifiersEvent;",
+    "dev/worldgen/lithostitched/impl/event/LithostitchedEvent",
+    "register",
+    "(Ljava/lang/Object;)V",
+    "Lnet/minecraft/server/MinecraftServer;",
+    "outpostVariants",
+    "Ljava/util/List<Ljava/lang/String;>;",
+    "Ljava/util/List;",
+    "registries",
+    "consumer",
+    "net/minecraft/core/registries/Registries",
+    "STRUCTURE_SET",
+    "Lnet/minecraft/resources/ResourceKey;",
+    "net/minecraft/core/RegistryAccess",
+    "lookupOrThrow",
+    "(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;",
+    "net/minecraft/world/level/levelgen/structure/BuiltinStructureSets",
+    "PILLAGER_OUTPOSTS",
+    "getOrThrow",
+    "(Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;",
+    "VILLAGES",
+    "STRUCTURE",
+    "net/choicetheorem/ctov/platform/CTOVConfigHelper",
+    "generatePillagerOutpost",
+    "()Z",
+    "iterator",
+    "()Ljava/util/Iterator;",
+    "java/util/function/BiConsumer",
+    "java/util/Iterator",
+    "hasNext",
+    "next",
+    "()Ljava/lang/Object;",
+    "pillager_outpost_\u0001",
+    "java/lang/invoke/StringConcatFactory",
+    "makeConcatWithConstants",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;",
+    "(Ljava/lang/String;)Ljava/lang/String;",
+    "OutpostWeight",
+    "()I",
+    "net/choicetheorem/ctov/utils/CTOVStructureHelper",
+    "addModifier",
+    "(Ljava/util/function/BiConsumer;Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/core/Holder$Reference;Ljava/lang/String;I)V",
+    "generatesmallVillage",
+    "enabledvillage",
+    "()Ljava/util/List;",
+    "small/village_\u0001",
+    "smallVillageWeight",
+    "generatemediumVillage",
+    "medium/village_\u0001",
+    "mediumVillageWeight",
+    "generatelargeVillage",
+    "large/village_\u0001",
+    "largeVillageWeight",
+    "variant",
+    "Lnet/minecraft/core/RegistryAccess;",
+    "Ljava/util/function/BiConsumer;",
+    "outpostSet",
+    "Lnet/minecraft/core/Holder$Reference<Lnet/minecraft/world/level/levelgen/structure/StructureSet;>;",
+    "Lnet/minecraft/core/Holder$Reference;",
+    "villageSet",
+    "registry",
+    "Lnet/minecraft/core/HolderLookup$RegistryLookup<Lnet/minecraft/world/level/levelgen/structure/Structure;>;",
+    "Lnet/minecraft/core/HolderLookup$RegistryLookup;",
+    "ConstantValue",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "LocalVariableTypeTable",
+    "MethodParameters",
+    "StackMapTable",
+    "InnerClasses",
+    "SourceFile",
+    "BootstrapMethods"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "init",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "registerstructure",
+      "descriptor": "(Lnet/minecraft/server/MinecraftServer;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x10",
+          "args": "0b"
+        },
+        {
+          "offset": 2,
+          "op": "0xbd",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 5,
+          "op": "0x59"
+        },
+        {
+          "offset": 6,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 7,
+          "op": "ldc",
+          "reference": "beach"
+        },
+        {
+          "offset": 9,
+          "op": "0x53"
+        },
+        {
+          "offset": 10,
+          "op": "0x59"
+        },
+        {
+          "offset": 11,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 12,
+          "op": "ldc",
+          "reference": "dark_forest"
+        },
+        {
+          "offset": 14,
+          "op": "0x53"
+        },
+        {
+          "offset": 15,
+          "op": "0x59"
+        },
+        {
+          "offset": 16,
+          "op": "0x5"
+        },
+        {
+          "offset": 17,
+          "op": "ldc",
+          "reference": "desert"
+        },
+        {
+          "offset": 19,
+          "op": "0x53"
+        },
+        {
+          "offset": 20,
+          "op": "0x59"
+        },
+        {
+          "offset": 21,
+          "op": "0x6"
+        },
+        {
+          "offset": 22,
+          "op": "ldc",
+          "reference": "jungle"
+        },
+        {
+          "offset": 24,
+          "op": "0x53"
+        },
+        {
+          "offset": 25,
+          "op": "0x59"
+        },
+        {
+          "offset": 26,
+          "op": "0x7"
+        },
+        {
+          "offset": 27,
+          "op": "ldc",
+          "reference": "badlands"
+        },
+        {
+          "offset": 29,
+          "op": "0x53"
+        },
+        {
+          "offset": 30,
+          "op": "0x59"
+        },
+        {
+          "offset": 31,
+          "op": "0x8"
+        },
+        {
+          "offset": 32,
+          "op": "ldc",
+          "reference": "mountain"
+        },
+        {
+          "offset": 34,
+          "op": "0x53"
+        },
+        {
+          "offset": 35,
+          "op": "0x59"
+        },
+        {
+          "offset": 36,
+          "op": "0x10",
+          "args": "06"
+        },
+        {
+          "offset": 38,
+          "op": "ldc",
+          "reference": "plains"
+        },
+        {
+          "offset": 40,
+          "op": "0x53"
+        },
+        {
+          "offset": 41,
+          "op": "0x59"
+        },
+        {
+          "offset": 42,
+          "op": "0x10",
+          "args": "07"
+        },
+        {
+          "offset": 44,
+          "op": "ldc",
+          "reference": "savanna"
+        },
+        {
+          "offset": 46,
+          "op": "0x53"
+        },
+        {
+          "offset": 47,
+          "op": "0x59"
+        },
+        {
+          "offset": 48,
+          "op": "0x10",
+          "args": "08"
+        },
+        {
+          "offset": 50,
+          "op": "ldc",
+          "reference": "snowy"
+        },
+        {
+          "offset": 52,
+          "op": "0x53"
+        },
+        {
+          "offset": 53,
+          "op": "0x59"
+        },
+        {
+          "offset": 54,
+          "op": "0x10",
+          "args": "09"
+        },
+        {
+          "offset": 56,
+          "op": "ldc",
+          "reference": "swamp"
+        },
+        {
+          "offset": 58,
+          "op": "0x53"
+        },
+        {
+          "offset": 59,
+          "op": "0x59"
+        },
+        {
+          "offset": 60,
+          "op": "0x10",
+          "args": "0a"
+        },
+        {
+          "offset": 62,
+          "op": "ldc",
+          "reference": "taiga"
+        },
+        {
+          "offset": 64,
+          "op": "0x53"
+        },
+        {
+          "offset": 65,
+          "op": "invokestatic",
+          "reference": "java/util/List of ([Ljava/lang/Object;)Ljava/util/List;"
+        },
+        {
+          "offset": 68,
+          "op": "0x4c"
+        },
+        {
+          "offset": 69,
+          "op": "getstatic",
+          "reference": "dev/worldgen/lithostitched/api/event/AddWorldgenModifiersEvent EVENT Ldev/worldgen/lithostitched/impl/event/LithostitchedEvent;"
+        },
+        {
+          "offset": 72,
+          "op": "0x2b"
+        },
+        {
+          "offset": 73,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 87)"
+        },
+        {
+          "offset": 78,
+          "op": "invokevirtual",
+          "reference": "dev/worldgen/lithostitched/impl/event/LithostitchedEvent register (Ljava/lang/Object;)V"
+        },
+        {
+          "offset": 81,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "lambda$registerstructure$0",
+      "descriptor": "(Ljava/util/List;Lnet/minecraft/core/RegistryAccess;Ljava/util/function/BiConsumer;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2b"
+        },
+        {
+          "offset": 1,
+          "op": "getstatic",
+          "reference": "net/minecraft/core/registries/Registries STRUCTURE_SET Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 4,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/core/RegistryAccess lookupOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;"
+        },
+        {
+          "offset": 9,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/level/levelgen/structure/BuiltinStructureSets PILLAGER_OUTPOSTS Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 12,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/core/HolderLookup$RegistryLookup getOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;"
+        },
+        {
+          "offset": 17,
+          "op": "0x4e"
+        },
+        {
+          "offset": 18,
+          "op": "0x2b"
+        },
+        {
+          "offset": 19,
+          "op": "getstatic",
+          "reference": "net/minecraft/core/registries/Registries STRUCTURE_SET Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 22,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/core/RegistryAccess lookupOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;"
+        },
+        {
+          "offset": 27,
+          "op": "getstatic",
+          "reference": "net/minecraft/world/level/levelgen/structure/BuiltinStructureSets VILLAGES Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 30,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/core/HolderLookup$RegistryLookup getOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/Holder$Reference;"
+        },
+        {
+          "offset": 35,
+          "op": "0x3a",
+          "args": "04"
+        },
+        {
+          "offset": 37,
+          "op": "0x2b"
+        },
+        {
+          "offset": 38,
+          "op": "getstatic",
+          "reference": "net/minecraft/core/registries/Registries STRUCTURE Lnet/minecraft/resources/ResourceKey;"
+        },
+        {
+          "offset": 41,
+          "op": "invokeinterface",
+          "reference": "net/minecraft/core/RegistryAccess lookupOrThrow (Lnet/minecraft/resources/ResourceKey;)Lnet/minecraft/core/HolderLookup$RegistryLookup;"
+        },
+        {
+          "offset": 46,
+          "op": "0x3a",
+          "args": "05"
+        },
+        {
+          "offset": 48,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper generatePillagerOutpost ()Z"
+        },
+        {
+          "offset": 51,
+          "op": "ifeq",
+          "args": "0035"
+        },
+        {
+          "offset": 54,
+          "op": "0x2a"
+        },
+        {
+          "offset": 55,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 60,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 62,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 64,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 69,
+          "op": "ifeq",
+          "args": "0023"
+        },
+        {
+          "offset": 72,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 74,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 79,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 82,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 84,
+          "op": "0x2c"
+        },
+        {
+          "offset": 85,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 87,
+          "op": "0x2d"
+        },
+        {
+          "offset": 88,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 90,
+          "op": "invokedynamic",
+          "reference": "(18, 1, 159)"
+        },
+        {
+          "offset": 95,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper OutpostWeight ()I"
+        },
+        {
+          "offset": 98,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/utils/CTOVStructureHelper addModifier (Ljava/util/function/BiConsumer;Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/core/Holder$Reference;Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 101,
+          "op": "goto",
+          "args": "ffd9"
+        },
+        {
+          "offset": 104,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper generatesmallVillage ()Z"
+        },
+        {
+          "offset": 107,
+          "op": "ifeq",
+          "args": "0038"
+        },
+        {
+          "offset": 110,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper enabledvillage ()Ljava/util/List;"
+        },
+        {
+          "offset": 113,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 118,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 120,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 122,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 127,
+          "op": "ifeq",
+          "args": "0024"
+        },
+        {
+          "offset": 130,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 132,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 137,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 140,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 142,
+          "op": "0x2c"
+        },
+        {
+          "offset": 143,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 145,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 147,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 149,
+          "op": "invokedynamic",
+          "reference": "(18, 2, 159)"
+        },
+        {
+          "offset": 154,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper smallVillageWeight ()I"
+        },
+        {
+          "offset": 157,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/utils/CTOVStructureHelper addModifier (Ljava/util/function/BiConsumer;Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/core/Holder$Reference;Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 160,
+          "op": "goto",
+          "args": "ffd8"
+        },
+        {
+          "offset": 163,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper generatemediumVillage ()Z"
+        },
+        {
+          "offset": 166,
+          "op": "ifeq",
+          "args": "0038"
+        },
+        {
+          "offset": 169,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper enabledvillage ()Ljava/util/List;"
+        },
+        {
+          "offset": 172,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 177,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 179,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 181,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 186,
+          "op": "ifeq",
+          "args": "0024"
+        },
+        {
+          "offset": 189,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 191,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 196,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 199,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 201,
+          "op": "0x2c"
+        },
+        {
+          "offset": 202,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 204,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 206,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 208,
+          "op": "invokedynamic",
+          "reference": "(18, 3, 159)"
+        },
+        {
+          "offset": 213,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper mediumVillageWeight ()I"
+        },
+        {
+          "offset": 216,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/utils/CTOVStructureHelper addModifier (Ljava/util/function/BiConsumer;Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/core/Holder$Reference;Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 219,
+          "op": "goto",
+          "args": "ffd8"
+        },
+        {
+          "offset": 222,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper generatelargeVillage ()Z"
+        },
+        {
+          "offset": 225,
+          "op": "ifeq",
+          "args": "0038"
+        },
+        {
+          "offset": 228,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper enabledvillage ()Ljava/util/List;"
+        },
+        {
+          "offset": 231,
+          "op": "invokeinterface",
+          "reference": "java/util/List iterator ()Ljava/util/Iterator;"
+        },
+        {
+          "offset": 236,
+          "op": "0x3a",
+          "args": "06"
+        },
+        {
+          "offset": 238,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 240,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator hasNext ()Z"
+        },
+        {
+          "offset": 245,
+          "op": "ifeq",
+          "args": "0024"
+        },
+        {
+          "offset": 248,
+          "op": "0x19",
+          "args": "06"
+        },
+        {
+          "offset": 250,
+          "op": "invokeinterface",
+          "reference": "java/util/Iterator next ()Ljava/lang/Object;"
+        },
+        {
+          "offset": 255,
+          "op": "checkcast",
+          "reference": "java/lang/String"
+        },
+        {
+          "offset": 258,
+          "op": "0x3a",
+          "args": "07"
+        },
+        {
+          "offset": 260,
+          "op": "0x2c"
+        },
+        {
+          "offset": 261,
+          "op": "0x19",
+          "args": "05"
+        },
+        {
+          "offset": 263,
+          "op": "0x19",
+          "args": "04"
+        },
+        {
+          "offset": 265,
+          "op": "0x19",
+          "args": "07"
+        },
+        {
+          "offset": 267,
+          "op": "invokedynamic",
+          "reference": "(18, 4, 159)"
+        },
+        {
+          "offset": 272,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/platform/CTOVConfigHelper largeVillageWeight ()I"
+        },
+        {
+          "offset": 275,
+          "op": "invokestatic",
+          "reference": "net/choicetheorem/ctov/utils/CTOVStructureHelper addModifier (Ljava/util/function/BiConsumer;Lnet/minecraft/core/HolderLookup$RegistryLookup;Lnet/minecraft/core/Holder$Reference;Ljava/lang/String;I)V"
+        },
+        {
+          "offset": 278,
+          "op": "goto",
+          "args": "ffd8"
+        },
+        {
+          "offset": 281,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

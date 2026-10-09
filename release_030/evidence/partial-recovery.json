@@ -1,0 +1,468 @@
+[
+  {
+    "partial_archive": "inputs/Minecraft/mods1.zip.openai-download-0e6abbea250948809ab623a8f96d2ece",
+    "prefix_bytes": 325189632,
+    "verified_members": [
+      {
+        "name": "aces_spell_utils-1.2.7.3-1.21.1.jar",
+        "sha256": "7c785725fa2f86fe31200054cbc5502780797a2f17a9b3656973c6fd484e451c",
+        "zip_member_crc32": "6337e6fa"
+      },
+      {
+        "name": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+        "sha256": "a5ae9687c37ab5a383d1b3a5a6f46a0b8bdeb3aca643745323c3b78c6ca6c347",
+        "zip_member_crc32": "425f1b4d"
+      },
+      {
+        "name": "aether-1.21.1-1.5.10-neoforge.jar",
+        "sha256": "b19386301560a017a458e9790a7b59999e270f93010def0b61e7cbe4c8630dbf",
+        "zip_member_crc32": "4cabce8b"
+      },
+      {
+        "name": "AetherVillages-1.21.1-1.0.8-neoforge.jar",
+        "sha256": "9f9837ec289bdcd016b0386374e7507503a5a7d78fb4941ac74cb44cad15cc34",
+        "zip_member_crc32": "12725adf"
+      },
+      {
+        "name": "alexscaves-2.0.3.jar",
+        "sha256": "bd187f73d4ec36038c04c61accb916e676a3152e0a1eaa4735a2f9d5586c2626",
+        "zip_member_crc32": "21c0da94"
+      },
+      {
+        "name": "alexsmobs-1.22.9.jar",
+        "sha256": "4c189c7b310bb66903d3543854dd5fe03f26e61f707d8ccba8b6f5f58b86a727",
+        "zip_member_crc32": "ff213ae1"
+      },
+      {
+        "name": "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+        "sha256": "c9b76623003dd05dda452d9ed42cb23623b09383fe9ac1efb41c46a3b69ff601",
+        "zip_member_crc32": "5cc7745b"
+      },
+      {
+        "name": "Ambient-Odyssey-TO-Magic-Registry-Fix-1.0.0.jar",
+        "sha256": "d110c6390aa9e021fcd793095fb0cf220b825847eaf05fb2254fc161160fbd92",
+        "zip_member_crc32": "0a5195c7"
+      },
+      {
+        "name": "amendments-1.21-2.1.10-neoforge.jar",
+        "sha256": "a2cbc46342c5f466f3b6e244f8820aa01f9d8381586b2c008b72fb77ae56045e",
+        "zip_member_crc32": "170dd25a"
+      },
+      {
+        "name": "antiquetradingship-1.4.0-neoforge-1.21.1.jar",
+        "sha256": "d8449dac9a38ef09ffe13add762b34745e4389432a5b919b5432b5357e229033",
+        "zip_member_crc32": "bc80233b"
+      },
+      {
+        "name": "Apotheosis-1.21.1-8.9.0.jar",
+        "sha256": "23a8b4a21d0d8744f097c77c8a96fcba14c4b95f3b1bb542412f40dab272872e",
+        "zip_member_crc32": "d2c3726a"
+      },
+      {
+        "name": "ApothicAttributes-1.21.1-2.11.0.jar",
+        "sha256": "17c42bb6dd5c0d820fe090e1bb5959578cd5ab7b70caf98a2a59b319fcc7e1ba",
+        "zip_member_crc32": "dfbc8768"
+      },
+      {
+        "name": "ApothicEnchanting-1.21.1-1.6.3.jar",
+        "sha256": "f135a7cdde2706cf1bb2b245441ec17d0f51692f25460383c6baa99cd3a031d0",
+        "zip_member_crc32": "28aa80e8"
+      },
+      {
+        "name": "ApothicSpawners-1.21.1-1.4.0.jar",
+        "sha256": "f0cbc52ad606997789c36fac94ae651ab7e2e21c841e26a952c64041cad9cdbe",
+        "zip_member_crc32": "d6e98ce7"
+      },
+      {
+        "name": "appleskin-neoforge-mc1.21-3.0.9.jar",
+        "sha256": "38b48dd6231341c9f964ce6e42c57ec866c6cc8f72bec938390a59bafb3922df",
+        "zip_member_crc32": "b8752c92"
+      },
+      {
+        "name": "Aquaculture-1.21.1-2.7.21.jar",
+        "sha256": "45f00f9059838b2fecc988861111d8b3d4613a5f1b3688a8dbfa8655751b85bb",
+        "zip_member_crc32": "2df0b2e7"
+      },
+      {
+        "name": "archaeology_ruins-1.0.0-neoforge-1.21.1.jar",
+        "sha256": "94d3ba411cfafc1586b8bba2c972553fed15ee5e38e9c076c7b5721fb2781abf",
+        "zip_member_crc32": "9d5204a1"
+      },
+      {
+        "name": "architectury-13.0.11-neoforge.jar",
+        "sha256": "9cc92f2c09533fc5482c60f993bd891c655a0e32b637037cdcb7c2b23adedeeb",
+        "zip_member_crc32": "0ae6cda3"
+      },
+      {
+        "name": "ars_nouveau-1.21.1-5.13.3.jar",
+        "sha256": "45c1b6022d8e63464177c1f822bda22c3d6fb66970857fd7677e4e3ccffd259f",
+        "zip_member_crc32": "64194c9e"
+      },
+      {
+        "name": "artifacts-neoforge-13.2.5.jar",
+        "sha256": "e36a929420a0a616abdb28f5bbbdb866a426aa3bb78d1b39bc1183927c101ce6",
+        "zip_member_crc32": "c92bbfd7"
+      },
+      {
+        "name": "astrological-1.21.1-1.7.1.jar",
+        "sha256": "bd0aa2d3f4279cee94579daf5aabe13f67e5df2733069edd0aa47e67e381ff3d",
+        "zip_member_crc32": "3d9040d0"
+      },
+      {
+        "name": "azurelib-neo-1.21.1-3.1.14.jar",
+        "sha256": "f27de399e5e5566c13767a746ea5f6dccad69dc9b294f110fb3f7bda82bf886a",
+        "zip_member_crc32": "ffa94a69"
+      },
+      {
+        "name": "balm-neoforge-1.21.1-21.0.66.jar",
+        "sha256": "6be660e1f6d169553bf44f66d4f78bb9e96a1d66ce108d9608819e3ce6bfba34",
+        "zip_member_crc32": "cdbda8c5"
+      },
+      {
+        "name": "bclib-21.0.26.jar",
+        "sha256": "73ba7957d61588189eb35415f2ce9b063e7d4a102c6a4757582ba8fad310f2e0",
+        "zip_member_crc32": "4eafe082"
+      },
+      {
+        "name": "benssharks-1.2.6-neoforge-1.21.1.jar",
+        "sha256": "0f4d7a044a42e19c0ab508b5228a6a6086ec9c4a7cab3a90f8016407ed6c029a",
+        "zip_member_crc32": "a23ba889"
+      },
+      {
+        "name": "bettercombat-neoforge-2.4.0+1.21.1.jar",
+        "sha256": "0446e9faa98b764ba010ac31e337d14ac96bbb2fbfeff9b599e1efd510dfde5a",
+        "zip_member_crc32": "9f6a5463"
+      },
+      {
+        "name": "BetterEnd-21.0.35.jar",
+        "sha256": "6f2e927bb7ca484e7699eefda2ee9292669905efed6df89ced0df5d2d20ac95b",
+        "zip_member_crc32": "79fe49be"
+      },
+      {
+        "name": "biggerbetterendcities-1.21.1-1.0.0.jar",
+        "sha256": "6ee234e4f0d69a98b81cad75ae0b87ea1344a73e644a39ca95f26d9e5f16e8d7",
+        "zip_member_crc32": "20601569"
+      },
+      {
+        "name": "biolith-neoforge-3.0.14.jar",
+        "sha256": "ded9169efb903198046cf44cf91a290ec836ed83a28e29179087eb860e0e6ce9",
+        "zip_member_crc32": "dfb31721"
+      },
+      {
+        "name": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+        "sha256": "99e4edeacfd7c9b0992144988df4f190dcb7955a7cc1e7323715505b3579bc9b",
+        "zip_member_crc32": "ca64f85e"
+      },
+      {
+        "name": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+        "sha256": "9e230bd509e7aeb3af4c08125db0340734c0179d83483649a16e45c0ea085e8c",
+        "zip_member_crc32": "4dddf74f"
+      },
+      {
+        "name": "BOMD-NeoForge-1.21-1.3.3.jar",
+        "sha256": "93da8753a00229e41c5ed399e6cf849737e7bd9b4109d5d8e4ad3a20136deb82",
+        "zip_member_crc32": "421f794b"
+      },
+      {
+        "name": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+        "sha256": "19e88d40da2b6a114c2b808f7fb469d96e66a5379df0a8a43fcb7834498b3e76",
+        "zip_member_crc32": "b3d4e8a9"
+      },
+      {
+        "name": "bountiful-neoforge-8.0.0-beta.2.jar",
+        "sha256": "dca5e0af724e3076b3d950b7ec88cf63c509435cf41371a6e1c7c306cb6a7e51",
+        "zip_member_crc32": "4acef10f"
+      },
+      {
+        "name": "brutalbosses-1.21.1-8.6.jar",
+        "sha256": "b401d41cb2419f519df4ad65c069578f424b1ea797fbfe28d7b48b868708d75a",
+        "zip_member_crc32": "afd0407a"
+      },
+      {
+        "name": "caelus-neoforge-7.0.1+1.21.1.jar",
+        "sha256": "432a645557f29de159d9edde2fd109f8e3b32ff30895b4fede04ee5f1a1a682f",
+        "zip_member_crc32": "f0e093e8"
+      },
+      {
+        "name": "cataclysmfortresses-1.21.1-NeoForge.jar",
+        "sha256": "a6f4812a9735a55cb1bc2e669a1fa6dc016a162434ada347514aea9a4e39d840",
+        "zip_member_crc32": "d77d0f2e"
+      }
+    ],
+    "stopped_at": 324895200,
+    "complete_archive": false
+  },
+  {
+    "partial_archive": "inputs/Minecraft/mods3.zip.openai-download-90f1d177000443ca8711ff2576ce9dfe",
+    "prefix_bytes": 313589760,
+    "verified_members": [
+      {
+        "name": "mysterious_mountain_lib-1.2.15-1.21.1.jar",
+        "sha256": "d750a23aac696222984935263baeec96e95901bbeca134d8a1018d66e6e9e2d6",
+        "zip_member_crc32": "42c95dee"
+      },
+      {
+        "name": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+        "sha256": "0e249ac11b2f916c5570d9679e188da652fa5664ba9cdb7be5dc9ff69497539c",
+        "zip_member_crc32": "fe2d3b4e"
+      },
+      {
+        "name": "natures_spirit-2.2.5-1.21.1.jar",
+        "sha256": "d6dcc323e389c2687bacec1457d677ef69be0f1d32ce08d448242c479e57b074",
+        "zip_member_crc32": "e050443f"
+      },
+      {
+        "name": "neoculus-mc1.21.1-1.8.7.jar",
+        "sha256": "3213254321d6b5a76182ad3ec699a91cc13facce0c47c1416dfc680025f4fe44",
+        "zip_member_crc32": "53737994"
+      },
+      {
+        "name": "NightLib-Neoforge-1.21.1-1.3.0.jar",
+        "sha256": "e1eb45e0823ed0b65b14cc319cba5d1132e30cae557e54bab5080b24590760aa",
+        "zip_member_crc32": "617b8ae8"
+      },
+      {
+        "name": "noisiumed-3.0.6-neoforge-1.21.1.jar",
+        "sha256": "2477347cb18d0d0202984bc4a8d42975bd4fde7e1513627c446abadbb1406957",
+        "zip_member_crc32": "2b85a471"
+      },
+      {
+        "name": "OctoLib-NEOFORGE-0.6.2+1.21.jar",
+        "sha256": "92ba07d9d9e55a65421f3c3f203c72fe5149cb024d5277267e81d812e11a7f38",
+        "zip_member_crc32": "491735ec"
+      },
+      {
+        "name": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+        "sha256": "f7ce14e8ba1eafad798aeeebea7b5ed1193ed96fc01bdd3eedbe9b2e796b8035",
+        "zip_member_crc32": "e390fa32"
+      },
+      {
+        "name": "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.4.jar",
+        "sha256": "61c09e7df22f2872f3bcc7ad6fc96d46d920b2220612a1480ef8582524a97254",
+        "zip_member_crc32": "bb2f196a"
+      },
+      {
+        "name": "Opposing-Force-1.21.1-3.0.0-beta6.jar",
+        "sha256": "3c222ed65e664c300806f562f15e03d901a147e4ed7eeb480ca3a968416eed9b",
+        "zip_member_crc32": "6ddfd018"
+      },
+      {
+        "name": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+        "sha256": "de6ed336bd80154b7241a7b3276694befc1c94550add8bcdfe7f82e5172fd13d",
+        "zip_member_crc32": "2e96ac0a"
+      },
+      {
+        "name": "particular-1.21.1-NeoForge-1.5.7.jar",
+        "sha256": "42c5ba95472c233a455da440e08a74be69cba616493292c0830cf47a47a9498e",
+        "zip_member_crc32": "0dac3833"
+      },
+      {
+        "name": "pasterdream-0.9.6.jar",
+        "sha256": "5ed9deb8963eb998f5fd8aac465f6644c5f26b5e4ef8c96638331671ed0b37f8",
+        "zip_member_crc32": "a91b9ab1"
+      },
+      {
+        "name": "Patchouli-1.21.1-93-NEOFORGE.jar",
+        "sha256": "959af52ed6640c316c3a8469203420be4aeea11ad6603890ba83bf48f5d9f993",
+        "zip_member_crc32": "83ddb3cb"
+      },
+      {
+        "name": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+        "sha256": "4b60f8eb3b8b8880eff7c3ac825cde84394848eac3915ed61ade607cdd331ce7",
+        "zip_member_crc32": "f22b0f80"
+      },
+      {
+        "name": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+        "sha256": "8a0aaee82b287c22abf4a7ea79e88fdbbe717418a0fbd8e44d4bd86146db9a1a",
+        "zip_member_crc32": "e760e38d"
+      },
+      {
+        "name": "Placebo-1.21.1-9.9.2.jar",
+        "sha256": "1a844a5b081813b1edb82656329e54d38389ed470f6a6516a5887f5303d7daad",
+        "zip_member_crc32": "94d8d1d7"
+      },
+      {
+        "name": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+        "sha256": "dbe5de45f5cd60c0e5e47af14e6d564534a98456e973cf670cb881f6938eee92",
+        "zip_member_crc32": "edd321f2"
+      },
+      {
+        "name": "prickle-neoforge-1.21.1-21.1.11.jar",
+        "sha256": "ccf46c442ed3c7fe41ad056f0940560829ec4dd88360985dfacd78f4614eb167",
+        "zip_member_crc32": "7c16fdf7"
+      },
+      {
+        "name": "puzzleslib-v21.1.62-mc1.21.1+neoforge.jar",
+        "sha256": "db5d694d964f2feb7029406be99237f080242fd1b6d075a6a042e1195731a469",
+        "zip_member_crc32": "c7fb7808"
+      },
+      {
+        "name": "Quark-4.1-487.jar",
+        "sha256": "2a43e4fa6254aaaf755f4ece5230708a2a6d587d8092d4db3aa53626c7bb67ab",
+        "zip_member_crc32": "c2ea8461"
+      },
+      {
+        "name": "rarcompat-1.21-0.9.7.jar",
+        "sha256": "fcbe35d8d6c44f72dcf467deb54c5fb9e5d6be725a79413f9f45354460553149",
+        "zip_member_crc32": "6770c6d7"
+      },
+      {
+        "name": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+        "sha256": "ccf32ed714f2724f54406b9e02a8d6f94d87dc5c72397bc39b3d6ed8f32412ea",
+        "zip_member_crc32": "b97e63b8"
+      },
+      {
+        "name": "relics-1.21.1-0.10.7.8.jar",
+        "sha256": "024f63a0706a94fbb4dff5fb6534500817f72751a0e16577fe117e510b056e5c",
+        "zip_member_crc32": "7e2fb2c3"
+      },
+      {
+        "name": "reliquified_lenders_cataclysm-1.21.1-0.1.1.jar",
+        "sha256": "092abc16788a6ebc324ce923098285b1b0a704700c359fdf2d733e6f33535700",
+        "zip_member_crc32": "7f350f8f"
+      },
+      {
+        "name": "remnant_bosses-neoforge-1.21.1-2.6.1.jar",
+        "sha256": "92709a97b30a39985aa50ee0e2b0139a94e7f601dc5ec94984e87c6855162d54",
+        "zip_member_crc32": "6947524d"
+      },
+      {
+        "name": "repurposed_structures-7.5.22+1.21.1-neoforge.jar",
+        "sha256": "64e64109acf7673b969aca9b3cca0bb555777cd7038aa16aa32a1548d753f257",
+        "zip_member_crc32": "d14df2a2"
+      },
+      {
+        "name": "resourcefullib-neoforge-1.21-3.0.12.jar",
+        "sha256": "5e36f2c69de008dc5795f730c84ab767688f15c810944b585485349a0c911261",
+        "zip_member_crc32": "30e664f0"
+      },
+      {
+        "name": "rusticdelight-neoforge-1.21-1.7.1.jar",
+        "sha256": "ad3d796132984a8d06184d7c9543d6f8b87df4dac33a5dd9b8f124e95afe6801",
+        "zip_member_crc32": "df255b17"
+      },
+      {
+        "name": "Searchables-neoforge-1.21.1-1.0.2.jar",
+        "sha256": "ca193f0c69033d8f709f9e073a7c1ef4ea46714e5c2f94eb23ace12781c6aa68",
+        "zip_member_crc32": "1235b7f5"
+      },
+      {
+        "name": "servercore-neoforge-1.5.19+1.21.1.jar",
+        "sha256": "a5706aa0bb3a47c5f1adab44306685736688ec03414f60beb4fcbe05b99f5a82",
+        "zip_member_crc32": "d4e8c4dd"
+      },
+      {
+        "name": "simplymore-forge-1.3.0_alpha.jar",
+        "sha256": "20137c315970e9cc9d1181985363605aafd61682809c04d7769bfd0d8e2cb313",
+        "zip_member_crc32": "1d02dcad"
+      },
+      {
+        "name": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+        "sha256": "5e75bd66ea489079d60c9c1ed98762550fbc0bee88cd7af399f17bbeb56608c3",
+        "zip_member_crc32": "8cdb56a0"
+      },
+      {
+        "name": "SimplyTooltips-neoforge-0.1.5.jar",
+        "sha256": "fdac367da1c5243ac5225f00f831b786817452ee9fa6a7f4acd99ec819b0f2b7",
+        "zip_member_crc32": "7594645e"
+      },
+      {
+        "name": "Sinew-1.21.1-1.2.14.jar",
+        "sha256": "7f9c59192342451c0d4e10a1a44fd1674886881b6a53f68d6ece9661e4c81ed2",
+        "zip_member_crc32": "192a8c91"
+      },
+      {
+        "name": "SkyArena-1.3.6-1.21.1.jar",
+        "sha256": "376accd0213cc4d7a7c02ec2c333b9179c2a98a7c334cb292b584b673e2cffbb",
+        "zip_member_crc32": "d3c7038e"
+      },
+      {
+        "name": "SkyVillages-1.0.6-1.21.x-neoforge-release.jar",
+        "sha256": "5ef7b63c6f1999a632085975afa14f00146369c142fd72980d760cbb617dd52f",
+        "zip_member_crc32": "d484850e"
+      },
+      {
+        "name": "sky_whale_ship-neoforge-1.21.1.jar",
+        "sha256": "ad128ee14d5af95ed4bc016bd08d8cfc48fd6fa881d9fd06d7de796b137bc6d9",
+        "zip_member_crc32": "7347af58"
+      },
+      {
+        "name": "smoothchunk-1.21-4.1.jar",
+        "sha256": "a79f06eaffe7e5b834620da3c2cdad782aeaf4f1f207d03f8b0228a20bab65e3",
+        "zip_member_crc32": "35cc1a57"
+      },
+      {
+        "name": "softimprints-neoforge-1.21.1-2.8.0.jar",
+        "sha256": "948fe2d229b0eaf0ac66112c4a00d9dec0c91f3bdeee8fd6348021de6e34c806",
+        "zip_member_crc32": "d39a6753"
+      },
+      {
+        "name": "sophisticatedbackpacks-1.21.1-3.26.8.2189.jar",
+        "sha256": "21c0b5c53a583ae8311f4e471ecaa6bd9b367afe63d1a333e70f6c75289b2a6a",
+        "zip_member_crc32": "8184d87e"
+      },
+      {
+        "name": "sophisticatedbackpackscreateintegration-1.21.1-0.2.2.188.jar",
+        "sha256": "9b2a7b22002905334d9cd3485abc4cd267250ec4a131f5c900a8310bebb8e670",
+        "zip_member_crc32": "0f14d5f3"
+      },
+      {
+        "name": "sophisticatedcore-1.21.1-1.5.6.2374.jar",
+        "sha256": "ad8c0d7e572bf623a45cef5d888ac493f95710e17e1f95b94ead4dbb6a5c316e",
+        "zip_member_crc32": "76d75005"
+      },
+      {
+        "name": "sophisticatedstorage-1.21.1-1.6.2.2154.jar",
+        "sha256": "8610844ea8c8d61073380ae6b2aa6e362a2fc57a8b301d2bc246fc5c2b795a8c",
+        "zip_member_crc32": "f46cc443"
+      },
+      {
+        "name": "sophisticatedstoragecreateintegration-1.21.1-0.1.21.209.jar",
+        "sha256": "0b8b13cd120d45525c4df8b465adf5d381b1ed4518b72a005a3b426c6c980d9b",
+        "zip_member_crc32": "727a31ce"
+      },
+      {
+        "name": "spark-1.10.124-neoforge.jar",
+        "sha256": "647e8a81afbe414dba1df4ba15fd06c5d32d4cb544e68828405e8e074c2e16db",
+        "zip_member_crc32": "d6918b24"
+      },
+      {
+        "name": "StreamsReflowing-1.21.1-neoforge-2.14.4.jar",
+        "sha256": "bf44eb2231d9f4c506cf1c54ff5a857895198e599bc06639b5e3667616022bf1",
+        "zip_member_crc32": "fbe990ee"
+      },
+      {
+        "name": "strongerfireboss-2.0.0.jar",
+        "sha256": "c7ce8b91835a201d3a7ea1c4f98f2cef358be23ffe32cb7e779f7fa889b8e1aa",
+        "zip_member_crc32": "cb0a91ee"
+      },
+      {
+        "name": "Structory_26.2_v1.3.7.jar",
+        "sha256": "e9079b2bb9bc2efb9b0f1244376488e41f8b50f25415094d8f03dc753cdfb131",
+        "zip_member_crc32": "7a0461fd"
+      },
+      {
+        "name": "structureessentials-1.21.1-5.0.jar",
+        "sha256": "7ecb6c9d04e20a6803ba6e51dd226eaa289ba2c2c095248f3645222a8bfc1c8d",
+        "zip_member_crc32": "4488d420"
+      },
+      {
+        "name": "supplementaries-1.21.1-3.9.9-neoforge.jar",
+        "sha256": "d6876ad959d0da4bab0ba182839a0af0e38ef3571345e5e7aea0be572f958e05",
+        "zip_member_crc32": "2f16835a"
+      },
+      {
+        "name": "TansHugeTrees-1.8.0-NeoForge-1.21.1-BETA.jar",
+        "sha256": "0cb369ef24eac771e922ded6d39a87c6fccdff0d0316b3f9a761a4747136d062",
+        "zip_member_crc32": "75b06b27"
+      },
+      {
+        "name": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+        "sha256": "edb34c388fe17ea88d0a7fd11174bbf8ae8f28a4c8ce886f1bf9a5cf0ebc36b8",
+        "zip_member_crc32": "c38d8ea2"
+      }
+    ],
+    "stopped_at": 269812634,
+    "complete_archive": false
+  }
+]

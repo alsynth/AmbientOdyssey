@@ -1,0 +1,246 @@
+{
+  "entity_tags": [
+    "traveloptics:aerial_collapse_dr",
+    "traveloptics:element_fire",
+    "traveloptics:spectral_blink_blacklist",
+    "traveloptics:spectral_shift_blacklist"
+  ],
+  "remnant_registration": "CSEntityRegistry <clinit> registers ancient_ancient_remnant in cataclysm_spellbooks namespace",
+  "model_patches": [
+    {
+      "path": "assets/traveloptics/models/displaysettings/abyssal_tidecaller_display.json",
+      "native_sha256": "e109dda5c5882d85aed64767e56b70ef128f21d34e11606114901bb8da53431e",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/abyssal_tidecaller"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/displaysettings/infernal_devastator_display.json",
+      "native_sha256": "6d5f050de81bfc91218a19fbfa575f37c9a429948901e14e7711c54130201d5f",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/infernal_devastator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/displaysettings/mechanized_wraithblade_display.json",
+      "native_sha256": "1cbcd3e5e43780d9e55b106cc942d03d479c8dd62cb5f542ac4922811c8b7fd3",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/mechanized_wraithblade"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/displaysettings/scourge_of_the_sands_display.json",
+      "native_sha256": "3a0b18703345958f0287e51d72c31acdff2d53c9797fa57d8f2f8b2b24939cda",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/scourge_of_the_sands"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/displaysettings/thorns_of_oblivion_display.json",
+      "native_sha256": "3a0b18703345958f0287e51d72c31acdff2d53c9797fa57d8f2f8b2b24939cda",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/scourge_of_the_sands"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/displaysettings/titanlords_scepter_display.json",
+      "native_sha256": "ff7218fd948f179c6222c8fc914a8b3f22fdcb592da9012b955ef8ad13486c62",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/titanlords_scepter"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/guide_to_watery_whispers.json",
+      "native_sha256": "f15f4c8d7541afd272e6a2a1e97d42f4bd4ff09b41ae77eabe3189edf4b2def4",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/harbingers_wrath.json",
+      "native_sha256": "83a560e8368c7cc727426546598c47c5bcb84ad73bbb2dd1894c0504153095a4",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/harbingers_wrath_level_one.json",
+      "native_sha256": "83a560e8368c7cc727426546598c47c5bcb84ad73bbb2dd1894c0504153095a4",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/harbingers_wrath_level_three.json",
+      "native_sha256": "83a560e8368c7cc727426546598c47c5bcb84ad73bbb2dd1894c0504153095a4",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/harbingers_wrath_level_two.json",
+      "native_sha256": "83a560e8368c7cc727426546598c47c5bcb84ad73bbb2dd1894c0504153095a4",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/infernal_devastator.json",
+      "native_sha256": "08b0d5f3896481277e2fffd6d96fa3602c1bfb0b080f05ef9e6a61d062d09278",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/infernal_devastator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/infernal_devastator_level_one.json",
+      "native_sha256": "08b0d5f3896481277e2fffd6d96fa3602c1bfb0b080f05ef9e6a61d062d09278",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/infernal_devastator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/infernal_devastator_level_three.json",
+      "native_sha256": "08b0d5f3896481277e2fffd6d96fa3602c1bfb0b080f05ef9e6a61d062d09278",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/infernal_devastator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/infernal_devastator_level_two.json",
+      "native_sha256": "08b0d5f3896481277e2fffd6d96fa3602c1bfb0b080f05ef9e6a61d062d09278",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/infernal_devastator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/mechanized_wraithblade.json",
+      "native_sha256": "b02b12f19a1504ef35efe0b6129864034a961860e4dbf732a4d9b37235446f13",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/mechanized_wraithblade"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/scourge_of_the_sands.json",
+      "native_sha256": "1455ed5847b5e821d2d0daba42e0261a2fa5cc5d4dc234c0e33e3b244c326e68",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/scourge_of_the_sands_level_one.json",
+      "native_sha256": "1455ed5847b5e821d2d0daba42e0261a2fa5cc5d4dc234c0e33e3b244c326e68",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/scourge_of_the_sands_level_three.json",
+      "native_sha256": "1455ed5847b5e821d2d0daba42e0261a2fa5cc5d4dc234c0e33e3b244c326e68",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/scourge_of_the_sands_level_two.json",
+      "native_sha256": "1455ed5847b5e821d2d0daba42e0261a2fa5cc5d4dc234c0e33e3b244c326e68",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/the_obliterator.json",
+      "native_sha256": "d3e4390dba518555679cbe11c83a1509c6b8f5a8c51faadc80b286a5c33eb9aa",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/the_obliterator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/the_obliterator_level_one.json",
+      "native_sha256": "d3e4390dba518555679cbe11c83a1509c6b8f5a8c51faadc80b286a5c33eb9aa",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/the_obliterator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/the_obliterator_level_three.json",
+      "native_sha256": "d3e4390dba518555679cbe11c83a1509c6b8f5a8c51faadc80b286a5c33eb9aa",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/the_obliterator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/the_obliterator_level_two.json",
+      "native_sha256": "d3e4390dba518555679cbe11c83a1509c6b8f5a8c51faadc80b286a5c33eb9aa",
+      "changes": [
+        "Existing native texture path: traveloptics:models/item/the_obliterator"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/thorns_of_oblivion.json",
+      "native_sha256": "b7d6e8660f77ea218a34f7a1892a2a165a6b2c6376d3227ea79ee048273a7275",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/thorns_of_oblivion_level_one.json",
+      "native_sha256": "b7d6e8660f77ea218a34f7a1892a2a165a6b2c6376d3227ea79ee048273a7275",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/thorns_of_oblivion_level_three.json",
+      "native_sha256": "b7d6e8660f77ea218a34f7a1892a2a165a6b2c6376d3227ea79ee048273a7275",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/thorns_of_oblivion_level_two.json",
+      "native_sha256": "b7d6e8660f77ea218a34f7a1892a2a165a6b2c6376d3227ea79ee048273a7275",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/voidstrike_reaper.json",
+      "native_sha256": "233aa5241d106f1d8093591f6eaf4ad1ffcd91c74dc2ad1af955ca76b28e5636",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/voidstrike_reaper_level_one.json",
+      "native_sha256": "233aa5241d106f1d8093591f6eaf4ad1ffcd91c74dc2ad1af955ca76b28e5636",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/voidstrike_reaper_level_three.json",
+      "native_sha256": "233aa5241d106f1d8093591f6eaf4ad1ffcd91c74dc2ad1af955ca76b28e5636",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/voidstrike_reaper_level_two.json",
+      "native_sha256": "233aa5241d106f1d8093591f6eaf4ad1ffcd91c74dc2ad1af955ca76b28e5636",
+      "changes": [
+        "NeoForge loader namespace"
+      ]
+    },
+    {
+      "path": "assets/traveloptics/models/item/weapon/cursed_wraithblade_model.json",
+      "native_sha256": "fea5c2bd163e80621e8e1e0ecbf234a7dd0469181d0abcf545d811dd473ad442",
+      "changes": [
+        "Missing unnamespaced parent -> standard handheld display parent; all authored mesh/UV elements retained"
+      ]
+    }
+  ],
+  "not_repaired": [
+    "augment_test_wild and test_augment models absent; no substitute visuals invented",
+    "Dynamic rendering and in-game visual acceptance pending"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "constants": [
+    "net/acetheeldritchking/cataclysm_spellbooks/items/KnowledgeItem",
+    "<init>",
+    "(Lnet/minecraft/world/item/Item$Properties;Ljava/util/List;Z)V",
+    "net/acetheeldritchking/cataclysm_spellbooks/registries/ItemRegistries$1",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "this",
+    "Lnet/acetheeldritchking/cataclysm_spellbooks/registries/ItemRegistries$1;",
+    "arg0",
+    "Lnet/minecraft/world/item/Item$Properties;",
+    "arg1",
+    "Ljava/util/List;",
+    "arg2",
+    "Z",
+    "LocalVariableTypeTable",
+    "Ljava/util/List<Ljava/util/function/Supplier<Lio/redspace/ironsspellbooks/api/spells/AbstractSpell;>;>;",
+    "isFoil",
+    "(Lnet/minecraft/world/item/ItemStack;)Z",
+    "stack",
+    "Lnet/minecraft/world/item/ItemStack;",
+    "SourceFile",
+    "ItemRegistries.java",
+    "EnclosingMethod",
+    "net/acetheeldritchking/cataclysm_spellbooks/registries/ItemRegistries",
+    "<clinit>",
+    "()V",
+    "NestHost",
+    "InnerClasses",
+    "net/minecraft/world/item/Item$Properties",
+    "net/minecraft/world/item/Item",
+    "Properties"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "(Lnet/minecraft/world/item/Item$Properties;Ljava/util/List;Z)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "0x2b"
+        },
+        {
+          "offset": 2,
+          "op": "0x2c"
+        },
+        {
+          "offset": 3,
+          "op": "0x1d"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "net/acetheeldritchking/cataclysm_spellbooks/items/KnowledgeItem <init> (Lnet/minecraft/world/item/Item$Properties;Ljava/util/List;Z)V"
+        },
+        {
+          "offset": 7,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "isFoil",
+      "descriptor": "(Lnet/minecraft/world/item/ItemStack;)Z",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "iconst_1"
+        },
+        {
+          "offset": 1,
+          "op": "ireturn"
+        }
+      ]
+    }
+  ]
+}

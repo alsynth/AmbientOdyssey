@@ -1,0 +1,230 @@
+[
+  {
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "template": "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_2.nbt",
+    "pool": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+    "name": "dungeons_arise:foundry_corridor_gear",
+    "target": "dungeons_arise:foundry_corridor_gear",
+    "pos": [
+      15,
+      27,
+      6
+    ]
+  },
+  {
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "template": "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_2.nbt",
+    "pool": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+    "name": "dungeons_arise:foundry_corridor_gear",
+    "target": "dungeons_arise:foundry_corridor_gear",
+    "pos": [
+      15,
+      27,
+      13
+    ]
+  },
+  {
+    "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "template": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_towers_1.nbt",
+    "pool": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+    "name": "dungeons_arise:mechanical_nest_deco_1_library",
+    "target": "dungeons_arise:mechanical_nest_deco_0_library",
+    "pos": [
+      14,
+      12,
+      3
+    ]
+  },
+  {
+    "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+    "template": "data/idas/structure/ancient_mines/ancient_mines_entrance.nbt",
+    "pool": "idas:ancient_mines/ancient_mines_entrance2",
+    "name": "idas:mines_entrance",
+    "target": "idas:mines_entrance",
+    "pos": [
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+    "template": "data/idas/structure/dread_citadel/dread_citadel.nbt",
+    "pool": "idas:dread_citadel/dread_citadel5",
+    "name": "idas:dread_citadel5",
+    "target": "idas:dread_citadel5",
+    "pos": [
+      133,
+      39,
+      31
+    ]
+  },
+  {
+    "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+    "template": "data/idas/structure/dread_citadel/dread_citadel.nbt",
+    "pool": "idas:dread_citadel/dread_citadel12",
+    "name": "idas:dread_citadel12",
+    "target": "idas:dread_citadel12",
+    "pos": [
+      133,
+      40,
+      26
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/house/cabin_village_fisherman_bottom.nbt",
+    "pool": "integrated_villages:cabin_village/house/fisherman_lecturn",
+    "name": "integrated_villages:lecturn",
+    "target": "integrated_villages:lecturn",
+    "pos": [
+      10,
+      0,
+      3
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection1.nbt",
+    "pool": "minecraft:village/common/cats",
+    "name": "minecraft:bottom",
+    "target": "minecraft:bottom",
+    "pos": [
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection2.nbt",
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "name": "integrated_villages:villager",
+    "target": "integrated_villages:villager",
+    "pos": [
+      2,
+      0,
+      5
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection2.nbt",
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "name": "integrated_villages:villager",
+    "target": "integrated_villages:villager",
+    "pos": [
+      6,
+      0,
+      3
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection2.nbt",
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "name": "integrated_villages:villager",
+    "target": "integrated_villages:villager",
+    "pos": [
+      6,
+      0,
+      9
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection2.nbt",
+    "pool": "minecraft:village/common/cats",
+    "name": "minecraft:bottom",
+    "target": "minecraft:bottom",
+    "pos": [
+      7,
+      0,
+      4
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection3.nbt",
+    "pool": "minecraft:village/common/cats",
+    "name": "minecraft:bottom",
+    "target": "minecraft:bottom",
+    "pos": [
+      4,
+      0,
+      1
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection4.nbt",
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "name": "integrated_villages:villager",
+    "target": "integrated_villages:villager",
+    "pos": [
+      2,
+      0,
+      5
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection4.nbt",
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "name": "integrated_villages:villager",
+    "target": "integrated_villages:villager",
+    "pos": [
+      6,
+      0,
+      3
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection4.nbt",
+    "pool": "integrated_villages:cabin_village/villager_random",
+    "name": "integrated_villages:villager",
+    "target": "integrated_villages:villager",
+    "pos": [
+      6,
+      0,
+      9
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_intersection4.nbt",
+    "pool": "minecraft:village/common/cats",
+    "name": "minecraft:bottom",
+    "target": "minecraft:bottom",
+    "pos": [
+      7,
+      0,
+      4
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_path1.nbt",
+    "pool": "minecraft:village/common/cats",
+    "name": "minecraft:bottom",
+    "target": "minecraft:bottom",
+    "pos": [
+      2,
+      1,
+      6
+    ]
+  },
+  {
+    "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+    "template": "data/integrated_villages/structure/cabin_village/path/cabin_village_path2.nbt",
+    "pool": "minecraft:village/common/cats",
+    "name": "minecraft:bottom",
+    "target": "minecraft:bottom",
+    "pos": [
+      1,
+      1,
+      3
+    ]
+  }
+]

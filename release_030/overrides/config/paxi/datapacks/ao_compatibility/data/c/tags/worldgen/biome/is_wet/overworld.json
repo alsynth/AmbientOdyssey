@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:hot_springs",
+    "biomeswevegone:bayou",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:lush_stacks",
+    "regions_unexplored:fen",
+    "regions_unexplored:hyacinth_deeps",
+    "regions_unexplored:marsh",
+    "regions_unexplored:muddy_river",
+    "regions_unexplored:rocky_reef"
+  ]
+}

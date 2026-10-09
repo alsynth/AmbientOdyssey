@@ -1,0 +1,367 @@
+[
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "Lcom/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon;",
+      "BetterEndIslandCommon.java"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandNeoForge.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandNeoForge",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "Lcom/yungnickyoung/minecraft/betterendisland/BetterEndIslandNeoForge;",
+      "BetterEndIslandNeoForge.java"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/command/EndIslandCommand.class",
+    "references": [
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "com/yungnickyoung/minecraft/betterendisland/command/EndIslandCommand",
+      "Lcom/yungnickyoung/minecraft/betterendisland/command/EndIslandCommand;",
+      "EndIslandCommand.java"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/config/BEIConfigNeoForge.class",
+    "references": [
+      " Whether the central tower should spawn in the End when the world is first generated.\n Default: true"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/accessor/EndDragonFightAccessor.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/mixin/accessor/EndDragonFightAccessor",
+      "EndDragonFightAccessor.java",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/EndDragonFightMixin.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/mixin/EndDragonFightMixin",
+      "net/minecraft/world/level/dimension/end/EndDragonFight$Data",
+      "net/minecraft/world/level/dimension/end/EndDragonFight",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "findExitPortal",
+      "Portal was still placed too low! Force placing at y=65...",
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "place",
+      "com/yungnickyoung/minecraft/betterendisland/world/util/EndSpikeUtils",
+      "(Lcom/yungnickyoung/minecraft/betterendisland/mixin/EndDragonFightMixin;)Ljava/util/function/Consumer;",
+      "(Lcom/yungnickyoung/minecraft/betterendisland/mixin/EndDragonFightMixin;I)Ljava/util/function/Consumer;",
+      "com/yungnickyoung/minecraft/betterendisland/world/IEndSpike",
+      "Lcom/yungnickyoung/minecraft/betterendisland/mixin/EndDragonFightMixin;",
+      "betterendisland_EndDragonFight",
+      "(Lnet/minecraft/server/level/ServerLevel;JLnet/minecraft/world/level/dimension/end/EndDragonFight$Data;Lnet/minecraft/core/BlockPos;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight$Data;",
+      "<init>(Lnet/minecraft/server/level/ServerLevel;JLnet/minecraft/world/level/dimension/end/EndDragonFight$Data;Lnet/minecraft/core/BlockPos;)V",
+      "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;",
+      "Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;",
+      "(ILnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;)V",
+      "EndDragonFightMixin.java",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "(Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;)V",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/EndergeticExpansionMixins.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "net/minecraft/world/level/dimension/end/EndDragonFight",
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight$Data;",
+      "(Lnet/minecraft/server/level/ServerLevel;JLnet/minecraft/world/level/dimension/end/EndDragonFight$Data;)V",
+      "net/minecraft/world/level/dimension/end/EndDragonFight$Data"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/EndGatewayFeatureMixin.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "place",
+      "betterendisland_placeEndGateway"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/EndPlatformFeatureMixin.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "place"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/EndSpikeMixin.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/mixin/EndSpikeMixin",
+      "com/yungnickyoung/minecraft/betterendisland/world/IEndSpike",
+      "Lcom/yungnickyoung/minecraft/betterendisland/mixin/EndSpikeMixin;",
+      "EndSpikeMixin.java",
+      "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;",
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/PrimaryLevelDataMixin.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "setExtraEndDragonFightData",
+      "getExtraEndDragonFightData"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/ServerLevelMixin.class",
+    "references": [
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "net/minecraft/world/level/dimension/end/EndDragonFight",
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight$Data;",
+      "(Lnet/minecraft/server/level/ServerLevel;JLnet/minecraft/world/level/dimension/end/EndDragonFight$Data;)V",
+      "getExtraEndDragonFightData",
+      "setExtraEndDragonFightData",
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "net/minecraft/world/level/dimension/end/EndDragonFight$Data"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/SpikeFeatureMixin.class",
+    "references": [
+      "placeSpike",
+      "(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/feature/configurations/SpikeConfiguration;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;Z)V",
+      "Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;>;",
+      "(Lnet/minecraft/world/level/WorldGenLevel;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable<Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;>;)V",
+      "betterendisland_placeSpike",
+      "(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/feature/configurations/SpikeConfiguration;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+      "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;",
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/mixin/TheEndGatewayBlockEntityMixin.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "end_gateway_cannot_place_player_on",
+      "placeAnywhere"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/module/CommandModule.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/command/EndIslandCommand"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/module/ConfigModuleNeoForge.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandNeoForge",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/module/StructureProcessorTypeModule.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor",
+      "Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureProcessorType<Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;>;",
+      "block_replace_processor"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/services/Services.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/DragonRespawnStage$1.class",
+    "references": [
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List<Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;>;I)V"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/DragonRespawnStage$2.class",
+    "references": [
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List<Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;>;I)V"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/DragonRespawnStage$3.class",
+    "references": [
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "com/yungnickyoung/minecraft/betterendisland/world/IEndSpike",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;I)Ljava/util/function/Consumer;",
+      "place",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;",
+      "net/minecraft/world/level/dimension/end/EndDragonFight",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List<Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;>;I)V",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;ILnet/minecraft/server/level/ServerPlayer;)V",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/DragonRespawnStage$4.class",
+    "references": [
+      "net/minecraft/world/level/dimension/end/EndDragonFight",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List<Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;>;I)V"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/DragonRespawnStage$5.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/mixin/accessor/EndDragonFightAccessor",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List<Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;>;I)V"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/DragonRespawnStage.class",
+    "references": [
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List;I)V",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/dimension/end/EndDragonFight;Ljava/util/List<Lnet/minecraft/world/entity/boss/enderdragon/EndCrystal;>;I)V"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/feature/BetterEndGatewayFeature.class",
+    "references": [
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "placeTemplate",
+      "placeInWorld",
+      "place",
+      "placed",
+      "lambda$place$0"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/feature/BetterEndPodiumFeature.class",
+    "references": [
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "placeTemplate",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "placeInWorld",
+      "com/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor",
+      "place",
+      "placed"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/feature/BetterEndSpawnPlatformFeature.class",
+    "references": [
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "placeTemplate",
+      "placeInWorld",
+      "place"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/feature/BetterSpikeFeature.class",
+    "references": [
+      "(Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;ZZ)Lcom/mojang/datafixers/util/Pair;",
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "()Lnet/minecraft/world/level/dimension/end/EndDragonFight;",
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "placeTemplate",
+      "Unable to place top spike at {}. This shouldn't happen!",
+      "Unable to place bottom spike at {}. This shouldn't happen!",
+      "com/yungnickyoung/minecraft/betterendisland/world/IEndSpike",
+      "placeInWorld",
+      "com/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor",
+      "Lcom/google/common/cache/LoadingCache<Ljava/lang/Long;Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;>;",
+      "(Lnet/minecraft/world/level/WorldGenLevel;)Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;",
+      "placeSpike",
+      "(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/feature/configurations/SpikeConfiguration;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;Z)V",
+      "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;",
+      "(Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;ZZ)Lcom/mojang/datafixers/util/Pair<Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceLocation;>;",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/IEndSpike.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/world/IEndSpike",
+      "IEndSpike.java"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/IPrimaryLevelData.class",
+    "references": [
+      "setExtraEndDragonFightData",
+      "getExtraEndDragonFightData"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor",
+      "Lcom/mojang/serialization/MapCodec<Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;>;",
+      "Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;",
+      "(Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;)Ljava/lang/Boolean;",
+      "(Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;)Lcom/yungnickyoung/minecraft/yungsapi/api/world/randomize/BlockStateRandomizer;",
+      "(Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;)Lnet/minecraft/world/level/block/state/BlockState;",
+      "BlockReplaceProcessor.java",
+      "(Lnet/minecraft/world/level/block/state/BlockState;Lcom/yungnickyoung/minecraft/yungsapi/api/world/randomize/BlockStateRandomizer;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lcom/yungnickyoung/minecraft/betterendisland/world/processor/BlockReplaceProcessor;"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/SpikeCacheLoader.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;",
+      "(Ljava/lang/Long;)Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;",
+      "Lcom/google/common/cache/CacheLoader<Ljava/lang/Long;Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;>;",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/util/EndCrystalUtils.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/util/EndSpikeUtils.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "net/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike",
+      "placeSpike",
+      "(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/util/RandomSource;Lnet/minecraft/world/level/levelgen/feature/configurations/SpikeConfiguration;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;Z)V",
+      "com/yungnickyoung/minecraft/betterendisland/world/util/EndSpikeUtils",
+      "Lcom/yungnickyoung/minecraft/betterendisland/world/util/EndSpikeUtils;",
+      "Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;",
+      "(Lnet/minecraft/server/level/ServerLevel;Ljava/util/List<Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;>;)V",
+      "(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;)V",
+      "Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;",
+      "EndSpikeUtils.java",
+      "(Lnet/minecraft/world/level/levelgen/feature/SpikeFeature$EndSpike;)V",
+      "EndSpike"
+    ]
+  },
+  {
+    "class": "com/yungnickyoung/minecraft/betterendisland/world/util/ExitPortalUtils.class",
+    "references": [
+      "com/yungnickyoung/minecraft/betterendisland/BetterEndIslandCommon",
+      "com/yungnickyoung/minecraft/betterendisland/mixin/accessor/EndDragonFightAccessor",
+      "place",
+      "Portal was still placed too low! Force placing at y=65...",
+      "Lcom/yungnickyoung/minecraft/betterendisland/mixin/accessor/EndDragonFightAccessor;"
+    ]
+  }
+]

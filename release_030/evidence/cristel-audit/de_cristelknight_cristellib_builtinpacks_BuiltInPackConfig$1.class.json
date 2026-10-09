@@ -1,0 +1,262 @@
+{
+  "constants": [
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig$1",
+    "Ljava/lang/Object;Lde/cristelknight/cristellib/config/simple/ConfigSettings<Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;>;",
+    "java/lang/Object",
+    "de/cristelknight/cristellib/config/simple/ConfigSettings",
+    "BuiltInPackConfig.java",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig",
+    "java/lang/invoke/MethodHandles$Lookup",
+    "java/lang/invoke/MethodHandles",
+    "Lookup",
+    "<init>",
+    "()V",
+    "this",
+    "Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig$1;",
+    "getSubPath",
+    "()Ljava/lang/String;",
+    "cristellib/built_in_packs",
+    "getCodec",
+    "()Lcom/mojang/serialization/Codec;",
+    "()Lcom/mojang/serialization/Codec<Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;>;",
+    "CODEC",
+    "Lcom/mojang/serialization/Codec;",
+    "getDefault",
+    "()Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;",
+    "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader",
+    "getCustomIDs",
+    "()Ljava/util/List;",
+    "java/util/List",
+    "of",
+    "(Ljava/util/List;Ljava/util/List;Z)V",
+    "getHeader",
+    "This config allows disabling built-in packs supplied by Cristel Lib.\nMove entries from 'defaultPacks' to 'disabledPacks' to disable them.\n",
+    "getComments",
+    "()Ljava/util/HashMap;",
+    "()Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;",
+    "java/util/HashMap",
+    "(Ljava/lang/Object;)V",
+    "lambda$getComments$0",
+    "(Ljava/util/HashMap;)V",
+    "java/lang/invoke/LambdaMetafactory",
+    "metafactory",
+    "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;",
+    "accept",
+    "()Ljava/util/function/Consumer;",
+    "net/minecraft/Util",
+    "make",
+    "(Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;",
+    "()Ljava/lang/Object;",
+    "map",
+    "hideAllPacksInScreen",
+    "This option hides all packs provided by Cristel Lib in the pack selection screen to reduce clutter.",
+    "put",
+    "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;",
+    "Ljava/util/HashMap;",
+    "Code",
+    "LineNumberTable",
+    "LocalVariableTable",
+    "Signature",
+    "MethodParameters",
+    "InnerClasses",
+    "EnclosingMethod",
+    "SourceFile",
+    "BootstrapMethods",
+    "NestHost"
+  ],
+  "methods": [
+    {
+      "name": "<init>",
+      "descriptor": "()V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokespecial",
+          "reference": "java/lang/Object <init> ()V"
+        },
+        {
+          "offset": 4,
+          "op": "return"
+        }
+      ]
+    },
+    {
+      "name": "getSubPath",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "cristellib/built_in_packs"
+        },
+        {
+          "offset": 2,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getCodec",
+      "descriptor": "()Lcom/mojang/serialization/Codec;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "getstatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig CODEC Lcom/mojang/serialization/Codec;"
+        },
+        {
+          "offset": 3,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getDefault",
+      "descriptor": "()Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokestatic",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackLoader getCustomIDs ()Ljava/util/List;"
+        },
+        {
+          "offset": 7,
+          "op": "invokestatic",
+          "reference": "java/util/List of ()Ljava/util/List;"
+        },
+        {
+          "offset": 10,
+          "op": "iconst_0"
+        },
+        {
+          "offset": 11,
+          "op": "invokespecial",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig <init> (Ljava/util/List;Ljava/util/List;Z)V"
+        },
+        {
+          "offset": 14,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getHeader",
+      "descriptor": "()Ljava/lang/String;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "ldc",
+          "reference": "This config allows disabling built-in packs supplied by Cristel Lib.\nMove entries from 'defaultPacks' to 'disabledPacks' to disable them.\n"
+        },
+        {
+          "offset": 2,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getComments",
+      "descriptor": "()Ljava/util/HashMap;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "new",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 3,
+          "op": "0x59"
+        },
+        {
+          "offset": 4,
+          "op": "invokespecial",
+          "reference": "java/util/HashMap <init> ()V"
+        },
+        {
+          "offset": 7,
+          "op": "invokedynamic",
+          "reference": "(18, 0, 75)"
+        },
+        {
+          "offset": 12,
+          "op": "invokestatic",
+          "reference": "net/minecraft/Util make (Ljava/lang/Object;Ljava/util/function/Consumer;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 15,
+          "op": "checkcast",
+          "reference": "java/util/HashMap"
+        },
+        {
+          "offset": 18,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "getDefault",
+      "descriptor": "()Ljava/lang/Object;",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "invokevirtual",
+          "reference": "de/cristelknight/cristellib/builtinpacks/BuiltInPackConfig$1 getDefault ()Lde/cristelknight/cristellib/builtinpacks/BuiltInPackConfig;"
+        },
+        {
+          "offset": 4,
+          "op": "areturn"
+        }
+      ]
+    },
+    {
+      "name": "lambda$getComments$0",
+      "descriptor": "(Ljava/util/HashMap;)V",
+      "operations": [
+        {
+          "offset": 0,
+          "op": "0x2a"
+        },
+        {
+          "offset": 1,
+          "op": "ldc",
+          "reference": "hideAllPacksInScreen"
+        },
+        {
+          "offset": 3,
+          "op": "ldc",
+          "reference": "This option hides all packs provided by Cristel Lib in the pack selection screen to reduce clutter."
+        },
+        {
+          "offset": 5,
+          "op": "invokevirtual",
+          "reference": "java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+        },
+        {
+          "offset": 8,
+          "op": "0x57"
+        },
+        {
+          "offset": 9,
+          "op": "return"
+        }
+      ]
+    }
+  ]
+}

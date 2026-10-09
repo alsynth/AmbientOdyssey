@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:volcano",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:prairie",
+    "natures_spirit:floral_ridges",
+    "regions_unexplored:ashen_woodland"
+  ]
+}

@@ -1,0 +1,3167 @@
+{
+  "version": "0.3.1-structure-test5-audit1",
+  "scope": "JAR-verified structure eligibility, independent placement and assembly repairs; terrain/climate/wildlife stages kept separate",
+  "placement_configs": [
+    {
+      "path": "cristellib/apotheosis/structure_placement_config.json5",
+      "note": "Frequent early gearing towers; about 4.69 times the former candidate density",
+      "sets": {
+        "towers": {
+          "before": {
+            "spacing": 26,
+            "separation": 18
+          },
+          "after": {
+            "spacing": 12,
+            "separation": 6
+          },
+          "attempt_density_ratio": 4.694
+        }
+      }
+    },
+    {
+      "path": "vanilla_structures/placement_structure_config.json5",
+      "note": "Land surface sets, including the village set used by CTOV; disabled individual structures remain disabled",
+      "sets": {
+        "villages": {
+          "before": {
+            "spacing": 34,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.007
+        },
+        "pillager_outposts": {
+          "before": {
+            "spacing": 32,
+            "separation": 8,
+            "frequency": 0.2
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 6,
+            "frequency": 0.3
+          },
+          "attempt_density_ratio": 2.667
+        },
+        "igloos": {
+          "before": {
+            "spacing": 32,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "swamp_huts": {
+          "before": {
+            "spacing": 32,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "woodland_mansions": {
+          "before": {
+            "spacing": 80,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 48,
+            "separation": 16
+          },
+          "attempt_density_ratio": 2.778
+        },
+        "trail_ruins": {
+          "before": {
+            "spacing": 34,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 6
+          },
+          "attempt_density_ratio": 2.007
+        }
+      }
+    },
+    {
+      "path": "towns_and_towers/structure_rarity_new.json5",
+      "note": "Towns, outposts and other land landmarks",
+      "sets": {
+        "other": {
+          "before": {
+            "spacing": 32,
+            "separation": 16
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.116
+        },
+        "towers": {
+          "before": {
+            "spacing": 48,
+            "separation": 12,
+            "frequency": 0.2
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 10,
+            "frequency": 0.3
+          },
+          "attempt_density_ratio": 3.375
+        },
+        "towns": {
+          "before": {
+            "spacing": 51,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 30,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.89
+        }
+      }
+    },
+    {
+      "path": "cristellib/idas/structure_placement_config.json5",
+      "note": "Keep small-site grid, remove disabled BYG variants and duplicate ocean ruins",
+      "sets": {
+        "idas_common": {
+          "before_test5": {
+            "salt": 169480670,
+            "separation": 8,
+            "spacing": 15
+          },
+          "after": {
+            "spacing": 15,
+            "separation": 8,
+            "frequency": 0.4537037037037037
+          },
+          "note": "Ordinary houses extracted; compensate remaining common group"
+        },
+        "idas_small": {
+          "before_test5": {
+            "salt": 169480673,
+            "separation": 12,
+            "spacing": 18
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 12,
+            "frequency": 0.8860759493670886
+          },
+          "note": "Keep small-site grid, remove disabled BYG variants and duplicate ocean ruins"
+        }
+      }
+    },
+    {
+      "path": "cristellib/dungeons_arise/structure_placement_config.json5",
+      "note": "Bathhouse extracted; compensate the remaining five native entries",
+      "sets": {
+        "minor_structures": {
+          "before_test5": {
+            "salt": 342415935,
+            "separation": 18,
+            "spacing": 28
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 18,
+            "frequency": 0.8333333333333334
+          },
+          "note": "Bathhouse extracted; compensate the remaining five native entries"
+        },
+        "major_structures": {
+          "before_test5": {
+            "salt": 88371663,
+            "separation": 45,
+            "spacing": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 45,
+            "frequency": 0.7105263157894737
+          },
+          "note": "Nominal weighted compensation after extracting ordinary houses; no boosted boss grid"
+        }
+      }
+    },
+    {
+      "path": "cristellib/integrated_villages/structure_placement_config.json5",
+      "note": "Replace duplicate AO village grid with its native single owner, preserving the native exclusion scheme",
+      "sets": {
+        "air_villages": {
+          "before": {
+            "spacing": 115,
+            "separation": 90
+          },
+          "after": {
+            "spacing": 65,
+            "separation": 45
+          },
+          "attempt_density_ratio": 3.13
+        },
+        "regular_villages": {
+          "before_test5": {
+            "salt": 1982700828,
+            "separation": 19,
+            "spacing": 26
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 14
+          },
+          "note": "Replace duplicate AO village grid with its native single owner, preserving the native exclusion scheme"
+        }
+      }
+    },
+    {
+      "path": "cristellib/mr_lukis_grandcapitals/structure_placement_config.json5",
+      "note": "Large land settlements",
+      "sets": {
+        "villages": {
+          "before": {
+            "spacing": 50,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 20
+          },
+          "attempt_density_ratio": 2.441
+        }
+      }
+    },
+    {
+      "path": "cristellib/biomeswevegone/structure_placement_config.json5",
+      "note": "Houses and villages, particularly Prairie; eligibility unchanged",
+      "sets": {
+        "aspen_manors": {
+          "before": {
+            "spacing": 50,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 20
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "bog_trial": {
+          "before": {
+            "spacing": 40,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 18
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "prairie_houses": {
+          "before": {
+            "spacing": 25,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 16,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "villages": {
+          "before": {
+            "spacing": 34,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 6
+          },
+          "attempt_density_ratio": 2.007
+        }
+      }
+    },
+    {
+      "path": "cristellib/create_rustic_structures/structure_placement_config.json5",
+      "note": "Overworld land",
+      "sets": {
+        "rustic_barn": {
+          "before": {
+            "spacing": 32,
+            "separation": 16
+          },
+          "after": {
+            "spacing": 20,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.56
+        },
+        "rustic_smithy": {
+          "before": {
+            "spacing": 24,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 16,
+            "separation": 8
+          },
+          "attempt_density_ratio": 2.25
+        },
+        "rustic_well": {
+          "before": {
+            "spacing": 16,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 12,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "rustic_windmill": {
+          "before": {
+            "spacing": 24,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 16,
+            "separation": 8
+          },
+          "attempt_density_ratio": 2.25
+        }
+      }
+    },
+    {
+      "path": "cristellib/structory/structure_placement_config.json5",
+      "note": "Overworld land",
+      "sets": {
+        "mid_rare_ruin": {
+          "before": {
+            "spacing": 30,
+            "separation": 16
+          },
+          "after": {
+            "spacing": 21,
+            "separation": 11
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "old_manor": {
+          "before": {
+            "spacing": 42,
+            "separation": 16
+          },
+          "after": {
+            "spacing": 29,
+            "separation": 11
+          },
+          "attempt_density_ratio": 2.098
+        },
+        "outcast_villager": {
+          "before": {
+            "spacing": 44,
+            "separation": 14
+          },
+          "after": {
+            "spacing": 31,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.015
+        },
+        "ruin": {
+          "before": {
+            "spacing": 30,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 21,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "ruin_quiet": {
+          "before": {
+            "spacing": 23,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 16,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.066
+        }
+      }
+    },
+    {
+      "path": "cristellib/formationsoverworld/structure_placement_config.json5",
+      "note": "Land ruins and small landmarks; rafts unchanged",
+      "sets": {
+        "rare": {
+          "before": {
+            "spacing": 50,
+            "separation": 40
+          },
+          "after": {
+            "spacing": 30,
+            "separation": 22
+          },
+          "attempt_density_ratio": 2.778
+        },
+        "uncommon": {
+          "before": {
+            "spacing": 15,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 12,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.562
+        }
+      }
+    },
+    {
+      "path": "cristellib/archaeology_ruins/structure_placement_config.json5",
+      "note": "Land archaeology ruins; ocean variants unchanged",
+      "sets": {
+        "adoberuins": {
+          "before": {
+            "spacing": 30,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 21,
+            "separation": 14
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "mudblacksmithruin": {
+          "before": {
+            "spacing": 35,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.127
+        },
+        "mudpotterruin": {
+          "before": {
+            "spacing": 35,
+            "separation": 25
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 18
+          },
+          "attempt_density_ratio": 2.127
+        },
+        "mudschoolruin": {
+          "before": {
+            "spacing": 40,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "ruined_desert_pyramid": {
+          "before": {
+            "spacing": 35,
+            "separation": 25
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 18
+          },
+          "attempt_density_ratio": 2.127
+        },
+        "ruinedjungletemple": {
+          "before": {
+            "spacing": 25,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 14
+          },
+          "attempt_density_ratio": 1.929
+        },
+        "smallmudruin": {
+          "before": {
+            "spacing": 20,
+            "separation": 14
+          },
+          "after": {
+            "spacing": 14,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.041
+        }
+      }
+    },
+    {
+      "path": "cristellib/adventuredungeons/structure_placement_config.json5",
+      "note": "Surface ruins; cave dungeon and underground groups unchanged",
+      "sets": {
+        "ruins_desert": {
+          "before": {
+            "spacing": 30,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 20,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.25
+        },
+        "ruins_snow": {
+          "before": {
+            "spacing": 30,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 20,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.25
+        },
+        "ruins_standard": {
+          "before": {
+            "spacing": 30,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 20,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.25
+        }
+      }
+    },
+    {
+      "path": "cristellib/farmers_structures/structure_placement_config.json5",
+      "note": "All 20 native variants: approximately twice native candidate attempts, original dimensions/heights/exclusions and membership retained. Unique bounded salts replace shared and out-of-range salts.",
+      "sets": {
+        "aethers_with_all": {
+          "before": {
+            "spacing": 45,
+            "separation": 25,
+            "salt": 214225994
+          },
+          "after": {
+            "spacing": 31,
+            "separation": 17,
+            "salt": 1984020000
+          },
+          "attempt_density_ratio": 2.107
+        },
+        "afterdark_farms_with_all": {
+          "before": {
+            "spacing": 64,
+            "separation": 29,
+            "salt": 429454167
+          },
+          "after": {
+            "spacing": 45,
+            "separation": 20,
+            "salt": 1984020001
+          },
+          "attempt_density_ratio": 2.023
+        },
+        "aquacultures_beach_with_all": {
+          "before": {
+            "spacing": 65,
+            "separation": 31,
+            "salt": 1935777680
+          },
+          "after": {
+            "spacing": 45,
+            "separation": 21,
+            "salt": 1984020002
+          },
+          "attempt_density_ratio": 2.086
+        },
+        "aquacultures_cod_with_all": {
+          "before": {
+            "spacing": 78,
+            "separation": 38,
+            "salt": 126199459
+          },
+          "after": {
+            "spacing": 55,
+            "separation": 27,
+            "salt": 1984020003
+          },
+          "attempt_density_ratio": 2.011
+        },
+        "aquacultures_common_with_all": {
+          "before": {
+            "spacing": 48,
+            "separation": 26,
+            "salt": 1837701544
+          },
+          "after": {
+            "spacing": 33,
+            "separation": 18,
+            "salt": 1984020004
+          },
+          "attempt_density_ratio": 2.116
+        },
+        "cacaos_with_all": {
+          "before": {
+            "spacing": 65,
+            "separation": 31,
+            "salt": 796123667
+          },
+          "after": {
+            "spacing": 45,
+            "separation": 21,
+            "salt": 1984020005
+          },
+          "attempt_density_ratio": 2.086
+        },
+        "cooks_moss_with_all": {
+          "before": {
+            "spacing": 16,
+            "separation": 14,
+            "salt": 1406582318
+          },
+          "after": {
+            "spacing": 11,
+            "separation": 10,
+            "salt": 1984020006
+          },
+          "attempt_density_ratio": 2.116
+        },
+        "cooks_nether_1_with_all": {
+          "before": {
+            "spacing": 30,
+            "separation": 21,
+            "salt": 593245336
+          },
+          "after": {
+            "spacing": 21,
+            "separation": 15,
+            "salt": 1984020007
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "cooks_nether_2_with_all": {
+          "before": {
+            "spacing": 37,
+            "separation": 28,
+            "salt": 433617316
+          },
+          "after": {
+            "spacing": 26,
+            "separation": 20,
+            "salt": 1984020008
+          },
+          "attempt_density_ratio": 2.025
+        },
+        "cooks_with_all": {
+          "before": {
+            "spacing": 40,
+            "separation": 32,
+            "salt": 736240813
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 22,
+            "salt": 1984020009
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "deeper_farms_with_all": {
+          "before": {
+            "spacing": 64,
+            "separation": 29,
+            "salt": 129454161
+          },
+          "after": {
+            "spacing": 45,
+            "separation": 20,
+            "salt": 1984020010
+          },
+          "attempt_density_ratio": 2.023
+        },
+        "fishs_stew_with_all": {
+          "before": {
+            "spacing": 36,
+            "separation": 18,
+            "salt": 886477885
+          },
+          "after": {
+            "spacing": 25,
+            "separation": 12,
+            "salt": 1984020011
+          },
+          "attempt_density_ratio": 2.074
+        },
+        "flesh_farms_with_all": {
+          "before": {
+            "spacing": 64,
+            "separation": 29,
+            "salt": 429454167
+          },
+          "after": {
+            "spacing": 45,
+            "separation": 20,
+            "salt": 1984020012
+          },
+          "attempt_density_ratio": 2.023
+        },
+        "honey_cake_farms_with_all": {
+          "before": {
+            "spacing": 64,
+            "separation": 29,
+            "salt": 429454167
+          },
+          "after": {
+            "spacing": 45,
+            "separation": 20,
+            "salt": 1984020013
+          },
+          "attempt_density_ratio": 2.023
+        },
+        "ratatouilles_with_all": {
+          "before": {
+            "spacing": 44,
+            "separation": 29,
+            "salt": 429454167
+          },
+          "after": {
+            "spacing": 31,
+            "separation": 20,
+            "salt": 1984020014
+          },
+          "attempt_density_ratio": 2.015
+        },
+        "shepherd_farms_with_all": {
+          "before": {
+            "spacing": 141,
+            "separation": 121,
+            "salt": 1007701540
+          },
+          "after": {
+            "spacing": 99,
+            "separation": 85,
+            "salt": 1984020015
+          },
+          "attempt_density_ratio": 2.028
+        },
+        "squids_with_all": {
+          "before": {
+            "spacing": 38,
+            "separation": 22,
+            "salt": 429454167
+          },
+          "after": {
+            "spacing": 26,
+            "separation": 15,
+            "salt": 1984020016
+          },
+          "attempt_density_ratio": 2.136
+        },
+        "sushus_with_all": {
+          "before": {
+            "spacing": 54,
+            "separation": 24,
+            "salt": 1314228740
+          },
+          "after": {
+            "spacing": 38,
+            "separation": 17,
+            "salt": 1984020017
+          },
+          "attempt_density_ratio": 2.019
+        },
+        "undergardens_sea_with_all": {
+          "before": {
+            "spacing": 155,
+            "separation": 120,
+            "salt": 664652465
+          },
+          "after": {
+            "spacing": 109,
+            "separation": 84,
+            "salt": 1984020018
+          },
+          "attempt_density_ratio": 2.022
+        },
+        "undergardens_with_all": {
+          "before": {
+            "spacing": 95,
+            "separation": 80,
+            "salt": 9946924945
+          },
+          "after": {
+            "spacing": 67,
+            "separation": 56,
+            "salt": 1984020019
+          },
+          "attempt_density_ratio": 2.01
+        }
+      }
+    },
+    {
+      "path": "cristellib/irons_spellbooks/structure_placement_config.json5",
+      "note": "Overworld surface buildings; Nether/underground structures unchanged",
+      "sets": {
+        "evoker_fort": {
+          "before": {
+            "spacing": 85,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 28
+          },
+          "attempt_density_ratio": 2.89
+        },
+        "mangrove_hut": {
+          "before": {
+            "spacing": 25,
+            "separation": 18
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 11
+          },
+          "attempt_density_ratio": 1.929
+        },
+        "mountain_tower": {
+          "before": {
+            "spacing": 45,
+            "separation": 33
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 18
+          },
+          "attempt_density_ratio": 2.583
+        }
+      }
+    },
+    {
+      "path": "cristellib/ars_nouveau/structure_placement_config.json5",
+      "note": "Surface Wilden dens",
+      "sets": {
+        "wilden_den_set": {
+          "before": {
+            "spacing": 36,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.25
+        }
+      }
+    },
+    {
+      "path": "cristellib/enigmaticlegacyplus/structure_placement_config.json5",
+      "note": "Overworld land",
+      "sets": {
+        "spellstone_hut": {
+          "before": {
+            "spacing": 32,
+            "separation": 11
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 8
+          },
+          "attempt_density_ratio": 2.116
+        }
+      }
+    },
+    {
+      "path": "cristellib/friendsandfoes/structure_placement_config.json5",
+      "note": "Land cabins and camps; citadel unchanged",
+      "sets": {
+        "iceologer_cabin": {
+          "before": {
+            "spacing": 40,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "illusioner_shack": {
+          "before": {
+            "spacing": 40,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.041
+        },
+        "illusioner_training_grounds": {
+          "before": {
+            "spacing": 40,
+            "separation": 10
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 7
+          },
+          "attempt_density_ratio": 2.041
+        }
+      }
+    },
+    {
+      "path": "cristellib/graveyard/structure_placement_config.json5",
+      "note": "Cemeteries, houses and ruins; crypts and decorative trees/mushrooms unchanged",
+      "sets": {
+        "altar_structure": {
+          "before": {
+            "spacing": 30,
+            "separation": 24
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 18
+          },
+          "attempt_density_ratio": 1.86
+        },
+        "haunted_house_structure": {
+          "before": {
+            "spacing": 20,
+            "separation": 18
+          },
+          "after": {
+            "spacing": 15,
+            "separation": 14
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "large_graveyard_structure": {
+          "before": {
+            "spacing": 25,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 19,
+            "separation": 15
+          },
+          "attempt_density_ratio": 1.731
+        },
+        "lich_prison_structure": {
+          "before": {
+            "spacing": 120,
+            "separation": 100
+          },
+          "after": {
+            "spacing": 90,
+            "separation": 75
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "medium_graveyard_structure": {
+          "before": {
+            "spacing": 18,
+            "separation": 16
+          },
+          "after": {
+            "spacing": 14,
+            "separation": 12
+          },
+          "attempt_density_ratio": 1.653
+        },
+        "ruins_structure": {
+          "before": {
+            "spacing": 16,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 12,
+            "separation": 9
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "small_desert_graveyard_structure": {
+          "before": {
+            "spacing": 32,
+            "separation": 28
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 21
+          },
+          "attempt_density_ratio": 1.778
+        },
+        "small_graveyard_structure": {
+          "before": {
+            "spacing": 20,
+            "separation": 18
+          },
+          "after": {
+            "spacing": 15,
+            "separation": 14
+          },
+          "attempt_density_ratio": 1.778
+        }
+      }
+    },
+    {
+      "path": "cristellib/iceandfire/structure_placement_config.json5",
+      "note": "Mild surface-lair increase; underground dragon caves and sea islands unchanged",
+      "sets": {
+        "cyclops_cave": {
+          "before": {
+            "spacing": 16,
+            "separation": 6
+          },
+          "after": {
+            "spacing": 14,
+            "separation": 5
+          },
+          "attempt_density_ratio": 1.306
+        },
+        "dragon_roost": {
+          "before": {
+            "spacing": 15,
+            "separation": 6
+          },
+          "after": {
+            "spacing": 13,
+            "separation": 5
+          },
+          "attempt_density_ratio": 1.331
+        },
+        "gorgon_temple": {
+          "before": {
+            "spacing": 32,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 27,
+            "separation": 10
+          },
+          "attempt_density_ratio": 1.405
+        },
+        "graveyard": {
+          "before": {
+            "spacing": 28,
+            "separation": 14
+          },
+          "after": {
+            "spacing": 24,
+            "separation": 12
+          },
+          "attempt_density_ratio": 1.361
+        },
+        "hydra_cave": {
+          "before": {
+            "spacing": 16,
+            "separation": 6
+          },
+          "after": {
+            "spacing": 14,
+            "separation": 5
+          },
+          "attempt_density_ratio": 1.306
+        },
+        "mausoleum": {
+          "before": {
+            "spacing": 32,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 27,
+            "separation": 10
+          },
+          "attempt_density_ratio": 1.405
+        }
+      }
+    },
+    {
+      "path": "cristellib/mowziesmobs/structure_placement_config.json5",
+      "note": "Surface Integrated Mowzie structures; Wroughtnaut chamber spacing unchanged",
+      "sets": {
+        "frostmaw_spawns": {
+          "before": {
+            "spacing": 25,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.929
+        },
+        "monasteries": {
+          "before": {
+            "spacing": 25,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.929
+        },
+        "umvuthana_groves": {
+          "before": {
+            "spacing": 25,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 6
+          },
+          "attempt_density_ratio": 1.929
+        }
+      }
+    },
+    {
+      "path": "cristellib/bosses_of_mass_destruction/structure_placement_config.json5",
+      "note": "Integrated Lich tower defaults to 32/16; new 28/14 is about 1.31 times that addon default. Former profile was 100/50.",
+      "sets": {
+        "lich_tower": {
+          "before": {
+            "spacing": 100,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 28,
+            "separation": 14
+          },
+          "attempt_density_ratio": 12.755
+        }
+      }
+    },
+    {
+      "path": "cristellib/cataclysm/structure_placement_config.json5",
+      "note": "Overworld land/sky groups; Nether, End, underwater and factory groups unchanged",
+      "sets": {
+        "abandoned_structures": {
+          "before": {
+            "spacing": 30,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 14
+          },
+          "attempt_density_ratio": 1.86
+        },
+        "acropolis": {
+          "before": {
+            "spacing": 80,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 30
+          },
+          "attempt_density_ratio": 2.56
+        },
+        "cursed_pyramid": {
+          "before": {
+            "spacing": 80,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 30
+          },
+          "attempt_density_ratio": 2.56
+        },
+        "desert_structures": {
+          "before": {
+            "spacing": 30,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 14
+          },
+          "attempt_density_ratio": 1.86
+        },
+        "frosted_prison": {
+          "before": {
+            "spacing": 80,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 30
+          },
+          "attempt_density_ratio": 2.56
+        }
+      }
+    },
+    {
+      "path": "cristellib/integrated_cataclysm/structure_placement_config.json5",
+      "note": "Overhauled Overworld pyramid, prison and shrine; other dimensions/sea unchanged",
+      "sets": {
+        "cursed_pyramid": {
+          "before": {
+            "spacing": 80,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 30
+          },
+          "attempt_density_ratio": 2.56
+        },
+        "frosted_prison": {
+          "before": {
+            "spacing": 80,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 50,
+            "separation": 30
+          },
+          "attempt_density_ratio": 2.56
+        },
+        "small_integrated_cataclysm": {
+          "before": {
+            "spacing": 50,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 18
+          },
+          "attempt_density_ratio": 2.441
+        }
+      }
+    },
+    {
+      "path": "cristellib/block_factorys_bosses/structure_placement_config.json5",
+      "note": "Bosses Rise land landmarks; underworld arena and Kraken ship unchanged",
+      "sets": {
+        "dragon_tower": {
+          "before": {
+            "spacing": 96,
+            "separation": 24
+          },
+          "after": {
+            "spacing": 60,
+            "separation": 16
+          },
+          "attempt_density_ratio": 2.56
+        },
+        "sandworm_nest": {
+          "before": {
+            "spacing": 45,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 20
+          },
+          "attempt_density_ratio": 1.978
+        },
+        "yeti_hideout": {
+          "before": {
+            "spacing": 30,
+            "separation": 25
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 16
+          },
+          "attempt_density_ratio": 1.86
+        }
+      }
+    },
+    {
+      "path": "cristellib/fdbosses/structure_placement_config.json5",
+      "note": "Chesed Overworld arena only; Malkuth ocean and Geburah End arenas unchanged",
+      "sets": {
+        "chesed_arena": {
+          "before": {
+            "spacing": 100,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 65,
+            "separation": 32
+          },
+          "attempt_density_ratio": 2.367
+        }
+      }
+    },
+    {
+      "path": "cristellib/repurposed_structures/structure_placement_config.json5",
+      "note": "Land variants; caves, ocean and other-dimension sets unchanged",
+      "sets": {
+        "fortresses_overworld": {
+          "before": {
+            "spacing": 50,
+            "separation": 25
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 16
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "igloos_overworld": {
+          "before": {
+            "spacing": 36,
+            "separation": 18
+          },
+          "after": {
+            "spacing": 23,
+            "separation": 12
+          },
+          "attempt_density_ratio": 2.45
+        },
+        "mansions_mangrove": {
+          "before": {
+            "spacing": 120,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 78,
+            "separation": 32
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "mansions_overworld": {
+          "before": {
+            "spacing": 225,
+            "separation": 110
+          },
+          "after": {
+            "spacing": 146,
+            "separation": 72
+          },
+          "attempt_density_ratio": 2.375
+        },
+        "outposts_overworld": {
+          "before": {
+            "spacing": 49,
+            "separation": 24
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 16
+          },
+          "attempt_density_ratio": 2.345
+        },
+        "pyramids_mushroom": {
+          "before": {
+            "spacing": 35,
+            "separation": 15
+          },
+          "after": {
+            "spacing": 23,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.316
+        },
+        "pyramids_overworld": {
+          "before": {
+            "spacing": 52,
+            "separation": 29
+          },
+          "after": {
+            "spacing": 34,
+            "separation": 19
+          },
+          "attempt_density_ratio": 2.339
+        },
+        "temples_overworld": {
+          "before": {
+            "spacing": 51,
+            "separation": 29
+          },
+          "after": {
+            "spacing": 33,
+            "separation": 19
+          },
+          "attempt_density_ratio": 2.388
+        },
+        "villages_mushroom": {
+          "before": {
+            "spacing": 35,
+            "separation": 15
+          },
+          "after": {
+            "spacing": 23,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.316
+        },
+        "villages_overworld": {
+          "before": {
+            "spacing": 50,
+            "separation": 25
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 16
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "witch_huts_overworld": {
+          "before": {
+            "spacing": 53,
+            "separation": 26
+          },
+          "after": {
+            "spacing": 34,
+            "separation": 17
+          },
+          "attempt_density_ratio": 2.43
+        }
+      }
+    },
+    {
+      "path": "cristellib/mr_dungeons_andtaverns/structure_placement_config.json5",
+      "note": "Land surface landmarks; sea, caves and other-dimension groups unchanged",
+      "sets": {
+        "desert_ruins": {
+          "before": {
+            "spacing": 80,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 52,
+            "separation": 8
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "firewatch_towers": {
+          "before": {
+            "spacing": 50,
+            "separation": 15
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "illager_camp": {
+          "before": {
+            "spacing": 50,
+            "separation": 32
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "illager_hideout": {
+          "before": {
+            "spacing": 200,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 130,
+            "separation": 8
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "jungle_ruins": {
+          "before": {
+            "spacing": 80,
+            "separation": 12
+          },
+          "after": {
+            "spacing": 52,
+            "separation": 8
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "mangrove_witch_hut": {
+          "before": {
+            "spacing": 32,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 21,
+            "separation": 5
+          },
+          "attempt_density_ratio": 2.322
+        },
+        "minecraft:woodland_mansions": {
+          "before": {
+            "spacing": 80,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 52,
+            "separation": 13
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "remnants": {
+          "before": {
+            "spacing": 120,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 78,
+            "separation": 20
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "ruin_town": {
+          "before": {
+            "spacing": 72,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 47,
+            "separation": 20
+          },
+          "attempt_density_ratio": 2.347
+        },
+        "shrine_tower": {
+          "before": {
+            "spacing": 600,
+            "separation": 312
+          },
+          "after": {
+            "spacing": 390,
+            "separation": 203
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "shrines": {
+          "before": {
+            "spacing": 50,
+            "separation": 26
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 17
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "stray_fort": {
+          "before": {
+            "spacing": 100,
+            "separation": 16
+          },
+          "after": {
+            "spacing": 65,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "swamp_structure": {
+          "before": {
+            "spacing": 80,
+            "separation": 20
+          },
+          "after": {
+            "spacing": 52,
+            "separation": 13
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "taverns": {
+          "before": {
+            "spacing": 40,
+            "separation": 15
+          },
+          "after": {
+            "spacing": 26,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "villages_birch": {
+          "before": {
+            "spacing": 34,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 5
+          },
+          "attempt_density_ratio": 2.388
+        },
+        "villages_jungle": {
+          "before": {
+            "spacing": 34,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 5
+          },
+          "attempt_density_ratio": 2.388
+        },
+        "villages_swamp": {
+          "before": {
+            "spacing": 34,
+            "separation": 8
+          },
+          "after": {
+            "spacing": 22,
+            "separation": 5
+          },
+          "attempt_density_ratio": 2.388
+        },
+        "wells": {
+          "before": {
+            "spacing": 40,
+            "separation": 15
+          },
+          "after": {
+            "spacing": 26,
+            "separation": 10
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "wild_ruin": {
+          "before": {
+            "spacing": 27,
+            "separation": 18
+          },
+          "after": {
+            "spacing": 18,
+            "separation": 12
+          },
+          "attempt_density_ratio": 2.25
+        }
+      }
+    },
+    {
+      "path": "cristellib/philipsruins/structure_placement_config.json5",
+      "note": "Land ruins; ocean fortress/ruins, ancient crypt and underground groups unchanged",
+      "sets": {
+        "ancient_ruins": {
+          "before": {
+            "spacing": 60,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 39,
+            "separation": 20
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "ancient_towers": {
+          "before": {
+            "spacing": 50,
+            "separation": 40
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 26
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "field_stone_ruins": {
+          "before": {
+            "spacing": 75,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 49,
+            "separation": 23
+          },
+          "attempt_density_ratio": 2.343
+        },
+        "field_stone_ruins_rocks": {
+          "before": {
+            "spacing": 40,
+            "separation": 27
+          },
+          "after": {
+            "spacing": 26,
+            "separation": 18
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "level_one_ruins": {
+          "before": {
+            "spacing": 75,
+            "separation": 40
+          },
+          "after": {
+            "spacing": 49,
+            "separation": 26
+          },
+          "attempt_density_ratio": 2.343
+        },
+        "level_two_ruins": {
+          "before": {
+            "spacing": 80,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 52,
+            "separation": 32
+          },
+          "attempt_density_ratio": 2.367
+        },
+        "level_three_ruins": {
+          "before": {
+            "spacing": 85,
+            "separation": 45
+          },
+          "after": {
+            "spacing": 55,
+            "separation": 29
+          },
+          "attempt_density_ratio": 2.388
+        },
+        "pumpkin_ruins": {
+          "before": {
+            "spacing": 50,
+            "separation": 40
+          },
+          "after": {
+            "spacing": 32,
+            "separation": 26
+          },
+          "attempt_density_ratio": 2.441
+        },
+        "rare_ruin": {
+          "before": {
+            "spacing": 360,
+            "separation": 130
+          },
+          "after": {
+            "spacing": 234,
+            "separation": 84
+          },
+          "attempt_density_ratio": 2.367
+        }
+      }
+    },
+    {
+      "path": "cristellib/eternal_starlight/structure_placement_config.json5",
+      "note": "Overworld portal ruins only; Eternal Starlight dimension unchanged",
+      "sets": {
+        "portal_ruins_cold": {
+          "before": {
+            "spacing": 36,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 25,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.074
+        },
+        "portal_ruins_common": {
+          "before": {
+            "spacing": 36,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 25,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.074
+        },
+        "portal_ruins_desert": {
+          "before": {
+            "spacing": 36,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 25,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.074
+        },
+        "portal_ruins_forest": {
+          "before": {
+            "spacing": 36,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 25,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.074
+        },
+        "portal_ruins_jungle": {
+          "before": {
+            "spacing": 36,
+            "separation": 30
+          },
+          "after": {
+            "spacing": 25,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.074
+        }
+      }
+    },
+    {
+      "path": "cristellib/floating_islands/structure_placement_config.json5",
+      "note": "Overworld sky islands",
+      "sets": {
+        "dungeon_islands": {
+          "before": {
+            "spacing": 90,
+            "separation": 70
+          },
+          "after": {
+            "spacing": 55,
+            "separation": 35
+          },
+          "attempt_density_ratio": 2.678
+        },
+        "peaceful_islands": {
+          "before": {
+            "spacing": 60,
+            "separation": 40
+          },
+          "after": {
+            "spacing": 38,
+            "separation": 24
+          },
+          "attempt_density_ratio": 2.493
+        },
+        "villager_islands": {
+          "before": {
+            "spacing": 100,
+            "separation": 90
+          },
+          "after": {
+            "spacing": 60,
+            "separation": 42
+          },
+          "attempt_density_ratio": 2.778
+        }
+      }
+    },
+    {
+      "path": "cristellib/skyvillages/structure_placement_config.json5",
+      "note": "Overworld sky villages",
+      "sets": {
+        "skyvillage": {
+          "before": {
+            "spacing": 70,
+            "separation": 65
+          },
+          "after": {
+            "spacing": 44,
+            "separation": 32
+          },
+          "attempt_density_ratio": 2.531
+        }
+      }
+    },
+    {
+      "path": "cristellib/sky_whale_ship/structure_placement_config.json5",
+      "note": "Overworld sky ships",
+      "sets": {
+        "frozen_whale": {
+          "before": {
+            "spacing": 220,
+            "separation": 40
+          },
+          "after": {
+            "spacing": 132,
+            "separation": 24
+          },
+          "attempt_density_ratio": 2.778
+        },
+        "whale": {
+          "before": {
+            "spacing": 190,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 114,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.778
+        },
+        "whalearena": {
+          "before": {
+            "spacing": 183,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 110,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.768
+        },
+        "whalelight": {
+          "before": {
+            "spacing": 171,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 103,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.756
+        },
+        "whaleship": {
+          "before": {
+            "spacing": 178,
+            "separation": 35
+          },
+          "after": {
+            "spacing": 107,
+            "separation": 21
+          },
+          "attempt_density_ratio": 2.767
+        }
+      }
+    },
+    {
+      "path": "cristellib/skyarena/structure_placement_config.json5",
+      "note": "Overworld sky arenas",
+      "sets": {
+        "ice_arena": {
+          "before": {
+            "spacing": 75,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 49,
+            "separation": 32
+          },
+          "attempt_density_ratio": 2.343
+        },
+        "sky_arena": {
+          "before": {
+            "spacing": 75,
+            "separation": 50
+          },
+          "after": {
+            "spacing": 49,
+            "separation": 32
+          },
+          "attempt_density_ratio": 2.343
+        }
+      }
+    },
+    {
+      "path": "cristellib/totw_modded/structure_placement_config.json5",
+      "note": "Overworld towers only; End and other dimensions unchanged",
+      "sets": {
+        "overworld": {
+          "before": {
+            "spacing": 45,
+            "separation": 25
+          },
+          "after": {
+            "spacing": 26,
+            "separation": 14
+          },
+          "attempt_density_ratio": 2.996
+        }
+      }
+    },
+    {
+      "path": "cristellib/dungeoncrawl/structure_placement_config.json5",
+      "note": "Verified dungeoncrawl:dungeons native owner; Test 4 22/9 -> 20/9; separate salt from monuments/End cities",
+      "sets": {
+        "dungeons": {
+          "before_test5": {
+            "salt": 10387313,
+            "separation": 9,
+            "spacing": 22
+          },
+          "after": {
+            "spacing": 20,
+            "separation": 9,
+            "salt": 1984010530
+          },
+          "note": "Verified dungeoncrawl:dungeons native owner; Test 4 22/9 -> 20/9; separate salt from monuments/End cities"
+        }
+      }
+    }
+  ],
+  "moogs_frequency": {
+    "universal_multiplier": 1.0,
+    "per_mod": {},
+    "per_structure": {
+      "mvs:azelea_house": 3.0,
+      "mvs:barn": 3.0,
+      "mvs:beach_bar": 2.5,
+      "mvs:bee_dome": 2.5,
+      "mvs:bench": 2.5,
+      "mvs:campsite": 2.5,
+      "mvs:cart": 2.5,
+      "mvs:cartographer_tower": 3.0,
+      "mvs:castle_ruins": 3.0,
+      "mvs:cathedral": 3.0,
+      "mvs:deepslate_house": 2.5,
+      "mvs:desert_house": 2.5,
+      "mvs:desert_pump": 2.5,
+      "mvs:diorite_and_deepslate_house": 2.5,
+      "mvs:diorite_tower": 3.0,
+      "mvs:fire_camp": 2.5,
+      "mvs:floating_islands": 2.5,
+      "mvs:fox_hut": 2.5,
+      "mvs:gallows": 2.5,
+      "mvs:haystack": 2.5,
+      "mvs:horse_campsite": 2.5,
+      "mvs:horse_pen": 2.5,
+      "mvs:house": 3.0,
+      "mvs:jungle_tower": 3.0,
+      "mvs:lamp_chest": 2.5,
+      "mvs:large_cart_1": 2.5,
+      "mvs:large_cart_2": 2.5,
+      "mvs:large_floating_island": 2.5,
+      "mvs:lecturn_garden": 2.5,
+      "mvs:lil_house": 2.5,
+      "mvs:log_ruin": 2.5,
+      "mvs:medium_bamboo_cart": 2.5,
+      "mvs:medium_igloo_1": 2.5,
+      "mvs:medium_igloo_2": 2.5,
+      "mvs:medium_oak_lantern": 2.5,
+      "mvs:mud_brick_house_1": 2.5,
+      "mvs:mushroom_well": 2.5,
+      "mvs:other_wells": 2.5,
+      "mvs:out_house": 2.5,
+      "mvs:paths": 2.5,
+      "mvs:pile": 2.5,
+      "mvs:railway": 2.5,
+      "mvs:rare_well": 2.5,
+      "mvs:red_tower": 3.0,
+      "mvs:ruined_beacon": 2.5,
+      "mvs:shed": 2.5,
+      "mvs:small_acacia_lantern": 2.5,
+      "mvs:small_bamboo_lantern": 2.5,
+      "mvs:small_birch_lantern": 2.5,
+      "mvs:small_campfire_lantern": 2.5,
+      "mvs:small_cherry_lantern": 2.5,
+      "mvs:small_dark_oak_lantern": 2.5,
+      "mvs:small_igloo": 2.5,
+      "mvs:small_jungle_lantern": 2.5,
+      "mvs:small_mangrove_lantern": 2.5,
+      "mvs:small_oak_lantern": 2.5,
+      "mvs:small_pillager_tower": 2.5,
+      "mvs:small_ruin": 2.5,
+      "mvs:small_spruce_lantern": 2.5,
+      "mvs:small_swamp_house": 2.5,
+      "mvs:small_tower_well": 2.5,
+      "mvs:snowy_dog_hut": 2.5,
+      "mvs:stalls": 2.5,
+      "mvs:statue_ruins": 2.5,
+      "mvs:stone_fountain": 2.5,
+      "mvs:stone_pillars": 2.5,
+      "mvs:sunzi_gate": 2.5,
+      "mvs:tall_house": 3.0,
+      "mvs:villager_statue": 2.5,
+      "mvs:wheat_grain_bin": 2.5,
+      "mvs:windmill": 3.0,
+      "mvs:wooden_wheat_farm": 2.5,
+      "mss:diorite_house": 3.0,
+      "mss:desert_pyramid": 3.0,
+      "mss:nether_portal": 3.0,
+      "mss:desert_well": 3.0,
+      "mss:castle_tower": 3.0,
+      "mss:birch_river": 3.0,
+      "mss:castle_ruin": 3.0,
+      "mss:small_pond": 3.0,
+      "mss:red_sand": 3.0,
+      "mss:frozen_pond": 3.0,
+      "mss:trees": 3.0,
+      "mss:volcano": 3.0,
+      "mss:muddy_water_hole": 3.0,
+      "mss:mangrove": 3.0,
+      "mss:mushroom": 3.0,
+      "mss:palm_island": 3.0,
+      "mss:leaf_hollow": 3.0,
+      "mss:taiga": 3.0,
+      "mss:large_tower": 3.0,
+      "mss:small_tower": 3.0,
+      "mss:white_house": 3.0,
+      "mss:small_oak_house": 3.0,
+      "mss:calcite_house": 3.0,
+      "mss:spruce_huts": 3.0,
+      "mss:small_deepslate_house": 3.0,
+      "mss:cherry_river": 3.0,
+      "mss:jungle": 3.0,
+      "mss:arena": 3.0,
+      "mtr:desert_temple": 2.0,
+      "mtr:jungle_temple": 2.0,
+      "mtr:badlands_temple": 2.0
+    }
+  },
+  "extra_sets": [
+    {
+      "id": "ambient_odyssey:wda_ordinary_land",
+      "structures": [
+        {
+          "structure": "dungeons_arise:illager_campsite",
+          "weight": 3
+        },
+        {
+          "structure": "dungeons_arise:illager_windmill",
+          "weight": 1
+        },
+        {
+          "structure": "dungeons_arise:merchant_campsite",
+          "weight": 3
+        },
+        {
+          "structure": "dungeons_arise:mushroom_house",
+          "weight": 2
+        },
+        {
+          "structure": "dungeons_arise:greenwood_pub",
+          "weight": 2
+        }
+      ],
+      "placement": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 28,
+        "separation": 14,
+        "salt": 1984010501,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        }
+      },
+      "note": "Single-owner ordinary WDA buildings; major/boss landmarks remain on the rare native grid"
+    },
+    {
+      "id": "ambient_odyssey:wda_bathhouse",
+      "structures": [
+        {
+          "structure": "dungeons_arise:bathhouse",
+          "weight": 1
+        }
+      ],
+      "placement": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 112,
+        "separation": 48,
+        "salt": 1984010502,
+        "super_exclusion_zone": {
+          "chunk_count": 6,
+          "other_set": "#ambient_odyssey:large_land_avoid"
+        },
+        "frequency": 0.5
+      },
+      "note": "Bathhouse retained at about 19% of its former nominal weighted candidate density; no other minor structure shares this reduction"
+    },
+    {
+      "id": "ambient_odyssey:heavenly_challenger_overworld",
+      "structures": [
+        {
+          "structure": "ambient_odyssey:heavenly_challenger_overworld",
+          "weight": 1
+        }
+      ],
+      "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 72,
+        "separation": 32,
+        "salt": 1984010510
+      },
+      "note": "OW-only native-template clone; original ID remains on native End grid at its nominal rate"
+    },
+    {
+      "id": "ambient_odyssey:heavenly_conqueror_overworld",
+      "structures": [
+        {
+          "structure": "ambient_odyssey:heavenly_conqueror_overworld",
+          "weight": 1
+        }
+      ],
+      "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 84,
+        "separation": 40,
+        "salt": 1984010511
+      },
+      "note": "OW-only native-template clone; original ID remains on native End grid at its nominal rate"
+    },
+    {
+      "id": "ambient_odyssey:heavenly_rider_overworld",
+      "structures": [
+        {
+          "structure": "ambient_odyssey:heavenly_rider_overworld",
+          "weight": 1
+        }
+      ],
+      "placement": {
+        "type": "minecraft:random_spread",
+        "spacing": 64,
+        "separation": 28,
+        "salt": 1984010512
+      },
+      "note": "OW-only native-template clone; original ID remains on native End grid at its nominal rate"
+    },
+    {
+      "id": "ambient_odyssey:idas_ordinary_houses",
+      "structures": [
+        {
+          "structure": "idas:abandonedhouse",
+          "weight": 5
+        },
+        {
+          "structure": "idas:bearclaw_inn",
+          "weight": 5
+        },
+        {
+          "structure": "idas:hermits_hollow",
+          "weight": 4
+        },
+        {
+          "structure": "idas:hunters_cabin",
+          "weight": 4
+        },
+        {
+          "structure": "idas:brickhouse",
+          "weight": 5
+        },
+        {
+          "structure": "idas:beekeepers_house",
+          "weight": 5
+        },
+        {
+          "structure": "idas:farmhouse",
+          "weight": 5
+        },
+        {
+          "structure": "idas:fishermans_lodge",
+          "weight": 3
+        },
+        {
+          "structure": "idas:botanist",
+          "weight": 5
+        },
+        {
+          "structure": "idas:mason_house",
+          "weight": 5
+        },
+        {
+          "structure": "idas:abandoned_vineyard",
+          "weight": 4
+        },
+        {
+          "structure": "idas:tudor_pub",
+          "weight": 3
+        },
+        {
+          "structure": "idas:wacky_wares",
+          "weight": 3
+        },
+        {
+          "structure": "idas:pumpkin_cafe",
+          "weight": 3
+        }
+      ],
+      "placement": {
+        "type": "integrated_api:advanced_random_spread",
+        "spacing": 16,
+        "separation": 8,
+        "salt": 1984010520,
+        "super_exclusion_zone": {
+          "chunk_count": 2,
+          "other_set": "#ambient_odyssey:idas_house_avoid"
+        }
+      },
+      "note": "Ordinary houses gain independent candidates; castles/towers do not compete in this group"
+    }
+  ],
+  "moogs_note": "MSL 3.4.2 frequency values scale spacing/separation by 1/sqrt(multiplier). Per-structure keys identify structure SETS. Native Cristel Moog spacing files are retained so the multiplier is applied once.",
+  "resources": {
+    "worldgen/structure": {
+      "dungeons_arise:heavenly_challenger": {
+        "adapt_noise": false,
+        "biomes": "#ambient_odyssey:heavenly_end",
+        "liquid_settings": "ignore_waterlogging",
+        "max_distance_from_center": 114,
+        "size": 7,
+        "spawn_overrides": {},
+        "start_height": {
+          "absolute": 200
+        },
+        "start_pool": "dungeons_arise:eerie/heavenly_challenger/heavenly_challenger_start",
+        "step": "surface_structures",
+        "type": "minecraft:jigsaw",
+        "use_expansion_hack": false
+      },
+      "ambient_odyssey:heavenly_challenger_overworld": {
+        "adapt_noise": false,
+        "biomes": "#ambient_odyssey:sky_land",
+        "liquid_settings": "ignore_waterlogging",
+        "max_distance_from_center": 114,
+        "size": 7,
+        "spawn_overrides": {},
+        "start_height": {
+          "absolute": 200
+        },
+        "start_pool": "dungeons_arise:eerie/heavenly_challenger/heavenly_challenger_start",
+        "step": "surface_structures",
+        "type": "minecraft:jigsaw",
+        "use_expansion_hack": false
+      },
+      "dungeons_arise:heavenly_conqueror": {
+        "adapt_noise": false,
+        "biomes": "#ambient_odyssey:heavenly_end",
+        "liquid_settings": "ignore_waterlogging",
+        "max_distance_from_center": 114,
+        "size": 7,
+        "spawn_overrides": {},
+        "start_height": {
+          "absolute": 200
+        },
+        "start_pool": "dungeons_arise:eerie/heavenly_conqueror/heavenly_conqueror_main",
+        "step": "surface_structures",
+        "type": "minecraft:jigsaw",
+        "use_expansion_hack": false
+      },
+      "ambient_odyssey:heavenly_conqueror_overworld": {
+        "adapt_noise": false,
+        "biomes": "#ambient_odyssey:sky_land",
+        "liquid_settings": "ignore_waterlogging",
+        "max_distance_from_center": 114,
+        "size": 7,
+        "spawn_overrides": {},
+        "start_height": {
+          "absolute": 200
+        },
+        "start_pool": "dungeons_arise:eerie/heavenly_conqueror/heavenly_conqueror_main",
+        "step": "surface_structures",
+        "type": "minecraft:jigsaw",
+        "use_expansion_hack": false
+      },
+      "dungeons_arise:heavenly_rider": {
+        "adapt_noise": false,
+        "biomes": "#ambient_odyssey:heavenly_end",
+        "liquid_settings": "ignore_waterlogging",
+        "max_distance_from_center": 114,
+        "size": 7,
+        "spawn_overrides": {},
+        "start_height": {
+          "absolute": 200
+        },
+        "start_pool": "dungeons_arise:eerie/heavenly_rider/heavenly_rider_main",
+        "step": "surface_structures",
+        "type": "minecraft:jigsaw",
+        "use_expansion_hack": false
+      },
+      "ambient_odyssey:heavenly_rider_overworld": {
+        "adapt_noise": false,
+        "biomes": "#ambient_odyssey:sky_land",
+        "liquid_settings": "ignore_waterlogging",
+        "max_distance_from_center": 114,
+        "size": 7,
+        "spawn_overrides": {},
+        "start_height": {
+          "absolute": 200
+        },
+        "start_pool": "dungeons_arise:eerie/heavenly_rider/heavenly_rider_main",
+        "step": "surface_structures",
+        "type": "minecraft:jigsaw",
+        "use_expansion_hack": false
+      }
+    },
+    "worldgen/structure_set": {
+      "dungeons_arise:major_structures": {
+        "placement": {
+          "salt": 88371663,
+          "separation": 45,
+          "spacing": 50,
+          "type": "minecraft:random_spread",
+          "frequency": 0.7105263157894737
+        },
+        "structures": [
+          {
+            "structure": "dungeons_arise:bandit_village",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:ceryneian_hind",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:heavenly_rider",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:heavenly_conqueror",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:illager_corsair",
+            "weight": 2
+          },
+          {
+            "structure": "dungeons_arise:illager_fort",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:illager_galley",
+            "weight": 2
+          },
+          {
+            "structure": "dungeons_arise:monastery",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:mushroom_mines",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:mushroom_village",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:scorched_mines",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:typhon",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:undead_pirate_ship",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:aviary",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:bandit_towers",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:foundry",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:heavenly_challenger",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:thornborn_towers",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:infested_temple",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:mining_complex",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:plague_asylum",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:shiraz_palace",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:keep_kayra",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:mechanical_nest",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:kisegi_sanctuary",
+            "weight": 1
+          }
+        ]
+      },
+      "dungeons_arise:minor_structures": {
+        "placement": {
+          "salt": 342415935,
+          "separation": 18,
+          "spacing": 28,
+          "type": "minecraft:random_spread",
+          "frequency": 0.8333333333333334,
+          "exclusion_zone": {
+            "chunk_count": 10,
+            "other_set": "dungeons_arise:major_structures"
+          }
+        },
+        "structures": [
+          {
+            "structure": "dungeons_arise:fishing_hut",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:wishing_well",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:jungle_tree_house",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:abandoned_temple",
+            "weight": 1
+          },
+          {
+            "structure": "dungeons_arise:lighthouse",
+            "weight": 1
+          }
+        ]
+      },
+      "idas:idas_common": {
+        "placement": {
+          "salt": 169480670,
+          "separation": 8,
+          "spacing": 15,
+          "super_exclusion_zone": {
+            "chunk_count": 2,
+            "other_set": "#idas:common_avoid"
+          },
+          "type": "integrated_api:advanced_random_spread",
+          "frequency": 0.4537037037037037
+        },
+        "structures": [
+          {
+            "structure": "idas:castle",
+            "weight": 7
+          },
+          {
+            "structure": "idas:enchantingtower",
+            "weight": 4
+          },
+          {
+            "structure": "idas:wizard_tower",
+            "weight": 4
+          },
+          {
+            "structure": "idas:redhorn_guild",
+            "weight": 3
+          },
+          {
+            "structure": "idas:dig_site/dig_site",
+            "weight": 5
+          },
+          {
+            "structure": "idas:dig_site/dig_site_desert",
+            "weight": 5
+          },
+          {
+            "structure": "idas:witches_treestump",
+            "weight": 3
+          },
+          {
+            "structure": "idas:haunted_manor",
+            "weight": 1
+          },
+          {
+            "structure": "idas:winter_wagon",
+            "weight": 1
+          },
+          {
+            "structure": "idas:apothecary_abode",
+            "weight": 1
+          },
+          {
+            "structure": "idas:treetop_tavern",
+            "weight": 1
+          },
+          {
+            "structure": "idas:desert_ruins",
+            "weight": 2
+          },
+          {
+            "structure": "idas:ruined_church",
+            "weight": 3
+          },
+          {
+            "structure": "idas:ruined_fort",
+            "weight": 3
+          },
+          {
+            "structure": "idas:ruined_well",
+            "weight": 3
+          },
+          {
+            "structure": "idas:the_log",
+            "weight": 3
+          }
+        ]
+      },
+      "idas:idas_small": {
+        "placement": {
+          "salt": 169480673,
+          "separation": 12,
+          "spacing": 18,
+          "super_exclusion_zone": {
+            "chunk_count": 2,
+            "other_set": "#idas:small_avoid"
+          },
+          "type": "integrated_api:advanced_random_spread",
+          "frequency": 0.8860759493670886
+        },
+        "structures": [
+          {
+            "structure": "idas:cottage",
+            "weight": 3
+          },
+          {
+            "structure": "idas:animal_den/forest_den",
+            "weight": 3
+          },
+          {
+            "structure": "idas:animal_den/polar_bear_den",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_oak",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_spruce",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_birch",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_jungle",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_acacia",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_dark_oak",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_bopredwood",
+            "weight": 3
+          },
+          {
+            "structure": "idas:lumber_camp/lumber_camp_bopmahogany",
+            "weight": 3
+          },
+          {
+            "structure": "idas:desert_camp/desert_camp",
+            "weight": 3
+          },
+          {
+            "structure": "idas:desert_camp/desert_camp_red",
+            "weight": 3
+          },
+          {
+            "structure": "idas:desert_camp/desert_camp_orange",
+            "weight": 3
+          },
+          {
+            "structure": "idas:desert_camp/desert_camp_bygwindswept",
+            "weight": 3
+          },
+          {
+            "structure": "idas:ancient_statue/ancient_statue_plains",
+            "weight": 3
+          },
+          {
+            "structure": "idas:ancient_statue/ancient_statue_jungle",
+            "weight": 3
+          },
+          {
+            "structure": "idas:ancient_statue/ancient_statue_desert",
+            "weight": 2
+          },
+          {
+            "structure": "idas:washing_camp",
+            "weight": 3
+          },
+          {
+            "structure": "idas:desert_market/desert_market",
+            "weight": 2
+          },
+          {
+            "structure": "idas:desert_market/desert_market_red",
+            "weight": 2
+          },
+          {
+            "structure": "idas:desert_market/desert_market_orange",
+            "weight": 2
+          },
+          {
+            "structure": "idas:pillager_camp",
+            "weight": 3
+          },
+          {
+            "structure": "idas:snifferhenge",
+            "weight": 1
+          },
+          {
+            "structure": "idas:train_ruins",
+            "weight": 2
+          },
+          {
+            "structure": "idas:frozen_crypt",
+            "weight": 1
+          },
+          {
+            "structure": "idas:abandoned_lighthouse",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:aethers_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020000,
+          "separation": 17,
+          "spacing": 31,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:aether",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:afterdark_farms_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020001,
+          "separation": 20,
+          "spacing": 45,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:afterdark_farms",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:aquacultures_beach_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020002,
+          "separation": 21,
+          "spacing": 45,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:aquacultures_beach",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:aquacultures_cod_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020003,
+          "separation": 27,
+          "spacing": 55,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:aquacultures_cod",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:aquacultures_common_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020004,
+          "separation": 18,
+          "spacing": 33,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:aquacultures_common",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:cacaos_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020005,
+          "separation": 21,
+          "spacing": 45,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:cacaos",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:cooks_moss_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020006,
+          "separation": 10,
+          "spacing": 11,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:cooks_moss",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:cooks_nether_1_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020007,
+          "separation": 15,
+          "spacing": 21,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:cooks_nether_1",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:cooks_nether_2_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020008,
+          "separation": 20,
+          "spacing": 26,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:cooks_nether_2",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:cooks_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020009,
+          "separation": 22,
+          "spacing": 28,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:cooks",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:deeper_farms_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020010,
+          "separation": 20,
+          "spacing": 45,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:deeper_farms",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:fishs_stew_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020011,
+          "separation": 12,
+          "spacing": 25,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:fishs_stew",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:flesh_farms_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020012,
+          "separation": 20,
+          "spacing": 45,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:flesh_farms",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:honey_cake_farms_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020013,
+          "separation": 20,
+          "spacing": 45,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:honey_cake_farms",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:ratatouilles_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020014,
+          "separation": 20,
+          "spacing": 31,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:ratatouilles",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:shepherd_farms_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020015,
+          "separation": 85,
+          "spacing": 99,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:shepherd_farms",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:squids_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020016,
+          "separation": 15,
+          "spacing": 26,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:squids",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:sushus_with_all": {
+        "placement": {
+          "exclusion_zone": {
+            "chunk_count": 8,
+            "other_set": "minecraft:villages"
+          },
+          "salt": 1984020017,
+          "separation": 17,
+          "spacing": 38,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:sushis",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:undergardens_sea_with_all": {
+        "placement": {
+          "salt": 1984020018,
+          "separation": 84,
+          "spacing": 109,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:undergardens_sea",
+            "weight": 1
+          }
+        ]
+      },
+      "farmers_structures:undergardens_with_all": {
+        "placement": {
+          "salt": 1984020019,
+          "separation": 56,
+          "spacing": 67,
+          "type": "minecraft:random_spread"
+        },
+        "structures": [
+          {
+            "structure": "farmers_structures:undergardens",
+            "weight": 1
+          }
+        ]
+      }
+    },
+    "tags/worldgen/structure": {
+      "integrated_api:disabled_structures": {
+        "replace": false,
+        "values": [
+          "dungeons_arise:small_blimp",
+          "dungeons_arise:coliseum",
+          "idas:lumber_camp/lumber_camp_bygmahogany",
+          "idas:lumber_camp/lumber_camp_bygredwood"
+        ]
+      }
+    },
+    "tags/worldgen/structure_set": {
+      "ambient_odyssey:large_land_avoid": {
+        "replace": true,
+        "values": [
+          "dungeons_arise:major_structures",
+          "idas:idas_rare",
+          "integrated_villages:regular_villages"
+        ]
+      },
+      "ambient_odyssey:idas_house_avoid": {
+        "replace": true,
+        "values": [
+          "#idas:common_avoid",
+          "idas:idas_common"
+        ]
+      }
+    }
+  },
+  "toggle_configs": [
+    {
+      "path": "cristellib/dungeons_arise/structure_toggle_config.json5",
+      "values": {
+        "major_structures/small_blimp": false,
+        "major_structures/coliseum": false,
+        "major_structures/merchant_campsite": false,
+        "major_structures/illager_campsite": false,
+        "major_structures/greenwood_pub": false,
+        "major_structures/illager_windmill": false,
+        "major_structures/mushroom_house": false,
+        "minor_structures/bathhouse": false
+      }
+    },
+    {
+      "path": "cristellib/idas/structure_toggle_config.json5",
+      "values": {
+        "idas_small/lumber_camp/lumber_camp_bygmahogany": false,
+        "idas_small/lumber_camp/lumber_camp_bygredwood": false,
+        "idas_common/pumpkin_cafe": false,
+        "idas_common/abandoned_vineyard": false,
+        "idas_common/farmhouse": false,
+        "idas_common/wacky_wares": false,
+        "idas_common/fishermans_lodge": false,
+        "idas_common/beekeepers_house": false,
+        "idas_common/botanist": false,
+        "idas_common/tudor_pub": false,
+        "idas_common/hunters_cabin": false,
+        "idas_common/abandonedhouse": false,
+        "idas_common/mason_house": false,
+        "idas_common/brickhouse": false,
+        "idas_common/hermits_hollow": false,
+        "idas_common/bearclaw_inn": false,
+        "idas_small/sunken_ship/sunken_ship_ruins": false
+      }
+    }
+  ],
+  "provenance": {
+    "native_grid_compensation": "Weighted-candidate accounting only; successful density varies by biome, fallback selection and exclusions",
+    "wda_major_frequency": 0.7105263157894737,
+    "idas_common_frequency": 0.4537037037037037,
+    "replaced_test4_sets": [
+      "extra_wda_land_and_sky",
+      "extra_wda_heavenly_ships",
+      "extra_idas_landmarks",
+      "extra_integrated_land_villages"
+    ],
+    "source_reconciliation": "Test 4 toggles and 22/9 Dungeon Crawl incorporated before Test 5 tuning; unrelated overrides retained",
+    "continuation": "19 additional actual JARs audited. Native-only Cristel reads corroborated; native membership extraction now mirrored in its per-set toggles. Full pack priority still needs runtime confirmation."
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "core_rpg_magic": [
+    [
+      "Apotheosis",
+      "apotheosis"
+    ],
+    [
+      "Relics",
+      "relics-mod"
+    ],
+    [
+      "More Relics",
+      "more-relics"
+    ],
+    [
+      "Artifacts",
+      "artifacts"
+    ],
+    [
+      "Enigmatic Legacy Plus (includes the 1.21.1 Enigmatic Addons port)",
+      "enigmatic-legacy-plus"
+    ],
+    [
+      "Reliquified L_Ender",
+      "reliquified-l-ender-s-cataclysm"
+    ],
+    [
+      "Iron's Spells 'n Spellbooks",
+      "irons-spells-n-spellbooks"
+    ],
+    [
+      "Simply Swords",
+      "simply-swords"
+    ],
+    [
+      "Simply More",
+      "simply-more"
+    ],
+    [
+      "Create",
+      "create"
+    ],
+    [
+      "Farmer's Delight",
+      "farmers-delight"
+    ],
+    [
+      "Corn Delight",
+      "corn-delight"
+    ],
+    [
+      "Rustic Delight",
+      "rustic-delight"
+    ],
+    [
+      "Large Meals",
+      "large-meals"
+    ],
+    [
+      "Goblin Traders",
+      "goblin-traders"
+    ],
+    [
+      "Lootr",
+      "lootr"
+    ],
+    [
+      "Waystones",
+      "waystones"
+    ],
+    [
+      "FTB Ultimine",
+      "ftb-ultimine-forge"
+    ],
+    [
+      "FTB Chunks",
+      "ftb-chunks-forge"
+    ],
+    [
+      "FTB Teams",
+      "ftb-teams-forge"
+    ],
+    [
+      "FTB Quests",
+      "ftb-quests-forge"
+    ],
+    [
+      "Xaero's World Map",
+      "xaeros-world-map"
+    ],
+    [
+      "Cosmetic Armor Reworked",
+      "cosmetic-armor-reworked"
+    ],
+    [
+      "Transmog",
+      "transmog"
+    ],
+    [
+      "Searchables",
+      "searchables"
+    ],
+    [
+      "MmmMmmMmmMmm",
+      "mmmmmmmmmmmm"
+    ],
+    [
+      "Fast Item Frames",
+      "fast-item-frames"
+    ],
+    [
+      "My Picture Frame",
+      "my-picture-frame"
+    ],
+    [
+      "Custom Nether Portals",
+      "custom-nether-portals"
+    ],
+    [
+      "Tom's Simple Storage",
+      "toms-storage"
+    ]
+  ],
+  "terrain_dimensions": [
+    [
+      "Biomes O' Plenty",
+      "biomes-o-plenty"
+    ],
+    [
+      "Regions Unexplored",
+      "regions-unexplored"
+    ],
+    [
+      "Incendium",
+      "incendium"
+    ],
+    [
+      "The Twilight Forest",
+      "the-twilight-forest"
+    ],
+    [
+      "The Aether",
+      "aether"
+    ],
+    [
+      "Eternal Starlight",
+      "eternal-starlight"
+    ],
+    [
+      "The Undergarden",
+      "the-undergarden"
+    ],
+    [
+      "Deeper and Darker",
+      "deeperdarker"
+    ],
+    [
+      "The Bumblezone",
+      "the-bumblezone-forge"
+    ],
+    [
+      "DimensionalDoors",
+      "dimensionaldoors"
+    ],
+    [
+      "NeoPasterDream",
+      "neopasterdream"
+    ],
+    [
+      "Alex's Caves",
+      "alexs-caves-neo"
+    ],
+    [
+      "Astrological",
+      "astrological"
+    ],
+    [
+      "BetterEnd: New Dawn",
+      "betterend-neoforge"
+    ],
+    [
+      "Echoes of the End",
+      "echoes-of-the-end-structures"
+    ]
+  ],
+  "structures_exploration": [
+    [
+      "When Dungeons Arise",
+      "when-dungeons-arise"
+    ],
+    [
+      "When Dungeons Arise: Seven Seas",
+      "when-dungeons-arise-seven-seas"
+    ],
+    [
+      "Dungeons and Taverns",
+      "dungeon-and-taverns"
+    ],
+    [
+      "Integrated Dungeons and Structures",
+      "idas"
+    ],
+    [
+      "Integrated Villages",
+      "integrated-villages"
+    ],
+    [
+      "Integrated Stronghold",
+      "integrated-stronghold"
+    ],
+    [
+      "Integrated Cataclysm",
+      "integrated-cataclysm"
+    ],
+    [
+      "Loot Integrations",
+      "loot-integrations"
+    ],
+    [
+      "Dungeon Crawl",
+      "dungeon-crawl"
+    ],
+    [
+      "Adventure Dungeons",
+      "adventure-dungeons-mod-edition"
+    ],
+    [
+      "Philip's Ruins",
+      "ruins"
+    ],
+    [
+      "Luki's Grand Capitals",
+      "lukis-grand-capitals"
+    ],
+    [
+      "Luki's Ancient Cities",
+      "lukis-ancient-cities"
+    ],
+    [
+      "Sky Villages",
+      "sky-villages-forge"
+    ],
+    [
+      "Underwater Village",
+      "underwater-village"
+    ],
+    [
+      "Sky Whale Ship",
+      "sky-whale-ship"
+    ],
+    [
+      "Illager Warship",
+      "illager-warship"
+    ],
+    [
+      "End Villager Outpost",
+      "end-villager-outpost"
+    ],
+    [
+      "Moog's Voyager Structures",
+      "moogs-voyager-structures"
+    ],
+    [
+      "Moog's Soaring Structures",
+      "mss-moogs-soaring-structures"
+    ],
+    [
+      "Moog's Nether Structures",
+      "mns-moogs-nether-structures"
+    ],
+    [
+      "Moog's End Structures",
+      "moogs-end-structures"
+    ],
+    [
+      "Repurposed Structures",
+      "repurposed-structures"
+    ],
+    [
+      "Structory",
+      "structory"
+    ],
+    [
+      "Formations Overworld",
+      "formations-overworld"
+    ],
+    [
+      "The Graveyard",
+      "the-graveyard-unofficial-port"
+    ],
+    [
+      "Create: Rustic Structures",
+      "create-rustic-structures"
+    ],
+    [
+      "Towns and Towers",
+      "towns-and-towers"
+    ],
+    [
+      "ChoiceTheorem's Overhauled Village",
+      "choicetheorems-overhauled-village"
+    ],
+    [
+      "Towers of the Wild: Modded",
+      "towers-of-the-wild-modded"
+    ],
+    [
+      "Demi's Sky Arena",
+      "sky-arena"
+    ],
+    [
+      "YUNG's Better End Island",
+      "yungs-better-end-island-neoforge"
+    ],
+    [
+      "YUNG's Better Nether Fortresses",
+      "yungs-better-nether-fortresses-neoforge"
+    ],
+    [
+      "Ember\u2019s Floating Islands",
+      "embers-floating-islands"
+    ],
+    [
+      "Archaeology Ruins",
+      "archaeology-ruins"
+    ],
+    [
+      "Explore Ruins: The Aether",
+      "explore-ruins-aether"
+    ],
+    [
+      "Bigger Better End Cities",
+      "bigger-better-end-cities"
+    ]
+  ],
+  "bosses_mobs": [
+    [
+      "L_Ender's Cataclysm",
+      "lendercataclysm"
+    ],
+    [
+      "Ice and Fire: Community Edition",
+      "iceandfire-ce"
+    ],
+    [
+      "Bosses of Mass Destruction",
+      "bosses-of-mass-destruction-forge"
+    ],
+    [
+      "Alex's Mobs",
+      "alexs-mobs-neo"
+    ],
+    [
+      "Mowzie's Mobs",
+      "mowzies-mobs"
+    ],
+    [
+      "Hominid",
+      "hominid"
+    ],
+    [
+      "Opposing Force",
+      "opposing-force"
+    ],
+    [
+      "Bosses'Rise",
+      "bossesrise"
+    ],
+    [
+      "Qliphoth Awakening",
+      "qliphoth-awakening"
+    ],
+    [
+      "Remnant Bosses",
+      "remnant-bosses"
+    ],
+    [
+      "Stronger Fire Boss",
+      "stronger-fire-boss"
+    ],
+    [
+      "Cult of Azazel",
+      "cult-of-azazel"
+    ]
+  ],
+  "visual_environment": [
+    [
+      "Particular Reforged",
+      "particular-reforged"
+    ],
+    [
+      "Coastal Waves",
+      "coastal-waves"
+    ],
+    [
+      "Ex Meteor Shower",
+      "ex-meteor-shower"
+    ],
+    [
+      "Snow Imprints",
+      "snow-imprints"
+    ]
+  ],
+  "content_wave_1_rpg_magic": [
+    [
+      "Ars Nouveau",
+      "ars-nouveau"
+    ],
+    [
+      "Cataclysm: Spellbooks",
+      "cataclysm-spellbooks"
+    ],
+    [
+      "Forbidden and Arcanus",
+      "forbidden-arcanus"
+    ],
+    [
+      "Better Combat",
+      "better-combat-by-daedelus"
+    ],
+    [
+      "Reliquified Artifacts",
+      "reliquified-artifacts"
+    ],
+    [
+      "Gateways to Eternity",
+      "gateways-to-eternity"
+    ],
+    [
+      "T.O. Magic 'n Extras - Iron's Spells Addon",
+      "to-tweaks-irons-spells"
+    ],
+    [
+      "Ambient Odyssey - T.O. Magic Registry Fix",
+      "ambient-odyssey-t-o-magic-registry-fix"
+    ],
+    [
+      "Brutal Bosses",
+      "brutal-bosses-dungeon"
+    ]
+  ],
+  "content_wave_1_exploration": [
+    [
+      "End Remastered",
+      "endremastered"
+    ],
+    [
+      "Deep Aether",
+      "deep-aether"
+    ],
+    [
+      "Aether Villages",
+      "aether-villages"
+    ],
+    [
+      "Bountiful",
+      "bountiful"
+    ],
+    [
+      "Friends & Foes",
+      "friends-and-foes-forge"
+    ],
+    [
+      "Farmer's Structures",
+      "farmers-structures"
+    ],
+    [
+      "Cataclysm x YUNG's Better Nether Fortresses",
+      "cataclysm-x-yungs"
+    ],
+    [
+      "Create O' Plenty",
+      "create-o-plenty"
+    ],
+    [
+      "When Dungeons Arise Questline",
+      "when-dungeons-arise-questline"
+    ]
+  ],
+  "content_wave_1_animals_food": [
+    [
+      "Aquaculture 2",
+      "aquaculture"
+    ],
+    [
+      "Modern Companions",
+      "modern-companions"
+    ],
+    [
+      "Companions!",
+      "companions-mod"
+    ],
+    [
+      "Ben's Sharks",
+      "bens-sharks"
+    ],
+    [
+      "Cultural Delights",
+      "cultural-delights"
+    ],
+    [
+      "Fungi Delight",
+      "fungi-delight"
+    ],
+    [
+      "More Delight",
+      "more-delight-forge"
+    ],
+    [
+      "Eternal Starlight's Delight",
+      "eternal-starlight-delight"
+    ]
+  ],
+  "content_wave_1_qol_multiplayer": [
+    [
+      "Sophisticated Backpacks",
+      "sophisticated-backpacks"
+    ],
+    [
+      "Sophisticated Storage",
+      "sophisticated-storage"
+    ],
+    [
+      "Sophisticated Backpacks Create Integration",
+      "sophisticated-backpacks-create-integration"
+    ],
+    [
+      "Sophisticated Storage Create Integration",
+      "sophisticated-storage-create-integration"
+    ],
+    [
+      "Simple Voice Chat",
+      "simple-voice-chat"
+    ],
+    [
+      "Jade",
+      "jade"
+    ],
+    [
+      "Jade Addons",
+      "jade-addons"
+    ],
+    [
+      "AppleSkin",
+      "appleskin"
+    ],
+    [
+      "Enchantment Descriptions",
+      "enchantment-descriptions"
+    ],
+    [
+      "Comforts",
+      "comforts"
+    ],
+    [
+      "Xaero's Minimap",
+      "xaeros-minimap"
+    ],
+    [
+      "Mouse Tweaks",
+      "mouse-tweaks"
+    ],
+    [
+      "Mob Lassos",
+      "mob-lassos"
+    ],
+    [
+      "Enhanced Boss Bars",
+      "enhanced-boss-bars"
+    ],
+    [
+      "Corail Tombstone",
+      "corail-tombstone"
+    ],
+    [
+      "spark",
+      "spark"
+    ]
+  ],
+  "information_qol": [
+    [
+      "Default Options",
+      "default-options"
+    ],
+    [
+      "Keybind Overrides",
+      "keybind-overrides"
+    ],
+    [
+      "Just Enough Items (JEI)",
+      "jei"
+    ],
+    [
+      "Just Enough Resources (JER)",
+      "just-enough-resources-jer"
+    ],
+    [
+      "Just Enough Professions (JEP)",
+      "just-enough-professions-jep"
+    ],
+    [
+      "Just Enough Archaeology",
+      "just-enough-archaeology"
+    ],
+    [
+      "Just Enough Effect Descriptions (JEED)",
+      "just-enough-effect-descriptions-jeed"
+    ],
+    [
+      "Moderately Enough Effect Descriptions (MEED)",
+      "moderately-enough-effect-descriptions-meed"
+    ]
+  ],
+  "performance": [
+    [
+      "Embeddium",
+      "embeddium"
+    ],
+    [
+      "ImmediatelyFast",
+      "immediatelyfast"
+    ],
+    [
+      "Lithium",
+      "lithium"
+    ],
+    [
+      "ModernFix",
+      "modernfix"
+    ],
+    [
+      "FerriteCore",
+      "ferritecore"
+    ],
+    [
+      "Structure Essentials",
+      "structure-essentials-forge-fabric"
+    ],
+    [
+      "ServerCore",
+      "servercore"
+    ],
+    [
+      "Noisiumed",
+      "noisiumed"
+    ],
+    [
+      "AllTheLeaks",
+      "alltheleaks"
+    ],
+    [
+      "Smooth Chunk Save",
+      "smooth-chunk-save"
+    ],
+    [
+      "FastSuite",
+      "fastsuite"
+    ],
+    [
+      "Clumps",
+      "clumps"
+    ]
+  ],
+  "required_dependencies": [
+    [
+      "Cupboard",
+      "cupboard"
+    ],
+    [
+      "CorgiLib",
+      "corgilib"
+    ],
+    [
+      "Oh The Trees You\u2019ll Grow",
+      "oh-the-trees-youll-grow"
+    ],
+    [
+      "Moogs Structure Lib",
+      "moogs-structure-lib"
+    ],
+    [
+      "Paxi (NeoForge)",
+      "paxi-neoforge"
+    ]
+  ],
+  "worldgen_030": [
+    [
+      "FreeTerraForged",
+      "freeterraforged"
+    ],
+    [
+      "Moog\u2019s Temples Reimagined",
+      "mtr-moogs-temples-reimagined"
+    ],
+    [
+      "YUNG\u2019s Better Mineshafts (NeoForge)",
+      "yungs-better-mineshafts-neoforge"
+    ],
+    [
+      "YUNG\u2019s Better Witch Huts (NeoForge)",
+      "yungs-better-witch-huts-neoforge"
+    ],
+    [
+      "Antique Trading Ship",
+      "antique-trading-ship"
+    ],
+    [
+      "Ember\u2019s Floating Islands",
+      "embers-floating-islands"
+    ],
+    [
+      "Streams Reflowing",
+      "streams-reflowing"
+    ],
+    [
+      "The Roads More Travelled",
+      "the-roads-more-travelled"
+    ],
+    [
+      "Tan\u2019s Huge Trees",
+      "tans-huge-trees"
+    ],
+    [
+      "Oh The Biomes We\u2019ve Gone",
+      "oh-the-biomes-weve-gone"
+    ],
+    [
+      "Nature\u2019s Spirit",
+      "natures-spirit"
+    ],
+    [
+      "Nature\u2019s Compass",
+      "natures-compass"
+    ]
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "verified_date": "2026-10-09",
+  "sources": [
+    {
+      "url": "https://docs.neoforged.net/docs/1.21.1/resources/server/conditions/",
+      "use": "NeoForge 1.21-1.21.1 root neoforge:conditions and neoforge:false disable recipes before decoding."
+    },
+    {
+      "url": "https://docs.neoforged.net/docs/1.21.1/resources/client/models/modelloaders/",
+      "use": "NeoForge 1.21.1 separate_transforms loader namespace."
+    },
+    {
+      "url": "https://github.com/YUNG-GANG/Paxi",
+      "use": "Paxi datapack/resource-pack delivery; live priority versus Cristel runtime pack remains uncertified."
+    }
+  ],
+  "binary_provenance": "Other implementation facts are verified from the supplied JAR resources/classes and recorded under evidence; public metadata pins are in approved-structure-additions.json."
+}

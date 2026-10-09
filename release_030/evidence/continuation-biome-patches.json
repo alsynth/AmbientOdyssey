@@ -1,0 +1,236 @@
+[
+  {
+    "structure": "create_rustic_structures:rustic_barn",
+    "native_selector": [
+      "plains",
+      "sunflower_plains",
+      "meadow"
+    ],
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "create_rustic_structures:rustic_smithy",
+    "native_selector": [
+      "birch_forest",
+      "flower_forest",
+      "forest",
+      "old_growth_birch_forest"
+    ],
+    "added_analogue_tag": "#c:is_forest",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "create_rustic_structures:rustic_well",
+    "native_selector": [
+      "birch_forest",
+      "flower_forest",
+      "forest",
+      "old_growth_birch_forest"
+    ],
+    "added_analogue_tag": "#c:is_forest",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "create_rustic_structures:rustic_windmill",
+    "native_selector": [
+      "meadow",
+      "plains",
+      "sunflower_plains"
+    ],
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_christmas",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_dark_forest",
+    "native_selector": "#minecraft:has_structure/woodland_mansion",
+    "added_analogue_tag": "#c:is_spooky",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_plains",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_plains_fortified",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_snowy_igloo",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_swamp",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_swamp_fortified",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_taiga",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:large/village_taiga_fortified",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_christmas",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_dark_forest",
+    "native_selector": "#minecraft:has_structure/woodland_mansion",
+    "added_analogue_tag": "#c:is_spooky",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_plains",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_plains_fortified",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_snowy_igloo",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_swamp",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_swamp_fortified",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_taiga",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:medium/village_taiga_fortified",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:pillager_outpost_dark_forest",
+    "native_selector": "#minecraft:has_structure/woodland_mansion",
+    "added_analogue_tag": "#c:is_spooky",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:pillager_outpost_plains",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:pillager_outpost_snowy",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:pillager_outpost_swamp",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:pillager_outpost_taiga",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_christmas",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_dark_forest",
+    "native_selector": "#minecraft:has_structure/woodland_mansion",
+    "added_analogue_tag": "#c:is_spooky",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_plains",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_plains_fortified",
+    "native_selector": "#minecraft:has_structure/village_plains",
+    "added_analogue_tag": "#c:is_plains",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_snowy_igloo",
+    "native_selector": "#minecraft:has_structure/village_snowy",
+    "added_analogue_tag": "#c:is_snowy",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_swamp",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_swamp_fortified",
+    "native_selector": "#minecraft:has_structure/ruined_portal_swamp",
+    "added_analogue_tag": "#c:is_swamp",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_taiga",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  },
+  {
+    "structure": "ctov:small/village_taiga_fortified",
+    "native_selector": "#minecraft:has_structure/village_taiga",
+    "added_analogue_tag": "#c:is_taiga",
+    "unchanged_fields": "All except biomes"
+  }
+]

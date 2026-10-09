@@ -1,0 +1,52 @@
+{
+  "regions_unexplored": [
+    "ashen_woodland",
+    "cold_deciduous_forest",
+    "fen",
+    "flower_fields",
+    "frozen_pine_taiga",
+    "grassland",
+    "hyacinth_deeps",
+    "blackstone_basin",
+    "grassy_beach",
+    "icy_heights",
+    "maple_forest",
+    "marsh",
+    "muddy_river",
+    "orchard",
+    "redwoods",
+    "rocky_meadow",
+    "rocky_reef",
+    "spires",
+    "infernal_holt"
+  ],
+  "biomeswevegone": [
+    "lush_stacks",
+    "bayou",
+    "crag_gardens",
+    "sakura_grove",
+    "ebony_woods",
+    "prairie",
+    "redwood_thicket",
+    "maple_taiga",
+    "skyris_vale",
+    "weeping_witch_forest",
+    "zelkova_forest",
+    "shattered_glacier",
+    "frosted_coniferous_forest"
+  ],
+  "biomesoplenty": [
+    "auroral_garden",
+    "highland",
+    "hot_springs",
+    "ominous_woods",
+    "pumpkin_patch",
+    "snowblossom_grove",
+    "volcano"
+  ],
+  "natures_spirit": [
+    "alpine_clearings",
+    "floral_ridges",
+    "windswept_sugi_forest"
+  ]
+}

@@ -1,0 +1,23 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "citadel": {
+    "salt": 878514152,
+    "separation": 8,
+    "spacing": 16
+  },
+  "iceologer_cabin": {
+    "salt": 516979219,
+    "separation": 7,
+    "spacing": 28
+  },
+  "illusioner_shack": {
+    "salt": 365262534,
+    "separation": 7,
+    "spacing": 28
+  },
+  "illusioner_training_grounds": {
+    "salt": 819729564,
+    "separation": 7,
+    "spacing": 28
+  }
+}
