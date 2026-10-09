@@ -1,0 +1,36 @@
+{
+  "status": "PASS (targeted ZIP-static checks only; client/runtime not tested)",
+  "version": "0.3.7-prefreeze-dev2",
+  "previous_candidate": "0.3.7-prefreeze-dev1 (superseded by Dev2; remains downloadable for comparison)",
+  "artifact": "Ambient-Odyssey-v0.3.7-Prefreeze-Dev2-Test.zip",
+  "artifact_build_method": "Copied runtime-only clean v0.3.6 candidate -> Dev1 targeted modifications -> Dev2 manifest/defaultoptions setting; not authoritative GitHub builder output",
+  "size_bytes": 67971340,
+  "sha256": "166a139cf1f49183be5930c340cd70b1a3274810f38648dca8f3dc312d804a69",
+  "zip_entries": 1060,
+  "unique_CurseForge_projects": 249,
+  "patch_vs_dev1": [
+    "manifest.json version/name to 0.3.7-prefreeze-dev2",
+    "overrides/config/defaultoptions/options.txt appended menuBackgroundBlurriness:0"
+  ],
+  "assertions": [
+    "ZIP CRC pass",
+    "root manifest",
+    "no third-party bundled JARs",
+    "Structory Towers 783522:7078283",
+    "Dimensional Doors 284876 absent",
+    "four exactly pinned new projects",
+    "two earlier rarity config changes preserved",
+    "default options menuBackgroundBlurriness:0"
+  ],
+  "shaders_fix_evidence": "IrisShaders/Iris#2765 and NeoForge#1504; Default Options initial install only, existing user settings may override",
+  "not_verified": [
+    "Minecraft startup",
+    "effectiveness of new default blur on current existing user profile",
+    "shader screen live test",
+    "new mods and Better Inventory creative GUI interaction",
+    "all mod Jar checksums",
+    "authoritative GitHub source build regenerated",
+    "Better Bastions not pinned",
+    "new biomes/terrain freeze not implemented"
+  ]
+}
