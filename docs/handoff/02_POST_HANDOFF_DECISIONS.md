@@ -10,9 +10,9 @@
 | WDA majors | Confirmed | Only modest increase from 27/38 to 0.80 Overworld; preserve End frequency. Bathhouse unchanged. |
 | Farmers Structures | **Already implemented statically in audit1** | ~2x candidate grids all 20 variants with dimension-aware protection; investigate real spawn acceptance, no second blind multiplier. |
 | Eight approved addons | Pending, NOT installed | YUNG's Extras, Bridges; Structory: Towers; Archaion; Explorify; Additional Structures; Create: Structures Arise; Create: Easy Structures. |
-| Corrected exact file selections | Updated | Structory: Towers **7078283** (instead of older 5800614); Explorify **8082824** (instead of older 5482463). Verify downloaded bytes/deps. |
+| Corrected exact file selections | Superseded 9 October | **User approved Structory: Towers 783522:8396885, v1.0.17** instead of 7078283; Explorify remains **8082824**. Compatibility of the cross-version release still requires testing. |
 | Archaion | Dependency blocker to investigate | AAA Particles reported missing; check precise supported 1.21.1 NeoForge release/API. |
-| Explorify | Confirmed exclusion | Remove Nether Black Spiral (and inspect other unwanted Nether dungeon routes), preserve Overworld structures. |
+| Explorify | Superseded 9 October | **User explicitly approved leaving Black Spiral enabled by default**, conditional on the pack's Nether stack working together. Test its actual registry ID, generation and compatibility in a fresh Nether; disable only if evidence shows incompatibility. |
 | Test 7 warm/tropical biomes | Approved for **later** | BWG Tropical Rainforest; BWG Baobab Savanna; BOP Dryland. These are not yet incorporated in Test 5 audit1's 40+2 roster. |
 | Test 7 cold/dry choices | Not decided | Stop further cold/dry selections pending Better Snowy Biomes: Enhanced inspection. Do not infer approval for an uninspected biome. The approval of BOP Dryland was earlier than the later decision to defer **additional** cold/dry tuning. |
 | Block Factory's Biomes | Explicitly **rejected** | Do not add its biomes or mod. Distinguish from existing Block Factory's **Bosses** (different mod). |
@@ -27,3 +27,9 @@
 2. Expanded audit reports **196** audited resource snapshots (177 prior + 19 new), **26** unique binaries directly inspected in the continuation, **41** existing-profile JARs still unavailable; do not reuse obsolete '177 + 17 of 60' as the current state.
 3. Older handoff's request to *perform* CTOV, Dungeons & Taverns, Cataclysm Spellbooks and Farmers repairs has partly been satisfied by audit1; review the new changelog before applying anything.
 4. The eight new approved addon JARs were not supplied or installed. They must be downloaded and inspected independently by the recipient.
+
+## Explicit user confirmation — 9 October 2026
+
+The user confirmed in this conversation that they **explicitly authorized Claude to (1) leave Explorify Nether Black Spiral enabled and (2) select Structory: Towers v1.0.17 (CurseForge file `783522:8396885`)**. These decisions supersede the earlier exclusion and v1.0.14 pin. Do not reopen them solely because an older handoff disagrees.
+
+**This authorizes the choices, not an assertion of runtime compatibility.** Check NeoForge 1.21.1 loader behavior and conflicts with the installed Nether stack, and verify the version override is correctly limited to the intended pin. Black Spiral is enabled provisionally pending Nether testing.
