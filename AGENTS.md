@@ -2,6 +2,8 @@
 
 # Ambient Odyssey — Agent Entry Point
 
+**BRANCH ALERT:** `main` is the preserved Test 5 Audit1 rollback; Test 6 implementation and all 9 new project pins are in `structure/test6`. For work on Test 6 first check out that branch and read its [current state](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/status/CURRENT_STATE.md) and [runtime checklist](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md). Do not repeat the earlier Test 6 source implementation or silently merge to main.
+
 This repository is the implementation handoff for **Structure Test 6**, based on Minecraft 1.21.1 and NeoForge 21.1.252.
 
 **Do not begin by changing the repository.** Reproduce the checked-in Test 5 Audit1 build and run its validator first. Stop and report if it does not reproduce. Source files are rooted here; no need to unzip another source package.
