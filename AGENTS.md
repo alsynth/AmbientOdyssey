@@ -8,6 +8,8 @@ This repository is the implementation handoff for **Structure Test 6**, based on
 
 ## Mandatory reading order
 
+**Current Test 6 source is committed. Next phase is runtime acceptance:** [docs/testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md](docs/testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md). `main` remains the older Test 5 Audit1 baseline.
+
 1. `docs/handoff/START_HERE.md`
 2. `docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md`
 3. `docs/handoff/02_POST_HANDOFF_DECISIONS.md`
@@ -19,7 +21,7 @@ This repository is the implementation handoff for **Structure Test 6**, based on
 ## Non-negotiable guardrails
 
 - Preserve Audit1 CTOV, IDAS, Cataclysm Spellbooks, biome eligibility, Farmers Structures and other completed source fixes; do not apply tuning twice.
-- Eight selected structure additions are pending third-party JAR download, compatibility and dependency verification.
+- Eight selected structure additions + AAA Particles are **now pinned and committed on `structure/test6`**; actual CurseForge download, loader compatibility, dependency closure and fresh-world testing remain pending.
 - WDA Overworld major frequency 0.80 is the target while End rarity and Bathhouse rarity are preserved.
 - WDA Mushroom Village must be rare and Mushroom Fields-only; **Explorify Black Spiral is user-approved to remain enabled provisionally** pending Nether compatibility testing (9 Oct supersession); no WDA Small Blimp or Coliseum. User also approved Structory: Towers v1.0.17 (CF 783522:8396885), but actual NeoForge 1.21.1 functionality remains unverified.
 - Do not add Block Factory's Biomes, FDstructure, incompatible/duplicate mineshafts or deferred Test 7 biomes.
@@ -30,4 +32,4 @@ This repository is the implementation handoff for **Structure Test 6**, based on
 
 ## Work strategy
 
-Create a `structure/test6` branch and commit independently reviewable changes. Edit canonical inputs, regenerate with project scripts, run static gates, package deterministic outputs, and prepare a fresh-world acceptance checklist. Do not call the work finished without honest validation status.
+Use the existing `structure/test6` branch and commit independently reviewable changes. Edit canonical inputs, regenerate with project scripts, run static gates, package deterministic outputs, and prepare a fresh-world acceptance checklist. Do not call the work finished without honest validation status.
