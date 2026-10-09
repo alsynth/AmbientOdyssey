@@ -1,3 +1,5 @@
+> **Repository state first:** Read [docs/status/CURRENT_STATE.md](docs/status/CURRENT_STATE.md) and [docs/status/AGENT_WORKFLOW.md](docs/status/AGENT_WORKFLOW.md) before making changes. The default branch is the protected-by-process Test 5 Audit1 baseline; `structure/test6` is experimental. Update those documents on every completed change. Work from the repository alone; do not assume conversation history.
+
 # Ambient Odyssey — Agent Entry Point
 
 This repository is the implementation handoff for **Structure Test 6**, based on Minecraft 1.21.1 and NeoForge 21.1.252.
