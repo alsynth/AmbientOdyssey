@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "scope": "Test 6: eight approved structure mods plus the AAA Particles dependency. Installed in the locked manifest; static binary audit only; no runtime test.",
+  "scope": "Test 6 historic source audit plus current v0.3.7 prefreeze pins: eight original addons + AAA Particles; Structory v1.0.14 updated by runtime failure, replacement binary SHA audit pending.",
   "manifest_mutation": true,
   "mods": [
     {
@@ -43,19 +43,24 @@
       "name": "Structory: Towers",
       "slug": "structory-towers",
       "projectID": 783522,
-      "fileID": 8396885,
-      "filename": "Structory_Towers_26.2_v1.0.17.jar",
-      "game_version": "26.2 (JAR supports 1.21.x)",
+      "fileID": 7078283,
+      "filename": "Structory_Towers_1.21.x_v1.0.14.jar",
+      "game_version": "Minecraft 1.21.1",
       "loader": "NeoForge",
-      "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/8396885",
+      "primary_file_url": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/7078283",
       "metadata_verified_date": "2026-10-09",
-      "sha256": "226d8cb187e0d4fb75571db017c0abb26176aec16586c337a1b5620f3805a372",
       "enabled": true,
-      "binary_audited": true,
-      "dependencies_verified": true,
-      "status": "INSTALLED_STATIC_AUDITED",
-      "special_requirement": "User-approved v1.0.17 (CF file 8396885) instead of v1.0.14. Includes 3 Nether + 1 End tower sets as shipped. CurseForge tags this file 26.x; JAR is pack_format 48, minecraft [1.21,), Modrinth lists 1.21.x. Fresh-world load confirmation required.",
-      "sha256_scope": "supplied JAR (user upload, 9 Oct 2026)"
+      "binary_audited": false,
+      "dependencies_verified": false,
+      "status": "USER_RUNTIME_LOADED_BINARY_SHA_PENDING",
+      "special_requirement": "v1.0.17 rejected by NeoForge; user replaced with v1.0.14 and entered Overworld/Nether/End. Exact replacement JAR hash and complete clean-install QA pending.",
+      "sha256_scope": "Only historic invalid v1.0.17 file was binary audited; replacement hash not verified",
+      "historic_invalid_file": {
+        "fileID": 8396885,
+        "filename": "Structory_Towers_26.2_v1.0.17.jar",
+        "sha256": "226d8cb187e0d4fb75571db017c0abb26176aec16586c337a1b5620f3805a372",
+        "runtime_failure": "NeoForge 21.1.252 Missing ModLoader — 9 Oct 2026"
+      }
     },
     {
       "name": "Archaion",
