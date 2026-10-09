@@ -40,3 +40,11 @@ This was **user-approved v1.0.17** in the manifest, but the approval was conditi
 - [ ] Test actual natural worldgen, dimensions, biome parity, overlaps and performance.
 
 Keep `main` Test 5 baseline unchanged; don't start Test 7 worldgen work before this gate passes.
+
+## Follow-up — user reports v1.0.14 replacement reaches a world
+
+**User observation (9 October, later that evening):** After being instructed to remove the invalid v1.0.17 JAR and use Structory: Towers v1.0.14 (CurseForge `783522:7078283`) in the disposable CurseForge test profile, user reported **“okey world loaded”**. This is **preliminary positive runtime evidence** that the replacement allows the client past startup and world creation. **No replacement run `latest.log` has yet been supplied**, so the installed filename and remaining mod warnings are not independently verified; cannot yet claim all structures or dimensions work.
+
+**Next in-world priorities:** modded-versus-vanilla structure parity, new addon discovery and placement, FTF/river bridges, Farmers 20 sets, WDA major/End split, Mushroom Fields-only Mushroom Village, Nether Black Spiral, crashes/stalls in NEW chunks. Log exact biome, seed, coordinates, screenshots and performance observations. 
+
+**RELEASE SOURCE STILL NEEDS REPIN:** The committed candidate manifest **still selects invalid v1.0.17**; user-only manual JAR replacement is NOT a fixed distributed build. After confirming the new log, change locked version to v1.0.14, update approval metadata and static validators/caches, regenerate source and CurseForge ZIP, rerun gates, and publish corrected test archive. Do not mark the release itself runtime-passed.
