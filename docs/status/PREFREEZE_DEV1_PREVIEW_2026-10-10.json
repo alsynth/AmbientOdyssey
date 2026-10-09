@@ -1,0 +1,70 @@
+{
+  "status": "PASS (ZIP structure and targeted static checks only; NOT Minecraft-runtime tested)",
+  "branch": "structure/test6",
+  "version": "0.3.7-prefreeze-dev1",
+  "preview_file": "Ambient-Odyssey-v0.3.7-Prefreeze-Dev1-Test.zip",
+  "preview_source": "runtime-only 0.3.6-CurseForge-Upload-Candidate.zip + patched manifest/2 configs/3 removed configs; not the authoritative GitHub builder",
+  "zip_bytes": 67971323,
+  "sha256": "74435be291a163d2635d312ba850681d4dfe0d9b46d1df707c2c8a530e76ecda",
+  "zip_members": 1060,
+  "manifest_projects": 249,
+  "minecraft": "1.21.1",
+  "loader": "neoforge-21.1.252",
+  "new_mod_pins": [
+    {
+      "projectID": 1618019,
+      "fileID": 9099710,
+      "name": "Better Inventory and Backpacks 1.3.2"
+    },
+    {
+      "projectID": 1490601,
+      "fileID": 7853647,
+      "name": "Shadow Drop 1.1.1"
+    },
+    {
+      "projectID": 1605714,
+      "fileID": 8703116,
+      "name": "Borderless Window 1.6.0"
+    },
+    {
+      "projectID": 1101111,
+      "fileID": 8237157,
+      "name": "Iron's Gems n Jewelry 2.0.0"
+    }
+  ],
+  "repins": [
+    {
+      "projectID": 783522,
+      "fileID": 7078283,
+      "name": "Structory Towers v1.0.14 (actual prior client loaded)"
+    }
+  ],
+  "removed_projects": [
+    {
+      "projectID": 284876,
+      "name": "Dimensional Doors"
+    }
+  ],
+  "removed_paths": [
+    "overrides/config/dimdoors-config.json5",
+    "overrides/config/cristellib/dimdoors/structure_placement_config.json5",
+    "overrides/config/cristellib/dimdoors/structure_toggle_config.json5"
+  ],
+  "changed_runtime_overrides": {
+    "overrides/config/cristellib/eternal_starlight/structure_placement_config.json5": "five portal ruins set spacing 45, separation 32",
+    "overrides/config/cristellib/block_factorys_bosses/structure_placement_config.json5": "Dragon Tower spacing 96, separation 48"
+  },
+  "unchanged_other_runtime_overrides": true,
+  "archive_crc": "PASS",
+  "root_manifest": "PASS",
+  "unique_pins": "PASS",
+  "runtime_test": "NOT TESTED",
+  "remaining": [
+    "Fix shader menu blank/transparent UI with NeOculus A/B testing",
+    "Better Bastions exact NeoForge 1.21.1 CF file ID + runtime compatibility",
+    "Sparkles shader/resource pack compatibility and packaging",
+    "Test 7 curated biomes, terrain, lighthouses, bridges, prairie",
+    "Dedicated server, new-chunk performance",
+    "Authoritative GitHub builder and validators still need running with new lock"
+  ]
+}
