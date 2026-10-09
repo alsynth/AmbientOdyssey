@@ -1,4 +1,6 @@
 # AMBIENT ODYSSEY
+> **Latest Test 6 runtime result (9 Oct 2026):** Source/build is statically verified but the first clean CurseForge client startup **FAILED**: NeoForge 21.1.252 rejected `Structory_Towers_26.2_v1.0.17.jar` with `InvalidModFileException: Missing ModLoader`. Awaiting live test of official v1.0.14 fallback `783522:7078283` before changing locked manifest or regenerating Test 6 ZIP. See `docs/testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md` and `docs/status/CURRENT_STATE.md`. The original checkboxes and Black Spiral exclusion below are historical and superseded by more recent approved decisions.
+
 # Master Development TODO — 0.3.x → 0.4.0
 
 **Created:** 9 October 2026  
