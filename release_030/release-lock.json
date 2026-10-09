@@ -1,5 +1,5 @@
 {
-  "version": "0.3.1-structure-test5-audit1",
+  "version": "0.3.7-prefreeze-dev1",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -776,18 +776,16 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/archaion/files/8983496"
     },
     "test6-structory-towers": {
-      "id": 8396885,
+      "id": 7078283,
       "projectId": 783522,
-      "fileName": "Structory_Towers_26.2_v1.0.17.jar",
-      "displayName": "Structory: Towers v1.0.17 ~ Mod",
+      "fileName": "Structory_Towers_1.21.x_v1.0.14.jar",
+      "displayName": "Structory: Towers v1.0.14 ~ Mod",
       "gameVersions": [
-        "26.2",
-        "NeoForge",
-        "Server"
+        "1.21.1",
+        "NeoForge"
       ],
       "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/8396885",
-      "version_check_override": "User-approved 9 Oct 2026. CurseForge tags file 8396885 for 26.x; the supplied JAR is pack_format 48 with minecraft range [1.21,) and Modrinth lists v1.0.17 for 1.21.x. Same multi-version pattern as the installed Structory_26.2_v1.3.7. Requires fresh-world load confirmation."
+      "source": "https://www.curseforge.com/minecraft/mc-mods/structory-towers/files/7078283"
     },
     "test6-aaa-particles": {
       "id": 9101011,
@@ -800,6 +798,54 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/aaa-particles/files/9101011"
+    },
+    "next-better-inventory": {
+      "id": 9099710,
+      "projectId": 1618019,
+      "fileName": "betterinventory-neoforge-1.21.1-1.3.2.jar",
+      "displayName": "Better Inventory And Backpacks 1.3.2 (NeoForge 1.21.1)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/better-inventory-and-backpacks/files/9099710"
+    },
+    "next-shadow-drop": {
+      "id": 7853647,
+      "projectId": 1490601,
+      "fileName": "shadowdrop-1.1.1-1.21.1-neoforge.jar",
+      "displayName": "Shadow Drop 1.1.1 (known exact file pin; review latest 2.0.x when available)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/shadow-drop/files/7853647"
+    },
+    "next-borderless-window": {
+      "id": 8703116,
+      "projectId": 1605714,
+      "fileName": "BorderlessWindow-1.6.0.jar",
+      "displayName": "Borderless Window 1.6.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/borderless-window/files/8703116"
+    },
+    "next-irons-jewelry": {
+      "id": 8237157,
+      "projectId": 1101111,
+      "fileName": "irons_jewelry-1.21.1-2.0.0.jar",
+      "displayName": "Iron's Gems 'n Jewelry 2.0.0 (known exact file pin; 2.0.2 upgrade pending)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/8237157"
     }
   },
   "optional_integrated_patches": {
