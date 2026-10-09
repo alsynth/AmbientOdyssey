@@ -2,6 +2,8 @@
 
 This **updates** the 9 October initial handoff. The current starting source is **Test 5 audit1**, not the earlier incomplete baseline. The original user handoff is preserved in `06_ORIGINAL_TEST6_HANDOFF.md`. All implementation requires evidence-backed source changes and a reproducible export.
 
+> **Status after implementation:** This file preserves the original *specification*, but the WDA patch and all eight addon installs (plus AAA Particles) are now committed on `structure/test6`. Do not repeat steps as unimplemented. Start from [current state](../status/CURRENT_STATE.md) and [runtime acceptance](../testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md). See `release_030/release-lock.json` for approved live pins; superseding user decisions below take precedence over older preparatory notes.
+
 ## Goals and guardrails
 
 Structure Test 6 remains the *structures/biome eligibility* pass. Do NOT combine with biome and terrain Test 7. Keep FreeTerraForged the sole primary Overworld terrain generator, Biolith, existing Streams, Tan's Huge Trees, TRMT and the exact 40 Overworld + 2 Nether curated donor roster until Test 7. Keep the multiplayer exploration-first RPG identity. Preserve boss landmarks' rarity and appropriate Overworld/Nether/End separation.
@@ -16,13 +18,13 @@ Structure Test 6 remains the *structures/biome eligibility* pass. Do NOT combine
 
 YUNG's Extras; YUNG's Bridges; Structory: Towers; Archaion; Explorify; Additional Structures; Create: Structures Arise; Create: Easy Structures.
 
-`APPROVED_STRUCTURE_ADDITIONS.csv` carries project/file IDs and file-page URLs; two selections were updated since the initial handoff: Structory: Towers **783522:7078283** and Explorify **698309:8082824**. Older **5800614** and **5482463** are historical candidates, not the currently chosen entries. Acquire exact original mod binaries from legitimate distribution, verify SHA-256, dependencies, mod metadata, pack compatibility and registry/worldgen/feature code. All eight were ABSENT from audit1.
+`APPROVED_STRUCTURE_ADDITIONS.csv` carries project/file IDs and file-page URLs; two selections were updated since the initial handoff: Structory: Towers **783522:8396885 (v1.0.17, expressly approved 9 Oct)** and Explorify **698309:8082824**. Older **5800614** and **5482463** are historical candidates, not the currently chosen entries. Acquire exact original mod binaries from legitimate distribution, verify SHA-256, dependencies, mod metadata, pack compatibility and registry/worldgen/feature code. All eight were ABSENT from audit1.
 
 Inspect regular structures/sets, template pools, configured/placed features, dimension and biome selectors, code-generated routes, and config-driven replacements. Avoid double ownership, density blowouts, repeated salts, heavy rewards, duplicate Create loot or unintentional major boss proliferation. Test big buildings against FreeTerraForged terrain and Bridges against steep or winding rivers.
 
 **Archaion:** AAA Particles is a reported missing dependency; identify the precise version/API requirement from Archaion's mod metadata and check for existing conflicts. Availability of an AAA Particles 1.21.1 NeoForge file alone does not prove compatibility.
 
-**Explorify:** disable its unwanted Nether **Black Spiral** and check other Nether dungeon placements in the actual selected version; preserve its wanted Overworld structures. Never install it in a state where disallowed Black Spiral still naturally generates. The correct registry ID/disable strategy must be derived from inspected assets/code.
+**Explorify (later user-approved supersession, 9 Oct):** keep Nether **Black Spiral enabled provisionally**. Check natural spawning and interactions with the rest of the Nether stack in a fresh world; disable only for an evidenced conflict. The correct registry ID/disable strategy must be derived from inspected assets/code.
 
 ## 2 — WDA major structures
 
