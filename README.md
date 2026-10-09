@@ -19,17 +19,9 @@ This repository contains the editable **Structure Test 5 Audit1** source and the
 - **Next target:** Structure Test 6; eight selected structure mods, WDA tuning, biome compatibility and associated repairs.
 - **Later target:** Test 7 biome/terrain changes, documented but **not authorized for Test 6**.
 
-## Large file / Git LFS
+## Large Tan's Huge Trees asset
 
-This project contains a required Tan's Huge Trees custom pack at:
-
-`release_030/overrides/config/tanshugetrees/custom_packs/#main.zip`
-
-Its size in this snapshot is **73,500,294 bytes**, SHA-256 `0c20b47a6377230e10c53fe36f30efa6c14fd8576928640e7c8af8580122ab89`.
-
-It is matched in [`.gitattributes`](.gitattributes) and **must be tracked with Git LFS before the first commit**. Do not remove it or silently replace it with a pointer-only file in a release build. Run `git lfs install` before staging files. If cloning, run `git lfs pull` before building.
-
-The `.gitattributes` track rule is specifically for this required asset; ordinary editable JSON/Python/Markdown remains in Git. Original third-party mod JARs have intentionally **not** been bundled.
+The original `release_030/overrides/config/tanshugetrees/custom_packs/#main.zip` is 73,500,294 bytes (SHA-256 `0c20b47a6377230e10c53fe36f30efa6c14fd8576928640e7c8af8580122ab89`). It is intentionally committed as a **normal Git blob** to avoid Git LFS download restrictions in external agent environments. GitHub warns above 50 MB, but the file is below its 100 MB hard limit. Verify this file exists as a full ZIP, not a 133-byte LFS pointer, before building.
 
 ## Tests and distribution
 

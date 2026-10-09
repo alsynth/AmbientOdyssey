@@ -124,6 +124,7 @@ def build(patches=False, output=None):
         for name, data in sorted(entries.items()):
             check_path(name)
             info = zipfile.ZipInfo(name, date_time=(2026, 10, 8, 0, 0, 0))
+            info.create_system = 3  # deterministic ZIP creator on all platforms
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o644 << 16
             z.writestr(info, data)

@@ -1,6 +1,5 @@
 # Required custom worldgen asset. GitHub advises LFS for large binaries.
 # Install Git LFS *before* git add/commit.
-release_030/overrides/config/tanshugetrees/custom_packs/\#main.zip filter=lfs diff=lfs merge=lfs -text
 
 # Standard project text handling
 *.md text eol=lf
@@ -9,3 +8,10 @@ release_030/overrides/config/tanshugetrees/custom_packs/\#main.zip filter=lfs di
 *.csv text eol=lf
 *.toml text eol=lf
 *.cfg text eol=lf
+
+# Preserve byte-for-byte Minecraft config inputs (including original CRLF).
+release_030/overrides/** -text -eol
+# Keep historical Audit1 CSV evidence and catalogues byte-identical.
+*.csv -text -eol
+# Keep the Tan Trees binary directly in normal Git (private repo; no LFS host needed).
+release_030/overrides/config/tanshugetrees/custom_packs/\#main.zip -text -eol -filter -diff -merge
