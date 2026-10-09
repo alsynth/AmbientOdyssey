@@ -1,60 +1,59 @@
 # Ambient Odyssey — Current Project State
 
-**Last reviewed:** 2026-10-09. **Authoritative repository:** `alsynth/AmbientOdyssey`. **Minecraft:** 1.21.1. **Loader:** NeoForge 21.1.252.
+**Updated:** 9 October 2026. **Canonical repository:** `alsynth/AmbientOdyssey`. **Minecraft:** 1.21.1. **Loader:** NeoForge 21.1.252.
 
-> START HERE for *any* new agent or conversation. This file is a status ledger, not proof of gameplay testing. Read [AGENTS.md](../../AGENTS.md), then [the Test 6 handoff](../handoff/START_HERE.md).
+**For every new agent/chat:** Read root [AGENTS.md](../../AGENTS.md), this status document, [runtime acceptance](../testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md), and the handoff files. GitHub is the source of truth; chat history and downloaded importer kits are not required to understand the build.
 
-## Branches and evidence levels
+## Branch and release status
 
-- **`main`**: preserved Test 5 Audit1 source with cross-platform compilation and byte-identity repairs. Treat as the rollback source of truth. 238/238 scoped tests were previously run in a local check; in-game acceptance remains pending.
-- **`structure/test6`**: Test 6 development branch. It has been merged with the repaired main baseline. Do not merge untested Test 6 work to main.
-- **Claude's WDA major split/Mushroom Village patch**: supplied as `test6-wda-major-mushroom-village.patch` in a separate handoff on 2026-10-09. Its review against Audit1 applied cleanly; local patched-source build succeeded, its 24 new scoped gates passed, and the expanded legacy validator returned 242 checks. **Until the source commit is present on this branch, it is REVIEWED LOCALLY / NOT IN GITHUB**. Check branch history and file presence, not this note alone.
+| Branch | Role | Status |
+|---|---|---|
+| `main` | **Test 5 Audit1** rollback and stable source | Do not merge Test 6 without runtime acceptance |
+| `structure/test6` | **Test 6 implementation** and evidence | **SOURCE COMMITTED**, scoped static checks passed, gameplay/runtime **NOT TESTED** |
+| Test 7 | Future terrain/biome wave | Only a queue/planning document; **do not start yet** |
 
-## Current Test 6 decisions
+**Test 6 implementation push verified:** `ba8551200f803a37dd8450c1a80da13ebc913967` and subsequent documentation commits on `structure/test6`. All three original Claude patches are versioned in `docs/patches/` and their editable source changes, generated worldgen assets, manifest, tests and evidence are in this branch. **No Test 6 gameplay release has been approved.**
 
-1. Raise WDA **Overworld** major candidate-grid frequency to **0.80** without raising the original End-only WDA set. Keep End set on native spacing 50, separation 45, salt 88371663, frequency 27/38.
-2. Give **Mushroom Village** exactly one rare, dedicated owner, restricted to `minecraft:mushroom_fields`.
-3. Keep Bathhouse at 112/48, 0.5; do not reintroduce Small Blimp or Coliseum. Preserve ordinary WDA and prior Test 5 fixes.
-4. Preserve Audit1 Farmers Structures tuning (20 sets) and repairs. **Do not apply tuning a second time.**
-5. Eight approved structure-mod additions remain **pending downloads, exact-version/dependency checks and source integration**. See `APPROVED_STRUCTURE_ADDITIONS.csv` and [blockers](../handoff/05_MOD_DOWNLOADS_AND_BLOCKERS.md).
-6. Test 7 terrain/biome choices are documented planning **not authorized for Test 6**. Do not install them yet.
+## What is actually implemented
 
-## Build and test (from repository root)
+- **WDA:** modest Overworld major frequency 0.80 with separate End-only native owner kept at 27/38; Bathhouse unchanged 112/48 frequency 0.5; Mushroom Village single rare owner 40/20 frequency 0.5, `minecraft:mushroom_fields` only. No Small Blimp/Coliseum natural spawning.
+- **Eight approved structure addons in CurseForge manifest/source:** YUNG's Extras, YUNG's Bridges, Structory: Towers v1.0.17, Archaion, Explorify, Additional Structures, Create: Structures Arise, Create: Easy Structures; **AAA Particles** added to satisfy Archaion. Exact pins: `release_030/release-lock.json` and `release_030/approved-structure-additions.json`.
+- **Worldgen selectors:** addon eligibility expanded into curated biomes; existing Audit1 Farmers Structures tuning (20 sets) kept without multiplying again; existing compatibility fixes preserved.
+- **Explicit 9 Oct user decisions:** Keep Explorify Black Spiral **enabled provisionally** pending real Nether checks; use Structory: Towers **v1.0.17 CF 783522:8396885** with a version compatibility exception. These decisions supersede old handoff rows; loader compatibility is still unverified.
+
+## Verified evidence — static only
+
+- Windows import candidate recorded in `docs/status/TEST6_CANDIDATE_IMPORT.json`.
+- `246` CurseForge manifest projects; `1,081` extracted ZIP members matched approved reference.
+- Two identical local builds, ZIP SHA-256 `1383d71ec7178490ddf5b056c29c34fc14cd9ce0d48a972294ca799cf71ccec8`.
+- `247` continuation checks and `35` focused Test 6 checks passed; reports: `docs/status/TEST6_ADDONS_CONTINUATION_VALIDATION.json`, `docs/status/TEST6_ADDONS_FOCUSED_VALIDATION.json`.
+- Original 73,500,294-byte Tan's Huge Trees custom ZIP is tracked in ordinary Git (not LFS).
+- **Not tested:** actual CurseForge download/install of every new pinned file, Minecraft client or dedicated-server startup, worldgen registry acceptance, natural structures, FTF terrain fit, Nether Black Spiral overlap, Structory cross-version behavior, or generation performance.
+
+## Build / next action
+
+From a checkout of `structure/test6` (not `main`), with Python 3.10+:
 
 ```powershell
-py --version
 py build_release_030.py
-py validate_continuation_031.py --archive build/Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip --report build/continuation-regression.json
-# Only after the Claude WDA patch is actually committed:
-py validate_structure_test6.py --archive build/Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip --report build/wda-test6-regression.json
+py validate_continuation_031.py --archive build/Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip --report build/test6-continuation.json
+py validate_structure_test6.py --archive build/Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip --report build/test6-focused.json
 ```
 
-The output ZIP currently retains a Test 5 Audit1 filename even after Test 6 edits; **do not mistake that for a final Test 6 release**. Create properly named deliverables only at release validation.
+The ZIP retains the historical Test 5 filename even though contents are the Test 6 candidate. Import it into a *new disposable CurseForge test profile*. **Run the [Test 6 runtime acceptance checklist](../testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md) next.** Do not start the permanent server map.
 
-Build from editable `release_030/` inputs and compiler scripts; generated `overrides/config/paxi/datapacks/` are outputs. Preserve original config line endings as needed for historical hashes. Required Tan's pack at `release_030/overrides/config/tanshugetrees/custom_packs/#main.zip` is a 73,500,294-byte **normal Git blob**, not an LFS pointer. Do not commit third-party unmodified mod JARs.
+Do not edit generated Paxi datapacks alone; change editable `release_030/` inputs/scripts, rebuild and validate. Never copy unmodified third-party mod JARs into Git or claim a static audit proves runtime compatibility.
 
-## Evidence labels
+## Outstanding work / known risks
 
-- **Implemented** means present in a specific Git commit, not merely provided in a chat/patch.
-- **Statically verified** means explicit tool/validator execution. Always record counts and SHA-256 for the exact built artifact.
-- **Runtime verified** means actual Minecraft client/server behavior was observed and logged.
-- **Not tested** includes fresh-world structure density, overlap, biome selectors, registry loads, chunk generation and performance for Test 6.
-- **Blocked** means required mod files/dependencies are missing or incompatible.
+1. **Runtime compatibility:** Structory v1.0.17 bypasses ordinary version-label screening; verify MC 1.21.1/NeoForge at load. Archaion + AAA Particles and Create addons need real loader checks. No original third-party JARs are stored in Git.
+2. **Worldgen acceptance:** new addon structures, biome parity, Black Spiral Nether intersections, Farmers spawn rates, overlap/clipping, bridges and large landmarks in FTF/Biolith/streams.
+3. **Performance:** fresh-chunk costs and eventual dedicated 5–7-player server stability.
+4. **Validator portability:** `audit_jars_031.overlay_tags` splits an absolute path on the first `/data/` and can wrongly fail when the checkout is under `/mnt/data/`. Until fixed, validate from a path without that substring; do not misdiagnose the fake missing tag.
+5. **Distribution:** final Test 6 release assets, root manifest, hashes, changelog and reviewed PR to `main` only after runtime acceptance.
 
-## Before an agent starts
+## Work required from the next agent
 
-Read `AGENTS.md`, this ledger, `docs/handoff/START_HERE.md`, `docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md`, `docs/handoff/02_POST_HANDOFF_DECISIONS.md`, `TODO.md` and audit reports. Confirm which branch/commit you checked out, validate baseline before edits, work on a branch, and update this ledger with each PR. Do not use ChatGPT/Claude conversations as the only record of decisions.
+Confirm checked-out branch and Git SHA; reproduce the build and scoped validators before edits; study `docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md`, `02_POST_HANDOFF_DECISIONS.md`, `TODO.md`, and `docs/audits/`. Carry out the runtime checklist, record outcomes with seed/logs/coordinates, commit only evidenced source fixes with regenerations and update this file. Do not reopen decisions already approved on 9 October or prematurely apply Test 7 biomes.
 
-## Received addon patches — 9 October 2026 (under review)
-
-Claude supplied `test6-addon-audit.patch` (binary audit report) and `test6-install-addons.patch` (nine-project install/selector candidate). **Neither patch is implemented on GitHub yet**. A local reconstruction applied WDA → audit → installation patches cleanly, and independently obtained an identical two-pass ZIP hash `1383d71ec7178490ddf5b056c29c34fc14cd9ce0d48a972294ca799cf71ccec8`, with 247 continuation + 35 Test 6 scoped checks passing. These are not Minecraft runtime checks; source JAR binaries were not provided with these two patches.
-
-**DECISION RESOLVED 9 Oct:** The user explicitly confirms **Explorify Black Spiral enabled provisionally** and **Structory: Towers v1.0.17 (CF 783522:8396885)**, superseding the former exclusion and older pin. Integration is authorized on `structure/test6` (not `main`); runtime Nether and cross-version loader compatibility remain UNVERIFIED. See [patch review](../reviews/TEST6_ADDON_PATCH_REVIEW_2026-10-09.md). **The source patches still need an actual successful commit/push** before they can be called implemented.
-
-**Portability note:** `audit_jars_031.overlay_tags` has a path-splitting bug for checkouts under directories whose names include `/data/` (e.g., `/mnt/data/`); this can falsely fail `ambient_odyssey:sky_land_and_river`. Run from a neutral directory such as `/tmp/` until path handling is corrected.
-
-## Test 6 source candidate — approved Claude patch stack imported
-
-The three original Claude patches are retained at `docs/patches/` and applied on `structure/test6`. They include the WDA split, Mushroom Fields-only Village and 8 structure add-ons + AAA Particles. The user expressly approved Explorify Black Spiral enabled provisionally and Structory: Towers v1.0.17 (CF 783522:8396885) on 9 Oct. No Test 7 modifications. See `docs/status/TEST6_CANDIDATE_IMPORT.json` for **this checkout's** verified ZIP hash and every-file cross-platform equivalence; the earlier Linux reference ZIP SHA is not by itself proof of a Windows discrepancy. Canonical CTOV Waystone NBT is now checked semantically and pinned byte-for-byte to avoid platform zlib differences.
-
-**Static check result:** 247 continuation + 35 Test 6; 246-project CurseForge manifest. **NOT RUNTIME TESTED:** Minecraft client/server startup, complete mod dependency closure, Nether Black Spiral collisions, Structory Towers version override, actual structure spawn density, terrain compatibility and performance. Do not merge `main` or publish a release until acceptance. Latest section supersedes earlier 'patches pending' language, only after GitHub push is confirmed.
+**Evidence language:** `Implemented` = in Git commit. `Static verified` = checks run. `Runtime verified` = actual Minecraft run with evidence. `Blocked` = actual dependency/test barrier. Be precise.
