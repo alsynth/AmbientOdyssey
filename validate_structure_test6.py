@@ -146,7 +146,8 @@ def run(archive):
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
     # replacement v1.0.14 loaded in a user world but lacks independent JAR SHA.
     # Verify the eight previously audited binaries against historical evidence.
-    historical = {j['sha256'] for j in jars if j['sha256'] == approved['mods'][2]['historic_invalid_file']['sha256']}
+    former_structory = next(m for m in approved['mods'] if m['projectID'] == 783522)['historic_invalid_file']['sha256']
+    historical = {j['sha256'] for j in jars if j['sha256'] == former_structory}
     remaining = [m['sha256'] for m in approved['mods'] if m['projectID'] != 783522]
     check('Eight unchanged addon binary hashes match historical evidence; replacement Structory SHA pending',
           len(jars) == 9 and len(historical) == 1 and len(remaining) == 8 and
