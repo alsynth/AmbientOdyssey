@@ -44,3 +44,11 @@ Build from editable `release_030/` inputs and compiler scripts; generated `overr
 ## Before an agent starts
 
 Read `AGENTS.md`, this ledger, `docs/handoff/START_HERE.md`, `docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md`, `docs/handoff/02_POST_HANDOFF_DECISIONS.md`, `TODO.md` and audit reports. Confirm which branch/commit you checked out, validate baseline before edits, work on a branch, and update this ledger with each PR. Do not use ChatGPT/Claude conversations as the only record of decisions.
+
+## Received addon patches — 9 October 2026 (under review)
+
+Claude supplied `test6-addon-audit.patch` (binary audit report) and `test6-install-addons.patch` (nine-project install/selector candidate). **Neither patch is implemented on GitHub yet**. A local reconstruction applied WDA → audit → installation patches cleanly, and independently obtained an identical two-pass ZIP hash `1383d71ec7178490ddf5b056c29c34fc14cd9ce0d48a972294ca799cf71ccec8`, with 247 continuation + 35 Test 6 scoped checks passing. These are not Minecraft runtime checks; source JAR binaries were not provided with these two patches.
+
+**HOLD:** The install patch explicitly changes Explorify Black Spiral from disabled to enabled, and switches Structory: Towers from file 7078283 to 8396885 with a version-check override. These are not accepted merely because the patch claims a new user decision. See the [review and required confirmation](../reviews/TEST6_ADDON_PATCH_REVIEW_2026-10-09.md) on `structure/test6` before importing the patch. The current stable Test 5 Audit1 baseline remains unchanged.
+
+**Portability note:** `audit_jars_031.overlay_tags` has a path-splitting bug for checkouts under directories whose names include `/data/` (e.g., `/mnt/data/`); this can falsely fail `ambient_odyssey:sky_land_and_river`. Run from a neutral directory such as `/tmp/` until path handling is corrected.
