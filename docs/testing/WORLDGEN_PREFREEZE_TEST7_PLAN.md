@@ -1,0 +1,46 @@
+# Ambient Odyssey — Worldgen freeze preparation, after first Test 6 gameplay
+
+**Updated:** 10 October 2026. **Active branch:** `structure/test6`; prospective next test version `0.3.7-prefreeze-dev1`. **Do not mistake this plan for a finished freeze or runtime verification.**
+
+## Guiding choice
+
+User wants to **finish the worldgen roster, placement and ecology first, then focus on performance** without major future terrain/worldgen changes. Agree as a sequencing principle, **but do not freeze while there are still evidenced gaps** in structure collisions, coast/river bridges, prairie distribution, dimension performance and biome balance. Keep `main` stable Test 5 rollback, current v0.3.6 distributable as stable comparison, and v0.3.7 a separate experimental profile. Fresh-chunk/seed and dedicated-server testing are necessary before freezing.
+
+## Implementation in v0.3.7 prefreeze development candidate
+
+**Versioned changes in GitHub editable source:**
+- Five Eternal Starlight portal ruins sets: `spacing 25 -> 45`, `separation 21 -> 32`; same salts, toggles, biome tags and structures. Approximate location-grid opportunity reduction `1 - (25/45)^2 = 69%` before biome eligibility effects, **not a measured in-game spawn-density decrease**.
+- Block Factory Dragon Tower: `spacing 60 -> 96`, `separation 16 -> 48`; same salt and biome selector. Approximate grid-opportunity reduction `1 - (60/96)^2 = 61%`. Independently test terrain overlap; rarity alone does not prevent collisions.
+- Structory: Towers pinned to **user-loaded v1.0.14** CF `783522:7078283` after v1.0.17 threw `Missing ModLoader`.
+- Dimensional Doors **removed** CF project `284876` plus three configs after `reality_sponge` Creative inventory exception; **not a Mine Cells dependency**. Do not open the sole copy of a save that used DimDoors after removal.
+- Added four pinned **1.21.1 NeoForge** mod projects: Better Inventory and Backpacks `1618019:9099710` (1.3.2), Shadow Drop `1490601:7853647` (1.1.1 known exact file; later update candidate), Borderless Window `1605714:8703116` (1.6.0), Iron's Gems 'n Jewelry `1101111:8237157` (2.0.0 known exact file; later update candidate). **These mods existed as local tests/requests, but not in the v0.3.6 CurseForge manifest.** Never include loose copies of third-party JARs.
+- **Not in this candidate:** Better Bastions, Sparkles Incendium resource pack, a creeper-hole repair mob, more biome additions, lighthouse grid retuning or a shader UI fix. Do not claim installed/solved until pinned/tested.
+
+**Downloadable preview assembled separately** from clean v0.3.6 runtime-only ZIP, replacing manifest and exactly two placement-config files, removing the three DimDoors configs. Archive: `Ambient-Odyssey-v0.3.7-Prefreeze-Dev1-Test.zip`, 67,971,323 bytes; SHA256 `74435be291a163d2635d312ba850681d4dfe0d9b46d1df707c2c8a530e76ecda`; **249** unique projects, **1060** ZIP entries, root manifest and ZIP CRC passed. This is a **static preflight, NOT the authoritative Python repo builder output and not a passed Minecraft runtime test**. User must import/launch fresh instance; build authoritative repo export and compare normalized override contents before publishing.
+
+## Outstanding worldgen work — complete before freeze
+
+1. **Biome distribution, Test 7:** reduce Prairie share while preserving its lively structures; maintain Maple/Sakura structures while accepting forest density. Audit remaining 40 Overworld + 2 Nether donor biome roster, approved later additions (BWG Tropical Rainforest/Baobab Savanna, BOP Dryland), excess vanilla Taiga, overrepresented Sakura, Pumpkin Patch visibility, mountain heights/coasts/tree/climate balance and coherent FTF/Biolith/StreamsReflowing worldgen. Don't casually add more generic forest variants.
+2. **Lighthouses by owner:** several unrelated definitions exist: `dungeons_arise:lighthouse` is **one member** of `dungeons_arise:minor_structures`; `idas:abandoned_lighthouse` is **one member** of `idas:idas_small`; `structory_towers:lighthouse` one member of `structory_towers:towers`; `towns_and_towers:village_beach` can include a beach lighthouse; `nova_structures:end_lighthouse` lives in End. **Don't reduce global WDA/IDAS/towers grids** until identifying which lighthouse(s) the user sees too often, or unrelated content will disappear. Log also reports missing `kaisyn:village/beach_lighthouse/villager_lighthouse_master` pool, needs source/template resolution.
+3. **Bridges:** YUNG's Bridges and other bridge-producing structures spawn very rarely around StreamsReflowing streams; compare vanilla/more natural rivers and custom stream biome IDs, effective surface and biome tags, stream width/height/routing, bridge terrain heightmap expectations and independent eligible structure sets. Don't merely multiply frequencies to mask a missing valid placement condition.
+4. **Boss overlap:** Dragon Tower is rarer in Dev 1, but run two seeds and sample natural generation for overlap/clipping, especially large boss structures; inspect actual structure exclusion-zone routing before overriding native data. Existing user sightings are evidence, not quantitative frequencies.
+5. **Dimensions:** first Nether/End crossings are painfully slow. Keep Black Spiral enabled (observed fine), examine native bastion + Incendium effects, verify Heavenly ships (End-native placement not modified), portals/portals return and integration. **Better Bastions is approved as a candidate** but needs an exact NeoForge 1.21.1 file ID/loader/runtime verification before it enters an official manifest. It overrides vanilla bastions, so test Incendium and other Nether structure compatibility and new chunks.
+6. **Eternal Starlight portal rarity:** verify all five native portal sets actually obey Cristel placement overrides, remain reachable, and have useful scarcity on multiple fresh seeds; compare against Dev 1 grid settings before freeze.
+7. **Other known asset/compat issues:** `astrological:crying_duct` inventory texture unresolved; Creative inventory DimDoors error should disappear after removal; Enigmatic Legacy+ Curios slot mismatch; structures with missing blocks/pools; WDA Coliseum/Blimp disabled and Mushroom Village only in `minecraft:mushroom_fields`.
+
+## Shader menu / GUI problem (unresolved)
+
+User's `Video Settings -> Shader Packs` displays a blurred/transparent backdrop with no usable buttons; Escape returns to video settings. Loaded stack includes **NeOculus 1.8.7** (log detects Iris), **Embeddium 1.0.15**, **PasterDream 0.9.6**, GUI/zoom mods and user-local Borderless Window 1.6.0. Previous `latest.log` does not contain a clear Shader Packs screen exception. **Do not assign cause solely to Borderless Window, Better Inventory, shaderpack absence or PasterDream** without an A/B test. Test:
+- With shaders disabled and default GUI scale, press NeOculus shaderpack hotkey **O** from in-world and main menu; record if buttons appear or a blank screen; check whether shader screen opens via video settings only.
+- In duplicated test instance, compare with **Borderless Window disabled**, then with **PasterDream GUI changes disabled**, then (only if still necessary) with Better Inventory disabled. Avoid stripping worldgen mods from a real existing save.
+- Look for client errors in `latest.log` on that exact action, record video/GPU driver/GUI scale. Shader screen may use a transparent backdrop intentionally; missing controls are not normal.
+- Resolve before calling release UI acceptable.
+
+## Required playtest + performance gates
+
+- **Install:** CurseForge import resolves all **249** pinned projects, especially new client/UI mods; startup client and a fresh Overworld world load with no crash.
+- **Creative inventory:** open by E, toggle Creative/Survival, JEI search and backpack storage; no `dimdoors:reality_sponge` creative event crash. Better Inventory 1.3.2's Tool Rack is **not globally disableable via config**; empty tool rack slots prevent automatic switching; test balance/conflicts with existing Sophisticated Backpacks/Curios.
+- **Overworld:** inspect biome frequency, 10+ independent structures from old/new mods in at least two seeds, placement and overlaps; compare vanilla and modded biome eligibility.
+- **Nether/End:** load, revisit, record transition time on new vs existing chunks; check Black Spiral, bastions, Incendium resource-pack status, Heavenly ships and End terrain.
+- **Performance:** separate standing-still FPS/frametime from brand-new chunk TPS/stalls. Prior log had **29** `Can't keep up` warnings and FreeTerraForged **9.06 real chunks/sec**; these are baselines, not proven causes. Benchmark identical coordinates/settings across versions with/without shaders and Distant Horizons, then dedicated server.
+- **Freeze gate:** no crash; accepted landscape/structure density; resolved severe collisions and dimension blockers; acceptable fresh-chunk performance; config and worldgen manifest match pinned source; save two reproducible test seeds and notes. **Only then** announce worldgen frozen, finalize 0.3.x, review/merge from development branch to main and start dedicated multiplayer seed/pregen. Later performance options without biome/structure changes can follow.
