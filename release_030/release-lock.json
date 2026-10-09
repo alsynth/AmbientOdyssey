@@ -1,5 +1,5 @@
 {
-  "version": "0.3.7-prefreeze-dev1",
+  "version": "0.3.7-prefreeze-dev2",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
