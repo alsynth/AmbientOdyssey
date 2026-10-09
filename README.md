@@ -6,6 +6,8 @@ This repository contains the editable **Structure Test 5 Audit1** source and the
 
 ## Start here
 
+**Current state for all agents:** Read [`docs/status/CURRENT_STATE.md`](docs/status/CURRENT_STATE.md) and [`docs/status/AGENT_WORKFLOW.md`](docs/status/AGENT_WORKFLOW.md) first. They track implemented work, unfinished patches, verification evidence and blockers independently of any chat.
+
 1. Read [`AGENTS.md`](AGENTS.md) (also applies to non-Codex agents).
 2. Read [`docs/handoff/START_HERE.md`](docs/handoff/START_HERE.md), then [`docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md`](docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md) and [`docs/handoff/02_POST_HANDOFF_DECISIONS.md`](docs/handoff/02_POST_HANDOFF_DECISIONS.md).
 3. Read [`docs/handoff/04_BUILD_AND_VERIFY.md`](docs/handoff/04_BUILD_AND_VERIFY.md), [`TODO.md`](TODO.md) and supporting reports under [`docs/audits/`](docs/audits/).
