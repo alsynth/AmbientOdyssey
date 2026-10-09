@@ -120,11 +120,17 @@ def run(archive):
     t6 = {v['projectId']: v['id'] for k, v in lock['additions'].items() if k.startswith('test6-')}
     mf = {f['projectID']: f['fileID'] for f in manifest['files']}
     check('Manifest pins exactly the nine Test 6 projects, no duplicate projects',
-          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 246,
+          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 245 and 284876 not in mf,
           {'pins': len(t6), 'total': len(manifest['files'])})
     expect = {1015146: 5812546, 1015149: 5812553, 783522: 8396885, 1620396: 8983496, 698309: 8082824,
               297680: 6584803, 1010066: 8837992, 949158: 6344382, 979809: 9101011}
     check('Pins match the approved choices (Structory: Towers v1.0.17 by user decision; AAA Particles 2.3.3)', t6 == expect, t6)
+    check('Dimensional Doors and its stale config exports are absent (removed after creative-tab failure)',
+          284876 not in mf and not any(n in names for n in (
+              'overrides/config/dimdoors-config.json5',
+              'overrides/config/cristellib/dimdoors/structure_placement_config.json5',
+              'overrides/config/cristellib/dimdoors/structure_toggle_config.json5')),
+          'retired mod and configs')
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     check('Recorded SHA-256 values equal the audited JAR hashes',
