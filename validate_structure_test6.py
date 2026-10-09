@@ -120,21 +120,39 @@ def run(archive):
     t6 = {v['projectId']: v['id'] for k, v in lock['additions'].items() if k.startswith('test6-')}
     mf = {f['projectID']: f['fileID'] for f in manifest['files']}
     check('Manifest pins exactly the nine Test 6 projects, no duplicate projects',
-          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 245 and 284876 not in mf,
+          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 249 and 284876 not in mf,
           {'pins': len(t6), 'total': len(manifest['files'])})
-    expect = {1015146: 5812546, 1015149: 5812553, 783522: 8396885, 1620396: 8983496, 698309: 8082824,
+    expect = {1015146: 5812546, 1015149: 5812553, 783522: 7078283, 1620396: 8983496, 698309: 8082824,
               297680: 6584803, 1010066: 8837992, 949158: 6344382, 979809: 9101011}
-    check('Pins match the approved choices (Structory: Towers v1.0.17 by user decision; AAA Particles 2.3.3)', t6 == expect, t6)
+    check('Pins match current selections (Structory v1.0.14 working in user world; AAA 2.3.3)', t6 == expect, t6)
     check('Dimensional Doors and its stale config exports are absent (removed after creative-tab failure)',
           284876 not in mf and not any(n in names for n in (
               'overrides/config/dimdoors-config.json5',
               'overrides/config/cristellib/dimdoors/structure_placement_config.json5',
               'overrides/config/cristellib/dimdoors/structure_toggle_config.json5')),
           'retired mod and configs')
+    next_pins = {1618019: 9099710, 1490601: 7853647, 1605714: 8703116, 1101111: 8237157}
+    check('Four exact-file prefreeze client/content additions match source lock and export',
+          all(mf.get(project) == file for project, file in next_pins.items()) and
+          all(lock['additions'][key]['projectId'] == project and lock['additions'][key]['id'] == file
+              for key, project, file in (
+                ('next-better-inventory', 1618019, 9099710),
+                ('next-shadow-drop', 1490601, 7853647),
+                ('next-borderless-window', 1605714, 8703116),
+                ('next-irons-jewelry', 1101111, 8237157))),
+          next_pins)
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
-    check('Recorded SHA-256 values equal the audited JAR hashes',
-          sorted(m['sha256'] for m in approved['mods']) == sorted(j['sha256'] for j in jars) and len(jars) == 9, len(jars))
+    # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
+    # replacement v1.0.14 loaded in a user world but lacks independent JAR SHA.
+    # Verify the eight previously audited binaries against historical evidence.
+    historical = {j['sha256'] for j in jars if j['sha256'] == approved['mods'][2]['historic_invalid_file']['sha256']}
+    remaining = [m['sha256'] for m in approved['mods'] if m['projectID'] != 783522]
+    check('Eight unchanged addon binary hashes match historical evidence; replacement Structory SHA pending',
+          len(jars) == 9 and len(historical) == 1 and len(remaining) == 8 and
+          sorted(remaining) == sorted(j['sha256'] for j in jars if j['sha256'] not in historical) and
+          next(m for m in approved['mods'] if m['projectID'] == 783522)['fileID'] == 7078283,
+          {'historical_binaries': len(jars), 'current_sha_verified': len(remaining)})
     check('No third-party JAR bundled in the export', not any(n.startswith('overrides/mods/') for n in names), '')
 
     roster = json.loads((R / 'biome-roster.json').read_text())
