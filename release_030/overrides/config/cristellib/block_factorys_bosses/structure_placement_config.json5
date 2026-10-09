@@ -1,9 +1,9 @@
-/* Ambient Odyssey: Structure Test 5 placement. */
+/* Ambient Odyssey: prefreeze tuning - rarer boss dragon tower; other sets unchanged. */
 {
   "dragon_tower": {
     "salt": 178711064,
-    "separation": 16,
-    "spacing": 60
+    "separation": 48,
+    "spacing": 96
   },
   "kraken_ship": {
     "salt": 496078896,
