@@ -10,9 +10,9 @@
 | WDA majors | Confirmed | Only modest increase from 27/38 to 0.80 Overworld; preserve End frequency. Bathhouse unchanged. |
 | Farmers Structures | **Already implemented statically in audit1** | ~2x candidate grids all 20 variants with dimension-aware protection; investigate real spawn acceptance, no second blind multiplier. |
 | Eight approved addons | Pending, NOT installed | YUNG's Extras, Bridges; Structory: Towers; Archaion; Explorify; Additional Structures; Create: Structures Arise; Create: Easy Structures. |
-| Corrected exact file selections | Updated | Structory: Towers **7078283** (instead of older 5800614); Explorify **8082824** (instead of older 5482463). Verify downloaded bytes/deps. |
+| Corrected exact file selections | Superseded 9 October | Structory: Towers **v1.0.17 (CF 783522:8396885)** explicitly approved instead of 7078283; Explorify **8082824** unchanged. Runtime compatibility must still be checked. |
 | Archaion | Dependency blocker to investigate | AAA Particles reported missing; check precise supported 1.21.1 NeoForge release/API. |
-| Explorify | Confirmed exclusion | Remove Nether Black Spiral (and inspect other unwanted Nether dungeon routes), preserve Overworld structures. |
+| Explorify | Superseded 9 October | User explicitly confirmed keeping Nether Black Spiral enabled provisionally, subject to testing actual Nether compatibility. |
 | Test 7 warm/tropical biomes | Approved for **later** | BWG Tropical Rainforest; BWG Baobab Savanna; BOP Dryland. These are not yet incorporated in Test 5 audit1's 40+2 roster. |
 | Test 7 cold/dry choices | Not decided | Stop further cold/dry selections pending Better Snowy Biomes: Enhanced inspection. Do not infer approval for an uninspected biome. The approval of BOP Dryland was earlier than the later decision to defer **additional** cold/dry tuning. |
 | Block Factory's Biomes | Explicitly **rejected** | Do not add its biomes or mod. Distinguish from existing Block Factory's **Bosses** (different mod). |
