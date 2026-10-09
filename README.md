@@ -4,6 +4,8 @@
 
 This repository contains the editable **Structure Test 5 Audit1** source and the full external-agent handoff needed to implement **Structure Test 6**. It is **not** a claim that Structure Test 6 is complete.
 
+> **Project status (9 Oct 2026):** Test 6 source is now committed and statically verified on [`structure/test6`](https://github.com/alsynth/AmbientOdyssey/tree/structure/test6); [runtime testing is next](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md). `main` intentionally remains the Test 5 Audit1 rollback. Read [repository-wide state](docs/status/CURRENT_STATE.md) before starting. No fresh-world or dedicated-server Test 6 acceptance has been claimed.
+
 ## Start here
 
 **Current state for all agents:** Read [`docs/status/CURRENT_STATE.md`](docs/status/CURRENT_STATE.md) and [`docs/status/AGENT_WORKFLOW.md`](docs/status/AGENT_WORKFLOW.md) first. They track implemented work, unfinished patches, verification evidence and blockers independently of any chat.
