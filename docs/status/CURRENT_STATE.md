@@ -6,6 +6,8 @@
 
 ## Latest runtime result — 9 October 2026
 
+> **Latest user playtest (9 Oct 2026):** User reports the disposable CurseForge client successfully loaded into a world after replacing invalid Structory: Towers v1.0.17 with proposed v1.0.14. This is **user-reported preliminary runtime success**; no new startup log or worldgen evidence received yet. **Git candidate remains UNFIXED:** `release_030/release-lock.json` still pins v1.0.17. Next: inspect new log, repin v1.0.14 in source/metadata/validators, rebuild Test 6 ZIP, then continue structure and biome acceptance. The previously committed failed-startup log and later workaround are recorded in [runtime findings](../testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md).
+
 **FIRST CURSEFORGE CLIENT STARTUP FAILED (confirmed).** NeoForge 21.1.252 rejects the approved Structory: Towers `Structory_Towers_26.2_v1.0.17.jar` with `InvalidModFileException: Missing ModLoader`. A matching upstream issue exists, so static acceptance of the version override is invalidated for runtime purposes. The new addon setup is **implemented but currently not playable in the exact published candidate**. See [actual runtime finding and safe diagnostic](../testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md).
 
 **Proposed test, NOT YET CONFIRMED:** try the previous `783522:7078283` (v1.0.14, labeled NeoForge 1.21.1) in a disposable client profile, removing 1.0.17 so both are not loaded. If successful, update manifest pin, approved metadata, compiled resource catalogues and focused validator before publishing a new ZIP. Quark/Zeta exception followed the fatal invalid-mod state and has not been independently proven as a separate blocker. **Do not report Test 6 as runtime-passed, or start Test 7 implementation yet.**
