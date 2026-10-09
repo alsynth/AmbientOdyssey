@@ -1,3 +1,16 @@
+> **Updated status, 9 October 2026:** Structure Test 6 source has now been committed to `structure/test6`. This file's original Audit1 instructions below describe historical preparation, **not the current next step**. For the current build use the commands below and [runtime acceptance checklist](../testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md). There is no need to extract a ChatGPT Library ZIP.
+
+```powershell
+# In a clean checkout of the structure/test6 branch (Python 3.10+):
+py build_release_030.py
+py validate_continuation_031.py --archive build/Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip --report build/test6-continuation.json
+py validate_structure_test6.py --archive build/Ambient-Odyssey-v0.3.1-structure-test5-audit1.zip --report build/test6-focused.json
+```
+
+**Scope:** 246 manifest projects; 247 continuation + 35 focused static checks. Build hash evidence: `docs/status/TEST6_CANDIDATE_IMPORT.json`. Output filename is historical; test contents are Test 6. **No actual runtime acceptance yet**.
+
+---
+
 # Baseline reproduction, Test 6 build and validation
 
 Audit1 scripts are stored at the root of its source ZIP. No external agent needs the original chat or ChatGPT Library to use them.
