@@ -4,12 +4,18 @@
 
 **For every new agent/chat:** Read root [AGENTS.md](../../AGENTS.md), this status document, [runtime acceptance](../testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md), and the handoff files. GitHub is the source of truth; chat history and downloaded importer kits are not required to understand the build.
 
+## Latest runtime result — 9 October 2026
+
+**FIRST CURSEFORGE CLIENT STARTUP FAILED (confirmed).** NeoForge 21.1.252 rejects the approved Structory: Towers `Structory_Towers_26.2_v1.0.17.jar` with `InvalidModFileException: Missing ModLoader`. A matching upstream issue exists, so static acceptance of the version override is invalidated for runtime purposes. The new addon setup is **implemented but currently not playable in the exact published candidate**. See [actual runtime finding and safe diagnostic](../testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md).
+
+**Proposed test, NOT YET CONFIRMED:** try the previous `783522:7078283` (v1.0.14, labeled NeoForge 1.21.1) in a disposable client profile, removing 1.0.17 so both are not loaded. If successful, update manifest pin, approved metadata, compiled resource catalogues and focused validator before publishing a new ZIP. Quark/Zeta exception followed the fatal invalid-mod state and has not been independently proven as a separate blocker. **Do not report Test 6 as runtime-passed, or start Test 7 implementation yet.**
+
 ## Branch and release status
 
 | Branch | Role | Status |
 |---|---|---|
 | `main` | **Test 5 Audit1** rollback and stable source | Do not merge Test 6 without runtime acceptance |
-| `structure/test6` | **Test 6 implementation** and evidence | **SOURCE COMMITTED**, scoped static checks passed, gameplay/runtime **NOT TESTED** |
+| `structure/test6` | **Test 6 implementation** and evidence | **SOURCE COMMITTED**, scoped static checks passed, gameplay/runtime **FIRST CLIENT STARTUP FAILED (Structory: Towers v1.0.17)** |
 | Test 7 | Future terrain/biome wave | Only a queue/planning document; **do not start yet** |
 
 **Test 6 implementation push verified:** `ba8551200f803a37dd8450c1a80da13ebc913967` and subsequent documentation commits on `structure/test6`. All three original Claude patches are versioned in `docs/patches/` and their editable source changes, generated worldgen assets, manifest, tests and evidence are in this branch. **No Test 6 gameplay release has been approved.**
@@ -28,7 +34,7 @@
 - Two identical local builds, ZIP SHA-256 `1383d71ec7178490ddf5b056c29c34fc14cd9ce0d48a972294ca799cf71ccec8`.
 - `247` continuation checks and `35` focused Test 6 checks passed; reports: `docs/status/TEST6_ADDONS_CONTINUATION_VALIDATION.json`, `docs/status/TEST6_ADDONS_FOCUSED_VALIDATION.json`.
 - Original 73,500,294-byte Tan's Huge Trees custom ZIP is tracked in ordinary Git (not LFS).
-- **Not tested:** actual CurseForge download/install of every new pinned file, Minecraft client or dedicated-server startup, worldgen registry acceptance, natural structures, FTF terrain fit, Nether Black Spiral overlap, Structory cross-version behavior, or generation performance.
+- **Runtime observed:** the CurseForge client installed enough files to start mod scanning, but NeoForge rejected `Structory_Towers_26.2_v1.0.17.jar` (`Missing ModLoader`), preventing menu/world startup. **Not tested:** successful client/server startup, natural structures, terrain fit, Nether compatibility and performance.
 
 ## Build / next action
 
@@ -46,7 +52,7 @@ Do not edit generated Paxi datapacks alone; change editable `release_030/` input
 
 ## Outstanding work / known risks
 
-1. **Runtime compatibility:** Structory v1.0.17 bypasses ordinary version-label screening; verify MC 1.21.1/NeoForge at load. Archaion + AAA Particles and Create addons need real loader checks. No original third-party JARs are stored in Git.
+1. **BLOCKED runtime compatibility:** Structory v1.0.17 is definitively rejected by NeoForge 1.21.1 at load; evaluate the official v1.0.14 fallback and repin only after a successful test. Archaion + AAA Particles and Create addons need real loader checks. No original third-party JARs are stored in Git.
 2. **Worldgen acceptance:** new addon structures, biome parity, Black Spiral Nether intersections, Farmers spawn rates, overlap/clipping, bridges and large landmarks in FTF/Biolith/streams.
 3. **Performance:** fresh-chunk costs and eventual dedicated 5–7-player server stability.
 4. **Validator portability:** `audit_jars_031.overlay_tags` splits an absolute path on the first `/data/` and can wrongly fail when the checkout is under `/mnt/data/`. Until fixed, validate from a path without that substring; do not misdiagnose the fake missing tag.
