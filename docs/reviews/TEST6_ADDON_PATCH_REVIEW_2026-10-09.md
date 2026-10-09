@@ -1,6 +1,6 @@
 # Test 6 — Claude addon audit and installation patch review
 
-**Reviewed:** 9 October 2026. **Status:** REVIEWED / NOT MERGED / NOT INSTALLED IN GITHUB. This is an evidence and decision handoff, not release authorization.
+**Reviewed:** 9 October 2026. **Status:** TWO USER DECISIONS CONFIRMED; REVIEWED LOCALLY / SOURCE NOT YET INSTALLED ON GITHUB. This is an evidence and compatibility handoff, not runtime approval.
 
 ## Inputs
 
@@ -21,13 +21,13 @@
 - No Minecraft client/server runtime was executed; these are static checks and do **not** prove structures work in-game, JAR dependency closure, or CurseForge actual downloadability.
 - Environment caveat: validator `audit_jars_031.overlay_tags` splits paths at the **first `/data/`**; when the repository lives under `/mnt/data/`, that substring collides with the working-directory path and causes a false "sky_land_and_river" tag failure. The same candidate passed in `/tmp/ao_t6_validation`. Fix path handling by using relative paths rather than splitting absolute strings before adopting this as a portable validator.
 
-## High-priority decision/compatibility blockers
+## User-approved decisions and remaining compatibility gates
 
-**B1 — Explorify Black Spiral is enabled in install patch, conflicting with existing handoff.**
-Our repository's prior `AGENTS.md` and `docs/handoff/02_POST_HANDOFF_DECISIONS.md` instruct to **disable** `explorify:black_spiral`. Installation patch rewrites this as "user decision 9 October: left enabled." That reversal is **not confirmed in this ChatGPT conversation**. Do not supersede the earlier requirement or merge this change without explicit user confirmation. The audit identifies `explorify:black_spirals` (40/18, salt 30184232; Nether bastion-biome selector) and a possible Integrated API disable-tag route. Runtime generation remains untested.
+**B1 — RESOLVED BY USER: Explorify Black Spiral enabled provisionally.**
+Our repository's prior `AGENTS.md` and `docs/handoff/02_POST_HANDOFF_DECISIONS.md` instruct to **disable** `explorify:black_spiral`. Installation patch rewrites this as "user decision 9 October: left enabled." The user explicitly confirmed this reversal on 9 October. Update older instructions accordingly. Leave enabled by default while testing actual Nether compatibility; disable only for an evidenced conflict. The audit identifies `explorify:black_spirals` (40/18, salt 30184232; Nether bastion-biome selector) and a possible Integrated API disable-tag route. Runtime generation remains untested.
 
-**B2 — Structory: Towers pin changed and version gate weakened.**
-The original approved pin `783522:7078283` (v1.0.14) becomes `783522:8396885` (`Structory_Towers_26.2_v1.0.17.jar`). The installation patch adds a general `version_check_override` bypass to the CurseForge locked build. This is not the same as proving Forge/NeoForge 1.21.1 compatibility. Modrinth publishes v1.0.17 as compatible with 1.21.x, but CurseForge highlights 26.2; require explicit pin approval, inspection of actual JAR and Minecraft loader test before release. Prefer a narrowly scoped compatibility exception if needed, not a blanket bypass.
+**B2 — USER APPROVED PIN, RUNTIME COMPATIBILITY STILL OPEN: Structory: Towers v1.0.17.**
+The original approved pin `783522:7078283` (v1.0.14) becomes `783522:8396885` (`Structory_Towers_26.2_v1.0.17.jar`). The installation patch adds a general `version_check_override` bypass to the CurseForge locked build. This is not the same as proving Forge/NeoForge 1.21.1 compatibility. Modrinth publishes v1.0.17 as compatible with 1.21.x, but CurseForge highlights 26.2; pin is expressly approved; inspection of the actual JAR and a Minecraft 1.21.1 loader test are still needed before release. Prefer a narrowly scoped compatibility exception if needed, not a blanket bypass.
 
 **B3 — The install patch asserts additional user decisions that are not independently verified here.**
 These include shipping Nether/End content from four providers unchanged, accepting Create: Easy Structures' 16 independent native grids, and AAA Particles 2.3.3. They can be useful candidate settings, but should be confirmed against user decisions/constraints and actual density testing.
@@ -37,10 +37,10 @@ The patch adds YUNG's Extras, YUNG's Bridges, Structory: Towers, Archaion, Explo
 
 ## Required before import/merge
 
-- Get explicit user confirmation for **Black Spiral behavior** and the **Structory: Towers v1.0.17 pin/override**.
+- **DONE:** Explicit user confirmation received for Black Spiral enabled provisionally and Structory Towers v1.0.17; no further decision request required for those two choices.
 - Preserve the three original patches in `docs/patches/` or another versioned accessible location; do not rely on chat attachments as the sole source.
 - Check the patch on the latest `structure/test6` commit, not only an old Audit1 zip. Apply source modifications in order and resolve documentation conflicts rather than overwriting the canonical status ledger.
 - Run Python build + both validators, check root manifest and reproducible hashes, regenerate derived reports and update `docs/status/CURRENT_STATE.md`; in-game verification still pending.
 - Keep `main` stable until runtime acceptance and reviewed PR. Do not start Test 7.
 
-**Verdict:** The audit and installation patch are valuable, and static local reproduction passed; the **installation patch is held for confirmation** because it explicitly reverses settled pack decisions and changes a file to a cross-version package with an override.
+**Verdict:** Both disputed decisions are **approved**. Proceed with patch integration to `structure/test6` and static checks; preserve guards around Structory's cross-version override and perform runtime compatibility checks before release. Do not merge `main` on static evidence alone.
