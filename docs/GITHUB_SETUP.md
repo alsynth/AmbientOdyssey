@@ -1,3 +1,5 @@
+> **9 October 2026:** This historical initial-upload guide is superseded. The repaired `main` branch stores Tan's Huge Trees `#main.zip` as a **regular 73.5 MB Git blob**, not Git LFS. For current setup use `README.md` and `docs/handoff/START_HERE.md`.
+
 # Upload this repository to GitHub
 
 ## Prerequisites

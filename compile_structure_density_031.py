@@ -34,11 +34,11 @@ def compile_density():
             config[key].update(new)
             count += 1
         path.write_text('/* Ambient Odyssey: Structure Test 5 placement. */\n' +
-                        json.dumps(config, indent=2) + '\n')
+                        json.dumps(config, indent=2) + '\n', newline='\n')
     moog_path = config_root / 'moogs_structures.json'
     moog = json.loads(moog_path.read_text())
     moog['frequency'] = plan['moogs_frequency']
-    moog_path.write_text(json.dumps(moog, indent=2) + '\n')
+    moog_path.write_text(json.dumps(moog, indent=2) + '\n', newline='\n')
     sets_root = config_root / 'paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set'
     # This pack is compiler-owned. Delete obsolete sets/definitions so Test 3/4
     # grids cannot survive a source edit or a second compilation.
@@ -52,7 +52,7 @@ def compile_density():
         placement = entry['placement']
         assert 0 <= placement['separation'] < placement['spacing'], entry['id']
         payload = {'structures': entry['structures'], 'placement': placement}
-        (sets_root / (name + '.json')).write_text(json.dumps(payload, indent=2) + '\n')
+        (sets_root / (name + '.json')).write_text(json.dumps(payload, indent=2) + '\n', newline='\n')
     for category, entries in plan.get('resources', {}).items():
         assert category in {'worldgen/structure', 'worldgen/structure_set',
                             'tags/worldgen/structure', 'tags/worldgen/structure_set'}
@@ -61,7 +61,7 @@ def compile_density():
             assert re.fullmatch(r'[a-z0-9_/.-]+', name) and '..' not in name
             path = pack / 'data' / namespace / category / (name + '.json')
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(payload, indent=2) + '\n')
+            path.write_text(json.dumps(payload, indent=2) + '\n', newline='\n')
     for file in plan.get('toggle_configs', []):
         path = config_root / file['path']
         config = read_config(path)
@@ -73,9 +73,9 @@ def compile_density():
             assert parts[-1] in target, key
             target[parts[-1]] = enabled
         path.write_text('/* Ambient Odyssey: Structure Test 5 toggles. */\n' +
-                        json.dumps(config, indent=2) + '\n')
+                        json.dumps(config, indent=2) + '\n', newline='\n')
     (pack / 'pack.mcmeta').write_text(json.dumps({'pack': {'pack_format': 48,
-        'description': 'Ambient Odyssey: Structure Test 5 independent placement and safeguards'}}, indent=2) + '\n')
+        'description': 'Ambient Odyssey: Structure Test 5 independent placement and safeguards'}}, indent=2) + '\n', newline='\n')
     print(f'Structure density: {count} placement entries, '
           f'{len(plan["moogs_frequency"]["per_structure"])} Moog set multipliers')
     return plan

@@ -49,10 +49,10 @@ def compile_pools():
             })
     placement = DATA / 'biolith/biome_placement.json'
     placement.parent.mkdir(parents=True, exist_ok=True)
-    placement.write_text(json.dumps(rules, indent=2) + '\n')
+    placement.write_text(json.dumps(rules, indent=2) + '\n', newline='\n')
     tag = DATA / 'tags/worldgen/biome/replaced_surface_biomes.json'
     tag.parent.mkdir(parents=True, exist_ok=True)
-    tag.write_text(json.dumps({'replace': False, 'values': all_targets}, indent=2) + '\n')
+    tag.write_text(json.dumps({'replace': False, 'values': all_targets}, indent=2) + '\n', newline='\n')
     print(f'{len(all_targets)} vanilla targets, {len(rules["replacements"])} pool rules, '
           f'{len(rules["sub_biomes"])} climate guards')
     return rules

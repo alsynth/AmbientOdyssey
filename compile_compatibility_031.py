@@ -16,14 +16,14 @@ def unique(values):
 def write_tag(namespace, name, values):
     path = DATAPACK / 'data' / namespace / 'tags/worldgen/biome' / (name + '.json')
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({'replace': False, 'values': unique(values)}, indent=2) + '\n')
+    path.write_text(json.dumps({'replace': False, 'values': unique(values)}, indent=2) + '\n', newline='\n')
     return path
 
 
 def write_item_tag(name, values):
     path = DATAPACK / 'data/curios/tags/item' / (name + '.json')
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps({'replace': False, 'values': unique(values)}, indent=2) + '\n')
+    path.write_text(json.dumps({'replace': False, 'values': unique(values)}, indent=2) + '\n', newline='\n')
     return path
 
 
@@ -308,17 +308,17 @@ def compile_compatibility():
             if path.exists() and not data.get('replace', False):
                 old = json.loads(path.read_text())
                 data = dict(data, values=unique(old['values'] + data['values']))
-            path.write_text(json.dumps(data, indent=2) + '\n')
+            path.write_text(json.dumps(data, indent=2) + '\n', newline='\n')
         for identifier, data in patches.get('structures', {}).items():
             namespace, name = identifier.split(':', 1)
             path = DATAPACK / 'data' / namespace / 'worldgen/structure' / (name + '.json')
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(data, indent=2) + '\n')
+            path.write_text(json.dumps(data, indent=2) + '\n', newline='\n')
         for identifier, data in patches.get('item_tags', {}).items():
             namespace, name = identifier.split(':', 1)
             path = DATAPACK / 'data' / namespace / 'tags/item' / (name + '.json')
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(json.dumps(data, indent=2) + '\n')
+            path.write_text(json.dumps(data, indent=2) + '\n', newline='\n')
 
     DATAPACK.mkdir(parents=True, exist_ok=True)
     (DATAPACK / 'pack.mcmeta').write_text(json.dumps({
@@ -326,7 +326,7 @@ def compile_compatibility():
             'pack_format': 48,
             'description': 'Ambient Odyssey: biome eligibility and Curios compatibility',
         }
-    }, indent=2) + '\n')
+    }, indent=2) + '\n', newline='\n')
     print(f'Compatibility: {len(all_groups)} common biome tags, '
           f'{len(direct)} direct structure tags, Curios amulet/scroll bridges')
     return all_groups

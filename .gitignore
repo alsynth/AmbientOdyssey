@@ -22,3 +22,9 @@ run/
 dist/
 releases/
 *.log
+
+# Historical Test 5 Audit1 byte-exact baseline evidence; remove only in later, versioned changes.
+!release_030/overrides/config/bountiful/errors.log
+
+# Generated archives/reports are not Git source files.
+build/
