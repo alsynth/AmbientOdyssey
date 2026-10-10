@@ -35,7 +35,7 @@ assert (button['x'],button['y'])==(38,38)
 assert all(isinstance(button[k],bool) for k in ('enabled','showBadge','relativeToInventory','bobbingBadge'))
 quest_folder=ROOT/'release_030/overrides/config/questlog/quests'
 assert quest_folder.is_dir() and len(list(quest_folder.glob('*.json')))==50
-from tools.validate_v04_quest_campaign import validate
+from validate_v04_quest_campaign import validate
 assert validate()==50
 print('PASS: 331 projects, native Questlog pin, inherited Cloth Config, Mine Cells bridge, exact source-backed inventory button configuration, no quest campaign and 273 NBT repairs.')
 print('Source and packaging only: inventory placement, interaction and multiplayer have NOT been runtime tested.')
