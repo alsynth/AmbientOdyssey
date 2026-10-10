@@ -1,0 +1,46 @@
+name: Ambient Odyssey Cloudflare Quest API Preflight
+on:
+  push:
+    branches: [experimental/cloudflare-quest-atlas-integration-20261010]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quest-atlas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify copied data exactly matches installed modpack quests
+        run: |
+          python tools/validate_v04_quest_campaign.py
+          python tools/export_cloudflare_quests.py --check
+          python -m compileall -q tools/export_cloudflare_quests.py
+          test "$(find release_030/overrides/config/questlog/quests -maxdepth 1 -type f -name '*.json' | wc -l)" -eq 50
+      - name: Validate Worker module and HTTP endpoints without deployment
+        run: |
+          node --check integrations/cloudflare/quest-atlas-api.mjs
+          node --check integrations/cloudflare/generated/quest-data.mjs
+          node --test tests/test_cloudflare_quest_atlas.mjs
+      - name: Ensure generated data regeneration is deterministic
+        run: |
+          sha256sum integrations/cloudflare/generated/quest-data.json integrations/cloudflare/generated/quest-data.mjs > /tmp/before.sha256
+          python tools/export_cloudflare_quests.py
+          sha256sum integrations/cloudflare/generated/quest-data.json integrations/cloudflare/generated/quest-data.mjs > /tmp/after.sha256
+          cmp /tmp/before.sha256 /tmp/after.sha256
+          git diff --exit-code -- integrations/cloudflare/generated
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-Cloudflare-Quest-API-Q1-Integration-Sources
+          path: |
+            integrations/cloudflare/
+            tools/export_cloudflare_quests.py
+          compression-level: 0
+          if-no-files-found: error
