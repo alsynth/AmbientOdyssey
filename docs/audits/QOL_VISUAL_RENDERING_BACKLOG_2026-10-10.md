@@ -49,6 +49,12 @@ Seven additional requested candidate slots for the **upcoming QoL expansion**, n
 
 **Cross-cutting decision:** Keep this wave after Test8.3 runtime acceptance and worldgen freeze. Proposed order: first HUD/advancement UX (Armor GUI after identification; Pick Up Notifier; Better-vs-Paginated), then ambience/collectibles (Cave Dust, Subtle Effects, All The Heads), then rendering-dependent connected glass (Continuity). Separate visual A/B test profiles for shader/renderer checks. Verify exact native 1.21.1 NeoForge files, mod dependencies, license and CurseForge pin before any installation. No items are currently accepted for production.
 
+## Exploration discoveries and location titles — new system proposal (10 Oct)
+
+**Requested concept (not installed):** biome and dimension arrival titles, named major-structure discovery overlays, persistent **per-player** discovered biome/structure checklist, separate dungeon-cleared state, per-category completion percentages and spoiler-safe exploration milestones. **Full implementation paths, mod candidates, player-data and denominator safeguards, and isolated acceptance tests:** [Exploration Discovery System Proposal](EXPLORATION_DISCOVERY_SYSTEM_PROPOSAL_2026-10-10.md).
+
+**Candidates to audit:** Traveler's Titles 1.21.1 NeoForge; First Steps (exact NeoForge file unverified); WITS (optional debugging for structure identities); Explorer's Journals (new, unproven multi-mod journal); native FTB Quests **Visit Biome / Find Structure / Advancement** tasks already in AO; a generated silent-advancement datapack if native FTB progress proves insufficient. Avoid mandatory extra map or journal addons until scope is validated. **No Test8.2/Test8.3 release/manifest changes.**
+
 ## Voxy vs Distant Horizons — separate client-rendering architecture audit
 
 ### Current AO constraints
