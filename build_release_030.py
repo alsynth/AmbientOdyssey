@@ -160,7 +160,8 @@ def build(patches=False, output=None, private_modrinth=False):
                  'STRUCTURE_BIOME_AUDIT.md', 'STRUCTURE_TEST5_VALIDATION.md',
                  'STRUCTURE_TEST5_INSTALL.md', 'TANS_OPEN_FIELD_TUNING_PLAN.md', 'TODO.md',
                  'V04_CHANGELOG.md', 'V04_TEST_RESULTS.md', 'V04_TESTING_CHECKLIST.md',
-                 'V04_FG_INTEGRATION.md', 'V04_QUESTLOG_COMPAT.md']:
+                 'V04_FG_INTEGRATION.md', 'V04_QUESTLOG_COMPAT.md',
+                 'docs/questing/QUESTLOG_Q1_IMPLEMENTATION.md', 'docs/questing/QUESTLOG_Q1_RUNTIME_TESTS.md']:
         p = ROOT / name
         if p.exists(): entries['overrides/' + name] = p.read_bytes()
     for name in ['README-0.3.1.md', 'MOD_STRUCTURE_SCREENING.md', 'MISSING_JARS.txt',
