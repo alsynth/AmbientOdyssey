@@ -21,6 +21,9 @@ with zipfile.ZipFile(ROOT/LOCK['baseline']) as z:
     pins={i['projectID']:i['fileID'] for i in base['files']}
 for k in LOCK['remove_projects'].values():pins.pop(k,None)
 for a in LOCK['additions'].values():pins[a['projectId']]=a['id']
+if LOCK.get('default_integrated_patches',False):
+    a=LOCK['optional_integrated_patches']
+    pins[a['projectId']]=a['id']
 assert len(pins)==269,len(pins)
 assert pins[250398]==6368976 and pins[889915]==8909889
 assert pins[1713723]==8988949 and pins[1385782]==7227735
