@@ -1,23 +1,23 @@
-/* Ambient Odyssey: Structure Test 5 placement. */
+/* Ambient Odyssey Test 8.1: Create Rustic structures less common following surface overlaps. */
 {
   "rustic_barn": {
     "salt": 1218093568,
-    "separation": 10,
-    "spacing": 20
+    "separation": 24,
+    "spacing": 36
   },
   "rustic_smithy": {
     "salt": 703989288,
-    "separation": 8,
-    "spacing": 16
+    "separation": 18,
+    "spacing": 28
   },
   "rustic_well": {
     "salt": 1221516354,
-    "separation": 6,
-    "spacing": 12
+    "separation": 12,
+    "spacing": 20
   },
   "rustic_windmill": {
     "salt": 1297317345,
-    "separation": 8,
-    "spacing": 16
+    "separation": 20,
+    "spacing": 32
   }
 }
