@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.6",
+  "version": "0.3.8-worldgen-prefreeze-test1.7",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1808,5 +1808,17 @@
       "environment": "singleplayer/server",
       "publish_policy": "Private-test ZIP only; public CurseForge package requires explicit moderation/relicensing clearance for non-CF-hosted file."
     }
-  ]
+  ],
+  "terminal_jigsaw_repair": {
+    "enabled": true,
+    "source": "compile_terminal_jigsaws_087.py",
+    "expected_overrides": 271,
+    "mode": "private source-derived NBT overrides",
+    "source_jars": [
+      "adventuredungeons-neoforge-1.21-1.3.1.jar",
+      "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "irons_spellbooks-1.21.1-3.16.3.jar"
+    ],
+    "reason": "All inspected malformed minecraft: connectors are terminal with target minecraft:, so normalize to minecraft:empty without changing geometry."
+  }
 }
