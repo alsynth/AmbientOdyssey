@@ -1,5 +1,7 @@
 # Ambient Odyssey — FTB Field Manual Draft Pages v0.2
 
+**Linked permanent quick-reference sections:** [Tips & Tricks — 65 tips](FTB_TIPS_AND_TRICKS_V0_3.md) and [Keybind Cheatsheet — AO-referenced keys](FTB_KEYBIND_CHEATSHEET_V0_3.md). These are approved for eventual FTB inclusion; exact menu import remains pending.
+
 **Purpose:** original educational writing for FTB Quests. These are **draft articles, not installed FTB pages**; illustrations, keybinds, exact recipe listings and modded numeric attributes require a final-version game audit. Only Questlog should award gameplay completion rewards for overlapping topics.
 
 ## 01. Two Books, Two Purposes
