@@ -1758,6 +1758,18 @@ Once the foundation passes:
 - Container and backpack integration.
 - Accessible tooltips and interaction feedback.
 
+### RPG character identity and private-MMORPG layer — new design research (10 Oct)
+
+**Research proposal, not a production selection:** [RPG Character Identity & Private MMO Audit](docs/audits/RPG_CHARACTER_IDENTITY_PRIVATE_MMO_PROPOSAL_2026-10-10.md). User wants **Origins that matter mechanically**, with passives, meaningful tradeoffs, suitable addon/config control and immersive character progression for 5–7 players; **no player guild infrastructure or scheduled world events**.
+
+- [ ] **Origins backend audit:** inspect *actual* installed 1.21.1 Origins JAR/backend, then A/B **NeoOrigins CyberDay** vs any retained **Origins (NeoForge) IAFEnvoy**. Their addons and datapack formats are not automatically interchangeable. Do not pin two engines. Test exact versions, load/reload, dedicated server, Curios and player save.
+- [ ] **Curate 8–12 meaningful Origin identities**, balancing signature passive, situational exploration advantage, optional ability and a nonpunitive drawback; ban unlimited flight/teleport, stage bypass and permanent damage immunity. Provide Human/flexible and early respec. Origins must not bypass **AO Tier 2 enchanted diamond + two A-grade combat supports**.
+- [ ] **Origins addon shortlist research only:** NeoOrigins 1495375; Origins Fantasy for NeoOrigins 1587502; Origins Classes Extended 1602395; ISS Classes for NeoOrigins 1622039; Backgrounds 1578568; More Backgrounds 1578580. Evaluate import/override rather than adding all default races/classes. Ensure the similarly named IAFEnvoy-backed addon project is not confused with NeoOrigins version.
+- [ ] **Character role without locks:** independent Origin (race), Discipline (playstyle), Background (minor profession), Gear (main power), optional bounded Mastery. Evaluate 4–6 combat disciplines and hybrid role viability with Iron's Spellbooks, Ars, Apotheosis, Relics, More Relics, Iron's Jewelry, Simply Swords/More and existing gear atlas.
+- [ ] **Progression systems A/B:** test PlayerEx: DC 1.21.1 NeoForge as a *capped* optional attribute prototype; assess stat inflation and dependencies. Skill Tree (RPG Series) entails a much larger RPG Series dependency suite; no automatic addition. Avoid overlapping early-stage all-in-one MMO overhauls.
+- [ ] **Other personal MMORPG systems:** clean character sheet, origin/ability info, class milestones, noncombat expertise, boss dossier and gear-readiness UI, dungeon difficulty alerts, readable boss phases, per-player first clear and achievement records, controlled respec, optional equipment-specific trials and wiki loadout sharing; skip mandated guilds/world events and previously rejected world-first records or scripted lost-expedition stories.
+- [ ] **Five-player fairness and combat stacking tests:** compare varied Origins on comparable gear and throughout Tier 2→8; no role mandatory, audit passives vs gems/attributes/spells/Curios and boss mechanics, ensure persistence/rollback.
+
 ### Later phases still separate
 
 - Main RPG skill-tree architecture.
