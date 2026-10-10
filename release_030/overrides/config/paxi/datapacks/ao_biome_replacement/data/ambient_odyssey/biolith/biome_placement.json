@@ -313,6 +313,12 @@
       "target": "minecraft:bamboo_jungle",
       "biome": "biomeswevegone:redwood_thicket",
       "proportion": 0.422505307856
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:stony_shore",
+      "biome": "biomeswevegone:dacite_shore",
+      "proportion": 1
     }
   ],
   "sub_biomes": [
