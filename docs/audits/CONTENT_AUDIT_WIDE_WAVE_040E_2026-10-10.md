@@ -4,7 +4,7 @@
 ## User-directed priority
 Add substantial compatible content before post-expansion fixes, then worldgen/performance, balance and finally all quest authoring. Keep 0.4c/0.4d tested source and rare mutant settings. All fourteen additions were drawn from previously nominated audit candidates, except equipment comparison / Legendary Tooltips, included after comparing with the gear-readability emphasis of Cisco's Medieval RPG, RAD3, Craft to Exile 2 and Prodigium. This is an *architecture inspiration*, not a claim that a specific source pack ships the same exact 1.21.1 NeoForge jar.
 
-## Fourteen exact CurseForge trial pins
+## Sixteen exact CurseForge trial pins
 | Requested content | CF project:file | Loader and role | Acceptance/overlap |
 |---|---:|---|---|
 | BetterF3 v11.0.3 | 401648:5873258 | client, NeoForge 1.21.1 | Debug screen, alt to vanilla F3 |
@@ -19,7 +19,7 @@ Add substantial compatible content before post-expansion fixes, then worldgen/pe
 | Equipment Compare 1.3.13 | 502561:6375501 | client, NeoForge 1.21.1 | Compare player-equipped gear against loot stats |
 | RightClickHarvest 4.6.1 | 452834:7508749 | both, NeoForge 1.21.1 | Right-click harvesting; Farmer Delight duplicate behavior audit |
 
-Manifest target **296 to 311 unique CurseForge refs** (14 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
+Manifest target **296 to 313 unique CurseForge refs** (16 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
 
 ## Additional approved-to-test 0.4e audit candidates (same large batch)
 | Candidate | Official NeoForge 1.21.1 file | Purpose |
@@ -28,7 +28,7 @@ Manifest target **296 to 311 unique CurseForge refs** (14 mods + verified Prism 
 | Cut Through 21.1.0 | 969423:5731913 | Allows weapons to hit entities through non-solid grass; client Puzzles Lib already present |
 | Screenshot Viewer 1.3.4 | 693961:6743822 | Browse local game screenshots; does not require internet/cloud access |
 
-**Final manifest target 311 CF project refs (296 inherited + 14 QoL/content + Prism).** The new advancements UI does not author or modify FTB Quests or Questlog tasks.
+**Final manifest target 313 CF project refs (296 inherited + 16 QoL/content + Prism).** The new advancements UI does not author or modify FTB Quests or Questlog tasks.
 
 ## Deliberately not auto-added despite earlier lists
 - **AmbientSounds 6:** Atmosfera Neo already chosen, doubling constant audio is counterproductive, and water/rain already loud.
@@ -62,4 +62,9 @@ The first CI run stopped at correct required-project closure: **Prism (CF 638111
 **FallingTree assessed but deliberately not added**: users enjoy huge Tan's Huge Trees and heavily modded tree geometries; instantaneous large-tree felling could trigger server tick spikes and base destruction unless tree limits/whitelists carefully configured. Save for optimization/UX phase if requested.
 
 ## Dependency-aware duplicate elimination
-The old AO baseline already includes **Comforts** (CurseForge project `276951`). It is *not* a new installation and must not be repinned just because another RPG modpack uses sleeping bags. The CI source validator now confirms the baseline ID and prints its original file pin for verification. The main 0.4e batch therefore has **14 actual new mods plus one Prism dependency**, expected 311 unique CF references. The original workflow was restored from the last successful 308-reference version to eliminate accidental corruption of project/file ID integers by global version-label replacements.
+The old AO baseline already includes **Comforts** (CurseForge project `276951`). It is *not* a new installation and must not be repinned just because another RPG modpack uses sleeping bags. The CI source validator now confirms the baseline ID and prints its original file pin for verification. The main 0.4e batch therefore has **16 actual new mods plus one Prism dependency**, expected 311 unique CF references. The original workflow was restored from the last successful 308-reference version to eliminate accidental corruption of project/file ID integers by global version-label replacements.
+
+## New cross-modpack exploration content and audited UI inclusion
+- **Exposure 1.9.19** (`871755:8957000`) is an active, officially released **NeoForge 1.21.1 camera/film photography system**. AO's rich landscapes, ruins and wildlife gain optional player-generated photos and display/collection gameplay *without another dimension, dungeon template or mandatory quests*. Project's declared JEI relationship is optional and already satisfied. It names Exordium, Visual Overhaul, FastAnim, OptiFine as known incompatible visual/render systems; check exact installed Jar names, Embeddium/NeOculus viewfinder and multiplayer item/photo persistence before runtime approval. Photograph image data and UX should be profiled with several simultaneous players. Source: https://www.curseforge.com/minecraft/mc-mods/exposure/files/8957000 .
+- **Fadeless 1.1.0** (`861310:5585561`) is the exact official native **NeoForge 1.21.1** option from the user's original UI audit; removes menu fading to make common interfaces feel more responsive. The FTB Quests and Better Inventory transitions still require client verification. Source: https://www.curseforge.com/minecraft/mc-mods/fadeless/files/5585561 .
+- Total wave now **16 genuinely new mod projects plus Prism**. Original AO's inherited Comforts remains without repin. Expected manifest **313 unique CurseForge refs**. Only add exact CF official files; no bundling author jars.

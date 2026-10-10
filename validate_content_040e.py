@@ -20,6 +20,8 @@ pins={
     'better-advancements': (272515,5850587,'BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar'),
     'cut-through': (969423,5731913,'CutThrough-v21.1.0-1.21.1-NeoForge.jar'),
     'screenshot-viewer': (693961,6743822,'screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar'),
+    'exposure': (871755,8957000,'exposure-neoforge-1.21.1-1.9.19.jar'),
+    'fadeless': (861310,5585561,'fadeless-neoforge-1.1.0.jar'),
 }
 for slug,(pid,fid,name) in pins.items():
     e=lock['additions']['content-040e-'+slug]
@@ -38,7 +40,7 @@ assert installed[638111]==6372979
 # Comforts (project 276951) was already present in the inherited base pack; never silently repin it.
 assert 276951 in {e['projectID'] for e in manifest['files']}, 'Expected inherited Comforts; inspect imported baseline if missing'
 print('INHERITED COMFORTS (no repin):', {e['projectID']:e['fileID'] for e in manifest['files']}[276951])
-assert len(installed)==311,('Expected 296 + 14 candidates plus required Prism; Comforts inherited',len(installed))
+assert len(installed)==313,('Expected 296 + 16 candidates plus required Prism; Comforts inherited',len(installed))
 assert len(set(pid for pid,_,_ in pins.values()))==len(pins)
 assert all(installed[pid]==fid for pid,fid,_ in pins.values())
 # Verify libraries with source/native or CurseForge relations before claiming dependency closure:
@@ -47,5 +49,5 @@ for pid,desc in {495476:'Puzzles Lib (Pick Up Notifier)',638111:'Prism (Legendar
     assert pid in installed,('Missing library project: check exact NeoForge dependency',pid,desc)
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
 assert (ROOT/'release_030/overrides/config/mutantmonsters-common.toml').is_file()
-print('PASS: 0.4e 14 official NeoForge 1.21.1 candidates plus Prism, existing Comforts retained; 311 references; 273 source repairs retained; rarity unchanged.')
+print('PASS: 0.4e 16 official NeoForge 1.21.1 candidates plus Prism, existing Comforts retained; 313 references; 273 source repairs retained; rarity unchanged.')
 print('NOT RUNTIME-TESTED: rendering/particle layers, farming double-rightclick, tooltip UI, client keybinds and multiplayer installer sidedness.')

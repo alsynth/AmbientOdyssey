@@ -1689,6 +1689,36 @@
       "content_group": "0.4.0-e0-audit-broad",
       "content_role": "Browse existing local screenshots in-game; no upload",
       "environment": "client"
+    },
+    "content-040e-exposure": {
+      "projectId": 871755,
+      "id": 8957000,
+      "fileName": "exposure-neoforge-1.21.1-1.9.19.jar",
+      "displayName": "Exposure camera and film photography 1.9.19",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/exposure/files/8957000",
+      "content_group": "0.4.0-e0-audit-broad",
+      "content_role": "Living-world exploration and player photographs",
+      "environment": "both"
+    },
+    "content-040e-fadeless": {
+      "projectId": 861310,
+      "id": 5585561,
+      "fileName": "fadeless-neoforge-1.1.0.jar",
+      "displayName": "Fadeless 1.1.0 NeoForge",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/fadeless/files/5585561",
+      "content_group": "0.4.0-e0-audit-broad",
+      "content_role": "Remove vanilla menu fading; UI accessibility",
+      "environment": "client"
     }
   },
   "optional_integrated_patches": {
