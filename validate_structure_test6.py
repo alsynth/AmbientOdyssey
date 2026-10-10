@@ -120,7 +120,7 @@ def run(archive):
     t6 = {v['projectId']: v['id'] for k, v in lock['additions'].items() if k.startswith('test6-')}
     mf = {f['projectID']: f['fileID'] for f in manifest['files']}
     check('Manifest pins exactly the nine Test 6 projects, no duplicate projects',
-          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 262 and 284876 not in mf,
+          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 265 and 284876 not in mf,
           {'pins': len(t6), 'total': len(manifest['files'])})
     expect = {1015146: 5812546, 1015149: 5812553, 783522: 7078283, 1620396: 8983496, 698309: 8082824,
               297680: 6584803, 1010066: 8837992, 949158: 6344382, 979809: 9101011}
@@ -139,12 +139,12 @@ def run(archive):
                 ('next-better-inventory', 1618019, 9099710),
                 ('next-shadow-drop', 1490601, 7853647),
                 ('next-borderless-window', 1605714, 8703116),
-                ('next-irons-jewelry', 1101111, 8237157))),
+                ('next-irons-jewelry', 1101111, 8365016))),
           next_pins)
     check('Recommended RAM 10 GiB in manifest', manifest['minecraft'].get('recommendedRam') == 10240,
           manifest['minecraft'].get('recommendedRam'))
     check('Jewelry v2.0.2 avoids Iron Lib downgrade for other Iron mods',
-          mf.get(1101111) == 8365016 and len(mf) == 262,
+          mf.get(1101111) == 8365016 and len(mf) == 265,
           {'jewelry_file': mf.get(1101111), 'manifest_total': len(mf)})
     shaders = {678384: 5743914, 627557: 8884654}
     check('Two official shader projects pinned (loader-agnostic, no binary redistribution)',
@@ -174,7 +174,7 @@ def run(archive):
         1644371: 8614631, # Solo Quests
     }
     check('11 user-approved ocean/dependency/solo quest files are pinned for combined testing',
-          len(mf) == 262 and all(mf.get(pid) == fid for pid, fid in requested_test8.items()),
+          len(mf) == 265 and all(mf.get(pid) == fid for pid, fid in requested_test8.items()),
           {'expected_projects':262,'tested_new_pins':len(requested_test8)})
     check('Solo Quests disables voluntary team completion sync on fresh worlds',
           'teamSyncEnabled = false' in z.read('overrides/defaultconfigs/ftb_solo_quests-server.toml').decode(),
@@ -204,6 +204,26 @@ def run(archive):
           all(key not in lock['additions'] for key in (
               'beyond-the-ocean','tide-2','sea-myths','create-deep-seas','upgrade-aquatic')),
           'not staged in source lock')
+    safety_pins = {883374:9063597,1145462:6880789,401229:7782196,488090:7318664}
+    check('Crash recovery: My Picture Frame no longer installed, four APIs and flight projects pinned',
+          1582023 not in mf and all(mf.get(project)==file for project,file in safety_pins.items()) and
+          all(lock['remove_projects'].get('my-picture-frame')==1582023 for _ in range(1)),
+          {'new_projects':safety_pins,'picture_frame_excluded':1582023 not in mf})
+    flight_paxi='overrides/config/paxi/datapacks/ao_flight_balance/'
+    basic_recipe=J(flight_paxi+'data/flight_rings/recipe/basic_ring.json')
+    advanced_recipe=J(flight_paxi+'data/flight_rings/recipe/advanced_ring.json')
+    check('Flight Rings recipes are overridden with Nether/late-game gates',
+          basic_recipe['result']['id']=='flight_rings:basic_ring' and
+          advanced_recipe['result']['id']=='flight_rings:advanced_ring' and
+          basic_recipe['key']['B']['item']=='minecraft:blaze_rod' and
+          advanced_recipe['key']['N']['item']=='minecraft:nether_star' and
+          advanced_recipe['key']['A']['item']=='flight_rings:basic_ring', 'Paxi recipe overrides')
+    check('Private test only: vendor-supplied Better Bastions and NeoReefRedux jars intact',
+          all(x in names for x in (
+           'overrides/mods/betterbastions-1.0.0+neoforge-1.21.1.jar',
+           'overrides/mods/neoreefredux-1.0.jar')),'Third-party JAR overrides: NOT CurseForge moderation-ready')
+    check('User-supplied Ambient Odyssey artwork included for manual CurseForge icon selection',
+          'overrides/Ambient-Odyssey-Icon.png' in names,'Root instance image is not guaranteed to set profile avatar')
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
