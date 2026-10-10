@@ -1,0 +1,70 @@
+# Ambient Odyssey — 0.4e expansion from user audits and comparison modpacks
+**Staged 10 October 2026:** new experimental branch `content/0.4.0e-audit-first-wide-expansion`, forked from successful 0.4d CI source. **Source/build trial, not runtime-certified; do not merge to main.**
+
+## User-directed priority
+Add substantial compatible content before post-expansion fixes, then worldgen/performance, balance and finally all quest authoring. Keep 0.4c/0.4d tested source and rare mutant settings. All fourteen additions were drawn from previously nominated audit candidates, except equipment comparison / Legendary Tooltips, included after comparing with the gear-readability emphasis of Cisco's Medieval RPG, RAD3, Craft to Exile 2 and Prodigium. This is an *architecture inspiration*, not a claim that a specific source pack ships the same exact 1.21.1 NeoForge jar.
+
+## Sixteen exact CurseForge trial pins
+| Requested content | CF project:file | Loader and role | Acceptance/overlap |
+|---|---:|---|---|
+| BetterF3 v11.0.3 | 401648:5873258 | client, NeoForge 1.21.1 | Debug screen, alt to vanilla F3 |
+| Pick Up Notifier v21.1.1 | 351441:6409785 | client, NeoForge 1.21.1 | Small loot pickup notifications |
+| Cave Dust Rethinking 3.3.0 | 1617531:8740321 | client, NeoForge 1.21.1 | Subdued environmental cave particles |
+| Light Overlay v12.0.0 | 325492:5553811 | client, NeoForge 1.21.1 | Toggleable mob spawn light level visual |
+| Inventory Sorter 24.0.18 | 240633:5979614 | both, NeoForge 1.21.1 | Explicit inventory sorting action |
+| Subtle Effects 1.14.0 | 1023913:7768631 | both, NeoForge 1.21.1 | Optional particles and sounds; reduce overlap with existing FX |
+| Traveler's Titles 5.1.3 | 1015155:6294123 | client, NeoForge 1.21.1 | Biome and dimension entry titles; does not implement journal/quests |
+| Legendary Tooltips 1.5.5 | 532127:6400660 | client, NeoForge 1.21.1 | Clear visual rare-item tooltip styling |
+| Map Distance Fix 1.1.2 | 1321830:8507645 | both, NeoForge 1.21.1 | Keep vanilla map orientation outside map bounds |
+| Equipment Compare 1.3.13 | 502561:6375501 | client, NeoForge 1.21.1 | Compare player-equipped gear against loot stats |
+| RightClickHarvest 4.6.1 | 452834:7508749 | both, NeoForge 1.21.1 | Right-click harvesting; Farmer Delight duplicate behavior audit |
+
+Manifest target **296 to 313 unique CurseForge refs** (16 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
+
+## Additional approved-to-test 0.4e audit candidates (same large batch)
+| Candidate | Official NeoForge 1.21.1 file | Purpose |
+|---|---:|---|
+| Better Advancements 0.4.3.21 | 272515:5850587 | Single vanilla advancements tree UI improvement; Paginated Advancements not added |
+| Cut Through 21.1.0 | 969423:5731913 | Allows weapons to hit entities through non-solid grass; client Puzzles Lib already present |
+| Screenshot Viewer 1.3.4 | 693961:6743822 | Browse local game screenshots; does not require internet/cloud access |
+
+**Final manifest target 313 CF project refs (296 inherited + 16 QoL/content + Prism).** The new advancements UI does not author or modify FTB Quests or Questlog tasks.
+
+## Deliberately not auto-added despite earlier lists
+- **AmbientSounds 6:** Atmosfera Neo already chosen, doubling constant audio is counterproductive, and water/rain already loud.
+- **Paginated Advancements vs Better Advancements:** one screen replacement, exact native NeoForge 1.21.1 file and FTB UX check needed before adding; known Paginated filtered release appears Fabric only.
+- **Dynamic Lights, Continuity CTM/Connected Bricks, Paths and Rocks, Better Block Entities, Voxy:** native Embeddium/NeOculus compatibility unproven or Sodium dependency; do not force core renderer switch.
+- **Serene Seasons / Euphoria Patches:** gameplay calendar vs shader visual calendars, user decision necessary; keep current biomes and weather stable for content.
+- **Visuality Reforged:** duplicates current Particular/AAA/Subtle particle families; no additional particle renderer in this wave.
+- **Crops Love Rain:** farming balance/server tick effect best after RightClickHarvest interactions checked; not a reason to stop content expansion.
+- **Critters & Companions:** duplicates some Naturalist/Alex's species, and user requested to trim fauna already. Revisit only after explicit unique-species selection.
+- **All The Heads:** hundreds of drop tables and Curios/loot integration, hold for explicit collectibles/rare drop direction.
+- **Explorer's Journals:** newly released, full registry/MP persistence unverified; Traveler's Titles is a lighter discovery signal; actual Questlog/FTB stays LAST.
+- **APPA, Armor GUI, unnamed Fire/Ambient Particle mods:** no verified exact identity; don't substitute.
+- **MCA Reborn/more bridges:** after quests as settled, not part of prelaunch content additions.
+
+## Other pack comparison findings
+- **Cisco's Medieval RPG Ultimate (1.19.2 Forge):** relies on strong differentiation of loot, weapons and combat feedback, but its curated origins/skill-tree and combat progression can't be copied into AO unchanged. AO already includes major combat/spell/accessory systems.
+- **RAD3 (1.20.1 Forge):** deliberately emphasizes exploration, looting and accessible RPG systems rather than a kitchen-sink list; AO has the dungeons but can improve information/feedback and discovery UX.
+- **Prodigium Reforged (1.20.1 Forge):** large authored boss/loot/progression loops; do not transplant its custom boss gates, scripted dimensions or story before AO balance and quest phase.
+- **Prominence II (1.20.1 Fabric):** deeply customized story, voiced NPCs and progression modules; not drop-in NeoForge 1.21.1 content. AO's existing Easy NPC and Questlog plans already cover future narrative layer.
+- **Craft to Exile 2:** inspirations include comparing stats and equipment across heavy loot, but no assumption of matching native ports. This is a project-independent UI feature, not an imported modpack bundle.
+
+## Safety and next test wave
+Static release and repeated deterministic archive builds check package reproducibility, expected CF files, rare mutant weights, exact NBT source repairs and 0.4c gamerules. **Only real Minecraft testing** can verify 5–7-player server performance, duplicate right-click crop handling, HUD/tooltip overlap, map rendering, keybindings and dual cave particle density. Individual game sessions should be **substantial grouped batches**, not micro-tests per 1–2 mods. The user's server opening ~15 October remains a target, not a safety guarantee.
+
+## CI source-confirmed dependency follow-up
+The first CI run stopped at correct required-project closure: **Prism (CF 638111) was absent**. Added officially versioned **Prism 1.0.11 1.21.1 NeoForge, file 6372979**; the 0.4e validation now requires that exact file. No unrelated project repins.
+
+## Modpack-inspired exploratory utility, separately evaluated
+**Comforts 9.0.5** (`276951:7515858` official NeoForge 1.21.1) is a newly identified travel-value addition inspired by adventure-pack design; portable sleeping bags and hammocks support long expeditions without overwriting a home respawn point. **Do not claim it is copied from any one named pack.** Confirm actual server multiplayer sleep-vote interactions with AO's `playersSleepingPercentage 30` Paxi rule, dimension legality, and any vanilla/Modded hammock time-shift behavior. It is not a second worldgen or quest engine.
+
+**FallingTree assessed but deliberately not added**: users enjoy huge Tan's Huge Trees and heavily modded tree geometries; instantaneous large-tree felling could trigger server tick spikes and base destruction unless tree limits/whitelists carefully configured. Save for optimization/UX phase if requested.
+
+## Dependency-aware duplicate elimination
+The old AO baseline already includes **Comforts** (CurseForge project `276951`). It is *not* a new installation and must not be repinned just because another RPG modpack uses sleeping bags. The CI source validator now confirms the baseline ID and prints its original file pin for verification. The main 0.4e batch therefore has **16 actual new mods plus one Prism dependency**, expected 311 unique CF references. The original workflow was restored from the last successful 308-reference version to eliminate accidental corruption of project/file ID integers by global version-label replacements.
+
+## New cross-modpack exploration content and audited UI inclusion
+- **Exposure 1.9.19** (`871755:8957000`) is an active, officially released **NeoForge 1.21.1 camera/film photography system**. AO's rich landscapes, ruins and wildlife gain optional player-generated photos and display/collection gameplay *without another dimension, dungeon template or mandatory quests*. Project's declared JEI relationship is optional and already satisfied. It names Exordium, Visual Overhaul, FastAnim, OptiFine as known incompatible visual/render systems; check exact installed Jar names, Embeddium/NeOculus viewfinder and multiplayer item/photo persistence before runtime approval. Photograph image data and UX should be profiled with several simultaneous players. Source: https://www.curseforge.com/minecraft/mc-mods/exposure/files/8957000 .
+- **Fadeless 1.1.0** (`861310:5585561`) is the exact official native **NeoForge 1.21.1** option from the user's original UI audit; removes menu fading to make common interfaces feel more responsive. The FTB Quests and Better Inventory transitions still require client verification. Source: https://www.curseforge.com/minecraft/mc-mods/fadeless/files/5585561 .
+- Total wave now **16 genuinely new mod projects plus Prism**. Original AO's inherited Comforts remains without repin. Expected manifest **313 unique CurseForge refs**. Only add exact CF official files; no bundling author jars.

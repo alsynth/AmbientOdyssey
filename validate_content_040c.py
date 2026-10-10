@@ -5,7 +5,7 @@ import json, re, zipfile
 ROOT=Path(__file__).resolve().parent
 BASE=ROOT/'release_030'
 LOCK=json.loads((BASE/'release-lock.json').read_text())
-assert LOCK['version'] in ('0.4.0-c0-ecosystem-feedback','0.4.0-d0-content-first')
+assert LOCK['version'] in ('0.4.0-c0-ecosystem-feedback','0.4.0-d0-content-first','0.4.0-e0-audit-broad-content')
 assert 'content-040b-galosphere' not in LOCK['additions']
 assert all(x.get('projectId')!=631098 for x in LOCK['additions'].values())
 assert LOCK['terminal_jigsaw_repair']['expected_overrides']==273
@@ -16,7 +16,7 @@ for x in LOCK['remove_projects'].values(): refs.pop(x,None)
 for x in LOCK['additions'].values():refs[x['projectId']]=x['id']
 if LOCK.get('default_integrated_patches'):
  x=LOCK['optional_integrated_patches'];refs[x['projectId']]=x['id']
-assert len(refs)==(296 if LOCK['version']=='0.4.0-d0-content-first' else 288),len(refs)
+assert len(refs)==(313 if LOCK['version']=='0.4.0-e0-audit-broad-content' else (296 if LOCK['version']=='0.4.0-d0-content-first' else 288)),len(refs)
 assert 631098 not in refs
 assert refs[835687]==9099893 and refs[714059]==6467772
 assert refs[250398]==6368976 and refs[889915]==8909889

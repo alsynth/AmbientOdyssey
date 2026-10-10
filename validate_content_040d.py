@@ -4,7 +4,7 @@ import json, zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-d0-content-first', lock['version']
+assert lock['version'] in ('0.4.0-d0-content-first','0.4.0-e0-audit-broad-content'), lock['version']
 selected={
   'mutant-monsters':(852665,7232511),
   'illager-invasion':(891324,6492670),
@@ -30,7 +30,7 @@ for e in lock['additions'].values():
 if lock.get('default_integrated_patches'):
     e=lock['optional_integrated_patches']
     pins[e['projectId']]=e['id']
-assert len(pins)==296,(len(pins),'Expected 288 previous +7 content projects +Athena')
+assert len(pins)==(313 if lock['version']=='0.4.0-e0-audit-broad-content' else 296),(len(pins),'Expected 288 previous +7 content projects +Athena')
 for _,(pid,fid) in selected.items():assert pins[pid]==fid
 assert pins[841890]==8061947, 'Athena must be the source-verified NeoForge 4.0.6'
 # Upstream Mutant Monsters CommonConfig fields map to four snake_case TOML keys.
