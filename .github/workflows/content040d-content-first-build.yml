@@ -1,9 +1,9 @@
-name: 'Ambient Odyssey 0.4d wildlife/audio/gamerule refinement'
+name: 'Ambient Odyssey 0.4d content-first expansion build'
 on:
   push:
-    branches: [content/0.4.0c-feedback-ecology-rules]
+    branches: [content/0.4.0d-content-first-expansion]
     paths:
-      - '.github/workflows/content040c-ecosystem-build.yml'
+      - '.github/workflows/content040d-content-first-build.yml'
       - 'compile_terminal_jigsaws_087.py'
       - 'build_release_030.py'
       - 'release_030/release-lock.json'
