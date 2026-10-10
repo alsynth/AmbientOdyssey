@@ -1,0 +1,58 @@
+name: Ambient Odyssey v0.4h Q1 plus FTB Field Manual
+on:
+  push:
+    branches: [experimental/v0.4h-q1-ftb-field-manual-20261010]
+  workflow_dispatch:
+jobs:
+  validate-pack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Quest content and FTB manual with existing source regressions
+        run: |
+          python -m compileall -q tools build_release_030.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_fg.py
+          python validate_content_040a.py
+          python validate_content_040b.py
+          python validate_content_040c.py
+          python validate_content_040d.py
+          python validate_content_040e.py
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+          python validate_worldgen_089.py
+          python validate_worldgen_810.py
+          python compile_terminal_jigsaws_087.py
+      - name: Build FTB Manual Q1 private
+        run: |
+          python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.4h-Q1-FieldManual-PRIVATE.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4h-Q1-FieldManual-PRIVATE.zip --private --report build/manual-private-validation.json
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4h-Q1-FieldManual-PRIVATE.zip --report build/manual-private-diagnostic.json
+      - name: Deterministic private rebuild and CurseForge references export
+        run: |
+          python build_release_030.py --private-modrinth --output build/q1-manual-repeat.zip
+          cmp build/Ambient-Odyssey-v0.4h-Q1-FieldManual-PRIVATE.zip build/q1-manual-repeat.zip
+          python build_release_030.py --output build/Ambient-Odyssey-v0.4h-Q1-FieldManual-CF-References.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4h-Q1-FieldManual-CF-References.zip --report build/manual-reference-validation.json
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4h-Q1-FieldManual-CF-References.zip --require-minecells
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4h-Q1-FieldManual-CF-References.zip --report build/manual-reference-diagnostic.json
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-v04h-Q1-FTB-MANUAL
+          path: |
+            build/Ambient-Odyssey-v0.4h-Q1-FieldManual-PRIVATE.zip
+            build/Ambient-Odyssey-v0.4h-Q1-FieldManual-CF-References.zip
+            build/manual-*-validation.json
+            build/manual-*-diagnostic.json
+            docs/questing/FTB_MANUAL_Q1_IMPLEMENTATION.md
+            docs/questing/QUESTLOG_Q1_IMPLEMENTATION.md
+          compression-level: 0
+          if-no-files-found: error
