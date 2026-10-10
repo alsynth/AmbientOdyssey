@@ -1,0 +1,22 @@
+name: '0.4c Naturalist native spawn-policy audit'
+on:
+  push:
+    branches: [content/0.4.0c-feedback-ecology-rules]
+    paths: ['.github/workflows/content040c-naturalist-spawns.yml']
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Read exact native Naturalist biome modifiers, spawn configs
+        run: |
+          python - <<'PY'
+          import urllib.request,io,zipfile,json
+          fid=9004373;name='naturalist-2.0.5-neoforge-1.21.1.jar'
+          url=f'https://mediafilez.forgecdn.net/files/{fid//1000}/{fid%1000:03d}/'+name
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AO-Pinned-JAR-Audit/1.0'}),timeout=50) as r:z=zipfile.ZipFile(io.BytesIO(r.read(30000000)))
+          for name in z.namelist():
+           if name.startswith('data/naturalist/neoforge/biome_modifier/') and name.endswith('.json'):
+            print('NATURALIST_MODIFIER',name, z.read(name).decode()[:24000],flush=True)
+          print('CONFIG_FILES',[n for n in z.namelist() if 'config' in n.lower() and not n.endswith('.class')][:50])
+          PY

@@ -8,7 +8,7 @@ EXPECTED={
   'content-040a-controlling':(250398,6368976,'Controlling-neoforge-1.21.1-19.0.5.jar'),
   'content-040a-ftb-xmod-compat':(889915,8909889,'ftb-xmod-compat-neoforge-21.1.12.jar'),
 }
-assert LOCK['version'] in ('0.4.0-a0-qol-quest-trial','0.4.0-b1-living-world-batch')
+assert LOCK['version'] in ('0.4.0-a0-qol-quest-trial','0.4.0-b1-living-world-batch','0.4.0-c0-ecosystem-feedback')
 for slug,(project,fid,filename) in EXPECTED.items():
     p=LOCK['additions'][slug]
     assert p['projectId']==project and p['id']==fid and p['fileName']==filename,p
@@ -24,7 +24,7 @@ for a in LOCK['additions'].values():pins[a['projectId']]=a['id']
 if LOCK.get('default_integrated_patches',False):
     a=LOCK['optional_integrated_patches']
     pins[a['projectId']]=a['id']
-assert len(pins)==(289 if LOCK['version']=='0.4.0-b1-living-world-batch' else 269),len(pins)
+assert len(pins)==({'0.4.0-c0-ecosystem-feedback':288,'0.4.0-b1-living-world-batch':289}.get(LOCK['version'],269)),len(pins)
 assert pins[250398]==6368976 and pins[889915]==8909889
 assert pins[1713723]==8988949 and pins[1385782]==7227735
 index=json.loads(gzip.decompress((ROOT/'release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))

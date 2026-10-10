@@ -1,0 +1,48 @@
+name: '0.4c native wildlife entity registry inventory'
+on:
+  push:
+    branches: [content/0.4.0c-feedback-ecology-rules]
+    paths: ['.github/workflows/content040c-wildlife-registry.yml']
+  workflow_dispatch:
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract native source wildlife entity names from installed JARs
+        run: |
+          python - <<'PY'
+          import urllib.request,urllib.parse,gzip,collections,json,re,zipfile,io,hashlib
+          from pathlib import Path
+          idx=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          print('INDEX_KEYS',list(idx.keys()),'RESOURCE_TYPES',list(idx['resources'].keys()),flush=True)
+          prefixes=['alexsmobs','naturalist','hybrid_aquatic','benssharks','ftboceanmobs','friendsandfoes','hominid','aquaculture','alexscaves','iceandfire','mowziesmobs','aquamirae','undergarden','aether','the_bumblezone','twilightforest','deeperdarker','cosycritters','galosphere','wilderwild']
+          for typ,items in idx['resources'].items():
+           if 'loot' not in typ.lower() and 'biome_modifier' not in typ.lower():continue
+           for ns in prefixes:
+            keys=[k for k in items if k.startswith(ns+':') and ('entit' in k or 'spawn' in k)]
+            if keys:print('BASE_REGISTRY',typ,ns,len(keys),'|'.join(keys[:140]),flush=True)
+          # Native code/assets — when CurseForge permits direct binary inspection.
+          jars=[
+           ('naturalist',9004373,'naturalist-2.0.5-neoforge-1.21.1.jar'),
+           ('cosycritters',8390081,'cosycritters-0.3.3+1.21.1-neoforge.jar'),
+           ('alexsmobs',0,''),
+          ]
+          for slug,fid,name in jars:
+           if not fid:continue
+           url='https://mediafilez.forgecdn.net/files/'+str(fid//1000)+'/'+str(fid%1000).zfill(3)+'/'+urllib.parse.quote(name)
+           try:
+            with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AO-Native-Registry-Audit/1.0'}),timeout=90) as r:raw=r.read(42000000)
+            z=zipfile.ZipFile(io.BytesIO(raw))
+            loc=[]
+            for p in z.namelist():
+             if p.endswith('/lang/en_us.json') or p.endswith('/lang/en_us.lang'):
+              try:
+               x=json.loads(z.read(p))
+               loc.extend((k,v) for k,v in x.items() if k.startswith('entity.'))
+              except Exception:pass
+            loots=[x for x in z.namelist() if re.search('/loot_table[s]?/entities/[^/]+\\.json$',x)]
+            print('NATIVE_JAR',slug,'sha256',hashlib.sha256(raw).hexdigest(),'ENTITY_LANG',json.dumps(loc,ensure_ascii=False)[:36000],'ENTITY_LOOT',json.dumps(loots)[:16000],flush=True)
+           except Exception as e:print('NATIVE_JAR_ERROR',slug,str(e),flush=True)
+          PY

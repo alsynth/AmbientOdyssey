@@ -20,7 +20,7 @@ def getjar(fid,name,sha):
     return zipfile.ZipFile(io.BytesIO(blob))
 def main():
     j=load(ROOT/'release_030/release-lock.json')
-    require(j['version'] in ('0.3.8-worldgen-prefreeze-test1.10','0.4.0-a0-qol-quest-trial', '0.4.0-b1-living-world-batch'),'Test8.10 exact release lock')
+    require(j['version'] in ('0.3.8-worldgen-prefreeze-test1.10','0.4.0-a0-qol-quest-trial', '0.4.0-b1-living-world-batch', '0.4.0-c0-ecosystem-feedback'),'Test8.10 exact release lock')
     with getjar(8213402,'graveyard-2.6.2 NeoForge 1.21.1.jar','69dd4501da1fcc596d8ab7e09f32259ad1beee7e031fd5ab2d9c6cff4a8c8b2b') as zip:
         src=json.loads(zip.read('data/graveyard/worldgen/template_pool/large_walled_graveyard/crypt_pool.json'))
         root=load(DAT/'graveyard/worldgen/template_pool/large_walled_graveyard/small_crypt_pool.json')
