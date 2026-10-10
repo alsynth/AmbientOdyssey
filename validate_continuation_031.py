@@ -114,7 +114,19 @@ def validate(archive=None):
             check('Export includes the nine Test 6 projects and excludes Born in Chaos',staged_ids<={row['projectID'] for row in manifest['files']} and 686437 not in {row['projectID'] for row in manifest['files']},'9 Test 6 projects present; Born in Chaos absent')
             embedded=['README-0.3.1.md','MOD_STRUCTURE_SCREENING.md','MISSING_JARS.txt','APPROVED_ADDITION_JARS.txt','APPROVED_STRUCTURE_ADDITIONS.csv','FARMERS_STRUCTURE_CATALOG.csv','CODE_GENERATED_PLACEMENT_ROUTES.csv']
             check('Continuation reports embedded exactly',all(z.read('overrides/'+name)==(ROOT/name).read_bytes() for name in embedded),embedded)
-    check('Curated donor roster unchanged',(R/'biome-roster.json').read_bytes()==(E/'baseline-test5/biome-roster.json').read_bytes(),'40 Overworld + 2 Nether')
+    # Test7 deliberately expands the Test5 donor list by exactly four approved
+    # dry/tropical/coastal biomes; preserve all original donor IDs.
+    original = json.loads((E/'baseline-test5/biome-roster.json').read_text())
+    current = json.loads((R/'biome-roster.json').read_text())
+    approved_new = {
+        'biomeswevegone': {'tropical_rainforest','baobab_savanna','dacite_shore'},
+        'biomesoplenty': {'dryland'},
+    }
+    check('All 40+2 original donor IDs preserved; exactly four selected prefreeze additions',
+          all(set(original[ns]).issubset(set(current[ns])) for ns in original) and
+          all(set(current[ns])-set(original[ns]) == approved_new.get(ns,set()) for ns in original)
+          and sum(len(v) for v in current.values()) == 46,
+          '44 Overworld + 2 Nether; no original donors lost')
     report['status']='PASS (expanded scoped static gates; runtime pending)'
     report['counts'].update({'farmers_variants':20,'new_recipe_gates':11,'client_model_repairs':len(repairs['client_models']),'code_generated_ctov_routes':74})
     report['limitations'] += ['Nine Test 6 mods are installed in the manifest after a static binary audit of user-supplied JARs only; no registry load, natural generation, density, clipping or performance test has been run. Explorify Black Spiral is left enabled by user decision pending a fresh-Nether check.',
