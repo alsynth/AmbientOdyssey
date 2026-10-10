@@ -270,6 +270,19 @@ def compile_compatibility():
     for name, values in all_groups.items():
         write_tag('c', name, values)
 
+    # Mine Cells has five self-contained adventure biomes. Streams Reflowing's
+    # documented no_streams tag prevents hydrology from carving/changing these
+    # puzzle/dungeon dimensions while preserving streams in AO's overworld.
+    # This is an isolation candidate, NOT proof of the broken jigsaw cause.
+    minecells_biomes = [
+        'minecells:black_bridge',
+        'minecells:insufferable_crypt',
+        'minecells:prison',
+        'minecells:promenade',
+        'minecells:ramparts',
+    ]
+    write_tag('streamsreflowing', 'no_streams', minecells_biomes)
+
     # A few providers use direct vanilla-only lists rather than the common
     # tags above. These additions are intentionally small and climate-specific.
     direct = {
