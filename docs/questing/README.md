@@ -16,6 +16,19 @@
 
 **Status:** prose is *draft_copy*. Questlog objective JSON, FTB SNBT pages, tested triggers, approved rewards and release installation still **do not exist** for these drafts. The modpack's future content expansion must be reconciled against real item/structure/boss registries before implementing them.
 
+## Depth review v0.3 — 10 October 2026
+
+**Triple-pass quest-size and mod-complexity audit completed from the current available source inventory; exact final client JAR registry reconciliation remains pending after the content expansion.** This audit keeps the existing 474 seed IDs and 50 written drafts unchanged.
+
+| File | Contents |
+|---|---|
+| [QUEST_DEPTH_REVIEW_REPORT_2026-10-10.md](QUEST_DEPTH_REVIEW_REPORT_2026-10-10.md) | Narrative of three checks (mod priority, actual deep mod systems, quest technical feasibility), changes and version-pinned source links |
+| [MOD_DEPTH_REAUDIT_2026-10-10.csv](MOD_DEPTH_REAUDIT_2026-10-10.csv) | **265-record** follow-up with depth decisions and editor targets; names and source evidence are still provisional |
+| [QUEST_DEPTH_SUPPLEMENT_V0_3.csv](QUEST_DEPTH_SUPPLEMENT_V0_3.csv) | **250 additional system-specific quest ideas** across 19 chapter/subject tracks. Includes PasterDream flower puzzles, Starlight native systems, Bumblezone's peaceful Bee Queen, End Remastered eye-source paths, Opposing Force post-Nether/Post-End spawns and more. **Overlaps with existing seeds must be merged.** |
+| [QUEST_CAMPAIGN_ARCHITECTURE.md](QUEST_CAMPAIGN_ARCHITECTURE.md) | Updated optional-campaign depth ranges reflecting complex content rather than mod name or visual size |
+
+**Planning quantity:** 474 broad seed beats + 250 supplementary leads, **not 724 unique or completed quests**. Still 50 written Questlog narrative drafts and 14 written FTB manual articles. None of the new leads have live quest JSON, item/structure IDs, approved rewards or successful multiplayer gameplay validation. The source roster is expected to change after the planned modpack content expansion.
+
 ## Current outputs
 
 | File | Scope | State |
