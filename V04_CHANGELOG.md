@@ -34,3 +34,7 @@ New source tests assert all twelve exact project/file IDs, preserve inherited pr
 ## 0.4h — Questlog GUI compatibility-only candidate (331 refs)
 
 Added the native NeoForge 1.21.1 Questlog 3.4.1 (`1202066:8952784`) on the experimental preflight-hardening branch without touching the earlier successful 330-ref ZIP. Its required Cloth Config 15.0.140 is already pinned in the original baseline (`348521:5729127`). Added source-backed `questlog-client.toml` trial for a screen-anchored button; no chapters, quests, rewards, class progression or FTB Quest replacements. Final button position and coexistence with the customized inventory must be confirmed in-game. See `V04_QUESTLOG_COMPAT.md`.
+
+## v0.4h launch-readiness tooling (no mod changes)
+
+Kept all **331 project/file pins** including Questlog and Mine Cells unchanged. Added a read-only installed-JAR metadata scanner with synthetic tests and separate client/server comparison, plus a local test runbook for the remaining 23 restricted/failed binary metadata records. New GitHub Actions package includes optional diagnostic tools beside the ZIP exports for Windows and command-line use. Passing metadata checks are not proof of complete Minecraft/client/server runtime compatibility.

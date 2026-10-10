@@ -54,3 +54,10 @@ Acceptance remains experimental until these client/gameplay/multiplayer checks p
 - [ ] Test FTB Quests and FTB Solo Quests separately: controls, team/chunk behavior, journal opening, no loss or duplication of reward/progress.
 - [ ] Check the [button] section of config/questlog-client.toml; move X/Y relative to the screen or inventory based on actual screenshot if required. Restart and check that the adjustment persists.
 - [ ] Repeat with an inventory status-effect panel, backpack, changed HUD dimensions, JEI overlay and multiplayer; capture logs on any mixin/render crash.
+
+## Before first full profile/server acceptance — local static audit
+
+- [ ] Import the **new** ZIP into a disposable profile (not a working instance); verify CurseForge resolved 331 references and note any failed downloads.
+- [ ] Run the included read-only installed-JAR audit against the actual imported profile. Review unresolved dependency IDs and duplicates; check the 23 previous restricted/failed native binary audit cases.
+- [ ] Build a **separate** server installation only with evidence-backed sidedness. Run the audit's optional `--server` comparison. Never equate mod ID differences with confirmed client-only classification.
+- [ ] Run the real dedicated server and inspect loading, registry, mixins, Paxi datapacks, Questlog and Mine Cells; static scan alone cannot pass the server gate.

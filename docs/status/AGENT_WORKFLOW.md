@@ -1,3 +1,10 @@
+
+## 0.4h installed JAR/server readiness hardening — 10 October 2026
+
+**Source-only developer tooling, not a gameplay acceptance pass.** Based on the **331-ref Questlog v0.4h candidate**, GitHub CI `38075828894` had **PASS** for all source, ZIP and deterministic repeat gates. Exact archive SHA-256s: PRIVATE `c611dd21ba6c3206881d47ca44b9ec13f239a019eb9d8c4a2384688a3df11784`; reference-only `514140b2b4b361b43a916cc5caff5b478c903633de8d4e448244b74afa93243e`. These hashes are historical for that exact successfully built source, not a claim about future changes.
+
+Follow-on integration branch: `experimental/v0.4h-launch-readiness-20261010`. New `tools/audit_installed_jars_v04.py` reads top-level NeoForge and Fabric metadata in a CurseForge-imported profile and compares optional dedicated-server JAR lists. It flags duplicate mod IDs, unreadable metadata and unresolved declared dependencies **without claiming full dependency closure, bytecode compatibility, accurate sidedness or runtime tests**. Synthetic unit tests passed on CI run `38077150490`. The original 23 restricted/broken JAR audit cases are *still unverified* until actual installed files can be scanned. See `docs/testing/V04H_INSTALLED_JAR_AND_SERVER_PREFLIGHT.md`. Preserve prior 331-ref and 330-ref artifacts.
+
 ## v0.4 experimental Mine Cells candidate — 10 October 2026
 
 **Current candidate:** `experimental/v0.4-complete-20261010`, source lock `0.4.0-experimental-minecells`, **318 CF references**. Supersedes older contradictory current-status paragraphs below; those are retained as historical evidence. User explicitly authorized continuing broad expansion and fixes before worldgen freeze. `structure/test6`, the existing content branches and `main` remain untouched.

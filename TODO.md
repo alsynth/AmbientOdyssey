@@ -2057,3 +2057,14 @@ Files changed: `SOURCE_CHANGES.csv` records every changed/new source file with b
 Passed: original 76 gates; continuation source/export gates; strict generated JSON; preserved donor roster; placement/member ownership checks; asset-backed repair provenance; client model payload checks; ZIP integrity; clean source rebuild and report regeneration. Exact final gate count is in the validation summary. No gameplay tests performed.
 
 Problems still open: 41 unavailable existing binaries, eight unavailable approved additions, authoritative base-game tags, 70 native resource collisions, live Cristel/Paxi priority, IDAS absent templates, Cook/blank jigsaws, developer-test models, successful natural density and performance. Rollback: original Test 5 archives and hashes in baseline reproduction evidence.
+
+
+### 2026-10-10 — v0.4h launch readiness (331 CurseForge refs)
+
+- [x] Integrate native Questlog 3.4.1 on disposable experiment, keep FTB Quests and no authored campaigns.
+- [x] Verify exact 331-ref PRIVATE and reference-only packages, deterministic repeat and 273 NBT source repairs (CI `38075828894`); do not call Minecraft gameplay-tested.
+- [x] Add read-only local installed-JAR metadata/duplicate-ID/dependency scan and optional dedicated server ID comparison; unit test synthetic NeoForge/Fabric metadata (CI `38077150490`).
+- [ ] On installed CurseForge profile, inspect all 331 downloaded binaries and close historical 23 exact binary/metadata audit gaps; flag CurseForge access failures separately from actual missing dependencies.
+- [ ] Source-backed dedicated server sidedness review, real full 331-ref startup/join/restart/portals/FTB Solo Quests; NO automatic blind copying from client mods.
+- [ ] GUI-scale 2/3 screenshots and live click test for Questlog screen-anchored inventory button, Curios/Accessories/JEI/FTB Quests collisions; revise provisional x/y only after observed result.
+- [ ] Validate 5–7-player worldgen/performance after final roster; no permanent server world yet.
