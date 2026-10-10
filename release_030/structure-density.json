@@ -304,10 +304,11 @@
             "separation": 16
           },
           "after": {
-            "spacing": 20,
-            "separation": 10
+            "spacing": 36,
+            "separation": 24
           },
-          "attempt_density_ratio": 2.56
+          "attempt_density_ratio": 0.79,
+          "note": "Reduce structure-grid opportunities after observed overlap; not a true cross-mod exclusion zone. Test geometry on new seeds."
         },
         "rustic_smithy": {
           "before": {
@@ -315,10 +316,11 @@
             "separation": 12
           },
           "after": {
-            "spacing": 16,
-            "separation": 8
+            "spacing": 28,
+            "separation": 18
           },
-          "attempt_density_ratio": 2.25
+          "attempt_density_ratio": 0.73,
+          "note": "Reduce structure-grid opportunities after observed overlap; not a true cross-mod exclusion zone. Test geometry on new seeds."
         },
         "rustic_well": {
           "before": {
@@ -326,10 +328,11 @@
             "separation": 8
           },
           "after": {
-            "spacing": 12,
-            "separation": 6
+            "spacing": 20,
+            "separation": 12
           },
-          "attempt_density_ratio": 1.778
+          "attempt_density_ratio": 0.64,
+          "note": "Reduce structure-grid opportunities after observed overlap; not a true cross-mod exclusion zone. Test geometry on new seeds."
         },
         "rustic_windmill": {
           "before": {
@@ -337,10 +340,11 @@
             "separation": 12
           },
           "after": {
-            "spacing": 16,
-            "separation": 8
+            "spacing": 32,
+            "separation": 20
           },
-          "attempt_density_ratio": 2.25
+          "attempt_density_ratio": 0.56,
+          "note": "Reduce structure-grid opportunities after observed overlap; not a true cross-mod exclusion zone. Test geometry on new seeds."
         }
       }
     },
