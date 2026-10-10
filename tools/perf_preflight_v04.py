@@ -132,7 +132,7 @@ def main(argv=None):
         result = {"candidate": current[0]}
         if args.compare_to:
             old, old_name, old_outer = read_import_bytes(args.compare_to, args.variant)
-            result["comparison"] = compare(scan_bytes(old, old_name, old_outer, expected_refs=0 if False else args.expected_refs), current)
+            result["comparison"] = compare(scan_bytes(old, old_name, old_outer, expected_refs=args.expected_refs), current)
         encoded = json.dumps(result, indent=2, sort_keys=True) + "\n"
         if args.output:
             args.output.parent.mkdir(parents=True, exist_ok=True)
