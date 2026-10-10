@@ -1,0 +1,30 @@
+name: Test8.9 remaining native graveyard and meadow Swiss pools
+on:
+  push:
+    branches: [worldgen/test8.9-source-triage]
+    paths: [.github/workflows/test89-remaining-native-pools.yml]
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Pin real missing IDs and native owner candidates
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import gzip,json
+          idx=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          data=idx['resources']['worldgen/template_pool']
+          for name in ('graveyard','kaisyn'):
+              for j in idx['jars']:
+                  if name in j['file'].lower() or (name=='kaisyn' and ('t_and_t' in j['file'].lower() or 'towns' in j['file'].lower())):
+                      print('PROVIDER_JAR',name,json.dumps(j),flush=True)
+          for wanted in ('graveyard:large_walled_graveyard/small_crypt_pool','kaisyn:village/meadow_swiss/villagers'):
+              parent=wanted.split(':')[0]
+              print('MISSING_ID',wanted,'native_exists',wanted in data,flush=True)
+              for k,v in data.items():
+                  if k.startswith(parent+':') and ((parent=='graveyard' and ('crypt' in k or 'large_walled_graveyard' in k)) or (parent=='kaisyn' and ('meadow_swiss' in k or 'villagers' in k))):
+                      print('NEARBY_POOL',k,json.dumps(v)[:6500],flush=True)
+          PY
