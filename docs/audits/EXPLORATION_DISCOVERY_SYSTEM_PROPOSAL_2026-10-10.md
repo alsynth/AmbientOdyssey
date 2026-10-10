@@ -1,0 +1,90 @@
+# Ambient Odyssey — Exploration Discovery, Titles and Journal Proposal
+
+**Proposed:** 10 October 2026. **Target:** Minecraft 1.21.1 / NeoForge 21.1.252. **Status:** RESEARCH / DESIGN ONLY. No new mod JARs, manifest pins, resource-pack changes, datapacks or runtime tests were made. This belongs to a **later QoL / progression wave**, after Test8.3 and worldgen acceptance.
+
+## User objectives
+
+- Show polished biome and dimension names on entry, and major structure/dungeon names upon first visit.
+- Record discoveries **silently and persistently, per player**, in normal survival; provide a checklist/progress percentages and filtering for visited vs not-yet-seen.
+- Avoid biome-border notification spam and excessive HUD clutter.
+- Make exploration intrinsically rewarding for 5–7 players and later bridge to the public Ambient Odyssey progression/wiki site.
+- Consider extra optional exploration QoL, avoiding duplicate overlays already provided by Xaero/FTB Quests/other installed mods.
+
+## Current candidate mods / technical evidence
+
+| Component | Candidate | Status / caveats |
+|---|---|---|
+| Biome/dimension titles | **Traveler's Titles (NeoForge)** | Dedicated 1.21.1 NeoForge project (CF `1015155`, YUNGNICKYOUNG); v5.1.3 verified on project page. Biome + dimension title styling, modded biome support, optional sounds/blacklist/Waystones. Candidate only. https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge |
+| Structure entry titles | **First Steps** | Advertises structure titles and out-of-box naming for Dungeons & Taverns, Repurposed Structures, Additional Structures, Structory, Moog's etc. Project aggregate lists NeoForge and 1.21.x, BUT **an exact 1.21.1 NeoForge file was not yet verified**; published supported-environment metadata are partly contradictory. Confirm an actual exact loader file and multiplayer test before adding. https://modrinth.com/mod/first-step-mod |
+| Structure ID debugging | **WITS (What Is This Structure?)** | Server-side 1.21.1 NeoForge `909375:8412915` explicitly verified; `/wits` reports at-position structure identities. *Not* an automatic title or journal. Useful as dev/test aid to reconcile AO aliases/clones and false structure names, not necessarily player-facing. https://www.curseforge.com/minecraft/mc-mods/wits/files/8412915 |
+| Full discovery journal | **Explorer's Journals** (KayDev) | NeoForge 1.21.1 `1720282`, initial 1.0.0 release Oct 2026 claims registry-derived biomes, structures, dimensions, mobs, ores, discovery statistics and individual multiplayer data. **Extremely new/low adoption and unverified**; sandbox prototype in a copied test instance only. Investigate data model, total denominator, false positives, structure-only coverage, GUI/FPS/TPS, world safety and save migration. https://www.curseforge.com/minecraft/mc-mods/explorers-journals |
+| Fabric journal alternative | **Codex: Discoveries** | Fabric 1.21.1 only, source lists Fabric API, so not an automatic NeoForge addition; may be an inspiration only. https://www.curseforge.com/minecraft/mc-mods/codex-discoveries |
+| Existing reliable substrate | **FTB Quests 1.21.1** | Official docs confirm built-in **Visit Biome**, **Find Structure**, and **Advancement** quest tasks: https://docs.feed-the-beast.com/mod-docs/mods/suite/Quests/Developer/Quests/Types/ . Test actual tracking and per-player completion with currently staged FTB Solo Quests; do not assume team settings work until verified. |
+| Custom persistence substrate | **Vanilla data-pack advancements** | 1.21.1 official vanilla `minecraft:location` predicate already tracks entering structure IDs (see `minecraft:end/find_end_city`); can make displayless one-time per-player flags and optionally invoke reward functions/scoreboards. Biome predicates analogous. Requires generated fixed IDs, tests, careful version migrations and denominators; not a fully dynamic mod registry scan. https://mcasset.cloud/1.21.1/data/minecraft/advancement/end/find_end_city.json |
+
+**Do not stack two systems displaying identical biome titles or keep multiple progression journals recording the same events without a clear data-owner decision.**
+
+## Proposed information architecture: AO Explorer's Journal
+
+A. **Biomes visited:** unique biome registry type seen in permitted/active dimensions; **current curated roster + actual installed vanilla/modded**. Include biome unique IDs instead of display text for stable saving. Do not equate "40 intended Overworld donor biomes and 2 Nether donors" with total available biome count — these are curated donor counts, not all possible biomes.
+
+B. **Structure discovered:** entering or reaching a registered, *enabled and reachable* major dungeon/landmark structure. Store the **structure registry ID** and, optionally, first-encounter dimension/coordinates/time. Label aliases and AO clones correctly. Structure-type discovery and physical-instance visitation are two DIFFERENT counters. Do not enumerate all 1,219 catalog rows as a denominator by default; many are variants, clones, duplicates, disabled, inaccessible or small decorative structures.
+
+C. **Dungeon cleared:** separately earned by meaningful evidence (boss kill, configured objective, reward-room activation, or curated FTB Quest). Merely entering a boundary is *not* proof of clearing. Many decorative structures have no meaningful clear condition; mark not applicable.
+
+D. **Dimensions entered:** discrete milestones.
+
+E. **Optional categories:** bosses defeated, rare creatures observed, discoveries documented, rare loot/artifacts secured, secrets, research/photo entries.
+
+**Player data:** per-player persistent progression must survive relog and world restarts; retain stable resource IDs and versioned migrations if content categories expand. Multiplayer global discoveries are optional and must NOT silently complete personal exploration. Test backup/restore and 2-player differences. Avoid auto-uploading player UUIDs/location history to a public website.
+
+## Percentage policy
+
+- Show **category-specific percentages** and a *core exploration* total, not a single misleading denominator. Example: `Biomes 47/92`, `Major structures 28/74`, `Dimensions 4/7`. These counts are illustrative only — derive actual denominators from the final frozen registry and verified reachable sets.
+- Use a stable **core checklist** (realistically achievable) and a separate optional **rare/legendary discoveries** category. Optional extremely rare variants must not make 100% progress impractical or dynamically lower the score after an unrelated mod change without a version notice.
+- Breakdown by dimension/mod and class (ruins, dungeon, village, landmark, ocean), with filter `undiscovered only`, spoiler-safe unknown labels `???` by default.
+- Show world vs pack version in the UI; avoid treating the count of registered dungeon templates/pools as structure count.
+
+## Title/UI behavior
+
+- **Dimensions:** large ceremonial title on *first entry*, optional subdued variant on later dimension travel.
+- **Biomes:** compact/subtle subtitle; debounce ~15–45 seconds and only alert for meaningful transition, not repeated border crossings. Configurable always / first visit only / off.
+- **Major structure / dungeon:** distinct title with optional short sound, **first-time per structure type or discovered instance**; configurable based on user preference. Set title precedence `major structure > dimension > biome` and queue/coalesce overlapping notifications.
+- **Minor buildings:** no automatic dramatic title; log if meaningful without pop-up.
+- **Accessibility:** scale, opacity, sound, mute, notification duration, hide entirely, shader/HUD overlap test.
+- **Discovery toast text:** `New discovery: [Name]`, and optionally category progress (e.g. `23 / 85`). No global chat flood, spoilers or forced automatic Xaero waypoints by default.
+
+## Implementation options (ordered by initial cost)
+
+1. **Minimal prototype using what AO already installs:** FTB Quests with two **Visit Biome** tasks and two **Find Structure** tasks (one vanilla + one modded each), plus staged FTB Solo Quests. Verify tasks complete quietly, survive logout, remain independent between players, and only trigger on actual discoveries. Build a compact optional Explorer chapter, with milestones. Native FTB Quests chapter progress UI may suffice before building our own mod.
+2. **Vanilla datapack generated by Python from approved AO registry:** one displayless `data/ambient_odyssey/advancement/explore/...` per selected biome/structure, `minecraft:location` with exact player predicates; optional reward `function` to increment per-player scoreboard only once; test reconnect, re-grant, upgrades and migration. No server mod necessary. Structure IDs must refer to real effective registry, no wishful names. Direct custom UI/per-type counts require commands/FTB integration or a lightweight client mod.
+3. **Existing Explorer's Journals prototype:** compare its native discovery engine and UI against FTB/datapack reference in an isolated instance; prefer only if accurate and maintains per-player data at modest overhead.
+4. **Purpose-built AO Explorer mod / public site extension (later):** server-authoritative event-driven registry discovery, true per-player history, visit locations, encounter tags, custom journal UI and optional export. Not needed until prototype establishes why datapack/FTB is insufficient. Public atlas could show static coverage and guides; user progress syncing requires explicit opt-in and privacy design.
+
+### Small prototype / objective gates
+
+- Use a **copy** of the Test8.2 working profile; do not edit active Test8.3 until worldgen accepted. Select `minecraft:plains`, one known current modded surface biome, one vanilla structure, and one real modded dungeon from the effective registered IDs. Verify structure IDs using WITS / `/locate` / in-game debug where appropriate; `/locate` alone is *not* natural discovery.
+- Two different players, fresh save and previously used world. Walk across short adjacent-biome boundaries, enter structures and move to adjacent jigsaw pieces. Check title spam, first-discovery vs repeated visit, dimension crossings, death/relog, world save and game restart.
+- Verify FTB Quest per-player independence with FTB Solo Quests on server; check whether “find” means nearby, inside bounding box or another condition.
+- Audit disabled structures, cloned structure IDs, content added later, hidden End/Nether structures, rare ocean structures and nonregistered/code-spawned landmarks.
+- Measure title rendering, logger warnings and CPU/tick impact in 5–7-player scenario; make no claim of zero performance overhead.
+- If advanced enough, export a compact `exploration-registry.json` to the wiki from the same validated authoring source; do **not** expose player progress by default.
+
+## Additional exploration QoL suggestions (research only)
+
+- **Expedition log / recent discoveries:** location/time of first entrance, with biome/structure note and optionally a single manual screenshot; avoid duplicating Xaero map features.
+- **One-click revisit/bookmark:** optional marking of major *already discovered* structures on Xaero; no free unexplored coordinates or globally revealed POIs. Respect server maps and spoilers.
+- **Milestone ranks:** Cartographer → Pathfinder → Wayfinder → Explorer → Master Explorer; cosmetic titles for 10/25/50/75/100% in chosen category, not strong combat rewards.
+- **Party vs personal exploration:** optional server-wide “first explorer” acknowledgment, but personal progress stays personal. Avoid ubiquitous notifications; no automatic team auto-completion.
+- **Documented rarity:** rare discoveries show small flavor text or lore after discovery; mysterious names hidden until seen.
+- **Expedition preparation:** optional travel supplies, biome dangers and waypoint reminders, linking later to gear tier/boss planner without spoilering loot before the first visit.
+- **Environmental photo album:** purely opt-in later; no default local screenshot collection/upload.
+- **Explore by biome family / dimension:** meaningful grouped checklists rather than hundreds of unfiltered rows.
+- **Return route safety:** sensible markers for portals, major waystones and death coordinates if Xaero settings do not already cover them; avoid adding overlapping map mods.
+- **Explorer's achievements:** personal/collective milestone panels and curated rare discoveries, but do not turn mundane biome hopping into a required quest grind.
+
+## Decision status
+
+- **User proposed exploration titles + background discovery checklist; concept supported.** Exact mods/datapack/UI **not selected or approved**. Research and test in separate QoL wave. Preserve worldgen freeze priority.
+- **Engineering recommendation:** start with **Traveler's Titles + native FTB Quests prototype**, then assess **First Steps** exact compatible JAR and **Explorer's Journals** as a comparator. Only build full bespoke journal if required after functional test.
+
