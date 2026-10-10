@@ -38,3 +38,7 @@ Added the native NeoForge 1.21.1 Questlog 3.4.1 (`1202066:8952784`) on the exper
 ## v0.4h launch-readiness tooling (no mod changes)
 
 Kept all **331 project/file pins** including Questlog and Mine Cells unchanged. Added a read-only installed-JAR metadata scanner with synthetic tests and separate client/server comparison, plus a local test runbook for the remaining 23 restricted/failed binary metadata records. New GitHub Actions package includes optional diagnostic tools beside the ZIP exports for Windows and command-line use. Passing metadata checks are not proof of complete Minecraft/client/server runtime compatibility.
+
+## Q1 Field Manual trial — separate experimental ZIP (10 October 2026)
+
+Kept the same **331 pinned mod projects** and the prior **50 native Questlog Q1 quests**. Added **29 FTB Quests in-game educational reference pages across 3 chapters** with optional checkmark markers, zero rewards, no dependencies or forced tutorials. Original WDA SNBT chapter is untouched; pre-existing English translation keys preserved while 29 article translations were appended. FTB Q1 source and package static validation passed GitHub Actions `38080599858` (source `e003e791b22aee124e551b47782b2a9332204856`); private ZIP 70,913,963 bytes SHA256 `9db3bbfaaf74a5d216795ac6934cf7c26d744ff228924bfc06630e3f9cfc5d1f`, reference-only ZIP 70,841,413 bytes SHA256 `a7b5d97d29a4673ac4d60de8723b59114945881e0992627f4c5c403faf24e191`. Actual FTB GUI, Questlog click behavior and multiplayer are NOT TESTED.

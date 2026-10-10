@@ -2089,3 +2089,15 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Test separate 2-player server progress, dimension transitions, Questlog save/restart migration, FTB Quests/FTB Solo Quests coexistence; do not use permanent server world.
 - [ ] Reconcile actual installed mod/entity/item/structure registries and replace only verified Q1 introduction pages with substantial Q2 mod-specific real encounter quest chains.
 - [ ] Expand the FTB Field Manual from existing drafts into actual localized in-game reference pages, without double-claiming Questlog rewards.
+
+
+### Q1 FTB Field Manual implemented — 10 October 2026
+
+- [x] Convert 14 Field Manual original tutorials + 8 Tips & Tricks sections + 7 Keybind reference sections into 29 accessible FTB SNBT article entries and localized English text.
+- [x] Keep original WDA chapter, existing quest rewards, source mod roster, Q1 Questlog 50 quests and CurseForge pin list unchanged (331 refs).
+- [x] Each FTB page is optional checkmark only, zero rewards, zero mandatory dependencies; disable completion toasts and avoid duplicate Questlog quest payouts.
+- [x] Validate SNBT syntax using FTB comma-optional normalization, unique hex IDs, task structure, WDA localization continuity, chapter/article counts and package inclusion.
+- [x] GitHub Actions `38080599858` success; PRIVATE SHA256 `9db3bbfaaf74a5d216795ac6934cf7c26d744ff228924bfc06630e3f9cfc5d1f`, CF-References `a7b5d97d29a4673ac4d60de8723b59114945881e0992627f4c5c403faf24e191`; byte-identical private repeat.
+- [ ] On a new client, verify 3 manual chapters show beside WDA, readable article wrapping and scrolling, checkmark persistence, no XP/item rewards, Questlog coexistence, and actual remappable keybinds.
+- [ ] On a dedicated server, verify FTB Solo Quests / team behavior per player separately from Questlog, journal saving after restart, and no quest progress duplication.
+- [ ] After installed JAR and runtime registry audit, deepen optional dimension, boss and spell quests with verified item/structure/entity IDs rather than fictitious triggers.
