@@ -1703,6 +1703,15 @@ If later worldgen changes affect previously tested structure placement, repeat t
 
 Once the foundation passes:
 
+**Nine-theme expansion gap audit — 10 Oct 2026:** [source-backed theme rankings and mod shortlist](docs/audits/CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md). **RESEARCH ONLY, not permission to install**. Key content gaps: **(1) inhabited functional settlements, (2) archaeology/puzzles/interactive discoveries, (3) unique cave ecosystems, (4) biome-matched living fauna**; ocean and dimensions already rich, QoL offers fast high-value fixes.
+- [ ] **First quick utility candidate:** Controlling **19.0.5** NeoForge 1.21.1 (search keybinds/conflicts), verify Searchables dependency and current DefaultOptions/backpack/JEI interactions; optionally Villager Names 1.21.1 server-side. Do not install until post-worldgen approval.
+- [ ] **Settlements shortlist:** Guard Villagers **2.4.12** NeoForge 1.21.1 (test guards in CTOV/Towns and Towers/Grand Capitals, movement AI and hostile mod interaction); Easy NPC **7.14.0 bundle** 1.21.1 (test 3 hand-authored NPC dialogs + actual Questlog trigger bridge). MCA Reborn 7.7.36 and MineColonies 1.1.1403 **park** due broad simulation/AI and potential focus creep.
+- [ ] **Cave and discovery shortlist:** Galosphere 1.21.1 NeoForge (biomes + crystal/lichen/pink salt, archaeology, mole miniquests and Echo Altar); Better Archeology **1.3.9** NeoForge 1.21.1 (brushables/artifacts/structures). **Trial one archaeology provider first**; compare against existing Archaion, Archaeology Ruins, Alex's Caves, FTF cave selectors and overfull surface structure mix.
+- [ ] **Naturalism shortlist:** Naturalist **2.0.3** NeoForge 1.21.1, selective species/spawn tags and mob caps for BWG/BOP/RU; adjust existing Alex's Mobs, Hominid and Hybrid Aquatic first. Keep **flies disabled**, harmless bees/butterflies, test TPS/pathfinding with 5–7 players.
+- [ ] **Ocean design:** finish current Aquamirae/Hybrid Aquatic/Deeper Oceans/NeoReefRedux trials, loot tables for FTB Ocean Mobs and underwater equipment loop; **Beyond the Ocean** remains later user-approved audit, not current addition. No automatic Tide 2/Sea Myths/Upgrade Aquatic.
+- [ ] **Atmosphere shortlist:** Serene Seasons **10.1.0.3** (NeoForge 1.21.1 beta, config/biome foliage and crop penalties), AmbientSounds **6.3.10** 1.21.1 NeoForge (check overlap and voice-chat fatigue), Dusty Decorations **2.2.0** 1.21.1 NeoForge (**2.x world-block rewrite hazard**), Night Lights **1.4.0** optional. Avoid multiple new heavy cosmetic stacks.
+- [ ] **Dimensions & lifestyle:** finish existing Aether, Twilight, Starlight, Undergarden, PasterDream and Bumblezone quest contents; don't auto-add unverified Blue Skies or deferred Mine Cells/Connector; use existing Farmer's Delight/Create/fishing in optional small quests and FTB technical handbook.
+
 ### Living world and ecology
 
 - Wildlife and ecosystems.
