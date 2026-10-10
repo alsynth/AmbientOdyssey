@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.4",
+  "version": "0.3.8-worldgen-prefreeze-test1.5",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1053,6 +1053,18 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/midnightlib/files/7318664"
+    },
+    "structure-lukis-woodland-mansions": {
+      "id": 7227735,
+      "projectId": 1385782,
+      "fileName": "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+      "displayName": "Luki's Woodland Mansions v1.0 (1.21.1)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/lukis-woodland-mansions/files/7227735"
     }
   },
   "optional_integrated_patches": {
