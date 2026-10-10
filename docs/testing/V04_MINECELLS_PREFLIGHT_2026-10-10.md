@@ -1,0 +1,24 @@
+# Ambient Odyssey 0.4 — Mine Cells integration / preflight gate (10 Oct 2026)
+
+**Status: BLOCKED — NOT a release and NOT runtime tested.** Branch: `experimental/v0.4-minecells-preflight` forks `structure/test6`; `main` remains rollback. This document intentionally does not alter the source lock or claim Mine Cells is installed.
+
+## Verified pinned Mine Cells candidate
+- CurseForge project **618790**, file **7033510**, `minecells-2.0.3.jar`, Minecraft **1.21.1 Fabric beta** (25 Sep 2025). Source: https://www.curseforge.com/minecraft/mc-mods/minecells/files/7033510
+- **Not a NeoForge mod**. Present AO loader **NeoForge 21.1.252**. A manifest entry with `gameVersions: ['1.21.1','NeoForge']` would be false; do not bypass `build_release_030.py`'s NeoForge assertion merely to satisfy validation.
+- Candidate path: **isolated Sinytra Connector 1.21.1 compatibility profile**, with matching Connector, Forgified Fabric API and Launchpad (and only the dependencies actually declared by exact Mine Cells JAR). Official docs: https://github.com/Sinytra/Connector
+- Connector 1.21.1 availability does **not** verify Mine Cells compatibility. Run actual JAR metadata, transformation, mod-load and gameplay smoke tests first.
+
+## Mandatory gating sequence
+1. Reproduce latest active source build on `structure/test6` without editing. Preserve Test8.2 successful world/save, Test8.3 archive and full hashes. Current Test8.3 PRIVATE import is 71,024,819 bytes, SHA256 `3034cee70e600c24ae6139580ef67c3c5b6a3a6a25f01df0887b31ebf5b1d664`, 265 CF refs, but **not runtime tested**.
+2. Audit all Mine Cells 2.0.3 Fabric `fabric.mod.json` dependencies and client/server entrypoints from exact JAR; check Fabric library dependencies and conflicting embedded APIs against AO's NeoForge stack. Verify the exact 1.21.1 versions of Connector/FFAPI/Launchpad and any library pins from official metadata. Record hashes.
+3. Use disposable small NeoForge instance **without AO**, Mine Cells + dependencies only. Test main menu, fresh world, Mine Cells dimension entry, structures/mobs/bosses/loot; client and dedicated server. Inspect logs for mixin, registry, networking and datafix issues.
+4. Add a representative set of AO mod conflicts to the isolated instance: Embeddium/NeOculus rendering, GeckoLib, Create, existing dimension and structure generators, curios/accessories, origins and multiplayer. Do **not** assume successful transformation means compatible gameplay.
+5. Once successful, add approved verified exact project/file pins to `release_030/release-lock.json` in separate experimental commit; update build validation to support explicitly approved Fabric-via-Connector pins **without weakening** unrelated NeoForge validation. Check all transitive libraries and CurseForge import behavior; preserve legal distribution (no third-party JARs committed).
+6. Compile Paxi worldgen/recipes, build reproducibly twice, run validators, compare ZIP CRC/paths, ensure `manifest.json` is at archive root, no duplicate project IDs, ensure shipped shader/resource/config overrides all exist. Build separate **PRIVATE test artifact** and **public CurseForge-compatible import**; Better Bastions and NeoReefRedux manual JARs cannot be silently treated as redistributable public manifest entries.
+7. After clean launch, run: Mine Cells portal progression/respawning, dimension reload, boss/loot, server rejoin/two-player synchronization, restart and nether/end dimension transitions. Check new spawn/structure registration does not degrade worldgen or break loot.
+8. Existing Test8.3 issues: validate Flight Rings two smelting recipes in JEI; Create Arise windmill salt uniqueness; Additional Structures Pale Garden optional tag; tag/loot parsing errors (Traveloptics, Fungi Delight, Iron's Jewelry, BetterEnd/Patchouli, Enigmatic texture); legacy IDs and GeckoLib animations. Avoid speculative rewrites before inspecting exact source JAR/registries.
+9. Worldgen performance must be benchmarked: Test8.2 FTF generated 2,952 chunks at **7.14 real chunks/sec** with **five server stalls**. Distinguish cold/warm first-chunk generation, Streams Reflowing prefetch, FTF, and additional dimension load; inspect bridging, oceans, vanilla/modded biome parity and huge tree/path systems. Dedicated 5–7-player server and first-use vs cached chunks required.
+10. Label 0.4 **EXPERIMENTAL** until the actual 0.4 ZIP is built/hashed and runtime-tested. No approved production worldgen freeze yet.
+
+## Scope / constraints
+User explicitly reprioritized Mine Cells as important on 10 Oct 2026 (supersedes the older deferred label). This **authorizes investigation/integration, not pretending a Fabric JAR is native NeoForge**. Avoid new unrelated worldgen addons while fixing the above failures; preserve intentional rarity and curated biome exclusions. Do not delete a tested working build.

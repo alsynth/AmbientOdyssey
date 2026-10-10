@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "biomeswevegone:dacite_shore",
     "regions_unexplored:grassy_beach"
   ]
 }

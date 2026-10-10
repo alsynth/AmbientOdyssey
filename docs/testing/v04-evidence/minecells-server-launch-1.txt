@@ -1,0 +1,239 @@
+[32m[19:29:41.384] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.252, --fml.fmlVersion, 4.0.44, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430, nogui] 
+[m[32m[19:29:41.386] [main/INFO] [Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.12.1+1-LTS 
+[m[32m[19:29:41.387] [main/INFO] [Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.12.1 by Eclipse Adoptium; OS Linux arch amd64 version 6.18.44 
+[m[32m[19:29:41.478] [main/INFO] [loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver 
+[m[32m[19:29:41.537] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/workspace/scratch/e5043e476c42/minecells-smoke-controlled/libraries/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER 
+[m[32m[19:29:41.814] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.252:server] 
+[m[32m[19:29:41.833] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.252-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries/net/neoforged/neoforge/21.1.252/neoforge-21.1.252-universal.jar]], reader: mod manifest] 
+[m[32m[19:29:41.835] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "~nonexistent" [locator: org.sinytra.connector.locator.ConnectorEarlyLocatorBootstrap@67389cb8] 
+[m[32m[19:29:41.843] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar" [locator: {mods folder locator at /workspace/scratch/e5043e476c42/minecells-smoke-controlled/mods}, reader: mod manifest] 
+[m[33m[19:29:41.877] [main/WARN] [loading.moddiscovery.ModDiscoverer/SCAN]: Skipping jar. File /workspace/scratch/e5043e476c42/minecells-smoke-controlled/mods/minecells-2.0.3.jar is a Fabric mod and cannot be loaded 
+[m[32m[19:29:41.882] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar" [locator: {mods folder locator at /workspace/scratch/e5043e476c42/minecells-smoke-controlled/mods}, reader: mod manifest] 
+[m[33m[19:29:42.187] [main/WARN] [selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: library:net.fabricmc.loader. Using Mod File: /~nonexistent 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 51 dependencies adding them to mods collection 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-transfer-api-v1-5.4.4+6244b11119.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-renderer-api-v1-3.4.1+9125b6dc19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "jankson-0.1.5.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar] 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-item-api-v1-11.3.0+b24c12f719.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.252.jar" [parent: neoforge-21.1.252-universal.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-model-loading-api-v1-2.1.0+6e8f52c719.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.187] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-fluids-v1-3.1.6+ddc51b4719.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-screen-handler-api-v1-1.3.91+8dbc56dd19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-resource-loader-v0-1.3.1+4ea8954419.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-v1-5.1.0+1a09bd5a19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-renderer-indigo-1.7.1+9125b6dc19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "netty-0.1.4.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-convention-tags-v1-2.1.7+7f945d5b19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "endec-0.1.8.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-block-view-api-v2-1.0.11+e9036fd419.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-command-api-v2-2.2.28+36d727be19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-convention-tags-v2-2.12.0+75d3639619.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.188] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-data-attachment-api-v1-1.4.7+26d408aa19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-screen-api-v1-2.0.26+9991ca2f19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-particles-v1-4.0.2+824f924c19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-content-registries-v0-8.0.19+5e0d320019.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-transitive-access-wideners-v1-6.2.0+6c854b6f19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "jankson-1.2.2.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.3.jar" [parent: neoforge-21.1.252-universal.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-game-rule-api-v1-1.0.53+36d727be19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "gson-0.1.5.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-api-base-0.4.42+d1308dedd1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-renderer-registries-v1-3.2.69+df3654b319.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-api-lookup-api-v1-1.6.72+6244b11119.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-blockrenderlayer-v1-1.1.52+c290471319.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-block-api-v1-1.1.0+b0c22bb819.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-resource-conditions-api-v1-4.3.0+5bdd099819.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.189] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-item-group-api-v1-4.1.7+e324903319.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-gametest-api-v1-2.0.5+29f188ce19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-biome-api-v1-13.0.31+1e62d33c19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-entity-events-v1-1.8.0+e46a02ca19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-registry-sync-v0-5.3.2+f9aace1619.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-recipe-api-v1-5.0.16+59440bcc19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-object-builder-api-v1-15.2.1+cc242efd19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-loot-api-v2-3.0.15+a3ee712d19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-loot-api-v3-1.0.3+333dfad919.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-data-attachment-v1-0.3.49+73761d2e19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-networking-api-v1-4.3.1+7e3d421f19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-sound-api-v1-1.0.23+10b84f8419.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-message-api-v1-6.0.14+6a754fce19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-lifecycle-events-v1-2.6.0+e40d8add19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-tag-api-v1-1.3.0+3e2bcb4b19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-data-generation-api-v1-20.3.0+3e2bcb4b19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-events-interaction-v0-0.7.14+057f5afd19.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.190] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-key-binding-api-v1-1.0.47+62cc7ce119.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.191] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-client-tags-api-v1-1.2.0+5adff2d719.jar" [parent: forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar, locator: jarinjar, reader: mod manifest] 
+[m[32m[19:29:42.410] [main/INFO] [locator.DependencyResolver/]: Dependency resolution found 3 candidates to load 
+[m[32m[19:29:45.571] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "minecells-2.0.3$gimm1q-0.7.10+1.21.1$Crunch-2.0.3_mapped_moj_1.21.1.jar" [locator: org.sinytra.connector.locator.ConnectorLocator@b40bb6e] 
+[m[32m[19:29:45.571] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "minecells-2.0.3$gimm1q-0.7.10+1.21.1_mapped_moj_1.21.1.jar" [locator: org.sinytra.connector.locator.ConnectorLocator@b40bb6e] 
+[m[32m[19:29:45.572] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "minecells-2.0.3_mapped_moj_1.21.1.jar" [locator: org.sinytra.connector.locator.ConnectorLocator@b40bb6e] 
+[m[32m[19:29:45.583] [main/INFO] [loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection 
+[m[32m[19:29:45.583] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "org.sinytra.connector-2.0.0-beta.17+1.21.1-mod.jar" [parent: , locator: org.sinytra.connector.locator.ConnectorLocator@b40bb6e, reader: mod manifest] 
+[m[32m[19:29:45.583] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "runtime-1.0.0+1.21.1.jar" [parent: , locator: org.sinytra.connector.locator.ConnectorLocator@b40bb6e, reader: mod manifest] 
+[m[32m[19:29:45.586] [main/INFO] [loading.moddiscovery.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		Forgified Fabric API 0.116.15+2.3.5+1.21.1 (fabric_api)
+		Forgified Fabric API Base 0.4.42+d1308dedd1 (fabric_api_base)
+		Forgified Fabric API Lookup API (v1) 1.6.72+6244b11119 (fabric_api_lookup_api_v1)
+		Forgified Fabric Biome API (v1) 13.0.31+1e62d33c19 (fabric_biome_api_v1)
+		Forgified Fabric Block API (v1) 1.1.0+b0c22bb819 (fabric_block_api_v1)
+		Forgified Fabric BlockRenderLayer Registration (v1) 1.1.52+c290471319 (fabric_blockrenderlayer_v1)
+		Forgified Fabric BlockView API (v2) 1.0.11+e9036fd419 (fabric_block_view_api_v2)
+		Forgified Fabric Client Tags 1.2.0+5adff2d719 (fabric_client_tags_api_v1)
+		Forgified Fabric Command API (v2) 2.2.28+36d727be19 (fabric_command_api_v2)
+		Forgified Fabric Content Registries (v0) 8.0.19+5e0d320019 (fabric_content_registries_v0)
+		Forgified Fabric Convention Tags 2.1.7+7f945d5b19 (fabric_convention_tags_v1)
+		Forgified Fabric Convention Tags (v2) 2.12.0+75d3639619 (fabric_convention_tags_v2)
+		Forgified Fabric Data Attachment API (v1) 1.4.7+26d408aa19 (fabric_data_attachment_api_v1)
+		Forgified Fabric Data Generation API (v1) 20.3.0+3e2bcb4b19 (fabric_data_generation_api_v1)
+		Forgified Fabric Entity Events (v1) 1.8.0+e46a02ca19 (fabric_entity_events_v1)
+		Forgified Fabric Events Interaction (v0) 0.7.14+057f5afd19 (fabric_events_interaction_v0)
+		Forgified Fabric Game Rule API (v1) 1.0.53+36d727be19 (fabric_game_rule_api_v1)
+		Forgified Fabric Game Test API (v1) 2.0.5+29f188ce19 (fabric_gametest_api_v1)
+		Forgified Fabric Item API (v1) 11.3.0+b24c12f719 (fabric_item_api_v1)
+		Forgified Fabric Item Group API (v1) 4.1.7+e324903319 (fabric_item_group_api_v1)
+		Forgified Fabric Key Binding API (v1) 1.0.47+62cc7ce119 (fabric_key_binding_api_v1)
+		Forgified Fabric Lifecycle Events (v1) 2.6.0+e40d8add19 (fabric_lifecycle_events_v1)
+		Forgified Fabric Loot API (v2) 3.0.15+a3ee712d19 (fabric_loot_api_v2)
+		Forgified Fabric Loot API (v3) 1.0.3+333dfad919 (fabric_loot_api_v3)
+		Forgified Fabric Message API (v1) 6.0.14+6a754fce19 (fabric_message_api_v1)
+		Forgified Fabric Model Loading API (v1) 2.1.0+6e8f52c719 (fabric_model_loading_api_v1)
+		Forgified Fabric Networking API (v1) 4.3.1+7e3d421f19 (fabric_networking_api_v1)
+		Forgified Fabric Object Builder API (v1) 15.2.1+cc242efd19 (fabric_object_builder_api_v1)
+		Forgified Fabric Particles (v1) 4.0.2+824f924c19 (fabric_particles_v1)
+		Forgified Fabric Recipe API (v1) 5.0.16+59440bcc19 (fabric_recipe_api_v1)
+		Forgified Fabric Registry Sync (v0) 5.3.2+f9aace1619 (fabric_registry_sync_v0)
+		Forgified Fabric Renderer - Indigo 1.7.1+9125b6dc19 (fabric_renderer_indigo)
+		Forgified Fabric Renderer API (v1) 3.4.1+9125b6dc19 (fabric_renderer_api_v1)
+		Forgified Fabric Renderer Registries (v1) 3.2.69+df3654b319 (fabric_renderer_registries_v1)
+		Forgified Fabric Rendering (v1) 5.1.0+1a09bd5a19 (fabric_rendering_v1)
+		Forgified Fabric Rendering Data Attachment (v1) 0.3.49+73761d2e19 (fabric_rendering_data_attachment_v1)
+		Forgified Fabric Rendering Fluids (v1) 3.1.6+ddc51b4719 (fabric_rendering_fluids_v1)
+		Forgified Fabric Resource Conditions API (v1) 4.3.0+5bdd099819 (fabric_resource_conditions_api_v1)
+		Forgified Fabric Resource Loader (v0) 1.3.1+4ea8954419 (fabric_resource_loader_v0)
+		Forgified Fabric Screen API (v1) 2.0.26+9991ca2f19 (fabric_screen_api_v1)
+		Forgified Fabric Screen Handler API (v1) 1.3.91+8dbc56dd19 (fabric_screen_handler_api_v1)
+		Forgified Fabric Sound API (v1) 1.0.23+10b84f8419 (fabric_sound_api_v1)
+		Forgified Fabric Tag API (v1) 1.3.0+3e2bcb4b19 (fabric_tag_api_v1)
+		Forgified Fabric Transfer API (v1) 5.4.4+6244b11119 (fabric_transfer_api_v1)
+		Forgified Fabric Transitive Access Wideners (v1) 6.2.0+6c854b6f19 (fabric_transitive_access_wideners_v1)
+		Gimm1q 0.7.10_1.21.1 (gimm1q)
+		Mine Cells 2.0.3 (minecells)
+		Minecraft 1.21.1 (minecraft)
+		NeoForge 21.1.252 (neoforge)
+		oωo 0.12.15.5-beta.1+1.21 (owo)
+		Sinytra Connector 2.0.0-beta.17+1.21.1 (connector) 
+[m[32m[19:29:45.781] [main/INFO] [service.hacks.ModuleLayerMigrator/]: Successfully made module authlib transformable 
+[m[32m[19:29:45.782] [main/INFO] [service.hacks.ModuleLayerMigrator/]: Successfully made module brigadier transformable 
+[m[32m[19:29:45.918] [main/INFO] [mixin/]: Compatibility level set to JAVA_17 
+[m[32m[19:29:45.919] [main/INFO] [mixin/]: Compatibility level set to JAVA_21 
+[m[32m[19:29:45.962] [main/INFO] [LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui] 
+[m[33m[19:29:46.047] [main/WARN] [mixin/]: Reference map '' for adapter.init.mixins.json could not be read. If this is a development environment you can ignore this message 
+[m[33m[19:29:46.239] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/lithium/common/entity/LithiumEntityCollisions (java.lang.ClassNotFoundException: me.jellysquid.mods.lithium.common.entity.LithiumEntityCollisions) 
+[m[33m[19:29:46.377] [main/WARN] [mixin/]: Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org.jetbrains.annotations.ApiStatus$Internal) 
+[mWARN StatusConsoleListener Advanced terminal features are not available in this environment
+[19:29:46] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[19:29:52] [main/INFO] [gimm1q/]: Initializing Gimm1q - Mim1q's Fabric modding library!
+[19:29:52] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.252, for MC 1.21.1
+[19:29:52] [modloading-worker-0/INFO] [owo/]: Its called Unobtainium until you obtain it, thats the thing
+[19:29:52] [main/INFO] [mojang/YggdrasilAuthenticationService]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[19:29:52] [Yggdrasil Key Fetcher/ERROR] [mojang/YggdrasilServicesKeyInfo]: Failed to request yggdrasil public key
+com.mojang.authlib.exceptions.MinecraftClientException: Failed to read from https://api.minecraftservices.com/publickeys due to api.minecraftservices.com
+	at TRANSFORMER/connector$authlib/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:108) ~[authlib-6.0.54.jar%2398!/:?] {re:classloading}
+	at TRANSFORMER/connector$authlib/com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:57) ~[authlib-6.0.54.jar%2398!/:?] {re:classloading}
+	at TRANSFORMER/connector$authlib/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo.fetch(YggdrasilServicesKeyInfo.java:114) ~[authlib-6.0.54.jar%2398!/:?] {re:classloading}
+	at TRANSFORMER/connector$authlib/com.mojang.authlib.yggdrasil.YggdrasilServicesKeyInfo$1.run(YggdrasilServicesKeyInfo.java:89) ~[authlib-6.0.54.jar%2398!/:?] {re:classloading}
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?] {}
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[?:?] {}
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?] {}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {re:mixin}
+Caused by: java.net.UnknownHostException: api.minecraftservices.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?] {}
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?] {}
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?] {}
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?] {}
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:539) ~[?:?] {}
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:644) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:265) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:196) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1305) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1146) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1075) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:181) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1707) ~[?:?] {}
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1632) ~[?:?] {}
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?] {}
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?] {}
+	at TRANSFORMER/connector$authlib/com.mojang.authlib.minecraft.client.MinecraftClient.readInputStream(MinecraftClient.java:84) ~[authlib-6.0.54.jar%2398!/:?] {re:classloading}
+	... 9 more
+[19:29:52] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/e5043e476c42/minecells-smoke-controlled/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23122!/assets/.mcassetsroot' uses unexpected schema
+[19:29:52] [main/WARN] [minecraft/VanillaPackResourcesBuilder]: Assets URL 'union:/workspace/scratch/e5043e476c42/minecells-smoke-controlled/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23122!/data/.mcassetsroot' uses unexpected schema
+[19:29:53] [main/INFO] [minecraft/Main]: No existing world data, creating new world
+[19:29:54] [main/INFO] [minecraft/RecipeManager]: Loaded 1584 recipes
+[19:29:54] [main/INFO] [minecraft/AdvancementTree]: Loaded 1642 advancements
+[19:29:54] [main/INFO] [co.gi.mi.mi.MineCells/]: Reloading Spawner Rune data...
+[19:29:54] [main/INFO] [gimm1q/]: Saved 36 Value Calculator templates to config folder
+[19:29:54] [Server thread/INFO] [minecraft/DedicatedServer]: Starting minecraft server version 1.21.1
+[19:29:54] [Server thread/INFO] [minecraft/DedicatedServer]: Loading properties
+[19:29:54] [Server thread/INFO] [minecraft/DedicatedServer]: Default game type: SURVIVAL
+[19:29:54] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[19:29:54] [Server thread/INFO] [minecraft/DedicatedServer]: Starting Minecraft server on 127.0.0.1:25580
+[19:29:55] [Server thread/INFO] [minecraft/ServerConnectionListener]: Using epoll channel type
+[19:29:55] [Server thread/WARN] [io.ne.ut.in.MacAddressUtil/]: Failed to find a usable hardware address from the network interfaces; using random bytes: 5f:de:e0:6e:84:06:4c:83
+[19:29:55] [Server thread/WARN] [minecraft/DedicatedServer]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[19:29:55] [Server thread/WARN] [minecraft/DedicatedServer]: The server will make no attempt to authenticate usernames. Beware.
+[19:29:55] [Server thread/WARN] [minecraft/DedicatedServer]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[19:29:55] [Server thread/WARN] [minecraft/DedicatedServer]: To change this, set "online-mode" to "true" in the server.properties file.
+[19:29:55] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "controlled-smoke"
+[19:29:58] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld
+[19:29:58] [Worker-Main-3/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[19:29:59] [Worker-Main-3/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 2%
+[19:29:59] [Worker-Main-6/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 18%
+[19:30:00] [Worker-Main-4/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 18%
+[19:30:00] [Worker-Main-6/INFO] [minecraft/LoggerChunkProgressListener]: Preparing spawn area: 51%
+[19:30:01] [Server thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 2483 ms
+[19:30:01] [Server thread/INFO] [minecraft/DedicatedServer]: Done (6.179s)! For help, type "help"
+[19:30:01] [LanServerPinger #1/WARN] [minecraft/LanServerPinger]: LanServerPinger: Network is unreachable
+[19:30:01] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[19:30:01] [Server thread/INFO] [minecraft/MinecraftServer]: Marked chunk [0, 0] in Prisoners' Quarters to be force loaded
+[19:30:02] [Server thread/INFO] [minecraft/MinecraftServer]: Marked chunk [0, 0] in Promenade of The Condemned to be force loaded
+[19:30:03] [Server thread/INFO] [minecraft/MinecraftServer]: Marked chunk [0, 0] in Ramparts to be force loaded
+[19:30:04] [Server thread/INFO] [minecraft/MinecraftServer]: Marked chunk [0, 0] in Black Bridge to be force loaded
+[19:30:04] [Server thread/INFO] [minecraft/MinecraftServer]: Marked chunk [0, 0] in Insufferable Crypt to be force loaded
+[19:30:04] [Server thread/INFO] [minecraft/MinecraftServer]: Saving the game (this may take a moment!)
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (controlled-smoke): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (ramparts): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (insufferable_crypt): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (promenade): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (black_bridge): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (prison): All chunks are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: Saved the game
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping the server
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[19:30:09] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[19:30:10] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecraft:overworld
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecells:ramparts
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecraft:the_end
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecells:insufferable_crypt
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecells:promenade
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecraft:the_nether
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecells:black_bridge
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[controlled-smoke]'/minecells:prison
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (controlled-smoke): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (ramparts): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (insufferable_crypt): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (promenade): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (black_bridge): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (prison): All chunks are saved
+[19:30:11] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved

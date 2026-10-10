@@ -4,7 +4,7 @@ import json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-e0-audit-broad-content'
+assert lock['version'] in ('0.4.0-e0-audit-broad-content','0.4.0-experimental-minecells')
 pins={
     'betterf3': (401648,5873258,'BetterF3-11.0.3-NeoForge-1.21.1.jar'),
     'pick-up-notifier': (351441,6409785,'PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar'),
@@ -40,7 +40,7 @@ assert installed[638111]==6372979
 # Comforts (project 276951) was already present in the inherited base pack; never silently repin it.
 assert 276951 in {e['projectID'] for e in manifest['files']}, 'Expected inherited Comforts; inspect imported baseline if missing'
 print('INHERITED COMFORTS (no repin):', {e['projectID']:e['fileID'] for e in manifest['files']}[276951])
-assert len(installed)==313,('Expected 296 + 16 candidates plus required Prism; Comforts inherited',len(installed))
+assert len(installed)==(318 if lock['version']=='0.4.0-experimental-minecells' else 313),('Expected 296 + 16 candidates plus required Prism; Comforts inherited',len(installed))
 assert len(set(pid for pid,_,_ in pins.values()))==len(pins)
 assert all(installed[pid]==fid for pid,fid,_ in pins.values())
 # Verify libraries with source/native or CurseForge relations before claiming dependency closure:
@@ -49,5 +49,5 @@ for pid,desc in {495476:'Puzzles Lib (Pick Up Notifier)',638111:'Prism (Legendar
     assert pid in installed,('Missing library project: check exact NeoForge dependency',pid,desc)
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
 assert (ROOT/'release_030/overrides/config/mutantmonsters-common.toml').is_file()
-print('PASS: 0.4e 16 official NeoForge 1.21.1 candidates plus Prism, existing Comforts retained; 313 references; 273 source repairs retained; rarity unchanged.')
+print(f'PASS: 0.4e 16 official NeoForge candidates plus Prism, Comforts retained; {len(installed)} references; 273 repairs retained; rarity unchanged.')
 print('NOT RUNTIME-TESTED: rendering/particle layers, farming double-rightclick, tooltip UI, client keybinds and multiplayer installer sidedness.')

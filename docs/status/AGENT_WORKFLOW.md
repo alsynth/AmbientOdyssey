@@ -1,3 +1,11 @@
+## v0.4 experimental Mine Cells candidate — 10 October 2026
+
+**Current candidate:** `experimental/v0.4-complete-20261010`, source lock `0.4.0-experimental-minecells`, **318 CF references**. Supersedes older contradictory current-status paragraphs below; those are retained as historical evidence. User explicitly authorized continuing broad expansion and fixes before worldgen freeze. `structure/test6`, the existing content branches and `main` remain untouched.
+
+Merged latest active source, all 0.4a–e content/worldgen repair waves and Mine Cells preflight. Added exact Mine Cells/Connector/FFAPI pins with existing NeoForge owo, required Iceberg/JamLib, narrow bridge validation, source-backed Traveloptics JSON/Fungi tag repairs and new-profile 12/6 distance defaults. **Actual isolated four-mod dedicated-server smoke PASS:** fresh world, all five Mine Cells dimensions force-loaded, save, stop, restart and stop. **Full AO v0.4 client/server, portal/boss/player tests NOT TESTED.** Dependency binary gaps explicitly recorded; no stable release promotion.
+
+Read [changelog](../../V04_CHANGELOG.md), [test results and known issues](../../V04_TEST_RESULTS.md), [grouped checklist](../../V04_TESTING_CHECKLIST.md) and `docs/testing/v04-evidence/`. Build with `python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.4-Experimental-MineCells-PRIVATE.zip`; validate with `python tools/validate_v04_release.py <zip> --private`. Reference-only export omits NeoReefRedux. No automatic claim of public distribution approval.
+
 # Ambient Odyssey — Agent Repository Workflow
 
 The **repository is the canonical handoff**, not a conversation, external ZIP or someone's memory.

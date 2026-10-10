@@ -1,3 +1,5 @@
+> **Current experimental v0.4 candidate:** [changelog](V04_CHANGELOG.md), [test results](V04_TEST_RESULTS.md), [grouped acceptance checklist](V04_TESTING_CHECKLIST.md). Branch `experimental/v0.4-complete-20261010`; 318 CF references. Mine Cells minimal server smoke passed; full Ambient Odyssey runtime remains unverified. Historical baseline documentation follows.
+
 # Ambient Odyssey — Minecraft Modpack Development
 
 **Minecraft:** 1.21.1  |  **Loader:** NeoForge 21.1.252  |  **Target:** 5–7-player, exploration-first RPG modpack

@@ -15,3 +15,5 @@ enableVsync:false
 maxFps:160
 menuBackgroundBlurriness:0
 onboardAccessibility:false
+renderDistance:12
+simulationDistance:6

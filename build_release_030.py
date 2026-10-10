@@ -14,12 +14,32 @@ from compile_structure_repairs_031 import compile_repairs
 ROOT = Path(__file__).resolve().parent
 RELEASE = ROOT / 'release_030'
 
+def validate_connector_stack(lock, baseline):
+    """Permit only the audited Fabric Mine Cells pin, with its exact bridge stack."""
+    bridged = [e for e in lock['additions'].values() if e.get('loader_bridge')]
+    if not bridged:
+        return
+    assert len(bridged) == 1, 'Only Mine Cells has an audited bridge exception'
+    e = bridged[0]
+    assert (e['projectId'], e['id'], e['fileName'], e['loader_bridge']) == (
+        618790, 7033510, 'minecells-2.0.3.jar', 'sinytra-connector')
+    assert set(e['gameVersions']) == {'1.21.1', 'Fabric'}
+    assert e['sha256'] == '194b2318ec65896422f70bfc30983eb062c912c85295945c85599f64524e2481'
+    pins = dict(baseline)
+    for pid in lock['remove_projects'].values():
+        pins.pop(pid, None)
+    pins.update({v['projectId']: v['id'] for v in lock['additions'].values()})
+    for pid, fid in {890127: 8654089, 889079: 8726480, 532610: 6785734}.items():
+        assert pins.get(pid) == fid, f'Mine Cells bridge dependency missing or changed: {pid}'
+    assert 306612 not in pins, 'Original Fabric API must not coexist with Forgified Fabric API'
+
 def check_path(name):
     p = PurePosixPath(name)
     if p.is_absolute() or '..' in p.parts or '\\' in name:
         raise ValueError(f'Unsafe archive path: {name}')
 
 def validate(archive, lock, baseline, patches, private_modrinth=False):
+    validate_connector_stack(lock, baseline)
     with zipfile.ZipFile(archive) as z:
         assert z.testzip() is None, 'ZIP CRC failure'
         names = z.namelist()
@@ -112,6 +132,7 @@ def build(patches=False, output=None, private_modrinth=False):
     removed = set(lock['remove_projects'].values())
     files = {pid: fid for pid, fid in baseline.items() if pid not in removed}
     additions = dict(lock['additions'])
+    validate_connector_stack(lock, baseline)
     if patches or lock.get('default_integrated_patches', False):
         additions['integrated-patches'] = lock['optional_integrated_patches']
     for slug, e in additions.items():
@@ -119,6 +140,9 @@ def build(patches=False, output=None, private_modrinth=False):
         # to shaderpacks by the app; do not falsely require the 'NeoForge' file tag.
         if e.get('contentType') == 'shaders':
             assert {'1.21.1', 'Iris'}.issubset(e['gameVersions']), slug
+        elif e.get('loader_bridge'):
+            # The exact audited exception is checked above; never relabel Fabric as NeoForge.
+            assert e['projectId'] == 618790 and e['id'] == 7033510, slug
         else:
             assert {'1.21.1', 'NeoForge'}.issubset(e['gameVersions']) or e.get('version_check_override'), slug
         pid, fid = e['projectId'], e['id']
@@ -134,7 +158,8 @@ def build(patches=False, output=None, private_modrinth=False):
     for name in ['CHANGELOG.md', 'TESTING-0.3.1.md', 'STRUCTURE-DENSITY-TEST1.md',
                  'BIOME-COMPATIBILITY-TEST2.md', 'STRUCTURE_TEST5_CHANGELOG.md',
                  'STRUCTURE_BIOME_AUDIT.md', 'STRUCTURE_TEST5_VALIDATION.md',
-                 'STRUCTURE_TEST5_INSTALL.md', 'TANS_OPEN_FIELD_TUNING_PLAN.md', 'TODO.md']:
+                 'STRUCTURE_TEST5_INSTALL.md', 'TANS_OPEN_FIELD_TUNING_PLAN.md', 'TODO.md',
+                 'V04_CHANGELOG.md', 'V04_TEST_RESULTS.md', 'V04_TESTING_CHECKLIST.md']:
         p = ROOT / name
         if p.exists(): entries['overrides/' + name] = p.read_bytes()
     for name in ['README-0.3.1.md', 'MOD_STRUCTURE_SCREENING.md', 'MISSING_JARS.txt',

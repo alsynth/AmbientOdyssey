@@ -1,8 +1,10 @@
 {
   "replace": false,
   "values": [
+    "biomesoplenty:dryland",
     "biomesoplenty:highland",
     "biomesoplenty:pumpkin_patch",
+    "biomeswevegone:baobab_savanna",
     "biomeswevegone:prairie",
     "biomeswevegone:sakura_grove",
     "natures_spirit:alpine_clearings",

@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-e0-audit-broad-content",
+  "version": "0.4.0-experimental-minecells",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -827,7 +827,7 @@
     "next-borderless-window": {
       "id": 8703116,
       "projectId": 1605714,
-      "fileName": "BorderlessWindow-1.6.0.jar",
+      "fileName": "borderlesswindow-1.6.0.jar",
       "displayName": "Borderless Window 1.6.0",
       "gameVersions": [
         "1.21.1",
@@ -1329,7 +1329,7 @@
     "content-040b-rp-torches-reimagined": {
       "projectId": 531730,
       "id": 8048795,
-      "fileName": "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip",
+      "fileName": "\u00a7eTorches\u00a78-\u00a7eReimagined\u00a70_\u00a78[v1.8]\u00a70.zip",
       "displayName": "Torches Reimagined 1.8",
       "gameVersions": [
         "1.21.1"
@@ -1343,7 +1343,7 @@
     "content-040b-rp-extended-illumina": {
       "projectId": 380413,
       "id": 6021451,
-      "fileName": "§eExtended_Illumina_1.21x.zip",
+      "fileName": "\u00a7eExtended_Illumina_1.21x.zip",
       "displayName": "Extended Illumina 1.21.x",
       "gameVersions": [
         "1.21.1"
@@ -1719,6 +1719,73 @@
       "content_group": "0.4.0-e0-audit-broad",
       "content_role": "Remove vanilla menu fading; UI accessibility",
       "environment": "client"
+    },
+    "content-040-minecells-minecells": {
+      "projectId": 618790,
+      "id": 7033510,
+      "fileName": "minecells-2.0.3.jar",
+      "gameVersions": [
+        "1.21.1",
+        "Fabric"
+      ],
+      "sha256": "194b2318ec65896422f70bfc30983eb062c912c85295945c85599f64524e2481",
+      "fileLength": 5494118,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/minecells/files/7033510",
+      "runtime_status": "Not tested in full Ambient Odyssey",
+      "loader_bridge": "sinytra-connector"
+    },
+    "content-040-minecells-connector": {
+      "projectId": 890127,
+      "id": 8654089,
+      "fileName": "connector-2.0.0-beta.17+1.21.1-full.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "sha256": "ca70b57df3a7a4e8d211fea7ff3ae77e768482af374f26bf953ff5fd755564f0",
+      "fileLength": 4573244,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/sinytra-connector/files/8654089",
+      "runtime_status": "Not tested in full Ambient Odyssey"
+    },
+    "content-040-minecells-forgified-fabric-api": {
+      "projectId": 889079,
+      "id": 8726480,
+      "fileName": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "sha256": "96f8b489f401c64e87343daf57a030ccd1b58be40fc0aad701278ba58a0fadaf",
+      "fileLength": 5613159,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/forgified-fabric-api/files/8726480",
+      "runtime_status": "Not tested in full Ambient Odyssey"
+    },
+    "content-040-dependency-iceberg": {
+      "projectId": 520110,
+      "id": 6375480,
+      "fileName": "Iceberg-1.21.1-neoforge-1.3.0.jar",
+      "gameVersions": [
+        "Client",
+        "NeoForge",
+        "1.21.1",
+        "Server"
+      ],
+      "source": "https://www.curseforge.com/minecraft/mc-mods/iceberg/files/6375480",
+      "sha256": "6e6d3f34fe2aedd7078f8d252cc3a697e8be5b9ce29e2c591c784a5884161b1c",
+      "fileLength": 206693
+    },
+    "content-040-dependency-jamlib": {
+      "projectId": 623764,
+      "id": 5988164,
+      "fileName": "jamlib-neoforge-1.2.2-build.2+1.21.1.jar",
+      "gameVersions": [
+        "1.21",
+        "NeoForge",
+        "1.21.1"
+      ],
+      "source": "https://www.curseforge.com/minecraft/mc-mods/jamlib/files/5988164",
+      "sha256": "835d80b124919bf99e012244bc7438f9b16d8b5a078645eb2f85f4cae07d72e3",
+      "fileLength": 169809
     }
   },
   "optional_integrated_patches": {
@@ -2463,5 +2530,14 @@
       "create_easy_structures-0.2a-neoforge-1.21.1.jar"
     ],
     "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
+  },
+  "experimental_minecells": {
+    "expected_manifest_refs": 318,
+    "owo_inherited_pin": {
+      "projectId": 532610,
+      "id": 6785734
+    },
+    "launchpad": "Not declared by audited Connector 2.0.0-beta.17 for 1.21.1; no compatible 1.21.1 Launchpad file exists in queried official metadata",
+    "runtime_acceptance": "Isolated dedicated server: fresh world, five Mine Cells dimension force-loads, save, clean stop, restart and clean stop PASS; full AO client/server gameplay untested"
   }
 }

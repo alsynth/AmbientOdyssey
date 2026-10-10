@@ -4,7 +4,11 @@ import json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 j=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert j['version']=='0.4.0-b1-living-world-batch'
+assert j['version'] in ('0.4.0-b1-living-world-batch','0.4.0-c0-ecosystem-feedback','0.4.0-d0-content-first','0.4.0-e0-audit-broad-content','0.4.0-experimental-minecells')
+if j['version'] != '0.4.0-b1-living-world-batch':
+    EXPECT_REMOVED_GALOSPHERE = True
+else:
+    EXPECT_REMOVED_GALOSPHERE = False
 EXPECTED_MODS={
  'guard-villagers':(360203,8767509),
  'easy-npc-core':(1308987,9039094),
@@ -37,7 +41,10 @@ def check_mod(slug,pid,fid):
  assert set(entry['gameVersions'])=={'1.21.1','NeoForge'},(slug,entry)
  assert entry['fileName'].endswith('.jar'),slug
  assert entry.get('content_kind') is None,slug
-for slug,(pid,fid) in EXPECTED_MODS.items():check_mod(slug,pid,fid)
+for slug,(pid,fid) in EXPECTED_MODS.items():
+ if slug=='galosphere' and EXPECT_REMOVED_GALOSPHERE:
+  assert 'content-040b-galosphere' not in j['additions']
+ else:check_mod(slug,pid,fid)
 for slug,(pid,fid) in EXPECTED_PACKS.items():
  entry=j['additions']['content-040b-rp-'+slug]
  assert (entry['projectId'],entry['id'])==(pid,fid),slug
@@ -65,8 +72,10 @@ for v in j['remove_projects'].values():pins.pop(v,None)
 for v in j['additions'].values():pins[v['projectId']]=v['id']
 if j.get('default_integrated_patches'):
  v=j['optional_integrated_patches'];pins[v['projectId']]=v['id']
-assert len(pins)==289,len(pins)
+assert len(pins)=={'0.4.0-b1-living-world-batch':289,'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-broad-content':313,'0.4.0-experimental-minecells':318}[j['version']],len(pins)
 for pid,fid in [*EXPECTED_MODS.values(),*EXPECTED_PACKS.values()]:
- assert pins[pid]==fid
-print('PASS: 15 native 1.21.1 content/visual/mod-dependency pins + 5 official launcher resourcepack refs, 289 total CF refs, no conflicting ambient/season stack.')
+ if pid==631098 and EXPECT_REMOVED_GALOSPHERE:
+  assert pid not in pins
+ else:assert pins[pid]==fid
+print(f'PASS: inherited 0.4b pins with explicit later Galosphere removal; {len(pins)} CF refs, no conflicting ambient/season stack.')
 print('PASS: dependency pairs, all 273 previous terminal NBT fixes remain pinned; no runtime success implied.')

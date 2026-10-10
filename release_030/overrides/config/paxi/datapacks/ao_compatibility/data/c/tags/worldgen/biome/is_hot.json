@@ -1,10 +1,13 @@
 {
   "replace": false,
   "values": [
+    "biomesoplenty:dryland",
     "biomesoplenty:volcano",
+    "biomeswevegone:baobab_savanna",
     "biomeswevegone:crag_gardens",
     "biomeswevegone:ebony_woods",
     "biomeswevegone:prairie",
+    "biomeswevegone:tropical_rainforest",
     "natures_spirit:floral_ridges",
     "regions_unexplored:ashen_woodland"
   ]

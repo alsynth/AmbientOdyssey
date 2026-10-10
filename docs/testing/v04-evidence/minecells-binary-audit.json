@@ -1,0 +1,36 @@
+{
+  "binaries": [
+    {
+      "file": "connector-2.0.0-beta.17+1.21.1-full.jar",
+      "bytes": 4573244,
+      "sha256": "ca70b57df3a7a4e8d211fea7ff3ae77e768482af374f26bf953ff5fd755564f0"
+    },
+    {
+      "file": "minecells-2.0.3.jar",
+      "bytes": 5494118,
+      "sha256": "194b2318ec65896422f70bfc30983eb062c912c85295945c85599f64524e2481"
+    },
+    {
+      "file": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+      "bytes": 5613159,
+      "sha256": "96f8b489f401c64e87343daf57a030ccd1b58be40fc0aad701278ba58a0fadaf"
+    },
+    {
+      "file": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "bytes": 1221583,
+      "sha256": "de6ed336bd80154b7241a7b3276694befc1c94550add8bcdfe7f82e5172fd13d"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": ">=0.58.0",
+    "minecraft": [
+      "1.21.1"
+    ],
+    "owo": ">=0.9.3"
+  },
+  "bundled": "Gimm1q 0.7.10+1.21.1 (requires Fabric Loader >=0.16.14; bundles Crunch), owo-sentinel 0.12.15.4",
+  "fabricloader_runtime": "Connector FFAPI bundled Forgified Fabric Loader loaded successfully",
+  "launchpad": "Not a dependency of audited 1.21.1 Connector/FFAPI files. Generic 26.1 documentation differs.",
+  "runtime_scope": "Minimal four-mod dedicated server; two clean launches, five dimension forceload commands, save and clean shutdown. No players joined. No full AO client/server pass."
+}
