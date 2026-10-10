@@ -55,6 +55,25 @@ Seven additional requested candidate slots for the **upcoming QoL expansion**, n
 
 **Candidates to audit:** Traveler's Titles 1.21.1 NeoForge; First Steps (exact NeoForge file unverified); WITS (optional debugging for structure identities); Explorer's Journals (new, unproven multi-mod journal); native FTB Quests **Visit Biome / Find Structure / Advancement** tasks already in AO; a generated silent-advancement datapack if native FTB progress proves insufficient. Avoid mandatory extra map or journal addons until scope is validated. **No Test8.2/Test8.3 release/manifest changes.**
 
+### Euphoria Patches + DH/Voxy paired shader evaluation (new candidate, 10 Oct 2026)
+
+**User nomination:** Test **Euphoria Patches + Complementary Reimagined** in tandem with the future **Distant Horizons OR Voxy** distance-rendering evaluation, as an *optional client visual profile*. This is **not** authorization to install any combination or turn on both LOD engines. Keep the known-good Embeddium/NeOculus worldgen instance untouched. No effect on dedicated-server mod list unless a dependency explicitly requires it.
+
+**Confirmed compatibility anchor:** Official **Euphoria Patcher 1.10.5-r5.9.3 NeoForge** exists, published September 15, 2026 (CF project `915902`; [Euphoria Patches CF files](https://www.curseforge.com/minecraft/mc-mods/euphoria-patches/files/all?page=1)); Euphoria's documented baseline is **Complementary Shaders r5.9.3** ([installation docs](https://www.euphoriapatches.com/how-to-install/)). AO source lock already selects Complementary Reimagined **r5.9.3**. Euphoria is an **addon/patcher applied to an existing Complementary shader pack**, not a replacement shader engine or terrain LOD renderer. It advertises shader-pack DH support and modded blocks, emissive/colored lighting, better modded End and foliage effects ([official technical document](https://github.com/Ifiht/ComplementaryEuphoria/blob/main/InformationEuphoriaPatches.md)). This *does not prove compatibility* with the **current AO Embeddium 1.0.15 / NeOculus 1.8.7**, nor prove **Voxy-specific LOD shader integration**.
+
+**Renderer rules:** The Euphoria author recommends **Iris on NeoForge** to obtain Iris-exclusive effects; NeOculus is not guaranteed to expose them. Most existing 1.21.1 NeoForge Voxy ports require **Sodium + Iris**, plus GPU/OpenGL driver support. **Never stack Voxy + Distant Horizons in the same first-pass profile**; compare separately. Euphoria itself is patcher/shaderpack-side, and cannot fix GPU capabilities, FreeTerraForged chunk generation, streaming stalls or server TPS. The selected patcher must match the *exact shipped* Complementary shader version; wrong pair may fail patching. Do not package redistributed Complementary-derived shader assets without checking author licenses — use licensed shader download + patcher flow. Separate user-selectable disabled-by-default visual preset from default pack unless performance results justify otherwise.
+
+| Isolated profile | Client renderer / shader choice | LOD choice | Objective / acceptance |
+|---|---|---|---|
+| **E0** | Original AO Embeddium/NeOculus + Complementary r5.9.3 | None | Baseline same scene, shaders with/without Euphoria; verify patcher finds original zip, no menu/shader compile errors |
+| **E1** | Native NeoForge **DH** and its *verified compatible* shader loader + Complementary r5.9.3/Euphoria 1.10.5 | **DH only** | Confirm DH shader path really renders Euphoria fog, colored lighting, clouds/water and distant vegetation without seams or missing sun shadows |
+| **E2** | A specifically selected native 1.21.1 **Voxy** fork with upstream-required **Sodium/Iris** and Complementary r5.9.3/Euphoria 1.10.5 | **Voxy only** | Determine independently whether shader-pack LOD actually works through that fork's Iris/Voxy path; Euphoria's *DH support is not Voxy support* |
+| **E3** | Same as E1 and E2, Euphoria temporarily disabled | Corresponding one LOD | Establish incremental visual benefit and actual GPU/frame-time cost of Euphoria, not just LOD cost |
+
+**Performance acceptance:** Same seed/world path, same 6–12 normal render chunks, measured common LOD ranges, same camera positions (prairie + high mountains + forest + ocean coastline + Nether/End), warm/cold LOD cache, 1% lows, average FPS, VRAM, CPU/GPU utilization, 5-player server TPS and dimension load latency. Count additional visual artifact classes: translucent glass/water, leaves, nether fog, underwater shaders, shadercompile stalls, temporal reprojection/ghosting, LOD near/far transition and extra light sources/particles. Only recommend the best **stable user-optional preset** after performance testing; aim not to reduce the already ~90 FPS typical test performance.
+
+**Status:** Candidate recorded only. None of Euphoria / DH / Voxy were added to the active installed mod list, Test8.2 or Test8.3 ZIPs. Follow the existing Voxy vs DH audit immediately below.
+
 ## Voxy vs Distant Horizons — separate client-rendering architecture audit
 
 ### Current AO constraints
