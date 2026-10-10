@@ -129,6 +129,16 @@ Definitions: **PROTOTYPE** = green light to investigate/test in disposable clone
 
 **A passing custom-NPC spawn is not the same as a complete playable quest chain**; until a trigger API/data route is proven, the NPC can provide dialogue and a compatible FTB quest can use existing advancement/location detection as a fallback.
 
+## 4A. User's subsequent foliage/fauna/visual candidate addition (10 October 2026)
+
+The user supplied 19 more entries mixing **resource packs**, **client mods**, **server gameplay mods**, **shader features** and unresolved project names. Every original line, resolved official project, NeoForge 1.21.1 status, dependency and conflict test is preserved in [the visual and fauna addendum](CONTENT_EXPANSION_VISUAL_FAUNA_ADDENDUM_2026-10-10.md). This is **not** a sudden default add-everything instruction.
+
+**User specifically prioritized Cosy Critters**, the original PigCart *client visual/particle* mod. It is distinct from our previous real-creature contender **Critters & Companions**. Plan upstream native NeoForge 1.21.1 client trial, not its outdated separate port and not both. Preview independently of Naturalist and server wildlife entity counts.
+
+**Visual A/B:** Polytone edition Rainbow's Foliage, Os' Colorful Grasses, Foxified Dense Flowers NeoForge port, Bushy Petals. Track the user's **shader real-time shadow setting High** in screenshots and FPS—but don't globally force High. Connected Bricks/Paths/Rocks require an OptiFine-or-Continuity CTM engine not yet validated with Embeddium/NeOculus, so defer. Torches Reimagined + Extended Illumina + Swinging Lanterns need layer and Amendments checks; Tightfire and LambdaBetterGrass are Fabric-only and parked.
+
+**Seasons policy:** Trial **Euphoria Patches visual seasons on installed Complementary** before introducing **Serene Seasons' shared real weather/crop changes**. No dual unsynchronized season clocks. Atmosfera Neo vs AmbientSounds 6 is a single audio-engine A/B. Resourcify client-side resource-pack browser is a potential 0.4.0-a utility but is not permitted to silently repin server assets. Ambiguous 'ambient particle' and fire animation project names remain uninstalled pending precise identity.
+
 ## 5. Approval gates and what is *not* yet approved
 
 **Okay to investigate/prototype:** Controlling, FTB XMod Compat, Guard Villagers, modular Easy NPC, Galosphere **or** Better Archeology, existing wildlife respawn tuning, selective Naturalist, optional naming with Collective. These are **our proposals grounded in the audit**. **No actual mod installation has been authorized by this planning request.**
