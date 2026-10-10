@@ -1,5 +1,7 @@
 # Ambient Odyssey v0.3.8 — Combined prefreeze one-pass test checklist
 
+> **LATEST 10 October runtime/testing order:** **Test8.2 actually launched, entered a new Overworld, and saved normally** (`latest(20261010-014111).log`). It did **not** verify biome distribution, oceans, Nether/End, bridges, dragon caves or FTB Solo Quests on a dedicated server. **Test8.3 optional private prefreeze ZIP** `Ambient-Odyssey-v0.3.8-Test8.3-Windmill-RecipeFix-PRIVATE.zip` includes the *same* 265 CF references and uploaded Better Bastions/NeoReefRedux files; only two mod smelting recipe corrections, one Create windmill independent-salt set, and an optional Pale Garden biome tag were added. **Test8.3 runtime not verified.** [Exact new report](TEST8_2_RUNTIME_AND_LAST_WORLDGEN_AUDIT_2026-10-10.md). **Do not reinstall both embedded JARs manually in Test8.2/8.3; avoid duplicate mods.** Continue to use a **fresh seed or new chunks** for worldgen comparisons.
+
 > **Test 8.1 addendum (10 Oct — use updated Test8.1 ZIP, not original Test8):** Dragon skeleton surface chance reduced from `0.0033333333333333335` to `0.0015` (~55% fewer attempts). New AO independent `ao_dragon_caves` datapack retargets **underground fire/lightning caves** only to all registered/curated Overworld biomes; ice caves explicitly target cold/snowy biomes; **surface dragon roost rules stay unchanged**. Create Rustic barn/windmill/smithy/well placement lowered, but cross-mod geometry still needs observation. Uploaded **Better Bastions** and **NeoReefRedux** JARs were inspected for valid 1.21.1 NeoForge descriptors (both passed); still manually install because exact CurseForge file ID / app-managed Modrinth reference not established. **Test 8.1 JAR files are not bundled into the CurseForge overrides**. Before any worldgen test, back up original test profile and use a new seed/chunks.
 
 **Status:** 10 October 2026 — **preview ZIP statically verified, NOT runtime tested**. **Minecraft 1.21.1 / NeoForge 21.1.252.** Working branch: `structure/test6`. **Worldgen is NOT frozen.**
@@ -55,6 +57,13 @@ The preview's CurseForge manifest **does NOT include** these two approved additi
 - [ ] Confirm **fire/lightning surface roosts did NOT expand into formerly ineligible biomes**: their original `#iceandfire:structure_gen/fire` and `lightning` tags are unchanged
 - [ ] Check none of the three cave types creates large water floods in deep-ocean caves, cuts out unrelated dungeons or badly clips FreeTerraForged cave systems
 - [ ] **Create Rustic Structures**: barns (36/24), windmills (32/20), smithies (28/18), wells (20/12) less frequent and fewer collisions; log remaining overlap with villages, WDA/IDAS and Create structures using F3 coordinates. **Rarity is mitigation, not a universal exclusion-zone fix**
+
+## C3. New Test8.3 static worldgen repairs (run only after importing Test8.3)
+
+- [ ] Both Flight Rings furnace salvage recipes parse without `Not a JSON object` and show appropriate basic-ring→gold and advanced-ring→netherite outputs
+- [ ] Create Arise windmill still naturally generates on original 90/10 grid, now independent salt 1543892757; check overlaps with Create Easy windmill (which kept its native 353987075 salt)
+- [ ] Paxi detects `ao_worldgen_final_fixes`; `additionalstructures:has_structure/skeleton_skull` no longer errors about `minecraft:pale_garden`. Confirm skeleton-skull structure remains enabled for Badlands and Wasteland category biomes
+- [ ] Verify no older-world chunks were used to assess new Create placement and changed structure positions; old chunks retain their previous structures
 
 ## D. Ocean expansion — record specific new mod behavior
 
