@@ -1,0 +1,113 @@
+name: Ambient Odyssey Test8.9 exact-terminal-jigsaw repair validation
+on:
+  push:
+    branches: [worldgen/test8.9-source-triage]
+    paths:
+      - '.github/workflows/test89-worldgen-repair-build.yml'
+      - 'compile_terminal_jigsaws_087.py'
+      - 'build_release_030.py'
+      - 'release_030/release-lock.json'
+      - 'release_030/overrides/**'
+      - 'validate_generation_repairs_086.py'
+      - 'validate_worldgen_test84.py'
+  workflow_dispatch:
+jobs:
+  source-audit-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install nbtlib==2.0.4
+      - name: Verify previous terrain and structure checks retained
+        run: |
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+      - name: Verify pinned Towns & Towers lighthouse and RS city source against native 1.21.1 binaries
+        run: python validate_worldgen_089.py
+      - name: Verify exact pinned native 273 repairs independent of package build
+        run: python compile_terminal_jigsaws_087.py
+      - name: Produce complete 267-project + NeoReef private Test8.9 archive
+        run: python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.3.8-Test8.9-Pool-Repair-PRIVATE.zip
+      - name: Re-run baseline and structure checks after compilation
+        run: |
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+      - name: Reverify 8.9 source overrides after builder
+        run: python validate_worldgen_089.py
+      - name: Independently parse all 273 archived native NBTs and 1 angler fix
+        run: |
+          python - <<'PY'
+          import hashlib,gzip,io,json,zipfile,collections
+          from pathlib import Path
+          import nbtlib
+          p=Path('build/Ambient-Odyssey-v0.3.8-Test8.9-Pool-Repair-PRIVATE.zip')
+          counts=collections.Counter()
+          prefix='overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/'
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              ns=z.namelist()
+              assert len(ns)==len(set(ns))
+              m=json.loads(z.read('manifest.json'))
+              assert m['version']=='0.3.8-worldgen-prefreeze-test1.9'
+              refs={x['projectID']:x['fileID'] for x in m['files']}
+              assert len(refs)==267 and refs[1713723]==8988949 and refs[1385782]==7227735
+              assert hashlib.sha1(z.read('overrides/mods/neoreefredux-1.0.jar')).hexdigest()=='10160406202fd3dadd295e130b380466436e0981'
+              patched=[n for n in ns if n.startswith(prefix) and n.endswith('.nbt')]
+              assert len(patched)==273,(len(patched),patched[:3])
+              for f in patched:
+                  nbt=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(f))))
+                  nsname=f[len(prefix):].split('/')[0]
+                  count=0
+                  for b in nbt['blocks']:
+                      if str(nbt['palette'][int(b['state'])]['Name'])!='minecraft:jigsaw':
+                          continue
+                      t=b.get('nbt',{})
+                      assert str(t.get('pool',''))!='minecraft:',f
+                      if str(t.get('pool',''))=='minecraft:empty':
+                          if nsname=='create_easy_structures':
+                              # These two end-caps have valid outgoing targets; only pool changes.
+                              if str(t.get('target','')) in ('create_easy_structures:schiene','create_easy_structures:weg'):
+                                  count+=1
+                          else:
+                              assert str(t.get('target',''))!='minecraft:',f
+                              if str(t.get('target',''))=='minecraft:empty':
+                                  count+=1
+                  assert count==1,(f,count)
+                  counts[nsname]+=count
+              assert dict(counts)=={'adventuredungeons':264,'block_factorys_bosses':1,'irons_spellbooks':6,'create_easy_structures':2},counts
+              angler=json.loads(z.read(prefix+'minecraft/worldgen/template_pool/angler_additions_3_pool.json'))
+              cook=json.loads(z.read(prefix+'minecraft/worldgen/template_pool/cook_additions_3_pool.json'))
+              assert len(angler['elements'])==len(cook['elements'])==9
+              assert angler['elements']==cook['elements'] and angler['name']=='minecraft:angler_additions_3_pool'
+              city=json.loads(z.read(prefix+'repurposed_structures/worldgen/structure/city_overworld.json'))
+              master=json.loads(z.read(prefix+'kaisyn/worldgen/template_pool/village/beach_lighthouse/villager_lighthouse_master.json'))
+              stopper=json.loads(z.read(prefix+'kaisyn/worldgen/template_pool/village/beach_lighthouse/villagers/lighthouse_master.json'))
+              assert city['size']==7 and city['start_pool']=='repurposed_structures:cities/overworld/start_pool'
+              assert master['elements'][0]['element']['location']=='kaisyn:village/beach_lighthouse/villagers/lighthouse_master'
+              assert stopper['elements'][0]['element']['element_type']=='minecraft:empty_pool_element'
+              print('INDEPENDENT VERIFIED: 273 NBT fixes; 1 angler JSON; 267 CF refs; NeoReef checksum; ZIP CRC and manifest')
+              print('PATCHED STRUCTURE NBT COUNTS:',dict(counts))
+          print('ZIP SIZE',p.stat().st_size,'SHA256',hashlib.sha256(p.read_bytes()).hexdigest())
+          print('No in-game Minecraft runtime was used.')
+          PY
+      - name: Rebuild deterministically from cached pinned sources and compare exact ZIP bytes
+        run: |
+          python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.3.8-Test8.9-Pool-Repair-PRIVATE-repeat.zip
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          a=Path('build/Ambient-Odyssey-v0.3.8-Test8.9-Pool-Repair-PRIVATE.zip').read_bytes()
+          b=Path('build/Ambient-Odyssey-v0.3.8-Test8.9-Pool-Repair-PRIVATE-repeat.zip').read_bytes()
+          assert a==b, 'Different bytes from identical source-locked inputs'
+          print('BIT-FOR-BIT REPRODUCIBILITY PASS',len(a),hashlib.sha256(a).hexdigest())
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-Test8.9-PRIVATE-273-Terminal-Jigsaw-Repairs
+          path: build/Ambient-Odyssey-v0.3.8-Test8.9-Pool-Repair-PRIVATE.zip
+          retention-days: 7
+          compression-level: 0
+          if-no-files-found: error
