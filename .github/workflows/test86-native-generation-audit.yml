@@ -1,0 +1,75 @@
+name: Test8.6 native structure NBT audit
+on:
+  push:
+    branches: [worldgen/test8.6-generation-repairs]
+    paths: ['.github/workflows/test86-native-generation-audit.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install nbtlib
+      - name: Compare actual Archaion starts and Create Easy jigsaw assets
+        run: |
+          python - <<'PY'
+          import io,gzip,zipfile,urllib.request,collections,json,nbtlib
+          def get(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-native-worldgen-audit/1.0'})
+              with urllib.request.urlopen(req,timeout=45) as r:
+                  return r.read(30000000)
+          def analyze(name,data):
+              try:
+                  nbt=nbtlib.File.parse(io.BytesIO(gzip.decompress(data)))
+                  palette=nbt['palette']; blocks=nbt['blocks']
+                  states=[]
+                  for b in blocks:
+                      state=palette[int(b['state'])]
+                      if str(state['Name'])=='minecraft:jigsaw':
+                          d={str(k):str(v) for k,v in b.get('nbt',{}).items()}
+                          states.append((list(map(int,b['pos'])),d))
+                  bypool=collections.Counter(d.get('pool','') for pos,d in states)
+                  starts=[(pos,d) for pos,d in states if 'arena_mainhall' in repr(d)]
+                  missing=[(pos,d) for pos,d in states if d.get('pool','') in ('minecraft:','create_easy_structures:undergroundtrain_station') or 'cook_' in d.get('pool','')]
+                  print('NBT',name,'jigsaws',len(states),'start_arena_mainhall',len(starts),'poolrefcounts',dict(bypool.most_common(16)),flush=True)
+                  print('START DETAILS',repr(starts[:8])[:1600],flush=True)
+                  print('SUSPECT MISSING POOLS',repr(missing[:20])[:4500],flush=True)
+              except Exception as e:
+                  print('NBT_PARSE_FAILED',name,type(e).__name__,str(e)[:300],flush=True)
+          base='https://raw.githubusercontent.com/UnanimousVoid/Archaion/1.21.1/src/main/resources/data/archaion/structure/ancient_keep/'
+          for name in ('arena','arena_hall','ancient_library'):
+              try: analyze('ARCHAION/'+name,get(base+name+'.nbt'))
+              except Exception as e:print('FETCH FAILED',name,type(e).__name__,str(e),flush=True)
+          targets=[
+             ('CREATE_EASY','https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'),
+             ('CREATE_ARISE','https://mediafilez.forgecdn.net/files/8837/992/Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar'),
+             ('ARCHAION_JAR','https://mediafilez.forgecdn.net/files/8983/496/archaion-1.21.1-1.4.4.jar'),
+          ]
+          for mod,url in targets:
+              try:
+                  data=get(url)
+                  print('GOT JAR',mod,'size',len(data),flush=True)
+                  with zipfile.ZipFile(io.BytesIO(data)) as z:
+                      poolfiles=[n for n in z.namelist() if '/worldgen/template_pool/' in n and n.endswith('.json')]
+                      nbtfiles=[n for n in z.namelist() if '/structure/' in n and n.endswith('.nbt')]
+                      print('JAR_ASSETS',mod,'nbts',len(nbtfiles),'pools',len(poolfiles),flush=True)
+                      for p in poolfiles:
+                          raw=z.read(p).decode('utf-8',errors='replace')
+                          if 'undergroundtrain_station' in raw or 'cook_' in raw:print('POOL_SUSPECT',mod,p,raw[:1800],flush=True)
+                      interesting=0
+                      for n in nbtfiles:
+                          raw=z.read(n)
+                          try:decompressed=gzip.decompress(raw)
+                          except Exception:continue
+                          if any(t in decompressed for t in (b'undergroundtrain_station',b'cook_additions',b'cook_end_',b'arena_mainhall',b'minecraft:')):
+                              print('NBT_STRING_MATCH',mod,n,'train',b'undergroundtrain_station' in decompressed,'cook',b'cook_' in decompressed,'arena',b'arena_mainhall' in decompressed,flush=True)
+                              if interesting<25:analyze(mod+'/'+n,raw)
+                              interesting+=1
+                      print('JAR SUSPECT FILE COUNT',mod,interesting,flush=True)
+              except Exception as e: print('JAR_FETCH_FAILED',mod,type(e).__name__,str(e)[:500],flush=True)
+          PY
