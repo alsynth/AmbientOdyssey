@@ -1731,6 +1731,17 @@ If later worldgen changes affect previously tested structure placement, repeat t
 
 ---
 
+## 10 October 2026 — User's new visual/mod/resourcepack nominations and actual implementation kickoff
+
+- [x] **Preserve all 19 user-listed names and cross-mod analysis:** [Full visual/fauna addendum](docs/audits/CONTENT_EXPANSION_VISUAL_FAUNA_ADDENDUM_2026-10-10.md), including **Rainbow's Foliage Polytone edition with shader realtime shadows High** as a performance A/B, Os' Colorful Grasses, Foxified Dense Flowers, Bushy Pink Petals, Torches Reimagined, Extended Illumina, Swinging Lanterns, Resourcify and other original names.
+- [ ] **Priority definite:** upstream PigCart **Cosy Critters & Creepy Crawlies** client ambience (birds/moths/cobweb spiders, optional Hat Man) native 1.21.1 NeoForge, independently trial and tune particle caps. Similar earlier **Critters & Companions** is a *real server wildlife mod*; do not duplicate/install by assuming same functionality.
+- [ ] **Visual foliage shader trial:** Polytone + Rainbow's Foliage first; benchmark shader High shadows versus sensible lower options; add Os' Grasses, Bushy Pink Petals and ported Dense Flowers individually. Pack layering and model/biome collisions matter.
+- [ ] **Visual CTM group parked:** Connected Bricks, Paths, Rocks author requires OptiFine/Continuity; AO Embeddium/NeOculus doesn't establish working CTM; LambdaBetterGrass official and Tightfire official are Fabric-only. Do not silently use Connector.
+- [ ] **Fire/lantern**: first Torches Reimagined (already animated torches), Extended Illumina held transforms, then Swinging Lanterns native 1.21.1 v2.0.3 isolated around Amendments; exact generic fire-animation choice unresolved.
+- [ ] **Audio/weather and seasons A/B:** Atmosfera Neo vs AmbientSounds 6, never stack default soundscapes. Euphoria Patches client Complementary *shader seasons* first; Serene Seasons server climate/crops/snow later only if desired, no contradictory independent calendars. Ambient Particle exact project ambiguous; no arbitrary auto-install.
+- [ ] **Resourcify** optional client 1.21.1 browser; prevent unapproved changes to locked resource pack/core shader asset pin/version; test NeOculus UI.
+- [x] **0.4.0-a kickoff staged on isolated branch** [content/0.4.0a-qol-quest-trial](https://github.com/alsynth/AmbientOdyssey/tree/content/0.4.0a-qol-quest-trial): source lock pins **Controlling 250398:6368976** and **FTB XMod Compat 889915:8909889** only, raising 267→269 CF refs. Reproducible private trial CI/build underway; **not runtime acceptance** and original Test8.10 branch untouched.
+
 ## 10 October 2026 — 0.4.x nine-theme content expansion planning handoff (NO mods installed)
 
 - [x] **Authoritative nine-theme audit recovered:** [CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/audits/CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md). Ranks **Life & Settlements (5/5)** and **Structures & Discoveries (5/5)** highest; Underground and Wildlife (4/5) next; Ocean and QoL (3/5); Ambience and Dimensions (2/5); Food/Professions (1/5). It recommends an *earlier QoL convenience mini-wave* for practical usability and strongly prefers interaction/story/ecology over another generic structure roster.
