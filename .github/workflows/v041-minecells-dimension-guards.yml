@@ -1,0 +1,43 @@
+name: AO v0.4.1 Mine Cells Protected Dimensions Preflight
+on:
+  push:
+    branches:
+      - experimental/v0.4.1-minecells-dimension-guards-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dimension-guards-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install nbtlib==2.0.4
+      - name: Check source and retained prior corrections
+        run: |
+          python -m compileall -q build_release_030.py tools
+          python tools/validate_v041_six_fix.py
+          python tools/validate_v04_trek_curated.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+          python tools/validate_v04_fg.py
+          python tools/validate_v041_minecells_dimension_guards.py
+      - name: Build and validate directly importable experimental ZIP
+        run: |
+          python build_release_030.py --output build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip
+          python tools/validate_v041_minecells_dimension_guards.py --archive build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip --report build/v041-dimension-guard-validation.json
+          python tools/validate_v04_trek_curated.py --archive build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip --require-minecells
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip --report build/v041-dimension-guard-diagnostic.json
+          sha256sum build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-MineCells-Protected-Dimensions-Import
+          path: build/Ambient-Odyssey-v0.4.1-MINECELLS-DIMENSION-GUARDS-TEST.zip
+          if-no-files-found: error

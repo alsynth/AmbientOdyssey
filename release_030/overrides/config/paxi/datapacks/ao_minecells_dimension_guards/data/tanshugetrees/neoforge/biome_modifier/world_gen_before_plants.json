@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:not",
+    "value": [
+      "minecells:black_bridge",
+      "minecells:insufferable_crypt",
+      "minecells:prison",
+      "minecells:promenade",
+      "minecells:ramparts"
+    ]
+  },
+  "features": "tanshugetrees:world_gen_before_plants",
+  "step": "underground_decoration"
+}

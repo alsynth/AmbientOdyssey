@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecells:black_bridge",
+    "minecells:insufferable_crypt",
+    "minecells:prison",
+    "minecells:promenade",
+    "minecells:ramparts"
+  ]
+}
