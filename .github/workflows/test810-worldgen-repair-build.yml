@@ -7,6 +7,8 @@ on:
       - 'compile_terminal_jigsaws_087.py'
       - 'build_release_030.py'
       - 'release_030/release-lock.json'
+      - 'release_030/structure-compatibility.json'
+      - 'compile_compatibility_031.py'
       - 'release_030/overrides/**'
       - 'validate_generation_repairs_086.py'
       - 'validate_worldgen_test84.py'
