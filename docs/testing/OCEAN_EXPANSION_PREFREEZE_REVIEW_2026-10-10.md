@@ -1,0 +1,34 @@
+# Ocean expansion — pre-freeze review (10 October 2026)
+
+**Status:** Research completed to a **candidate shortlist**; no ocean mod has been added by this review. **Goal:** Complete ocean ecology and exploration before a permanent Minecraft 1.21.1 NeoForge worldgen freeze. Use **fresh worlds/seeds** for all structural/terrain trials. Do not confuse a curated candidate with an approved installation.
+
+## What Ambient Odyssey already includes
+
+The test profile and legacy source includes **Aquaculture 2**, **Ben's Sharks**, **When Dungeons Arise: Seven Seas**, **Underwater Village**, **Moog's Voyager/other structures**, **Custom Nether Portals**, **FreeTerraForged**, **Streams Reflowing**, **Nature's Spirit / BWG / BOP / RU** and the built-in vanilla aquatic content. Ocean tags already exist in `release_030/overrides/config/paxi/datapacks/ao_compatibility/data/`. Focus on actual existing ocean density and viable underwater progression, not duplicated minor ships or a second uncontrolled terrain generator.
+
+**Important:** Aquamirae was discussed earlier but **is not in the v0.3.7-prefreeze-dev3 manifest**. Upgrade Aquatic and Deeper Oceans are also not installed. A previous conversation considered Aquamirae as desirable; this review stages it for a controlled build, not an untested immediate addition.
+
+## Candidate choices (official 1.21.1-compatible release pages)
+
+| Candidate | Exact verified release | Main added value | Risk / decision |
+|---|---|---|---|
+| **Aquamirae [Neo/Forge]** | CF **536254:8931374** / 7.2.10; https://www.curseforge.com/minecraft/mc-mods/aquamirae/files/8931374 | Unique frozen-ocean **Ice Maze** and **Ship Graveyard** progression, dangerous deep-ocean enemies, loot, questline/Boss-scale atmosphere | **Strong first prototype**. Dedicated frozen-ocean content can overlap existing structures and restrictions on non-Aquamirae gear; 7.2.10 has difficulty configuration. Benchmark ice maze frequency, config balancing and dependency closure, not only load success |
+| **Upgrade Aquatic** | CF **326895:8892693** / 7.0.2; https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic/files/8892693 | General aquatic ecology, decorative diversity and ocean/shore gameplay; stronger everyday ocean life | **Strong companion prototype**, but verify Team Abnormals dependency library and worldgen/biome/feature hooks, coralstone conversions, FTF/Biolith compatibility and potential over-saturation with Ben's Sharks/Aquaculture |
+| **Deeper Oceans** | Modrinth **jHxFj7QK** / NeoForge 1.21.1; https://modrinth.com/datapack/deeper-oceans/version/2.0.0-neoforge-1.21.1 | Ocean vertical scale, default roughly **2× deeper**, moves monuments ~20 blocks lower | **Hold** until isolated FreeTerraForged + streams test. Another global depth modifier could conflict with already-heavy terrain and underwater structures. Not a default addition |
+| **Ocean's Delight** | https://www.curseforge.com/minecraft/mc-mods/oceans-delight | Farmer's Delight seafood recipes | **Optional non-worldgen**, not a substitute for underwater exploration or sea life; decide during food-content wave |
+| **Ocean Overhaul** | https://github.com/VoX/ocean-overhaul | Abyssal trench, marine mobs, bosses and diving gear | **Park**: Fabric-focused 1.21.1; no confirmed native NeoForge. Avoid a fragile connector wave at worldgen freeze |
+
+## Proposed Ocean Test 7 acceptance
+
+1. **Biome and feature baseline:** On two seeded fresh worlds record at least 10 ocean/shore/river biome observations and sample density in shallow/deep/frozen/warm ocean. Ocean floor, kelp, coral/reefs and underwater structures should create distinct exploration zones without everything being the same.
+2. **Sea structure selection:** Seven Seas ships and Underwater Village must generate naturally in both vanilla and modded-ocean biome eligibility, with no heavy overlap with coral, shore landfalls, frozen environments or each other. Record three intersections or twenty viable structures before deciding density tuning.
+3. **Aquamirae isolated prototype:** Import its official NeoForge project + dependencies into a dedicated **temporary** copy; inspect new registry IDs, Ice Maze biome placement under FreeTerraForged, cave/open-sea depth, portals/loot/hostiles, Elytra/water breathing and combat scaling. Measure chunk generation and ocean mob density separately from base.
+4. **Upgrade Aquatic isolated or combined prototype:** Compare native ocean features and mob ecology with Aquaculture/Ben's Sharks. Confirm no duplicate/incompatible mobs, no rendering crash, and appropriate spawn caps. Audit worldgen registration and tags before merging. Test combination with Aquamirae ONLY if both pass individually.
+5. **Ocean-depth decision:** Explicit yes/no to Deeper Oceans **after** prototype. If FTF already yields adequate seafloor depth, leave unchanged. If trying it, compare monument/ship placements and resource ore distributions on a fresh seed.
+6. **Freeze gate:** User signs off on exact final mod roster, generated oceans/coasts/structures/biomes, rare loot and encounter challenge; run full Test 7 client and dedicated server acceptance and performance, then lock worldgen. Avoid unreviewed post-freeze terrain-gen mods.
+
+**Benchmarks:** first navigation and repeat crossings; warm/cold ocean travel; chunk generation time; ocean mob TPS / hostile density; baseline FPS without shaders; structure placement at different ocean levels. Avoid using an already explored save to measure newly added worldgen.
+
+## Other worldgen freeze tasks
+
+In parallel finish current blockers in [Worldgen Prefreeze Test 7 Plan](WORLDGEN_PREFREEZE_TEST7_PLAN.md): too much Prairie, excessive lighthouse placement with five possible source mods, bridges struggling with Streams Reflowing, Block Factory Dragon Tower overlap (Dev1 made it rarer but not geometrically conflict-free), climate/FTF mountains/coasts, heavy End/Nether first entry, Better Bastions 1.21.1 NeoForge trial, and misplaced structure template pools. **Do not declare freeze while ocean selection or these problems remain untested.**
