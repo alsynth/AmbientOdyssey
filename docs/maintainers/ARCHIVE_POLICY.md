@@ -10,4 +10,5 @@ We retained all previous content in original Git history and relocated selected 
 
 To restore any archived workflow, copy its content back to the original `from` path listed in [ARCHIVE_MANIFEST.json](../archive/ARCHIVE_MANIFEST.json) and review triggers. The `sha` value provides exact original Git blob identity; ensure no new runtime requirements have superseded it.
 
-A read-only validation workflow verifies archive counts, current navigation and the **exact same reference-only pack hash** as before the organizational change.
+A read-only CI workflow verifies archive counts and links, then builds the same reference-only ZIP from both source commits to prove the cleanup did not alter packaged bytes. Compare against **pre-cleanup HEAD ca8c91d5090dde5e9e789ebfda474e64f2c01e3c**, not the previous packaged artifact (that artifact predates unrelated documentation updates).
+

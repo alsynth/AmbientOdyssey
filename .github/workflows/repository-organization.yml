@@ -10,6 +10,8 @@ jobs:
     permissions: {contents: read}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - run: pip install nbtlib==2.0.4
@@ -21,10 +23,13 @@ jobs:
           python tools/validate_v04_questlog.py
           python tools/validate_v04_fg.py
           git diff --check
-      - name: Build the same reference-only CurseForge ZIP and check exact old hash
+      - name: Compare identical reference-only ZIP to exact pre-cleanup source
         run: |
           python build_release_030.py --output build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip
-          echo 'c4b7fa1595a4aa99f6cc9a504266c5acaf6518c7a47b67186cc69473a6fbd88b  build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip' | sha256sum -c -
+          git worktree add --detach build/before-reorganization ca8c91d5090dde5e9e789ebfda474e64f2c01e3c
+          (cd build/before-reorganization && python build_release_030.py --output ../../build/Ambient-Odyssey-Pre-Organization-Reference-Only.zip)
+          cmp build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip build/Ambient-Odyssey-Pre-Organization-Reference-Only.zip
+          sha256sum build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip build/Ambient-Odyssey-Pre-Organization-Reference-Only.zip
           python tools/validate_v04_release.py build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip --report build/organization-reference-validation.json
           python tools/preflight_v04.py build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip --require-minecells
       - uses: actions/upload-artifact@v4
