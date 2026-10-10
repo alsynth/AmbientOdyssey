@@ -1,0 +1,285 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_1",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_2",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_3",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_4",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_5",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_6",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_7",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_8",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_9",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_10",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_11",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_12",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_13",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_14",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_15",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_16",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_17",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_18",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_19",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_20",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_21",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_22",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_23",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_24",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_25",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_26",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_27",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_28",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_29",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_30",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_end_1_31",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty",
+  "name": "minecraft:cook_end_1_pool"
+}
