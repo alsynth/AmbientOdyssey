@@ -2077,3 +2077,15 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Unit test on fake profiles and build a reproducible standalone 9-file, 22,001-byte kit (GitHub Actions run `38078378067`, 11 tests passed, SHA256 `3a6cb9b360a57f54a8f6b88e51f9d2d6251216782a7d39931c6123aa049266e5`).
 - [ ] Import the separate full 331-ref PRIVATE CurseForge ZIP, then run kit against actually downloaded JARs and classify unresolved 23 native audit gaps.
 - [ ] Capture Questlog inventory icon/screenshots, test Mine Cells, Dimensional Dungeons and true dedicated server behavior; inspect FTF terrain, 5–7 player load and audio only after the first client starts.
+
+
+### Q1 Questlog installed-content pilot — 2026-10-10
+
+- [x] Convert 42 selected narrative drafts into installable Questlog 3.4.1 JSON definitions (not just chapter ideas), with 13 chapters and stable quest IDs.
+- [x] Write eight additional original exploration/archaeology quest definitions with source-backed vanilla objectives; keep cursed Enigmatic route opt-in and avoid unverified modded registry IDs.
+- [x] Validate 50 quest files, 13 chapter JSON files, prerequisite graph, reward caps and no mandatory curse/rare biome gates.
+- [x] Build private and CF-reference-only experimental ZIPs, preserve all 331 exact CF pins and original worldgen repairs, verify byte-identical repeat via CI `38079305682`.
+- [ ] Install the new Q1 **inner private ZIP** in a disposable CurseForge profile; check 13 chapter tabs, GUI overlap, objective completion and reward delivery.
+- [ ] Test separate 2-player server progress, dimension transitions, Questlog save/restart migration, FTB Quests/FTB Solo Quests coexistence; do not use permanent server world.
+- [ ] Reconcile actual installed mod/entity/item/structure registries and replace only verified Q1 introduction pages with substantial Q2 mod-specific real encounter quest chains.
+- [ ] Expand the FTB Field Manual from existing drafts into actual localized in-game reference pages, without double-claiming Questlog rewards.

@@ -1,3 +1,5 @@
+> **Q1 playable-format quest authoring now committed, superseding the earlier drafts-only status below.** `experimental/v0.4h-questbook-q1-20261010` contains **50 Questlog 3.4.1 quest JSON files and 13 chapter files** under `release_030/overrides/config/questlog/`, including eight original travel/archaeology quests and 42 adapted original seed drafts. [Successful Q1 build](https://github.com/alsynth/AmbientOdyssey/actions/runs/38079305682), [artifact](https://github.com/alsynth/AmbientOdyssey/actions/runs/38079305682/artifacts/11678969415), [exact authoring overview](QUESTLOG_Q1_IMPLEMENTATION.md). These scripts, config definitions and ZIP exports are **source/static verified only**, not yet played in Minecraft, and intentionally defer every unverified modded boss and structure objective. The 474 seed ideas, 250 supplement leads and 50 draft records below remain research backlog, not the 50 installed JSON quests.
+
 # Ambient Odyssey — Quest Content Mapping Project
 
 **Planning iteration:** 10 October 2026 · **Current active branch:** `structure/test6` · **Minecraft:** 1.21.1 NeoForge · **Status:** initial narrative and content audit, not in-game authored quests.
