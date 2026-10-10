@@ -21,7 +21,7 @@ def verify():
         assert condition, name
         checks.append(name)
 
-    require("test8.4 manifest version label", load(RELEASE / "release-lock.json")["version"] in ("0.3.8-worldgen-prefreeze-test1.4", "0.3.8-worldgen-prefreeze-test1.5", "0.3.8-worldgen-prefreeze-test1.6", "0.3.8-worldgen-prefreeze-test1.7", "0.3.8-worldgen-prefreeze-test1.8", "0.3.8-worldgen-prefreeze-test1.9", "0.3.8-worldgen-prefreeze-test1.10", "0.4.0-a0-qol-quest-trial", "0.4.0-b1-living-world-batch", "0.4.0-c0-ecosystem-feedback"))
+    require("test8.4 manifest version label", load(RELEASE / "release-lock.json")["version"] in ("0.3.8-worldgen-prefreeze-test1.4", "0.3.8-worldgen-prefreeze-test1.5", "0.3.8-worldgen-prefreeze-test1.6", "0.3.8-worldgen-prefreeze-test1.7", "0.3.8-worldgen-prefreeze-test1.8", "0.3.8-worldgen-prefreeze-test1.9", "0.3.8-worldgen-prefreeze-test1.10", "0.4.0-a0-qol-quest-trial", "0.4.0-b1-living-world-batch", "0.4.0-c0-ecosystem-feedback", "0.4.0-d0-content-first"))
     pool = load(RELEASE / "biome-pools.json")
     roster = load(RELEASE / "biome-roster.json")
     compiled = load(PACKS / "ao_biome_replacement/data/ambient_odyssey/biolith/biome_placement.json")
