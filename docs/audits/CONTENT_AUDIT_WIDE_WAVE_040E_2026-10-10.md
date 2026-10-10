@@ -4,7 +4,7 @@
 ## User-directed priority
 Add substantial compatible content before post-expansion fixes, then worldgen/performance, balance and finally all quest authoring. Keep 0.4c/0.4d tested source and rare mutant settings. All fourteen additions were drawn from previously nominated audit candidates, except equipment comparison / Legendary Tooltips, included after comparing with the gear-readability emphasis of Cisco's Medieval RPG, RAD3, Craft to Exile 2 and Prodigium. This is an *architecture inspiration*, not a claim that a specific source pack ships the same exact 1.21.1 NeoForge jar.
 
-## Fourteen exact CurseForge trial pins
+## Fifteen exact CurseForge trial pins
 | Requested content | CF project:file | Loader and role | Acceptance/overlap |
 |---|---:|---|---|
 | BetterF3 v11.0.3 | 401648:5873258 | client, NeoForge 1.21.1 | Debug screen, alt to vanilla F3 |
@@ -19,7 +19,7 @@ Add substantial compatible content before post-expansion fixes, then worldgen/pe
 | Equipment Compare 1.3.13 | 502561:6375501 | client, NeoForge 1.21.1 | Compare player-equipped gear against loot stats |
 | RightClickHarvest 4.6.1 | 452834:7508749 | both, NeoForge 1.21.1 | Right-click harvesting; Farmer Delight duplicate behavior audit |
 
-Manifest target **296 to 311 unique CurseForge refs** (14 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
+Manifest target **296 to 312 unique CurseForge refs** (15 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
 
 ## Additional approved-to-test 0.4e audit candidates (same large batch)
 | Candidate | Official NeoForge 1.21.1 file | Purpose |
@@ -28,7 +28,7 @@ Manifest target **296 to 311 unique CurseForge refs** (14 mods + verified Prism 
 | Cut Through 21.1.0 | 969423:5731913 | Allows weapons to hit entities through non-solid grass; client Puzzles Lib already present |
 | Screenshot Viewer 1.3.4 | 693961:6743822 | Browse local game screenshots; does not require internet/cloud access |
 
-**Final manifest target 311 CF project refs (296 inherited + 14 QoL/content + Prism).** The new advancements UI does not author or modify FTB Quests or Questlog tasks.
+**Final manifest target 312 CF project refs (296 inherited + 15 QoL/content + Prism).** The new advancements UI does not author or modify FTB Quests or Questlog tasks.
 
 ## Deliberately not auto-added despite earlier lists
 - **AmbientSounds 6:** Atmosfera Neo already chosen, doubling constant audio is counterproductive, and water/rain already loud.
@@ -55,3 +55,8 @@ Static release and repeated deterministic archive builds check package reproduci
 
 ## CI source-confirmed dependency follow-up
 The first CI run stopped at correct required-project closure: **Prism (CF 638111) was absent**. Added officially versioned **Prism 1.0.11 1.21.1 NeoForge, file 6372979**; the 0.4e validation now requires that exact file. No unrelated project repins.
+
+## Modpack-inspired exploratory utility, separately evaluated
+**Comforts 9.0.5** (`276951:7515858` official NeoForge 1.21.1) is a newly identified travel-value addition inspired by adventure-pack design; portable sleeping bags and hammocks support long expeditions without overwriting a home respawn point. **Do not claim it is copied from any one named pack.** Confirm actual server multiplayer sleep-vote interactions with AO's `playersSleepingPercentage 30` Paxi rule, dimension legality, and any vanilla/Modded hammock time-shift behavior. It is not a second worldgen or quest engine.
+
+**FallingTree assessed but deliberately not added**: users enjoy huge Tan's Huge Trees and heavily modded tree geometries; instantaneous large-tree felling could trigger server tick spikes and base destruction unless tree limits/whitelists carefully configured. Save for optimization/UX phase if requested.
