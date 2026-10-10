@@ -3426,6 +3426,31 @@
         "artifacts:vampiric_glove",
         "artifacts:withered_bracelet"
       ]
+    },
+    "forge:tools": {
+      "replace": false,
+      "values": [
+        {
+          "id": "#c:tools",
+          "required": false
+        },
+        {
+          "id": "#minecraft:axes",
+          "required": false
+        },
+        {
+          "id": "#minecraft:pickaxes",
+          "required": false
+        },
+        {
+          "id": "#minecraft:shovels",
+          "required": false
+        },
+        {
+          "id": "#minecraft:hoes",
+          "required": false
+        }
+      ]
     }
   },
   "provenance": {
