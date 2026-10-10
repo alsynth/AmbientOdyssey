@@ -101,6 +101,16 @@
         "biomeswevegone:ebony_woods": 20,
         "biomeswevegone:redwood_thicket": 15
       }
+    },
+    {
+      "name": "coast_stony",
+      "targets": [
+        "minecraft:stony_shore"
+      ],
+      "vanilla_percent": 0,
+      "biomes": {
+        "biomeswevegone:dacite_shore": 100
+      }
     }
   ],
   "climate_guards": [
