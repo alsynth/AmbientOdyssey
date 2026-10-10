@@ -22,10 +22,10 @@
 | Lighting | Night Lights v1.4.0 | 1199355:8555615 | Smart switches, dyeable lighting, structures built by players |
 | Combat integration | Apothic Combat v1.2.1 | 986982:6105085 | Better Combat reach + Apotheosis attribute tooltips; no balance assumptions |
 
-Count proposed: **288 → 295 CurseForge manifest refs**, only if baseline lacks duplicate projects and required libraries are present. The original Test8.10 fixed 273 NBT repairs, FreeTerraForged, Biolith, stream generation, original c0 Paxi rules and audio adjustments must remain unchanged.
+Count proposed: **288 → 296 CurseForge manifest refs** (7 content mods and 1 required Athena library), only if baseline lacks duplicate projects and required libraries are present. The original Test8.10 fixed 273 NBT repairs, FreeTerraForged, Biolith, stream generation, original c0 Paxi rules and audio adjustments must remain unchanged.
 
 ## Dependencies requiring verified closure before importer distribution
-- Chipped: **Resourceful Lib** (CF project 570073), **Athena** (841890); Handcrafted also uses Resourceful Lib.
+- Chipped: **Resourceful Lib** (CF project 570073, already in parent manifest) and **Athena 4.0.6 (841890:8061947)**, pinned now because first CI run positively proved it was absent; Handcrafted also uses inherited Resourceful Lib.
 - Mutant Monsters and Illager Invasion: **Puzzles Lib** (495476), with its Forge Config API Port relation to check for the NeoForge runtime.
 - Dusty Decorations: **GeckoLib** (388172), already used by Naturalist but check actual manifest identity.
 - Do **not** update existing library versions without source-native compatibility evidence. If one of the named required libraries is absent, CI will stop pending an exact dependency pin. Exact file versions from official CurseForge pages, not an automatically assumed bundled library.
@@ -40,3 +40,6 @@ Count proposed: **288 → 295 CurseForge manifest refs**, only if baseline lacks
 
 ## Explicitly not being done in this source wave
 No quest SNBT, reward scripts, keybind remap, worldgen rebalance, sound overhaul, boss stats, pregeneration, renderer replacement, MCA Reborn, more bridges or server deployment. Do not merge until required dependencies and CI, followed by a meaningful larger Minecraft acceptance test, are complete.
+
+## Automated closure follow-up
+The first 0.4d CI run reached the new dependency gate and explicitly failed **only** for missing Athena 841890. Athena's official NeoForge 1.21.1 4.0.6 file is pinned in source. Previous 0.4c regression assertions passed in that run. A subsequent CI run is required before a private importer is accepted; these are source/pack checks, not live gameplay.

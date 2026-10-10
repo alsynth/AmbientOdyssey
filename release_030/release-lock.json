@@ -1451,6 +1451,20 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/apothic-combat/files/6105085",
       "content_group": "0.4.0-d0-content-first",
       "content_role": "Better Combat and Apotheosis reach compatibility"
+    },
+    "content-040d-dep-athena": {
+      "projectId": 841890,
+      "id": 8061947,
+      "fileName": "athena-neoforge-1.21.1-4.0.6.jar",
+      "displayName": "Athena 4.0.6 NeoForge 1.21.1 (required by Chipped)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/athena/files/8061947",
+      "content_group": "0.4.0-d0-content-first",
+      "dependency_for": "content-040d-chipped"
     }
   },
   "optional_integrated_patches": {
