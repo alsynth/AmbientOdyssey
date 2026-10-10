@@ -38,6 +38,18 @@ The user's latest instruction explicitly allows completion of static work before
 
 This master supersedes older install preferences. The 6 October 166-candidate registry is screened for future worldgen risk, not an install list. The original 8 October TODO is retained under `evidence/baseline-test5/TODO.md`; its unique later-stage controls/QoL/boss/performance tasks remain in the master backlog. The original supplied master is retained under `evidence/handoffs/master-todo-source-2026-10-09.md`.
 
+## 10 October 2026 — Test8.4 experimental worldgen candidate (do not merge to stable)
+
+- [x] On isolated `worldgen/test8.4-prefreeze`, apply the user-approved, scoped Prairie reduction and climate fallback changes in canonical `release_030/biome-pools.json`, and update generated Biolith placement; preserve other biomes.
+- [x] On same isolated branch, stage mountain-only FreeTerraForged relief/variety (1.35, 0.9) and three Ice & Fire cave probabilities (0.72); preserve overall relief, dragon roosts, structure density and streams.
+- [x] Source-backed Archaion repair: author upstream 1.21.1 includes two zero-byte Ancient Keep `misc_room` NBT files; override only `rooms` and `rooms_x` template pools to exclude those two choices.
+- [x] Record exact scoped static validator `validate_worldgen_test84.py` and Test8.4 acceptance handoff.
+- [ ] BUILD: run Python build + validators in a complete checked-out repo, test all regenerated files and exact CurseForge import. This session cannot clone the full repo/build large assets from GitHub due sandbox network restrictions; no full-import ZIP generated.
+- [ ] TEST: two new seeds, actual Y distribution and mountain structure placement, Prairie alternatives, spectator-checked dragon caves beyond 1,000 blocks, actual Ancient Keep after pack priority. **No worldgen freeze yet.**
+- [ ] INVESTIGATE: identify native asset ownership/assembly for empty `minecraft:` jigsaws, `create_easy_structures:undergroundtrain_station`, cook pools, Repurposed city required top, and Dungeon Crawl spawners. Do not invent aliases.
+- [ ] TEST: medium/large YUNG bridges under FTF/Streams banks; deep-water/ocean/coastal structures; Nether/End, dedicated-server worldgen. Keep surface/general structure densities unchanged.
+- [ ] DEFER: performance/FPS optimizations until worldgen criteria are accepted; continue collecting logs but don't change renderer/worldgen in same A/B wave.
+
 # PART I — Project rules and current state
 
 ## 1. Purpose of the 0.3.x phase

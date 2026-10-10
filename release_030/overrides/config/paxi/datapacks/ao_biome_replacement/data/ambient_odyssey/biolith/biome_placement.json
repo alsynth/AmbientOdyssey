@@ -6,25 +6,25 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.576517150396
+      "proportion": 0.355140186916
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "regions_unexplored:grassland",
-      "proportion": 0.877308707124
+      "proportion": 0.88785046729
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "regions_unexplored:flower_fields",
-      "proportion": 0.626649076517
+      "proportion": 0.634178905207
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "biomeswevegone:skyris_vale",
-      "proportion": 0.250659630607
+      "proportion": 0.253671562083
     },
     {
       "dimension": "minecraft:overworld",
@@ -156,19 +156,19 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.98352553542
+      "proportion": 0.590115321252
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomeswevegone:baobab_savanna",
-      "proportion": 0.81960461285
+      "proportion": 0.98352553542
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomesoplenty:dryland",
-      "proportion": 0.65568369028
+      "proportion": 0.81960461285
     },
     {
       "dimension": "minecraft:overworld",
@@ -180,25 +180,25 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "natures_spirit:floral_ridges",
-      "proportion": 0.32784184514
+      "proportion": 0.393410214168
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna_plateau",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.98352553542
+      "proportion": 0.590115321252
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna_plateau",
       "biome": "biomeswevegone:baobab_savanna",
-      "proportion": 0.81960461285
+      "proportion": 0.98352553542
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna_plateau",
       "biome": "biomesoplenty:dryland",
-      "proportion": 0.65568369028
+      "proportion": 0.81960461285
     },
     {
       "dimension": "minecraft:overworld",
@@ -210,37 +210,37 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna_plateau",
       "biome": "natures_spirit:floral_ridges",
-      "proportion": 0.32784184514
+      "proportion": 0.393410214168
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:windswept_savanna",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.619674451522
+      "proportion": 0.354407836153
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:windswept_savanna",
       "biome": "biomeswevegone:baobab_savanna",
-      "proportion": 0.98584571833
+      "proportion": 0.987278972141
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:windswept_savanna",
       "biome": "biomesoplenty:dryland",
-      "proportion": 0.281670205237
+      "proportion": 0.303778145274
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:windswept_savanna",
       "biome": "regions_unexplored:grassland",
-      "proportion": 0.422505307856
+      "proportion": 0.379722681593
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:windswept_savanna",
       "biome": "natures_spirit:floral_ridges",
-      "proportion": 0.507006369427
+      "proportion": 0.50629690879
     },
     {
       "dimension": "minecraft:overworld",
@@ -421,7 +421,7 @@
     {
       "dimension": "minecraft:overworld",
       "target": "biomeswevegone:skyris_vale",
-      "biome": "biomeswevegone:prairie",
+      "biome": "regions_unexplored:grassland",
       "criterion": {
         "type": "biolith:all_of",
         "criteria": [
@@ -690,7 +690,7 @@
     {
       "dimension": "minecraft:overworld",
       "target": "natures_spirit:floral_ridges",
-      "biome": "biomeswevegone:prairie",
+      "biome": "biomeswevegone:baobab_savanna",
       "criterion": {
         "type": "biolith:all_of",
         "criteria": [

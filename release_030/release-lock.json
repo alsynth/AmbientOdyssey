@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.3",
+  "version": "0.3.8-worldgen-prefreeze-test1.4",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,

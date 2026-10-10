@@ -99,7 +99,7 @@
       "globalHorizontalScale": 1,
       "fancyMountains": true,
       "legacyMountainScaling": false,
-      "mountainVariety": 0
+      "mountainVariety": 0.9
     },
     "steppe": {
       "weight": 0.5734,
@@ -146,7 +146,7 @@
     "mountains": {
       "weight": 5.5347,
       "baseScale": 2,
-      "verticalScale": 0.88917524,
+      "verticalScale": 1.35,
       "horizontalScale": 0.29639176
     },
     "volcano": {
