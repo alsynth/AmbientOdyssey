@@ -160,7 +160,7 @@ def build(patches=False, output=None, private_modrinth=False):
             if name in entries:
                 raise ValueError('Existing resource would be overwritten by terminal repair: '+name)
             entries[name] = blob
-        assert sum(terminal_report.values()) == 271
+        assert sum(terminal_report.values()) == lock['terminal_jigsaw_repair']['expected_overrides']
     if private_modrinth:
         for addon in lock.get('private_modrinth_addons', []):
             assert addon['url'].startswith('https://cdn.modrinth.com/data/'), 'Unapproved external mod source'
