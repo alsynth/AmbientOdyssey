@@ -46,7 +46,7 @@ def verify(archive, private=False):
             p = PurePosixPath(name)
             assert not p.is_absolute() and '..' not in p.parts and '\\' not in name, name
         m = json.loads(z.read('manifest.json'))
-        assert m['version'] == '0.4.0-experimental-minecells-fg-questlog-q1'
+        assert m['version'] == '0.4.0-experimental-minecells-fg-questlog-q1-manual'
         assert m['minecraft']['modLoaders'] == [{'id': 'neoforge-21.1.252', 'primary': True}]
         refs = {e['projectID']: e['fileID'] for e in m['files']}
         assert len(refs) == len(m['files']) == 331
@@ -98,6 +98,18 @@ def verify(archive, private=False):
         assert validate_q1()==50
         for n in pilot_quests+pilot_chapters:
             json.loads(z.read(n))
+        # Separate three-chapter no-reward FTB Field Manual (14 + 8 + 7).
+        from tools.validate_v04_ftb_manual import run as validate_manual
+        assert validate_manual()==29
+        manual_chapters=['ao_field_manual','ao_tips_tricks','ao_keybinds']
+        for slug in manual_chapters:
+            path='overrides/config/ftbquests/quests/chapters/'+slug+'.snbt'
+            assert path in names
+            nbtlib.parse_nbt(z.read(path).decode('utf-8'))
+        loc='overrides/config/ftbquests/quests/lang/en_us.snbt'
+        assert loc in names
+        nbtlib.parse_nbt(z.read(loc).decode('utf-8'))
+        assert 'overrides/config/ftbquests/quests/chapters/when_dungeons_arise.snbt' in names
         options = z.read('overrides/config/defaultoptions/options.txt').decode().splitlines()
         assert 'renderDistance:12' in options and 'simulationDistance:6' in options
     return {'archive': Path(archive).name, 'sha256': sha256(Path(archive).read_bytes()).hexdigest(),

@@ -4,7 +4,7 @@ import json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 j=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert j['version'] in ('0.4.0-b1-living-world-batch','0.4.0-c0-ecosystem-feedback','0.4.0-d0-content-first','0.4.0-e0-audit-broad-content','0.4.0-experimental-minecells','0.4.0-experimental-minecells-fg','0.4.0-experimental-minecells-fg-questlog','0.4.0-experimental-minecells-fg-questlog-q1')
+assert j['version'] in ('0.4.0-b1-living-world-batch','0.4.0-c0-ecosystem-feedback','0.4.0-d0-content-first','0.4.0-e0-audit-broad-content','0.4.0-experimental-minecells','0.4.0-experimental-minecells-fg','0.4.0-experimental-minecells-fg-questlog','0.4.0-experimental-minecells-fg-questlog-q1-manual')
 if j['version'] != '0.4.0-b1-living-world-batch':
     EXPECT_REMOVED_GALOSPHERE = True
 else:
@@ -72,7 +72,7 @@ for v in j['remove_projects'].values():pins.pop(v,None)
 for v in j['additions'].values():pins[v['projectId']]=v['id']
 if j.get('default_integrated_patches'):
  v=j['optional_integrated_patches'];pins[v['projectId']]=v['id']
-assert len(pins)=={'0.4.0-b1-living-world-batch':289,'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-broad-content':313,'0.4.0-experimental-minecells':318,'0.4.0-experimental-minecells-fg':330,'0.4.0-experimental-minecells-fg-questlog':331,'0.4.0-experimental-minecells-fg-questlog-q1':331}[j['version']],len(pins)
+assert len(pins)=={'0.4.0-b1-living-world-batch':289,'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-broad-content':313,'0.4.0-experimental-minecells':318,'0.4.0-experimental-minecells-fg':330,'0.4.0-experimental-minecells-fg-questlog':331,'0.4.0-experimental-minecells-fg-questlog-q1-manual':331}[j['version']],len(pins)
 for pid,fid in [*EXPECTED_MODS.values(),*EXPECTED_PACKS.values()]:
  if pid==631098 and EXPECT_REMOVED_GALOSPHERE:
   assert pid not in pins
