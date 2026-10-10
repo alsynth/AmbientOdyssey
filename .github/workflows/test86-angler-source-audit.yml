@@ -1,0 +1,38 @@
+name: Test8.6 Farmers angler structure NBT provenance
+on:
+  push:
+    branches: [worldgen/test8.6-generation-repairs]
+    paths: ['.github/workflows/test86-angler-source-audit.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install nbtlib
+      - name: Parse pinned Farmer 1.0.6 angler structures and pool list
+        run: |
+          python - <<'PY'
+          import urllib.request,zipfile,io,gzip,nbtlib,json
+          u='https://mediafilez.forgecdn.net/files/8130/121/FarmersStructures-1.0.6-1.21.1_neoforge.jar'
+          with urllib.request.urlopen(urllib.request.Request(u,headers={'User-Agent':'AmbientOdyssey-NBTAudit/1.0'}),timeout=45) as r: data=r.read()
+          with zipfile.ZipFile(io.BytesIO(data)) as z:
+              poolfiles=[n for n in z.namelist() if '/worldgen/template_pool/' in n and 'angler' in n.lower()]
+              print('ANGLER_POOL_FILES',json.dumps(poolfiles),flush=True)
+              for p in poolfiles:print('ANGLER_POOL_SOURCE',p,z.read(p).decode()[:15000],flush=True)
+              for f in z.namelist():
+                  if not f.endswith('.nbt') or '/structure/' not in f:continue
+                  try:d=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(f))))
+                  except Exception:continue
+                  out=[]
+                  for b in d['blocks']:
+                      if str(d['palette'][int(b['state'])]['Name'])!='minecraft:jigsaw':continue
+                      nbt=b.get('nbt',{})
+                      k=str(nbt.get('pool',''))
+                      if 'angler' in k:
+                          out.append({'pos':list(map(int,b['pos'])),'pool':k,'name':str(nbt.get('name','')),'target':str(nbt.get('target',''))})
+                  if out:print('ANGLER_JIGSAW',f,json.dumps(out)[:12000],flush=True)
+          PY

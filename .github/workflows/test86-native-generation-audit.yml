@@ -1,0 +1,202 @@
+name: Test8.6 native structure NBT audit
+on:
+  push:
+    branches: [worldgen/test8.6-generation-repairs]
+    paths: ['.github/workflows/test86-native-generation-audit.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install nbtlib
+      - name: Attribute blank minecraft colon jigsaws across major source packs
+        run: |
+          python - <<'PY'
+          import io,json,gzip,zipfile,collections,urllib.request,nbtlib
+          mods=[
+            ('FARMERS','https://mediafilez.forgecdn.net/files/8130/121/FarmersStructures-1.0.6-1.21.1_neoforge.jar'),
+            ('INTEGRATED_STRONGHOLD','https://mediafilez.forgecdn.net/files/7802/495/integrated_stronghold-1.1.4+1.21.1-neoforge.jar'),
+            ('WDA','https://mediafilez.forgecdn.net/files/7150/870/DungeonsArise-1.21.1-2.1.68-release.jar'),
+            ('DUNGEONS_TAVERNS','https://mediafilez.forgecdn.net/files/5768/823/dungeons-and-taverns-v4.4.4%20%5BNeoForge%5D.jar'),
+          ]
+          for name,url in mods:
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBTAudit/1.0'})
+              with urllib.request.urlopen(req,timeout=90) as resp: blob=resp.read(35000000)
+              malformed=[];total=0; scanned=0
+              with zipfile.ZipFile(io.BytesIO(blob)) as z:
+                for entry in z.namelist():
+                  if not entry.endswith('.nbt') or '/structure/' not in entry:continue
+                  scanned+=1
+                  try:
+                    buf=gzip.decompress(z.read(entry))
+                    if b'pool' not in buf or b'minecraft:' not in buf:continue
+                    nbt=nbtlib.File.parse(io.BytesIO(buf))
+                    for b in nbt.get('blocks',[]):
+                      p=nbt['palette'][int(b['state'])]
+                      if str(p['Name'])=='minecraft:jigsaw':
+                        total+=1
+                        block=b.get('nbt',{})
+                        if str(block.get('pool',''))=='minecraft:':
+                          malformed.append({'path':entry,'pos':list(map(int,b['pos'])),'name':str(block.get('name','')),'target':str(block.get('target',''))})
+                  except Exception:continue
+              print('BLANK_JIGSAW_SCAN',name,'jarbytes',len(blob),'nbts',scanned,'jigsaws',total,'malformed',len(malformed),flush=True)
+              print('BLANK_JIGSAW_FILES',name,json.dumps(collections.Counter(x['path'] for x in malformed).most_common(30)),flush=True)
+              print('BLANK_JIGSAW_EXAMPLES',name,json.dumps(malformed[:16]),flush=True)
+            except Exception as e:print('BLANK_JIGSAW_FETCH_FAILED',name,type(e).__name__,str(e)[:450],flush=True)
+          PY
+      - name: Extract source-backed Farmers cook aliases and all Create Easy collapsed connectors
+        run: |
+          python - <<'PY'
+          import json,gzip,base64,io,urllib.request,zipfile,collections,nbtlib
+          from pathlib import Path
+          o=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          print('INDEX_RESOURCE_KINDS',list(o['resources'])[:25],flush=True)
+          index=o['resources']['worldgen/template_pool']
+          for label in ('cook_additions_1_pool','cook_additions_2_pool','cook_additions_3_pool','cook_additions_4_pool','cook_end_1_pool'):
+              key='farmers_structures:'+label
+              if key not in index:print('COOK_POOL_MISSING',key,flush=True);continue
+              source=index[key][0]['data']
+              alias=dict(source)
+              alias['name']='minecraft:'+label
+              assert source['elements'] and all('element' in x for x in source['elements'])
+              out=json.dumps(alias,separators=(',',':'))
+              print('AO_COOK_ALIAS',label,base64.b64encode(out.encode()).decode(),flush=True)
+              print('COOK_NATIVE',key,'pieces',len(alias['elements']),'fallback',alias['fallback'],'provenance',index[key][0].get('jar'),flush=True)
+          url='https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBT-Audit/1.0'}),timeout=30) as r: buf=r.read()
+          refs=[];named=[]
+          with zipfile.ZipFile(io.BytesIO(buf)) as z:
+              for path in z.namelist():
+                  if not path.endswith('.nbt') or '/structure/' not in path:continue
+                  try: d=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(path))))
+                  except Exception: continue
+                  for block in d['blocks']:
+                      if str(d['palette'][int(block['state'])]['Name'])!='minecraft:jigsaw':continue
+                      nbt=block.get('nbt',{})
+                      name=str(nbt.get('name',''));pool=str(nbt.get('pool',''));target=str(nbt.get('target',''))
+                      if 'einsturz' in (name+'|'+target):named.append({'file':path,'pos':[int(v) for v in block['pos']],'name':name,'target':target,'pool':pool})
+                      if 'undergroundtrain_station' in pool:refs.append(path)
+          print('EINSTURZ_JIGSAWS',json.dumps(named)[:14000],flush=True)
+          print('MISSING_STATION_REFS',json.dumps(refs),flush=True)
+          PY
+      - name: Trace cook pool origins and native Create Easy station connector names
+        run: |
+          python - <<'PY'
+          import io,json,zipfile,gzip,collections,urllib.request,nbtlib
+          from pathlib import Path
+          obj=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          def find(term,item,path=''):
+              if isinstance(item,dict):
+                  for k,v in item.items():find(term,v,path+'/'+str(k))
+              elif isinstance(item,list):
+                  for i,v in enumerate(item):find(term,v,path+'/'+str(i))
+              elif isinstance(item,str) and term in item:
+                  print('INDEX_HIT',term,path,item[:400],flush=True)
+          find('cook_additions',obj)
+          url='https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBT-Audit/1.0'}),timeout=30) as r: data=r.read()
+          with zipfile.ZipFile(io.BytesIO(data)) as z:
+              for path in ('data/create_easy_structures/structure/station.nbt','data/create_easy_structures/structure/station_underground.nbt','data/create_easy_structures/structure/gross_tkreuzung.nbt'):
+                  nbt=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(path))))
+                  out=[]
+                  for b in nbt['blocks']:
+                      if str(nbt['palette'][int(b['state'])]['Name'])=='minecraft:jigsaw':
+                          out.append({'pos':[int(x) for x in b['pos']],'name':str(b['nbt'].get('name','')),'target':str(b['nbt'].get('target','')),'pool':str(b['nbt'].get('pool',''))})
+                  print('STATION_NBT',path,json.dumps(out),flush=True)
+              for path in ('data/create_easy_structures/worldgen/template_pool/undergroundtrain_raum.json','data/create_easy_structures/worldgen/template_pool/undergroundtrain_raum_end.json'):
+                  print('TRAIN_POOL',path,z.read(path).decode()[:9000],flush=True)
+          PY
+      - name: Inspect missing Create Easy station pool and previous native jar index
+        run: |
+          python - <<'PY'
+          import urllib.request,zipfile,io,gzip,json,collections
+          url='https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBT-Audit/1.0'}),timeout=30) as x:
+              blob=x.read()
+          with zipfile.ZipFile(io.BytesIO(blob)) as z:
+              pools=[n for n in z.namelist() if '/worldgen/template_pool/' in n and n.endswith('.json')]
+              print('CREATE_EASY_POOL_NAMES',json.dumps(pools),flush=True)
+              candidates=[n for n in z.namelist() if n.endswith('.nbt') and ('station' in n or 'gross_' in n)]
+              print('CREATE_EASY_STATION_TEMPLATES',json.dumps(candidates),flush=True)
+              for n in pools:
+                  raw=z.read(n).decode('utf-8')
+                  if 'undergroundtrain' in n or 'undergroundtrain' in raw:
+                      print('CREATE_EASY_POOL_SOURCE',n,raw[:8000],flush=True)
+          from pathlib import Path
+          for p in ('release_030/evidence/jar-resource-index-test6.json.gz','release_030/evidence/jar-resource-index-test5.json.gz'):
+              try:
+                  o=json.loads(gzip.decompress(Path(p).read_bytes()))
+                  print('RESOURCE_INDEX',p,'root_type',type(o).__name__,'root_keys',list(o)[:10] if isinstance(o,dict) else len(o),flush=True)
+                  val=str(o)
+                  print('INDEX_TERM_COUNTS',{k:val.count(k) for k in ('cook_additions','undergroundtrain_station','archaion','CreateEasy','create_easy_structures')},flush=True)
+                  if isinstance(o,dict):
+                      for k,v in o.items():
+                          print('INDEX_TOP_ENTRY',k,'type',type(v).__name__,'size',len(v) if hasattr(v,'__len__') else None,flush=True)
+                          break
+              except Exception as e:print('INDEX_READ_FAILED',p,type(e).__name__,str(e),flush=True)
+          PY
+      - name: Compare actual Archaion starts and Create Easy jigsaw assets
+        run: |
+          python - <<'PY'
+          import io,gzip,zipfile,urllib.request,collections,json,nbtlib
+          def get(url):
+              req=urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-native-worldgen-audit/1.0'})
+              with urllib.request.urlopen(req,timeout=45) as r:
+                  return r.read(30000000)
+          def analyze(name,data):
+              try:
+                  nbt=nbtlib.File.parse(io.BytesIO(gzip.decompress(data)))
+                  palette=nbt['palette']; blocks=nbt['blocks']
+                  states=[]
+                  for b in blocks:
+                      state=palette[int(b['state'])]
+                      if str(state['Name'])=='minecraft:jigsaw':
+                          d={str(k):str(v) for k,v in b.get('nbt',{}).items()}
+                          states.append((list(map(int,b['pos'])),d))
+                  bypool=collections.Counter(d.get('pool','') for pos,d in states)
+                  starts=[(pos,d) for pos,d in states if 'arena_mainhall' in repr(d)]
+                  missing=[(pos,d) for pos,d in states if d.get('pool','') in ('minecraft:','create_easy_structures:undergroundtrain_station') or 'cook_' in d.get('pool','')]
+                  print('NBT',name,'jigsaws',len(states),'start_arena_mainhall',len(starts),'poolrefcounts',dict(bypool.most_common(16)),flush=True)
+                  print('START DETAILS',repr(starts[:8])[:1600],flush=True)
+                  print('SUSPECT MISSING POOLS',repr(missing[:20])[:4500],flush=True)
+              except Exception as e:
+                  print('NBT_PARSE_FAILED',name,type(e).__name__,str(e)[:300],flush=True)
+          base='https://raw.githubusercontent.com/UnanimousVoid/Archaion/1.21.1/src/main/resources/data/archaion/structure/ancient_keep/'
+          for name in ('arena','arena_hall','ancient_library'):
+              try: analyze('ARCHAION/'+name,get(base+name+'.nbt'))
+              except Exception as e:print('FETCH FAILED',name,type(e).__name__,str(e),flush=True)
+          targets=[
+             ('CREATE_EASY','https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'),
+             ('CREATE_ARISE','https://mediafilez.forgecdn.net/files/8837/992/Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar'),
+             ('ARCHAION_JAR','https://mediafilez.forgecdn.net/files/8983/496/archaion-1.21.1-1.4.4.jar'),
+          ]
+          for mod,url in targets:
+              try:
+                  data=get(url)
+                  print('GOT JAR',mod,'size',len(data),flush=True)
+                  with zipfile.ZipFile(io.BytesIO(data)) as z:
+                      poolfiles=[n for n in z.namelist() if '/worldgen/template_pool/' in n and n.endswith('.json')]
+                      nbtfiles=[n for n in z.namelist() if '/structure/' in n and n.endswith('.nbt')]
+                      print('JAR_ASSETS',mod,'nbts',len(nbtfiles),'pools',len(poolfiles),flush=True)
+                      for p in poolfiles:
+                          raw=z.read(p).decode('utf-8',errors='replace')
+                          if 'undergroundtrain_station' in raw or 'cook_' in raw:print('POOL_SUSPECT',mod,p,raw[:1800],flush=True)
+                      interesting=0
+                      for n in nbtfiles:
+                          raw=z.read(n)
+                          try:decompressed=gzip.decompress(raw)
+                          except Exception:continue
+                          if any(t in decompressed for t in (b'undergroundtrain_station',b'cook_additions',b'cook_end_',b'arena_mainhall',b'minecraft:')):
+                              print('NBT_STRING_MATCH',mod,n,'train',b'undergroundtrain_station' in decompressed,'cook',b'cook_' in decompressed,'arena',b'arena_mainhall' in decompressed,flush=True)
+                              if interesting<25:analyze(mod+'/'+n,raw)
+                              interesting+=1
+                      print('JAR SUSPECT FILE COUNT',mod,interesting,flush=True)
+              except Exception as e: print('JAR_FETCH_FAILED',mod,type(e).__name__,str(e)[:500],flush=True)
+          PY

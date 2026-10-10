@@ -1,0 +1,70 @@
+name: Ambient Odyssey Test8.6 native-generation repair private pack
+on:
+  push:
+    branches: [worldgen/test8.6-generation-repairs]
+    paths:
+      - '.github/workflows/test86-worldgen-build.yml'
+      - 'release_030/release-lock.json'
+      - 'release_030/overrides/**'
+      - 'validate_generation_repairs_086.py'
+      - 'validate_worldgen_test84.py'
+      - 'build_release_030.py'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate Test8.4 terrain source unchanged
+        run: python validate_worldgen_test84.py
+      - name: Validate exactly source-backed Test8.6 jigsaw repairs
+        run: python validate_generation_repairs_086.py
+      - name: Build standalone private pack with all three mods
+        run: python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.3.8-Test8.6-Generation-Repairs-Private.zip
+      - name: Validate compiler did not overwrite generation repairs
+        run: |
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+      - name: Verify archive CRC, all 3 mods and generated datapack assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib,json,zipfile
+          p=Path('build/Ambient-Odyssey-v0.3.8-Test8.6-Generation-Repairs-Private.zip')
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              names=z.namelist()
+              assert len(names)==len(set(names))
+              assert 'manifest.json' in names
+              manifest=json.loads(z.read('manifest.json'))
+              assert manifest['version']=='0.3.8-worldgen-prefreeze-test1.6'
+              ids={x['projectID']:x['fileID'] for x in manifest['files']}
+              assert ids[1713723]==8988949 and ids[1385782]==7227735
+              neo=z.read('overrides/mods/neoreefredux-1.0.jar')
+              assert hashlib.sha1(neo).hexdigest()=='10160406202fd3dadd295e130b380466436e0981'
+              base='overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/'
+              expected=['archaion/worldgen/structure/ancient_keep.json',
+                  'archaion/worldgen/template_pool/ancient_keep/start.json',
+                  'create_easy_structures/worldgen/template_pool/undergroundtrain_station.json']
+              expected.extend(f'minecraft/worldgen/template_pool/{name}.json' for name in ['cook_additions_1_pool','cook_additions_2_pool','cook_additions_3_pool','cook_additions_4_pool','cook_end_1_pool'])
+              for e in expected:
+                  assert base+e in names, 'Missing authored source-backed fix '+e
+                  assert json.loads(z.read(base+e)),e
+              print('SCOPED GENERATION REPAIRS:',len(expected),'PAXI files, PASS')
+              print('MANIFEST PROJECTS:',len(ids),'NEOREEF JAR:',len(neo),'PASS')
+          print('ARCHIVE BYTES',p.stat().st_size,'SHA256',hashlib.sha256(p.read_bytes()).hexdigest())
+          print('MINECRAFT RUNTIME NOT TESTED')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-Test8.6-PRIVATE-Generation-Repairs
+          path: build/Ambient-Odyssey-v0.3.8-Test8.6-Generation-Repairs-Private.zip
+          compression-level: 0
+          retention-days: 7
+          if-no-files-found: error
