@@ -14,8 +14,8 @@ import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
-VERSION = "0.4.0-experimental-minecells-fg"
-EXPECTED_COUNT = 330
+VERSION = "0.4.0-experimental-minecells-fg-questlog"
+EXPECTED_COUNT = 331
 CRITICAL_PINS = {
     618790: (7033510, "Mine Cells"),
     890127: (8654089, "Sinytra Connector"),
@@ -23,6 +23,7 @@ CRITICAL_PINS = {
     532610: (6785734, "NeoForge owo-lib"),
     520110: (6375480, "Iceberg"),
     623764: (5988164, "JamLib"),
+    1202066: (8952784, "Questlog"),
 }
 EXTRA_PINS = {
     895603: (5924310, "Armor Trim Item Fix"),
@@ -57,6 +58,7 @@ EXPECTED_JARS = {
     "tarotcards": "tarotcards-2.3.5-neoforge-1.21.1.jar",
     "aquaculture_delight": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
     "end_remastered_additions": "endrem_additions-neoforge-1.2.0.jar",
+    "questlog": "questlog-neoforge-1.21.1-3.4.1.jar",
 }
 PATTERNS = {
     "fatal_mixin": r"MixinApplyError|MixinTransformerError|Mixin config .* failed",
@@ -93,7 +95,7 @@ def check_zip(path):
             if m.get("version") != VERSION:
                 out["issues"].append("Wrong experimental candidate manifest version")
             if len(by_id) != EXPECTED_COUNT or len(files) != EXPECTED_COUNT:
-                out["issues"].append("Expected 330 unique CurseForge project references")
+                out["issues"].append("Expected 331 unique CurseForge project references")
             if m.get("minecraft", {}).get("version") != "1.21.1":
                 out["issues"].append("Wrong Minecraft version")
             if m.get("minecraft", {}).get("modLoaders") != [{"id":"neoforge-21.1.252", "primary":True}]:
@@ -113,6 +115,7 @@ def check_zip(path):
             necessary = [
                 "overrides/config/paxi/datapacks/ao_server_rules/data/ambient_odyssey/function/server_rules.mcfunction",
                 "overrides/config/paxi/datapacks/ao_technical_fixes/pack.mcmeta",
+                "overrides/config/questlog-client.toml",
             ]
             for name in necessary:
                 if name not in names:
