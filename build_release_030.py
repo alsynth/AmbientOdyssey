@@ -31,6 +31,7 @@ def validate(archive, lock, baseline, patches):
         m = json.loads(z.read('manifest.json'))
         assert m['minecraft']['version'] == '1.21.1'
         assert m['minecraft']['modLoaders'] == [{'id': 'neoforge-21.1.252', 'primary': True}]
+        assert m['minecraft'].get('recommendedRam') == int(lock.get('recommended_ram_mb', 8192)), 'Recommended RAM mismatch'
         files = {x['projectID']: x['fileID'] for x in m['files']}
         assert len(files) == len(m['files']), 'Duplicate projects'
         removed = set(lock['remove_projects'].values())
@@ -95,6 +96,7 @@ def build(patches=False, output=None):
         pid, fid = e['projectId'], e['id']
         if pid in files and files[pid] != fid: raise ValueError(f'Unapproved update: {slug}')
         files[pid] = fid
+    manifest['minecraft']['recommendedRam'] = int(lock.get('recommended_ram_mb', 8192))
     manifest['version'] = lock['version'] + ('-integrated-patches' if patches and not lock.get('default_integrated_patches', False) else '')
     manifest['name'] = 'Ambient Odyssey ' + manifest['version']
     manifest['overrides'] = 'overrides'
