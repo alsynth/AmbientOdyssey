@@ -92,7 +92,12 @@ def build(patches=False, output=None):
     if patches or lock.get('default_integrated_patches', False):
         additions['integrated-patches'] = lock['optional_integrated_patches']
     for slug, e in additions.items():
-        assert {'1.21.1', 'NeoForge'}.issubset(e['gameVersions']) or e.get('version_check_override'), slug
+        # CurseForge shader projects are loader-agnostic resources and are installed
+        # to shaderpacks by the app; do not falsely require the 'NeoForge' file tag.
+        if e.get('contentType') == 'shaders':
+            assert {'1.21.1', 'Iris'}.issubset(e['gameVersions']), slug
+        else:
+            assert {'1.21.1', 'NeoForge'}.issubset(e['gameVersions']) or e.get('version_check_override'), slug
         pid, fid = e['projectId'], e['id']
         if pid in files and files[pid] != fid: raise ValueError(f'Unapproved update: {slug}')
         files[pid] = fid
