@@ -1139,7 +1139,11 @@ This is not the final 0.6.x questbook overhaul.
 - [ ] Check missing icons.
 - [ ] Check recipe/item task references to removed mods.
 - [ ] Check known Apotheosis gem filter problems.
-- [ ] Check group/team quest synchronization.
+- [ ] **REQUIRED: Individual quest completion for every player, even when members share an FTB Teams party.** Player A completing a task must NOT complete it for player B. Preserve FTB Chunks shared claims/party collaboration. Test with two real players on a dedicated server.
+- [ ] Do not mistake `default_reward_team:false` in `config/ftbquests/quests/data.snbt` for private progress: it only controls team reward distribution; vanilla FTB Quests shares progress in teams. No proven built-in switch.
+- [ ] Evaluate **Solo Quests 1.1.2** (NeoForge 1.21.1, CurseForge `1644371:8614631`): separate progress for party members, `teamSyncEnabled=false` prevents voluntary resync, **but author reports it does not work in integrated/LAN worlds**. Test API compatibility with FTB Quests 2101.1.36 and backup world quest data before any migration. Do not install to the current public build before dedicated-server acceptance.
+- [ ] Alternative if per-quest mixed shared/solo progression is wanted: research NoreQuests + NoreTeams, **not** a trivial setting—it replaces/hides FTB Teams controls and may alter FTB Chunks workflows.
+- [ ] Check group/team quest synchronization under the final chosen individual-progress implementation.
 - [ ] Check rewards that grant invalid items.
 - [ ] Check WDA questline integration.
 - [ ] Check starter chapters don't force missing content.
