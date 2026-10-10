@@ -1758,6 +1758,14 @@ Once the foundation passes:
 - Container and backpack integration.
 - Accessible tooltips and interaction feedback.
 
+**Quest writing pass v0.2 — 10 Oct 2026, DRAFTS ONLY:** [Quest project index](docs/questing/README.md) now includes **50 original journal quest drafts** ([human-readable](docs/questing/WRITTEN_QUEST_DRAFTS_V0_2.md) / [versioned JSON](docs/questing/WRITTEN_QUEST_DRAFTS_V0_2.json)), **14 written FTB educational articles** ([draft pages](docs/questing/FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md)), [version-pinned PasterDream/Enigmatic content leads](docs/questing/VERSION_PINNED_CONTENT_LEADS_2026-10-10.md), and the [post-expansion quest reconciliation process](docs/questing/POST_EXPANSION_RECONCILIATION_PROTOCOL.md). All written records are **draft_copy**, not implemented quest JSON or FTB SNBT. No install/release changes.
+- [x] Original prose drafted for main Tier 0–2 introduction and selected optional branches, with consistent seed IDs, player hints and separated technical trigger concerns.
+- [x] Written 14 optional FTB Field Manual articles for complex mod systems and newcomers, pending screenshots, keybind/recipe verification and GUI design.
+- [x] Research version-specific NeoPasterDream **0.9.6** puzzles, Cold Domain and Aaroncos and Enigmatic Legacy Plus **1.1.2** items/advancements; do not assume all features on evolving project pages are reachable in pinned builds.
+- [x] Establish repeatable content-reconciliation protocol for final modpack content expansion: exact mod/registry diff, reachability, status gates, ID migration, unclaimed/claimed rewards and performance.
+- [ ] **After every meaningful content expansion:** reconcile active manifest and registry against quest mapping, review new mods' full content (including small unexpectedly deep mods), re-tier boss encounters and update optional Questlog chapters. Preserve already-written IDs.
+- [ ] Turn reviewed prose into tested Questlog 3.4.1 objectives and FTB field-manual pages only after exact natural-item/biome/structure/boss identity and two-player testing; **50 written drafts are not 50 functioning quests.**
+
 ### Quest content mapping and authoring — Phase 1 (10 Oct 2026)
 
 **Source-authored planning work completed (not executable quests):** [Questing project index](docs/questing/README.md) · [full provisional mod coverage matrix](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) · [474 specific proposed content beats](docs/questing/QUEST_CONTENT_SEEDS.csv) · [Questlog/FTB chapter architecture](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md) · [source/inventory gaps](docs/questing/INVENTORY_METHOD_AND_GAPS.md) · [authoring and QA protocol](docs/questing/QUEST_AUTHORING_VALIDATION_PLAN.md).
