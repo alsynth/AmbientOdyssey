@@ -1,0 +1,58 @@
+name: AO Test8.5 private full-roster package
+on:
+  push:
+    branches: [worldgen/test8.5-mod-roster]
+    paths:
+      - '.github/workflows/test85-private-pack.yml'
+      - 'release_030/release-lock.json'
+      - 'build_release_030.py'
+      - 'release_030/overrides/**'
+      - 'validate_worldgen_test84.py'
+  workflow_dispatch:
+
+jobs:
+  private-import:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate Test8.4 canonical worldgen source
+        run: python validate_worldgen_test84.py
+      - name: Build verified complete private pack (Better Bastions + NeoReefRedux + Luki)
+        run: python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-Test8.5-Private-All-Three.zip
+      - name: Check required three projects and ZIP integrity
+        run: |
+          python - <<'PY'
+          import zipfile,json,hashlib
+          from pathlib import Path
+          p=Path('build/Ambient-Odyssey-Test8.5-Private-All-Three.zip')
+          with zipfile.ZipFile(p) as z:
+              assert z.testzip() is None
+              n=z.namelist()
+              assert len(n)==len(set(n))
+              m=json.loads(z.read('manifest.json'))
+              files={x['projectID']:x['fileID'] for x in m['files']}
+              assert files[1713723]==8988949, 'Better Bastions CurseForge pin lost'
+              assert files[1385782]==7227735, 'Luki Woodland Mansions CurseForge pin lost'
+              a=z.read('overrides/mods/neoreefredux-1.0.jar')
+              assert hashlib.sha1(a).hexdigest()=='10160406202fd3dadd295e130b380466436e0981'
+              assert len(a)==80519
+              assert not any(x.startswith('overrides/mods/') and x!='overrides/mods/neoreefredux-1.0.jar' for x in n)
+              print('PRIVATE PACK 3-MOD GUARANTEE: PASS')
+              print('CURSEFORGE MOD REFERENCES:',len(files))
+              print('MODRINTH NEOREEF BUNDLED:',len(a))
+              print('SHA256:',hashlib.sha256(p.read_bytes()).hexdigest())
+              print('BYTES:',p.stat().st_size)
+              print('NOTE: Private runtime test only; NOT verified in Minecraft / NOT CurseForge moderation-ready.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-Test8.5-PRIVATE-COMPLETE-IMPORT
+          path: build/Ambient-Odyssey-Test8.5-Private-All-Three.zip
+          compression-level: 0
+          retention-days: 7
+          if-no-files-found: error
