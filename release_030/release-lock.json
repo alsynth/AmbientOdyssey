@@ -1,5 +1,5 @@
 {
-  "version": "0.3.7-prefreeze-dev2",
+  "version": "0.3.7-prefreeze-dev3",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -836,16 +836,16 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/borderless-window/files/8703116"
     },
     "next-irons-jewelry": {
-      "id": 8237157,
+      "id": 8365016,
       "projectId": 1101111,
-      "fileName": "irons_jewelry-1.21.1-2.0.0.jar",
-      "displayName": "Iron's Gems 'n Jewelry 2.0.0 (known exact file pin; 2.0.2 upgrade pending)",
+      "fileName": "irons_jewelry-1.21.1-2.0.2.jar",
+      "displayName": "Iron's Gems 'n Jewelry 2.0.2 (NeoForge 1.21.1; user runtime load)",
       "gameVersions": [
         "1.21.1",
         "NeoForge"
       ],
       "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/8237157"
+      "source": "https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/8365016"
     }
   },
   "optional_integrated_patches": {
@@ -1560,5 +1560,6 @@
     "overrides/config/cristellib/dimdoors/structure_placement_config.json5",
     "overrides/config/cristellib/dimdoors/structure_toggle_config.json5"
   ],
-  "default_integrated_patches": true
+  "default_integrated_patches": true,
+  "recommended_ram_mb": 10240
 }
