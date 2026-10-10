@@ -33,7 +33,9 @@
     "weeping_witch_forest",
     "zelkova_forest",
     "shattered_glacier",
-    "frosted_coniferous_forest"
+    "frosted_coniferous_forest",
+    "baobab_savanna",
+    "tropical_rainforest"
   ],
   "biomesoplenty": [
     "auroral_garden",
@@ -42,7 +44,8 @@
     "ominous_woods",
     "pumpkin_patch",
     "snowblossom_grove",
-    "volcano"
+    "volcano",
+    "dryland"
   ],
   "natures_spirit": [
     "alpine_clearings",
