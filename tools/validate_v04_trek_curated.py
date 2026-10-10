@@ -18,7 +18,7 @@ def validate(archive=None):
     assert REMOVE <= set(lock["remove_projects"].values())
     assert lock["additions"]["trek-structure-expansion"]["projectId"]==TREK[0]
     assert lock["additions"]["trek-structure-expansion"]["id"]==TREK[1]
-    assert lock["experimental_minecells"]["expected_manifest_refs"]==330
+    assert lock["experimental_minecells"]["expected_manifest_refs"]==331
     native=json.loads(AUDIT.read_text())
     disabled=native["disabled"]
     assert len(disabled)==30 and native["catalogue_structure_count"]==96
