@@ -1,0 +1,3 @@
+# v0.4.1 targeted workaround: disable generated double cake models lacking Enigmatic Legacy+ texture
+[cake]
+double_cake = false

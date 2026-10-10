@@ -14,10 +14,11 @@ import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
-VERSION = "0.4.0-experimental-minecells-fg-questlog-q1"
+VERSION = "0.4.1-experimental-six-fix-test"
 EXPECTED_COUNT = 331
 CRITICAL_PINS = {
     618790: (7033510, "Mine Cells"),
+    318449: (5845879, "Cardinal Components API"),
     890127: (8654089, "Sinytra Connector"),
     889079: (8726480, "Forgified Fabric API"),
     532610: (6785734, "NeoForge owo-lib"),
@@ -41,6 +42,7 @@ EXTRA_PINS = {
 }
 EXPECTED_JARS = {
     "minecells": "minecells-2.0.3.jar",
+    "cardinal-components": "cardinal-components-api-6.1.2.jar",
     "connector": "connector-2.0.0-beta.17+1.21.1-full.jar",
     "forgified_fabric_api": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
     "owo": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
@@ -69,7 +71,7 @@ PATTERNS = {
     "out_of_memory": r"OutOfMemoryError|java heap space",
     "server_stall": r"Can't keep up! Is the server overloaded",
 }
-CORE = {"minecells", "connector", "forgified_fabric_api", "owo", "iceberg", "jamlib"}
+CORE = {"minecells", "connector", "forgified_fabric_api", "owo", "iceberg", "jamlib", "cardinal-components"}
 
 def check_zip(path):
     out = {"checked": True, "issues": [], "warnings": [], "facts": {}}
@@ -103,7 +105,7 @@ def check_zip(path):
             for pid,(fid,label) in {**CRITICAL_PINS,**EXTRA_PINS}.items():
                 if by_id.get(pid) != fid:
                     out["issues"].append(label + " exact project/file pin missing")
-            for disallowed in (306612,284876,631098):
+            for disallowed in (306612,284876,631098,1100379):
                 if disallowed in by_id:
                     out["issues"].append("Known conflicting project ID in manifest: " + str(disallowed))
             bundled = [n for n in names if n.startswith("overrides/mods/") and n.endswith(".jar")]
@@ -115,6 +117,7 @@ def check_zip(path):
             necessary = [
                 "overrides/config/paxi/datapacks/ao_server_rules/data/ambient_odyssey/function/server_rules.mcfunction",
                 "overrides/config/paxi/datapacks/ao_technical_fixes/pack.mcmeta",
+                "overrides/config/paxi/datapacks/ao_v041_runtime_fixes/pack.mcmeta",
                 "overrides/config/questlog-client.toml",
             ]
             for name in necessary:
