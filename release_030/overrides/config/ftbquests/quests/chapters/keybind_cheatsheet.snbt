@@ -1,0 +1,83 @@
+{
+	filename: "keybind_cheatsheet"
+	group: ""
+	id: "9513A8099DC61FA9"
+	icon: { id: "minecraft:recovery_compass" }
+	order_index: 3
+	progression_mode: "flexible"
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			id: "2ABB6CF2A9F0BD6C"
+			icon: { id: "minecraft:recovery_compass" }
+			x: -4.0d
+			y: 0.0d
+			size: 2.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7D89F9260EE1F"
+			icon: { id: "minecraft:recovery_compass" }
+			x: 0.0d
+			y: 0.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7D79F9260EC6C"
+			icon: { id: "minecraft:recovery_compass" }
+			x: 4.0d
+			y: 0.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7DA9F9260F185"
+			icon: { id: "minecraft:recovery_compass" }
+			x: -4.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7D99F9260EFD2"
+			icon: { id: "minecraft:recovery_compass" }
+			x: 0.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7D49F9260E753"
+			icon: { id: "minecraft:recovery_compass" }
+			x: 4.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7D39F9260E5A0"
+			icon: { id: "minecraft:recovery_compass" }
+			x: -4.0d
+			y: 6.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+		{
+			id: "4DE7D69F9260EAB9"
+			icon: { id: "minecraft:recovery_compass" }
+			x: 0.0d
+			y: 6.0d
+			size: 1.0d
+			tasks: [ ]
+			rewards: [ ]
+		}
+	]
+}

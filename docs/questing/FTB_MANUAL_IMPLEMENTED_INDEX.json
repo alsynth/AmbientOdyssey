@@ -1,0 +1,106 @@
+{
+  "schema": "ambient_odyssey_ftb_field_manual_q1",
+  "version": "1.21.1-2101.1.36",
+  "base_mod_count": 331,
+  "chapters": [
+    {
+      "slug": "field_manual",
+      "title": "Field Manual — Systems",
+      "chapter_id": "771970950CAF302D",
+      "page_ids": [
+        "9EABF83785B00368",
+        "7ADA88C8195DC0F0",
+        "7ADA8BC8195DC609",
+        "7ADA8AC8195DC456",
+        "7ADA8DC8195DC96F",
+        "7ADA8CC8195DC7BC",
+        "7ADA8FC8195DCCD5",
+        "7ADA8EC8195DCB22",
+        "7ADA91C8195DD03B",
+        "7ADA90C8195DCE88",
+        "1F172C031A4E8640",
+        "1F172D031A4E87F3",
+        "1F172E031A4E89A6",
+        "1F172F031A4E8B59",
+        "1F1730031A4E8D0C"
+      ],
+      "page_titles": [
+        "Field Manual — Systems — Start Here",
+        "Two Books, Two Purposes",
+        "JEI: Your Recipe Encyclopedia",
+        "Shield, Off-Hand and Unusual Attacks",
+        "Equipment Slots and Combat Supports",
+        "Lootr, Shared Loot and Multiplayer Courtesy",
+        "Waystones, Maps and Returning Safely",
+        "Apotheosis: Affixes, Gems and Sockets",
+        "Apotheosis: Enchanting and Upgrading",
+        "Relics: Effects, Activation and Growth",
+        "Iron's Spellbooks: Schools and Casting",
+        "Ars Nouveau: Build a Spell with Glyphs",
+        "When a Dungeon is Above Your Tier",
+        "The Dreamscape and Its Native Systems",
+        "Enigmatic Legacy: The Choice of Curses"
+      ],
+      "pages": 15,
+      "source": "docs/questing/FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "slug": "tips_and_tricks",
+      "title": "Tips & Tricks",
+      "chapter_id": "D2DB876800E8657B",
+      "page_ids": [
+        "81D1C143818531AE",
+        "FFDC1856A48960CA",
+        "FFDC1756A4895F17",
+        "FFDC1656A4895D64",
+        "FFDC1556A4895BB1",
+        "FFDC1456A48959FE",
+        "FFDC1356A489584B",
+        "FFDC1256A4895698",
+        "FFDC1156A48954E5"
+      ],
+      "page_titles": [
+        "Tips & Tricks — Start Here",
+        "Ten things worth knowing before your first proper expedition",
+        "Inventory tricks that save hours",
+        "Combat and equipment — surviving instead of only increasing damage",
+        "Exploration — the pack's actual core progression",
+        "Magic, progression and optional systems",
+        "Multiplayer — good habits for 5–7 friends",
+        "Performance, troubleshooting and configuration",
+        "Short “Did you know?” panels to sprinkle throughout the manual"
+      ],
+      "pages": 9,
+      "source": "docs/questing/FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "slug": "keybind_cheatsheet",
+      "title": "Controls & Keybinds",
+      "chapter_id": "9513A8099DC61FA9",
+      "page_ids": [
+        "2ABB6CF2A9F0BD6C",
+        "4DE7D89F9260EE1F",
+        "4DE7D79F9260EC6C",
+        "4DE7DA9F9260F185",
+        "4DE7D99F9260EFD2",
+        "4DE7D49F9260E753",
+        "4DE7D39F9260E5A0",
+        "4DE7D69F9260EAB9"
+      ],
+      "page_titles": [
+        "Controls & Keybinds — Start Here",
+        "Five controls you'll actually use",
+        "Basic inventory and combat",
+        "JEI — the built-in encyclopedia",
+        "Maps, exploring, waypoints",
+        "Modded combat, backpacks, RPG and voice",
+        "Debug and visibility — advanced, optional",
+        "Keybind conflicts: quick fix"
+      ],
+      "pages": 8,
+      "source": "docs/questing/FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    }
+  ],
+  "total_pages": 32,
+  "static_only": true
+}
