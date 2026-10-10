@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-experimental-minecells-fg-questlog-q1",
+  "version": "0.4.1-experimental-trek-structures",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -9,7 +9,9 @@
     "companions-mod": 1300341,
     "modern-companions": 1391597,
     "dimensional-doors": 284876,
-    "my-picture-frame": 1582023
+    "my-picture-frame": 1582023,
+    "repurposed-structures": 368293,
+    "repurposed-structures-farmers-delight-compat": 1071336
   },
   "additions": {
     "biolith": {
@@ -1970,6 +1972,20 @@
       "content_role": "Enable narrative quest journal and inventory GUI compatibility testing; no authored quests in this wave",
       "environment": "both",
       "notes": "Cloth Config NeoForge 15.0.140 project 348521/file 5729127 already inherited; client inventory button is movable via questlog-client TOML; no Questlog quests or progression changes yet."
+    },
+    "trek-structure-expansion": {
+      "id": 8296269,
+      "projectId": 1418999,
+      "fileName": "trek-B0.6.2.jar",
+      "displayName": "Trek B0.6.2 for Minecraft 1.21.1 (NeoForge-compatible universal)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge",
+        "Server"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/trek-mod/files/8296269",
+      "verified_status": "CurseForge version page compatibility indicates Trek B0.6.2 for 1.21.1; exact binary file metadata must be checked before runtime deployment"
     }
   },
   "optional_integrated_patches": {
@@ -2675,14 +2691,31 @@
   "remove_override_paths": [
     "overrides/config/amaranth/amaranth-common.toml",
     "overrides/config/companions.toml",
-    "overrides/config/modern_companions-common.toml",
     "overrides/config/cristellib/companions/structure_placement_config.json5",
     "overrides/config/cristellib/companions/structure_toggle_config.json5",
+    "overrides/config/cristellib/dimdoors/structure_placement_config.json5",
+    "overrides/config/cristellib/dimdoors/structure_toggle_config.json5",
     "overrides/config/cristellib/modern_companions/structure_placement_config.json5",
     "overrides/config/cristellib/modern_companions/structure_toggle_config.json5",
+    "overrides/config/cristellib/repurposed_structures/structure_placement_config.json5",
+    "overrides/config/cristellib/repurposed_structures/structure_toggle_config.json5",
     "overrides/config/dimdoors-config.json5",
-    "overrides/config/cristellib/dimdoors/structure_placement_config.json5",
-    "overrides/config/cristellib/dimdoors/structure_toggle_config.json5"
+    "overrides/config/modern_companions-common.toml",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/any_taiga.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/bamboos.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/floral.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/giant_taigas.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/giant_trees.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/mangroves.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/meadows.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/regular_forests.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/snowy_forests.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/snowy_mountains.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/snowy_plains.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/spooky_forests.json",
+    "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/taigas.json",
+    "overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/repurposed_structures/worldgen/structure/city_overworld.json",
+    "overrides/config/repurposed_structures-neoforge/modded_loot.toml"
   ],
   "default_integrated_patches": true,
   "recommended_ram_mb": 10240,
@@ -2716,7 +2749,7 @@
     "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
   },
   "experimental_minecells": {
-    "expected_manifest_refs": 331,
+    "expected_manifest_refs": 330,
     "owo_inherited_pin": {
       "projectId": 532610,
       "id": 6785734
