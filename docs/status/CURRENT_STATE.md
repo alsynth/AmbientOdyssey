@@ -1,3 +1,8 @@
+## 0.4.0-d0 — content-first expansion (10 October 2026, experimental branch)
+**User-approved phase order supersedes previous roadmap:** (1) add content while it is worthwhile and compatible; (2) repair content/UX defects, including *Controlling* keybind conflict overhaul; (3) optimize worldgen, performance and server; (4) balance; (5) author all FTB Quests/Questlog/archaeology **last**; (6) optionally revisit MCA Reborn and more bridges. Track minor issues rather than blocking expansion. Approximate target multiplayer launch is 15 October 2026, NOT guaranteed readiness.
+
+New experimental branch `content/0.4.0d-content-first-expansion` inherits all 0.4c sources, stages **7 official 1.21.1 NeoForge mod project pins** (Mutant Monsters, Illager Invasion, Chipped, Handcrafted, Dusty Decorations, Night Lights, Apothic Combat). Expected 288→295 CF refs *pending duplicate/dependency checks*. See [full content-first phase decisions and issue register](../audits/CONTENT_FIRST_EXPANSION_040D_2026-10-10.md). **Not yet verified in Minecraft** and do not merge blindly. Native dependencies (Puzzles Lib, Athena, Resourceful Lib, GeckoLib) require manifest verification; do not silently repin other mods. Existing 273 NBT repairs, 0.4c gamerules/wildlife/audio and Galosphere removal untouched.
+
 # Ambient Odyssey — Current Project State
 
 **Updated:** 10 October 2026. **Canonical repository:** `alsynth/AmbientOdyssey`. **Minecraft:** 1.21.1. **Loader:** NeoForge 21.1.252.

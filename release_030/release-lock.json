@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-c0-ecosystem-feedback",
+  "version": "0.4.0-d0-content-first",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1353,6 +1353,104 @@
       "source": "https://www.curseforge.com/minecraft/texture-packs/extended-illumina/files/6021451",
       "content_kind": "resourcepack",
       "content_group": "0.4.0-b1-combined"
+    },
+    "content-040d-mutant-monsters": {
+      "projectId": 852665,
+      "id": 7232511,
+      "fileName": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+      "displayName": "Mutant Monsters 21.1.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/mutant-monsters/files/7232511",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Boss-like overworld combat"
+    },
+    "content-040d-illager-invasion": {
+      "projectId": 891324,
+      "id": 6492670,
+      "fileName": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+      "displayName": "Illager Invasion 21.1.6",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/illager-invasion/files/6492670",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Raid and illager encounters"
+    },
+    "content-040d-chipped": {
+      "projectId": 456956,
+      "id": 5813117,
+      "fileName": "chipped-neoforge-1.21.1-4.0.2.jar",
+      "displayName": "Chipped 4.0.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/chipped/files/5813117",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Many new decorative block variants"
+    },
+    "content-040d-handcrafted": {
+      "projectId": 538214,
+      "id": 6330030,
+      "fileName": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "displayName": "Handcrafted 4.0.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/handcrafted/files/6330030",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Interactive furniture"
+    },
+    "content-040d-dusty-decorations": {
+      "projectId": 843344,
+      "id": 7917189,
+      "fileName": "DustyDecorations_1.21.1Neoforge_V1.13.jar",
+      "displayName": "Dusty Decorations 1.13",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/dusty-decorations/files/7917189",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Ports/markets furnishing; native stable NeoForge version"
+    },
+    "content-040d-night-lights": {
+      "projectId": 1199355,
+      "id": 8555615,
+      "fileName": "nightlights-neoforge-1.21.1-1.4.0.jar",
+      "displayName": "Night Lights 1.4.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/night-lights/files/8555615",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Dyeable and time-aware lights"
+    },
+    "content-040d-apothic-combat": {
+      "projectId": 986982,
+      "id": 6105085,
+      "fileName": "apothiccombat-1.2.1.jar",
+      "displayName": "Apothic Combat 1.2.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/apothic-combat/files/6105085",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Better Combat and Apotheosis reach compatibility"
     }
   },
   "optional_integrated_patches": {
