@@ -10,9 +10,9 @@
       ],
       "vanilla_percent": 5,
       "biomes": {
-        "biomeswevegone:prairie": 40,
+        "biomeswevegone:prairie": 23,
         "regions_unexplored:grassland": 35,
-        "regions_unexplored:flower_fields": 15,
+        "regions_unexplored:flower_fields": 25,
         "biomeswevegone:skyris_vale": 10
       }
     },
@@ -66,8 +66,10 @@
       ],
       "vanilla_percent": 0.5,
       "biomes": {
-        "biomeswevegone:prairie": 80,
-        "regions_unexplored:grassland": 10,
+        "biomeswevegone:prairie": 30,
+        "biomeswevegone:baobab_savanna": 25,
+        "biomesoplenty:dryland": 20,
+        "regions_unexplored:grassland": 15,
         "natures_spirit:floral_ridges": 10
       }
     },
@@ -78,9 +80,11 @@
       ],
       "vanilla_percent": 0.5,
       "biomes": {
-        "biomeswevegone:prairie": 75,
-        "regions_unexplored:grassland": 10,
-        "natures_spirit:floral_ridges": 15
+        "biomeswevegone:prairie": 22,
+        "biomeswevegone:baobab_savanna": 35,
+        "biomesoplenty:dryland": 10,
+        "regions_unexplored:grassland": 15,
+        "natures_spirit:floral_ridges": 18
       }
     },
     {
@@ -92,8 +96,9 @@
       ],
       "vanilla_percent": 0.5,
       "biomes": {
-        "biomeswevegone:crag_gardens": 55,
-        "biomeswevegone:ebony_woods": 30,
+        "biomeswevegone:crag_gardens": 35,
+        "biomeswevegone:tropical_rainforest": 30,
+        "biomeswevegone:ebony_woods": 20,
         "biomeswevegone:redwood_thicket": 15
       }
     }
