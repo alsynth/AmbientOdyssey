@@ -1,0 +1,3 @@
+# Ambient Odyssey: quest progress must be earned individually even inside FTB Teams.
+# Disable the optional feature that copies completed tasks from teammates.
+teamSyncEnabled = false
