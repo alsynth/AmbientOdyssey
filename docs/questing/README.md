@@ -29,6 +29,19 @@
 
 **Planning quantity:** 474 broad seed beats + 250 supplementary leads, **not 724 unique or completed quests**. Still 50 written Questlog narrative drafts and 14 written FTB manual articles. None of the new leads have live quest JSON, item/structure IDs, approved rewards or successful multiplayer gameplay validation. The source roster is expected to change after the planned modpack content expansion.
 
+## Tips, tricks and keybind cheat sheet — v0.3 (new FTB Field Manual drafts)
+
+**User-approved content addition** — keep both permanently accessible in FTB Quests as browseable educational chapters rather than Questlog progression or reward-bearing tasks.
+
+| New draft | Coverage |
+|---|---|
+| [FTB_TIPS_AND_TRICKS_V0_3.md](FTB_TIPS_AND_TRICKS_V0_3.md) | **65 authored gameplay tips** with 10 entry-level must-knows, inventory/JEI, combat, gear, exploration, magic/RPG, multiplayer and troubleshooting; plus ten short “Did you know?” snippets |
+| [FTB_KEYBIND_CHEATSHEET_V0_3.md](FTB_KEYBIND_CHEATSHEET_V0_3.md) | Essential vanilla and JEI defaults, maps/waypoints, special mods, RPG/voice controls, advanced debug shortcuts, conflict recovery and publication checklist; distinguishes confirmed AO-distributed key settings from mod defaults or unassigned future controls |
+
+**Existing AO control evidence:** `release_030/overrides/config/defaultoptions/keybindings.txt` binds `O` to Accessories, `J` to mute microphone and leaves FTB Chunks map unbound. `release_030/overrides/config/keybindoverrides-client.toml` lists the same values but has `applyOverrides = false`; test fresh-import and existing-player behavior. Xaero `M`/`B` are mod defaults, not guaranteed AO overrides. **Do not invent** Iron's spells, Ars, backpack, Origins, Questlog or other final key assignments until the controls are tested.
+
+**Implementation still pending:** import/format into FTB SNBT with a short always-visible landing page, grouped subsections, item icons and contextual screenshots; make no duplicate quest rewards. The currently authored Markdown is original reference content, not live FTB Quests GUI pages.
+
 ## Current outputs
 
 | File | Scope | State |
