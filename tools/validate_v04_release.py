@@ -81,7 +81,8 @@ def verify(archive, private=False):
         assert 'gamerule playersSleepingPercentage 30' in rule
         technical = 'overrides/config/paxi/datapacks/ao_technical_fixes/'
         fire = json.loads(z.read(technical + 'data/traveloptics/tags/entity_type/element_fire.json'))
-        assert 'cataclysm:ignited_revenant' in fire['values'] and 'irons_spellbooks:pyromancer' in fire['values']
+        fire_ids = {x if isinstance(x, str) else x['id'] for x in fire['values']}
+        assert {'cataclysm:ignited_revenant','irons_spellbooks:pyromancer'} <= fire_ids
         for tag in ('inky_cap', 'morel', 'truffle'):
             bridge = json.loads(z.read(technical + 'data/forge/tags/item/mushrooms/' + tag + '.json'))
             assert bridge == {'replace': False, 'values': ['#c:mushrooms/' + tag]}
