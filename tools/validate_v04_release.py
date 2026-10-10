@@ -98,6 +98,16 @@ def verify(archive, private=False):
         assert validate_q1()==50
         for n in pilot_quests+pilot_chapters:
             json.loads(z.read(n))
+        from tools.validate_v04_ftb_manual import validate as validate_ftb_manual
+        assert validate_ftb_manual() is True
+        manual_root='overrides/config/ftbquests/quests/'
+        manual_chapters=('field_manual.snbt','tips_and_tricks.snbt','keybind_cheatsheet.snbt')
+        for ch in manual_chapters:
+            n=manual_root+'chapters/'+ch
+            assert n in names, 'Missing installed FTB Manual chapter: '+ch
+            assert z.read(n)==(ROOT/'release_030/overrides/config/ftbquests/quests/chapters'/ch).read_bytes()
+        assert z.read(manual_root+'lang/en_us.snbt')==(ROOT/'release_030/overrides/config/ftbquests/quests/lang/en_us.snbt').read_bytes()
+        assert manual_root+'chapters/when_dungeons_arise.snbt' in names
         options = z.read('overrides/config/defaultoptions/options.txt').decode().splitlines()
         assert 'renderDistance:12' in options and 'simulationDistance:6' in options
     return {'archive': Path(archive).name, 'sha256': sha256(Path(archive).read_bytes()).hexdigest(),
