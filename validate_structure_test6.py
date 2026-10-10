@@ -241,6 +241,11 @@ def run(archive):
               recipe['type']=='minecraft:smelting' and
               recipe['ingredient']=={'item':srcitem} and
               recipe['result']=={'id':outitem,'count':1}, recipe)
+    skull_fix=J(DP+'ao_worldgen_final_fixes/data/additionalstructures/tags/worldgen/biome/has_structure/skeleton_skull.json')
+    check('Additional Structures 1.21.1 skeleton-skull tag preserves native biomes and makes Pale Garden optional',
+          skull_fix == {'replace':True,'values':['#c:is_badlands','#c:is_wasteland',
+                  {'id':'minecraft:pale_garden','required':False}]},
+          skull_fix)
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
