@@ -114,10 +114,6 @@
     {
       "structure": "idas:frozen_crypt",
       "weight": 1
-    },
-    {
-      "structure": "idas:abandoned_lighthouse",
-      "weight": 1
     }
   ]
 }
