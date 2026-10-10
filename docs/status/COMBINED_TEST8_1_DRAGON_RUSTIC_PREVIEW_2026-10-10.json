@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-10",
+  "version": "0.3.8-worldgen-prefreeze-test1.1",
+  "gameplay_status": "NOT TESTED YET; archive CRC, manifest and JSON structure only",
+  "zip_name": "Ambient-Odyssey-v0.3.8-Combined-Prefreeze-Test1.1-Dragons-Rustic.zip",
+  "zip_size_bytes": 67977827,
+  "zip_sha256": "1803547f86f5633f308e494c01f35561356876f7aa749a4243c897db8becf6cb",
+  "zip_member_count": 1069,
+  "curseforge_project_count": 262,
+  "changed_existing_members": [
+    "manifest.json",
+    "overrides/config/iceandfire/iaf-common.json",
+    "overrides/config/cristellib/create_rustic_structures/structure_placement_config.json5"
+  ],
+  "added_members": [
+    "overrides/config/paxi/datapacks/ao_dragon_caves/pack.mcmeta",
+    "overrides/config/paxi/datapacks/ao_dragon_caves/data/ambient_odyssey/tags/worldgen/biome/fire_lightning_underground.json",
+    "overrides/config/paxi/datapacks/ao_dragon_caves/data/ambient_odyssey/tags/worldgen/biome/ice_underground.json",
+    "overrides/config/paxi/datapacks/ao_dragon_caves/data/iceandfire/worldgen/structure/fire_dragon_cave.json",
+    "overrides/config/paxi/datapacks/ao_dragon_caves/data/iceandfire/worldgen/structure/lightning_dragon_cave.json",
+    "overrides/config/paxi/datapacks/ao_dragon_caves/data/iceandfire/worldgen/structure/ice_dragon_cave.json"
+  ],
+  "biome_tag_coverage": {
+    "fire_lightning_overworld_entries": 99,
+    "ice_cold_snowy_entries": 17
+  },
+  "skeleton_chance": {
+    "before": 0.0033333333333333335,
+    "after": 0.0015
+  },
+  "create_rustic_grid": {
+    "barn": {
+      "spacing": 36,
+      "separation": 24
+    },
+    "windmill": {
+      "spacing": 32,
+      "separation": 20
+    },
+    "smithy": {
+      "spacing": 28,
+      "separation": 18
+    },
+    "well": {
+      "spacing": 20,
+      "separation": 12
+    }
+  },
+  "dependency_context": "Native IAFEnvoy/IceAndFire-CE cave structure JSON confirmed type and shared biome tags. AO datapack overrides only cave biomes, not surface roosts.",
+  "supplementary_unbundled_uploaded_jars": {
+    "betterbastions-1.0.0+neoforge-1.21.1.jar": "847ca595f5bf7a88ec1b5893ce66dd48a96fb5c9babd96b45bb6e0b5975910fc",
+    "neoreefredux-1.0.jar": "a590ada50e328760ab147f98596f482d13d48c0c87b50ff85270a21776144dfb"
+  },
+  "known_limitations": [
+    "Uploaded Better Bastions and NeoReefRedux JARs are NOT bundled in CurseForge manifest/overrides; manual install before test",
+    "No source-script clean-rebuild and full regression run completed for new version",
+    "Rarity reduction lessens overlapping Create Rustic structures but does not implement universal cross-mod collision prevention",
+    "Surface corpse chance and underground cave biome eligibility require new-seed runtime generation proof",
+    "No midgame flight mod installed; candidates researched separately"
+  ],
+  "testing_checklist": "docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md",
+  "flight_audit": "docs/testing/MIDGAME_FLIGHT_OPTIONS_2026-10-10.md"
+}
