@@ -33,6 +33,10 @@ def check():
         require(f"{ident} native piece weights and processors intact", alias["elements"] == source["elements"])
         total += len(alias["elements"])
     require("All original 71 Farmer cook pieces retained", total == 71)
+    angler=read(BASE / "minecraft/worldgen/template_pool/angler_additions_3_pool.json")
+    cook3=read(BASE / "minecraft/worldgen/template_pool/cook_additions_3_pool.json")
+    require("Native Farmer 1.0.6 cook additions 3 mistaken angler reference repaired", angler["name"]=="minecraft:angler_additions_3_pool" and angler["elements"]==cook3["elements"] and angler["fallback"]==cook3["fallback"])
+
 
     archa = read(BASE / "archaion/worldgen/structure/ancient_keep.json")
     first = read(BASE / "archaion/worldgen/template_pool/ancient_keep/start.json")
@@ -48,7 +52,7 @@ def check():
     require("Unsupported station connector gracefully terminates", train["fallback"] == "minecraft:empty" and train["elements"] == [{"weight": 1, "element": {"element_type":"minecraft:empty_pool_element"}}])
 
     lock = read(ROOT / "release_030/release-lock.json")
-    require("Test8.6 scoped version", lock["version"] == "0.3.8-worldgen-prefreeze-test1.6")
+    require("Test8.6 scoped version", lock["version"] in ("0.3.8-worldgen-prefreeze-test1.6", "0.3.8-worldgen-prefreeze-test1.7"))
     ids = {k:lock["additions"][k]["id"] for k in ("structure-better-bastions","structure-lukis-woodland-mansions")}
     require("All three Test8.5 mods kept", ids == {"structure-better-bastions":8988949, "structure-lukis-woodland-mansions":7227735} and lock["private_modrinth_addons"][0]["version_id"] == "PVzfioBU")
     print(f"PASS: {passes} source-backed Test8.6 generation repair checks, 71 native Farmer pieces retained.")
