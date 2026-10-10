@@ -71,6 +71,14 @@ Aim for **one substantial 60–90-minute client/multiplayer test** for the compl
 
 **Stop/revert criteria:** startup crash/missing mandatory deps, worldgen-registry load failure, serious guard or Naturalist AI pathfinding stall, catastrophic shader/cave render, per-player quest duplication, core resourcepack install corruption, or modded biome/cave generation preventing reaching content. Minor sound levels, colors, too many passive animals, huge-shadow FPS drop or some texture seams can be config-tuned **without another pack ZIP**.
 
+## Actual GitHub CI and artifact result — fully passed
+
+[Combined 0.4.0-b1 CI run](https://github.com/alsynth/AmbientOdyssey/actions/runs/38057013025) **PASSED**. Native source assertions, 28 terrain regression tests, 31 earlier structure repairs, all 273 actual packed native NBT fixes, original NeoReef SHA, both older QoL additions, 15 more mod/dependency pins, five CurseForge resource-pack project IDs, 289-entry manifest, ZIP CRC and repeated full builds all passed. Build runner produced **two byte-identical importer ZIPs**.
+
+**Exact CurseForge importer:** `Ambient-Odyssey-0.4.0-b1-Living-World-COMBINED-PRIVATE.zip`, **70,814,589 bytes**, **1,386 archive members**, **289 referenced CurseForge projects** and one separately embedded private NeoReefRedux JAR. SHA-256 **`c25a677bfba4dddc6d122232f998244d2b94bd4a66a7024f1796f7a76884b08f`**. Downloaded the GitHub artifact and independently verified the extracted inner ZIP in the working container (same byte count/hash, root `manifest.json`, no duplicate filenames and 15+5 new official CF pins). **No Minecraft runtime or CurseForge GUI import was run.** In particular, resourcepack refs may install but might not automatically be *enabled*, and an extra client-only JAR may need omission from dedicated-server exports.
+
+**Important download distinction:** GitHub Actions creates an outer ZIP artifact wrapper. Import **only the inner `Ambient-Odyssey-0.4.0-b1-Living-World-COMBINED-PRIVATE.zip`**, not the wrapper.
+
 ## Verification boundaries
 
 CI can verify exact CF file pins/versions, old 273 NBT fixes, release manifest integrity and deterministic output. It **cannot** prove CurseForge resourcepack download/install path, server-side client-only mod omission, actual FTF cave reachability, Minecraft startup, GUI behavior, creature counts, sound overlap or multiplayer state. Mark runtime untested honestly until the single combined test.
