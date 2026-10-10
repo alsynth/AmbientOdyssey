@@ -1,5 +1,7 @@
 # Ambient Odyssey v0.3.8 — Combined prefreeze one-pass test checklist
 
+> **Test 8.1 addendum (10 Oct — use updated Test8.1 ZIP, not original Test8):** Dragon skeleton surface chance reduced from `0.0033333333333333335` to `0.0015` (~55% fewer attempts). New AO independent `ao_dragon_caves` datapack retargets **underground fire/lightning caves** only to all registered/curated Overworld biomes; ice caves explicitly target cold/snowy biomes; **surface dragon roost rules stay unchanged**. Create Rustic barn/windmill/smithy/well placement lowered, but cross-mod geometry still needs observation. Uploaded **Better Bastions** and **NeoReefRedux** JARs were inspected for valid 1.21.1 NeoForge descriptors (both passed); still manually install because exact CurseForge file ID / app-managed Modrinth reference not established. **Test 8.1 JAR files are not bundled into the CurseForge overrides**. Before any worldgen test, back up original test profile and use a new seed/chunks.
+
 **Status:** 10 October 2026 — **preview ZIP statically verified, NOT runtime tested**. **Minecraft 1.21.1 / NeoForge 21.1.252.** Working branch: `structure/test6`. **Worldgen is NOT frozen.**
 
 **Preview ZIP:** `Ambient-Odyssey-v0.3.8-Combined-Prefreeze-Test1.zip` — **262 CurseForge projects**, **1,063 ZIP entries**, **67,974,728 bytes**, SHA-256 **`59714d91a5007befc1fe22361efadfabd2a4fdb20c933a0273f3e55420550cb0`**. Constructed from the **user-tested v0.3.7 Dev3 predecessor** via targeted manifest/worldgen/config patches; **not yet built by the authoritative `build_release_030.py` repo script or re-exported by CurseForge desktop**. ZIP CRC, duplicate, manifest, selected pins, and source-derived changes checked. **No full Minecraft startup or loader/dependency test has been performed for this particular candidate.**
@@ -44,6 +46,15 @@ The preview's CurseForge manifest **does NOT include** these two approved additi
 - [ ] **Bridges across vanilla rivers vs Streams Reflowing streams**: compare YUNG's Bridges and other bridge sources; log bridges found per ~1,000 new river blocks; inspect bridge orientation, height, supports and clipping. Existing `streamsreflowing:stream` tag is present, but **physical bridge placement is NOT yet fixed**. Report problem rather than assuming parity
 - [ ] Confirm WDA Small Blimp and Coliseum absent as intended; WDA mushroom village on Mushroom Fields only; Farmers Structures still present, correct structures in deserts/oceans
 - [ ] Look for giant intersections: Block Factory boss tower, WDA large landmarks, YUNG temples/bridges, IDAS, Create ruins and Luki structures
+
+## C2. NEW — dragon caves, skeletons and Create Rustic collisions
+
+- [ ] In a **fresh seed**, survey at least 2,000 Overworld surface blocks in varied biome regions for Ice and Fire dragon skeleton corpses: should be distinctly less crowded but not extinct
+- [ ] Use `/locate structure iceandfire:fire_dragon_cave` and `/locate structure iceandfire:lightning_dragon_cave` in **at least three unlike biome types** (e.g. forest, savanna, snowy biome) and fly to inspect actual underground cave and surrounding blocks. Check that caves aren't impossible to locate in an otherwise valid biome
+- [ ] `/locate structure iceandfire:ice_dragon_cave` in snowy/cold biomes; confirm **ice caves are not offered outside cold/snowy**. The native chance/dragon-cave grid is unchanged and random sampling can miss a particular type
+- [ ] Confirm **fire/lightning surface roosts did NOT expand into formerly ineligible biomes**: their original `#iceandfire:structure_gen/fire` and `lightning` tags are unchanged
+- [ ] Check none of the three cave types creates large water floods in deep-ocean caves, cuts out unrelated dungeons or badly clips FreeTerraForged cave systems
+- [ ] **Create Rustic Structures**: barns (36/24), windmills (32/20), smithies (28/18), wells (20/12) less frequent and fewer collisions; log remaining overlap with villages, WDA/IDAS and Create structures using F3 coordinates. **Rarity is mitigation, not a universal exclusion-zone fix**
 
 ## D. Ocean expansion — record specific new mod behavior
 
