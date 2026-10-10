@@ -15,6 +15,35 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install nbtlib
+      - name: Inspect missing Create Easy station pool and previous native jar index
+        run: |
+          python - <<'PY'
+          import urllib.request,zipfile,io,gzip,json,collections
+          url='https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBT-Audit/1.0'}),timeout=30) as x:
+              blob=x.read()
+          with zipfile.ZipFile(io.BytesIO(blob)) as z:
+              pools=[n for n in z.namelist() if '/worldgen/template_pool/' in n and n.endswith('.json')]
+              print('CREATE_EASY_POOL_NAMES',json.dumps(pools),flush=True)
+              candidates=[n for n in z.namelist() if n.endswith('.nbt') and ('station' in n or 'gross_' in n)]
+              print('CREATE_EASY_STATION_TEMPLATES',json.dumps(candidates),flush=True)
+              for n in pools:
+                  raw=z.read(n).decode('utf-8')
+                  if 'undergroundtrain' in n or 'undergroundtrain' in raw:
+                      print('CREATE_EASY_POOL_SOURCE',n,raw[:8000],flush=True)
+          from pathlib import Path
+          for p in ('release_030/evidence/jar-resource-index-test6.json.gz','release_030/evidence/jar-resource-index-test5.json.gz'):
+              try:
+                  o=json.loads(gzip.decompress(Path(p).read_bytes()))
+                  print('RESOURCE_INDEX',p,'root_type',type(o).__name__,'root_keys',list(o)[:10] if isinstance(o,dict) else len(o),flush=True)
+                  val=str(o)
+                  print('INDEX_TERM_COUNTS',{k:val.count(k) for k in ('cook_additions','undergroundtrain_station','archaion','CreateEasy','create_easy_structures')},flush=True)
+                  if isinstance(o,dict):
+                      for k,v in o.items():
+                          print('INDEX_TOP_ENTRY',k,'type',type(v).__name__,'size',len(v) if hasattr(v,'__len__') else None,flush=True)
+                          break
+              except Exception as e:print('INDEX_READ_FAILED',p,type(e).__name__,str(e),flush=True)
+          PY
       - name: Compare actual Archaion starts and Create Easy jigsaw assets
         run: |
           python - <<'PY'
