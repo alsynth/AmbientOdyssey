@@ -6,7 +6,7 @@ on:
 jobs:
   static-audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 30
     permissions: {contents: read}
     steps:
       - uses: actions/checkout@v4
@@ -23,3 +23,46 @@ jobs:
           python tools/validate_v04_questlog.py
           python validate_content_040a.py
           git diff --check
+      - run: pip install nbtlib==2.0.4
+      - name: Recheck native structure/worldgen source invariants
+        run: |
+          python validate_content_040b.py
+          python validate_content_040c.py
+          python validate_content_040d.py
+          python validate_content_040e.py
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+          python validate_worldgen_089.py
+          python validate_worldgen_810.py
+          python compile_terminal_jigsaws_087.py
+      - name: Build/validate private developer ZIP
+        run: |
+          python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.4h-LaunchReady-PRIVATE.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4h-LaunchReady-PRIVATE.zip --private --report build/private-validation.json
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4h-LaunchReady-PRIVATE.zip --report build/private-preflight.json
+      - name: Reproducible rebuild and reference-only export
+        run: |
+          python build_release_030.py --private-modrinth --output build/repeat.zip
+          cmp build/Ambient-Odyssey-v0.4h-LaunchReady-PRIVATE.zip build/repeat.zip
+          python build_release_030.py --output build/Ambient-Odyssey-v0.4h-LaunchReady-CF-References.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4h-LaunchReady-CF-References.zip --report build/reference-validation.json
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4h-LaunchReady-CF-References.zip --require-minecells
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4h-LaunchReady-CF-References.zip --report build/reference-preflight.json
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-v04h-LAUNCH-READY
+          path: |
+            build/Ambient-Odyssey-v0.4h-LaunchReady-PRIVATE.zip
+            build/Ambient-Odyssey-v0.4h-LaunchReady-CF-References.zip
+            build/*-validation.json
+            build/*-preflight.json
+            tools/diagnose_v04_instance.py
+            tools/audit_installed_jars_v04.py
+            PREPARED_BUILD_README.txt
+            RUN_PREFLIGHT_WINDOWS.cmd
+            docs/testing/V04H_INSTALLED_JAR_AND_SERVER_PREFLIGHT.md
+            V04_TESTING_CHECKLIST.md
+            V04_QUESTLOG_COMPAT.md
+          compression-level: 0
+          if-no-files-found: error
