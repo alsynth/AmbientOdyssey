@@ -30,7 +30,7 @@ for e in lock['additions'].values():
 if lock.get('default_integrated_patches'):
     e=lock['optional_integrated_patches']
     pins[e['projectId']]=e['id']
-assert len(pins)==(330 if lock['version']=='0.4.1-experimental-trek-structures' else 331 if lock['version'] in ('0.4.0-experimental-minecells-fg-questlog','0.4.0-experimental-minecells-fg-questlog-q1','0.4.1-experimental-trek-structures') else 330 if lock['version']=='0.4.0-experimental-minecells-fg' else 318 if lock['version']=='0.4.0-experimental-minecells' else 313 if lock['version']=='0.4.0-e0-audit-broad-content' else 296),(len(pins),'Expected 288 previous +7 content projects +Athena')
+assert len(pins)==(331 if lock['version']=='0.4.1-experimental-trek-structures' else 331 if lock['version'] in ('0.4.0-experimental-minecells-fg-questlog','0.4.0-experimental-minecells-fg-questlog-q1','0.4.1-experimental-trek-structures') else 330 if lock['version']=='0.4.0-experimental-minecells-fg' else 318 if lock['version']=='0.4.0-experimental-minecells' else 313 if lock['version']=='0.4.0-e0-audit-broad-content' else 296),(len(pins),'Expected 288 previous +7 content projects +Athena')
 for _,(pid,fid) in selected.items():assert pins[pid]==fid
 assert pins[841890]==8061947, 'Athena must be the source-verified NeoForge 4.0.6'
 # Upstream Mutant Monsters CommonConfig fields map to four snake_case TOML keys.

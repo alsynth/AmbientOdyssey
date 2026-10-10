@@ -16,7 +16,7 @@ for x in LOCK['remove_projects'].values(): refs.pop(x,None)
 for x in LOCK['additions'].values():refs[x['projectId']]=x['id']
 if LOCK.get('default_integrated_patches'):
  x=LOCK['optional_integrated_patches'];refs[x['projectId']]=x['id']
-assert len(refs)==(330 if LOCK['version']=='0.4.1-experimental-trek-structures' else 331 if LOCK['version'] in ('0.4.0-experimental-minecells-fg-questlog','0.4.0-experimental-minecells-fg-questlog-q1','0.4.1-experimental-trek-structures') else 330 if LOCK['version']=='0.4.0-experimental-minecells-fg' else 318 if LOCK['version']=='0.4.0-experimental-minecells' else 313 if LOCK['version']=='0.4.0-e0-audit-broad-content' else (296 if LOCK['version']=='0.4.0-d0-content-first' else 288)),len(refs)
+assert len(refs)==(331 if LOCK['version']=='0.4.1-experimental-trek-structures' else 331 if LOCK['version'] in ('0.4.0-experimental-minecells-fg-questlog','0.4.0-experimental-minecells-fg-questlog-q1','0.4.1-experimental-trek-structures') else 330 if LOCK['version']=='0.4.0-experimental-minecells-fg' else 318 if LOCK['version']=='0.4.0-experimental-minecells' else 313 if LOCK['version']=='0.4.0-e0-audit-broad-content' else (296 if LOCK['version']=='0.4.0-d0-content-first' else 288)),len(refs)
 assert 631098 not in refs
 assert refs[835687]==9099893 and refs[714059]==6467772
 assert refs[250398]==6368976 and refs[889915]==8909889

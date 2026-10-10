@@ -49,7 +49,7 @@ def verify(archive, private=False):
         assert m['version'] == lock['version']
         assert m['minecraft']['modLoaders'] == [{'id': 'neoforge-21.1.252', 'primary': True}]
         refs = {e['projectID']: e['fileID'] for e in m['files']}
-        assert len(refs) == len(m['files']) == 330
+        assert len(refs) == len(m['files']) == 331
         assert all(refs.get(pid) == fid for pid, fid in PINS.items())
         assert 306612 not in refs and 284876 not in refs and 631098 not in refs
         jars = {n for n in names if n.startswith('overrides/mods/') and n.endswith('.jar')}

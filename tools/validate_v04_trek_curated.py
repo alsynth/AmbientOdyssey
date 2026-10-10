@@ -41,7 +41,7 @@ def validate(archive=None):
             names=set(z.namelist())
             m=json.loads(z.read("manifest.json"))
             refs={x["projectID"]:x["fileID"] for x in m["files"]}
-            assert len(refs)==330 and TREK[0] in refs and refs[TREK[0]]==TREK[1]
+            assert len(refs)==331 and TREK[0] in refs and refs[TREK[0]]==TREK[1]
             assert not (REMOVE & set(refs))
             assert BASE+"pack.mcmeta" in names
             for slug in disabled:

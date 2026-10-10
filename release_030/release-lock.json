@@ -2749,7 +2749,7 @@
     "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
   },
   "experimental_minecells": {
-    "expected_manifest_refs": 330,
+    "expected_manifest_refs": 331,
     "owo_inherited_pin": {
       "projectId": 532610,
       "id": 6785734
