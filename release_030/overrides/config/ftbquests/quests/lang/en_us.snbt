@@ -347,7 +347,7 @@
 	quest.A19534FBE1E8E691.title: "Five controls you'll actually use"
 	quest.A19534FBE1E8E691.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19534FBE1E8E691.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"- Action — Default / current AO baseline — Why it matters"
 		"- Show how to make an item — Hover item → R (JEI default) — Recipe and machine input"
 		"- Show what an item is used for — Hover item → U (JEI default) — Figure out why a strange boss drop or material matters"
@@ -363,7 +363,7 @@
 	quest.A19533FBE1E8E4DE.title: "Basic inventory and combat"
 	quest.A19533FBE1E8E4DE.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19533FBE1E8E4DE.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"- Key / interaction — Action — Tip"
 		"- E — Open inventory — Access equipment, crafting grid and JEI item list"
 		"- Q — Drop one held/hovered item — Be careful near lava, void or other players"
@@ -383,7 +383,7 @@
 	quest.A19532FBE1E8E32B.title: "JEI — the built-in encyclopedia"
 	quest.A19532FBE1E8E32B.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19532FBE1E8E32B.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"- Key / pattern — Action — Why this is powerful"
 		"- Hover + R — See recipes that produce the hovered item — Answers “how do I get this?”"
 		"- Hover + U — See uses/recipes that consume that item — Answers “what is this for?”"
@@ -401,7 +401,7 @@
 	quest.A19531FBE1E8E178.title: "Maps, exploring, waypoints"
 	quest.A19531FBE1E8E178.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19531FBE1E8E178.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"- Key or action — Status — What to learn"
 		"- M full map — Xaero's World Map default; verify AO — See explored terrain at a larger scale"
 		"- B new waypoint — Xaero's Minimap default; verify AO — Create a marker for home, portals and dangerous discoveries"
@@ -416,7 +416,7 @@
 	quest.A19538FBE1E8ED5D.title: "Modded combat, backpacks, RPG and voice"
 	quest.A19538FBE1E8ED5D.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19538FBE1E8ED5D.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"This is the action lookup table, not a guessed keyboard layout. Fill the final key and tooltip from AO's actual options.txt / DefaultOptions export after the modpack's content roster is frozen."
 		"- Mod/system — Important action — Current AO value — How to find/test it"
 		"- FTB Ultimine — Hold mining modifier; cycle area/shape — Unverified binding — Options → Controls → Key Binds → FTB Ultimine; AO config enables hold Ultimine + sneak for shape menu; holding Ultimine required to cycle"
@@ -439,7 +439,7 @@
 	quest.A19537FBE1E8EBAA.title: "Debug and visibility — advanced, optional"
 	quest.A19537FBE1E8EBAA.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19537FBE1E8EBAA.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"- Key — What it does — Use responsibly"
 		"- F3 — Debug screen (coordinates and technical data, permission dependent) — Look up the dimension, biome ID and performance metrics during tests"
 		"- F3 + G — Chunk borders — Useful when troubleshooting chunk boundaries and claims"
@@ -453,7 +453,7 @@
 	quest.A19536FBE1E8E9F7.title: "Keybind conflicts: quick fix"
 	quest.A19536FBE1E8E9F7.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.A19536FBE1E8E9F7.quest_desc: [
-		"AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
+		"Optional keybind reference with no rewards. AO settings and keyboard layouts vary. Recheck Options > Controls in your actual client; defaults mentioned here are not guaranteed bindings."
 		"1. Open Options → Controls → Key Binds and search for the action name, not only the letter. In large modpacks many mods compete for G, R, V, B, Z, the side mouse buttons and spell wheel controls."
 		"2. Check whether the conflict is active in the same context: an inventory-only JEI R is not necessarily a collision with world-only gameplay R, but overlapping actions can still misfire."
 		"3. Choose an easy-to-remember key for actions you use during combat, then move rarely used menus to distant keys or modifier combinations. Keep familiar Minecraft actions whenever practical."
