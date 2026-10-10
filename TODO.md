@@ -1,3 +1,11 @@
+## 10 Oct 0.4f early mod-list recovery + optimization
+- [x] Reconcile the earliest mod lists and **166 original research candidates**, conservatively (not all were promised installations).
+- [x] Stage Armor Trim Item Fix 895603:5924310 plus seven compatible historical candidates; expected 310 manifest CF references.
+- [x] Plan shader, video, gameplay-mod and server config optimization, not merely mod toggles.
+- [ ] Verify importer CI, client/dedicated-server compatibility, GUI/audio overlays, and launch before calling playable.
+- [ ] Reconcile inherited baseline JARs to resolve unknowns in earliest candidate matrix; preserve settled exclusions.
+- [ ] Content gaps: discovery, one coherent skills tree, ocean features, animal ecology; fixes/perf/balance thereafter, quests last.
+
 ## 0.4e expanded audited candidate wave
 - [x] Pin 6 exact 1.21.1 NeoForge versions from original user's QoL/visual and discovery audits, retain Mutant Monsters rare 0.01 natural-spawn config.
 - [ ] Verify 302-reference deterministic CI package, missing dependencies and actual startup/shader compatibility. If 0.4e fails, do not call complete.

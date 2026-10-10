@@ -1,3 +1,6 @@
+## 10 Oct 0.4f historical expansion
+Eight additional exact 1.21.1 NeoForge pins, incl. requested Armor Trim Item Fix, expected 310 CF refs. [166 candidate audit](../audits/EARLIEST_MOD_LIST_RECONCILIATION_2026-10-10.md) and [config/shader/video/server plan](../testing/CONFIG_SHADER_VIDEO_SERVER_OPTIMIZATION_2026-10-10.md). Experimental only; no Minecraft runtime/launch proof.
+
 ## 0.4e prior-audit expansion (10 October 2026)
 Six **official 1.21.1 NeoForge** candidates from the user's existing QoL/visual and discoveries lists now staged: BetterF3, Pick Up Notifier, Light Overlay, Cave Dust Rethinking, Traveler's Titles, Subtle Effects. Source-locked expected pack refs **302**; actual CI/run and game testing may still fail. Experimental draft [0.4e evaluation](../audits/CONTENT_EXPANSION_040E_2026-10-10.md). Strong overlaps kept out (two advancement GUIs, two LOD/CTM renderers, multiple season clocks). Not a greenlight to release. The six preceding 0.4d content additions other than Mutant Monsters remain proposals until tested.
 
