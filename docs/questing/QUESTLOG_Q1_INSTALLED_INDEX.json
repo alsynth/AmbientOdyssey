@@ -237,7 +237,10 @@
       "chapter": "trial_steel",
       "source_seed": "ao_trial_steel_01_acquire_a_full_set_of_diamond_ar",
       "objective_types": [
-        null
+        "questlog:item_obtain",
+        "questlog:item_obtain",
+        "questlog:item_obtain",
+        "questlog:item_obtain"
       ],
       "rewards": 1
     },

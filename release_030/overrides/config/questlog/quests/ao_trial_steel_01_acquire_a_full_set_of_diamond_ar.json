@@ -7,32 +7,30 @@
     "item": "minecraft:iron_sword"
   },
   "objectives": [
-    [
-      {
-        "type": "questlog:item_obtain",
-        "item": "minecraft:diamond_helmet",
-        "required_amount": 1,
-        "name": "Carry 1 × diamond helmet"
-      },
-      {
-        "type": "questlog:item_obtain",
-        "item": "minecraft:diamond_chestplate",
-        "required_amount": 1,
-        "name": "Carry 1 × diamond chestplate"
-      },
-      {
-        "type": "questlog:item_obtain",
-        "item": "minecraft:diamond_leggings",
-        "required_amount": 1,
-        "name": "Carry 1 × diamond leggings"
-      },
-      {
-        "type": "questlog:item_obtain",
-        "item": "minecraft:diamond_boots",
-        "required_amount": 1,
-        "name": "Carry 1 × diamond boots"
-      }
-    ]
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:diamond_helmet",
+      "required_amount": 1,
+      "name": "Carry 1 × diamond helmet"
+    },
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:diamond_chestplate",
+      "required_amount": 1,
+      "name": "Carry 1 × diamond chestplate"
+    },
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:diamond_leggings",
+      "required_amount": 1,
+      "name": "Carry 1 × diamond leggings"
+    },
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:diamond_boots",
+      "required_amount": 1,
+      "name": "Carry 1 × diamond boots"
+    }
   ],
   "rewards": [
     {
