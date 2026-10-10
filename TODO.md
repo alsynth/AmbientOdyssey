@@ -1775,6 +1775,13 @@ Once the foundation passes:
 - [ ] **After upcoming content expansion:** diff actual new registry/recipes/advancements/bosses/structures against depth audit, consolidate duplicates in 474 seeds + 250 candidates, then choose publishable chapters and update detailed original prose. Preserve published IDs/save rewards.
 - [ ] **PasterDream / Bumblezone / Opposing Force special QA:** confirm 0.9.6 flower-puzzle/cold region/boss hooks, Bee Queen trade/Queen's Desire advancements, and true 3.0.0-beta6 entity/late-spawn availability. Avoid impossible quests based on content from different versions.
  
+**FTB Tips & Tricks / Keybind Cheatsheet approved (10 Oct 2026):** [65 original Tips & Tricks draft entries](docs/questing/FTB_TIPS_AND_TRICKS_V0_3.md) + [AO-specific Keybind Cheatsheet](docs/questing/FTB_KEYBIND_CHEATSHEET_V0_3.md) saved. Always visible in **FTB Field Manual**, *not* Questlog, no reward-bearing read steps. AO keybind source: `release_030/overrides/config/defaultoptions/keybindings.txt` defines `O` Accessories, `J` mic mute and **FTB Chunks map unbound**; `keybindoverrides-client.toml` same values but `applyOverrides=false`. Xaero `M/B` and JEI `R/U` are mod defaults; don't advertise future Origins/Iron's/backpack keys as fact.
+- [x] Draft 65 practical tips in categories with ten quickstart highlights, a Did You Know? sidebar, appropriate disclaimers and troubleshooting.
+- [x] Draft keybind quick reference grouped by context, explicit verified AO overrides vs defaults vs unknown future mods, and conflict fixes.
+- [ ] Implement in FTB SNBT as **permanently unlocked** Tips, Tricks, Keybind Cheatsheet chapters/pages with useful icons, short browseable text and context links.
+- [ ] On final content expansion, **capture fresh-installed and upgraded existing profile keybinds**, resolve conflicts (spell wheel, backpack, Origin abilities, Questlog, minimap/FTB, accessories, voice); re-verify all shown keys and add in-game screenshot examples.
+- [ ] Test GUI at multiple UI scales and ensure help links are accessible before a player completes any gameplay quests.
+
 ### Quest content mapping and authoring — Phase 1 (10 Oct 2026)
 
 **Source-authored planning work completed (not executable quests):** [Questing project index](docs/questing/README.md) · [full provisional mod coverage matrix](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) · [474 specific proposed content beats](docs/questing/QUEST_CONTENT_SEEDS.csv) · [Questlog/FTB chapter architecture](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md) · [source/inventory gaps](docs/questing/INVENTORY_METHOD_AND_GAPS.md) · [authoring and QA protocol](docs/questing/QUEST_AUTHORING_VALIDATION_PLAN.md).
