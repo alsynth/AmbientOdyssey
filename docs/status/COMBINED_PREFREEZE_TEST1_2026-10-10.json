@@ -1,0 +1,77 @@
+{
+  "status": "PASS (ZIP CRC and targeted static checks ONLY; not imported, no Minecraft runtime)",
+  "version": "0.3.8-worldgen-prefreeze-test1",
+  "artifact": "Ambient-Odyssey-v0.3.8-Combined-Prefreeze-Test1.zip",
+  "size_bytes": 67974728,
+  "sha256": "59714d91a5007befc1fe22361efadfabd2a4fdb20c933a0273f3e55420550cb0",
+  "zip_entries": 1063,
+  "manifest_unique_CurseForge_projects": 262,
+  "base": "0.3.7-prefreeze-dev3",
+  "build_method": "Derived from last known static checked CurseForge-friendly Dev3 runtime-only ZIP; patched from approved source lock/authoritative biome-pool and structure-density changes. NOT a fresh GitHub build_release_030.py run or CurseForge app export.",
+  "preserved_user_tested_core": "Dev2 game loaded and DimDoors crash gone, Dev3 runtime not validated",
+  "removed_mods": [
+    "Dimensional Doors",
+    "Upgrade Aquatic",
+    "Tide 2",
+    "Sea Myths",
+    "Create Deep Seas"
+  ],
+  "deferred": [
+    "Beyond the Ocean (future major dimension/content expansion)"
+  ],
+  "new_CurseForge_pins": {
+    "450659": 5937999,
+    "536254": 8931374,
+    "714177": 8332463,
+    "834427": 9063977,
+    "841262": 7939973,
+    "1015115": 5924487,
+    "1123977": 9070553,
+    "1197859": 6539516,
+    "1331880": 6918744,
+    "1644371": 8614631,
+    "1717003": 9108729
+  },
+  "remaining_two_manual_mods": [
+    {
+      "mod": "Better Bastions",
+      "project": 1713723,
+      "url": "https://www.curseforge.com/minecraft/mc-mods/better-bastions",
+      "required_jar": "betterbastions-1.0.0+neoforge-1.21.1.jar",
+      "reason": "Exact CF fileID not verified, DO NOT invent entry"
+    },
+    {
+      "mod": "NeoReefRedux",
+      "url": "https://modrinth.com/mod/neoreefredux",
+      "reason": "Native 1.21.1 NeoForge port is on Modrinth without verified CF project; no third-party JAR embedded"
+    }
+  ],
+  "staged_land": [
+    "BWG Baobab Savanna",
+    "BOP Dryland",
+    "BWG Tropical Rainforest",
+    "BWG Dacite Shore replacing vanilla Stony Shore",
+    "Prairie lowered in savanna/plains pools"
+  ],
+  "staged_structure_changes": [
+    "WDA and IDAS lighthouses isolated into rare independent sets",
+    "Block Factory Dragon Tower 96/48",
+    "Five Eternal Starlight portal ruins 45/32"
+  ],
+  "bridge_status": "Biome eligibility already patched, Streams Reflowing bridge physical height/geometry not fixed; test remains high priority",
+  "server_config": "overrides/defaultconfigs/ftb_solo_quests-server.toml: teamSyncEnabled = false",
+  "tests_needed": [
+    "Fresh CurseForge import and dependency closure",
+    "NeoForge client launch",
+    "NeOculus Solas and Complementary shaderpacks installed in proper folder",
+    "two-seed client natural generation",
+    "FTF/Deeper Oceans/Aquamirae monument height conflicts",
+    "NeoReefRedux/Hybrid Aquatic coral conflict",
+    "Better Bastions/Incendium Nether",
+    "YUNG bridge/Streams physical intersections",
+    "2-player dedicated Solo Quests progress independence",
+    "server & client performance",
+    "full regenerate/build+validators"
+  ],
+  "test_plan": "docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md"
+}
