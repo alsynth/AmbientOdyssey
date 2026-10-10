@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.10",
+  "version": "0.4.0-a0-qol-quest-trial",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1077,6 +1077,30 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/better-bastions/files/8988949"
+    },
+    "content-040a-controlling": {
+      "projectId": 250398,
+      "id": 6368976,
+      "fileName": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "displayName": "Controlling 19.0.5 NeoForge 1.21.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/controlling/files/6368976"
+    },
+    "content-040a-ftb-xmod-compat": {
+      "projectId": 889915,
+      "id": 8909889,
+      "fileName": "ftb-xmod-compat-neoforge-21.1.12.jar",
+      "displayName": "FTB XMod Compat 21.1.12 NeoForge 1.21.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat/files/8909889"
     }
   },
   "optional_integrated_patches": {
