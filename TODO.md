@@ -1731,6 +1731,20 @@ If later worldgen changes affect previously tested structure placement, repeat t
 
 ---
 
+## 10 October 2026 — 0.4.x nine-theme content expansion planning handoff (NO mods installed)
+
+- [x] **Authoritative nine-theme audit recovered:** [CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/audits/CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md). Ranks **Life & Settlements (5/5)** and **Structures & Discoveries (5/5)** highest; Underground and Wildlife (4/5) next; Ocean and QoL (3/5); Ambience and Dimensions (2/5); Food/Professions (1/5). It recommends an *earlier QoL convenience mini-wave* for practical usability and strongly prefers interaction/story/ecology over another generic structure roster.
+- [x] **Nine-theme candidate decisions + compatibility second pass:** [full 0.4.x plan](docs/audits/CONTENT_EXPANSION_0_4_IMPLEMENTATION_PLAN_2026-10-10.md) and [installed-mod risk map](docs/audits/CONTENT_EXPANSION_ROUND2_INSTALLED_MOD_COMPAT_PREFLIGHT_2026-10-10.md). Covers every proposed mod with PROTOTYPE/CONDITIONAL/HOLD and exact conflicts, dependencies, worldgen gates, Questlog-vs-FTB Quests architecture and 5–7-player acceptance.
+- [ ] **0.4.0-a QoL / quest integration:** Audit/install only after selection: Controlling (Searchables already present), FTB XMod Compat (FTB Quests+JEI integration absent), optional Villager Names **requires Collective**. Verify keybind overlays, JEI quest recipes and player-specific state before additional content.
+- [ ] **0.4.0-b Living settlements:** Isolated Guard Villagers 2.4.12 AI/POI/raid trial in CTOV/T&T/Integrated/Luki villages, then Easy NPC **modular Core+Config UI** with three handcrafted NPC dialogue/quest samples and 2-player/5–7-player progression checks. No mass village NPC simulator.
+- [ ] **0.4.0-c Archaeology/caves:** **A/B Galosphere vs Better Archeology** on separate copies of Test8.10 (existing Archaeology Ruins/JEArchaeology + Alex's Caves + Biolith/FTF compatibility); include optional existing-structure chart/dossier. Choose one initially, both only on clear nonduplicate value.
+- [ ] **0.4.0-d Wildlife:** Audit already installed Alex's Mobs, Hybrid Aquatic, Friends & Foes, Hominid etc. biome/tag/spawncap visibility **before** conditional Naturalist **2.0.5** trial. Limit passive-mob AI and promote ethical discovery/sighting tasks.
+- [ ] **0.4.0-e Oceans/professions:** Add quest-driven diving→wreck→reef→deep-loot→return experience and optional field ration/angler/herbalist goals with existing content. No automatic new ocean mobs, full food system or realm.
+- [ ] **0.4.0-f Sensory/GUI polish:** AmbientSounds single-mod audio A/B; separate Serene Seasons/climate/crop test, Dusty Decorations only with migration plan, GUI/Questlog button and Bonus Chest edits later. Do not stack renderer-heavy addons in one test.
+- [ ] **0.4.0-rc acceptance & multiplayer world lock:** complete 15–30 min *named town→curated archaeologist→real cave/ruin→personal Lootr reward→return* vertical slice with independent co-op rewards and a 5–7-player server stability test. **Lock mod roster, terrain/structures, seed and biome map BEFORE chunk pregeneration;** then test performance (including Streams Reflowing slow height fallback) and publish Questlog Tips & Tricks explaining pregeneration ≠ force loading.
+- [ ] **Source discrepancy for later explicit decision:** Test8.10 lock **still installs YUNG's Better Mineshafts** while source audit prose calls it previously excluded. Do not remove from tested baseline without user decision.
+- [ ] **No candidate approved/installed by this planning pass.** Keep SHA-pinned Test8.10 as rollback; no changes to release lock, manifest, binaries or tested worldgen.
+
 # PART XIX — 0.4.x preview (not required before entering 0.4.0)
 
 Once the foundation passes:
