@@ -50,3 +50,21 @@ Worldgen performance in this control may differ because two worldgen optimizers 
 **Development decision:** Treat this 328-reference control as the *user-validated Mine Cells provisional baseline*. Preserve the tested CurseForge ZIP, its generation workflow and branch. All future feature and optimization work may build on this control recipe, keeping these three absent pending evidence for safe reintegration. Retain the intact 331-reference prior release and rollback branch independently.
 
 **Source triage (not proof):** Noisiumed 3.0.6 source primarily targets noise/density/NoiseBasedChunkGenerator code while Mine Cells' prison uses `FlatLevelSource`. Structure Essentials targets general structure placement/search and exposes no documented per-dimension bypass for every mixin. Streams Reflowing actively ran chunk/dimension watershed work in broken full-pack logs, and the earlier biome-only `no_streams` tag did not produce an acceptable dungeon. Those facts help prioritize future code-level investigation, but cannot establish which removal restored functionality.
+
+## 11 October 2026 — Streams Reflowing confirmed by user reintroduction tests
+
+The user added back the omitted mods and reports **Streams Reflowing is the offender**: the working Mine Cells dungeon breaks when Streams Reflowing is present. This resolves the three-way candidate shortlist at the observational level. Do **not** add Streams Reflowing to the accepted/control build as-is. The details of all single- and combined-mod combinations are not preserved here, so avoid claiming a particular mixin is identified.
+
+### Targeted possible settings (NOT yet proven)
+
+- Streams Reflowing 2.6.0 added `streamBiomeBlacklist` (supports `minecells:*`) and `#streamsreflowing:no_streams`. The changelog explicitly says this is **carve-time only**. The prior AO `no_streams` test did **not** restore Mine Cells, so biome blacklisting alone is **not sufficient evidence for a complete repair**.
+- Streams Reflowing 2.10.3 added `fastChunkLoading` (default true). The developer explicitly recommends setting it to `false` when chunk/worldgen compatibility misbehaves. This is the next justified configuration test because it disables a chunk loading optimization **without necessarily disabling overworld rivers**. Verify the option still exists in the exact 2.14.4 config before patching; do not invent TOML syntax or overwrite the entire generated config.
+- A past Streams Reflowing release introduced a protected-structures datapack tag, but its exact tag ID and whether it covers Mine Cells' special custom structure placement is **unverified**. Inspect the shipped JAR to determine if this is useful before attempting it.
+- If disabling `fastChunkLoading` does not repair generation on a fresh world, a proper **dimension-level bypass in the mod's hooks** or an upstream mod fix is preferable. A custom in-house mixin patch requires inspecting the exact JAR/mixin targets; don't assume a biome tag suppresses all dimension work.
+
+Sources:
+- https://www.curseforge.com/minecraft/mc-mods/streams-reflowing/files/8544447 (2.10.3 `fastChunkLoading`)
+- https://www.curseforge.com/minecraft/mc-mods/streams-reflowing/files/8377582 (2.6.0 carve-time blacklist)
+- https://www.curseforge.com/minecraft/mc-mods/streams-reflowing/files/9060294 (the pack's exact 2.14.4 NeoForge build)
+
+Keep the **328-reference Mine Cells working control** as the gameplay baseline until a Streams Reflowing profile demonstrably matches it, including connected floors and Promenade progression. Testing must use a fresh world and confirm no previous worldgen state is reused.
