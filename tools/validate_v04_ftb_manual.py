@@ -62,8 +62,8 @@ def validate():
         assert 'group: ""' in text
         assert "quests: [" in text
         assert not re.search(r'(?m)^\s*(?:dependencies|prerequisites):',text)
-        assert 'tasks: [ ]' in text and 'rewards: [ ]' in text
-        assert len(re.findall(r'(?m)^\s*tasks: \[ \]\s*$',text))==ch["pages"]
+        assert 'type: "checkmark"' in text and 'rewards: [ ]' in text
+        assert len(re.findall(r'type: "checkmark"',text))==ch["pages"]
         assert len(re.findall(r'(?m)^\s*rewards: \[ \]\s*$',text))==ch["pages"]
         chapter_ids=PAGE_ID.findall(text)
         assert len(chapter_ids)==ch["pages"]+1,(file,chapter_ids)
@@ -82,7 +82,7 @@ def validate():
     # All entries are reference content, not reward grants or progression gates.
     print(json.dumps({"status":"PASS_STATIC_ONLY","manual_chapters":3,
         "manual_reference_pages":32,"new_ids":len(created_ids),
-        "wda_chapter_preserved":True,"taskless":True,"rewards":0,
+        "wda_chapter_preserved":True,"taskless":False,"checkmark_tasks":32,"rewards":0,
         "questlog_q1_unchanged":True,"ftb_in_game_tested":False},indent=2))
     return True
 
