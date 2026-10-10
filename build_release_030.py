@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import zipfile
+import urllib.request
 from compile_worldgen_031 import compile_pools
 from compile_structure_density_031 import compile_density
 from compile_compatibility_031 import compile_compatibility
@@ -18,14 +19,23 @@ def check_path(name):
     if p.is_absolute() or '..' in p.parts or '\\' in name:
         raise ValueError(f'Unsafe archive path: {name}')
 
-def validate(archive, lock, baseline, patches):
+def validate(archive, lock, baseline, patches, private_modrinth=False):
     with zipfile.ZipFile(archive) as z:
         assert z.testzip() is None, 'ZIP CRC failure'
         names = z.namelist()
         assert len(names) == len(set(names)), 'Duplicate ZIP paths'
         for name in names: check_path(name)
         assert 'manifest.json' in names and any(n.startswith('overrides/') for n in names)
-        assert not any(n.startswith('overrides/mods/') for n in names), 'Bundled third-party mod JAR'
+
+        embedded = {n for n in names if n.startswith('overrides/mods/')}
+        expected_private = {'overrides/mods/' + a['fileName'] for a in lock.get('private_modrinth_addons', [])}
+        assert embedded == (expected_private if private_modrinth else set()), 'Unexpected or missing private JAR'
+        if private_modrinth:
+            for addon in lock['private_modrinth_addons']:
+                blob = z.read('overrides/mods/' + addon['fileName'])
+                assert len(blob) == addon['size'], 'Private binary size mismatch'
+                assert hashlib.sha1(blob).hexdigest() == addon['sha1'], 'Private binary SHA1 mismatch'
+                assert hashlib.sha512(blob).hexdigest() == addon['sha512'], 'Private binary SHA512 mismatch'
         for name in lock.get('remove_override_paths', []):
             assert name not in names, f'Removed override still present: {name}'
         m = json.loads(z.read('manifest.json'))
@@ -74,7 +84,7 @@ def validate(archive, lock, baseline, patches):
         assert 'enigmaticlegacyplus:darkest_scroll' in scroll['values']
     return m
 
-def build(patches=False, output=None):
+def build(patches=False, output=None, private_modrinth=False):
     compile_pools()
     compile_density()
     compile_compatibility()
@@ -124,6 +134,17 @@ def build(patches=False, output=None):
     for name in lock.get('remove_override_paths', []):
         check_path(name)
         entries.pop(name, None)
+
+    if private_modrinth:
+        for addon in lock.get('private_modrinth_addons', []):
+            assert addon['url'].startswith('https://cdn.modrinth.com/data/'), 'Unapproved external mod source'
+            assert addon['fileName'] == Path(addon['fileName']).name and addon['fileName'].endswith('.jar')
+            req = urllib.request.Request(addon['url'], headers={'User-Agent':'AmbientOdyssey-PrivateTestBuilder/1.0'})
+            with urllib.request.urlopen(req, timeout=30) as source:
+                blob = source.read(addon['size'] + 1)
+            if len(blob) != addon['size'] or hashlib.sha1(blob).hexdigest() != addon['sha1'] or hashlib.sha512(blob).hexdigest() != addon['sha512']:
+                raise ValueError('Modrinth source hash differs from pinned file: ' + addon['fileName'])
+            entries['overrides/mods/' + addon['fileName']] = blob
     entries['manifest.json'] = (json.dumps(manifest, indent=2) + '\n').encode()
     output = Path(output) if output else ROOT / 'build' / ('Ambient-Odyssey-v' + manifest['version'] + '.zip')
     output.parent.mkdir(parents=True, exist_ok=True)
@@ -135,7 +156,7 @@ def build(patches=False, output=None):
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o644 << 16
             z.writestr(info, data)
-    validate(output, lock, baseline, patches)
+    validate(output, lock, baseline, patches, private_modrinth)
     print(f'{output}: {len(files)} locked projects, {output.stat().st_size:,} bytes, SHA256 {hashlib.sha256(output.read_bytes()).hexdigest()}')
     return output
 
@@ -143,5 +164,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--integrated-patches', action='store_true')
     parser.add_argument('--output')
+    parser.add_argument('--private-modrinth', action='store_true', help='Embed checksum-locked NeoReefRedux in PRIVATE test builds only')
     args = parser.parse_args()
-    build(args.integrated_patches, args.output)
+    build(args.integrated_patches, args.output, args.private_modrinth)

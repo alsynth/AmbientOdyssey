@@ -1,0 +1,46 @@
+name: Ambient Odyssey source metadata probe Test8.5
+on:
+  push:
+    branches: [worldgen/test8.5-mod-roster]
+    paths: [.github/workflows/test85-source-probe.yml]
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Find exact source metadata
+        run: |
+          python - <<'PY'
+          import urllib.request,json,re
+          urls=[
+            "https://api.modrinth.com/v2/version/PVzfioBU",
+            "https://api.cfwidget.com/1713723",
+            "https://www.curseforge.com/minecraft/mc-mods/better-bastions/files/all?page=2&pageSize=50",
+            "https://www.curseforge.com/minecraft/mc-mods/better-bastions/files/all?page=1&pageSize=50"
+          ]
+          for url in urls:
+            print("PROBE", url, flush=True)
+            try:
+              req=urllib.request.Request(url,headers={"User-Agent":"AmbientOdyssey-metadata-audit/1.0","Accept":"application/json,text/html"})
+              with urllib.request.urlopen(req,timeout=12) as response:
+                content=response.read(600000).decode(errors="replace")
+              print("FETCH STATUS OK LENGTH",len(content),flush=True)
+              if "modrinth.com" in url:
+                data=json.loads(content)
+                print("MODRINTH_FILES",json.dumps(data.get("files",[]))[:6000],flush=True)
+              elif "cfwidget" in url:
+                data=json.loads(content)
+                print("CFWIDGET_KEYS",list(data.keys()))
+                files=data.get("files",[])
+                print("CFWIDGET_CANDIDATES",json.dumps([f for f in files if "1.21.1" in str(f)])[:8000],flush=True)
+              else:
+                for m in re.finditer("betterbastions-1.0.0",content):
+                  s=content[max(0,m.start()-300):m.start()+500]
+                  if "neoforge-1.21.1" in s:
+                    print("BETTER_BASTIONS_HTML_MATCH",s[:1200],flush=True)
+                print("PAGE_HEAD",content[:300],flush=True)
+            except Exception as e:
+              print("FETCH_FAILED",type(e).__name__,str(e)[:500],flush=True)
+          PY

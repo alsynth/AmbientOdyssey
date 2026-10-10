@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.4",
+  "version": "0.3.8-worldgen-prefreeze-test1.5",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1053,6 +1053,30 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/midnightlib/files/7318664"
+    },
+    "structure-lukis-woodland-mansions": {
+      "id": 7227735,
+      "projectId": 1385782,
+      "fileName": "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+      "displayName": "Luki's Woodland Mansions v1.0 (1.21.1)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/lukis-woodland-mansions/files/7227735"
+    },
+    "structure-better-bastions": {
+      "id": 8988949,
+      "projectId": 1713723,
+      "fileName": "betterbastions-1.0.0+neoforge-1.21.1.jar",
+      "displayName": "Better Bastions 1.0.0 (NeoForge 1.21.1)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/better-bastions/files/8988949"
     }
   },
   "optional_integrated_patches": {
@@ -1768,5 +1792,21 @@
     "overrides/config/cristellib/dimdoors/structure_toggle_config.json5"
   ],
   "default_integrated_patches": true,
-  "recommended_ram_mb": 10240
+  "recommended_ram_mb": 10240,
+  "private_modrinth_addons": [
+    {
+      "mod_id": "neoreefredux",
+      "project_id": "5bMVdkpO",
+      "version_id": "PVzfioBU",
+      "fileName": "neoreefredux-1.0.jar",
+      "sha1": "10160406202fd3dadd295e130b380466436e0981",
+      "sha512": "a63786d43907ed1d97939e7bed28458c1c08939951289fccca09e1dd42d3fa0722802e3d609406daf084c41b45bce93bc54c4c58b1c1bb06fb0ac043bcb8fb8b",
+      "size": 80519,
+      "url": "https://cdn.modrinth.com/data/5bMVdkpO/versions/PVzfioBU/neoreefredux-1.0.jar",
+      "source": "https://modrinth.com/mod/neoreefredux/version/1.0",
+      "license": "GPL-3.0-or-later",
+      "environment": "singleplayer/server",
+      "publish_policy": "Private-test ZIP only; public CurseForge package requires explicit moderation/relicensing clearance for non-CF-hosted file."
+    }
+  ]
 }
