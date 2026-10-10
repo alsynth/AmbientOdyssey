@@ -77,6 +77,7 @@ def compile_compatibility():
         'biomeswevegone:bayou',
         'biomeswevegone:crag_gardens',
         'biomeswevegone:ebony_woods',
+        'biomeswevegone:tropical_rainforest',
     ]
     plains = [
         'regions_unexplored:flower_fields',
@@ -84,7 +85,9 @@ def compile_compatibility():
         'regions_unexplored:orchard',
         'regions_unexplored:rocky_meadow',
         'biomeswevegone:prairie',
+        'biomeswevegone:baobab_savanna',
         'biomeswevegone:sakura_grove',
+        'biomesoplenty:dryland',
         'biomesoplenty:highland',
         'biomesoplenty:pumpkin_patch',
         'natures_spirit:alpine_clearings',
@@ -147,6 +150,9 @@ def compile_compatibility():
         'biomeswevegone:crag_gardens',
         'biomeswevegone:ebony_woods',
         'biomeswevegone:prairie',
+        'biomeswevegone:baobab_savanna',
+        'biomeswevegone:tropical_rainforest',
+        'biomesoplenty:dryland',
         'biomesoplenty:volcano',
         'natures_spirit:floral_ridges',
     ]
