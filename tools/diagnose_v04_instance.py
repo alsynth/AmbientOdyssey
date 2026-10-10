@@ -14,9 +14,10 @@ import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
-VERSION = "0.4.1-experimental-six-fix-test"
+VERSION = "0.4.1-experimental-trek-structures"
 EXPECTED_COUNT = 331
 CRITICAL_PINS = {
+    1418999: (8296269, "Trek structure expansion"),
     618790: (7033510, "Mine Cells"),
     318449: (5845879, "Cardinal Components API"),
     890127: (8654089, "Sinytra Connector"),
@@ -105,7 +106,7 @@ def check_zip(path):
             for pid,(fid,label) in {**CRITICAL_PINS,**EXTRA_PINS}.items():
                 if by_id.get(pid) != fid:
                     out["issues"].append(label + " exact project/file pin missing")
-            for disallowed in (306612,284876,631098,1100379):
+            for disallowed in (306612,284876,631098,1100379,368293,1071336):
                 if disallowed in by_id:
                     out["issues"].append("Known conflicting project ID in manifest: " + str(disallowed))
             bundled = [n for n in names if n.startswith("overrides/mods/") and n.endswith(".jar")]
