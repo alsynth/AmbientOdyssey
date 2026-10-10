@@ -1711,6 +1711,16 @@ Once the foundation passes:
 
 ### Quality of life
 
+**10 Oct post-worldgen QoL/visual audit:** [Complete candidate list and exact Voxy/DH/BBE renderer comparison](docs/audits/QOL_VISUAL_RENDERING_BACKLOG_2026-10-10.md). **Research only: none approved for Test8.2 installation.**
+- [ ] **Convenience/UI shortlist:** AmbientSounds, BetterF3, Fadeless, Lanterns Belong on Walls, Smooth Swapping, Controlling, Better Statistics Screen, RightClick Harvest, Status Effect Bar, Cut Through, Light Overlay, Screenshot Viewer, Paginated Advancements, Reach Around, Map Distance Fix
+- [ ] **World visuals and agriculture:** Dynamic Lights (not merely `lambdynlights_api`), Simple Fog Control, Visual Snowy Leaves, Crops Love Rain; measure weather/crop/spawn changes and integrated-server tick costs
+- [ ] **Zoomify conditional:** first inspect installed Xaero/NeOculus/Embeddium controls and any existing zoom key; only add Zoomify if actually missing
+- [ ] **APPA resource/texture pack:** exact project unknown; get canonical link/name before deciding or redistributing
+- [ ] **BBE native NeoForge 1.21.1 (not Fabric-only Enhanced Block Entities):** official v1.3.4 file `1434533:8888765`, but requires matching Sodium API/render path. **Do not simply install onto current Embeddium 1.0.15 / NeOculus 1.8.7**. Benchmark alongside shader/texture compatibility after freeze
+- [ ] **Voxy vs Distant Horizons A/B:** official DH on NeoForge 1.21.1 vs specific community Voxy fork with Sodium 0.8.x/Iris where required; shader-by-shader Solas and Complementary tests, cold/warm cache, GPU extension support, FTF/Streams and Nether/End visuals. **Never mix DH and Voxy by default**
+- [ ] Post-worldgen QoL install waves: (1) UI/accessibility, (2) minor mechanics/ambience, (3) heavyweight rendering/LOD/BBE only after benchmarks, with 1.21.1 NeoForge file ID/licence/sidedness checks and CurseForge export gate
+
+
 - Inventory handling and sorting.
 - Searchable keybind menu.
 - Keybind-conflict cleanup.
