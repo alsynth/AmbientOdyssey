@@ -15,6 +15,41 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install nbtlib
+      - name: Extract source-backed Farmers cook aliases and all Create Easy collapsed connectors
+        run: |
+          python - <<'PY'
+          import json,gzip,base64,io,urllib.request,zipfile,collections,nbtlib
+          from pathlib import Path
+          o=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          print('INDEX_RESOURCE_KINDS',list(o['resources'])[:25],flush=True)
+          index=o['resources']['worldgen/template_pool']
+          for label in ('cook_additions_1_pool','cook_additions_2_pool','cook_additions_3_pool','cook_additions_4_pool','cook_end_1_pool'):
+              key='farmers_structures:'+label
+              if key not in index:print('COOK_POOL_MISSING',key,flush=True);continue
+              source=index[key][0]['data']
+              alias=dict(source)
+              alias['name']='minecraft:'+label
+              assert source['elements'] and all('element' in x for x in source['elements'])
+              out=json.dumps(alias,separators=(',',':'))
+              print('AO_COOK_ALIAS',label,base64.b64encode(out.encode()).decode(),flush=True)
+              print('COOK_NATIVE',key,'pieces',len(alias['elements']),'fallback',alias['fallback'],'provenance',index[key][0].get('jar'),flush=True)
+          url='https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBT-Audit/1.0'}),timeout=30) as r: buf=r.read()
+          refs=[];named=[]
+          with zipfile.ZipFile(io.BytesIO(buf)) as z:
+              for path in z.namelist():
+                  if not path.endswith('.nbt') or '/structure/' not in path:continue
+                  try: d=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(path))))
+                  except Exception: continue
+                  for block in d['blocks']:
+                      if str(d['palette'][int(block['state'])]['Name'])!='minecraft:jigsaw':continue
+                      nbt=block.get('nbt',{})
+                      name=str(nbt.get('name',''));pool=str(nbt.get('pool',''));target=str(nbt.get('target',''))
+                      if 'einsturz' in (name+'|'+target):named.append({'file':path,'pos':[int(v) for v in block['pos']],'name':name,'target':target,'pool':pool})
+                      if 'undergroundtrain_station' in pool:refs.append(path)
+          print('EINSTURZ_JIGSAWS',json.dumps(named)[:14000],flush=True)
+          print('MISSING_STATION_REFS',json.dumps(refs),flush=True)
+          PY
       - name: Trace cook pool origins and native Create Easy station connector names
         run: |
           python - <<'PY'
