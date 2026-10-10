@@ -46,7 +46,7 @@ jobs:
         run: python validate_worldgen_810.py
       - name: Verify exact pinned native 273 repairs independent of package build
         run: python compile_terminal_jigsaws_087.py
-      - name: Produce 308 pinned CF mods and identical private NeoReef archive
+      - name: Produce 311 pinned CF mods and identical private NeoReef archive
         run: python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-0.4.0-e0-World-Rules-Wildlife-AUDIO-PRIVATE.zip
       - name: Re-run baseline and structure checks after compilation
         run: |
@@ -78,9 +78,9 @@ jobs:
               m=json.loads(z.read('manifest.json'))
               assert m['version']=='0.4.0-e0-audit-broad-content'
               refs={x['projectID']:x['fileID'] for x in m['files']}
-              assert len(refs)==308 and refs[1713723]==8988949 and refs[1385782]==7227735
+              assert len(refs)==311 and refs[1713723]==8988949 and refs[1385782]==7227735
               assert refs[250398]==6368976 and refs[889915]==8909889
-              content_mods={360203:8767509,1308987:9039094,1214728:9039106,835687:9099893,714059:6467772,627986:9004373,345854:9032258,342584:9060865,1182393:8390081,958094:9103491,1413643:7384220,870076:9001238,1477733:9116978,1499605:8313373}
+              content_mods={360203:8767509,1311987:9039094,1214728:9039106,835687:9099893,714059:6467772,627986:9004373,345854:9032258,342584:9060865,1182393:8390081,958094:9103491,1413643:7384220,870076:9001238,1477733:9116978,1499605:8313373}
               asset_packs={1363585:9092152,1690239:8936929,1321476:8493563,531730:8048795,380413:6021451}
               assert all(refs[k]==v for k,v in content_mods.items())
               assert all(refs[k]==v for k,v in asset_packs.items())
@@ -90,6 +90,8 @@ jobs:
               audit_mods={401648:5873258,351441:6409785,1617531:8740321,325492:5553811,240633:5979614,1023913:7768631,1015155:6294123,532127:6400660,1321830:8507645,502561:6375501,452834:7508749}
               assert all(refs[k]==v for k,v in audit_mods.items())
               assert refs[638111]==6372979 # Legendary Tooltips requires Prism 1.0.11
+              added_qol={272515:5850587,969423:5731913,693961:6743822}
+              assert all(refs[k]==v for k,v in added_qol.items())
 
               assert hashlib.sha1(z.read('overrides/mods/neoreefredux-1.0.jar')).hexdigest()=='10160406202fd3dadd295e130b380466436e0981'
               patched=[n for n in ns if n.startswith(prefix) and n.endswith('.nbt')]
@@ -148,7 +150,7 @@ jobs:
               am=z.read('overrides/config/alexsmobs.toml').decode()
               for mob in ('gorilla','fly','cockroach'):
                   assert mob+'SpawnWeight = 0' in am
-              print('INDEPENDENT VERIFIED: 273 NBT fixes; 1 angler JSON; 308 CF refs; NeoReef checksum; ZIP CRC and manifest')
+              print('INDEPENDENT VERIFIED: 273 NBT fixes; 1 angler JSON; 311 CF refs; NeoReef checksum; ZIP CRC and manifest')
               print('PATCHED STRUCTURE NBT COUNTS:',dict(counts))
           print('ZIP SIZE',p.stat().st_size,'SHA256',hashlib.sha256(p.read_bytes()).hexdigest())
           print('No in-game Minecraft runtime was used. Resource packs are CF platform references; verify CF installer puts them in the resourcepacks folder and enables desired layering.')

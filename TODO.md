@@ -1,6 +1,6 @@
 ## 10 October — experimental 0.4e audit-based large batch
-- [x] Source-stage 11 official native NeoForge 1.21.1 candidate additions from the earlier user mod/resourcepack and QoL audits, with a small RPG gear readability comparator: BetterF3, Pick Up Notifier, Cave Dust, Light Overlay, Inventory Sorter, Subtle Effects, Traveler's Titles, Legendary Tooltips, Map Distance Fix, Equipment Compare, RightClickHarvest.
-- [ ] Validate 0.4e shared libraries, exact source files, deterministic importer and runtime; stop if baseline project collision or true missing required library. Current pack 0.4d contains 296 pins, 0.4e target 308.
+- [x] Source-stage 14 official native NeoForge 1.21.1 candidate additions from the earlier user mod/resourcepack and QoL audits, with a small RPG gear readability comparator: BetterF3, Pick Up Notifier, Cave Dust, Light Overlay, Inventory Sorter, Subtle Effects, Traveler's Titles, Legendary Tooltips, Map Distance Fix, Equipment Compare, RightClickHarvest.
+- [ ] Validate 0.4e shared libraries, exact source files, deterministic importer and runtime; stop if baseline project collision or true missing required library. Current pack 0.4d contains 296 pins, 0.4e target 311.
 - [ ] Check overlapping crop harvesting, tooltip/inventory and HUD visuals, cave particle spam and initial worldgen cold lag in **one large playtest**, not a separate test per mod.
 - [ ] Continue comparing Cisco, RAD3, Prodigium, Prominence and Craft to Exile; avoid transplanting version-locked custom systems, quest progress and additional duplicate bosses without a stable port.
 - [ ] Defer all FTB Quest/Questlog authoring, balance, worldgen optimization and optional MCA/bridges per user phase priorities.

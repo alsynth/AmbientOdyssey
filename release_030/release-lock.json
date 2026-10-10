@@ -1644,6 +1644,51 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/prism-lib/files/6372979",
       "content_group": "0.4.0-e0-audit-broad",
       "dependency_for": "content-040e-legendary-tooltips"
+    },
+    "content-040e-better-advancements": {
+      "projectId": 272515,
+      "id": 5850587,
+      "fileName": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "displayName": "Better Advancements 0.4.3.21",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 2,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/better-advancements/files/5850587",
+      "content_group": "0.4.0-e0-audit-broad",
+      "content_role": "Vanilla advancements large-tree UI; exclude Paginated Advancements",
+      "environment": "client"
+    },
+    "content-040e-cut-through": {
+      "projectId": 969423,
+      "id": 5731913,
+      "fileName": "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+      "displayName": "Cut Through 21.1.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/cut-through/files/5731913",
+      "content_group": "0.4.0-e0-audit-broad",
+      "content_role": "Hit mobs through tall grass without breaking vegetation; Puzzles Lib inherited",
+      "environment": "client"
+    },
+    "content-040e-screenshot-viewer": {
+      "projectId": 693961,
+      "id": 6743822,
+      "fileName": "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar",
+      "displayName": "Screenshot Viewer 1.3.4",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/screenshot-viewer/files/6743822",
+      "content_group": "0.4.0-e0-audit-broad",
+      "content_role": "Browse existing local screenshots in-game; no upload",
+      "environment": "client"
     }
   },
   "optional_integrated_patches": {

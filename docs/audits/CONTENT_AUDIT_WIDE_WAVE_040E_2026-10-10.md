@@ -2,9 +2,9 @@
 **Staged 10 October 2026:** new experimental branch `content/0.4.0e-audit-first-wide-expansion`, forked from successful 0.4d CI source. **Source/build trial, not runtime-certified; do not merge to main.**
 
 ## User-directed priority
-Add substantial compatible content before post-expansion fixes, then worldgen/performance, balance and finally all quest authoring. Keep 0.4c/0.4d tested source and rare mutant settings. All eleven additions were drawn from previously nominated audit candidates, except equipment comparison / Legendary Tooltips, included after comparing with the gear-readability emphasis of Cisco's Medieval RPG, RAD3, Craft to Exile 2 and Prodigium. This is an *architecture inspiration*, not a claim that a specific source pack ships the same exact 1.21.1 NeoForge jar.
+Add substantial compatible content before post-expansion fixes, then worldgen/performance, balance and finally all quest authoring. Keep 0.4c/0.4d tested source and rare mutant settings. All fourteen additions were drawn from previously nominated audit candidates, except equipment comparison / Legendary Tooltips, included after comparing with the gear-readability emphasis of Cisco's Medieval RPG, RAD3, Craft to Exile 2 and Prodigium. This is an *architecture inspiration*, not a claim that a specific source pack ships the same exact 1.21.1 NeoForge jar.
 
-## Eleven exact CurseForge trial pins
+## Fourteen exact CurseForge trial pins
 | Requested content | CF project:file | Loader and role | Acceptance/overlap |
 |---|---:|---|---|
 | BetterF3 v11.0.3 | 401648:5873258 | client, NeoForge 1.21.1 | Debug screen, alt to vanilla F3 |
@@ -19,7 +19,16 @@ Add substantial compatible content before post-expansion fixes, then worldgen/pe
 | Equipment Compare 1.3.13 | 502561:6375501 | client, NeoForge 1.21.1 | Compare player-equipped gear against loot stats |
 | RightClickHarvest 4.6.1 | 452834:7508749 | both, NeoForge 1.21.1 | Right-click harvesting; Farmer Delight duplicate behavior audit |
 
-Manifest target **296 to 308 unique CurseForge refs** (11 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
+Manifest target **296 to 311 unique CurseForge refs** (14 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
+
+## Additional approved-to-test 0.4e audit candidates (same large batch)
+| Candidate | Official NeoForge 1.21.1 file | Purpose |
+|---|---:|---|
+| Better Advancements 0.4.3.21 | 272515:5850587 | Single vanilla advancements tree UI improvement; Paginated Advancements not added |
+| Cut Through 21.1.0 | 969423:5731913 | Allows weapons to hit entities through non-solid grass; client Puzzles Lib already present |
+| Screenshot Viewer 1.3.4 | 693961:6743822 | Browse local game screenshots; does not require internet/cloud access |
+
+**Final manifest target 311 CF project refs (296 inherited + 14 QoL/content + Prism).** The new advancements UI does not author or modify FTB Quests or Questlog tasks.
 
 ## Deliberately not auto-added despite earlier lists
 - **AmbientSounds 6:** Atmosfera Neo already chosen, doubling constant audio is counterproductive, and water/rain already loud.
