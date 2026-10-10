@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-experimental-minecells-fg-questlog'
+assert lock['version']=='0.4.0-experimental-minecells-fg-questlog-q1'
 q=lock['additions']['content-040h-questlog']
 assert (q['projectId'],q['id'],q['fileName'])==(1202066,8952784,'questlog-neoforge-1.21.1-3.4.1.jar')
 assert {'NeoForge','1.21.1'}.issubset(q['gameVersions'])
@@ -33,6 +33,9 @@ button=cfg['button']
 assert button['enabled'] and button['showBadge'] and not button['relativeToInventory']
 assert (button['x'],button['y'])==(38,38)
 assert all(isinstance(button[k],bool) for k in ('enabled','showBadge','relativeToInventory','bobbingBadge'))
-assert not (ROOT/'release_030/overrides/config/questlog/quests').exists(), 'Do not ship draft quests yet'
+quest_folder=ROOT/'release_030/overrides/config/questlog/quests'
+assert quest_folder.is_dir() and len(list(quest_folder.glob('*.json')))==50
+from tools.validate_v04_quest_campaign import validate
+assert validate()==50
 print('PASS: 331 projects, native Questlog pin, inherited Cloth Config, Mine Cells bridge, exact source-backed inventory button configuration, no quest campaign and 273 NBT repairs.')
 print('Source and packaging only: inventory placement, interaction and multiplayer have NOT been runtime tested.')

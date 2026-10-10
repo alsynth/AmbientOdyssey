@@ -46,7 +46,7 @@ def verify(archive, private=False):
             p = PurePosixPath(name)
             assert not p.is_absolute() and '..' not in p.parts and '\\' not in name, name
         m = json.loads(z.read('manifest.json'))
-        assert m['version'] == '0.4.0-experimental-minecells-fg-questlog'
+        assert m['version'] == '0.4.0-experimental-minecells-fg-questlog-q1'
         assert m['minecraft']['modLoaders'] == [{'id': 'neoforge-21.1.252', 'primary': True}]
         refs = {e['projectID']: e['fileID'] for e in m['files']}
         assert len(refs) == len(m['files']) == 331
@@ -90,7 +90,14 @@ def verify(archive, private=False):
         button = quest_config['button']
         assert button['enabled'] and button['showBadge'] and not button['relativeToInventory']
         assert (button['x'], button['y']) == (38, 38)
-        assert not any(n.startswith('overrides/config/questlog/quests/') and n.endswith('.json') for n in names)
+        pilot_prefix='overrides/config/questlog/'
+        pilot_quests=[n for n in names if n.startswith(pilot_prefix+'quests/') and n.endswith('.json')]
+        pilot_chapters=[n for n in names if n.startswith(pilot_prefix+'chapters/') and n.endswith('.json')]
+        assert len(pilot_quests)==50 and len(pilot_chapters)==13, 'Pilot quest campaign missing'
+        from tools.validate_v04_quest_campaign import validate as validate_q1
+        assert validate_q1()==50
+        for n in pilot_quests+pilot_chapters:
+            json.loads(z.read(n))
         options = z.read('overrides/config/defaultoptions/options.txt').decode().splitlines()
         assert 'renderDistance:12' in options and 'simulationDistance:6' in options
     return {'archive': Path(archive).name, 'sha256': sha256(Path(archive).read_bytes()).hexdigest(),

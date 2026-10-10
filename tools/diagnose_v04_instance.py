@@ -14,7 +14,7 @@ import zipfile
 from collections import Counter, defaultdict
 from pathlib import Path
 
-VERSION = "0.4.0-experimental-minecells-fg-questlog"
+VERSION = "0.4.0-experimental-minecells-fg-questlog-q1"
 EXPECTED_COUNT = 331
 CRITICAL_PINS = {
     618790: (7033510, "Mine Cells"),
