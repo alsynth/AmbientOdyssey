@@ -120,7 +120,7 @@ def run(archive):
     t6 = {v['projectId']: v['id'] for k, v in lock['additions'].items() if k.startswith('test6-')}
     mf = {f['projectID']: f['fileID'] for f in manifest['files']}
     check('Manifest pins exactly the nine Test 6 projects, no duplicate projects',
-          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 251 and 284876 not in mf,
+          len(t6) == 9 and all(mf.get(p) == f for p, f in t6.items()) and len(mf) == len(manifest['files']) == 262 and 284876 not in mf,
           {'pins': len(t6), 'total': len(manifest['files'])})
     expect = {1015146: 5812546, 1015149: 5812553, 783522: 7078283, 1620396: 8983496, 698309: 8082824,
               297680: 6584803, 1010066: 8837992, 949158: 6344382, 979809: 9101011}
@@ -144,7 +144,7 @@ def run(archive):
     check('Recommended RAM 10 GiB in manifest', manifest['minecraft'].get('recommendedRam') == 10240,
           manifest['minecraft'].get('recommendedRam'))
     check('Jewelry v2.0.2 avoids Iron Lib downgrade for other Iron mods',
-          mf.get(1101111) == 8365016 and len(mf) == 251,
+          mf.get(1101111) == 8365016 and len(mf) == 262,
           {'jewelry_file': mf.get(1101111), 'manifest_total': len(mf)})
     shaders = {678384: 5743914, 627557: 8884654}
     check('Two official shader projects pinned (loader-agnostic, no binary redistribution)',
@@ -160,6 +160,50 @@ def run(archive):
           'onboardAccessibility:false' in defaults and
           'menuBackgroundBlurriness:0' in defaults and 'narratorHotkey:false' not in defaults,
           'Narrator and shader menu defaults')
+    requested_test8 = {
+        834427: 9063977, # Hybrid Aquatic
+        1015115: 5924487, # YUNGs Ocean Monuments
+        1717003: 9108729, # Better Shipwrecks
+        1197859: 6539516, # FTB Ocean Mobs
+        450659: 5937999, # Small Ships
+        1331880: 6918744, # Aquatic Creepers
+        536254: 8931374, # Aquamirae
+        1123977: 9070553, # Fragmentum
+        714177: 8332463, # Deeper Oceans
+        841262: 7939973, # Oceans Delight
+        1644371: 8614631, # Solo Quests
+    }
+    check('11 user-approved ocean/dependency/solo quest files are pinned for combined testing',
+          len(mf) == 262 and all(mf.get(pid) == fid for pid, fid in requested_test8.items()),
+          {'expected_projects':262,'tested_new_pins':len(requested_test8)})
+    check('Solo Quests disables voluntary team completion sync on fresh worlds',
+          'teamSyncEnabled = false' in z.read('overrides/defaultconfigs/ftb_solo_quests-server.toml').decode(),
+          'new-world default serverconfig')
+    check('WDA and IDAS shared grids no longer select lighthouses; two rare independent grids exist',
+          all(
+            not any(x.get('structure') == structure for x in json.loads(z.read(base))['structures'])
+            for base,structure in (
+               ('overrides/config/paxi/datapacks/ao_structure_density/data/dungeons_arise/worldgen/structure_set/minor_structures.json','dungeons_arise:lighthouse'),
+               ('overrides/config/paxi/datapacks/ao_structure_density/data/idas/worldgen/structure_set/idas_small.json','idas:abandoned_lighthouse')
+            )
+          ) and all(
+            n in names for n in (
+              'overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/wda_lighthouse_rare.json',
+              'overrides/config/paxi/datapacks/ao_structure_density/data/ambient_odyssey/worldgen/structure_set/idas_lighthouse_rare.json'
+            )
+          ), 'rarity grids')
+    p_biome='overrides/config/paxi/datapacks/ao_biome_replacement/data/ambient_odyssey/biolith/biome_placement.json'
+    biome_payload=json.loads(z.read(p_biome))
+    check('Four new curated surface biomes and stony shoreline replacements are present',
+          all(any(e.get('biome')==id for e in biome_payload['replacements']) for id in (
+             'biomeswevegone:baobab_savanna','biomeswevegone:tropical_rainforest',
+             'biomesoplenty:dryland','biomeswevegone:dacite_shore')) and
+          any(e.get('target')=='minecraft:stony_shore' and e.get('biome')=='biomeswevegone:dacite_shore'
+              for e in biome_payload['replacements']),len(biome_payload['replacements']))
+    check('Defer Beyond the Ocean and explicitly excluded Tide 2, Sea Myths, Create Deep Seas, Upgrade Aquatic',
+          all(key not in lock['additions'] for key in (
+              'beyond-the-ocean','tide-2','sea-myths','create-deep-seas','upgrade-aquatic')),
+          'not staged in source lock')
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
