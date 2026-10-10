@@ -6,7 +6,7 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.883720930233
+      "proportion": 0.57
     },
     {
       "dimension": "minecraft:overworld",
@@ -156,7 +156,7 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.993757802747
+      "proportion": 0.52
     },
     {
       "dimension": "minecraft:overworld",
@@ -174,7 +174,7 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna_plateau",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.993757802747
+      "proportion": 0.56
     },
     {
       "dimension": "minecraft:overworld",
@@ -192,7 +192,7 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:windswept_savanna",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.993344425957
+      "proportion": 0.55
     },
     {
       "dimension": "minecraft:overworld",
@@ -259,6 +259,36 @@
       "target": "minecraft:bamboo_jungle",
       "biome": "biomeswevegone:redwood_thicket",
       "proportion": 0.27025803531
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "biomeswevegone:baobab_savanna",
+      "proportion": 0.33
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "biomeswevegone:baobab_savanna",
+      "proportion": 0.34
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "biomesoplenty:dryland",
+      "proportion": 0.29
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "biomesoplenty:dryland",
+      "proportion": 0.25
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:tropical_rainforest",
+      "proportion": 0.4
     }
   ],
   "sub_biomes": [
