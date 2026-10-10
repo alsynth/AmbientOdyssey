@@ -89,6 +89,13 @@ Avoid duplicating complete Questlog campaigns. Use FTB **as a searchable illustr
 10. **Server quality & multiplayer:** permissions, separate quests, map/waypoint rules, how to ask for help, keybind troubleshooting.
 11. **Quest mechanics itself:** where to open Questlog, how prerequisites/rewards work, how to pin/find FTB reference, avoiding auto-complete/achievement confusion.
 
+### Always-visible Tips, Tricks and Controls (approved section)
+
+- **[Tips & Tricks](FTB_TIPS_AND_TRICKS_V0_3.md):** 65 written tips, grouped by inventory/JEI, combat/gear, navigation, magic/RPG, multiplayer, performance and troubleshooting. Prioritize a ten-tip quick start and short modular subpages with relevant technical cross-links.
+- **[Keybind Cheatsheet](FTB_KEYBIND_CHEATSHEET_V0_3.md):** a five-action quick reference plus detailed key sections. Differentiate **actual AO packaged overrides** (`O` Accessories, `J` microphone mute, FTB Chunks map unbound), mod defaults (e.g. JEI `R`/`U`, Xaero `M`/`B`), and future/unknown controls (Questlog, Origins, spellbooks and backpacks). Test defaultoptions / keybindoverride behavior before publishing.
+- **Placement:** immediately visible in FTB main chapter, not a Questlog achievement. Optional practice prompts may refer to quests, but no double rewards for reading information.
+- **Post-expansion:** after final mod roster selection, capture fresh client `options.txt`, actual menus, item icons and screenshots; verify key conflicts across combat, inventory and Questlog, then author final FTB page/SNBT layouts.
+
 **FTB reference should have few or no reward-bearing tasks.** If a small hands-on teaching step is helpful, award once only in Questlog or in FTB — never both.
 
 ## A beginner-friendly quest design pattern
