@@ -1721,6 +1721,15 @@ Once the foundation passes:
 
 ### Quality of life
 
+**10 Oct exploration discovery/QoL concept — audit only:** [Exploration title and journal system design](docs/audits/EXPLORATION_DISCOVERY_SYSTEM_PROPOSAL_2026-10-10.md). Do not install into Test8.3 or alter the current frozen-by-process Test8.2 working profile.
+- [ ] **Discovery titles:** research Traveler's Titles native NeoForge 1.21.1 for biomes/dimensions; audit exact 1.21.1 NeoForge First Steps structure-title file and multiplayer reliability; tune high-level structure vs biome title precedence, border debouncing, sounds, accessibility and disabling repeat toasts.
+- [ ] **Player exploration checklist:** prototype FTB Quests 1.21.1 built-in **Visit Biome** and **Find Structure** tasks (two vanilla + two modded) and verify per-player data with FTB Solo Quests in a two-player test. Separate biome type visits, major structure type discovery and dungeon clear completion; record dimension.
+- [ ] **Tracking engine decision:** compare mature built-in FTB Quests progress, silent `minecraft:location` advancements from an AO registry-generated datapack, and **Explorer's Journals** 1.0.0 NeoForge prototype (new/low adoption). Prefer native components if complete; no bespoke Java mod until limitations are proven.
+- [ ] **Explorer percentage and UI:** list only reachable active biome/major-structure IDs, exclude inactive/duplicate/decorative templates; optional rare feats separate; persistence after restart/pack updates; spoiler-safe filters; per-player vs team; configurable notifications; no automated coordinate leak to public site.
+- [ ] **Explorer upgrades:** revisit bookmarks for *already found* POIs without duplicating Xaero, optional first-discovery attribution, region-based milestones, lore/field notes, recap and eventual wiki integration. Never make exploration completion a forced prerequisite to main progression.
+
+
+
 **10 Oct post-worldgen QoL/visual audit:** [Complete candidate list and exact Voxy/DH/BBE renderer comparison](docs/audits/QOL_VISUAL_RENDERING_BACKLOG_2026-10-10.md). **Research only: none approved for Test8.2 installation.**
 - [ ] **Convenience/UI shortlist:** AmbientSounds, BetterF3, Fadeless, Lanterns Belong on Walls, Smooth Swapping, Controlling, Better Statistics Screen, RightClick Harvest, Status Effect Bar, Cut Through, Light Overlay, Screenshot Viewer, Paginated Advancements, Reach Around, Map Distance Fix
 - [ ] **World visuals and agriculture:** Dynamic Lights (not merely `lambdynlights_api`), Simple Fog Control, Visual Snowy Leaves, Crops Love Rain; measure weather/crop/spawn changes and integrated-server tick costs
