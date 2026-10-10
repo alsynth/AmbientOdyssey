@@ -20,7 +20,7 @@ Use this guide instead of reconstructing "what's current" from hundreds of filen
 | `docs/handoff/`, `docs/patches/` | Original Structure Test 6 handoff/patches | **Historical**; don't apply blindly |
 | `docs/archive/` | Previous full status copies, bootstrap and archive manifest | Retained; nothing silently erased |
 | `.github/workflows/` | Six v0.4-era workflows plus the repo-organization validator | Current active sources only |
-| `.github/workflows-archive/2026-10-10/` | **29 historical single-use actions** (retained byte-exact) | Restore to workflow root only if knowingly re-running old one-shot testing |
+| `.github/workflows-archive/2026-10-10/` | **30 historical single-use actions** (retained byte-exact) | Restore to workflow root only if knowingly re-running old one-shot testing |
 
 ## Current package summary
 
