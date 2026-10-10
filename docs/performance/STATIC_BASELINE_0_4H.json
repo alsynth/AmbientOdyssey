@@ -1,0 +1,49 @@
+{
+  "generated_from": "Ambient-Odyssey-v04h-Q1-FTB-MANUAL.zip / build/Ambient-Odyssey-v0.4h-Q1-FieldManual-CF-References.zip",
+  "evidence": "Static ZIP inspection of matching GitHub Actions artifact 38080830259",
+  "test_level": "STATIC_ONLY_NOT_RUNTIME_TESTED",
+  "source_branch": "experimental/quest-atlas-website-q1-20261010",
+  "source_base_commit": "48444e75e510363b155320a387fe97d7c40aaca9",
+  "inner_reference_zip_sha256": "c4b7fa1595a4aa99f6cc9a504266c5acaf6518c7a47b67186cc69473a6fbd88b",
+  "inner_private_zip_sha256": "c7493ce19dc7833b5bf06fb322159689eebe3629d0bc001bff4617a50d3d33ca",
+  "manifest": {
+    "minecraft": "1.21.1",
+    "neoForge": "21.1.252",
+    "pinnedCurseForgeProjects": 331,
+    "uniqueCurseForgeProjects": 331,
+    "recommendedRAMMiB": 10240
+  },
+  "archive": {
+    "members": 1469,
+    "overridesMembers": 1467,
+    "largestOverride": "overrides/config/tanshugetrees/custom_packs/#main.zip",
+    "largestOverrideBytes": 73500294
+  },
+  "defaults": {
+    "renderDistance": 12,
+    "simulationDistance": 6,
+    "maxFps": 160,
+    "vsync": false,
+    "sound_weather": 0.2,
+    "sound_ambient": 1,
+    "sound_block": 0.4
+  },
+  "observedConfig": {
+    "embeddium_entity_culling": true,
+    "embeddium_fog_occlusion": true,
+    "embeddium_chunk_builder_threads": 0,
+    "spark_backgroundProfiler": true,
+    "structure_essentials_fast_lookup": true
+  },
+  "flags": [
+    "Spark background profiler enabled; profile overhead before toggling",
+    "Spark tmp paths present in export",
+    "No actual installed JAR metadata; no client or server runtime measurements"
+  ],
+  "preservedContent": {
+    "questlogQuests": 50,
+    "questlogChapters": 13,
+    "ftbManualPages": 32,
+    "ftbManualChapters": 3
+  }
+}
