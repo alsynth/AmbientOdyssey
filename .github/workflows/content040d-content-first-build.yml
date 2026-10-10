@@ -28,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
       - run: pip install nbtlib==2.0.4
-      - name: Verify exact two added 0.4.0-d0 pins and retained dependencies
+      - name: Verify historical 0.4a pins and retained dependencies
         run: python validate_content_040a.py
       - name: Verify combined wildlife curation, global gamerules and audio config
         run: |
@@ -164,7 +164,7 @@ jobs:
           PY
       - uses: actions/upload-artifact@v4
         with:
-          name: Ambient-Odyssey-0.4.0-d0-PRIVATE-273-Terminal-Jigsaw-Repairs
+          name: Ambient-Odyssey-0.4.0-f0-PRIVATE-309-CF-Refs-273-NBT
           path: build/Ambient-Odyssey-0.4.0-f0-Historical-Expansion-PRIVATE.zip
           retention-days: 7
           compression-level: 0
