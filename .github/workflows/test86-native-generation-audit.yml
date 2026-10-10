@@ -15,6 +15,33 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install nbtlib
+      - name: Trace cook pool origins and native Create Easy station connector names
+        run: |
+          python - <<'PY'
+          import io,json,zipfile,gzip,collections,urllib.request,nbtlib
+          from pathlib import Path
+          obj=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          def find(term,item,path=''):
+              if isinstance(item,dict):
+                  for k,v in item.items():find(term,v,path+'/'+str(k))
+              elif isinstance(item,list):
+                  for i,v in enumerate(item):find(term,v,path+'/'+str(i))
+              elif isinstance(item,str) and term in item:
+                  print('INDEX_HIT',term,path,item[:400],flush=True)
+          find('cook_additions',obj)
+          url='https://mediafilez.forgecdn.net/files/6344/382/create_easy_structures-0.2a-neoforge-1.21.1.jar'
+          with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBT-Audit/1.0'}),timeout=30) as r: data=r.read()
+          with zipfile.ZipFile(io.BytesIO(data)) as z:
+              for path in ('data/create_easy_structures/structure/station.nbt','data/create_easy_structures/structure/station_underground.nbt','data/create_easy_structures/structure/gross_tkreuzung.nbt'):
+                  nbt=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(path))))
+                  out=[]
+                  for b in nbt['blocks']:
+                      if str(nbt['palette'][int(b['state'])]['Name'])=='minecraft:jigsaw':
+                          out.append({'pos':[int(x) for x in b['pos']],'name':str(b['nbt'].get('name','')),'target':str(b['nbt'].get('target','')),'pool':str(b['nbt'].get('pool',''))})
+                  print('STATION_NBT',path,json.dumps(out),flush=True)
+              for path in ('data/create_easy_structures/worldgen/template_pool/undergroundtrain_raum.json','data/create_easy_structures/worldgen/template_pool/undergroundtrain_raum_end.json'):
+                  print('TRAIN_POOL',path,z.read(path).decode()[:9000],flush=True)
+          PY
       - name: Inspect missing Create Easy station pool and previous native jar index
         run: |
           python - <<'PY'
