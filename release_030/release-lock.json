@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-b1-living-world-batch",
+  "version": "0.4.0-c0-ecosystem-feedback",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1139,19 +1139,6 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/easy-npc-ui/files/9039106",
-      "content_group": "0.4.0-b1-combined"
-    },
-    "content-040b-galosphere": {
-      "projectId": 631098,
-      "id": 8242886,
-      "fileName": "Galosphere-1.21.1-1.5.5-NeoForge.jar",
-      "displayName": "Galosphere 1.5.5",
-      "gameVersions": [
-        "1.21.1",
-        "NeoForge"
-      ],
-      "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/galosphere/files/8242886",
       "content_group": "0.4.0-b1-combined"
     },
     "content-040b-better-archeology": {
