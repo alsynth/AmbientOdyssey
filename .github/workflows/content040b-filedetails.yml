@@ -14,7 +14,7 @@ jobs:
       - name: Resolve ambiguous mod files and assess actual JAR dependencies
         run: |
           python - <<'PY'
-          import urllib.request,json,concurrent.futures,io,zipfile,tomllib,re
+          import urllib.request,urllib.parse,json,concurrent.futures,io,zipfile,tomllib,re
           projects={
            'guard_villagers':360203,'villager_names':345854,'collective':342584,
            'foxified':1413643,'polytone':958094,'atmosfera':1499605,
@@ -47,7 +47,7 @@ jobs:
           for slug,(pid,arr,selected) in data.items():
            if not isinstance(selected,dict) or 'id' not in selected:continue
            fid=selected['id'];name=selected['name']
-           url=f'https://mediafilez.forgecdn.net/files/{fid//1000}/{fid%1000:03d}/'+urllib.request.quote(name)
+           url=f'https://mediafilez.forgecdn.net/files/{fid//1000}/{fid%1000:03d}/'+urllib.parse.quote(name)
            try:
             with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-Content-Binary-Preflight/1.0'}),timeout=45) as r:buf=r.read(45000000)
             with zipfile.ZipFile(io.BytesIO(buf)) as z:
