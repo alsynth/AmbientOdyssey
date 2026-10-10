@@ -2,6 +2,20 @@
 
 **Planning iteration:** 10 October 2026 · **Current active branch:** `structure/test6` · **Minecraft:** 1.21.1 NeoForge · **Status:** initial narrative and content audit, not in-game authored quests.
 
+## Writing pass v0.2 — 10 October 2026
+
+**Quest copy now exists, beyond the original content map.** This is still a planned, not installed, questbook.
+
+| Added file | Current content |
+|---|---|
+| [WRITTEN_QUEST_DRAFTS_V0_2.md](WRITTEN_QUEST_DRAFTS_V0_2.md) | **50 fully written Questlog-style narrative drafts** across early tiers and selected optional branches; original titles, descriptions, objectives, hints and verification concerns |
+| [WRITTEN_QUEST_DRAFTS_V0_2.json](WRITTEN_QUEST_DRAFTS_V0_2.json) | Machine-readable versions of the same 50 records, using the **pre-existing quest seed IDs** so later revisions don't discard the content map |
+| [FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md](FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md) | **14 original educational article drafts** for beginner play, JEI, combat/Curios, Waystones/Lootr, Apotheosis, Relics, Iron's Spells, Ars, PasterDream and Enigmatic Legacy |
+| [VERSION_PINNED_CONTENT_LEADS_2026-10-10.md](VERSION_PINNED_CONTENT_LEADS_2026-10-10.md) | Upstream **NeoPasterDream 0.9.6** documented garden puzzles/Cold Domain/Aaroncos and **Enigmatic Legacy Plus 1.1.2** named item research, with exact-version uncertainty tagged |
+| [POST_EXPANSION_RECONCILIATION_PROTOCOL.md](POST_EXPANSION_RECONCILIATION_PROTOCOL.md) | Procedure for updating quests after mod additions/updates and preserving published IDs, player progress, reward claims and natural achievement feasibility |
+
+**Status:** prose is *draft_copy*. Questlog objective JSON, FTB SNBT pages, tested triggers, approved rewards and release installation still **do not exist** for these drafts. The modpack's future content expansion must be reconciled against real item/structure/boss registries before implementing them.
+
 ## Current outputs
 
 | File | Scope | State |
