@@ -1782,6 +1782,16 @@ Once the foundation passes:
 - [ ] On final content expansion, **capture fresh-installed and upgraded existing profile keybinds**, resolve conflicts (spell wheel, backpack, Origin abilities, Questlog, minimap/FTB, accessories, voice); re-verify all shown keys and add in-game screenshot examples.
 - [ ] Test GUI at multiple UI scales and ensure help links are accessible before a player completes any gameplay quests.
 
+### Bonus Chest starting loot — Lootr per-player policy (10 Oct 2026)
+
+**User decision:** Valuable loot in Minecraft's **optional world-creation Bonus Chest** is welcome, since the intended AO setup uses **Lootr personal loot**; drop the earlier first-player-wins/shared-chest objection and the resulting overly restrictive starter-only loot limits. [Starting Bonus Chest policy and technical QA](docs/audits/STARTING_BONUS_CHEST_LOOT_POLICY_2026-10-10.md). **No chest loot table or test release modified.**
+
+- [x] Clarify design: meaningful helpful starter items, modded expedition supplies and occasional exciting rare loot may be considered; no blanket prohibition on rare accessories or spellbooks solely due to shared-chest scarcity.
+- [ ] **Verify the actual vanilla Bonus Chest is Lootr converted** in a newly created AO 1.21.1 world: Bonus Chest ON, two distinct survival non-operator players open the *same* chest and collect independently, late join/restart, dedicated-server spawn protection.
+- [ ] Once conversion confirmed, balance `minecraft:chests/spawn_bonus_chest` against ~5–7 independent rolls, early Questlog rewards, first dungeon power and AO's gear tiers; decide fixed starter essentials versus valuable randomized bonus pools.
+- [ ] If vanilla Bonus Chest auto-conversion fails, determine fix or consider manually installed Lootr custom spawn container (`/lootr custom`) as a **distinct** option, not a claim that the world-generation Bonus Chest already works.
+- [ ] Keep Bonus Chest optional; no Questlog mainline quest may require owning an item obtainable only from it.
+
 ### Quest content mapping and authoring — Phase 1 (10 Oct 2026)
 
 **Source-authored planning work completed (not executable quests):** [Questing project index](docs/questing/README.md) · [full provisional mod coverage matrix](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) · [474 specific proposed content beats](docs/questing/QUEST_CONTENT_SEEDS.csv) · [Questlog/FTB chapter architecture](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md) · [source/inventory gaps](docs/questing/INVENTORY_METHOD_AND_GAPS.md) · [authoring and QA protocol](docs/questing/QUEST_AUTHORING_VALIDATION_PLAN.md).
