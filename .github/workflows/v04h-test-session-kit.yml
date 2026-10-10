@@ -1,0 +1,33 @@
+name: Ambient Odyssey v0.4h First-Run Test Session Kit
+on:
+  push:
+    branches: [experimental/v0.4h-test-session-kit-20261010]
+  workflow_dispatch:
+jobs:
+  verify-kit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Validate unchanged pack manifest and profile tooling
+        run: |
+          python tools/validate_v04_fg.py
+          python tools/validate_v04_questlog.py
+          python -m compileall -q tools tests
+          python -m unittest discover -s tests -p 'test_installed_jars_v04.py' -v
+          python -m unittest discover -s tests -p 'test_collect_v04_session.py' -v
+      - name: Build deterministic, standalone playtest kit ZIP
+        run: |
+          python tools/build_v04h_test_session_kit.py --output build/Ambient-Odyssey-v04h-TEST-SESSION-KIT.zip
+          python tools/build_v04h_test_session_kit.py --output build/repeat.zip
+          cmp build/Ambient-Odyssey-v04h-TEST-SESSION-KIT.zip build/repeat.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-v04h-TEST-SESSION-KIT
+          path: build/Ambient-Odyssey-v04h-TEST-SESSION-KIT.zip
+          compression-level: 0
+          if-no-files-found: error
