@@ -1,0 +1,204 @@
+{
+  "created": "2026-10-10",
+  "base_commit": "ca8c91d5090dde5e9e789ebfda474e64f2c01e3c",
+  "policy": "Non-destructive: original blobs and previous Git branches preserved; no release_030 or executable build files moved.",
+  "archived_workflows": [
+    {
+      "from": ".github/workflows/content040a-qol-trial-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040a-qol-trial-build.yml",
+      "sha": "8ac30f9ee2092a765e47723279a18dea257f3835"
+    },
+    {
+      "from": ".github/workflows/content040b-candidate-discovery.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040b-candidate-discovery.yml",
+      "sha": "5c441651a49b61817f85b5f6758df7f77c071995"
+    },
+    {
+      "from": ".github/workflows/content040b-filedetails.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040b-filedetails.yml",
+      "sha": "74c0eed82250314021936f8c90658ff96401ba8f"
+    },
+    {
+      "from": ".github/workflows/content040b-large-batch-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040b-large-batch-build.yml",
+      "sha": "e299bdc45ac3079628d24c219cd92a342c2e58b8"
+    },
+    {
+      "from": ".github/workflows/content040b-resourcepack-lookup.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040b-resourcepack-lookup.yml",
+      "sha": "05102729a7dddf7333830989d48ee9fd74b30839"
+    },
+    {
+      "from": ".github/workflows/content040c-ecosystem-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040c-ecosystem-build.yml",
+      "sha": "34c0b5acfc06c0938efe550a7fc5a700cc2e5586"
+    },
+    {
+      "from": ".github/workflows/content040c-naturalist-spawns.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040c-naturalist-spawns.yml",
+      "sha": "6e806db0d27db3b01a86a4d843ce89ddc4672999"
+    },
+    {
+      "from": ".github/workflows/content040c-wildlife-native-jars.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040c-wildlife-native-jars.yml",
+      "sha": "79e5ea5990d35a37bfe16134e5efc5152fd366b3"
+    },
+    {
+      "from": ".github/workflows/content040c-wildlife-registry.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040c-wildlife-registry.yml",
+      "sha": "1f18582bd8eb0b47a957849d12e2bfcbdd75ff6f"
+    },
+    {
+      "from": ".github/workflows/content040d-content-first-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040d-content-first-build.yml",
+      "sha": "710cd02444b7af0feee3d46f20b45b05c8a4838f"
+    },
+    {
+      "from": ".github/workflows/content040e-audit-broad-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/content040e-audit-broad-build.yml",
+      "sha": "90e47012501b35049411c08d3d08256c98368cfa"
+    },
+    {
+      "from": ".github/workflows/test810-worldgen-repair-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/test810-worldgen-repair-build.yml",
+      "sha": "038d5bb15dae2f3810a464d9030a3002b14a68b6"
+    },
+    {
+      "from": ".github/workflows/test85-private-pack.yml",
+      "to": ".github/workflows-archive/2026-10-10/test85-private-pack.yml",
+      "sha": "09ced6d00ebd6e5255d302e1e5fef62e00468c26"
+    },
+    {
+      "from": ".github/workflows/test85-source-probe.yml",
+      "to": ".github/workflows-archive/2026-10-10/test85-source-probe.yml",
+      "sha": "dee7cec6f2634ffc7d0bb8c9d2d8161b785d6511"
+    },
+    {
+      "from": ".github/workflows/test86-angler-source-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test86-angler-source-audit.yml",
+      "sha": "58216515ff742a60810fbb4242add97a543bf60c"
+    },
+    {
+      "from": ".github/workflows/test86-comprehensive-jigsaw-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test86-comprehensive-jigsaw-audit.yml",
+      "sha": "689866325e5282020ae2d51e58c1162a3731b204"
+    },
+    {
+      "from": ".github/workflows/test86-missing-pools-probe.yml",
+      "to": ".github/workflows-archive/2026-10-10/test86-missing-pools-probe.yml",
+      "sha": "36251da1ab39bb6fb8e9d1f28ee5d72fa85066c5"
+    },
+    {
+      "from": ".github/workflows/test86-native-generation-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test86-native-generation-audit.yml",
+      "sha": "d865c31471dd2f6f909629760a42127c6e63df59"
+    },
+    {
+      "from": ".github/workflows/test86-worldgen-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/test86-worldgen-build.yml",
+      "sha": "7f03bd156d1c3d41f763effdc865cce8f102c765"
+    },
+    {
+      "from": ".github/workflows/test87-jigsaw-cleanup-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/test87-jigsaw-cleanup-build.yml",
+      "sha": "e2567d6c817b73cce2adc03bb1db14490825f490"
+    },
+    {
+      "from": ".github/workflows/test87-rest-of-jars-native-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test87-rest-of-jars-native-audit.yml",
+      "sha": "f9305592a39ded8d23cb3335ab03b6478a26a9e4"
+    },
+    {
+      "from": ".github/workflows/test88-jigsaw-cleanup-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/test88-jigsaw-cleanup-build.yml",
+      "sha": "f7b7e9bdbd17ba2f72da99489d34bba6804152b4"
+    },
+    {
+      "from": ".github/workflows/test88-new-addons-pool-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test88-new-addons-pool-audit.yml",
+      "sha": "a45b974fc63db3388ea77064132f6913a79f1aba"
+    },
+    {
+      "from": ".github/workflows/test89-invalid-item-provenance.yml",
+      "to": ".github/workflows-archive/2026-10-10/test89-invalid-item-provenance.yml",
+      "sha": "3be30c1fc1877aef5813a21ecd362e451dafa128"
+    },
+    {
+      "from": ".github/workflows/test89-json-invalid-registry-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test89-json-invalid-registry-audit.yml",
+      "sha": "12b28ff5ea5624cc81e60b9e835f12695645f804"
+    },
+    {
+      "from": ".github/workflows/test89-remaining-native-pools.yml",
+      "to": ".github/workflows-archive/2026-10-10/test89-remaining-native-pools.yml",
+      "sha": "ea133ed9a77e4761baaf33782925159edc372f40"
+    },
+    {
+      "from": ".github/workflows/test89-targeted-native-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test89-targeted-native-audit.yml",
+      "sha": "1269453a741332683dfde73203154b0f0c287e8d"
+    },
+    {
+      "from": ".github/workflows/test89-worldgen-repair-build.yml",
+      "to": ".github/workflows-archive/2026-10-10/test89-worldgen-repair-build.yml",
+      "sha": "7a5e8c885db97d31ee140549252bdbc7c7709087"
+    },
+    {
+      "from": ".github/workflows/test89-worldgen-source-audit.yml",
+      "to": ".github/workflows-archive/2026-10-10/test89-worldgen-source-audit.yml",
+      "sha": "dadd2966789f6a85d09ce1a66bf05be0734108ea"
+    },
+    {
+      "from": ".github/workflows/worldgen-test84.yml",
+      "to": ".github/workflows-archive/2026-10-10/worldgen-test84.yml",
+      "sha": "1cfa1ead2bffbf73d64e7bb99c2c471e703e424f"
+    }
+  ],
+  "archived_bootstrap": [
+    {
+      "from": "START_UPLOAD_HERE.txt",
+      "to": "docs/archive/bootstrap/START_UPLOAD_HERE.txt",
+      "sha": "93a7cc37c2f1599fbdc81df05e58dea07447829b"
+    },
+    {
+      "from": "UPLOAD_TO_GITHUB.ps1",
+      "to": "docs/archive/bootstrap/UPLOAD_TO_GITHUB.ps1",
+      "sha": "938c0e5a9a553127518e94faec327de59bdfaaf3"
+    }
+  ],
+  "archived_docs": [
+    {
+      "from": "AGENTS.md",
+      "to": "docs/archive/history/AGENTS_pre_organization_2026-10-10.md",
+      "sha": "246dc58c50e3d89b61414f86149b12fb979199b9"
+    },
+    {
+      "from": "docs/status/CURRENT_STATE.md",
+      "to": "docs/archive/history/CURRENT_STATE_full_2026-10-10.md",
+      "sha": "11b21624199b9da7743bf21d389191384717f14f"
+    },
+    {
+      "from": "docs/status/AGENT_WORKFLOW.md",
+      "to": "docs/archive/history/AGENT_WORKFLOW_full_2026-10-10.md",
+      "sha": "35bdd53fb0de5c880b339fe3f66afd6623f2af9a"
+    },
+    {
+      "from": "docs/questing/README.md",
+      "to": "docs/archive/history/QUESTING_README_pre_organization_2026-10-10.md",
+      "sha": "966dc8cd8581e8a3d54d20b1418790d1f26b65ca"
+    },
+    {
+      "from": "README.md",
+      "to": "docs/archive/history/README_pre_organization_2026-10-10.md",
+      "sha": "d8d5f7aee54e238f461047f30f39c42433a10926"
+    }
+  ],
+  "active_workflows": [
+    "v04-experimental.yml",
+    "v04h-installed-jar-audit.yml",
+    "v04h-q1-ftb-manual.yml",
+    "v04h-q1-questbook.yml",
+    "v04h-questlog.yml",
+    "v04h-test-session-kit.yml"
+  ]
+}

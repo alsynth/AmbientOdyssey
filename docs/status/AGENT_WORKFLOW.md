@@ -1,55 +1,13 @@
-> **LATEST v0.4h Q1 + Field Manual candidate (10 Oct 2026):** branch `experimental/v0.4h-q1-ftb-field-manual-20261010`, validated packaging source commit `9a5db8ea0ac16b8b55a6929e6819e6b8479178a0`; **331 unchanged CurseForge mod references, 50 Questlog adventure quests/13 Questlog chapters, and 32 task-free/reward-free FTB reference pages/3 new FTB chapters** alongside the original WDA questline. GitHub [run 38080830259](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259) **SUCCESS**, [artifact 11680318532](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259/artifacts/11680318532). PRIVATE inner ZIP SHA256 `c7493ce19dc7833b5bf06fb322159689eebe3629d0bc001bff4617a50d3d33ca` (70,913,371 bytes), reference-only inner ZIP SHA256 `c4b7fa1595a4aa99f6cc9a504266c5acaf6518c7a47b67186cc69473a6fbd88b` (70,840,821 bytes), identical private repeat verified. All source/manifest/worldgen/authoring/bundle validators PASS; **NOT tested in an actual full Minecraft client or server**, including FTB text rendering/auto-completion, Questlog progress, and multiplayer. Stable previous Q1, launch-ready and rollback branches untouched. See `docs/questing/FTB_MANUAL_Q1_IMPLEMENTATION.md`. A subsequent documentation-only handoff commit does not alter the above artifact SHA values.
+# Developer/agent workflow — current
 
-## Q1 quest content status, 10 October 2026
+**This is the operational checklist for the next work session.** Earlier accumulated handoffs are archived at [AGENT_WORKFLOW_full_2026-10-10](../archive/history/AGENT_WORKFLOW_full_2026-10-10.md).
 
-The active future development branch is `experimental/v0.4h-questbook-q1-20261010`; launch-ready mod roster remains 331 exact CurseForge references. Source-installed 50 Q1 quest files and 13 chapters passed static source/ZIP validation in GitHub run `38079305682`, source SHA `3b89fadc6f234acc840d54a443799e45103e37f7`. Keep prior 331-ref non-Q1 archive to roll back Q1 content without changing mod project pins. Questlog requires real fresh-profile and two-player persistence tests; do NOT claim reward delivery or completion triggers runtime-tested. Do not rewrite the published Quest IDs or use fictional modded registry IDs. Any future Q2 writing starts after source-registry evidence and user observations. Detailed files: `docs/questing/QUESTLOG_Q1_IMPLEMENTATION.md`, `docs/questing/QUESTLOG_Q1_RUNTIME_TESTS.md`.
+1. **Orient:** Read [current state](CURRENT_STATE.md), [repository map](../maintainers/REPO_MAP.md), and [TODO](../../TODO.md). Avoid treating archived Test6 handoff docs as the latest constraints.
+2. **Pick a base branch intentionally:** Content source `experimental/v0.4h-q1-ftb-field-manual-20261010` (331 refs, 50 Questlog quests, 32 FTB pages). Organization branch `maintenance/repo-organization-20261010` contains **documentation/CI organization only**; no gameplay/content modifications. Never overwrite `main`, `structure/test6`, stable releases or historical build candidates.
+3. **Patch source:** `release_030/` is the pack source; `build_release_030.py` compiles changes. Preserve baseline `Ambient-Odyssey-v0.2.10.zip` and original Tan's Huge Trees source ZIP byte-exact. Keep 331 project IDs/file IDs stable unless changes are explicitly approved.
+4. **Quests:** 50 Q1 JSON files under `release_030/overrides/config/questlog/quests/`, 13 chapter JSONs; Q1 index `docs/questing/QUESTLOG_Q1_INSTALLED_INDEX.json`. 32 FTB informational pages under `release_030/overrides/config/ftbquests/quests/chapters/` plus language. Ensure rewards are not duplicated across Questlog and FTB. In-game editor: `/ql edit_mode` (operator permission ≥2).
+5. **Static checks:** `python tools/validate_v04_quest_campaign.py`; `python tools/validate_v04_ftb_manual.py`; `python tools/validate_v04_questlog.py`; `python tools/validate_v04_fg.py`; inherited `validate_content_040*.py` and `validate_worldgen_*.py`. Exact archive checks: `tools/validate_v04_release.py` and `tools/preflight_v04.py` on an actually generated archive. Use existing GitHub workflow if local binaries missing.
+6. **Runtime gates:** Fresh CurseForge import and read-only installed-mod metadata scan; true client startup; Questlog/FTB tabs, GUI scales, character-specific quests/rewards, Mine Cells, structure distribution, dedicated server, two-person persistence/restarts, later 5–7-player FPS/TPS. **None** of these are certified by CI static pass.
+7. **Commit:** Isolated branch + clear changelog/status + exact hashes/artifact ID from new run. Put finished ZIPs in Actions artifacts or GitHub releases, not source repo.
 
-## 2026-10-10 first-test kit update
-
-Active *preparation* branch: `experimental/v0.4h-test-session-kit-20261010` (full pack still 331 CF refs). The compiled **modpack has not changed** since successful full ZIP run `38077302870`. A small separate read-only snapshot/field-sheet kit passed `38078378067`, tested 11 offline fixtures and released artifact `11678754683` with no JARs. Need user to **actually import a separate CurseForge instance**, capture Questlog icon screenshots, inspect outstanding 23 inaccessible/parse-failed exact JAR metadata, run full client and separately built server, then judge launch readiness. See `docs/testing/V04H_TEST_SESSION_FIELD_SHEET.md`. Do not mark these gameplay gates complete yet.
-
-
-## 0.4h installed JAR/server readiness hardening — 10 October 2026
-
-**Source-only developer tooling, not a gameplay acceptance pass.** Based on the **331-ref Questlog v0.4h candidate**, GitHub CI `38075828894` had **PASS** for all source, ZIP and deterministic repeat gates. Exact archive SHA-256s: PRIVATE `c611dd21ba6c3206881d47ca44b9ec13f239a019eb9d8c4a2384688a3df11784`; reference-only `514140b2b4b361b43a916cc5caff5b478c903633de8d4e448244b74afa93243e`. These hashes are historical for that exact successfully built source, not a claim about future changes.
-
-Follow-on integration branch: `experimental/v0.4h-launch-readiness-20261010`. New `tools/audit_installed_jars_v04.py` reads top-level NeoForge and Fabric metadata in a CurseForge-imported profile and compares optional dedicated-server JAR lists. It flags duplicate mod IDs, unreadable metadata and unresolved declared dependencies **without claiming full dependency closure, bytecode compatibility, accurate sidedness or runtime tests**. Synthetic unit tests passed on CI run `38077150490`. The original 23 restricted/broken JAR audit cases are *still unverified* until actual installed files can be scanned. See `docs/testing/V04H_INSTALLED_JAR_AND_SERVER_PREFLIGHT.md`. Preserve prior 331-ref and 330-ref artifacts.
-
-## v0.4 experimental Mine Cells candidate — 10 October 2026
-
-**Current candidate:** `experimental/v0.4-complete-20261010`, source lock `0.4.0-experimental-minecells`, **318 CF references**. Supersedes older contradictory current-status paragraphs below; those are retained as historical evidence. User explicitly authorized continuing broad expansion and fixes before worldgen freeze. `structure/test6`, the existing content branches and `main` remain untouched.
-
-Merged latest active source, all 0.4a–e content/worldgen repair waves and Mine Cells preflight. Added exact Mine Cells/Connector/FFAPI pins with existing NeoForge owo, required Iceberg/JamLib, narrow bridge validation, source-backed Traveloptics JSON/Fungi tag repairs and new-profile 12/6 distance defaults. **Actual isolated four-mod dedicated-server smoke PASS:** fresh world, all five Mine Cells dimensions force-loaded, save, stop, restart and stop. **Full AO v0.4 client/server, portal/boss/player tests NOT TESTED.** Dependency binary gaps explicitly recorded; no stable release promotion.
-
-Read [changelog](../../V04_CHANGELOG.md), [test results and known issues](../../V04_TEST_RESULTS.md), [grouped checklist](../../V04_TESTING_CHECKLIST.md) and `docs/testing/v04-evidence/`. Build with `python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.4-Experimental-MineCells-PRIVATE.zip`; validate with `python tools/validate_v04_release.py <zip> --private`. Reference-only export omits NeoReefRedux. No automatic claim of public distribution approval.
-
-# Ambient Odyssey — Agent Repository Workflow
-
-The **repository is the canonical handoff**, not a conversation, external ZIP or someone's memory.
-
-## Every new agent must do the following
-
-1. Identify repository `alsynth/AmbientOdyssey`, active branch, commit SHA, and current [project state](CURRENT_STATE.md).
-2. Read root `AGENTS.md`, `docs/handoff/START_HERE.md`, the Test 6 implementation brief, post-handoff decisions, `TODO.md`, and relevant audits. These files establish settled choices and stop conditions.
-3. Rebuild before edits, run the appropriate source/runtime regression gates, and report failures **before** modifying anything.
-4. Work against **editable `release_030/` inputs** (source-of-truth); compile derived Paxi packs and regenerate audits rather than manually patching only generated outputs.
-5. Commit source changes, generated outputs, gate code, validation results, changed audit catalogues, status and changelog **together**, ideally via a PR. Don't overwrite the stable baseline in `main`.
-6. Keep major structure/boss rarity, preserve End WDA behavior, Farmers tuning and curated biome decisions. Work on Test 7 only after Test 6 acceptance.
-7. Verify final CurseForge import has `manifest.json` at ZIP root; run a second clean build and hash comparison. Minecraft runtime testing is separate from static checks.
-8. Clearly label **Implemented / Static verified / Runtime verified / Not tested / Blocked** and cite commit IDs, source paths and artifact hashes.
-
-## Working with external agents
-
-A patch from another agent is **not implemented until committed** and its generated assets and regressions are checked. Attach or commit the patch under `docs/patches/` if useful for traceability. Agents should prefer repository files over out-of-band text. Never ask users to share access tokens in chat; use authorized GitHub integrations or have the user apply and push a prepared patch.
-
-## What to update at the end of each task
-
-- `docs/status/CURRENT_STATE.md` — latest working branch, implemented vs pending, blockers, evidence.
-- `TODO.md` — mark only genuinely completed steps.
-- Relevant `docs/audits/` and CSV catalogues, if changed.
-- Code/source plus *recompiled* generated assets and validator additions.
-- Changelog and optional PR description with exact steps, hashes, known limitations.
-
-### Known blockers
-
-Eight selected new structure mods remain pending integration and loader/dependency verification. Full runtime acceptance and Test 7 are pending. See `docs/handoff/05_MOD_DOWNLOADS_AND_BLOCKERS.md`.
+**Do not:** move root builders, imports, archives or version-locked inputs merely to make a tree look prettier; falsely mark a boss/structure objective verified; silently enable historically retired workflows. See [archive policy](../maintainers/ARCHIVE_POLICY.md).
