@@ -4,8 +4,8 @@ import json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-experimental-minecells-fg-questlog-q1'
-assert lock['experimental_minecells']['expected_manifest_refs']==331
+assert lock['version']=='0.4.1-experimental-trek-structures'
+assert lock['experimental_minecells']['expected_manifest_refs']==330
 EXPECTED={
   "content-040f-armor-trim-item-fix": [
     895603,
@@ -83,10 +83,10 @@ for slug,e in lock['additions'].items():
  refs[pid]=fid
 if lock.get('default_integrated_patches'):
  e=lock['optional_integrated_patches'];refs[e['projectId']]=e['id']
-assert len(refs)==331,len(refs)
+assert len(refs)==330,len(refs)
 for pid,fid,_ in EXPECTED.values(): assert refs[pid]==fid
 for pid in (618790,890127,889079,532610,520110,623764,841890,638111,1005914,1123977,60028):
  assert pid in refs,('missing prior required project',pid)
 assert refs[1023913]==7768631, 'Keep completed Mine Cells Subtle Effects pin, do not silently repin'
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
-print('PASS: 331 refs including exact 12 f/g pins; pinned Mine Cells stack, libraries, Subtle Effects and 273 native repairs retained. Static only.')
+print('PASS: 330 refs including exact 12 f/g pins; pinned Mine Cells stack, libraries, Subtle Effects and 273 native repairs retained. Static only.')

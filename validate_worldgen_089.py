@@ -37,19 +37,22 @@ def jigsaws(data):
             found.append((str(tag.get('name','')),str(tag.get('pool','')),str(tag.get('target',''))))
     return d,found
 def run():
-    require('Test8.9 version and pinned mod roster',load(ROOT/'release_030/release-lock.json')['version'] in ('0.3.8-worldgen-prefreeze-test1.9', '0.3.8-worldgen-prefreeze-test1.10', '0.4.0-a0-qol-quest-trial', '0.4.0-b1-living-world-batch', '0.4.0-c0-ecosystem-feedback', '0.4.0-d0-content-first', '0.4.0-e0-audit-broad-content','0.4.0-experimental-minecells', '0.4.0-experimental-minecells-fg', '0.4.0-experimental-minecells-fg-questlog', '0.4.0-experimental-minecells-fg-questlog-q1'))
-    with jar(*SOURCES[0]) as z:
-        src=json.loads(z.read('data/repurposed_structures/worldgen/structure/city_overworld.json'))
-        dst=load(FIX/'repurposed_structures/worldgen/structure/city_overworld.json')
-        require('city source 5-level baseline',src['size']==5)
-        require('city override only changes level count 5 to 7',dst==dict(src,size=7))
-        require('required tower top in boundary bypass unchanged','repurposed_structures:cities/overworld/fat_tower_top' in dst['pools_that_ignore_boundaries'])
-        start=json.loads(z.read('data/repurposed_structures/worldgen/template_pool/cities/overworld/start_pool.json'))
-        require('original city base room remains start',start['elements'][0]['element']['location']=='repurposed_structures:cities/overworld/base_room')
-        top=json.loads(z.read('data/repurposed_structures/worldgen/template_pool/cities/overworld/fat_tower_top.json'))
-        require('required city tower top native asset exists and is mapped',top['elements'][0]['element']['location']=='repurposed_structures:cities/overworld/fat_tower_top' and 'data/repurposed_structures/structure/cities/overworld/fat_tower_top.nbt' in z.namelist())
-        _,tops=jigsaws(z.read('data/repurposed_structures/structure/cities/overworld/fat_tower_top.nbt'))
-        require('native required top has expected minecraft tower-top mating connector',any(n=='minecraft:tower_top' for n,p,t in tops))
+    require('Test8.9 version and pinned mod roster',load(ROOT/'release_030/release-lock.json')['version'] in ('0.3.8-worldgen-prefreeze-test1.9', '0.3.8-worldgen-prefreeze-test1.10', '0.4.0-a0-qol-quest-trial', '0.4.0-b1-living-world-batch', '0.4.0-c0-ecosystem-feedback', '0.4.0-d0-content-first', '0.4.0-e0-audit-broad-content','0.4.0-experimental-minecells', '0.4.0-experimental-minecells-fg', '0.4.0-experimental-minecells-fg-questlog', '0.4.0-experimental-minecells-fg-questlog-q1','0.4.1-experimental-trek-structures'))
+    if 368293 not in load(ROOT/'release_030/release-lock.json')['remove_projects'].values():
+        with jar(*SOURCES[0]) as z:
+            src=json.loads(z.read('data/repurposed_structures/worldgen/structure/city_overworld.json'))
+            dst=load(FIX/'repurposed_structures/worldgen/structure/city_overworld.json')
+            require('city source 5-level baseline',src['size']==5)
+            require('city override only changes level count 5 to 7',dst==dict(src,size=7))
+            require('required tower top in boundary bypass unchanged','repurposed_structures:cities/overworld/fat_tower_top' in dst['pools_that_ignore_boundaries'])
+            start=json.loads(z.read('data/repurposed_structures/worldgen/template_pool/cities/overworld/start_pool.json'))
+            require('original city base room remains start',start['elements'][0]['element']['location']=='repurposed_structures:cities/overworld/base_room')
+            top=json.loads(z.read('data/repurposed_structures/worldgen/template_pool/cities/overworld/fat_tower_top.json'))
+            require('required city tower top native asset exists and is mapped',top['elements'][0]['element']['location']=='repurposed_structures:cities/overworld/fat_tower_top' and 'data/repurposed_structures/structure/cities/overworld/fat_tower_top.nbt' in z.namelist())
+            _,tops=jigsaws(z.read('data/repurposed_structures/structure/cities/overworld/fat_tower_top.nbt'))
+            require('native required top has expected minecraft tower-top mating connector',any(n=='minecraft:tower_top' for n,p,t in tops))
+    else:
+        require('Removed RS city source override absent',not (FIX/'repurposed_structures/worldgen/structure/city_overworld.json').exists())
     with jar(*SOURCES[1]) as z:
         name='kaisyn:village/beach_lighthouse/villager_lighthouse_master'
         root=load(FIX/'kaisyn/worldgen/template_pool/village/beach_lighthouse/villager_lighthouse_master.json')
