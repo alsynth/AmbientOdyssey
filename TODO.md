@@ -1,4 +1,6 @@
 # AMBIENT ODYSSEY
+> **ACTIVE 0.3.8 COMBINED TEST, 10 Oct:** The source lock now stages **11 new CurseForge projects** (including 10 ocean/dependency additions and FTB Solo Quests), total **262** including Solas and Complementary shader file references from 0.3.7. Curated BWG/BOP biomes, Prairie distribution, independent WDA/IDAS rare lighthouse grids, rarer Eternal Starlight/Dragon Tower and BWG Dacite Shore are staged. Separate **test ZIP** has static CRC/manifest pass, not runtime verified. **Two manual mods not in ZIP**: Better Bastions exact NeoForge 1.21.1 file and NeoReefRedux Modrinth port. Read **[one-pass combined test checklist](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md)** before any single-player or server test. Worldgen is NOT frozen, bridge/Streams Reflowing physical placement remains unresolved. The previously frozen Test5 history below is not the live status.
+
 > **ACTIVE STATE, 10 October 2026:** User **runtime-confirmed** v0.3.7 Dev2 Minecraft/world startup, removal of Dimensional Doors fixed creative-mode crash, new mods load, and NeOculus Shader Packs menu works. GitHub source has since advanced to **v0.3.7-prefreeze-dev3**, with Iron's Jewelry 2.0.2, **10 GiB** recommended RAM, narrator onboarding fix and two official CurseForge shader-project references. **Dev3 has not been freshly exported/played.** See `docs/status/CURRENT_STATE.md` and `docs/testing/OCEAN_EXPANSION_PREFREEZE_REVIEW_2026-10-10.md`. This live status supersedes historic Test5/Test6 blocked lines below.
 
 > **Latest Test 6 runtime result (9 Oct 2026):** Source/build is statically verified but the first clean CurseForge client startup **FAILED**: NeoForge 21.1.252 rejected `Structory_Towers_26.2_v1.0.17.jar` with `InvalidModFileException: Missing ModLoader`. Awaiting live test of official v1.0.14 fallback `783522:7078283` before changing locked manifest or regenerating Test 6 ZIP. See `docs/testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md` and `docs/status/CURRENT_STATE.md`. The original checkboxes and Black Spiral exclusion below are historical and superseded by more recent approved decisions.
@@ -967,10 +969,17 @@ The existing staged plan is a starting point, not an applied change.
 - [ ] Review Sunken Spires later, without automatically adding it.
 - [ ] **Before WORLDGEN FREEZE, review/select final ocean expansion** from [researched compatibility shortlist](docs/testing/OCEAN_EXPANSION_PREFREEZE_REVIEW_2026-10-10.md). Ocean options must be settled before optimizing and selecting the permanent server seed.
 - [ ] Trial **Aquamirae 7.2.10** NeoForge 1.21.1 (CF 536254:8931374) on a separate fresh seed: Ice Maze / Ship Graveyard, mob challenge, gear-difficulty option, Aquaculture/Seven Seas compatibility.
-- [ ] Trial **Upgrade Aquatic 7.0.2** NeoForge 1.21.1 (CF 326895:8892693): sea-life/ecology, seafloor generation, dependencies, map with BWG/BOP/RU/Freeterraforged.
-- [ ] Decide whether ocean depth actually needs changing; hold **Deeper Oceans** until proven compatible with FTF's terrain/monuments and Seven Seas.
+- [x] **Decision:** omit Upgrade Aquatic (Hybrid Aquatic chosen as primary ecology addition).
+- [ ] **Deeper Oceans 2.0.1 is NOW INCLUDED IN COMBINED TEST**; decide keep/remove after FTF, shipwrecks, monuments and Aquamirae terrain/height tests.
 - [ ] Record explicit *install/reject/park* decisions, two seeded worldgen runs, performance and oceans/coasts approval before calling the worldgen roster frozen.
 - [ ] Keep significant ocean expansion separate if it threatens 0.3.x stability.
+
+- [ ] **Combined Test 8 mandatory full checklist:** [TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md) — all new aquatic mods + dependency checks, new land biomes, coastlines, lighthouses, boss towers, bridges, Nether bastions, quest-team separation, shaders, server performance
+- [ ] **Manual Better Bastions**: add exact NeoForge 1.21.1 JAR from official CurseForge project `1713723`; not yet in import manifest because exact CF file ID is unresolved. Test with Incendium, Black Spiral and Nether fortresses in fresh chunks
+- [ ] **Manual NeoReefRedux**: add native NeoForge 1.21.1 Modrinth release; no confirmed CurseForge ID. Test coral terrain and Hybrid Aquatic overlaps
+- [ ] Ocean loot progression: FTB Ocean Mobs offers NO default loot; write custom datapack loot tables and tune spawn/boss balance after basic registration test
+- [ ] Native and custom bridges with Streams Reflowing: test generation next to both river types; fix physical height/terrain mismatch rather than doubling frequency without evidence
+- [ ] Compare fresh-seed cliffs and beaches after BWG Dacite Shore replaces `minecraft:stony_shore`; watch sea structures / waterline seams
 
 ## 36. Nether
 
@@ -1004,6 +1013,11 @@ The existing staged plan is a starting point, not an applied change.
 - [ ] Check natural structures after long-distance End travel.
 - [ ] Check End chunk-generation performance.
 - [ ] Keep dragon fight balance for the later combat phase unless a technical failure blocks progression.
+
+## Later major ocean-themed content and dimensions (NOT part of worldgen freeze Test 8)
+
+- [ ] **Beyond the Ocean**: user-approved for a **later content/dimension expansion audit**; evaluate the two dedicated oceans, post-End progression, leviathans, bosses, vehicles and performance only after current worldgen freezes. Do NOT add it to the 0.3.8 manifest or claim it has been tested
+- [x] **Explicit exclusions from 0.3.8 ocean roster:** Tide 2, Sea Myths, Create: Deep Seas and Upgrade Aquatic. Keep Create Aeronautics / Sable physics and Sunken Spires deferred
 
 ## 38. Other dimensions
 
