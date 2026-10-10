@@ -45,3 +45,7 @@ Two audit leads, **not diagnosed bottlenecks**: Spark's `backgroundProfiler` is 
 | Shaders ON and optional DH A/B | FPS lows, artifacts and memory separately | NOT TESTED |
 
 Base immutable artifact: [Q1+FTB Field Manual verified build](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259/artifacts/11680318532). No playable performance claims or optimized ZIP were produced by this preparation task.
+
+## Next profiling evidence and optimization choices (10 Oct)
+
+The user provided a Spark share link (`https://spark.lucko.me/yDmMR0wqyC`). URL format is consistent with a shared profile, but the report/raw payload was inaccessible; do **not** record an FPS, TPS, MSPT or culprit from it. Use [Spark capture guide](SPARK_CAPTURE_GUIDE_2026-10-10.md) for repeatable evidence collection and [source-backed hypothesis matrix](OPTIMIZATION_HYPOTHESES_2026-10-10.md) for appropriate changes once the profile is readable. Those proposals are deliberately **not applied** to runtime configurations yet.
