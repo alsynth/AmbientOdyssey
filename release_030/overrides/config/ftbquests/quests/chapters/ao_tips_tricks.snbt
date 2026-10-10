@@ -1,0 +1,101 @@
+{
+	filename: "ao_tips_tricks"
+	id: "83CCD5C1D94E1398"
+	group: ""
+	icon: { id: "minecraft:spyglass" }
+	order_index: 2
+	progression_mode: "flexible"
+	default_quest_shape: "square"
+	default_hide_dependency_lines: true
+	quest_links: [ ]
+	quests: [
+		{
+			id: "8EEF3241E33CD8FC"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "654629AA066B8C03", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF3541E33CDE15"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "65462AAA066B8DB6", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF3441E33CDC62"
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "65462BAA066B8F69", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF2F41E33CD3E3"
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "65462CAA066B911C", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF2E41E33CD230"
+			x: 0.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "65462DAA066B92CF", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF3141E33CD749"
+			x: 4.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "65462EAA066B9482", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF3041E33CD596"
+			x: 8.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "65462FAA066B9635", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "8EEF3B41E33CE847"
+			x: 12.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "654630AA066B97E8", type: "checkmark" }]
+			rewards: [ ]
+		}
+	]
+}

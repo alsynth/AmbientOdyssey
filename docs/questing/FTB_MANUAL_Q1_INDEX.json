@@ -1,0 +1,289 @@
+{
+  "schema": "ambient_odyssey_ftb_manual_q1_v1",
+  "source_branch": "experimental/v0.4h-questbook-manual-20261010",
+  "chapters": [
+    {
+      "name": "Ambient Odyssey — Field Manual",
+      "slug": "ao_field_manual",
+      "number": 14
+    },
+    {
+      "name": "Ambient Odyssey — Tips & Tricks",
+      "slug": "ao_tips_tricks",
+      "number": 8
+    },
+    {
+      "name": "Ambient Odyssey — Controls & Keybinds",
+      "slug": "ao_keybinds",
+      "number": 7
+    }
+  ],
+  "article_count": 29,
+  "article_index": [
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 1,
+      "id": "D2990D87FF3885AC",
+      "task_id": "0798826C96206CD5",
+      "title": "Two Books, Two Purposes",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 2,
+      "id": "D2991087FF388AC5",
+      "task_id": "07987F6C962067BC",
+      "title": "JEI: Your Recipe Encyclopedia",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 3,
+      "id": "D2990F87FF388912",
+      "task_id": "0798806C9620696F",
+      "title": "Shield, Off-Hand and Unusual Attacks",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 4,
+      "id": "D2990A87FF388093",
+      "task_id": "07987D6C96206456",
+      "title": "Equipment Slots and Combat Supports",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 5,
+      "id": "D2990987FF387EE0",
+      "task_id": "07987E6C96206609",
+      "title": "Lootr, Shared Loot and Multiplayer Courtesy",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 6,
+      "id": "D2990C87FF3883F9",
+      "task_id": "07987B6C962060F0",
+      "title": "Waystones, Maps and Returning Safely",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 7,
+      "id": "D2990B87FF388246",
+      "task_id": "07987C6C962062A3",
+      "title": "Apotheosis: Affixes, Gems and Sockets",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 8,
+      "id": "D2991687FF3894F7",
+      "task_id": "0798896C962078BA",
+      "title": "Apotheosis: Enchanting and Upgrading",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 9,
+      "id": "D2991587FF389344",
+      "task_id": "07988A6C96207A6D",
+      "title": "Relics: Effects, Activation and Growth",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 10,
+      "id": "12979A16AD0B0814",
+      "task_id": "089283831919091F",
+      "title": "Iron's Spellbooks: Schools and Casting",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 11,
+      "id": "12979B16AD0B09C7",
+      "task_id": "089282831919076C",
+      "title": "Ars Nouveau: Build a Spell with Glyphs",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 12,
+      "id": "12979C16AD0B0B7A",
+      "task_id": "0892858319190C85",
+      "title": "When a Dungeon is Above Your Tier",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 13,
+      "id": "12979D16AD0B0D2D",
+      "task_id": "0892848319190AD2",
+      "title": "The Dreamscape and Its Native Systems",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_field_manual",
+      "article_number": 14,
+      "id": "12979616AD0B0148",
+      "task_id": "08927F8319190253",
+      "title": "Enigmatic Legacy: The Choice of Curses",
+      "lines": 5,
+      "origin": "FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 1,
+      "id": "8EEF3241E33CD8FC",
+      "task_id": "654629AA066B8C03",
+      "title": "Ten things worth knowing before your first proper expedition",
+      "lines": 11,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 2,
+      "id": "8EEF3541E33CDE15",
+      "task_id": "65462AAA066B8DB6",
+      "title": "Inventory tricks that save hours",
+      "lines": 11,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 3,
+      "id": "8EEF3441E33CDC62",
+      "task_id": "65462BAA066B8F69",
+      "title": "Combat and equipment — surviving instead of only increasing damage",
+      "lines": 11,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 4,
+      "id": "8EEF2F41E33CD3E3",
+      "task_id": "65462CAA066B911C",
+      "title": "Exploration — the pack's actual core progression",
+      "lines": 11,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 5,
+      "id": "8EEF2E41E33CD230",
+      "task_id": "65462DAA066B92CF",
+      "title": "Magic, progression and optional systems",
+      "lines": 11,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 6,
+      "id": "8EEF3141E33CD749",
+      "task_id": "65462EAA066B9482",
+      "title": "Multiplayer — good habits for 5–7 friends",
+      "lines": 8,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 7,
+      "id": "8EEF3041E33CD596",
+      "task_id": "65462FAA066B9635",
+      "title": "Performance, troubleshooting and configuration",
+      "lines": 9,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_tips_tricks",
+      "article_number": 8,
+      "id": "8EEF3B41E33CE847",
+      "task_id": "654630AA066B97E8",
+      "title": "Short “Did you know?” panels to sprinkle throughout the manual",
+      "lines": 11,
+      "origin": "FTB_TIPS_AND_TRICKS_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 0,
+      "id": "A19534FBE1E8E691",
+      "task_id": "04BBECF2496D66E4",
+      "title": "Five controls you'll actually use",
+      "lines": 11,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 1,
+      "id": "A19533FBE1E8E4DE",
+      "task_id": "04BBEDF2496D6897",
+      "title": "Basic inventory and combat",
+      "lines": 15,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 2,
+      "id": "A19532FBE1E8E32B",
+      "task_id": "04BBEEF2496D6A4A",
+      "title": "JEI — the built-in encyclopedia",
+      "lines": 13,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 3,
+      "id": "A19531FBE1E8E178",
+      "task_id": "04BBEFF2496D6BFD",
+      "title": "Maps, exploring, waypoints",
+      "lines": 10,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 4,
+      "id": "A19538FBE1E8ED5D",
+      "task_id": "04BBE8F2496D6018",
+      "title": "Modded combat, backpacks, RPG and voice",
+      "lines": 18,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 5,
+      "id": "A19537FBE1E8EBAA",
+      "task_id": "04BBE9F2496D61CB",
+      "title": "Debug and visibility — advanced, optional",
+      "lines": 9,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    },
+    {
+      "chapter": "ao_keybinds",
+      "article_number": 6,
+      "id": "A19536FBE1E8E9F7",
+      "task_id": "04BBEAF2496D637E",
+      "title": "Keybind conflicts: quick fix",
+      "lines": 7,
+      "origin": "FTB_KEYBIND_CHEATSHEET_V0_3.md"
+    }
+  ],
+  "required_rewards": 0,
+  "mandatory_dependencies": 0,
+  "document_source": "FTB Field Manual draft 14 pages, Tips & Tricks v0.3, Keybind Cheatsheet v0.3",
+  "verification": "source_generated_not_in_game_tested"
+}

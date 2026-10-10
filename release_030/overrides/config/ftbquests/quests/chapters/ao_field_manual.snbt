@@ -1,0 +1,167 @@
+{
+	filename: "ao_field_manual"
+	id: "15F13AC2B83226D6"
+	group: ""
+	icon: { id: "minecraft:knowledge_book" }
+	order_index: 1
+	progression_mode: "flexible"
+	default_quest_shape: "square"
+	default_hide_dependency_lines: true
+	quest_links: [ ]
+	quests: [
+		{
+			id: "D2990D87FF3885AC"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "0798826C96206CD5", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2991087FF388AC5"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "07987F6C962067BC", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2990F87FF388912"
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "0798806C9620696F", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2990A87FF388093"
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "07987D6C96206456", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2990987FF387EE0"
+			x: 0.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "07987E6C96206609", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2990C87FF3883F9"
+			x: 4.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "07987B6C962060F0", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2990B87FF388246"
+			x: 8.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "07987C6C962062A3", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2991687FF3894F7"
+			x: 12.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "0798896C962078BA", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "D2991587FF389344"
+			x: 0.0d
+			y: 6.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "07988A6C96207A6D", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "12979A16AD0B0814"
+			x: 4.0d
+			y: 6.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "089283831919091F", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "12979B16AD0B09C7"
+			x: 8.0d
+			y: 6.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "089282831919076C", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "12979C16AD0B0B7A"
+			x: 12.0d
+			y: 6.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "0892858319190C85", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "12979D16AD0B0D2D"
+			x: 0.0d
+			y: 9.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "0892848319190AD2", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "12979616AD0B0148"
+			x: 4.0d
+			y: 9.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "08927F8319190253", type: "checkmark" }]
+			rewards: [ ]
+		}
+	]
+}

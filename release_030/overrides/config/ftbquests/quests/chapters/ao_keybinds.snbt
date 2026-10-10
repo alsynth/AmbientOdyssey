@@ -1,0 +1,90 @@
+{
+	filename: "ao_keybinds"
+	id: "709BAC840C0CAD50"
+	group: ""
+	icon: { id: "minecraft:recovery_compass" }
+	order_index: 3
+	progression_mode: "flexible"
+	default_quest_shape: "square"
+	default_hide_dependency_lines: true
+	quest_links: [ ]
+	quests: [
+		{
+			id: "A19534FBE1E8E691"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBECF2496D66E4", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "A19533FBE1E8E4DE"
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBEDF2496D6897", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "A19532FBE1E8E32B"
+			x: 8.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBEEF2496D6A4A", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "A19531FBE1E8E178"
+			x: 12.0d
+			y: 0.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBEFF2496D6BFD", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "A19538FBE1E8ED5D"
+			x: 0.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBE8F2496D6018", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "A19537FBE1E8EBAA"
+			x: 4.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBE9F2496D61CB", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "A19536FBE1E8E9F7"
+			x: 8.0d
+			y: 3.0d
+			shape: "square"
+			size: 2.0d
+			optional: true
+			disable_toast: true
+			tasks: [{ id: "04BBEAF2496D637E", type: "checkmark" }]
+			rewards: [ ]
+		}
+	]
+}
