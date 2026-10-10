@@ -37,7 +37,7 @@ def jigsaws(data):
             found.append((str(tag.get('name','')),str(tag.get('pool','')),str(tag.get('target',''))))
     return d,found
 def run():
-    require('Test8.9 version and pinned mod roster',load(ROOT/'release_030/release-lock.json')['version'] in ('0.3.8-worldgen-prefreeze-test1.9', '0.3.8-worldgen-prefreeze-test1.10'))
+    require('Test8.9 version and pinned mod roster',load(ROOT/'release_030/release-lock.json')['version'] in ('0.3.8-worldgen-prefreeze-test1.9', '0.3.8-worldgen-prefreeze-test1.10', '0.4.0-a0-qol-quest-trial'))
     with jar(*SOURCES[0]) as z:
         src=json.loads(z.read('data/repurposed_structures/worldgen/structure/city_overworld.json'))
         dst=load(FIX/'repurposed_structures/worldgen/structure/city_overworld.json')
