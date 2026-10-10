@@ -29,9 +29,13 @@ def validate_connector_stack(lock, baseline):
     for pid in lock['remove_projects'].values():
         pins.pop(pid, None)
     pins.update({v['projectId']: v['id'] for v in lock['additions'].values()})
-    for pid, fid in {890127: 8654089, 889079: 8726480, 532610: 6785734}.items():
+    for pid, fid in {890127: 8654089, 889079: 8726480, 532610: 6785734, 318449: 5845879}.items():
         assert pins.get(pid) == fid, f'Mine Cells bridge dependency missing or changed: {pid}'
     assert 306612 not in pins, 'Original Fabric API must not coexist with Forgified Fabric API'
+    assert 1100379 not in pins, 'RAR-Compat still present; Artifacts slot fix not applied'
+    cca=lock['additions']['content-041-cardinal-components-api']
+    assert (cca['projectId'],cca['id'],cca['fileName'],set(cca['gameVersions']))==(318449,5845879,'cardinal-components-api-6.1.2.jar',{'1.21.1','Fabric'})
+    assert cca.get('version_check_override') is True
 
 def check_path(name):
     p = PurePosixPath(name)
@@ -160,7 +164,7 @@ def build(patches=False, output=None, private_modrinth=False):
                  'STRUCTURE_BIOME_AUDIT.md', 'STRUCTURE_TEST5_VALIDATION.md',
                  'STRUCTURE_TEST5_INSTALL.md', 'TANS_OPEN_FIELD_TUNING_PLAN.md', 'TODO.md',
                  'V04_CHANGELOG.md', 'V04_TEST_RESULTS.md', 'V04_TESTING_CHECKLIST.md',
-                 'V04_FG_INTEGRATION.md', 'V04_QUESTLOG_COMPAT.md',
+                 'V04_FG_INTEGRATION.md', 'V04_QUESTLOG_COMPAT.md', 'V041_SIX_FIX_TEST.md',
                  'docs/questing/QUESTLOG_Q1_IMPLEMENTATION.md', 'docs/questing/QUESTLOG_Q1_RUNTIME_TESTS.md', 'docs/questing/FTB_MANUAL_Q1_IMPLEMENTATION.md']:
         p = ROOT / name
         if p.exists(): entries['overrides/' + name] = p.read_bytes()

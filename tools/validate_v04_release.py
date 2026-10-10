@@ -15,7 +15,7 @@ sys.path.insert(0, str(ROOT))
 from build_release_030 import validate_connector_stack
 
 PINS = {618790: 7033510, 890127: 8654089, 889079: 8726480,
-        532610: 6785734, 520110: 6375480, 623764: 5988164, 1202066: 8952784}
+        532610: 6785734, 520110: 6375480, 623764: 5988164, 1202066: 8952784, 318449: 5845879}
 
 def verify(archive, private=False):
     lock = json.loads((ROOT / 'release_030/release-lock.json').read_text())
@@ -46,12 +46,12 @@ def verify(archive, private=False):
             p = PurePosixPath(name)
             assert not p.is_absolute() and '..' not in p.parts and '\\' not in name, name
         m = json.loads(z.read('manifest.json'))
-        assert m['version'] == '0.4.0-experimental-minecells-fg-questlog-q1'
+        assert m['version'] == '0.4.1-experimental-six-fix-test'
         assert m['minecraft']['modLoaders'] == [{'id': 'neoforge-21.1.252', 'primary': True}]
         refs = {e['projectID']: e['fileID'] for e in m['files']}
         assert len(refs) == len(m['files']) == 331
         assert all(refs.get(pid) == fid for pid, fid in PINS.items())
-        assert 306612 not in refs and 284876 not in refs and 631098 not in refs
+        assert 306612 not in refs and 284876 not in refs and 631098 not in refs and 1100379 not in refs
         jars = {n for n in names if n.startswith('overrides/mods/') and n.endswith('.jar')}
         expected = {'overrides/mods/' + e['fileName'] for e in lock.get('private_modrinth_addons', [])}
         assert jars == (expected if private else set())
@@ -81,7 +81,8 @@ def verify(archive, private=False):
         assert 'gamerule playersSleepingPercentage 30' in rule
         technical = 'overrides/config/paxi/datapacks/ao_technical_fixes/'
         fire = json.loads(z.read(technical + 'data/traveloptics/tags/entity_type/element_fire.json'))
-        assert 'cataclysm:ignited_revenant' in fire['values'] and 'irons_spellbooks:pyromancer' in fire['values']
+        assert 'cataclysm:ignited_revenant' in json.dumps(fire) and 'irons_spellbooks:pyromancer' in json.dumps(fire)
+        assert 'cataclysm:old_netherite_monstrosity' not in json.dumps(fire)
         for tag in ('inky_cap', 'morel', 'truffle'):
             bridge = json.loads(z.read(technical + 'data/forge/tags/item/mushrooms/' + tag + '.json'))
             assert bridge == {'replace': False, 'values': ['#c:mushrooms/' + tag]}

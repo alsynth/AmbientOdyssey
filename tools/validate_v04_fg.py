@@ -4,7 +4,7 @@ import json,zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-experimental-minecells-fg-questlog-q1'
+assert lock['version']=='0.4.1-experimental-six-fix-test'
 assert lock['experimental_minecells']['expected_manifest_refs']==331
 EXPECTED={
   "content-040f-armor-trim-item-fix": [
@@ -84,6 +84,7 @@ for slug,e in lock['additions'].items():
 if lock.get('default_integrated_patches'):
  e=lock['optional_integrated_patches'];refs[e['projectId']]=e['id']
 assert len(refs)==331,len(refs)
+assert refs[318449]==5845879 and 1100379 not in refs
 for pid,fid,_ in EXPECTED.values(): assert refs[pid]==fid
 for pid in (618790,890127,889079,532610,520110,623764,841890,638111,1005914,1123977,60028):
  assert pid in refs,('missing prior required project',pid)

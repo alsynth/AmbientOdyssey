@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-experimental-minecells-fg-questlog-q1",
+  "version": "0.4.1-experimental-six-fix-test",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -9,7 +9,8 @@
     "companions-mod": 1300341,
     "modern-companions": 1391597,
     "dimensional-doors": 284876,
-    "my-picture-frame": 1582023
+    "my-picture-frame": 1582023,
+    "rarcompat": 1100379
   },
   "additions": {
     "biolith": {
@@ -1970,6 +1971,19 @@
       "content_role": "Enable narrative quest journal and inventory GUI compatibility testing; no authored quests in this wave",
       "environment": "both",
       "notes": "Cloth Config NeoForge 15.0.140 project 348521/file 5729127 already inherited; client inventory button is movable via questlog-client TOML; no Questlog quests or progression changes yet."
+    },
+    "content-041-cardinal-components-api": {
+      "projectId": 318449,
+      "id": 5845879,
+      "fileName": "cardinal-components-api-6.1.2.jar",
+      "gameVersions": [
+        "1.21.1",
+        "Fabric"
+      ],
+      "version_check_override": true,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api/files/5845879",
+      "runtime_status": "No in-game/packet test; required by Mine Cells doorway",
+      "compatibility_exception": "Exact Fabric CCA library via Sinytra Connector"
     }
   },
   "optional_integrated_patches": {
@@ -2722,6 +2736,6 @@
       "id": 6785734
     },
     "launchpad": "Not declared by audited Connector 2.0.0-beta.17 for 1.21.1; no compatible 1.21.1 Launchpad file exists in queried official metadata",
-    "runtime_acceptance": "Isolated dedicated server: fresh world, five Mine Cells dimension force-loads, save, clean stop, restart and clean stop PASS; full AO client/server gameplay untested"
+    "runtime_acceptance": "0.4.0 doorway crashed due missing CCA. 0.4.1 dependency supplied; in-game/packet test still required"
   }
 }
