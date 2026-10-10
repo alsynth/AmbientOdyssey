@@ -1,0 +1,29 @@
+name: Test8.6 comprehensive native NBT malformed jigsaw audit
+on:
+  push:
+    branches: [worldgen/test8.6-generation-repairs]
+    paths:
+      - '.github/workflows/test86-comprehensive-jigsaw-audit.yml'
+      - 'audit_remaining_jigsaw_nbt_086.py'
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install nbtlib
+      - name: Audit sha256-locked packed JARs and every candidate structure NBT
+        run: python -u audit_remaining_jigsaw_nbt_086.py
+      - name: Retain source inventory and evidence for repair
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AO-Test8.6-Exact-Jigsaw-Provider-Evidence
+          path: build/jigsaw-source-audit-086.json
+          retention-days: 7
+          if-no-files-found: warn
