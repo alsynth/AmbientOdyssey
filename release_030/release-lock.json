@@ -1,5 +1,5 @@
 {
-  "version": "0.3.7-prefreeze-dev3",
+  "version": "0.3.8-worldgen-prefreeze-test1",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -872,6 +872,138 @@
       "releaseType": 1,
       "contentType": "shaders",
       "source": "https://www.curseforge.com/minecraft/shaders/complementary-reimagined/files/8884654"
+    },
+    "ocean-hybrid-aquatic": {
+      "id": 9063977,
+      "projectId": 834427,
+      "fileName": "hybrid_aquatic-neoforge-1.21.1-1.7.4.jar",
+      "displayName": "Hybrid Aquatic v1.7.4",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/hybrid-aquatic/files/9063977"
+    },
+    "ocean-yungs-monuments": {
+      "id": 5924487,
+      "projectId": 1015115,
+      "fileName": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "displayName": "YUNG's Better Ocean Monuments 4.1.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-ocean-monuments-neoforge/files/5924487"
+    },
+    "ocean-better-shipwrecks": {
+      "id": 9108729,
+      "projectId": 1717003,
+      "fileName": "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+      "displayName": "Better Shipwrecks 1.0.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/better-shipwrecks/files/9108729"
+    },
+    "ocean-ftb-ocean-mobs": {
+      "id": 6539516,
+      "projectId": 1197859,
+      "fileName": "ftboceanmobs-21.1.4.jar",
+      "displayName": "FTB Ocean Mobs 21.1.4",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ftb-ocean-mobs/files/6539516"
+    },
+    "ocean-small-ships": {
+      "id": 5937999,
+      "projectId": 450659,
+      "fileName": "smallships-neoforge-1.21.1-2.0.0-b2.1.jar",
+      "displayName": "Small Ships 2.0.0-b2.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/small-ships/files/5937999"
+    },
+    "ocean-aquatic-creepers": {
+      "id": 6918744,
+      "projectId": 1331880,
+      "fileName": "aquatic_creepers-neoforge-1.0.0+1.21.jar",
+      "displayName": "Aquatic Creepers 1.0.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aquatic-creepers/files/6918744"
+    },
+    "ocean-aquamirae": {
+      "id": 8931374,
+      "projectId": 536254,
+      "fileName": "aquamirae-neoforge-1.21.1-7.2.10.jar",
+      "displayName": "Aquamirae 7.2.10",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aquamirae/files/8931374"
+    },
+    "ocean-aquamirae-fragmentum": {
+      "id": 9070553,
+      "projectId": 1123977,
+      "fileName": "fragmentum-5.2.0+1.21.1-neoforge.jar",
+      "displayName": "Fragmentum 5.2.0 (Aquamirae required)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/fragmentum-neoforge/files/9070553"
+    },
+    "ocean-deeper-oceans": {
+      "id": 8332463,
+      "projectId": 714177,
+      "fileName": "deeper-oceans-2.0.1-neoforge-21.1.jar",
+      "displayName": "Deeper Oceans 2.0.1 21.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/deeper-oceans/files/8332463"
+    },
+    "ocean-oceans-delight": {
+      "id": 7939973,
+      "projectId": 841262,
+      "fileName": "oceansdelight-neoforge-1.0.4-1.21.1.jar",
+      "displayName": "Ocean's Delight 1.0.4",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/oceans-delight/files/7939973"
+    },
+    "quest-solo-quests": {
+      "id": 8614631,
+      "projectId": 1644371,
+      "fileName": "ftb-solo-quests-1.21.1-neoforge-1.1.2.jar",
+      "displayName": "FTB Solo Quests 1.1.2 (dedicated server only)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/solo-quests/files/8614631"
     }
   },
   "optional_integrated_patches": {
