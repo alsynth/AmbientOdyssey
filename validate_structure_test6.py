@@ -224,6 +224,23 @@ def run(archive):
            'overrides/mods/neoreefredux-1.0.jar')),'Third-party JAR overrides: NOT CurseForge moderation-ready')
     check('User-supplied Ambient Odyssey artwork included for manual CurseForge icon selection',
           'overrides/Ambient-Odyssey-Icon.png' in names,'Root instance image is not guaranteed to set profile avatar')
+    # Test 8.3: source-backed collision mitigation and 1.21.1 recipe codec correction.
+    create_windmill=J(SD+'create_structures_arise/worldgen/structure_set/windmill.json')
+    check('Independent Create: Structures Arise windmill salt, original 90/10 spacing maintained',
+          create_windmill['structures']==[{'structure':'create_structures_arise:windmill','weight':1}]
+          and all(create_windmill['placement'][k]==v for k,v in (
+              ('type','minecraft:random_spread'),('spacing',90),('separation',10),
+              ('salt',1543892757))) and create_windmill['placement']['salt'] != 353987075,
+          create_windmill['placement'])
+    for title,srcitem,outitem in (
+        ('basic','flight_rings:basic_ring','minecraft:gold_ingot'),
+        ('advanced','flight_rings:advanced_ring','minecraft:netherite_ingot')
+    ):
+        recipe=J(DP+'ao_flight_balance/data/flight_rings/recipe/smelt_'+title+'_ring.json')
+        check('Flight Rings '+title+' smelting recipe compatible with MC 1.21.1',
+              recipe['type']=='minecraft:smelting' and
+              recipe['ingredient']=={'item':srcitem} and
+              recipe['result']=={'id':outitem,'count':1}, recipe)
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
