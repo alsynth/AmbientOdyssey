@@ -4,7 +4,7 @@ import json, zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-d0-content-first', lock['version']
+assert lock['version']=='0.4.0-e0-audit-expansion', lock['version']
 selected={
   'mutant-monsters':(852665,7232511),
   'illager-invasion':(891324,6492670),
@@ -30,9 +30,11 @@ for e in lock['additions'].values():
 if lock.get('default_integrated_patches'):
     e=lock['optional_integrated_patches']
     pins[e['projectId']]=e['id']
-assert len(pins)==296,(len(pins),'Expected 288 previous +7 content projects +Athena')
+assert len(pins)==302,(len(pins),'Expected 296 previous +6 prior-audit candidates')
 for _,(pid,fid) in selected.items():assert pins[pid]==fid
 assert pins[841890]==8061947, 'Athena must be the source-verified NeoForge 4.0.6'
+audit_selection={401648:5873258,351441:6409785,325492:5553811,1617531:8740321,1015155:6294123,1023913:7853614}
+assert all(pins.get(k)==v for k,v in audit_selection.items()), audit_selection
 # Upstream Mutant Monsters CommonConfig fields map to four snake_case TOML keys.
 expected = {'mutant_creeper_spawn_weight', 'mutant_enderman_spawn_weight', 'mutant_skeleton_spawn_weight', 'mutant_zombie_spawn_weight'}
 raw = (ROOT/'release_030/overrides/config/mutantmonsters-common.toml').read_text()
@@ -52,5 +54,5 @@ required={
 missing={pid:name for pid,name in required.items() if pid not in pins}
 if missing:
     raise AssertionError('Dependency closure BLOCKED; identify official 1.21.1 NeoForge pins first: '+str(missing))
-print('PASS: 7 new content projects + Athena library; 296 total CF refs, required shared libraries, no baseline repins, 273 native NBT repairs retained.')
+print('PASS: 7 new content projects + Athena library; 302 total CF refs, required shared libraries, no baseline repins, 273 native NBT repairs retained.')
 print('Minecraft startup, missing runtime-only dependencies, worldgen and entity balance remain unverified.')

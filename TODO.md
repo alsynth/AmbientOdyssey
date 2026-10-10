@@ -1,3 +1,9 @@
+## 0.4e expanded audited candidate wave
+- [x] Pin 6 exact 1.21.1 NeoForge versions from original user's QoL/visual and discovery audits, retain Mutant Monsters rare 0.01 natural-spawn config.
+- [ ] Verify 302-reference deterministic CI package, missing dependencies and actual startup/shader compatibility. If 0.4e fails, do not call complete.
+- [ ] Audit original modpack candidate lists against downloaded reference modpack manifests for real version/loader constraints; any truly compatible strong additions belong in later large content wave, not ad hoc experimental renderer swaps.
+- [ ] Evaluate cave particles + Subtle Effects duplication; compare with Particular/Better Smoke/AAA and existing sound system in one substantial user test.
+
 ## 10 October — consolidate prior mod/resource-pack lists + rare mutants
 - [x] Recover the 19-item user visual/fauna/resources nomination list and two large QoL/rendering candidate lists; cross-link nine theme, structures, discovery, and wildlife audits in [master intake](docs/audits/CONTENT_EXPANSION_MASTER_INTAKE_2026-10-10.md). Favor these earlier requests over new random proposed mod batches.
 - [x] User specifically accepts Mutant Monsters **as rare elite encounters**. Native 1.21.1 source fields, config path and value verified: four `mutant_*_spawn_weight = 0.01`, vs 0.05 default, with explicit min-weight 1 rounding caveat.
