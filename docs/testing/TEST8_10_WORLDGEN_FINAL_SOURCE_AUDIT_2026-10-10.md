@@ -41,4 +41,13 @@ Candidate on branch `worldgen/test8.10-all-documented-pools`; [CI](https://githu
 6. ZIP CRC, full 267 CF mods, original private NeoReef SHA, final `forge:tools` and both extra native aliases.
 7. Build twice, **exact binary byte-for-byte match**, hash the importer ZIP (not GitHub's outer artifact wrapper).
 
+## Final CI and exact importer outcome
+
+**PASSED:** [Test8.10 complete GitHub Actions pipeline](https://github.com/alsynth/AmbientOdyssey/actions/runs/38027173155), including source-gate before and after compile, original 273 invalid terminal connector NBT repairs, native T&T/RS/Graveyard/Swiss pool assertions, final generated `forge:tools` item tag, all three private mods, archive integrity, and byte-identical second build.
+
+- Importer: `Ambient-Odyssey-v0.3.8-Test8.10-Pool-Repair-PRIVATE.zip`.
+- Exact 1.21.1 / NeoForge private pack: **70,810,381 bytes**, **1,386 ZIP members**, **267 CF references**, SHA256 **`0bfec2560337369fed08fc70329e00f337ee6281a8676a0e4e2ccb9f6751d71f`**.
+- The outer GitHub Actions artifact is a ZIP *containing the importer ZIP*; import only the inner file into CurseForge. The final importer was independently extracted and ZIP CRC checked in the working container.
+- Build byte identity was verified twice on the same pinned source JARs. **This is a static-source and archive validation, not a Minecraft runtime check.** Previous Test8.9 packs don't contain both Graveyard and Swiss aliases plus canonical Traveloptics bridge; use this Test8.10 candidate in preference to Test8.9 if trying the updated changes.
+
 The user explicitly requested no more tests now. This is a **source-verified release candidate** pending any future normal gameplay evidence, **not proof of complete worldgen freeze**. Keep Test8.6 actual-run rollback and Test8.8 private source-verified rollback. No changes to performance optimization, mod roster, early-game bonus chest or Questlog GUI.
