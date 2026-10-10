@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.1",
+  "version": "0.3.8-worldgen-prefreeze-test1.2",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -8,7 +8,8 @@
     "born-in-chaos": 686437,
     "companions-mod": 1300341,
     "modern-companions": 1391597,
-    "dimensional-doors": 284876
+    "dimensional-doors": 284876,
+    "my-picture-frame": 1582023
   },
   "additions": {
     "biolith": {
@@ -1004,6 +1005,54 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/solo-quests/files/8614631"
+    },
+    "deps-hybrid-api": {
+      "projectId": 883374,
+      "id": 9063597,
+      "fileName": "hapi-neoforge-1.21.1-1.1.3.jar",
+      "displayName": "Hybrid API 1.1.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/hybrid-api/files/9063597"
+    },
+    "deps-atlas-api": {
+      "projectId": 1145462,
+      "id": 6880789,
+      "fileName": "atlas_api-1.21.1-1.2.0.jar",
+      "displayName": "Atlas API 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/atlas-api/files/6880789"
+    },
+    "flight-rings": {
+      "projectId": 401229,
+      "id": 7782196,
+      "fileName": "FlightRings-neoforge-2.0.0.jar",
+      "displayName": "Flight Rings 2.0.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/flight-rings/files/7782196"
+    },
+    "deps-midnightlib": {
+      "projectId": 488090,
+      "id": 7318664,
+      "fileName": "midnightlib-neoforge-1.9.2+1.21.1.jar",
+      "displayName": "MidnightLib 1.9.2 (Flight Rings dependency)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/midnightlib/files/7318664"
     }
   },
   "optional_integrated_patches": {
