@@ -1,5 +1,7 @@
 # Ambient Odyssey — Worldgen freeze preparation, after first Test 6 gameplay
 
+> **Current update (10 Oct):** User-confirmed Dev2 successful gameplay launch, Creative crash fixed by DimDoors removal and shader menu working. Dev3 source/preview advances **Iron's Jewelry to 2.0.2**, recommended **10 GiB** RAM, first-run narrator onboarding fix, and **two official shaderpack references**. Dev3 preview has **251 projects**, SHA256 `b7fc41363f8996db051ee9ae0d5fffc3c6800acd4c3653ca4b1875542c3b2a59`; runtime not tested yet. Complete the [ocean-expansion selection/review](OCEAN_EXPANSION_PREFREEZE_REVIEW_2026-10-10.md) **BEFORE** any permanent worldgen freeze. Aquamirae 7.2.10 and Upgrade Aquatic 7.0.2 are candidate trials, not yet installed. See [Dev3 release-presentation polish](RELEASE_POLISH_SHADER_PRESETS_2026-10-10.md).
+
 **Updated:** 10 October 2026. **Active branch:** `structure/test6`; prospective next test version `0.3.7-prefreeze-dev1`. **Do not mistake this plan for a finished freeze or runtime verification.**
 
 ## Guiding choice
