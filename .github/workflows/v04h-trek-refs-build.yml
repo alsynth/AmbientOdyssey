@@ -1,0 +1,50 @@
+name: AO v0.4.1 Trek Replacement Static Build
+on:
+  push:
+    branches: [experimental/v0.4h-trek-structures-20261010]
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Native source-backed DnT/lock and Q1 unchanged checks
+        run: |
+          python -m compileall -q build_release_030.py tools validate_content_040a.py validate_content_040b.py validate_content_040c.py validate_content_040d.py validate_content_040e.py validate_worldgen_089.py
+          python tools/derive_dnt_trek_curation.py --check
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_questlog.py
+          python tools/validate_v04_fg.py
+          python validate_content_040a.py
+          python validate_content_040b.py
+          python validate_content_040c.py
+          python validate_content_040d.py
+          python validate_content_040e.py
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+          python validate_worldgen_089.py
+          python validate_worldgen_810.py
+          python tools/validate_v04_trek_curated.py
+      - name: Build reference-only experimental CurseForge ZIP
+        run: |
+          python build_release_030.py --output build/Ambient-Odyssey-v0.4.1-TREK-EXPERIMENTAL-CF-References.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4.1-TREK-EXPERIMENTAL-CF-References.zip --report build/trek-reference-validation.json
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4.1-TREK-EXPERIMENTAL-CF-References.zip --require-minecells
+          python tools/validate_v04_trek_curated.py --archive build/Ambient-Odyssey-v0.4.1-TREK-EXPERIMENTAL-CF-References.zip
+          sha256sum build/Ambient-Odyssey-v0.4.1-TREK-EXPERIMENTAL-CF-References.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-v041-TREK-EXPERIMENTAL-REFS
+          path: |
+            build/Ambient-Odyssey-v0.4.1-TREK-EXPERIMENTAL-CF-References.zip
+            build/trek-reference-validation.json
+            docs/audits/DNT_TREK_CURATION_NATIVE_AUDIT.json
+            docs/testing/V041_TREK_DNT_STRUCTURE_CURRATION.md
+          if-no-files-found: error

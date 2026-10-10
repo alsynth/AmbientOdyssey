@@ -1,0 +1,52 @@
+name: AO v0.4h Trek Native Structure Curation
+on:
+  push:
+    branches: [experimental/v0.4h-trek-structures-20261010]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  native-dnt-curation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Derive precise DnT biome vetoes from official SHA512-pinned NeoForge jar
+        run: |
+          python tools/derive_dnt_trek_curation.py
+          python tools/derive_dnt_trek_curation.py --check
+          python -m compileall -q tools/derive_dnt_trek_curation.py
+      - name: Verify generated provenance and kept/discarded structures
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          o=json.loads(Path('docs/audits/DNT_TREK_CURATION_NATIVE_AUDIT.json').read_text())
+          print('Native version:',o['native'])
+          print('Catalogue:',o['catalogue_structure_count'],'disabled:',len(o['disabled']),'retained:',len(o['retained']))
+          assert o['catalogue_structure_count']>=90
+          assert o['disabled']['remnant_graveyard']=='remove_remnant'
+          assert o['disabled']['ruin_town']=='remove_routine_ruin'
+          assert o['disabled']['village_swamp']=='remove_village'
+          assert 'remnant_taiga_castle' in o['retained']
+          assert all(k.startswith('end_') or k.startswith('nether_') or k.startswith('piglin_') for k in o['retained'] if k.startswith(('end_','nether_','piglin_')))
+          PY
+          git diff --check
+      - name: Commit the generated narrow structure overrides
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add release_030/overrides/config/paxi/datapacks/ao_dnt_trek_curation docs/audits/DNT_TREK_CURATION_NATIVE_AUDIT.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore(worldgen): derive 1.21.1 native DnT structure vetoes [skip ci]'
+            git push origin HEAD:experimental/v0.4h-trek-structures-20261010
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-Trek-DnT-Native-Structure-Curation
+          path: |
+            docs/audits/DNT_TREK_CURATION_NATIVE_AUDIT.json
+            release_030/overrides/config/paxi/datapacks/ao_dnt_trek_curation/
+          if-no-files-found: error

@@ -46,7 +46,7 @@ def verify(archive, private=False):
             p = PurePosixPath(name)
             assert not p.is_absolute() and '..' not in p.parts and '\\' not in name, name
         m = json.loads(z.read('manifest.json'))
-        assert m['version'] == '0.4.0-experimental-minecells-fg-questlog-q1'
+        assert m['version'] == lock['version']
         assert m['minecraft']['modLoaders'] == [{'id': 'neoforge-21.1.252', 'primary': True}]
         refs = {e['projectID']: e['fileID'] for e in m['files']}
         assert len(refs) == len(m['files']) == 331

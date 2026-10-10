@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-experimental-minecells-fg-questlog-q1'
+assert lock['version']=='0.4.1-experimental-trek-structures'
 q=lock['additions']['content-040h-questlog']
 assert (q['projectId'],q['id'],q['fileName'])==(1202066,8952784,'questlog-neoforge-1.21.1-3.4.1.jar')
 assert {'NeoForge','1.21.1'}.issubset(q['gameVersions'])
