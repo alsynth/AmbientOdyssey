@@ -1,3 +1,10 @@
+## 10 October 0.4g — best-value content selected / future list archived
+- [x] Independently selected 5 differentiated 1.21.1 NeoForge content mods: **Dimensional Dungeons, Ancient Remnants Monoliths, TarotCards Remastered, Aquaculture Delight, End Remastered Additions**.
+- [x] Reused Fzzy Config, Fragmentum and Aquaculture 2 inherited from baseline (no duplicate libs). **314 CF reference target**, not a count of actual executable mod JARs.
+- [x] Stored remaining 166-registry candidates (excluding selected items) in [future decision register](docs/audits/CONTENT_FUTURE_DECISIONS_040G.md) for later inspection when requested; do not nag about the list unprompted.
+- [ ] Verify CI succeeds, client launch and NeoForge dedicated server portals/loot/skills; source alone is insufficient.
+- [ ] Tune Tarot Curios deck/effects after other content; ensure rare monuments' actual placements and biome eligibility before worldgen freeze. Keep 0.4g user playtest as one substantive batch.
+
 ## 10 Oct 0.4f early mod-list recovery + optimization
 - [x] Reconcile the earliest mod lists and **166 original research candidates**, conservatively (not all were promised installations).
 - [x] Stage Armor Trim Item Fix 895603:5924310 plus six other newly pinned historical candidates; Clumps was already in baseline. Expected 309 manifest CF references.

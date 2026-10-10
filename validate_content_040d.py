@@ -4,7 +4,7 @@ import json, zipfile
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent
 lock=json.loads((ROOT/'release_030/release-lock.json').read_text())
-assert lock['version']=='0.4.0-f0-historical-content-optimization', lock['version']
+assert lock['version']=='0.4.0-g0-curated-exploration-content', lock['version']
 selected={
   'mutant-monsters':(852665,7232511),
   'illager-invasion':(891324,6492670),
@@ -30,13 +30,20 @@ for e in lock['additions'].values():
 if lock.get('default_integrated_patches'):
     e=lock['optional_integrated_patches']
     pins[e['projectId']]=e['id']
-assert len(pins)==309,(len(pins),'Expected 302 prior refs +7 new projects; Clumps 256717 already inherited from baseline')
+assert len(pins)==314,(len(pins),'Expected 309 previous CF refs +5 non-overlapping substantial content additions')
 for _,(pid,fid) in selected.items():assert pins[pid]==fid
 assert pins[841890]==8061947, 'Athena must be the source-verified NeoForge 4.0.6'
 audit_selection={401648:5873258,351441:6409785,325492:5553811,1617531:8740321,1015155:6294123,1023913:7853614}
 assert all(pins.get(k)==v for k,v in audit_selection.items()), audit_selection
 historical_pins={895603:5924310,256717:5623731,315811:6530833,233071:8697050,407206:7057837,535489:7032247,388800:6794589,637808:8309583}
 assert all(pins.get(p)==f for p,f in historical_pins.items())
+# 0.4g: verified exact project/file IDs; library dependencies are present in the baseline.
+new_content_040g={352222:8828150,1668579:9084406,1473837:8450385,961988:6179576,1365790:9111385}
+for pid,fid in new_content_040g.items():
+    assert pins.get(pid)==fid,(pid,fid,pins.get(pid))
+for pid in (1005914,1123977,60028):
+    assert pid in pins,('Missing inherited Fzzy Config / Fragmentum / Aquaculture 2 dependency',pid)
+# Farmer's Delight and End Remastered are known in the actual installed baseline and source configs.
 # Upstream Mutant Monsters CommonConfig fields map to four snake_case TOML keys.
 expected = {'mutant_creeper_spawn_weight', 'mutant_enderman_spawn_weight', 'mutant_skeleton_spawn_weight', 'mutant_zombie_spawn_weight'}
 raw = (ROOT/'release_030/overrides/config/mutantmonsters-common.toml').read_text()
@@ -56,5 +63,5 @@ required={
 missing={pid:name for pid,name in required.items() if pid not in pins}
 if missing:
     raise AssertionError('Dependency closure BLOCKED; identify official 1.21.1 NeoForge pins first: '+str(missing))
-print('PASS: 7 new content projects + Athena library; 309 total CF refs, required shared libraries, no baseline repins, 273 native NBT repairs retained.')
+print('PASS: 7 new content projects + Athena library; 314 total CF refs, required shared libraries, no baseline repins, 273 native NBT repairs retained.')
 print('Minecraft startup, missing runtime-only dependencies, worldgen and entity balance remain unverified.')

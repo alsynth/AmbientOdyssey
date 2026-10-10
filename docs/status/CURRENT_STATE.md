@@ -1,3 +1,6 @@
+## Ambient Odyssey 0.4g — curated content (10 October 2026)
+Five **high-value content additions** chosen, no direct duplicate projects: Dimensional Dungeons (replayable key-based dimension), Ancient Remnants Monoliths (rare investigation and blessings), TarotCards Remastered (structure collectible passives), Aquaculture Delight (existing fish→kitchen integration), End Remastered Additions (existing adventure branches into optional eyes). Target 314 CF refs. [Selection and dependency gates](../audits/CONTENT_EXPANSION_040G_2026-10-10.md). [Other candidates archived for review only when asked](../audits/CONTENT_FUTURE_DECISIONS_040G.md). Prior 0.4f source package was reproducibly built. New 0.4g is experimental, untested in actual Minecraft.
+
 ## 10 Oct 0.4f historical expansion
 Seven additional exact 1.21.1 NeoForge pins, including requested Armor Trim Item Fix; Clumps already in inherited baseline. Expected 309 CF refs. [166 candidate audit](../audits/EARLIEST_MOD_LIST_RECONCILIATION_2026-10-10.md) and [config/shader/video/server plan](../testing/CONFIG_SHADER_VIDEO_SERVER_OPTIMIZATION_2026-10-10.md). Experimental only; no Minecraft runtime/launch proof.
 

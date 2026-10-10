@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-f0-historical-content-optimization",
+  "version": "0.4.0-g0-curated-exploration-content",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1647,6 +1647,76 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin/files/8309583",
       "content_group": "0.4.0-f0-historical-content-optimization",
       "content_role": "Farmer's Delight fermentation and serving gameplay"
+    },
+    "content-040g-dimensional-dungeons": {
+      "projectId": 352222,
+      "id": 8828150,
+      "fileName": "dimdungeons-210-neoforge-1.21.1.jar",
+      "displayName": "Dimensional Dungeons 210",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/dimensional-dungeons/files/8828150",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Repeatable instanced-feeling puzzle/combat dungeon dimension"
+    },
+    "content-040g-ancient-remnants": {
+      "projectId": 1668579,
+      "id": 9084406,
+      "fileName": "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "displayName": "Ancient Remnants: Monoliths 1.5.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ancient-remnants/files/9084406",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Rare monoliths, blessings, codex investigation and exploration rewards"
+    },
+    "content-040g-tarotcards-remastered": {
+      "projectId": 1473837,
+      "id": 8450385,
+      "fileName": "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "displayName": "TarotCards: Remastered 2.3.5",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/tarotcards-remastered/files/8450385",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "22 collectible Major Arcana cards found in structure loot"
+    },
+    "content-040g-aquaculture-delight": {
+      "projectId": 961988,
+      "id": 6179576,
+      "fileName": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "displayName": "Aquaculture Delight 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aquaculture-delight/files/6179576",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Aquaculture 2 fish recipe integration with Farmer's Delight kitchens"
+    },
+    "content-040g-end-remastered-additions": {
+      "projectId": 1365790,
+      "id": 9111385,
+      "fileName": "endrem_additions-neoforge-1.2.0.jar",
+      "displayName": "End Remastered Additions 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/end-remastered-additions/files/9111385",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Additional End Remastered eyes tied to fishing, trial chambers, sculk, Aether and BOMD"
     }
   },
   "optional_integrated_patches": {
