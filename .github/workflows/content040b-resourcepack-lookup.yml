@@ -1,0 +1,26 @@
+name: 'AO 0.4b optional resourcepack file pin lookup'
+on:
+  push:
+    branches: [content/0.4.0b-large-content-wave]
+    paths: ['.github/workflows/content040b-resourcepack-lookup.yml']
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Identify exact CF pack variants
+        run: |
+          python - <<'PY'
+          import concurrent.futures,urllib.request,json
+          projects={'rainbow_polytone':1363585,'os_grasses':1690239,'bushy_petals':1321476,'torches_reimagined':531730,'extended_illumina':380413}
+          def q(p):
+           k,i=p
+           try:
+            with urllib.request.urlopen(urllib.request.Request('https://api.cfwidget.com/'+str(i),headers={'User-Agent':'AO-Resourcepack-Selection/1.0'}),timeout=25) as r: ob=json.loads(r.read(1600000))
+            arr=ob.get('files',[])
+            return k,i,[(f.get('id'),f.get('name'),f.get('versions'),f.get('version'),f.get('type')) for f in arr[:35]]
+           except Exception as e:return k,i,str(e)
+          with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+           for name,id,data in pool.map(q,projects.items()):
+            print('PACK',name,id,json.dumps(data,ensure_ascii=False)[:15000],flush=True)
+          PY

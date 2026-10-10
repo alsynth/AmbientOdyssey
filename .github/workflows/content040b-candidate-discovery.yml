@@ -1,0 +1,54 @@
+name: 'Content 0.4b exact CurseForge candidate & dependency preflight'
+on:
+  push:
+    branches: [content/0.4.0b-large-content-wave]
+    paths: ['.github/workflows/content040b-candidate-discovery.yml']
+  workflow_dispatch:
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Query CFWidget metadata and actual 1.21.1 NeoForge files
+        run: |
+          python - <<'PY'
+          import urllib.request,json,concurrent.futures,collections
+          projects={
+            'guard_villagers':360203,'easy_npc_bundle':559312,'easy_npc_core':1308987,
+            'easy_npc_ui':1214728,'galosphere':631098,'better_archaeology':835687,
+            'naturalist':627986,'cosy_critters':1182393,'foxified_dense_flowers':1413643,
+            'resourcify':870076,'swinging_lanterns':1477733,'polytone':958094,
+            'villager_names':345854,'collective':342584,'atmosfera_neo':1499605,
+            'serene_seasons':291874,'ambientsounds':254284,'critters_companions':579587,
+          }
+          def check(pair):
+              slug,pid=pair
+              result=[]
+              for endpoint in (f'https://api.cfwidget.com/{pid}',f'https://api.curse.tools/v1/cf/minecraft/mods/{pid}/files?gameVersion=1.21.1&modLoaderType=6&pageSize=50'):
+                  try:
+                      req=urllib.request.Request(endpoint,headers={'User-Agent':'AmbientOdyssey-Content-Discovery/1.0','Accept':'application/json'})
+                      with urllib.request.urlopen(req,timeout=22) as r: obj=json.loads(r.read(1500000))
+                      if isinstance(obj,dict) and isinstance(obj.get('data'),dict):
+                          data=obj['data'];files=data.get('files',[])
+                      elif isinstance(obj,dict) and isinstance(obj.get('data'),list):
+                          files=obj['data']
+                      else:files=obj.get('files',[]) if isinstance(obj,dict) else []
+                      hits=[]
+                      for f in files:
+                          games=f.get('gameVersions',[]) or f.get('game_versions',[])
+                          nm=f.get('name',f.get('fileName',''))
+                          gametxt=' '.join(map(str,games))
+                          if '1.21.1' not in gametxt and '1.21.1' not in nm:continue
+                          if not ('NeoForge' in gametxt or 'neoforge' in nm.lower() or 'neo' in nm.lower()):continue
+                          hits.append({'id':f.get('id'),'name':nm,'versions':games,'dependencies':f.get('dependencies',[])})
+                      result.append({'endpoint':endpoint,'total':len(files),'hits':hits[:10]})
+                  except Exception as e:result.append({'endpoint':endpoint,'error':type(e).__name__+':'+str(e)[:140]})
+              return slug,pid,result
+          with concurrent.futures.ThreadPoolExecutor(max_workers=10) as e:
+              for slug,pid,res in e.map(check,projects.items()):
+                  print('CANDIDATE',slug,pid,json.dumps(res,ensure_ascii=False)[:9500],flush=True)
+          PY

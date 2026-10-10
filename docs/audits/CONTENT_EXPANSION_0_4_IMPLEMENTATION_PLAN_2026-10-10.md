@@ -3,6 +3,16 @@
 
 **Current work:** Design, conflict analysis, dependency screening and release planning only. **No mod install, mod removal, config/worldgen edits, release-lock change, or claim of tested candidate compatibility.** Branch: `content/expansion-round2-compat-preflight`, based on **Test8.10** proven playable client run. Target **Minecraft 1.21.1, NeoForge 21.1.252, 5–7 players**.
 
+## 10 October 2026 — override of earlier tiny trial cadence (user-directed)
+
+**The user's newer development policy supersedes the "test every 1–3 additions" workflow and the original plan's *separate mandatory game-test waves*.** Add **large compatible batches** and perform **one meaningful user Minecraft test per substantive patch**, not many tiny tests. Separate only when a real version/dependency/renderer/worldgen incompatibility exists or a side-by-side comparison cannot be evaluated in one combined world. Static source checks and CI remain mandatory, but should not require repeated user installs.
+
+The first implementation of this policy is [**0.4.0-b1 combined Living World patch**](../testing/CONTENT_040B_COMBINED_WAVE_2026-10-10.md): both inherited QoL mods plus 15 more native 1.21.1 mod/dependency projects (Guard Villagers, Easy NPC Core/UI, Galosphere **and** Better Archeology, Naturalist, Villager Names+Collective, Cosy Critters, Polytone, Foxified Dense Flowers, Resourcify, Swinging Lanterns, Atmosfera Neo and required Resourceful Config); plus five official CurseForge resourcepack references. Original 267 → **289 total manifest references**. Galosphere **and** Better Archeology now intentionally share the same larger beta; isolate later **only if they genuinely interfere**. Previous phase names below remain **areas of work**, not mandatory individually exported test packs.
+
+**Excluded for concrete reasons:** no Fabric-only LambdaBetterGrass/Tightfire on NeoForge, no Forge 1.20.1 Fairer Phantoms, no connected-texture packs without a working compatible CTM engine, no duplicate ambient audio (Atmosfera Neo chosen over AmbientSounds 6), no unsynced competing winter/season engines, no whole new village/colony AI replacement alongside Guard/Easy NPC, no unknown "ambient particle" project. Other optional cosmetic configurations are enabled/disabled within the *same* client profile, avoiding new test ZIPs.
+
+**Build status:** 0.4.0-b1 private ZIP passed all source/NBT/manifest checks and two bit-identical CI builds in [run 38057013025](https://github.com/alsynth/AmbientOdyssey/actions/runs/38057013025). **No actual Minecraft 0.4b launch/test yet**. Keep Test8.10 user-proven baseline.
+
 ## 0. The governing decision
 
 The *nine-theme audit* diagnoses **interaction and inhabitedness**, not a lack of absolute number of boss/gear/structure mods. We should build a 15–30-minute **optional exploration narrative** out of **existing structures + a small NPC cast + meaningful archaeology + appropriately populated habitats + a personal journal reward**. **No mandatory guild, large new settlement hierarchy, public timed events, compulsory profession progression, or blanket boost to structure density.**
