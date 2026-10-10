@@ -1,0 +1,58 @@
+name: Test8.9 exact source archeology for remaining worldgen defects
+on:
+  push:
+    branches: [worldgen/test8.9-source-triage]
+    paths: [.github/workflows/test89-targeted-native-audit.yml]
+  workflow_dispatch:
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install nbtlib==2.0.4
+      - name: Inspect pinned city, lighthouse and loot/text assets
+        run: |
+          python - <<'PY'
+          import urllib.request,urllib.parse,zipfile,io,gzip,hashlib,json,nbtlib,collections
+          jarlist=[
+           (8688394,'repurposed_structures-7.5.22+1.21.1-neoforge.jar'),
+           (8657120,'t_and_t-fabric-neoforge-1.13.11.jar'),
+           (None,'DungeonCrawl-NeoForge-1.21-2.3.17.jar'),
+           (None,'traveloptics-4.4.0.1-1.21.1.jar')]
+          for fid,name in jarlist:
+              try:
+                  if fid is None:
+                      print('UNRESOLVED_ID',name,flush=True)
+                      continue
+                  url=f'https://mediafilez.forgecdn.net/files/{fid//1000}/{fid%1000:03d}/'+urllib.parse.quote(name)
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-Worldgen-Inspector/1.0'}),timeout=65) as h:blob=h.read(25000000)
+                  print('TARGET_JAR',name,'sha',hashlib.sha256(blob).hexdigest(),'bytes',len(blob),flush=True)
+                  with zipfile.ZipFile(io.BytesIO(blob)) as z:
+                      if name.startswith('repurposed'):
+                          for n in z.namelist():
+                              if n.startswith('data/repurposed_structures/worldgen/structure/') and ('city_overworld' in n or 'city_nether' in n): print('CITY_STRUCTURE',n,z.read(n).decode()[:2500],flush=True)
+                              if n.startswith('data/repurposed_structures/worldgen/template_pool/cities/overworld/') and ('fat_tower' in n or 'start_pool' in n):print('CITY_POOL',n,z.read(n).decode()[:3800],flush=True)
+                          for n in z.namelist():
+                              if '/structure/cities/overworld/' not in n or not n.endswith('.nbt'):continue
+                              if not any(y in n for y in ('fat_tower','base_room','tower_piece_l')):continue
+                              try:
+                                  d=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(n))))
+                                  a=[(list(map(int,b['pos'])),str(b.get('nbt',{}).get('name','')),str(b.get('nbt',{}).get('pool','')),str(b.get('nbt',{}).get('target',''))) for b in d['blocks'] if str(d['palette'][int(b['state'])]['Name'])=='minecraft:jigsaw']
+                                  print('CITY_NBT',n,'size',list(d.get('size',[])),'jigsaws',str(a[:23])[:3000],flush=True)
+                              except Exception as e:print('CITY_NBT_ERROR',n,type(e).__name__,flush=True)
+                      if name.startswith('t_and_t'):
+                          pools=[n for n in z.namelist() if n.endswith('.json') and '/worldgen/template_pool/' in n and ('beach_lighthouse' in n or 'villager' in n)]
+                          print('TNT_POOLS',json.dumps(pools)[:8000],flush=True)
+                          for n in pools:
+                              if 'beach_lighthouse' in n:print('TNT_POOL',n,z.read(n).decode()[:3200],flush=True)
+                          for n in z.namelist():
+                              if not n.endswith('.nbt') or '/structure/' not in n or 'beach_lighthouse' not in n:continue
+                              d=nbtlib.File.parse(io.BytesIO(gzip.decompress(z.read(n))))
+                              a=[(list(map(int,b['pos'])),str(b.get('nbt',{}).get('name','')),str(b.get('nbt',{}).get('pool','')),str(b.get('nbt',{}).get('target',''))) for b in d['blocks'] if str(d['palette'][int(b['state'])]['Name'])=='minecraft:jigsaw']
+                              print('TNT_NBT',n,'jigsaws',str(a[:18])[:2200],flush=True)
+              except Exception as e:print('TARGET_FETCH_ERROR',name,type(e).__name__,str(e)[:370],flush=True)
+          PY
