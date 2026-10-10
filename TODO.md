@@ -1,4 +1,6 @@
 # AMBIENT ODYSSEY
+> **ACTIVE STATE, 10 October 2026:** User **runtime-confirmed** v0.3.7 Dev2 Minecraft/world startup, removal of Dimensional Doors fixed creative-mode crash, new mods load, and NeOculus Shader Packs menu works. GitHub source has since advanced to **v0.3.7-prefreeze-dev3**, with Iron's Jewelry 2.0.2, **10 GiB** recommended RAM, narrator onboarding fix and two official CurseForge shader-project references. **Dev3 has not been freshly exported/played.** See `docs/status/CURRENT_STATE.md` and `docs/testing/OCEAN_EXPANSION_PREFREEZE_REVIEW_2026-10-10.md`. This live status supersedes historic Test5/Test6 blocked lines below.
+
 > **Latest Test 6 runtime result (9 Oct 2026):** Source/build is statically verified but the first clean CurseForge client startup **FAILED**: NeoForge 21.1.252 rejected `Structory_Towers_26.2_v1.0.17.jar` with `InvalidModFileException: Missing ModLoader`. Awaiting live test of official v1.0.14 fallback `783522:7078283` before changing locked manifest or regenerating Test 6 ZIP. See `docs/testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md` and `docs/status/CURRENT_STATE.md`. The original checkboxes and Black Spiral exclusion below are historical and superseded by more recent approved decisions.
 
 # Master Development TODO — 0.3.x → 0.4.0
@@ -9,7 +11,7 @@
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.252  
 **Target:** 5–7-player exploration-first RPG modpack  
-**Recommended client RAM:** 8 GB (subject to benchmarking)  
+**Recommended client RAM:** 10 GB (10,240 MiB; launcher manifest recommendation, adjust to machine)  
 **Planning status:** Living master document
 
 ---
@@ -963,6 +965,11 @@ The existing staged plan is a starting point, not an applied change.
 - [ ] Check underwater loot balance.
 - [ ] Check ocean structures are not accidentally treated as ordinary land buildings.
 - [ ] Review Sunken Spires later, without automatically adding it.
+- [ ] **Before WORLDGEN FREEZE, review/select final ocean expansion** from [researched compatibility shortlist](docs/testing/OCEAN_EXPANSION_PREFREEZE_REVIEW_2026-10-10.md). Ocean options must be settled before optimizing and selecting the permanent server seed.
+- [ ] Trial **Aquamirae 7.2.10** NeoForge 1.21.1 (CF 536254:8931374) on a separate fresh seed: Ice Maze / Ship Graveyard, mob challenge, gear-difficulty option, Aquaculture/Seven Seas compatibility.
+- [ ] Trial **Upgrade Aquatic 7.0.2** NeoForge 1.21.1 (CF 326895:8892693): sea-life/ecology, seafloor generation, dependencies, map with BWG/BOP/RU/Freeterraforged.
+- [ ] Decide whether ocean depth actually needs changing; hold **Deeper Oceans** until proven compatible with FTF's terrain/monuments and Seven Seas.
+- [ ] Record explicit *install/reject/park* decisions, two seeded worldgen runs, performance and oceans/coasts approval before calling the worldgen roster frozen.
 - [ ] Keep significant ocean expansion separate if it threatens 0.3.x stability.
 
 ## 36. Nether
