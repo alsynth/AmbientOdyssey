@@ -26,10 +26,6 @@
     {
       "structure": "dungeons_arise:abandoned_temple",
       "weight": 1
-    },
-    {
-      "structure": "dungeons_arise:lighthouse",
-      "weight": 1
     }
   ]
 }
