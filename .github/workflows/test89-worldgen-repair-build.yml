@@ -10,6 +10,7 @@ on:
       - 'release_030/overrides/**'
       - 'validate_generation_repairs_086.py'
       - 'validate_worldgen_test84.py'
+      - 'validate_worldgen_089.py'
   workflow_dispatch:
 jobs:
   source-audit-and-build:
@@ -88,6 +89,8 @@ jobs:
               assert city['size']==7 and city['start_pool']=='repurposed_structures:cities/overworld/start_pool'
               assert master['elements'][0]['element']['location']=='kaisyn:village/beach_lighthouse/villagers/lighthouse_master'
               assert stopper['elements'][0]['element']['element_type']=='minecraft:empty_pool_element'
+              bridge=json.loads(z.read('overrides/config/paxi/datapacks/ao_compatibility/data/forge/tags/item/tools.json'))
+              assert bridge['replace'] is False and any(v['id']=='#c:tools' for v in bridge['values'])
               print('INDEPENDENT VERIFIED: 273 NBT fixes; 1 angler JSON; 267 CF refs; NeoReef checksum; ZIP CRC and manifest')
               print('PATCHED STRUCTURE NBT COUNTS:',dict(counts))
           print('ZIP SIZE',p.stat().st_size,'SHA256',hashlib.sha256(p.read_bytes()).hexdigest())
