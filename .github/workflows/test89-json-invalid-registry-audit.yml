@@ -1,0 +1,32 @@
+name: Test8.9 source registry reference audit without binary NBT
+on:
+  push:
+    branches: [worldgen/test8.9-source-triage]
+    paths: [.github/workflows/test89-json-invalid-registry-audit.yml]
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Inspect every indexed JSON datapack item and tag owner
+        run: |
+          python - <<'PY'
+          import json,gzip
+          from pathlib import Path
+          index=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          terms=['redeco:hammer','traveloptics:blood_echo','meadow:alpine_salt','create:crushed_iron_ore','traveloptics:can_cast_reversal','forge:tools']
+          print('RESOURCE_TYPE_COUNTS',{k:len(v) for k,v in index['resources'].items()},flush=True)
+          for term in terms:
+              hits=[]
+              for typ,d in index['resources'].items():
+                  for key,records in d.items():
+                      for record in records:
+                          text=json.dumps(record.get('data',{}),ensure_ascii=False)
+                          if term in text:
+                              hits.append({'type':typ,'id':key,'jar':record.get('jar'),'path':record.get('path'),'excerpt':text[max(0,text.index(term)-140):text.index(term)+200]})
+              print('REGISTRY_TERM',term,'hits',len(hits),json.dumps(hits)[:12500],flush=True)
+          PY
