@@ -1689,21 +1689,6 @@
       "content_group": "0.4.0-e0-audit-broad",
       "content_role": "Browse existing local screenshots in-game; no upload",
       "environment": "client"
-    },
-    "content-040e-comforts": {
-      "projectId": 276951,
-      "id": 7515858,
-      "fileName": "comforts-neoforge-9.0.5+1.21.1.jar",
-      "displayName": "Comforts 9.0.5 (NeoForge 1.21.1)",
-      "gameVersions": [
-        "1.21.1",
-        "NeoForge"
-      ],
-      "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/comforts/files/7515858",
-      "content_group": "0.4.0-e0-audit-broad",
-      "content_role": "Portable sleeping bags and hammocks without changing base spawnpoint",
-      "environment": "both"
     }
   },
   "optional_integrated_patches": {
