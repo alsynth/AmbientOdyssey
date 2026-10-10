@@ -83,8 +83,9 @@ jobs:
               assert all(refs[k]==v for k,v in asset_packs.items())
               new_content={852665:7232511,891324:6492670,456956:5813117,538214:6330030,843344:7917189,1199355:8555615,986982:6105085}
               assert all(refs[k]==v for k,v in new_content.items())
+              assert refs[841890]==8061947 # Chipped requires Athena
 
-              assert hashlib.sha1(z.read('overrides/mods/neoreefredux-1.0.jar')).hexdigest()=='10160406202fd3dadd296e130b380466436e0981'
+              assert hashlib.sha1(z.read('overrides/mods/neoreefredux-1.0.jar')).hexdigest()=='10160406202fd3dadd295e130b380466436e0981'
               patched=[n for n in ns if n.startswith(prefix) and n.endswith('.nbt')]
               assert len(patched)==273,(len(patched),patched[:3])
               for f in patched:
@@ -135,6 +136,9 @@ jobs:
               assert 'waveVolume = 0.25' in wave and 'waveBreakingSoundChance = 120' in wave
               defaults=z.read('overrides/config/defaultoptions/options.txt').decode()
               assert 'soundCategory_weather:0.2' in defaults and 'soundCategory_block:0.4' in defaults
+              mutant=z.read('overrides/config/mutantmonsters-common.toml').decode()
+              for key in ('mutant_creeper_spawn_weight','mutant_enderman_spawn_weight','mutant_skeleton_spawn_weight','mutant_zombie_spawn_weight'):
+                  assert key+' = 0.01' in mutant
               am=z.read('overrides/config/alexsmobs.toml').decode()
               for mob in ('gorilla','fly','cockroach'):
                   assert mob+'SpawnWeight = 0' in am

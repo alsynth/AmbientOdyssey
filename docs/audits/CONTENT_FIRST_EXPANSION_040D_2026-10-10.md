@@ -43,3 +43,8 @@ No quest SNBT, reward scripts, keybind remap, worldgen rebalance, sound overhaul
 
 ## Automated closure follow-up
 The first 0.4d CI run reached the new dependency gate and explicitly failed **only** for missing Athena 841890. Athena's official NeoForge 1.21.1 4.0.6 file is pinned in source. Previous 0.4c regression assertions passed in that run. A subsequent CI run is required before a private importer is accepted; these are source/pack checks, not live gameplay.
+
+## 10 October follow-up: user-pinned rarity and recovered audit queue
+- User has specifically accepted **Mutant Monsters**, provided natural mutant encounters are quite rare. Source-native common TOML four multipliers: **0.01**, previous default **0.05**. Native spawner minimum integer 1 can limit reduction for some mobs. Preserve Chemical X conversion option; no new fake spawn system.
+- Prioritize the original user lists linked in [master intake](CONTENT_EXPANSION_MASTER_INTAKE_2026-10-10.md), not isolated new candidates. Six other 0.4d candidate mods remain unapproved proposals on the experimental branch.
+- Previous full 0.4d build actually **failed** at the independent NeoReef checksum assertion because the newly copied CI inline check mistyped the hash: `...dadd296e...` instead of the existing pinned `...dadd295e...`. Native 0.4c checks and archive creation passed earlier stages; update the CI expectation, not the binary. Re-run CI and keep runtime verification separate.

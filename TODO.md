@@ -1,3 +1,9 @@
+## 10 October — consolidate prior mod/resource-pack lists + rare mutants
+- [x] Recover the 19-item user visual/fauna/resources nomination list and two large QoL/rendering candidate lists; cross-link nine theme, structures, discovery, and wildlife audits in [master intake](docs/audits/CONTENT_EXPANSION_MASTER_INTAKE_2026-10-10.md). Favor these earlier requests over new random proposed mod batches.
+- [x] User specifically accepts Mutant Monsters **as rare elite encounters**. Native 1.21.1 source fields, config path and value verified: four `mutant_*_spawn_weight = 0.01`, vs 0.05 default, with explicit min-weight 1 rounding caveat.
+- [ ] Verify 0.4d source/ZIP and full multiplayer rarity in a later substantial playtest. No fixed per-hour spawn guarantee, especially for Endermen due integer weight floor.
+- [ ] Independently review the remaining six staged 0.4d mods against the recovered master user audit BEFORE treating them as final approvals.
+
 ## 10 October — New binding release order (content-first; about five days to planned server launch)
 - [x] Record user-directed phases: **content expansion → content bug/UX fixes (including Controlling keybind overhaul) → worldgen/performance/optimization → balance → archaeology + FTB Quests + Questlog LAST → optional MCA Reborn/bridges**.
 - [ ] Candidate 0.4d: validate and build **seven native NeoForge 1.21.1 content/compat additions plus source-verified Athena library**: Mutant Monsters, Illager Invasion, Chipped, Handcrafted, Dusty Decorations, Night Lights and Apothic Combat; explicitly confirm Puzzles Lib/Resourceful Lib/Athena/GeckoLib dependencies. Do not call a new mod playable from metadata/CI alone.

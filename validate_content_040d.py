@@ -33,6 +33,13 @@ if lock.get('default_integrated_patches'):
 assert len(pins)==296,(len(pins),'Expected 288 previous +7 content projects +Athena')
 for _,(pid,fid) in selected.items():assert pins[pid]==fid
 assert pins[841890]==8061947, 'Athena must be the source-verified NeoForge 4.0.6'
+# Upstream Mutant Monsters CommonConfig fields map to four snake_case TOML keys.
+expected = {'mutant_creeper_spawn_weight', 'mutant_enderman_spawn_weight', 'mutant_skeleton_spawn_weight', 'mutant_zombie_spawn_weight'}
+raw = (ROOT/'release_030/overrides/config/mutantmonsters-common.toml').read_text()
+lines = [s.strip() for s in raw.splitlines() if s.strip() and not s.lstrip().startswith('#')]
+values = {s.split('=',1)[0].strip(): float(s.split('=',1)[1].strip()) for s in lines}
+assert set(values)==expected, values
+assert all(v==0.01 for v in values.values()), values
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
 # Required library projects may be inherited from original AO manifest; never invent
 # a replacement pin or claim CurseForge has installed them without verifying identity.
