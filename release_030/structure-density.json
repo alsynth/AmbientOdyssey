@@ -3141,6 +3141,20 @@
             "weight": 1
           }
         ]
+      },
+      "create_structures_arise:windmill": {
+        "structures": [
+          {
+            "structure": "create_structures_arise:windmill",
+            "weight": 1
+          }
+        ],
+        "placement": {
+          "type": "minecraft:random_spread",
+          "spacing": 90,
+          "separation": 10,
+          "salt": 1543892757
+        }
       }
     },
     "tags/worldgen/structure": {
