@@ -1,0 +1,48 @@
+name: Test8.7 remaining six structure jars source audit
+on:
+  push:
+    branches: [worldgen/test8.7-final-jigsaw-cleanup]
+    paths: ['.github/workflows/test87-rest-of-jars-native-audit.yml']
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install nbtlib==2.0.4
+      - name: Scan previously unmapped source JARs rather than extrapolate coverage
+        run: |
+          python - <<'PY'
+          import io,zipfile,gzip,urllib.request,urllib.parse,json,nbtlib,hashlib
+          mods=[
+              (6584803,'AdditionalStructures-1.21-(v.6.3.2-NEO).jar'),
+              (8837992,'Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar'),
+              (6344382,'create_easy_structures-0.2a-neoforge-1.21.1.jar'),
+              (8983496,'archaion-1.21.1-1.4.4.jar'),
+              (8082824,'Explorify v1.6.5.mod.jar'),
+          ]
+          for fid,filename in mods:
+              url=f'https://mediafilez.forgecdn.net/files/{fid//1000}/{fid%1000:03d}/'+urllib.parse.quote(filename)
+              try:
+                  with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-SourceAudit/1.0'}),timeout=35) as response:raw=response.read(25000000)
+                  with zipfile.ZipFile(io.BytesIO(raw)) as z:
+                      checked=0;bad=[]
+                      for name in z.namelist():
+                          if not name.startswith('data/') or '/structure/' not in name or not name.endswith('.nbt'):continue
+                          checked+=1
+                          try:plain=gzip.decompress(z.read(name))
+                          except Exception:continue
+                          if b'\x00\x0aminecraft:' not in plain or b'jigsaw' not in plain:continue
+                          doc=nbtlib.File.parse(io.BytesIO(plain))
+                          for b in doc['blocks']:
+                              if str(doc['palette'][int(b['state'])]['Name'])!='minecraft:jigsaw':continue
+                              t=b.get('nbt',{})
+                              if str(t.get('pool','')) in ('minecraft:',''):
+                                  bad.append((name,list(map(int,b['pos'])),str(t.get('target',''))))
+                  print('COVERAGE_JAR',filename,'sha256',hashlib.sha256(raw).hexdigest(),'nativeNBTs',checked,'blankPoolJigsaws',len(bad),flush=True)
+                  print('NATIVE_BLANKS',filename,json.dumps(bad[:100]),flush=True)
+              except Exception as e:print('COVERAGE_ERROR',filename,type(e).__name__,str(e)[:270],flush=True)
+          PY
