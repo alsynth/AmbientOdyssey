@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-a0-qol-quest-trial",
+  "version": "0.4.0-b1-living-world-batch",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1101,6 +1101,271 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat/files/8909889"
+    },
+    "content-040b-guard-villagers": {
+      "projectId": 360203,
+      "id": 8767509,
+      "fileName": "guardvillagers-2.4.12-1.21.1.jar",
+      "displayName": "Guard Villagers 2.4.12",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/guard-villagers/files/8767509",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-easy-npc-core": {
+      "projectId": 1308987,
+      "id": 9039094,
+      "fileName": "easy_npc-neoforge-1.21.1-7.14.0.jar",
+      "displayName": "Easy NPC Core 7.14.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/easy-npc-core/files/9039094",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-easy-npc-ui": {
+      "projectId": 1214728,
+      "id": 9039106,
+      "fileName": "easy_npc_config_ui-neoforge-1.21.1-7.14.0.jar",
+      "displayName": "Easy NPC Config UI 7.14.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/easy-npc-ui/files/9039106",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-galosphere": {
+      "projectId": 631098,
+      "id": 8242886,
+      "fileName": "Galosphere-1.21.1-1.5.5-NeoForge.jar",
+      "displayName": "Galosphere 1.5.5",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/galosphere/files/8242886",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-better-archeology": {
+      "projectId": 835687,
+      "id": 9099893,
+      "fileName": "betterarcheology-neoforge-1.21.1-1.3.9.jar",
+      "displayName": "Better Archeology 1.3.9",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/better-archeology/files/9099893",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-resourceful-config-dep": {
+      "projectId": 714059,
+      "id": 6467772,
+      "fileName": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "displayName": "Resourceful Config 3.0.11 (Better Archeology dependency)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/resourceful-config/files/6467772",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-naturalist": {
+      "projectId": 627986,
+      "id": 9004373,
+      "fileName": "naturalist-2.0.5-neoforge-1.21.1.jar",
+      "displayName": "Naturalist 2.0.5",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/naturalist/files/9004373",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-villager-names": {
+      "projectId": 345854,
+      "id": 9032258,
+      "fileName": "villagernames-1.21.1-8.7.jar",
+      "displayName": "Villager Names 8.7",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/villager-names/files/9032258",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-collective-dep": {
+      "projectId": 342584,
+      "id": 9060865,
+      "fileName": "collective-1.21.1-8.42.jar",
+      "displayName": "Collective 8.42 (Villager Names dependency)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/collective/files/9060865",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-cosy-critters": {
+      "projectId": 1182393,
+      "id": 8390081,
+      "fileName": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "displayName": "Cosy Critters & Creepy Crawlies 0.3.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/cosy-critters/files/8390081",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-polytone": {
+      "projectId": 958094,
+      "id": 9103491,
+      "fileName": "polytone-1.21-5.0.3-neoforge.jar",
+      "displayName": "Polytone 5.0.3 NeoForge",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/polytone/files/9103491",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-foxified-dense-flowers": {
+      "projectId": 1413643,
+      "id": 7384220,
+      "fileName": "denseflower-1.0.0.jar",
+      "displayName": "Foxified Dense Flowers 1.0.0 NeoForge port",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/foxified-dense-flowers/files/7384220",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-resourcify": {
+      "projectId": 870076,
+      "id": 9001238,
+      "fileName": "Resourcify (1.21.1-neoforge)-1.8.7.jar",
+      "displayName": "Resourcify 1.8.7",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/resourcify/files/9001238",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-swinging-lanterns": {
+      "projectId": 1477733,
+      "id": 9116978,
+      "fileName": "swinginglanterns-neoforge-1.21.1-2.0.4.jar",
+      "displayName": "Swinging Lanterns 2.0.4",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/swinging-lanterns/files/9116978",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-atmosfera-neo": {
+      "projectId": 1499605,
+      "id": 8313373,
+      "fileName": "atmosfera-1.21.1-NeoForge-1.0.2.jar",
+      "displayName": "Atmosfera Neo 1.0.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/atmosfera-neo/files/8313373",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-rp-rainbows-foliage-polytone": {
+      "projectId": 1363585,
+      "id": 9092152,
+      "fileName": "rainbows-foliage-polytone-edition-v2.1.zip",
+      "displayName": "Rainbow's Foliage Polytone edition 2.1",
+      "gameVersions": [
+        "1.21.1"
+      ],
+      "version_check_override": "This is a CurseForge Resource Pack, not a NeoForge binary; Minecraft 1.21.1 release explicitly listed.",
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/texture-packs/rainbows-foliage-polytone/files/9092152",
+      "content_kind": "resourcepack",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-rp-os-colorful-grasses-mix": {
+      "projectId": 1690239,
+      "id": 8936929,
+      "fileName": "Os' Colorful Grasses (Mix).zip",
+      "displayName": "Os' Colorful Grasses Mix",
+      "gameVersions": [
+        "1.21.1"
+      ],
+      "version_check_override": "This is a CurseForge Resource Pack, not a NeoForge binary; Minecraft 1.21.1 release explicitly listed.",
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/texture-packs/os-colorful-grasses-mix/files/8936929",
+      "content_kind": "resourcepack",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-rp-bushy-pink-petals": {
+      "projectId": 1321476,
+      "id": 8493563,
+      "fileName": "Bushy pink petals, wildflowers  leaf litter.zip",
+      "displayName": "Bushy Pink Petals, Wildflowers & Leaf Litter",
+      "gameVersions": [
+        "1.21.1"
+      ],
+      "version_check_override": "This is a CurseForge Resource Pack, not a NeoForge binary; Minecraft 1.21.1 release explicitly listed.",
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/texture-packs/bushy-pink-petals/files/8493563",
+      "content_kind": "resourcepack",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-rp-torches-reimagined": {
+      "projectId": 531730,
+      "id": 8048795,
+      "fileName": "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip",
+      "displayName": "Torches Reimagined 1.8",
+      "gameVersions": [
+        "1.21.1"
+      ],
+      "version_check_override": "This is a CurseForge Resource Pack, not a NeoForge binary; Minecraft 1.21.1 release explicitly listed.",
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/texture-packs/torches-reimagined/files/8048795",
+      "content_kind": "resourcepack",
+      "content_group": "0.4.0-b1-combined"
+    },
+    "content-040b-rp-extended-illumina": {
+      "projectId": 380413,
+      "id": 6021451,
+      "fileName": "§eExtended_Illumina_1.21x.zip",
+      "displayName": "Extended Illumina 1.21.x",
+      "gameVersions": [
+        "1.21.1"
+      ],
+      "version_check_override": "This is a CurseForge Resource Pack, not a NeoForge binary; Minecraft 1.21.1 release explicitly listed.",
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/texture-packs/extended-illumina/files/6021451",
+      "content_kind": "resourcepack",
+      "content_group": "0.4.0-b1-combined"
     }
   },
   "optional_integrated_patches": {
