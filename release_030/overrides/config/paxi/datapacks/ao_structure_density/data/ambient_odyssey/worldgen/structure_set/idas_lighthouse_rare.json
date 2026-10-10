@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "idas:abandoned_lighthouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 100,
+    "separation": 72,
+    "salt": 1543892631
+  }
+}
