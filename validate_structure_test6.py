@@ -131,7 +131,7 @@ def run(archive):
               'overrides/config/cristellib/dimdoors/structure_placement_config.json5',
               'overrides/config/cristellib/dimdoors/structure_toggle_config.json5')),
           'retired mod and configs')
-    next_pins = {1618019: 9099710, 1490601: 7853647, 1605714: 8703116, 1101111: 8237157}
+    next_pins = {1618019: 9099710, 1490601: 7853647, 1605714: 8703116, 1101111: 8365016}
     check('Four exact-file prefreeze client/content additions match source lock and export',
           all(mf.get(project) == file for project, file in next_pins.items()) and
           all(lock['additions'][key]['projectId'] == project and lock['additions'][key]['id'] == file
@@ -141,6 +141,11 @@ def run(archive):
                 ('next-borderless-window', 1605714, 8703116),
                 ('next-irons-jewelry', 1101111, 8237157))),
           next_pins)
+    check('Recommended RAM 10 GiB in manifest', manifest['minecraft'].get('recommendedRam') == 10240,
+          manifest['minecraft'].get('recommendedRam'))
+    check('Jewelry v2.0.2 avoids Iron Lib downgrade for other Iron mods',
+          mf.get(1101111) == 8365016 and len(mf) == 249,
+          {'jewelry_file': mf.get(1101111), 'manifest_total': len(mf)})
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
