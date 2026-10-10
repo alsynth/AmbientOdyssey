@@ -52,7 +52,7 @@ def check():
     require("Unsupported station connector gracefully terminates", train["fallback"] == "minecraft:empty" and train["elements"] == [{"weight": 1, "element": {"element_type":"minecraft:empty_pool_element"}}])
 
     lock = read(ROOT / "release_030/release-lock.json")
-    require("Test8.6 scoped version", lock["version"] in ("0.3.8-worldgen-prefreeze-test1.6", "0.3.8-worldgen-prefreeze-test1.7", "0.3.8-worldgen-prefreeze-test1.8", "0.3.8-worldgen-prefreeze-test1.9"))
+    require("Test8.6 scoped version", lock["version"] in ("0.3.8-worldgen-prefreeze-test1.6", "0.3.8-worldgen-prefreeze-test1.7", "0.3.8-worldgen-prefreeze-test1.8", "0.3.8-worldgen-prefreeze-test1.9", "0.3.8-worldgen-prefreeze-test1.10"))
     ids = {k:lock["additions"][k]["id"] for k in ("structure-better-bastions","structure-lukis-woodland-mansions")}
     require("All three Test8.5 mods kept", ids == {"structure-better-bastions":8988949, "structure-lukis-woodland-mansions":7227735} and lock["private_modrinth_addons"][0]["version_id"] == "PVzfioBU")
     print(f"PASS: {passes} source-backed Test8.6 generation repair checks, 71 native Farmer pieces retained.")
