@@ -1,3 +1,9 @@
+## 10 October — experimental 0.4e audit-based large batch
+- [x] Source-stage 11 official native NeoForge 1.21.1 candidate additions from the earlier user mod/resourcepack and QoL audits, with a small RPG gear readability comparator: BetterF3, Pick Up Notifier, Cave Dust, Light Overlay, Inventory Sorter, Subtle Effects, Traveler's Titles, Legendary Tooltips, Map Distance Fix, Equipment Compare, RightClickHarvest.
+- [ ] Validate 0.4e shared libraries, exact source files, deterministic importer and runtime; stop if baseline project collision or true missing required library. Current pack 0.4d contains 296 pins, 0.4e target 307.
+- [ ] Check overlapping crop harvesting, tooltip/inventory and HUD visuals, cave particle spam and initial worldgen cold lag in **one large playtest**, not a separate test per mod.
+- [ ] Continue comparing Cisco, RAD3, Prodigium, Prominence and Craft to Exile; avoid transplanting version-locked custom systems, quest progress and additional duplicate bosses without a stable port.
+- [ ] Defer all FTB Quest/Questlog authoring, balance, worldgen optimization and optional MCA/bridges per user phase priorities.
 ## 10 October — consolidate prior mod/resource-pack lists + rare mutants
 - [x] Recover the 19-item user visual/fauna/resources nomination list and two large QoL/rendering candidate lists; cross-link nine theme, structures, discovery, and wildlife audits in [master intake](docs/audits/CONTENT_EXPANSION_MASTER_INTAKE_2026-10-10.md). Favor these earlier requests over new random proposed mod batches.
 - [x] User specifically accepts Mutant Monsters **as rare elite encounters**. Native 1.21.1 source fields, config path and value verified: four `mutant_*_spawn_weight = 0.01`, vs 0.05 default, with explicit min-weight 1 rounding caveat.
