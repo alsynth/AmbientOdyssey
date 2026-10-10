@@ -1,0 +1,53 @@
+name: Ambient Odyssey Offline Quest Atlas Website
+on:
+  push:
+    branches: [experimental/quest-atlas-website-q1-20261010]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  website:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Export website data only from installed Questlog source
+        run: |
+          python tools/validate_v04_quest_campaign.py
+          python tools/export_quest_atlas.py
+          python tools/export_quest_atlas.py --check
+      - name: Check offline website scripts, HTML and dynamic source parity
+        run: |
+          node --check site/assets/quest-atlas.js
+          python -m unittest discover -s tests -p test_quest_atlas_site.py -v
+          python -m compileall -q tools/export_quest_atlas.py tools/build_quest_atlas_site.py
+          git diff --check
+      - name: Package deterministic website ZIP and validate archive
+        run: |
+          python tools/build_quest_atlas_site.py --output build/Ambient_Odyssey_Roadmap_Quest_Atlas_Q1.zip
+          python tools/build_quest_atlas_site.py --output build/site-repeat.zip
+          cmp build/Ambient_Odyssey_Roadmap_Quest_Atlas_Q1.zip build/site-repeat.zip
+          sha256sum build/Ambient_Odyssey_Roadmap_Quest_Atlas_Q1.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-Roadmap-and-Quest-Atlas-Q1
+          path: |
+            build/Ambient_Odyssey_Roadmap_Quest_Atlas_Q1.zip
+            site/quest-data.json
+          compression-level: 0
+          if-no-files-found: error
+      - name: Commit generated quest data to experimental website branch
+        if: github.event_name == 'push' && github.ref_name == 'experimental/quest-atlas-website-q1-20261010'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site/quest-data.json site/quest-data.js
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore(site): sync all 50 Q1 quest JSONs to browser atlas [skip ci]'
+            git push origin HEAD:experimental/quest-atlas-website-q1-20261010
+          fi
