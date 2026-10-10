@@ -13,7 +13,7 @@ from pathlib import Path
 import zipfile
 import nbtlib
 
-from audit_remaining_jigsaw_nbt_086 import indexed_jars, manifest_pairs, resolve, native_jar, fetch
+from audit_remaining_jigsaw_nbt_086 import indexed_jars, manifest_pairs, resolve, fetch
 
 ROOT=Path(__file__).resolve().parent
 BAD={'minecraft:air','redeco:hammer','traveloptics:blood_echo','meadow:alpine_salt','create:crushed_iron_ore'}
@@ -30,11 +30,6 @@ def recursive_hits(node,path='',in_items=False,depth=0):
     elif isinstance(node,(list,tuple)):
         for i,v in enumerate(node):
             yield from recursive_hits(v,path+'/'+str(i),in_items,depth+1)
-
-def scan(entry,fid,name):
-    native=native_jar(entry)
-    # helper native_jar here expects entry dict from 087, not 086; use direct download in place.
-    raise NotImplementedError
 
 def inspect(item):
     entry,fid,name=item
