@@ -45,3 +45,12 @@ Acceptance remains experimental until these client/gameplay/multiplayer checks p
 - [ ] Test new Polymorph recipe chooser with JEI and Brewin' And Chewin'/Aquaculture Delight food recipes, including cross-addon collisions.
 - [ ] Test Armor Trim Item Fix, Shulker Box Tooltip, Crafting Tweaks and Chat Heads in the real game. Record additional input conflicts for the future keybind overhaul.
 - [ ] Run and actually join a **complete** 330-ref dedicated server with correctly separated client-only mods. The isolated Mine Cells server smoke is not sufficient.
+
+## Questlog preflight (0.4h, 331 refs)
+
+- [ ] Check official native NeoForge Questlog 3.4.1 and inherited Cloth Config 15.0.140 are installed; do NOT use Fabric Questlog/another Cloth copy.
+- [ ] At GUI scale 3, open the inventory. Confirm Questlog's book icon near the upper-left of screen is visible, clickable and does not cover JEI, Curios, Accessories or inventory-specific controls. Repeat at GUI scale 2 and at narrow resolution.
+- [ ] Open Questlog with backtick (grave accent, mod default) and confirm the empty journal works. It should have no authored AO quest tasks or rewards yet.
+- [ ] Test FTB Quests and FTB Solo Quests separately: controls, team/chunk behavior, journal opening, no loss or duplication of reward/progress.
+- [ ] Check the [button] section of config/questlog-client.toml; move X/Y relative to the screen or inventory based on actual screenshot if required. Restart and check that the adjustment persists.
+- [ ] Repeat with an inventory status-effect panel, backpack, changed HUD dimensions, JEI overlay and multiplayer; capture logs on any mixin/render crash.

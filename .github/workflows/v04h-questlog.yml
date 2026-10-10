@@ -1,0 +1,54 @@
+name: Ambient Odyssey v0.4h Questlog experimental validation
+on:
+  push:
+    branches: [experimental/v0.4-preflight-hardening-20261010]
+  workflow_dispatch:
+jobs:
+  preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Source pins, content and worldgen
+        run: |
+          python -m compileall -q tools build_release_030.py
+          python validate_content_040a.py
+          python validate_content_040b.py
+          python validate_content_040c.py
+          python validate_content_040d.py
+          python validate_content_040e.py
+          python tools/validate_v04_fg.py
+          python tools/validate_v04_questlog.py
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+          python validate_worldgen_089.py
+          python validate_worldgen_810.py
+          python compile_terminal_jigsaws_087.py
+      - name: Build verified PRIVATE 331-ref experimental ZIP
+        run: |
+          python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.4h-Questlog-PRIVATE.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4h-Questlog-PRIVATE.zip --private --report build/v04h-private-validation.json
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4h-Questlog-PRIVATE.zip --report build/v04h-private-diagnostic.json
+      - name: Deterministic private rebuild and public references-only ZIP
+        run: |
+          python build_release_030.py --private-modrinth --output build/v04h-repeat.zip
+          cmp build/Ambient-Odyssey-v0.4h-Questlog-PRIVATE.zip build/v04h-repeat.zip
+          python build_release_030.py --output build/Ambient-Odyssey-v0.4h-Questlog-CF-References.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4h-Questlog-CF-References.zip --report build/v04h-reference-validation.json
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4h-Questlog-CF-References.zip --report build/v04h-reference-diagnostic.json
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4h-Questlog-CF-References.zip --require-minecells
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Ambient-Odyssey-v04h-QUESTLOG-EXPERIMENTAL
+          path: |
+            build/Ambient-Odyssey-v0.4h-Questlog-PRIVATE.zip
+            build/Ambient-Odyssey-v0.4h-Questlog-CF-References.zip
+            build/v04h-*-validation.json
+            build/v04h-*-diagnostic.json
+          compression-level: 0
+          if-no-files-found: error

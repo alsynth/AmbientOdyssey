@@ -159,7 +159,8 @@ def build(patches=False, output=None, private_modrinth=False):
                  'BIOME-COMPATIBILITY-TEST2.md', 'STRUCTURE_TEST5_CHANGELOG.md',
                  'STRUCTURE_BIOME_AUDIT.md', 'STRUCTURE_TEST5_VALIDATION.md',
                  'STRUCTURE_TEST5_INSTALL.md', 'TANS_OPEN_FIELD_TUNING_PLAN.md', 'TODO.md',
-                 'V04_CHANGELOG.md', 'V04_TEST_RESULTS.md', 'V04_TESTING_CHECKLIST.md']:
+                 'V04_CHANGELOG.md', 'V04_TEST_RESULTS.md', 'V04_TESTING_CHECKLIST.md',
+                 'V04_FG_INTEGRATION.md', 'V04_QUESTLOG_COMPAT.md']:
         p = ROOT / name
         if p.exists(): entries['overrides/' + name] = p.read_bytes()
     for name in ['README-0.3.1.md', 'MOD_STRUCTURE_SCREENING.md', 'MISSING_JARS.txt',
