@@ -130,7 +130,7 @@
 	quest.7ADA8FC8195DCCD5.quest_desc: [
 		"Navigation"
 		"A map marker helps you remember a place; a Waystone provides another kind of travel convenience when it has been discovered or configured. Neither replaces expedition planning. A portal that leads somewhere unfamiliar may require a different route back, and a waypoint does not guarantee safety at its destination."
-		"Record at least one home marker and label important portals clearly. When a major dungeon is too dangerous, save its location instead of forcing the fight. AO's planned Explorer's Journal will only show or export locations you have genuinely discovered."
+		"Record at least one home marker and label important portals clearly. When a major dungeon is too dangerous, save its location instead of forcing the fight. Mark important discoveries with your own Xaero waypoints; automated AO discovery records are a future system, not yet available."
 		"Try this: Create a clearly named home waypoint and one marker for a distant landmark."
 	]
 	quest.7ADA8EC8195DCB22.title: "Apotheosis: Affixes, Gems and Sockets"
@@ -228,7 +228,7 @@
 		"14. JEI can chain recipes. If an ingredient is unfamiliar, click or hover it to trace backward through manufacturing steps, then use Back to return to the original target."
 		"15. Filter JEI by source mod. Try searches such as @ars, @apotheosis, or a particular item name. Not every recipe is enabled in our final pack, so check tooltips and verified guides if something doesn't work."
 		"16. Treat rare items as questions. Hover for extra text, inspect Uses, compare slot types and source mod before salvaging, throwing away or spending something irreplaceable."
-		"17. Never assume a recipe shown in JEI is currently obtainable. Some components rely on loot, boss drops, dimensions, configured worldgen or disabled crafting routes. The manual will explain confirmed exceptions."
+		"17. Never assume a recipe shown in JEI is currently obtainable. Some components rely on loot, boss drops, dimensions, configured worldgen or disabled crafting routes. If a JEI recipe appears unobtainable, check its workstation, dimension requirements and current pack configuration before investing rare resources."
 		"18. Store your expedition kit separately. A backpack preset for exploration is often more useful than carrying every building material and technical tool."
 		"19. Build around your inventory and control comfort. Place escape, food, healing, main weapon, ranged/spell attack and utility items in places you can use under pressure. The exact arrangement is personal."
 		"20. Label storage meaningfully. “Boss drops,” “upgrade materials” and “rare curios” are more useful than 12 unsorted chests when you return with hundreds of modded items."
@@ -374,7 +374,7 @@
 		"FTB Chunks map — AO overrides: deliberately unbound — Use the supported menu/button if you need claims; don't accidentally open a second competing map"
 		"World map / dimension switching — Find in Controls → Xaero; not yet pinned — Map previews of Nether/End depend on map setup and discovered chunks"
 		"Waystone menu — Interact with a Waystone — Teleport rules, fuel and restrictions depend on configured server"
-		"Explorer's Journal and return markers — Future content, no key yet — Personal discovery progress and visited-location bookmarks"
+		"Explorer's Journal and return markers — Discovery tracking not fully implemented — Use Xaero's waypoints now; any later automated discovery log needs its own validation."
 		"*Default map keys verified via Xaero Minimap FAQ. Map mods and FTB Chunks may overlap in UI; AO intentionally unbound the FTB Chunks map in its config.* Do not reveal undiscovered structure coordinates as a “tip”."
 	]
 	quest.4DE7D49F9260E753.title: "Modded combat, backpacks, RPG and voice"
@@ -387,7 +387,7 @@
 		"Ars Nouveau — Cast/spellbook action, open or cycle spell slots and spell shortcuts — Unverified — Controls → Ars Nouveau and in-game spellbook help; many effects are context sensitive"
 		"Relics / Artifacts — Trigger active relic or accessory ability — Depends on item/mod; unverified — Inspect tooltip and Controls. Many support items trigger passively and have *no keybind*"
 		"Origins (future) — Primary/secondary active Origin ability — Not configured/installed as approved backend — Add after Origin selection; ensure no overlap with spell casting or backpack toggle"
-		"Questlog (future) — Open Adventure Journal — Not installed / final key unverified — Prefer an easy non-conflicting shortcut or inventory button; engine must be tested"
+		"Questlog — Open Adventure Journal — Installed in AO v0.4h. The inventory journal icon is currently positioned near the screen's upper-left; grave/backtick is the mod default. Check the actual controls and GUI layout before relying on either."
 		"FTB Quests — Open Field Manual / questbook — AO final binding unverified — Provide persistent menu access; distinguish from Questlog journal"
 		"Accessories — Open accessory GUI — AO distributed suggestion: O — Confirm O survives profile first-launch and Curios/Accessories integration"
 		"Simple Voice Chat — Mute/unmute microphone — AO distributed suggestion: J — Confirm works in multiplayer and cannot accidentally mute during combat"

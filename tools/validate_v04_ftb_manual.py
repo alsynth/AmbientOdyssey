@@ -42,6 +42,7 @@ def validate():
     lang=(QUESTS/"lang/en_us.snbt").read_text(encoding="utf-8")
     balanced(lang)
     assert "chapter.231570DE6A7FCD52.title:" in lang
+    assert "Questlog (future)" not in lang and "Not installed / final key unverified" not in lang
     existing=(QUESTS/"chapters/when_dungeons_arise.snbt").read_text(encoding="utf-8")
     assert 'id: "231570DE6A7FCD52"' in existing
     assert "dungeons_arise:wda_root" in existing

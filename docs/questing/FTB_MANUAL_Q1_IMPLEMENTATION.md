@@ -34,3 +34,7 @@ A few pages include preexisting draft statements referring to features as propos
 `tools/validate_v04_ftb_manual.py` checks source syntax balances, unique hex IDs, chapter/page counts, no tasks/rewards, and the presence of localized titles/descriptions. It is **not** the full FTB runtime SNBT parser. CI source/ZIP checks plus repeated rebuilds still cannot establish GUI rendering, team-based FTB progress, quests auto-marking, multiplayer or content truth.
 
 Further work once a client can load this content: contextual icons/screenshots, link pages from the Q1 journal, real 1.21.1 keybinding screenshots, full modded recipe examples (verified by JEI), gear and boss dossiers, and optional archaeology pages with concrete reward provenance.
+
+## Q1 copy correction
+
+After the first successful static packaging run, the published manual text was corrected to treat Questlog as already installed rather than a future mod. It describes the trial screen-anchored inventory icon and default grave/backtick control accurately while still requiring visual/keybind acceptance. Two other legacy research placeholders were revised so the manual does not promise an unavailable automated Explorer's Journal or future JEI recipe exception catalogue.
