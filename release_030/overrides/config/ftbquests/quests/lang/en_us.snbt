@@ -79,7 +79,6 @@
 	quest.76DAECF378BA3F19.quest_desc: ["Far beneath the surface lies a labyrinth of rails and tunnels, carved by long-forgotten hands. The air is thick with dust and danger. Creatures lurk in the shadows, and the echoes of minecarts rattle through the dark. Yet for those who endure, veins of treasure and hidden chambers make the descent worthwhile."]
 	quest.76DAECF378BA3F19.quest_subtitle: "Find a Mining System"
 
-	// AO optional Field Manual Q1 — 29 reference articles, no rewards or forced dependencies
 	quest.D2990D87FF3885AC.title: "Two Books, Two Purposes"
 	quest.D2990D87FF3885AC.quest_subtitle: "Optional reference page — no rewards or progression requirements"
 	quest.D2990D87FF3885AC.quest_desc: [
