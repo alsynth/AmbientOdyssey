@@ -1,0 +1,87 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_1",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_2",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_3",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_4",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_5",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_6",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_7",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_8",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_3_9",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty",
+  "name": "minecraft:angler_additions_3_pool"
+}
