@@ -1,0 +1,44 @@
+{
+  "status": "PASS (preview ZIP static checks; CurseForge import/runtime UNTESTED)",
+  "version": "0.3.7-prefreeze-dev3",
+  "artifact": "Ambient-Odyssey-v0.3.7-Prefreeze-Dev3-Test.zip",
+  "source": "Copied latest verified Dev2 preview archive and changed only manifest.json and config/defaultoptions/options.txt; not authoritative GitHub build_release_030.py output",
+  "size_bytes": 67971379,
+  "sha256": "b7fc41363f8996db051ee9ae0d5fffc3c6800acd4c3653ca4b1875542c3b2a59",
+  "zip_entries": 1060,
+  "CurseForge_file_references": 251,
+  "minecraft": "1.21.1",
+  "loader": "neoforge-21.1.252",
+  "patches": [
+    "Iron's Jewelry 1.21.1 v2.0.0 fileID 8237157 -> 2.0.2 fileID 8365016",
+    "recommendedRam 8192 -> 10240 MiB",
+    "Added Solas shader CF project 678384 file 5743914",
+    "Added Complementary Reimagined shader CF project 627557 file 8884654",
+    "Corrected narratorHotKey:false and added onboardAccessibility:false to Default Options"
+  ],
+  "unchanged": [
+    "all other 1058 ZIP members byte-identical to Dev2",
+    "all worldgen configs",
+    "Dimensional Doors absent",
+    "Structure and biome configurations"
+  ],
+  "checks": [
+    "ZIP CRC",
+    "root manifest",
+    "251 unique CurseForge project refs",
+    "no bundled third-party JARs",
+    "correct added files and existing mod pins",
+    "narrator onboarding disabled",
+    "shader blur 0",
+    "two changed member names only"
+  ],
+  "runtime_not_yet_verified": [
+    "new CurseForge app import",
+    "shaders resolve into shaderpacks folder and load with NeOculus",
+    "first-launch narrator voice does not play",
+    "Iron's Jewelry 2.0.2 from clean install",
+    "dedicated server",
+    "worldgen final acceptance"
+  ],
+  "icon": "Original icon asset missing from GitHub export and baseline; custom CurseForge profile icon not supplied by root manifest; requires original approved PNG/project avatar"
+}
