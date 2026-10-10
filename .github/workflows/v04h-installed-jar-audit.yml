@@ -1,0 +1,25 @@
+name: Ambient Odyssey v0.4h installed JAR and server readiness audit
+on:
+  push:
+    branches: [experimental/v0.4h-launch-readiness-20261010]
+  workflow_dispatch:
+jobs:
+  static-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Compile and unit-test safe profile metadata checks
+        run: |
+          python -m compileall -q tools/audit_installed_jars_v04.py tests/test_installed_jars_v04.py
+          python -m unittest discover -s tests -p 'test_installed_jars_v04.py' -v
+          python tools/audit_installed_jars_v04.py --help
+      - name: Verify inherited Questlog + Mine Cells source lock
+        run: |
+          python tools/validate_v04_fg.py
+          python tools/validate_v04_questlog.py
+          python validate_content_040a.py
+          git diff --check
