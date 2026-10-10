@@ -1,0 +1,41 @@
+> **LATEST v0.4h Q1 + Field Manual candidate (10 Oct 2026):** branch `experimental/v0.4h-q1-ftb-field-manual-20261010`, validated packaging source commit `9a5db8ea0ac16b8b55a6929e6819e6b8479178a0`; **331 unchanged CurseForge mod references, 50 Questlog adventure quests/13 Questlog chapters, and 32 task-free/reward-free FTB reference pages/3 new FTB chapters** alongside the original WDA questline. GitHub [run 38080830259](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259) **SUCCESS**, [artifact 11680318532](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259/artifacts/11680318532). PRIVATE inner ZIP SHA256 `c7493ce19dc7833b5bf06fb322159689eebe3629d0bc001bff4617a50d3d33ca` (70,913,371 bytes), reference-only inner ZIP SHA256 `c4b7fa1595a4aa99f6cc9a504266c5acaf6518c7a47b67186cc69473a6fbd88b` (70,840,821 bytes), identical private repeat verified. All source/manifest/worldgen/authoring/bundle validators PASS; **NOT tested in an actual full Minecraft client or server**, including FTB text rendering/auto-completion, Questlog progress, and multiplayer. Stable previous Q1, launch-ready and rollback branches untouched. See `docs/questing/FTB_MANUAL_Q1_IMPLEMENTATION.md`. A subsequent documentation-only handoff commit does not alter the above artifact SHA values.
+
+> **Current project handoff (2026-10-10):** Ambient Odyssey v0.4h Q1 experimental source branch `experimental/v0.4h-questbook-q1-20261010` contains 331 unchanged CF mod refs and 50 installed Questlog JSON quests/13 chapters, [GitHub CI `38079305682`](https://github.com/alsynth/AmbientOdyssey/actions/runs/38079305682) passing static+ZIP checks, source SHA `3b89fadc6f234acc840d54a443799e45103e37f7`. The older Test6-only baseline instructions below are historical. Do not overwrite original release/rollback branches. Run `tools/validate_v04_quest_campaign.py` and `tools/validate_v04_release.py`; use `docs/questing/QUESTLOG_Q1_RUNTIME_TESTS.md` for real future client/server tests. Never claim a Minecraft runtime pass based on source tests.
+
+> **Latest branch guidance (2026-10-10):** v0.4h preparation branch `experimental/v0.4h-test-session-kit-20261010` has 331 unchanged CurseForge reference pins (Mine Cells + Questlog); full pack private/ref-only ZIPs and checksums from successful GitHub run `38077302870`. A separate, no-mod-JAR test-session kit was built on run `38078378067` and shipped as artifact `11678754683`. **Next steps require actual installed-profile/client, dimension, inventory and dedicated-server runtime evidence**; do not revert to the historical Test 6-only workflow without considering `docs/status/CURRENT_STATE.md`. Preserve main, rollback, and the already-validated v0.4h ZIP. Never confuse offline fixture tests or Questlog source metadata with real gameplay acceptance.
+
+> **Repository state first:** Read [docs/status/CURRENT_STATE.md](docs/status/CURRENT_STATE.md) and [docs/status/AGENT_WORKFLOW.md](docs/status/AGENT_WORKFLOW.md) before making changes. The default branch is the protected-by-process Test 5 Audit1 baseline; `structure/test6` is experimental. Update those documents on every completed change. Work from the repository alone; do not assume conversation history.
+
+# Ambient Odyssey — Agent Entry Point
+
+This repository is the implementation handoff for **Structure Test 6**, based on Minecraft 1.21.1 and NeoForge 21.1.252.
+
+**Do not begin by changing the repository.** Reproduce the checked-in Test 5 Audit1 build and run its validator first. Stop and report if it does not reproduce. Source files are rooted here; no need to unzip another source package.
+
+## Mandatory reading order
+
+**Current Test 6 source is committed. Next phase is runtime acceptance:** [docs/testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md](docs/testing/STRUCTURE_TEST6_RUNTIME_ACCEPTANCE.md). `main` remains the older Test 5 Audit1 baseline.
+
+1. `docs/handoff/START_HERE.md`
+2. `docs/handoff/01_TEST6_IMPLEMENTATION_BRIEF.md`
+3. `docs/handoff/02_POST_HANDOFF_DECISIONS.md`
+4. `docs/handoff/03_TEST7_BIOME_QUEUE.md` (planning only, do not implement yet)
+5. `docs/handoff/04_BUILD_AND_VERIFY.md`
+6. `docs/handoff/07_PASTE_INTO_EXTERNAL_AGENT.md`
+7. `TODO.md` and `docs/audits/*` reports/catalogues
+
+## Non-negotiable guardrails
+
+- Preserve Audit1 CTOV, IDAS, Cataclysm Spellbooks, biome eligibility, Farmers Structures and other completed source fixes; do not apply tuning twice.
+- Eight selected structure additions + AAA Particles are **now pinned and committed on `structure/test6`**; actual CurseForge download, loader compatibility, dependency closure and fresh-world testing remain pending.
+- WDA Overworld major frequency 0.80 is the target while End rarity and Bathhouse rarity are preserved.
+- WDA Mushroom Village must be rare and Mushroom Fields-only; **Explorify Black Spiral is user-approved to remain enabled provisionally** pending Nether compatibility testing (9 Oct supersession); no WDA Small Blimp or Coliseum. User also approved Structory: Towers v1.0.17 (CF 783522:8396885), but actual NeoForge 1.21.1 functionality remains unverified.
+- Do not add Block Factory's Biomes, FDstructure, incompatible/duplicate mineshafts or deferred Test 7 biomes.
+- Do not fake registry IDs, template pools, successful tests, or tool outputs.
+- No unmodified third-party mod JARs in git.
+- Check SHA and root `manifest.json` for the exact output CurseForge archive.
+- Distinguish implemented, statically verified, runtime verified, not tested and blocked.
+
+## Work strategy
+
+Use the existing `structure/test6` branch and commit independently reviewable changes. Edit canonical inputs, regenerate with project scripts, run static gates, package deterministic outputs, and prepare a fresh-world acceptance checklist. Do not call the work finished without honest validation status.

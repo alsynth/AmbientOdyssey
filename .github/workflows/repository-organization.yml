@@ -1,0 +1,42 @@
+name: Ambient Odyssey Repository Organization Safety
+on:
+  push:
+    branches: [maintenance/repo-organization-20261010]
+  workflow_dispatch:
+jobs:
+  organization:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Verify archive blobs, links and unchanged Q1 content
+        run: |
+          python tools/validate_repo_organization.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_questlog.py
+          python tools/validate_v04_fg.py
+          git diff --check
+      - name: Compare identical reference-only ZIP to exact pre-cleanup source
+        run: |
+          python build_release_030.py --output build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip
+          git worktree add --detach build/before-reorganization ca8c91d5090dde5e9e789ebfda474e64f2c01e3c
+          (cd build/before-reorganization && python build_release_030.py --output ../../build/Ambient-Odyssey-Pre-Organization-Reference-Only.zip)
+          cmp build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip build/Ambient-Odyssey-Pre-Organization-Reference-Only.zip
+          sha256sum build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip build/Ambient-Odyssey-Pre-Organization-Reference-Only.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip --report build/organization-reference-validation.json
+          python tools/preflight_v04.py build/Ambient-Odyssey-Repo-Organization-Reference-Only.zip --require-minecells
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-Repository-Organization-Evidence
+          path: |
+            docs/archive/ARCHIVE_MANIFEST.json
+            build/organization-reference-validation.json
+            docs/maintainers/REPO_MAP.md
+          if-no-files-found: error
