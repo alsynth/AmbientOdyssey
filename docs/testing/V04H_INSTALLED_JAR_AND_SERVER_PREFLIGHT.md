@@ -33,3 +33,11 @@ Reports intentionally omit complete local paths, raw log lines, IP addresses and
 - **Inventory GUI:** Questlog screen-anchored journal button at trial X/Y=38/38; actual clickable placement and FTB/Curios/JEI overlap must be inspected from screenshots before accepting.
 
 Do not adopt an untested world as the permanent server map; back up the known-good 330-ref and 331-ref artifacts and working player saves.
+
+## Verified launch-readiness artifact (10 Oct 2026)
+
+- Source commit: `72e71fa1e76b9e5500148fae2e7964e330d1b6a3`; GitHub Actions [run 38077302870](https://github.com/alsynth/AmbientOdyssey/actions/runs/38077302870) completed successfully.
+- Private developer ZIP: **70,847,239 bytes**, SHA-256 `94cccade0b6e0624442b673cde12dac6ff1deeef3e9c48bc182be806da97a06e`.
+- CurseForge reference-only ZIP: **70,774,689 bytes**, SHA-256 `e2686946ef6d3b76db833663280b54138570b32d5e70483d20ffa611916755d9`.
+- Exact private rebuild was byte-for-byte identical; all synthetic audit tests, source/worldgen validators, package and manifest checks passed. The outer GitHub artifact ZIP contains both imports and the preflight tools. Never import the wrapper ZIP directly.
+- The complete modded Minecraft runtime, dedicated-server joins and in-game GUI/Questlog interactions remain untested.
