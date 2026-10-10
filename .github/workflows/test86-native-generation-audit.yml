@@ -15,6 +15,42 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install nbtlib
+      - name: Attribute blank minecraft colon jigsaws across major source packs
+        run: |
+          python - <<'PY'
+          import io,json,gzip,zipfile,collections,urllib.request,nbtlib
+          mods=[
+            ('FARMERS','https://mediafilez.forgecdn.net/files/8130/121/FarmersStructures-1.0.6-1.21.1_neoforge.jar'),
+            ('INTEGRATED_STRONGHOLD','https://mediafilez.forgecdn.net/files/7802/495/integrated_stronghold-1.1.4+1.21.1-neoforge.jar'),
+            ('WDA','https://mediafilez.forgecdn.net/files/7150/870/DungeonsArise-1.21.1-2.1.68-release.jar'),
+            ('DUNGEONS_TAVERNS','https://mediafilez.forgecdn.net/files/5768/823/dungeons-and-taverns-v4.4.4%20%5BNeoForge%5D.jar'),
+          ]
+          for name,url in mods:
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'AmbientOdyssey-NBTAudit/1.0'})
+              with urllib.request.urlopen(req,timeout=90) as resp: blob=resp.read(35000000)
+              malformed=[];total=0; scanned=0
+              with zipfile.ZipFile(io.BytesIO(blob)) as z:
+                for entry in z.namelist():
+                  if not entry.endswith('.nbt') or '/structure/' not in entry:continue
+                  scanned+=1
+                  try:
+                    buf=gzip.decompress(z.read(entry))
+                    if b'pool' not in buf or b'minecraft:' not in buf:continue
+                    nbt=nbtlib.File.parse(io.BytesIO(buf))
+                    for b in nbt.get('blocks',[]):
+                      p=nbt['palette'][int(b['state'])]
+                      if str(p['Name'])=='minecraft:jigsaw':
+                        total+=1
+                        block=b.get('nbt',{})
+                        if str(block.get('pool',''))=='minecraft:':
+                          malformed.append({'path':entry,'pos':list(map(int,b['pos'])),'name':str(block.get('name','')),'target':str(block.get('target',''))})
+                  except Exception:continue
+              print('BLANK_JIGSAW_SCAN',name,'jarbytes',len(blob),'nbts',scanned,'jigsaws',total,'malformed',len(malformed),flush=True)
+              print('BLANK_JIGSAW_FILES',name,json.dumps(collections.Counter(x['path'] for x in malformed).most_common(30)),flush=True)
+              print('BLANK_JIGSAW_EXAMPLES',name,json.dumps(malformed[:16]),flush=True)
+            except Exception as e:print('BLANK_JIGSAW_FETCH_FAILED',name,type(e).__name__,str(e)[:450],flush=True)
+          PY
       - name: Extract source-backed Farmers cook aliases and all Create Easy collapsed connectors
         run: |
           python - <<'PY'
