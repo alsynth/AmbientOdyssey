@@ -1,5 +1,5 @@
 {
-  "version": "0.3.8-worldgen-prefreeze-test1.6",
+  "version": "0.3.8-worldgen-prefreeze-test1.8",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1808,5 +1808,18 @@
       "environment": "singleplayer/server",
       "publish_policy": "Private-test ZIP only; public CurseForge package requires explicit moderation/relicensing clearance for non-CF-hosted file."
     }
-  ]
+  ],
+  "terminal_jigsaw_repair": {
+    "enabled": true,
+    "source": "compile_terminal_jigsaws_087.py",
+    "expected_overrides": 273,
+    "mode": "private source-derived NBT overrides",
+    "source_jars": [
+      "adventuredungeons-neoforge-1.21-1.3.1.jar",
+      "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "irons_spellbooks-1.21.1-3.16.3.jar",
+      "create_easy_structures-0.2a-neoforge-1.21.1.jar"
+    ],
+    "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
+  }
 }

@@ -82,6 +82,19 @@ def validate(archive, lock, baseline, patches, private_modrinth=False):
         scroll = json.loads(z.read(compat + 'data/curios/tags/item/scroll.json'))
         assert scroll['replace'] is False
         assert 'enigmaticlegacyplus:darkest_scroll' in scroll['values']
+    # Check the exact resulting archive, not just prepack source JSON.
+    if lock.get('terminal_jigsaw_repair', {}).get('enabled', False):
+        import gzip
+        with zipfile.ZipFile(archive) as z:
+            expected = 'overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/'
+            owners = ('adventuredungeons', 'block_factorys_bosses', 'irons_spellbooks', 'create_easy_structures')
+            overrides = [n for n in z.namelist() if n.startswith(expected)
+                         and n[len(expected):].split('/')[0] in owners and n.endswith('.nbt')]
+            assert len(overrides) == 273, f'Wrong native terminal NBT count: {len(overrides)}'
+            for n in overrides:
+                plain = gzip.decompress(z.read(n))
+                assert b'minecraft:empty' in plain, n
+                assert b'minecraft:' in plain  # Other normal Minecraft references remain.
     return m
 
 def build(patches=False, output=None, private_modrinth=False):
@@ -135,6 +148,19 @@ def build(patches=False, output=None, private_modrinth=False):
         check_path(name)
         entries.pop(name, None)
 
+    # Test8.8: derive PRIVATE resource overrides from exact SHA256-pinned native JARs.
+    # This is not a blanket missing-pool alias: only validated terminal NBT
+    # references are repaired. Source binaries are never republished here.
+    if lock.get('terminal_jigsaw_repair', {}).get('enabled', False):
+        from compile_terminal_jigsaws_087 import fix_jigsaws
+        terminal_entries, terminal_report = fix_jigsaws()
+        assert len(terminal_entries) == lock['terminal_jigsaw_repair']['expected_overrides']
+        for name, blob in terminal_entries.items():
+            check_path(name)
+            if name in entries:
+                raise ValueError('Existing resource would be overwritten by terminal repair: '+name)
+            entries[name] = blob
+        assert sum(terminal_report.values()) == lock['terminal_jigsaw_repair']['expected_overrides']
     if private_modrinth:
         for addon in lock.get('private_modrinth_addons', []):
             assert addon['url'].startswith('https://cdn.modrinth.com/data/'), 'Unapproved external mod source'
