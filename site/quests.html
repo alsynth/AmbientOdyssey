@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ambient Odyssey Quest Atlas — browse installed questlines, objectives, prerequisites, and rewards.">
+  <meta name="theme-color" content="#0c1320">
+  <title>Ambient Odyssey — Quest Atlas</title>
+  <link rel="stylesheet" href="assets/quest-atlas.css">
+</head>
+<body>
+  <div class="site-wrap">
+    <header class="topbar">
+      <a href="index.html" class="wordmark">✧ <span>Ambient Odyssey</span></a>
+      <nav aria-label="Site navigation"><a href="index.html">Roadmap</a><a class="current" aria-current="page" href="quests.html">Quest Atlas</a></nav>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">THE EXPLORER'S JOURNAL <span class="version-tag" id="version">v0.4h · Q1</span></p>
+      <h1>Every journey starts<br><em>somewhere.</em></h1>
+      <p class="hero-copy">Browse the quests that make up Ambient Odyssey. Follow their prerequisites, read field notes, and discover a path that fits your playstyle.</p>
+      <div class="hero-facts">
+        <span><strong id="questCount">50</strong> written quests</span>
+        <span><strong id="chapterCount">13</strong> chapters</span>
+        <span><strong>0</strong> required classes</span>
+      </div>
+    </section>
+    <div class="notice" role="note"><strong>Experimental questbook.</strong> These entries are sourced from the pack's Questlog JSON. Gameplay triggers, rewards, and player synchronization still need full in-game testing. This website is a reference, not a live player-progress tracker.</div>
+    <main class="layout">
+      <aside class="chapters" aria-label="Quest chapters">
+        <div class="chapters-head"><span class="eyebrow">THE CHAPTERS</span><span id="chapterMeta" class="minor"></span></div>
+        <div id="chapters" class="chapter-list"></div>
+      </aside>
+      <section class="catalog" aria-label="Quest catalog">
+        <div class="catalog-head">
+          <div><span class="eyebrow">QUEST CATALOG</span><h2 id="heading">All chapters</h2><p id="subheading" class="minor">Explore the opening 50 entries.</p></div>
+          <span class="catalog-number" id="resultCount"></span>
+        </div>
+        <div class="controls">
+          <label class="search"><span class="sr-only">Search quest titles and descriptions</span><input id="search" type="search" placeholder="Search quests, items, objectives…" autocomplete="off"></label>
+          <select id="type" aria-label="Filter by quest objective"><option value="all">Any objective</option><option value="read">Reading</option><option value="item_obtain">Items</option><option value="visit">Exploration</option><option value="stat">Activities</option><option value="enchant">Enchanting</option></select>
+          <button id="clear" class="subtle" type="button">Clear filters</button>
+        </div>
+        <div id="questGrid" class="quest-grid" aria-live="polite"></div>
+        <p id="empty" class="empty" hidden>No quests match your filters. Try another search or objective.</p>
+      </section>
+    </main>
+    <footer><span>Ambient Odyssey · Community development project · Minecraft 1.21.1</span><span>Source of truth: Questlog config · <a href="index.html">Development Roadmap</a></span></footer>
+  </div>
+  <dialog id="questDialog" class="quest-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inner">
+      <div class="dialog-top"><span class="eyebrow" id="dialogChapter"></span><button id="closeDialog" class="close" type="button" aria-label="Close quest details">×</button></div>
+      <div class="dialog-heading"><div class="quest-symbol" aria-hidden="true">✧</div><div><h2 id="dialogTitle"></h2><span class="minor" id="dialogId"></span></div></div>
+      <p class="detail-story" id="dialogDescription"></p>
+      <div class="detail-columns"><section><h3>Objectives</h3><div id="dialogObjectives"></div></section><section><h3>Prerequisites</h3><div id="dialogPrereqs"></div><h3>Rewards</h3><div id="dialogRewards"></div></section></div>
+      <p class="detail-footnote">Website entries reflect authored quest configuration, not verified gameplay completion. In-game changes to this quest must be made through the development source.</p>
+    </div>
+  </dialog>
+  <script src="quest-data.js"></script>
+  <script src="assets/quest-atlas.js"></script>
+</body>
+</html>
