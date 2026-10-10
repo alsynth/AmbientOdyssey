@@ -1,0 +1,85 @@
+{
+  "source_commit": "e061cbe32f3d2dad5e8c5ac533f0c594d2c8a90f",
+  "branch": "experimental/v0.4-complete-20261010",
+  "source_gates": [
+    {
+      "script": "validate_content_040a.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_content_040b.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_content_040c.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_content_040d.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_content_040e.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_worldgen_test84.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_generation_repairs_086.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_worldgen_089.py",
+      "exit_code": 0
+    },
+    {
+      "script": "validate_worldgen_810.py",
+      "exit_code": 0
+    },
+    {
+      "script": "compile_terminal_jigsaws_087.py",
+      "exit_code": 0
+    }
+  ],
+  "private": {
+    "archive": "Ambient-Odyssey-v0.4-Experimental-MineCells-PRIVATE.zip",
+    "sha256": "55e99f5a9cbfbe76e1f1770f5c243f76a95db85f1e79e992cf3c2230a383f0fb",
+    "bytes": 70838861,
+    "entries": 1398,
+    "manifest_refs": 318,
+    "parsed_json": 487,
+    "parsed_repaired_nbt": 273,
+    "negative_bridge_tests": 4,
+    "private_neoreef": true,
+    "runtime_claim": false
+  },
+  "reference_only": {
+    "archive": "Ambient-Odyssey-v0.4-Experimental-MineCells-CF-References.zip",
+    "sha256": "d073d87380fab8419d03c0e9c4d9ec64fdce311f764ce5cdc8e94dc652a9a064",
+    "bytes": 70766311,
+    "entries": 1397,
+    "manifest_refs": 318,
+    "parsed_json": 487,
+    "parsed_repaired_nbt": 273,
+    "negative_bridge_tests": 4,
+    "private_neoreef": false,
+    "runtime_claim": false
+  },
+  "clean_source_rebuild_byte_identical": true,
+  "json5_mod_configs_parsed": 800,
+  "python_compileall": "PASS",
+  "git_diff_check": "PASS",
+  "actual_minecraft_runtime": {
+    "scope": "Minimal Mine Cells dedicated server (4 top-level mods)",
+    "fresh_world": true,
+    "five_dimensions_forceloaded": true,
+    "save_clean_shutdown": true,
+    "restart_clean_shutdown": true,
+    "players_connected": 0,
+    "full_AO_runtime_tested": false
+  },
+  "audit_gaps": "23 selected native binary records unavailable or strict Python TOML parse fails; see dependency-audit.json",
+  "historical_baseline_validator": "FAILED before edits on post-Test5 changed config; current scoped validators all PASS"
+}

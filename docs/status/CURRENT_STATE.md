@@ -1,3 +1,5 @@
+> **Final local verification:** 10 current source/native gate scripts passed; both v0.4 exports validated, 800 JSON/JSON5 configs parsed, all Python compiled, no whitespace errors. Complete PRIVATE ZIP **70,838,861 bytes**, SHA256 **55e99f5a9cbfbe76e1f1770f5c243f76a95db85f1e79e992cf3c2230a383f0fb**, byte-identical clean-source rebuild. 318 refs / 1,398 members / 487 strict Minecraft JSON resources / 273 repaired NBTs / 4 fail-closed bridge regressions. Full AO runtime remains NOT TESTED. Final evidence: `docs/testing/v04-evidence/release-validation.json`.
+
 ## v0.4 experimental Mine Cells candidate — 10 October 2026
 
 **Current candidate:** `experimental/v0.4-complete-20261010`, source lock `0.4.0-experimental-minecells`, **318 CF references**. Supersedes older contradictory current-status paragraphs below; those are retained as historical evidence. User explicitly authorized continuing broad expansion and fixes before worldgen freeze. `structure/test6`, the existing content branches and `main` remain untouched.
