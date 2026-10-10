@@ -88,3 +88,62 @@ E. **Optional categories:** bosses defeated, rare creatures observed, discoverie
 - **User proposed exploration titles + background discovery checklist; concept supported.** Exact mods/datapack/UI **not selected or approved**. Research and test in separate QoL wave. Preserve worldgen freeze priority.
 - **Engineering recommendation:** start with **Traveler's Titles + native FTB Quests prototype**, then assess **First Steps** exact compatible JAR and **Explorer's Journals** as a comparator. Only build full bespoke journal if required after functional test.
 
+
+---
+
+## Approved concept inventory — user confirmation, 10 October 2026
+
+**Decision:** User approved *every feature from the prior exploration conversation* for the upcoming expansion backlog. These are approved **design goals**, not approved exact mods, untested datapacks, or release changes. Do not modify the working Test8.2/Test8.3 pack yet.
+
+| Prior feature | Status | Notes |
+|---|---|---|
+| Entering biome and dimension titles | Approved concept | Modded names, subtle repeat transitions, dramatic first dimension |
+| Named major structure and dungeon titles | Approved concept | First-discovery hero titles, avoid border spam |
+| Silent persistent per-player discovery tracking | Approved concept | Biomes, structures and dimensions, across reloads |
+| Searchable explorer journal and checklists | Approved concept | Discovered/unknown filters, progress breakdown by dimension/category |
+| Biome, structure, dungeon and dimension percentages | Approved concept | Eligible reachable denominator; optional legendary milestones separate |
+| Structure found versus dungeon cleared | Approved concept | Avoid equating dungeon discovery with boss defeat |
+| Explorer ranks and cosmetic rewards | Approved concept | Cartographer/Pathfinder/Wayfinder etc, not power-gating |
+| Expedition diary, first visits, recaps | Approved concept | History of noteworthy discoveries; local/private player data |
+| Bookmarks and known-location waypoints | Approved concept | Only previously visited, avoid duplicating Xaero map |
+| Rare discoveries, lore and secret entries | Approved concept | Hidden labels until found, optional specials outside mandatory 100% |
+| Player and party history, first-on-server honors | Approved concept | Separate solo completion; optional global notifications |
+| Grouped biome/dimension/family explorer goals | Approved concept | Practical collections, no impossible completion |
+| Environmental screenshot album | Approved concept | Opt-in photo journal, no automated uploads |
+| Expedition preparation and safe return reminders | Approved concept | Gear/hazard hints, Waystones, portals and death-route notes |
+| Public wiki/Atlas integration | Approved concept | Per-location wiki, boss tier, gear readiness; export opt-in |
+| Optional creatures/resources discovery index | Approved concept | Check usefulness and data accuracy against Explorer's Journals |
+| Accessible title/sound and notification settings | Approved concept | Toggle, cooldown, scaling, screen overlap, sounds |
+
+**Tracking implementations still undecided:** Native FTB Quests Visit Biome / Find Structure proof of concept, Traveler's Titles, structure titles via compatible First Steps if possible, new Explorer's Journals mod, silent advancement datapack or custom mod if necessary. These must pass a two-player persistence/runtime test and not delay worldgen freeze.
+
+## Next round of exploration ideas — brainstorm candidates, not user-approved installs
+
+| Idea | Estimated effort | Why it might be excellent | Important design or balance constraint |
+|---|---|---|---|
+| **Explorer's Guild and expedition contracts** | Medium–high | Optional guild board with hints to discover climate zones, ruins, oceans, towers; cosmetic ranks and quest chains | No mandatory grind, quests should not reveal precise coords |
+| **Rumors, treasure maps and clue chains** | Medium–high | Books, rumors, cartographers or shipwreck clues guide expeditions to particular region/structure families | Actual reachable structures and clue pool verified against frozen AO generation |
+| **Natural wonders / scenic viewpoints** | High | Not every memorable place is a generated structure: enormous mountains, caverns, ocean cliffs and breathtaking views | Terrain features often lack a structure ID; start curated or manually documented, do not pretend fully automatic |
+| **Discovered → Conquered → Mastered** | Medium–high | Separate discovery, main encounter completion, and optional secrets for major dungeons | Use boss/quest evidence, not structure-entry alone; don't force mastery |
+| **Regional collections and explorer badges** | Medium | Oceanographer, Alpine Surveyor, Cavern Cartographer; discover themed landmark groups | Check 100% feasibility; no artificial per-biome grind |
+| **Field guide / ecology encyclopedia** | Medium | Reveal mob habitats, hazards, unique resources and biome lore only after seeing them | Version-accurate facts and discover-only spoilers |
+| **Boss danger reconnaissance** | Medium | Once you find a major location, see AO boss tier and broad gear-preparation hints linked to Gear Atlas | Tier is a balancing target, not proof of guaranteed victory; optional spoilers |
+| **Group expedition planner** | Medium | Party rendezvous, shared objective list, supplies, and optional one-click route export | Coordinate sharing opt-in; independent discovery progress |
+| **Explorer trophy cabinet / museum** | Medium–high | Cosmetic trophies and framed souvenirs from exceptional discoveries, a common hall for 5–7 players | Prefer visual/story rewards over stat power or excessive extra items |
+| **Lost-expedition notes / linked lore puzzles** | High | Shipwreck notes and ruin inscriptions hint at bigger mysteries spanning dimensions and regions | Curated actual locations and readable story; avoid nonexistent worlds/links |
+| **Conditional Explorer's Compass** | Low–medium | Official 1.21.1 NeoForge structure locator could be a late-game clue/search tool | AO already pins Nature's Compass 252848:7892954 but NOT Explorer's Compass. Official compatible Explorer's Compass 491794:7892943 supports cost/durability and blacklists. Limit boss/rare targets or skip to preserve discovery; https://www.curseforge.com/minecraft/mc-mods/explorers-compass/files/7892943 |
+| **Optional personal atlas export** | Medium–high | Portable player checklist for manual import into our website with per-item pages and guides | No automatic upload of UUID, coordinates, seed or other private data |
+| **World-first memorial hall** | Medium | Low-noise opt-in plaques and first discoverer record, shared server legends | Do not spam global chat or steal personal achievement independence |
+| **Location-tiered return markers** | Medium | Discovered-only journal to Xaero waypoint action, icons by rarity / category | Don't install redundant maps, don't reveal unseen coordinates |
+| **Expedition condition report** | Low–medium | Optional party gear, known biome hazards, travel supplies and portal/waystone checklist before trips | Simple manual checklist before any unreliable auto-analysis |
+
+### Suggested sequencing
+1. **Discovery baseline:** titles, silent personal tracking, checklists, accessible toasts, bookmarks and ranks.
+2. **Meaningful expeditions:** guild board, rumors, tier reconnaissance, journal diary and grouped collections.
+3. **Long-term bespoke systems:** scenic wonders, multi-location lore, full conquer/master detection, player data export and trophy museum.
+
+### Already-installed versus candidate location tools
+- Nature's Compass: already pinned in the current source release lock, file 252848:7892954 (1.21.1 NeoForge), can find biomes but is not a discovery journal.
+- Explorer's Compass: NOT pinned; 1.21.1 NeoForge file 491794:7892943 exists, can locate modded structures. Use only after deciding if searching for undiscovered major dungeons would undermine AO's intended exploration.
+
+**Status:** previous exploration suggestions approved as backlog concepts by user. Newly brainstormed enhancements are research candidates only. No modpack JARs, releases, configs or tests modified in this documentation change.
