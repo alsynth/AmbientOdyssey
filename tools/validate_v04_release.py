@@ -101,14 +101,15 @@ def verify(archive, private=False):
         # Separate three-chapter no-reward FTB Field Manual (14 + 8 + 7).
         from tools.validate_v04_ftb_manual import run as validate_manual
         assert validate_manual()==29
+        from tools.validate_v04_ftb_manual import parse_ftb_text
         manual_chapters=['ao_field_manual','ao_tips_tricks','ao_keybinds']
         for slug in manual_chapters:
             path='overrides/config/ftbquests/quests/chapters/'+slug+'.snbt'
             assert path in names
-            nbtlib.parse_nbt(z.read(path).decode('utf-8'))
+            parse_ftb_text(z.read(path).decode('utf-8'))
         loc='overrides/config/ftbquests/quests/lang/en_us.snbt'
         assert loc in names
-        nbtlib.parse_nbt(z.read(loc).decode('utf-8'))
+        parse_ftb_text(z.read(loc).decode('utf-8'))
         assert 'overrides/config/ftbquests/quests/chapters/when_dungeons_arise.snbt' in names
         options = z.read('overrides/config/defaultoptions/options.txt').decode().splitlines()
         assert 'renderDistance:12' in options and 'simulationDistance:6' in options

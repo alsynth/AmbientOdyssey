@@ -18,9 +18,24 @@ INDEX=ROOT/"docs/questing/FTB_MANUAL_Q1_INDEX.json"
 EXPECTED={"ao_field_manual":14,"ao_tips_tricks":8,"ao_keybinds":7}
 HEX=re.compile(r"^[A-F0-9]{16}$")
 
+def parse_ftb_text(s):
+    """Strictly parse the JSON-like FTB SNBT after adding omitted row separators.
+
+    FTB's own SNBT dialect permits newline-separated compound keys and list
+    entries without commas. nbtlib is stricter. Only normalize delimiters in
+    memory for validation; never rewrite the game's original SNBT files.
+    """
+    lines=s.splitlines()
+    significant=[i for i,line in enumerate(lines) if line.strip() and not line.lstrip().startswith("//")]
+    for pos, idx in enumerate(significant[:-1]):
+        now=lines[idx].strip()
+        nxt=lines[significant[pos+1]].strip()
+        if not now.endswith(("{","[",":",",")) and not nxt.startswith(("}","]")):
+            lines[idx] += ","
+    return nbtlib.parse_nbt("\n".join(lines))
+
 def parse(path):
-    # NBT-lib uses exactly the same SNBT notation as FTB's current 1.21.1 export.
-    return nbtlib.parse_nbt(Path(path).read_text(encoding="utf-8-sig"))
+    return parse_ftb_text(Path(path).read_text(encoding="utf-8-sig"))
 
 def run():
     data=json.loads(INDEX.read_text(encoding="utf-8"))
