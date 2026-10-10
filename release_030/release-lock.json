@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-experimental-minecells",
+  "version": "0.4.0-experimental-minecells-fg",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1329,7 +1329,7 @@
     "content-040b-rp-torches-reimagined": {
       "projectId": 531730,
       "id": 8048795,
-      "fileName": "\u00a7eTorches\u00a78-\u00a7eReimagined\u00a70_\u00a78[v1.8]\u00a70.zip",
+      "fileName": "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip",
       "displayName": "Torches Reimagined 1.8",
       "gameVersions": [
         "1.21.1"
@@ -1343,7 +1343,7 @@
     "content-040b-rp-extended-illumina": {
       "projectId": 380413,
       "id": 6021451,
-      "fileName": "\u00a7eExtended_Illumina_1.21x.zip",
+      "fileName": "§eExtended_Illumina_1.21x.zip",
       "displayName": "Extended Illumina 1.21.x",
       "gameVersions": [
         "1.21.1"
@@ -1786,6 +1786,174 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/jamlib/files/5988164",
       "sha256": "835d80b124919bf99e012244bc7438f9b16d8b5a078645eb2f85f4cae07d72e3",
       "fileLength": 169809
+    },
+    "content-040f-armor-trim-item-fix": {
+      "projectId": 895603,
+      "id": 5924310,
+      "fileName": "ArmorTrimItemFix-neoforge-1.21.1-1.2.0.jar",
+      "displayName": "Armor Trim Item Fix",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/armor-trim-item-fix/files/5924310",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "client cosmetic, explicitly requested"
+    },
+    "content-040f-shulker-box-tooltip": {
+      "projectId": 315811,
+      "id": 6530833,
+      "fileName": "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+      "displayName": "Shulker Box Tooltip",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files/6530833",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "storage previews; check Better Inventory overlap"
+    },
+    "content-040f-crafting-tweaks": {
+      "projectId": 233071,
+      "id": 8697050,
+      "fileName": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "displayName": "Crafting Tweaks",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks/files/8697050",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "rotate/clear/balance crafting grid; keybind conflicts later"
+    },
+    "content-040f-chat-heads": {
+      "projectId": 407206,
+      "id": 7057837,
+      "fileName": "chat_heads-0.14.0-neoforge-1.21.jar",
+      "displayName": "Chat Heads",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/chat-heads/files/7057837",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "client chat identity"
+    },
+    "content-040f-sound-physics": {
+      "projectId": 535489,
+      "id": 7032247,
+      "fileName": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "displayName": "Sound Physics Remastered",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered/files/7032247",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "reverb and occlusion; verify Atmosfera/Waves overlap"
+    },
+    "content-040f-polymorph": {
+      "projectId": 388800,
+      "id": 6794589,
+      "fileName": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "displayName": "Polymorph",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/polymorph/files/6794589",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "recipe collision selector; ensure UI works with JEI"
+    },
+    "content-040f-brewin-and-chewin": {
+      "projectId": 637808,
+      "id": 8309583,
+      "fileName": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+      "displayName": "Brewin' And Chewin'",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin/files/8309583",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "Farmer's Delight fermentation and serving gameplay"
+    },
+    "content-040g-dimensional-dungeons": {
+      "projectId": 352222,
+      "id": 8828150,
+      "fileName": "dimdungeons-210-neoforge-1.21.1.jar",
+      "displayName": "Dimensional Dungeons 210",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/dimensional-dungeons/files/8828150",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Repeatable instanced-feeling puzzle/combat dungeon dimension"
+    },
+    "content-040g-ancient-remnants": {
+      "projectId": 1668579,
+      "id": 9084406,
+      "fileName": "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "displayName": "Ancient Remnants: Monoliths 1.5.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ancient-remnants/files/9084406",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Rare monoliths, blessings, codex investigation and exploration rewards"
+    },
+    "content-040g-tarotcards-remastered": {
+      "projectId": 1473837,
+      "id": 8450385,
+      "fileName": "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "displayName": "TarotCards: Remastered 2.3.5",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/tarotcards-remastered/files/8450385",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "22 collectible Major Arcana cards found in structure loot"
+    },
+    "content-040g-aquaculture-delight": {
+      "projectId": 961988,
+      "id": 6179576,
+      "fileName": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "displayName": "Aquaculture Delight 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aquaculture-delight/files/6179576",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Aquaculture 2 fish recipe integration with Farmer's Delight kitchens"
+    },
+    "content-040g-end-remastered-additions": {
+      "projectId": 1365790,
+      "id": 9111385,
+      "fileName": "endrem_additions-neoforge-1.2.0.jar",
+      "displayName": "End Remastered Additions 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/end-remastered-additions/files/9111385",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Additional End Remastered eyes tied to fishing, trial chambers, sculk, Aether and BOMD"
     }
   },
   "optional_integrated_patches": {
@@ -2532,7 +2700,7 @@
     "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
   },
   "experimental_minecells": {
-    "expected_manifest_refs": 318,
+    "expected_manifest_refs": 330,
     "owo_inherited_pin": {
       "projectId": 532610,
       "id": 6785734
