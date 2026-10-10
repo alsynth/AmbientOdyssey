@@ -6,25 +6,25 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.57
+      "proportion": 0.576517150396
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "regions_unexplored:grassland",
-      "proportion": 0.773255813953
+      "proportion": 0.877308707124
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "regions_unexplored:flower_fields",
-      "proportion": 0.331395348837
+      "proportion": 0.626649076517
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:plains",
       "biome": "biomeswevegone:skyris_vale",
-      "proportion": 0.220930232558
+      "proportion": 0.250659630607
     },
     {
       "dimension": "minecraft:overworld",
@@ -156,139 +156,163 @@
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomeswevegone:prairie",
-      "proportion": 0.52
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:savanna",
-      "biome": "regions_unexplored:grassland",
-      "proportion": 0.124219725343
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:savanna",
-      "biome": "natures_spirit:floral_ridges",
-      "proportion": 0.124219725343
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:savanna_plateau",
-      "biome": "biomeswevegone:prairie",
-      "proportion": 0.56
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:savanna_plateau",
-      "biome": "regions_unexplored:grassland",
-      "proportion": 0.124219725343
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:savanna_plateau",
-      "biome": "natures_spirit:floral_ridges",
-      "proportion": 0.124219725343
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:windswept_savanna",
-      "biome": "biomeswevegone:prairie",
-      "proportion": 0.55
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:windswept_savanna",
-      "biome": "regions_unexplored:grassland",
-      "proportion": 0.132445923461
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:windswept_savanna",
-      "biome": "natures_spirit:floral_ridges",
-      "proportion": 0.198668885191
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:jungle",
-      "biome": "biomeswevegone:crag_gardens",
-      "proportion": 0.99094612947
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:jungle",
-      "biome": "biomeswevegone:ebony_woods",
-      "proportion": 0.54051607062
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:jungle",
-      "biome": "biomeswevegone:redwood_thicket",
-      "proportion": 0.27025803531
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:sparse_jungle",
-      "biome": "biomeswevegone:crag_gardens",
-      "proportion": 0.99094612947
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:sparse_jungle",
-      "biome": "biomeswevegone:ebony_woods",
-      "proportion": 0.54051607062
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:sparse_jungle",
-      "biome": "biomeswevegone:redwood_thicket",
-      "proportion": 0.27025803531
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:bamboo_jungle",
-      "biome": "biomeswevegone:crag_gardens",
-      "proportion": 0.99094612947
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:bamboo_jungle",
-      "biome": "biomeswevegone:ebony_woods",
-      "proportion": 0.54051607062
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:bamboo_jungle",
-      "biome": "biomeswevegone:redwood_thicket",
-      "proportion": 0.27025803531
+      "proportion": 0.98352553542
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomeswevegone:baobab_savanna",
-      "proportion": 0.33
-    },
-    {
-      "dimension": "minecraft:overworld",
-      "target": "minecraft:savanna_plateau",
-      "biome": "biomeswevegone:baobab_savanna",
-      "proportion": 0.34
+      "proportion": 0.81960461285
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna",
       "biome": "biomesoplenty:dryland",
-      "proportion": 0.29
+      "proportion": 0.65568369028
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.49176276771
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna",
+      "biome": "natures_spirit:floral_ridges",
+      "proportion": 0.32784184514
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "biomeswevegone:prairie",
+      "proportion": 0.98352553542
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "biomeswevegone:baobab_savanna",
+      "proportion": 0.81960461285
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:savanna_plateau",
       "biome": "biomesoplenty:dryland",
-      "proportion": 0.25
+      "proportion": 0.65568369028
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.49176276771
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:savanna_plateau",
+      "biome": "natures_spirit:floral_ridges",
+      "proportion": 0.32784184514
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "biomeswevegone:prairie",
+      "proportion": 0.619674451522
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "biomeswevegone:baobab_savanna",
+      "proportion": 0.98584571833
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "biomesoplenty:dryland",
+      "proportion": 0.281670205237
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "regions_unexplored:grassland",
+      "proportion": 0.422505307856
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:windswept_savanna",
+      "biome": "natures_spirit:floral_ridges",
+      "proportion": 0.507006369427
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:crag_gardens",
+      "proportion": 0.98584571833
     },
     {
       "dimension": "minecraft:overworld",
       "target": "minecraft:jungle",
       "biome": "biomeswevegone:tropical_rainforest",
-      "proportion": 0.4
+      "proportion": 0.845010615711
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.563340410474
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:jungle",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.422505307856
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:crag_gardens",
+      "proportion": 0.98584571833
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:tropical_rainforest",
+      "proportion": 0.845010615711
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.563340410474
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:sparse_jungle",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.422505307856
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:crag_gardens",
+      "proportion": 0.98584571833
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:tropical_rainforest",
+      "proportion": 0.845010615711
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:ebony_woods",
+      "proportion": 0.563340410474
+    },
+    {
+      "dimension": "minecraft:overworld",
+      "target": "minecraft:bamboo_jungle",
+      "biome": "biomeswevegone:redwood_thicket",
+      "proportion": 0.422505307856
     }
   ],
   "sub_biomes": [
