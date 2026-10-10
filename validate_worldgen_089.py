@@ -67,6 +67,14 @@ def run():
         require('source main building requests exact missing root pool with bottom connector',any(n=='minecraft:bottom' and p==name and t=='minecraft:bottom' for n,p,t in starts))
         require('lighthouse pool does not replace any original native pool',not any(x.endswith('/villager_lighthouse_master.json') for x in z.namelist()))
         print('Native lighthouse master structure size:',list(map(int,d.get('size',[]))),'entity count:',len(d.get('entities',[])))
+    # Traveloptics' legacy '#forge:tools' reference is required on NeoForge;
+    # bridge it to existing tool family tags without introducing required missing tags.
+    bridge=load(ROOT/'release_030/overrides/config/paxi/datapacks/ao_compatibility/data/forge/tags/item/tools.json')
+    require('Forge tools bridge is non-replacing and fully optional',bridge['replace'] is False and len(bridge['values'])>=4 and all(x.get('required') is False and x['id'].startswith('#') for x in bridge['values']))
+    import gzip as _gz
+    index=json.loads(_gz.decompress((ROOT/'release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+    assert '#forge:tools' in str(index['resources']['tags/item']['traveloptics:can_cast_reversal'][0]['data'])
+    require('Bridge repairs real native Traveloptics required tag', 'forge:tools' not in index['resources']['tags/item'] and '#c:tools' in [x['id'] for x in bridge['values']])
     print(f'PASS {passed}: independent 1.21.1 pinned-JAR Test8.9 worldgen source assertions')
     print('NOT TESTED: random generation, gameplay, server, detailed geometry.')
 if __name__=='__main__': run()
