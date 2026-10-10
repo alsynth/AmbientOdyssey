@@ -46,7 +46,8 @@ This master supersedes older install preferences. The 6 October 166-candidate re
 - [x] Record exact scoped static validator `validate_worldgen_test84.py` and Test8.4 acceptance handoff.
 - [ ] BUILD: run Python build + validators in a complete checked-out repo, test all regenerated files and exact CurseForge import. This session cannot clone the full repo/build large assets from GitHub due sandbox network restrictions; no full-import ZIP generated.
 - [ ] TEST: two new seeds, actual Y distribution and mountain structure placement, Prairie alternatives, spectator-checked dragon caves beyond 1,000 blocks, actual Ancient Keep after pack priority. **No worldgen freeze yet.**
-- [ ] INVESTIGATE: identify native asset ownership/assembly for empty `minecraft:` jigsaws, `create_easy_structures:undergroundtrain_station`, cook pools, Repurposed city required top, and Dungeon Crawl spawners. Do not invent aliases.
+- [x] SOURCE-REPAIRED Test8.8: exact native source identified for malformed `minecraft:` jigsaw terminals (273 scoped NBTS; four pinned mods), Create Easy missing underground station source branch (safe terminator in Test8.6), Farmers cook/angler pool typos (source-backed native alias), and Archaion start. CI generated two bit-identical, CRC-valid private ZIPs. **Runtime zero-warning outcome unmeasured.**
+- [ ] STILL OPEN: Repurposed city required `fat_tower_top` occurrence, Dungeon Crawl spawner block-entity warnings, any physical mismatch of repaired structures and remaining End/ocean/Nether acceptance. No blanket guesses; user requested no extra game test for this source audit.
 - [ ] TEST: medium/large YUNG bridges under FTF/Streams banks; deep-water/ocean/coastal structures; Nether/End, dedicated-server worldgen. Keep surface/general structure densities unchanged.
 - [ ] DEFER: performance/FPS optimizations until worldgen criteria are accepted; continue collecting logs but don't change renderer/worldgen in same A/B wave.
 
@@ -454,8 +455,8 @@ Current recorded inventory: 1,216 native structure IDs, 666 native sets, 4,294 p
 - [ ] IDAS Dread Citadel `dread_citadel5`.
 - [ ] IDAS Dread Citadel `dread_citadel12`.
 - [ ] IDAS Ancient Mines `ancient_mines_entrance2`.
-- [ ] Blank `minecraft:` jigsaw pool references.
-- [ ] Cook-related jigsaw/pool references.
+- [x] **Test8.8 source fix:** 273 verified malformed terminal connectors in Adventure Dungeons (264), Iron's Spells (6), Create Easy (2) and Block Factory's Bosses (1), normalized to `minecraft:empty` with all other NBT semantics preserved. Await any naturally occurring runtime evidence; no forced new test.
+- [x] **Test8.6/Test8.8 source fix:** five Farmer's cook-house aliases preserving all 71 original pieces plus the mistyped `minecraft:angler_additions_3_pool` exact native nine-piece alias; earlier cook missing-pool warnings absent in Test8.6 actual runtime.
 - [ ] Graveyard crypt pool warnings.
 - [ ] Malkuth arena start-jigsaw issue.
 - [ ] Missing Guard Villagers entity references where applicable.
