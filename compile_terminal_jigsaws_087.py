@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Produce exact-JAR, minimally patched 1.21.1 terminal jigsaw NBT overrides.
 
-Only changes intentionally dangling outgoing connector fields `pool` and
-`target` from `minecraft:` to `minecraft:empty`. Keeps all structure
+Normalizes invalid outgoing `pool=minecraft:` to `minecraft:empty` on
+source-proven endpoints; only normalizes `target` when also invalid.
+Keeps all structure
 geometry, processors, connector names and remaining block/entity tags.
 Source JARs are SHA256-locked to Test8.6's actual installed-binary audit.
 Generated NBT overrides are private-pack material, not checked-in mod assets.
@@ -44,6 +45,14 @@ EXPECTED = (
         "sha256": "13d644474ddba4f8478b4ce68294687fd509c994b3f344a224142b102dbe6f73",
         "count": 6,
         "namespace": "irons_spellbooks"
+    },
+    {
+        "filename": "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+        "fileid": 6344382,
+        "sha256": "8d5949114e9dd506c4a8598f789e63678fdf6b2b90f40a8e6ef2babc6f56029f",
+        "count": 2,
+        "namespace": "create_easy_structures",
+        "nonempty_targets": ("create_easy_structures:schiene", "create_easy_structures:weg")
     }
 )
 CACHE = ROOT / "build" / "cache" / "native-jigsaw-087"
@@ -69,7 +78,7 @@ def native_jar(entry):
     return content
 
 def fix_jigsaws(entries=None):
-    """Return exactly 271 pack override path -> GZIP NBT bytes and count report."""
+    """Return exactly 273 pack override path -> GZIP NBT bytes and count report."""
     outputs={}
     counts={}
     for entry in (entries or EXPECTED):
@@ -104,14 +113,17 @@ def fix_jigsaws(entries=None):
                         continue
                     # Every scanned bad connector is an intentional *terminal*
                     # in the original: both outgoing pool and target are empty.
-                    if str(tile.get("target",""))!="minecraft:":
-                        raise ValueError("Nonterminal invalid jigsaw unexpectedly found: "+filename)
+                    target=str(tile.get("target",""))
+                    accepted=("minecraft:",)+tuple(entry.get("nonempty_targets",()))
+                    if target not in accepted:
+                        raise ValueError("Unexpected target on malformed outgoing pool: "+filename+" target="+target)
                     name=str(tile.get("name",""))
                     if name in ("","minecraft:"):
                         raise ValueError("Connector has invalid attach name: "+filename)
                     tile["pool"]=nbtlib.String("minecraft:empty")
-                    tile["target"]=nbtlib.String("minecraft:empty")
-                    changed.append(tuple(int(v) for v in block["pos"]))
+                    if target=="minecraft:":
+                        tile["target"]=nbtlib.String("minecraft:empty")
+                    changed.append((tuple(int(v) for v in block["pos"]),target))
                     fixed+=1
                 if not changed:
                     continue
@@ -120,10 +132,13 @@ def fix_jigsaws(entries=None):
                 original_document["blocks"]=copy.deepcopy(document["blocks"])
                 for block in original_document["blocks"]:
                     state=palette[int(block["state"])]
-                    if str(state["Name"])=="minecraft:jigsaw" and tuple(int(v) for v in block["pos"]) in changed:
-                        tile=block["nbt"]
-                        tile["pool"]=nbtlib.String("minecraft:")
-                        tile["target"]=nbtlib.String("minecraft:")
+                    if str(state["Name"])=="minecraft:jigsaw":
+                        position=tuple(int(v) for v in block["pos"])
+                        previous_target=dict(changed).get(position)
+                        if previous_target is not None:
+                            tile=block["nbt"]
+                            tile["pool"]=nbtlib.String("minecraft:")
+                            tile["target"]=nbtlib.String(previous_target)
                 assert original_document==nbtlib.File.parse(io.BytesIO(original)), "Unexpected original decode corruption"
                 with io.BytesIO() as stream:
                     document.write(stream)
@@ -137,7 +152,7 @@ def fix_jigsaws(entries=None):
         counts[entry["filename"]]=fixed
         if fixed!=entry["count"]:
             raise AssertionError(f"Native malformed connector count for {entry['filename']}: expected {entry['count']}, found {fixed}")
-    assert len(outputs)==271, "Unexpected number of packed NBT overrides"
+    assert len(outputs)==273, "Unexpected number of packed NBT overrides"
     print("Verified exact native malformed terminal-pool NBT overrides:",counts)
     return outputs,counts
 
