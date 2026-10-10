@@ -87,7 +87,7 @@ def validate(archive, lock, baseline, patches, private_modrinth=False):
         import gzip
         with zipfile.ZipFile(archive) as z:
             expected = 'overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/'
-            owners = ('adventuredungeons', 'block_factorys_bosses', 'irons_spellbooks')
+            owners = ('adventuredungeons', 'block_factorys_bosses', 'irons_spellbooks', 'create_easy_structures')
             overrides = [n for n in z.namelist() if n.startswith(expected)
                          and n[len(expected):].split('/')[0] in owners and n.endswith('.nbt')]
             assert len(overrides) == 273, f'Wrong native terminal NBT count: {len(overrides)}'
