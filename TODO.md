@@ -1,3 +1,39 @@
+## 10 October 0.4g — best-value content selected / future list archived
+- [x] Independently selected 5 differentiated 1.21.1 NeoForge content mods: **Dimensional Dungeons, Ancient Remnants Monoliths, TarotCards Remastered, Aquaculture Delight, End Remastered Additions**.
+- [x] Reused Fzzy Config, Fragmentum and Aquaculture 2 inherited from baseline (no duplicate libs). **314 CF reference target**, not a count of actual executable mod JARs.
+- [x] Stored remaining 166-registry candidates (excluding selected items) in [future decision register](docs/audits/CONTENT_FUTURE_DECISIONS_040G.md) for later inspection when requested; do not nag about the list unprompted.
+- [ ] Verify CI succeeds, client launch and NeoForge dedicated server portals/loot/skills; source alone is insufficient.
+- [ ] Tune Tarot Curios deck/effects after other content; ensure rare monuments' actual placements and biome eligibility before worldgen freeze. Keep 0.4g user playtest as one substantive batch.
+
+## 10 Oct 0.4f early mod-list recovery + optimization
+- [x] Reconcile the earliest mod lists and **166 original research candidates**, conservatively (not all were promised installations).
+- [x] Stage Armor Trim Item Fix 895603:5924310 plus six other newly pinned historical candidates; Clumps was already in baseline. Expected 309 manifest CF references.
+- [x] Plan shader, video, gameplay-mod and server config optimization, not merely mod toggles.
+- [ ] Verify importer CI, client/dedicated-server compatibility, GUI/audio overlays, and launch before calling playable.
+- [ ] Reconcile inherited baseline JARs to resolve unknowns in earliest candidate matrix; preserve settled exclusions.
+- [ ] Content gaps: discovery, one coherent skills tree, ocean features, animal ecology; fixes/perf/balance thereafter, quests last.
+
+## 0.4e expanded audited candidate wave
+- [x] Pin 6 exact 1.21.1 NeoForge versions from original user's QoL/visual and discovery audits, retain Mutant Monsters rare 0.01 natural-spawn config.
+- [ ] Verify 302-reference deterministic CI package, missing dependencies and actual startup/shader compatibility. If 0.4e fails, do not call complete.
+- [ ] Audit original modpack candidate lists against downloaded reference modpack manifests for real version/loader constraints; any truly compatible strong additions belong in later large content wave, not ad hoc experimental renderer swaps.
+- [ ] Evaluate cave particles + Subtle Effects duplication; compare with Particular/Better Smoke/AAA and existing sound system in one substantial user test.
+
+## 10 October — consolidate prior mod/resource-pack lists + rare mutants
+- [x] Recover the 19-item user visual/fauna/resources nomination list and two large QoL/rendering candidate lists; cross-link nine theme, structures, discovery, and wildlife audits in [master intake](docs/audits/CONTENT_EXPANSION_MASTER_INTAKE_2026-10-10.md). Favor these earlier requests over new random proposed mod batches.
+- [x] User specifically accepts Mutant Monsters **as rare elite encounters**. Native 1.21.1 source fields, config path and value verified: four `mutant_*_spawn_weight = 0.01`, vs 0.05 default, with explicit min-weight 1 rounding caveat.
+- [ ] Verify 0.4d source/ZIP and full multiplayer rarity in a later substantial playtest. No fixed per-hour spawn guarantee, especially for Endermen due integer weight floor.
+- [ ] Independently review the remaining six staged 0.4d mods against the recovered master user audit BEFORE treating them as final approvals.
+
+## 10 October — New binding release order (content-first; about five days to planned server launch)
+- [x] Record user-directed phases: **content expansion → content bug/UX fixes (including Controlling keybind overhaul) → worldgen/performance/optimization → balance → archaeology + FTB Quests + Questlog LAST → optional MCA Reborn/bridges**.
+- [ ] Candidate 0.4d: validate and build **seven native NeoForge 1.21.1 content/compat additions plus source-verified Athena library**: Mutant Monsters, Illager Invasion, Chipped, Handcrafted, Dusty Decorations, Night Lights and Apothic Combat; explicitly confirm Puzzles Lib/Resourceful Lib/Athena/GeckoLib dependencies. Do not call a new mod playable from metadata/CI alone.
+- [ ] Keep adding substantive nonredundant content until roster is satisfactory; do not micro-test every 1–2 additions. Stop for fatal startup/data-loss/loader conflicts only.
+- [ ] Carry nonblocking audio, canopy ambience, duplicate wildlife, POI, server tick stalls, gamerule side effects and keybind conflicts in later compatibility/performance backlogs rather than altering accepted terrain immediately.
+- [ ] Only after all content and quests phases are done: evaluate optional MCA Reborn and more bridges; leave MineColonies, Galosphere, Big Globe parked.
+- [ ] Before any public server launch: full effective manifest/dependencies, real Minecraft start/save/reload, new-world and dedicated-server verification, final seed/worldgen lock, backups and bounded pregeneration. 15 October is a *target*, not automatic signoff.
+  See [content-first decision and exact candidate register](docs/audits/CONTENT_FIRST_EXPANSION_040D_2026-10-10.md).
+
 # AMBIENT ODYSSEY
 > **RUNTIME GATE PASSED, 10 Oct: Test8.2** loaded the client, entered a new integrated world and shut down/saved with no fatal Minecraft crash. The previous My Picture Frame/TwelveMonkeys module collision is no longer present. **Not all content validated:** 2952 FTF chunks, **7.14 generated chunks/sec**, five integrated server stalls (up to 18.932 s); invalid Flight Rings smelt recipe definitions, invalid Additional Structures `minecraft:pale_garden` biome tag, 25 shared structure salts (not all actual collisions), old `byg:` item errors. **Test8.3 source + optional private ZIP** stage two Flight Ring salvage recipe codec fixes and split a *confirmed Create Arise/Easy Structures windmill identical salt* while retaining Arise's 90/10 grid; 265 CF refs unchanged. Source/ZIP static preflight pass, Test8.3 Minecraft runtime pending. **All remaining biome/ocean/bridge/Nether/End gameplay quality tests and solo quests multiplayer still open.** Full evidence: [Test8.2 runtime and last worldgen audit](docs/testing/TEST8_2_RUNTIME_AND_LAST_WORLDGEN_AUDIT_2026-10-10.md). Existing Test8.2 working game/save must not be overwritten for testing.
 

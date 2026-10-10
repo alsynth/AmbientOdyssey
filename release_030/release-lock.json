@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-c0-ecosystem-feedback",
+  "version": "0.4.0-g0-curated-exploration-content",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1353,6 +1353,370 @@
       "source": "https://www.curseforge.com/minecraft/texture-packs/extended-illumina/files/6021451",
       "content_kind": "resourcepack",
       "content_group": "0.4.0-b1-combined"
+    },
+    "content-040d-mutant-monsters": {
+      "projectId": 852665,
+      "id": 7232511,
+      "fileName": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+      "displayName": "Mutant Monsters 21.1.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/mutant-monsters/files/7232511",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Boss-like overworld combat"
+    },
+    "content-040d-illager-invasion": {
+      "projectId": 891324,
+      "id": 6492670,
+      "fileName": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+      "displayName": "Illager Invasion 21.1.6",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/illager-invasion/files/6492670",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Raid and illager encounters"
+    },
+    "content-040d-chipped": {
+      "projectId": 456956,
+      "id": 5813117,
+      "fileName": "chipped-neoforge-1.21.1-4.0.2.jar",
+      "displayName": "Chipped 4.0.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/chipped/files/5813117",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Many new decorative block variants"
+    },
+    "content-040d-handcrafted": {
+      "projectId": 538214,
+      "id": 6330030,
+      "fileName": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "displayName": "Handcrafted 4.0.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/handcrafted/files/6330030",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Interactive furniture"
+    },
+    "content-040d-dusty-decorations": {
+      "projectId": 843344,
+      "id": 7917189,
+      "fileName": "DustyDecorations_1.21.1Neoforge_V1.13.jar",
+      "displayName": "Dusty Decorations 1.13",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/dusty-decorations/files/7917189",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Ports/markets furnishing; native stable NeoForge version"
+    },
+    "content-040d-night-lights": {
+      "projectId": 1199355,
+      "id": 8555615,
+      "fileName": "nightlights-neoforge-1.21.1-1.4.0.jar",
+      "displayName": "Night Lights 1.4.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/night-lights/files/8555615",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Dyeable and time-aware lights"
+    },
+    "content-040d-apothic-combat": {
+      "projectId": 986982,
+      "id": 6105085,
+      "fileName": "apothiccombat-1.2.1.jar",
+      "displayName": "Apothic Combat 1.2.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/apothic-combat/files/6105085",
+      "content_group": "0.4.0-d0-content-first",
+      "content_role": "Better Combat and Apotheosis reach compatibility"
+    },
+    "content-040d-dep-athena": {
+      "projectId": 841890,
+      "id": 8061947,
+      "fileName": "athena-neoforge-1.21.1-4.0.6.jar",
+      "displayName": "Athena 4.0.6 NeoForge 1.21.1 (required by Chipped)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/athena/files/8061947",
+      "content_group": "0.4.0-d0-content-first",
+      "dependency_for": "content-040d-chipped"
+    },
+    "content-040e-betterf3": {
+      "projectId": 401648,
+      "id": 5873258,
+      "fileName": "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+      "displayName": "BetterF3 11.0.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/betterf3/files/5873258",
+      "content_group": "0.4.0-e0-audit-expansion",
+      "content_role": "Client only; debug HUD"
+    },
+    "content-040e-pick-up-notifier": {
+      "projectId": 351441,
+      "id": 6409785,
+      "fileName": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "displayName": "Pick Up Notifier 21.1.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/pick-up-notifier/files/6409785",
+      "content_group": "0.4.0-e0-audit-expansion",
+      "content_role": "Client pickup UX; Puzzles Lib available"
+    },
+    "content-040e-light-overlay": {
+      "projectId": 325492,
+      "id": 5553811,
+      "fileName": "light-overlay-12.0.0-neoforge.jar",
+      "displayName": "Light Overlay 12.0.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/light-overlay/files/5553811",
+      "content_group": "0.4.0-e0-audit-expansion",
+      "content_role": "Client spawnlight overlay"
+    },
+    "content-040e-cave-dust": {
+      "projectId": 1617531,
+      "id": 8740321,
+      "fileName": "cavedust-3.3.0+1.21.1-neoforge.jar",
+      "displayName": "Cave Dust Rethinking 3.3.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/cave-dust-rethinking/files/8740321",
+      "content_group": "0.4.0-e0-audit-expansion",
+      "content_role": "Client cave particle ambiance; benchmark/adjust overdraw"
+    },
+    "content-040e-travelers-titles": {
+      "projectId": 1015155,
+      "id": 6294123,
+      "fileName": "TravelersTitles-1.21.1-NeoForge-5.1.3.jar",
+      "displayName": "Traveler's Titles 5.1.3",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/travelers-titles-neoforge/files/6294123",
+      "content_group": "0.4.0-e0-audit-expansion",
+      "content_role": "Client biome and dimension names; discovery UI not persistent progress"
+    },
+    "content-040e-subtle-effects": {
+      "projectId": 1023913,
+      "id": 7853614,
+      "fileName": "SubtleEffects-neoforge-1.21.1-1.14.1.jar",
+      "displayName": "Subtle Effects 1.14.1",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/subtle-effects/files/7853614",
+      "content_group": "0.4.0-e0-audit-expansion",
+      "content_role": "Ambient details; conservative tested baseline instead of brand-new 1.15; avoid duplicated sound/particles"
+    },
+    "content-040f-armor-trim-item-fix": {
+      "projectId": 895603,
+      "id": 5924310,
+      "fileName": "ArmorTrimItemFix-neoforge-1.21.1-1.2.0.jar",
+      "displayName": "Armor Trim Item Fix",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/armor-trim-item-fix/files/5924310",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "client cosmetic, explicitly requested"
+    },
+    "content-040f-shulker-box-tooltip": {
+      "projectId": 315811,
+      "id": 6530833,
+      "fileName": "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+      "displayName": "Shulker Box Tooltip",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files/6530833",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "storage previews; check Better Inventory overlap"
+    },
+    "content-040f-crafting-tweaks": {
+      "projectId": 233071,
+      "id": 8697050,
+      "fileName": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "displayName": "Crafting Tweaks",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/crafting-tweaks/files/8697050",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "rotate/clear/balance crafting grid; keybind conflicts later"
+    },
+    "content-040f-chat-heads": {
+      "projectId": 407206,
+      "id": 7057837,
+      "fileName": "chat_heads-0.14.0-neoforge-1.21.jar",
+      "displayName": "Chat Heads",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/chat-heads/files/7057837",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "client chat identity"
+    },
+    "content-040f-sound-physics": {
+      "projectId": 535489,
+      "id": 7032247,
+      "fileName": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "displayName": "Sound Physics Remastered",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered/files/7032247",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "reverb and occlusion; verify Atmosfera/Waves overlap"
+    },
+    "content-040f-polymorph": {
+      "projectId": 388800,
+      "id": 6794589,
+      "fileName": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "displayName": "Polymorph",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/polymorph/files/6794589",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "recipe collision selector; ensure UI works with JEI"
+    },
+    "content-040f-brewin-and-chewin": {
+      "projectId": 637808,
+      "id": 8309583,
+      "fileName": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+      "displayName": "Brewin' And Chewin'",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/brewin-and-chewin/files/8309583",
+      "content_group": "0.4.0-f0-historical-content-optimization",
+      "content_role": "Farmer's Delight fermentation and serving gameplay"
+    },
+    "content-040g-dimensional-dungeons": {
+      "projectId": 352222,
+      "id": 8828150,
+      "fileName": "dimdungeons-210-neoforge-1.21.1.jar",
+      "displayName": "Dimensional Dungeons 210",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/dimensional-dungeons/files/8828150",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Repeatable instanced-feeling puzzle/combat dungeon dimension"
+    },
+    "content-040g-ancient-remnants": {
+      "projectId": 1668579,
+      "id": 9084406,
+      "fileName": "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "displayName": "Ancient Remnants: Monoliths 1.5.2",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/ancient-remnants/files/9084406",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Rare monoliths, blessings, codex investigation and exploration rewards"
+    },
+    "content-040g-tarotcards-remastered": {
+      "projectId": 1473837,
+      "id": 8450385,
+      "fileName": "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "displayName": "TarotCards: Remastered 2.3.5",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/tarotcards-remastered/files/8450385",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "22 collectible Major Arcana cards found in structure loot"
+    },
+    "content-040g-aquaculture-delight": {
+      "projectId": 961988,
+      "id": 6179576,
+      "fileName": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "displayName": "Aquaculture Delight 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/aquaculture-delight/files/6179576",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Aquaculture 2 fish recipe integration with Farmer's Delight kitchens"
+    },
+    "content-040g-end-remastered-additions": {
+      "projectId": 1365790,
+      "id": 9111385,
+      "fileName": "endrem_additions-neoforge-1.2.0.jar",
+      "displayName": "End Remastered Additions 1.2.0",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/end-remastered-additions/files/9111385",
+      "content_group": "0.4.0-g0-curated-exploration-content",
+      "content_role": "Additional End Remastered eyes tied to fishing, trial chambers, sculk, Aether and BOMD"
     }
   },
   "optional_integrated_patches": {

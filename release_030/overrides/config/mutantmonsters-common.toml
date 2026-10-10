@@ -1,0 +1,9 @@
+# Ambient Odyssey: intentionally rare elite mutant encounters.
+# Mutant Monsters v21.1.1 (NeoForge 1.21.1), upstream CommonConfig.java.
+# Native defaults: 0.05. AO factor 0.01 for all four (one-fifth of default).
+# Native biome code rounds spawn weight to a minimum 1; rare Endermen may
+# already use that minimum even with default 0.05. No fake spawn-chance keys.
+mutant_creeper_spawn_weight = 0.01
+mutant_enderman_spawn_weight = 0.01
+mutant_skeleton_spawn_weight = 0.01
+mutant_zombie_spawn_weight = 0.01
