@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "description": "Authoring settings. Run python3 compile_worldgen_031.py after editing; the mod reads the generated Paxi datapack.",
+  "description": "Authoring settings. Run python3 compile_worldgen_031.py after editing; the mod reads the generated Paxi datapack. Test8.4 candidate: modest Prairie reduction in three open-biome pools; hot/warm fallbacks no longer force Prairie.",
   "dimension": "minecraft:overworld",
   "pools": [
     {
@@ -10,7 +10,7 @@
       ],
       "vanilla_percent": 5,
       "biomes": {
-        "biomeswevegone:prairie": 23,
+        "biomeswevegone:prairie": 14,
         "regions_unexplored:grassland": 35,
         "regions_unexplored:flower_fields": 25,
         "biomeswevegone:skyris_vale": 10
@@ -66,11 +66,11 @@
       ],
       "vanilla_percent": 0.5,
       "biomes": {
-        "biomeswevegone:prairie": 30,
-        "biomeswevegone:baobab_savanna": 25,
-        "biomesoplenty:dryland": 20,
+        "biomeswevegone:prairie": 18,
+        "biomeswevegone:baobab_savanna": 30,
+        "biomesoplenty:dryland": 25,
         "regions_unexplored:grassland": 15,
-        "natures_spirit:floral_ridges": 10
+        "natures_spirit:floral_ridges": 12
       }
     },
     {
@@ -80,11 +80,11 @@
       ],
       "vanilla_percent": 0.5,
       "biomes": {
-        "biomeswevegone:prairie": 22,
-        "biomeswevegone:baobab_savanna": 35,
-        "biomesoplenty:dryland": 10,
+        "biomeswevegone:prairie": 14,
+        "biomeswevegone:baobab_savanna": 39,
+        "biomesoplenty:dryland": 12,
         "regions_unexplored:grassland": 15,
-        "natures_spirit:floral_ridges": 18
+        "natures_spirit:floral_ridges": 20
       }
     },
     {
@@ -142,11 +142,11 @@
       "targets": [
         "biomeswevegone:skyris_vale"
       ],
-      "biome": "biomeswevegone:prairie",
+      "biome": "regions_unexplored:grassland",
       "temperature": {
         "min": 0.2001
       },
-      "reason": "Do not extend cool Skyris Vale into warm plains."
+      "reason": "Keep Skyris Vale within its cool native climate; use warm-compatible RU Grassland instead of repeatedly falling back to Prairie."
     },
     {
       "targets": [
@@ -240,11 +240,11 @@
       "targets": [
         "natures_spirit:floral_ridges"
       ],
-      "biome": "biomeswevegone:prairie",
+      "biome": "biomeswevegone:baobab_savanna",
       "temperature": {
         "min": 0.5501
       },
-      "reason": "The selected pool has no native hot/dry savanna donor; use a warm open biome instead."
+      "reason": "Hot/dry windswept-savana slots use the selected hot savanna biome rather than forcing Prairie."
     }
   ],
   "desired_rarity": {
