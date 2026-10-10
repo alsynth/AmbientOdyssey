@@ -1758,6 +1758,20 @@ Once the foundation passes:
 - Container and backpack integration.
 - Accessible tooltips and interaction feedback.
 
+### Quest content mapping and authoring — Phase 1 (10 Oct 2026)
+
+**Source-authored planning work completed (not executable quests):** [Questing project index](docs/questing/README.md) · [full provisional mod coverage matrix](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) · [474 specific proposed content beats](docs/questing/QUEST_CONTENT_SEEDS.csv) · [Questlog/FTB chapter architecture](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md) · [source/inventory gaps](docs/questing/INVENTORY_METHOD_AND_GAPS.md) · [authoring and QA protocol](docs/questing/QUEST_AUTHORING_VALIDATION_PLAN.md).
+
+- [x] **First breadth pass:** triage **265 provisional named mod/source entries** from 196 audited historical JARs, 41 uninspected historic client-log JAR names and 51 current source additions/repins. Distinguish content campaigns from biome journal entries, side quests, FTB education and technical libraries. *These 265 rows do NOT represent verified 1:1 current installed mods.*
+- [x] **Quest seed authoring map:** draft 474 concrete quest beats across 46 potential chapters (430 gameplay and 44 education), tier 0–8 backbone, substantial optional magic/realm/boss routes, structure anthology, player beginner tutorial and FTB manual references; no Questlog JSON or actual tasks yet.
+- [x] **Special design requirements:** NeoPasterDream 0.9.6 receives its own sizeable optional dream arc, but exact access to its multiple realms/Cold Domain and Aaroncos must be verified; Enigmatic Legacy Plus 1.1.2 has two independent **standard vs fully voluntary cursed** routes; Curse never gates main campaign. Create and food addons receive compact cameos/FTB tech references.
+- [ ] **Mandatory inventory reconciliation:** get exact latest Test8.3 loaded client JAR list, CurseForge project/file lock and registries, merge/remove stale historical aliases, validate each matrix row and unclassified unknown; currently `main` base manifest is 221 nameless project IDs, while Test8.2 lock is different.
+- [ ] **Verify actual mod content per source:** 1.21.1 registry entities, structures, biomes, item IDs, recipes, bosses, achievements, completion state. Prioritize PasterDream (0.9.6 vs current description), Enigmatic cursed/non-cursed routes, Twilight/Aether/Starlight/Undergarden and current boss roster.
+- [ ] **Engine & pilot install on a copied profile only:** test Questlog 3.4.1 alongside FTB Quests (latter only Field Manual) using 3–5 quests; check dedicated server two-player saves, interface overlap, rewarded items and no duplicate completions. Baseline Test8.2/Test8.3 remains unmodified.
+- [ ] **Build validated generator:** convert verified registry+seed data to `config/questlog/quests` and `chapters` plus **educational-only FTB SNBT**, with item/structure/biome validity checks, dependency graph checks, reward caps, per-player unlocks, branch alternatives and UI localization. Never claim 474 configured/tested quests until these actually exist.
+- [ ] **First production wave after approval:** 12–15 beginner quests and FTB keybind/JEI/gear reference, first Tier 0–2 exploration/gear path and an optional Frozen Seas or Alex's Caves pilot.
+- [ ] **Scale validation:** batch larger chapters, especially any map-like biome/structure polling, and benchmark 5–7 players. Limit initially visible quests; avoid 1000 simultaneous checkers and first-spawn notifications.
+ 
 ### Questlog vs FTB Quests — research queue (10 Oct 2026)
 
 **Comparison audit only:** [Questlog 3.4.1 vs FTB Quests detailed evaluation](docs/audits/QUESTLOG_VS_FTB_QUESTS_EVALUATION_2026-10-10.md). Questlog official NeoForge 1.21.1 file **`1202066:8952784`** has Oblivion-style journal UI, editable config JSON, per-player persistent quests, structure/biome/dimension tasks, triggered chapters, boss/Origin quests, choice/random rewards, and rich notifications. **No installation approved and no migration undertaken.**
