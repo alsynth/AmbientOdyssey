@@ -1564,20 +1564,6 @@
       "content_group": "0.4.0-f0-historical-content-optimization",
       "content_role": "client cosmetic, explicitly requested"
     },
-    "content-040f-clumps": {
-      "projectId": 256717,
-      "id": 5623731,
-      "fileName": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
-      "displayName": "Clumps",
-      "gameVersions": [
-        "1.21.1",
-        "NeoForge"
-      ],
-      "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/clumps/files/5623731",
-      "content_group": "0.4.0-f0-historical-content-optimization",
-      "content_role": "server XP orbs aggregation"
-    },
     "content-040f-shulker-box-tooltip": {
       "projectId": 315811,
       "id": 6530833,

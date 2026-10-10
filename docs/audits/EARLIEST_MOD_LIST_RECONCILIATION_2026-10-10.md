@@ -14,7 +14,7 @@ Source: [6 Oct 166-candidate original registry](../../release_030/evidence/CANDI
 | Decoration, cooking and Create | Farmer's Delight addons, Create, Chipped/Handcrafted/Night Lights, Brewin' 0.4f | Crafting recipes, loot/food economy, farms and Create configs; picture/TV candidates still unresolved |
 | Soundscape, visual packs | Atmosfera Neo, Waves, Polytone, torch/grass/foliage packs, Cave Dust/Subtle Effects, Sound Physics 0.4f | Water/rain loudness, below-leaf birds, particle caps, shader settings, activation/ordering of asset packs |
 | QoL, mappings and UI | JEI, FTB Chunks, Xaero/Waystones, Controlling, Polymorph, tooltips, Armor Trim Item Fix 0.4f | Conflict-free keybind overhaul, Curios slots, GUI clashes, map bridges, personal discoveries |
-| Performance/server readiness | Embeddium/NeOculus, ModernFix, Spark, more tweaks and Clumps 0.4f | **Mod configs** plus **shader/video settings** and server view/simulation distances, FTF height slow fallback, backups and benchmarked pregen |
+| Performance/server readiness | Embeddium/NeOculus, ModernFix, Spark, more tweaks and Clumps already inherited | **Mod configs** plus **shader/video settings** and server view/simulation distances, FTF height slow fallback, backups and benchmarked pregen |
 | Quests and narrative | FTB Quests base; research for Easy NPC and discovery UI | As requested, quest writing including archaeology and custom Questlog comes **last** |
 
 ## All 166 original research candidates, conservatively classified
@@ -136,7 +136,7 @@ Source: [6 Oct 166-candidate original registry](../../release_030/evidence/CANDI
 | 81 | AllTheLeaks | OPEN/UNKNOWN — historic candidate, not proof of absence from inherited baseline |
 | 82 | Smooth Chunk Save | OPEN/UNKNOWN — historic candidate, not proof of absence from inherited baseline |
 | 83 | FastSuite | OPEN/UNKNOWN — historic candidate, not proof of absence from inherited baseline |
-| 84 | Clumps | STAGED in 0.4f; runtime untested |
+| 84 | Clumps | ALREADY PRESENT IN BASELINE — ID 256717, file 5623731; not re-added |
 | 85 | Entity Culling | OPEN/UNKNOWN — historic candidate, not proof of absence from inherited baseline |
 | 86 | MoreCulling | OPEN/UNKNOWN — historic candidate, not proof of absence from inherited baseline |
 | 87 | BadOptimizations | OPEN/UNKNOWN — historic candidate, not proof of absence from inherited baseline |

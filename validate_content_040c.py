@@ -16,7 +16,7 @@ for x in LOCK['remove_projects'].values(): refs.pop(x,None)
 for x in LOCK['additions'].values():refs[x['projectId']]=x['id']
 if LOCK.get('default_integrated_patches'):
  x=LOCK['optional_integrated_patches'];refs[x['projectId']]=x['id']
-assert len(refs)==({'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-expansion':302,'0.4.0-f0-historical-content-optimization':310}[LOCK['version']]),len(refs)
+assert len(refs)==({'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-expansion':302,'0.4.0-f0-historical-content-optimization':309}[LOCK['version']]),len(refs)
 assert 631098 not in refs
 assert refs[835687]==9099893 and refs[714059]==6467772
 assert refs[250398]==6368976 and refs[889915]==8909889

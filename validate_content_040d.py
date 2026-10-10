@@ -30,7 +30,7 @@ for e in lock['additions'].values():
 if lock.get('default_integrated_patches'):
     e=lock['optional_integrated_patches']
     pins[e['projectId']]=e['id']
-assert len(pins)==310,(len(pins),'Expected 302 prior refs +8 historical candidate pins')
+assert len(pins)==309,(len(pins),'Expected 302 prior refs +7 new projects; Clumps 256717 already inherited from baseline')
 for _,(pid,fid) in selected.items():assert pins[pid]==fid
 assert pins[841890]==8061947, 'Athena must be the source-verified NeoForge 4.0.6'
 audit_selection={401648:5873258,351441:6409785,325492:5553811,1617531:8740321,1015155:6294123,1023913:7853614}
@@ -56,5 +56,5 @@ required={
 missing={pid:name for pid,name in required.items() if pid not in pins}
 if missing:
     raise AssertionError('Dependency closure BLOCKED; identify official 1.21.1 NeoForge pins first: '+str(missing))
-print('PASS: 7 new content projects + Athena library; 310 total CF refs, required shared libraries, no baseline repins, 273 native NBT repairs retained.')
+print('PASS: 7 new content projects + Athena library; 309 total CF refs, required shared libraries, no baseline repins, 273 native NBT repairs retained.')
 print('Minecraft startup, missing runtime-only dependencies, worldgen and entity balance remain unverified.')

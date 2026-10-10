@@ -1,6 +1,6 @@
 ## 10 Oct 0.4f early mod-list recovery + optimization
 - [x] Reconcile the earliest mod lists and **166 original research candidates**, conservatively (not all were promised installations).
-- [x] Stage Armor Trim Item Fix 895603:5924310 plus seven compatible historical candidates; expected 310 manifest CF references.
+- [x] Stage Armor Trim Item Fix 895603:5924310 plus six other newly pinned historical candidates; Clumps was already in baseline. Expected 309 manifest CF references.
 - [x] Plan shader, video, gameplay-mod and server config optimization, not merely mod toggles.
 - [ ] Verify importer CI, client/dedicated-server compatibility, GUI/audio overlays, and launch before calling playable.
 - [ ] Reconcile inherited baseline JARs to resolve unknowns in earliest candidate matrix; preserve settled exclusions.
