@@ -16,6 +16,12 @@
 10. **Balance targets:** Tier 2 assumes enchanted diamond armor and >=2 grade-A combat-support items. Relics, Enigmatic Legacy, Origins and advanced spells can change real readiness; the Atlas later supplies calibrated gear advice.
 11. **Progression chapter boundaries should be navigable, not restrictive.** Do not forbid a player entering a higher-tier location early; reveal danger and track discoveries independently of defeats.
 
+### Depth audit supersession — 10 October 2026
+
+The [triple-pass mod content review](QUEST_DEPTH_REVIEW_REPORT_2026-10-10.md) found many large dimensions and mechanics-heavy mods were **too shallowly represented** in the original 474 quest seed list. The ranges below were expanded editorially for realm content, puzzles, native crafting and noncombat interactions; they are *not fixed quotas* or claims of completed Questlog objectives. See [250 further candidates](QUEST_DEPTH_SUPPLEMENT_V0_3.csv) and the full [265-entry per-mod depth matrix](MOD_DEPTH_REAUDIT_2026-10-10.csv). Earlier chapter targets are superseded by the latest estimates in the table, but **the nine main quest chapters remain compact and beginner-friendly**.
+
+The Bumblezone Bee Queen is a **trading NPC**, not a kill boss. End Remastered has **16 Eyes with 12 required**, subject to the actual AO 6.3.0 configuration. NeoPasterDream version-specific garden puzzles and Cold Domain should be distinct branches if reachable. Avoid forcing every rare dungeon, 16 eyes, boss spawn or Origin as a mainline gate.
+
 ## Three layers
 
 ### Layer I — The main adventure (Questlog)
@@ -38,23 +44,23 @@
 
 | Optional quest line | Relevant mods | Approx. quest goal | Examples of beats |
 |---|---|---:|---|
-| **The Twilight Path** | Twilight Forest | 20–35 | Portal, progression biomes, naga, towers, labyrinths, boss ladder |
-| **Kingdoms of the Sky** | Aether, Deep Aether, Aether Villages | 18–32 | Portal, resources, sky dungeons, bosses, optional Deep Aether research |
-| **The Starlit Frontier** | Eternal Starlight | 16–30 | Portal, biomes, key structures, enemies, boss progression |
-| **Below the Bedrock** | Undergarden, Deeper and Darker | 12–28 each | Access, exploration, unique loot, major dangers |
-| **The Bumblezone** | Bumblezone | 8–18 | Entry, special ecology, hive discoveries, non-boss alternatives |
-| **The Six Cave Expeditions** | Alex's Caves | 18–35 | Cave discovery, unique creatures/resource systems, major encounters |
-| **Dreamseeker's Notes** | NeoPasterDream 0.9.6 | 25–55 | Dream access, diary pages, Dyed Dreamscape, Shadow Lanterns, wind realm where available, cold realm, workshop, Aaroncos / end encounter; **exact feature set version audit mandatory** |
-| **The Seven Curses (opt-in)** | Enigmatic Legacy Plus | 12–25 | Optional ring explanation and explicit player choice, separate cursed recovery/power progression; no forced initiation |
-| **The Relic Scholar (normal)** | Enigmatic Legacy Plus | 10–22 | Non-cursed enigmatic artifacts, relics, puzzles and crafting; must stay accessible without cursed ring |
-| **Frozen Seas** | Aquamirae, Ice and Fire, ocean content | 10–23 | Prepare for icy waters, ice maze, ship graveyard, pirates, Eel, Mother of Maze, Cornelia |
-| **The Arcane Academy** | Ars Nouveau | 12–25 | Glyphbook, basic spells, magical discovery, rituals and upgrades |
-| **The Spellwright's Journey** | Iron's Spells, Traveloptics, Cataclysm Spellbooks | 14–30 | First spellbook, spell school, towers, battle mages, boss-linked rewards and spells |
-| **Forbidden Research** | Forbidden & Arcanus, Astrological | 10–22 | Magical resources, signature items, structures, optional encounters |
-| **The Dragon Hunter** | Ice and Fire | 12–25 | Recognize dragons, survive raids/roosts, cave encounter and exceptional equipment |
-| **A Hunter of Legends** | L_Ender's Cataclysm, BOMD, Mowzie's, Remnant, FD bosses, Bosses' Rise, Gateways | 30–65, split by tier | Encounter dossier, optional boss families, reforge trophies/gear, no global leaderboard |
-| **Weapon and Relic Mastery** | Apotheosis, Simply Swords/More, Relics, More Relics, Artifacts, Iron's Jewelry | 14–35 | Unlock selected weapon/relic systems, forge viable loadout, nonmandatory mastery |
-| **The Eyes of the End** | End Remastered, Integrated Stronghold | 12–24 | Diverse eye sources and the eventual End approach, with flexibility for sources |
+| **The Twilight Path** | Twilight Forest | 32–55 | Portal, progression biomes, naga, towers, labyrinths, boss ladder |
+| **Kingdoms of the Sky** | Aether, Deep Aether, Aether Villages | 25–45 core Aether; 7–16 Deep Aether optional | Portal, resources, sky dungeons, bosses, optional Deep Aether research |
+| **The Starlit Frontier** | Eternal Starlight | 32–60 | Portal, biomes, key structures, enemies, boss progression |
+| **Below the Bedrock** | Undergarden, Deeper and Darker | Undergarden 18–32; Deeper & Darker 17–30 | Access, exploration, unique loot, major dangers |
+| **The Bumblezone** | Bumblezone | 20–38 | Entry, special ecology, hive discoveries, non-boss alternatives |
+| **The Six Cave Expeditions** | Alex's Caves | 30–50 | Cave discovery, unique creatures/resource systems, major encounters |
+| **Dreamseeker's Notes** | NeoPasterDream 0.9.6 | 35–65 | Dream access, diary pages, Dyed Dreamscape, Shadow Lanterns, wind realm where available, cold realm, workshop, Aaroncos / end encounter; **exact feature set version audit mandatory** |
+| **The Seven Curses (opt-in)** | Enigmatic Legacy Plus | 16–30 | Optional ring explanation and explicit player choice, separate cursed recovery/power progression; no forced initiation |
+| **The Relic Scholar (normal)** | Enigmatic Legacy Plus | 19–30 | Non-cursed enigmatic artifacts, relics, puzzles and crafting; must stay accessible without cursed ring |
+| **Frozen Seas** | Aquamirae, Ice and Fire, ocean content | 15–28 Aquamirae-focused | Prepare for icy waters, ice maze, ship graveyard, pirates, Eel, Mother of Maze, Cornelia |
+| **The Arcane Academy** | Ars Nouveau | 23–40 | Glyphbook, basic spells, magical discovery, rituals and upgrades |
+| **The Spellwright's Journey** | Iron's Spells, Traveloptics, Cataclysm Spellbooks | 23–42 | First spellbook, spell school, towers, battle mages, boss-linked rewards and spells |
+| **Forbidden Research** | Forbidden & Arcanus, Astrological | 20–36 for confirmed Forbidden & Arcanus; Astrological pending | Magical resources, signature items, structures, optional encounters |
+| **The Dragon Hunter** | Ice and Fire | 22–42 | Recognize dragons, survive raids/roosts, cave encounter and exceptional equipment |
+| **A Hunter of Legends** | L_Ender's Cataclysm, BOMD, Mowzie's, Remnant, FD bosses, Bosses' Rise, Gateways | 45–95 shared, split by tier and boss family | Encounter dossier, optional boss families, reforge trophies/gear, no global leaderboard |
+| **Weapon and Relic Mastery** | Apotheosis, Simply Swords/More, Relics, More Relics, Artifacts, Iron's Jewelry | 30–65 across several systems + FTB reference | Unlock selected weapon/relic systems, forge viable loadout, nonmandatory mastery |
+| **The Eyes of the End** | End Remastered, Integrated Stronghold | 20–34 (12/16 actual eyes) | Diverse eye sources and the eventual End approach, with flexibility for sources |
 | **Oceanographer** | Hybrid Aquatic, FTB Ocean Mobs, YUNG Ocean Monument, Better Shipwrecks, Small Ships, Deeper Oceans | 8–20 | Ship journey, marine hazards, biomes, monuments, deep-sea loot; scenic content without kill-everything |
 
 **Do not double-count** Cross-mod campaigns as if each constituent addon requires its own separate chapter. This is a content budget, **not a promise that all candidate encounters spawn or are complete**.
