@@ -66,6 +66,15 @@ Use Controlling's conflict filter to collect **actual resolved conflicting binds
 
 **Required input for a true modpack-wide conflict-free profile:** actual set of keybindings after the selected mods register, ideally Controlling export/screenshots or a known loaded `options.txt`. The latest client log contains mod JAR registrations but **not actual user keyboard assignments**, so exact collision elimination cannot be honestly completed from it.
 
+## CI-verified private candidate: source/integrity success, not Minecraft runtime proof
+
+[**GitHub Actions build 38061358812 — PASS**](https://github.com/alsynth/AmbientOdyssey/actions/runs/38061358812). Ran old **28 terrain + 31 structure source checks**, native Graveyard/Swiss lighthouse repairs, all **273 binary roundtrip native NBT** fixes, source checks for 30% sleep/fire/mob grief global load tag, new wave/weather/block levels, Alex's gorilla/fly/cockroach spawn weights, **288** official CurseForge references, absent Galosphere and preserved Better Archeology, exact private NeoReef jar SHA, independent ZIP CRC/manifest. Two **byte-identical** builds.
+
+- Exact inner CurseForge importer: `Ambient-Odyssey-0.4.0-c0-World-Rules-Wildlife-AUDIO-PRIVATE.zip`
+- **70,816,743 bytes** · **1,389 ZIP members** · SHA256 **`d56db4003161a9f6f93f0ac29f694f5b3a434ec370f6da10faddb22ba0b252d1`**
+- Independently extracted GitHub artifact **outer ZIP** and inspected **inner ZIP** in container: correct sha/size, `manifest.json` at root, verified three commands in exact datapack, `waves-common.toml` new values. Import only the **inner** ZIP.
+- There has been **no Minecraft gameplay launch of 0.4c**. Gamerules still require normal new world / server-restart acceptance. This pack contains a broad user-feedback repair slate but **does not include playable archaeology quest lines or completed keybind profile**. In keeping with the user's anti-micro-test policy, no separate test session is requested merely for this build.
+
 ## Next release rule
 
 Single **substantial** next pack (0.4c or larger) containing Galosphere removal, curated wildlife/audio/gamerules, archaeology quest prototype when IDs are confirmed, and keybind profile when resolved. Do **not** ask for separate human Minecraft test for each small sound/config change. Validate archive, source invariants and load-trigger presence in GitHub CI; user can verify all at next substantial gameplay session.
