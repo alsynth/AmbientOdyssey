@@ -1,3 +1,5 @@
+> **Current experimental candidate:** [v0.4 Mine Cells + 0.4f/g integration](V04_FG_INTEGRATION.md) on branch `experimental/v0.4-minecells-fg-integration-20261010` (330 CurseForge references). Retains the previously validated 318-ref Mine Cells candidate and untouched stable rollback. **Full 330-ref Minecraft client/server NOT runtime tested.** Do not mistake earlier 318-ref hashes for new artifacts.
+
 > **Current experimental v0.4 candidate:** [changelog](V04_CHANGELOG.md), [test results](V04_TEST_RESULTS.md), [grouped acceptance checklist](V04_TESTING_CHECKLIST.md). Branch `experimental/v0.4-complete-20261010`; 318 CF references. Mine Cells minimal server smoke passed; full Ambient Odyssey runtime remains unverified. Historical baseline documentation follows.
 
 # Ambient Odyssey — Minecraft Modpack Development

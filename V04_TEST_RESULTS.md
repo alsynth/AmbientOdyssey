@@ -30,3 +30,9 @@ Native descriptors revealed required Iceberg and JamLib absent from the actual s
 7. **Distribution:** private developer ZIP contains NeoReefRedux; reference-only export omits it. CurseForge import installation/sidedness and public publication approval remain untested. Existing released branches and `main` are preserved.
 
 Use `V04_TESTING_CHECKLIST.md` for one substantial test session. This is an experimental test candidate, not a fully accepted stable release.
+
+## Combined 0.4f/g candidate — distinct evidence boundary
+
+The earlier 318-ref hashes and minimal four-top-level-mod Mine Cells server smoke above do NOT apply as a complete-runtime acceptance result for the 330-ref candidate `experimental/v0.4-minecells-fg-integration-20261010`. The 12 new native projects have independent prior single-branch GitHub CI provenance on `content/0.4.0d-content-first-expansion`; successful tests there do not certify this newly combined pack. Any new run/artifact must be recorded with its own commit SHA and SHA256.
+
+**Risks requiring runtime acceptance:** Sound Physics vs Atmosfera/Streams audio stacking; Polymorph/JEI and Delight recipe menus; TarotCards/Curios slot power and rarity; Dimension Dungeons plus Mine Cells on a dedicated server; Ancient Remnants natural generation in FTF-modded biomes; End Remastered eye/stronghold progression; client-only UI mods in multiplayer installation. No performance improvement is claimed.

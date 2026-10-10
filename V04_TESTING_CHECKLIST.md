@@ -33,3 +33,15 @@ Use a new CurseForge profile and disposable worlds. Keep the working Test8.2/0.4
 - [ ] Review POI duplication, Streams fast-terrain fallback, GC pressure, duplicate cave/particle effects and first-use dimension delays. Keep worst-case logs and reproduction coordinates.
 
 Acceptance remains experimental until these client/gameplay/multiplayer checks pass. Report each as PASS / FAIL / NOT TESTED with its actual evidence.
+
+## Additional 0.4f/0.4g checks (330-reference import)
+
+- [ ] Confirm actual import resolves **330** distinct pinned projects, including all 12 new native files, and that the original Mine Cells Connector/FFAPI stack remains unchanged.
+- [ ] Enter both Mine Cells and Dimensional Dungeons, test death/return, save/restart, world generation, multiplayer dimension transitions and entity spawn mixes.
+- [ ] Locate Ancient Remnants monoliths naturally in both vanilla and FTF-modded terrain; inspect biome eligibility, density, terrain fit and codex rewards.
+- [ ] Test End Remastered Additions eyes with original End Remastered and the preserved Integrated Stronghold system; additional eyes must not be mandatory for progression.
+- [ ] Check TarotCards collection in actual loot, Curios compatibility, equipment/card slot behavior and power against Apotheosis; adjust after baseline balance evidence.
+- [ ] Listen to Sound Physics with Atmosfera and Streams Reflowing, inside the forest canopy, during storms, in caves and by coasts; rule out doubled water/rain loudness.
+- [ ] Test new Polymorph recipe chooser with JEI and Brewin' And Chewin'/Aquaculture Delight food recipes, including cross-addon collisions.
+- [ ] Test Armor Trim Item Fix, Shulker Box Tooltip, Crafting Tweaks and Chat Heads in the real game. Record additional input conflicts for the future keybind overhaul.
+- [ ] Run and actually join a **complete** 330-ref dedicated server with correctly separated client-only mods. The isolated Mine Cells server smoke is not sufficient.
