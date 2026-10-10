@@ -2,6 +2,8 @@
 
 **Working source:** [Q1 50 Questlog quest definitions](QUESTLOG_Q1_INSTALLED_INDEX.json), with the separate [FTB Manual 32-page index](FTB_MANUAL_IMPLEMENTED_INDEX.json). Current source baseline is `experimental/v0.4h-q1-ftb-field-manual-20261010`. Static packaging validated; actual game/runtime UI still pending.
 
+Browse the [offline Quest Atlas website](../../site/quests.html) or [website documentation](../../site/README.md) to inspect the same 50 Questlog definitions outside Minecraft. The site is source-generated and does not track actual player progression.
+
 ## The two books
 
 - **Questlog Adventure Journal (3.4.1):** 50 initial, mostly optional exploration and instructional entries across 13 chapters. Exact JSON source under `release_030/overrides/config/questlog/`. See [implementation](QUESTLOG_Q1_IMPLEMENTATION.md), [admin editing](QUESTLOG_ADMIN_GUIDE.md), [runtime test matrix](QUESTLOG_Q1_RUNTIME_TESTS.md).

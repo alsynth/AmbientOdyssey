@@ -12,6 +12,7 @@
 | **What to develop or test next** | [TODO](TODO.md) · [Development handoff](docs/status/AGENT_WORKFLOW.md) |
 | **Find everything in the repo** | [Repository map](docs/maintainers/REPO_MAP.md) · [Documentation index](docs/README.md) |
 | **Browse the adventure quests** | [Q1 quest index](docs/questing/QUESTLOG_Q1_INSTALLED_INDEX.json) · [Q1 guide](docs/questing/QUESTLOG_Q1_IMPLEMENTATION.md) |
+| **Browse the questlines as a website** | [Roadmap & Quest Atlas source](site/README.md) · [Quest Atlas](site/quests.html) · [Original roadmap](site/index.html) |
 | **Edit Questlog as admin** | [Questlog admin guide](docs/questing/QUESTLOG_ADMIN_GUIDE.md) |
 | **Find the in-game Field Manual** | [32-page FTB index](docs/questing/FTB_MANUAL_IMPLEMENTED_INDEX.json) |
 | **Import latest experimental ZIP** | [Verified build artifact](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259/artifacts/11680318532) (download outer artifact, **import an inner** CurseForge ZIP) |
@@ -21,7 +22,8 @@
 
 - **`release_030/`** — pinned mod roster, manifest inputs and the actual Minecraft configs, data packs, structures, Questlog JSON and FTB SNBT to ship. Despite the folder name this is the actively used source input.
 - **`build_release_030.py`** and legacy `compile_*.py` / `validate_*.py` at repository root — established reproducible build chain. **Do not move them without migrating imports and workflow paths**.
-- **`tools/`** and **`tests/`** — recent preflight, authoring and diagnostic validators.
+- **`tools/`** and **`tests/`** — recent preflight, authoring and diagnostic validators, plus the deterministic Quest Atlas website exporter.
+- **`site/`** — offline Roadmap and Quest Atlas; 50 Q1 quest entries exported from actual Questlog JSON. The browser has no access to player progress.
 - **`docs/status/`** — short current briefing and actionable agent workflow. Full old status logs are archived.
 - **`docs/questing/`** — quest implementation, reference-manual copy, quest inventories and QA.
 - **`docs/audits/`, `docs/testing/`, `docs/handoff/`** — research, evidence, tests and older Test6 instructions. Historical documents are **not current requirements** unless revalidated.

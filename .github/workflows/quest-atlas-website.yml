@@ -1,7 +1,7 @@
 name: Ambient Odyssey Offline Quest Atlas Website
 on:
   push:
-    branches: [experimental/quest-atlas-website-q1-20261010]
+    branches: [experimental/quest-atlas-website-q1-20261010, experimental/v0.4h-q1-ftb-field-manual-20261010]
   workflow_dispatch:
 permissions:
   contents: write
@@ -16,6 +16,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Enforce website/source parity on the main content branch
+        if: github.ref_name == 'experimental/v0.4h-q1-ftb-field-manual-20261010'
+        run: python tools/export_quest_atlas.py --check
       - name: Export website data only from installed Questlog source
         run: |
           python tools/validate_v04_quest_campaign.py
