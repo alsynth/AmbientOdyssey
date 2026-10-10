@@ -2089,3 +2089,14 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Test separate 2-player server progress, dimension transitions, Questlog save/restart migration, FTB Quests/FTB Solo Quests coexistence; do not use permanent server world.
 - [ ] Reconcile actual installed mod/entity/item/structure registries and replace only verified Q1 introduction pages with substantial Q2 mod-specific real encounter quest chains.
 - [ ] Expand the FTB Field Manual from existing drafts into actual localized in-game reference pages, without double-claiming Questlog rewards.
+
+
+### 2026-10-10 — Questbook Q1 + installed FTB Field Manual pilot
+
+- [x] Convert source-authored 14 educational topics, existing 65-tip guidance and controls cheatsheet into **32 localized, reward-free, task-free in-game FTB reference pages**, arranged as three new chapters. Preserve WDA's original chapter and loot/reward semantics.
+- [x] Validate all 32 pages/3 chapter IDs, unique 16-hex FTB IDs, localization and source-backed SNBT nesting with deterministic private/reference-only ZIPs. Correct outdated 'Questlog future/not installed' copy.
+- [x] CI: `38080830259` SUCCESS, exactly 331 CF mod projects, 50 Questlog Q1 nodes, 32 FTB manual pages. PRIVATE SHA256 `c7493ce19dc7833b5bf06fb322159689eebe3629d0bc001bff4617a50d3d33ca`; CF reference SHA256 `c4b7fa1595a4aa99f6cc9a504266c5acaf6518c7a47b67186cc69473a6fbd88b`.
+- [ ] On fresh imported client, check **FTB Systems/Tips/Controls all visible**, page text wraps/scrolls, in-game controls aren't misleading, original WDA quests and rewards stay intact.
+- [ ] Two-player dedicated server: verify per-player Questlog progress, FTB Quests/Solo Quests team behavior, reward integrity, persistence through restart and empty-task reference page behavior.
+- [ ] Confirm Curios/JEI/Questlog icon overlap, modded crafting details and keyboard shortcuts using actual player screenshots/logs; do not advertise final default bindings without test evidence.
+- [ ] For the next **real adventure quest wave**, audit exact 1.21.1 registry IDs/advancement triggers for Mine Cells, Twilight Forest, Aether and dimension bosses before building mandatory kill/visit objectives. Preserve old quest IDs.

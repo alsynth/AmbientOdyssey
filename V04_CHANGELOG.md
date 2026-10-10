@@ -38,3 +38,10 @@ Added the native NeoForge 1.21.1 Questlog 3.4.1 (`1202066:8952784`) on the exper
 ## v0.4h launch-readiness tooling (no mod changes)
 
 Kept all **331 project/file pins** including Questlog and Mine Cells unchanged. Added a read-only installed-JAR metadata scanner with synthetic tests and separate client/server comparison, plus a local test runbook for the remaining 23 restricted/failed binary metadata records. New GitHub Actions package includes optional diagnostic tools beside the ZIP exports for Windows and command-line use. Passing metadata checks are not proof of complete Minecraft/client/server runtime compatibility.
+
+## 2026-10-10 — Q1 FTB Field Manual integration (experimental)
+
+- Authored and packaged 32 informational SNBT pages in 3 independent FTB Quests chapters: Systems, Tips & Tricks and Controls/Keybinds, adapting the original 14 articles, 65-tip draft and controls reference.
+- Preserved all 50 Questlog Q1 quests/13 chapters, the original When Dungeons Arise SNBT/reward tables and the existing FTB Solo Quests setup; 331 exact CF mod project/file references unchanged.
+- Manual pages have no tasks, item requirements, server commands, XP or completion rewards, and don't gate adventure quests. Corrected stale 'Questlog not installed' research copy for actual v0.4h.
+- Static evidence: GitHub Actions `38080830259` PASS, deterministic private repeat, ZIP parsing and manual localization/ID/cycle checks. The full Minecraft GUI and multiplayer have NOT been runtime tested.
