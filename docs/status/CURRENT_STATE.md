@@ -1,5 +1,7 @@
 # Ambient Odyssey — Repository-wide state
 
+> **CURRENT DEVELOPMENT (10 October 2026):** `main` remains the preserved Test 5 Audit1 rollback. Active work lives on `structure/test6`, now at **v0.3.7-prefreeze-dev3**. The user confirmed Dev2 loads, Dimensional Doors removal resolves the Creative inventory crash and Shader Packs screen works. Dev3 source adds Iron's Jewelry 2.0.2, recommends 10 GiB RAM, corrects first-launch narrator defaults and pins Solas + Complementary Reimagined as official CurseForge shader references. Dev3's shareable ZIP preview is only statically checked; fresh launcher/shader tests are pending. **Ocean expansion is under review** (Aquamirae + Upgrade Aquatic shortlist) before freezing worldgen. Read [live branch current state](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/status/CURRENT_STATE.md), [Dev3 polish](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/testing/RELEASE_POLISH_SHADER_PRESETS_2026-10-10.md) and [Ocean Review](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/testing/OCEAN_EXPANSION_PREFREEZE_REVIEW_2026-10-10.md). Do not treat these development changes as merged to `main` or runtime-certified.
+
 **Updated:** 9 October 2026. **Minecraft:** 1.21.1 / NeoForge 21.1.252.
 
 ## Which branch is current?
