@@ -131,7 +131,7 @@ def compile_compatibility():
         'regions_unexplored:rocky_reef',
         'biomeswevegone:lush_stacks',
     ]
-    beach = ['regions_unexplored:grassy_beach']
+    beach = ['regions_unexplored:grassy_beach', 'biomeswevegone:dacite_shore']
     river = ['regions_unexplored:muddy_river']
     lush = [
         'regions_unexplored:marsh',
