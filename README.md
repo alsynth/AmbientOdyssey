@@ -16,6 +16,7 @@
 | **Edit Questlog as admin** | [Questlog admin guide](docs/questing/QUESTLOG_ADMIN_GUIDE.md) |
 | **Find the in-game Field Manual** | [32-page FTB index](docs/questing/FTB_MANUAL_IMPLEMENTED_INDEX.json) |
 | **Import latest experimental ZIP** | [Verified build artifact](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259/artifacts/11680318532) (download outer artifact, **import an inner** CurseForge ZIP) |
+| **Performance/optimization patch preflight (not yet a tuned build)** | [Baseline and priorities](docs/performance/PERF_PATCH_PREP_2026-10-10.md) · [Read-only ZIP audit tool](tools/perf_preflight_v04.py) · [Benchmark CSV](docs/performance/BENCHMARK_RESULT_TEMPLATE.csv) |
 | **Test installed mods/client/server** | [Test checklist](docs/questing/QUESTLOG_Q1_RUNTIME_TESTS.md) · [Profile preflight](docs/testing/V04H_TEST_SESSION_FIELD_SHEET.md) |
 
 ## Source layout
