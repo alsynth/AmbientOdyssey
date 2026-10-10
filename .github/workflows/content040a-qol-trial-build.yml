@@ -1,4 +1,4 @@
-name: Ambient Odyssey 0.4.0-a trial: two QoL and Quest integration pins, worldgen unchanged
+name: 'Ambient Odyssey 0.4.0-a trial - two QoL and Quest integration pins'
 on:
   push:
     branches: [content/0.4.0a-qol-quest-trial]
@@ -39,7 +39,7 @@ jobs:
       - name: Verify exact pinned native 273 repairs independent of package build
         run: python compile_terminal_jigsaws_087.py
       - name: Produce 269 pinned CF mods and identical private NeoReef archive
-        run: python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.3.8-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip
+        run: python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip
       - name: Re-run baseline and structure checks after compilation
         run: |
           python validate_worldgen_test84.py
@@ -56,7 +56,7 @@ jobs:
           import hashlib,gzip,io,json,zipfile,collections
           from pathlib import Path
           import nbtlib
-          p=Path('build/Ambient-Odyssey-v0.3.8-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip')
+          p=Path('build/Ambient-Odyssey-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip')
           counts=collections.Counter()
           prefix='overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/'
           with zipfile.ZipFile(p) as z:
@@ -115,19 +115,19 @@ jobs:
           PY
       - name: Rebuild deterministically from cached pinned sources and compare exact ZIP bytes
         run: |
-          python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.3.8-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE-repeat.zip
+          python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE-repeat.zip
           python - <<'PY'
           from pathlib import Path
           import hashlib
-          a=Path('build/Ambient-Odyssey-v0.3.8-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip').read_bytes()
-          b=Path('build/Ambient-Odyssey-v0.3.8-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE-repeat.zip').read_bytes()
+          a=Path('build/Ambient-Odyssey-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip').read_bytes()
+          b=Path('build/Ambient-Odyssey-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE-repeat.zip').read_bytes()
           assert a==b, 'Different bytes from identical source-locked inputs'
           print('BIT-FOR-BIT REPRODUCIBILITY PASS',len(a),hashlib.sha256(a).hexdigest())
           PY
       - uses: actions/upload-artifact@v4
         with:
           name: Ambient-Odyssey-0.4.0-a-PRIVATE-273-Terminal-Jigsaw-Repairs
-          path: build/Ambient-Odyssey-v0.3.8-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip
+          path: build/Ambient-Odyssey-0.4.0-a0-QOL-Quest-TRIAL-PRIVATE.zip
           retention-days: 7
           compression-level: 0
           if-no-files-found: error
