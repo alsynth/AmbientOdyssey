@@ -1265,10 +1265,11 @@
             "separation": 24
           },
           "after": {
-            "spacing": 60,
-            "separation": 16
+            "spacing": 96,
+            "separation": 48
           },
-          "attempt_density_ratio": 2.56
+          "attempt_density_ratio": 0.390625,
+          "note": "User feedback 9 Oct: dragon towers were overcommon/overlapping; rarity reduced from earlier 60/16 (still collision test required)"
         },
         "sandworm_nest": {
           "before": {
@@ -1768,10 +1769,11 @@
             "separation": 30
           },
           "after": {
-            "spacing": 25,
-            "separation": 21
+            "spacing": 45,
+            "separation": 32
           },
-          "attempt_density_ratio": 2.074
+          "attempt_density_ratio": 0.308641975309,
+          "note": "Five separate portal ruins variants user found too frequent; 45/32 selected, must runtime test"
         },
         "portal_ruins_common": {
           "before": {
@@ -1779,10 +1781,11 @@
             "separation": 30
           },
           "after": {
-            "spacing": 25,
-            "separation": 21
+            "spacing": 45,
+            "separation": 32
           },
-          "attempt_density_ratio": 2.074
+          "attempt_density_ratio": 0.308641975309,
+          "note": "Five separate portal ruins variants user found too frequent; 45/32 selected, must runtime test"
         },
         "portal_ruins_desert": {
           "before": {
@@ -1790,10 +1793,11 @@
             "separation": 30
           },
           "after": {
-            "spacing": 25,
-            "separation": 21
+            "spacing": 45,
+            "separation": 32
           },
-          "attempt_density_ratio": 2.074
+          "attempt_density_ratio": 0.308641975309,
+          "note": "Five separate portal ruins variants user found too frequent; 45/32 selected, must runtime test"
         },
         "portal_ruins_forest": {
           "before": {
@@ -1801,10 +1805,11 @@
             "separation": 30
           },
           "after": {
-            "spacing": 25,
-            "separation": 21
+            "spacing": 45,
+            "separation": 32
           },
-          "attempt_density_ratio": 2.074
+          "attempt_density_ratio": 0.308641975309,
+          "note": "Five separate portal ruins variants user found too frequent; 45/32 selected, must runtime test"
         },
         "portal_ruins_jungle": {
           "before": {
@@ -1812,10 +1817,11 @@
             "separation": 30
           },
           "after": {
-            "spacing": 25,
-            "separation": 21
+            "spacing": 45,
+            "separation": 32
           },
-          "attempt_density_ratio": 2.074
+          "attempt_density_ratio": 0.308641975309,
+          "note": "Five separate portal ruins variants user found too frequent; 45/32 selected, must runtime test"
         }
       }
     },
