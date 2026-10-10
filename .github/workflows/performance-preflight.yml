@@ -1,0 +1,28 @@
+name: AO v0.4h performance preflight (static)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'performance/**'
+    paths:
+      - 'tools/perf_preflight_v04.py'
+      - 'tests/test_perf_preflight_v04.py'
+      - '.github/workflows/performance-preflight.yml'
+  pull_request:
+    paths:
+      - 'tools/perf_preflight_v04.py'
+      - 'tests/test_perf_preflight_v04.py'
+
+jobs:
+  preflight-unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit tests with synthetic ZIPs only (no Minecraft runtime claim)
+        run: python -m unittest discover -s tests -p test_perf_preflight_v04.py -v
+      - name: Python syntax verification
+        run: python -m py_compile tools/perf_preflight_v04.py
