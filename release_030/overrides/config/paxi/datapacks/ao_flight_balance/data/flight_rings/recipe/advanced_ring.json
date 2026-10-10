@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "ENE",
+    "DAD",
+    "ESE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "D": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "A": {
+      "item": "flight_rings:basic_ring"
+    },
+    "S": {
+      "item": "minecraft:echo_shard"
+    }
+  },
+  "result": {
+    "id": "flight_rings:advanced_ring",
+    "count": 1
+  }
+}
