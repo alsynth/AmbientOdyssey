@@ -21,3 +21,11 @@
 Begin with **existing Iron's Angel Wings, Ars Nouveau Glide and Hippogryph** options, then compare **Flight Rings** (hunger/XP cost) to **Create: Balanced Flight** (stationary midgame flight). Choose one with player effort and resource cost appropriate to **nether/midgame exploration**, not cheap always-on Creative. Avoid disabling structure collision/exploration by making unrestricted flight available immediately. Server flight checks: permissions, anticheat/fly kick, Curios slot, logout/reconnect midair, Nether/lava rescue, falling immunity, mana drain, speed and simultaneous 5–7-player lag. Add questbook explanation if approved.
 
 **Do not insert an unselected flight mod into the current worldgen-freeze candidate**: flight can be added after worldgen freeze because it does not alter terrain or structures.
+
+## Craftable pre-End Elytra alternatives (checked 10 October)
+
+- **Simple Craftable Elytra** (CurseForge project **1372206**, native NeoForge 1.21.1), https://www.curseforge.com/minecraft/mc-mods/simple-craftable-elytra . Its documented recipe is **4 feathers + 4 phantom membranes + 1 leather chestplate**. This is *very cheap* for Ambient Odyssey, so do **not** add unmodified. A pack datapack could instead gate Elytra behind Nether materials or midgame boss loot. Adding only a recipe through a datapack could avoid another Java mod entirely; test that pack quests don't require the original End progression
+- **Craftable Elytras** (CF **1522391**, NeoForge 1.21.1), https://www.curseforge.com/minecraft/mc-mods/craftable-elytraa . Verify exact recipe and dependencies before considering. Not auto-approved
+- **Craftable Elytra [Simple Additions]**, https://modrinth.com/mod/craftable-elytra-simple-additions-series . This particular recipe **requires dragon scales from the Ender Dragon**, so it does **not** satisfy pre-End acquisition, despite its name
+
+**Balance distinction:** The user's request is specifically *midgame flight until the End*. Unlimited Creative flight or an extremely cheap Elytra undermines exploration; cost-limited Flight Rings, a Create Flight Anchor or existing timed gliding offer a more controlled progression.
