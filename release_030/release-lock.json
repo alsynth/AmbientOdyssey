@@ -846,6 +846,32 @@
       ],
       "releaseType": 1,
       "source": "https://www.curseforge.com/minecraft/mc-mods/irons-jewelry/files/8365016"
+    },
+    "shader-solas-1.21.1": {
+      "id": 5743914,
+      "projectId": 678384,
+      "fileName": "Solas Shader V2.3.zip",
+      "displayName": "Solas Shader V2.3 (1.21.1/Iris-compatible CurseForge shader project)",
+      "gameVersions": [
+        "1.21.1",
+        "Iris"
+      ],
+      "releaseType": 1,
+      "contentType": "shaders",
+      "source": "https://www.curseforge.com/minecraft/shaders/solas-shader/files/5743914"
+    },
+    "shader-complementary-reimagined": {
+      "id": 8884654,
+      "projectId": 627557,
+      "fileName": "ComplementaryReimagined_r5.9.3.zip",
+      "displayName": "Complementary Reimagined r5.9.3 (1.21.1/Iris-supported CurseForge shader project)",
+      "gameVersions": [
+        "1.21.1",
+        "Iris"
+      ],
+      "releaseType": 1,
+      "contentType": "shaders",
+      "source": "https://www.curseforge.com/minecraft/shaders/complementary-reimagined/files/8884654"
     }
   },
   "optional_integrated_patches": {
