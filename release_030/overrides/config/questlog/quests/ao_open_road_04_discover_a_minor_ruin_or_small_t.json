@@ -1,0 +1,42 @@
+{
+  "title": "Stones That Outlasted Their Builders",
+  "description": "Ruins are signs that someone—or something—was here before you. Most are safe enough to investigate cautiously; a few are warnings.\n\nThis is an optional vanilla-ID detection pilot. Modded ruins are not silently treated as vanilla structures, and the quest does not gate major progress.\n\nField note: Do not assume every tower is safe. Look for mobs, traps or an obvious entrance before rushing inside.",
+  "chapter": "questlog:open_road",
+  "sort_order": 4,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Enter a known vanilla ruin or landmark",
+      "objectives": [
+        {
+          "type": "questlog:visit_structure",
+          "structure": "minecraft:shipwreck"
+        },
+        {
+          "type": "questlog:visit_structure",
+          "structure": "minecraft:desert_pyramid"
+        },
+        {
+          "type": "questlog:visit_structure",
+          "structure": "minecraft:ruined_portal"
+        }
+      ]
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

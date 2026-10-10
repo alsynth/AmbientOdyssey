@@ -1,0 +1,28 @@
+{
+  "title": "A Peculiar Invitation",
+  "description": "Some items appear ordinary until you learn what they are willing to do for you. Enigmatic artifacts reward curiosity, but not every mystery asks for a sacrifice.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: This path is separate from the Seven Curses route. You do not need to equip the cursed ring.",
+  "chapter": "questlog:enigmatic_normal",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:enchanted_book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the optional campaign introduction"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

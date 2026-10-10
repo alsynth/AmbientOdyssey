@@ -1,0 +1,10 @@
+{
+  "name": "The Seven Curses — Opt In",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "order": 6,
+  "default_chapter": false,
+  "hidden": false
+}

@@ -1,0 +1,461 @@
+{
+  "schema": "ao_questlog_q1_pilot",
+  "minecraft": "1.21.1",
+  "questlog": "3.4.1",
+  "namespace": "questlog",
+  "source": "WRITTEN_QUEST_DRAFTS_V0_2.json plus original Q1 contracts",
+  "quest_count": 50,
+  "chapter_count": 13,
+  "entries": [
+    {
+      "id": "ao_first_pages_01_welcome_to_ambient_odyssey",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_01_welcome_to_ambient_odyssey",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_02_learn_how_to_follow_an_adventure",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_02_learn_how_to_follow_an_adventure",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_03_open_the_educational_field_manua",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_03_open_the_educational_field_manua",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_04_use_jei_to_look_up_a_recipe",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_04_use_jei_to_look_up_a_recipe",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_05_craft_a_shield_and_learn_off_han",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_05_craft_a_shield_and_learn_off_han",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_first_pages_06_equip_your_first_useful_armor",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_06_equip_your_first_useful_armor",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_first_pages_07_prepare_food_for_an_expedition",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_07_prepare_food_for_an_expedition",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_first_pages_08_understand_what_death_and_a_tomb",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_08_understand_what_death_and_a_tomb",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_09_make_a_starter_bag_or_backpack",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_09_make_a_starter_bag_or_backpack",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_10_learn_the_map_and_waypoint_contr",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_10_learn_the_map_and_waypoint_contr",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_11_reach_a_village_or_safe_settleme",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_11_reach_a_village_or_safe_settleme",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_12_understand_individual_lootr_ches",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_12_understand_individual_lootr_ches",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_13_read_the_basic_combat_and_suppor",
+      "chapter": "first_pages",
+      "source_seed": "ao_first_pages_13_read_the_basic_combat_and_suppor",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_01_record_your_first_new_biome",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_01_record_your_first_new_biome",
+      "objective_types": [
+        "questlog:stat"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_open_road_02_reach_a_contrasting_biome_family",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_02_reach_a_contrasting_biome_family",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_03_visit_an_interesting_natural_for",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_03_visit_an_interesting_natural_for",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_04_discover_a_minor_ruin_or_small_t",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_04_discover_a_minor_ruin_or_small_t",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_05_learn_the_difference_between_a_l",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_05_learn_the_difference_between_a_l",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_06_explore_a_cave_below_the_surface",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_06_explore_a_cave_below_the_surface",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_open_road_07_upgrade_to_a_diamond_weapon",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_07_upgrade_to_a_diamond_weapon",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_open_road_08_equip_a_travel_accessory",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_08_equip_a_travel_accessory",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_open_road_09_bookmark_a_place_worth_returning",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_09_bookmark_a_place_worth_returning",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_10_find_a_safe_return_route_or_ways",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_10_find_a_safe_return_route_or_ways",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_11_open_your_explorer_s_journal",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_11_open_your_explorer_s_journal",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_open_road_12_discover_why_some_ruins_are_much",
+      "chapter": "open_road",
+      "source_seed": "ao_open_road_12_discover_why_some_ruins_are_much",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_trial_steel_01_acquire_a_full_set_of_diamond_ar",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_01_acquire_a_full_set_of_diamond_ar",
+      "objective_types": [
+        null
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_trial_steel_02_enchant_the_armor_for_real_prote",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_02_enchant_the_armor_for_real_prote",
+      "objective_types": [
+        "questlog:enchant"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_trial_steel_03_upgrade_the_primary_weapon",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_03_upgrade_the_primary_weapon",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_trial_steel_04_learn_meaningful_combat_support_",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_04_learn_meaningful_combat_support_",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_trial_steel_07_check_support_slot_limits_and_ge",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_07_check_support_slot_limits_and_ge",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_trial_steel_09_study_its_recommended_gear_level",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_09_study_its_recommended_gear_level",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_trial_steel_11_learn_how_dungeon_completion_dif",
+      "chapter": "trial_steel",
+      "source_seed": "ao_trial_steel_11_learn_how_dungeon_completion_dif",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_enigmatic_normal_01_discover_the_enigmatic_legacy_re",
+      "chapter": "enigmatic_normal",
+      "source_seed": "ao_enigmatic_normal_01_discover_the_enigmatic_legacy_re",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_enigmatic_normal_02_understand_normal_relics_versus_",
+      "chapter": "enigmatic_normal",
+      "source_seed": "ao_enigmatic_normal_02_understand_normal_relics_versus_",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_enigmatic_cursed_01_read_the_seven_curses_warning_an",
+      "chapter": "enigmatic_cursed",
+      "source_seed": "ao_enigmatic_cursed_01_read_the_seven_curses_warning_an",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_enigmatic_cursed_02_consider_alternative_normal_rout",
+      "chapter": "enigmatic_cursed",
+      "source_seed": "ao_enigmatic_cursed_02_consider_alternative_normal_rout",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_dream_01_find_a_rumor_about_the_dream_rif",
+      "chapter": "dream",
+      "source_seed": "ao_dream_01_find_a_rumor_about_the_dream_rif",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_aquamirae_01_plan_an_ice_ocean_expedition",
+      "chapter": "aquamirae",
+      "source_seed": "ao_aquamirae_01_plan_an_ice_ocean_expedition",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_ars_01_craft_a_basic_spellbook",
+      "chapter": "ars",
+      "source_seed": "ao_ars_01_craft_a_basic_spellbook",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_iron_magic_01_obtain_a_starter_spellbook",
+      "chapter": "iron_magic",
+      "source_seed": "ao_iron_magic_01_obtain_a_starter_spellbook",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_twilight_01_find_how_to_open_a_twilight_port",
+      "chapter": "twilight",
+      "source_seed": "ao_twilight_01_find_how_to_open_a_twilight_port",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_end_eyes_01_understand_that_eyes_may_come_fr",
+      "chapter": "end_eyes",
+      "source_seed": "ao_end_eyes_01_understand_that_eyes_may_come_fr",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    },
+    {
+      "id": "ao_trail_notes_01_scout_the_sky",
+      "chapter": "trail_notes",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_trail_notes_02_the_river_route",
+      "chapter": "trail_notes",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_trail_notes_03_first_catch",
+      "chapter": "trail_notes",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:stat"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_trail_notes_04_the_first_flame",
+      "chapter": "trail_notes",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:visit_dimension"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_trail_notes_05_in_the_dark",
+      "chapter": "trail_notes",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 1
+    },
+    {
+      "id": "ao_archaeology_01_a_delicate_tool",
+      "chapter": "archaeology",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:item_obtain"
+      ],
+      "rewards": 2
+    },
+    {
+      "id": "ao_archaeology_02_the_first_fragment",
+      "chapter": "archaeology",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 2
+    },
+    {
+      "id": "ao_archaeology_03_care_for_history",
+      "chapter": "archaeology",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:read"
+      ],
+      "rewards": 0
+    }
+  ]
+}

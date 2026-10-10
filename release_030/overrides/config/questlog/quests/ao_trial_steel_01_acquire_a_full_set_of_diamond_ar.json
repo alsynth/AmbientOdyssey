@@ -1,0 +1,55 @@
+{
+  "title": "A Diamond Foundation",
+  "description": "The first demanding battles will punish weak armor. Diamonds are not the end of the journey, but they offer a reliable starting point.\n\nOPTIONAL vanilla gear benchmark; this does not require a particular Origin, class, relic or combat discipline, nor does it gate the rest of AO. Requiring all four items only proves they are in inventory, not enchanted or equipped.\n\nField note: Vanilla diamond or genuinely equivalent tested armor should qualify; avoid strict item-only restrictions on viable builds.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    [
+      {
+        "type": "questlog:item_obtain",
+        "item": "minecraft:diamond_helmet",
+        "required_amount": 1,
+        "name": "Carry 1 × diamond helmet"
+      },
+      {
+        "type": "questlog:item_obtain",
+        "item": "minecraft:diamond_chestplate",
+        "required_amount": 1,
+        "name": "Carry 1 × diamond chestplate"
+      },
+      {
+        "type": "questlog:item_obtain",
+        "item": "minecraft:diamond_leggings",
+        "required_amount": 1,
+        "name": "Carry 1 × diamond leggings"
+      },
+      {
+        "type": "questlog:item_obtain",
+        "item": "minecraft:diamond_boots",
+        "required_amount": 1,
+        "name": "Carry 1 × diamond boots"
+      }
+    ]
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 100
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

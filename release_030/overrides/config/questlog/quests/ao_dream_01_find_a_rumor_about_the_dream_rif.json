@@ -1,0 +1,28 @@
+{
+  "title": "The Shape of a Dream",
+  "description": "Beyond familiar terrain lies a world that does not follow familiar rules. Before crossing into it, find out which dreams are actually reachable in this version.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: This entry will stay hidden until the pinned NeoPasterDream 0.9.6 realm access is verified.",
+  "chapter": "questlog:dream",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the optional campaign introduction"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

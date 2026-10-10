@@ -1,0 +1,10 @@
+{
+  "name": "The Relic Scholar",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:enchanted_book"
+  },
+  "order": 5,
+  "default_chapter": false,
+  "hidden": false
+}

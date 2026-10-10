@@ -1,0 +1,28 @@
+{
+  "title": "Know Your Equipment",
+  "description": "Your armor is not your whole defense. Rings, charms and unusual relics can change how you survive a battle—but some compete for the same equipment slot.\n\nField note: The strength of a support depends on when its effect activates, not just how impressive its name sounds.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 13,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the basics of accessory slots and defensive support"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

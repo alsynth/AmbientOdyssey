@@ -1,0 +1,28 @@
+{
+  "title": "Somewhere Worth Remembering",
+  "description": "Good explorers recognize the places they will want to revisit. A strange tower that is too dangerous today may become tomorrow's destination.\n\nField note: Use an existing map waypoint; never reveal the coordinates of places you have not found yourself.",
+  "chapter": "questlog:open_road",
+  "sort_order": 9,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Review how to mark places worth revisiting"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

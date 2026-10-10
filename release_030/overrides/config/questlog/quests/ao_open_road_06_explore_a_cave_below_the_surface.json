@@ -1,0 +1,35 @@
+{
+  "title": "Beneath the Surface",
+  "description": "The stone under your feet hides materials, creatures, old corridors and even entire unfamiliar habitats. Bring light and a way back.\n\nReturn with iron for safer equipment. Owning the item is evidence of preparation, not proof that you personally explored a cave.\n\nField note: Avoid a depth-only task that rewards digging a hole. Prefer a normal cave expedition or accepted exploration milestone.",
+  "chapter": "questlog:open_road",
+  "sort_order": 6,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:raw_iron",
+      "required_amount": 5,
+      "name": "Carry 5 × raw iron"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 45
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

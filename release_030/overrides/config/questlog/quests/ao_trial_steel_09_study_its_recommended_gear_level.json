@@ -1,0 +1,28 @@
+{
+  "title": "Before the First Step Inside",
+  "description": "Take a moment to prepare. Food, armor, escape options and information are easier to gather outside than inside a boss arena.\n\nField note: Your recommended tier is a guideline; a clever build still needs survivability and familiarity with the enemy.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 9,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read a dungeon's preparation and hazard notes"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

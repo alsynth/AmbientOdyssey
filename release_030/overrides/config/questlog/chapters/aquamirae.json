@@ -1,0 +1,10 @@
+{
+  "name": "Frozen Seas",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "order": 8,
+  "default_chapter": false,
+  "hidden": false
+}

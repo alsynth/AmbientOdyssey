@@ -1,0 +1,53 @@
+{
+  "title": "Choose Your Weapon",
+  "description": "A good weapon is not simply the one with the highest damage number. Reach, speed, spells and special effects all change how it handles danger.\n\nA small vanilla check rather than a claim to evaluate complex modded weapons. Endgame alternatives remain valid.\n\nField note: Try it against ordinary enemies before committing to a dungeon with unfamiliar mechanics.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 3,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Carry a weapon suited to your next challenge",
+      "objectives": [
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:diamond_sword",
+          "required_amount": 1,
+          "name": "Carry 1 × diamond sword"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:diamond_axe",
+          "required_amount": 1,
+          "name": "Carry 1 × diamond axe"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:bow",
+          "required_amount": 1,
+          "name": "Carry 1 × bow"
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 50
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

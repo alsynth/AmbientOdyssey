@@ -1,0 +1,28 @@
+{
+  "title": "The Recipe Beneath the Recipe",
+  "description": "A strange item is a question, not a dead end. Many useful materials become obvious once you know what they are used for.\n\nField note: Use the recipe and uses shortcuts shown in the Field Manual; exact keybinds can be remapped.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 4,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the JEI recipe and uses shortcuts"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "The Field Manual",
+  "description": "A good explorer knows where to look for answers. The Field Manual contains the detailed explanations that would interrupt an adventure.\n\nField note: The Adventure Journal is for goals; the Field Manual is for mechanics, recipes and examples.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 3,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Learn the difference between the Journal and the Field Manual"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

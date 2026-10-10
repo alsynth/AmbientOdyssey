@@ -1,0 +1,28 @@
+{
+  "title": "Mark the Way Home",
+  "description": "The world is easy to lose yourself in. A single marked shelter or Waystone can turn an uncertain journey into a repeatable route.\n\nField note: A waypoint does not mean your character is safe. Keep track of portals and the path back, too.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 10,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read how to save discovered places with Xaero's map"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

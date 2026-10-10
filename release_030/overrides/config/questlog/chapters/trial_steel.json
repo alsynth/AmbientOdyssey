@@ -1,0 +1,10 @@
+{
+  "name": "Trial by Steel",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "order": 2,
+  "default_chapter": false,
+  "hidden": false
+}
