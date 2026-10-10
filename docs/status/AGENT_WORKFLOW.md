@@ -1,3 +1,7 @@
+## 2026-10-10 first-test kit update
+
+Active *preparation* branch: `experimental/v0.4h-test-session-kit-20261010` (full pack still 331 CF refs). The compiled **modpack has not changed** since successful full ZIP run `38077302870`. A small separate read-only snapshot/field-sheet kit passed `38078378067`, tested 11 offline fixtures and released artifact `11678754683` with no JARs. Need user to **actually import a separate CurseForge instance**, capture Questlog icon screenshots, inspect outstanding 23 inaccessible/parse-failed exact JAR metadata, run full client and separately built server, then judge launch readiness. See `docs/testing/V04H_TEST_SESSION_FIELD_SHEET.md`. Do not mark these gameplay gates complete yet.
+
 
 ## 0.4h installed JAR/server readiness hardening — 10 October 2026
 

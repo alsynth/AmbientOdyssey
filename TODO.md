@@ -2068,3 +2068,12 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Source-backed dedicated server sidedness review, real full 331-ref startup/join/restart/portals/FTB Solo Quests; NO automatic blind copying from client mods.
 - [ ] GUI-scale 2/3 screenshots and live click test for Questlog screen-anchored inventory button, Curios/Accessories/JEI/FTB Quests collisions; revise provisional x/y only after observed result.
 - [ ] Validate 5–7-player worldgen/performance after final roster; no permanent server world yet.
+
+### v0.4h first-playtest kit — 10 October 2026
+
+- [x] Preserve successful 331-ref full modpack ZIP; no pin/renderer/worldgen configuration change during support-kit work.
+- [x] Package read-only profile snapshot with whitelisted video/audio settings, startup signature counts, installed metadata and optional independent server comparison. No raw logs/screenshots copied; documented privacy limitations.
+- [x] Create staged in-game evidence matrix for startup, JEI/Questlog/Curios inventory, portals, worldgen and multiplayer, all cells initially NOT TESTED.
+- [x] Unit test on fake profiles and build a reproducible standalone 9-file, 22,001-byte kit (GitHub Actions run `38078378067`, 11 tests passed, SHA256 `3a6cb9b360a57f54a8f6b88e51f9d2d6251216782a7d39931c6123aa049266e5`).
+- [ ] Import the separate full 331-ref PRIVATE CurseForge ZIP, then run kit against actually downloaded JARs and classify unresolved 23 native audit gaps.
+- [ ] Capture Questlog inventory icon/screenshots, test Mine Cells, Dimensional Dungeons and true dedicated server behavior; inspect FTF terrain, 5–7 player load and audio only after the first client starts.
