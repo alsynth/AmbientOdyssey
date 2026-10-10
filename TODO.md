@@ -1758,6 +1758,18 @@ Once the foundation passes:
 - Container and backpack integration.
 - Accessible tooltips and interaction feedback.
 
+### Questlog vs FTB Quests — research queue (10 Oct 2026)
+
+**Comparison audit only:** [Questlog 3.4.1 vs FTB Quests detailed evaluation](docs/audits/QUESTLOG_VS_FTB_QUESTS_EVALUATION_2026-10-10.md). Questlog official NeoForge 1.21.1 file **`1202066:8952784`** has Oblivion-style journal UI, editable config JSON, per-player persistent quests, structure/biome/dimension tasks, triggered chapters, boss/Origin quests, choice/random rewards, and rich notifications. **No installation approved and no migration undertaken.**
+
+- [ ] **Candidate UX decision:** A/B **FTB-only vs FTB (big mod progression reference) + Questlog (small immersive adventure/story mission log)** vs full replacement only if large-scale benchmarking justifies it. The creator explicitly considers FTB better for many small tasks and Questlog for major goals.
+- [ ] **Questlog test profile:** clone known working AO Test8.2 instance, use official NeoForge 3.4.1 CF `1202066:8952784`, verify dependencies (Cloth Config; bundled Triggers), NeoForge 21.1.252 and client/dedicated-server launch, inventory overlays and Grave Accent keybind.
+- [ ] **Native 3.4.1 editor and objectives proof:** `/ql edit_mode`, `/ql reload`; build 3 distinct sample quests (welcome/read/hover picture, registered modded biome/structure visit, minor boss defeat with prerequisite and choice reward). Test persistence, hidden/completed state, reward once, authoring workflow.
+- [ ] **Multiplayer quest tracking:** test two independent players, death/relog/restart/backup, compare concurrent FTB Solo Quests dedicated-server behavior; do not assume Questlog's `global` quests equal party progress or native FTB sync.
+- [ ] **Origins backend incompatibility:** Questlog NeoForge `questlog:origin` implementation uses IAFEnvoy's `com.iafenvoy.origins` (mod ID `origins`), **not the preferred candidate CyberDay NeoOrigins**. Verify compatibility or use advancement/command bridge; do not add both Origins backends blindly.
+- [ ] **Server scale profiling:** official code polls active `visit_biome` / `visit_structure` per player ~every 20 ticks; compare 10/50/200 unfinished location objectives and 5 players before using it to replace a very large FTB Questbook. **Risk identified via source, no performance measurement.**
+- [ ] **Data ownership:** modern Questlog 2.0+ is `config/questlog/quests` and `chapters` JSON (older README still claims datapack), with **no FTB SNBT auto-import**. Keep the existing FTB quest files, quest progress and reward balance until explicit replacement decision. No duplicate player rewards between two logbooks.
+ 
 ### RPG character identity and private-MMORPG layer — new design research (10 Oct)
 
 **Research proposal, not a production selection:** [RPG Character Identity & Private MMO Audit](docs/audits/RPG_CHARACTER_IDENTITY_PRIVATE_MMO_PROPOSAL_2026-10-10.md). User wants **Origins that matter mechanically**, with passives, meaningful tradeoffs, suitable addon/config control and immersive character progression for 5–7 players; **no player guild infrastructure or scheduled world events**.
