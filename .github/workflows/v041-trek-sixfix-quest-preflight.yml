@@ -1,0 +1,54 @@
+name: AO v0.4.1 Trek SixFix Checkmark Preflight
+on:
+  push:
+    branches:
+      - experimental/v0.4.1-trek-sixfix-minecells-quests-20261010
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  combined-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install nbtlib==2.0.4
+      - name: Check source, runtime-fix guards, structure curation and manual
+        run: |
+          python -m compileall -q build_release_030.py tools validate_content_040a.py validate_content_040b.py validate_content_040c.py validate_content_040d.py validate_content_040e.py
+          python tools/validate_v041_six_fix.py
+          python tools/validate_v04_trek_curated.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+          python tools/validate_v04_fg.py
+          python validate_content_040a.py
+          python validate_content_040b.py
+          python validate_content_040c.py
+          python validate_content_040d.py
+          python validate_content_040e.py
+          python validate_worldgen_test84.py
+          python validate_generation_repairs_086.py
+          python validate_worldgen_089.py
+          python validate_worldgen_810.py
+          python compile_terminal_jigsaws_087.py
+      - name: Build combined CurseForge experimental test package
+        run: |
+          python build_release_030.py --output build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip
+          python tools/validate_v04_release.py build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip --report build/v041-combined-validation.json
+          python tools/validate_v04_trek_curated.py --archive build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip --require-minecells
+          python tools/diagnose_v04_instance.py --zip build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip --report build/v041-combined-diagnostic.json
+          sha256sum build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Trek-SixFix-Manual-Experimental
+          path: |
+            build/Ambient-Odyssey-v0.4.1-TREK-SIXFIX-CHECKMARK-TEST.zip
+            build/v041-combined-validation.json
+            build/v041-combined-diagnostic.json
+          if-no-files-found: error
