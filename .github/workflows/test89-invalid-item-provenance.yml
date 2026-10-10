@@ -1,0 +1,25 @@
+name: Test8.9 native structure invalid-item provenance
+on:
+  push:
+    branches: [worldgen/test8.9-source-triage]
+    paths: [.github/workflows/test89-invalid-item-provenance.yml, audit_invalid_structure_items_089.py]
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install nbtlib==2.0.4
+      - name: Scan SHA-matched native structure item stacks and attribute errors
+        run: python -u audit_invalid_structure_items_089.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: AO-Test8.9-InvalidItem-Source-Owners
+          path: build/invalid-items-worldgen-089.json
+          if-no-files-found: warn
+          retention-days: 7

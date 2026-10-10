@@ -1,0 +1,39 @@
+name: AO Test8.9 worldgen triage — city, beach lighthouse, dungeon
+on:
+  push:
+    branches: [worldgen/test8.9-source-triage]
+    paths: [.github/workflows/test89-worldgen-source-audit.yml]
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions: {contents: read}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: pip install nbtlib==2.0.4
+      - name: Analyze source JAR index for precise missing-pool ownership
+        run: |
+          python - <<'PY'
+          import gzip,json
+          from pathlib import Path
+          o=json.loads(gzip.decompress(Path('release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))
+          ids=('repurposed_structures','kaisyn','dungeoncrawl','traveloptics','yungsbridges')
+          for name in ids:
+              jars=[x for x in o['jars'] if name.replace('_','') in x['file'].lower().replace('_','').replace('-','')]
+              print('JAR_OWNERS',name,json.dumps(jars)[:2800],flush=True)
+              for typ in ('worldgen/structure','worldgen/template_pool','worldgen/structure_set','tags/worldgen/biome'):
+                  rec={k:v for k,v in o['resources'].get(typ,{}).items() if k.startswith(name+':') or (name=='repurposed_structures' and 'cities/overworld' in k)}
+                  print('RESOURCE_COUNT',name,typ,len(rec),flush=True)
+                  if typ=='worldgen/template_pool':
+                      for k,v in rec.items():
+                          if 'cities/overworld' in k or 'lighthouse' in k or 'villager' in k:
+                              print('RESOURCE_ITEM',typ,k,json.dumps(v)[:7000],flush=True)
+                  if typ=='worldgen/structure':
+                      for k,v in rec.items():
+                          if 'city' in k or 'lighthouse' in k:
+                              print('STRUCTURE_DEF',k,json.dumps(v)[:7500],flush=True)
+          print('GLOBAL_KAISYN_MASTER_POOL',json.dumps({k:v for k,v in o['resources'].get('worldgen/template_pool',{}).items() if 'villager_lighthouse_master' in k})[:10000],flush=True)
+          PY
