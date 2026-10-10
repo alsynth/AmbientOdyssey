@@ -90,7 +90,7 @@ def validate(archive, lock, baseline, patches, private_modrinth=False):
             owners = ('adventuredungeons', 'block_factorys_bosses', 'irons_spellbooks')
             overrides = [n for n in z.namelist() if n.startswith(expected)
                          and n[len(expected):].split('/')[0] in owners and n.endswith('.nbt')]
-            assert len(overrides) == 271, f'Wrong native terminal NBT count: {len(overrides)}'
+            assert len(overrides) == 273, f'Wrong native terminal NBT count: {len(overrides)}'
             for n in overrides:
                 plain = gzip.decompress(z.read(n))
                 assert b'minecraft:empty' in plain, n
@@ -148,7 +148,7 @@ def build(patches=False, output=None, private_modrinth=False):
         check_path(name)
         entries.pop(name, None)
 
-    # Test8.7: derive PRIVATE resource overrides from exact SHA256-pinned native JARs.
+    # Test8.8: derive PRIVATE resource overrides from exact SHA256-pinned native JARs.
     # This is not a blanket missing-pool alias: only validated terminal NBT
     # references are repaired. Source binaries are never republished here.
     if lock.get('terminal_jigsaw_repair', {}).get('enabled', False):
