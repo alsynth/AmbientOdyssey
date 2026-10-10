@@ -153,6 +153,13 @@ def run(archive):
               if k.startswith('shader-')) and
           len([k for k in lock['additions'] if k.startswith('shader-')]) == 2,
           shaders)
+    # A clean install must not greet first-time users with the accessibility narrator.
+    defaults = z.read('overrides/config/defaultoptions/options.txt').decode()
+    check('Default Options narrator off, canonical hotkey and first-launch accessibility prompt disabled',
+          'narrator:0' in defaults and 'narratorHotKey:false' in defaults and
+          'onboardAccessibility:false' in defaults and
+          'menuBackgroundBlurriness:0' in defaults and 'narratorHotkey:false' not in defaults,
+          'Narrator and shader menu defaults')
     approved = json.loads((R / 'approved-structure-additions.json').read_text())
     jars = json.loads((R / 'evidence/test6-addon-jars.json').read_text())
     # Structory v1.0.17 was SHA-audited but fails on NeoForge 1.21.1; its
