@@ -24,7 +24,7 @@ for a in LOCK['additions'].values():pins[a['projectId']]=a['id']
 if LOCK.get('default_integrated_patches',False):
     a=LOCK['optional_integrated_patches']
     pins[a['projectId']]=a['id']
-assert len(pins)==({'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-broad-content':307,'0.4.0-b1-living-world-batch':289}.get(LOCK['version'],269)),len(pins)
+assert len(pins)==({'0.4.0-c0-ecosystem-feedback':288,'0.4.0-d0-content-first':296,'0.4.0-e0-audit-broad-content':308,'0.4.0-b1-living-world-batch':289}.get(LOCK['version'],269)),len(pins)
 assert pins[250398]==6368976 and pins[889915]==8909889
 assert pins[1713723]==8988949 and pins[1385782]==7227735
 index=json.loads(gzip.decompress((ROOT/'release_030/evidence/jar-resource-index-test6.json.gz').read_bytes()))

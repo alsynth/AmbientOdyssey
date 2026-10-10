@@ -31,7 +31,8 @@ for slug,e in lock['additions'].items():
     installed[e['projectId']]=e['id']
 if lock.get('default_integrated_patches'):
     e=lock['optional_integrated_patches'];installed[e['projectId']]=e['id']
-assert len(installed)==307,('Expected 296 + 11 unique projects',len(installed))
+assert installed[638111]==6372979
+assert len(installed)==308,('Expected 296 + 11 candidates plus required Prism',len(installed))
 assert len(set(pid for pid,_,_ in pins.values()))==len(pins)
 assert all(installed[pid]==fid for pid,fid,_ in pins.values())
 # Verify libraries with source/native or CurseForge relations before claiming dependency closure:
@@ -40,5 +41,5 @@ for pid,desc in {495476:'Puzzles Lib (Pick Up Notifier)',638111:'Prism (Legendar
     assert pid in installed,('Missing library project: check exact NeoForge dependency',pid,desc)
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
 assert (ROOT/'release_030/overrides/config/mutantmonsters-common.toml').is_file()
-print('PASS: 0.4e 11 official NeoForge 1.21.1 candidate pins; 307 references; 273 source repairs retained; rarity unchanged.')
+print('PASS: 0.4e 11 official NeoForge 1.21.1 candidates plus Prism; 308 references; 273 source repairs retained; rarity unchanged.')
 print('NOT RUNTIME-TESTED: rendering/particle layers, farming double-rightclick, tooltip UI, client keybinds and multiplayer installer sidedness.')

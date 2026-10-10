@@ -1630,6 +1630,20 @@
       "content_group": "0.4.0-e0-audit-broad",
       "content_role": "Right-click harvesting; Farmer Delight duplicate behavior audit",
       "environment": "both"
+    },
+    "content-040e-dep-prism": {
+      "projectId": 638111,
+      "id": 6372979,
+      "fileName": "Prism-1.21.1-neoforge-1.0.11.jar",
+      "displayName": "Prism 1.0.11 (required by Legendary Tooltips)",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/prism-lib/files/6372979",
+      "content_group": "0.4.0-e0-audit-broad",
+      "dependency_for": "content-040e-legendary-tooltips"
     }
   },
   "optional_integrated_patches": {

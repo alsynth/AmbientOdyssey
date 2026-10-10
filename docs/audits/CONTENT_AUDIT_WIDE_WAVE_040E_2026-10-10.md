@@ -19,7 +19,7 @@ Add substantial compatible content before post-expansion fixes, then worldgen/pe
 | Equipment Compare 1.3.13 | 502561:6375501 | client, NeoForge 1.21.1 | Compare player-equipped gear against loot stats |
 | RightClickHarvest 4.6.1 | 452834:7508749 | both, NeoForge 1.21.1 | Right-click harvesting; Farmer Delight duplicate behavior audit |
 
-Manifest target **296 to 307 unique CurseForge refs**; existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
+Manifest target **296 to 308 unique CurseForge refs** (11 mods + verified Prism 1.0.11 dependency); existing gameplay mods/resource packs and 273 8.10 NBT source repairs remain untouched. Never blindly repin shared baseline projects; abort on mismatches. The builder exports private NeoReef only for developer trials.
 
 ## Deliberately not auto-added despite earlier lists
 - **AmbientSounds 6:** Atmosfera Neo already chosen, doubling constant audio is counterproductive, and water/rain already loud.
@@ -43,3 +43,6 @@ Manifest target **296 to 307 unique CurseForge refs**; existing gameplay mods/re
 
 ## Safety and next test wave
 Static release and repeated deterministic archive builds check package reproducibility, expected CF files, rare mutant weights, exact NBT source repairs and 0.4c gamerules. **Only real Minecraft testing** can verify 5–7-player server performance, duplicate right-click crop handling, HUD/tooltip overlap, map rendering, keybindings and dual cave particle density. Individual game sessions should be **substantial grouped batches**, not micro-tests per 1–2 mods. The user's server opening ~15 October remains a target, not a safety guarantee.
+
+## CI source-confirmed dependency follow-up
+The first CI run stopped at correct required-project closure: **Prism (CF 638111) was absent**. Added officially versioned **Prism 1.0.11 1.21.1 NeoForge, file 6372979**; the 0.4e validation now requires that exact file. No unrelated project repins.
