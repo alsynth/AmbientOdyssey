@@ -1,0 +1,15 @@
+# Ambient Odyssey v0.4h — first-run visibility trial for Questlog's inventory button.
+# Source: Questlog 1.21.1, QuestlogConfig and QuestlogOpenButton Java source.
+# The button uses x-18/y-18 for rendering when relativeToInventory=false.
+# Coordinates x=38,y=38 position the artwork around screen (20,20),
+# independently of inventory skins. Review this in actual Minecraft at GUI scale 3.
+# If it covers another overlay, modify [button] and retest; do not hide the journal.
+[button]
+enabled = true
+showBadge = true
+relativeToInventory = false
+x = 38
+y = 38
+badgeX = 24
+badgeY = 0
+bobbingBadge = true

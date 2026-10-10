@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0-experimental-minecells-fg",
+  "version": "0.4.0-experimental-minecells-fg-questlog",
   "baseline": "Ambient-Odyssey-v0.2.10.zip",
   "remove_projects": {
     "tectonic": 686836,
@@ -1954,6 +1954,22 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/end-remastered-additions/files/9111385",
       "content_group": "0.4.0-g0-curated-exploration-content",
       "content_role": "Additional End Remastered eyes tied to fishing, trial chambers, sculk, Aether and BOMD"
+    },
+    "content-040h-questlog": {
+      "projectId": 1202066,
+      "id": 8952784,
+      "fileName": "questlog-neoforge-1.21.1-3.4.1.jar",
+      "displayName": "Questlog 3.4.1 NeoForge — journal foundation only",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "source": "https://www.curseforge.com/minecraft/mc-mods/questlog/files/8952784",
+      "content_group": "0.4.0-h0-questlog-compat-preflight",
+      "content_role": "Enable narrative quest journal and inventory GUI compatibility testing; no authored quests in this wave",
+      "environment": "both",
+      "notes": "Cloth Config NeoForge 15.0.140 project 348521/file 5729127 already inherited; client inventory button is movable via questlog-client TOML; no Questlog quests or progression changes yet."
     }
   },
   "optional_integrated_patches": {
@@ -2700,7 +2716,7 @@
     "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
   },
   "experimental_minecells": {
-    "expected_manifest_refs": 330,
+    "expected_manifest_refs": 331,
     "owo_inherited_pin": {
       "projectId": 532610,
       "id": 6785734
