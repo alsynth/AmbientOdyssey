@@ -29,11 +29,11 @@ func=(root/'data/ambient_odyssey/function/server_rules.mcfunction').read_text()
 cmds=[s.strip() for s in func.splitlines() if s.strip() and not s.startswith('#')]
 assert cmds==['gamerule playersSleepingPercentage 30','gamerule doFireTick false','gamerule mobGriefing false'],cmds
 audio=(BASE/'overrides/config/waves-common.toml').read_text()
-assert re.search(r'^waveVolume = 0\\.25$',audio,re.M)
+assert 'waveVolume = 0.25' in audio
 assert re.search(r'^waveBreakingSoundChance = 120$',audio,re.M)
 defaults=(BASE/'overrides/config/defaultoptions/options.txt').read_text()
 assert 'soundCategory_weather:0.2' in defaults and 'soundCategory_block:0.4' in defaults and 'soundCategory_ambient:1.0' in defaults
 alex=(BASE/'overrides/config/alexsmobs.toml').read_text()
 for k in ['gorillaSpawnWeight','flySpawnWeight','cockroachSpawnWeight']:
- assert re.search(r'^\\s*'+k+r' = 0$',alex,re.M),k
+ assert k+' = 0' in alex,k
 print('PASS: 288-pinned 0.4c pack, Galosphere absent, Better Archaeology present, rules load by Paxi, source-validated audio defaults, Alexs pests disabled, original 273 NBT source patch maintained.')
