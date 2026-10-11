@@ -27,7 +27,7 @@ CONTROL_VERSION="0.4.2-experimental-recipe-spawner-ui-core"
 ADDONS={
 "overrides/mods/ao-questlog-betterinventory-0.1.3.jar",
 "overrides/mods/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar",
-"overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar",
+"overrides/mods/ao-worldgen-safety-0.1.3-experimental.jar",
 }
 RETAIN_PINS={
 1581408:9060294, # Streams Reflowing
