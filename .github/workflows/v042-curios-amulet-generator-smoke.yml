@@ -1,0 +1,36 @@
+name: AO v0.4.1 Curios Slot Compiler Regression
+on:
+  push:
+    branches:
+      - experimental/v042-curios-amulet-slot-private-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-compiler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Verify compiled Curios slot is present, conservative and idempotent
+        run: |
+          python -m py_compile compile_compatibility_031.py
+          python compile_compatibility_031.py
+          python - <<'PY'
+          import hashlib,json, pathlib
+          import subprocess,sys
+          root=pathlib.Path("release_030/overrides/config/paxi/datapacks/ao_compatibility/data/curios")
+          p=root/"curios/slots/amulet.json"
+          tag=root/"tags/item/amulet.json"
+          assert json.loads(p.read_text())=={"size":1,"operation":"SET","replace":False}
+          data=json.loads(tag.read_text())
+          assert not data.get("replace",True) and len(data["values"])>=10
+          h=hashlib.sha256(p.read_bytes()).hexdigest()
+          subprocess.run([sys.executable,"compile_compatibility_031.py"],check=True)
+          assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==h
+          assert len(list((root/"curios/slots").glob("amulet.json")))==1
+          print("PASS: deterministic nonreplacing amulet slot survives two compatibility regenerations")
+          PY
+          git diff --check
