@@ -13,6 +13,14 @@
 
 These are scoped as proposals for the first development wave, not confirmation of feasibility. Prioritize data packs/scripts over custom Java when reliable; consolidate minimal Java hooks where appropriate. Check exact 1.21.1 NeoForge versions, licenses, dependencies and multiplayer side. Do not expand mod roster indiscriminately.
 
+
+## Added traversal-wear request — 11 October 2026
+
+- **YES: stronger player-traffic path erosion.** Frequently walked paths should become more visibly worn and develop more noticeably than lightly traveled ground. Specifically target the existing TRMT/Desire Paths-style walked-trail system, **not** FreeTerraForged terrain sculpting, rivers or an indiscriminate global erosion increase.
+- **Timing:** include a targeted config/API audit and cheap native tuning during the upcoming custom integrations wave if practical; otherwise finish as a bounded world/visual gameplay tuning item alongside performance, **before final server/world settings are locked**. Avoid a major new terrain-generation rewrite.
+- **Tuning objective:** make a noticeable difference between occasional footsteps, repeated player use, and established routes, preserving grass/vegetation in low-traffic areas. Avoid instant full-width dirt highways, excessive farmland damage, permanent unwanted paths inside player buildings, or extra TPS cost. Verify real mod version and available config fields before setting numbers; use a small patch only if native options cannot achieve desired results.
+- **Acceptance:** revisit a frequently walked route versus a control route in a disposable survival world, compare before/after wear, regrowth/reversal if supported, and test multiplayer/server impact. Record any chunk updates or save footprint. No existing gameplay change is implied by this planning note.
+
 ## Phase 2 — performance and server readiness
 
 After the bespoke changes that touch registries/content are stable, run a true exploration-oriented performance pass (normal walking, sailing, combat, new chunks and cached chunks, 5–7 player server). Fix keybinding/performance-side configuration collisions where necessary; test native worldgen settings; select final seed, finalize structure placement, and PREGENERATE an agreed, bounded Overworld radius with Chunky before server opening. Admin `/locate` or teleport-to-unloaded-chunks are not representative primary benchmarks. Keep world pregen AFTER biome/structure generation settings finalized.
