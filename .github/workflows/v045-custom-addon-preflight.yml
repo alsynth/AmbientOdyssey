@@ -6,6 +6,10 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  actions: read
+concurrency:
+  group: ao-v045-${{ github.ref_name }}
+  cancel-in-progress: true
 jobs:
   compile:
     runs-on: ubuntu-latest
@@ -29,8 +33,28 @@ jobs:
           assert c['erosionMultipliers']['player']==1.0
           assert c['deErosion']['grassEnabled'] and c['deErosion']['dirtEnabled']
           PY
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Download exact successful v0.4.4 playtest baseline
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/base
+          gh run download 38170430671 --repo "$GITHUB_REPOSITORY" --name AO-v044-PREPERFORMANCE-CANDIDATE-PRIVATE-TEST --dir build/base
+          BASE=$(find build/base -type f -name 'Ambient-Odyssey-v0.4.4-PREPERFORMANCE-TEST.zip' -print -quit)
+          test -n "$BASE"
+          cp "$BASE" build/exact-v044.zip
+      - name: Build and validate private v0.4.5 test ZIP
+        run: |
+          python -m py_compile tools/package_v045_custom.py
+          python tools/package_v045_custom.py --base build/exact-v044.zip --addon addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar --output build/Ambient-Odyssey-v0.4.5-CUSTOM-INTEGRATIONS-PREVIEW.zip
+          python tools/package_v045_custom.py --verify --base build/exact-v044.zip --addon addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar --output build/Ambient-Odyssey-v0.4.5-CUSTOM-INTEGRATIONS-PREVIEW.zip
+          sha256sum build/Ambient-Odyssey-v0.4.5-CUSTOM-INTEGRATIONS-PREVIEW.zip > build/v045-sha256.txt
       - uses: actions/upload-artifact@v4
         with:
           name: AO-v045-AFFIX-TRIMS-ADDON-EXPERIMENTAL
           if-no-files-found: error
-          path: addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar
+          path: |
+            addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar
+            build/Ambient-Odyssey-v0.4.5-CUSTOM-INTEGRATIONS-PREVIEW.zip
+            build/v045-sha256.txt
