@@ -33,8 +33,8 @@ QUESTLOG_JAR="ao-questlog-betterinventory-0.1.2.jar"
 STREAMS_JAR="ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
 SAFETY_JAR="ao-worldgen-safety-0.1.0-experimental.jar"
 JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR,"overrides/mods/"+SAFETY_JAR}
-NAME="Ambient Odyssey v0.4.1 - Trek and Manual Completion TEST"
-VERSION="0.4.1-experimental-trek-manual-ack"
+NAME="Ambient Odyssey v0.4.1 - Curios Amulet TEST"
+VERSION="0.4.1-experimental-curios-amulet"
 
 def jar_check(name, blob):
     with ZipFile(BytesIO(blob)) as z:
