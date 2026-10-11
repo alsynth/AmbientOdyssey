@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_apotheotic_port"
+version="0.0.1-source-prototype"
+displayName="Ambient Odyssey - Apotheotic Additions Port Prototype"
+description='''Isolated registry milestone for three rarity crafting materials. NOT a complete Apotheotic Additions port and NOT an installable pack update.'''
+[[dependencies.ao_apotheotic_port]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_apotheotic_port]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_apotheotic_port]]
+modId="apotheosis"
+type="required"
+versionRange="[8.9.0,9.0.0)"
+ordering="AFTER"
+side="BOTH"
