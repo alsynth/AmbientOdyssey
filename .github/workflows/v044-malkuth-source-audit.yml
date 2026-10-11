@@ -25,11 +25,11 @@ jobs:
               file.write(urllib.request.urlopen(base+part,timeout=20).read())
               file.close()
               n=nbtlib.load(file.name)
-              print('FILE',part,'size',n.root.get('size'),'palette',len(n.root['palette']),'blocks',len(n.root['blocks']))
-              pal=n.root['palette']
+              print('FILE',part,'size',n.get('size'),'palette',len(n['palette']),'blocks',len(n['blocks']))
+              pal=n['palette']
               for i,entry in enumerate(pal):
                   if 'jigsaw' in str(entry.get('Name')):print('JIGSAW PALETTE',i,entry)
-              for block in n.root['blocks']:
+              for block in n['blocks']:
                   if 'nbt' in block:
                       be=block['nbt']; name=str(be.get('name',''))
                       if any(x in name.lower() for x in ['malkuth','part_1','jigsaw']):
