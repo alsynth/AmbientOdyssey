@@ -1,0 +1,78 @@
+package dev.ambientodyssey.ports.wetsand;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+/**
+ * Native NeoForge PORT PROTOTYPE, not the original Wet Sand mod.
+ *
+ * This first iteration establishes six item/block registries and moisture
+ * transitions for the new blocks. It intentionally does not inject into
+ * vanilla sand or worldgen, or tamper with suspicious-sand block entities.
+ * That requires a separate source-backed, TPS-bounded implementation.
+ */
+@Mod(WetSandPort.ID)
+public final class WetSandPort {
+    public static final String ID = "ao_wet_sand";
+    private static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ID);
+    private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ID);
+    public static final DeferredBlock<MoistureBlock> MOIST_SAND = stage("moist_sand", false, 1);
+    public static final DeferredBlock<MoistureBlock> WET_SAND = stage("wet_sand", false, 2);
+    public static final DeferredBlock<MoistureBlock> SOAKED_SAND = stage("soaked_sand", false, 3);
+    public static final DeferredBlock<MoistureBlock> MOIST_RED_SAND = stage("moist_red_sand", true, 1);
+    public static final DeferredBlock<MoistureBlock> WET_RED_SAND = stage("wet_red_sand", true, 2);
+    public static final DeferredBlock<MoistureBlock> SOAKED_RED_SAND = stage("soaked_red_sand", true, 3);
+
+    private static DeferredBlock<MoistureBlock> stage(String name, boolean red, int stage) {
+        DeferredBlock<MoistureBlock> block = BLOCKS.register(name,
+                () -> new MoistureBlock(red, stage, BlockBehaviour.Properties.ofFullCopy(red ? Blocks.RED_SAND : Blocks.SAND).randomTicks()));
+        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return block;
+    }
+
+    public WetSandPort(IEventBus modBus) {
+        BLOCKS.register(modBus);
+        ITEMS.register(modBus);
+    }
+
+    public static final class MoistureBlock extends Block {
+        private final boolean red;
+        private final int stage;
+        public MoistureBlock(boolean red, int stage, Properties properties) {
+            super(properties);
+            this.red = red;
+            this.stage = stage;
+        }
+        @Override
+        protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+            boolean hydrated = false;
+            for (int dx = -3; dx <= 3 && !hydrated; dx++) {
+                for (int dz = -3; dz <= 3 && !hydrated; dz++) {
+                    if (Math.abs(dx) + Math.abs(dz) > 3) continue;
+                    hydrated = level.getFluidState(pos.offset(dx, 0, dz)).isSource();
+                }
+            }
+            int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
+            if (target == stage) return;
+            Block next = switch (target) {
+                case 0 -> red ? Blocks.RED_SAND : Blocks.SAND;
+                case 1 -> red ? MOIST_RED_SAND.get() : MOIST_SAND.get();
+                case 2 -> red ? WET_RED_SAND.get() : WET_SAND.get();
+                default -> red ? SOAKED_RED_SAND.get() : SOAKED_SAND.get();
+            };
+            level.setBlock(pos, next.defaultBlockState(), 3);
+        }
+    }
+}
