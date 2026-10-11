@@ -32,7 +32,7 @@ BASE_REMOVED={832882,1430156,1581408}
 QUESTLOG_JAR="ao-questlog-betterinventory-0.1.2.jar"
 STREAMS_JAR="ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
 SAFETY_JAR="ao-worldgen-safety-0.1.0-experimental.jar"
-JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR,"overrides/mods/"+SAFETY_JAR"}
+JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR,"overrides/mods/"+SAFETY_JAR}
 NAME="Ambient Odyssey v0.4.1 - Worldgen Safety and Data Repairs"
 VERSION="0.4.1-experimental-worldgen-safety"
 
