@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_wet_sand"
+version="0.0.1-source-prototype"
+displayName="AO Wet Sand Compatibility Prototype"
+description='''An isolated, original NeoForge registration prototype for the Wet Sand port; NOT an installed/full Wet Sand port.'''
+[[dependencies.ao_wet_sand]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_wet_sand]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
