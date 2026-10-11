@@ -71,7 +71,20 @@ def check(path):
         assert json.loads(z.read(
           "overrides/config/paxi/datapacks/ao_compatibility/data/curios/curios/slots/amulet.json"
         ))=={"size":1,"operation":"SET","replace":False}
-    print("PASS: 330 exact refs, 15 author-derived NeoForge recipes, 4 evidence-gated recipe disables, AO spawner & air mixins, Q 0.1.3, Curios, Streams and full ZIP integrity")
+        spellstone="overrides/config/paxi/datapacks/ao_compatibility/data/curios/curios/slots/spellstone.json"
+        assert json.loads(z.read(spellstone))=={
+            "size":1,"operation":"SET","replace":False,
+            "icon":"enigmaticlegacyplus:slot/empty_spellstone_slot"
+        }
+        assert "overrides/config/dungeon_difficulty_v2.json" not in names
+        native_difficulty_path="overrides/config/dungeon_difficulty/difficulty_v2.json"
+        assert native_difficulty_path in names, "Dungeon Difficulty ignored root-level pilot config"
+        dd=json.loads(z.read(native_difficulty_path))
+        from tools.validate_ao_balance_lab import check_config
+        assert check_config(dd)
+        assert len(dd["dimensions"][0]["zones"])==6
+
+    print("PASS: native Dungeon Difficulty path, expanded ordinary hostiles, spellstone + amulet slots, 330 exact refs, 15 author-derived NeoForge recipes, 4 evidence-gated recipe disables, AO spawner & air mixins, Q 0.1.3, Curios, Streams and full ZIP integrity")
     print("NOT runtime-tested; spawner persistence requires new dungeon + save/reload test")
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("archive",type=Path);args=p.parse_args()
