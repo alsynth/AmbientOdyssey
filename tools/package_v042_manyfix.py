@@ -9,7 +9,10 @@ No runtime claims. Source manifest bytes differ only in name/version/addition.
 from __future__ import annotations
 import argparse, hashlib, json, zipfile
 from pathlib import Path, PurePosixPath
-from tools.validate_ao_balance_lab import check_config
+try:
+    from tools.validate_ao_balance_lab import check_config
+except ModuleNotFoundError:
+    from validate_ao_balance_lab import check_config
 
 ROOT=Path(__file__).resolve().parents[1]
 PILOT=ROOT/"experiments/ao-balance-lab/config/dungeon_difficulty_v2.json"
