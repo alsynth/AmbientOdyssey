@@ -4,7 +4,8 @@
   "package": "dev.ambientodyssey.worldgensafety.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "HominidFinalizeSpawnMixin"
+    "HominidFinalizeSpawnMixin",
+    "TansWorldgenMarkerSchedulingMixin"
   ],
   "client": [],
   "server": [],

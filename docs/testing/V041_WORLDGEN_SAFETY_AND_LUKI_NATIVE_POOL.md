@@ -16,3 +16,7 @@ The AO separate Paxi datapack restores only **that pool registry entry**, with o
 - 540 `minecraft:air` item errors plus absent `redeco:hammer` and `biomesoplenty:rose_quartz_shard` need *source attribution*. Do not globally replace items with arbitrarily different loot.
 - Performance 27.5s integrated server stall under cold generation, to be profiled before terrain/structure settings.
 All carried over content, Mine Cells Streams bypass, Luki key resource repair, Questlog v0.1.2 and FTB informational manuals are unchanged unless release verification finds drift.
+
+## Tan's Huge Trees native 1.8.0 beta marker threading fix
+
+Source is official exact Tan Huge Trees 1.8.0 NeoForge 1.21.1 BETA JAR SHA256 0cb369ef24eac771e922ded6d39a87c6fccdff0d0316b3f9a761a4747136d062. GitHub Actions javap inspection confirms GameUtils$Mob.summonWorldGen(ServerLevel,Vec3,String,String,String,String) calls MinecraftServer.execute and summon() invokes ServerLevel.addFreshEntity(Entity) at bytecode offset 181. The uploaded client log observed execute running synchronously on Worker-Main-14; this is a genuine off-thread insertion risk. The new second narrow Mixin intercepts only summonWorldGen when not on the server thread, pushes the call to the server task queue with MinecraftServer.tell instead of execute, and cancels the native call. On main thread, unchanged. No Tan worldgen trees or binary/data assets are removed or bundled. Runtime verify marker presence/woodland tree lifecycle; Java compile and static tests do not guarantee runtime Mixin functionality.

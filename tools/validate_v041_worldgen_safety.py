@@ -12,4 +12,7 @@ assert data["elements"]==[{"weight":1,"element":{"location":"mansions:mansion/bo
 m=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/HominidFinalizeSpawnMixin.java").read_text()
 for key in ("HominidClientEvents","FinalizeSpawnEvent","getClass() != Zombie.class","!level.getServer().isSameThread()","ci.cancel()"):
     assert key in m,key
-print("PASS: native pinned mansion piece pool and narrow Hominid offthread event guard")
+t=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/TansWorldgenMarkerSchedulingMixin.java").read_text()
+for token in ("GameUtils$Mob","summonWorldGen(","server.tell(","ci.cancel()"):
+    assert token in t,token
+print("PASS: native Luki mansion pool, Hominid offthread guard, Tan markers deferred to server")

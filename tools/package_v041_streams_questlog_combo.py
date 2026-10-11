@@ -52,6 +52,7 @@ def jar_check(name, blob):
             assert 'modId="ao_worldgen_safety"' in toml
             assert "ao_worldgen_safety.mixins.json" in paths
             assert "dev/ambientodyssey/worldgensafety/mixin/HominidFinalizeSpawnMixin.class" in paths
+            assert "dev/ambientodyssey/worldgensafety/mixin/TansWorldgenMarkerSchedulingMixin.class" in paths
         else:
             assert 'modId="aoquestlogbridge"' in toml
             assert "QuestlogBetterInventoryBridge$QuestlogTab.class" in " ".join(paths)
