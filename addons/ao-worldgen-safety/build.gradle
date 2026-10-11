@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 group = 'dev.ambientodyssey.worldgensafety'
-version = '0.1.3-experimental'
+version = '0.1.4-experimental'
 base { archivesName = 'ao-worldgen-safety' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 neoForge {
