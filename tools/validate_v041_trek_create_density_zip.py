@@ -22,7 +22,7 @@ def validate(path):
         names=z.namelist()
         assert len(names)==len(set(names))
         manifest=json.loads(z.read("manifest.json"))
-        assert manifest["version"]=="0.4.1-experimental-trek-manual-ack"
+        assert manifest["version"]=="0.4.1-experimental-curios-amulet"
         assert len(manifest["files"])==329
         pins={x["projectID"]:x["fileID"] for x in manifest["files"]}
         for p in report["source_pins"].values():
@@ -65,6 +65,13 @@ def validate(path):
             ids.extend(tasks)
         assert len(ids)==len(set(ids))==32
 
+        # Curios source-verified slot file, no global slot override.
+        slotpath="overrides/config/paxi/datapacks/ao_compatibility/data/curios/curios/slots/amulet.json"
+        assert json.loads(z.read(slotpath))=={"size":1,"operation":"SET","replace":False}
+        tags=json.loads(z.read("overrides/config/paxi/datapacks/ao_compatibility/data/curios/tags/item/amulet.json"))
+        assert tags.get("replace") is False
+        assert any(item.startswith("enigmaticlegacyplus:") for item in tags.get("values",[]))
+        assert "slots = []" in z.read("overrides/config/curios-common.toml").decode()
         # Farms/food productions and special TREK types must not be overridden.
         assert not any(s.endswith(("/windmill.json","/honey_pit.json","/chocolate_pit.json"))
                        for s in actual)
