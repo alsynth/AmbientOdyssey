@@ -1,0 +1,26 @@
+{
+  "upstream": "https://github.com/HearthianDev/wet-sand",
+  "commit": "0e0707813ce811884a51a2614418b4a841d38699",
+  "license": "GPL-3.0-only",
+  "sha256": {
+    "moist_red_sand.png": "29269165d0f66e72f5c4a643d33494beb3661e866fab7fda96c97c6084a9686b",
+    "moist_sand.png": "83f6278a722bba7eb32b6f0358bc647cf66d1ab99fcd10b57dc27d8c01753c7d",
+    "moist_suspicious_sand_0.png": "4f85fe302f7ab2b82cd24e2e594dbac36f053d73b0ef81a8cd43bed930cca993",
+    "moist_suspicious_sand_1.png": "b68c17066c7a70d7e0dacfd53d0e022b363e4ab36a588a58a14d373187cad854",
+    "moist_suspicious_sand_2.png": "64c4553852a04009999aea7ddca7073a70fb2f5ab60cfc49da070305ddfde2a1",
+    "moist_suspicious_sand_3.png": "fad1c70354e436488661d79eabaa6de345b9d6cfcbea5c22c09a1f415f55d4ed",
+    "soaked_red_sand.png": "7c5c8214016e4a6a4058624c9ff7606f9845d1eef5394d877007d6adb5735b4d",
+    "soaked_sand.png": "3abad4364283680ca6e0601e0d4e1089bfc8b4200c33dd5f2d4b3197523891ac",
+    "soaked_suspicious_sand.png": "3abad4364283680ca6e0601e0d4e1089bfc8b4200c33dd5f2d4b3197523891ac",
+    "soaked_suspicious_sand_0.png": "c96c664f183e9545cf59846ce3ac85424ae1f4f1c9ba8e475aafb69240226ad2",
+    "soaked_suspicious_sand_1.png": "93fdb15a34de1645a884e86c238ba8a13e8dd6b72fce205a97798825f880b7e9",
+    "soaked_suspicious_sand_2.png": "3a94109e95b191e1b9a54cad70d2d0e1c9de0e68ffdf979e8e6afca43d5be40c",
+    "soaked_suspicious_sand_3.png": "2eef7f49ece506ec0a040fd20234070ac89dda27bc60bbe2e70fa6fd6367ba8c",
+    "wet_red_sand.png": "2e6c37b1cd6c70df099b31b66a79a800d637a6097d23ddddf5e92a6e2f67845c",
+    "wet_sand.png": "cfff82b03e86ca9b783b34de363dfac566b3089e6bb94c905aa18068b8525eaf",
+    "wet_suspicious_sand_0.png": "085eb26d9a51a9b4fc21792f7c35e29636fcf20fda8a063465b58473286e669a",
+    "wet_suspicious_sand_1.png": "d6cbef3c3930636cdf5b755657e4d94f46f38b039d187566371e6dcbfcf604a6",
+    "wet_suspicious_sand_2.png": "9b3e99de6f342770b648b52882d92cd0dfd9922768f12419426165bd8f1eb4cf",
+    "wet_suspicious_sand_3.png": "08b1d4c0daa8eabd30824bffff4cd979a837eacaa564a0ee1a631e511c20cdb0"
+  }
+}

@@ -16,8 +16,10 @@ neoForge {
     runs {
         gameTestServer {
             type = 'gameTestServer'
+            gameDirectory = project.file(project.hasProperty('aoRuntimeMods') ? 'run-terrain' : 'run')
             systemProperty 'neoforge.enabledGameTestNamespaces', 'ao_wet_sand'
         }
     }
 }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar') { from('LICENSE'); from('NOTICE.md') }

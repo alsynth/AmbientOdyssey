@@ -1,11 +1,11 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="MIT"
+license="GPL-3.0-only"
 [[mods]]
 modId="ao_wet_sand"
 version="0.0.1-source-prototype"
 displayName="AO Wet Sand Compatibility Prototype"
-description='''An isolated, original NeoForge registration prototype for the Wet Sand port; NOT an installed/full Wet Sand port.'''
+description='''An isolated native NeoForge Wet Sand port in development. Includes GPL-3.0 Wet Sand textures by HearthianDev. Full AO client and multiplayer compatibility remain unverified.'''
 [[dependencies.ao_wet_sand]]
 modId="minecraft"
 type="required"

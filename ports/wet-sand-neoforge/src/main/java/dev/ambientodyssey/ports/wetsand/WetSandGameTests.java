@@ -53,7 +53,10 @@ public final class WetSandGameTests {
     }
 
     @GameTest(template = "empty")
-    public static void hydrationAndDryingPreserveBothSandTypes(GameTestHelper helper) {
+    public static void hydrationAndBottleDryingPreserveBothSandTypes(GameTestHelper helper) {
+        var player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "sand-creative"));
+        player.setGameMode(GameType.CREATIVE);
+        player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Items.GLASS_BOTTLE));
         for (boolean red : new boolean[]{false, true}) {
             helper.setBlock(POS.below(), Blocks.STONE);
             helper.setBlock(POS.east(), Blocks.WATER);
@@ -65,11 +68,17 @@ public final class WetSandGameTests {
             tick(helper);
             helper.assertBlockPresent(WetSandPort.humidityBlock(red, 3), POS);
             helper.setBlock(POS.east(), Blocks.AIR);
+            tick(helper);
+            helper.assertBlockPresent(WetSandPort.humidityBlock(red, 3), POS);
             for (int stage = 2; stage >= 0; stage--) {
-                tick(helper);
+                BlockPos absolute = helper.absolutePos(POS);
+                NeoForge.EVENT_BUS.post(new PlayerInteractEvent.RightClickBlock(player, InteractionHand.MAIN_HAND, absolute,
+                        new BlockHitResult(Vec3.atCenterOf(absolute), Direction.UP, absolute, false)));
                 helper.assertBlockPresent(WetSandPort.humidityBlock(red, stage), POS);
             }
         }
+        helper.assertTrue(player.getMainHandItem().getCount() == 1, "Creative bottle must not be consumed");
+        player.discard();
         helper.succeed();
     }
 
@@ -261,6 +270,29 @@ public final class WetSandGameTests {
                         "Ordinary moisture sand must drop exactly one matching block item");
             }
         }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void hydrationPropagatesAndStopsAtDistanceCeiling(GameTestHelper helper) {
+        helper.setBlock(POS.east(3), Blocks.WATER);
+        helper.setBlock(POS.east(2), WetSandPort.SOAKED_SAND.get());
+        helper.setBlock(POS.east(), WetSandPort.WET_SAND.get());
+        helper.assertTrue(WetSandPort.nextMoistureStage(helper.getLevel(), helper.absolutePos(POS), 0) == 1,
+                "Dry sand at water distance 3 must receive moisture from wetter neighbor");
+        helper.assertTrue(WetSandPort.nextMoistureStage(helper.getLevel(), helper.absolutePos(POS), 1) == 1,
+                "Distance 3 must cap humidity at moist");
+        helper.setBlock(POS.east(), Blocks.AIR);
+        helper.assertTrue(WetSandPort.nextMoistureStage(helper.getLevel(), helper.absolutePos(POS), 0) == 0,
+                "Distant water without adjacent wet sand must not skip propagation");
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void verticalFlowingWaterHydrates(GameTestHelper helper) {
+        helper.setBlock(POS.above(), Blocks.WATER.defaultBlockState().setValue(net.minecraft.world.level.block.LiquidBlock.LEVEL, 4));
+        helper.assertTrue(WetSandPort.nextMoistureStage(helper.getLevel(), helper.absolutePos(POS), 1) == 2,
+                "Flowing water directly above must hydrate sand");
         helper.succeed();
     }
 }

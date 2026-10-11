@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "minecraft:block/red_sand"
+    "all": "ao_wet_sand:block/wet_red_sand"
   }
 }

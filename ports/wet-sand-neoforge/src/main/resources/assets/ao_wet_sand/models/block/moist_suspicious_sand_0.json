@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ao_wet_sand:block/moist_suspicious_sand_0"
+  }
+}

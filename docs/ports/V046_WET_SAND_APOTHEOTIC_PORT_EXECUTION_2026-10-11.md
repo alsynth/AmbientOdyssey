@@ -2,6 +2,11 @@
 
 **Date:** 11 October 2026. **Branch:** `experimental/v046-wetsand-apotheotic-ports-20261011`.
 
+**Historical milestone record.** For the current 12 October implementation,
+GPL texture attribution, 14 native mechanics tests and outstanding release
+gates, read [V046_RESUME.md](V046_RESUME.md). The original prototype limitations
+and MIT/no-upstream-assets policy below describe the earlier checkpoint.
+
 ## Source provenance / requirements
 
 - Wet Sand official original source: [HearthianDev/wet-sand](https://github.com/HearthianDev/wet-sand). GPL-3.0 source license according to repository. Published mod is Fabric; its current main branch targets a newer Minecraft version (at audit: 1.21.11), and its legacy branch targets 1.20.1. Neither is a drop-in 1.21.1 NeoForge JAR. Upstream warns that its default world-generation variant conflicts with worldgen replacement mods, which is especially relevant to AO's FreeTerraForged/Biolith/terrain configuration. Sinytra Connector is installed in AO, but without a matching Fabric 1.21.1 binary it cannot fix a Minecraft version mismatch.

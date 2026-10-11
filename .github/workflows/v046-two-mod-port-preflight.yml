@@ -33,6 +33,8 @@ jobs:
           done
       - name: Run native NeoForge Wet Sand mechanics GameTests
         run: gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace runGameTestServer
+      - name: Verify packaged art, models and license notices
+        run: python tools/validate_v046_wetsand_resources.py ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
       - name: Preserve mechanics evidence even on failure
         if: always()
         uses: actions/upload-artifact@v4

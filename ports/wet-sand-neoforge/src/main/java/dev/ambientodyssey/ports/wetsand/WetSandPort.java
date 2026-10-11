@@ -168,7 +168,7 @@ public final class WetSandPort {
         return true;
     }
 
-    /** Eight candidates per player per second; each checks at most 25 loaded positions. */
+    /** Eight candidates/player/second; each visits at most 343 loaded positions and six neighbors. */
     private static void updateNearbyShorelines(ServerTickEvent.Post event) {
         if (event.getServer().getTickCount() % 20 != 0) return;
         for (var player : event.getServer().getPlayerList().getPlayers()) {
@@ -181,31 +181,55 @@ public final class WetSandPort {
                 if (!level.hasChunkAt(pos)) continue;
                 Block old = level.getBlockState(pos).getBlock();
                 if (old == Blocks.SUSPICIOUS_SAND) {
-                    if (hasNearbyWater(level, pos)) transitionArchaeology(level, pos, 1);
+                    if (nextMoistureStage(level, pos, 0) > 0) transitionArchaeology(level, pos, 1);
                     continue;
                 }
                 if (old != Blocks.SAND && old != Blocks.RED_SAND) continue;
-                if (hasNearbyWater(level, pos)) level.setBlock(pos,(old==Blocks.SAND ? MOIST_SAND : MOIST_RED_SAND).get().defaultBlockState(),3);
+                if (nextMoistureStage(level, pos, 0) > 0) level.setBlock(pos,(old==Blocks.SAND ? MOIST_SAND : MOIST_RED_SAND).get().defaultBlockState(),3);
             }
         }
     }
 
     static boolean hasNearbyWater(ServerLevel level, BlockPos pos) {
+        return waterMoistureCeiling(level, pos) > 0;
+    }
+
+    /** Source and flowing water influence a loaded-only three-dimensional radius. */
+    private static int waterMoistureCeiling(ServerLevel level, BlockPos pos) {
+        int ceiling = 0;
         for (int dx = -3; dx <= 3; dx++) {
-            for (int dz = -3; dz <= 3; dz++) {
-                if (Math.abs(dx) + Math.abs(dz) > 3) continue;
-                BlockPos nearby = pos.offset(dx, 0, dz);
-                if (!level.hasChunkAt(nearby)) continue;
-                var fluid = level.getFluidState(nearby);
-                if (fluid.is(FluidTags.WATER) && fluid.isSource()) return true;
+            for (int dy = -3; dy <= 3; dy++) {
+                for (int dz = -3; dz <= 3; dz++) {
+                    BlockPos nearby = pos.offset(dx, dy, dz);
+                    if (!level.hasChunkAt(nearby)) continue;
+                    if (level.getFluidState(nearby).is(FluidTags.WATER)) {
+                        int distance = Math.max(Math.abs(dx), Math.max(Math.abs(dy), Math.abs(dz)));
+                        ceiling = Math.max(ceiling, Math.min(3, 4 - distance));
+                        if (ceiling == 3) return ceiling;
+                    }
+                }
             }
         }
-        return false;
+        return ceiling;
+    }
+
+    static int nextMoistureStage(ServerLevel level, BlockPos pos, int current) {
+        if (current >= 3 || current >= waterMoistureCeiling(level, pos)) return current;
+        for (Direction direction : Direction.values()) {
+            BlockPos adjacent = pos.relative(direction);
+            if (!level.hasChunkAt(adjacent)) continue;
+            if (level.getFluidState(adjacent).is(FluidTags.WATER)) return current + 1;
+            Block neighbor = level.getBlockState(adjacent).getBlock();
+            int stage = neighbor instanceof MoistureFallingBlock moist ? moist.stage
+                    : neighbor instanceof MoistureBlock moist ? moist.stage
+                    : neighbor instanceof MoistureBrushableBlock moist ? moist.stage : 0;
+            if (stage > current) return current + 1;
+        }
+        return current;
     }
 
     private static void advance(BlockState state, ServerLevel level, BlockPos pos, boolean red, int stage) {
-        boolean hydrated = hasNearbyWater(level, pos);
-        int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
+        int target = nextMoistureStage(level, pos, stage);
         if (target == stage) return;
         Block next = humidityBlock(red, target);
         level.setBlock(pos, next.defaultBlockState(), 3);
@@ -302,7 +326,7 @@ public final class WetSandPort {
 
         @Override
         protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-            int target = Math.min(3, Math.max(0, stage + (hasNearbyWater(level, pos) ? 1 : -1)));
+            int target = nextMoistureStage(level, pos, stage);
             if (target != stage) transitionArchaeology(level, pos, target);
         }
 

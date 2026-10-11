@@ -17,6 +17,7 @@ local_logs/
 local_worlds/
 crash-reports/
 run/
+run-terrain/
 
 # Locally generated releases; publish the curated outputs as GitHub Release assets
 dist/

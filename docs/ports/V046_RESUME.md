@@ -82,18 +82,45 @@ their own resolution. Neither its JARs nor its saves/configs were modified.
 User-provided Actions run `38177729206` is the earlier **v046 prototype**
 preflight at `60f3760`, not a v045 full-pack export.
 
+## 12 October hydration/art checkpoint (latest)
+
+Native compilation and **all 14 required GameTests PASS**, alone and with
+the three terrain mods. Hydration now uses loaded-only 3D Chebyshev radius 3,
+source or flowing water, and adjacent wetter sand propagation, capped by
+water distance. Missing water no longer automatically dries the block:
+glass-bottle extraction decreases humidity, matching upstream behavior.
+Tests cover vertical flowing water, propagation and distance ceiling.
+Each sampled dry-sand candidate visits at most 343 loaded positions plus
+six neighbors. No worldgen replacement or chunk-load request is installed.
+
+Original upstream textures are now included byte-for-byte, with checked-in
+hash provenance, attribution and **GPL-3.0-only** module/artifact licensing.
+This supersedes the original MIT/no-upstream-assets prototype policy for
+this module only. License and notice are bundled in the JAR. The packaged
+resource checker passed: 9 blockstates, 27 models, 19 verified textures,
+all item/loot resources present, no vanilla worldgen replacement.
+
+Final development JAR SHA-256:
+`47444f1e1b30271fef0cb43652a43bd15f870bdc7d2d4a47864dafc3e8df7c47`.
+Evidence: `docs/testing/v046-evidence/wet-sand-fourteen-terrain-gametests.log`.
+Run packaged validation with:
+
+```text
+python tools/validate_v046_wetsand_resources.py ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
+```
+
 ## Remaining Wet Sand gates before Apotheotic feature implementation
 
 - Suspicious-sand: complete actual process restart, client rendering, bottle
   interactions during brushing and real structure treasure testing.
-- Compare upstream hydration/propagation policy and document intentional
-  AO deviations: current prototype uses same-height source-water Manhattan
-  radius 3 and dry regression; upstream uses other neighborhood semantics.
+- Benchmark the loaded-only propagation budget and confirm wet shorelines
+  during natural FTF generation; no full-world conversion is implemented.
 - Shoreline conversion currently samples near players, rather than all
   natural shorelines. Decide and test the terrain-safe placement policy.
-- Verify creative and inventory-full bottle paths, client hand prediction,
+- Verify inventory-full bottle paths, client hand prediction,
   protection integration, red falling physics and codec round trips.
-- Distinct art is still missing: models currently reuse vanilla textures.
+- Verify upstream textures, lowered soaked collision and brush animations
+  on the actual client; packaged resource validation does not render them.
 - Full pack client, FTF shoreline generation and two-player dedicated server
   persistence/performance tests remain required.
 
