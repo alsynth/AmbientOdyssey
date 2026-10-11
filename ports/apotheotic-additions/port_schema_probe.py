@@ -14,11 +14,13 @@ OLD_CATEGORY = {
     "leggings":"apotheosis:leggings",
     "boots":"apotheosis:boots",
     "shield":"apotheosis:shield",
-    "sword":"apotheosis:sword",
-    "pickaxe":"apotheosis:pickaxe",
-    "axe":"apotheosis:axe",
-    "shovel":"apotheosis:shovel",
+    "sword":"apotheosis:melee_weapon",
+    "heavy_weapon":"apotheosis:melee_weapon",
+    "trident":"apotheosis:trident",
+    "pickaxe":"apotheosis:breaker",
+    "shovel":"apotheosis:breaker",
     "bow":"apotheosis:bow",
+    "crossbow":"apotheosis:bow",
 }
 VANILLA_OPERATIONS = {
     "ADDITION": "add_value",
@@ -41,10 +43,12 @@ def inspect(legacy: dict) -> dict:
     values=legacy.get("values",{})
     custom=sorted(x for x in values if x.startswith("apotheotic_additions:"))
     if custom:
-        reasons.append("custom rarity registry unavailable: "+",".join(custom))
+        reasons.append("legacy custom rarity IDs require migration to verified native port namespace: "+",".join(custom))
     for rarity,v in values.items():
         if isinstance(v,dict) and ("steps" in v or "step" in v):
-            reasons.append("legacy stepped roll semantics require exact upstream comparison: "+rarity)
+            # Placebo 9.9.2's strict codec still accepts min/steps/step. Retain it.
+            if not isinstance(v.get("steps"), int) or v.get("steps", 0) <= 0:
+                reasons.append("invalid legacy stepped roll: "+rarity)
     reasons.append("new Apotheosis affix definition weights/exclusive_set require balancing review")
     preview={
         "type":"apotheosis:attribute",

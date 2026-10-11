@@ -1,0 +1,9 @@
+[12Oct2026 01:11:16.781] [main/INFO] [apotheosis/]: Registered 8 rarities.
+[12Oct2026 01:11:16.814] [main/INFO] [apotheosis/]: Registered 124 affixes.
+[12Oct2026 01:11:17.678] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 7 tests are now running at position -13435587, -59, -6113804!
+[12Oct2026 01:11:18.214] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'rarity_reload:0' (1 tests)...
+[12Oct2026 01:11:18.587] [Server thread/INFO] [apotheosis/]: Registered 8 rarities.
+[12Oct2026 01:11:18.594] [Server thread/INFO] [apotheosis/]: Registered 124 affixes.
+[12Oct2026 01:11:18.883] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 7 GAME TESTS COMPLETE IN 1.204 s ======================
+[12Oct2026 01:11:18.883] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 7 required tests passed :)
+[12Oct2026 01:11:19.338] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

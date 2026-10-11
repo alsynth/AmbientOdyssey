@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[4,)"
-license="MIT"
+license="MIT (original code); AFL-3.0 (ported data)"
 [[mods]]
 modId="ao_apotheotic_port"
 version="0.0.1-source-prototype"

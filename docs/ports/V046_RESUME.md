@@ -240,3 +240,29 @@ systems with subsystem checks before enabling real drops. Esoteric must remain
 retained with its intended obtainability.
 Do not discard cross-mod boss/gem/affix systems silently when dependencies
 are unavailable; record compatibility requirements and test each batch.
+
+## 12 October core attribute affix checkpoint
+
+Compilation and all seven native GameTests pass. The native registry now loads
+124 affixes: 99 stock plus 25 converted Additions attribute affixes. Tests cover
+native category applicability, exclusion from stock Mythic pools, original
+stepped roll endpoints/increments, and a real equipped Artifact damage modifier
+surviving item serialization and re-equipping without duplication. Server reload
+also reloads all 124 definitions.
+
+The converter tools/port_v046_core_attribute_affixes.py preserves original
+numeric ranges and translated names, migrates attribute/category identifiers,
+and produces a complete 118-entry source manifest: 25 active, 93 explicitly
+pending. Another 146 non-attribute affixes remain pending. Ported data carries
+the upstream AFL-3.0 license and attribution; original integration code is MIT.
+Evidence: docs/testing/v046-evidence/apotheotic-seven-rarity-attribute-gametests.log.
+
+Next: preserve the 71 actual source gem JSON definitions. Their nine old rarity
+levels cannot be flattened into Apotheosis's six fixed Purity levels. Investigate
+an additional serialized legacy-tier component and custom native gem/bonus codecs
+before porting a tested attribute-only gem batch. Keep all three custom rarity
+natural weights zero until their full systems pass. Bosses, ability affixes,
+loot, recipes, reforging, trades and full-pack gameplay remain incomplete.
+The earlier rarity checkpoint's statement that no affixes are installed describes
+that earlier checkpoint only. No complete CurseForge test build is authorized by
+these partial subsystem results.

@@ -1,0 +1,3220 @@
+{
+  "upstream": "https://github.com/Bryce792/ApotheoticAdditions",
+  "upstream_commit": "822ecf6993ceaada1504e8dd10a8fea727a6235d",
+  "license": "AFL-3.0",
+  "ported_count": 25,
+  "pending_count": 93,
+  "port_complete": false,
+  "ready_to_install": false,
+  "attribute_affixes": [
+    {
+      "source": "affixes/armor/attribute/artifact_armor.json",
+      "source_json_sha256": "3ef76b5128aeb5b6d65fcbc24f5eab86e33c81264b743bd169f0ff22d275625c",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.armor",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/artifact_armor",
+      "ported_attribute": "minecraft:generic.armor",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 10,
+          "steps": 10,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 4,
+          "steps": 5,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/artifact_hp.json",
+      "source_json_sha256": "0c2ff01823285a0770fa3a615ccc87c1c839b18b2a466083fcbda18b2928e762",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.max_health",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/artifact_hp",
+      "ported_attribute": "minecraft:generic.max_health",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 10,
+          "steps": 10,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 4,
+          "steps": 5,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/artifact_luck.json",
+      "source_json_sha256": "86e2749f127dab896af134082d7837de943adfdac2c116b2cc08db9680b0634f",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.luck",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/artifact_luck",
+      "ported_attribute": "minecraft:generic.luck",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 1,
+          "steps": 3,
+          "step": 0.5
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 1,
+          "steps": 2,
+          "step": 0.25
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/artifact_source.json",
+      "source_json_sha256": "30fd5bdcbe71095e8af5c35e662d035eae5bdd25b4d176d275c0f9234fa607ee",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/artifact_toughness.json",
+      "source_json_sha256": "97dfcf2e02e27425cedc529afb0e6515993663d238223d9cf5961527ce8f29d8",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.armor_toughness",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/artifact_toughness",
+      "ported_attribute": "minecraft:generic.armor_toughness",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 6,
+          "steps": 8,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 4,
+          "steps": 5,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_armor.json",
+      "source_json_sha256": "171fbc2d33af99260e47b8d33e4c8e8be4a037e86e831511da1e4c1cd1d46dd4",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.armor",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/esoteric_armor",
+      "ported_attribute": "minecraft:generic.armor",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 20,
+          "steps": 20,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_hp.json",
+      "source_json_sha256": "495b71781d2267b2e7e60147d34bb4dda03ea28720d5541b93732c915e798429",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.max_health",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/esoteric_hp",
+      "ported_attribute": "minecraft:generic.max_health",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 20,
+          "steps": 20,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_luck.json",
+      "source_json_sha256": "dd7b55560523d789a1b2a58eaf82e143c9908cdc01ccfd1ba2c8196b219748f3",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.luck",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/esoteric_luck",
+      "ported_attribute": "minecraft:generic.luck",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 4,
+          "steps": 8,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_source.json",
+      "source_json_sha256": "5eef8ae579c0468c2524d53d7c27aed20bc2ac9bcc3ce1f1dc82312e145b9c72",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_toughness.json",
+      "source_json_sha256": "e083df98604d4da1e18f1c3aa619b91fd2a97615bca7b04d8a8b9dfc83f15869",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.armor_toughness",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:armor/attribute/esoteric_toughness",
+      "ported_attribute": "minecraft:generic.armor_toughness",
+      "categories": [
+        "apotheosis:boots",
+        "apotheosis:chestplate",
+        "apotheosis:helmet",
+        "apotheosis:leggings",
+        "apotheosis:shield"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 12,
+          "steps": 16,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_voidic_infusion_res.json",
+      "source_json_sha256": "8430ea8f4e668cef51e3b2fbb96ba24ddac480294b7fbc01d480bc5e9f6ac651",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_infusion_res",
+      "original_categories": [
+        "chestplate",
+        "leggings",
+        "shield"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_voidic_paranoia_res.json",
+      "source_json_sha256": "dbbc5c78913d4ff4db9930daf2c579d16910ddbed2bdcb1099df8af5ea971259",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_paranoia_res",
+      "original_categories": [
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/esoteric_voidic_res.json",
+      "source_json_sha256": "cc446fe9cd0099419dd215be166501e86727c540086796dc773e401e7747382a",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_res",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/feathers.json",
+      "source_json_sha256": "24c29b6caa53bc81477d94025717ebc1e3c2dd065c401c5d2053629226cb345d",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "feathers:feathers.max_feathers",
+      "original_categories": [
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheosis:common",
+        "apotheosis:uncommon",
+        "apotheosis:rare",
+        "apotheosis:epic",
+        "apotheosis:mythic",
+        "apotheosis:ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/lava_speed.json",
+      "source_json_sha256": "8f20f4fb1c7f7eb2cf6cf8a2b36fd8f0cf53adcf071f93291f5fb05efa6ad53b",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "additionalentityattributes:lava_speed",
+      "original_categories": [
+        "helmet",
+        "chestplate"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/reapers.json",
+      "source_json_sha256": "d9c19b45e240e557c5f2b3da06e75d8163eb7558f6192a299417010b8567a35a",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:spirit_spoils",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/roll_count.json",
+      "source_json_sha256": "6ef6cf5c21cbc2597608474c69d365e1f062e6e8f4f2df85bb500ab48276d6cc",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "combatroll:count",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/roll_distance.json",
+      "source_json_sha256": "90229e95fdff88e78df6b6f26c69d3740ae18441767bf28a2119c8fe1cdc6994",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "combatroll:distance",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/roll_recharge.json",
+      "source_json_sha256": "492eabe2552879ccde514df5448bdb251b364257e256f364a40541ae514e7ede",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "combatroll:recharge",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/sourcetouched.json",
+      "source_json_sha256": "138c24aec4a56adc4ed2f877ce04ef73088ad30d48484176e03875e95824076d",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/spirit_spoils.json",
+      "source_json_sha256": "acea988edcf9b104c0d64f753b200bd66a5f8e624398be8b12b6c6d63213d673",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:spirit_spoils",
+      "original_categories": [
+        "leggings",
+        "boots"
+      ],
+      "original_rarities": [
+        "apotheosis:common",
+        "apotheosis:uncommon",
+        "apotheosis:rare",
+        "apotheosis:epic",
+        "apotheosis:mythic",
+        "apotheosis:ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/voidic_infusion_res.json",
+      "source_json_sha256": "0fb16dc116e9d93e4fff8bb173491c2b7591f5e2c18ec0a385accfb3c4dd411a",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_infusion_res",
+      "original_categories": [
+        "chestplate",
+        "leggings"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/voidic_paranoia_res.json",
+      "source_json_sha256": "787b97132347af060e12a72f0423ddc3d39cd087a8fba5edcb7b1df9286fb3c0",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_paranoia_res",
+      "original_categories": [
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/voidic_res.json",
+      "source_json_sha256": "b57c4fcbc2e547713ef6878f58fb481a8693c34932f3ca4fe51a15a28798cfe4",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_res",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact"
+      ]
+    },
+    {
+      "source": "affixes/armor/attribute/warding.json",
+      "source_json_sha256": "01373bccc21f07b1fc1a942cbe3b9a46ae2ce17f27dcc7db5dccdda2a87d14b1",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.warding",
+      "original_categories": [
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots",
+        "shield"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/breaker/attribute/artifact_luck.json",
+      "source_json_sha256": "8b9ec9042b13abd071ead40e5d8d040c8d177bbaedf3313e2f50c84e93cd427a",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.luck",
+      "original_categories": [
+        "pickaxe",
+        "shovel"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:breaker/attribute/artifact_luck",
+      "ported_attribute": "minecraft:generic.luck",
+      "categories": [
+        "apotheosis:breaker"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 4,
+          "steps": 4,
+          "step": 0.25
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 2,
+          "steps": 4,
+          "step": 0.25
+        },
+        "ao_apotheotic_port:esoteric": {
+          "min": 6,
+          "steps": 8,
+          "step": 0.25
+        }
+      }
+    },
+    {
+      "source": "affixes/breaker/attribute/artifact_speed.json",
+      "source_json_sha256": "1fd113f6544ac5881f5087baedcd0592e16fbfc11e3ba0ae1a4da11729c0f07e",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:mining_speed",
+      "original_categories": [
+        "pickaxe",
+        "shovel"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:breaker/attribute/artifact_speed",
+      "ported_attribute": "apothic_attributes:mining_speed",
+      "categories": [
+        "apotheosis:breaker"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 0.45,
+          "steps": 15,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 0.2,
+          "steps": 5,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:esoteric": {
+          "min": 0.45,
+          "steps": 15,
+          "step": 0.03
+        }
+      }
+    },
+    {
+      "source": "affixes/breaker/attribute/artifact_xp.json",
+      "source_json_sha256": "271a485c54eed96a1ba7396987047453782f9e15c29828a04298164d3439b2b5",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:experience_gained",
+      "original_categories": [
+        "pickaxe",
+        "shovel"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:breaker/attribute/artifact_xp",
+      "ported_attribute": "apothic_attributes:experience_gained",
+      "categories": [
+        "apotheosis:breaker"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 0.65,
+          "steps": 15,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 0.25,
+          "steps": 5,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:esoteric": {
+          "min": 0.7,
+          "steps": 20,
+          "step": 0.01
+        }
+      }
+    },
+    {
+      "source": "affixes/breaker/attribute/block_reach.json",
+      "source_json_sha256": "171912de5185397dabc5846bc85e4e3cf3dccb4e6690b5be08c15bcc5a0cbe7d",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration"
+      ],
+      "original_attribute": "forge:block_reach",
+      "original_categories": [
+        "pickaxe",
+        "shovel"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/breaker/attribute/bonus_loot.json",
+      "source_json_sha256": "88ecd1b9aeb16fe2aa65a102826055c5933c455e6d08978ac599e1bb8f693150",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "additionalentityattributes:bonus_loot_count_rolls",
+      "original_categories": [
+        "pickaxe",
+        "shovel"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/breaker/attribute/sliding.json",
+      "source_json_sha256": "8c964cd206cba66ebb6ac6cd1be1b4b2169f29327dee0f8328ba0d1a5a9b1cdc",
+      "status": "pending",
+      "pending_reasons": [
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.attack_damage",
+      "original_categories": [
+        "pickaxe",
+        "shovel"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/breaker/attribute/speed.json",
+      "source_json_sha256": "894b1bf8c4f5009945c9f8541ddc479f9ccc80005331d7adc18d042522306008",
+      "status": "pending",
+      "pending_reasons": [
+        "requires stock/Ancient rarity mapping decision"
+      ],
+      "original_attribute": "minecraft:generic.movement_speed",
+      "original_categories": [
+        "pickaxe",
+        "shovel",
+        "bow",
+        "crossbow"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/chanting.json",
+      "source_json_sha256": "18a7be036a0810bc58ff220cf1dd6b77c73cc4c9e71a9466b1797eedb9c0eb99",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "eidolon:chanting_speed",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/damage.json",
+      "source_json_sha256": "03b2e547a70f7b8ec599d9921c848b8467425675a5094bdcd159cbf35d14a16f",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.attack_damage",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/hp.json",
+      "source_json_sha256": "dcb880e8489647a8792550dc54c45d81083c2ca87ac8b6537eda5a639c5109d1",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.max_health",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/luck.json",
+      "source_json_sha256": "dddccbb8d319f5f30777ab843bea625d2f5af31fe8fea9c63269749990cd2ab7",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.luck",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/mining_speed.json",
+      "source_json_sha256": "2bede54607f4fb9a947e6d270f7c4fe19c1cb82119c691bc6a5d5220df45ea12",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:mining_speed",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/resilience.json",
+      "source_json_sha256": "1d0179a15f305c059639b8129b10a87df720fa344202ca4f185ff3e65bca237c",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "obscure_api:resilience",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_aether/attribute/xp.json",
+      "source_json_sha256": "812b0ad801496ba92d9ac0f9e882051e4461307d469a7439095e9ef6866135be",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:experience_gained",
+      "original_categories": [
+        "curios:aether_gloves",
+        "curios:aether_accessory",
+        "curios:aether_shield",
+        "curios:aether_cape",
+        "curios:aether_pendant",
+        "curios:aether_ring"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/dodge.json",
+      "source_json_sha256": "6dcf82a644586c0b64292eb02f5b0a7b2a79d2b3e8d55b14f3f19a3f507e41dc",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "obscure_api:dodge",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/forged.json",
+      "source_json_sha256": "8c14e15167e5a46ba934d4e62404fdc3787a857c03ed141c2004655cea9cc0c4",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.armor_toughness",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/healing_power.json",
+      "source_json_sha256": "2d96618416aad56750584a0779e7e7aae494411b37424f41c0bec14cefb335fa",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "obscure_api:healing_power",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/hp.json",
+      "source_json_sha256": "ab69ca1c864c7ff14562eec1894b922da4c0527c9986d3d337072b797ad5ae39",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.max_health",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/luck.json",
+      "source_json_sha256": "d77b0ce70d909e758e9de6ede0882c8abe9409293b7d5652c615bbd2e6194527",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.luck",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/spell_resist.json",
+      "source_json_sha256": "0f75bfba6fdc6da493a744c4c2418c68f15e18c346be5d25f1b9f19e8e23fb82",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:spell_resist",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/tailored.json",
+      "source_json_sha256": "48610374de283d956196b05fdb60a33e7a30cf0d4d346e4f2846c3511ebee538",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.armor",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/voidic_infusion_res.json",
+      "source_json_sha256": "60b0a96afd86b5b90650fa53263f9078503630304786d69fb0edd4b31784d6f0",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_infusion_res",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/voidic_paranoia_res.json",
+      "source_json_sha256": "9445382ec97fd4d3f8f046b2a7be4ead7d3cf6d97f45bc345307e1ff82edb54a",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_paranoia_res",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/voidic_res.json",
+      "source_json_sha256": "1c3c090ae2c5bf7d30ffe163139048f4db33dc7588ff30c6f0b8d64b9663a61d",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_res",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/warding.json",
+      "source_json_sha256": "bf8aee6820f0fda21affc27e473ae91256f3804c0929b4652d5f9f808f6a8dbf",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.warding",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_armor/attribute/weakness_aura.json",
+      "source_json_sha256": "6f492b71aa243b9b5e07dc3fd8ae83c09d9015f891e1b0be7ea6945707f4acbb",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "caverns_and_chasms:weakness_aura",
+      "original_categories": [
+        "curios:body",
+        "curios:head",
+        "curios:back",
+        "curios:feet",
+        "curios:hands"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/arcane.json",
+      "source_json_sha256": "1be6a05eacfd5ae974d15d15cc30fec1f36c06ebbec345063cce62cd674ce34c",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:max_mana",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/chanting.json",
+      "source_json_sha256": "98afbd9abab4c5072dbd2c19c1717bf3102b15cefb561e6d3168495ca3f851e0",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "eidolon:chanting_speed",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/flight.json",
+      "source_json_sha256": "ab0b62d6416c54773b446f65ef2dcc06c905fb4cd33737fefc44fed87995563b",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.flying_speed",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/gaia.json",
+      "source_json_sha256": "4233552fa1f680f992a6d14cefdb94f1608cd8ac89023856640c1668554a6d2d",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/mana_regen.json",
+      "source_json_sha256": "ea9dd3e3eb59aa0cba10ba9f92be0f9b2ad25c5b8887aba97a8ff8167c603fb7",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:mana_regen",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/resilience.json",
+      "source_json_sha256": "3ae5d33953479a211e0835ad562395a39279431971cb742344ae7269cea0b0a1",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "obscure_api:resilience",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/source_regen.json",
+      "source_json_sha256": "565cbc3fdff9897a4b6a0d0b0f361527d1b04eb9c61d791c5e5b7df1b90d2bd9",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.mana_regen",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/sourcetouched.json",
+      "source_json_sha256": "25f2e84ee9254cccd07e6cc3bbb4937925a4c0bdf85e996d59db27b693a6bc76",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "ars_nouveau:ars_nouveau.perk.max_mana",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_jewelry/attribute/speed.json",
+      "source_json_sha256": "b1df7a9ccb093bd4f29c5283dc0eb5f7e986ba6ff35870a91a1003409a13eaef",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.movement_speed",
+      "original_categories": [
+        "curios:ring",
+        "curios:an_focus",
+        "curios:necklace",
+        "curios:charm",
+        "curios:belt",
+        "curios:spellstone",
+        "curios:scroll",
+        "curios:bracelet",
+        "curios:talisman",
+        "curios:scroll",
+        "curios:spellstone",
+        "curios:bracelet"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_malum/attribute/arcane.json",
+      "source_json_sha256": "d947ad090518f3f6a6f47abb9f2b02251a61b903836631adda9716a25afa44d8",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:max_mana",
+      "original_categories": [
+        "curios:brooch",
+        "curios:rune"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_malum/attribute/integrity.json",
+      "source_json_sha256": "80455fa9e7f6eb359fac4659c405f04a7b878d3749ca9ed4de5870a1cd89ea08",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:soul_ward_integrity",
+      "original_categories": [
+        "curios:rune",
+        "curios:brooch"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_malum/attribute/recovery.json",
+      "source_json_sha256": "b00ed6c2ba85cbfa8666b75966c78f6b1cc763f0ddded644a627154e70b606ac",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:soul_ward_recovery_rate",
+      "original_categories": [
+        "curios:rune",
+        "curios:brooch"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_malum/attribute/scythe.json",
+      "source_json_sha256": "b3e7b7482d6cee89fde077d9ce2ae8d0d6e30e398107ca00c09e2de2ce03463a",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:scythe_proficiency",
+      "original_categories": [
+        "curios:rune",
+        "curios:brooch"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_malum/attribute/soul_ward.json",
+      "source_json_sha256": "61aa20dfe00e357175734518251f547df6bf6143aba33693d7910966bb803afc",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:soul_ward_capacity",
+      "original_categories": [
+        "curios:brooch",
+        "curios:rune"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/curios_malum/attribute/spirit_spoils.json",
+      "source_json_sha256": "307ae34bcde8bce8a7b7335a5340f0dbae4c2d15b440e9607d0db8dca82adaf6",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:spirit_spoils",
+      "original_categories": [
+        "curios:rune",
+        "curios:brooch"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/all_gun/attribute/bullet_res.json",
+      "source_json_sha256": "64f4a6ec1ef7db7e641ba21e243239dbbed576080dd5d9c8e311793cb974e55e",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "tacz:tacz.bullet_resistance",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:shotgun",
+        "apotheosis_modern_ragnarok:full_auto",
+        "apotheosis_modern_ragnarok:semi_auto",
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/all_gun/attribute/lightweight.json",
+      "source_json_sha256": "cba7d9a53f2365cc6e2738901a5b1e5ed12d6882256fb6bc8e1d2513026f4107",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "minecraft:generic.movement_speed",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:shotgun",
+        "apotheosis_modern_ragnarok:full_auto",
+        "apotheosis_modern_ragnarok:semi_auto",
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/bolt_action/attribute/cold_damage.json",
+      "source_json_sha256": "4274f41808ba0067955c24e6eac23cc959fd25da4ab8fc3270b14711f0b5bf5e",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:cold_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/bolt_action/attribute/crit_chance.json",
+      "source_json_sha256": "3aee49f8a31a092eb7b6c53e0512ec78620bdfa96429a7a039c15ff8bd6e72b4",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:crit_chance",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/bolt_action/attribute/crit_damage.json",
+      "source_json_sha256": "1219843edbc299924b8684a998fe7172e94a30d06949f953843f8e025ab729c4",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:crit_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/bolt_action/attribute/fire_damage.json",
+      "source_json_sha256": "fa310c58381932d87f9e5a725e601191b194239c297ffea3fa6c6b49b9c2a133",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:fire_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/bolt_action/attribute/life_steal_x.json",
+      "source_json_sha256": "396ed8acd3676fb6262b64d0ea2175a01f76ecb271409184a93052518af00be2",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:overheal",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:bolt_action"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/rapid_fire/attribute/cold_damage.json",
+      "source_json_sha256": "aee1e619d63e841c1936c161f2365a91186cf366fab0bb7b4f31abb0044edd49",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:cold_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:full_auto",
+        "apotheosis_modern_ragnarok:semi_auto"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/rapid_fire/attribute/fire_damage.json",
+      "source_json_sha256": "7ede19a759d4fbd2b71a862da9069514cbfa9a8b4282961fe9c26b0844eeec82",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:fire_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:full_auto",
+        "apotheosis_modern_ragnarok:semi_auto"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/rapid_fire/attribute/void_damage.json",
+      "source_json_sha256": "b139895d93af2031a97bd791442e506b99c37347615967d5dcfeec91f62e8d42",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_dmg",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:full_auto",
+        "apotheosis_modern_ragnarok:semi_auto"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/shotgun/attribute/cold_damage.json",
+      "source_json_sha256": "cc5a0ca84c87c7531b12aec936996ee5af70c71de4bab79818fe84ee31282127",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:cold_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:shotgun"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/shotgun/attribute/fire_damage.json",
+      "source_json_sha256": "5f799450e2ee43192d795a832f328e7ff61901f6a790f7d36a799b4a3fc770a5",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:fire_damage",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:shotgun"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ragnarok/shotgun/attribute/void_damage.json",
+      "source_json_sha256": "75c9345038fce61d6e47eb0806931f520674baa2897e19b12ceb4aaa52249ea5",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_dmg",
+      "original_categories": [
+        "apotheosis_modern_ragnarok:shotgun"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ranged/attribute/artifact_damage.json",
+      "source_json_sha256": "53928abe119288ebc273c2273ae72a3b00df1cca211eee2961172421c07377e2",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:arrow_damage",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:ranged/attribute/artifact_damage",
+      "ported_attribute": "apothic_attributes:arrow_damage",
+      "categories": [
+        "apotheosis:bow",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 0.5,
+          "steps": 30,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 0.02,
+          "steps": 8,
+          "step": 0.04
+        }
+      }
+    },
+    {
+      "source": "affixes/ranged/attribute/artifact_velocity.json",
+      "source_json_sha256": "249fdbc5a940d9792bb572a884b840b879195212751e102a5580cf821ea0374a",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:arrow_velocity",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:ranged/attribute/artifact_velocity",
+      "ported_attribute": "apothic_attributes:arrow_velocity",
+      "categories": [
+        "apotheosis:bow",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 0.4,
+          "steps": 35,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 0.05,
+          "steps": 10,
+          "step": 0.01
+        }
+      }
+    },
+    {
+      "source": "affixes/ranged/attribute/crit_chance.json",
+      "source_json_sha256": "acbb968b71071df27b7bb9a4a752290145d7aed9717f9258b20abb1ce7ce1b7f",
+      "status": "pending",
+      "pending_reasons": [
+        "requires stock/Ancient rarity mapping decision"
+      ],
+      "original_attribute": "attributeslib:crit_chance",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ranged/attribute/crit_damage.json",
+      "source_json_sha256": "24a93e162dbd5430cce9af8c9c03d0561529dc356140b9ceded9132216a12c9a",
+      "status": "pending",
+      "pending_reasons": [
+        "requires stock/Ancient rarity mapping decision"
+      ],
+      "original_attribute": "attributeslib:crit_damage",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ranged/attribute/esoteric_damage.json",
+      "source_json_sha256": "5925558f663d2ca4893627d961b9fa555e027b4ffc60843c04c90d648665674c",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:arrow_damage",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:ranged/attribute/esoteric_damage",
+      "ported_attribute": "apothic_attributes:arrow_damage",
+      "categories": [
+        "apotheosis:bow",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 1.0,
+          "steps": 60,
+          "step": 0.02
+        }
+      }
+    },
+    {
+      "source": "affixes/ranged/attribute/esoteric_velocity.json",
+      "source_json_sha256": "bc69f21e33b7bde1baba3a4bf96ef70197651d0368956df0db9531f0a083ab34",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:arrow_velocity",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:ranged/attribute/esoteric_velocity",
+      "ported_attribute": "apothic_attributes:arrow_velocity",
+      "categories": [
+        "apotheosis:bow",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 0.5,
+          "steps": 35,
+          "step": 0.01
+        }
+      }
+    },
+    {
+      "source": "affixes/ranged/attribute/shred.json",
+      "source_json_sha256": "1503add6a4434717b16b73d28f997d2badd3386b86f4ea44e1973913a4123887",
+      "status": "pending",
+      "pending_reasons": [
+        "requires stock/Ancient rarity mapping decision"
+      ],
+      "original_attribute": "attributeslib:armor_shred",
+      "original_categories": [
+        "bow",
+        "crossbow",
+        "trident"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/ranged/attribute/voidic_arrow.json",
+      "source_json_sha256": "041cadb3fe45d1d6eb4cec609528715eb8fee0982aada957d7fdaa719b6391e1",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_arrow_dmg",
+      "original_categories": [
+        "bow",
+        "crossbow"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/aa_mana.json",
+      "source_json_sha256": "212497afc5c6338add3dd8c41db5019926c7e1d0b164eac0616b22e7ebbcaff5",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:max_mana",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_blood.json",
+      "source_json_sha256": "446394945f72d17256810decd71c7fe477c454dbcea822618584cb3f6048e6af",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:blood_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_ender.json",
+      "source_json_sha256": "e5c336388dfda9af8752ed0b5a18d17c1ad7894d6b017001ce3e9b16e56d5916",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:ender_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_evocation.json",
+      "source_json_sha256": "35512fdf0d4bade1a05ffe50b7c2c5f8cad80bc00b3b58ca349870876ff1d414",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:evocation_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_fire.json",
+      "source_json_sha256": "1eb85b02262be80ad9d829057aa73b9cd3944433012f862fa7a2234f34275032",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:fire_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_holy.json",
+      "source_json_sha256": "3d5774b3d6e6203507e35f959b6d82d930d0ada2e9ec8df35fd168ff2e7c1044",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:holy_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_ice.json",
+      "source_json_sha256": "8148b4d98f806f312499c552c90b9187d20c8209e19f71058e6cbd6c671a1380",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:ice_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_lightning.json",
+      "source_json_sha256": "7c9367ceb4ae9a580d8a09a43cf248c938259995133a879f5cd7c0ae830dbdef",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:lightning_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/power_nature.json",
+      "source_json_sha256": "68f394e98c6fa8a47cd1daa123125b4c337a5dd9c018fd8325b622124da45176",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:nature_spell_power",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/spellbook/attribute/summon.json",
+      "source_json_sha256": "2328735f955300b79eeeb3e62b478b00d6cbca5e38da9c4873c5efeaf6a6263b",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:summon_damage",
+      "original_categories": [
+        "curios:spellbook"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/sword/attribute/artifact_cold.json",
+      "source_json_sha256": "df7b678dad224d4d0b2d139c378ecbd745bce0ef3003afe351882a3c40bc1fd1",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:cold_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/artifact_cold",
+      "ported_attribute": "apothic_attributes:cold_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 5,
+          "steps": 15,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 4,
+          "steps": 5,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/artifact_damage.json",
+      "source_json_sha256": "9dd02b6c1fac8f63a04704399321a893e9fc64f9d339e80a2f497e26f6ccef2b",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.attack_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/artifact_damage",
+      "ported_attribute": "minecraft:generic.attack_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 5,
+          "steps": 15,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 4,
+          "steps": 5,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/artifact_fire.json",
+      "source_json_sha256": "d54f9082b7024bd37c9af4e6a74228a9fd3df5451291589a9dbe239ddeada1fb",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:fire_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/artifact_fire",
+      "ported_attribute": "apothic_attributes:fire_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 5,
+          "steps": 15,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 4,
+          "steps": 5,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/artifact_hp_damage.json",
+      "source_json_sha256": "78ac523fb6467958547dd89d04a01b0df66bba18f140fdf3009901c0e0088457",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:current_hp_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/artifact_hp_damage",
+      "ported_attribute": "apothic_attributes:current_hp_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 0.02,
+          "steps": 10,
+          "step": 0.01
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 0.03,
+          "steps": 5,
+          "step": 0.01
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/artifact_knockback.json",
+      "source_json_sha256": "bad001058d909b60b22bc67dfd90f943d5f311cf69e4d669859eafb1e183f23c",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.attack_knockback",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/artifact_knockback",
+      "ported_attribute": "minecraft:generic.attack_knockback",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:artifact": {
+          "min": 1,
+          "steps": 5,
+          "step": 1
+        },
+        "ao_apotheotic_port:heirloom": {
+          "min": 1,
+          "steps": 3,
+          "step": 0.5
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/esoteric_cold.json",
+      "source_json_sha256": "8f01e45b29e62a3aff252b38d7104c3050bde77de491ada38948065689bb9cbe",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:cold_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/esoteric_cold",
+      "ported_attribute": "apothic_attributes:cold_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 20,
+          "steps": 20,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/esoteric_damage.json",
+      "source_json_sha256": "ac7db74181f760c55305d5e4b39ab993ed7e16fbb31137be6a05bd0657c63b05",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.attack_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/esoteric_damage",
+      "ported_attribute": "minecraft:generic.attack_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 20,
+          "steps": 20,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/esoteric_fire.json",
+      "source_json_sha256": "11badbd4a34ce657019ab3d5caf509d0986a63481d6db3b2b4c04c0ed4f4987c",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:fire_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/esoteric_fire",
+      "ported_attribute": "apothic_attributes:fire_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 20,
+          "steps": 20,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/esoteric_hp_damage.json",
+      "source_json_sha256": "5b41fc621acc752a5fcb571c5bcae4a8e48ca509595538d2a882847c1551c878",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "attributeslib:current_hp_damage",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/esoteric_hp_damage",
+      "ported_attribute": "apothic_attributes:current_hp_damage",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 0.3,
+          "steps": 20,
+          "step": 0.02
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/esoteric_knockback.json",
+      "source_json_sha256": "69c4f4c7fa8d0824d13c6a729454f8365320bb611b586430596702c717c1b0d1",
+      "status": "ported_core_attribute",
+      "pending_reasons": [],
+      "original_attribute": "minecraft:generic.attack_knockback",
+      "original_categories": [
+        "sword",
+        "trident",
+        "heavy_weapon"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:esoteric"
+      ],
+      "ported_id": "ao_apotheotic_port:sword/attribute/esoteric_knockback",
+      "ported_attribute": "minecraft:generic.attack_knockback",
+      "categories": [
+        "apotheosis:melee_weapon",
+        "apotheosis:trident"
+      ],
+      "values": {
+        "ao_apotheotic_port:esoteric": {
+          "min": 10,
+          "steps": 10,
+          "step": 2
+        }
+      }
+    },
+    {
+      "source": "affixes/sword/attribute/pixie.json",
+      "source_json_sha256": "e9a79c22d8d804ac9e3172b3e9d4fbac436f8b68656f4e01ece009914a02bae0",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "botania:pixie_spawn_chance",
+      "original_categories": [
+        "sword",
+        "trident"
+      ],
+      "original_rarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/sword/attribute/reapers.json",
+      "source_json_sha256": "16e7704bde3fb0ca50dd8db6127cac2a389e62d6be967817cd06295b0ab21afa",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:scythe_proficiency",
+      "original_categories": [
+        "sword",
+        "trident"
+      ],
+      "original_rarities": [
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/sword/attribute/spell_power.json",
+      "source_json_sha256": "b760620236b8dc32ca10cb9c82d6033fb149e344ba3d310e3f251ae071f8310f",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:spell_power",
+      "original_categories": [
+        "sword",
+        "trident"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/sword/attribute/spell_resist.json",
+      "source_json_sha256": "632d838535ac98943854f2bbca0e5d41a53c0bf6a11ea48d79af6ca11729ad47",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "irons_spellbooks:spell_resist",
+      "original_categories": [
+        "sword",
+        "trident"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/sword/attribute/void_damage.json",
+      "source_json_sha256": "75a5cd4e940dcf7fc3caa613583f893589579b87b4ce7b151ddfbd9f42e7d6fa",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "voidscape:voidic_dmg",
+      "original_categories": [
+        "sword",
+        "trident"
+      ],
+      "original_rarities": [
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/wand/attribute/chanting.json",
+      "source_json_sha256": "4c50193c756a4e3c61e76c9a98683651e39991815bcf34da4ff3eee65623c86c",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "eidolon:chanting_speed",
+      "original_categories": [
+        "wand",
+        "helmet",
+        "chestplate",
+        "leggings",
+        "boots"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/wand/attribute/gaia.json",
+      "source_json_sha256": "a78d0e5dc9f5541eb492781e15af05867647f7c245266080d27dc60de70406c7",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "botania:pixie_spawn_chance",
+      "original_categories": [
+        "wand"
+      ],
+      "original_rarities": [
+        "apotheosis:common",
+        "apotheosis:uncommon",
+        "apotheosis:rare",
+        "apotheosis:epic",
+        "apotheosis:mythic",
+        "apotheosis:ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/wand/attribute/magic_damage.json",
+      "source_json_sha256": "1a82df021bb8574b26742d964e128bba3a9c6c0c437ceecb17aeb4053314eb05",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "obscure_api:magic_damage",
+      "original_categories": [
+        "wand"
+      ],
+      "original_rarities": [
+        "apotheosis:common",
+        "apotheosis:uncommon",
+        "apotheosis:rare",
+        "apotheosis:epic",
+        "apotheosis:mythic",
+        "apotheosis:ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/wand/attribute/magic_power.json",
+      "source_json_sha256": "f932b831af4d21deb56cd5dfcb0d32d82412866afd4bd18a638f8bdd8c4e4cce",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "eidolon:magic_power",
+      "original_categories": [
+        "wand"
+      ],
+      "original_rarities": [
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/wand/attribute/spirit_spoils.json",
+      "source_json_sha256": "69f314d0e7131ef2dea78fb001815931cdd9ab1f1436d742be84436146c2074d",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external attribute integration",
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "malum:spirit_spoils",
+      "original_categories": [
+        "wand"
+      ],
+      "original_rarities": [
+        "common",
+        "uncommon",
+        "rare",
+        "epic",
+        "mythic",
+        "ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    },
+    {
+      "source": "affixes/wand/attribute/xp.json",
+      "source_json_sha256": "9ce570c75dda9c0836743f511fb31fba42dd8789b3c39cfb757095ab09d22cd3",
+      "status": "pending",
+      "pending_reasons": [
+        "requires external or unmapped loot categories",
+        "requires stock/Ancient rarity mapping decision",
+        "requires legacy condition/dependency migration"
+      ],
+      "original_attribute": "attributeslib:experience_gained",
+      "original_categories": [
+        "wand"
+      ],
+      "original_rarities": [
+        "apotheosis:common",
+        "apotheosis:uncommon",
+        "apotheosis:rare",
+        "apotheosis:epic",
+        "apotheosis:mythic",
+        "apotheosis:ancient",
+        "apotheotic_additions:artifact",
+        "apotheotic_additions:heirloom",
+        "apotheotic_additions:esoteric"
+      ]
+    }
+  ]
+}

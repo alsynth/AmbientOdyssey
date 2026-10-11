@@ -1,0 +1,31 @@
+{
+  "type": "apotheosis:attribute",
+  "attribute": "minecraft:generic.luck",
+  "operation": "add_value",
+  "categories": [
+    "apotheosis:boots",
+    "apotheosis:chestplate",
+    "apotheosis:helmet",
+    "apotheosis:leggings"
+  ],
+  "definition": {
+    "affix_type": "stat",
+    "exclusive_set": [],
+    "weights": {
+      "weight": 1,
+      "quality": 0
+    }
+  },
+  "values": {
+    "ao_apotheotic_port:artifact": {
+      "min": 1,
+      "steps": 3,
+      "step": 0.5
+    },
+    "ao_apotheotic_port:heirloom": {
+      "min": 1,
+      "steps": 2,
+      "step": 0.25
+    }
+  }
+}
