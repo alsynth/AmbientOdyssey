@@ -35,32 +35,45 @@ def source_schema(tmp):
     import spark_pb2
     return spark_pb2
 
-def candidate_sources(node,root_time):
-    exclusive=[]
-    paths=[]
-    queue=list(node.children)
-    seen=0
-    while queue and seen<300_000:
-        n=queue.pop()
-        seen+=1
-        subtotal=sum(c.time for c in n.children)
-        self_ms=max(0.0,n.time-subtotal)
-        cls=n.className if hasattr(n,"className") else ""
-        method=n.methodName if hasattr(n,"methodName") else ""
-        if cls and self_ms>0:
-            # Keep only Java identifiers; do not accidentally echo arbitrary
-            # comments/player strings from profiler metadata.
-            signature=re.sub(r"[^a-zA-Z0-9_.$/-]","",cls)[:145]
-            meth=re.sub(r"[^a-zA-Z0-9_$<>]","",method)[:65]
-            exclusive.append((self_ms,signature,meth))
-        queue.extend(n.children)
-    sums={}
-    for count,cls,method in exclusive:
-        key=cls+"#"+method
-        sums[key]=sums.get(key,0)+count
-    return [{"class_method":name,"exclusive_weight":round(weight,2),
-             "estimated_thread_percent":round(100*weight/max(root_time,1e-8),2)}
-            for name,weight in sorted(sums.items(),key=lambda x:x[1],reverse=True)[:40]]
+def weight(node):
+    return float(node.time) if node.time else float(sum(node.times))
+
+def candidate_sources(thread):
+    """Unflatten spark's childrenRefs into its actual call tree.
+
+    spark-viewer Preprocessing.unflatten uses ThreadNode.children as a flat
+    backing array and childrenRefs to traverse. The protobuf does not have
+    actual nested children until those refs are resolved. Weight is the sum
+    of repeated times (source viewer Preprocessing.calculateTotalTimes).
+    """
+    flat=thread.children
+    root=weight(thread)
+    if root<=0:
+        root=sum(weight(flat[i]) for i in thread.childrenRefs)
+    counts={}
+    stack=list(thread.childrenRefs)
+    visited=set()
+    while stack:
+        idx=stack.pop()
+        if idx in visited:continue
+        visited.add(idx)
+        if not (0<=idx<len(flat)):continue
+        node=flat[idx]
+        kids=[k for k in node.childrenRefs if 0<=k<len(flat)]
+        exclusive=max(0.0,weight(node)-sum(weight(flat[k]) for k in kids))
+        cls=node.className
+        if cls and exclusive>0:
+            cls=re.sub(r"[^a-zA-Z0-9_.$/-]","",cls)[:145]
+            method=re.sub(r"[^a-zA-Z0-9_$<>]","",node.methodName)[:65]
+            key=cls+"#"+method
+            counts[key]=counts.get(key,0.0)+exclusive
+        stack.extend(kids)
+    top=sorted(counts.items(),key=lambda q:q[1],reverse=True)[:40]
+    return [
+        {"class_method":name,"exclusive_weight":round(v,2),
+         "estimated_thread_percent":round(100*v/max(root,1e-8),2)}
+        for name,v in top
+    ],root,len(visited)
 
 def scan(spark_pb2,code):
     payload=None
@@ -90,14 +103,16 @@ def scan(spark_pb2,code):
         typ=("server" if "Server thread" in name else
             "render" if "Render thread" in name else
             "worldgen_worker" if "Worker" in name else "fork_join_worker")
-        top=candidate_sources(t,t.time)
+        top,root_weight,visited=candidate_sources(t)
         if typ=="server":
-            print("SPARK_SERVER_TREE",code,"weight",round(t.time,1),
-                  "children",len(t.children),"refs",len(t.childrenRefs))
+            print("SPARK_SERVER_TREE",code,"weight",round(root_weight,1),
+                  "flat_nodes",len(t.children),"refs",len(t.childrenRefs),"visited",visited)
         out["threads"].append({
             "thread_class":typ,
-            "root_weight":round(t.time,2),
-            "root_children":len(t.children),
+            "root_weight":round(root_weight,2),
+            "root_children":len(t.childrenRefs),
+            "flattened_node_count":len(t.children),
+            "visited_node_count":visited,
             "top_methods":top[:24],
         })
     return out
