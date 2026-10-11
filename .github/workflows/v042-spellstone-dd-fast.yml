@@ -1,0 +1,34 @@
+name: AO v0.4.2 Spellstone and DD Fast Regression
+on:
+  push:
+    branches:
+      - experimental/v042-spellstone-dungeon-difficulty-combined-20261011
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency: {group: ao-v042-spellstone-dd-fast, cancel-in-progress: true}
+jobs:
+  source-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Source exact Curios layout + Dungeon Difficulty config and balanced entity matching
+        run: |
+          python -m py_compile compile_compatibility_031.py tools/package_v042_manyfix.py tools/validate_v042_restorations_zip.py
+          python -m unittest discover -s tests -p test_v042_spellstone_difficulty.py -v
+          python tools/validate_ao_balance_lab.py
+          python compile_compatibility_031.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('release_030/overrides/config/paxi/datapacks/ao_compatibility/data/curios/curios/slots')
+          assert json.loads((p/'spellstone.json').read_text())=={
+            'size':1,'operation':'SET','replace':False,
+            'icon':'enigmaticlegacyplus:slot/empty_spellstone_slot'}
+          assert json.loads((p/'amulet.json').read_text())=={
+            'size':1,'operation':'SET','replace':False}
+          print('PASS: source compiler reproducibly creates amulet and spellstone without duplicates')
+          PY
+          git diff --check

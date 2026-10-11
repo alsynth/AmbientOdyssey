@@ -9,7 +9,7 @@ from pathlib import Path
 from zipfile import ZipFile
 ROOT=Path(__file__).resolve().parents[1]
 JAR_Q="overrides/mods/ao-questlog-betterinventory-0.1.3.jar"
-JAR_SAFE="overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar"
+JAR_SAFE="overrides/mods/ao-worldgen-safety-0.1.3-experimental.jar"
 JAR_STREAM="overrides/mods/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
 RECIPE_ROOT="overrides/config/paxi/datapacks/ao_v041_runtime_fixes/data/"
 LEFT_DISABLED={
@@ -25,7 +25,7 @@ def check(path):
         names=z.namelist()
         assert len(names)==len(set(names))
         m=json.loads(z.read("manifest.json"))
-        assert m["version"]=="0.4.2-experimental-recipe-spawner-ui"
+        assert m["version"]=="0.4.2-experimental-spellstone-difficulty"
         assert m["minecraft"]["version"]=="1.21.1"
         assert len(m["files"])==330
         pins={i["projectID"]:i["fileID"] for i in m["files"]}
@@ -63,7 +63,8 @@ def check(path):
             }
             for cls in cfg["mixins"]:
                 assert "dev/ambientodyssey/worldgensafety/mixin/"+cls+".class" in names2
-            assert 'version="0.1.2-experimental"' in addon.read("META-INF/neoforge.mods.toml").decode()
+            assert "dev/ambientodyssey/worldgensafety/DungeonDifficultyDeferredEvaluation.class" in names2, "Missing guarded server-thread DD retry"
+            assert 'version="0.1.3-experimental"' in addon.read("META-INF/neoforge.mods.toml").decode()
         with ZipFile(io.BytesIO(z.read(JAR_Q))) as q:
             assert q.testzip() is None
             assert "0.1.3" in q.read("META-INF/neoforge.mods.toml").decode()
@@ -71,7 +72,23 @@ def check(path):
         assert json.loads(z.read(
           "overrides/config/paxi/datapacks/ao_compatibility/data/curios/curios/slots/amulet.json"
         ))=={"size":1,"operation":"SET","replace":False}
-    print("PASS: 330 exact refs, 15 author-derived NeoForge recipes, 4 evidence-gated recipe disables, AO spawner & air mixins, Q 0.1.3, Curios, Streams and full ZIP integrity")
+        spellstone="overrides/config/paxi/datapacks/ao_compatibility/data/curios/curios/slots/spellstone.json"
+        assert json.loads(z.read(spellstone))=={
+            "size":1,"operation":"SET","replace":False,
+            "icon":"enigmaticlegacyplus:slot/empty_spellstone_slot"
+        }
+        assert "overrides/config/dungeon_difficulty_v2.json" not in names
+        native_difficulty_path="overrides/config/dungeon_difficulty/difficulty_v2.json"
+        assert native_difficulty_path in names, "Dungeon Difficulty ignored root-level pilot config"
+        dd=json.loads(z.read(native_difficulty_path))
+        try:
+            from tools.validate_ao_balance_lab import check_config
+        except ModuleNotFoundError:
+            from validate_ao_balance_lab import check_config
+        assert check_config(dd)
+        assert len(dd["dimensions"][0]["zones"])==6
+
+    print("PASS: native Dungeon Difficulty path, expanded ordinary hostiles, spellstone + amulet slots, 330 exact refs, 15 author-derived NeoForge recipes, 4 evidence-gated recipe disables, AO spawner & air mixins, Q 0.1.3, Curios, Streams and full ZIP integrity")
     print("NOT runtime-tested; spawner persistence requires new dungeon + save/reload test")
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("archive",type=Path);args=p.parse_args()

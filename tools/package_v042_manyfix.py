@@ -16,18 +16,18 @@ except ModuleNotFoundError:
 
 ROOT=Path(__file__).resolve().parents[1]
 PILOT=ROOT/"experiments/ao-balance-lab/config/dungeon_difficulty_v2.json"
-DEST="overrides/config/dungeon_difficulty_v2.json"
+DEST="overrides/config/dungeon_difficulty/difficulty_v2.json"
 BASE_COUNT=329
 TARGET_COUNT=330
 PROJECT=645559
 FILE=9110961
-NAME="Ambient Odyssey v0.4.2 - Recipes Spawner Questlog Integrated TEST"
-VERSION="0.4.2-experimental-recipe-spawner-ui"
-CONTROL_VERSION="0.4.2-experimental-recipe-spawner-ui-core"
+NAME="Ambient Odyssey v0.4.2 - Spellstone Dungeon Difficulty Combined TEST"
+VERSION="0.4.2-experimental-spellstone-difficulty"
+CONTROL_VERSION="0.4.2-experimental-spellstone-difficulty-core"
 ADDONS={
 "overrides/mods/ao-questlog-betterinventory-0.1.3.jar",
 "overrides/mods/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar",
-"overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar",
+"overrides/mods/ao-worldgen-safety-0.1.3-experimental.jar",
 }
 RETAIN_PINS={
 1581408:9060294, # Streams Reflowing
@@ -60,6 +60,7 @@ def input_guard(z):
     assert all(p.get(k)==v for k,v in RETAIN_PINS.items())
     assert {n for n in z.namelist() if n.startswith("overrides/mods/") and n.endswith(".jar")}==ADDONS
     assert DEST not in z.namelist()
+    assert "overrides/config/dungeon_difficulty_v2.json" not in z.namelist()
     return manifest,p
 
 def verify(source,out):
@@ -73,6 +74,7 @@ def verify(source,out):
         assert new["name"]==NAME and new["version"]==VERSION
         assert new["minecraft"]==original["minecraft"]
         assert set(z.namelist())==set(a.namelist())|{DEST}
+        assert "overrides/config/dungeon_difficulty_v2.json" not in z.namelist(), "Legacy ignored Dungeon Difficulty config leaked into runtime ZIP"
         conf=json.loads(z.read(DEST))
         assert conf==json.loads(PILOT.read_text())
         check_config(conf)

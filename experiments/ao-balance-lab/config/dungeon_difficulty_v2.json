@@ -32,7 +32,7 @@
         {
           "entity_matches": {
             "attitude": "HOSTILE",
-            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)$"
+            "type": "~^(?:minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)|(?:(?:born_in_chaos_v1|illagerinvasion|rottencreatures|creeperoverhaul|dungeoncrawl):)(?![a-z0-9_]*(?:boss|king|queen|lord|guardian|monarch|chieftain|warlord)[a-z0-9_]*$)[a-z0-9_]+)$"
           },
           "attributes": [
             {
@@ -78,7 +78,7 @@
         {
           "entity_matches": {
             "attitude": "HOSTILE",
-            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)$"
+            "type": "~^(?:minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)|(?:(?:born_in_chaos_v1|illagerinvasion|rottencreatures|creeperoverhaul|dungeoncrawl):)(?![a-z0-9_]*(?:boss|king|queen|lord|guardian|monarch|chieftain|warlord)[a-z0-9_]*$)[a-z0-9_]+)$"
           },
           "attributes": [
             {
@@ -124,7 +124,7 @@
         {
           "entity_matches": {
             "attitude": "HOSTILE",
-            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)$"
+            "type": "~^(?:minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)|(?:(?:born_in_chaos_v1|illagerinvasion|rottencreatures|creeperoverhaul|dungeoncrawl):)(?![a-z0-9_]*(?:boss|king|queen|lord|guardian|monarch|chieftain|warlord)[a-z0-9_]*$)[a-z0-9_]+)$"
           },
           "attributes": [
             {

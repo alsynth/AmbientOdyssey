@@ -10,7 +10,7 @@ python tools/package_v041_streams_questlog_combo.py \
   --source build/ao-v041-328-control.zip \
   --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.3.jar \
   --streams-jar build/streams-addon/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar \
-  --safety-jar addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.2-experimental.jar \\
+  --safety-jar addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.3-experimental.jar \\
   --output build/Ambient-Odyssey-v0.4.1-WORLDGEN-SAFETY-TEST.zip
 
 And --verify --output ZIP for independent revalidation.
@@ -31,10 +31,10 @@ BI_FILE=9099710
 BASE_REMOVED={832882,1430156,1581408}
 QUESTLOG_JAR="ao-questlog-betterinventory-0.1.3.jar"
 STREAMS_JAR="ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
-SAFETY_JAR="ao-worldgen-safety-0.1.2-experimental.jar"
+SAFETY_JAR="ao-worldgen-safety-0.1.3-experimental.jar"
 JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR,"overrides/mods/"+SAFETY_JAR}
-NAME="Ambient Odyssey v0.4.2 - Recipe Spawner UI Core"
-VERSION="0.4.2-experimental-recipe-spawner-ui-core"
+NAME="Ambient Odyssey v0.4.2 - Spellstone Dungeon Difficulty Core"
+VERSION="0.4.2-experimental-spellstone-difficulty-core"
 
 def jar_check(name, blob):
     with ZipFile(BytesIO(blob)) as z:
