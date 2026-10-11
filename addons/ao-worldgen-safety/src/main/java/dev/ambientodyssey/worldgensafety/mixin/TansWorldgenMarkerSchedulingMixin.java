@@ -1,6 +1,7 @@
 package dev.ambientodyssey.worldgensafety.mixin;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.TickTask;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
@@ -31,7 +32,8 @@ public abstract class TansWorldgenMarkerSchedulingMixin {
             String tags, String customData, CallbackInfo ci) {
         MinecraftServer server = level.getServer();
         if (server != null && !server.isSameThread()) {
-            server.tell(() -> summon(level, at, entityId, name, tags, customData));
+            server.tell(new TickTask(server.getTickCount() + 1,
+                    () -> summon(level, at, entityId, name, tags, customData)));
             ci.cancel();
         }
     }
