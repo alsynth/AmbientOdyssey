@@ -22,7 +22,7 @@ def validate(path):
         names=z.namelist()
         assert len(names)==len(set(names))
         manifest=json.loads(z.read("manifest.json"))
-        assert manifest["version"]=="0.4.1-experimental-hominid-lifecycle"
+        assert manifest["version"]=="0.4.2-experimental-manyfix-core"
         assert len(manifest["files"])==329
         pins={x["projectID"]:x["fileID"] for x in manifest["files"]}
         for p in report["source_pins"].values():

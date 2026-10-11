@@ -12,6 +12,9 @@ import re
 
 ISSUE_MARKERS = {
     "invalid_air_item": "Item must not be minecraft:air",
+    "removed_zombie_readd": "but it was marked as removed already",
+    "poi_data_mismatch": "POI data mismatch",
+    "legacy_forge_attribute": "Ignoring unknown attribute 'forge:",
     "invalid_registry_item": "Unknown registry key in ResourceKey[minecraft:root / minecraft:item]",
     "unknown_legacy_attribute": "Ignoring unknown attribute 'forge:",
     "cosmetic_model_missing": "missing model for variant:",

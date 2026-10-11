@@ -1,0 +1,31 @@
+name: AO v0.4.2 Many-Fix Fast Source and ZIP Regression
+on:
+  push:
+    branches:
+      - experimental/v042-consolidated-manyfix-test-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  manyfix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Static, native balance, source-history and synthetic final 330-ref package gates
+        run: |
+          python -m py_compile tools/package_v042_manyfix.py tools/validate_ao_balance_lab.py compile_compatibility_031.py
+          python tools/validate_ao_balance_lab.py
+          python compile_compatibility_031.py
+          python -m unittest discover -s tests -p test_v042_history_gates.py -v
+          python -m unittest discover -s tests -p test_v042_manyfix_packaging.py -v
+          python -m unittest discover -s tests -p test_v041_runtime_log_audit.py -v
+          python tools/audit_v042_historical_fixes.py --output build/v042-history-gates.json
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v042-Manyfix-Source-Regressions
+          path: build/v042-history-gates.json
+          if-no-files-found: error
