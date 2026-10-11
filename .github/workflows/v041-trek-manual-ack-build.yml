@@ -1,0 +1,112 @@
+name: AO v0.4.1 TREK and Manual No-Auto-Completion Hotfix
+on:
+  push:
+    branches:
+      - experimental/v042-quest-log-error-stabilization-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-addons:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - name: Compile exact user-tested Mine Cells/Streams bridge
+        run: |
+          gradle -p compat/streams-minecells --no-daemon build
+          test -f compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar
+      - name: Compile source-backed Hominid structure worldgen safety addon
+        run: |
+          gradle -p addons/ao-worldgen-safety --no-daemon --stacktrace build
+          test -f addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar
+          unzip -p addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar META-INF/neoforge.mods.toml | grep -F 'modId="ao_worldgen_safety"'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-worldgen-safety-server-addons
+          path: |
+            compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar
+            addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar
+          if-no-files-found: error
+  release:
+    needs: native-addons
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '8.10.2'}
+      - name: Compile native-styled Better Inventory Questlog button
+        run: |
+          gradle -p addons/ao-questlog-betterinventory --no-daemon build
+          test -f addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar
+      - uses: actions/download-artifact@v4
+        with:
+          name: AO-worldgen-safety-server-addons
+          path: build/embedded
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Verify NBT patch regression (synthetic fixture)
+        run: |
+          python -m unittest discover -s tests -p 'test_v041_idas_create_items.py' -v
+          python -m unittest discover -s tests -p 'test_v041_invalid_item_source_coverage.py' -v
+          python -m unittest discover -s tests -p 'test_v041_spark_ab.py' -v
+      - name: Run native-scope rarity regression tests with no remote JAR
+        run: python -m unittest discover -s tests -p 'test_v041_trek_create_rarity.py' -v
+      - name: Generate SHA-verified Trek Create Paxi rarity overrides
+        run: |
+          python -u tools/generate_v041_trek_create_rarity.py
+          python -u tools/generate_v041_trek_create_rarity.py --check
+      - name: Generate precisely two SHA-verified native IDAS overrides for PRIVATE evaluation
+        run: python -u tools/repair_v041_idas_create_items.py
+      - name: Check pinned rules and scoped worldgen changes
+        run: |
+          python tools/validate_v041_worldgen_safety.py
+          python tools/validate_v041_questlog_native_tab.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v041_lukis_dnt_keys.py
+          python tools/validate_v041_six_fix.py
+          python tools/validate_v04_trek_curated.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+          python -m unittest discover -s tests -p "test_v041_runtime_log_audit.py"
+      - name: Build and verify installable CurseForge ZIP with three compiled AO addons
+        run: |
+          python build_release_030.py --output build/ao-v041-331-reference.zip
+          python tools/validate_v04_release.py build/ao-v041-331-reference.zip
+          python tools/make_v041_minecells_structure_control.py build/ao-v041-331-reference.zip build/ao-v041-328-control.zip
+          python tools/make_v041_minecells_structure_control.py --verify build/ao-v041-328-control.zip --baseline build/ao-v041-331-reference.zip
+          python tools/package_v041_streams_questlog_combo.py \
+            --source build/ao-v041-328-control.zip \
+            --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar \
+            --streams-jar build/embedded/compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar \
+            --safety-jar build/embedded/addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar \
+            --output build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip
+          python tools/package_v041_streams_questlog_combo.py --verify --output build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip
+          python tools/validate_v041_idas_create.py build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip
+          python tools/validate_v041_trek_create_density_zip.py build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip
+          python tools/make_v041_spark_profiler_ab.py \
+            build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip \
+            build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-SPARK-OFF.zip
+          python tools/make_v041_spark_profiler_ab.py --verify \
+            build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip \
+            build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-SPARK-OFF.zip
+          python tools/perf_preflight_v04.py build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip --expected-refs 329 --output build/v041-perf-static-preflight.json
+          sha256sum build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-TREK-MANUAL-ACK-PRIVATE-CurseForge-Import
+          path: |
+            build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-TEST.zip
+            build/Ambient-Odyssey-v0.4.1-TREK-MANUAL-ACK-SPARK-OFF.zip
+            build/v041-idas-create-source-repair.json
+            build/v041_trek_create_rarity_report.json
+          if-no-files-found: error
