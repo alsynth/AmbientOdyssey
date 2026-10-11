@@ -24,3 +24,10 @@
 - Reduce Dragon Tower and CTOV village actual generation slightly, maintaining unrelated structure placement.
 - Recheck cold /locate and unloaded-chunk teleports with profiler; tag as deferred performance investigation unless crashes or world corruption.
 - Campaign design is **future quest-content direction**, not a feature implemented in this patch; a focused optional portal/bed/respawn check will resolve its only blocking uncertainty.
+
+
+## Follow-up: performance priorities and prelaunch pregeneration
+
+User clarified AO is a survival exploration modpack, so frequent /locate and long-distance teleportation into unloaded chunks are NOT representative of player workload. Optimize natural walking, riding, sailing, combat and exploration first. The initial release server will pregenerate a sizable Overworld region with Chunky. Finalize terrain and structure tuning (including Dragon Tower and CTOV frequency) and chosen seed BEFORE pregeneration; previously generated chunks will not retroactively adopt structure changes. Select a bounded radius based on expected travel and server resources, back up, benchmark Chunky, monitor disk/RAM/CPU/MSPT, and pregenerate before players join. Check the exact Chunky NeoForge 1.21.1 version/installation before documenting command syntax. Do not automatically pregenerate Mine Cells dimensions.
+
+User-supplied v0.4.3 latest.log supports locate cold-world spikes: Keep Kayra 23.584 seconds, big stronghold 8.610 seconds, integrated stronghold 1.097 seconds, Mine Cells portal 3 milliseconds. There were 24 'Can't keep up' warnings, alongside invalid-item and malformed-JSON messages requiring separately scoped follow-up. World saved and stopped. These facts do not establish poor performance during ordinary survival travel; benchmark that separately with Spark on pregenerated versus fresh terrain. Chunky initial teaching note is now staged in the Field Manual draft, NOT exported to live FTB pages.
