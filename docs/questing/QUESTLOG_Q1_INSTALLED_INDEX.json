@@ -4,7 +4,7 @@
   "questlog": "3.4.1",
   "namespace": "questlog",
   "source": "WRITTEN_QUEST_DRAFTS_V0_2.json plus original Q1 contracts",
-  "quest_count": 50,
+  "quest_count": 52,
   "chapter_count": 13,
   "entries": [
     {
@@ -459,6 +459,24 @@
         "questlog:read"
       ],
       "rewards": 0
+    },
+    {
+      "id": "ao_first_pages_14_find_minecells_overworld_portal",
+      "chapter": "first_pages",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:visit_structure"
+      ],
+      "rewards": 2
+    },
+    {
+      "id": "ao_first_pages_15_defeat_your_first_monster",
+      "chapter": "first_pages",
+      "source_seed": "new-q1",
+      "objective_types": [
+        "questlog:or"
+      ],
+      "rewards": 2
     }
   ]
 }
