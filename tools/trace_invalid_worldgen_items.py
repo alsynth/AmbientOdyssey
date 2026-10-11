@@ -36,7 +36,7 @@ def main():
                     scanned += 1
                     try:
                         data = z.read(info)
-                        if data[:2] == b"\\x1f\\x8b":
+                        if data[:2] == bytes((31, 139)):
                             data = gzip.decompress(data)
                     except (OSError, BadZipFile, EOFError, RuntimeError, ValueError):
                         continue
