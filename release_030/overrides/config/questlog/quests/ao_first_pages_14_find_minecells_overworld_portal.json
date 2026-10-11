@@ -1,0 +1,40 @@
+{
+  "chapter": "questlog:first_pages",
+  "toast_on_unlock": false,
+  "toast_on_complete": true,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ],
+  "title": "A Door Beyond the World",
+  "description": "Find the strange doorway leading to the Prisoners' Quarters. Reach the naturally generated Mine Cells Overworld portal structure before stepping through it. This adventure begins in the Overworld, with supplies in hand and a way back to safety. The structure objective is tied to Mine Cells 2.0.3's confirmed registry ID, not a manual checkbox.",
+  "sort_order": 14,
+  "icon": {
+    "item": "minecraft:ender_pearl"
+  },
+  "objectives": [
+    {
+      "type": "questlog:visit_structure",
+      "structure": "minecells:overworld_portal",
+      "name": "Reach a Mine Cells Overworld portal"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:torch",
+      "count": 12
+    },
+    {
+      "type": "questlog:item",
+      "item": "minecraft:bread",
+      "count": 4
+    }
+  ]
+}
