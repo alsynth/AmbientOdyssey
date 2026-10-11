@@ -4,7 +4,7 @@ the known successful v0.4.3 user-playtested CurseForge ZIP.
 This is deliberately NOT a claim that outstanding binary NBT/jigsaw issues are fixed.
 """
 from __future__ import annotations
-import argparse, hashlib, json, pathlib, zipfile
+import argparse, copy, hashlib, json, pathlib, zipfile
 from zipfile import ZipFile, ZIP_DEFLATED
 P=pathlib.Path
 NAME="Ambient Odyssey v0.4.4 - Preperformance Candidate TEST"
@@ -64,7 +64,7 @@ def run(args):
                     n=info.filename
                     data=(json.dumps(m,indent=2)+"\n").encode() if n=="manifest.json" else (
                          (SOURCE/changes[n]).read_bytes() if n in changes else a.read(n))
-                    z.writestr(info,data)
+                    z.writestr(copy.copy(info),data)
                 for n,p in changes.items():
                     if n not in a.namelist():z.writestr(n,(SOURCE/p).read_bytes(),compress_type=ZIP_DEFLATED)
         with ZipFile(out) as z:verify(a,z)
