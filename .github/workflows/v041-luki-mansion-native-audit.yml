@@ -1,0 +1,23 @@
+name: AO v0.4.1 pinned mansion pool native audit
+on:
+  push:
+    branches:
+      - experimental/v041-ui-quest-data-perf-triage-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-mansion-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Inspect exact Luki mansion mod JAR and missing template pool
+        run: python tools/audit_v041_luki_mansion_pools.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-pinned-Luki-mansion-native-pool-report
+          path: build/v041-luki-mansion-pools.json
+          if-no-files-found: error
