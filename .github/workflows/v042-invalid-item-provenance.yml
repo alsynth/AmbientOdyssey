@@ -1,0 +1,27 @@
+name: AO v0.4.2 Native Invalid Item Owner Prioritization
+on:
+  push:
+    branches:
+      - research/v042-invalid-air-source-prioritization-20261011
+  workflow_dispatch:
+permissions: {contents: read}
+jobs:
+  historical-native-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Read-only original native Minecraft structure NBT resource audit
+        run: |
+          python -u audit_invalid_structure_items_089.py
+          python -u tools/prioritize_v042_invalid_air_sources.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v042-Invalid-Air-Source-Provenance-ReadOnly
+          path: |
+            build/invalid-items-worldgen-089.json
+            build/v042-invalid-item-native-owner-triage.json
+          if-no-files-found: error
