@@ -13,10 +13,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.block.state.BlockState;
-import xiroc.dungeoncrawl.theme.Theme;
-import xiroc.dungeoncrawl.theme.SecondaryTheme;
 
 /**
  * Exact Dungeon Crawl 2.3.17 spawner-worldgen repair.
@@ -36,12 +32,13 @@ import xiroc.dungeoncrawl.theme.SecondaryTheme;
 @Mixin(targets = "xiroc.dungeoncrawl.dungeon.block.Spawner", remap = false)
 public abstract class DungeonCrawlSpawnerPendingNbtMixin {
     @Unique
-    private static final ThreadLocal<SpawnerBlockEntity> AO_PENDING_SPAWNER = new ThreadLocal<>();
+    private static final ThreadLocal<PendingSpawner> AO_PENDING_SPAWNER = new ThreadLocal<>();
+
+    @Unique
+    private record PendingSpawner(WorldGenRegion world, BlockPos pos, SpawnerBlockEntity entity) {}
 
     @Inject(method = "place", at = @At("HEAD"), remap = false)
-    private void ao$clearPendingAtEntry(LevelAccessor world, BlockState state,
-            BlockPos pos, RandomSource random, Theme theme,
-            SecondaryTheme secondaryTheme, int stage, CallbackInfo ci) {
+    private void ao$clearPendingAtEntry(CallbackInfo ci) {
         AO_PENDING_SPAWNER.remove();
     }
 
@@ -57,24 +54,22 @@ public abstract class DungeonCrawlSpawnerPendingNbtMixin {
             return null;
         }
         SpawnerBlockEntity pending = new SpawnerBlockEntity(pos, Blocks.SPAWNER.defaultBlockState());
-        AO_PENDING_SPAWNER.set(pending);
+        AO_PENDING_SPAWNER.set(new PendingSpawner((WorldGenRegion)world, pos.immutable(), pending));
         return pending;
     }
 
     @Inject(method = "place", at = @At("RETURN"), remap = false)
-    private void ao$storeConfiguredWorldgenSpawner(LevelAccessor world, BlockState state,
-            BlockPos pos, RandomSource random, Theme theme,
-            SecondaryTheme secondaryTheme, int stage, CallbackInfo ci) {
-        SpawnerBlockEntity configured = AO_PENDING_SPAWNER.get();
+    private void ao$storeConfiguredWorldgenSpawner(CallbackInfo ci) {
+        PendingSpawner pending = AO_PENDING_SPAWNER.get();
         AO_PENDING_SPAWNER.remove();
-        if (configured == null || !(world instanceof WorldGenRegion region)
-                || !world.getBlockState(pos).is(Blocks.SPAWNER)) {
+        if (pending == null || !pending.world().getBlockState(pending.pos()).is(Blocks.SPAWNER)) {
             return;
         }
         // Existing WorldGenRegion pending DUMMY NBT is replaced, not a second BE
         // spawned. ChunkAccess persists this exact BlockEntity's id, x/y/z and
         // BaseSpawner SpawnData/SpawnPotentials through the normal chunk pipeline.
-        CompoundTag nbt = configured.saveWithFullMetadata(world.registryAccess());
-        region.getChunk(pos.getX() >> 4, pos.getZ() >> 4).setBlockEntityNbt(nbt);
+        CompoundTag nbt = pending.entity().saveWithFullMetadata(pending.world().registryAccess());
+        pending.world().getChunk(pending.pos().getX() >> 4, pending.pos().getZ() >> 4)
+                .setBlockEntityNbt(nbt);
     }
 }
