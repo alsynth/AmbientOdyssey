@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_worldgen_safety"
+version="0.1.0-experimental"
+displayName="Ambient Odyssey - Safe Worldgen Entity Events"
+description='''Narrowly guards Hominid off-thread zombie replacement during asynchronous structure generation. Experimental.'''
+[[mixins]]
+config="ao_worldgen_safety.mixins.json"
+[[dependencies.ao_worldgen_safety]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_worldgen_safety]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_worldgen_safety]]
+modId="hominid"
+type="required"
+versionRange="[1.3.4,1.3.5)"
+ordering="AFTER"
+side="BOTH"
