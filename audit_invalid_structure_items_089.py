@@ -13,11 +13,21 @@ from pathlib import Path
 import zipfile
 import nbtlib
 
+# This is a historical Test6 SHA inventory, not an index of all v0.4.1 JARs.
+# A successful scan therefore never proves that the complete 329-ref pack is clean.
+INDEX_SCOPE = 'historical Test6 pinned native JAR index; newer 0.4.x additions may be absent'
+
 from audit_remaining_jigsaw_nbt_086 import indexed_jars, manifest_pairs, resolve, fetch
 
 ROOT=Path(__file__).resolve().parent
-BAD={'minecraft:air','redeco:hammer','traveloptics:blood_echo','meadow:alpine_salt','create:crushed_iron_ore'}
-CANDIDATES={'minecraft:air'.encode(),b'redeco:hammer',b'traveloptics:blood_echo',b'meadow:alpine_salt',b'create:crushed_iron_ore'}
+BAD={'minecraft:air','redeco:hammer','traveloptics:blood_echo','meadow:alpine_salt','create:crushed_iron_ore','biomesoplenty:rose_quartz_shard'}
+CANDIDATES={item.encode('utf-8') for item in BAD}
+
+def is_structure_nbt_path(path):
+    """Accept only vanilla/current and legacy native structure NBT paths."""
+    parts=path.split('/')
+    return (len(parts)>=4 and parts[0]=='data' and parts[-1].endswith('.nbt')
+            and parts[2] in ('structure','structures'))
 
 def recursive_hits(node,path='',in_items=False,depth=0):
     if depth>24:return
@@ -43,10 +53,10 @@ def inspect(item):
         found=[]
         with zipfile.ZipFile(io.BytesIO(jarbytes)) as archive:
             for path in archive.namelist():
-                if not path.endswith('.nbt') or not path.startswith('data/') or '/structure/' not in path:continue
+                if not is_structure_nbt_path(path):continue
                 raw=archive.read(path)
                 try: buf=gzip.decompress(raw)
-                except Exception: continue
+                except (OSError,EOFError): buf=raw
                 examined+=1
                 if not any(s in buf for s in CANDIDATES):continue
                 try:
@@ -69,6 +79,9 @@ def main():
     eligible=[(entry,mapped[name][1],name) for name,entry in candidates.items() if name in mapped]
     print('SOURCE_CANDIDATES',len(candidates),'MAPPED',len(eligible),flush=True)
     found=[]
+    # Any JAR absent from this historical index remains unaudited. Report it,
+    # rather than silently treating the scan as full-pack verification.
+    not_in_index=sorted(set(mapped)-set(index))
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as exe:
         for record in exe.map(inspect,eligible):
             found.append(record)
@@ -78,6 +91,18 @@ def main():
                 print('SOURCE_UNREADABLE',record['jar'],record['error'],flush=True)
     dest=ROOT/'build/invalid-items-worldgen-089.json'
     dest.parent.mkdir(exist_ok=True)
-    dest.write_text(json.dumps({'scanned':len(found),'records':found,'unmapped':sorted(set(candidates)-set(mapped))},indent=2))
-    print('SUMMARY',json.dumps({'scanned':len(found),'with_hits':sum(bool(r.get('hits')) for r in found),'total_item_matches':sum(sum(p.get('total_matches',0) for p in r.get('hits',[])) for r in found),'unreadable':sum(bool(r.get('error')) for r in found),'report':str(dest)}),flush=True)
+    summary={'scanned':len(found),'with_hits':sum(bool(r.get('hits')) for r in found),
+             'total_item_matches':sum(sum(p.get('total_matches',0) for p in r.get('hits',[])) for r in found),
+             'unreadable':sum(bool(r.get('error')) for r in found),
+             'current_manifest_refs':len(pairs),'resolved_filenames':len(mapped),
+             'historical_index_jars':len(index),
+             'current_resolved_filenames_outside_historical_index':len(not_in_index),
+             'coverage_complete':False,'report':str(dest)}
+    report={'index_scope':INDEX_SCOPE,'targets':sorted(BAD),
+            'summary':summary,'records':found,
+            'current_files_not_in_historical_index':not_in_index,
+            'historical_candidates_without_current_filename_mapping':sorted(set(candidates)-set(mapped)),
+            'note':'Read-only provenance scan. Missing/unreadable JARs and source-defined loot or runtime-generated stacks are NOT cleared by a zero-hit result.'}
+    dest.write_text(json.dumps(report,indent=2)+'\n')
+    print('SUMMARY',json.dumps(summary),flush=True)
 if __name__=='__main__':main()
