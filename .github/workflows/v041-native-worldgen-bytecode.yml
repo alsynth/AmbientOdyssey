@@ -1,0 +1,24 @@
+name: AO v0.4.1 Exact Native Threading Bytecode Audit
+on:
+  push:
+    branches:
+      - experimental/v041-worldgen-safety-patch-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-exact-native-binaries:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python tools/audit_v041_native_worldgen_bytecode.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Native-Worldgen-Bytecode-Report
+          path: build/v041-native-thread-bytecode.json
+          if-no-files-found: error
