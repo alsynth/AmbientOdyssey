@@ -3,6 +3,7 @@ package dev.ambientodyssey.ports.wetsand;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -61,7 +62,8 @@ public final class WetSandPort {
             for (int dx = -3; dx <= 3 && !hydrated; dx++) {
                 for (int dz = -3; dz <= 3 && !hydrated; dz++) {
                     if (Math.abs(dx) + Math.abs(dz) > 3) continue;
-                    hydrated = level.getFluidState(pos.offset(dx, 0, dz)).isSource();
+                    var fluid = level.getFluidState(pos.offset(dx, 0, dz));
+                    hydrated = fluid.is(FluidTags.WATER) && fluid.isSource();
                 }
             }
             int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
