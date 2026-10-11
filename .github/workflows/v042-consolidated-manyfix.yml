@@ -4,6 +4,9 @@ on:
     branches:
       - experimental/v042-consolidated-manyfix-test-20261011
   workflow_dispatch:
+concurrency:
+  group: ao-v042-manyfix-release-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -18,11 +21,11 @@ jobs:
         with: {gradle-version: '9.2.1'}
       - name: Compile exact user-tested Mine Cells/Streams bridge
         run: |
-          gradle -p compat/streams-minecells --no-daemon build
+          gradle -p compat/streams-minecells --no-daemon build || (sleep 25; gradle -p compat/streams-minecells --no-daemon build)
           test -f compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar
       - name: Compile source-backed Hominid structure worldgen safety addon
         run: |
-          gradle -p addons/ao-worldgen-safety --no-daemon --stacktrace build
+          gradle -p addons/ao-worldgen-safety --no-daemon --stacktrace build || (sleep 25; gradle -p addons/ao-worldgen-safety --no-daemon --stacktrace build)
           test -f addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.1-experimental.jar
           unzip -p addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.1-experimental.jar META-INF/neoforge.mods.toml | grep -F 'modId="ao_worldgen_safety"'
       - uses: actions/upload-artifact@v4
@@ -44,7 +47,7 @@ jobs:
         with: {gradle-version: '8.10.2'}
       - name: Compile native-styled Better Inventory Questlog button
         run: |
-          gradle -p addons/ao-questlog-betterinventory --no-daemon build
+          gradle -p addons/ao-questlog-betterinventory --no-daemon build || (sleep 25; gradle -p addons/ao-questlog-betterinventory --no-daemon build)
           test -f addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar
       - uses: actions/download-artifact@v4
         with:
@@ -121,4 +124,5 @@ jobs:
             build/Ambient-Odyssey-v0.4.2-MANYFIX-SPARK-OFF.zip
             build/v041-idas-create-source-repair.json
             build/v041_trek_create_rarity_report.json
+            docs/testing/V042_MANYFIX_SINGLE_SESSION_CHECKLIST.md
           if-no-files-found: error
