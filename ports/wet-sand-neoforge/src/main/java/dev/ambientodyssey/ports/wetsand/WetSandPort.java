@@ -8,6 +8,8 @@ import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.item.alchemy.Potions;
 import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.Codec;
+import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.FluidTags;
@@ -145,7 +147,11 @@ public final class WetSandPort {
 
     /** Moist sand inherits vanilla gravity; wet and soaked stages are stable. */
     public static final class MoistureFallingBlock extends FallingBlock {
-        public static final MapCodec<MoistureFallingBlock> CODEC = simpleCodec(properties -> new MoistureFallingBlock(false, 1, properties));
+        public static final MapCodec<MoistureFallingBlock> CODEC = RecordCodecBuilder.mapCodec(
+                instance -> instance.group(
+                        Codec.BOOL.fieldOf("red").forGetter(block -> block.red),
+                        propertiesCodec()
+                ).apply(instance, (red, properties) -> new MoistureFallingBlock(red, 1, properties)));
         @Override public MapCodec<? extends FallingBlock> codec() { return CODEC; }
         private final boolean red;
         private final int stage;
