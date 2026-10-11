@@ -63,6 +63,7 @@ def check(path):
             }
             for cls in cfg["mixins"]:
                 assert "dev/ambientodyssey/worldgensafety/mixin/"+cls+".class" in names2
+            assert "dev/ambientodyssey/worldgensafety/DungeonDifficultyDeferredEvaluation.class" in names2, "Missing guarded server-thread DD retry"
             assert 'version="0.1.3-experimental"' in addon.read("META-INF/neoforge.mods.toml").decode()
         with ZipFile(io.BytesIO(z.read(JAR_Q))) as q:
             assert q.testzip() is None
