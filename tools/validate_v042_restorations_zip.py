@@ -9,7 +9,7 @@ from pathlib import Path
 from zipfile import ZipFile
 ROOT=Path(__file__).resolve().parents[1]
 JAR_Q="overrides/mods/ao-questlog-betterinventory-0.1.3.jar"
-JAR_SAFE="overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar"
+JAR_SAFE="overrides/mods/ao-worldgen-safety-0.1.3-experimental.jar"
 JAR_STREAM="overrides/mods/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
 RECIPE_ROOT="overrides/config/paxi/datapacks/ao_v041_runtime_fixes/data/"
 LEFT_DISABLED={
@@ -63,7 +63,7 @@ def check(path):
             }
             for cls in cfg["mixins"]:
                 assert "dev/ambientodyssey/worldgensafety/mixin/"+cls+".class" in names2
-            assert 'version="0.1.2-experimental"' in addon.read("META-INF/neoforge.mods.toml").decode()
+            assert 'version="0.1.3-experimental"' in addon.read("META-INF/neoforge.mods.toml").decode()
         with ZipFile(io.BytesIO(z.read(JAR_Q))) as q:
             assert q.testzip() is None
             assert "0.1.3" in q.read("META-INF/neoforge.mods.toml").decode()
