@@ -21,6 +21,7 @@ jobs:
       - name: Validate new Questlog drafts and worldgen controls
         run: |
           python tools/validate_v04_quest_campaign.py
+          python -m py_compile tools/trace_invalid_worldgen_items.py
           python -m json.tool release_030/overrides/config/questlog/quests/ao_first_pages_14_find_minecells_overworld_portal.json > /dev/null
           python -m json.tool release_030/overrides/config/questlog/quests/ao_first_pages_15_defeat_your_first_monster.json > /dev/null
           python -m json.tool release_030/overrides/config/paxi/datapacks/ao_structure_density/data/minecraft/worldgen/structure_set/villages.json > /dev/null
