@@ -127,11 +127,15 @@ def main():
                 profiles.append(entry)
                 print("SPARK_RAW_PARSED",code,"threads",entry["sampler_threads"],
                       "included",len(entry["threads"]),"ticks",entry["recorded_ticks"])
+                shown={"server":0,"worldgen_worker":0,"fork_join_worker":0,"render":0}
                 for t in entry["threads"]:
-                    if t["thread_class"]=="server":
-                        print("SPARK_SERVER_METHODS",code,json.dumps(t["top_methods"][:14])[:2600])
+                    cls=t["thread_class"]
+                    limit={"server":1,"render":1,"worldgen_worker":2,"fork_join_worker":1}[cls]
+                    if shown[cls]<limit:
+                        shown[cls]+=1
+                        print("SPARK_THREAD_METHODS",code,cls,"root",t["root_weight"],json.dumps(t["top_methods"][:12])[:3000])
             except Exception as exc:
-                print("SPARK_RAW_PROBE_FAILURE",code,type(exc).__name__)
+                print("SPARK_RAW_PROBE_FAILURE",code,type(exc).__name__,str(exc)[:130])
                 profiles.append({"code":code,"status":"FAILED","error_type":type(exc).__name__})
     OUT.parent.mkdir(parents=True,exist_ok=True)
     OUT.write_text(json.dumps({
