@@ -1,0 +1,45 @@
+name: AO v0.4.1 Mansion Key Compatibility Build
+on:
+  push:
+    branches:
+      - experimental/v0.4.1-lukis-mansion-keys-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mansion-key-compat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install nbtlib==2.0.4
+      - name: Validate merged resource route and retained fixes
+        run: |
+          python -m compileall -q tools build_release_030.py
+          python tools/validate_v041_lukis_dnt_keys.py
+          python tools/validate_v041_six_fix.py
+          python tools/validate_v04_trek_curated.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+          python tools/validate_v04_fg.py
+      - name: Build original 331-ref source candidate and derive working 328-ref Mine Cells import
+        run: |
+          python build_release_030.py --output build/AO-v041-luki-331-reference.zip
+          python tools/validate_v04_release.py build/AO-v041-luki-331-reference.zip
+          python tools/validate_v04_trek_curated.py --archive build/AO-v041-luki-331-reference.zip
+          python tools/validate_v041_lukis_dnt_keys.py --archive build/AO-v041-luki-331-reference.zip
+          python tools/make_v041_minecells_structure_control.py build/AO-v041-luki-331-reference.zip build/Ambient-Odyssey-v0.4.1-MINECELLS-WORKING-LUKIS-KEYS.zip
+          python tools/make_v041_minecells_structure_control.py --verify build/Ambient-Odyssey-v0.4.1-MINECELLS-WORKING-LUKIS-KEYS.zip --baseline build/AO-v041-luki-331-reference.zip
+          python tools/validate_v041_lukis_dnt_keys.py --archive build/Ambient-Odyssey-v0.4.1-MINECELLS-WORKING-LUKIS-KEYS.zip --control
+          python tools/preflight_v04.py build/Ambient-Odyssey-v0.4.1-MINECELLS-WORKING-LUKIS-KEYS.zip --require-minecells
+          sha256sum build/Ambient-Odyssey-v0.4.1-MINECELLS-WORKING-LUKIS-KEYS.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-MineCells-Working-Lukis-Keys-Import
+          path: build/Ambient-Odyssey-v0.4.1-MINECELLS-WORKING-LUKIS-KEYS.zip
+          if-no-files-found: error
