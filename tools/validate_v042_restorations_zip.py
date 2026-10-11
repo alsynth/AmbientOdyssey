@@ -25,7 +25,7 @@ def check(path):
         names=z.namelist()
         assert len(names)==len(set(names))
         m=json.loads(z.read("manifest.json"))
-        assert m["version"]=="0.4.2-experimental-recipe-spawner-ui"
+        assert m["version"]=="0.4.2-experimental-spellstone-difficulty"
         assert m["minecraft"]["version"]=="1.21.1"
         assert len(m["files"])==330
         pins={i["projectID"]:i["fileID"] for i in m["files"]}
