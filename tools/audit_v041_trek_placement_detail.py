@@ -49,6 +49,10 @@ def main():
     OUT.write_text(json.dumps(summary,indent=2)+"\n")
     print("TREK_GROUP_COUNTS",json.dumps(summary["directory_groups"][:60]))
     for e in summary["worldgen_entries"]:
+        if "/structure_set/" in e["path"]:
+            print("TREK_STRUCTURE_SET",e["path"],json.dumps(e.get("structures"),separators=(",",":"))[:2200])
+        if "/structure/" in e["path"]:
+            print("TREK_NATIVE_STRUCTURE",e["path"],e.get("type"),json.dumps(e.get("biomes"))[:180])
         if "/placed_feature/" in e["path"]:
             print("TREK_FEATURE",e["path"],json.dumps(e.get("placement"),separators=(",",":"))[:750])
     print("TREK_PLACED",sum("/placed_feature/" in e["path"] for e in entries),
