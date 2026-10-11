@@ -302,6 +302,17 @@ def compile_compatibility():
     ])
     write_item_tag('scroll', ['enigmaticlegacyplus:darkest_scroll'])
 
+    # Curios 1.21.1: an item tag does NOT create a slot. Official CuriosSlotManager
+    # reads data/curios/curios/slots/<id>.json; nonreplacing SET uses max(existing,1).
+    # This generator deletes/recreates DATAPACK/data at startup, so generate the
+    # amulet slot here instead of staging a file that disappears during builds.
+    amulet_slot = DATAPACK / 'data/curios/curios/slots/amulet.json'
+    amulet_slot.parent.mkdir(parents=True, exist_ok=True)
+    amulet_slot.write_text(json.dumps({
+        'size': 1, 'operation': 'SET', 'replace': False,
+    }, indent=2) + '\n', newline='\n')
+
+
     patch_path = RELEASE / 'structure-compatibility.json'
     if patch_path.exists():
         patches = json.loads(patch_path.read_text())
@@ -334,7 +345,7 @@ def compile_compatibility():
         }
     }, indent=2) + '\n', newline='\n')
     print(f'Compatibility: {len(all_groups)} common biome tags, '
-          f'{len(direct)} direct structure tags, Curios amulet/scroll bridges')
+          f'{len(direct)} direct structure tags, Curios amulet/scroll bridges and amulet slot')
     return all_groups
 
 
