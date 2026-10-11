@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+modId="aoquestlogbridge"
+version="${version}"
+displayName="Ambient Odyssey - Questlog + Better Inventory Bridge"
+description='''Adds Questlog access and notifications to Better Inventory 1.3.2 without replacing either mod.'''
+displayTest="IGNORE_ALL_VERSION"
+
+[[dependencies.aoquestlogbridge]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.aoquestlogbridge]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="CLIENT"

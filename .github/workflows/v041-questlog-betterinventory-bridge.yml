@@ -1,0 +1,58 @@
+name: AO v0.4.1 Questlog BetterInventory Bridge
+on:
+  push:
+    branches:
+      - experimental/v0.4.1-betterinventory-questlog-bridge-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build-addon-and-modpack:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.10.2'
+      - name: Compile standalone NeoForge client addon
+        run: |
+          gradle -p addons/ao-questlog-betterinventory --no-daemon --stacktrace build
+          test -f addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.0.jar
+          jar tf addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.0.jar | grep -E '^dev/ambientodyssey/questlogbridge/QuestlogBetterInventoryBridge.class$'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install nbtlib==2.0.4
+      - name: Validate existing pack and key compatibility
+        run: |
+          python -m compileall -q tools build_release_030.py
+          python tools/validate_v041_lukis_dnt_keys.py
+          python tools/validate_v041_six_fix.py
+          python tools/validate_v04_trek_curated.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+      - name: Build source and derive Mine Cells working release with client bridge
+        run: |
+          python build_release_030.py --output build/ao-v041-331-reference.zip
+          python tools/validate_v04_release.py build/ao-v041-331-reference.zip
+          python tools/validate_v041_lukis_dnt_keys.py --archive build/ao-v041-331-reference.zip
+          python tools/make_v041_minecells_structure_control.py build/ao-v041-331-reference.zip build/ao-v041-328-control.zip
+          python tools/make_v041_minecells_structure_control.py --verify build/ao-v041-328-control.zip --baseline build/ao-v041-331-reference.zip
+          python tools/package_v041_questlog_betterinventory_bridge.py \
+            --source build/ao-v041-328-control.zip \
+            --jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.0.jar \
+            --output build/Ambient-Odyssey-v0.4.1-QUESTLOG-BETTERINVENTORY-BRIDGE-TEST.zip
+          python tools/package_v041_questlog_betterinventory_bridge.py --verify --output build/Ambient-Odyssey-v0.4.1-QUESTLOG-BETTERINVENTORY-BRIDGE-TEST.zip
+          sha256sum build/Ambient-Odyssey-v0.4.1-QUESTLOG-BETTERINVENTORY-BRIDGE-TEST.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Questlog-BetterInventory-Bridge-CurseForge-Import
+          path: build/Ambient-Odyssey-v0.4.1-QUESTLOG-BETTERINVENTORY-BRIDGE-TEST.zip
+          if-no-files-found: error
