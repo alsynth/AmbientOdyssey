@@ -42,3 +42,14 @@ After the first successful static packaging run, the published manual text was c
 ## 11 October 2026 — reference-page task correction
 
 The generated chapter SNBT previously had **32 `checkmark` tasks** despite the documentation describing task-free reference pages. These looked like ordinary FTB quests and reasonably caused confusion with Questlog's authored adventure quests. Source SNBT now uses `tasks: [ ]` for all 32 manual pages with `rewards: [ ]` unchanged. FTB Quests may mark empty-task pages completed; this is acceptable for information-only articles but still requires in-game UI testing. The inherited WDA authored FTB quests and Questlog's 50 independent quest definitions were not touched.
+
+
+## 11 October — no auto-completion rule after live user report
+
+The former note permitting automatic completion of informational manual pages is **superseded** by the player's explicit no-auto-completion requirement. The temporary taskless variant produced Quest Complete / Chapter Complete notifications without a deliberate action.
+
+In this **new, separate test branch**, the exact original task IDs from \`experimental/v041-streams-minecells-questlog-combined-20261011\` are restored: **15 + 9 + 8 = 32 \`checkmark\` acknowledgment tasks**. All titles, manual text, quest IDs, WDA chapter/rewards, page order and localization are byte-identical to the preceding experimental engineering branch, aside from the three manual chapter task lists. Every page still has \`rewards: [ ]\` and no prerequisite. These tasks should require an actual player click; confirm in FTB Quests runtime on a **new disposable save**.
+
+This is a containment solution within FTB Quests; long-term, read-only manuals could move outside the quest completion system. Existing saved auto-completion progress is **not cleared or migrated**, so rejoining an already affected world cannot validate the behavior. The independent Questlog Q1 \`read\` and item/stat objectives are unchanged and must separately be checked for unwanted first-join state completion.
+
+**Status: source validated; no client runtime test.**

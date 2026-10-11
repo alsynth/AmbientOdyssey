@@ -13,7 +13,7 @@
 			x: -4.0d
 			y: 0.0d
 			size: 2.0d
-			tasks: [ ]
+			tasks: [{ id: "8476CDDFA9F0BD6C", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -22,7 +22,7 @@
 			x: 0.0d
 			y: 0.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A79B29260EE1F", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -31,7 +31,7 @@
 			x: 4.0d
 			y: 0.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A76B29260EC6C", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -40,7 +40,7 @@
 			x: -4.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A7BB29260F185", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -49,7 +49,7 @@
 			x: 0.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A78B29260EFD2", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -58,7 +58,7 @@
 			x: 4.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A75B29260E753", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -67,7 +67,7 @@
 			x: -4.0d
 			y: 6.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A72B29260E5A0", type: "checkmark" }]
 			rewards: [ ]
 		}
 		{
@@ -76,7 +76,7 @@
 			x: 0.0d
 			y: 6.0d
 			size: 1.0d
-			tasks: [ ]
+			tasks: [{ id: "E32A77B29260EAB9", type: "checkmark" }]
 			rewards: [ ]
 		}
 	]
