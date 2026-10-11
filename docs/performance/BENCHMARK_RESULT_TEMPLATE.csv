@@ -1,0 +1,9 @@
+scenario,variant,archive_sha256,commit,seed,dimension,xyz,world_state,players,shaders,dh,render_distance,sim_distance,allocated_ram_mib,trial,boot_seconds,median_fps,fps_1pct_low,avg_mspt,p95_mspt,tps,peak_heap_mib,chunks_generated,elapsed_seconds,notes,status
+startup,baseline,,,,,,new,1,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+world_new,baseline,,,,,,new,1,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+world_reopen,baseline,,,,,,existing,1,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+forest_rain,baseline,,,,,,existing,1,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+travel_new,baseline,,,,,,new,1,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+travel_warm,baseline,,,,,,existing,1,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+server_2p,baseline,,,,,,existing,2,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
+server_5p,baseline,,,,,,existing,5,false,false,12,6,10240,1,,,,,,,,,,,NOT_TESTED
