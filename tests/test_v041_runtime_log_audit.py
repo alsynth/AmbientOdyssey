@@ -17,6 +17,12 @@ class RuntimeLogAudit(unittest.TestCase):
         self.assertEqual(x["typed_events"]["invalid_air_item"],1)
         self.assertEqual(x["typed_events"]["offthread_entity_creation"],1)
         self.assertFalse(x["profile"]["streams_reflowing_file_present"])
+        y=analyze("[WARN] Tried to add entity minecraft:zombie but it was marked as removed already\\n"
+                  "[WARN] POI data mismatch\\n"
+                  "[WARN] Ignoring unknown attribute 'forge:entity_gravity'\\n")
+        self.assertEqual(y["typed_events"]["removed_zombie_readd"],1)
+        self.assertEqual(y["typed_events"]["poi_data_mismatch"],1)
+        self.assertEqual(y["typed_events"]["legacy_forge_attribute"],1)
         self.assertIn("HominidClientEvents.onEntityJoinWorld",x["offthread_stack_owners"])
         self.assertNotIn("very_private_name",repr(x))
 if __name__=="__main__":unittest.main()
