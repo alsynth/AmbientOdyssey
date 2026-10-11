@@ -129,6 +129,8 @@ def main():
         make(args.jar, expected_sha=args.source_sha256)
     else:
         assert not args.no_download
+        import sys
+        sys.path.insert(0, str(ROOT))
         from audit_remaining_jigsaw_nbt_086 import indexed_jars, manifest_pairs, fetch
         refs = manifest_pairs()
         fid = refs[PROJECT]  # Pinned 1.21.1 IDAS file from original AO manifest
