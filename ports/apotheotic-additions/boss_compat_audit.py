@@ -21,7 +21,7 @@ def inspect(source, installed):
                 if isinstance(entity,str) and ":" in entity:
                     ns=entity.split(":",1)[0]
                     if ns!="minecraft": required.add(ns)
-                missing=sorted(required-installed)
+                missing=sorted(required-installed) if installed is not None else []
                 entries.append({"source":str(file.relative_to(source)),
                                 "entity":entity,
                                 "requires":sorted(required),
@@ -35,17 +35,21 @@ def inspect(source, installed):
     summary={key:{"entries":len(v),"present_dependency_candidates":sum(not x.get("missing_required_mods") and "error" not in x for x in v),
                   "missing_mod_dependencies":sum(bool(x.get("missing_required_mods")) for x in v)}
              for key,v in buckets.items()}
-    return {"summary":summary,"items":buckets,
+    if installed is None:
+        for counts in summary.values():
+            counts["present_dependency_candidates"] = None
+            counts["missing_mod_dependencies"] = None
+    return {"summary":summary,"dependency_registry_checked": installed is not None, "items":buckets,
             "warning":"Enhanced vanilla/mod mobs and spawn profiles; these files do not imply this many new entity classes. Modern 1.21.1 invader/elite schema conversion and actual entity registry verification required."}
 
 def main():
     p=argparse.ArgumentParser()
     p.add_argument("source",type=pathlib.Path)
-    p.add_argument("modids",type=pathlib.Path)
     p.add_argument("output",type=pathlib.Path)
+    p.add_argument("--modids",type=pathlib.Path,default=None)
     args=p.parse_args()
     installed={l.strip() for l in args.modids.read_text().splitlines()
-               if l.strip() and not l.startswith("#")}
+               if l.strip() and not l.startswith("#")} if args.modids else None
     report=inspect(args.source,installed)
     args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
