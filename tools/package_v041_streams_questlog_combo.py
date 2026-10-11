@@ -2,7 +2,7 @@
 """Create the full AO combined ZIP from the Mine Cells working control ZIP.
 
 Restores *exactly* Streams Reflowing 2.14.4 (project 1581408/file 9060294)
-and bundles the two AO-authored addons. Preserves all 328 control references,
+and bundles the three AO-authored addons. Preserves all 328 control references,
 content/worldgen repairs, Luki/DnT resource pack, and the proven rollback.
 
 Usage:
@@ -10,7 +10,8 @@ python tools/package_v041_streams_questlog_combo.py \
   --source build/ao-v041-328-control.zip \
   --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar \
   --streams-jar build/streams-addon/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar \
-  --output build/Ambient-Odyssey-v0.4.1-UI-QUEST-FIXES-TEST.zip
+  --safety-jar addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar \\
+  --output build/Ambient-Odyssey-v0.4.1-WORLDGEN-SAFETY-TEST.zip
 
 And --verify --output ZIP for independent revalidation.
 """
@@ -30,9 +31,10 @@ BI_FILE=9099710
 BASE_REMOVED={832882,1430156,1581408}
 QUESTLOG_JAR="ao-questlog-betterinventory-0.1.2.jar"
 STREAMS_JAR="ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
-JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR}
-NAME="Ambient Odyssey v0.4.1 - Mine Cells + Better Inventory UI Fix"
-VERSION="0.4.1-experimental-ui-quest-fixes"
+SAFETY_JAR="ao-worldgen-safety-0.1.0-experimental.jar"
+JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR,"overrides/mods/"+SAFETY_JAR"}
+NAME="Ambient Odyssey v0.4.1 - Worldgen Safety and Data Repairs"
+VERSION="0.4.1-experimental-worldgen-safety"
 
 def jar_check(name, blob):
     with ZipFile(BytesIO(blob)) as z:
@@ -46,6 +48,10 @@ def jar_check(name, blob):
             for c in ("StreamsChunkDeferralMixin","StreamsStructureProtectionMixin"):
                 assert f"dev/ambientodyssey/compat/mixin/{c}.class" in paths
             assert "ao_streams_minecells.mixins.json" in paths
+        elif name==SAFETY_JAR:
+            assert 'modId="ao_worldgen_safety"' in toml
+            assert "ao_worldgen_safety.mixins.json" in paths
+            assert "dev/ambientodyssey/worldgensafety/mixin/HominidFinalizeSpawnMixin.class" in paths
         else:
             assert 'modId="aoquestlogbridge"' in toml
             assert "QuestlogBetterInventoryBridge$QuestlogTab.class" in " ".join(paths)
@@ -71,18 +77,26 @@ def validate(path):
         for jar in JARS:
             assert jar in names
             jar_check(jar.removeprefix("overrides/mods/"),z.read(jar))
+        native_pool = ("overrides/config/paxi/datapacks/ao_lukis_mansion_native_pool/"
+             "data/mansions/worldgen/template_pool/mansion/bottom_back_left.json")
+        pool=json.loads(z.read(native_pool))
+        assert pool["fallback"]=="minecraft:empty"
+        assert len(pool["elements"])==1 and pool["elements"][0]["element"]["location"]=="mansions:mansion/bottom_back_left"
+        assert pool["elements"][0]["element"]["processors"]=="mansions:mansion_texture"
         for stem in ("trial_key","ominous_trial_key"):
             assert "overrides/config/paxi/resourcepacks/ao_lukis_dnt_key_compat/assets/minecraft/models/item/"+stem+".json" in names
-    print("PASS 329 CF refs including Streams Reflowing 2.14.4, both AO addon jars, Mine Cells rollback exclusions, Luki key repair")
+    print("PASS 329 CF refs including Streams Reflowing 2.14.4, three AO addon jars, Mine Cells rollback exclusions, Luki key repair")
     print("STATIC only: dedicated server and updated combined profile not runtime-tested")
 
-def build(source,quest,streams,target):
+def build(source,quest,streams,safety,target):
     assert source.resolve()!=target.resolve()
-    assert quest.name==QUESTLOG_JAR and streams.name==STREAMS_JAR
+    assert quest.name==QUESTLOG_JAR and streams.name==STREAMS_JAR and safety.name==SAFETY_JAR
     quest_bytes=quest.read_bytes()
     streams_bytes=streams.read_bytes()
+    safety_bytes=safety.read_bytes()
     jar_check(QUESTLOG_JAR,quest_bytes)
     jar_check(STREAMS_JAR,streams_bytes)
+    jar_check(SAFETY_JAR,safety_bytes)
     with ZipFile(source) as src:
         assert src.testzip() is None
         m=json.loads(src.read("manifest.json"))
@@ -103,6 +117,7 @@ def build(source,quest,streams,target):
                 dest.writestr(info,data)
             dest.writestr("overrides/mods/"+QUESTLOG_JAR,quest_bytes)
             dest.writestr("overrides/mods/"+STREAMS_JAR,streams_bytes)
+            dest.writestr("overrides/mods/"+SAFETY_JAR,safety_bytes)
     validate(target)
     print("OUTPUT",target, target.stat().st_size,"sha256",hashlib.sha256(target.read_bytes()).hexdigest())
 
@@ -111,11 +126,12 @@ if __name__=="__main__":
     p.add_argument("--source",type=Path)
     p.add_argument("--questlog-jar",type=Path)
     p.add_argument("--streams-jar",type=Path)
+    p.add_argument("--safety-jar",type=Path)
     p.add_argument("--output",type=Path,required=True)
     p.add_argument("--verify",action="store_true")
     a=p.parse_args()
     if a.verify:
         validate(a.output)
     else:
-        assert a.source and a.questlog_jar and a.streams_jar
-        build(a.source,a.questlog_jar,a.streams_jar,a.output)
+        assert a.source and a.questlog_jar and a.streams_jar and a.safety_jar
+        build(a.source,a.questlog_jar,a.streams_jar,a.safety_jar,a.output)
