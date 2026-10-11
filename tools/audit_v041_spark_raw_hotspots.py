@@ -12,9 +12,9 @@ import tempfile
 import urllib.request
 from pathlib import Path
 
-CODES=("m2Eglp00fO","ohcUJyadut","Gj6d4N6Igg","lhhJO6dLBL")
-OUT=Path("build/v041_spark_hotspots_sanitized.json")
-MAX_PROF=35_000_000
+CODES=("ohcUJyadut",)
+OUT=Path("build/v041_large_spark_stall_sanitized.json")
+MAX_PROF=150_000_000
 
 def download(url,timeout=45):
     request=urllib.request.Request(url,headers={"User-Agent":"AmbientOdyssey-SanitizedSparkProfiler/1.0"})
