@@ -130,3 +130,12 @@ The pages should use small icon labels, screenshots of AO itself where available
 - [ ] Test at 1080p and small UI scales, including the AO default GUI scale of 3.
 
 **These are authored FTB Field Manual draft entries, not compiled SNBT, and no playable AO release, quest progress or mod config has been modified.**
+
+
+## Planned addition — CurseForge launcher and dashboard (11 October 2026)
+
+**Draft for the next Field Manual update; not yet exported to the live FTB Quests pages.**
+
+- **Closing CurseForge after launching AO.** Explain that once Minecraft is running, players can usually close the CurseForge desktop app and its dashboard to free background RAM/CPU; closing the launcher must not be confused with closing the Minecraft game. Check app settings for minimizing to tray or continuing to run in the background. Confirm behavior on the current CurseForge version before phrasing it as unconditional.
+- **CurseForge Dashboard.** Explain what the dashboard is, why it can remain open unnecessarily while playing, and how to return to the My Modpacks/profile view for updates, profile management, screenshots and logs. Include a simple warning not to update/change an AO profile in the middle of an active multiplayer session; use the agreed pack version.
+- **Practical performance takeaway.** Browser tabs, the CurseForge app/dashboard and background overlays consume system resources outside Minecraft's allocated Java heap; closing unnecessary windows may lower overall system memory pressure without changing F3 heap allocation. Do not promise a specific FPS or RAM saving.
