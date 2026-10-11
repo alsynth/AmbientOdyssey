@@ -1,0 +1,49 @@
+name: AO v0.4.4 Preperformance Candidate Private Test
+on:
+  push:
+    branches:
+      - experimental/v044-preperf-quest-worldgen-repairs-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: ao-v044-preperf-${{ github.ref_name }}
+  cancel-in-progress: true
+jobs:
+  delta-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Validate new Questlog drafts and worldgen controls
+        run: |
+          python tools/validate_v04_quest_campaign.py
+          python -m json.tool release_030/overrides/config/questlog/quests/ao_first_pages_14_find_minecells_overworld_portal.json > /dev/null
+          python -m json.tool release_030/overrides/config/questlog/quests/ao_first_pages_15_defeat_your_first_monster.json > /dev/null
+          python -m json.tool release_030/overrides/config/paxi/datapacks/ao_structure_density/data/minecraft/worldgen/structure_set/villages.json > /dev/null
+          git diff --check
+      - name: Fetch exact successful v0.4.3 baseline
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/base
+          gh run download 38162301934 --repo "$GITHUB_REPOSITORY" --name AO-v043-HOMINID-FREE-STABILITY-PRIVATE-TEST --dir build/base
+          find build/base -type f -maxdepth 4 -printf '%p %s bytes\n'
+          BASE=$(find build/base -type f -name 'Ambient-Odyssey-v0.4.3-HOMINID-FREE-STABILITY-TEST.zip' -print -quit)
+          test -n "$BASE"
+          cp "$BASE" build/verified-v043.zip
+      - name: Package and validate isolated v0.4.4 delta
+        run: |
+          python tools/package_v044_delta.py --base build/verified-v043.zip --output build/Ambient-Odyssey-v0.4.4-PREPERFORMANCE-TEST.zip
+          python tools/package_v044_delta.py --base build/verified-v043.zip --output build/Ambient-Odyssey-v0.4.4-PREPERFORMANCE-TEST.zip --verify
+          sha256sum build/Ambient-Odyssey-v0.4.4-PREPERFORMANCE-TEST.zip > build/SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v044-PREPERFORMANCE-CANDIDATE-PRIVATE-TEST
+          if-no-files-found: error
+          path: |
+            build/Ambient-Odyssey-v0.4.4-PREPERFORMANCE-TEST.zip
+            build/SHA256SUMS.txt
