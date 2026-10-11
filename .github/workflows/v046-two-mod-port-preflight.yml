@@ -51,6 +51,7 @@ jobs:
         run: |
           python -m py_compile ports/apotheotic-additions/port_schema_probe.py
           python ports/apotheotic-additions/port_schema_probe.py build/upstream-apotheotic/data/apotheotic_additions build/apotheotic-migration-report.json
+          python ports/apotheotic-additions/rarity_preview.py build/upstream-apotheotic/data/apotheotic_additions build/apotheotic-rarity-preview.json
           python - <<'PY'
           import json
           d=json.load(open('build/apotheotic-migration-report.json'))
@@ -65,3 +66,4 @@ jobs:
           path: |
             build/apotheotic-migration-report.json
             build/apotheotic-upstream-sha.txt
+            build/apotheotic-rarity-preview.json
