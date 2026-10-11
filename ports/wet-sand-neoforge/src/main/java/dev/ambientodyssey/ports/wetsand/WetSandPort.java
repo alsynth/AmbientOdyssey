@@ -5,6 +5,9 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.FluidTags;
+import net.minecraft.world.level.Level;
+import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.tick.ServerTickEvent;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -51,6 +54,35 @@ public final class WetSandPort {
     public WetSandPort(IEventBus modBus) {
         BLOCKS.register(modBus);
         ITEMS.register(modBus);
+        NeoForge.EVENT_BUS.addListener(WetSandPort::updateNearbyShorelines);
+    }
+
+    /** No worldgen hooks or chunk-wide scans: at most eight checks per player per second. */
+    private static void updateNearbyShorelines(ServerTickEvent.Post event) {
+        if (event.getServer().getTickCount() % 20 != 0) return;
+        for (var player : event.getServer().getPlayerList().getPlayers()) {
+            ServerLevel level = player.serverLevel();
+            if (!level.dimension().equals(Level.OVERWORLD)) continue;
+            RandomSource random = level.getRandom();
+            for (int attempt = 0; attempt < 8; attempt++) {
+                BlockPos center = player.blockPosition();
+                BlockPos pos = center.offset(random.nextInt(17)-8, -1-random.nextInt(3), random.nextInt(17)-8);
+                if (!level.hasChunkAt(pos)) continue;
+                Block old = level.getBlockState(pos).getBlock();
+                if (old != Blocks.SAND && old != Blocks.RED_SAND) continue;
+                boolean nearWater = false;
+                for (int dx=-3; dx<=3 && !nearWater; dx++) {
+                    for (int dz=-3; dz<=3 && !nearWater; dz++) {
+                        if (Math.abs(dx)+Math.abs(dz)>3) continue;
+                        BlockPos nearby=pos.offset(dx,0,dz);
+                        if (!level.hasChunkAt(nearby)) continue;
+                        var fluid=level.getFluidState(nearby);
+                        nearWater=fluid.is(FluidTags.WATER) && fluid.isSource();
+                    }
+                }
+                if (nearWater) level.setBlock(pos,(old==Blocks.SAND ? MOIST_SAND : MOIST_RED_SAND).get().defaultBlockState(),3);
+            }
+        }
     }
 
     private static void advance(BlockState state, ServerLevel level, BlockPos pos, boolean red, int stage) {
