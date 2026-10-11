@@ -57,6 +57,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_v041_idas_create_items.py' -v
           python -m unittest discover -s tests -p 'test_v041_invalid_item_source_coverage.py' -v
+          python -m unittest discover -s tests -p 'test_v041_spark_ab.py' -v
       - name: Generate precisely two SHA-verified native IDAS overrides for PRIVATE evaluation
         run: python -u tools/repair_v041_idas_create_items.py
       - name: Check pinned rules and scoped worldgen changes
@@ -84,6 +85,12 @@ jobs:
             --output build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip
           python tools/package_v041_streams_questlog_combo.py --verify --output build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip
           python tools/validate_v041_idas_create.py build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip
+          python tools/make_v041_spark_profiler_ab.py \
+            build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip \
+            build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-SPARK-OFF-AB.zip
+          python tools/make_v041_spark_profiler_ab.py --verify \
+            build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip \
+            build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-SPARK-OFF-AB.zip
           python tools/perf_preflight_v04.py build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip --expected-refs 329 --output build/v041-perf-static-preflight.json
           sha256sum build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip
           git diff --check
@@ -92,5 +99,6 @@ jobs:
           name: AO-v041-ENGINEERING-IDAS-PRIVATE-CurseForge-Import
           path: |
             build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-TEST.zip
+            build/Ambient-Odyssey-v0.4.1-ENGINEERING-IDAS-SPARK-OFF-AB.zip
             build/v041-idas-create-source-repair.json
           if-no-files-found: error
