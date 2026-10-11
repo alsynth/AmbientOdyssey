@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Conservative Dungeon Difficulty pilot schema and guardrail checks."""
 import json
+import re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -27,7 +28,12 @@ def check_config(c):
         e=t["entities"][0]
         assert e["entity_matches"]["attitude"]=="HOSTILE"
         regex=e["entity_matches"]["type"]
-        assert regex.startswith("~^minecraft:") and regex.endswith("$")
+        assert regex.startswith("~^(?:minecraft:") and regex.endswith("$")
+        pat=re.compile(regex[1:])
+        for allowed in ("minecraft:zombie","minecraft:skeleton","born_in_chaos_v1:fallen_zombie","illagerinvasion:alchemist","dungeoncrawl:mob"):
+            assert pat.fullmatch(allowed), ("Missing ordinary dungeon mob",allowed)
+        for excluded in ("minecraft:wither","minecraft:ender_dragon","cataclysm:the_harbinger","irons_spellbooks:dead_king","born_in_chaos_v1:nightmare_boss","illagerinvasion:illager_king"):
+            assert not pat.fullmatch(excluded), ("Accidentally buffing boss",excluded)
         assert all(m["attribute"].startswith("minecraft:generic.") for m in e["attributes"])
         assert all(m["value"]<=0.5 for m in e["attributes"])
         assert e["spawners"]["spawn_count_multiplier"]==0
@@ -43,5 +49,5 @@ def check_config(c):
 def main():
     data=json.loads(CONFIG.read_text())
     check_config(data)
-    print("PASS DD 3.9.2 pilot schema & safety: 6 exact structures, boss whitelist, NO item loot/per-player effects")
+    print("PASS DD 3.9.2 pilot: correct native subdirectory, six structures, selected modded hostiles, explicit boss exclusions, no loot/party effects")
 if __name__=="__main__":main()
