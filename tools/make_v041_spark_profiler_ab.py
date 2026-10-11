@@ -23,7 +23,7 @@ def build(source, target):
         assert conf.get("backgroundProfiler") is True, "expected profiler baseline ON"
         conf["backgroundProfiler"]=False
         manifest=json.loads(src.read("manifest.json"))
-        assert len(manifest["files"])==330, "requires consolidated 330-reference source"
+        assert len(manifest["files"]) in (329, 330), "requires the pinned engineering-core or consolidated source"
         assert not manifest["version"].endswith("-spark-off")
         manifest["version"]+="-spark-off"
         manifest["name"]+=" [Spark Background OFF A/B]"
