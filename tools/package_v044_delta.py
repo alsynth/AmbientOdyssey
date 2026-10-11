@@ -21,7 +21,8 @@ PATHS=[
 ]
 def sha(data):return hashlib.sha256(data).hexdigest()
 def checkzip(z):
-    bad=z.testzip()\n    assert bad is None, ("Corrupt ZIP entry", bad)
+    bad=z.testzip()
+    assert bad is None, ("Corrupt ZIP entry", bad)
     names=z.namelist()
     assert names.count("manifest.json")==1 and len(names)==len(set(names))
     assert all(not P(n).is_absolute() and ".." not in n.split("/") and "\\" not in n for n in names)
