@@ -23,6 +23,8 @@ jobs:
         run: |
           python -u tools/generate_v041_trek_create_rarity.py
           python -u tools/generate_v041_trek_create_rarity.py --check
+          test -f release_030/overrides/config/paxi/datapacks/ao_v041_trek_create_rarity_test/data/trek/worldgen/structure_set/overworld/common.json
+          test ! -d release_030/overrides/config/paxi/datapacks/ao_v041_trek_create_rarity_test/data/data
           python compile_structure_density_031.py
           python - <<'PY'
           import json
