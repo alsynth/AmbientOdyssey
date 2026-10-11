@@ -16,7 +16,8 @@ jobs:
         with: {python-version: '3.12'}
       - name: Run preserved decisions and conservative Curios slot source checks
         run: |
-          python -m py_compile tools/audit_v042_historical_fixes.py
+          python -m py_compile tools/audit_v042_historical_fixes.py compile_compatibility_031.py
+          python compile_compatibility_031.py
           python -m unittest discover -s tests -p 'test_v042_history_gates.py' -v
           python tools/audit_v042_historical_fixes.py --output build/v042-history-gates.json
           git diff --check
