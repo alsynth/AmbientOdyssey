@@ -71,7 +71,7 @@ def validate():
     assert all(re.fullmatch(r"[a-z0-9_]+",n) for n in known)
     chapterFiles=sorted(chapterDir.glob("*.json"))
     questFiles=sorted(questDir.glob("*.json"))
-    assert len(chapterFiles)==13 and len(questFiles)==50
+    assert len(chapterFiles)==13 and len(questFiles)==52
     assert {p.stem for p in questFiles}==known
     chapters={}
     for file in chapterFiles:
