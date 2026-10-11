@@ -1,0 +1,91 @@
+name: AO v0.4.1 Balance Lab DD 3.9.2 isolated import
+on:
+  push:
+    branches:
+      - experimental/v041-balance-lab-dungeon-difficulty-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  streams-addon:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - name: Compile previously user-tested Streams Mine Cells addon
+        run: |
+          gradle -p compat/streams-minecells clean build --no-daemon --stacktrace
+          test -f compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar
+          unzip -p compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar META-INF/neoforge.mods.toml | grep -F 'modId="ao_streams_minecells"'
+          unzip -p compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar ao_streams_minecells.mixins.json | grep -F StreamsStructureProtectionMixin
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-combined-streams-addon-internal
+          path: compat/streams-minecells/build/libs/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar
+          if-no-files-found: error
+  pack:
+    needs: streams-addon
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '8.10.2'}
+      - name: Compile native-styled Questlog inventory bridge
+        run: |
+          gradle -p addons/ao-questlog-betterinventory --no-daemon --stacktrace build
+          test -f addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.1.jar
+      - uses: actions/download-artifact@v4
+        with:
+          name: AO-v041-combined-streams-addon-internal
+          path: build/streams-addon
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Existing six-fix, Trek, Questlog and native-styled key checks
+        run: |
+          python -m compileall -q tools build_release_030.py
+          python tools/validate_v041_questlog_native_tab.py
+          python tools/validate_v041_lukis_dnt_keys.py
+          python tools/validate_v041_six_fix.py
+          python tools/validate_v04_trek_curated.py
+          python tools/validate_v04_ftb_manual.py
+          python tools/validate_v04_quest_campaign.py
+          python tools/validate_v04_questlog.py
+      - name: Build 328-user-verified control first, restore only exact Streams pin, embed both authored addons
+        run: |
+          python build_release_030.py --output build/ao-v041-331-reference.zip
+          python tools/validate_v04_release.py build/ao-v041-331-reference.zip
+          python tools/validate_v041_lukis_dnt_keys.py --archive build/ao-v041-331-reference.zip
+          python tools/make_v041_minecells_structure_control.py build/ao-v041-331-reference.zip build/ao-v041-328-control.zip
+          python tools/make_v041_minecells_structure_control.py --verify build/ao-v041-328-control.zip --baseline build/ao-v041-331-reference.zip
+          python tools/package_v041_streams_questlog_combo.py \
+            --source build/ao-v041-328-control.zip \
+            --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.1.jar \
+            --streams-jar build/streams-addon/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar \
+            --output build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+          python tools/package_v041_streams_questlog_combo.py --verify --output build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+          sha256sum build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+          git diff --check
+      - name: Balance Lab config and isolated 330-reference CurseForge package
+        run: |
+          python tools/validate_ao_balance_lab.py
+          python tools/package_ao_balance_lab.py \
+            --source build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip \
+            --output build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          python tools/package_ao_balance_lab.py \
+            --verify \
+            --source build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip \
+            --output build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Balance-Lab-Dungeon-Difficulty-330-reference-Import
+          path: build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          if-no-files-found: error
