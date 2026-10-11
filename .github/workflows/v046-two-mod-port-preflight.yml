@@ -24,6 +24,13 @@ jobs:
           gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace build
           test -f ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
           unzip -p ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar META-INF/neoforge.mods.toml | grep -F 'modId="ao_wet_sand"'
+      - name: Check prototype resources are in JAR
+        run: |
+          for STAGE in moist_sand wet_sand soaked_sand moist_red_sand wet_red_sand soaked_red_sand; do
+            unzip -l ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar | grep -F "assets/ao_wet_sand/blockstates/$STAGE.json"
+            unzip -l ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar | grep -F "assets/ao_wet_sand/models/block/$STAGE.json"
+            unzip -l ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar | grep -F "assets/ao_wet_sand/models/item/$STAGE.json"
+          done
       - uses: actions/upload-artifact@v4
         with:
           name: AO-v046-WETSAND-SOURCE-PROTOTYPE-NOT-FOR-PACK
