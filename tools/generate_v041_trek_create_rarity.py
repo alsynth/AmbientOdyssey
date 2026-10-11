@@ -15,7 +15,10 @@ import io
 import json
 from pathlib import Path
 from zipfile import ZipFile
-from audit_v041_native_trek_create import ROOT,LOCK,download
+try:
+    from tools.audit_v041_native_trek_create import ROOT,LOCK,download
+except ModuleNotFoundError:
+    from audit_v041_native_trek_create import ROOT,LOCK,download
 
 PACK=ROOT/"release_030/overrides/config/paxi/datapacks/ao_v041_trek_create_rarity_test"
 DATA=PACK/"data"
