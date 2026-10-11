@@ -50,6 +50,20 @@ jobs:
           gradle -p ports/apotheotic-additions/neoforge --no-daemon --stacktrace build
           test -f ports/apotheotic-additions/neoforge/build/libs/ao-apotheotic-port-prototype-0.0.1-source-prototype.jar
           unzip -p ports/apotheotic-additions/neoforge/build/libs/ao-apotheotic-port-prototype-0.0.1-source-prototype.jar META-INF/neoforge.mods.toml | grep -F 'modId="ao_apotheotic_port"'
+      - name: Validate all three disabled rarity definitions
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          folder=pathlib.Path("ports/apotheotic-additions/neoforge/src/main/resources/data/ao_apotheotic_port/rarities")
+          expectations={"artifact":8,"heirloom":4,"esoteric":16}
+          for name,total in expectations.items():
+              data=json.loads((folder/(name+".json")).read_text())
+              assert data["type"]=="apotheosis:rarity"
+              assert len(data["rules"])==total
+              assert all(v["weight"]==0 for v in data["weights"].values())
+              assert data["material"]=="ao_apotheotic_port:"+name+"_material"
+          print("PASS: all three prototype rarities structurally present; disabled from drops")
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: AO-v046-APOTHEOTIC-MATERIALS-SOURCE-PROTOTYPE-NOT-FOR-PACK
