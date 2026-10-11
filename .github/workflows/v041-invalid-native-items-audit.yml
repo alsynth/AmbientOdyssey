@@ -1,0 +1,25 @@
+name: AO v0.4.1 Pinned Native Invalid Item Attribution
+on:
+  push:
+    branches:
+      - experimental/v041-worldgen-safety-patch-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-structure-item-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 27
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install nbtlib==2.0.4
+      - name: Attribute invalid item NBT using exact SHA-pinned native structure JARs
+        run: python -u audit_invalid_structure_items_089.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: AO-v041-exact-native-invalid-item-owners
+          path: build/invalid-items-worldgen-089.json
+          if-no-files-found: warn
