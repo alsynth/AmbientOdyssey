@@ -87,6 +87,22 @@ def main():
                 if any(token in line.lower() for token in ("org.spongepowered.asm.mixin.mixin", "inject", "redirect", "wrapoperation", "structurestart", "structureplacement", "findgenerationpoint", "getdimension", "getlevel", "generationstep", "getresourcekey")):
                     interesting.append(" | ".join(lines[max(0,k-1):min(len(lines),k+2)]).strip()[:480])
             print("CLASS:", clazz, "\n", "\n".join(interesting[:18]))
+
+    # Targeted small method signatures for implementing a dimension-scoped bypass.
+    print("\n===== TARGETED BYPASS ENTRY POINTS =====")
+    targets = [
+        "dev.streamsreflowing.neoforge.mixin.StructureMixin",
+        "dev.streamsreflowing.neoforge.mixin.ChunkStepMixin",
+        "dev.streamsreflowing.neoforge.mixin.StreamsMixinPlugin",
+        "dev.streamsreflowing.worldgen.ChunkStepDefer",
+        "dev.streamsreflowing.worldgen.StreamsWorldgen",
+    ]
+    for target in targets:
+        short = subprocess.run(["javap", "-p", "-cp", str(args.jar), target], capture_output=True, text=True, timeout=15)
+        print("SIGNATURES", target, "\n", short.stdout[:13000])
+        if target.endswith(("StructureMixin", "ChunkStepMixin")):
+            code = subprocess.run(["javap", "-p", "-c", "-cp", str(args.jar), target], capture_output=True, text=True, timeout=15)
+            print("TARGET BYTECODE", target, "\n", code.stdout[:16000])
     print("REPORT_DIR:", args.out)
 
 if __name__ == "__main__":
