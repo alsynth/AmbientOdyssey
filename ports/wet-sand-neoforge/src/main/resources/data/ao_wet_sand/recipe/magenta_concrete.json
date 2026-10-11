@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "concrete",
+  "ingredients": [
+    {
+      "item": "minecraft:magenta_dye"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "tag": "ao_wet_sand:hydrated_sand"
+    },
+    {
+      "tag": "ao_wet_sand:hydrated_sand"
+    },
+    {
+      "tag": "ao_wet_sand:hydrated_sand"
+    },
+    {
+      "tag": "ao_wet_sand:hydrated_sand"
+    }
+  ],
+  "result": {
+    "id": "minecraft:magenta_concrete",
+    "count": 8
+  }
+}

@@ -52,18 +52,47 @@ The native-materials CI job now waits for Wet Sand compilation/mechanics.
 CI always preserves available mechanics logs. This isolated test server
 does not certify the full AO client or multiplayer integration.
 
+## 12 October archaeology/recipes checkpoint
+
+Compilation and **all 12 required mechanics GameTests PASS**, both alone and
+with the exact installed FreeTerraForged 1.0.0, Biolith 3.0.14 and TerraBlender
+4.1.0.8 JARs copied into a disposable workspace. Evidence:
+`docs/testing/v046-evidence/wet-sand-twelve-terrain-gametests.log`.
+The terrain mods loaded and their compatibility mixins initialized. The test
+world is flat: **natural FTF terrain/shoreline generation is not tested**.
+Development JAR SHA-256:
+`d55e279e07d397ec75108daccf2205633b3f2af0eb2a04a90c86256d82246611`.
+
+Three suspicious-sand stages now preserve saved item/loot-table/seed across
+moisture changes and NBT reload; active brushing prevents replacement.
+Completed brushing leaves the corresponding ordinary sand and drops one
+treasure in the tested case. Vanilla brushable entity registration uses the
+NeoForge `BlockEntityTypeAddBlocksEvent` extension. Full process restart and
+client brush rendering remain unverified.
+
+Added all sixteen hydrated-sand concrete recipes, verified by actual recipe
+matching/assembly, and exact single-item loot from all six ordinary variants.
+Matched upstream plant policy: wet/soaked stages support cane without adjacent
+water; moist ordinary sand uses vanilla water requirements.
+
+The installed v0.4.5 preview was found read-only in the standard CurseForge
+Instances folder: 327 top-level JARs, 324 recognized top-level metadata,
+no duplicate top-level mod IDs. Embedded/bridge dependencies still require
+their own resolution. Neither its JARs nor its saves/configs were modified.
+User-provided Actions run `38177729206` is the earlier **v046 prototype**
+preflight at `60f3760`, not a v045 full-pack export.
+
 ## Remaining Wet Sand gates before Apotheotic feature implementation
 
-- Suspicious-sand moisture variants: preserve brush progress, treasure/loot
-  table, seed and save/restart across every transition; never overwrite
-  archaeology with ordinary sand. Currently suspicious sand is untouched.
+- Suspicious-sand: complete actual process restart, client rendering, bottle
+  interactions during brushing and real structure treasure testing.
 - Compare upstream hydration/propagation policy and document intentional
   AO deviations: current prototype uses same-height source-water Manhattan
   radius 3 and dry regression; upstream uses other neighborhood semantics.
 - Shoreline conversion currently samples near players, rather than all
   natural shorelines. Decide and test the terrain-safe placement policy.
 - Verify creative and inventory-full bottle paths, client hand prediction,
-  protection integration, recipes, red falling physics and codec round trips.
+  protection integration, red falling physics and codec round trips.
 - Distinct art is still missing: models currently reuse vanilla textures.
 - Full pack client, FTF shoreline generation and two-player dedicated server
   persistence/performance tests remain required.

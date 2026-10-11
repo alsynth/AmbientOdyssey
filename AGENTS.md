@@ -4,6 +4,12 @@ The historical multi-page handoff is preserved at [pre-cleanup AGENTS](docs/arch
 
 ## Scope of the current project
 
+- **v0.4.6 port work:** follow [continuation contract](docs/ports/V046_RESUME.md)
+  on `experimental/v046-wetsand-apotheotic-ports-20261011`. Finish and verify
+  Wet Sand before implementing Apotheotic subsystems. Preserve v0.4.5;
+  commit/push subsystem progress and evidence frequently. The contract's
+  current user requirements supersede historical candidate pointers below.
+
 - **Active modpack source:** `experimental/v0.4h-q1-ftb-field-manual-20261010`: MC 1.21.1, NeoForge 21.1.252, 331 exact CF projects, 50 Questlog Q1 quests and 32 FTB Manual pages.
 - **Housekeeping source:** `maintenance/repo-organization-20261010`; this branch reorganizes human documentation and archives older workflows. No mod, worldgen, Questlog or FTB content behavior should change here.
 - **Release evidence:** [run 38080830259](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259) successful for ZIP/static checks. Full 331-mod Minecraft client and dedicated-server experience is **not runtime-tested**.

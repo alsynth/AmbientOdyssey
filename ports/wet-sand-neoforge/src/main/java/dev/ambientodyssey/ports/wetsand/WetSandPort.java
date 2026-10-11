@@ -2,6 +2,13 @@ package dev.ambientodyssey.ports.wetsand;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.level.block.BrushableBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.BrushableBlockEntity;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.neoforged.neoforge.event.BlockEntityTypeAddBlocksEvent;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.neoforged.neoforge.common.util.TriState;
@@ -38,8 +45,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  * Native NeoForge PORT PROTOTYPE, not the original Wet Sand mod.
  *
  * Six moisture variants, bounded conversion of loaded ordinary sand, and
- * bottle extraction. Archaeology and upstream worldgen replacement remain
- * excluded until treasure persistence and terrain compatibility are verified.
+ * bottle extraction with treasure-preserving archaeology transitions.
+ * Upstream worldgen replacement remains excluded for AO terrain compatibility.
  */
 @Mod(WetSandPort.ID)
 public final class WetSandPort {
@@ -52,6 +59,16 @@ public final class WetSandPort {
     public static final DeferredBlock<Block> MOIST_RED_SAND = stage("moist_red_sand", true, 1);
     public static final DeferredBlock<Block> WET_RED_SAND = stage("wet_red_sand", true, 2);
     public static final DeferredBlock<Block> SOAKED_RED_SAND = stage("soaked_red_sand", true, 3);
+    public static final DeferredBlock<Block> MOIST_SUSPICIOUS_SAND = archaeologyStage("moist_suspicious_sand", 1);
+    public static final DeferredBlock<Block> WET_SUSPICIOUS_SAND = archaeologyStage("wet_suspicious_sand", 2);
+    public static final DeferredBlock<Block> SOAKED_SUSPICIOUS_SAND = archaeologyStage("soaked_suspicious_sand", 3);
+
+    private static DeferredBlock<Block> archaeologyStage(String name, int stage) {
+        DeferredBlock<Block> block = BLOCKS.register(name, () -> new MoistureBrushableBlock(stage,
+                BlockBehaviour.Properties.ofFullCopy(Blocks.SUSPICIOUS_SAND).randomTicks()));
+        ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        return block;
+    }
 
     private static DeferredBlock<Block> stage(String name, boolean red, int stage) {
         DeferredBlock<Block> block = BLOCKS.register(name,
@@ -65,6 +82,8 @@ public final class WetSandPort {
     public WetSandPort(IEventBus modBus) {
         BLOCKS.register(modBus);
         ITEMS.register(modBus);
+        modBus.addListener((BlockEntityTypeAddBlocksEvent event) -> event.modify(BlockEntityType.BRUSHABLE_BLOCK,
+                MOIST_SUSPICIOUS_SAND.get(), WET_SUSPICIOUS_SAND.get(), SOAKED_SUSPICIOUS_SAND.get()));
         NeoForge.EVENT_BUS.addListener(WetSandPort::updateNearbyShorelines);
         NeoForge.EVENT_BUS.addListener(WetSandPort::dehydrateWithBottle);
     }
@@ -85,9 +104,17 @@ public final class WetSandPort {
         } else if (block instanceof MoistureBlock moist) {
             red = moist.red;
             stage = moist.stage;
+        } else if (block instanceof MoistureBrushableBlock moist) {
+            if (!transitionArchaeology(level, pos, moist.stage - 1)) return;
+            deliverWaterBottle(event);
+            return;
         } else return;
         if (stage <= 0) return;
         if (!level.setBlock(pos, humidityBlock(red, stage-1).defaultBlockState(), 3)) return;
+        deliverWaterBottle(event);
+    }
+
+    private static void deliverWaterBottle(PlayerInteractEvent.RightClickBlock event) {
         var player = event.getEntity();
         if (!player.getAbilities().instabuild) {
             event.getItemStack().shrink(1);
@@ -107,6 +134,40 @@ public final class WetSandPort {
         };
     }
 
+    static Block archaeologyBlock(int stage) {
+        return switch (stage) {
+            case 0 -> Blocks.SUSPICIOUS_SAND;
+            case 1 -> MOIST_SUSPICIOUS_SAND.get();
+            case 2 -> WET_SUSPICIOUS_SAND.get();
+            default -> SOAKED_SUSPICIOUS_SAND.get();
+        };
+    }
+
+    /** Never replace an actively brushed block. Transfer full saved treasure data before notifying clients. */
+    static boolean transitionArchaeology(ServerLevel level, BlockPos pos, int target) {
+        BlockState previous = level.getBlockState(pos);
+        if (!(previous.getBlock() instanceof BrushableBlock)
+                || previous.getValue(BlockStateProperties.DUSTED) != 0
+                || !(level.getBlockEntity(pos) instanceof BrushableBlockEntity entity)) return false;
+        CompoundTag data = entity.saveWithoutMetadata(level.registryAccess());
+        BlockState next = archaeologyBlock(target).defaultBlockState();
+        if (!level.setBlock(pos, next, 2)) return false;
+        if (!(level.getBlockEntity(pos) instanceof BrushableBlockEntity replacement)) {
+            // Fail closed if another mod prevented the expected block entity creation.
+            level.setBlock(pos, previous, 2);
+            if (level.getBlockEntity(pos) instanceof BrushableBlockEntity restored) {
+                restored.loadWithComponents(data, level.registryAccess());
+                restored.setChanged();
+            }
+            return false;
+        }
+        replacement.loadWithComponents(data, level.registryAccess());
+        replacement.setChanged();
+        level.sendBlockUpdated(pos, previous, next, 3);
+        level.updateNeighborsAt(pos, next.getBlock());
+        return true;
+    }
+
     /** Eight candidates per player per second; each checks at most 25 loaded positions. */
     private static void updateNearbyShorelines(ServerTickEvent.Post event) {
         if (event.getServer().getTickCount() % 20 != 0) return;
@@ -119,6 +180,10 @@ public final class WetSandPort {
                 BlockPos pos = center.offset(random.nextInt(17)-8, -1-random.nextInt(3), random.nextInt(17)-8);
                 if (!level.hasChunkAt(pos)) continue;
                 Block old = level.getBlockState(pos).getBlock();
+                if (old == Blocks.SUSPICIOUS_SAND) {
+                    if (hasNearbyWater(level, pos)) transitionArchaeology(level, pos, 1);
+                    continue;
+                }
                 if (old != Blocks.SAND && old != Blocks.RED_SAND) continue;
                 if (hasNearbyWater(level, pos)) level.setBlock(pos,(old==Blocks.SAND ? MOIST_SAND : MOIST_RED_SAND).get().defaultBlockState(),3);
             }
@@ -164,7 +229,7 @@ public final class WetSandPort {
         @Override
         public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos,
                 Direction facing, BlockState plant) {
-            return facing == Direction.UP && plant.is(Blocks.SUGAR_CANE) ? TriState.TRUE : TriState.DEFAULT;
+            return TriState.DEFAULT;
         }
         @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
@@ -205,6 +270,45 @@ public final class WetSandPort {
         @Override
         protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
             advance(state, level, pos, red, stage);
+        }
+    }
+
+    public static final class MoistureBrushableBlock extends BrushableBlock {
+        public static final MapCodec<BrushableBlock> MOISTURE_CODEC = RecordCodecBuilder.mapCodec(
+                instance -> instance.group(
+                        Codec.intRange(1, 3).fieldOf("stage").forGetter(block -> ((MoistureBrushableBlock) block).stage),
+                        propertiesCodec()
+                ).apply(instance, MoistureBrushableBlock::new));
+        private final int stage;
+
+        public MoistureBrushableBlock(int stage, Properties properties) {
+            super(humidityBlock(false, stage), SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED, properties);
+            this.stage = stage;
+        }
+
+        @Override public MapCodec<BrushableBlock> codec() { return MOISTURE_CODEC; }
+
+        @Override
+        public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos,
+                Direction facing, BlockState plant) {
+            return stage >= 2 && facing == Direction.UP && plant.is(Blocks.SUGAR_CANE) ? TriState.TRUE : TriState.DEFAULT;
+        }
+
+        @Override
+        public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+            if (stage == 1) super.tick(state, level, pos, random);
+            else if (level.getBlockEntity(pos) instanceof BrushableBlockEntity entity) entity.checkReset();
+        }
+
+        @Override
+        protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+            int target = Math.min(3, Math.max(0, stage + (hasNearbyWater(level, pos) ? 1 : -1)));
+            if (target != stage) transitionArchaeology(level, pos, target);
+        }
+
+        @Override
+        protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+            return stage == 3 ? MoistureBlock.SOAKED_COLLISION : super.getCollisionShape(state, level, pos, context);
         }
     }
 }

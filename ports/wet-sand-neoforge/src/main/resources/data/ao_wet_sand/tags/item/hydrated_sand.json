@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ao_wet_sand:moist_sand",
+    "ao_wet_sand:wet_sand",
+    "ao_wet_sand:soaked_sand"
+  ]
+}

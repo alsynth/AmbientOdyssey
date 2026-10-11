@@ -6,6 +6,10 @@ group = 'dev.ambientodyssey.ports.wetsand'
 version = '0.0.1-source-prototype'
 base { archivesName = 'ao-wet-sand-prototype' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+// Optional, disposable integration snapshot. Never points at or modifies a live profile by default.
+if (project.hasProperty('aoRuntimeMods')) {
+    dependencies { runtimeOnly fileTree(dir: project.property('aoRuntimeMods'), include: ['*.jar']) }
+}
 neoForge {
     version = '21.1.252'
     mods { ao_wet_sand { sourceSet sourceSets.main } }

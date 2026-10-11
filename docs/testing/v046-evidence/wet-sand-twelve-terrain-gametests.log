@@ -1,0 +1,11 @@
+[12Oct2026 00:07:22.108] [main/INFO] [FreeTerraForged/]: Enabling Terrablender compat
+[12Oct2026 00:07:22.109] [main/INFO] [FreeTerraForged/]: Enabling Biolith preview compat
+[12Oct2026 00:07:27.028] [modloading-worker-0/INFO] [biolith/]: Biolith for NeoForge is initializing...
+[12Oct2026 00:07:27.037] [modloading-worker-0/INFO] [biolith/]: Enabling Biolith's TerraBlender compatibility layer.
+[12Oct2026 00:07:27.496] [main/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [ao_wet_sand]
+[12Oct2026 00:07:28.322] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1307 recipes
+[12Oct2026 00:07:29.271] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 12 tests are now running at position 5822673, -59, 2081113!
+[12Oct2026 00:07:29.565] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'defaultBatch:0' (12 tests)...
+[12Oct2026 00:07:29.868] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 12 GAME TESTS COMPLETE IN 595.9 ms ======================
+[12Oct2026 00:07:29.869] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 12 required tests passed :)
+[12Oct2026 00:07:30.413] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

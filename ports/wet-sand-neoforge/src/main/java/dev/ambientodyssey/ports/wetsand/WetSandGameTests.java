@@ -2,6 +2,10 @@ package dev.ambientodyssey.ports.wetsand;
 
 import com.mojang.authlib.GameProfile;
 import java.util.UUID;
+import java.util.ArrayList;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.crafting.CraftingInput;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.gametest.framework.GameTest;
@@ -14,6 +18,13 @@ import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BrushableBlockEntity;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
@@ -76,12 +87,20 @@ public final class WetSandGameTests {
     @GameTest(template = "empty")
     public static void caneSurvivesOnAllMoistureStages(GameTestHelper helper) {
         for (boolean red : new boolean[]{false, true}) {
-            for (int stage = 1; stage <= 3; stage++) {
+            for (int stage = 2; stage <= 3; stage++) {
                 helper.setBlock(POS, WetSandPort.humidityBlock(red, stage));
                 helper.assertTrue(Blocks.SUGAR_CANE.defaultBlockState().canSurvive(helper.getLevel(), helper.absolutePos(POS.above())),
                         "Sugar cane must survive without adjacent water on hydrated sand");
             }
         }
+        for (int stage = 2; stage <= 3; stage++) {
+            helper.setBlock(POS, WetSandPort.archaeologyBlock(stage));
+            helper.assertTrue(Blocks.SUGAR_CANE.defaultBlockState().canSurvive(helper.getLevel(), helper.absolutePos(POS.above())),
+                    "Cane must survive on wet and soaked suspicious sand");
+        }
+        helper.setBlock(POS, WetSandPort.MOIST_SAND.get());
+        helper.assertFalse(Blocks.SUGAR_CANE.defaultBlockState().canSurvive(helper.getLevel(), helper.absolutePos(POS.above())),
+                "Moist sand must still require adjacent water");
         helper.setBlock(POS, Blocks.SAND);
         helper.assertFalse(Blocks.SUGAR_CANE.defaultBlockState().canSurvive(helper.getLevel(), helper.absolutePos(POS.above())),
                 "Dry sand must still require vanilla water");
@@ -148,6 +167,100 @@ public final class WetSandGameTests {
         helper.assertBlockPresent(WetSandPort.SOAKED_SAND.get(), POS);
         helper.assertTrue(player.getMainHandItem().getCount() == 1, "Spectator bottle must not be consumed");
         player.discard();
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void archaeologyLootSeedSurvivesTransitionsAndReload(GameTestHelper helper) {
+        helper.setBlock(POS.below(), Blocks.STONE);
+        helper.setBlock(POS, Blocks.SUSPICIOUS_SAND);
+        BlockPos absolute = helper.absolutePos(POS);
+        var entity = (BrushableBlockEntity) helper.getLevel().getBlockEntity(absolute);
+        entity.setLootTable(ResourceKey.create(Registries.LOOT_TABLE, ResourceLocation.withDefaultNamespace("archaeology/desert_well")), 123456789L);
+        for (int stage : new int[]{1, 2, 3, 2, 1, 0}) {
+            helper.assertTrue(WetSandPort.transitionArchaeology(helper.getLevel(), absolute, stage), "Archaeology transition failed");
+            helper.assertBlockPresent(WetSandPort.archaeologyBlock(stage), POS);
+            var current = helper.getLevel().getBlockEntity(absolute);
+            CompoundTag saved = current.saveWithFullMetadata(helper.getLevel().registryAccess());
+            helper.assertTrue(saved.getString("LootTable").equals("minecraft:archaeology/desert_well"), "Loot table was lost");
+            helper.assertTrue(saved.getLong("LootTableSeed") == 123456789L, "Treasure seed was lost");
+            var reloaded = BlockEntity.loadStatic(absolute, helper.getBlockState(POS), saved, helper.getLevel().registryAccess());
+            helper.assertTrue(reloaded instanceof BrushableBlockEntity, "Brushable entity failed saved-NBT reload");
+            helper.getLevel().setBlockEntity(reloaded);
+        }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void realizedTreasureSurvivesAllMoistureChanges(GameTestHelper helper) {
+        helper.setBlock(POS.below(), Blocks.STONE);
+        helper.setBlock(POS, Blocks.SUSPICIOUS_SAND);
+        BlockPos absolute = helper.absolutePos(POS);
+        CompoundTag data = new CompoundTag();
+        data.put("item", new ItemStack(Items.DIAMOND).save(helper.getLevel().registryAccess()));
+        helper.getLevel().getBlockEntity(absolute).loadWithComponents(data, helper.getLevel().registryAccess());
+        for (int stage : new int[]{1, 2, 3, 2, 1, 0}) {
+            helper.assertTrue(WetSandPort.transitionArchaeology(helper.getLevel(), absolute, stage), "Archaeology transition failed");
+            var entity = (BrushableBlockEntity) helper.getLevel().getBlockEntity(absolute);
+            helper.assertTrue(entity.getItem().is(Items.DIAMOND) && entity.getItem().getCount() == 1, "Treasure changed or disappeared");
+        }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void activeBrushingIsNeverReplacedAndCompletesOnce(GameTestHelper helper) {
+        helper.setBlock(POS.below(), Blocks.STONE);
+        helper.setBlock(POS, WetSandPort.WET_SUSPICIOUS_SAND.get());
+        BlockPos absolute = helper.absolutePos(POS);
+        var entity = (BrushableBlockEntity) helper.getLevel().getBlockEntity(absolute);
+        CompoundTag data = new CompoundTag();
+        data.put("item", new ItemStack(Items.DIAMOND).save(helper.getLevel().registryAccess()));
+        entity.loadWithComponents(data, helper.getLevel().registryAccess());
+        var player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "sand-brusher"));
+        player.setGameMode(GameType.SURVIVAL);
+        long start = helper.getLevel().getGameTime();
+        entity.brush(start, player, Direction.UP);
+        helper.assertTrue(helper.getBlockState(POS).getValue(BlockStateProperties.DUSTED) > 0, "Brushing did not start");
+        helper.assertFalse(WetSandPort.transitionArchaeology(helper.getLevel(), absolute, 3), "Active brushing must prevent replacement");
+        helper.assertTrue(helper.getLevel().getBlockEntity(absolute) == entity, "Active brush entity must stay identical");
+        for (int brush = 1; brush < 10; brush++) entity.brush(start + brush * 10, player, Direction.UP);
+        helper.assertBlockPresent(WetSandPort.WET_SAND.get(), POS);
+        helper.assertItemEntityCountIs(Items.DIAMOND, POS, 2, 1);
+        player.discard();
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void allSixteenConcreteRecipesCraftWithMixedMoisture(GameTestHelper helper) {
+        String[] colors = {"white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray",
+                "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"};
+        for (String color : colors) {
+            var slots = new ArrayList<ItemStack>();
+            slots.add(new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.withDefaultNamespace(color + "_dye"))));
+            for (int i = 0; i < 4; i++) slots.add(new ItemStack(Items.GRAVEL));
+            for (int stage : new int[]{1, 2, 3, 1}) slots.add(new ItemStack(WetSandPort.humidityBlock(false, stage)));
+            var input = CraftingInput.of(3, 3, slots);
+            var match = helper.getLevel().getRecipeManager().getRecipeFor(RecipeType.CRAFTING, input, helper.getLevel());
+            helper.assertTrue(match.isPresent(), "Missing concrete recipe for " + color);
+            ItemStack result = match.orElseThrow().value().assemble(input, helper.getLevel().registryAccess());
+            helper.assertTrue(result.is(BuiltInRegistries.ITEM.get(ResourceLocation.withDefaultNamespace(color + "_concrete")))
+                    && result.getCount() == 8, "Wrong concrete result for " + color);
+        }
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void allOrdinarySandVariantsDropExactlyOnce(GameTestHelper helper) {
+        for (boolean red : new boolean[]{false, true}) {
+            for (int stage = 1; stage <= 3; stage++) {
+                Block block = WetSandPort.humidityBlock(red, stage);
+                helper.setBlock(POS.below(), Blocks.STONE);
+                helper.setBlock(POS, block);
+                var drops = Block.getDrops(block.defaultBlockState(), helper.getLevel(), helper.absolutePos(POS), null);
+                helper.assertTrue(drops.size() == 1 && drops.getFirst().is(block.asItem()) && drops.getFirst().getCount() == 1,
+                        "Ordinary moisture sand must drop exactly one matching block item");
+            }
+        }
         helper.succeed();
     }
 }

@@ -4,5 +4,8 @@
   "block.ao_wet_sand.soaked_sand": "Soaked Sand",
   "block.ao_wet_sand.moist_red_sand": "Moist Red Sand",
   "block.ao_wet_sand.wet_red_sand": "Wet Red Sand",
-  "block.ao_wet_sand.soaked_red_sand": "Soaked Red Sand"
+  "block.ao_wet_sand.soaked_red_sand": "Soaked Red Sand",
+  "block.ao_wet_sand.moist_suspicious_sand": "Moist Suspicious Sand",
+  "block.ao_wet_sand.wet_suspicious_sand": "Wet Suspicious Sand",
+  "block.ao_wet_sand.soaked_suspicious_sand": "Soaked Suspicious Sand"
 }
