@@ -81,7 +81,10 @@ def check(path):
         native_difficulty_path="overrides/config/dungeon_difficulty/difficulty_v2.json"
         assert native_difficulty_path in names, "Dungeon Difficulty ignored root-level pilot config"
         dd=json.loads(z.read(native_difficulty_path))
-        from tools.validate_ao_balance_lab import check_config
+        try:
+            from tools.validate_ao_balance_lab import check_config
+        except ModuleNotFoundError:
+            from validate_ao_balance_lab import check_config
         assert check_config(dd)
         assert len(dd["dimensions"][0]["zones"])==6
 
