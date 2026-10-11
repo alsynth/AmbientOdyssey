@@ -312,6 +312,17 @@ def compile_compatibility():
         'size': 1, 'operation': 'SET', 'replace': False,
     }, indent=2) + '\n', newline='\n')
 
+    # Enigmatic Legacy Plus' original datagen registers spellstone size(0).
+    # The previously visible spellstone entry disappeared during the Amulet
+    # compatibility wave. Guarantee one spellstone slot, never replace an
+    # existing larger slot or change the fork's own item-tag assignments.
+    spellstone_slot = DATAPACK / 'data/curios/curios/slots/spellstone.json'
+    spellstone_slot.parent.mkdir(parents=True, exist_ok=True)
+    spellstone_slot.write_text(json.dumps({
+        'size': 1, 'operation': 'SET', 'replace': False,
+        'icon': 'enigmaticlegacyplus:slot/empty_spellstone_slot',
+    }, indent=2) + '\n', newline='\n')
+
 
     patch_path = RELEASE / 'structure-compatibility.json'
     if patch_path.exists():
