@@ -1,6 +1,12 @@
 package dev.ambientodyssey.ports.wetsand;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.alchemy.Potions;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
@@ -55,6 +61,43 @@ public final class WetSandPort {
         BLOCKS.register(modBus);
         ITEMS.register(modBus);
         NeoForge.EVENT_BUS.addListener(WetSandPort::updateNearbyShorelines);
+        NeoForge.EVENT_BUS.addListener(WetSandPort::dehydrateWithBottle);
+    }
+
+    /** Use a glass bottle to remove one moisture stage and receive a water bottle. */
+    private static void dehydrateWithBottle(PlayerInteractEvent.RightClickBlock event) {
+        if (!(event.getLevel() instanceof ServerLevel level)) return;
+        if (!event.getItemStack().is(Items.GLASS_BOTTLE)) return;
+        BlockPos pos = event.getPos();
+        Block block = level.getBlockState(pos).getBlock();
+        boolean red;
+        int stage;
+        if (block instanceof MoistureFallingBlock moist) {
+            red = moist.red;
+            stage = moist.stage;
+        } else if (block instanceof MoistureBlock moist) {
+            red = moist.red;
+            stage = moist.stage;
+        } else return;
+        if (stage <= 0) return;
+        if (!level.setBlock(pos, humidityBlock(red, stage-1).defaultBlockState(), 3)) return;
+        var player = event.getEntity();
+        if (!player.getAbilities().instabuild) {
+            event.getItemStack().shrink(1);
+            ItemStack result = PotionContents.createItemStack(Items.POTION, Potions.WATER);
+            if (!player.addItem(result)) player.drop(result, false);
+        }
+        event.setCancellationResult(InteractionResult.SUCCESS);
+        event.setCanceled(true);
+    }
+
+    private static Block humidityBlock(boolean red,int stage) {
+        return switch (stage) {
+            case 0 -> red ? Blocks.RED_SAND : Blocks.SAND;
+            case 1 -> red ? MOIST_RED_SAND.get() : MOIST_SAND.get();
+            case 2 -> red ? WET_RED_SAND.get() : WET_SAND.get();
+            default -> red ? SOAKED_RED_SAND.get() : SOAKED_SAND.get();
+        };
     }
 
     /** No worldgen hooks or chunk-wide scans: at most eight checks per player per second. */
@@ -96,12 +139,7 @@ public final class WetSandPort {
         }
         int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
         if (target == stage) return;
-        Block next = switch (target) {
-            case 0 -> red ? Blocks.RED_SAND : Blocks.SAND;
-            case 1 -> red ? MOIST_RED_SAND.get() : MOIST_SAND.get();
-            case 2 -> red ? WET_RED_SAND.get() : WET_SAND.get();
-            default -> red ? SOAKED_RED_SAND.get() : SOAKED_SAND.get();
-        };
+        Block next = humidityBlock(red, target);
         level.setBlock(pos, next.defaultBlockState(), 3);
     }
 
