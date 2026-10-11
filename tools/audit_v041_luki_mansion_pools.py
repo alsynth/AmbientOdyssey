@@ -31,6 +31,18 @@ def main():
                     except OSError:pass
                 if NEEDLE in raw:uses.append(p)
             except (ValueError,EOFError):continue
+        main_pool=json.loads(z.read("data/mansions/worldgen/template_pool/mansion/main.json"))
+        print("NATIVE main pool:",json.dumps(main_pool,indent=2)[:12000])
+        for p in uses:
+            raw=z.read(p)
+            if p.endswith(".nbt"):
+                try:raw=gzip.decompress(raw)
+                except OSError:pass
+                for n in range(min(raw.count(NEEDLE),5)):
+                    at=raw.find(NEEDLE) if n==0 else raw.find(NEEDLE,at+1)
+                    print("NBT NATIVE REFERENCE",p,"context:",repr(raw[max(0,at-220):at+250]))
+        templates=sorted(p for p in allfiles if p.startswith("data/mansions/structure/mansion/") and p.endswith(".nbt"))
+        print("NATIVE mansion templates",json.dumps(templates,indent=2))
         result={"official_jar":URL,"source_sha256":sha,"logged_missing_reference":NEEDLE.decode(),
                 "expected_pool_file":expect,"expected_pool_exists":expect in pools,
                 "total_template_pools":len(pools),"native_mansion_pool_candidates":candidates,
