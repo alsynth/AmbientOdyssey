@@ -80,7 +80,7 @@ def render(slug, blob):
             assert patched["structures"]==native["structures"]
             assert {k:v for k,v in patched.items() if k!="placement"}=={k:v for k,v in native.items() if k!="placement"}
             assert {k:v for k,v in patched["placement"].items() if k!="spacing"}=={k:v for k,v in placement.items() if k!="spacing"}
-            target=DATA/name
+            target=PACK/name
             encoded=(json.dumps(patched,indent=2,ensure_ascii=False)+"\n").encode()
             outputs[target]=encoded
             audit.append({
