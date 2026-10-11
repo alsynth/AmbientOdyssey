@@ -132,7 +132,7 @@ def validate():
         done.add(slug)
     done=set()
     for slug in known:visit(slug,set(),done)
-    assert len(done)==50
+    assert len(done)==52
     assert "ao_first_pages_01_welcome_to_ambient_odyssey" in known
     assert not deps["ao_first_pages_01_welcome_to_ambient_odyssey"]
     # The separate cursed route must never become a required ancestor of another chapter.
