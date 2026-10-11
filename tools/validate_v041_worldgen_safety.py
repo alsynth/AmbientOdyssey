@@ -16,3 +16,16 @@ t=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafe
 for token in ("GameUtils$Mob","summonWorldGen(","server.tell(","@Redirect(","MinecraftServer;execute("):
     assert token in t,token
 print("PASS: native Luki mansion pool, Hominid offthread guard, Tan markers deferred to server")
+
+
+spawner=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/DungeonCrawlSpawnerPendingNbtMixin.java").read_text()
+for key in ("xiroc.dungeoncrawl.dungeon.block.Spawner","WorldGenRegion","@Redirect(", "LevelAccessor;getBlockEntity(", "getBlockState(pos).is(Blocks.SPAWNER)", "saveWithFullMetadata(", "setBlockEntityNbt(nbt)", "AO_PENDING_SPAWNER.remove()"):
+    assert key in spawner,key
+assert "addFreshEntity" not in spawner.replace("setBlock/addFreshEntity","")
+air=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/DungeonCrawlOptionalTradeAirMixin.java").read_text()
+for key in ("xiroc.dungeoncrawl.dungeon.monster.RandomMonster","VILLAGER_OFFERS",'"minecraft:air"',"second.getByte(\"Count\") == 0",'trade.remove("buyB")'):
+    assert key in air,key
+assert "setBlockEntityNbt" not in air
+mix=json.loads((ROOT/"addons/ao-worldgen-safety/src/main/resources/ao_worldgen_safety.mixins.json").read_text())
+assert set(mix['mixins'])=={"HominidFinalizeSpawnMixin","TansWorldgenMarkerSchedulingMixin","DungeonCrawlSpawnerPendingNbtMixin","DungeonCrawlOptionalTradeAirMixin"}
+print("PASS: two exact-source Dungeon Crawl scoped mixins use pending NBT and only remove zero-count optional air payments")
