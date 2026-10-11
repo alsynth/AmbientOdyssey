@@ -34,8 +34,8 @@ assert button['enabled'] and button['showBadge'] and not button['relativeToInven
 assert (button['x'],button['y'])==(38,38)
 assert all(isinstance(button[k],bool) for k in ('enabled','showBadge','relativeToInventory','bobbingBadge'))
 quest_folder=ROOT/'release_030/overrides/config/questlog/quests'
-assert quest_folder.is_dir() and len(list(quest_folder.glob('*.json')))==50
+assert quest_folder.is_dir() and len(list(quest_folder.glob('*.json')))==52
 from validate_v04_quest_campaign import validate
-assert validate()==50
-print('PASS: 331 projects, native Questlog pin, inherited Cloth Config, Mine Cells bridge, exact source-backed inventory button configuration, no quest campaign and 273 NBT repairs.')
+assert validate()==52
+print('PASS: 331 projects, native Questlog pin, inherited Cloth Config, Mine Cells bridge, exact source-backed inventory button configuration, 52-quest campaign and 273 NBT repairs.')
 print('Source and packaging only: inventory placement, interaction and multiplayer have NOT been runtime tested.')
