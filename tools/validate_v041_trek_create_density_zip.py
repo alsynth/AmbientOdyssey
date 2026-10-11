@@ -65,7 +65,7 @@ def validate(path):
             ids.extend(tasks)
         assert len(ids)==len(set(ids))==32
 
-        assert "overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar" in names
+        assert "overrides/mods/ao-worldgen-safety-0.1.3-experimental.jar" in names
         # Farms/food productions and special TREK types must not be overridden.
         assert not any(s.endswith(("/windmill.json","/honey_pit.json","/chocolate_pit.json"))
                        for s in actual)
