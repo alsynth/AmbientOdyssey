@@ -22,7 +22,7 @@ def validate(path):
         names=z.namelist()
         assert len(names)==len(set(names))
         manifest=json.loads(z.read("manifest.json"))
-        assert manifest["version"]=="0.4.1-experimental-trek-create-density"
+        assert manifest["version"]=="0.4.1-experimental-trek-manual-ack"
         assert len(manifest["files"])==329
         pins={x["projectID"]:x["fileID"] for x in manifest["files"]}
         for p in report["source_pins"].values():
@@ -48,6 +48,23 @@ def validate(path):
         actual={p for p in names if p.startswith(PACK) and p.endswith(".json") and "/worldgen/structure_set/" in p}
         assert actual==expected,(len(actual),len(expected),sorted(actual^expected)[:10])
         assert json.loads(z.read(PACK+"pack.mcmeta"))["pack"]["pack_format"]==48
+
+        import re
+        chapters={
+            "field_manual":15,
+            "tips_and_tricks":9,
+            "keybind_cheatsheet":8
+        }
+        ids=[]
+        for chapter,count in chapters.items():
+            path="overrides/config/ftbquests/quests/chapters/"+chapter+".snbt"
+            text=z.read(path).decode()
+            tasks=re.findall(r'tasks: \[\{ id: "([0-9A-F]{16})", type: "checkmark" \}\]',text)
+            assert len(tasks)==count,(chapter,len(tasks),count)
+            assert "tasks: [ ]" not in text
+            ids.extend(tasks)
+        assert len(ids)==len(set(ids))==32
+
         # Farms/food productions and special TREK types must not be overridden.
         assert not any(s.endswith(("/windmill.json","/honey_pit.json","/chocolate_pit.json"))
                        for s in actual)
@@ -60,7 +77,7 @@ def validate(path):
         assert cfg["rustic_smithy"]["spacing"]==37 and cfg["rustic_smithy"]["separation"]==24
         assert cfg["rustic_well"]["spacing"]==27 and cfg["rustic_well"]["separation"]==17
         assert cfg["rustic_barn"]["spacing"]==36 and cfg["rustic_windmill"]["spacing"]==32
-    print("PASS 329 locked mod refs, 3 TREK structure-set increases, 40 non-farming Create reductions, 2 Rustic reductions, zero farm/End/Nether/rarity boss rewrites")
+    print("PASS 329 locked mod refs, 32 deliberate Field Manual checkmarks, 3 TREK structure-set increases, 40 non-farming Create reductions, 2 Rustic reductions, zero farm/End/Nether/rarity boss rewrites")
     print("NOT RUNTIME TESTED — fresh disposable world A/B required; structure frequency not guaranteed by candidate grid spacing")
 
 if __name__=="__main__":
