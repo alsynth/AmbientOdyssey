@@ -295,4 +295,72 @@ public final class WetSandGameTests {
                 "Flowing water directly above must hydrate sand");
         helper.succeed();
     }
+
+    @GameTest(template = "empty")
+    public static void fullInventoryDropsOneWaterBottle(GameTestHelper helper) {
+        var player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "sand-full"));
+        player.setGameMode(GameType.SURVIVAL);
+        for (int i = 0; i < player.getInventory().items.size(); i++) player.getInventory().items.set(i, new ItemStack(Items.STONE, 64));
+        player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Items.GLASS_BOTTLE, 2));
+        BlockPos absolute = helper.absolutePos(POS);
+        player.setPos(Vec3.atCenterOf(absolute));
+        helper.setBlock(POS, WetSandPort.WET_SAND.get());
+        NeoForge.EVENT_BUS.post(new PlayerInteractEvent.RightClickBlock(player, InteractionHand.MAIN_HAND, absolute,
+                new BlockHitResult(Vec3.atCenterOf(absolute), Direction.UP, absolute, false)));
+        helper.assertBlockPresent(WetSandPort.MOIST_SAND.get(), POS);
+        helper.assertTrue(player.getMainHandItem().getCount() == 1, "Full inventory must consume exactly one bottle");
+        helper.assertItemEntityCountIs(Items.POTION, POS, 2, 1);
+        var drops = helper.getLevel().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,
+                new net.minecraft.world.phys.AABB(absolute).inflate(2));
+        helper.assertTrue(drops.stream().anyMatch(e -> ItemStack.isSameItemSameComponents(e.getItem(),
+                PotionContents.createItemStack(Items.POTION, Potions.WATER))), "Dropped potion must contain water");
+        player.discard();
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void canceledProtectionEventCannotExtractWater(GameTestHelper helper) {
+        var player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "sand-protect"));
+        player.setGameMode(GameType.SURVIVAL);
+        player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Items.GLASS_BOTTLE));
+        helper.setBlock(POS, WetSandPort.SOAKED_SAND.get());
+        BlockPos absolute = helper.absolutePos(POS);
+        var event = new PlayerInteractEvent.RightClickBlock(player, InteractionHand.MAIN_HAND, absolute,
+                new BlockHitResult(Vec3.atCenterOf(absolute), Direction.UP, absolute, false));
+        event.setCanceled(true);
+        NeoForge.EVENT_BUS.post(event);
+        helper.assertBlockPresent(WetSandPort.SOAKED_SAND.get(), POS);
+        helper.assertTrue(player.getMainHandItem().is(Items.GLASS_BOTTLE), "Protected bottle must remain unchanged");
+        player.discard();
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty")
+    public static void bottleCannotInterruptActiveBrushing(GameTestHelper helper) {
+        var player = FakePlayerFactory.get(helper.getLevel(), new GameProfile(UUID.randomUUID(), "sand-brush-bottle"));
+        player.setGameMode(GameType.SURVIVAL);
+        player.setItemInHand(InteractionHand.MAIN_HAND, new ItemStack(Items.GLASS_BOTTLE));
+        helper.setBlock(POS.below(), Blocks.STONE);
+        helper.setBlock(POS, WetSandPort.WET_SUSPICIOUS_SAND.get());
+        BlockPos absolute = helper.absolutePos(POS);
+        var entity = (BrushableBlockEntity) helper.getLevel().getBlockEntity(absolute);
+        entity.brush(helper.getLevel().getGameTime(), player, Direction.UP);
+        NeoForge.EVENT_BUS.post(new PlayerInteractEvent.RightClickBlock(player, InteractionHand.MAIN_HAND, absolute,
+                new BlockHitResult(Vec3.atCenterOf(absolute), Direction.UP, absolute, false)));
+        helper.assertBlockPresent(WetSandPort.WET_SUSPICIOUS_SAND.get(), POS);
+        helper.assertTrue(helper.getLevel().getBlockEntity(absolute) == entity, "Bottle must not replace active brush entity");
+        helper.assertTrue(player.getMainHandItem().is(Items.GLASS_BOTTLE), "Active brushing must not consume bottle");
+        player.discard();
+        helper.succeed();
+    }
+
+    @GameTest(template = "empty", timeoutTicks = 60)
+    public static void redMoistSandFallsWithIdentityIntact(GameTestHelper helper) {
+        helper.setBlock(new BlockPos(1, 0, 1), Blocks.STONE);
+        helper.setBlock(new BlockPos(1, 3, 1), WetSandPort.MOIST_RED_SAND.get());
+        helper.runAfterDelay(30, () -> {
+            helper.assertBlockPresent(WetSandPort.MOIST_RED_SAND.get(), new BlockPos(1, 1, 1));
+            helper.succeed();
+        });
+    }
 }

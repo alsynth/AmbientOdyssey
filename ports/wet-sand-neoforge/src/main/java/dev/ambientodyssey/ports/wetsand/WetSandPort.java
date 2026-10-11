@@ -36,6 +36,8 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.bus.api.EventPriority;
+import net.neoforged.neoforge.event.RegisterGameTestsEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -85,7 +87,10 @@ public final class WetSandPort {
         modBus.addListener((BlockEntityTypeAddBlocksEvent event) -> event.modify(BlockEntityType.BRUSHABLE_BLOCK,
                 MOIST_SUSPICIOUS_SAND.get(), WET_SUSPICIOUS_SAND.get(), SOAKED_SUSPICIOUS_SAND.get()));
         NeoForge.EVENT_BUS.addListener(WetSandPort::updateNearbyShorelines);
-        NeoForge.EVENT_BUS.addListener(WetSandPort::dehydrateWithBottle);
+        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, WetSandPort::dehydrateWithBottle);
+        if (System.getProperty("ao_wet_sand.persistencePhase") != null) {
+            modBus.addListener((RegisterGameTestsEvent event) -> event.register(WetSandPersistenceGameTests.class));
+        }
     }
 
     /** Use a glass bottle to remove one moisture stage and receive a water bottle. */

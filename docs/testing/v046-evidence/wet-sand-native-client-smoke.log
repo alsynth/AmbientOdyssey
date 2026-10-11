@@ -1,0 +1,4 @@
+[12Oct2026 00:26:35.569] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce RTX 4070/PCIe/SSE2 GL version 4.6.0 NVIDIA 591.86, NVIDIA Corporation
+[12Oct2026 00:26:42.029] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/ao_wet_sand, mod/neoforge
+[12Oct2026 00:26:48.043] [Render thread/INFO] [dev.ambientodyssey.ports.wetsand.WetSandClientSmoke/]: WETSAND_CLIENT_SMOKE_PASS: title screen rendered, 18 native baked block models and texture atlas sprites resolved
+[12Oct2026 00:26:48.059] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

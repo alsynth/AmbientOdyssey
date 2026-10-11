@@ -1,0 +1,7 @@
+[12Oct2026 00:28:19.736] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 19 tests are now running at position -20376, -59, -2042712!
+[12Oct2026 00:28:20.144] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'defaultBatch:0' (19 tests)...
+[12Oct2026 00:28:20.331] [Server thread/INFO] [dev.ambientodyssey.ports.wetsand.WetSandPersistenceGameTests/]: WETSAND_PERSISTENCE_READ: saved stages, treasure seed, bottle extraction and real archaeology loot PASS
+[12Oct2026 00:28:20.559] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 19 GAME TESTS COMPLETE IN 820.3 ms ======================
+[12Oct2026 00:28:20.560] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 19 required tests passed :)
+[12Oct2026 00:28:20.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[12Oct2026 00:28:21.159] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

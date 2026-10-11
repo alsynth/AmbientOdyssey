@@ -1,0 +1,7 @@
+[12Oct2026 00:27:38.725] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 19 tests are now running at position 375027, -59, -11640918!
+[12Oct2026 00:27:39.113] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'defaultBatch:0' (19 tests)...
+[12Oct2026 00:27:39.188] [Server thread/INFO] [dev.ambientodyssey.ports.wetsand.WetSandPersistenceGameTests/]: WETSAND_PERSISTENCE_WRITE: treasure seed and both sand variants staged for server shutdown save
+[12Oct2026 00:27:39.468] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 19 GAME TESTS COMPLETE IN 742.2 ms ======================
+[12Oct2026 00:27:39.468] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 19 required tests passed :)
+[12Oct2026 00:27:39.477] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[12Oct2026 00:27:40.004] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

@@ -109,16 +109,57 @@ Run packaged validation with:
 python tools/validate_v046_wetsand_resources.py ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
 ```
 
-## Remaining Wet Sand gates before Apotheotic feature implementation
+## 12 October persistence/client checkpoint (latest)
 
-- Suspicious-sand: complete actual process restart, client rendering, bottle
-  interactions during brushing and real structure treasure testing.
+Compilation and **18 required mechanics tests PASS**. Added full-inventory
+water-bottle drops, cancelled protection events, bottle rejection during
+active brushing and red-sand falling identity. Bottle handling now runs at
+LOWEST event priority and ignores already-cancelled events, allowing earlier
+protection listeners to veto it. This tests the native event contract, not
+every third-party claim mod.
+
+**Actual two-process save/restart PASS**: writer JVM saves soaked suspicious
+sand with vanilla desert-well loot table and seed, plus wet red sand; reader
+JVM loads the same generated world, validates the stored values, extracts
+water, resolves real archaeology loot, then brushes it out exactly once.
+Each explicit phase runs 19 tests (18 ordinary + persistence fixture).
+Evidence: `wet-sand-persistence-write.log` and
+`wet-sand-persistence-read.log` under `docs/testing/v046-evidence/`.
+
+**Actual isolated native client startup/model bake PASS**: Java 21 / NeoForge
+21.1.252 / LWJGL / OpenGL 4.6 reached the title screen; 6 ordinary and 12
+dusted archaeology block models resolve their exact texture atlas sprites.
+The opt-in smoke hook closes only its disposable development client. It
+skips first-launch onboarding in that test instance and does not alter a
+real CurseForge profile. Evidence: `wet-sand-native-client-smoke.log`.
+This checks actual client resource loading; it does not test in-world brush
+animation, player movement, full-pack shaders or multiplayer interactions.
+
+All three checks are required in the updated port CI workflow, with logs
+preserved on failure. Re-run the separate save phases with:
+
+```text
+gradle -p ports/wet-sand-neoforge --no-daemon -PaoPersistencePhase=write runGameTestServer
+gradle -p ports/wet-sand-neoforge --no-daemon -PaoPersistencePhase=read runGameTestServer
+gradle -p ports/wet-sand-neoforge --no-daemon runClientSmoke
+```
+
+Development JAR SHA-256:
+`8c0e0a6b86b7f9999236cfc9b08483bfada9e2328d1f696c96685bdcea87a722`.
+Packaged resource/license validation PASS. The client and persistence test
+hooks are dormant in an ordinary installation.
+
+## Remaining Wet Sand integration gates
+
+- Suspicious-sand: in-world brush rendering and actual generated structure
+  treasure testing. Native bottle rejection and real desert-well loot after
+  process restart are now verified.
 - Benchmark the loaded-only propagation budget and confirm wet shorelines
   during natural FTF generation; no full-world conversion is implemented.
 - Shoreline conversion currently samples near players, rather than all
   natural shorelines. Decide and test the terrain-safe placement policy.
-- Verify inventory-full bottle paths, client hand prediction,
-  protection integration, red falling physics and codec round trips.
+- Verify live client hand prediction, specific full-pack protection mods
+  and codec round trips. Full-inventory drops and red falling physics pass.
 - Verify upstream textures, lowered soaked collision and brush animations
   on the actual client; packaged resource validation does not render them.
 - Full pack client, FTF shoreline generation and two-player dedicated server

@@ -35,6 +35,23 @@ jobs:
         run: gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace runGameTestServer
       - name: Verify packaged art, models and license notices
         run: python tools/validate_v046_wetsand_resources.py ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
+      - name: Save treasure in first server process
+        run: |
+          gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace -PaoPersistencePhase=write runGameTestServer
+          cp ports/wet-sand-neoforge/build/persistence-runtime/logs/latest.log ports/wet-sand-neoforge/build/persistence-write.log
+      - name: Verify saved treasure in second server process
+        run: |
+          gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace -PaoPersistencePhase=read runGameTestServer
+          cp ports/wet-sand-neoforge/build/persistence-runtime/logs/latest.log ports/wet-sand-neoforge/build/persistence-read.log
+      - name: Native client model and texture startup check
+        run: |
+          if ! command -v xvfb-run >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y xvfb
+          fi
+          timeout 180s xvfb-run -a gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace runClientSmoke
+          grep -F 'WETSAND_CLIENT_SMOKE_PASS' ports/wet-sand-neoforge/build/client-smoke-runtime/logs/latest.log
+          ! grep -F 'WETSAND_CLIENT_SMOKE_FAIL' ports/wet-sand-neoforge/build/client-smoke-runtime/logs/latest.log
       - name: Preserve mechanics evidence even on failure
         if: always()
         uses: actions/upload-artifact@v4
@@ -44,6 +61,9 @@ jobs:
           path: |
             ports/wet-sand-neoforge/run/logs/
             ports/wet-sand-neoforge/build/reports/
+            ports/wet-sand-neoforge/build/persistence-runtime/logs/
+            ports/wet-sand-neoforge/build/persistence-*.log
+            ports/wet-sand-neoforge/build/client-smoke-runtime/logs/
       - uses: actions/upload-artifact@v4
         with:
           name: AO-v046-WETSAND-SOURCE-PROTOTYPE-NOT-FOR-PACK
