@@ -18,6 +18,7 @@ PATHS=[
 "config/questlog/quests/ao_first_pages_15_defeat_your_first_monster.json",
 "config/cristellib/block_factorys_bosses/structure_placement_config.json5",
 "config/paxi/datapacks/ao_structure_density/data/minecraft/worldgen/structure_set/villages.json",
+"config/paxi/datapacks/ao_structure_repairs/data/fdbosses/worldgen/template_pool/malkuth_arena.json",
 ]
 def sha(data):return hashlib.sha256(data).hexdigest()
 def checkzip(z):
@@ -45,6 +46,9 @@ def verify(a,z):
     village=json.loads(z.read("overrides/config/paxi/datapacks/ao_structure_density/data/minecraft/worldgen/structure_set/villages.json"))
     assert village["placement"]["spacing"]==36 and village["placement"]["separation"]==8
     assert len(village["structures"])==5
+    malkuth=json.loads(z.read("overrides/config/paxi/datapacks/ao_structure_repairs/data/fdbosses/worldgen/template_pool/malkuth_arena.json"))
+    assert len(malkuth["elements"])==1
+    assert malkuth["elements"][0]["element"]["location"]=="fdbosses:malkuth_arena/malkuth_arena_part_1"
     assert len(m["files"])==330
     print("PASS: v0.4.4 delta CRC, safe archive paths, unchanged 330 third-party mods, exact changed files.")
     print("NOT TESTED: actual Minecraft runtime, Malkuth binary fix, invalid NBT ownership, full progression.")
