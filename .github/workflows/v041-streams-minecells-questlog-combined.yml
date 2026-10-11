@@ -1,8 +1,8 @@
-name: AO v0.4.1 combined Streams Mine Cells + styled Questlog pack
+name: AO v0.4.1 UI Quest Checks and Streams Mine Cells Pack
 on:
   push:
     branches:
-      - experimental/v041-streams-minecells-questlog-combined-20261011
+      - experimental/v041-ui-quest-data-perf-triage-20261011
   workflow_dispatch:
 permissions:
   contents: read
@@ -40,7 +40,7 @@ jobs:
       - name: Compile native-styled Questlog inventory bridge
         run: |
           gradle -p addons/ao-questlog-betterinventory --no-daemon --stacktrace build
-          test -f addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.1.jar
+          test -f addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar
       - uses: actions/download-artifact@v4
         with:
           name: AO-v041-combined-streams-addon-internal
@@ -67,14 +67,14 @@ jobs:
           python tools/make_v041_minecells_structure_control.py --verify build/ao-v041-328-control.zip --baseline build/ao-v041-331-reference.zip
           python tools/package_v041_streams_questlog_combo.py \
             --source build/ao-v041-328-control.zip \
-            --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.1.jar \
+            --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar \
             --streams-jar build/streams-addon/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar \
-            --output build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
-          python tools/package_v041_streams_questlog_combo.py --verify --output build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
-          sha256sum build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+            --output build/Ambient-Odyssey-v0.4.1-UI-QUEST-FIXES-TEST.zip
+          python tools/package_v041_streams_questlog_combo.py --verify --output build/Ambient-Odyssey-v0.4.1-UI-QUEST-FIXES-TEST.zip
+          sha256sum build/Ambient-Odyssey-v0.4.1-UI-QUEST-FIXES-TEST.zip
           git diff --check
       - uses: actions/upload-artifact@v4
         with:
-          name: AO-v041-Streams-MineCells-Styled-Questlog-CurseForge-Import
-          path: build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+          name: AO-v041-UI-Quest-Fixes-CurseForge-Import
+          path: build/Ambient-Odyssey-v0.4.1-UI-QUEST-FIXES-TEST.zip
           if-no-files-found: error

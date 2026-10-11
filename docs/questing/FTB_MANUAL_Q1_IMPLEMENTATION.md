@@ -38,3 +38,7 @@ Further work once a client can load this content: contextual icons/screenshots, 
 ## Q1 copy correction
 
 After the first successful static packaging run, the published manual text was corrected to treat Questlog as already installed rather than a future mod. It describes the trial screen-anchored inventory icon and default grave/backtick control accurately while still requiring visual/keybind acceptance. Two other legacy research placeholders were revised so the manual does not promise an unavailable automated Explorer's Journal or future JEI recipe exception catalogue.
+
+## 11 October 2026 — reference-page task correction
+
+The generated chapter SNBT previously had **32 `checkmark` tasks** despite the documentation describing task-free reference pages. These looked like ordinary FTB quests and reasonably caused confusion with Questlog's authored adventure quests. Source SNBT now uses `tasks: [ ]` for all 32 manual pages with `rewards: [ ]` unchanged. FTB Quests may mark empty-task pages completed; this is acceptable for information-only articles but still requires in-game UI testing. The inherited WDA authored FTB quests and Questlog's 50 independent quest definitions were not touched.

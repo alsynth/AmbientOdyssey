@@ -8,9 +8,9 @@ content/worldgen repairs, Luki/DnT resource pack, and the proven rollback.
 Usage:
 python tools/package_v041_streams_questlog_combo.py \
   --source build/ao-v041-328-control.zip \
-  --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.1.jar \
+  --questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.2.jar \
   --streams-jar build/streams-addon/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar \
-  --output build/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+  --output build/Ambient-Odyssey-v0.4.1-UI-QUEST-FIXES-TEST.zip
 
 And --verify --output ZIP for independent revalidation.
 """
@@ -28,11 +28,11 @@ QL_FILE=8952784
 BI_PROJECT=1618019
 BI_FILE=9099710
 BASE_REMOVED={832882,1430156,1581408}
-QUESTLOG_JAR="ao-questlog-betterinventory-0.1.1.jar"
+QUESTLOG_JAR="ao-questlog-betterinventory-0.1.2.jar"
 STREAMS_JAR="ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
 JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR}
-NAME="Ambient Odyssey v0.4.1 - Streams/Mine Cells + Styled Questlog Test"
-VERSION="0.4.1-experimental-streams-minecells-questlog"
+NAME="Ambient Odyssey v0.4.1 - Mine Cells + Better Inventory UI Fix"
+VERSION="0.4.1-experimental-ui-quest-fixes"
 
 def jar_check(name, blob):
     with ZipFile(BytesIO(blob)) as z:
@@ -49,7 +49,7 @@ def jar_check(name, blob):
         else:
             assert 'modId="aoquestlogbridge"' in toml
             assert "QuestlogBetterInventoryBridge$QuestlogTab.class" in " ".join(paths)
-            assert "0.1.1" in toml
+            assert "0.1.2" in toml
 
 def validate(path):
     with ZipFile(path) as z:

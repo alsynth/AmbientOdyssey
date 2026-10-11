@@ -52,8 +52,7 @@ public final class QuestlogBetterInventoryBridge {
     private static final int ATLAS_WIDTH = 512;
     private static final int ATLAS_HEIGHT = 256;
     // Better Inventory's gear starts at leftPos+198 and spans 20px.
-    // Our tab starts at leftPos+226, aligned to the same y=topPos row.
-    private static final int QUEST_TAB_X = 226;
+    // 20px settings gear occupies X=198..217; Q sits on its right,\n    // outside the backpack/crafting tab range. Recalculate each frame\n    // because BetterInventoryScreen can recenter its GUI after init.\n    private static final int QUEST_TAB_X = 222;
 
     private static long lastBadgeTick = Long.MIN_VALUE;
     private static boolean cachedBadge;
@@ -100,6 +99,11 @@ public final class QuestlogBetterInventoryBridge {
 
         @Override
         protected void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+            // Fix v0.1.1 position drift seen at GUI scale 3: screen layout may
+            // recenter after this widget's initial bounds were assigned.
+            // Update hitbox together with visual position, so buttons match.
+            this.setX(buttonX(this.parent));
+            this.setY(buttonY(this.parent));
             int v = this.isHoveredOrFocused() ? TAB_SELECTED_V : TAB_NORMAL_V;
             graphics.blit(BETTER_INVENTORY_ATLAS, this.getX(), this.getY(),
                     TAB_U, v, TAB_WIDTH, TAB_HEIGHT, ATLAS_WIDTH, ATLAS_HEIGHT);

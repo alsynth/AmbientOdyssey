@@ -13,7 +13,7 @@
 			x: -6.0d
 			y: 0.0d
 			size: 2.0d
-			tasks: [{ id: "3066591A85B00368", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -22,7 +22,7 @@
 			x: -2.0d
 			y: 0.0d
 			size: 1.0d
-			tasks: [{ id: "D41729E5195DC0F0", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -31,7 +31,7 @@
 			x: 2.0d
 			y: 0.0d
 			size: 1.0d
-			tasks: [{ id: "D4172AE5195DC609", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -40,7 +40,7 @@
 			x: 6.0d
 			y: 0.0d
 			size: 1.0d
-			tasks: [{ id: "D4172BE5195DC456", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -49,7 +49,7 @@
 			x: -6.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [{ id: "D4172CE5195DC96F", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -58,7 +58,7 @@
 			x: -2.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [{ id: "D4172DE5195DC7BC", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -67,7 +67,7 @@
 			x: 2.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [{ id: "D4172EE5195DCCD5", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -76,7 +76,7 @@
 			x: 6.0d
 			y: 3.0d
 			size: 1.0d
-			tasks: [{ id: "D4172FE5195DCB22", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -85,7 +85,7 @@
 			x: -6.0d
 			y: 6.0d
 			size: 1.0d
-			tasks: [{ id: "D41730E5195DD03B", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -94,7 +94,7 @@
 			x: -2.0d
 			y: 6.0d
 			size: 1.0d
-			tasks: [{ id: "D41731E5195DCE88", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -103,7 +103,7 @@
 			x: 2.0d
 			y: 6.0d
 			size: 1.0d
-			tasks: [{ id: "B1DA8D2E1A4E8640", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -112,7 +112,7 @@
 			x: 6.0d
 			y: 6.0d
 			size: 1.0d
-			tasks: [{ id: "B1DA8C2E1A4E87F3", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -121,7 +121,7 @@
 			x: -6.0d
 			y: 9.0d
 			size: 1.0d
-			tasks: [{ id: "B1DA8F2E1A4E89A6", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -130,7 +130,7 @@
 			x: -2.0d
 			y: 9.0d
 			size: 1.0d
-			tasks: [{ id: "B1DA8E2E1A4E8B59", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 		{
@@ -139,7 +139,7 @@
 			x: 2.0d
 			y: 9.0d
 			size: 1.0d
-			tasks: [{ id: "B1DA912E1A4E8D0C", type: "checkmark" }]
+			tasks: [ ]
 			rewards: [ ]
 		}
 	]
