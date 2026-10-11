@@ -26,3 +26,10 @@ type="required"
 versionRange="[1.3.4,1.3.5)"
 ordering="AFTER"
 side="BOTH"
+
+[[dependencies.ao_worldgen_safety]]
+modId="dungeoncrawl"
+type="required"
+versionRange="[2.3.17,2.3.18)"
+ordering="AFTER"
+side="BOTH"
