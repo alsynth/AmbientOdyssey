@@ -8,6 +8,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FallingBlock;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.bus.api.IEventBus;
@@ -29,16 +31,18 @@ public final class WetSandPort {
     public static final String ID = "ao_wet_sand";
     private static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(ID);
     private static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(ID);
-    public static final DeferredBlock<MoistureBlock> MOIST_SAND = stage("moist_sand", false, 1);
-    public static final DeferredBlock<MoistureBlock> WET_SAND = stage("wet_sand", false, 2);
-    public static final DeferredBlock<MoistureBlock> SOAKED_SAND = stage("soaked_sand", false, 3);
-    public static final DeferredBlock<MoistureBlock> MOIST_RED_SAND = stage("moist_red_sand", true, 1);
-    public static final DeferredBlock<MoistureBlock> WET_RED_SAND = stage("wet_red_sand", true, 2);
-    public static final DeferredBlock<MoistureBlock> SOAKED_RED_SAND = stage("soaked_red_sand", true, 3);
+    public static final DeferredBlock<Block> MOIST_SAND = stage("moist_sand", false, 1);
+    public static final DeferredBlock<Block> WET_SAND = stage("wet_sand", false, 2);
+    public static final DeferredBlock<Block> SOAKED_SAND = stage("soaked_sand", false, 3);
+    public static final DeferredBlock<Block> MOIST_RED_SAND = stage("moist_red_sand", true, 1);
+    public static final DeferredBlock<Block> WET_RED_SAND = stage("wet_red_sand", true, 2);
+    public static final DeferredBlock<Block> SOAKED_RED_SAND = stage("soaked_red_sand", true, 3);
 
-    private static DeferredBlock<MoistureBlock> stage(String name, boolean red, int stage) {
-        DeferredBlock<MoistureBlock> block = BLOCKS.register(name,
-                () -> new MoistureBlock(red, stage, BlockBehaviour.Properties.ofFullCopy(red ? Blocks.RED_SAND : Blocks.SAND).randomTicks()));
+    private static DeferredBlock<Block> stage(String name, boolean red, int stage) {
+        DeferredBlock<Block> block = BLOCKS.register(name,
+                () -> stage == 1
+                        ? new MoistureFallingBlock(red, stage, BlockBehaviour.Properties.ofFullCopy(red ? Blocks.RED_SAND : Blocks.SAND).randomTicks())
+                        : new MoistureBlock(red, stage, BlockBehaviour.Properties.ofFullCopy(red ? Blocks.RED_SAND : Blocks.SAND).randomTicks()));
         ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
         return block;
     }
@@ -46,6 +50,45 @@ public final class WetSandPort {
     public WetSandPort(IEventBus modBus) {
         BLOCKS.register(modBus);
         ITEMS.register(modBus);
+    }
+
+    private static void advance(BlockState state, ServerLevel level, BlockPos pos, boolean red, int stage) {
+        boolean hydrated = false;
+        for (int dx = -3; dx <= 3 && !hydrated; dx++) {
+            for (int dz = -3; dz <= 3 && !hydrated; dz++) {
+                if (Math.abs(dx) + Math.abs(dz) > 3) continue;
+                var fluid = level.getFluidState(pos.offset(dx, 0, dz));
+                hydrated = fluid.is(FluidTags.WATER) && fluid.isSource();
+            }
+        }
+        int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
+        if (target == stage) return;
+        Block next = switch (target) {
+            case 0 -> red ? Blocks.RED_SAND : Blocks.SAND;
+            case 1 -> red ? MOIST_RED_SAND.get() : MOIST_SAND.get();
+            case 2 -> red ? WET_RED_SAND.get() : WET_SAND.get();
+            default -> red ? SOAKED_RED_SAND.get() : SOAKED_SAND.get();
+        };
+        level.setBlock(pos, next.defaultBlockState(), 3);
+    }
+
+    /** Moist sand inherits vanilla gravity; wet and soaked stages are stable. */
+    public static final class MoistureFallingBlock extends FallingBlock {
+        private final boolean red;
+        private final int stage;
+        public MoistureFallingBlock(boolean red, int stage, Properties properties) {
+            super(properties);
+            this.red = red;
+            this.stage = stage;
+        }
+        @Override
+        public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
+            return red ? 0xA04A2A : 0xDBD3A0;
+        }
+        @Override
+        protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+            advance(state, level, pos, red, stage);
+        }
     }
 
     public static final class MoistureBlock extends Block {
@@ -58,23 +101,7 @@ public final class WetSandPort {
         }
         @Override
         protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
-            boolean hydrated = false;
-            for (int dx = -3; dx <= 3 && !hydrated; dx++) {
-                for (int dz = -3; dz <= 3 && !hydrated; dz++) {
-                    if (Math.abs(dx) + Math.abs(dz) > 3) continue;
-                    var fluid = level.getFluidState(pos.offset(dx, 0, dz));
-                    hydrated = fluid.is(FluidTags.WATER) && fluid.isSource();
-                }
-            }
-            int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
-            if (target == stage) return;
-            Block next = switch (target) {
-                case 0 -> red ? Blocks.RED_SAND : Blocks.SAND;
-                case 1 -> red ? MOIST_RED_SAND.get() : MOIST_SAND.get();
-                case 2 -> red ? WET_RED_SAND.get() : WET_SAND.get();
-                default -> red ? SOAKED_RED_SAND.get() : SOAKED_SAND.get();
-            };
-            level.setBlock(pos, next.defaultBlockState(), 3);
+            advance(state, level, pos, red, stage);
         }
     }
 }
