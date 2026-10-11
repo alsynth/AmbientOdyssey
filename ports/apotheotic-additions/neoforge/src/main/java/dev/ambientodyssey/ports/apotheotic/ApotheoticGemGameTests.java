@@ -40,6 +40,12 @@ public final class ApotheoticGemGameTests {
                 var stack = LegacyGem.toLegacyStack(gem, tier);
                 var restored = ItemStack.parse(helper.getLevel().registryAccess(), stack.save(helper.getLevel().registryAccess())).orElseThrow();
                 helper.assertTrue(restored.get(ApotheoticPort.LEGACY_GEM_TIER.get()) == tier, "Lost exact legacy tier in item serialization");
+                var buffer = new net.minecraft.network.RegistryFriendlyByteBuf(io.netty.buffer.Unpooled.buffer(), helper.getLevel().registryAccess());
+                try {
+                    ApotheoticPort.LEGACY_GEM_TIER.get().streamCodec().encode(buffer, tier);
+                    helper.assertTrue(ApotheoticPort.LEGACY_GEM_TIER.get().streamCodec().decode(buffer) == tier,
+                            "Network codec lost exact legacy gem tier");
+                } finally { buffer.release(); }
                 double amount = bonus.createModifier(UnsocketedGem.of(restored)).amount();
                 helper.assertTrue(Math.abs(amount - value.getValue().getAsDouble()) < 0.000001, "Original gem tier value changed");
             }
@@ -59,6 +65,13 @@ public final class ApotheoticGemGameTests {
         var restored = ItemStack.parse(helper.getLevel().registryAccess(), socketed.save(helper.getLevel().registryAccess())).orElseThrow();
         var inst = SocketHelper.getGems(restored).get(0);
         helper.assertTrue(inst.isValid() && inst.gemStack().get(ApotheoticPort.LEGACY_GEM_TIER.get()) == 8, "Socket serialization lost Esoteric tier");
+        var unique = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "crafted/warden")).get();
+        var twoSockets = new ItemStack(Items.DIAMOND_CHESTPLATE);
+        SocketHelper.setSockets(twoSockets, 2);
+        var first = SocketHelper.socketGemInItem(twoSockets, LegacyGem.toLegacyStack(unique, 6));
+        helper.assertFalse(first.isEmpty(), "Native socketing rejected first unique gem");
+        helper.assertTrue(SocketHelper.socketGemInItem(first, LegacyGem.toLegacyStack(unique, 8)).isEmpty(),
+                "Distinct legacy tiers bypassed native unique gem restriction");
         var golem = helper.spawn(EntityType.IRON_GOLEM, new BlockPos(2, 1, 2));
         double base = golem.getAttributeBaseValue(Attributes.MAX_HEALTH);
         golem.setItemSlot(EquipmentSlot.CHEST, restored);

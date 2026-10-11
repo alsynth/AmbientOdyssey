@@ -302,3 +302,26 @@ real obtainability. Preserve original crafted requirements, dimensions, weights,
 71 source gems, art and names. Remaining 66 gems require other bonus systems,
 conditions or external dependencies. No full CurseForge build yet; v0.4.5 and
 main stay unchanged. Remaining Wet Sand full-pack gameplay checks still apply.
+
+## Gem network/uniqueness and two-port full-roster startup follow-up
+
+Nine native tests PASS with two added assertions inside the gem tests: every
+supported legacy tier round-trips through its network stream codec, and native
+unique socketing rejects a second Warden gem even when its legacy tier differs.
+Latest server-tested JAR SHA-256:
+15120a5acd36f6bde0156914ebe08adee058a4a82ea6901e0d4a7b3379424af7.
+
+Production client startup PASS with all 327 copied original mod JARs plus Wet
+Sand and the Apotheotic prototype. Apotheotic JAR loaded in this client was
+ d9bc6bc9cbc9e57dec3244626cfadcefebee9fa94bb01c32dc7245f4271b9d90
+(the preceding build; subsequent changes add only GameTest assertions).
+Client reached the title screen, rendered 18 Wet Sand models/sprites, and exited
+cleanly. Evidence: docs/testing/v046-evidence/two-ports-production-full-roster-client.log.
+This verifies loading together, not a world join or actual full-pack gem use.
+No live profile files or v0.4.5 release were altered.
+
+The complete gem manifest backup is verified by exact Git blob SHA
+c6fcf9e0bd88390ed0972fa6ce6fd57cae704bba. A first large inline tool upload was
+truncated; repaired through chunked base64 blob upload. For large future files,
+use small chunks and compare local/remote blob hashes before considering backup
+complete. The repaired checkpoint is 5a190a7ecdd6cbe502e9b7772af8ff6c0deb1212.

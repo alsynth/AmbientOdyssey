@@ -1,9 +1,9 @@
-[01:40:09] [main/INFO] [apotheosis/]: Registered 8 rarities.
-[01:40:10] [main/INFO] [apotheosis/]: Registered 124 affixes.
-[01:40:10] [main/INFO] [apotheosis/]: Registered 25 gems.
-[01:40:11] [Server thread/INFO] [apotheosis/]: Registered 8 rarities.
-[01:40:11] [Server thread/INFO] [apotheosis/]: Registered 124 affixes.
-[01:40:11] [Server thread/INFO] [apotheosis/]: Registered 25 gems.
-[01:40:12] [Server thread/INFO] [minecraft/GameTestServer]: ========= 9 GAME TESTS COMPLETE IN 1.401 s ======================
-[01:40:12] [Server thread/INFO] [minecraft/GameTestServer]: All 9 required tests passed :)
-BUILD SUCCESSFUL in 20s
+[01:45:05] [main/INFO] [apotheosis/]: Registered 8 rarities.
+[01:45:05] [main/INFO] [apotheosis/]: Registered 124 affixes.
+[01:45:05] [main/INFO] [apotheosis/]: Registered 25 gems.
+[01:45:07] [Server thread/INFO] [apotheosis/]: Registered 8 rarities.
+[01:45:07] [Server thread/INFO] [apotheosis/]: Registered 124 affixes.
+[01:45:07] [Server thread/INFO] [apotheosis/]: Registered 25 gems.
+[01:45:08] [Server thread/INFO] [minecraft/GameTestServer]: ========= 9 GAME TESTS COMPLETE IN 1.257 s ======================
+[01:45:08] [Server thread/INFO] [minecraft/GameTestServer]: All 9 required tests passed :)
+BUILD SUCCESSFUL in 19s

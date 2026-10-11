@@ -1,0 +1,4 @@
+[01:43:20.592] [main/INFO] [loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "ao-apotheotic-port-prototype-0.0.1-source-prototype.jar" [locator: {mods folder locator at C:\Users\headq\Documents\Codex\2026-10-11\i-d-use-the-existing-v0\work\AmbientOdyssey\ports\wet-sand-neoforge\build\client-smoke-runtime\mods}, reader: mod manifest] 
+		Ambient Odyssey - Apotheotic Additions Port Prototype 0.0.1-source-prototype (ao_apotheotic_port)
+[01:45:41] [Render thread/INFO] [de.am.po.we.WetSandClientSmoke/]: WETSAND_CLIENT_SMOKE_PASS: title screen rendered, 18 native baked block models and texture atlas sprites resolved
+[01:45:41] [Render thread/INFO] [minecraft/Minecraft]: Stopping!
