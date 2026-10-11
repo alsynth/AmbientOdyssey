@@ -42,14 +42,14 @@ def audit_zip(blob):
     cfg=[]
     with ZipFile(io.BytesIO(blob)) as z:
         for name in z.namelist():
-            if name.endswith(".json") and re.fullmatch(r"data/[^/]+/worldgen/structure_set/[^/]+\.json",name):
+            if name.endswith(".json") and re.fullmatch(r"data/[^/]+/worldgen/structure_set/.+\.json",name):
                 try:
                     obj=json.loads(z.read(name))
                 except (ValueError,UnicodeError):continue
                 placement=obj.get("placement",{}) if isinstance(obj,dict) else {}
                 sets.append({"path":name,"structures":obj.get("structures"),
                              "placement":{k:placement.get(k) for k in ("type","spacing","separation","frequency","frequency_reduction_method","salt") if k in placement}})
-            elif re.fullmatch(r"data/[^/]+/worldgen/structure/[^/]+\.json",name):
+            elif re.fullmatch(r"data/[^/]+/worldgen/structure/.+\.json",name):
                 structures.append(name)
             elif name.endswith((".toml",".json5",".cfg",".properties")) and (("config" in name.lower()) or ("structure" in name.lower())):
                 cfg.append(name)
