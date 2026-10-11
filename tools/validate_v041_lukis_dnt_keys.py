@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 from zipfile import ZipFile
 R=Path(__file__).resolve().parent.parent
-DIR="release_030/overrides/config/paxi/resourcepacks/ao_resource_repairs/assets/minecraft/models/item/"
+DIR="release_030/overrides/config/paxi/resourcepacks/ao_lukis_dnt_key_compat/assets/minecraft/models/item/"
 NORMAL={711:"shrine_key",712:"creeper_key",713:"citadel_key",715:"monument_key",717:"donjon_key",718:"outstation_key",719:"nether_key",721:"end_castle_key",722:"toxic_key",6161:"mansion_key",6767:"stronghold_key"}
 OMINOUS={711:"ominous_shrine_key",712:"ominous_toxic_key",714:"citadel_boss_key",716:"monument_boss_key",720:"end_ship_key",723:"toxic_boss_key",6162:"ravager_key",6768:"dragon_key"}
 def check(read):
