@@ -1,0 +1,28 @@
+name: AO v0.4.1 Spark Protobuf Hotspots (Sanitized)
+on:
+  push:
+    branches:
+      - experimental/v041-spark-structure-density-audit-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  spark-profiler-sanitized:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Spark protobuf decode dependency
+        run: pip install grpcio-tools==1.68.1
+      - name: Decode four consent-shared Spark profiles in runner memory and discard source bytes
+        run: |
+          python -m py_compile tools/audit_v041_spark_raw_hotspots.py
+          python -u tools/audit_v041_spark_raw_hotspots.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-FOUR-SPARK-SAMPLED-HOTSPOTS-SANITIZED
+          path: build/v041_spark_hotspots_sanitized.json
+          if-no-files-found: error

@@ -1,0 +1,36 @@
+name: AO v0.4.1 Spark and TREK/Create Native Audit
+on:
+  push:
+    branches:
+      - experimental/v041-spark-structure-density-audit-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-and-spark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax preflight and privacy-safe public Spark metadata probe
+        run: |
+          python -m py_compile tools/audit_v041_spark_public_metadata.py tools/audit_v041_native_trek_create.py
+          python -u tools/audit_v041_spark_public_metadata.py
+          python -u tools/probe_v041_spark_full_schema.py
+      - name: Audit exact pinned Trek + Create binaries and structure sets
+        run: |
+          python -u tools/audit_v041_native_trek_create.py
+          python -u tools/audit_v041_trek_placement_detail.py
+      - name: Archive only native structure metadata and sanitized Spark metrics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-TREK-CREATE-SPARK-SOURCE-AUDIT
+          path: |
+            build/native_trek_create_density_catalogue.json
+            build/trek_native_placement_detail.json
+            build/spark_public_metadata_sanitized.json
+          if-no-files-found: warn

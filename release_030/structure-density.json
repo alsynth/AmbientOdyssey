@@ -316,11 +316,11 @@
             "separation": 12
           },
           "after": {
-            "spacing": 28,
-            "separation": 18
+            "spacing": 37,
+            "separation": 24
           },
-          "attempt_density_ratio": 0.73,
-          "note": "Reduce structure-grid opportunities after observed overlap; not a true cross-mod exclusion zone. Test geometry on new seeds."
+          "attempt_density_ratio": 0.421,
+          "note": "Reduce non-farming Create landmarks in dedicated rarity A/B; test in fresh seed."
         },
         "rustic_well": {
           "before": {
@@ -328,11 +328,11 @@
             "separation": 8
           },
           "after": {
-            "spacing": 20,
-            "separation": 12
+            "spacing": 27,
+            "separation": 17
           },
-          "attempt_density_ratio": 0.64,
-          "note": "Reduce structure-grid opportunities after observed overlap; not a true cross-mod exclusion zone. Test geometry on new seeds."
+          "attempt_density_ratio": 0.351,
+          "note": "Reduce non-farming Create landmarks in dedicated rarity A/B; test in fresh seed."
         },
         "rustic_windmill": {
           "before": {
