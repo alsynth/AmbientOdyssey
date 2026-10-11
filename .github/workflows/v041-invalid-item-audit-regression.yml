@@ -1,0 +1,23 @@
+name: AO v0.4.1 Invalid Item Attribution Regression
+on:
+  push:
+    branches:
+      - experimental/v041-invalid-item-source-coverage-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-audit-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install nbtlib==2.0.4
+      - name: Compile scanner and run synthetic nested-inventory tests (no network)
+        run: |
+          python -m py_compile audit_invalid_structure_items_089.py
+          python -m unittest discover -s tests -p 'test_v041_invalid_item_source_coverage.py' -v
+          git diff --check
