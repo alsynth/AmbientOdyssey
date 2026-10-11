@@ -54,8 +54,8 @@ public final class QuestlogBetterInventoryBridge {
     // Verified from Better Inventory 1.3.2 layout source:
     // backpack tabs = left+52,76,100,124,148 (height 20);
     // crafting tab = left+172, settings gear = left+198.
-    // Old Q x=222 shared the SAME top-row visual track and was reported to
-    // overlap controls. New Q sits ABOVE the settings gear, never on the tab row.
+    // User-preferred Q tab: two pixels RIGHT of Better Inventory's gear.
+    // Fall back to the previously verified above-gear slot on narrow screens.
     private static final int SETTINGS_X = 198;
     private static final int TAB_MARGIN = 2;
 
@@ -81,6 +81,11 @@ public final class QuestlogBetterInventoryBridge {
         }
         int left = inventory.getGuiLeft();
         int top = inventory.getGuiTop();
+        int rightOfSettings = left + SETTINGS_X + TAB_WIDTH + TAB_MARGIN;
+        // Align with native settings on the same row without covering it.
+        if (rightOfSettings + TAB_WIDTH <= screen.width - 2) {
+            return new Anchor(rightOfSettings, top);
+        }
         int above = top - TAB_HEIGHT - TAB_MARGIN;
         if (above >= 2) {
             return new Anchor(left + SETTINGS_X, above);
@@ -157,7 +162,7 @@ public final class QuestlogBetterInventoryBridge {
 
         event.addListener(new QuestlogTab(screen));
         lastBadgeTick = Long.MIN_VALUE;
-        LOG.debug("AO Questlog bridge 0.1.3: native-tab-safe placement at {},{} (gui left={}, top={})",
+        LOG.debug("AO Questlog bridge 0.1.4: settings-right primary, safe fallbacks at {},{} (gui left={}, top={})",
                 buttonX(screen), buttonY(screen),
                 ((AbstractContainerScreen<?>) screen).getGuiLeft(),
                 ((AbstractContainerScreen<?>) screen).getGuiTop());
