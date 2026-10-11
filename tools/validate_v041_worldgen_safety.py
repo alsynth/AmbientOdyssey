@@ -13,6 +13,6 @@ m=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafe
 for key in ("HominidClientEvents","FinalizeSpawnEvent","getClass() != Zombie.class","!level.getServer().isSameThread()","ci.cancel()"):
     assert key in m,key
 t=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/TansWorldgenMarkerSchedulingMixin.java").read_text()
-for token in ("GameUtils$Mob","summonWorldGen(","server.tell(","ci.cancel()"):
+for token in ("GameUtils$Mob","summonWorldGen(","server.tell(","@Redirect(","MinecraftServer;execute("):
     assert token in t,token
 print("PASS: native Luki mansion pool, Hominid offthread guard, Tan markers deferred to server")
