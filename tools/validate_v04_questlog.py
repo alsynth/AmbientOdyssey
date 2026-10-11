@@ -30,7 +30,7 @@ assert pins[618790]==7033510 and pins[890127]==8654089 and pins[889079]==8726480
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
 cfg=tomllib.loads((ROOT/'release_030/overrides/config/questlog-client.toml').read_text())
 button=cfg['button']
-assert button['enabled'] and button['showBadge'] and not button['relativeToInventory']
+assert not button['enabled'] and button['showBadge'] and not button['relativeToInventory']
 assert (button['x'],button['y'])==(38,38)
 assert all(isinstance(button[k],bool) for k in ('enabled','showBadge','relativeToInventory','bobbingBadge'))
 quest_folder=ROOT/'release_030/overrides/config/questlog/quests'
