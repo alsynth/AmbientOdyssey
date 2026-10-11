@@ -71,7 +71,6 @@ def validate():
             task_ids.add(tid)
         assert "tasks: [ ]" not in text, "Empty tasks would auto-complete manual pages"
 
-        assert len(re.findall(r'(?m)^\s*tasks: \[ \]\s*$',text))==ch["pages"]
         assert len(re.findall(r'(?m)^\s*rewards: \[ \]\s*$',text))==ch["pages"]
         chapter_ids=PAGE_ID.findall(text)
         assert len(chapter_ids)==ch["pages"]+1,(file,chapter_ids)
