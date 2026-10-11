@@ -1,0 +1,60 @@
+name: AO v0.4.6 Wet Sand and Apotheotic Additions Port Preflight
+on:
+  push:
+    branches:
+      - experimental/v046-wetsand-apotheotic-ports-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ao-v046-ports-${{ github.ref_name }}
+  cancel-in-progress: true
+jobs:
+  wet-sand-neoforge:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - name: Compile isolated native Wet Sand registration prototype
+        run: |
+          gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace build
+          test -f ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
+          unzip -p ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar META-INF/neoforge.mods.toml | grep -F 'modId="ao_wet_sand"'
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v046-WETSAND-SOURCE-PROTOTYPE-NOT-FOR-PACK
+          if-no-files-found: error
+          path: ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
+  apotheotic-schema-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Fetch exact upstream source, no legacy JAR injection
+        run: |
+          git clone --depth 1 --branch main https://github.com/Bryce792/ApotheoticAdditions.git build/upstream-apotheotic
+          git -C build/upstream-apotheotic rev-parse HEAD > build/apotheotic-upstream-sha.txt
+      - name: Run fail-closed affix schema migration audit
+        run: |
+          python -m py_compile ports/apotheotic-additions/port_schema_probe.py
+          python ports/apotheotic-additions/port_schema_probe.py build/upstream-apotheotic/data/apotheotic_additions build/apotheotic-migration-report.json
+          python - <<'PY'
+          import json
+          d=json.load(open('build/apotheotic-migration-report.json'))
+          assert not d["port_complete"] and not d["ready_to_install"]
+          assert sum(d['type_counts'].values())>100
+          print('PASS: detailed schema report; no legacy data in current pack')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v046-APOTHEOTIC-DATA-MIGRATION-AUDIT
+          if-no-files-found: error
+          path: |
+            build/apotheotic-migration-report.json
+            build/apotheotic-upstream-sha.txt
