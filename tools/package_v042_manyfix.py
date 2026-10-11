@@ -25,9 +25,9 @@ NAME="Ambient Odyssey v0.4.2 - Consolidated Engineering and Dungeon Balance TEST
 VERSION="0.4.2-experimental-manyfix"
 CONTROL_VERSION="0.4.2-experimental-manyfix-core"
 ADDONS={
-"overrides/mods/ao-questlog-betterinventory-0.1.2.jar",
+"overrides/mods/ao-questlog-betterinventory-0.1.3.jar",
 "overrides/mods/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar",
-"overrides/mods/ao-worldgen-safety-0.1.1-experimental.jar",
+"overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar",
 }
 RETAIN_PINS={
 1581408:9060294, # Streams Reflowing
