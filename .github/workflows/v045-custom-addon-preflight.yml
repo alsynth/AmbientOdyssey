@@ -1,0 +1,36 @@
+name: AO v0.4.5 Armor Trim Addon Compile Check
+on:
+  push:
+    branches:
+      - experimental/v045-custom-integrations-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - name: Compile armor trim addon
+        run: |
+          gradle -p addons/ao-affix-trims --no-daemon --stacktrace build
+          test -f addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar
+          unzip -p addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar data/neoforge/loot_modifiers/global_loot_modifiers.json
+      - name: Validate TRMT player erosion changes
+        run: |
+          python - <<'PY'
+          import json
+          with open('release_030/overrides/config/trmt.json') as f: c=json.load(f)
+          assert c['erosionMultipliers']['player']==1.0
+          assert c['deErosion']['grassEnabled'] and c['deErosion']['dirtEnabled']
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v045-AFFIX-TRIMS-ADDON-EXPERIMENTAL
+          if-no-files-found: error
+          path: addons/ao-affix-trims/build/libs/ao-affix-trims-0.1.0-experimental.jar
