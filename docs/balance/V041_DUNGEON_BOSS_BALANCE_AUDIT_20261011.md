@@ -141,3 +141,19 @@ This is **candidate discovery**, not proof of mobs or trials. Examples to inspec
 
 Some registry entries are **historical or removed**; the CSV flags Repurposed Structures explicitly. Names alone cannot prove a trial chamber, specific mob armor, drop rates or support for a runtime datapack override.
 
+
+## 10. Reproducible room-template scanner for the installed game
+
+[Read-only Java 1.21.1 structure NBT scanner](../../tools/audit_encounter_nbt_041.py) scans the real `mods/*.jar` binaries of a local imported CurseForge AO instance rather than assuming the old Test5 index reflects the current active content.
+
+It enumerates **mob spawners, trial spawners, vaults, spawning entity IDs and equipment indicators** per embedded `data/<namespace>/structure/*.nbt` template, and writes CSV plus an errors JSON. It does **not** patch mods or affect a save. It requires `nbtlib==2.0.4`, and has not yet been executed against the user's actual current mod JAR folder.
+
+Example when a mods folder is accessible:
+
+```powershell
+py -m pip install nbtlib==2.0.4
+py tools/audit_encounter_nbt_041.py --mods-dir "C:\\Path\\To\\AmbientOdyssey\\mods" --out build/ao-encounter-template-nbt.csv
+```
+
+Static limitations: code-generated mobs/rooms, nonstandard binary templates, data-driven `normal_config` and `ominous_config` registry targets, multipart pool selection, equipment applied after spawning, vault logic and runtime datapack/resource override precedence are **not comprehensively represented**. Use its CSV as the next inspection queue, not conclusive difficulty evidence.
+
