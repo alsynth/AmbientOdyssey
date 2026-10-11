@@ -33,8 +33,8 @@ QUESTLOG_JAR="ao-questlog-betterinventory-0.1.3.jar"
 STREAMS_JAR="ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar"
 SAFETY_JAR="ao-worldgen-safety-0.1.3-experimental.jar"
 JARS={"overrides/mods/"+QUESTLOG_JAR,"overrides/mods/"+STREAMS_JAR,"overrides/mods/"+SAFETY_JAR}
-NAME="Ambient Odyssey v0.4.2 - Recipe Spawner UI Core"
-VERSION="0.4.2-experimental-recipe-spawner-ui-core"
+NAME="Ambient Odyssey v0.4.2 - Spellstone Dungeon Difficulty Core"
+VERSION="0.4.2-experimental-spellstone-difficulty-core"
 
 def jar_check(name, blob):
     with ZipFile(BytesIO(blob)) as z:
