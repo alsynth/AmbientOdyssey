@@ -1,6 +1,7 @@
 package dev.ambientodyssey.ports.wetsand;
 
 import net.minecraft.core.BlockPos;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.FluidTags;
@@ -74,6 +75,8 @@ public final class WetSandPort {
 
     /** Moist sand inherits vanilla gravity; wet and soaked stages are stable. */
     public static final class MoistureFallingBlock extends FallingBlock {
+        public static final MapCodec<MoistureFallingBlock> CODEC = simpleCodec(properties -> new MoistureFallingBlock(false, 1, properties));
+        @Override public MapCodec<? extends FallingBlock> codec() { return CODEC; }
         private final boolean red;
         private final int stage;
         public MoistureFallingBlock(boolean red, int stage, Properties properties) {
