@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_streams_minecells"
+version="0.1.0-experimental"
+displayName="Ambient Odyssey - Mine Cells / Streams Compatibility"
+description='''Dimension-specific worldgen bypass for Mine Cells when Streams Reflowing 2.14.4 is installed. Experimental.'''
+[[mixins]]
+config="ao_streams_minecells.mixins.json"
+[[dependencies.ao_streams_minecells]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_streams_minecells]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_streams_minecells]]
+modId="streamsreflowing"
+type="required"
+versionRange="[2.14.4,2.14.5)"
+ordering="AFTER"
+side="BOTH"
