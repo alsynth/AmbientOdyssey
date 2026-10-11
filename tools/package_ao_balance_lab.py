@@ -4,10 +4,12 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
+import sys
 from pathlib import Path, PurePosixPath
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 PILOT_CONFIG = ROOT / "experiments/ao-balance-lab/config/dungeon_difficulty_v2.json"
 TARGET_CONFIG = "overrides/config/dungeon_difficulty_v2.json"
 DD_PROJECT = 645559
