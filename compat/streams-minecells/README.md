@@ -2,7 +2,7 @@
 
 **Target** Minecraft 1.21.1 · NeoForge 21.1.252 · Mine Cells 2.0.3 via Sinytra Connector · Streams Reflowing **2.14.4**.
 
-Status: experimental source, **not gameplay-tested**. Keep the user-verified 328-mod Mine Cells control build as rollback.
+Status (11 October 2026): **initial user runtime feedback positive** — user reports “it seems to have worked” with the code-level addon. Exact test scope (full Prison progression, Promenade exit, repeated fresh dungeon, Overworld streams, dedicated server) was not supplied. Record this as a promising smoke-test result, **not full acceptance**. Keep the user-verified 328-mod Mine Cells control build as rollback.
 
 ## What the code does
 - Prevents Streams' `ChunkStepDefer.defer` from intercepting vanilla chunk generation in **any `minecells:*` dimension**. Outside Mine Cells the original deferral is unchanged.
@@ -20,4 +20,4 @@ These hooks were verified by disassembling the exact pinned Streams **2.14.4 Neo
 5. Check Overworld streams and near-stream structure generation still work. Check dedicated-server generation separately before promotion.
 6. If failure persists: check logs for `MixinApplyError`, `InjectionError`, `ChunkStepDefer`, structure start vetoes, and region stalls. Revert ONLY the addon and Streams to the known-good 328-mod control.
 
-**Explicit limitation**: no server/client runtime verdict is claimed. This targeted patch addresses two concrete intrusive hooks, but other Streams hooks may still precompute Mine Cells watersheds; only live generation testing can prove resolution.
+**Explicit limitation**: initial player feedback is positive but comprehensive client/server runtime validation is still pending. These targeted hooks appear promising, but we have not isolated which of the two bypasses is essential, and other Streams hooks may still precompute Mine Cells watersheds. Do not claim full compatibility or promote the addon to the main release before the above checks.
