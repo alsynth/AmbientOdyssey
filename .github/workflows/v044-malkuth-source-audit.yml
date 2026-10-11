@@ -1,0 +1,37 @@
+name: AO v0.4.4 Malkuth Binary Source Diagnosis
+on:
+  push:
+    branches:
+      - experimental/v044-preperf-quest-worldgen-repairs-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Inspect upstream FDBosses Malkuth source template and jigsaw markers
+        run: |
+          python -m pip install nbtlib==2.0.4
+          python - <<'PY'
+          import urllib.request, tempfile, nbtlib
+          base='https://raw.githubusercontent.com/FINDERFEED/FDBosses/master/src/main/resources/data/fdbosses/structure/malkuth_arena/'
+          for part in ['malkuth_arena_part_1.nbt','malkuth_arena_part_2.nbt']:
+              file=tempfile.NamedTemporaryFile(suffix='.nbt',delete=False)
+              file.write(urllib.request.urlopen(base+part,timeout=20).read())
+              file.close()
+              n=nbtlib.load(file.name)
+              print('FILE',part,'size',n.root.get('size'),'palette',len(n.root['palette']),'blocks',len(n.root['blocks']))
+              pal=n.root['palette']
+              for i,entry in enumerate(pal):
+                  if 'jigsaw' in str(entry.get('Name')):print('JIGSAW PALETTE',i,entry)
+              for block in n.root['blocks']:
+                  if 'nbt' in block:
+                      be=block['nbt']; name=str(be.get('name',''))
+                      if any(x in name.lower() for x in ['malkuth','part_1','jigsaw']):
+                          print('BLOCK NAME',list(block['pos']),name,'target',str(be.get('target','')),'pool',str(be.get('pool','')))
+          PY
