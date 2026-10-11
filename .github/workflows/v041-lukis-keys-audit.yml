@@ -1,0 +1,21 @@
+name: AO Luki Woodland Mansions Key Asset Audit
+on:
+  push:
+    branches:
+      - experimental/v0.4.1-lukis-mansion-keys-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-upstream-mod-resources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python tools/audit_lukis_woodland_keys.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-Lukis-Upstream-Asset-Inventory
+          path: build/lukis-key-asset-audit.json
