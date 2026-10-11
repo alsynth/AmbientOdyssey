@@ -56,7 +56,7 @@ def jar_check(name, blob):
         else:
             assert 'modId="aoquestlogbridge"' in toml
             assert "QuestlogBetterInventoryBridge$QuestlogTab.class" in " ".join(paths)
-            assert "0.1.2" in toml
+            assert "0.1.3" in toml
 
 def validate(path):
     with ZipFile(path) as z:
