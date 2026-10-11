@@ -5,7 +5,7 @@ on:
       - experimental/v042-spellstone-dungeon-difficulty-combined-20261011
   workflow_dispatch:
 concurrency:
-  group: ao-v042-spellstone-dd-release-${{ github.ref }}
+  group: ao-v042-spellstone-dd-final-exactsha-${{ github.sha }}
   cancel-in-progress: true
 permissions:
   contents: read
