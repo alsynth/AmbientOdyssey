@@ -47,7 +47,8 @@ def verify(src,dst,addon):
         assert dst.read("overrides/"+p)==(SOURCE/p).read_bytes(),p
     assert dst.read(JARPATH)==addon.read_bytes()
     with ZipFile(addon) as modjar:
-        check(modjar)
+        assert modjar.testzip() is None, "Invalid compiled addon JAR CRC"
+        assert len(modjar.namelist()) == len(set(modjar.namelist()))
         assert "ao_affix_trims" in modjar.read("META-INF/neoforge.mods.toml").decode()
         assert "ao_affix_trims:random_affix_armor_trim" in modjar.read("data/neoforge/loot_modifiers/global_loot_modifiers.json").decode()
     cfg=json.loads(dst.read("overrides/config/trmt.json"))
