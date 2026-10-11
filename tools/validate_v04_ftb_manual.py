@@ -51,6 +51,7 @@ def validate():
     assert len(keys)==len(set(keys)), "Duplicate localization keys (risk existing WDA overwritten)"
     known_ids=set(PAGE_ID.findall(existing))
     created_ids=set()
+    task_ids=set()
     for ch in idx["chapters"]:
         file=QUESTS/"chapters"/(ch["slug"]+".snbt")
         text=file.read_text(encoding="utf-8")
@@ -62,8 +63,14 @@ def validate():
         assert 'group: ""' in text
         assert "quests: [" in text
         assert not re.search(r'(?m)^\s*(?:dependencies|prerequisites):',text)
-        assert 'type: "checkmark"' not in text and 'rewards: [ ]' in text
-        assert len(re.findall(r'(?m)^\s*tasks: \[ \]\s*$',text))==ch["pages"]
+        assert 'rewards: [ ]' in text
+        manual_tasks=re.findall(r'(?m)^\s*tasks: \[\{ id: "([A-F0-9]{16})", type: "checkmark" \}\]\s*$',text)
+        assert len(manual_tasks)==ch["pages"],(ch["slug"],len(manual_tasks),ch["pages"])
+        for tid in manual_tasks:
+            assert HEX.fullmatch(tid) and tid not in known_ids and tid not in created_ids and tid not in task_ids,tid
+            task_ids.add(tid)
+        assert "tasks: [ ]" not in text, "Empty tasks would auto-complete manual pages"
+
         assert len(re.findall(r'(?m)^\s*rewards: \[ \]\s*$',text))==ch["pages"]
         chapter_ids=PAGE_ID.findall(text)
         assert len(chapter_ids)==ch["pages"]+1,(file,chapter_ids)
@@ -78,11 +85,12 @@ def validate():
             for suffix in ("title","quest_subtitle","quest_desc"):
                 assert f"quest.{qid}.{suffix}" in keys,(qid,suffix)
     assert len(created_ids)==35
+    assert len(task_ids)==32
     assert sum(ch["pages"] for ch in idx["chapters"])==32
     # All entries are reference content, not reward grants or progression gates.
     print(json.dumps({"status":"PASS_STATIC_ONLY","manual_chapters":3,
         "manual_reference_pages":32,"new_ids":len(created_ids),
-        "wda_chapter_preserved":True,"taskless":True,"checkmark_tasks":0,"rewards":0,
+        "wda_chapter_preserved":True,"taskless":False,"checkmark_tasks":32,"rewards":0,
         "questlog_q1_unchanged":True,"ftb_in_game_tested":False},indent=2))
     return True
 
