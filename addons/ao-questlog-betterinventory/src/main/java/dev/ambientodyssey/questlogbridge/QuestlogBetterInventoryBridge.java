@@ -52,7 +52,10 @@ public final class QuestlogBetterInventoryBridge {
     private static final int ATLAS_WIDTH = 512;
     private static final int ATLAS_HEIGHT = 256;
     // Better Inventory's gear starts at leftPos+198 and spans 20px.
-    // 20px settings gear occupies X=198..217; Q sits on its right,\n    // outside the backpack/crafting tab range. Recalculate each frame\n    // because BetterInventoryScreen can recenter its GUI after init.\n    private static final int QUEST_TAB_X = 222;
+    // 20px settings gear occupies X=198..217; Q sits on its right,
+    // outside the backpack/crafting tab range. Recalculate each frame
+    // because BetterInventoryScreen can recenter its GUI after init.
+    private static final int QUEST_TAB_X = 222;
 
     private static long lastBadgeTick = Long.MIN_VALUE;
     private static boolean cachedBadge;
