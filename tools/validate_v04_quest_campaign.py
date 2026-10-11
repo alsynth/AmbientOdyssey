@@ -14,7 +14,7 @@ SOURCE=ROOT/"release_030/overrides/config/questlog"
 INDEX=ROOT/"docs/questing/QUESTLOG_Q1_INSTALLED_INDEX.json"
 RES=re.compile(r"^(?:minecraft|questlog):[a-z0-9_./-]+$")
 OBJECTIVES={"read","item_obtain","item_equip","stat","or","visit_biome","visit_structure",
-            "visit_dimension","enchant","quest_complete"}
+            "visit_dimension","enchant","quest_complete","entity_kill"}
 REWARDS={"item","experience"}
 ICONIDS={"minecraft:book","minecraft:compass","minecraft:iron_sword","minecraft:spyglass",
          "minecraft:brush","minecraft:enchanted_book","minecraft:nether_star",
@@ -50,14 +50,14 @@ def validate_objective(o, known, deps):
         assert o.get("stat") in {"minecraft:walk_one_cm","minecraft:fish_caught"}
     else:
         key={"item_obtain":"item","item_equip":"item","visit_biome":"biome",
-             "visit_structure":"structure","visit_dimension":"dimension"}.get(short)
+             "visit_structure":"structure","visit_dimension":"dimension","entity_kill":"entity"}.get(short)
         assert key
         val=o.get(key)
         assert isinstance(val,str) and RES.fullmatch(val),o
         if short=="item_equip":
             assert o.get("slot") in {"chest","feet","head","legs","mainhand","offhand"}
         # Q1 proves only vanilla IDs; no guessed/unconfirmed modded registries.
-        assert val.startswith("minecraft:"), val
+        assert val.startswith("minecraft:") or (short=="visit_structure" and val=="minecells:overworld_portal"), val
     assert 1<=o.get("required_amount",1)<=12000
 
 def validate():
@@ -66,7 +66,7 @@ def validate():
     chapterDir=SOURCE/"chapters"
     entries=index["entries"]
     known={e["id"] for e in entries}
-    assert len(entries)==len(known)==index["quest_count"]==50
+    assert len(entries)==len(known)==index["quest_count"]==52
     assert index["chapter_count"]==13
     assert all(re.fullmatch(r"[a-z0-9_]+",n) for n in known)
     chapterFiles=sorted(chapterDir.glob("*.json"))
