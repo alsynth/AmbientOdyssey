@@ -1,0 +1,47 @@
+name: AO Balance Lab quick packaging from verified 329-control artifact
+on:
+  push:
+    branches:
+      - experimental/v041-balance-lab-dungeon-difficulty-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Validate authored Dungeon Difficulty v3.9.2 settings
+        run: |
+          python -m compileall -q tools/package_ao_balance_lab.py tools/validate_ao_balance_lab.py
+          python tools/validate_ao_balance_lab.py
+      - name: Get prior CI validated full 329-reference combined test archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/base
+          gh run download 38099205277 --repo alsynth/AmbientOdyssey \
+            --name AO-v041-Streams-MineCells-Styled-Questlog-CurseForge-Import \
+            --dir build/base
+          test -f build/base/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+      - name: Assemble and diff-verify isolated 330-reference Balance Lab
+        run: |
+          python tools/package_v041_streams_questlog_combo.py --verify \
+            --output build/base/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip
+          python tools/package_ao_balance_lab.py \
+            --source build/base/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip \
+            --output build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          python tools/package_ao_balance_lab.py --verify \
+            --source build/base/Ambient-Odyssey-v0.4.1-STREAMS-MINECELLS-QUESTLOG-COMBINED-TEST.zip \
+            --output build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          sha256sum build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Balance-Lab-DD392-330-reference-Quick-Import
+          path: build/Ambient-Odyssey-v041-BALANCE-LAB-DD392-TEST.zip
+          if-no-files-found: error
