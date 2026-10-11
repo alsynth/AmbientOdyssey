@@ -9,13 +9,14 @@ data=json.loads((BASE/"data/mansions/worldgen/template_pool/mansion/bottom_back_
 assert data["name"]=="mansions:mansion/bottom_back_left"
 assert data["fallback"]=="minecraft:empty"
 assert data["elements"]==[{"weight":1,"element":{"location":"mansions:mansion/bottom_back_left","processors":"mansions:mansion_texture","projection":"rigid","element_type":"minecraft:single_pool_element"}}]
-m=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/HominidFinalizeSpawnMixin.java").read_text()
-for key in ("HominidClientEvents","FinalizeSpawnEvent","getClass() != Zombie.class","!level.getServer().isSameThread()","ci.cancel()"):
-    assert key in m,key
+assert not (ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/HominidFinalizeSpawnMixin.java").exists(), "Hominid Mixin must be removed from source"
+modmeta=(ROOT/"addons/ao-worldgen-safety/src/main/resources/META-INF/neoforge.mods.toml").read_text()
+assert 'modId="hominid"' not in modmeta
+assert 'version="0.1.4-experimental"' in modmeta
 t=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/TansWorldgenMarkerSchedulingMixin.java").read_text()
 for token in ("GameUtils$Mob","summonWorldGen(","server.tell(","@Redirect(","MinecraftServer;execute("):
     assert token in t,token
-print("PASS: native Luki mansion pool, Hominid offthread guard, Tan markers deferred to server")
+print("PASS: native Luki mansion pool, Hominid fully removed, Tan markers deferred to server")
 
 
 spawner=(ROOT/"addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/DungeonCrawlSpawnerPendingNbtMixin.java").read_text()
@@ -27,5 +28,5 @@ for key in ("xiroc.dungeoncrawl.dungeon.monster.RandomMonster","VILLAGER_OFFERS"
     assert key in air,key
 assert "setBlockEntityNbt" not in air
 mix=json.loads((ROOT/"addons/ao-worldgen-safety/src/main/resources/ao_worldgen_safety.mixins.json").read_text())
-assert set(mix['mixins'])=={"HominidFinalizeSpawnMixin","TansWorldgenMarkerSchedulingMixin","DungeonCrawlSpawnerPendingNbtMixin","DungeonCrawlOptionalTradeAirMixin"}
+assert set(mix['mixins'])=={"TansWorldgenMarkerSchedulingMixin","DungeonCrawlSpawnerPendingNbtMixin","DungeonCrawlOptionalTradeAirMixin"}
 print("PASS: two exact-source Dungeon Crawl scoped mixins use pending NBT and only remove zero-count optional air payments")
