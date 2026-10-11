@@ -5,7 +5,7 @@
 # independently of inventory skins. Review this in actual Minecraft at GUI scale 3.
 # If it covers another overlay, modify [button] and retest; do not hide the journal.
 [button]
-enabled = true
+enabled = false
 showBadge = true
 relativeToInventory = false
 x = 38
