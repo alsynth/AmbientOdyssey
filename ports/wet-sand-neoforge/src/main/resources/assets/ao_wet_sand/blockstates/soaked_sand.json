@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ao_wet_sand:block/soaked_sand"
+    }
+  }
+}
