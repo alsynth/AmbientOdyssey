@@ -1,0 +1,39 @@
+name: AO v0.4.1 Parallel Performance Test Kit
+on:
+  push:
+    branches:
+      - performance/v041-parallel-benchmark-prep-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  evidence-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile privacy-safe helpers and run synthetic tests
+        run: |
+          python -m py_compile tools/perf_v041_log_report.py tools/perf_v041_trials.py tools/package_perf_v041_kit.py
+          python -m unittest discover -s tests -p 'test_perf_v041_*.py' -v
+          python -m unittest discover -s tests -p 'test_perf_preflight_v04.py' -v
+          git diff --check
+      - name: Validate unmeasured CSV stays NOT TESTED
+        run: |
+          python tools/perf_v041_trials.py docs/performance/V041_PARALLEL_BENCHMARK_TEMPLATE.csv --out build/v041-template-dryrun.json
+          python -c "import json; r=json.load(open('build/v041-template-dryrun.json')); assert r['measured_rows']==0 and r['unmeasured_template_rows']==18 and not r['invalid_rows']"
+      - name: Create standalone kit and revalidate source-byte identities
+        run: |
+          python tools/package_perf_v041_kit.py
+          python tools/package_perf_v041_kit.py --verify
+          sha256sum build/AO-v041-PERF-TEST-KIT.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Performance-Benchmark-Kit
+          path: |
+            build/AO-v041-PERF-TEST-KIT.zip
+            build/v041-template-dryrun.json
+          if-no-files-found: error
