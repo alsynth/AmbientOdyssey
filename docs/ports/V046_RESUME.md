@@ -149,6 +149,31 @@ Development JAR SHA-256:
 Packaged resource/license validation PASS. The client and persistence test
 hooks are dormant in an ordinary installation.
 
+## 12 October production-launch integration checkpoint
+
+**Production client startup/model check PASS** with all 327 top-level JARs
+copied from the installed v0.4.5 preview, plus the Wet Sand development JAR
+`8c0e0a6b86b7f9999236cfc9b08483bfada9e2328d1f696c96685bdcea87a722`.
+Repository `release_030/overrides/config` was copied into that disposable
+instance. Original profile, configs and saves were not edited. This was a
+menu/model check, not a world join or multiplayer gameplay test. Evidence:
+`docs/testing/v046-evidence/wet-sand-production-full-roster-client.log`.
+
+The ModDevGradle full-roster launch failed before the test hook: Connector
+could not find the clean Minecraft artifact, and a Formations **development**
+mixin referenced an absent helper. Using the installed **production** NeoForge
+21.1.252 launcher metadata/libraries resolved those failures. Do not treat
+the failed development launch as a proven regression of the working profile.
+
+`tools/run_v046_production_client_smoke.py` reproduces this Windows production
+launch against a caller-prepared snapshot under the Wet Sand build directory.
+It uses an offline test identity, does not read account tokens, validates the
+production loader metadata and library paths, requires an explicit PASS log
+marker, and controls/terminates only its own child process on timeout. Supply
+`--install`, `--game-dir` and `--mod-jar`; optional `--java`, `--heap`, `--timeout`.
+The client hook now has a timeout and a configurable heap for larger snapshots.
+This does not export a CurseForge ZIP or install either port in the real pack.
+
 ## Remaining Wet Sand integration gates
 
 - Suspicious-sand: in-world brush rendering and actual generated structure
@@ -162,8 +187,9 @@ hooks are dormant in an ordinary installation.
   and codec round trips. Full-inventory drops and red falling physics pass.
 - Verify upstream textures, lowered soaked collision and brush animations
   on the actual client; packaged resource validation does not render them.
-- Full pack client, FTF shoreline generation and two-player dedicated server
-  persistence/performance tests remain required.
+- Full-pack **world join/gameplay**, FTF shoreline generation and two-player
+  dedicated-server persistence/performance tests remain required. Full-roster
+  native client startup/model resolution now passes under the production launcher.
 
 ## Apotheotic continuation after Wet Sand
 

@@ -18,6 +18,10 @@ neoForge {
             client()
             gameDirectory = project.file('build/client-smoke-runtime')
             systemProperty 'ao_wet_sand.clientSmoke', 'true'
+            systemProperty 'ao_wet_sand.clientSmokeTimeoutSeconds', project.findProperty('aoClientSmokeTimeoutSeconds') ?: '120'
+            if (project.hasProperty('aoClientSmokeHeap')) {
+                jvmArgument "-Xmx${project.property('aoClientSmokeHeap')}"
+            }
             programArguments.addAll('--width', '480', '--height', '270')
         }
         gameTestServer {

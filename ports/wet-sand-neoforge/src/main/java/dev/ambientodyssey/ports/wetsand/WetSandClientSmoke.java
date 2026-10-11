@@ -18,11 +18,18 @@ public final class WetSandClientSmoke {
     private static final org.slf4j.Logger LOGGER = com.mojang.logging.LogUtils.getLogger();
     private static int readyTicks;
     private static boolean finished;
+    private static final long START = System.nanoTime();
 
     @SubscribeEvent
     public static void onTick(ClientTickEvent.Post event) {
         if (!Boolean.getBoolean("ao_wet_sand.clientSmoke") || finished) return;
         Minecraft minecraft = Minecraft.getInstance();
+        if (System.nanoTime() - START > Integer.getInteger("ao_wet_sand.clientSmokeTimeoutSeconds", 120) * 1_000_000_000L) {
+            finished = true;
+            LOGGER.error("WETSAND_CLIENT_SMOKE_FAIL: title screen timed out; screen={}", minecraft.screen == null ? "none" : minecraft.screen.getClass().getName());
+            minecraft.stop();
+            return;
+        }
         if (minecraft.screen instanceof AccessibilityOnboardingScreen && minecraft.getOverlay() == null) {
             minecraft.setScreen(new TitleScreen());
             return;
