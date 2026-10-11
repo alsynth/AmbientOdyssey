@@ -1,3 +1,9 @@
+# Current development (11 October 2026)
+
+**This older 10 October snapshot is superseded for active engineering.** Read [v0.4.1/v0.4.2 live source and regression ledger](V042_ACTIVE_DEV_20261011.md). The latest private combined experiment is **329 CurseForge references** (not the 331-reference historical Q1 candidate below), with approved TREK/Create rarity and a separate FTB Manual task completion hotfix. Hominid's newer 0.1.1 source remains a **runtime-untested** experimental prototype, and Curios amulet-slot compatibility is a separate test candidate. Do not promote any of these to stable based on source/ZIP CI alone.
+
+---
+
 # Ambient Odyssey — Current state
 
 **As of 10 October 2026.** This page is the current handoff, not a chronological log. Previous 64 KB handoff preserved in [full historical status](../archive/history/CURRENT_STATE_full_2026-10-10.md).

@@ -1,0 +1,28 @@
+name: AO 0.4.1 Historical Fix Reconciliation
+on:
+  push:
+    branches:
+      - research/v042-history-regression-reconciliation-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  history-source-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Run preserved decisions and conservative Curios slot source checks
+        run: |
+          python -m py_compile tools/audit_v042_historical_fixes.py compile_compatibility_031.py
+          python compile_compatibility_031.py
+          python -m unittest discover -s tests -p 'test_v042_history_gates.py' -v
+          python tools/audit_v042_historical_fixes.py --output build/v042-history-gates.json
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v042-Old-History-Source-Reconciliation
+          path: build/v042-history-gates.json
+          if-no-files-found: error
