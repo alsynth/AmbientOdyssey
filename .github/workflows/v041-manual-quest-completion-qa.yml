@@ -1,0 +1,39 @@
+name: AO v0.4.1 Manual Quest Completion Regression
+on:
+  push:
+    branches:
+      - experimental/v041-manual-completion-quest-ui-followup-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  manual-acknowledgment-static:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify no manual auto-complete and preserve WDA content
+        run: |
+          python tools/validate_v04_ftb_manual.py
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          root = Path('release_030/overrides/config/ftbquests/quests/chapters')
+          pages = [('field_manual.snbt', 15), ('tips_and_tricks.snbt', 9), ('keybind_cheatsheet.snbt', 8)]
+          taskids = []
+          for fn, count in pages:
+              text = (root / fn).read_text()
+              matches = re.findall(r'tasks: \[\{ id: "([0-9A-F]{16})", type: "checkmark" \}\]', text)
+              assert len(matches) == count, (fn, len(matches), count)
+              assert "tasks: [ ]" not in text
+              assert text.count("rewards: [ ]") == count
+              taskids.extend(matches)
+          assert len(set(taskids)) == 32
+          wda = (root / 'when_dungeons_arise.snbt').read_text()
+          assert 'dungeons_arise:wda_root' in wda
+          print('PASS 32 unique manual click-to-acknowledge tasks, zero empty-task manual entries; WDA unaffected')
+          PY
+          git diff --check
