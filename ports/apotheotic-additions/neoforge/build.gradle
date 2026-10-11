@@ -27,3 +27,16 @@ neoForge {
 }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
 tasks.named('jar') { from('LICENSE.AFL-3.0'); from('NOTICE.md') }
+
+// A loader crash can exit successfully before any GameTests run. Require actual evidence.
+tasks.named('runGameTestServer') {
+    doFirst { project.ext.apotheoticTestStarted = System.currentTimeMillis() }
+    doLast {
+        def evidence = file('run/logs/latest.log')
+        if (!evidence.exists() || evidence.lastModified() < project.ext.apotheoticTestStarted ||
+                !evidence.text.contains('All 9 required tests passed :)') ||
+                evidence.text.contains('Failed to start the minecraft server')) {
+            throw new GradleException('Native Apotheotic tests did not produce nine fresh passing results; inspect run/logs/latest.log')
+        }
+    }
+}

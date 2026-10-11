@@ -1,0 +1,34 @@
+{
+  "type": "apotheosis:gem",
+  "weights": {
+    "weight": 0
+  },
+  "min_purity": "perfect",
+  "unique": true,
+  "bonuses": [
+    {
+      "type": "ao_apotheotic_port:legacy_attribute",
+      "attribute": "minecraft:generic.max_health",
+      "operation": "add_value",
+      "gem_class": {
+        "key": "anything",
+        "types": [
+          "apotheosis:boots",
+          "apotheosis:bow",
+          "apotheosis:breaker",
+          "apotheosis:chestplate",
+          "apotheosis:helmet",
+          "apotheosis:leggings",
+          "apotheosis:melee_weapon",
+          "apotheosis:shield",
+          "apotheosis:trident"
+        ]
+      },
+      "legacy_values": {
+        "artifact": 4.5,
+        "heirloom": 5,
+        "esoteric": 6
+      }
+    }
+  ]
+}

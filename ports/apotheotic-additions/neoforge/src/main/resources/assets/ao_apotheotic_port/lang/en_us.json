@@ -54,5 +54,10 @@
   "affix.ao_apotheotic_port:sword/attribute/esoteric_hp_damage": "Unidentified",
   "affix.ao_apotheotic_port:sword/attribute/esoteric_hp_damage.suffix": "of...",
   "affix.ao_apotheotic_port:sword/attribute/esoteric_knockback": "Giant's",
-  "affix.ao_apotheotic_port:sword/attribute/esoteric_knockback.suffix": "of Flying Far Away"
+  "affix.ao_apotheotic_port:sword/attribute/esoteric_knockback.suffix": "of Flying Far Away",
+  "item.apotheosis.gem.ao_apotheotic_port:crafted/cornelia": "Eye of the Captain",
+  "item.apotheosis.gem.ao_apotheotic_port:crafted/monstrosity": "Eye of the Monstrosity",
+  "item.apotheosis.gem.ao_apotheotic_port:crafted/warden": "Eye of the Warden",
+  "item.apotheosis.gem.ao_apotheotic_port:modded/armor": "Armored Jewel",
+  "item.apotheosis.gem.ao_apotheotic_port:modded/hearty": "Hearty Jewel"
 }

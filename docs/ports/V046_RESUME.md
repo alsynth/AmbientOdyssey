@@ -266,3 +266,39 @@ loot, recipes, reforging, trades and full-pack gameplay remain incomplete.
 The earlier rarity checkpoint's statement that no affixes are installed describes
 that earlier checkpoint only. No complete CurseForge test build is authorized by
 these partial subsystem results.
+
+## 12 October first gem batch checkpoint (latest)
+
+Build and all nine native tests PASS. Registry totals: 8 rarities, 124 affixes,
+25 gems (20 stock + 5 ported). The five attribute-only gems are Cornelia,
+Monstrosity, Warden, Armored and Hearty. All original supported values across
+nine tiers are compared to the complete 71-gem source manifest and survive
+native item serialization. Native socketing preserves an Esoteric component
+through socketed item serialization; a real equipped entity gains the original
++5 max health rather than Ancient's +3. The earlier real server reload test
+also reloads all 25 gems. All five gem natural weights remain zero.
+
+Apotheosis 8.9.0's gem registry rejects custom Gem subtypes. Use ordinary native
+Gem definitions, a custom LegacyAttributeBonus codec and a persistent/networked
+legacy_gem_tier component (0..8); LegacyGem is a creation helper, not a subtype.
+Do not replace the six stock Purity enum values. Exact upper tier creation must
+use LegacyGem.toLegacyStack. Native default creation has only six purity values;
+for upper-only gems without the component, bonus evaluation uses their minimum
+supported upper tier. This is not full upgrade/crafting or presentation parity.
+
+Evidence: docs/testing/v046-evidence/apotheotic-nine-rarity-affix-gem-gametests.log.
+Tested development JAR SHA-256:
+d9bc6bc9cbc9e57dec3244626cfadcefebee9fa94bb01c32dc7245f4271b9d90.
+The runGameTestServer task now explicitly requires fresh nine-test passing log
+evidence: a loader crash was observed returning Gradle success with zero tests,
+so an exit code alone is insufficient. Core affix checkpoint GitHub CI run
+38184782219 succeeded; the preceding rarity checkpoint CI also succeeded.
+
+NEXT: gem network codec round trip; exact legacy tier validation in all socket
+paths; unique checks; gem-cutting equality/upgrade and extraction behavior.
+Native UnsocketedGem equality ignores legacy tier; stock upgrades cannot reach
+Artifact/Heirloom/Esoteric. Implement/test dedicated upgrade recipes before
+real obtainability. Preserve original crafted requirements, dimensions, weights,
+71 source gems, art and names. Remaining 66 gems require other bonus systems,
+conditions or external dependencies. No full CurseForge build yet; v0.4.5 and
+main stay unchanged. Remaining Wet Sand full-pack gameplay checks still apply.
