@@ -63,7 +63,7 @@ def validate():
         assert "quests: [" in text
         assert not re.search(r'(?m)^\s*(?:dependencies|prerequisites):',text)
         assert 'type: "checkmark"' not in text and 'rewards: [ ]' in text
-        assert len(re.findall(r'(?m)^\s*tasks: \[ \]\s*
+        assert len(re.findall(r'(?m)^\s*tasks: \[ \]\s*$',text))==ch["pages"]
         assert len(re.findall(r'(?m)^\s*rewards: \[ \]\s*$',text))==ch["pages"]
         chapter_ids=PAGE_ID.findall(text)
         assert len(chapter_ids)==ch["pages"]+1,(file,chapter_ids)
@@ -83,31 +83,6 @@ def validate():
     print(json.dumps({"status":"PASS_STATIC_ONLY","manual_chapters":3,
         "manual_reference_pages":32,"new_ids":len(created_ids),
         "wda_chapter_preserved":True,"taskless":True,"checkmark_tasks":0,"rewards":0,
-        "questlog_q1_unchanged":True,"ftb_in_game_tested":False},indent=2))
-    return True
-
-if __name__=="__main__":
-    validate()
-,text))==ch["pages"]
-        assert len(re.findall(r'(?m)^\s*rewards: \[ \]\s*$',text))==ch["pages"]
-        chapter_ids=PAGE_ID.findall(text)
-        assert len(chapter_ids)==ch["pages"]+1,(file,chapter_ids)
-        assert chapter_ids[0]==ch["chapter_id"]
-        assert chapter_ids[1:]==ch["page_ids"]
-        for ident in chapter_ids:
-            assert HEX.fullmatch(ident) and ident not in known_ids and ident not in created_ids,ident
-            created_ids.add(ident)
-        assert f"chapter.{ch['chapter_id']}.title" in keys
-        assert len(ch["page_ids"])==len(ch["page_titles"])==ch["pages"]
-        for qid in ch["page_ids"]:
-            for suffix in ("title","quest_subtitle","quest_desc"):
-                assert f"quest.{qid}.{suffix}" in keys,(qid,suffix)
-    assert len(created_ids)==35
-    assert sum(ch["pages"] for ch in idx["chapters"])==32
-    # All entries are reference content, not reward grants or progression gates.
-    print(json.dumps({"status":"PASS_STATIC_ONLY","manual_chapters":3,
-        "manual_reference_pages":32,"new_ids":len(created_ids),
-        "wda_chapter_preserved":True,"taskless":False,"checkmark_tasks":32,"rewards":0,
         "questlog_q1_unchanged":True,"ftb_in_game_tested":False},indent=2))
     return True
 
