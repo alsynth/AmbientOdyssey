@@ -1,0 +1,40 @@
+name: AO v0.4.1 Targeted Engineering Checks
+on:
+  push:
+    branches:
+      - experimental/v041-engineering-repairs-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  static-engineering:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install nbtlib==2.0.4
+      - name: Test conservative source handling, experimental repairs and A/B isolation
+        run: |
+          python -m py_compile tools/repair_v041_idas_create_items.py
+          python -m py_compile tools/validate_v041_idas_create.py
+          python -m py_compile tools/make_v041_spark_profiler_ab.py
+          python -m py_compile tools/audit_v041_dungeoncrawl_spawner.py
+          python -m unittest discover -s tests -p 'test_v041_invalid_item_source_coverage.py' -v
+          python -m unittest discover -s tests -p 'test_v041_idas_create_items.py' -v
+          python -m unittest discover -s tests -p 'test_v041_spark_ab.py' -v
+          git diff --check
+      - name: Verify exact installed Dungeon Crawl spawner bytecode without modifying gameplay
+        run: python -u tools/audit_v041_dungeoncrawl_spawner.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: AO-v041-DungeonCrawl-Bytecode-Triage
+          path: build/v041-dungeoncrawl-spawner-lifecycle.json
+          if-no-files-found: warn
