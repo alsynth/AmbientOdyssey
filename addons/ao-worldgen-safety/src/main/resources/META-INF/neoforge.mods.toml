@@ -3,9 +3,9 @@ loaderVersion="[4,)"
 license="MIT"
 [[mods]]
 modId="ao_worldgen_safety"
-version="0.1.0-experimental"
+version="0.1.1-experimental"
 displayName="Ambient Odyssey - Safe Worldgen Entity Events"
-description='''Narrowly guards Hominid off-thread zombie replacement during asynchronous structure generation. Experimental.'''
+description='''Uses NeoForge proper spawn cancellation and server-tick-deferred Hominid zombie replacement; keeps async vanilla zombies. Experimental.'''
 [[mixins]]
 config="ao_worldgen_safety.mixins.json"
 [[dependencies.ao_worldgen_safety]]
