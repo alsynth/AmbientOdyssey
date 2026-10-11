@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/"release_030/overrides/config/questlog"
 INDEX=ROOT/"docs/questing/QUESTLOG_Q1_INSTALLED_INDEX.json"
-RES=re.compile(r"^(?:minecraft|questlog):[a-z0-9_./-]+$")
+RES=re.compile(r"^(?:minecraft|questlog|minecells):[a-z0-9_./-]+$")
 OBJECTIVES={"read","item_obtain","item_equip","stat","or","visit_biome","visit_structure",
             "visit_dimension","enchant","quest_complete","entity_kill"}
 REWARDS={"item","experience"}
