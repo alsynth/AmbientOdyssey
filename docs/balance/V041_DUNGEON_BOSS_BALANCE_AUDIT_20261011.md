@@ -116,3 +116,28 @@ Other previously evaluated candidates to preserve for the later expansion backlo
 - Public Dungeon Difficulty / Dynamic Difficulty / Difficulty by Distance / Difficulty+ official pages linked above.
 
 **Next implementation package** should be a reversible `AO Balance Lab 0.1` using Dungeon Difficulty alone, a small structure-tag tier sample, existing boss configs, conservative loot rules and scripted acceptance checks. Do **not** reclassify all structures into tiers on resource data alone.
+
+## 8. High-impact native resource collisions — investigate before buffing integrated arenas
+
+The historical native resource collision catalogue `NATIVE_RESOURCE_COLLISIONS.csv` contains **shared structure and template-pool IDs** between parent boss mods and their Integrated addons. This matters because modifying the wrong provider's JSON can have no runtime effect:
+
+- **BOMD vs Integrated BOMD:** overlaps on `bosses_of_mass_destruction:gauntlet_arena`, `lich_tower` and `obsidilith_arena` plus structure sets and start pools.
+- **Cataclysm vs Integrated Cataclysm:** overlaps on `cataclysm:ancient_factory`, `burning_arena`, `cursed_pyramid`, `frosted_prison`, `ruined_citadel`, `soul_black_smith` and `sunken_city`; multiple nested template pools may be overridden.
+- **Mowzie's vs Integrated Mowzie's:** overlaps on Frostmaw spawn, monastery, grove, Wrought Chamber plus related structure set.
+
+The resource collision census recorded **selected snapshot providers, NOT proven current runtime precedence**. First inspect the *effective* loaded datapack and actual generated structures before preparing custom NBT or loot edits. Preserve the Integrated versions unless the exact behavior proves wrong: replacing a parent with an integrated arena can be intentional.
+
+## 9. Candidate structure-ID worksheet for room-by-room investigation
+
+The [467-ID potentially combat-relevant source structure index](./V041_POTENTIAL_COMBAT_STRUCTURE_IDS.csv) filters the historical `STRUCTURE_REGISTRY_CATALOG.csv` of 1,506 resource names for dungeon, boss, trial, temple, fort, ship, stronghold, tower and other encounter-like patterns.
+
+This is **candidate discovery**, not proof of mobs or trials. Examples to inspect first:
+- `adventuredungeons:trialrooms` — test vanilla vs custom trial-spawner block entities and ominous/vault variants.
+- `biomeswevegone:bog_trial` — confirm whether this actually uses trial spawners before designing trial rewards.
+- `nova_structures:trident_trial_monument` — identify mob waves, equipment and reward routing.
+- `dungeons_arise:*` — scan major and minor dungeons individually, not mod-wide.
+- `cataclysm:*`, `bosses_of_mass_destruction:*`, `block_factorys_bosses:*`, `irons_spellbooks:*`, `mowziesmobs:*` — exact boss arenas; check integrated addon resource precedence.
+- `apotheosis:tower_*` — keep early availability but balance elites/spawners and loot rewards independently.
+
+Some registry entries are **historical or removed**; the CSV flags Repurposed Structures explicitly. Names alone cannot prove a trial chamber, specific mob armor, drop rates or support for a runtime datapack override.
+
