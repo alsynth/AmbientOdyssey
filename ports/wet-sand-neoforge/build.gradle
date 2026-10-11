@@ -1,0 +1,13 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+group = 'dev.ambientodyssey.ports.wetsand'
+version = '0.0.1-source-prototype'
+base { archivesName = 'ao-wet-sand-prototype' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+neoForge {
+    version = '21.1.252'
+    mods { ao_wet_sand { sourceSet sourceSets.main } }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
