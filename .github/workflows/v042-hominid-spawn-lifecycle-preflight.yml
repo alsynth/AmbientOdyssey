@@ -1,0 +1,47 @@
+name: AO Hominid Safe Spawn Lifecycle Preflight
+on:
+  push:
+    branches:
+      - experimental/v042-hominid-spawn-lifecycle-preflight-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-and-bytecode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - name: Compile pinned NeoForge 21.1.252 event cancellation and delayed-spawn prototype
+        run: |
+          gradle -p addons/ao-worldgen-safety --no-daemon --stacktrace build
+          test -f addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar
+          unzip -p addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar ao_worldgen_safety.mixins.json | grep -F 'HominidFinalizeSpawnMixin'
+      - name: Scope, safety and source gate
+        run: |
+          python tools/validate_v041_worldgen_safety.py
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('addons/ao-worldgen-safety/src/main/java/dev/ambientodyssey/worldgensafety/mixin/HominidFinalizeSpawnMixin.java')
+          s=p.read_text()
+          assert 'event.setSpawnCancelled(true)' in s
+          assert 'event.isSpawnCancelled()' in s
+          assert 'server.tell(new TickTask(' in s
+          assert 'level.hasChunkAt(originalPos)' in s
+          assert 'getOptional(target)' in s
+          assert 'ci.cancel();' in s
+          assert 'level.getServer().isSameThread()' in s
+          assert 'Juggernaut' in s and 'Bellman' in s
+          assert '.discard()' not in s
+          print('PASS source checks: exact zombie-only handler, NeoForge official cancellation, safe lazy replacement and no direct discard')
+          PY
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-Hominid-Spawn-Lifecycle-PROTOTYPE-NOT-RUNTIME-TESTED
+          path: addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar
+          if-no-files-found: error
