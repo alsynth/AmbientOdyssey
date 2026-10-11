@@ -25,7 +25,9 @@ releases/
 
 # Historical Test 5 Audit1 byte-exact baseline evidence; remove only in later, versioned changes.
 !release_030/overrides/config/bountiful/errors.log
+!docs/testing/v046-evidence/*.log
 
 # Generated archives/reports are not Git source files.
 build/
+.gradle/
 *.pyc

@@ -1,6 +1,10 @@
 package dev.ambientodyssey.ports.wetsand;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.neoforged.neoforge.common.util.TriState;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -33,10 +37,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 /**
  * Native NeoForge PORT PROTOTYPE, not the original Wet Sand mod.
  *
- * This first iteration establishes six item/block registries and moisture
- * transitions for the new blocks. It intentionally does not inject into
- * vanilla sand or worldgen, or tamper with suspicious-sand block entities.
- * That requires a separate source-backed, TPS-bounded implementation.
+ * Six moisture variants, bounded conversion of loaded ordinary sand, and
+ * bottle extraction. Archaeology and upstream worldgen replacement remain
+ * excluded until treasure persistence and terrain compatibility are verified.
  */
 @Mod(WetSandPort.ID)
 public final class WetSandPort {
@@ -69,6 +72,8 @@ public final class WetSandPort {
     /** Use a glass bottle to remove one moisture stage and receive a water bottle. */
     private static void dehydrateWithBottle(PlayerInteractEvent.RightClickBlock event) {
         if (!(event.getLevel() instanceof ServerLevel level)) return;
+        if (event.getEntity().isSpectator() || !event.getEntity().mayBuild()
+                || !level.mayInteract(event.getEntity(), event.getPos())) return;
         if (!event.getItemStack().is(Items.GLASS_BOTTLE)) return;
         BlockPos pos = event.getPos();
         Block block = level.getBlockState(pos).getBlock();
@@ -93,7 +98,7 @@ public final class WetSandPort {
         event.setCanceled(true);
     }
 
-    private static Block humidityBlock(boolean red,int stage) {
+    static Block humidityBlock(boolean red,int stage) {
         return switch (stage) {
             case 0 -> red ? Blocks.RED_SAND : Blocks.SAND;
             case 1 -> red ? MOIST_RED_SAND.get() : MOIST_SAND.get();
@@ -102,7 +107,7 @@ public final class WetSandPort {
         };
     }
 
-    /** No worldgen hooks or chunk-wide scans: at most eight checks per player per second. */
+    /** Eight candidates per player per second; each checks at most 25 loaded positions. */
     private static void updateNearbyShorelines(ServerTickEvent.Post event) {
         if (event.getServer().getTickCount() % 20 != 0) return;
         for (var player : event.getServer().getPlayerList().getPlayers()) {
@@ -115,30 +120,26 @@ public final class WetSandPort {
                 if (!level.hasChunkAt(pos)) continue;
                 Block old = level.getBlockState(pos).getBlock();
                 if (old != Blocks.SAND && old != Blocks.RED_SAND) continue;
-                boolean nearWater = false;
-                for (int dx=-3; dx<=3 && !nearWater; dx++) {
-                    for (int dz=-3; dz<=3 && !nearWater; dz++) {
-                        if (Math.abs(dx)+Math.abs(dz)>3) continue;
-                        BlockPos nearby=pos.offset(dx,0,dz);
-                        if (!level.hasChunkAt(nearby)) continue;
-                        var fluid=level.getFluidState(nearby);
-                        nearWater=fluid.is(FluidTags.WATER) && fluid.isSource();
-                    }
-                }
-                if (nearWater) level.setBlock(pos,(old==Blocks.SAND ? MOIST_SAND : MOIST_RED_SAND).get().defaultBlockState(),3);
+                if (hasNearbyWater(level, pos)) level.setBlock(pos,(old==Blocks.SAND ? MOIST_SAND : MOIST_RED_SAND).get().defaultBlockState(),3);
             }
         }
     }
 
-    private static void advance(BlockState state, ServerLevel level, BlockPos pos, boolean red, int stage) {
-        boolean hydrated = false;
-        for (int dx = -3; dx <= 3 && !hydrated; dx++) {
-            for (int dz = -3; dz <= 3 && !hydrated; dz++) {
+    static boolean hasNearbyWater(ServerLevel level, BlockPos pos) {
+        for (int dx = -3; dx <= 3; dx++) {
+            for (int dz = -3; dz <= 3; dz++) {
                 if (Math.abs(dx) + Math.abs(dz) > 3) continue;
-                var fluid = level.getFluidState(pos.offset(dx, 0, dz));
-                hydrated = fluid.is(FluidTags.WATER) && fluid.isSource();
+                BlockPos nearby = pos.offset(dx, 0, dz);
+                if (!level.hasChunkAt(nearby)) continue;
+                var fluid = level.getFluidState(nearby);
+                if (fluid.is(FluidTags.WATER) && fluid.isSource()) return true;
             }
         }
+        return false;
+    }
+
+    private static void advance(BlockState state, ServerLevel level, BlockPos pos, boolean red, int stage) {
+        boolean hydrated = hasNearbyWater(level, pos);
         int target = Math.min(3, Math.max(0, stage + (hydrated ? 1 : -1)));
         if (target == stage) return;
         Block next = humidityBlock(red, target);
@@ -161,6 +162,11 @@ public final class WetSandPort {
             this.stage = stage;
         }
         @Override
+        public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos,
+                Direction facing, BlockState plant) {
+            return facing == Direction.UP && plant.is(Blocks.SUGAR_CANE) ? TriState.TRUE : TriState.DEFAULT;
+        }
+        @Override
         public int getDustColor(BlockState state, BlockGetter level, BlockPos pos) {
             return red ? 0xA04A2A : 0xDBD3A0;
         }
@@ -171,12 +177,30 @@ public final class WetSandPort {
     }
 
     public static final class MoistureBlock extends Block {
+        public static final MapCodec<MoistureBlock> CODEC = RecordCodecBuilder.mapCodec(
+                instance -> instance.group(
+                        Codec.BOOL.fieldOf("red").forGetter(block -> block.red),
+                        Codec.intRange(2, 3).fieldOf("stage").forGetter(block -> block.stage),
+                        propertiesCodec()
+                ).apply(instance, MoistureBlock::new));
+        private static final VoxelShape SOAKED_COLLISION = Block.box(0, 0, 0, 16, 14, 16);
+        @Override public MapCodec<? extends Block> codec() { return CODEC; }
         private final boolean red;
         private final int stage;
         public MoistureBlock(boolean red, int stage, Properties properties) {
             super(properties);
             this.red = red;
             this.stage = stage;
+        }
+        @Override
+        public TriState canSustainPlant(BlockState state, BlockGetter level, BlockPos pos,
+                Direction facing, BlockState plant) {
+            return facing == Direction.UP && plant.is(Blocks.SUGAR_CANE) ? TriState.TRUE : TriState.DEFAULT;
+        }
+        @Override
+        protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos,
+                CollisionContext context) {
+            return stage == 3 ? SOAKED_COLLISION : super.getCollisionShape(state, level, pos, context);
         }
         @Override
         protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {

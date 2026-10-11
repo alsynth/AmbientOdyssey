@@ -1,0 +1,7 @@
+[11Oct2026 23:59:08.687] [main/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [ao_wet_sand]
+[11Oct2026 23:59:09.307] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1291 recipes
+[11Oct2026 23:59:10.075] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: 7 tests are now running at position -546533, -59, 5435444!
+[11Oct2026 23:59:10.339] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestRunner/]: Running test batch 'defaultBatch:0' (7 tests)...
+[11Oct2026 23:59:10.527] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: ========= 7 GAME TESTS COMPLETE IN 451.2 ms ======================
+[11Oct2026 23:59:10.527] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: All 7 required tests passed :)
+[11Oct2026 23:59:11.046] [Server thread/INFO] [net.minecraft.gametest.framework.GameTestServer/]: Game test server shutting down

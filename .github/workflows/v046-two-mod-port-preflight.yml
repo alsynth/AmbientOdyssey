@@ -31,12 +31,24 @@ jobs:
             unzip -l ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar | grep -F "assets/ao_wet_sand/models/block/$STAGE.json"
             unzip -l ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar | grep -F "assets/ao_wet_sand/models/item/$STAGE.json"
           done
+      - name: Run native NeoForge Wet Sand mechanics GameTests
+        run: gradle -p ports/wet-sand-neoforge --no-daemon --stacktrace runGameTestServer
+      - name: Preserve mechanics evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AO-v046-WETSAND-GAMETEST-EVIDENCE
+          if-no-files-found: warn
+          path: |
+            ports/wet-sand-neoforge/run/logs/
+            ports/wet-sand-neoforge/build/reports/
       - uses: actions/upload-artifact@v4
         with:
           name: AO-v046-WETSAND-SOURCE-PROTOTYPE-NOT-FOR-PACK
           if-no-files-found: error
           path: ports/wet-sand-neoforge/build/libs/ao-wet-sand-prototype-0.0.1-source-prototype.jar
   apotheotic-native-materials:
+    needs: wet-sand-neoforge
     runs-on: ubuntu-latest
     timeout-minutes: 40
     steps:
