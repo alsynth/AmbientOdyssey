@@ -1,0 +1,29 @@
+name: AO v0.4.1 Streams Mine Cells binary inspection
+on:
+  push:
+    branches:
+      - experimental/v041-streams-minecells-code-audit-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-streams-hooks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Inspect official pinned Streams Reflowing JAR
+        run: python tools/audit_streams_binary.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: streams-reflowing-2144-mixin-inspection
+          path: build/streams-bytecode-audit/
+          if-no-files-found: warn
