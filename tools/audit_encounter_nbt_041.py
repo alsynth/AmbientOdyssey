@@ -25,7 +25,7 @@ except ImportError as exc:
     raise SystemExit("Install nbtlib 2.0.4: python -m pip install nbtlib==2.0.4") from exc
 
 
-TEMPLATE_RE = re.compile(r"^data/[^/]+/(?:structures?|structure_template)/.*\\.nbt$", re.I)
+TEMPLATE_RE = re.compile(r"^data/[^/]+/(?:structures?|structure_template)/.*\.nbt$", re.I)
 INTERESTING = {"minecraft:spawner", "minecraft:mob_spawner", "minecraft:trial_spawner", "minecraft:vault"}
 EQUIP = {"ArmorItems", "HandItems", "equipment", "Equipment", "ArmorDropChances", "HandDropChances"}
 
@@ -47,7 +47,7 @@ def plain(val):
 
 
 def load_nbt(data):
-    raw = gzip.decompress(data) if data[:2] == b"\\x1f\\x8b" else data
+    raw = gzip.decompress(data) if data[:2] == b"\x1f\x8b" else data
     return nbtlib.File.parse(io.BytesIO(raw))
 
 
