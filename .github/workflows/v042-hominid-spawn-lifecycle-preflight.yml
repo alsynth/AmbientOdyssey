@@ -19,8 +19,8 @@ jobs:
       - name: Compile pinned NeoForge 21.1.252 event cancellation and delayed-spawn prototype
         run: |
           gradle -p addons/ao-worldgen-safety --no-daemon --stacktrace build
-          test -f addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar
-          unzip -p addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar ao_worldgen_safety.mixins.json | grep -F 'HominidFinalizeSpawnMixin'
+          test -f addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.1-experimental.jar
+          unzip -p addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.1-experimental.jar ao_worldgen_safety.mixins.json | grep -F 'HominidFinalizeSpawnMixin'
       - name: Scope, safety and source gate
         run: |
           python tools/validate_v041_worldgen_safety.py
@@ -43,5 +43,5 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: AO-Hominid-Spawn-Lifecycle-PROTOTYPE-NOT-RUNTIME-TESTED
-          path: addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.0-experimental.jar
+          path: addons/ao-worldgen-safety/build/libs/ao-worldgen-safety-0.1.1-experimental.jar
           if-no-files-found: error
