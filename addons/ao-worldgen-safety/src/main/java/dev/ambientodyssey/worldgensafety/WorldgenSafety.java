@@ -6,8 +6,8 @@ import net.neoforged.fml.ModList;
 
 /**
  * Experimental, minimal world-generation safety shim. Does not alter
- * vanilla generation or other mod's spawning and preserves Hominid
- * replacement on the main server thread.
+ * vanilla generation or other mod's spawning. Hominid is deliberately
+ * excluded from Ambient Odyssey; retain Tan/Dungeon Crawl/DD integrations.
  */
 @Mod("ao_worldgen_safety")
 public final class WorldgenSafety {
