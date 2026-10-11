@@ -1,0 +1,44 @@
+name: AO v0.4.1 Trek Create Fast Static Gate
+on:
+  push:
+    branches:
+      - experimental/v041-spark-structure-density-audit-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  density-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test lossless structure-set transformations on synthetic fixtures
+        run: |
+          python -m py_compile tools/generate_v041_trek_create_rarity.py
+          python -m unittest discover -s tests -p test_v041_trek_create_rarity.py -v
+      - name: Regenerate SHA-pinned Trek/Create structure sets and validate idempotency
+        run: |
+          python -u tools/generate_v041_trek_create_rarity.py
+          python -u tools/generate_v041_trek_create_rarity.py --check
+          python compile_structure_density_031.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("release_030/overrides/config/cristellib/create_rustic_structures/structure_placement_config.json5")
+          import re
+          v=json.loads(re.sub(r"/\*.*?\*/|//[^\n]*","",root.read_text(),flags=re.S))
+          assert (v["rustic_smithy"]["spacing"],v["rustic_well"]["spacing"])==(37,27)
+          assert (v["rustic_barn"]["spacing"],v["rustic_windmill"]["spacing"])==(36,32)
+          report=json.load(open("build/v041_trek_create_rarity_report.json"))
+          assert report["total_changed_structure_sets"]==43
+          print("PASS 43 native-set transforms, 2 rustic config changes, farm preservation")
+          PY
+          git diff --check
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v041-Trek-Create-Static-Transformation-Report
+          path: build/v041_trek_create_rarity_report.json
+          if-no-files-found: error
