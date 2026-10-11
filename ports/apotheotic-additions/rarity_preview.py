@@ -14,12 +14,20 @@ def preview(name, legacy):
     rules=[]
     for entry in legacy.get("rules",[]):
         kind=entry.get("type")
-        chance=entry.get("chance",1)
-        if kind not in SUPPORTED or chance!=1.0:
-            reasons.append("manual rules migration required: "+json.dumps(entry,sort_keys=True))
+        chance=float(entry.get("chance",1))
+        if kind not in SUPPORTED|{"durability"} or not (0.0 <= chance <= 1.0):
+            reasons.append("unmapped original rarity rule: "+json.dumps(entry,sort_keys=True))
             continue
-        if kind=="socket":rules.append({"type":"apotheosis:socket","min":1,"max":1})
-        else:rules.append({"type":"apotheosis:affix","affix_type":kind})
+        if kind=="socket":
+            modern={"type":"apotheosis:socket","min":1,"max":1}
+        elif kind=="durability":
+            modern={"type":"apotheosis:durability","min":0.45,"max":0.75}
+            reasons.append("durability roll range provisional; verify original addon values")
+        else:
+            modern={"type":"apotheosis:affix","affix_type":kind}
+        if chance < 1.0:
+            modern={"type":"apotheosis:chanced","chance":chance,"rule":modern}
+        rules.append(modern)
     material=legacy.get("material")
     if not isinstance(material,str) or material.startswith("apotheotic_additions:"):
         reasons.append("rarity crafting material not registered in 1.21.1: "+str(material))
@@ -51,6 +59,10 @@ def main():
         if not f.is_file():p.error("Missing upstream rarity: "+str(f))
         entries[key]=preview(key,json.loads(f.read_text(encoding="utf-8")))
     assert all(len(v["blocking_reasons"])>0 for v in entries.values())
+    assert entries["artifact"]["source_rules"] == 8
+    assert entries["heirloom"]["source_rules"] == 4
+    assert entries["esoteric"]["source_rules"] == 16
+    assert all(v["translated_rules"] == v["source_rules"] for v in entries.values())
     report={"port_ready":False,"rarities":entries,
             "policy":"Esoteric is intended to remain unobtainable. Never inject these zero-weight placeholders into active AO datapacks."}
     args.output.parent.mkdir(parents=True,exist_ok=True)
