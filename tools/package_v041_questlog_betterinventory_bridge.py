@@ -9,7 +9,7 @@ from pathlib import Path
 from zipfile import ZipFile
 from io import BytesIO
 
-NAME="ao-questlog-betterinventory-0.1.0.jar"
+NAME="ao-questlog-betterinventory-0.1.1.jar"
 JAR_PATH="overrides/mods/"+NAME
 CLASS="dev/ambientodyssey/questlogbridge/QuestlogBetterInventoryBridge.class"
 EXPECTED_ABSENT={832882,1430156,1581408}
@@ -31,7 +31,7 @@ def validate(out):
             assert j.testzip() is None
             assert CLASS in j.namelist() and "META-INF/neoforge.mods.toml" in j.namelist()
             toml=j.read("META-INF/neoforge.mods.toml").decode()
-            assert 'modId="aoquestlogbridge"' in toml and '0.1.0' in toml
+            assert 'modId="aoquestlogbridge"' in toml and '0.1.1' in toml
         for name in ["trial_key.json","ominous_trial_key.json"]:
             p="overrides/config/paxi/resourcepacks/ao_lukis_dnt_key_compat/assets/minecraft/models/item/"+name
             assert p in names, "lost Luki/DnT key patch"

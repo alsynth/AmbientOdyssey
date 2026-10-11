@@ -6,8 +6,11 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.components.AbstractButton;
 import net.minecraft.client.gui.components.Tooltip;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.neoforged.api.distmarker.Dist;
@@ -35,6 +38,23 @@ public final class QuestlogBetterInventoryBridge {
             "org.infernalstudios.questlog.client.gui.screen.QuestlogScreen";
     private static final Logger LOG = LogUtils.getLogger();
 
+    // Source-verified Better Inventory 1.3.2 atlas:
+    // BetterInventoryLayout.SPR_TAB_X=220, SPR_TAB_Y=0, TAB_W=24,
+    // TAB_H=20, alternate/selected row at v=21; atlas 512x256.
+    // We reference the installed mod's pixels; do not duplicate its art.
+    private static final ResourceLocation BETTER_INVENTORY_ATLAS =
+            ResourceLocation.fromNamespaceAndPath("betterinventory", "textures/gui/inventory.png");
+    private static final int TAB_U = 220;
+    private static final int TAB_NORMAL_V = 0;
+    private static final int TAB_SELECTED_V = 21;
+    private static final int TAB_WIDTH = 24;
+    private static final int TAB_HEIGHT = 20;
+    private static final int ATLAS_WIDTH = 512;
+    private static final int ATLAS_HEIGHT = 256;
+    // Better Inventory's gear starts at leftPos+198 and spans 20px.
+    // Our tab starts at leftPos+226, aligned to the same y=topPos row.
+    private static final int QUEST_TAB_X = 226;
+
     private static long lastBadgeTick = Long.MIN_VALUE;
     private static boolean cachedBadge;
 
@@ -50,26 +70,65 @@ public final class QuestlogBetterInventoryBridge {
     }
 
     private static int buttonX(Screen screen) {
-        // Anchored to display edge, not the vanilla 176px InventoryScreen.
-        // Avoids Better Inventory's backpack, crafting and Curios panels.
-        return Math.max(4, screen.width - 26);
+        if (screen instanceof AbstractContainerScreen<?> inventory) {
+            return inventory.getGuiLeft() + QUEST_TAB_X;
+        }
+        return Math.max(2, screen.width - TAB_WIDTH - 2);
     }
 
     private static int buttonY(Screen screen) {
-        return 6;
+        if (screen instanceof AbstractContainerScreen<?> inventory) {
+            return inventory.getGuiTop();
+        }
+        return 2;
+    }
+
+    /**
+     * A Better Inventory tab, not a vanilla gray Minecraft button.
+     * Exact source atlas and 24x20 sprite sizes are reused to match the
+     * mod's native backpack/crafting tabs. Only the Q letter is original.
+     */
+    private static final class QuestlogTab extends AbstractButton {
+        private final Screen parent;
+
+        private QuestlogTab(Screen parent) {
+            super(buttonX(parent), buttonY(parent), TAB_WIDTH, TAB_HEIGHT,
+                    Component.literal("Q"));
+            this.parent = parent;
+            this.setTooltip(Tooltip.create(Component.translatable("questlog.gui.open")));
+        }
+
+        @Override
+        protected void renderWidget(GuiGraphics graphics, int mouseX, int mouseY, float partialTick) {
+            int v = this.isHoveredOrFocused() ? TAB_SELECTED_V : TAB_NORMAL_V;
+            graphics.blit(BETTER_INVENTORY_ATLAS, this.getX(), this.getY(),
+                    TAB_U, v, TAB_WIDTH, TAB_HEIGHT, ATLAS_WIDTH, ATLAS_HEIGHT);
+
+            Minecraft minecraft = Minecraft.getInstance();
+            String label = "Q";
+            int x = this.getX() + (TAB_WIDTH - minecraft.font.width(label)) / 2;
+            int y = this.getY() + 6;
+            graphics.drawString(minecraft.font, label, x, y, 0xFFEADFC9, true);
+        }
+
+        @Override
+        public void onPress() {
+            openQuestlog(parent);
+        }
+
+        @Override
+        protected void updateWidgetNarration(NarrationElementOutput output) {
+            this.defaultButtonNarrationText(output);
+        }
     }
 
     private static void onInit(ScreenEvent.Init.Post event) {
         final Screen screen = event.getScreen();
         if (!isTarget(screen)) return;
 
-        Button button = Button.builder(Component.literal("Q"), unused -> openQuestlog(screen))
-                .bounds(buttonX(screen), buttonY(screen), 20, 20)
-                .tooltip(Tooltip.create(Component.translatable("questlog.gui.open")))
-                .build();
-        event.addListener(button);
+        event.addListener(new QuestlogTab(screen));
         lastBadgeTick = Long.MIN_VALUE;
-        LOG.debug("Attached Questlog access button to BetterInventoryScreen");
+        LOG.debug("Attached native-styled Questlog tab to BetterInventoryScreen");
     }
 
     private static void openQuestlog(Screen parent) {
@@ -106,11 +165,17 @@ public final class QuestlogBetterInventoryBridge {
         if (!cachedBadge) return;
 
         GuiGraphics graphics = event.getGuiGraphics();
-        int x = buttonX(screen) + 14;
+        // Gold exclamation badge, offset over the native tab's upper-right.
+        // Draw at render-post so it remains visible over widgets and tooltips.
+        int x = buttonX(screen) + 16;
         int y = buttonY(screen) - 3;
-        graphics.fill(x, y, x + 8, y + 9, 0xFF5B270E);
-        graphics.fill(x + 1, y + 1, x + 7, y + 8, 0xFFFFC65B);
-        graphics.drawString(minecraft.font, "!", x + 2, y, 0xFF2A1400, false);
+        graphics.pose().pushPose();
+        graphics.pose().translate(0, 0, 400);
+        graphics.fill(x - 1, y - 1, x + 10, y + 12, 0xFF261D18);
+        graphics.fill(x, y, x + 9, y + 11, 0xFFB75B22);
+        graphics.fill(x + 1, y + 1, x + 8, y + 10, 0xFFF3C05C);
+        graphics.drawString(minecraft.font, "!", x + 3, y + 1, 0xFF352318, false);
+        graphics.pose().popPose();
     }
 
     private static boolean showsBadge() {

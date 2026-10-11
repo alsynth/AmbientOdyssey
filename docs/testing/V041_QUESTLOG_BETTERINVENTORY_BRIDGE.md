@@ -20,3 +20,11 @@ Sources:
 - https://github.com/infernalstudios/Questlog/blob/1.21.1/common/src/main/java/org/infernalstudios/questlog/client/gui/screen/QuestlogScreen.java
 - https://github.com/infernalstudios/Questlog/blob/1.21.1/common/src/main/java/org/infernalstudios/questlog/client/gui/components/QuestlogOpenButton.java
 - https://github.com/neoforged/NeoForge/blob/1.21.1/src/main/java/net/neoforged/neoforge/client/event/ScreenEvent.java
+
+## 11 October 2026 — Native Better Inventory styling v0.1.1
+
+This update replaces the vanilla-style gray `Button.builder` glyph with a real custom `AbstractButton` widget drawn using **Better Inventory's own 512×256 GUI texture atlas** (`betterinventory:textures/gui/inventory.png`): `SPR_TAB_X=220`, state rows `0` (unselected) and `21` (highlighted), sprite `24×20`. A pale "Q" glyph is centered on the existing tab material. It is placed at `leftPos + 226, topPos`, after the existing settings gear (`leftPos + 198`); thus it is aligned with the mod's five backpack tabs and crafting tab and never replaces a slot. The position follows the modded inventory's actual coordinates rather than the screen corner. Hover uses the brighter native selected-tab texture.
+
+A small orange/gold **!** badge overlays the upper-right tab corner when Questlog reports a recent notification or completed but unclaimed quest reward. We draw a shaded pixel border and a high-contrast exclamation mark with no copied third-party texture. The badge respects Questlog's `showBadge` setting; no changes to quest state or Better Inventory packets. Existing behavior of opening Questlog and backing out to Better Inventory is preserved.
+
+The original Better Inventory texture is referenced at runtime, **not copied/redistributed**. Source: https://github.com/falling-colud/better-inventory/blob/main/src/main/java/dev/fallingcloud/betterinventory/BetterInventoryLayout.java. Actual visual scale/position and badge notification require client runtime testing, not just CI compile and archive validation.
