@@ -63,7 +63,7 @@ def report(root=ROOT):
     add("Spark available",p,"backgroundProfiler" in get(p),
         "Logger/profiler unchanged; no claimed optimization")
     p="addons/ao-worldgen-safety/build.gradle"
-    add("separate Hominid candidate",p,"version = '0.1.2-experimental'" in get(p),
+    add("separate Hominid candidate",p,"version = '0.1.3-experimental'" in get(p),
         "Experimental only, gameplay not tested")
     p="tools/generate_v041_trek_create_rarity.py";v=get(p)
     add("approved structure rarity",p,all(x in v for x in
