@@ -66,17 +66,20 @@ jobs:
         run: |
           mkdir -p build/previous
           gh run download 38152215903 --repo "$GITHUB_REPOSITORY" --name AO-v042-SPELLSTONE-DIFFICULTY-COMBINED-PRIVATE-CurseForge-Import --dir build/previous
-          test -f build/previous/Ambient-Odyssey-v0.4.2-SPELLSTONE-DIFFICULTY-COMBINED-TEST.zip
-          echo 'd4f928aec66c9dceea275b71db299a871cdac1ba9d07c83f91bb20c2a9b32be3  build/previous/Ambient-Odyssey-v0.4.2-SPELLSTONE-DIFFICULTY-COMBINED-TEST.zip' | sha256sum -c -
+          find build/previous -maxdepth 5 -type f -name '*.zip' -print
+          BASE=$(find build/previous -maxdepth 5 -type f -name 'Ambient-Odyssey-v0.4.2-SPELLSTONE-DIFFICULTY-COMBINED-TEST.zip' -print -quit)
+          test -n "$BASE"
+          cp "$BASE" build/previous/verified-v042.zip
+          echo 'd4f928aec66c9dceea275b71db299a871cdac1ba9d07c83f91bb20c2a9b32be3  build/previous/verified-v042.zip' | sha256sum -c -
       - name: Build full v0.4.3 private CurseForge import ZIP and verify byte-preserved history
         run: |
           python tools/package_v043_stability.py \
-            --base build/previous/Ambient-Odyssey-v0.4.2-SPELLSTONE-DIFFICULTY-COMBINED-TEST.zip \
+            --base build/previous/verified-v042.zip \
             --quest addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.4.jar \
             --safety build/ao-v043-addons/ao-worldgen-safety-0.1.4-experimental.jar \
             --output build/Ambient-Odyssey-v0.4.3-HOMINID-FREE-STABILITY-TEST.zip
           python tools/package_v043_stability.py \
-            --base build/previous/Ambient-Odyssey-v0.4.2-SPELLSTONE-DIFFICULTY-COMBINED-TEST.zip \
+            --base build/previous/verified-v042.zip \
             --quest addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.4.jar \
             --safety build/ao-v043-addons/ao-worldgen-safety-0.1.4-experimental.jar \
             --output build/Ambient-Odyssey-v0.4.3-HOMINID-FREE-STABILITY-TEST.zip --verify
