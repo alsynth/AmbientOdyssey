@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "HominidFinalizeSpawnMixin",
-    "TansWorldgenMarkerSchedulingMixin"
+    "TansWorldgenMarkerSchedulingMixin",
+    "DungeonCrawlSpawnerPendingNbtMixin",
+    "DungeonCrawlOptionalTradeAirMixin"
   ],
   "client": [],
   "server": [],

@@ -3,9 +3,9 @@ loaderVersion="[4,)"
 license="MIT"
 [[mods]]
 modId="ao_worldgen_safety"
-version="0.1.1-experimental"
+version="0.1.2-experimental"
 displayName="Ambient Odyssey - Safe Worldgen Entity Events"
-description='''Uses NeoForge proper spawn cancellation and server-tick-deferred Hominid zombie replacement; keeps async vanilla zombies. Experimental.'''
+description='''Uses NeoForge proper Hominid spawn cancellation, Tan tree scheduling, native Dungeon Crawl pending-NBT spawner persistence and exact zero-count optional trade cleanup. Experimental.'''
 [[mixins]]
 config="ao_worldgen_safety.mixins.json"
 [[dependencies.ao_worldgen_safety]]
@@ -24,5 +24,12 @@ side="BOTH"
 modId="hominid"
 type="required"
 versionRange="[1.3.4,1.3.5)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.ao_worldgen_safety]]
+modId="dungeoncrawl"
+type="required"
+versionRange="[2.3.17,2.3.18)"
 ordering="AFTER"
 side="BOTH"

@@ -22,7 +22,7 @@ def validate(path):
         names=z.namelist()
         assert len(names)==len(set(names))
         manifest=json.loads(z.read("manifest.json"))
-        assert manifest["version"]=="0.4.2-experimental-manyfix-core"
+        assert manifest["version"]=="0.4.2-experimental-recipe-spawner-ui-core"
         assert len(manifest["files"])==329
         pins={x["projectID"]:x["fileID"] for x in manifest["files"]}
         for p in report["source_pins"].values():
@@ -65,7 +65,7 @@ def validate(path):
             ids.extend(tasks)
         assert len(ids)==len(set(ids))==32
 
-        assert "overrides/mods/ao-worldgen-safety-0.1.1-experimental.jar" in names
+        assert "overrides/mods/ao-worldgen-safety-0.1.2-experimental.jar" in names
         # Farms/food productions and special TREK types must not be overridden.
         assert not any(s.endswith(("/windmill.json","/honey_pit.json","/chocolate_pit.json"))
                        for s in actual)

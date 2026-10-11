@@ -12,10 +12,17 @@ P=R/'release_030/overrides/config/paxi/datapacks/ao_v041_runtime_fixes'
 assert json.loads((P/'pack.mcmeta').read_text())['pack']['pack_format']==48
 files=list(P.glob('data/*/recipe/**/*.json'))
 assert len(files)==19,len(files)
-assert all(json.loads(f.read_text())=={'neoforge:conditions':[{'type':'neoforge:false'}]} for f in files)
+guards=[f for f in files if json.loads(f.read_text())=={'neoforge:conditions':[{'type':'neoforge:false'}]}]
+working=[f for f in files if f not in guards]
+assert len(guards)==4,(len(guards),[f.as_posix() for f in guards])
+assert len(working)==15,(len(working),[f.as_posix() for f in working])
+assert all('/minecells/recipe/' in f.as_posix() for f in working)
+assert all('/brewinandchewin/recipe/' in f.as_posix() or '/dimdungeons/recipe/' in f.as_posix() for f in guards)
+assert all('fabric:load_conditions' not in json.loads(f.read_text()) and
+           json.loads(f.read_text())['neoforge:conditions'][0]['type']=='neoforge:mod_loaded' for f in working)
 t=json.loads((R/'release_030/overrides/config/paxi/datapacks/ao_technical_fixes/data/traveloptics/tags/entity_type/element_fire.json').read_text())
 assert t['replace'] is True and 'old_netherite_monstrosity' not in json.dumps(t)
 assert 'prevent-moving-into-unloaded-chunks: true' in (R/'release_030/overrides/config/servercore/config.yml').read_text()
 assert 'double_cake = false' in (R/'release_030/overrides/config/amendments-common.toml').read_text()
 assert len(list((R/'release_030/overrides/config/questlog/quests').glob('*.json')))==50
-print('PASS v0.4.1 static: CCA/rarcompat, 19 recipe guards, tag, ServerCore, Amendments, Questlog')
+print('PASS v0.4.1 static: CCA/rarcompat, 15 native recipe migrations plus 4 conservative recipe guards, tag, ServerCore, Amendments, Questlog')

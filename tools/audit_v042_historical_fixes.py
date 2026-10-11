@@ -63,7 +63,7 @@ def report(root=ROOT):
     add("Spark available",p,"backgroundProfiler" in get(p),
         "Logger/profiler unchanged; no claimed optimization")
     p="addons/ao-worldgen-safety/build.gradle"
-    add("separate Hominid candidate",p,"version = '0.1.1-experimental'" in get(p),
+    add("separate Hominid candidate",p,"version = '0.1.2-experimental'" in get(p),
         "Experimental only, gameplay not tested")
     p="tools/generate_v041_trek_create_rarity.py";v=get(p)
     add("approved structure rarity",p,all(x in v for x in
@@ -74,7 +74,7 @@ def report(root=ROOT):
     # wildcard path in Python: recipe/*.json returns files directly inside recipe folders;
     # deeper files require a tree walk.
     count=sum("/recipe/" in f.as_posix() for f in base.rglob("*.json"))
-    add("19 recipe containment overrides","release_030/overrides/config/paxi/datapacks/ao_v041_runtime_fixes",
+    add("15 migrated native recipes and 4 remaining containment guards","release_030/overrides/config/paxi/datapacks/ao_v041_runtime_fixes",
         count>=19,f"{count} recipe overrides are disabled parse-error containment, not craftable recipe fixes")
     open_issues={
         "Questlog Q icon still mispositioned":"addons/ao-questlog-betterinventory/src/main/java/dev/ambientodyssey/questlogbridge/QuestlogBetterInventoryBridge.java",

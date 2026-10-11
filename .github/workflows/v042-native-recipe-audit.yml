@@ -1,0 +1,28 @@
+name: AO v0.4.2 Native 19 Recipes Attribution
+on:
+  push:
+    branches:
+      - experimental/v042-recipes-nbt-spawner-ui-repair-20261011
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ao-v042-recipe-source-single-run
+  cancel-in-progress: true
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Fetch exact three CurseForge JAR pins and inspect original 19 recipes
+        run: |
+          python -m py_compile tools/audit_v042_native_recipes.py
+          python -u tools/audit_v042_native_recipes.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-v042-Native-Recipe-Provenance-Private
+          path: build/v042-native-recipe-source-audit.json
+          if-no-files-found: error

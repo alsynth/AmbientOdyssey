@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Source and import archive checks for AO native-styled Questlog tab v0.1.2."""
+"""Source and import archive checks for AO native-styled Questlog tab v0.1.3."""
 import argparse, pathlib, zipfile, json, io
 R=pathlib.Path(__file__).resolve().parent.parent
 S=R/"addons/ao-questlog-betterinventory/src/main/java/dev/ambientodyssey/questlogbridge/QuestlogBetterInventoryBridge.java"
-JAR="overrides/mods/ao-questlog-betterinventory-0.1.2.jar"
+JAR="overrides/mods/ao-questlog-betterinventory-0.1.3.jar"
 def source():
     s=S.read_text()
-    for token in ['extends AbstractButton','betterinventory", "textures/gui/inventory.png"','TAB_U = 220','TAB_SELECTED_V = 21','TAB_WIDTH = 24','TAB_HEIGHT = 20','QUEST_TAB_X = 222','getGuiLeft()','getGuiTop()','this.setX(buttonX(this.parent))','this.setY(buttonY(this.parent))','Component.literal("Q")','graphics.drawString(minecraft.font, "!"','showsBadge()','mostRecentNotificationQuest']:
+    for token in ['extends AbstractButton','betterinventory", "textures/gui/inventory.png"','TAB_U = 220','TAB_SELECTED_V = 21','TAB_WIDTH = 24','TAB_HEIGHT = 20','SETTINGS_X = 198','getGuiLeft()','getGuiTop()','getYSize()','private record Anchor','top - TAB_HEIGHT - TAB_MARGIN','this.setX(buttonX(this.parent))','this.setY(buttonY(this.parent))','Component.literal("Q")','graphics.drawString(minecraft.font, "!"','showsBadge()','mostRecentNotificationQuest']:
         assert token in s,token
     assert "Button.builder(" not in s
     assert "QuestlogScreen(Minecraft.getInstance().screen)" not in s

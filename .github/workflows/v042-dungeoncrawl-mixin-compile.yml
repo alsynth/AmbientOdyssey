@@ -1,0 +1,28 @@
+name: AO v0.4.2 Dungeon Crawl Worldgen Mixins Compile
+on:
+  push:
+    branches:
+      - experimental/v042-recipes-nbt-spawner-ui-repair-20261011
+  workflow_dispatch:
+permissions: {contents: read}
+concurrency: {group: ao-v042-spawner-addon-build, cancel-in-progress: true}
+jobs:
+  native-compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 28
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - name: Compile newly scoped Dungeon Crawl pending-NBT and optional-trade fixes
+        run: |
+          gradle -p addons/ao-worldgen-safety --no-daemon build || (sleep 20; gradle -p addons/ao-worldgen-safety --no-daemon build)
+          jar tf addons/ao-worldgen-safety/build/libs/*.jar | grep -E 'DungeonCrawlSpawnerPendingNbtMixin|DungeonCrawlOptionalTradeAirMixin'
+          python tools/validate_v041_worldgen_safety.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-Experimental-DungeonCrawl-Mixin-Build
+          path: addons/ao-worldgen-safety/build/libs/*.jar
+          if-no-files-found: error
