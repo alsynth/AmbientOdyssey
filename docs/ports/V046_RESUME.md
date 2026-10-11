@@ -191,13 +191,52 @@ This does not export a CurseForge ZIP or install either port in the real pack.
   dedicated-server persistence/performance tests remain required. Full-roster
   native client startup/model resolution now passes under the production launcher.
 
-## Apotheotic continuation after Wet Sand
+## 12 October Apotheotic rarity subsystem checkpoint (latest)
+
+After native Wet Sand mechanics, process persistence and full-roster production
+client startup passed, verified the first Apotheotic subsystem against the
+exact installed library versions: Apotheosis 8.9.0, Placebo 9.9.2,
+Apothic Attributes 2.11.0, and Patchouli 1.21.1-93-NEOFORGE. Maven downloads
+of the first three match the installed JAR SHA-256 hashes byte-for-byte.
+No third-party dependency JARs are embedded in the development port artifact.
+
+**Compilation + four native GameTests PASS**:
+
+- All Artifact, Heirloom and Esoteric definitions load through Apotheosis's
+  actual rarity registry (8 total rarities = 5 built-in + 3 additions).
+  Material reverse lookup, ordering and original rule counts 8/4/16 pass.
+- All three materials are in the non-replacing rarity-materials ingredient
+  tag and exposed in the ingredients creative tab. Added names and temporary
+  vanilla-texture item models; original Additions art is not included.
+- Natural weights remain zero, including high luck and all five world tiers.
+  500 actual native rarity rolls continue to produce only stock rarities.
+  Artifact/Heirloom stay disabled pending affix/gem/loot completion; Esoteric
+  retains its intentionally unobtainable natural-drop policy.
+- All three rarity item components survive native item/NBT serialization.
+- A real server data reload rebinds all three definitions and their material
+  maps; rarity components remain usable afterward.
+
+Evidence: `docs/testing/v046-evidence/apotheotic-four-rarity-gametests.log`.
+Development artifact SHA-256:
+`e288619744c4e8f8f6a524cb3a6d7e79b0cefe78ae6f0b5b9b49c4935a2dfe3e`.
+CI now runs these native integration tests after the Wet Sand checks.
+Including the installed Patchouli version also closes the stock Apotheosis
+Chronicle recipe parse error seen in the initially narrower test context.
+
+This validates the rarity foundation; it is **not a functioning complete
+Apotheotic Additions port**. No legacy Additions affixes, gems, bosses, loot
+tables, trades or other major systems have been installed by this checkpoint.
+
+## Apotheotic continuation
 
 Start with the source inventory and schema reports in `ports/apotheotic-additions`
 and `docs/ports/APOTHEOTIC_ADDITIONS_1211_PORT_AUDIT_2026-10-11.md`.
-The three rarity JSONs and material registrations are development scaffolding,
-with drop weights zero. They are not verified loot integration. Implement and
-test exact Apotheosis 8.9.0 codecs and real drop/reforging semantics before
-enabling them. Esoteric must remain retained with its intended obtainability.
+The three rarity JSONs and material registrations now pass native codec,
+registry, component and reload checks, with drop weights zero. They are not
+verified affix generation or loot/reforging integration. Port attribute affixes
+first, preserving stepped roll semantics and all three custom-rarity keys;
+then gems, ability affixes, bosses/gear/loot, recipes/reforging and other major
+systems with subsystem checks before enabling real drops. Esoteric must remain
+retained with its intended obtainability.
 Do not discard cross-mod boss/gem/affix systems silently when dependencies
 are unavailable; record compatibility requirements and test each batch.

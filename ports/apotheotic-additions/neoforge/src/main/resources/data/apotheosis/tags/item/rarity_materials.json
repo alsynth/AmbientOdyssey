@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "ao_apotheotic_port:artifact_material",
+    "ao_apotheotic_port:heirloom_material",
+    "ao_apotheotic_port:esoteric_material"
+  ]
+}

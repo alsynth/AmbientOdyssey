@@ -1,13 +1,15 @@
 package dev.ambientodyssey.ports.apotheotic;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-/** Port milestone 1: register the three crafting materials used by the original rarities.
- *  This has no loot distribution, bosses, gems or rarity loading until verified.
+/** Three native rarity materials and data-driven tiers, with natural rolls disabled
+ *  until their affix/gem/loot subsystems are ported and verified.
  */
 @Mod(ApotheoticPort.ID)
 public final class ApotheoticPort {
@@ -22,5 +24,12 @@ public final class ApotheoticPort {
 
     public ApotheoticPort(IEventBus bus) {
         ITEMS.register(bus);
+        bus.addListener((BuildCreativeModeTabContentsEvent event) -> {
+            if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+                event.accept(ARTIFACT_MATERIAL.get());
+                event.accept(HEIRLOOM_MATERIAL.get());
+                event.accept(ESOTERIC_MATERIAL.get());
+            }
+        });
     }
 }

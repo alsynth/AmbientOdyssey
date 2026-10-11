@@ -1,5 +1,8 @@
 {
   "item.ao_apotheotic_port.artifact_material": "Artifact Material",
   "item.ao_apotheotic_port.heirloom_material": "Heirloom Material",
-  "item.ao_apotheotic_port.esoteric_material": "Esoteric Material"
+  "item.ao_apotheotic_port.esoteric_material": "Esoteric Material",
+  "rarity.ao_apotheotic_port:artifact": "Artifact",
+  "rarity.ao_apotheotic_port:heirloom": "Heirloom",
+  "rarity.ao_apotheotic_port:esoteric": "Esoteric"
 }

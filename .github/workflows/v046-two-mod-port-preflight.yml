@@ -98,6 +98,17 @@ jobs:
               assert data["material"]=="ao_apotheotic_port:"+name+"_material"
           print("PASS: all three prototype rarities structurally present; disabled from drops")
           PY
+      - name: Verify native rarity registry, materials, rolls, components and reload
+        run: gradle -p ports/apotheotic-additions/neoforge --no-daemon --stacktrace runGameTestServer
+      - name: Preserve Apotheotic rarity evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: AO-v046-APOTHEOTIC-RARITY-GAMETEST-EVIDENCE
+          if-no-files-found: warn
+          path: |
+            ports/apotheotic-additions/neoforge/run/logs/
+            ports/apotheotic-additions/neoforge/build/reports/
       - uses: actions/upload-artifact@v4
         with:
           name: AO-v046-APOTHEOTIC-MATERIALS-SOURCE-PROTOTYPE-NOT-FOR-PACK

@@ -6,8 +6,23 @@ group = 'dev.ambientodyssey.ports.apotheotic'
 version = '0.0.1-source-prototype'
 base { archivesName = 'ao-apotheotic-port-prototype' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories { maven { url = 'https://maven.shadowsoffire.dev/releases' } }
+repositories { maven { url = 'https://maven.blamejared.com' } }
+dependencies {
+    implementation('dev.shadowsoffire:Apotheosis:1.21.1-8.9.0') { transitive = false }
+    implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }
+    implementation('dev.shadowsoffire:ApothicAttributes:1.21.1-2.11.0') { transitive = false }
+    // The installed pack includes Patchouli; include it so the stock Chronicle recipe also validates.
+    runtimeOnly('vazkii.patchouli:Patchouli:1.21.1-93-NEOFORGE') { transitive = false }
+}
 neoForge {
     version = '21.1.252'
     mods { ao_apotheotic_port { sourceSet sourceSets.main } }
+    runs {
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'ao_apotheotic_port'
+        }
+    }
 }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }

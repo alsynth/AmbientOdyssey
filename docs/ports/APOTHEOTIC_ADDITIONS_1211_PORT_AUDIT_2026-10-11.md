@@ -2,6 +2,11 @@
 
 **Status: port source identification and feasibility audit. No ported mod is installed in the v0.4.5 preview. Do not claim implementation.** 11 October 2026.
 
+**Historical audit.** The 12 October isolated rarity foundation now passes
+four native registry/material/serialization/reload tests; see
+[current continuation state](V046_RESUME.md). Affixes, gems, bosses and the
+other major Additions systems remain unported. No complete port is installed.
+
 ## Original project, version and license
 - Original project identified: [Bryce792/ApotheoticAdditions](https://github.com/Bryce792/ApotheoticAdditions), version **2.2.2** according to `META-INF/mods.toml`.
 - The original repository contains **2,406 tracked paths**, with a mixture of MCreator Java class source/artifacts, assets and a large number of data-driven entries.
