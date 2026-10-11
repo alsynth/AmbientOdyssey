@@ -12,36 +12,36 @@
     "sandEnabled": true
   },
   "erosionMultipliers": {
-    "player": 0.5,
-    "mounted": 2.0,
+    "player": 1,
+    "mounted": 2,
     "leash": 1.5
   },
   "erosionThresholds": {
     "grass": {
-      "min": 2.0,
-      "max": 4.0
+      "min": 2,
+      "max": 4
     },
     "dirt": {
-      "min": 8.0,
-      "max": 12.0
+      "min": 8,
+      "max": 12
     },
     "coarseDirt": {
-      "min": 12.0,
-      "max": 20.0
+      "min": 12,
+      "max": 20
     },
     "sand": {
       "min": 1.5,
-      "max": 3.0
+      "max": 3
     },
     "leaves": {
       "dropChance": 0.1,
-      "min": 2.0,
-      "max": 3.0
+      "min": 2,
+      "max": 3
     },
     "vegetation": {
       "dropChance": 0.2,
-      "min": 2.0,
-      "max": 3.0
+      "min": 2,
+      "max": 3
     }
   },
   "erodableVegetation": [
@@ -66,22 +66,22 @@
   ],
   "deErosionTimeoutDays": {
     "grass": {
-      "stage1": 5.0,
-      "stage2": 5.0,
-      "stage3": 5.0,
-      "stage4": 5.0,
-      "stage5": 5.0
+      "stage1": 5,
+      "stage2": 5,
+      "stage3": 5,
+      "stage4": 5,
+      "stage5": 5
     },
     "dirt": {
-      "erodedDirt": 8.0,
-      "erodedCoarseDirt": 13.0
+      "erodedDirt": 8,
+      "erodedCoarseDirt": 13
     },
     "sand": {
-      "stage1": 3.0,
-      "stage2": 5.0,
-      "stage3": 8.0,
-      "stage4": 13.0,
-      "stage5": 13.0
+      "stage1": 3,
+      "stage2": 5,
+      "stage3": 8,
+      "stage4": 13,
+      "stage5": 13
     }
   }
 }
