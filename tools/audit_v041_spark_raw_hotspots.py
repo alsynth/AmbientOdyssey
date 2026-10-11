@@ -38,7 +38,11 @@ def source_schema(tmp):
 def candidate_sources(node,root_time):
     exclusive=[]
     paths=[]
-    def visit(n,depth):
+    queue=list(node.children)
+    seen=0
+    while queue and seen<300_000:
+        n=queue.pop()
+        seen+=1
         subtotal=sum(c.time for c in n.children)
         self_ms=max(0.0,n.time-subtotal)
         cls=n.className if hasattr(n,"className") else ""
@@ -49,9 +53,7 @@ def candidate_sources(node,root_time):
             signature=re.sub(r"[^a-zA-Z0-9_.$/-]","",cls)[:145]
             meth=re.sub(r"[^a-zA-Z0-9_$<>]","",method)[:65]
             exclusive.append((self_ms,signature,meth))
-        if depth<7:
-            for c in n.children:visit(c,depth+1)
-    for root in node.children:visit(root,0)
+        queue.extend(n.children)
     sums={}
     for count,cls,method in exclusive:
         key=cls+"#"+method
@@ -89,6 +91,9 @@ def scan(spark_pb2,code):
             "render" if "Render thread" in name else
             "worldgen_worker" if "Worker" in name else "fork_join_worker")
         top=candidate_sources(t,t.time)
+        if typ=="server":
+            print("SPARK_SERVER_TREE",code,"weight",round(t.time,1),
+                  "children",len(t.children),"refs",len(t.childrenRefs))
         out["threads"].append({
             "thread_class":typ,
             "root_weight":round(t.time,2),
