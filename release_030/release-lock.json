@@ -2000,6 +2000,20 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api/files/5845879",
       "runtime_status": "No in-game/packet test; required by Mine Cells doorway",
       "compatibility_exception": "Exact Fabric CCA library via Sinytra Connector"
+    },
+    "whaleborne": {
+      "id": 8914201,
+      "projectId": 1272075,
+      "fileName": "whaleborne-1.21.1-1.2.5.jar",
+      "displayName": "Whaleborne 1.2.5 for Minecraft 1.21.1 NeoForge",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "dependencies": [],
+      "sha256": "29af46632fbc066e2e9e761c1718f67e1e91a6e6f2569f8985fb2ded288bb285",
+      "sha512": "23b4730c566e9e2b86f158d8e893be4723efd0a2a4d45d830f5cc4f3e8f83e89135e6844a276ab47e81442fb949cd62166843cd6c1a6001426dfc6c9971b426b",
+      "downloadUrl": "https://mediafilez.forgecdn.net/files/8914/201/whaleborne-1.21.1-1.2.5.jar"
     }
   },
   "optional_integrated_patches": {

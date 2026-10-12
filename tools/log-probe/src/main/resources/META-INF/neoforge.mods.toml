@@ -1,0 +1,7 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_fullpack_probe"
+version="1.0-test-only"
+displayName="AO isolated full-pack log probe"

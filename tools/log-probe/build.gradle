@@ -1,0 +1,10 @@
+plugins {
+ id 'java'
+ id 'net.neoforged.moddev' version '2.0.148'
+}
+version='1.0-test-only'
+java.toolchain.languageVersion=JavaLanguageVersion.of(21)
+neoForge {
+ version='21.1.252'
+ mods { ao_fullpack_probe { sourceSet sourceSets.main } }
+}

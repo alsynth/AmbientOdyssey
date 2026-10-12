@@ -1,0 +1,13 @@
+AO v0.4.8 full-pack log test, 12 October 2026
+
+Production client started, joined a disposable flat world and saved cleanly.
+Whaleborne 1.2.5 and the exact supplied 0.4.8 prototype loaded together.
+Native registry counts: 9 rarities; 233 affixes; 58 gems.
+
+Rejected prototype gem definitions:
+ao_apotheotic_port:modded/depths
+  Failed to get element apothic_enchanting:earths_boon
+ao_apotheotic_port:aether/aether
+  Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: neoforge:elytra_flight
+
+The user prototype JAR was not modified. No natural ocean/dungeon or multiplayer acceptance claim.

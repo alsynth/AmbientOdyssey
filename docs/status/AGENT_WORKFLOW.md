@@ -15,3 +15,7 @@
 ## Armor/Questlog fix verification
 
 For branch `fix/affix-trims-questlog-placement-20261012`, run the eight native trim tests and Questlog placement QA described in [the fix guide](../testing/ARMOR_TRIMS_QUESTLOG_FIX_2026-10-12.md). Keep gameplay stats and exact third-party pins unchanged. Prefer short, simple reports.
+
+## Current consolidated test
+
+Use the hash-pinned `tools/package_v048_consolidated_test.py` procedure for the full v048 diagnostic pack. Preserve the supplied prototype byte-for-byte; Claude owns its ongoing port work. Whaleborne is CF 1272075:8914201. Collect the real world-loaded log, not just menu startup; forward the two missing-ID findings to the owner. No automatic transmission to another chat.
