@@ -1,0 +1,16 @@
+{
+  "base_sha256": "fa775ce9ebc3dec4b6c70e50d5c3bf0dab0117c28bb80c3e6bf7b2cdbe0a8364",
+  "port_sha256": "ddec6b79655bc5ff45979e88ef62df7c440646e6d48d6804e3e1476faba32f52",
+  "wet_sand_sha256": "fc7e84d341339f5ad88d9485ab6316b86edacfc9c1e9caccef2c562d0f3a5b49",
+  "whaleborne_sha256": "29af46632fbc066e2e9e761c1718f67e1e91a6e6f2569f8985fb2ded288bb285",
+  "whaleborne_pin": {
+    "projectID": 1272075,
+    "fileID": 8914201,
+    "required": true
+  },
+  "curseforge_pins": 331,
+  "prototype_finished": false,
+  "unrelated_base_members_preserved": true,
+  "output_sha256": "b0f506a1192d4e2e66a577872e78af68e8383c7df2c03d9d16b578c059cc2ebe",
+  "output_bytes": 71379837
+}

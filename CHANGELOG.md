@@ -142,3 +142,7 @@ Expanded JAR resource evidence to 196 binaries, repaired verified Cristel/CTOV/D
 ## 12 October 2026 — affixed armor cosmetics and Questlog placement fix
 
 AO Affix Trims 0.1.1 adds random vanilla trims after Apotheosis finishes affix generation, with old chest/drop fallbacks; existing trims and item stats remain intact. AO Questlog Bridge 0.1.5 places Q immediately right of the actual x=280, 20-wide Settings gear. Eight native trim tests and real client render/click/return at scales 2/3/4 pass. No third-party pin changes; full-pack multiplayer pending.
+
+## 12 October 2026 — v048 consolidated full-pack log test
+
+Added official Whaleborne 1.2.5, exact owner-supplied Apotheotic 0.4.8 prototype and available Wet Sand artifact to the armor/Q-fixed full base. All original 330 CF pins/overrides preserved; 331 pins total. Native production client/world join/save PASS; Depths and Aether gem definitions rejected due to missing IDs, recorded without changing the prototype.

@@ -1332,7 +1332,7 @@
     "content-040b-rp-torches-reimagined": {
       "projectId": 531730,
       "id": 8048795,
-      "fileName": "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip",
+      "fileName": "\u00c2\u00a7eTorches\u00c2\u00a78-\u00c2\u00a7eReimagined\u00c2\u00a70_\u00c2\u00a78[v1.8]\u00c2\u00a70.zip",
       "displayName": "Torches Reimagined 1.8",
       "gameVersions": [
         "1.21.1"
@@ -1346,7 +1346,7 @@
     "content-040b-rp-extended-illumina": {
       "projectId": 380413,
       "id": 6021451,
-      "fileName": "§eExtended_Illumina_1.21x.zip",
+      "fileName": "\u00c2\u00a7eExtended_Illumina_1.21x.zip",
       "displayName": "Extended Illumina 1.21.x",
       "gameVersions": [
         "1.21.1"
@@ -1962,7 +1962,7 @@
       "projectId": 1202066,
       "id": 8952784,
       "fileName": "questlog-neoforge-1.21.1-3.4.1.jar",
-      "displayName": "Questlog 3.4.1 NeoForge — journal foundation only",
+      "displayName": "Questlog 3.4.1 NeoForge \u00e2\u20ac\u201d journal foundation only",
       "gameVersions": [
         "1.21.1",
         "NeoForge"
@@ -2000,6 +2000,20 @@
       "source": "https://www.curseforge.com/minecraft/mc-mods/cardinal-components-api/files/5845879",
       "runtime_status": "No in-game/packet test; required by Mine Cells doorway",
       "compatibility_exception": "Exact Fabric CCA library via Sinytra Connector"
+    },
+    "whaleborne": {
+      "id": 8914201,
+      "projectId": 1272075,
+      "fileName": "whaleborne-1.21.1-1.2.5.jar",
+      "displayName": "Whaleborne 1.2.5 for Minecraft 1.21.1 NeoForge",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "dependencies": [],
+      "sha256": "29af46632fbc066e2e9e761c1718f67e1e91a6e6f2569f8985fb2ded288bb285",
+      "sha512": "23b4730c566e9e2b86f158d8e893be4723efd0a2a4d45d830f5cc4f3e8f83e89135e6844a276ab47e81442fb949cd62166843cd6c1a6001426dfc6c9971b426b",
+      "downloadUrl": "https://mediafilez.forgecdn.net/files/8914/201/whaleborne-1.21.1-1.2.5.jar"
     }
   },
   "optional_integrated_patches": {
