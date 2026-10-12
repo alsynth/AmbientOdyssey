@@ -48,3 +48,7 @@ Isolated branch `fix/affix-trims-questlog-placement-20261012`, based on v045 `62
 ## 12 October - tooltip and startup compatibility fix
 
 v048.1 uses SimplyTooltips as the single scrollable renderer, with tabs off so affixes remain in the same view. Legendary Tooltips borders/previews and Equipment Compare panels are temporarily disabled through configs. WorldWeaver welcome/update popups are skipped. Actual full-roster UI and native wheel checks passed at scales 2/3/4; prototype gem errors are recorded and deferred. No pins or bundled mods changed. See [UI patch evidence](../testing/V048_TOOLTIP_STARTUP_FIX_2026-10-12.md).
+
+## 12 October - r8 integrated manual-test build
+
+v048.2 replaces only the Apotheotic prototype with supplied r8 SHA 05639f00... and refreshes test notes. Full-roster client/world/save PASS; 60 gems now load and the two old gem parse failures are absent. One Cornelia crafting recipe has a missing Aquamirae ID; recorded without modifying the JAR. Latest UI fixes and all 331 pins retained. See [r8 checks](../testing/V0482_R8_FULL_PACK_2026-10-12.md).
