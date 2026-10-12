@@ -1,0 +1,13 @@
+R19 FULL-PACK DIAGNOSTIC CHECKS - 12 October 2026
+Supplied JAR SHA256: 5baeb9321dcabdad2664f159a089e6e7265f7b14072ccf1bb5cdf3ffec1df6e4
+Matching owner report: r19 compiled and all 30 native GameTests PASS.
+Agent's actual production client: latest full roster, fresh flat integrated world join/save/exit PASS, exit code 0.
+60 native gems loaded. No ao_apotheotic_port gem/affix/recipe parsing failure or mixin exception observed.
+Old Cornelia recipe error absent; r19 recipe references aquamirae:angler_fang.
+Static quest/FTB/source and archive worldgen validators PASS.
+329 CF pins and all other bundled JARs/configs/quests/worldgen unchanged from the latest v0483 pack.
+Q above right armor and E below left tool slots retained; Subtle Effects remains removed.
+No claim of verified combat, tier bonuses, natural drops, sigils, reforge, salvage, all external CSV IDs, textures, or multiplayer.
+Follow the updated gem manual checklist, then dedicated-server/two-player/save-restart acceptance.
+Inherited nonfatal Iron's Jewelry debug loot-table parse error remains recorded; unrelated fixes are deferred.
+This diagnostic import is not a public release certification.

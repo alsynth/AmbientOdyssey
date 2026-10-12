@@ -1,0 +1,14 @@
+﻿AO v0.4.8 r19 one-step test, started 2026-10-12T22:03:49
+Update: Ambient Odyssey v0.4.8 (r19) gem port update | source commit 7552fa2206d5a08458e0377fbe96d260ae04ecb5 | overlay files 586, deletions 3, expected GameTests 30
+Results folder: C:\Users\headq\Desktop
+Continuing on the branch from your last run: gem-update-20261012-0525
+Removed 0 stale files left by earlier updates.
+Copied 586 files into the repo.
+Static checker: 577 passed, 1 warnings, 0 failed (static only; no game code was executed)
+Lambda lint: no lambda captures a classic for-loop counter
+Import lint (heuristic): 34 files scanned, 0 suspected problems (heuristic)
+Running: gradle build runGameTestServer (this can take a few minutes)...
+JAR: C:\Users\headq\Documents\Codex\2026-10-11\i-d-use-the-existing-v0\work\AmbientOdyssey\ports\apotheotic-additions\neoforge\build\libs\ao-apotheotic-port-prototype-0.4.8-prototype.jar
+JAR SHA-256: 5BAEB9321DCABDAD2664F159A089E6E7265F7B14072CCF1BB5CDF3FFEC1DF6E4
+Importable test kit with the new JAR: C:\Users\headq\Desktop\ao-test-kit\AO-v048-gem-port-test-kit.zip
+RESULT: PASS - compiled and all 30 native GameTests passed. Not yet tried in game.

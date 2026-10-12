@@ -42,3 +42,7 @@ The top-level README and handoff once described **Structure Test 6** as the next
 ## Latest full-pack test: v0.4.8.3
 
 Adds Seven Curses Ender Chest access in Better Inventory and removes Subtle Effects plus its dedicated End Remastered patch. Full-roster native equip/layout/click/unequip checks passed; manual edge cases and mob-crash regression remain. [Build and evidence](docs/testing/V0483_RING_INVENTORY_2026-10-12.md).
+
+## Latest diagnostic import: v0.4.8.4 r19
+
+Supplied r19 port integrated on top of the final Q/E UI pack. Full-roster native client/world/save passes, with 60 gems and no observed port parsing failure. Manual gem/server/multiplayer acceptance remains. [Build and evidence](docs/testing/V0484_R19_FULL_PACK_2026-10-12.md).

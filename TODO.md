@@ -2140,3 +2140,10 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Manual hover/focus, access config, carried items, reload/multiplayer and crash-mob regression. See docs/testing/V0483_RING_INVENTORY_2026-10-12.md.
 
 - [x] User-selected E below left tool slots; Q above right armor panel (bridge 0.1.6). Targeted E mouse-pre routing fixes lower-area click interception.
+
+## 12 October - r19 full-pack diagnostic candidate
+
+- [x] Verify r19 matching JAR/kit and owner 30-test report; integrate without changing port source.
+- [x] Actual full-roster client/world/save PASS, 60 gems, no observed port parse failure; Cornelia error gone.
+- [x] Preserve latest Q/E positions, existing fixes and 329 CF pins; Subtle Effects stays removed.
+- [ ] Updated gem checklist, all external CSV IDs, dedicated-server/two-player/save-restart acceptance. See docs/testing/V0484_R19_FULL_PACK_2026-10-12.md.
