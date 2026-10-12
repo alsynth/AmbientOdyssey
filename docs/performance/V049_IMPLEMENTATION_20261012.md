@@ -6,4 +6,10 @@ Streams client-only particle options now use bubbles1, debrisfalse, density0.5, 
 
 Builder tools/package_v049_client_test.py asserts exact r19 base and manifest delta, 328 pins, preserved other bundled JARs and every unrelated config/quest/worldgen/loot byte. Source release-lock projection is330 (historical source divergence), consolidated import328. Existing Q/E and tooltip scroll features must be retested after removal.
 
-Validation currently pending: full shader-on native UI/scene and frametime tests. First isolated full-roster shader-OFF startup test is running. No FPS gain or broad gameplay certification claimed. Do not promote until the test log is appended here.
+Validation: 13 automated performance-tool tests PASS; source and actual archive preflight PASS; exact-delta builder PASS (328 CurseForge pins). Full-roster shader-OFF startup/world/save PASS. Shader-ON native Q/E equip, click, return and unequip at GUI scales 2/3/4 PASS; native long-tooltip scrolling PASS, with one bounded pane visible in screenshot. Repeated controlled scene trials are running; results will be saved separately. No matched r19 performance comparison, survival benchmark or multiplayer certification claimed.
+
+Known experimental limitation: Euphoria Patcher 1.10.5 attempts IrisModernShaderPackMixin against NeoOculus 1.8.7 with a mismatching beginDimensionParsing descriptor. The optional mixin warns and fails to apply; the patched shaders still generate and load. Do not call this a clean renderer compatibility pass. Modded dimension shader behavior remains manual QA. Renderer replacement remains deferred for the previously documented dependency/version conflicts.
+
+BorderlessWindow 1.6.0 is retained. Native bytecode confirms ScreenMode WINDOWED/BORDERLESS/FULLSCREEN and F11 target BORDERLESS by default. Recommend F11 borderless for normal play and easy Alt-Tab; do not claim an FPS advantage without a matched measurement. Benchmark stays fixed at a 2560x1440 window.
+
+Experimental import: build/Ambient-Odyssey-v0.4.9-CLIENT-PERFORMANCE-TEST.zip, SHA256 71dc361efa17812217c739dd317d941a4d5478126983a69d0e50295e703bad6d. Import as a new profile. Choose AO Performance/Balanced/Quality in the shader menu. Manually check Create machines, bosses, water visibility and modded dimensions before promotion. Keep r19 for rollback.
