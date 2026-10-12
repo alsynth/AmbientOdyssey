@@ -1,0 +1,18 @@
+{
+  "removed_candidates": [
+    "EquipmentCompare",
+    "LegendaryTooltips",
+    "Iceberg",
+    "Prism"
+  ],
+  "external_bytecode_references": [
+    [
+      "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+      "dev/uncandango/alltheleaks/leaks/client/mods/iceberg/Issue76.class"
+    ],
+    [
+      "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+      "dev/uncandango/alltheleaks/mixin/core/main/accessor/CustomItemRendererAccessor.class"
+    ]
+  ]
+}

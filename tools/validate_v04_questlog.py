@@ -12,7 +12,7 @@ q=lock['additions']['content-040h-questlog']
 assert (q['projectId'],q['id'],q['fileName'])==(1202066,8952784,'questlog-neoforge-1.21.1-3.4.1.jar')
 assert {'NeoForge','1.21.1'}.issubset(q['gameVersions'])
 assert not q.get('loader_bridge'), 'Questlog is native NeoForge; never Fabric-bridge this file'
-assert lock['experimental_minecells']['expected_manifest_refs']==331
+assert lock['experimental_minecells']['expected_manifest_refs']==330
 with zipfile.ZipFile(ROOT/lock['baseline']) as z:
   base=json.loads(z.read('manifest.json'))
 pins={e['projectID']:e['fileID'] for e in base['files']}
@@ -23,7 +23,7 @@ for name,e in lock['additions'].items():
   pins[pid]=fid
 if lock.get('default_integrated_patches'):
   e=lock['optional_integrated_patches'];pins[e['projectId']]=e['id']
-assert len(pins)==331,len(pins)
+assert len(pins)==330,len(pins)
 assert pins[1202066]==8952784
 assert pins[348521]==5729127, 'Questlog requires existing Cloth Config NeoForge 15.0.140; no duplicate/repin'
 assert pins[618790]==7033510 and pins[890127]==8654089 and pins[889079]==8726480
@@ -37,5 +37,5 @@ quest_folder=ROOT/'release_030/overrides/config/questlog/quests'
 assert quest_folder.is_dir() and len(list(quest_folder.glob('*.json')))==52
 from validate_v04_quest_campaign import validate
 assert validate()==52
-print('PASS: 331 projects, native Questlog pin, inherited Cloth Config, Mine Cells bridge, exact source-backed inventory button configuration, 52-quest campaign and 273 NBT repairs.')
+print('PASS: 330 source projects, native Questlog pin, inherited Cloth Config, Mine Cells bridge, exact source-backed inventory button configuration, 52-quest campaign and 273 NBT repairs.')
 print('Source and packaging only: inventory placement, interaction and multiplayer have NOT been runtime tested.')

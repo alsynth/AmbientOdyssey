@@ -1,0 +1,231 @@
+{
+  "hardware": "Ryzen 5 7600 / RTX 4070 / client heap 10GB",
+  "conditions": "2560x1440 window, render12/simulation6, cap160, VSync off; synthetic flat scene, 20s warmup +30s sample, three sequential trials per mode",
+  "native_probe_exit_code": 0,
+  "native_ui": "Q/E ring equip/click/return/unequip scales2/3/4 and long-tooltip scrolling PASS",
+  "shader_modes_loaded": true,
+  "known_warning": "Euphoria IrisModernShaderPackMixin optional injection descriptor mismatch with NeoOculus 1.8.7; dimension compatibility NOT certified",
+  "not_certified": [
+    "survival-world FPS",
+    "matched r19 speedup",
+    "multiplayer/server performance",
+    "modded dimensions",
+    "Create machines/boss gameplay",
+    "borderless performance advantage"
+  ],
+  "summary": [
+    {
+      "mode": "OFF",
+      "trials": 3,
+      "median_avg_fps": 150.79,
+      "median_1pct_low_fps": 73.28
+    },
+    {
+      "mode": "AO Performance",
+      "trials": 3,
+      "median_avg_fps": 152.31,
+      "median_1pct_low_fps": 80.59
+    },
+    {
+      "mode": "AO Balanced",
+      "trials": 3,
+      "median_avg_fps": 151.21,
+      "median_1pct_low_fps": 72.81
+    },
+    {
+      "mode": "AO Quality",
+      "trials": 3,
+      "median_avg_fps": 142.08,
+      "median_1pct_low_fps": 64.94
+    },
+    {
+      "mode": "AO Balanced Culling OFF",
+      "trials": 3,
+      "median_avg_fps": 132.34,
+      "median_1pct_low_fps": 60.82
+    },
+    {
+      "mode": "AO Balanced Streams Original",
+      "trials": 3,
+      "median_avg_fps": 135.99,
+      "median_1pct_low_fps": 61.79
+    }
+  ],
+  "raw_trials": [
+    {
+      "mode": "OFF",
+      "trial": 1,
+      "frames": 3632,
+      "avg_fps": 149.26396569986397,
+      "fps_1pct_low": 69.95810481162128,
+      "particles_at_end": "3693",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "OFF",
+      "trial": 2,
+      "frames": 4542,
+      "avg_fps": 151.451062735475,
+      "fps_1pct_low": 73.28282463924901,
+      "particles_at_end": "3651",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "OFF",
+      "trial": 3,
+      "frames": 4530,
+      "avg_fps": 150.79420260669784,
+      "fps_1pct_low": 76.67026165004626,
+      "particles_at_end": "3696",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Performance",
+      "trial": 1,
+      "frames": 4540,
+      "avg_fps": 151.37369914852727,
+      "fps_1pct_low": 80.07084668514702,
+      "particles_at_end": "3661",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Performance",
+      "trial": 2,
+      "frames": 4568,
+      "avg_fps": 152.31238221277195,
+      "fps_1pct_low": 80.59164944609672,
+      "particles_at_end": "3694",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Performance",
+      "trial": 3,
+      "frames": 4606,
+      "avg_fps": 153.56552425041178,
+      "fps_1pct_low": 83.96570844117944,
+      "particles_at_end": "3658",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced",
+      "trial": 1,
+      "frames": 4585,
+      "avg_fps": 152.85880878240502,
+      "fps_1pct_low": 83.32680637545172,
+      "particles_at_end": "3726",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced",
+      "trial": 2,
+      "frames": 4543,
+      "avg_fps": 151.2093106962048,
+      "fps_1pct_low": 72.81482715833637,
+      "particles_at_end": "3708",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced",
+      "trial": 3,
+      "frames": 1049,
+      "avg_fps": 146.86114404831216,
+      "fps_1pct_low": 67.43711275123114,
+      "particles_at_end": "3672",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Quality",
+      "trial": 1,
+      "frames": 1347,
+      "avg_fps": 144.70059375420036,
+      "fps_1pct_low": 69.25377422814657,
+      "particles_at_end": "3706",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Quality",
+      "trial": 2,
+      "frames": 4267,
+      "avg_fps": 142.06519207052276,
+      "fps_1pct_low": 62.70792538997301,
+      "particles_at_end": "3690",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Quality",
+      "trial": 3,
+      "frames": 4267,
+      "avg_fps": 142.07687780190827,
+      "fps_1pct_low": 64.9390004312599,
+      "particles_at_end": "3705",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced Culling OFF",
+      "trial": 1,
+      "frames": 3924,
+      "avg_fps": 130.83869991115003,
+      "fps_1pct_low": 60.81529935288671,
+      "particles_at_end": "3704",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced Culling OFF",
+      "trial": 2,
+      "frames": 4001,
+      "avg_fps": 133.40697068682385,
+      "fps_1pct_low": 60.105147674869244,
+      "particles_at_end": "3738",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced Culling OFF",
+      "trial": 3,
+      "frames": 3969,
+      "avg_fps": 132.3387549632618,
+      "fps_1pct_low": 64.56962151890518,
+      "particles_at_end": "3671",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced Streams Original",
+      "trial": 1,
+      "frames": 4085,
+      "avg_fps": 135.99443696528678,
+      "fps_1pct_low": 61.879244819508294,
+      "particles_at_end": "7384",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced Streams Original",
+      "trial": 2,
+      "frames": 4121,
+      "avg_fps": 137.2272931432329,
+      "fps_1pct_low": 61.78898417490377,
+      "particles_at_end": "7392",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    },
+    {
+      "mode": "AO Balanced Streams Original",
+      "trial": 3,
+      "frames": 3090,
+      "avg_fps": 130.83168916722624,
+      "fps_1pct_low": 61.094956394055274,
+      "particles_at_end": "7388",
+      "scene": "synthetic flat, 2560x1440, 12/6, cap160, 30 seconds after20s warmup"
+    }
+  ],
+  "log_sha256": "322f429485fb3f9ccbae7a261bfd2764818d5183577adb4cf8468f9b7fc1324d",
+  "screenshot_sha256": {
+    "performance-mode-0.png": "6ced3166fb4e64f99c5c6c2c2845668f18ed67f7eb24d1178c41b08ad0bdc072",
+    "performance-mode-1.png": "19a66054526719fa4329f45aaf813f5ea2f006a06b542c74765606da9bb0070e",
+    "performance-mode-2.png": "c032f9766f5171d904fa25b38414ad6e220c8855bdfbc0ebe848415315549e16",
+    "performance-mode-3.png": "ff6e3d0f4f27e83cd94be5a459c17ced0ba201539c759a3aadc16d88149168b4",
+    "performance-mode-4.png": "f7b66e7796f31c8cc89fce77ae5a38545a5f9df52bfe9617d828fbfa6c4766df",
+    "performance-mode-5.png": "cfbdf93c9f00b86fe33d802143c223cabb2e00c587ee34e260bb31093aea73de",
+    "ring-scale-2.png": "e50f687240ea91c2ce39c05bff12f85635257b00eb1da2c6ed0cc2ab9e70cf95",
+    "ring-scale-3.png": "c982f65c041529e171b155164ea7e3bdfead96cd6ebed602f9d2c36e539092cd",
+    "ring-scale-4.png": "d33dff6851753980a252be521cb5b9c38186da5973b8eade648a55cb8062b7fe",
+    "tooltip-removal-regression.png": "d3ab86d6949d680607fb1775f7b12663946070a98698f628ad51165eb7b359cf"
+  }
+}

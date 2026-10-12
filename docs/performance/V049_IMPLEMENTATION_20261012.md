@@ -1,0 +1,17 @@
+# v049 client implementation - work in progress
+
+Base: r19 full pack SHA10fe2562..., on performance/v049-client-overhaul-20261012. Added exact CF Euphoria915902:8884680 and EntityCulling448233:9100286; downloaded bytes match Modrinth SHA512 and CurseForge CDN. Removed disabled EquipmentCompare502561, LegendaryTooltips532127, exclusive Prism638111. Iceberg retained due AllTheLeaks integration references. Outer/nested bytecode audit found no remaining Prism references; removed mod dependencies were checked against native/Fabric declarations.
+
+Streams client-only particle options now use bubbles1, debrisfalse, density0.5, cap250 and radius64. No terrain/planning/audio edits. EntityCulling safeMode=true, tickCulling=false; baseline whitelist defaults remain. Euphoria original patcher locally generates AO Performance/Balanced/Quality copies, using actual generated shader LOW/MEDIUM/HIGH options. Balanced selected by default, native shader menu permits weaker/stronger presets. No modified shader binaries redistributed. Original matching Complementary CF pin preserved.
+
+Builder tools/package_v049_client_test.py asserts exact r19 base and manifest delta, 328 pins, preserved other bundled JARs and every unrelated config/quest/worldgen/loot byte. Source release-lock projection is330 (historical source divergence), consolidated import328. Existing Q/E and tooltip scroll features must be retested after removal.
+
+Validation: 13 automated performance-tool tests PASS; source and actual archive preflight PASS; exact-delta builder PASS (328 CurseForge pins). Full-roster shader-OFF startup/world/save PASS. Shader-ON native Q/E equip, click, return and unequip at GUI scales 2/3/4 PASS; native long-tooltip scrolling PASS, with one bounded pane visible in screenshot. All 18 controlled scene trials completed; client exited 0 and world saved. Raw trials, log/screenshot hashes and caveats are in v049-native-validation/RESULTS.json. No matched r19 performance comparison, survival benchmark or multiplayer certification claimed.
+
+Known experimental limitation: Euphoria Patcher 1.10.5 attempts IrisModernShaderPackMixin against NeoOculus 1.8.7 with a mismatching beginDimensionParsing descriptor. The optional mixin warns and fails to apply; the patched shaders still generate and load. Do not call this a clean renderer compatibility pass. Modded dimension shader behavior remains manual QA. Renderer replacement remains deferred for the previously documented dependency/version conflicts.
+
+BorderlessWindow 1.6.0 is retained. Native bytecode confirms ScreenMode WINDOWED/BORDERLESS/FULLSCREEN and F11 target BORDERLESS by default. Recommend F11 borderless for normal play and easy Alt-Tab; do not claim an FPS advantage without a matched measurement. Benchmark stays fixed at a 2560x1440 window.
+
+Experimental import: build/Ambient-Odyssey-v0.4.9-CLIENT-PERFORMANCE-TEST.zip, SHA256 4dac3f2f2991fb4b92638b97b80d7c0aa4dbf90631aa721c25707937944de6d0. Import as a new profile. Choose AO Performance/Balanced/Quality in the shader menu. Manually check Create machines, bosses, water visibility and modded dimensions before promotion. Keep r19 for rollback.
+
+Three-trial median FPS / 1% low: OFF150.8/73.3, Performance152.3/80.6, Balanced151.2/72.8, Quality142.1/64.9, Balanced culling OFF132.3/60.8, Balanced original Streams136.0/61.8. Fixed synthetic scene with cap160; sequential order and short duration limit inference. No claim of a whole-pack percentage speedup.
