@@ -41,6 +41,6 @@ The private package was rebuilt twice byte-identically; FTB/Questlog/ZIP/331-ref
 
 Isolated branch `fix/affix-trims-questlog-placement-20261012`, based on v045 `6228a5a`. Armor trim addon 0.1.1: eight native tests PASS (factory, old drops/chests, preservation). Questlog bridge 0.1.5: actual native client screenshots and click/return PASS at GUI scales 2/3/4. Separate update kit and v045.1 test import, all 330 original pins unchanged. Full AO overlays/multiplayer remain pending. See [evidence and install instructions](../testing/ARMOR_TRIMS_QUESTLOG_FIX_2026-10-12.md). v046 ports remain separate.
 
-## 12 October — current full-pack diagnostic build
+## 12 October - current full-pack diagnostic build
 
 `content/v048-consolidated-whaleborne-test-20261012`: exact v045.1 full base plus supplied Apotheotic 0.4.8 prototype, available Wet Sand prototype and official Whaleborne 1.2.5. 331 CF pins; armor/Q fixes retained. Production full-roster client/world join/save PASS; Depths and Aether gems fail their missing-ID lookups. Prototype is intentionally unfinished. See [full build and findings](../testing/V048_CONSOLIDATED_FULL_PACK_2026-10-12.md). User accepts Malkuth/Mine Cells; dungeon spawners wait for next playtest log; keybinds and other repairs follow consolidation.

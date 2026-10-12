@@ -2108,7 +2108,7 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Package two-addon update and separate v045.1 import without changing 330 pins.
 - [ ] Full-pack overlay/armor-renderer checks and two-player server verification.
 
-## 12 October — v048 full-pack consolidation
+## 12 October - v048 full-pack consolidation
 
 - [x] User-provided Apotheotic 0.4.8 prototype + Wet Sand + latest armor/Q fixes packaged into the full roster.
 - [x] Whaleborne 1.2.5 native metadata/hash checked and added as one official CF pin (331 total).

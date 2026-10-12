@@ -1332,7 +1332,7 @@
     "content-040b-rp-torches-reimagined": {
       "projectId": 531730,
       "id": 8048795,
-      "fileName": "\u00c2\u00a7eTorches\u00c2\u00a78-\u00c2\u00a7eReimagined\u00c2\u00a70_\u00c2\u00a78[v1.8]\u00c2\u00a70.zip",
+      "fileName": "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip",
       "displayName": "Torches Reimagined 1.8",
       "gameVersions": [
         "1.21.1"
@@ -1346,7 +1346,7 @@
     "content-040b-rp-extended-illumina": {
       "projectId": 380413,
       "id": 6021451,
-      "fileName": "\u00c2\u00a7eExtended_Illumina_1.21x.zip",
+      "fileName": "§eExtended_Illumina_1.21x.zip",
       "displayName": "Extended Illumina 1.21.x",
       "gameVersions": [
         "1.21.1"
@@ -1962,7 +1962,7 @@
       "projectId": 1202066,
       "id": 8952784,
       "fileName": "questlog-neoforge-1.21.1-3.4.1.jar",
-      "displayName": "Questlog 3.4.1 NeoForge \u00e2\u20ac\u201d journal foundation only",
+      "displayName": "Questlog 3.4.1 NeoForge — journal foundation only",
       "gameVersions": [
         "1.21.1",
         "NeoForge"
