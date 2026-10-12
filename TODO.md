@@ -2161,3 +2161,12 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 
 - [x] Implement source-backed shader profiles, lighter Streams particles, safe render culling and disabled-tooltip cleanup.
 - [ ] Actual shader-on/Q-E/tooltip/scene/frametime validation and candidate results; keep r19 rollback.
+
+## 13 October - v049 visual/ecology follow-up
+
+- [x] Preserve PR41 presets/culling/Streams; audit inherited exact mod metadata and supported visual/spawn configs.
+- [x] Experimental leaf/dust tuning and four overlapping Alex species weights, with byte-exact config rollback.
+- [ ] Representative scene A/B, raw frame capture duration, native visual/UI/dimension and5–7-player server checks.
+- [ ] Exact Naturalist per-species rule audit before remaining pest/ocean cleanup.
+- [ ] Obtain reviewed Claude Tan shutdown fix/hash and run shutdown/restart gate.
+- [ ] Build full experimental import only from exact PR41 archive; no performance gain certified. See docs/performance/V049_VISUAL_ECOLOGY_20261013.md.

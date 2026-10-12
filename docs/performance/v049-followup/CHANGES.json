@@ -1,0 +1,37 @@
+[
+  {
+    "file": "particular-common.toml",
+    "before": "spawnChance = 60",
+    "after": "spawnChance = 90"
+  },
+  {
+    "file": "particular-common.toml",
+    "before": "spawnChance = 700",
+    "after": "spawnChance = 1000"
+  },
+  {
+    "file": "particular-common.toml",
+    "before": "baseMaxAge = 200",
+    "after": "baseMaxAge = 160"
+  },
+  {
+    "file": "alexsmobs.toml",
+    "before": "blobfishSpawnWeight = 30",
+    "after": "blobfishSpawnWeight = 20"
+  },
+  {
+    "file": "alexsmobs.toml",
+    "before": "elephantSpawnWeight = 30",
+    "after": "elephantSpawnWeight = 20"
+  },
+  {
+    "file": "alexsmobs.toml",
+    "before": "tigerSpawnWeight = 30",
+    "after": "tigerSpawnWeight = 20"
+  },
+  {
+    "file": "alexsmobs.toml",
+    "before": "rhinocerosSpawnWeight = 24",
+    "after": "rhinocerosSpawnWeight = 16"
+  }
+]

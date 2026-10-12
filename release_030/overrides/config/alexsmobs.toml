@@ -330,7 +330,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 30
 	# Range: 0 ~ 1000
-	blobfishSpawnWeight = 30
+	blobfishSpawnWeight = 20
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -362,7 +362,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 30
 	# Range: 0 ~ 1000
-	elephantSpawnWeight = 30
+	elephantSpawnWeight = 20
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -522,7 +522,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 30
 	# Range: 0 ~ 1000
-	tigerSpawnWeight = 30
+	tigerSpawnWeight = 20
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0
@@ -770,7 +770,7 @@
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	# Default: 24
 	# Range: 0 ~ 1000
-	rhinocerosSpawnWeight = 24
+	rhinocerosSpawnWeight = 16
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	# Default: 0
 	# Range: > 0

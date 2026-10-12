@@ -15,3 +15,4 @@ release_030/overrides/** -text -eol
 *.csv -text -eol
 # Keep the Tan Trees binary directly in normal Git (private repo; no LFS host needed).
 release_030/overrides/config/tanshugetrees/custom_packs/\#main.zip -text -eol -filter -diff -merge
+docs/performance/v049-followup/*.toml -text -eol
