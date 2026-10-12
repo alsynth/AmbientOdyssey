@@ -51,12 +51,13 @@ public final class QuestlogBetterInventoryBridge {
     private static final int TAB_HEIGHT = 20;
     private static final int ATLAS_WIDTH = 512;
     private static final int ATLAS_HEIGHT = 256;
-    // Verified from Better Inventory 1.3.2 layout source:
-    // backpack tabs = left+52,76,100,124,148 (height 20);
-    // crafting tab = left+172, settings gear = left+198.
+    // Verified against the installed Better Inventory 1.3.2 JAR:
+    // backpack tabs = left+134,158,182,206,230; crafting=254;
+    // settings gear = left+280, width 20 (not the tab's width 24).
     // User-preferred Q tab: two pixels RIGHT of Better Inventory's gear.
     // Fall back to the previously verified above-gear slot on narrow screens.
-    private static final int SETTINGS_X = 198;
+    private static final int SETTINGS_X = 280;
+    private static final int SETTINGS_WIDTH = 20;
     private static final int TAB_MARGIN = 2;
 
     private static long lastBadgeTick = Long.MIN_VALUE;
@@ -81,7 +82,7 @@ public final class QuestlogBetterInventoryBridge {
         }
         int left = inventory.getGuiLeft();
         int top = inventory.getGuiTop();
-        int rightOfSettings = left + SETTINGS_X + TAB_WIDTH + TAB_MARGIN;
+        int rightOfSettings = left + SETTINGS_X + SETTINGS_WIDTH + TAB_MARGIN;
         // Align with native settings on the same row without covering it.
         if (rightOfSettings + TAB_WIDTH <= screen.width - 2) {
             return new Anchor(rightOfSettings, top);
@@ -162,7 +163,7 @@ public final class QuestlogBetterInventoryBridge {
 
         event.addListener(new QuestlogTab(screen));
         lastBadgeTick = Long.MIN_VALUE;
-        LOG.debug("AO Questlog bridge 0.1.4: settings-right primary, safe fallbacks at {},{} (gui left={}, top={})",
+        LOG.info("AO Questlog bridge 0.1.5: settings-right primary, safe fallbacks at {},{} (gui left={}, top={})",
                 buttonX(screen), buttonY(screen),
                 ((AbstractContainerScreen<?>) screen).getGuiLeft(),
                 ((AbstractContainerScreen<?>) screen).getGuiTop());

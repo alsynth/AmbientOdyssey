@@ -36,3 +36,7 @@ The private package was rebuilt twice byte-identically; FTB/Questlog/ZIP/331-ref
 - [Q1 quest implementation](../questing/QUESTLOG_Q1_IMPLEMENTATION.md), [FTB Manual implementation](../questing/FTB_MANUAL_Q1_IMPLEMENTATION.md).
 - [Q1 runtime matrix](../questing/QUESTLOG_Q1_RUNTIME_TESTS.md), [full first-test field sheet](../testing/V04H_TEST_SESSION_FIELD_SHEET.md).
 - Historical Q1-only candidate [38079305682](https://github.com/alsynth/AmbientOdyssey/actions/runs/38079305682), launch-ready 331-mod no-quest candidate [38077302870](https://github.com/alsynth/AmbientOdyssey/actions/runs/38077302870), and Test6/8 historical reports remain accessible in Git history and the archive.
+
+## 12 October — two-addon fixes
+
+Isolated branch `fix/affix-trims-questlog-placement-20261012`, based on v045 `6228a5a`. Armor trim addon 0.1.1: eight native tests PASS (factory, old drops/chests, preservation). Questlog bridge 0.1.5: actual native client screenshots and click/return PASS at GUI scales 2/3/4. Separate update kit and v045.1 test import, all 330 original pins unchanged. Full AO overlays/multiplayer remain pending. See [evidence and install instructions](../testing/ARMOR_TRIMS_QUESTLOG_FIX_2026-10-12.md). v046 ports remain separate.

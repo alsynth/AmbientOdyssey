@@ -11,3 +11,7 @@
 7. **Commit:** Isolated branch + clear changelog/status + exact hashes/artifact ID from new run. Put finished ZIPs in Actions artifacts or GitHub releases, not source repo.
 
 **Do not:** move root builders, imports, archives or version-locked inputs merely to make a tree look prettier; falsely mark a boss/structure objective verified; silently enable historically retired workflows. See [archive policy](../maintainers/ARCHIVE_POLICY.md).
+
+## Armor/Questlog fix verification
+
+For branch `fix/affix-trims-questlog-placement-20261012`, run the eight native trim tests and Questlog placement QA described in [the fix guide](../testing/ARMOR_TRIMS_QUESTLOG_FIX_2026-10-12.md). Keep gameplay stats and exact third-party pins unchanged. Prefer short, simple reports.

@@ -2100,3 +2100,10 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Two-player dedicated server: verify per-player Questlog progress, FTB Quests/Solo Quests team behavior, reward integrity, persistence through restart and empty-task reference page behavior.
 - [ ] Confirm Curios/JEI/Questlog icon overlap, modded crafting details and keyboard shortcuts using actual player screenshots/logs; do not advertise final default bindings without test evidence.
 - [ ] For the next **real adventure quest wave**, audit exact 1.21.1 registry IDs/advancement triggers for Mine Cells, Twilight Forest, Aether and dimension bosses before building mandatory kill/visit objectives. Preserve old quest IDs.
+
+## 12 October — armor trims and Questlog placement
+
+- [x] Apply trims after native Apotheosis affix generation; support older chest/drop loot. Eight native tests pass.
+- [x] Correct Q anchor from the actual installed Better Inventory gear geometry. Native client rendering and click/return pass at scales 2/3/4.
+- [x] Package two-addon update and separate v045.1 import without changing 330 pins.
+- [ ] Full-pack overlay/armor-renderer checks and two-player server verification.

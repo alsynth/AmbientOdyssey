@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-12",
+  "base_sha": "6228a5a0c1e4a2f5d8270765e66352e6b7707711",
+  "native_trim_tests": 8,
+  "native_trim_result": "PASS",
+  "ui_result": "PASS",
+  "ui_scale_results": [
+    "scale=2, gear=544..564, Q=566,162; native click/return passed",
+    "scale=3, gear=384..404, Q=406,72; native click/return passed",
+    "scale=4, gear=304..324, Q=326,27; native click/return passed"
+  ],
+  "better_inventory_constants": {
+    "SETTINGS_X": 280,
+    "SETTINGS_SIZE": 20,
+    "TAB_X0": 134,
+    "CRAFT_TAB_X": 254
+  },
+  "installed_jar_sha256": {
+    "betterinventory-neoforge-1.21.1-1.3.2.jar": "5e3d5563472c1553fabb5f5220214373e3b3d2923cdcbc0063d05d9f15ef8c3b",
+    "questlog-neoforge-1.21.1-3.4.1.jar": "fa7788e070ab9c2036b921cd73b9fd08489ebc2eacd9aadd3a3f32707c7414a8",
+    "Apotheosis-1.21.1-8.9.0.jar": "23a8b4a21d0d8744f097c77c8a96fcba14c4b95f3b1bb542412f40dab272872e"
+  },
+  "package_sha256": {
+    "AO-Armor-Trims-Questlog-Update.zip": "7e1123a068eaeacc2f375aea04d869fc453b030916bfb72bd35296e1dc78dc90",
+    "Ambient-Odyssey-v0.4.5.1-ARMOR-QUESTLOG-FIX-TEST.zip": "fa775ce9ebc3dec4b6c70e50d5c3bf0dab0117c28bb80c3e6bf7b2cdbe0a8364"
+  },
+  "installer_fixture_tests": "PASS: repeat-safe replacement, backups, unrelated settings/mods preserved, corrupt update rejected before edits"
+}

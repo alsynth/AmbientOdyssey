@@ -1,0 +1,51 @@
+name: Affix armor trims and Questlog placement fix
+on:
+  push:
+    branches: ['fix/affix-trims-questlog-placement-*']
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      CI: 'true'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: {distribution: temurin, java-version: '21'}
+      - uses: gradle/actions/setup-gradle@v4
+        with: {gradle-version: '9.2.1'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: Native trim tests and compiled Questlog bridge
+        run: |
+          gradle -p addons/ao-affix-trims --no-daemon build runGameTestServer
+          gradle -p addons/ao-questlog-betterinventory --no-daemon build
+          python tools/validate_v041_questlog_native_tab.py
+      - name: Download exact successful v045 baseline
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p build/base
+          gh run download 38175613274 --repo "$GITHUB_REPOSITORY" --name AO-v045-AFFIX-TRIMS-ADDON-EXPERIMENTAL --dir build/base
+      - name: Package two-addon update and separate test import
+        run: |
+          python tools/package_affix_questlog_fix.py --output build/AO-Armor-Trims-Questlog-Update.zip --base build/base/build/Ambient-Odyssey-v0.4.5-CUSTOM-INTEGRATIONS-PREVIEW.zip --import-output build/Ambient-Odyssey-v0.4.5.1-ARMOR-QUESTLOG-FIX-TEST.zip
+          python tools/validate_v041_questlog_native_tab.py --archive build/Ambient-Odyssey-v0.4.5.1-ARMOR-QUESTLOG-FIX-TEST.zip
+          sha256sum build/*.zip > build/fix-sha256.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AO-ARMOR-TRIMS-QUESTLOG-FIX
+          if-no-files-found: error
+          path: |
+            build/AO-Armor-Trims-Questlog-Update.zip
+            build/Ambient-Odyssey-v0.4.5.1-ARMOR-QUESTLOG-FIX-TEST.zip
+            build/fix-sha256.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: AO-TRIM-NATIVE-TEST-LOGS
+          path: addons/ao-affix-trims/run/logs/latest.log
