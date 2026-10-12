@@ -2124,3 +2124,10 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Record and defer Apotheotic Additions missing-ID errors; preserve the supplied JAR.
 - [ ] Re-enable comparison panels/Legendary decorations only after their renderer conflicts are resolved and verified.
 - [ ] Continue the consolidated playtest for other items, shaders and multiplayer; keybinds stay in their later phase.
+
+## 12 October - r8 full pack
+
+- [x] Integrate the exact r8 JAR, retain all latest UI/content fixes and 331 pins.
+- [x] Matching 30-GameTest report checked; full-roster client/world/save passed, 60 gems load.
+- [ ] Port owner: Cornelia recipe uses missing `aquamirae:anglers_fang`; Aquamirae 7.2.10 registers `aquamirae:angler_fang`.
+- [ ] Owner manual-test import: tiers, sockets, salvage, drops and progression; retain latest.log.

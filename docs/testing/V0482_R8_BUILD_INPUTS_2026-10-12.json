@@ -1,0 +1,9 @@
+{
+  "base_sha256": "bc581d63cffec94b219b8a59053acbb4506591b8db2abea2779ac4c1f7395e16",
+  "r8_jar_sha256": "05639f00c2905db6f28cac5de6e4076d1f873ffcf80dcad24b48aa19e05af13a",
+  "output_sha256": "6b8ebe241ace59469098650aadf5f143a7fa1e16d1514488449dd69e3522363b",
+  "curseforge_pins_unchanged": 331,
+  "other_bundled_jars_unchanged": true,
+  "ui_quests_recipes_worldgen_unchanged": true,
+  "r8_jar_json_resources_parsed": 498
+}
