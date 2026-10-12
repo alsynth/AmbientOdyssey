@@ -21,8 +21,8 @@
     "Apotheosis-1.21.1-8.9.0.jar": "23a8b4a21d0d8744f097c77c8a96fcba14c4b95f3b1bb542412f40dab272872e"
   },
   "package_sha256": {
-    "AO-Armor-Trims-Questlog-Update.zip": "7e1123a068eaeacc2f375aea04d869fc453b030916bfb72bd35296e1dc78dc90",
+    "AO-Armor-Trims-Questlog-Update.zip": "55f6c1a3d289607fed653654f2875201b53138d2dda6b52883c59b4c1aa9208e",
     "Ambient-Odyssey-v0.4.5.1-ARMOR-QUESTLOG-FIX-TEST.zip": "fa775ce9ebc3dec4b6c70e50d5c3bf0dab0117c28bb80c3e6bf7b2cdbe0a8364"
   },
-  "installer_fixture_tests": "PASS: repeat-safe replacement, backups, unrelated settings/mods preserved, corrupt update rejected before edits"
+  "installer_fixture_tests": "PASS: repeat-safe replacement, backups, unrelated settings/mods preserved, corrupt update rejected before edits; Unicode preferences preserved"
 }

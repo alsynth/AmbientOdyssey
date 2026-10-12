@@ -53,7 +53,7 @@ try {
     foreach ($file in $old) { Remove-Item -LiteralPath $file.FullName -Force }
     foreach ($name in $jars) { Copy-Item -LiteralPath (Join-Path $PSScriptRoot ('mods\' + $name)) -Destination $mods }
     New-Item -ItemType Directory -Path $configDir -Force | Out-Null
-    $text = if ($hadConfig) { Get-Content -LiteralPath $config -Raw } else { '' }
+    $text = if ($hadConfig) { [IO.File]::ReadAllText($config) } else { '' }
     $button = [regex]'(?ms)^\[button\]\s*\r?\n.*?(?=^\[|\z)'
     if ($button.IsMatch($text)) {
         $section = $button.Match($text).Value
