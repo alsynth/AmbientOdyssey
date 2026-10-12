@@ -56,3 +56,7 @@ v048.2 replaces only the Apotheotic prototype with supplied r8 SHA 05639f00... a
 ## 12 October - current v0483 test candidate
 
 v0483 adds Seven Curses Ender Chest access below Better Inventory tool slots, gated by equipped ring and native config. Actual full-roster client layout/equip/original chest packet/unequip checks PASS at scales 2/3/4. Subtle Effects and its exclusive End Remastered patch removed after user crash testing; 329 CF pins. Q now sits above the right armor panel as requested; existing r8, trims, Whaleborne and tooltip/startup fixes preserved. Manual edge cases and crash-mob regression remain. See [checks](../testing/V0483_RING_INVENTORY_2026-10-12.md).
+
+## 12 October - current r19 diagnostic candidate
+
+v0484 replaces the supplied r8 port JAR with verified r19; owner compiled/all 30 GameTests PASS. Actual full-roster client/world/save PASS, 60 gems and no observed port parsing or mixin failure; Cornelia error absent. Latest Q/E positions and all 329 pins preserved; Subtle Effects remains removed. Manual gem/full-server/multiplayer acceptance pending. See [r19 evidence](../testing/V0484_R19_FULL_PACK_2026-10-12.md).

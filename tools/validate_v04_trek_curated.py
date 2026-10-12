@@ -42,7 +42,7 @@ def validate(archive=None):
             m=json.loads(z.read("manifest.json"))
             refs={x["projectID"]:x["fileID"] for x in m["files"]}
             # Accept the exact approved v0483 removal, while retaining historical archive checks.
-            expected_refs = 329 if m.get("version") == "0.4.8.3-ring-inventory-test" else 331
+            expected_refs = 329 if m.get("version") in {"0.4.8.3-ring-inventory-test", "0.4.8.4-r19-full-pack-test"} else 331
             if expected_refs == 329:
                 assert {1023913, 1657433}.isdisjoint(refs)
             assert len(refs)==expected_refs and TREK[0] in refs and refs[TREK[0]]==TREK[1]
