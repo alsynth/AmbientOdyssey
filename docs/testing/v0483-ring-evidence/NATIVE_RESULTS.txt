@@ -1,0 +1,7 @@
+[12Oct2026 20:57:49.798] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_FULL_PACK_TITLE_PASS: creating disposable flat world for full-registry diagnosis
+[12Oct2026 20:59:22.295] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_RING_LAYOUT_PASS: scale=2, x=544, y=140
+[12Oct2026 20:59:27.201] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_RING_LAYOUT_PASS: scale=3, x=384, y=50
+[12Oct2026 20:59:32.214] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_RING_LAYOUT_PASS: scale=4, x=304, y=5
+[12Oct2026 20:59:37.087] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_RING_ORIGINAL_PACKET_PASS: real server opened chest menu
+[12Oct2026 20:59:42.082] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_RING_UNEQUIP_PASS: original cursed state does not keep tab visible
+[12Oct2026 20:59:42.082] [Render thread/INFO] [dev.ambientodyssey.logprobe.FullPackLogProbe/]: AO_FULL_PACK_WORLD_JOIN_PASS: full roster loaded; ring native layout/equip/click/unequip checks passed

@@ -19,3 +19,7 @@ For branch `fix/affix-trims-questlog-placement-20261012`, run the eight native t
 ## Current consolidated test
 
 Use the hash-pinned `tools/package_v048_consolidated_test.py` procedure for the full v048 diagnostic pack. Preserve the supplied prototype byte-for-byte; Claude owns its ongoing port work. Whaleborne is CF 1272075:8914201. Collect the real world-loaded log, not just menu startup; forward the two missing-ID findings to the owner. No automatic transmission to another chat.
+
+## Current v0483 candidate
+
+Use `tools/package_v0483_ring_test.py` on the exact r8 full import. Never reintroduce Subtle Effects (1023913) or its exclusive patch (1657433). Shared Fzzy Config stays. Ring compatibility source is `addons/ao-enigmatic-betterinventory`; isolated native QA in `tools/ring-probe` is never shipped. See [v0483 validation](../testing/V0483_RING_INVENTORY_2026-10-12.md).

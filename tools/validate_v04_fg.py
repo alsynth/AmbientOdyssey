@@ -87,6 +87,6 @@ assert len(refs)==331,len(refs)
 for pid,fid,_ in EXPECTED.values(): assert refs[pid]==fid
 for pid in (618790,890127,889079,532610,520110,623764,841890,638111,1005914,1123977,60028):
  assert pid in refs,('missing prior required project',pid)
-assert refs[1023913]==7768631, 'Keep completed Mine Cells Subtle Effects pin, do not silently repin'
+assert {1023913,1657433}.isdisjoint(refs), 'Subtle Effects and its exclusive compatibility patch were removed after user crash testing'
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
-print('PASS: 331 refs including exact 12 f/g pins; pinned Mine Cells stack, libraries, Subtle Effects and 273 native repairs retained. Static only.')
+print('PASS: 331 refs including exact 12 f/g pins; pinned Mine Cells stack, libraries and 273 native repairs retained; Subtle Effects removed. Static only.')

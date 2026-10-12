@@ -41,7 +41,11 @@ def validate(archive=None):
             names=set(z.namelist())
             m=json.loads(z.read("manifest.json"))
             refs={x["projectID"]:x["fileID"] for x in m["files"]}
-            assert len(refs)==331 and TREK[0] in refs and refs[TREK[0]]==TREK[1]
+            # Accept the exact approved v0483 removal, while retaining historical archive checks.
+            expected_refs = 329 if m.get("version") == "0.4.8.3-ring-inventory-test" else 331
+            if expected_refs == 329:
+                assert {1023913, 1657433}.isdisjoint(refs)
+            assert len(refs)==expected_refs and TREK[0] in refs and refs[TREK[0]]==TREK[1]
             assert not (REMOVE & set(refs))
             assert BASE+"pack.mcmeta" in names
             for slug in disabled:

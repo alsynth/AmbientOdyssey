@@ -1,0 +1,12 @@
+{
+  "base_sha256": "6b8ebe241ace59469098650aadf5f143a7fa1e16d1514488449dd69e3522363b",
+  "output_sha256": "d2d8fddd241755b996da6468f5a3c2b35b6bc91648e8d8080de92bf240cb6745",
+  "bridge_sha256": "e9e5791f91e47674cc6b78247af66039cf9cce2e6c420d9effd74b64c2f16ae5",
+  "removed_projects": [
+    1023913,
+    1657433
+  ],
+  "curseforge_pins": 329,
+  "remaining_pins_and_original_payload_unchanged": true,
+  "removed_config_paths": []
+}
