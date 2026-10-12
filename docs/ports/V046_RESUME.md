@@ -325,3 +325,20 @@ c6fcf9e0bd88390ed0972fa6ce6fd57cae704bba. A first large inline tool upload was
 truncated; repaired through chunked base64 blob upload. For large future files,
 use small chunks and compare local/remote blob hashes before considering backup
 complete. The repaired checkpoint is 5a190a7ecdd6cbe502e9b7772af8ff6c0deb1212.
+
+## Claude patch local verification — isolated follow-up branch
+
+Latest follow-up work is on experimental/v046-gem-tier-local-verification-20261012,
+starting from the same handoff tree as 4ed1429. Original port branch is preserved.
+Imported patch 74e170a; original build and 11 tests passed. Strengthened actual
+unsupported-bonus and stock-upgrade checks; fixed raw-item purity ceiling despite
+native GemView minimum-purity clamping. Added native Gem Case/Perfect ingredient
+hazard characterization. Final build and 12 native tests PASS; strict log check
+updated deliberately to 12. See docs/ports/V046_GEM_TIER_SOURCE_REVIEW_2026-10-12.md
+and docs/testing/v046-evidence/apotheotic-twelve-gem-tier-patch-gametests.log.
+
+Gem Case tier loss and Perfect ingredients consuming upper tiers are now
+reproduced against the installed binaries and remain unresolved release blockers.
+Tests demonstrating the hazards passing do not certify storage/crafting safety.
+Client/full-pack gameplay remains outstanding. Continue upper-tier storage and
+recipe preservation before any drop enablement or complete CurseForge build.

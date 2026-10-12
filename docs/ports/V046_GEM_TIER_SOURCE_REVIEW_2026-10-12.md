@@ -58,3 +58,41 @@ Prereqs from the handoff: `CI=true`, Gradle 9.2.1, Java 21.
 ## Not run / not established
 Compilation, all GameTests, F2 in-game confirmation, F6/F7 reproduction, the 8.9.0 binary
 (vs. 1.21 source) equality behavior, client tooltip/naming, and dedicated server.
+
+## 12 October local verification follow-up (supersedes UNBUILT status above)
+
+Imported Claude format-patch 74e170adefd136cb722a4156c211974dcb13415a on isolated
+branch experimental/v046-gem-tier-local-verification-20261012. Original patch
+compilation and all 11 tests PASS against actual Apotheosis 8.9.0, Placebo 9.9.2,
+Apothic Attributes 2.11.0 and NeoForge 21.1.252 binaries.
+
+Review found two additional verification/implementation gaps and addressed them:
+- The unsupported-modifier test used Hearty, which supports tier 7, and only
+  checked non-null. It now uses an actual restricted LegacyAttributeBonus and
+  requires zero amount for unsupported tier 7, with supported FLAWLESS amount
+  2.5 also asserted.
+- Native GemView clamps upper-only gems to minimum PERFECT. Checking only the
+  view purity could still honor a malicious upper component on a raw FLAWLESS
+  stack. resolveTier now takes the lower of supplied view and actual stored
+  GemItem purity. A malformed Warden stack is tested to return zero.
+
+Tests now invoke the installed stock PurityUpgradeRecipe assembly: FLAWLESS
+Hearty becomes PERFECT/Ancient +3, without stale component/custom name. The stock
+base validator rejects an Esoteric upgrade base. UnsocketedGem equality and
+PurityUpgradeRecipe behavior were also inspected directly in the 8.9.0 bytecode.
+
+Added one separate native characterization test, so the required count is now
+12 (the strict freshness/pass check remains). The test places a real native
+Gem Case, deposits Esoteric Hearty, and extracts it without the legacy component,
+with Ancient +3 instead of Esoteric +5. It also confirms native GemIngredient
+PERFECT accepts an Esoteric stack. These are reproduced UNRESOLVED hazards,
+not successful compatibility or fixes; upper-tier storage/recipes block release.
+
+Final compilation + all 12 required native tests PASS; no data ERROR observed.
+Evidence: docs/testing/v046-evidence/apotheotic-twelve-gem-tier-patch-gametests.log.
+Tested JAR SHA-256:
+435dae1208b54850081c667bfe56118157cd01615ee2ef383a36fddc76cdc15d.
+Client presentation, live UI interactions and complete pack compatibility were
+not rerun for this patch. No drops enabled, no CurseForge test ZIP, no live
+profile or v0.4.5/main edits. CI includes this verification branch but its remote
+result must be checked separately after push.

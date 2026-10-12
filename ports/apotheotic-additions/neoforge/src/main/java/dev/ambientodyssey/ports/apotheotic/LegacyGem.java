@@ -34,6 +34,10 @@ public final class LegacyGem {
   * With no component on a PERFECT stack: Ancient if supported, else the lowest supported upper tier.
   */
  public static OptionalInt resolveTier(ItemStack stack, Purity purity, IntPredicate supports) {
+  // Native GemView clamps malformed stacks up to a gem's minimum purity. That
+  // view must not raise the ceiling represented by the actual item component.
+  var storedPurity = dev.shadowsoffire.apotheosis.socket.gem.GemItem.getPurity(stack);
+  if (storedPurity.ordinal() < purity.ordinal()) purity = storedPurity;
   if (purity.ordinal() < 5) return supports.test(purity.ordinal()) ? OptionalInt.of(purity.ordinal()) : OptionalInt.empty();
   Integer component = stack.get(ApotheoticPort.LEGACY_GEM_TIER.get());
   if (component != null && component >= FIRST_COMPONENT_TIER && component <= 8)

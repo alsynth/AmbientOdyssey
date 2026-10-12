@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - experimental/v046-wetsand-apotheotic-ports-20261011
+      - experimental/v046-gem-tier-local-verification-20261012
   workflow_dispatch:
 permissions:
   contents: read

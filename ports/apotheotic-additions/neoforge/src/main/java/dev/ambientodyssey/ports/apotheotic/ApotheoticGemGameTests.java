@@ -86,7 +86,7 @@ public final class ApotheoticGemGameTests {
         });
     }
 
-    /** Source-reviewed, UNRUN: tier resolution never escalates and never throws. */
+    /** Exercise tier resolution through actual native item views and recipes. */
     @GameTest(template = "empty")
     public static void tierResolutionFailsClosedAndNeverEscalates(GameTestHelper helper) {
         var gem = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "modded/hearty")).get();
@@ -95,7 +95,9 @@ public final class ApotheoticGemGameTests {
         var flawless = gem.toStack(dev.shadowsoffire.apotheosis.socket.gem.Purity.FLAWLESS);
         flawless.set(ApotheoticPort.LEGACY_GEM_TIER.get(), 8);
         var r = LegacyGem.resolveTier(flawless, dev.shadowsoffire.apotheosis.socket.gem.Purity.FLAWLESS, bonus::supportsTier);
-        helper.assertTrue(r.isEmpty() || r.getAsInt() == 4, "Component escalated a FLAWLESS stack");
+        helper.assertTrue(r.isPresent() && r.getAsInt() == 4, "Component changed a supported FLAWLESS tier");
+        helper.assertTrue(Math.abs(bonus.createModifier(UnsocketedGem.of(flawless)).amount() - 2.5) < 0.000001,
+                "Component escalated actual FLAWLESS modifier");
         // Stale lower component on PERFECT (as after a stock purity upgrade) is ignored.
         var perfect = gem.toStack(dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT);
         perfect.set(ApotheoticPort.LEGACY_GEM_TIER.get(), 4);
@@ -105,7 +107,32 @@ public final class ApotheoticGemGameTests {
         var unsupported = gem.toStack(dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT);
         unsupported.set(ApotheoticPort.LEGACY_GEM_TIER.get(), 7);
         helper.assertTrue(LegacyGem.resolveTier(unsupported, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, t -> t == 5 || t == 8).isEmpty(), "Unsupported tier resolved");
-        helper.assertTrue(bonus.createModifier(UnsocketedGem.of(unsupported)) != null, "createModifier must not throw/return null");
+        var restrictedBonus = new LegacyAttributeBonus(bonus.getGemClass(), Attributes.MAX_HEALTH,
+                net.minecraft.world.entity.ai.attributes.AttributeModifier.Operation.ADD_VALUE,
+                java.util.Map.of("ancient", 3.0, "esoteric", 5.0));
+        helper.assertTrue(restrictedBonus.createModifier(UnsocketedGem.of(unsupported)).amount() == 0.0,
+                "Unsupported exact tier must produce zero rather than a fallback or exception");
+        // A native view clamps this upper-only gem up to PERFECT; raw stored purity still wins.
+        var crafted = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "crafted/warden")).get();
+        var malformed = LegacyGem.toLegacyStack(crafted, 8);
+        dev.shadowsoffire.apotheosis.socket.gem.GemItem.setPurity(malformed, dev.shadowsoffire.apotheosis.socket.gem.Purity.FLAWLESS);
+        var craftedBonus = (LegacyAttributeBonus) crafted.getBonuses().get(0);
+        helper.assertTrue(craftedBonus.createModifier(UnsocketedGem.of(malformed)).amount() == 0.0,
+                "Native minimum-purity clamp escalated malformed upper-only gem");
+        var lower = LegacyGem.toLegacyStack(gem, 4);
+        var inventory = new net.neoforged.neoforge.items.ItemStackHandler(4);
+        inventory.setStackInSlot(0, lower);
+        var input = new dev.shadowsoffire.apotheosis.socket.gem.cutting.GemCuttingRecipe.CuttingRecipeInput(inventory);
+        var upgrade = new dev.shadowsoffire.apotheosis.socket.gem.cutting.PurityUpgradeRecipe(
+                dev.shadowsoffire.apotheosis.socket.gem.Purity.FLAWLESS, java.util.List.of(), java.util.List.of());
+        helper.assertTrue(upgrade.isValidBaseItem(input, lower), "Native upgrade rejects valid lower-tier base");
+        var upgraded = upgrade.assemble(input, helper.getLevel().registryAccess());
+        helper.assertFalse(upgraded.has(ApotheoticPort.LEGACY_GEM_TIER.get()) ||
+                upgraded.has(net.minecraft.core.component.DataComponents.CUSTOM_NAME), "Stock upgrade retained a stale tier/name");
+        helper.assertTrue(Math.abs(bonus.createModifier(UnsocketedGem.of(upgraded)).amount() - 3.0) < 0.000001,
+                "Stock FLAWLESS-to-PERFECT upgrade retained Mythic instead of Ancient value");
+        helper.assertFalse(upgrade.isValidBaseItem(input, LegacyGem.toLegacyStack(gem, 8)),
+                "Stock cutting accepts an upper-tier gem as upgrade base");
         helper.succeed();
     }
 
@@ -117,6 +144,29 @@ public final class ApotheoticGemGameTests {
         var b = LegacyGem.toLegacyStack(gem, 8);
         helper.assertTrue(UnsocketedGem.of(a).equals(UnsocketedGem.of(b)), "Stock equality now distinguishes tiers: revisit cutting/ingredient guards");
         helper.assertFalse(ItemStack.isSameItemSameComponents(a, b), "Distinct tiers must not stack");
+        helper.succeed();
+    }
+
+    /** Characterizes unresolved data-loss/ingredient hazards; passing does not make them safe. */
+    @GameTest(template = "empty")
+    public static void stockGemCaseAndPerfectIngredientLoseUpperTierIdentity(GameTestHelper helper) {
+        var holder = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "modded/hearty"));
+        var esoteric = LegacyGem.toLegacyStack(holder.get(), 8);
+        var ingredient = new dev.shadowsoffire.apotheosis.util.GemIngredient(dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT);
+        helper.assertTrue(ingredient.test(esoteric), "Perfect ingredient behavior changed; review upper-tier recipe guard");
+        var pos = new BlockPos(1, 1, 1);
+        helper.setBlock(pos, dev.shadowsoffire.apotheosis.Apoth.Blocks.GEM_CASE.value().defaultBlockState());
+        var blockEntity = helper.getLevel().getBlockEntity(helper.absolutePos(pos));
+        helper.assertTrue(blockEntity instanceof dev.shadowsoffire.apotheosis.socket.gem.storage.GemCaseTile,
+                "Native Gem Case fixture did not initialize");
+        var gemCase = (dev.shadowsoffire.apotheosis.socket.gem.storage.GemCaseTile) blockEntity;
+        gemCase.depositGem(esoteric);
+        var extracted = gemCase.extractGem(holder, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, 1);
+        helper.assertFalse(extracted.isEmpty(), "Gem Case did not return stored gem");
+        helper.assertFalse(extracted.has(ApotheoticPort.LEGACY_GEM_TIER.get()), "Case behavior changed: review preservation fix");
+        var bonus = (LegacyAttributeBonus) holder.get().getBonuses().get(0);
+        helper.assertTrue(Math.abs(bonus.createModifier(UnsocketedGem.of(extracted)).amount() - 3.0) < 0.000001,
+                "Expected known Esoteric-to-Ancient data-loss hazard not reproduced");
         helper.succeed();
     }
 }
