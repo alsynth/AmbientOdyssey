@@ -5,10 +5,13 @@ retains Artifact, Heirloom and Esoteric, 25 core attribute affixes, and five
 attribute-only gems with their nine original tier values. Natural custom rarity
 and gem drop weights remain zero. It is not a complete or playable pack release.
 
-Nine native GameTests verify rarity binding, native rolls and item serialization,
+Twelve native GameTests verify rarity binding, native rolls and item serialization,
 real server resource reload, original stepped affix ranges and actual equipped
 damage, gem values/item/network serialization, native unique restrictions, and
-socketed Esoteric health applied to an equipped entity. Tests must emit nine
+socketed Esoteric health applied to an equipped entity, tier resolution and stock
+upgrade behavior. A characterization test also reproduces unresolved Gem Case
+tier loss and Perfect-ingredient acceptance of upper tiers. Passing that test
+confirms the hazards, not compatibility. Tests must emit twelve
 fresh passing results; successful compilation or launcher exit is insufficient.
 
 Use docs/ports/V046_RESUME.md for current evidence, remaining systems and exact
