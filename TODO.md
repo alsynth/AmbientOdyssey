@@ -2131,3 +2131,12 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Matching 30-GameTest report checked; full-roster client/world/save passed, 60 gems load.
 - [ ] Port owner: Cornelia recipe uses missing `aquamirae:anglers_fang`; Aquamirae 7.2.10 registers `aquamirae:angler_fang`.
 - [ ] Owner manual-test import: tiers, sockets, salvage, drops and progression; retain latest.log.
+
+## 12 October - v0483 ring inventory and Subtle Effects removal
+
+- [x] Add optional native-style Seven Curses E tab; actual equip, layouts 2/3/4, original server chest packet and unequip tested.
+- [x] Remove Subtle Effects and its exclusive End Remastered patch; keep shared Fzzy Config.
+- [x] Build experimental 329-pin full import; preserve r8 and existing integrations.
+- [ ] Manual hover/focus, access config, carried items, reload/multiplayer and crash-mob regression. See docs/testing/V0483_RING_INVENTORY_2026-10-12.md.
+
+- [x] User-selected E below left tool slots; Q above right armor panel (bridge 0.1.6). Targeted E mouse-pre routing fixes lower-area click interception.

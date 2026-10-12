@@ -52,3 +52,7 @@ v048.1 uses SimplyTooltips as the single scrollable renderer, with tabs off so a
 ## 12 October - r8 integrated manual-test build
 
 v048.2 replaces only the Apotheotic prototype with supplied r8 SHA 05639f00... and refreshes test notes. Full-roster client/world/save PASS; 60 gems now load and the two old gem parse failures are absent. One Cornelia crafting recipe has a missing Aquamirae ID; recorded without modifying the JAR. Latest UI fixes and all 331 pins retained. See [r8 checks](../testing/V0482_R8_FULL_PACK_2026-10-12.md).
+
+## 12 October - current v0483 test candidate
+
+v0483 adds Seven Curses Ender Chest access below Better Inventory tool slots, gated by equipped ring and native config. Actual full-roster client layout/equip/original chest packet/unequip checks PASS at scales 2/3/4. Subtle Effects and its exclusive End Remastered patch removed after user crash testing; 329 CF pins. Q now sits above the right armor panel as requested; existing r8, trims, Whaleborne and tooltip/startup fixes preserved. Manual edge cases and crash-mob regression remain. See [checks](../testing/V0483_RING_INVENTORY_2026-10-12.md).

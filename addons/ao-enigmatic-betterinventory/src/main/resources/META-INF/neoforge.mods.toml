@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="aoenigmaticbridge"
+version="0.1.0"
+displayName="Ambient Odyssey - Enigmatic Better Inventory Bridge"
+description="Seven Curses Ender Chest access in Better Inventory using its native tab style."
+displayTest="IGNORE_ALL_VERSION"
+[[dependencies.aoenigmaticbridge]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+side="CLIENT"
+[[dependencies.aoenigmaticbridge]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+side="CLIENT"

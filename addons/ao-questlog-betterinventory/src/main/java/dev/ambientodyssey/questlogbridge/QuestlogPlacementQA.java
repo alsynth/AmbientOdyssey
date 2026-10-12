@@ -83,9 +83,9 @@ public final class QuestlogPlacementQA {
             var layout = Class.forName("dev.fallingcloud.betterinventory.BetterInventoryLayout");
             int settingsX = layout.getField("SETTINGS_X").getInt(null);
             int settingsWidth = layout.getField("SETTINGS_SIZE").getInt(null);
-            int expectedX = inventory.getGuiLeft() + settingsX + settingsWidth + 2;
+            int expectedX = inventory.getGuiLeft() + layout.getField("RIGHT_A_X").getInt(null) + 10;
             if (q.getX() != expectedX || q.getY() != inventory.getGuiTop())
-                throw new IllegalStateException("Q is not immediately right of the actual gear: " + q.getX() + "," + q.getY());
+                throw new IllegalStateException("Q is not centered above the right armor panel: " + q.getX() + "," + q.getY());
             if (q.getX() + q.getWidth() > inventory.width || q.getY() < 0)
                 throw new IllegalStateException("Q is off-screen");
             var path = mc.gameDirectory.toPath().resolve("questlog-scale-" + scale + ".png");
