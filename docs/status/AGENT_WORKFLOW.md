@@ -28,3 +28,7 @@ A patch from another agent is **not implemented until committed** and its genera
 ### Known blockers
 
 Eight selected new structure mods remain pending integration and loader/dependency verification. Full runtime acceptance and Test 7 are pending. See `docs/handoff/05_MOD_DOWNLOADS_AND_BLOCKERS.md`.
+
+## Communication preference
+
+Always prefer short, simple answers in project reports, status updates, summaries and commit descriptions. Lead with the result and next action; use plain language and only the essential details. Clearly state test results and remaining blockers. Give longer explanations when requested or needed for accuracy.

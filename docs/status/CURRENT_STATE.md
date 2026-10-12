@@ -26,3 +26,7 @@
 **User-approved 9 Oct decisions:** Explorify Black Spiral remains **enabled provisionally**, pending Nether compatibility tests; Structory: Towers **v1.0.17, CurseForge 783522:8396885**, replaces prior v1.0.14. These choices are settled; runtime verification is not.
 
 **For every new agent or ChatGPT chat:** If working on Test 6, check out **`structure/test6`** and read its `AGENTS.md` plus the linked current-state and runtime documents. Do not rely on outdated Test 5 prep text on main, old external importer ZIPs or conversation history. Update the active branch's status and source/test artifacts with every change.
+
+## 12 October 2026 — reporting preference
+
+Added the user's durable short, simple reporting preference to root AGENTS.md and Agent Workflow. Documentation only; gameplay/build inputs unchanged. Latest inspected development heads are v0.4.6 gem verification (`e98fd41`) and v0.4.7 pregeneration planning (`3f8171c`); these remain separate from main's rollback baseline. Verified documentation preservation and GitHub readback; gameplay tests do not apply to this instruction-only change.

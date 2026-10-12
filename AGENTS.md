@@ -33,3 +33,7 @@ This repository is the implementation handoff for **Structure Test 6**, based on
 ## Work strategy
 
 Create a `structure/test6` branch and commit independently reviewable changes. Edit canonical inputs, regenerate with project scripts, run static gates, package deterministic outputs, and prepare a fresh-world acceptance checklist. Do not call the work finished without honest validation status.
+
+## Communication preference
+
+Always prefer short, simple answers in project reports, status updates, summaries and commit descriptions. Lead with the result and next action; use plain language and only the essential details. Clearly state test results and remaining blockers. Give longer explanations when requested or needed for accuracy.
