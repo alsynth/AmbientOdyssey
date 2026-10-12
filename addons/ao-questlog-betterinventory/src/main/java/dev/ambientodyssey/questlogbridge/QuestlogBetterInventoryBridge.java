@@ -54,7 +54,7 @@ public final class QuestlogBetterInventoryBridge {
     // Verified against the installed Better Inventory 1.3.2 JAR:
     // backpack tabs = left+134,158,182,206,230; crafting=254;
     // settings gear = left+280, width 20 (not the tab's width 24).
-    // User-preferred Q tab: two pixels RIGHT of Better Inventory's gear.
+    // User-preferred Q tab: centered ABOVE the right armor panel (RIGHT_A_X=308, width=44).
     // Fall back to the previously verified above-gear slot on narrow screens.
     private static final int SETTINGS_X = 280;
     private static final int SETTINGS_WIDTH = 20;
@@ -82,6 +82,10 @@ public final class QuestlogBetterInventoryBridge {
         }
         int left = inventory.getGuiLeft();
         int top = inventory.getGuiTop();
+        int aboveArmor = left + 318;
+        if (aboveArmor >= 2 && aboveArmor + TAB_WIDTH <= screen.width - 2 && top >= 2) {
+            return new Anchor(aboveArmor, top);
+        }
         int rightOfSettings = left + SETTINGS_X + SETTINGS_WIDTH + TAB_MARGIN;
         // Align with native settings on the same row without covering it.
         if (rightOfSettings + TAB_WIDTH <= screen.width - 2) {
@@ -163,7 +167,7 @@ public final class QuestlogBetterInventoryBridge {
 
         event.addListener(new QuestlogTab(screen));
         lastBadgeTick = Long.MIN_VALUE;
-        LOG.info("AO Questlog bridge 0.1.5: settings-right primary, safe fallbacks at {},{} (gui left={}, top={})",
+        LOG.info("AO Questlog bridge 0.1.6: armor-top primary, safe fallbacks at {},{} (gui left={}, top={})",
                 buttonX(screen), buttonY(screen),
                 ((AbstractContainerScreen<?>) screen).getGuiLeft(),
                 ((AbstractContainerScreen<?>) screen).getGuiTop());

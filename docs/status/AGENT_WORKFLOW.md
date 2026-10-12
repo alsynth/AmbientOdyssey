@@ -23,3 +23,5 @@ Use the hash-pinned `tools/package_v048_consolidated_test.py` procedure for the 
 ## Current v0483 candidate
 
 Use `tools/package_v0483_ring_test.py` on the exact r8 full import. Never reintroduce Subtle Effects (1023913) or its exclusive patch (1657433). Shared Fzzy Config stays. Ring compatibility source is `addons/ao-enigmatic-betterinventory`; isolated native QA in `tools/ring-probe` is never shipped. See [v0483 validation](../testing/V0483_RING_INVENTORY_2026-10-12.md).
+
+The latest annotated UI request moves E to the lower-left tool area and Q above right armor. Build with `--questlog-jar addons/ao-questlog-betterinventory/build/libs/ao-questlog-betterinventory-0.1.6.jar`. Native QA must deliver actual MouseHandler movement/press/release for both buttons.

@@ -2138,3 +2138,5 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Remove Subtle Effects and its exclusive End Remastered patch; keep shared Fzzy Config.
 - [x] Build experimental 329-pin full import; preserve r8 and existing integrations.
 - [ ] Manual hover/focus, access config, carried items, reload/multiplayer and crash-mob regression. See docs/testing/V0483_RING_INVENTORY_2026-10-12.md.
+
+- [x] User-selected E below left tool slots; Q above right armor panel (bridge 0.1.6). Targeted E mouse-pre routing fixes lower-area click interception.

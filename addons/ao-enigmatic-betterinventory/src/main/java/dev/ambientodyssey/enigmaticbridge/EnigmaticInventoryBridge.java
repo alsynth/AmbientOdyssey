@@ -36,6 +36,7 @@ public final class EnigmaticInventoryBridge {
     public EnigmaticInventoryBridge(IEventBus bus) {
         NeoForge.EVENT_BUS.addListener(EnigmaticInventoryBridge::init);
         NeoForge.EVENT_BUS.addListener(EnigmaticInventoryBridge::beforeRender);
+        NeoForge.EVENT_BUS.addListener(EnigmaticInventoryBridge::beforeClick);
     }
     private static boolean target(Screen screen) {
         return screen.getClass().getName().equals("dev.fallingcloud.betterinventory.client.screen.BetterInventoryScreen")
@@ -75,6 +76,17 @@ public final class EnigmaticInventoryBridge {
         if (!target(event.getScreen())) return;
         for (var child:event.getScreen().children()) if(child instanceof EnderTab tab) tab.refresh();
     }
+    private static void beforeClick(ScreenEvent.MouseButtonPressed.Pre event) {
+        if (!target(event.getScreen()) || event.getButton()!=0) return;
+        for (var child:event.getScreen().children()) if (child instanceof EnderTab tab) {
+            tab.refresh();
+            // BI's container click handling can consume this lower slot region before widgets.
+            // Only route our own visible hitbox; all native controls retain their input path.
+            if (tab.mouseClicked(event.getMouseX(),event.getMouseY(),event.getButton())) {
+                event.setCanceled(true); return;
+            }
+        }
+    }
     public static final class EnderTab extends AbstractButton {
         private final AbstractContainerScreen<?> parent;
         private final Button original;
@@ -86,16 +98,19 @@ public final class EnigmaticInventoryBridge {
         private void refresh() {
             active=visible=allowed();
             if (!visible) return;
-            // Above the settings gear, outside the native panel and Q tab at left+302/top.
+            // User-selected space below the left tool panel; preserve any active toolbox slot.
             int left=parent.getGuiLeft(), top=parent.getGuiTop();
-            int[][] candidates={{left+280,top-22},{left+254,top-22},
-                {left+280,top+parent.getYSize()+2},{left-26,top}};
+            int[][] candidates={{left+92,top+192},{left+63,top+192},
+                {left+280,top-22},{left-26,top}};
             for (int[] p:candidates) {
                 if(p[0]<2 || p[1]<2 || p[0]+24>parent.width-2 || p[1]+20>parent.height-2) continue;
                 boolean overlaps=false;
                 for (var child:parent.children()) if(child instanceof AbstractWidget w && w!=this && w.visible
                     && p[0]<w.getX()+w.getWidth() && p[0]+24>w.getX()
                     && p[1]<w.getY()+w.getHeight() && p[1]+20>w.getY()) { overlaps=true; break; }
+                for (var slot:parent.getMenu().slots) if (slot.isActive()
+                    && p[0]<left+slot.x+16 && p[0]+24>left+slot.x
+                    && p[1]<top+slot.y+16 && p[1]+20>top+slot.y) { overlaps=true; break; }
                 if (!overlaps) { setPosition(p[0],p[1]); return; }
             }
             active=visible=false; // Never cover a native control when no safe position exists.

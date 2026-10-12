@@ -31,7 +31,7 @@ public final class FullPackLogProbe {
     opening=true; mc.options.onboardAccessibility=false;mc.options.renderDistance().set(2);mc.options.simulationDistance().set(2);
     LOG.info("AO_FULL_PACK_TITLE_PASS: creating disposable flat world for full-registry diagnosis");
     var settings=new LevelSettings("AO full-pack log probe",GameType.CREATIVE,false,Difficulty.PEACEFUL,true,new GameRules(),WorldDataConfiguration.DEFAULT);
-    mc.createWorldOpenFlows().createFreshLevel("ao-full-pack-log-probe",settings,new WorldOptions(48127,false,false),a->a.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(WorldPresets.FLAT).value().createWorldDimensions(),new TitleScreen());
+    mc.createWorldOpenFlows().createFreshLevel("ao-ring-position-"+System.currentTimeMillis(),settings,new WorldOptions(48127,false,false),a->a.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(WorldPresets.FLAT).value().createWorldDimensions(),new TitleScreen());
     return;
    }
    if(mc.player==null||mc.level==null||mc.getSingleplayerServer()==null||++ticks<100)return;
@@ -45,13 +45,22 @@ public final class FullPackLogProbe {
    }
    if(stage>=1&&stage<=3){
     check(tab().visible&&tab().active,"equipped ring must show tab");
-    check(tab().getY()+tab().getHeight()<=inventory.getGuiTop(),"tab must sit above native panel");
+    check(tab().getY()==inventory.getGuiTop()+192,"tab must sit below left tool panel");
+    check(tab().getX()==inventory.getGuiLeft()+92 || tab().getX()==inventory.getGuiLeft()+63,"tab must stay in requested left area");
+    for(var slot:inventory.getMenu().slots)if(slot.isActive())
+      check(!(tab().getX()<inventory.getGuiLeft()+slot.x+16&&tab().getX()+24>inventory.getGuiLeft()+slot.x&&tab().getY()<inventory.getGuiTop()+slot.y+16&&tab().getY()+20>inventory.getGuiTop()+slot.y),"active slot overlap");
+    var q=(net.minecraft.client.gui.components.AbstractButton)inventory.children().stream().filter(v->v.getClass().getName().endsWith("QuestlogBetterInventoryBridge$QuestlogTab")).findFirst().orElseThrow();
+    check(q.getX()==inventory.getGuiLeft()+318&&q.getY()==inventory.getGuiTop(),"Q must be above right armor");
+    click(mc,q);
+    check(mc.screen!=null&&mc.screen.getClass().getName().endsWith("QuestlogScreen"),"Q did not open Questlog");
+    mc.screen.keyPressed(256,0,0);check(mc.screen==inventory,"Q did not return to Better Inventory");
+    LOG.info("AO_QUESTLOG_POSITION_CLICK_PASS: scale={}, x={}, y={}",stage+1,q.getX(),q.getY());
     for(var child:inventory.children())if(child instanceof net.minecraft.client.gui.components.AbstractWidget w&&w!=tab()&&w.visible)
       check(!(tab().getX()<w.getX()+w.getWidth()&&tab().getX()+24>w.getX()&&tab().getY()<w.getY()+w.getHeight()&&tab().getY()+20>w.getY()),"widget overlap");
     try(var shot=net.minecraft.client.Screenshot.takeScreenshot(mc.getMainRenderTarget())){shot.writeToFile(mc.gameDirectory.toPath().resolve("ring-scale-"+(stage+1)+".png"));}
     LOG.info("AO_RING_LAYOUT_PASS: scale={}, x={}, y={}",stage+1,tab().getX(),tab().getY());
     if(stage<3){stage++;inventory=openInventory(mc,stage+1);ticks=0;return;}
-    check(inventory.mouseClicked(tab().getX()+12,tab().getY()+10,0),"native click not consumed");
+    click(mc,tab());
     stage=4;ticks=0;return;
    }
    if(stage==4){
@@ -67,6 +76,15 @@ public final class FullPackLogProbe {
    LOG.info("AO_FULL_PACK_WORLD_JOIN_PASS: full roster loaded; ring native layout/equip/click/unequip checks passed");
    mc.stop();
   }catch(Exception|LinkageError e){finished=true;LOG.error("AO_FULL_PACK_PROBE_FAIL",e);mc.stop();}
+ }
+ private static void click(Minecraft mc,net.minecraft.client.gui.components.AbstractButton button)throws Exception {
+    var move=net.minecraft.client.MouseHandler.class.getDeclaredMethod("onMove",long.class,double.class,double.class);
+    move.setAccessible(true);move.invoke(mc.mouseHandler,mc.getWindow().getWindow(),
+      (button.getX()+12d)*mc.getWindow().getScreenWidth()/mc.getWindow().getGuiScaledWidth(),
+      (button.getY()+10d)*mc.getWindow().getScreenHeight()/mc.getWindow().getGuiScaledHeight());
+    var press=net.minecraft.client.MouseHandler.class.getDeclaredMethod("onPress",long.class,int.class,int.class,int.class);
+    press.setAccessible(true);press.invoke(mc.mouseHandler,mc.getWindow().getWindow(),0,1,0);
+    press.invoke(mc.mouseHandler,mc.getWindow().getWindow(),0,0,0);
  }
  private static void check(boolean value,String message){if(!value)throw new IllegalStateException(message);}
  private net.minecraft.client.gui.components.AbstractButton tab(){return (net.minecraft.client.gui.components.AbstractButton)inventory.children().stream().filter(v->v.getClass().getName().endsWith("EnigmaticInventoryBridge$EnderTab")).findFirst().orElseThrow();}
