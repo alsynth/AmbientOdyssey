@@ -2116,3 +2116,11 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Malkuth full arena and Mine Cells portals/progression accepted by owner.
 - [ ] Claude: resolve prototype Depths enchantment and Aether attribute IDs, continue port work.
 - [ ] Dungeon Crawl spawners: next actual dungeon test/log. Keybinds later; other errors after consolidated testing.
+
+## 12 October - v048 UI patch
+
+- [x] Skip WorldWeaver welcome/update popups; preserve world presets/repair warnings.
+- [x] Use one bounded tooltip renderer, keep affix details together, verify native scrolling at scales 2/3/4.
+- [x] Record and defer Apotheotic Additions missing-ID errors; preserve the supplied JAR.
+- [ ] Re-enable comparison panels/Legendary decorations only after their renderer conflicts are resolved and verified.
+- [ ] Continue the consolidated playtest for other items, shaders and multiplayer; keybinds stay in their later phase.

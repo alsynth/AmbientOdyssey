@@ -11,3 +11,5 @@ ao_apotheotic_port:aether/aether
   Unknown registry key in ResourceKey[minecraft:root / minecraft:attribute]: neoforge:elytra_flight
 
 The user prototype JAR was not modified. No natural ocean/dungeon or multiplayer acceptance claim.
+
+User instruction, 12 October: record these errors but defer fixes while Claude works on the gem port. The installed v048 playtest log at 17:52 reports the same two missing IDs. UI patch work must preserve the supplied prototype JAR.

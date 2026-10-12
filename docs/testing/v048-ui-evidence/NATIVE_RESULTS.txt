@@ -1,0 +1,25 @@
+Production NeoForge client, full roster, offline test identity.
+Viewport 1600x1000; final client exit 0; clean world save.
+
+AO_UI_SCREEN: net.minecraft.client.gui.screens.GenericMessageScreen
+AO_UI_SCREEN: net.minecraft.client.gui.screens.TitleScreen
+AO_FULL_PACK_TITLE_PASS: creating disposable flat world for full-registry diagnosis
+AO_UI_SCREEN: net.minecraft.client.gui.screens.LevelLoadingScreen
+AO_UI_SCREEN: none
+AO_UI_SCREEN: dev.fallingcloud.betterinventory.client.screen.BetterInventoryScreen
+AO_TOOLTIP_FRAME: stage=0, scale=2
+AO_UI_SCREEN: none
+AO_UI_SCREEN: dev.fallingcloud.betterinventory.client.screen.BetterInventoryScreen
+AO_TOOLTIP_FRAME: stage=1, scale=2
+AO_UI_SCREEN: none
+AO_UI_SCREEN: dev.fallingcloud.betterinventory.client.screen.BetterInventoryScreen
+AO_TOOLTIP_FRAME: stage=2, scale=3
+AO_UI_SCREEN: none
+AO_UI_SCREEN: dev.fallingcloud.betterinventory.client.screen.BetterInventoryScreen
+AO_TOOLTIP_NATIVE_WHEEL_PASS: scrollable tooltip active; native mouse wheel callback delivered
+AO_TOOLTIP_SCROLL_OFFSET_PASS: offset=69
+AO_TOOLTIP_FRAME: stage=3, scale=4
+AO_FULL_PACK_WORLD_JOIN_PASS: UI probe rendered plain and actual affixed comparison tooltips at scales 2/3/4
+
+Before-wheel lore starts at line 1; after-wheel lore starts at line 5.
+No multiplayer, shader-enabled or all-item acceptance claim.
