@@ -1,0 +1,13 @@
+plugins {
+ id 'java'
+ id 'net.neoforged.moddev' version '2.0.148'
+}
+version='1.0-test-only'
+java.toolchain.languageVersion=JavaLanguageVersion.of(21)
+neoForge {
+ version='21.1.252'
+ mods { ao_fullpack_probe { sourceSet sourceSets.main } }
+}
+
+repositories { maven { url="https://maven.shadowsoffire.dev/releases" } }
+dependencies { implementation("dev.shadowsoffire:Apotheosis:1.21.1-8.9.0") { transitive=false }; implementation("dev.shadowsoffire:Placebo:1.21.1-9.9.2") { transitive=false } }

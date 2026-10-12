@@ -32,7 +32,7 @@ def allowed(rules):
     return result
 
 
-def launch(install, runtime, jar, java, heap, timeout):
+def launch(install, runtime, jar, java, heap, timeout, width=960, height=540):
     project = Path(__file__).resolve().parents[1]
     runtime = runtime.resolve()
     runtime.relative_to((project / 'build').resolve())
@@ -86,7 +86,7 @@ def launch(install, runtime, jar, java, heap, timeout):
     args = [f'-Xmx{heap}', '-Dao.fullpack.logProbe=true', f'-Dao.fullpack.logProbeTimeoutSeconds={timeout}']
     args += arguments(base['arguments']['jvm'] + neo['arguments']['jvm'])
     args += [neo['mainClass']] + arguments(base['arguments']['game'] + neo['arguments']['game'])
-    args += ['--width', '960', '--height', '540']
+    args += ['--width', str(width), '--height', str(height)]
     argfile = runtime / 'production-launch.args'
     argfile.write_text('\n'.join(json.dumps(s, ensure_ascii=False) for s in args), encoding='utf-8')
     shutil.copy2(jar, runtime / 'mods' / jar.name)
@@ -113,7 +113,9 @@ if __name__ == '__main__':
     parser.add_argument('--java', default=shutil.which('java'))
     parser.add_argument('--heap', default='6G')
     parser.add_argument('--timeout', type=int, default=240)
+    parser.add_argument('--width', type=int, default=960)
+    parser.add_argument('--height', type=int, default=540)
     options = parser.parse_args()
-    result = launch(options.install.resolve(), options.game_dir, options.mod_jar.resolve(), options.java, options.heap, options.timeout)
+    result = launch(options.install.resolve(), options.game_dir, options.mod_jar.resolve(), options.java, options.heap, options.timeout, options.width, options.height)
     print(json.dumps(result, indent=2))
     raise SystemExit(0 if result['startup_and_world_join'] == 'PASS' else 1)

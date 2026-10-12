@@ -44,3 +44,7 @@ Isolated branch `fix/affix-trims-questlog-placement-20261012`, based on v045 `62
 ## 12 October - current full-pack diagnostic build
 
 `content/v048-consolidated-whaleborne-test-20261012`: exact v045.1 full base plus supplied Apotheotic 0.4.8 prototype, available Wet Sand prototype and official Whaleborne 1.2.5. 331 CF pins; armor/Q fixes retained. Production full-roster client/world join/save PASS; Depths and Aether gems fail their missing-ID lookups. Prototype is intentionally unfinished. See [full build and findings](../testing/V048_CONSOLIDATED_FULL_PACK_2026-10-12.md). User accepts Malkuth/Mine Cells; dungeon spawners wait for next playtest log; keybinds and other repairs follow consolidation.
+
+## 12 October - tooltip and startup compatibility fix
+
+v048.1 uses SimplyTooltips as the single scrollable renderer, with tabs off so affixes remain in the same view. Legendary Tooltips borders/previews and Equipment Compare panels are temporarily disabled through configs. WorldWeaver welcome/update popups are skipped. Actual full-roster UI and native wheel checks passed at scales 2/3/4; prototype gem errors are recorded and deferred. No pins or bundled mods changed. See [UI patch evidence](../testing/V048_TOOLTIP_STARTUP_FIX_2026-10-12.md).
