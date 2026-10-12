@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="MIT"
 [[mods]]
 modId="ao_affix_trims"
-version="0.1.0-experimental"
+version="0.1.1-experimental"
 displayName="Ambient Odyssey - Apotheosis Armor Trims"
 description='''Adds cosmetic random vanilla armor trims to genuine Apotheosis-affixed trimmable loot. Does not change affixes, loot quantity or item rarity. Experimental.'''
 [[dependencies.ao_affix_trims]]
@@ -12,6 +12,8 @@ type="required"
 versionRange="[1.21.1,1.21.2)"
 ordering="NONE"
 side="BOTH"
+[[mixins]]
+config="ao_affix_trims.mixins.json"
 [[dependencies.ao_affix_trims]]
 modId="neoforge"
 type="required"

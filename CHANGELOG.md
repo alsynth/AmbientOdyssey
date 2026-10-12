@@ -138,3 +138,7 @@ Expanded JAR resource evidence to 196 binaries, repaired verified Cristel/CTOV/D
 
 - Updated NeoForge to 21.1.248.
 - Added the missing Cupboard dependency.
+
+## 12 October 2026 — affixed armor cosmetics and Questlog placement fix
+
+AO Affix Trims 0.1.1 adds random vanilla trims after Apotheosis finishes affix generation, with old chest/drop fallbacks; existing trims and item stats remain intact. AO Questlog Bridge 0.1.5 places Q immediately right of the actual x=280, 20-wide Settings gear. Eight native trim tests and real client render/click/return at scales 2/3/4 pass. No third-party pin changes; full-pack multiplayer pending.

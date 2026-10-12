@@ -1,0 +1,8 @@
+{
+  "required": true,
+  "minVersion": "0.8.5",
+  "package": "dev.ambientodyssey.affixtrims.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": ["AffixLootCreationMixin"],
+  "injectors": {"defaultRequire": 1}
+}

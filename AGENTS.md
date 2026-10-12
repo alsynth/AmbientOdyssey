@@ -20,3 +20,7 @@ The historical multi-page handoff is preserved at [pre-cleanup AGENTS](docs/arch
 7. Keep user-facing change reports honest about what is built, source-validated, runtime-tested, or still blocked.
 
 For all earlier history see [full previous agent notes](docs/archive/history/AGENTS_pre_organization_2026-10-10.md), rather than stacking more outdated "LATEST" banners here.
+
+## Communication preference
+
+Always prefer short, simple answers in project reports and status updates. Lead with results and the next action. State test results and remaining blockers clearly. Expand only when requested or needed for accuracy.

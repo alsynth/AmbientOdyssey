@@ -1,5 +1,5 @@
 plugins {
-    id 'net.neoforged.moddev' version '2.0.42-beta'
+    id 'net.neoforged.moddev' version '2.0.148'
 }
 
 version = project.mod_version
@@ -12,6 +12,15 @@ neoForge {
     version = project.neoforge_version
     mods {
         "aoquestlogbridge" { sourceSet sourceSets.main }
+    }
+    runs {
+        clientQA {
+            client()
+            gameDirectory = project.file('build/client-qa-runtime')
+            systemProperty 'aoquestlogbridge.clientQA', 'true'
+            jvmArgument '-Xmx3G'
+            programArguments.addAll('--width', '1920', '--height', '1080')
+        }
     }
 }
 
@@ -28,5 +37,18 @@ processResources {
     filesMatching("META-INF/neoforge.mods.toml") { expand props }
 }
 jar {
+    exclude('**/QuestlogPlacementQA.class')
     manifest { attributes('Implementation-Title': 'Ambient Odyssey Questlog Better Inventory Bridge', 'Implementation-Version': project.version) }
+}
+
+tasks.named('runClientQA') {
+    doFirst { project.ext.qaStarted = System.currentTimeMillis() }
+    doLast {
+        def evidence = file('build/client-qa-runtime/logs/latest.log')
+        if (!evidence.exists() || evidence.lastModified() < project.ext.qaStarted ||
+                !evidence.text.contains('QUESTLOG_PLACEMENT_QA_PASS:') ||
+                evidence.text.contains('QUESTLOG_PLACEMENT_QA_FAIL')) {
+            throw new GradleException('Native Q placement/click QA did not pass; inspect the client QA log')
+        }
+    }
 }

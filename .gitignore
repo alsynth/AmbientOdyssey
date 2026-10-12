@@ -28,4 +28,6 @@ releases/
 
 # Generated archives/reports are not Git source files.
 build/
+.gradle/
+*-bytecode.txt
 *.pyc
