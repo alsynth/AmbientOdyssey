@@ -29,3 +29,7 @@ The latest annotated UI request moves E to the lower-left tool area and Q above 
 ## Current r19 diagnostic candidate
 
 Use `tools/package_v0484_r19_test.py` with the exact v0483 base and r19 SHA `5baeb932...`. The current owner report already passed all 30 tests; stale r8-run instructions in pasted handoffs do not apply. Keep prototype bytes and owner balance decisions intact. Follow [r19 validation and remaining gates](../testing/V0484_R19_FULL_PACK_2026-10-12.md).
+
+## Performance phase authorized
+
+Use r19 commit92575df / exact v0484 import as baseline. Follow [v049 preparation](../performance/V049_OVERHAUL_PREP_20261012.md); profile representative survival worlds, keep cold/warm and CPU/GPU evidence separate, preserve rollback. Actual candidate renderer metadata blocks blind migration. Performance work can proceed while outstanding gameplay acceptance continues.

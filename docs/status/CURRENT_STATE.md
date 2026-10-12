@@ -60,3 +60,7 @@ v0483 adds Seven Curses Ender Chest access below Better Inventory tool slots, ga
 ## 12 October - current r19 diagnostic candidate
 
 v0484 replaces the supplied r8 port JAR with verified r19; owner compiled/all 30 GameTests PASS. Actual full-roster client/world/save PASS, 60 gems and no observed port parsing or mixin failure; Cornelia error absent. Latest Q/E positions and all 329 pins preserved; Subtle Effects remains removed. Manual gem/full-server/multiplayer acceptance pending. See [r19 evidence](../testing/V0484_R19_FULL_PACK_2026-10-12.md).
+
+## 12 October - performance overhaul preparation
+
+Owner authorizes performance work on latest r19 base. Target: Ryzen7600/RTX4070, 32GB, 1440p144Hz, client10-11GB; separate rented12GB server and planned10k+ pregen. Prioritize Complementary Reimagined/Euphoria, particles, culling and warm-chunk multiplayer. Sodium/Iris swap has exact metadata blockers. Candidate presets/benchmark tools prepared; active pack unchanged and no measured gain claimed. [Runbook](../performance/V049_OVERHAUL_PREP_20261012.md).
