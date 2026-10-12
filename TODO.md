@@ -2147,3 +2147,12 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [x] Actual full-roster client/world/save PASS, 60 gems, no observed port parse failure; Cornelia error gone.
 - [x] Preserve latest Q/E positions, existing fixes and 329 CF pins; Subtle Effects stays removed.
 - [ ] Updated gem checklist, all external CSV IDs, dedicated-server/two-player/save-restart acceptance. See docs/testing/V0484_R19_FULL_PACK_2026-10-12.md.
+
+## 12 October - performance overhaul authorized / v049 preparation
+
+- [x] Audit latest r19 GitHub base, prior performance plans/issues and exact renderer dependencies.
+- [x] Record 1440p/144Hz Ryzen7600/RTX4070/32GB target and separate rented-server/pregen plan.
+- [x] Prepare Streams/shader candidates and recover tested measurement tools.
+- [ ] Implement Euphoria matching pair + shader profiles, then independent Streams/culling/lean-UI experiments.
+- [ ] Renderer migration gated by current Iris/Sodium/Supplementaries metadata; do not force-load incompatible JARs.
+- [ ] Representative warm/cold/client/server benchmarks and final-world Chunky pilot. See docs/performance/V049_OVERHAUL_PREP_20261012.md.

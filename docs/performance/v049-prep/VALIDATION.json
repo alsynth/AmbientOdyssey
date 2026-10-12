@@ -1,0 +1,10 @@
+{
+  "measurement_tool_tests": 13,
+  "tests_passed": true,
+  "baseline_archive_preflight": "PASS",
+  "baseline_ref_count": 329,
+  "planned_trials": 39,
+  "measured_trials": 0,
+  "in_game_performance_tests_run": false,
+  "active_pack_changed": false
+}
