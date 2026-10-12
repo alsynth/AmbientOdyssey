@@ -2156,3 +2156,8 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Implement Euphoria matching pair + shader profiles, then independent Streams/culling/lean-UI experiments.
 - [ ] Renderer migration gated by current Iris/Sodium/Supplementaries metadata; do not force-load incompatible JARs.
 - [ ] Representative warm/cold/client/server benchmarks and final-world Chunky pilot. See docs/performance/V049_OVERHAUL_PREP_20261012.md.
+
+## v049 client implementation in progress
+
+- [x] Implement source-backed shader profiles, lighter Streams particles, safe render culling and disabled-tooltip cleanup.
+- [ ] Actual shader-on/Q-E/tooltip/scene/frametime validation and candidate results; keep r19 rollback.

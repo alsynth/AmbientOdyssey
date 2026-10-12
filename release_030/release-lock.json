@@ -14,7 +14,10 @@
     "repurposed-structures-farmers-delight-compat": 1071336,
     "rarcompat": 1100379,
     "subtle-effects": 1023913,
-    "subtle-effects-end-remastered-compat": 1657433
+    "subtle-effects-end-remastered-compat": 1657433,
+    "equipment-compare": 502561,
+    "legendary-tooltips": 532127,
+    "prism-exclusive-tooltip-dependency": 638111
   },
   "additions": {
     "biolith": {
@@ -1561,21 +1564,6 @@
       "content_role": "Biome and dimension entry titles; does not implement journal/quests",
       "environment": "client"
     },
-    "content-040e-legendary-tooltips": {
-      "projectId": 532127,
-      "id": 6400660,
-      "fileName": "LegendaryTooltips-1.21.1-neoforge-1.5.5.jar",
-      "displayName": "Legendary Tooltips 1.5.5",
-      "gameVersions": [
-        "1.21.1",
-        "NeoForge"
-      ],
-      "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/legendary-tooltips/files/6400660",
-      "content_group": "0.4.0-e0-audit-broad",
-      "content_role": "Clear visual rare-item tooltip styling",
-      "environment": "client"
-    },
     "content-040e-map-distance-fix": {
       "projectId": 1321830,
       "id": 8507645,
@@ -1591,21 +1579,6 @@
       "content_role": "Keep vanilla map orientation outside map bounds",
       "environment": "both"
     },
-    "content-040e-equipment-compare": {
-      "projectId": 502561,
-      "id": 6375501,
-      "fileName": "EquipmentCompare-1.21.1-neoforge-1.3.13.jar",
-      "displayName": "Equipment Compare 1.3.13",
-      "gameVersions": [
-        "1.21.1",
-        "NeoForge"
-      ],
-      "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/equipment-compare/files/6375501",
-      "content_group": "0.4.0-e0-audit-broad",
-      "content_role": "Compare player-equipped gear against loot stats",
-      "environment": "client"
-    },
     "content-040e-rightclickharvest": {
       "projectId": 452834,
       "id": 7508749,
@@ -1620,20 +1593,6 @@
       "content_group": "0.4.0-e0-audit-broad",
       "content_role": "Right-click harvesting; Farmer Delight duplicate behavior audit",
       "environment": "both"
-    },
-    "content-040e-dep-prism": {
-      "projectId": 638111,
-      "id": 6372979,
-      "fileName": "Prism-1.21.1-neoforge-1.0.11.jar",
-      "displayName": "Prism 1.0.11 (required by Legendary Tooltips)",
-      "gameVersions": [
-        "1.21.1",
-        "NeoForge"
-      ],
-      "releaseType": 1,
-      "source": "https://www.curseforge.com/minecraft/mc-mods/prism-lib/files/6372979",
-      "content_group": "0.4.0-e0-audit-broad",
-      "dependency_for": "content-040e-legendary-tooltips"
     },
     "content-040e-better-advancements": {
       "projectId": 272515,
@@ -2001,6 +1960,34 @@
       "sha256": "29af46632fbc066e2e9e761c1718f67e1e91a6e6f2569f8985fb2ded288bb285",
       "sha512": "23b4730c566e9e2b86f158d8e893be4723efd0a2a4d45d830f5cc4f3e8f83e89135e6844a276ab47e81442fb949cd62166843cd6c1a6001426dfc6c9971b426b",
       "downloadUrl": "https://mediafilez.forgecdn.net/files/8914/201/whaleborne-1.21.1-1.2.5.jar"
+    },
+    "client-049-euphoria": {
+      "projectId": 915902,
+      "id": 8884680,
+      "fileName": "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar",
+      "displayName": "client-049-euphoria",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "environment": "client",
+      "sha256": "fe64a1fad6b6f39a95f22ea6ba9506b712e36b96c46b80f1cf38fe144900a4b2",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/euphoria-patches/files/8884680"
+    },
+    "client-049-entityculling": {
+      "projectId": 448233,
+      "id": 9100286,
+      "fileName": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "displayName": "client-049-entityculling",
+      "gameVersions": [
+        "1.21.1",
+        "NeoForge"
+      ],
+      "releaseType": 1,
+      "environment": "client",
+      "sha256": "fa73ac70a3766568203b730a1573b4b54d88fb48dff4a33d8c4a80be9b8d17d5",
+      "source": "https://www.curseforge.com/minecraft/mc-mods/entityculling/files/9100286"
     }
   },
   "optional_integrated_patches": {
@@ -2730,7 +2717,9 @@
     "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/spooky_forests.json",
     "overrides/config/paxi/datapacks/ao_compatibility/data/repurposed_structures/tags/worldgen/biome/collections/taigas.json",
     "overrides/config/paxi/datapacks/ao_worldgen_final_fixes/data/repurposed_structures/worldgen/structure/city_overworld.json",
-    "overrides/config/repurposed_structures-neoforge/modded_loot.toml"
+    "overrides/config/repurposed_structures-neoforge/modded_loot.toml",
+    "overrides/config/equipmentcompare.toml",
+    "overrides/config/legendarytooltips.toml"
   ],
   "default_integrated_patches": true,
   "recommended_ram_mb": 10240,
@@ -2764,7 +2753,7 @@
     "reason": "Exact SHA-locked malformed native endpoints: 271 both-empty terminals plus 2 Create Easy freight ends whose valid targets are preserved; normalize only invalid pool fields, keeping original geometry."
   },
   "experimental_minecells": {
-    "expected_manifest_refs": 331,
+    "expected_manifest_refs": 330,
     "owo_inherited_pin": {
       "projectId": 532610,
       "id": 6785734
