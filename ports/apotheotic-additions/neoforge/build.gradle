@@ -19,6 +19,12 @@ neoForge {
     version = '21.1.252'
     mods { ao_apotheotic_port { sourceSet sourceSets.main } }
     runs {
+        clientQA {
+            client()
+            gameDirectory = project.file('build/client-qa-runtime')
+            jvmArgument '-Xmx3G'
+            programArguments.addAll('--width', '960', '--height', '640')
+        }
         gameTestServer {
             type = 'gameTestServer'
             systemProperty 'neoforge.enabledGameTestNamespaces', 'ao_apotheotic_port'

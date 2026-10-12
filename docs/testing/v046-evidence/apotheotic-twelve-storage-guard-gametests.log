@@ -1,0 +1,9 @@
+[02:13:06] [main/INFO] [apotheosis/]: Registered 8 rarities.
+[02:13:06] [main/INFO] [apotheosis/]: Registered 124 affixes.
+[02:13:06] [main/INFO] [apotheosis/]: Registered 25 gems.
+[02:13:07] [Server thread/INFO] [apotheosis/]: Registered 8 rarities.
+[02:13:07] [Server thread/INFO] [apotheosis/]: Registered 124 affixes.
+[02:13:07] [Server thread/INFO] [apotheosis/]: Registered 25 gems.
+[02:13:08] [Server thread/INFO] [minecraft/GameTestServer]: ========= 12 GAME TESTS COMPLETE IN 1.222 s ======================
+[02:13:08] [Server thread/INFO] [minecraft/GameTestServer]: All 12 required tests passed :)
+BUILD SUCCESSFUL in 19s

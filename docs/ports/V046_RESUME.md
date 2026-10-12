@@ -342,3 +342,15 @@ reproduced against the installed binaries and remain unresolved release blockers
 Tests demonstrating the hazards passing do not certify storage/crafting safety.
 Client/full-pack gameplay remains outstanding. Continue upper-tier storage and
 recipe preservation before any drop enablement or complete CurseForge build.
+
+## Storage guard verification and low-usage handoff (latest)
+
+Claude storage-guard patch 5512a0d is applied on the verification branch.
+Compilation and all 12 native tests PASS, including required mixins. The
+isolated client joined a disposable world; manual interaction was interrupted
+by the user's physical Escape before completed results could be observed.
+Shift-click, drag, actual ticking hopper and actual crafting result remain
+UNVERIFIED. User reports missing Hearty/Armored textures and no creative gems
+above Perfect; both presentation integrations remain unfinished. Resume from
+STORAGE_GUARD_HANDOFF_2026-10-12.md in this directory, which contains the exact
+manual checks, positive controls and follow-up scope. No full-pack certification.

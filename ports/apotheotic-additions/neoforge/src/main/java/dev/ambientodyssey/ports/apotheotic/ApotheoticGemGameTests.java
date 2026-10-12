@@ -147,26 +147,39 @@ public final class ApotheoticGemGameTests {
         helper.succeed();
     }
 
-    /** Characterizes unresolved data-loss/ingredient hazards; passing does not make them safe. */
+    /** Upper tiers must neither be flattened by the stock Gem Case nor consumed by stock PERFECT ingredients. */
     @GameTest(template = "empty")
-    public static void stockGemCaseAndPerfectIngredientLoseUpperTierIdentity(GameTestHelper helper) {
+    public static void gemCaseAndPerfectIngredientPreserveUpperTierIdentity(GameTestHelper helper) {
         var holder = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "modded/hearty"));
         var esoteric = LegacyGem.toLegacyStack(holder.get(), 8);
+        var ancient = LegacyGem.toLegacyStack(holder.get(), 5);
         var ingredient = new dev.shadowsoffire.apotheosis.util.GemIngredient(dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT);
-        helper.assertTrue(ingredient.test(esoteric), "Perfect ingredient behavior changed; review upper-tier recipe guard");
+        helper.assertFalse(ingredient.test(esoteric), "Perfect ingredient consumed an Esoteric gem");
+        helper.assertTrue(ingredient.test(ancient), "Perfect ingredient no longer accepts Ancient");
         var pos = new BlockPos(1, 1, 1);
         helper.setBlock(pos, dev.shadowsoffire.apotheosis.Apoth.Blocks.GEM_CASE.value().defaultBlockState());
         var blockEntity = helper.getLevel().getBlockEntity(helper.absolutePos(pos));
-        helper.assertTrue(blockEntity instanceof dev.shadowsoffire.apotheosis.socket.gem.storage.GemCaseTile,
-                "Native Gem Case fixture did not initialize");
+        helper.assertTrue(blockEntity instanceof dev.shadowsoffire.apotheosis.socket.gem.storage.GemCaseTile, "Native Gem Case fixture did not initialize");
         var gemCase = (dev.shadowsoffire.apotheosis.socket.gem.storage.GemCaseTile) blockEntity;
-        gemCase.depositGem(esoteric);
-        var extracted = gemCase.extractGem(holder, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, 1);
-        helper.assertFalse(extracted.isEmpty(), "Gem Case did not return stored gem");
-        helper.assertFalse(extracted.has(ApotheoticPort.LEGACY_GEM_TIER.get()), "Case behavior changed: review preservation fix");
         var bonus = (LegacyAttributeBonus) holder.get().getBonuses().get(0);
-        helper.assertTrue(Math.abs(bonus.createModifier(UnsocketedGem.of(extracted)).amount() - 3.0) < 0.000001,
-                "Expected known Esoteric-to-Ancient data-loss hazard not reproduced");
+        // Handler path (hoppers/pipes): refused, stack returned unchanged, nothing stored.
+        var handler = gemCase.getItemHandler(null);
+        var refused = handler.insertItem(0, esoteric.copy(), false);
+        helper.assertTrue(ItemStack.isSameItemSameComponents(refused, esoteric) && refused.getCount() == esoteric.getCount(), "Handler did not return the Esoteric stack unchanged");
+        helper.assertTrue(gemCase.extractGem(holder, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, 1).isEmpty(), "Refused Esoteric gem was stored anyway");
+        // Backstop path: dropped intact, still nothing stored.
+        gemCase.depositGem(esoteric.copy());
+        helper.assertTrue(gemCase.extractGem(holder, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, 1).isEmpty(), "Backstop stored an Esoteric gem");
+        var drops = helper.getLevel().getEntitiesOfClass(net.minecraft.world.entity.item.ItemEntity.class,
+                new net.minecraft.world.phys.AABB(helper.absolutePos(pos)).inflate(3));
+        helper.assertTrue(drops.stream().anyMatch(e -> e.getItem().get(ApotheoticPort.LEGACY_GEM_TIER.get()) != null
+                && e.getItem().get(ApotheoticPort.LEGACY_GEM_TIER.get()) == 8), "Backstop did not drop the intact Esoteric gem");
+        drops.forEach(net.minecraft.world.entity.Entity::discard);
+        // Positive control: Ancient is exactly native PERFECT, so stock storage is lossless for it.
+        gemCase.depositGem(ancient.copy());
+        var back = gemCase.extractGem(holder, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, 1);
+        helper.assertFalse(back.isEmpty(), "Ancient gem was not stored by the stock case");
+        helper.assertTrue(Math.abs(bonus.createModifier(UnsocketedGem.of(back)).amount() - 3.0) < 0.000001, "Stored Ancient value changed");
         helper.succeed();
     }
 }

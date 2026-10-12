@@ -45,4 +45,9 @@ public final class LegacyGem {
   for (int t = 5; t <= 8; t++) if (supports.test(t)) return OptionalInt.of(t);
   return OptionalInt.empty();
  }
+ /** True for Artifact/Heirloom/Esoteric stacks (component 6..8), which stock purity-only code cannot represent. Ancient (5) is exactly native PERFECT. */
+ public static boolean isNonNativeUpperTier(ItemStack stack) {
+  Integer c = stack.get(ApotheoticPort.LEGACY_GEM_TIER.get());
+  return c != null && c >= 6 && c <= 8;
+ }
 }

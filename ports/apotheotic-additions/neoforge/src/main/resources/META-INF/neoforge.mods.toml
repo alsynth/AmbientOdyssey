@@ -24,3 +24,5 @@ type="required"
 versionRange="[8.9.0,9.0.0)"
 ordering="AFTER"
 side="BOTH"
+[[mixins]]
+config="ao_apotheotic_port.mixins.json"

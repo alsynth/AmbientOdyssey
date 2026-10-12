@@ -96,3 +96,39 @@ Client presentation, live UI interactions and complete pack compatibility were
 not rerun for this patch. No drops enabled, no CurseForge test ZIP, no live
 profile or v0.4.5/main edits. CI includes this verification branch but its remote
 result must be checked separately after push.
+
+## 12 October storage/ingredient guard (SOURCE ONLY, UNBUILT, UNRUN)
+
+Branch `gem-tier-storage-guard` (from `76d36b3`). Resolves F6/F7 by **refusing, never
+altering or voiding**. Rule: a stack is "non-native upper tier" when `legacy_gem_tier` is 6..8.
+Ancient (5) is exactly native PERFECT, so stock storage/ingredients stay lossless for it.
+Stock-created gems and every stock code path are unchanged (no tiered stack exists in stock).
+
+| Mixin | Target | Behavior |
+|---|---|---|
+| `GemCaseItemHandlerMixin` | `GemCaseTile$GemCaseItemHandler.insertItem` | returns the stack unchanged (hoppers/pipes see "not inserted", as stock does for invalid stacks) |
+| `GemCaseTileMixin` | `GemCaseTile.depositGem` | backstop: drops the intact stack at the case and cancels (covers the menu slot and other mods; nothing stored, nothing lost) |
+| `GemIngredientMixin` | `GemIngredient.test` | false for 6..8 so a PERFECT-gem ingredient means exactly Ancient |
+
+Infrastructure: `ao_apotheotic_port.mixins.json` (`defaultRequire: 1`) plus `[[mixins]]` in
+`neoforge.mods.toml`. This is the port's first mixin. A mismatch against the real 8.9.0 bytecode
+should fail loudly at launch, which is intended for testing.
+
+Test 12 was inverted: `gemCaseAndPerfectIngredientPreserveUpperTierIdentity` (count stays 12).
+It asserts refusal via the handler, the backstop drop of an intact Esoteric stack, nothing stored,
+Ancient still stored losslessly at +3, and the PERFECT ingredient accepting Ancient but not Esoteric.
+
+Known limits, deliberately not hidden:
+- Menu slot: the stock slot's `mayPlace` is in an anonymous class and is NOT mixed in (fragile naming
+  unverified against the binary). Placing an upper-tier gem there therefore ends in the backstop drop,
+  not a polite refusal. UX follow-up once the binary's class names are checked.
+- Upper-tier gems cannot be stored in the stock Gem Case at all. Whether the 1.20 original allowed storing
+  tiers is an inference from its per-rarity items, not checked against the 1.20 source. A tier-aware port-owned
+  case (option B) remains the way to add storage later.
+- Gem tier 5 stacks carry an explicit component, so they do not stack with stock component-less Ancient gems.
+- None of this compiled or ran. Mixin signatures were taken from 1.21-branch source, not the 8.9.0 JAR.
+
+Local verification: run the Apotheotic `build runGameTestServer`; expect `All 12 required tests passed :)`.
+If mixin application fails, the log names the unmatched target; fix signatures rather than relaxing `defaultRequire`.
+Then manually: shift-click and drag an Esoteric gem into a Gem Case (expect drop, tier intact), hopper into the case
+(expect no insertion), a recipe needing a Perfect gem with Esoteric (expect not accepted).
