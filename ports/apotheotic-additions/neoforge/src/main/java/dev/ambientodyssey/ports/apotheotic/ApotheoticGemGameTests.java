@@ -39,7 +39,10 @@ public final class ApotheoticGemGameTests {
                 int tier = java.util.List.of(LegacyGem.TIERS).indexOf(key);
                 var stack = LegacyGem.toLegacyStack(gem, tier);
                 var restored = ItemStack.parse(helper.getLevel().registryAccess(), stack.save(helper.getLevel().registryAccess())).orElseThrow();
-                helper.assertTrue(restored.get(ApotheoticPort.LEGACY_GEM_TIER.get()) == tier, "Lost exact legacy tier in item serialization");
+                if (tier >= LegacyGem.FIRST_COMPONENT_TIER)
+                    helper.assertTrue(restored.get(ApotheoticPort.LEGACY_GEM_TIER.get()) == tier, "Lost exact legacy tier in item serialization");
+                else
+                    helper.assertFalse(restored.has(ApotheoticPort.LEGACY_GEM_TIER.get()), "Lower tiers must rely on native purity only");
                 var buffer = new net.minecraft.network.RegistryFriendlyByteBuf(io.netty.buffer.Unpooled.buffer(), helper.getLevel().registryAccess());
                 try {
                     ApotheoticPort.LEGACY_GEM_TIER.get().streamCodec().encode(buffer, tier);
@@ -81,5 +84,39 @@ public final class ApotheoticGemGameTests {
             golem.discard();
             helper.succeed();
         });
+    }
+
+    /** Source-reviewed, UNRUN: tier resolution never escalates and never throws. */
+    @GameTest(template = "empty")
+    public static void tierResolutionFailsClosedAndNeverEscalates(GameTestHelper helper) {
+        var gem = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "modded/hearty")).get();
+        var bonus = (LegacyAttributeBonus) gem.getBonuses().get(0);
+        // Component on a non-PERFECT stack is ignored: purity is the ceiling.
+        var flawless = gem.toStack(dev.shadowsoffire.apotheosis.socket.gem.Purity.FLAWLESS);
+        flawless.set(ApotheoticPort.LEGACY_GEM_TIER.get(), 8);
+        var r = LegacyGem.resolveTier(flawless, dev.shadowsoffire.apotheosis.socket.gem.Purity.FLAWLESS, bonus::supportsTier);
+        helper.assertTrue(r.isEmpty() || r.getAsInt() == 4, "Component escalated a FLAWLESS stack");
+        // Stale lower component on PERFECT (as after a stock purity upgrade) is ignored.
+        var perfect = gem.toStack(dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT);
+        perfect.set(ApotheoticPort.LEGACY_GEM_TIER.get(), 4);
+        var p = LegacyGem.resolveTier(perfect, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, t -> t == 5 || t == 8);
+        helper.assertTrue(p.isPresent() && p.getAsInt() == 5, "Stale lower component not ignored");
+        // Unsupported exact upper tier resolves empty and createModifier yields a zero modifier, no exception.
+        var unsupported = gem.toStack(dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT);
+        unsupported.set(ApotheoticPort.LEGACY_GEM_TIER.get(), 7);
+        helper.assertTrue(LegacyGem.resolveTier(unsupported, dev.shadowsoffire.apotheosis.socket.gem.Purity.PERFECT, t -> t == 5 || t == 8).isEmpty(), "Unsupported tier resolved");
+        helper.assertTrue(bonus.createModifier(UnsocketedGem.of(unsupported)) != null, "createModifier must not throw/return null");
+        helper.succeed();
+    }
+
+    /** Characterization of stock behavior the port must not rely on: UnsocketedGem.equals ignores the tier component. */
+    @GameTest(template = "empty")
+    public static void stockUnsocketedEqualityIgnoresUpperTierComponent(GameTestHelper helper) {
+        var gem = GemRegistry.INSTANCE.holder(ResourceLocation.fromNamespaceAndPath(ApotheoticPort.ID, "modded/hearty")).get();
+        var a = LegacyGem.toLegacyStack(gem, 6);
+        var b = LegacyGem.toLegacyStack(gem, 8);
+        helper.assertTrue(UnsocketedGem.of(a).equals(UnsocketedGem.of(b)), "Stock equality now distinguishes tiers: revisit cutting/ingredient guards");
+        helper.assertFalse(ItemStack.isSameItemSameComponents(a, b), "Distinct tiers must not stack");
+        helper.succeed();
     }
 }

@@ -36,12 +36,11 @@ public final class LegacyAttributeBonus extends AttributeBonus {
     }
 
     @Override public AttributeModifier createModifier(GemView gem) {
-        int tier = LegacyGem.tier(gem.gemStack(), gem.purity());
-        if (!gem.gemStack().has(ApotheoticPort.LEGACY_GEM_TIER.get()) && tier == 5 && !supportsTier(tier))
-            tier = java.util.stream.IntStream.rangeClosed(6, 8).filter(this::supportsTier).findFirst().orElse(5);
-        if (tier < 0 || tier > 8 || !legacyValues.containsKey(LegacyGem.TIERS[tier]))
-            throw new IllegalArgumentException("Gem has no bonus at its exact legacy tier");
-        return new AttributeModifier(makeUniqueId(gem), legacyValues.get(LegacyGem.TIERS[tier]), operation);
+        // Fail closed: an invalid or unsupported exact tier yields a zero-effect modifier, never an exception
+        // (this runs in attribute recalculation and tooltips) and never a higher tier than native purity allows.
+        var tier = LegacyGem.resolveTier(gem.gemStack(), gem.purity(), this::supportsTier);
+        double amount = tier.isPresent() ? legacyValues.get(LegacyGem.TIERS[tier.getAsInt()]) : 0.0;
+        return new AttributeModifier(makeUniqueId(gem), amount, operation);
     }
 
     public boolean supportsTier(int tier) {
