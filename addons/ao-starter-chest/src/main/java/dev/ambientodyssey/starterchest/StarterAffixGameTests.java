@@ -34,7 +34,9 @@ public final class StarterAffixGameTests {
         var params = new LootParams.Builder(h.getLevel())
                 .withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(h.absolutePos(BlockPos.ZERO)))
                 .create(LootContextParamSets.CHEST);
-        return new LootContext.Builder(params).create(Optional.of(id));
+        var ctx = new LootContext.Builder(params).create(Optional.empty());
+        ctx.setQueriedLootTableId(id); // NeoForge sets this when a real loot table is evaluated.
+        return ctx;
     }
 
     @GameTest(template = "empty")
