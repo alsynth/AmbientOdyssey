@@ -9,6 +9,8 @@ on:
       - 'tools/test_ao_loot_first_pass.py'
       - 'tools/test_ao_loot_packager.py'
       - 'tools/package_ao_loot_economy_pilot.py'
+      - 'tools/validate_ao_starter_apotheosis_exemptions.py'
+      - 'release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/**'
       - 'tools/build_ao_goblin_tuned_trade_override.py'
       - 'release_030/overrides/config/paxi/datapacks/ao_flight_balance/**'
       - '.github/workflows/ao-loot-economy-draft.yml'
@@ -38,6 +40,13 @@ jobs:
           gradle-version: '8.14'
       - name: Compile experimental starter chest addon
         run: gradle -p addons/ao-starter-chest build --no-daemon
+      - name: Verify exact pinned Apotheosis native loot modifier safety
+        run: |
+          set -eu
+          PINNED="$HOME/.gradle/caches/modules-2/files-2.1/dev.shadowsoffire/Apotheosis/1.21.1-8.9.0"
+          SOURCE="$(find "$PINNED" -type f -name 'Apotheosis-1.21.1-8.9.0.jar' | head -n 1)"
+          test -n "$SOURCE"
+          python3 tools/validate_ao_starter_apotheosis_exemptions.py "$SOURCE"
       - uses: actions/upload-artifact@v4
         with:
           name: ao-starter-chest-compiled-experimental
