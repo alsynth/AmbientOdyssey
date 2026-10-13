@@ -17,6 +17,7 @@
 | [Quest beat CSV](../questing/V050_QUEST_BEATS_PROVISIONAL.csv) | **101** authoring beats (97 main, 4 epilogue) | Candidate triggers and fallback text, not engine quest IDs |
 | [Multiplayer & replayability](V050_ENCOUNTER_MULTIPLAYER_REPLAYABILITY_PROVISIONAL.md) | Solo-first encounters, performance-safe 5–7-person scaling hypotheses, anti-dupe/retries | Formula prototypes **not** applied |
 | [Owner decision register](V050_OWNER_DECISION_REGISTER.csv) | **22** issues with provisional defaults and explicit approvals | Owner can review later; don't interrupt technical progress |
+| [Origins exclusion](V050_ORIGINS_EXCLUSION_20261013.md) | Binding user decision: do not include Origins, NeoOrigins, dedicated addons, abilities or quests | No Origins JAR identified in audited roster; verify exact final import |
 | [Implementation handoff](V050_IMPLEMENTATION_HANDOFF.md) | Ordered small experimental implementation slices and test gates | Intended for Work mode |
 
 ## Binding user decisions kept
