@@ -1,6 +1,6 @@
 # Ambient Odyssey — FTB Field Manual: Keybind Cheatsheet (draft v0.3)
 
-**Status:** ready-to-edit educational page copy, **NOT yet an imported FTB Quests page**. Written for Minecraft 1.21.1 NeoForge. **Keys can be customized in Options → Controls → Key Binds**; the current player's game settings take precedence over listed defaults. The final published version must be generated or audited against the *actual released AO default controls*, including `defaultoptions`, Keybind Overrides, added Origins/Questlog/QoL mods and user-rebind support.
+**Status:** ready-to-edit educational page copy, **NOT yet an imported FTB Quests page**. Written for Minecraft 1.21.1 NeoForge. **Keys can be customized in Options → Controls → Key Binds**; the current player's game settings take precedence over listed defaults. The final published version must be generated or audited against the *actual released AO default controls*, including `defaultoptions`, Keybind Overrides, added Questlog/QoL mods and user-rebind support.
 
 ## 00. Five controls you'll actually use
 
@@ -79,7 +79,6 @@ This is the **action lookup table**, not a guessed keyboard layout. Fill the fin
 | **Iron's Spells 'n Spellbooks** | Cast spell, next/previous equipped spell, radial spell wheel | **Unverified** | Controls → Iron's Spellbooks; spell wheel **toggle** was introduced unbound by default in 1.21.1 mod version 3.12.1, so do not promise an assigned key |
 | **Ars Nouveau** | Cast/spellbook action, open or cycle spell slots and spell shortcuts | **Unverified** | Controls → Ars Nouveau and in-game spellbook help; many effects are context sensitive |
 | **Relics / Artifacts** | Trigger active relic or accessory ability | **Depends on item/mod; unverified** | Inspect tooltip and Controls. Many support items trigger passively and have *no keybind* |
-| **Origins (future)** | Primary/secondary active Origin ability | **Not configured/installed as approved backend** | Add after Origin selection; ensure no overlap with spell casting or backpack toggle |
 | **Questlog (future)** | Open Adventure Journal | **Not installed / final key unverified** | Prefer an easy non-conflicting shortcut or inventory button; engine must be tested |
 | **FTB Quests** | Open Field Manual / questbook | **AO final binding unverified** | Provide persistent menu access; distinguish from Questlog journal |
 | **Accessories** | Open accessory GUI | **AO distributed suggestion: O** | Confirm `O` survives profile first-launch and Curios/Accessories integration |
@@ -110,14 +109,14 @@ Some laptop keyboards require `Fn` for function keys. Only show debug keys in an
 2. Check whether the conflict is active **in the same context**: an inventory-only JEI `R` is not necessarily a collision with world-only gameplay `R`, but overlapping actions can still misfire.
 3. Choose an easy-to-remember key for actions you use during combat, then move rarely used menus to distant keys or modifier combinations. Keep familiar Minecraft actions whenever practical.
 4. For AO, start by **checking** `O` Accessories, `J` voice mute, Xaero `M`/`B`, and FTB Chunks map unbound—not by guessing the options on an old profile match the packaged defaults.
-5. After adding Questlog, new Origins, Traveler's Titles, backpack mods or other expansion content, re-run **all keybind screenshots** and publish the result here.
+5. After adding Questlog, Traveler's Titles, backpack mods or other expansion content, re-run **all keybind screenshots** and publish the result here.
 6. If a key mysteriously does nothing: confirm it is bound, no screen is intercepting it, the item must be equipped if required, you're not sneaking / riding / swimming, and the mod is actually loaded.
 
 ## 07. Production checklist for the final published page
 
 - [ ] Capture a successful **freshly imported AO instance** and `options.txt` with all `key_*` lines, plus DefaultOptions startup behavior and any KeybindOverrides one-shot flag; do not treat custom tester settings as universal defaults.
 - [ ] Mark every row **AO-confirmed / mod default / unbound / player customizable / future candidate** and resolve real conflicts.
-- [ ] Confirm keybinds in inventory, combat, while riding, with spellbooks, with backpack upgrades, and with the accepted Questlog/Origins implementation.
+- [ ] Confirm keybinds in inventory, combat, while riding, with spellbooks, with backpack upgrades, and with the installed Questlog and spellbook implementations.
 - [ ] Keep a **one-screen quick reference** at the top and fold-out/topic sections underneath in FTB Quests. Prefer item/action icons and very short examples, not a 50-row dense single screen.
 - [ ] Offer an optional printable/exportable one-page reference in AO website; do not hardcode unverified shortcuts.
 - [ ] Publish a version label and update when changes affect players.

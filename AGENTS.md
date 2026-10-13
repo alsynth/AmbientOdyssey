@@ -21,6 +21,10 @@ The historical multi-page handoff is preserved at [pre-cleanup AGENTS](docs/arch
 
 For all earlier history see [full previous agent notes](docs/archive/history/AGENTS_pre_organization_2026-10-10.md), rather than stacking more outdated "LATEST" banners here.
 
+## Current user gameplay exclusion (13 October 2026)
+
+**Do not install or use Origins / NeoOrigins or their Origins-dependent races, classes, backgrounds or power addons.** Ambient Odyssey will be played without Origins. Ignore or archive prior Origins tuning proposals; replace Origins quest/build assumptions with normal gear, relic and spell-system variety. Current dependency scans contain no Origins or Apoli JAR entry and the release overlay has no Origins-specific files, but confirm exact target import before asserting the installed roster. Avoid changing unrelated gameplay or adding replacement class mods without a fresh owner decision.
+
 ## Communication preference
 
 Always prefer short, simple answers in project reports and status updates. Lead with results and the next action. State test results and remaining blockers clearly. Expand only when requested or needed for accuracy.

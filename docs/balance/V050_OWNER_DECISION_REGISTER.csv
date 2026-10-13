@@ -1,0 +1,23 @@
+id,priority,decision_topic,current_provisional_recommendation,authority_status,acceptance_condition
+D01,P0,Tier 5 primary boss route,BOMD Lich or Void Blossom equivalent choice,PROPOSED NOT APPROVED,verify both boss instances and access before quest wiring
+D02,P0,Stronger Tier 6 Pinnacle gate,Iron's Dead King plus comparable alternative,PROPOSED NOT APPROVED,native HP spell and quest kill IDs
+D03,P0,Third Tier 9 End boss,Unselected reserved End encounter,UNASSIGNED BY USER,do not invent boss name or ID
+D04,P1,Geburah boss tier,Tier 7 is an optional review candidate only,USER UNDECIDED; KEEP NULL,test F.D. hit counters and arena difficulty
+D05,P1,Bosses' Rise roster,All five fights Tier 8; identity pending,USER APPROVED FAMILY; IDS PENDING,do not confuse Block Factory bosses
+D06,P1,Cataclysm tier older conflict,Most recent Tier 7 for Ignis and Leviathan,LATEST USER PLAN; RECORD OLDER T8 NOTE,owner may reopen only if tests demand
+D07,P0,World Tier unlock framework,Five phases Haven Frontier Ascent Summit Pinnacle,PHASE NAMES ESTABLISHED; IMPLEMENTATION PLACEHOLDER,account save and alternatives
+D08,P0,T6 gear unlock,T6 boss Artifact and strong T6 Pinnacle/Ancient access,USER INTENT,validate Apotheotic grade item component
+D09,P1,High-end gem rewards,T7 Artifact Heirloom; T8 Esoteric; T9 high-gear builds,USER INTENT,no unconditional generic chest rewards
+D10,P1,Dungeon chest distribution,T3–6 class archetype percentages from loot doc,DESIGN PROPOSAL ONLY,not random per-item weights
+D11,P1,Goblin Tuned chainmail economy,Trial 4–8 diamonds and 16–32 emeralds,OLDER RESEARCH SUGGESTION NOT APPROVED,measure actual farm rate and trade inputs
+D12,P1,Boss multiplayer scaling,Nearby-participant multiplier 0.35 HP and 0.08 damage increments,TEST HYPOTHESIS NOT DEPLOYED,ensure no stacking with native scalers
+D13,P1,First clear rewards,Per-player quest milestone plus original native drops,DESIGN PROPOSAL,validate Lootr rewards and player credit
+D14,P0,Final held-item Heirloom upgrade,Preserve components and mutate held item transactionally,USER INTENT; TECHNICAL ROUTE UNVERIFIED,no duping; validate old gem port
+D15,P1,Questline main campaign size,Nine main chapters 97 draft beats and 4 optional epilogue,AUTHORING TARGET ONLY,do not overwrite live 52 Questlog quests
+D16,P1,Repeatable endgame,Reusable boss material routes; prestige cosmetics over stronger stat inflation,PROVISIONAL DESIGN,boss reset and farm caps
+D17,P0,Remnant upgrade,Remnant Bosses 2.7.0 target,EXPLICIT USER DECISION,issue 43 binary verification and config migration
+D18,P1,Unselected optional boss families,Eternal Starlight / Aquamirae / underground dragons as T6 options,PROVISIONAL FAMILY PLACEMENT,scan exact boss and quest IDs
+D19,P2,Archaeology sidequests,Meaningful optional excavation objective only,PROVISIONAL; REWARD QA,do not require RNG-hostage archaeology
+D20,P0,Existing quest IDs,Keep v0484 r19 52 quest 13 chapter source,BINDING PRESERVATION,reconcile newer content before production edits
+D21,P0,YUNG absent mods,Do not treat Better Dungeons Desert/Jungle Temples as installed,EVIDENCE FROM OCT11 LOG,check current full pack roster before re-enabling
+D22,P2,Boss tier versus dungeon tier,Keep separate encounter/boss tier and structure tier,BINDING DESIGN RULE,prevent blanket HP scaling of boss in high-tier structure

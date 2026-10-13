@@ -1,3 +1,7 @@
+> **RETIRED / NOT FOR IMPLEMENTATION — 13 October 2026:** The user explicitly decided **Ambient Odyssey will not use Origins**. All Origins / NeoOrigins / origin-race / Origin-power / Origin-background and Origins-class addon recommendations in this historical proposal are cancelled. Do not use the backend, candidate mod IDs, crafting, keybinds, attribute proposals or quest suggestions below in the active pack. This document is preserved **only as a historical audit**, not a current TODO. The binding decision is [V050_ORIGINS_EXCLUSION_20261013.md](../balance/V050_ORIGINS_EXCLUSION_20261013.md). The current direction is **equipment, affixes, relics and magic builds with no Origins layer**. No replacement class mod is authorized simply because Origins was rejected.
+
+---
+
 # Ambient Odyssey — RPG Character Identity & Private MMORPG Systems
 
 **Created:** 10 Oct 2026. **Status:** RESEARCH / BRAINSTORM ONLY, NOT USER APPROVAL TO INSTALL. **Environment:** MC 1.21.1, NeoForge 21.1.252, 5–7-player server. **Phase:** after worldgen acceptance and dedicated-server smoke test, ideally alongside quest/balance work.
