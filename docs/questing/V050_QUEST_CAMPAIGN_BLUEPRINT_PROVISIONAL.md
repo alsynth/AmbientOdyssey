@@ -5,7 +5,7 @@
 - Existing live development **v0484 r19** already has **52 Questlog quests / 13 chapters and 32 FTB Manual pages** (read `AGENTS.md` and latest tested import before editing). Earlier `QUEST_CAMPAIGN_ARCHITECTURE.md` contains a **planning v0.1** banner claiming no production quests; that particular banner is obsolete.
 - Preserve stable IDs, current chapter assets, user GUI decisions, per-player persistence, previously tested Q/E integration, FTB manuals and the original WDA questline. Do **not** overwrite actual quest files from this design branch.
 - **Questlog = story/adventure/milestones/rewards**; **FTB Quests = educational/reference manual**. No duplicated completion rewards.
-- Existing nine main storyline chapters and many **opt-in** mod campaigns; do not force every dimension, cursed ring, Origin, boss, biome, wildlife kill or rare structure.
+- Existing nine main storyline chapters and many **opt-in** mod campaigns; do not force every dimension, cursed ring, boss, biome, wildlife kill or rare structure. **Do not write Origins selection, power, species, background or class-layer quests: Origins is excluded from AO.**.
 - Resist RNG hostage progression: main chapter permits alternative equivalent T5–6 boss routes; rare structures are optional field notes. The server is intended for **5–7**, but most encounters must remain reasonably soloable.
 - No rejected meta-systems: no exploration museum, Lost Expedition Stories, Party Expedition Planner, world-first leaderboards, mandatory guilds or scheduled world events.
 
@@ -60,7 +60,7 @@
 - **Explorer Atlas & archaeology:** selective meaningful discoveries, maybe one excavation trial if sufficiently rewarding. No museum, no exhaustive structure-tracker always-on polling.
 - **Relic Scholar / Seven Curses:** normal route always available; cursed ring opt-in and never a required campaign flag.
 - **Bumblezone:** Bee Queen **trading NPC**, **not a kill boss**.
-- **Skill/build experimentation:** choose personal identity/lightweight tutorial, not a fixed MMO class/mandatory guild.
+- **Skill/build experimentation:** teach optional weapon styles, relic synergies and spell schools already supported by installed mods; no Origins, races, Origin-based classes, selection screen, Origin abilities or mandatory guild.
 
 ## Implementation contract for Work mode
 1. Reconcile all existing actual 52 Questlog quest IDs / 13 chapters and 32 FTB pages before creating anything. `V050_QUEST_BEATS_PROVISIONAL.csv` names are **human-readable authoring identifiers**, not known engine IDs.
