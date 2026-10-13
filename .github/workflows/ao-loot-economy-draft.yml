@@ -7,6 +7,8 @@ on:
     paths:
       - 'addons/ao-starter-chest/**'
       - 'tools/test_ao_loot_first_pass.py'
+      - 'tools/test_ao_loot_packager.py'
+      - 'tools/package_ao_loot_economy_pilot.py'
       - 'tools/build_ao_goblin_tuned_trade_override.py'
       - 'release_030/overrides/config/paxi/datapacks/ao_flight_balance/**'
       - '.github/workflows/ao-loot-economy-draft.yml'
@@ -25,6 +27,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check starter loot JSON, ring recipes and synthetic trades
         run: python3 tools/test_ao_loot_first_pass.py
+      - name: Verify deterministic full-import overlay with synthetic archive
+        run: python3 tools/test_ao_loot_packager.py
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
