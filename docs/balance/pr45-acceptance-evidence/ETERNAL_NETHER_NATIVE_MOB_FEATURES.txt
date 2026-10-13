@@ -1,0 +1,564 @@
+Compiled from "ModFeatures.java"
+public final class fuzs.eternalnether.init.ModFeatures {
+  public static final net.minecraft.util.random.WeightedRandomList<net.minecraft.util.random.WeightedEntry$Wrapper<net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>>> PIGLIN_MANOR_MOBS;
+
+  public static final net.minecraft.util.random.WeightedRandomList<net.minecraft.util.random.WeightedEntry$Wrapper<net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>>> CATACOMB_MOBS;
+
+  public static final net.minecraft.util.random.WeightedRandomList<net.minecraft.util.random.WeightedEntry$Wrapper<net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>>> PIGLIN_PRISONER_CONVERSIONS;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_PIGLIN_PRISONER;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_PIGLIN_MANOR_INSIDE;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_PIGLIN_MANOR_OUTSIDE;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_STRIDER;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_WITHER_SKELETON;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_CATACOMB;
+
+  public static final net.minecraft.core.Holder$Reference<net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>> MOB_FEATURE_WARPED_ENDERMAN;
+
+  public fuzs.eternalnether.init.ModFeatures();
+    Code:
+       0: aload_0
+       1: invokespecial #43                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void boostrap();
+    Code:
+       0: return
+
+  private static <T extends net.minecraft.world.entity.Mob> net.minecraft.core.Holder$Reference<net.minecraft.world.entity.EntityType<T>> getBuiltInRegistryHolder(net.minecraft.world.entity.EntityType<T>);
+    Code:
+       0: aload_0
+       1: invokevirtual #56                 // Method net/minecraft/world/entity/EntityType.builtInRegistryHolder:()Lnet/minecraft/core/Holder$Reference;
+       4: areturn
+
+  public static void setBasaltFeatureRestrictions();
+    Code:
+       0: invokestatic  #63                 // Method com/google/common/collect/ImmutableList.builder:()Lcom/google/common/collect/ImmutableList$Builder;
+       3: getstatic     #69                 // Field net/minecraft/world/level/levelgen/feature/BasaltColumnsFeature.CANNOT_PLACE_ON:Lcom/google/common/collect/ImmutableList;
+       6: invokevirtual #73                 // Method com/google/common/collect/ImmutableList$Builder.addAll:(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList$Builder;
+       9: bipush        14
+      11: anewarray     #75                 // class net/minecraft/world/level/block/Block
+      14: dup
+      15: iconst_0
+      16: getstatic     #81                 // Field net/minecraft/world/level/block/Blocks.NETHER_BRICK_SLAB:Lnet/minecraft/world/level/block/Block;
+      19: aastore
+      20: dup
+      21: iconst_1
+      22: getstatic     #84                 // Field net/minecraft/world/level/block/Blocks.CRACKED_NETHER_BRICKS:Lnet/minecraft/world/level/block/Block;
+      25: aastore
+      26: dup
+      27: iconst_2
+      28: getstatic     #87                 // Field net/minecraft/world/level/block/Blocks.CHISELED_NETHER_BRICKS:Lnet/minecraft/world/level/block/Block;
+      31: aastore
+      32: dup
+      33: iconst_3
+      34: getstatic     #90                 // Field net/minecraft/world/level/block/Blocks.RED_NETHER_BRICKS:Lnet/minecraft/world/level/block/Block;
+      37: aastore
+      38: dup
+      39: iconst_4
+      40: getstatic     #93                 // Field net/minecraft/world/level/block/Blocks.RED_NETHER_BRICK_STAIRS:Lnet/minecraft/world/level/block/Block;
+      43: aastore
+      44: dup
+      45: iconst_5
+      46: getstatic     #96                 // Field net/minecraft/world/level/block/Blocks.RED_NETHER_BRICK_SLAB:Lnet/minecraft/world/level/block/Block;
+      49: aastore
+      50: dup
+      51: bipush        6
+      53: getstatic     #99                 // Field net/minecraft/world/level/block/Blocks.CRIMSON_TRAPDOOR:Lnet/minecraft/world/level/block/Block;
+      56: aastore
+      57: dup
+      58: bipush        7
+      60: getstatic     #104                // Field fuzs/eternalnether/init/ModBlocks.COBBLED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+      63: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+      66: checkcast     #75                 // class net/minecraft/world/level/block/Block
+      69: aastore
+      70: dup
+      71: bipush        8
+      73: getstatic     #111                // Field fuzs/eternalnether/init/ModBlocks.WITHERED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+      76: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+      79: checkcast     #75                 // class net/minecraft/world/level/block/Block
+      82: aastore
+      83: dup
+      84: bipush        9
+      86: getstatic     #114                // Field fuzs/eternalnether/init/ModBlocks.CHISELED_WITHERED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+      89: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+      92: checkcast     #75                 // class net/minecraft/world/level/block/Block
+      95: aastore
+      96: dup
+      97: bipush        10
+      99: getstatic     #117                // Field fuzs/eternalnether/init/ModBlocks.CRACKED_WITHERED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+     102: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     105: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     108: aastore
+     109: dup
+     110: bipush        11
+     112: getstatic     #120                // Field fuzs/eternalnether/init/ModBlocks.WITHERED_DEBRIS:Lnet/minecraft/core/Holder$Reference;
+     115: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     118: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     121: aastore
+     122: dup
+     123: bipush        12
+     125: getstatic     #123                // Field net/minecraft/world/level/block/Blocks.IRON_BARS:Lnet/minecraft/world/level/block/Block;
+     128: aastore
+     129: dup
+     130: bipush        13
+     132: getstatic     #126                // Field net/minecraft/world/level/block/Blocks.COAL_BLOCK:Lnet/minecraft/world/level/block/Block;
+     135: aastore
+     136: invokevirtual #130                // Method com/google/common/collect/ImmutableList$Builder.add:([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
+     139: invokevirtual #134                // Method com/google/common/collect/ImmutableList$Builder.build:()Lcom/google/common/collect/ImmutableList;
+     142: putstatic     #69                 // Field net/minecraft/world/level/levelgen/feature/BasaltColumnsFeature.CANNOT_PLACE_ON:Lcom/google/common/collect/ImmutableList;
+     145: invokestatic  #63                 // Method com/google/common/collect/ImmutableList.builder:()Lcom/google/common/collect/ImmutableList$Builder;
+     148: getstatic     #139                // Field net/minecraft/world/level/levelgen/feature/DeltaFeature.CANNOT_REPLACE:Lcom/google/common/collect/ImmutableList;
+     151: invokevirtual #73                 // Method com/google/common/collect/ImmutableList$Builder.addAll:(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList$Builder;
+     154: bipush        14
+     156: anewarray     #75                 // class net/minecraft/world/level/block/Block
+     159: dup
+     160: iconst_0
+     161: getstatic     #81                 // Field net/minecraft/world/level/block/Blocks.NETHER_BRICK_SLAB:Lnet/minecraft/world/level/block/Block;
+     164: aastore
+     165: dup
+     166: iconst_1
+     167: getstatic     #84                 // Field net/minecraft/world/level/block/Blocks.CRACKED_NETHER_BRICKS:Lnet/minecraft/world/level/block/Block;
+     170: aastore
+     171: dup
+     172: iconst_2
+     173: getstatic     #87                 // Field net/minecraft/world/level/block/Blocks.CHISELED_NETHER_BRICKS:Lnet/minecraft/world/level/block/Block;
+     176: aastore
+     177: dup
+     178: iconst_3
+     179: getstatic     #90                 // Field net/minecraft/world/level/block/Blocks.RED_NETHER_BRICKS:Lnet/minecraft/world/level/block/Block;
+     182: aastore
+     183: dup
+     184: iconst_4
+     185: getstatic     #93                 // Field net/minecraft/world/level/block/Blocks.RED_NETHER_BRICK_STAIRS:Lnet/minecraft/world/level/block/Block;
+     188: aastore
+     189: dup
+     190: iconst_5
+     191: getstatic     #96                 // Field net/minecraft/world/level/block/Blocks.RED_NETHER_BRICK_SLAB:Lnet/minecraft/world/level/block/Block;
+     194: aastore
+     195: dup
+     196: bipush        6
+     198: getstatic     #99                 // Field net/minecraft/world/level/block/Blocks.CRIMSON_TRAPDOOR:Lnet/minecraft/world/level/block/Block;
+     201: aastore
+     202: dup
+     203: bipush        7
+     205: getstatic     #104                // Field fuzs/eternalnether/init/ModBlocks.COBBLED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+     208: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     211: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     214: aastore
+     215: dup
+     216: bipush        8
+     218: getstatic     #111                // Field fuzs/eternalnether/init/ModBlocks.WITHERED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+     221: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     224: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     227: aastore
+     228: dup
+     229: bipush        9
+     231: getstatic     #114                // Field fuzs/eternalnether/init/ModBlocks.CHISELED_WITHERED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+     234: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     237: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     240: aastore
+     241: dup
+     242: bipush        10
+     244: getstatic     #117                // Field fuzs/eternalnether/init/ModBlocks.CRACKED_WITHERED_BLACKSTONE:Lnet/minecraft/core/Holder$Reference;
+     247: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     250: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     253: aastore
+     254: dup
+     255: bipush        11
+     257: getstatic     #120                // Field fuzs/eternalnether/init/ModBlocks.WITHERED_DEBRIS:Lnet/minecraft/core/Holder$Reference;
+     260: invokevirtual #108                // Method net/minecraft/core/Holder$Reference.value:()Ljava/lang/Object;
+     263: checkcast     #75                 // class net/minecraft/world/level/block/Block
+     266: aastore
+     267: dup
+     268: bipush        12
+     270: getstatic     #123                // Field net/minecraft/world/level/block/Blocks.IRON_BARS:Lnet/minecraft/world/level/block/Block;
+     273: aastore
+     274: dup
+     275: bipush        13
+     277: getstatic     #126                // Field net/minecraft/world/level/block/Blocks.COAL_BLOCK:Lnet/minecraft/world/level/block/Block;
+     280: aastore
+     281: invokevirtual #130                // Method com/google/common/collect/ImmutableList$Builder.add:([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
+     284: invokevirtual #134                // Method com/google/common/collect/ImmutableList$Builder.build:()Lcom/google/common/collect/ImmutableList;
+     287: putstatic     #139                // Field net/minecraft/world/level/levelgen/feature/DeltaFeature.CANNOT_REPLACE:Lcom/google/common/collect/ImmutableList;
+     290: return
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$6();
+    Code:
+       0: new           #143                // class fuzs/eternalnether/world/level/levelgen/feature/MobFeature
+       3: dup
+       4: getstatic     #148                // Field fuzs/eternalnether/init/ModEntityTypes.WARPED_ENDERMAN:Lnet/minecraft/core/Holder$Reference;
+       7: invokespecial #151                // Method fuzs/eternalnether/world/level/levelgen/feature/MobFeature."<init>":(Lnet/minecraft/core/Holder;)V
+      10: areturn
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$5();
+    Code:
+       0: new           #143                // class fuzs/eternalnether/world/level/levelgen/feature/MobFeature
+       3: dup
+       4: getstatic     #154                // Field CATACOMB_MOBS:Lnet/minecraft/util/random/WeightedRandomList;
+       7: invokespecial #157                // Method fuzs/eternalnether/world/level/levelgen/feature/MobFeature."<init>":(Lnet/minecraft/util/random/WeightedRandomList;)V
+      10: areturn
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$4();
+    Code:
+       0: new           #143                // class fuzs/eternalnether/world/level/levelgen/feature/MobFeature
+       3: dup
+       4: getstatic     #161                // Field net/minecraft/world/entity/EntityType.WITHER_SKELETON:Lnet/minecraft/world/entity/EntityType;
+       7: invokestatic  #163                // Method getBuiltInRegistryHolder:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/core/Holder$Reference;
+      10: invokespecial #151                // Method fuzs/eternalnether/world/level/levelgen/feature/MobFeature."<init>":(Lnet/minecraft/core/Holder;)V
+      13: areturn
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$3();
+    Code:
+       0: new           #143                // class fuzs/eternalnether/world/level/levelgen/feature/MobFeature
+       3: dup
+       4: getstatic     #167                // Field net/minecraft/world/entity/EntityType.STRIDER:Lnet/minecraft/world/entity/EntityType;
+       7: invokestatic  #163                // Method getBuiltInRegistryHolder:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/core/Holder$Reference;
+      10: invokespecial #151                // Method fuzs/eternalnether/world/level/levelgen/feature/MobFeature."<init>":(Lnet/minecraft/core/Holder;)V
+      13: areturn
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$2();
+    Code:
+       0: new           #170                // class fuzs/eternalnether/world/level/levelgen/feature/MobPassengerFeature
+       3: dup
+       4: getstatic     #173                // Field fuzs/eternalnether/init/ModEntityTypes.PIGLIN_HUNTER:Lnet/minecraft/core/Holder$Reference;
+       7: getstatic     #176                // Field fuzs/eternalnether/init/ModEntityTypes.WITHER_SKELETON_HORSE:Lnet/minecraft/core/Holder$Reference;
+      10: invokespecial #179                // Method fuzs/eternalnether/world/level/levelgen/feature/MobPassengerFeature."<init>":(Lnet/minecraft/core/Holder;Lnet/minecraft/core/Holder;)V
+      13: areturn
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$1();
+    Code:
+       0: new           #143                // class fuzs/eternalnether/world/level/levelgen/feature/MobFeature
+       3: dup
+       4: getstatic     #182                // Field PIGLIN_MANOR_MOBS:Lnet/minecraft/util/random/WeightedRandomList;
+       7: invokespecial #157                // Method fuzs/eternalnether/world/level/levelgen/feature/MobFeature."<init>":(Lnet/minecraft/util/random/WeightedRandomList;)V
+      10: areturn
+
+  private static net.minecraft.world.level.levelgen.feature.Feature lambda$static$0();
+    Code:
+       0: new           #143                // class fuzs/eternalnether/world/level/levelgen/feature/MobFeature
+       3: dup
+       4: getstatic     #186                // Field fuzs/eternalnether/init/ModEntityTypes.PIGLIN_PRISONER:Lnet/minecraft/core/Holder$Reference;
+       7: invokespecial #151                // Method fuzs/eternalnether/world/level/levelgen/feature/MobFeature."<init>":(Lnet/minecraft/core/Holder;)V
+      10: areturn
+
+  static {};
+    Code:
+       0: iconst_2
+       1: anewarray     #17                 // class net/minecraft/util/random/WeightedEntry$Wrapper
+       4: dup
+       5: iconst_0
+       6: getstatic     #173                // Field fuzs/eternalnether/init/ModEntityTypes.PIGLIN_HUNTER:Lnet/minecraft/core/Holder$Reference;
+       9: iconst_1
+      10: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      13: aastore
+      14: dup
+      15: iconst_1
+      16: getstatic     #194                // Field net/minecraft/world/entity/EntityType.PIGLIN:Lnet/minecraft/world/entity/EntityType;
+      19: invokestatic  #163                // Method getBuiltInRegistryHolder:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/core/Holder$Reference;
+      22: iconst_3
+      23: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      26: aastore
+      27: invokestatic  #200                // Method net/minecraft/util/random/WeightedRandomList.create:([Lnet/minecraft/util/random/WeightedEntry;)Lnet/minecraft/util/random/WeightedRandomList;
+      30: putstatic     #182                // Field PIGLIN_MANOR_MOBS:Lnet/minecraft/util/random/WeightedRandomList;
+      33: iconst_4
+      34: anewarray     #17                 // class net/minecraft/util/random/WeightedEntry$Wrapper
+      37: dup
+      38: iconst_0
+      39: getstatic     #203                // Field fuzs/eternalnether/init/ModEntityTypes.CORPOR:Lnet/minecraft/core/Holder$Reference;
+      42: iconst_1
+      43: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      46: aastore
+      47: dup
+      48: iconst_1
+      49: getstatic     #206                // Field fuzs/eternalnether/init/ModEntityTypes.WITHER_SKELETON_KNIGHT:Lnet/minecraft/core/Holder$Reference;
+      52: iconst_2
+      53: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      56: aastore
+      57: dup
+      58: iconst_2
+      59: getstatic     #209                // Field fuzs/eternalnether/init/ModEntityTypes.WRAITHER:Lnet/minecraft/core/Holder$Reference;
+      62: iconst_3
+      63: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      66: aastore
+      67: dup
+      68: iconst_3
+      69: getstatic     #161                // Field net/minecraft/world/entity/EntityType.WITHER_SKELETON:Lnet/minecraft/world/entity/EntityType;
+      72: invokestatic  #163                // Method getBuiltInRegistryHolder:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/core/Holder$Reference;
+      75: iconst_1
+      76: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      79: aastore
+      80: invokestatic  #200                // Method net/minecraft/util/random/WeightedRandomList.create:([Lnet/minecraft/util/random/WeightedEntry;)Lnet/minecraft/util/random/WeightedRandomList;
+      83: putstatic     #154                // Field CATACOMB_MOBS:Lnet/minecraft/util/random/WeightedRandomList;
+      86: iconst_3
+      87: anewarray     #17                 // class net/minecraft/util/random/WeightedEntry$Wrapper
+      90: dup
+      91: iconst_0
+      92: getstatic     #194                // Field net/minecraft/world/entity/EntityType.PIGLIN:Lnet/minecraft/world/entity/EntityType;
+      95: invokestatic  #163                // Method getBuiltInRegistryHolder:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/core/Holder$Reference;
+      98: iconst_4
+      99: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+     102: aastore
+     103: dup
+     104: iconst_1
+     105: getstatic     #173                // Field fuzs/eternalnether/init/ModEntityTypes.PIGLIN_HUNTER:Lnet/minecraft/core/Holder$Reference;
+     108: iconst_3
+     109: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+     112: aastore
+     113: dup
+     114: iconst_2
+     115: getstatic     #212                // Field net/minecraft/world/entity/EntityType.PIGLIN_BRUTE:Lnet/minecraft/world/entity/EntityType;
+     118: invokestatic  #163                // Method getBuiltInRegistryHolder:(Lnet/minecraft/world/entity/EntityType;)Lnet/minecraft/core/Holder$Reference;
+     121: iconst_1
+     122: invokestatic  #191                // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+     125: aastore
+     126: invokestatic  #200                // Method net/minecraft/util/random/WeightedRandomList.create:([Lnet/minecraft/util/random/WeightedEntry;)Lnet/minecraft/util/random/WeightedRandomList;
+     129: putstatic     #214                // Field PIGLIN_PRISONER_CONVERSIONS:Lnet/minecraft/util/random/WeightedRandomList;
+     132: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     135: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     138: ldc           #228                // String mob_feature_piglin_prisoner
+     140: invokedynamic #244,  0            // InvokeDynamic #0:get:()Ljava/util/function/Supplier;
+     145: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     150: putstatic     #252                // Field MOB_FEATURE_PIGLIN_PRISONER:Lnet/minecraft/core/Holder$Reference;
+     153: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     156: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     159: ldc           #254                // String mob_feature_piglin_manor_inside
+     161: invokedynamic #258,  0            // InvokeDynamic #1:get:()Ljava/util/function/Supplier;
+     166: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     171: putstatic     #260                // Field MOB_FEATURE_PIGLIN_MANOR_INSIDE:Lnet/minecraft/core/Holder$Reference;
+     174: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     177: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     180: ldc_w         #262                // String mob_feature_piglin_manor_outside
+     183: invokedynamic #266,  0            // InvokeDynamic #2:get:()Ljava/util/function/Supplier;
+     188: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     193: putstatic     #268                // Field MOB_FEATURE_PIGLIN_MANOR_OUTSIDE:Lnet/minecraft/core/Holder$Reference;
+     196: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     199: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     202: ldc_w         #270                // String mob_feature_strider
+     205: invokedynamic #274,  0            // InvokeDynamic #3:get:()Ljava/util/function/Supplier;
+     210: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     215: putstatic     #276                // Field MOB_FEATURE_STRIDER:Lnet/minecraft/core/Holder$Reference;
+     218: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     221: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     224: ldc_w         #278                // String mob_feature_wither_skeleton
+     227: invokedynamic #282,  0            // InvokeDynamic #4:get:()Ljava/util/function/Supplier;
+     232: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     237: putstatic     #284                // Field MOB_FEATURE_WITHER_SKELETON:Lnet/minecraft/core/Holder$Reference;
+     240: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     243: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     246: ldc_w         #286                // String mob_feature_catacomb
+     249: invokedynamic #290,  0            // InvokeDynamic #5:get:()Ljava/util/function/Supplier;
+     254: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     259: putstatic     #292                // Field MOB_FEATURE_CATACOMB:Lnet/minecraft/core/Holder$Reference;
+     262: getstatic     #220                // Field fuzs/eternalnether/init/ModRegistry.REGISTRIES:Lfuzs/puzzleslib/api/init/v3/registry/RegistryManager;
+     265: getstatic     #226                // Field net/minecraft/core/registries/Registries.FEATURE:Lnet/minecraft/resources/ResourceKey;
+     268: ldc_w         #294                // String mob_feature_warped_enderman
+     271: invokedynamic #298,  0            // InvokeDynamic #6:get:()Ljava/util/function/Supplier;
+     276: invokeinterface #250,  4          // InterfaceMethod fuzs/puzzleslib/api/init/v3/registry/RegistryManager.register:(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraft/core/Holder$Reference;
+     281: putstatic     #300                // Field MOB_FEATURE_WARPED_ENDERMAN:Lnet/minecraft/core/Holder$Reference;
+     284: return
+}
+Compiled from "MobFeature.java"
+public class fuzs.eternalnether.world.level.levelgen.feature.MobFeature extends net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration> {
+  private final net.minecraft.util.random.WeightedRandomList<net.minecraft.util.random.WeightedEntry$Wrapper<net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>>> entityTypes;
+
+  public fuzs.eternalnether.world.level.levelgen.feature.MobFeature(net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>);
+    Code:
+       0: aload_0
+       1: iconst_1
+       2: anewarray     #8                  // class net/minecraft/util/random/WeightedEntry$Wrapper
+       5: dup
+       6: iconst_0
+       7: aload_1
+       8: iconst_1
+       9: invokestatic  #27                 // InterfaceMethod net/minecraft/util/random/WeightedEntry.wrap:(Ljava/lang/Object;I)Lnet/minecraft/util/random/WeightedEntry$Wrapper;
+      12: aastore
+      13: invokestatic  #33                 // Method net/minecraft/util/random/WeightedRandomList.create:([Lnet/minecraft/util/random/WeightedEntry;)Lnet/minecraft/util/random/WeightedRandomList;
+      16: invokespecial #36                 // Method "<init>":(Lnet/minecraft/util/random/WeightedRandomList;)V
+      19: return
+
+  public fuzs.eternalnether.world.level.levelgen.feature.MobFeature(net.minecraft.util.random.WeightedRandomList<net.minecraft.util.random.WeightedEntry$Wrapper<net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>>>);
+    Code:
+       0: aload_0
+       1: getstatic     #47                 // Field net/minecraft/world/level/levelgen/feature/configurations/NoneFeatureConfiguration.CODEC:Lcom/mojang/serialization/Codec;
+       4: invokespecial #50                 // Method net/minecraft/world/level/levelgen/feature/Feature."<init>":(Lcom/mojang/serialization/Codec;)V
+       7: aload_0
+       8: aload_1
+       9: putfield      #52                 // Field entityTypes:Lnet/minecraft/util/random/WeightedRandomList;
+      12: return
+
+  public boolean place(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>);
+    Code:
+       0: aload_1
+       1: invokevirtual #62                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.origin:()Lnet/minecraft/core/BlockPos;
+       4: invokevirtual #67                 // Method net/minecraft/core/BlockPos.below:()Lnet/minecraft/core/BlockPos;
+       7: astore_2
+       8: aload_0
+       9: getfield      #52                 // Field entityTypes:Lnet/minecraft/util/random/WeightedRandomList;
+      12: aload_1
+      13: invokevirtual #71                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.random:()Lnet/minecraft/util/RandomSource;
+      16: invokevirtual #75                 // Method net/minecraft/util/random/WeightedRandomList.getRandom:(Lnet/minecraft/util/RandomSource;)Ljava/util/Optional;
+      19: invokedynamic #95,  0             // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      24: invokevirtual #101                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      27: invokedynamic #110,  0            // InvokeDynamic #1:apply:()Ljava/util/function/Function;
+      32: invokevirtual #101                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      35: aload_1
+      36: invokedynamic #120,  0            // InvokeDynamic #2:apply:(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;)Ljava/util/function/Function;
+      41: invokevirtual #101                // Method java/util/Optional.map:(Ljava/util/function/Function;)Ljava/util/Optional;
+      44: aconst_null
+      45: invokevirtual #123                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      48: checkcast     #125                // class net/minecraft/world/entity/Mob
+      51: astore_3
+      52: aload_3
+      53: ifnull        125
+      56: aload_3
+      57: aload_2
+      58: invokevirtual #129                // Method net/minecraft/core/BlockPos.getX:()I
+      61: i2d
+      62: ldc2_w        #130                // double 0.5d
+      65: dadd
+      66: aload_2
+      67: invokevirtual #134                // Method net/minecraft/core/BlockPos.getY:()I
+      70: i2d
+      71: aload_2
+      72: invokevirtual #137                // Method net/minecraft/core/BlockPos.getZ:()I
+      75: i2d
+      76: ldc2_w        #130                // double 0.5d
+      79: dadd
+      80: fconst_0
+      81: fconst_0
+      82: invokevirtual #141                // Method net/minecraft/world/entity/Mob.moveTo:(DDDFF)V
+      85: aload_3
+      86: aload_1
+      87: invokevirtual #145                // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+      90: aload_1
+      91: invokevirtual #145                // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+      94: aload_2
+      95: invokeinterface #151,  2          // InterfaceMethod net/minecraft/world/level/WorldGenLevel.getCurrentDifficultyAt:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
+     100: getstatic     #157                // Field net/minecraft/world/entity/MobSpawnType.SPAWNER:Lnet/minecraft/world/entity/MobSpawnType;
+     103: aconst_null
+     104: invokevirtual #161                // Method net/minecraft/world/entity/Mob.finalizeSpawn:(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData;
+     107: pop
+     108: aload_3
+     109: invokevirtual #165                // Method net/minecraft/world/entity/Mob.setPersistenceRequired:()V
+     112: aload_1
+     113: invokevirtual #145                // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+     116: aload_3
+     117: invokeinterface #169,  2          // InterfaceMethod net/minecraft/world/level/WorldGenLevel.addFreshEntity:(Lnet/minecraft/world/entity/Entity;)Z
+     122: pop
+     123: iconst_1
+     124: ireturn
+     125: iconst_0
+     126: ireturn
+
+  private static net.minecraft.world.entity.Mob lambda$place$0(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext, net.minecraft.world.entity.EntityType);
+    Code:
+       0: aload_1
+       1: aload_0
+       2: invokevirtual #145                // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+       5: invokeinterface #179,  1          // InterfaceMethod net/minecraft/world/level/WorldGenLevel.getLevel:()Lnet/minecraft/server/level/ServerLevel;
+      10: invokevirtual #184                // Method net/minecraft/world/entity/EntityType.create:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+      13: checkcast     #125                // class net/minecraft/world/entity/Mob
+      16: areturn
+}
+Compiled from "MobPassengerFeature.java"
+public class fuzs.eternalnether.world.level.levelgen.feature.MobPassengerFeature extends net.minecraft.world.level.levelgen.feature.Feature<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration> {
+  private final net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>> passengerEntityType;
+
+  private final net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>> vehicleEntityType;
+
+  public fuzs.eternalnether.world.level.levelgen.feature.MobPassengerFeature(net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>, net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>);
+    Code:
+       0: aload_0
+       1: getstatic     #19                 // Field net/minecraft/world/level/levelgen/feature/configurations/NoneFeatureConfiguration.CODEC:Lcom/mojang/serialization/Codec;
+       4: invokespecial #22                 // Method net/minecraft/world/level/levelgen/feature/Feature."<init>":(Lcom/mojang/serialization/Codec;)V
+       7: aload_0
+       8: aload_1
+       9: putfield      #24                 // Field passengerEntityType:Lnet/minecraft/core/Holder;
+      12: aload_0
+      13: aload_2
+      14: putfield      #26                 // Field vehicleEntityType:Lnet/minecraft/core/Holder;
+      17: return
+
+  public boolean place(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: aload_0
+       3: getfield      #24                 // Field passengerEntityType:Lnet/minecraft/core/Holder;
+       6: invokevirtual #36                 // Method createMob:(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/Mob;
+       9: astore_2
+      10: aload_0
+      11: aload_1
+      12: aload_0
+      13: getfield      #26                 // Field vehicleEntityType:Lnet/minecraft/core/Holder;
+      16: invokevirtual #36                 // Method createMob:(Lnet/minecraft/world/level/levelgen/feature/FeaturePlaceContext;Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/Mob;
+      19: astore_3
+      20: aload_2
+      21: ifnull        46
+      24: aload_3
+      25: ifnull        46
+      28: aload_2
+      29: aload_3
+      30: invokevirtual #42                 // Method net/minecraft/world/entity/Mob.startRiding:(Lnet/minecraft/world/entity/Entity;)Z
+      33: pop
+      34: aload_1
+      35: invokevirtual #48                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+      38: aload_3
+      39: invokeinterface #54,  2           // InterfaceMethod net/minecraft/world/level/WorldGenLevel.addFreshEntityWithPassengers:(Lnet/minecraft/world/entity/Entity;)V
+      44: iconst_1
+      45: ireturn
+      46: iconst_0
+      47: ireturn
+
+  private net.minecraft.world.entity.Mob createMob(net.minecraft.world.level.levelgen.feature.FeaturePlaceContext<net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration>, net.minecraft.core.Holder<? extends net.minecraft.world.entity.EntityType<? extends net.minecraft.world.entity.Mob>>);
+    Code:
+       0: aload_1
+       1: invokevirtual #66                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.origin:()Lnet/minecraft/core/BlockPos;
+       4: invokevirtual #71                 // Method net/minecraft/core/BlockPos.below:()Lnet/minecraft/core/BlockPos;
+       7: astore_3
+       8: aload_2
+       9: invokeinterface #77,  1           // InterfaceMethod net/minecraft/core/Holder.value:()Ljava/lang/Object;
+      14: checkcast     #79                 // class net/minecraft/world/entity/EntityType
+      17: aload_1
+      18: invokevirtual #48                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+      21: invokeinterface #83,  1           // InterfaceMethod net/minecraft/world/level/WorldGenLevel.getLevel:()Lnet/minecraft/server/level/ServerLevel;
+      26: invokevirtual #87                 // Method net/minecraft/world/entity/EntityType.create:(Lnet/minecraft/world/level/Level;)Lnet/minecraft/world/entity/Entity;
+      29: checkcast     #38                 // class net/minecraft/world/entity/Mob
+      32: astore        4
+      34: aload         4
+      36: ifnull        91
+      39: aload         4
+      41: aload_1
+      42: invokevirtual #48                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+      45: aload_1
+      46: invokevirtual #48                 // Method net/minecraft/world/level/levelgen/feature/FeaturePlaceContext.level:()Lnet/minecraft/world/level/WorldGenLevel;
+      49: aload_3
+      50: invokeinterface #91,  2           // InterfaceMethod net/minecraft/world/level/WorldGenLevel.getCurrentDifficultyAt:(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/DifficultyInstance;
+      55: getstatic     #97                 // Field net/minecraft/world/entity/MobSpawnType.SPAWNER:Lnet/minecraft/world/entity/MobSpawnType;
+      58: aconst_null
+      59: invokevirtual #101                // Method net/minecraft/world/entity/Mob.finalizeSpawn:(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/MobSpawnType;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData;
+      62: pop
+      63: aload         4
+      65: aload_3
+      66: invokevirtual #105                // Method net/minecraft/core/BlockPos.getX:()I
+      69: i2d
+      70: aload_3
+      71: invokevirtual #108                // Method net/minecraft/core/BlockPos.getY:()I
+      74: i2d
+      75: aload_3
+      76: invokevirtual #111                // Method net/minecraft/core/BlockPos.getZ:()I
+      79: i2d
+      80: invokevirtual #115                // Method net/minecraft/world/entity/Mob.setPos:(DDD)V
+      83: aload         4
+      85: invokevirtual #119                // Method net/minecraft/world/entity/Mob.setPersistenceRequired:()V
+      88: aload         4
+      90: areturn
+      91: aconst_null
+      92: areturn
+}

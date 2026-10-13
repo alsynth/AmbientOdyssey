@@ -1,0 +1,417 @@
+{
+  "baseline_physical_jars": 332,
+  "frozen_physical_jars": 337,
+  "source_note": "https://github.com/alsynth/AmbientOdyssey/blob/6a01951e415c784f134147284200863fddadaf6e/docs/testing/V049_LOCAL_MOD_CHANGES_CRASH_20261013.md",
+  "note_candidates": [
+    {
+      "jar": "aces_spell_utils-1.2.7.3-1.21.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "antiquetradingship-1.4.0-neoforge-1.21.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "apothiccombat-1.2.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "aquatic_creepers-neoforge-1.0.0+1.21.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "archaion-1.21.1-1.4.4.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "astrological-1.21.1-1.7.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "atmosfera-1.21.1-NeoForge-1.0.2.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "benssharks-1.2.6-neoforge-1.21.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "brutalbosses-1.21.1-8.6.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "cataclysm_spellbooks-1.1.14-1.21.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "cultofazazelneoforge-1.1.4.12.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "denseflower-1.0.0.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "dungeon_difficulty-neoforge-3.9.2+1.21.1.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "endrem_additions-neoforge-1.2.0.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "enhancedbossbars-1.0.0.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "ftb-solo-quests-1.21.1-neoforge-1.1.2.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "ftboceanmobs-21.1.4.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "hybrid_aquatic-neoforge-1.21.1-1.7.4.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "irons_jewelry-1.21.1-2.0.2.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "irons_lib-1.21.1-2.2.0.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "jearchaeology-1.21.1-1.2.0.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "jupiter-2.3.7-1.21.1-neoforge.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "simplymore-forge-1.3.0_alpha.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    },
+    {
+      "jar": "cardinal-components-api-6.1.2.jar",
+      "in_pr45": true,
+      "in_frozen_runtime": true,
+      "baseline_hash_matches": true
+    }
+  ],
+  "new_physical_jars": [
+    {
+      "jar": "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+      "sha256": "48ffa31ee27a3ba8df39dc468a34dd27b387d08818f8982d9d3404604a301356"
+    },
+    {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "sha256": "9680efb45ec51250da820b8d525ab739fe0210458651ea87f13c3de9b2691a93"
+    },
+    {
+      "jar": "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+      "sha256": "05d25fdde2d313048d581a31f4883338df3e7bc095c8dc623ad52702a44228b8"
+    },
+    {
+      "jar": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "sha256": "5f856c47156915fd13ff42917401e488212bb5e2df25fde41f6ec1b032e383db"
+    },
+    {
+      "jar": "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+      "sha256": "aa4a0a5c30bf623950956e41c6cf4f17bc3fb0857336de3a7cda9784034ea872"
+    }
+  ],
+  "changed_original_jars": [],
+  "missing_original_jars": [],
+  "celestisynth": {
+    "decision": "USER_REQUESTED_FOR_NEXT_EXPERIMENTAL_BUILD",
+    "status": "STATIC_PASS_ARTIFACT_AND_REQUIRED_DEPENDENCIES; NOT_INSTALLED_OR_RUNTIME_TESTED",
+    "project_id": 1672331,
+    "file_id": 8867800,
+    "jar": "celestisynth-1.21.1-1.3.9.jar",
+    "loader": "NeoForge",
+    "minecraft": "1.21.1",
+    "source": "https://www.curseforge.com/minecraft/mc-mods/celestisynth-1-21-1/files/8867800",
+    "dependency_description": "Official description requires GeckoLib and PlayerAnimator; exact JAR dependency ranges pending.",
+    "required_checks": [
+      "exact JAR metadata/hash",
+      "dependency compatibility",
+      "client and server loading",
+      "weapon abilities and combat stacking",
+      "native acquisition and loot",
+      "worldgen/resource collision audit",
+      "screen effects and flashing"
+    ],
+    "sha256": "03225d0ac3789f8cd1df90df1793f080ab36c4c1143a4f15b622f88bb41bd9de",
+    "bytes": 1996891,
+    "metadata": "modLoader=\"javafml\"\nloaderVersion=\"[4,)\"\nlicense=\"Massachusetts Institute of Technology (MIT)\"\nissueTrackerURL=\"https://github.com/AquexTheSeal/Celestisynth/issues\"\n\n[[mods]]\nmodId=\"celestisynth\"\nversion=\"1.21.1-1.3.9\"\ndisplayName=\"Celestisynth\"\nlogoFile=\"celestisynth_logo.png\"\nauthors=\"AquTheSeal, Meme Man, UnanimousVoid\"\ncredits=\"AquTheSeal, Meme Man, UnanimousVoid\"\ndescription='''Celestisynth is a Minecraft mod that focuses in adding brand-new and unique weapons with special abilities for you to play around with!'''\nenumExtensions=\"META-INF/enumextensions.json\"\n\n[[mixins]]\nconfig=\"celestisynth.mixins.json\"\n\n# Base\n[[dependencies.\"celestisynth\"]]\n    modId=\"neoforge\"\n    type=\"required\"\n    versionRange=\"[21.1.0,)\"\n    ordering=\"NONE\"\n    side=\"BOTH\"\n\n[[dependencies.\"celestisynth\"]]\n    modId=\"minecraft\"\n    type=\"required\"\n    versionRange=\"[1.21.1,1.22)\"\n    ordering=\"NONE\"\n    side=\"BOTH\"\n\n# Dependencies (Required)\n[[dependencies.\"celestisynth\"]]\n    modId=\"geckolib\"\n    type=\"required\"\n    versionRange=\"[4.9,)\"\n    ordering=\"NONE\"\n    side=\"BOTH\"\n\n[[dependencies.\"celestisynth\"]]\n    modId=\"playeranimator\"\n    type=\"required\"\n    versionRange=\"[2.0,)\"\n    ordering=\"NONE\"\n    side=\"BOTH\"\n\n# Dependencies (Optional)\n#   COMMON\n[[dependencies.\"celestisynth\"]]\n    modId=\"jei\"\n    type=\"optional\"\n    versionRange=\"[19.21.0.247,)\"\n    ordering=\"NONE\"\n    side=\"BOTH\"\n",
+    "zip_crc": "PASS",
+    "dependency_checks": [
+      {
+        "mod_id": "neoforge",
+        "required": "[21.1.0,)",
+        "installed": "21.1.252",
+        "status": "STATIC_PASS"
+      },
+      {
+        "mod_id": "minecraft",
+        "required": "[1.21.1,1.22)",
+        "installed": "1.21.1",
+        "status": "STATIC_PASS"
+      },
+      {
+        "mod_id": "geckolib",
+        "required": "[4.9,)",
+        "installed": "4.9.3",
+        "status": "STATIC_PASS"
+      },
+      {
+        "mod_id": "playeranimator",
+        "required": "[2.0,)",
+        "installed": "2.0.4+1.21.1",
+        "status": "STATIC_PASS"
+      },
+      {
+        "mod_id": "jei",
+        "required": "[19.21.0.247,) (optional)",
+        "installed": "19.57.0.451",
+        "status": "STATIC_PASS"
+      }
+    ],
+    "worldgen_resources": [
+      "data/celestisynth/tags/worldgen/biome/has_structure/has_wintereis_cluster.json",
+      "data/celestisynth/tags/worldgen/structure/nether_monolith_spawn.json",
+      "data/celestisynth/worldgen/configured_feature/lunar_crater.json",
+      "data/celestisynth/worldgen/configured_feature/solar_crater.json",
+      "data/celestisynth/worldgen/configured_feature/wintereis_spikes.json",
+      "data/celestisynth/worldgen/configured_feature/zephyr_deposit.json",
+      "data/celestisynth/worldgen/placed_feature/lunar_crater.json",
+      "data/celestisynth/worldgen/placed_feature/solar_crater.json",
+      "data/celestisynth/worldgen/placed_feature/wintereis_spikes.json",
+      "data/celestisynth/worldgen/placed_feature/zephyr_deposit.json"
+    ],
+    "loot_resources": [
+      "data/celestisynth/loot_table/blocks/celestial_crafting_table.json",
+      "data/celestisynth/loot_table/blocks/lunar_stone.json",
+      "data/celestisynth/loot_table/blocks/solar_crystal.json",
+      "data/celestisynth/loot_table/blocks/starlit_factory.json",
+      "data/celestisynth/loot_table/blocks/wintereis.json",
+      "data/celestisynth/loot_table/blocks/zephyr_deposit.json",
+      "data/celestisynth/loot_table/chests/underground_dungeons.json",
+      "data/celestisynth/loot_table/chests/vanilla_nether_structures.json",
+      "data/celestisynth/loot_table/entities/star_monolith.json",
+      "data/celestisynth/loot_table/entities/tempest.json",
+      "data/celestisynth/loot_table/entities/traverser.json",
+      "data/celestisynth/loot_table/entities/veilguard.json"
+    ]
+  },
+  "excluded": [
+    "Mob Plaques: latest main-branch note explicitly rejects it"
+  ],
+  "interpretation": "The note's 423 Found mod file records are not a verified count of top-level physical JARs. Research PRs 47/48/49 add item catalogue records, not installed mods. This report changes no production profile or release.",
+  "added_jar_metadata": [
+    {
+      "jar": "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+      "sha256": "48ffa31ee27a3ba8df39dc468a34dd27b387d08818f8982d9d3404604a301356",
+      "metadata": {
+        "META-INF/neoforge.mods.toml": "modLoader = \"javafml\"\nloaderVersion = \"*\"\nlicense = \"MPL-2.0\"\nissueTrackerURL = \"https://github.com/Fuzss/armoredfoes/issues\"\n\n[[mods]]\n    modId = \"armoredfoes\"\n    version = \"21.1.0\"\n    displayName = \"Armored Foes\"\n    description = \"Give every mob the gear they deserve, from Drowned to Illagers and beyond.\"\n    logoFile = \"mod_logo.png\"\n    updateJSONURL = \"https://api.modrinth.com/updates/ahTPKYtE/forge_updates.json?neoforge=only\"\n    authors = \"Fuzs\"\n    displayURL = \"https://modrinth.com/mod/armored-foes\"\n\n[[mixins]]\n    config = \"armoredfoes.common.mixins.json\"\n\n[[mixins]]\n    config = \"armoredfoes.neoforge.mixins.json\"\n\n[[dependencies.armoredfoes]]\n    modId = \"minecraft\"\n    mandatory = true\n    type = \"REQUIRED\"\n    versionRange = \"[1.21.1,1.21.2)\"\n\n[[dependencies.armoredfoes]]\n    modId = \"neoforge\"\n    mandatory = true\n    type = \"REQUIRED\"\n    versionRange = \"[21.1.21,)\"\n\n[[dependencies.armoredfoes]]\n    modId = \"puzzleslib\"\n    mandatory = true\n    type = \"REQUIRED\"\n    versionRange = \"[21.1.42,)\"\n\n[\"lithium:options\"]\n    \"mixin.world.chunk_access\" = false\n"
+      },
+      "worldgen_structures": [],
+      "template_pools": [],
+      "loot_tables": [
+        "data/armoredfoes/loot_table/equipment/chainmail_armor.json",
+        "data/armoredfoes/loot_table/equipment/diamond_armor.json",
+        "data/armoredfoes/loot_table/equipment/golden_armor.json",
+        "data/armoredfoes/loot_table/equipment/iron_armor.json",
+        "data/armoredfoes/loot_table/equipment/leather_armor.json",
+        "data/armoredfoes/loot_table/equipment/natural_armor.json",
+        "data/armoredfoes/loot_table/equipment/raider_armor.json",
+        "data/minecraft/loot_table/equipment/entities/drowned.json",
+        "data/minecraft/loot_table/equipment/entities/evoker.json",
+        "data/minecraft/loot_table/equipment/entities/illusioner.json",
+        "data/minecraft/loot_table/equipment/entities/piglin.json",
+        "data/minecraft/loot_table/equipment/entities/piglin_brute.json",
+        "data/minecraft/loot_table/equipment/entities/pillager.json",
+        "data/minecraft/loot_table/equipment/entities/vindicator.json",
+        "data/minecraft/loot_table/equipment/entities/wither_skeleton.json",
+        "data/minecraft/loot_table/equipment/entities/zombified_piglin.json"
+      ],
+      "biome_modifiers": []
+    },
+    {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "sha256": "9680efb45ec51250da820b8d525ab739fe0210458651ea87f13c3de9b2691a93",
+      "metadata": {
+        "META-INF/neoforge.mods.toml": "modLoader = \"javafml\"\nloaderVersion = \"*\"\nlicense = \"MIT\"\nissueTrackerURL = \"https://github.com/Fuzss/eternalnether/issues\"\n\n[[mods]]\nmodId = \"eternalnether\"\ndisplayName = \"Eternal Nether\"\ndescription = \"New structures, mobs, and many Nether adventures await! A continuation of Bygone Nether by Izofar.\"\nversion = \"21.1.3\"\nauthors = \"Izofar, Fuzs\"\nlogoFile = \"mod_banner.png\"\nlogoBlur = false\ndisplayURL = \"https://github.com/Fuzss/eternalnether\"\nupdateJSONURL = \"https://raw.githubusercontent.com/Fuzss/modresources/main/update/eternalnether.json\"\ndisplayTest = \"MATCH_VERSION\"\n\n[[mixins]]\nconfig=\"eternalnether.common.mixins.json\"\n\n[[mixins]]\nconfig=\"eternalnether.neoforge.mixins.json\"\n\n[[dependencies.eternalnether]]\nmodId = \"neoforge\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.21,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.eternalnether]]\nmodId = \"minecraft\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[1.21.1]\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.eternalnether]]\nmodId = \"puzzleslib\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.27,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[modproperties.eternalnether]\ncatalogueImageIcon = \"mod_logo.png\"\n"
+      },
+      "worldgen_structures": [
+        "data/eternalnether/worldgen/structure/catacomb.json",
+        "data/eternalnether/worldgen/structure/citadel.json",
+        "data/eternalnether/worldgen/structure/piglin_manor.json"
+      ],
+      "template_pools": [
+        "data/eternalnether/worldgen/template_pool/catacomb/catacomb_mobs.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/left_head.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/left_rib.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/left_rib_bent.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/left_rib_classic.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/piglin_prisoner.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/right_head.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/right_rib.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/right_rib_bent.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/right_rib_classic.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/shoulder.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/spine.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/start_pool.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/tail.json",
+        "data/eternalnether/worldgen/template_pool/catacomb/wither_skeleton.json",
+        "data/eternalnether/worldgen/template_pool/citadel/bridge.json",
+        "data/eternalnether/worldgen/template_pool/citadel/bridge_top.json",
+        "data/eternalnether/worldgen/template_pool/citadel/start_pool.json",
+        "data/eternalnether/worldgen/template_pool/citadel/top.json",
+        "data/eternalnether/worldgen/template_pool/citadel/warped_enderman.json",
+        "data/eternalnether/worldgen/template_pool/piglin_manor/piglin_horse.json",
+        "data/eternalnether/worldgen/template_pool/piglin_manor/piglin_mobs.json",
+        "data/eternalnether/worldgen/template_pool/piglin_manor/start_pool.json",
+        "data/eternalnether/worldgen/template_pool/piglin_manor/strider.json"
+      ],
+      "loot_tables": [
+        "data/eternalnether/loot_table/blocks/chiseled_warped_nether_bricks.json",
+        "data/eternalnether/loot_table/blocks/chiseled_withered_blackstone.json",
+        "data/eternalnether/loot_table/blocks/cobbled_blackstone.json",
+        "data/eternalnether/loot_table/blocks/cracked_withered_blackstone.json",
+        "data/eternalnether/loot_table/blocks/cracked_withered_blackstone_slab.json",
+        "data/eternalnether/loot_table/blocks/cracked_withered_blackstone_stairs.json",
+        "data/eternalnether/loot_table/blocks/cracked_withered_blackstone_wall.json",
+        "data/eternalnether/loot_table/blocks/netherite_bell.json",
+        "data/eternalnether/loot_table/blocks/soul_stone.json",
+        "data/eternalnether/loot_table/blocks/warped_nether_brick_slab.json",
+        "data/eternalnether/loot_table/blocks/warped_nether_brick_stairs.json",
+        "data/eternalnether/loot_table/blocks/warped_nether_brick_wall.json",
+        "data/eternalnether/loot_table/blocks/warped_nether_bricks.json",
+        "data/eternalnether/loot_table/blocks/withered_basalt.json",
+        "data/eternalnether/loot_table/blocks/withered_blackstone.json",
+        "data/eternalnether/loot_table/blocks/withered_blackstone_slab.json",
+        "data/eternalnether/loot_table/blocks/withered_blackstone_stairs.json",
+        "data/eternalnether/loot_table/blocks/withered_blackstone_wall.json",
+        "data/eternalnether/loot_table/blocks/withered_bone_block.json",
+        "data/eternalnether/loot_table/blocks/withered_coal_block.json",
+        "data/eternalnether/loot_table/blocks/withered_debris.json",
+        "data/eternalnether/loot_table/blocks/withered_quartz_block.json",
+        "data/eternalnether/loot_table/chests/catacomb/treasure_rib.json",
+        "data/eternalnether/loot_table/chests/citadel.json",
+        "data/eternalnether/loot_table/entities/corpor.json",
+        "data/eternalnether/loot_table/entities/piglin_hunter.json",
+        "data/eternalnether/loot_table/entities/piglin_prisoner.json",
+        "data/eternalnether/loot_table/entities/warped_enderman.json",
+        "data/eternalnether/loot_table/entities/wex.json",
+        "data/eternalnether/loot_table/entities/wither_skeleton_horse.json",
+        "data/eternalnether/loot_table/entities/wither_skeleton_knight.json",
+        "data/eternalnether/loot_table/entities/wraither.json",
+        "data/minecraft/loot_table/blocks/blackstone.json",
+        "data/minecraft/loot_table/entities/wither_skeleton.json"
+      ],
+      "biome_modifiers": []
+    },
+    {
+      "jar": "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+      "sha256": "05d25fdde2d313048d581a31f4883338df3e7bc095c8dc623ad52702a44228b8",
+      "metadata": {
+        "META-INF/neoforge.mods.toml": "modLoader = \"javafml\"\nloaderVersion = \"*\"\nlicense = \"MIT\"\nissueTrackerURL = \"https://github.com/Fuzss/fantasticwings/issues\"\n\n[[mods]]\nmodId = \"fantasticwings\"\ndisplayName = \"Fantastic Wings\"\ndescription = \"Beautifully animated avian and insectoid wings for aerial travel. A continuation of Wings by Pau101.\"\nversion = \"21.1.2\"\nauthors = \"Pau101, Fuzs\"\nlogoFile = \"mod_banner.png\"\nlogoBlur = false\ndisplayURL = \"https://github.com/Fuzss/fantasticwings\"\nupdateJSONURL = \"https://raw.githubusercontent.com/Fuzss/modresources/main/update/fantasticwings.json\"\ndisplayTest = \"MATCH_VERSION\"\n\n[[mixins]]\nconfig=\"fantasticwings.common.mixins.json\"\n\n[[mixins]]\nconfig=\"fantasticwings.neoforge.mixins.json\"\n\n[[dependencies.fantasticwings]]\nmodId = \"neoforge\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.21,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.fantasticwings]]\nmodId = \"minecraft\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[1.21.1]\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.fantasticwings]]\nmodId = \"puzzleslib\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.42,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[modproperties.fantasticwings]\ncatalogueImageIcon = \"mod_logo.png\"\n"
+      },
+      "worldgen_structures": [],
+      "template_pools": [],
+      "loot_tables": [],
+      "biome_modifiers": []
+    },
+    {
+      "jar": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "sha256": "5f856c47156915fd13ff42917401e488212bb5e2df25fde41f6ec1b032e383db",
+      "metadata": {
+        "META-INF/neoforge.mods.toml": "modLoader = \"javafml\"\nloaderVersion = \"*\"\nlicense = \"MPL-2.0\"\nissueTrackerURL = \"https://github.com/Fuzss/overflowingbars/issues\"\n\n[[mods]]\nmodId = \"overflowingbars\"\ndisplayName = \"Overflowing Bars\"\ndescription = \"Expand health, armor and armor toughness bars beyond vanilla. Nice and compact without confusing colors.\"\nversion = \"21.1.1\"\nauthors = \"Fuzs\"\nlogoFile = \"mod_banner.png\"\nlogoBlur = false\ndisplayURL = \"https://github.com/Fuzss/overflowingbars\"\nupdateJSONURL = \"https://raw.githubusercontent.com/Fuzss/modresources/main/update/overflowingbars.json\"\ndisplayTest = \"IGNORE_ALL_VERSION\"\n\n[[mixins]]\nconfig=\"overflowingbars.common.mixins.json\"\n\n[[mixins]]\nconfig=\"overflowingbars.neoforge.mixins.json\"\n\n[[dependencies.overflowingbars]]\nmodId = \"neoforge\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.21,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.overflowingbars]]\nmodId = \"minecraft\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[1.21.1]\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.overflowingbars]]\nmodId = \"puzzleslib\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.15,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[modproperties.overflowingbars]\ncatalogueImageIcon = \"mod_logo.png\"\n"
+      },
+      "worldgen_structures": [],
+      "template_pools": [],
+      "loot_tables": [],
+      "biome_modifiers": []
+    },
+    {
+      "jar": "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+      "sha256": "aa4a0a5c30bf623950956e41c6cf4f17bc3fb0857336de3a7cda9784034ea872",
+      "metadata": {
+        "META-INF/neoforge.mods.toml": "modLoader = \"javafml\"\nloaderVersion = \"*\"\nlicense = \"MPL-2.0\"\nissueTrackerURL = \"https://github.com/Fuzss/skeletonaifix/issues\"\n\n[[mods]]\nmodId = \"skeletonaifix\"\ndisplayName = \"Skeleton AI Fix\"\ndescription = \"Eliminates awkward strafing-Skeletons now stay focused and shoot faster the closer you get.\"\nversion = \"21.1.1\"\nauthors = \"Fuzs\"\nlogoFile = \"mod_banner.png\"\nlogoBlur = false\ndisplayURL = \"https://github.com/Fuzss/skeletonaifix\"\nupdateJSONURL = \"https://raw.githubusercontent.com/Fuzss/modresources/main/update/skeletonaifix.json\"\ndisplayTest = \"IGNORE_SERVER_VERSION\"\n\n[[mixins]]\nconfig=\"skeletonaifix.common.mixins.json\"\n\n[[mixins]]\nconfig=\"skeletonaifix.neoforge.mixins.json\"\n\n[[dependencies.skeletonaifix]]\nmodId = \"neoforge\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.21,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.skeletonaifix]]\nmodId = \"minecraft\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[1.21.1]\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[[dependencies.skeletonaifix]]\nmodId = \"puzzleslib\"\nmandatory = true\ntype = \"required\"\nversionRange = \"[21.1.27,)\"\nordering = \"NONE\"\nside = \"BOTH\"\n\n[modproperties.skeletonaifix]\ncatalogueImageIcon = \"mod_logo.png\"\n"
+      },
+      "worldgen_structures": [],
+      "template_pools": [],
+      "loot_tables": [],
+      "biome_modifiers": []
+    }
+  ]
+}

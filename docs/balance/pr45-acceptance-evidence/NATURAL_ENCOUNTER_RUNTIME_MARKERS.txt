@@ -1,0 +1,4 @@
+[21:56:13] [Render thread/INFO] [de.am.lo.FullPackLogProbe/]: AO_FULL_PACK_TITLE_PASS: creating disposable normal terrain world for full-registry diagnosis
+[21:58:00] [Render thread/INFO] [de.am.lo.FullPackLogProbe/]: AO_FULL_PACK_WORLD_JOIN_PASS: player joined disposable integrated world; 60 native gems loaded; content errors remain diagnostic
+[21:58:40] [ModernFix integrated server watchdog/ERROR] [or.em.mo.wo.IntegratedWatchdog/]: A single server tick has taken 40001, more than 40000 milliseconds
+[21:58:48] [Server thread/INFO] [de.am.lo.NaturalEncounterProbe/]: AO_NATURAL_STRUCTURE_PROBE_NO_STARTS: generated_starts=0/3

@@ -1,0 +1,3 @@
+[21:21:13] [Render thread/INFO] [de.am.lo.FullPackLogProbe/]: AO_FULL_PACK_TITLE_PASS: creating disposable flat world for full-registry diagnosis
+[21:22:51] [Render thread/INFO] [de.am.lo.FullPackLogProbe/]: AO_FULL_PACK_WORLD_JOIN_PASS: player joined disposable flat integrated world; 60 native gems loaded; content errors remain diagnostic, no gameplay certification
+[21:22:51] [Server thread/INFO] [de.am.lo.FullPackLogProbe/]: AO_PR45_RUNTIME_REGISTRY_EXPORT_PASS

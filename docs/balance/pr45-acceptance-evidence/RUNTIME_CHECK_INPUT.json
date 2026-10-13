@@ -1,0 +1,3472 @@
+{
+  "structure_ids": [
+    "adventuredungeons:bygonedungeon",
+    "adventuredungeons:coldlair",
+    "adventuredungeons:murkydungeon",
+    "adventuredungeons:ruins_desert",
+    "adventuredungeons:ruins_snow",
+    "adventuredungeons:ruins_standard",
+    "adventuredungeons:trialrooms",
+    "adventuredungeons:underground_camp",
+    "aether:bronze_dungeon",
+    "aether:gold_dungeon",
+    "aether:silver_dungeon",
+    "aether_villages:olympic_citadel",
+    "alexscaves:abyssal_ruins",
+    "alexscaves:acid_pit",
+    "alexscaves:dino_bowl",
+    "alexscaves:ferrocave",
+    "alexscaves:forlorn_bridge",
+    "alexscaves:forlorn_canyon",
+    "alexscaves:licowitch_tower",
+    "alexscaves:ocean_trench",
+    "antiquetradingship:antique_trading_ship",
+    "apotheosis:tower_leaf",
+    "apotheosis:tower_main",
+    "apotheosis:tower_sand",
+    "apotheosis:tower_spruce",
+    "archaeology_ruins:ruined_desert_pyramid",
+    "archaeology_ruins:ruined_ocean_monument",
+    "archaeology_ruins:ruinedjungletemple",
+    "betterend:end_village",
+    "betterfortresses:fortress",
+    "betteroceanmonuments:ocean_monument",
+    "biomeswevegone:aspen_manor_1",
+    "biomeswevegone:aspen_manor_2",
+    "biomeswevegone:bog_trial",
+    "block_factorys_bosses:dragon_tower",
+    "block_factorys_bosses:kraken_ship",
+    "block_factorys_bosses:sandworm_nest",
+    "block_factorys_bosses:underworld_arena",
+    "block_factorys_bosses:yeti_hideout",
+    "bosses_of_mass_destruction:gauntlet_arena",
+    "bosses_of_mass_destruction:lich_tower",
+    "bosses_of_mass_destruction:obsidilith_arena",
+    "bosses_of_mass_destruction:void_blossom",
+    "cataclysm:abandoned_spire",
+    "cataclysm:abandoned_temple",
+    "cataclysm:abandoned_village",
+    "cataclysm:amethyst_nest",
+    "cataclysm:ancient_factory",
+    "cataclysm:burning_arena",
+    "cataclysm:cursed_pyramid",
+    "cataclysm:desert_site",
+    "cataclysm:desert_temple",
+    "cataclysm:frosted_prison",
+    "cataclysm:kobolediator_shrine",
+    "cataclysm:ruined_citadel",
+    "cataclysm:soul_black_smith",
+    "cataclysm:sunken_city",
+    "dungeons_arise:abandoned_temple",
+    "dungeons_arise:aviary",
+    "dungeons_arise:bandit_towers",
+    "dungeons_arise:bandit_village",
+    "dungeons_arise:bathhouse",
+    "dungeons_arise:ceryneian_hind",
+    "dungeons_arise:coliseum",
+    "dungeons_arise:fishing_hut",
+    "dungeons_arise:foundry",
+    "dungeons_arise:giant_mushroom",
+    "dungeons_arise:greenwood_pub",
+    "dungeons_arise:heavenly_challenger",
+    "dungeons_arise:heavenly_conqueror",
+    "dungeons_arise:heavenly_rider",
+    "dungeons_arise:illager_campsite",
+    "dungeons_arise:illager_corsair",
+    "dungeons_arise:illager_fort",
+    "dungeons_arise:illager_galley",
+    "dungeons_arise:illager_windmill",
+    "dungeons_arise:infested_temple",
+    "dungeons_arise:jungle_tree_house",
+    "dungeons_arise:keep_kayra",
+    "dungeons_arise:kisegi_sanctuary",
+    "dungeons_arise:lighthouse",
+    "dungeons_arise:mechanical_nest",
+    "dungeons_arise:merchant_campsite",
+    "dungeons_arise:mining_complex",
+    "dungeons_arise:mining_system",
+    "dungeons_arise:monastery",
+    "dungeons_arise:mushroom_house",
+    "dungeons_arise:mushroom_mines",
+    "dungeons_arise:mushroom_village",
+    "dungeons_arise:plague_asylum",
+    "dungeons_arise:scorched_mines",
+    "dungeons_arise:shiraz_palace",
+    "dungeons_arise:small_blimp",
+    "dungeons_arise:thornborn_towers",
+    "dungeons_arise:typhon",
+    "dungeons_arise:undead_pirate_ship",
+    "dungeons_arise:wishing_well",
+    "dungeons_arise_seven_seas:corsair_corvette",
+    "dungeons_arise_seven_seas:pirate_junk",
+    "dungeons_arise_seven_seas:small_yacht",
+    "dungeons_arise_seven_seas:unicorn_galleon",
+    "dungeons_arise_seven_seas:victory_frigate",
+    "echoes_of_the_end__structures_:crying_obsidian_tower",
+    "echoes_of_the_end__structures_:end_dungeon_tower",
+    "echoes_of_the_end__structures_:end_enchanted_temple",
+    "echoes_of_the_end__structures_:end_shulker_tower",
+    "echoes_of_the_end__structures_:end_temple",
+    "echoes_of_the_end__structures_:end_warship",
+    "end_villager_outpost:end_villager_outpost",
+    "eternal_starlight:cursed_garden",
+    "eternal_starlight:golem_forge",
+    "eternal_starlight:portal_ruins_cold",
+    "eternal_starlight:portal_ruins_common",
+    "eternal_starlight:portal_ruins_desert",
+    "eternal_starlight:portal_ruins_forest",
+    "eternal_starlight:portal_ruins_jungle",
+    "eternal_starlight:stranghoul_den",
+    "eternalnether:catacomb",
+    "eternalnether:citadel",
+    "eternalnether:piglin_manor",
+    "explore_ruins_aether:holy_shrine",
+    "explore_ruins_aether:small_hellfire_dungeon",
+    "explore_ruins_aether:valkyrie_ship",
+    "fdbosses:chesed_arena",
+    "fdbosses:geburah_arena",
+    "fdbosses:malkuth_arena",
+    "floating_islands:amethyst_island",
+    "floating_islands:camp_island",
+    "floating_islands:cemetery_island",
+    "floating_islands:cherry_island_with_shrine",
+    "floating_islands:pillager_camp",
+    "floating_islands:spider_ruin",
+    "floating_islands:steampunk_island",
+    "floating_islands:tower_island",
+    "floating_islands:witch_island",
+    "formationsoverworld:copper_spire",
+    "formationsoverworld:graveyard",
+    "formationsoverworld:ice_castle",
+    "formationsoverworld:ice_spire",
+    "formationsoverworld:large_temple",
+    "formationsoverworld:mesoamerican_temple",
+    "formationsoverworld:stone_tower",
+    "formationsoverworld:witch_tower",
+    "friendsandfoes:citadel",
+    "graveyard:altar",
+    "graveyard:crypt",
+    "graveyard:haunted_house",
+    "graveyard:large_graveyard",
+    "graveyard:lich_prison",
+    "graveyard:medium_graveyard",
+    "graveyard:ruins",
+    "iceandfire:cyclops_cave",
+    "iceandfire:fire_dragon_cave",
+    "iceandfire:fire_dragon_roost",
+    "iceandfire:gorgon_temple",
+    "iceandfire:graveyard",
+    "iceandfire:hydra_cave",
+    "iceandfire:ice_dragon_cave",
+    "iceandfire:ice_dragon_roost",
+    "iceandfire:lightning_dragon_cave",
+    "iceandfire:lightning_dragon_roost",
+    "iceandfire:mausoleum",
+    "iceandfire:pixie_village",
+    "iceandfire:siren_island",
+    "idas:ancient_mines",
+    "idas:ancient_portal/ancient_portal",
+    "idas:ancient_portal/nether_ancient_portal",
+    "idas:ars_nouveau/archmages_tower",
+    "idas:castle",
+    "idas:desert_pyramid",
+    "idas:desert_ruins",
+    "idas:enchantingtower",
+    "idas:frozen_crypt",
+    "idas:haunted_manor",
+    "idas:iceandfire/dread_citadel",
+    "idas:iceandfire/sirens_cove",
+    "idas:labyrinth",
+    "idas:necromancers_spire",
+    "idas:nexus",
+    "idas:pillager_fortress",
+    "idas:redhorn_guild",
+    "idas:ruined_church",
+    "idas:ruined_fort",
+    "idas:ruins_of_the_deep",
+    "idas:sunken_ship/sunken_ship",
+    "idas:sunken_ship/sunken_ship_coral",
+    "idas:sunken_ship/sunken_ship_ruins",
+    "idas:tinkers_citadel",
+    "idas:wizard_tower",
+    "illagerwarship:warship",
+    "incendium:abandoned_tower",
+    "incendium:forbidden_castle",
+    "incendium:infernal_altar",
+    "incendium:nether_reactor",
+    "incendium:piglin_village",
+    "incendium:pipeline",
+    "incendium:quartz_kitchen",
+    "incendium:ruined_lab",
+    "incendium:sanctum",
+    "integrated_stronghold:stronghold",
+    "integrated_villages:airship_village",
+    "irons_spellbooks:ancient_battleground",
+    "irons_spellbooks:catacombs",
+    "irons_spellbooks:citadel",
+    "irons_spellbooks:evoker_fort",
+    "irons_spellbooks:ice_spider_den",
+    "irons_spellbooks:impaled_icebreaker",
+    "irons_spellbooks:mangrove_hut",
+    "irons_spellbooks:mountain_tower",
+    "irons_spellbooks:pyromancer_tower",
+    "mes:astral_hideaway",
+    "mes:astral_meteorite",
+    "mes:ender_spire",
+    "mes:enderkeep_courtyard",
+    "mes:enderwatch_tower",
+    "mes:manuscript_shrine",
+    "mes:mega_ship",
+    "mes:mega_ship_basic",
+    "mes:mega_ship_crashed",
+    "mes:mega_ship_crashed_2",
+    "mes:mega_ship_crashed_deepslate",
+    "mes:mega_ship_deepslate",
+    "mes:mega_ship_deepslate_2",
+    "mes:mega_ship_deepslate_3",
+    "mes:monolith",
+    "mes:mythic_garden",
+    "mes:phantom_citadel",
+    "mes:ruined_pillar",
+    "mes:starlight_voyager",
+    "minecraft:ancient_city",
+    "minecraft:bastion_remnant",
+    "minecraft:end_city",
+    "minecraft:fortress",
+    "minecraft:mansion",
+    "minecraft:monument",
+    "minecraft:pillager_outpost",
+    "minecraft:stronghold",
+    "minecraft:trial_chambers",
+    "mns:copper_tower",
+    "mns:crimson_forge",
+    "mns:dragon_arena",
+    "mns:giant_skull",
+    "mns:grave_yard",
+    "mns:large_arena",
+    "mns:large_nether_brick",
+    "mns:mega_fortress",
+    "mns:nether_tower",
+    "mns:shrine",
+    "mns:small_arena",
+    "mns:smoking_shrine",
+    "mns:train",
+    "mns:warped_dome",
+    "mowziesmobs:wrought_chamber",
+    "mss:arena",
+    "mss:castle_ruin",
+    "mss:castle_tower",
+    "mss:desert_pyramid",
+    "mss:large_tower",
+    "mss:nether_portal",
+    "mss:palm_island",
+    "mss:small_tower",
+    "mss:volcano",
+    "mtr:badlands_temple",
+    "mtr:desert_temple",
+    "mtr:jungle_temple",
+    "mtr:nether_temple",
+    "mtr:ocean_temple",
+    "mvs:cartographer_tower",
+    "mvs:castle_ruins",
+    "mvs:cathedral",
+    "mvs:diorite_tower",
+    "mvs:floating_islands",
+    "mvs:jungle_tower",
+    "mvs:large_floating_island",
+    "mvs:large_mushroom",
+    "mvs:large_warped_tower",
+    "mvs:ocean_tower",
+    "mvs:red_tower",
+    "mvs:small_pillager_tower",
+    "mvs:small_ship",
+    "mvs:small_tower_well",
+    "nova_structures:badlands_miner_outpost",
+    "nova_structures:bunker",
+    "nova_structures:conduit_ruin",
+    "nova_structures:creeping_crypt",
+    "nova_structures:deepslate_camp",
+    "nova_structures:desert_ruins",
+    "nova_structures:end_castle",
+    "nova_structures:end_lighthouse",
+    "nova_structures:end_ship",
+    "nova_structures:illager_camp",
+    "nova_structures:illager_hideout",
+    "nova_structures:illager_manor",
+    "nova_structures:jungle_ruins",
+    "nova_structures:lone_citadel",
+    "nova_structures:nether_keep",
+    "nova_structures:nether_skeleton_tower_crimson",
+    "nova_structures:nether_skeleton_tower_soul",
+    "nova_structures:nether_skeleton_tower_warped",
+    "nova_structures:nether_skeleton_tower_waste",
+    "nova_structures:piglin_camp",
+    "nova_structures:piglin_donjon",
+    "nova_structures:piglin_outstation",
+    "nova_structures:remnant_taiga_castle",
+    "nova_structures:ruin_town",
+    "nova_structures:shrine_combat_tier_1",
+    "nova_structures:shrine_combat_tier_2",
+    "nova_structures:shrine_combat_tier_3",
+    "nova_structures:shrine_combat_tier_4",
+    "nova_structures:shrine_combat_tier_5",
+    "nova_structures:shrine_tower",
+    "nova_structures:stray_fort",
+    "nova_structures:toxic_lair",
+    "nova_structures:trident_trial_monument",
+    "nova_structures:undead_crypt",
+    "nova_structures:witch_villa",
+    "pasterdream:aaroncos_arena_portal",
+    "pasterdream:aaroncos_arena_portals",
+    "pasterdream:desert_fortress_0",
+    "pasterdream:dream_church_0",
+    "pasterdream:dream_church_1",
+    "pasterdream:dream_church_2",
+    "pasterdream:dyedream_floating_temple",
+    "pasterdream:dyedream_laboratory_0",
+    "pasterdream:dyedream_tower_0",
+    "pasterdream:dyedream_tower_1",
+    "pasterdream:dyedream_worldtree_0",
+    "pasterdream:dyedream_worldtree_1",
+    "pasterdream:garden_decryption_0",
+    "pasterdream:garden_decryption_1",
+    "pasterdream:garden_decryption_2",
+    "pasterdream:lifecrystal_cave_0",
+    "pasterdream:lost_windknight_ruins",
+    "pasterdream:shadow_dungeon",
+    "pasterdream:shadow_foundry_0",
+    "pasterdream:shadow_foundry_1",
+    "pasterdream:shadow_foundry_2",
+    "pasterdream:shadow_fungus_nest_0",
+    "pasterdream:shadow_fungus_nest_1",
+    "pasterdream:shadow_fungus_nest_2",
+    "pasterdream:shadow_underground_workroom_0",
+    "pasterdream:shadow_underground_workroom_1",
+    "pasterdream:shadow_world_door",
+    "pasterdream:wind_island_0",
+    "philipsruins:ancient_crypt",
+    "philipsruins:ancient_dungeon",
+    "philipsruins:ancient_ruins",
+    "philipsruins:ancient_towers",
+    "philipsruins:level_one_ruins",
+    "philipsruins:level_three_ruins",
+    "philipsruins:level_two_ruins",
+    "philipsruins:lost_soul_city",
+    "philipsruins:lost_soul_dungeon",
+    "philipsruins:ocean_fortress",
+    "philipsruins:ocean_ruins",
+    "philipsruins:rare_ruin",
+    "philipsruins:underground_structures",
+    "sky_whale_ship:whalearena",
+    "sky_whale_ship:whaleship",
+    "skyarena:ice_arena",
+    "skyarena:sky_arena",
+    "structory:jungle_ruin",
+    "structory:northern_ruin",
+    "structory:swamp_ruin",
+    "structory:taiga_ruin_underground",
+    "twilightforest:aurora_palace",
+    "twilightforest:dark_tower",
+    "twilightforest:final_castle",
+    "twilightforest:hedge_maze",
+    "twilightforest:hydra_lair",
+    "twilightforest:knight_stronghold",
+    "twilightforest:labyrinth",
+    "twilightforest:lich_tower",
+    "twilightforest:naga_courtyard",
+    "twilightforest:troll_cave",
+    "underwater_village:dungeon",
+    "underwater_village:ruins",
+    "underwater_village:shrine",
+    "underwater_village:temple",
+    "underwater_village:temple_broken",
+    "underwater_village:temple_ruins",
+    "underwater_village:tower"
+  ],
+  "resource_checks": [
+    {
+      "kind": "worldgen/structure",
+      "id": "archaion:ancient_keep",
+      "providers": [
+        {
+          "provider": "archaion-1.21.1-1.4.4.jar",
+          "path": "data/archaion/worldgen/structure/ancient_keep.json",
+          "sha256": "dc89d1509a6e2147de6ce45a3241aceb4890aeade62c9ee0fc09b3b5319f2bab"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_worldgen_final_fixes",
+          "path": "data/archaion/worldgen/structure/ancient_keep.json",
+          "sha256": "4c495b310978a3f2f428c9b29fc58dc979785e9c72e84c34ce1e3b05787d4b78"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "bosses_of_mass_destruction:gauntlet_arena",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure/gauntlet_arena.json",
+          "sha256": "22417d0487e43d5fb8e009164b9ed7bb7df3d1a3634cb42f28420a03d2905574"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure/gauntlet_arena.json",
+          "sha256": "9ba90123f3ebe54e5a8adc0df79a0f87b1a65280ef2c952191814a35fcbcbf80"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "bosses_of_mass_destruction:lich_tower",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure/lich_tower.json",
+          "sha256": "c787c21c40165f1449dd423313a11a40f08ee1a9c47f0d9feb24f99e0e965ca1"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure/lich_tower.json",
+          "sha256": "3ab2d44f0c3d32bdb91cc1f72f55d0112b8e07091f16027e8572379a61d42684"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "bosses_of_mass_destruction:obsidilith_arena",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure/obsidilith_arena.json",
+          "sha256": "0a5f7d8b15078a957cb30e076d2a5c4bc3de3d8cbea706e8047f5d4c15c55eb0"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure/obsidilith_arena.json",
+          "sha256": "7cf9fd90570099508adb35566b029bb2588cc262cb2cbec143869fea152c5bb2"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:ancient_factory",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/ancient_factory.json",
+          "sha256": "6847ac6edd4029d1d09868ab331f064d17297f04492b1e7de8956aed5e477066"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/ancient_factory.json",
+          "sha256": "f3d8828caad551c1f523b38eb776b0332f40ffd5003dabadcdd8f1180ecabd3d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:burning_arena",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/burning_arena.json",
+          "sha256": "5e01b86ac588f88922c254f179a2a655f5180cb7cddd9572bd1296858efdf08a"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/burning_arena.json",
+          "sha256": "4e4b16c8a2ba86303dafad4988b5ed5142e1f27256c12bed45d147af02f08d09"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:cursed_pyramid",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/cursed_pyramid.json",
+          "sha256": "d726fe56557c2628276494f3bc06007974501942056bbb7a18f295a37b00505d"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/cursed_pyramid.json",
+          "sha256": "dbd5036a1166b76456a8b2c8c7c8e5a369fd468c2fb2669444b28d55df3d836c"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:frosted_prison",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/frosted_prison.json",
+          "sha256": "281faa9382be8fc6f29320339aed30f0fd5b3d5a47358ddfe72307b0c92e3186"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/frosted_prison.json",
+          "sha256": "b447b48924e38717ee626ec9a03afe251d6242f722f0adea295a51c6fa15e4f8"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:ruined_citadel",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/ruined_citadel.json",
+          "sha256": "21dccc9e385cb2f52ae890bfba524da226b4ea3c325f6a7c859dc02fc395ae42"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/ruined_citadel.json",
+          "sha256": "92bf3448b014a2f66f2a59d020dec36a9e1a776630c7bab76ac60e2f3e303155"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:soul_black_smith",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/soul_black_smith.json",
+          "sha256": "e02edd3ca82ff703a95ad2f23d437f63716e84450dc0d0bf48b0cf40e4f868dd"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/soul_black_smith.json",
+          "sha256": "26174704fda1a44779095091cbf2ff17e358cfa931a4931f033bd7b988c6f9c4"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "cataclysm:sunken_city",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure/sunken_city.json",
+          "sha256": "a102ccf2573e1e4fb5d01d6326b993eb8c7b69cf6ffe17e546c095de4fd69d65"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure/sunken_city.json",
+          "sha256": "e64a229ae57545d99988f877e6606490cafebb1c6138537322f715ff3baff0de"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_easy_structures:foresttracks",
+      "providers": [
+        {
+          "provider": "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+          "path": "data/create_easy_structures/worldgen/structure/foresttracks.json",
+          "sha256": "679e15d491fc3c7d071f4272f6a07cc13f35caff4629c5fbe94ab0887c14a7cd"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_easy_structures/worldgen/structure/foresttracks.json",
+          "sha256": "f75da12e23c9f32e0287cc49ab2a32d87353c87ded3b80d8f52033f57c80e50a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_rustic_structures:rustic_barn",
+      "providers": [
+        {
+          "provider": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_barn.json",
+          "sha256": "cdd9598683ebe5991c545448ebe02ccc2a57e7c75bb8551e64107afdb7ea0c7f"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_barn.json",
+          "sha256": "9a2d74907e2c120cc3eaa0289ef05e2c3805e40b3e483ae6d1889af8cd711e9e"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_rustic_structures:rustic_smithy",
+      "providers": [
+        {
+          "provider": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_smithy.json",
+          "sha256": "0f08404358e5aa82a42d5ea620675c4f0649acd04eb964e9b5824ce78538e485"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_smithy.json",
+          "sha256": "09d1a8ee942d80cd9fc43649bc73e56b04d4cfef8bd57f14113f8766c4a5e9c8"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_rustic_structures:rustic_well",
+      "providers": [
+        {
+          "provider": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_well.json",
+          "sha256": "49270076580d0c7945b650516d0be49c3ca8c1fad95b045b5b76ca52eecde8ea"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_well.json",
+          "sha256": "7dc84485719e2f8ed9118ee9bb86082f3e3c840de8e8818330a1f39052773033"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_rustic_structures:rustic_windmill",
+      "providers": [
+        {
+          "provider": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_windmill.json",
+          "sha256": "12c53c00c01281f10eaddc6677eb7997a003f5fc3f6c29a49209c2ef279d8451"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_rustic_structures/worldgen/structure/rustic_windmill.json",
+          "sha256": "5afd2c32491bb26dbfe3368b7485bd6d1aebb6f76df86b30445ec18454c9ae78"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_structures_arise:createdesertwell",
+      "providers": [
+        {
+          "provider": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+          "path": "data/create_structures_arise/worldgen/structure/createdesertwell.json",
+          "sha256": "3646c83d29fb21be193139fb922df48e4b74a0cab060480b10fa4e68761c7fc9"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_structures_arise/worldgen/structure/createdesertwell.json",
+          "sha256": "8f6452e3c857d43f36811def759b11c6e169e2504bfa71e188f721e271dcdd83"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "create_structures_arise:createwitchhut",
+      "providers": [
+        {
+          "provider": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+          "path": "data/create_structures_arise/worldgen/structure/createwitchhut.json",
+          "sha256": "88972aafb6ba741759ed9eb1f3fb641fdd0a2c626dfbcd44b19af795686c6aae"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/create_structures_arise/worldgen/structure/createwitchhut.json",
+          "sha256": "f84e680b54df64178064dde8b985747c679c44ce39008f0ffd0da7113486ce1f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_christmas",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_christmas.json",
+          "sha256": "2f5827f7e322a923bf09466e48d2a9e6f579d17e16046f7ae2190b3252dbd44a"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_christmas.json",
+          "sha256": "3968f5ac4c9fbe3435a900533deae949de0b046ff56ef7903c00efe48d9be1f9"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_dark_forest",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_dark_forest.json",
+          "sha256": "0cc973fde84e44c245afe42cb4979934e8a425a76d005a2dfad96f3495ef5d07"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_dark_forest.json",
+          "sha256": "5670f7cde76980a1bb4818f78d9819f354c1fb8eab61872fd66a3718df2ea21a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_plains",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_plains.json",
+          "sha256": "63ee5f9f9552d6b9ac991a814e32bf608ce0b75c50bf82dfb5ceca1eae4ea58b"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_plains.json",
+          "sha256": "518ea1167058e48bc93419e74e0b07df4ea022d15393fbee4f8a3e923b40ebf5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_plains_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_plains_fortified.json",
+          "sha256": "00aabf9a009d14fdb7170af2e7a8fadd3df25b832fade41f6dd35fa24e6ce5c5"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_plains_fortified.json",
+          "sha256": "a71db28188977c52a1c47d0657f4f200dc7d8fc804e6f7f90cd95772a4304d38"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_snowy_igloo",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_snowy_igloo.json",
+          "sha256": "8e07405b135f040e08e2b05f5af2660077583840a470376e961845350951492e"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_snowy_igloo.json",
+          "sha256": "ebf750c236a9df63ba29944c28f0b74fec3ce0ed3ac2b66af83de40d88e9369d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_swamp",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_swamp.json",
+          "sha256": "a99d3206191898dc55b0eaa86d1693930ac644fba892dd5d7e7e07a82eff82ec"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_swamp.json",
+          "sha256": "6b65e4422622f1a02cc96bad793ffd5063500d60eac293b8faad2f03ee68d54a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_swamp_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_swamp_fortified.json",
+          "sha256": "7d822ebe0b7f8e2c6a202439f42879fcb16211ade2854f2edd2591cd31b410e9"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_swamp_fortified.json",
+          "sha256": "8349d4cffc7c9c0b19c72f763702488e45cdc636372caa2a4a6bb769d71d9b1e"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_taiga",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_taiga.json",
+          "sha256": "41eba732c9d2b62d37cbd3da412917ac29f7106ff84c5b1681c7fcc00c9f5762"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_taiga.json",
+          "sha256": "d35204179e2779c2b18ad022c77288ca90a672824119072d32c570ccccad75f6"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:large/village_taiga_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/large/village_taiga_fortified.json",
+          "sha256": "06982286fb76a8afba05d1ffa576b5f0f44018df114761d39f41799fc3ca63eb"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/large/village_taiga_fortified.json",
+          "sha256": "79dbaec2177671368e790b81cb3dfc8dfc41c01eb92f0697d5253f17ea3472e9"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_christmas",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_christmas.json",
+          "sha256": "f88920b43f648dcbd67a19e89daf92a4254d858712fba9612b73c93d7c400fa0"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_christmas.json",
+          "sha256": "a9aeafab095d8eef51c7203bc0b8ffaf9437622de7b559831c666835edd309b1"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_dark_forest",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_dark_forest.json",
+          "sha256": "bae222dde5c299f8294ea1a00d5fadffb857f33e4cd3edb04f3025a8970d913b"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_dark_forest.json",
+          "sha256": "8d3d95935a5a3f2506ff84e329de3c6ea93ea24677530c9f556d55258f500fb1"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_plains",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_plains.json",
+          "sha256": "5b0443ee335dcf3a8f0209af434a560325189a743630cff4ee730a2c000e126d"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_plains.json",
+          "sha256": "668ccf2e220761068203a675b63177f38a2eacbe734827b44ae1da679c72ef8a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_plains_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_plains_fortified.json",
+          "sha256": "4b1630e39a7e0ff083b551893644311480c18aeb604a4e294f65ecbfedd2380c"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_plains_fortified.json",
+          "sha256": "9ca8ef43f7a9eb68563159efb57d4aa40e9375e2252fe2f6cf6c80c99ab267bf"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_snowy_igloo",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_snowy_igloo.json",
+          "sha256": "5bd00ca314c19b0aa84e987896ea09e8863e7562f4a6c927d15006dd20550ab4"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_snowy_igloo.json",
+          "sha256": "635206164a2c3a6f5fa16073e9389c63b0dfc532748c4a5f6ad7e2d5f2a24910"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_swamp",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_swamp.json",
+          "sha256": "bca606925e0c8858422db12d78f8dfec3a709ae55736e016f1cf4686575ba513"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_swamp.json",
+          "sha256": "97f40d3244602adf2898cff99e7fcbd7b721248226c612c63f1778792a80cd5a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_swamp_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_swamp_fortified.json",
+          "sha256": "4dd4073655b9933d3cc808a589c5f0704b51564ee3d4333199a47c6240e44140"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_swamp_fortified.json",
+          "sha256": "c91f36475c927cb6cd1a97fd10ec0d020e805e3c8ce81f6053e2a8913f651498"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_taiga",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_taiga.json",
+          "sha256": "83273f2ffa12102d2f8821c6121004fd1d369b0f3ac14cb301c44cf028a4d2b6"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_taiga.json",
+          "sha256": "1198961db96d46b777d4ea8c7d16b0c1ffbae635d5bf3c6a05d63013a846a8f6"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:medium/village_taiga_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/medium/village_taiga_fortified.json",
+          "sha256": "7190f21318c3555e07160bad71318c6f3b938c33c078d9ecde4c0f73714d5366"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/medium/village_taiga_fortified.json",
+          "sha256": "015a3f6a79bfba2fb3aa782f5a18062cb99ba75c6ef5ab67be875aa70fdf314d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:pillager_outpost_dark_forest",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_dark_forest.json",
+          "sha256": "634bd34758647afc26304409ba67a231e2fc562ee0d0ea0bb3900da35ec55c85"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_dark_forest.json",
+          "sha256": "26cad6177fb9c5428701693e6149fedfcffd08748c092d096da8253b4d1bb198"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:pillager_outpost_plains",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_plains.json",
+          "sha256": "e5c3771243cc78671b87f28f625db3587af5015e67b4e59b83a9f95acde20db3"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_plains.json",
+          "sha256": "de41f942794f204eacb31a84da4f5f245f8058be5e8a90de14be4efb3832b27d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:pillager_outpost_snowy",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_snowy.json",
+          "sha256": "be71892f0c0590342ff29389daab2cf2276f8ada46df8ee0c8fbd6ea2aa0f8e1"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_snowy.json",
+          "sha256": "92ea2f96eb9b2f6186e10aa33864e765786ac3a380225cd4f3f36b7974bd69ff"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:pillager_outpost_swamp",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_swamp.json",
+          "sha256": "19386859eb1384b60d649ab83b2b3a33035c87144f18f4e4e6745876e5ed5fa8"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_swamp.json",
+          "sha256": "66099f1d63a56868ece75855880c2eca9c9edf11c71c92857e4f84f0a238d8ec"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:pillager_outpost_taiga",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_taiga.json",
+          "sha256": "3188a9b1387235dbe651631b1dbf88eea4d82c2687c1fbfff40600616f43246e"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/pillager_outpost_taiga.json",
+          "sha256": "b4bde5c0eb320fc45bd2f2db5cb0c1749cdd5af6e5f5b28fc6be950a1253f4fd"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_christmas",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_christmas.json",
+          "sha256": "9bdcf68b9da343fb096349799d3ac688508a409030bbf3b0b428b6fe7bf1fe16"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_christmas.json",
+          "sha256": "9db0e1885edec86b6b87c3fc8a3729a46d83ac05388531c6c5babdc61ccfb1c6"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_dark_forest",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_dark_forest.json",
+          "sha256": "d4480aa1acb0068687fca400f1ebda993b137479cd07bd57f137325fc1fed904"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_dark_forest.json",
+          "sha256": "bbaced7d2aab0133d36221bec18b461cadc0f93c90b27d331ba158607237b2a4"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_plains",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_plains.json",
+          "sha256": "d6ac2669cbadcf461ba6dd5de73bcb0ada371cc918ea5832d41c0253d478e168"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_plains.json",
+          "sha256": "a25bc3be8a92757cb6751682884f520cf34c28c429ffe2c6c3a31a37a62b7763"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_plains_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_plains_fortified.json",
+          "sha256": "7b0d0017916bc7176cffcecafa47244aa46446c60bc4f461d0822728bc3a018d"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_plains_fortified.json",
+          "sha256": "6e92279343aa41842f666bd00f5b2d281ce8c6bd7bb2a9cdf2bc3a0e7489d299"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_snowy_igloo",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_snowy_igloo.json",
+          "sha256": "c07d3e1b276770a978185e43d925d4da6991a8e6e86f4a214bf5bb7bad767d39"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_snowy_igloo.json",
+          "sha256": "3735dbd846ae369c1293caba08befb56550ee7c9328f6e6b7139f6b4e0efe112"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_swamp",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_swamp.json",
+          "sha256": "37bc57b922cc6169ee43e6e38ff8d07fa870a77836e72b8fc2a6bdf54fd381bd"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_swamp.json",
+          "sha256": "636441490848e8164dd5dd204114e3f050539738816c298b3bb125293f6ddef7"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_swamp_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_swamp_fortified.json",
+          "sha256": "72ebd973ea245b984d2bc466d91ec3dd7368b2855dc4955914142bbdbf96a66a"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_swamp_fortified.json",
+          "sha256": "86a97f153ba32a304b38c049df53c589c341645e4af9f892511e1839002d5ec5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_taiga",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_taiga.json",
+          "sha256": "7ae48a419cc9cab3952c7297064da3775b8f62a6286b48db27c7e977a21a9906"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_taiga.json",
+          "sha256": "27755132894518c3a4f248aa41d775ed749168b2413888d9d0491b0ec78eb768"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "ctov:small/village_taiga_fortified",
+      "providers": [
+        {
+          "provider": "[Neoforge]ctov-3.6.3.jar",
+          "path": "data/ctov/worldgen/structure/small/village_taiga_fortified.json",
+          "sha256": "696662a63e35fb9e25f5b0277085074a77c247d55dfde129ab4b4b7ecb125a42"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/ctov/worldgen/structure/small/village_taiga_fortified.json",
+          "sha256": "ec0fd3052beba2a46d1d39d54a459ed79d7520dfe147165355403296a4845a56"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "dungeons_arise:heavenly_challenger",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/worldgen/structure/heavenly_challenger.json",
+          "sha256": "24ffe9f203916a5cb666022002cfb19791ae838b8cdfd8a45f3dc0274f81bbe4"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_structure_density",
+          "path": "data/dungeons_arise/worldgen/structure/heavenly_challenger.json",
+          "sha256": "9f513612a1d0027eacb597cb94ca631230b525c08196191a7f157e1bf678cf8f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "dungeons_arise:heavenly_conqueror",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/worldgen/structure/heavenly_conqueror.json",
+          "sha256": "0e5991c2b4e4d6f59ef24dec106db5cf843eb3eb758589239b940f684cdb9282"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_structure_density",
+          "path": "data/dungeons_arise/worldgen/structure/heavenly_conqueror.json",
+          "sha256": "bff1017918f52cfbb4be2a740957f224c71505d5219d4da50d42f7bc6c49b527"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "dungeons_arise:heavenly_rider",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "path": "data/dungeons_arise/worldgen/structure/heavenly_rider.json",
+          "sha256": "a2d5c3c28d198e5e43227e91803e9aa9be80ca334c5a8d50f294c5982c903758"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_structure_density",
+          "path": "data/dungeons_arise/worldgen/structure/heavenly_rider.json",
+          "sha256": "d566a7441d90419501f311fbbd077f7de85979282ec9a314f97d0c9be7a61afc"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "fdbosses:malkuth_arena",
+      "providers": [
+        {
+          "provider": "fdbosses-3.2-1.21.1.jar",
+          "path": "data/fdbosses/worldgen/structure/malkuth_arena.json",
+          "sha256": "3a0efc24fa15cd48de633145475afe54ae74d1882afa7e33300d6b5417373c59"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_structure_repairs",
+          "path": "data/fdbosses/worldgen/structure/malkuth_arena.json",
+          "sha256": "fc1338fdf2987ba811f109fdad8f8943ddeae5f11cce74f5c44cf3519518674d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "iceandfire:fire_dragon_cave",
+      "providers": [
+        {
+          "provider": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/worldgen/structure/fire_dragon_cave.json",
+          "sha256": "f038520be84e6828dd0d2382738a8fbfe9903ace9ecf909c9e7a5ff12d4b9cbe"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dragon_caves",
+          "path": "data/iceandfire/worldgen/structure/fire_dragon_cave.json",
+          "sha256": "03bf626e386101ea5bee73232277ad2fc4f74d13a794744ccb01f89be81b7be9"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "iceandfire:ice_dragon_cave",
+      "providers": [
+        {
+          "provider": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/worldgen/structure/ice_dragon_cave.json",
+          "sha256": "f9607d9e2b90485555198fbb4115529c760da2d1bc0903ae2e9a4274d327ac34"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dragon_caves",
+          "path": "data/iceandfire/worldgen/structure/ice_dragon_cave.json",
+          "sha256": "146248b8bdb042c31c1d93512b87e07aaf4578e2c9a70f65ff26c31e5e39b6a3"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "iceandfire:lightning_dragon_cave",
+      "providers": [
+        {
+          "provider": "iceandfire-2.1.3.jar",
+          "path": "data/iceandfire/worldgen/structure/lightning_dragon_cave.json",
+          "sha256": "e5baea70842d0ae2e6528daf1b6787ab138a4e86221c10051b5827358de694ad"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dragon_caves",
+          "path": "data/iceandfire/worldgen/structure/lightning_dragon_cave.json",
+          "sha256": "08650920e4fc4f61b16c9e453e1e87f029a926ba6a768265dd2a5e7df6187c84"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:ancient_city",
+      "providers": [
+        {
+          "provider": "lukis-ancient-cities-v1.2.jar",
+          "path": "data/minecraft/worldgen/structure/ancient_city.json",
+          "sha256": "f15b9cfafc61c53306f98d05898332509d9b3d10b7fe21af84758e5a41bc7b20"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/ancient_city.json",
+          "sha256": "a32f8919571fecd93eedd3fa45f1c8df4adf1650b1391d176b13e942752cdbbe"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:bastion_remnant",
+      "providers": [
+        {
+          "provider": "betterbastions-1.0.0+neoforge-1.21.1.jar",
+          "path": "data/minecraft/worldgen/structure/bastion_remnant.json",
+          "sha256": "960fc221b7bb2defc1173acebfd94d9c8d2f640b638ae5c2c381d16767bc5105"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/bastion_remnant.json",
+          "sha256": "a34d39deac28c25ac6c1a34a9cfc840af72aeeba4bec6b6c851361592909bc34"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:mansion",
+      "providers": [
+        {
+          "provider": "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+          "path": "data/minecraft/worldgen/structure/mansion.json",
+          "sha256": "6484d5ffbe3250fcea5bce2027b8dc4c4112a1c96471e85122cb99646827cd6a"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/mansion.json",
+          "sha256": "7ab5844fcd3dbb67a2056228d6ad367a100ea7505b639fa67cf9d72ae56e407d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:pillager_outpost",
+      "providers": [
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/pillager_outpost.json",
+          "sha256": "e0bb5ca7d1eec9edad16f5d4e98d95f484212ea9f2be3a42d4444dc68ccfa446"
+        },
+        {
+          "provider": "trek-B0.6.2.jar",
+          "path": "data/minecraft/worldgen/structure/pillager_outpost.json",
+          "sha256": "360188cf3176fd564f2eab32343d13fe8b3143f9cec5cfe434e6a1baac3390d6"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/pillager_outpost.json",
+          "sha256": "9389a0a9ff5c933b7c0a41814f07cb70ff8de00a8b314ec1bbb1ffdba799340d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:shipwreck",
+      "providers": [
+        {
+          "provider": "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+          "path": "data/minecraft/worldgen/structure/shipwreck.json",
+          "sha256": "d26f6409368a145a299d7c514a8850d337cc4da6a74653e44b04a496d92a9cad"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/shipwreck.json",
+          "sha256": "2bdd115d7b33195efa86564c8c60570552c922c14dff68d972146c5a26fc8f0a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:shipwreck_beached",
+      "providers": [
+        {
+          "provider": "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+          "path": "data/minecraft/worldgen/structure/shipwreck_beached.json",
+          "sha256": "361cbea1c115a2397944d245aac8ba4877f9ab5e06e2efeb2f9350bdfdc1f68f"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/shipwreck_beached.json",
+          "sha256": "1c038a8319b0c53f9b8db49eb7e9ab825728acc82ad69757081388cd2f6d11e4"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:swamp_hut",
+      "providers": [
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/swamp_hut.json",
+          "sha256": "121a894b5ca0d23a46fece1b10c3a2aab405362be42f5e50114b236ef25d6938"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/swamp_hut.json",
+          "sha256": "f3446923999ca537bdb60469d5a1ef6e1656d30ca9d345a664ee696411a17586"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:village_desert",
+      "providers": [
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/village_desert.json",
+          "sha256": "438f09bdf39cf3866174a63765b79cdc4a687a9237fdbc889744583b45516fb9"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/village_desert.json",
+          "sha256": "44fc0c37773be0914b2c1c3b816ef59e65ae1ce6a164c90879da5b6a9a7900df"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:village_plains",
+      "providers": [
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/village_plains.json",
+          "sha256": "8efeabc88ef4b28f559ccf8e2d65980ba9335ccb39f11cddb3afce24b409deb4"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/village_plains.json",
+          "sha256": "046a75364c6667c9ee5c3aa6172cd7b7bf6e5cb292e9004559cacba5c6b2dc33"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:village_savanna",
+      "providers": [
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/village_savanna.json",
+          "sha256": "ebe0ab72fc31fef2db96b02e0fa9574711afb88750f312c3c6b22c4b0902e25e"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/village_savanna.json",
+          "sha256": "653b927886e03b2d892b31b2a16b43b5459abab1be6c102b566ca51d6504b36f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:village_snowy",
+      "providers": [
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/village_snowy.json",
+          "sha256": "306f27e27b5863c472fd7a914c6ee64357b185590c87675f0793fa29a2fd9bde"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/village_snowy.json",
+          "sha256": "c59fcd591981c552dd370355a1017c938d1574f03fddae1ffd015a7c777dae73"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "minecraft:village_taiga",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/minecraft/worldgen/structure/village_taiga.json",
+          "sha256": "40fd3a9bb63784e724399411f6de1e71b88a2e779b7c3f031e2cdb8a1201574e"
+        },
+        {
+          "provider": "lukis-grand-capitals-1.1.3.jar",
+          "path": "data/minecraft/worldgen/structure/village_taiga.json",
+          "sha256": "21acb1496302f767cee25dc2fa47901a934cc82509666fea228de391d004ef20"
+        },
+        {
+          "provider": "minecraft_1.21.1_client.jar",
+          "path": "data/minecraft/worldgen/structure/village_taiga.json",
+          "sha256": "86ec8c3cfd7e547cb7db1d3bcf755391b68c51f29c3d6a93ced2618c9eef12e3"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "mowziesmobs:frostmaw_spawn",
+      "providers": [
+        {
+          "provider": "IMM v1.3.2-1.21.1.jar",
+          "path": "data/mowziesmobs/worldgen/structure/frostmaw_spawn.json",
+          "sha256": "f7f9a24c5ddae500ee845eb5c4313dfe1b2b5ccf39db4c50eae84e066bb6917f"
+        },
+        {
+          "provider": "mowziesmobs-1.21.1-1.8.2.jar",
+          "path": "data/mowziesmobs/worldgen/structure/frostmaw_spawn.json",
+          "sha256": "eb19599b997d80cb64c0b8ffca1fc2fbe683293c16391c9f3e39ac5c9b7ada8c"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "mowziesmobs:monastery",
+      "providers": [
+        {
+          "provider": "IMM v1.3.2-1.21.1.jar",
+          "path": "data/mowziesmobs/worldgen/structure/monastery.json",
+          "sha256": "f6a1cf479862051542abfb8ba321a8ac135b41bc69ecfb1a40e9a309e4f64d04"
+        },
+        {
+          "provider": "mowziesmobs-1.21.1-1.8.2.jar",
+          "path": "data/mowziesmobs/worldgen/structure/monastery.json",
+          "sha256": "a145bb733c30af134bb8b317a1e514df5350b0f5ca70f669ea7be5e430366d59"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "mowziesmobs:umvuthana_grove",
+      "providers": [
+        {
+          "provider": "IMM v1.3.2-1.21.1.jar",
+          "path": "data/mowziesmobs/worldgen/structure/umvuthana_grove.json",
+          "sha256": "2e4737d60606cf24efec92d1ddbee5c4d9cdb6cbe1bd9c349251bbbb7bcb4f4b"
+        },
+        {
+          "provider": "mowziesmobs-1.21.1-1.8.2.jar",
+          "path": "data/mowziesmobs/worldgen/structure/umvuthana_grove.json",
+          "sha256": "8ccbdb2e7a544f359a438a6f75f09bcc2cf1552c9e631d6cd132a899186c7360"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "mowziesmobs:wrought_chamber",
+      "providers": [
+        {
+          "provider": "IMM v1.3.2-1.21.1.jar",
+          "path": "data/mowziesmobs/worldgen/structure/wrought_chamber.json",
+          "sha256": "0523be1f131986adb0a3a2064a72da6857b9eb6335ef3411e43686aebcfbe68f"
+        },
+        {
+          "provider": "mowziesmobs-1.21.1-1.8.2.jar",
+          "path": "data/mowziesmobs/worldgen/structure/wrought_chamber.json",
+          "sha256": "49a0cf7a5f97d2aef8cda6f01796413a90a6611213d0f8080fd0354fe1ae3207"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:desert_ruins",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/desert_ruins.json",
+          "sha256": "5a49fbd55d9a9e238a1daca6511a5984909080af7b5a9ad2519114afc330c7c3"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/desert_ruins.json",
+          "sha256": "932519ef3e8c4a281f689e62d18dbc6f2f92899ef78e9f2781b3c14dfce7be15"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:jungle_ruins",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/jungle_ruins.json",
+          "sha256": "280d5890a41a61f776c11d37327bc9dc0b7dce069edc867a5c135efad689e567"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/jungle_ruins.json",
+          "sha256": "978e5e1fca5b9286f07a3bf73f932c32f87fe0a041f342a8490672957cd2fa28"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_bee_keeper",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_bee_keeper.json",
+          "sha256": "6c31fe9791c24ae285da80a8d54ef87836661877ae9eb11a8e58bf348d29fb9d"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_bee_keeper.json",
+          "sha256": "47064a8084af008f036729b8a0bb69e58724b073765473021e1db5af02d54494"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_big_remnant",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_big_remnant.json",
+          "sha256": "b565a36e324f4b76c29d178d5958114eaa3d501f06fee62ff429b756447825e0"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_big_remnant.json",
+          "sha256": "102ee6416e1b7e782e3a91080d68e1c519a06d7a3bfe91b1d80fc25570d3f7bf"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_big_remnant_2",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_big_remnant_2.json",
+          "sha256": "6027f1052cea2984e2126825f44f4ccd138294bcaa270cd36a9e480ea0034613"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_big_remnant_2.json",
+          "sha256": "285e2e6815b780f1f75b665aa417edbcafe9406a984616c5af3f545b35519295"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_big_remnant_3",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_big_remnant_3.json",
+          "sha256": "0372862a1ba7ea38a6e9351b1a5eef66d7b1883a2d3dabc65addc29c4e044a8f"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_big_remnant_3.json",
+          "sha256": "da84ad2a58f5638dda65407afd0665879d36172c4f999e4cac8a83c4e21668e8"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_birch_graveyard",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_birch_graveyard.json",
+          "sha256": "52a953a1f4c7376da04c79f3211f10ef25bb2176281fa5015258ed47d8782c36"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_birch_graveyard.json",
+          "sha256": "61549e27387768356a63b300bd4dfbe2a62957e73a0d731db39c1ad49e80f6e9"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_bridge_remnant",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_bridge_remnant.json",
+          "sha256": "691a0024194bebe93cd9f2448f8d9f2fadae351eba03d11ca67d10aa2af427e3"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_bridge_remnant.json",
+          "sha256": "65458fa4090b57007776969879872ca781c8b31fdcf8287866e1ebb5146e7e66"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_bunny_base",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_bunny_base.json",
+          "sha256": "132a5bc356165e6aec4775fb9d78168c2e1606d8907dd6df5e86e2f170709be4"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_bunny_base.json",
+          "sha256": "7462613db85bde7f2c82fd2454103c56b516066cd4f29257c8bff3a92ac73281"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_classic_village",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_classic_village.json",
+          "sha256": "1eabe67abf0cb2e74af9c0df55ede74c587416a232fa87bc3cb13017a2102b43"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_classic_village.json",
+          "sha256": "563007d6c86d66891b6d900df00982f147e635fc115d4abd65b19a05f9169549"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_desert_remnant",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_desert_remnant.json",
+          "sha256": "19e059ea9713f4cc24910569ed6bc407abc46c5c2ccb2f7d19c472f3161a3279"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_desert_remnant.json",
+          "sha256": "1ad44a5db2b8954c020f77f811c569dbef61df97880acfa822178edba0e1d2fa"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_forest_smith",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_forest_smith.json",
+          "sha256": "66011bd84d207fff33083ae08c30e2c4fdcfd8fa321498bf66cc763c2a1ed6dd"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_forest_smith.json",
+          "sha256": "dc620c9c17cc0005412b476a0f7c4491dd7b3c985efd3694c05c0933f2fed597"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_frog_ranch",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_frog_ranch.json",
+          "sha256": "8b8f63aa29cf0f0604953b3a08f42acb46b418d829bba74ed8b48fd62bc2c34c"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_frog_ranch.json",
+          "sha256": "a967370c53e1e68fd2fee5173aa170f5761f8a94b18119dd1975f27c682ca8c9"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_graveyard",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_graveyard.json",
+          "sha256": "c5a7137954788e8ec0de0706382d46c9f33c76a4f532421661bedde623af2bdd"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_graveyard.json",
+          "sha256": "70e065584342a867b1f414c8a8ab23cf7e8d9fe627e93cb89eab5c5ae18a5302"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_medium_remnant",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_medium_remnant.json",
+          "sha256": "4a6b9e58bbe40535cd38611f2a6df2785ecd9940c457e8dd7133e46b368534a5"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_medium_remnant.json",
+          "sha256": "47dbcb183a4f7775cb96fbbf44bdb3290e091ba7e6b8da89b426276f2c6b895d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_medium_remnant_2",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_medium_remnant_2.json",
+          "sha256": "6de1b20d969990334915de602f107f1f961dd3a51ef99e08c1d58ac670443d92"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_medium_remnant_2.json",
+          "sha256": "f6d134087e82e846d6d53ad2551e4f787fb2fd75fc2a3a23a48fb3bd57f0b93f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_miner_hut",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_miner_hut.json",
+          "sha256": "57de1dba5b07047d883b9c34803b4cd0a9500251a4d64df6e7e976b49313a829"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_miner_hut.json",
+          "sha256": "3850b463777ddad3b44ca3a9aae8a2d3820a395e174bf0039348abbbe649d1ac"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_mud_brick_constructor",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_mud_brick_constructor.json",
+          "sha256": "f3d1f2c7925b5037c38317a1cef2da2f23e46d5500bdce3dc59bb9122ba0104a"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_mud_brick_constructor.json",
+          "sha256": "d7358fa190d551830ee2d29515e334b3891afadd4d189e399271732503cdbb45"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_ominous_shop",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_ominous_shop.json",
+          "sha256": "add8b76f941a2f7f3c26df4d0c3c86fac445d675601331a82541eea36608715d"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_ominous_shop.json",
+          "sha256": "0b4c46fc08e99589f420a0547192094949e439ba8819061e206538544ac1e235"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_ruin_farmer",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_ruin_farmer.json",
+          "sha256": "f82d279831692ff2bdf77d822d5d294653d0db82f483e6b3491569f58ad6dc67"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_ruin_farmer.json",
+          "sha256": "a26c816f80fa92a5427dd78050799cebc9276ca24a455b81bdcfafd2ccab08f5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_ruin_smith",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_ruin_smith.json",
+          "sha256": "6b1b4b1db25de3d1d8d51930977601c00055edd4421513e9d5ffc290b0a6a7b5"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_ruin_smith.json",
+          "sha256": "1b89c8bb8c4cc052313df918a5d4b8f0728d7d794be12b2ae4d04d2ec4ff30e7"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_sawmill",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_sawmill.json",
+          "sha256": "ad251ab861c8fda3943471675fec06f3dc3e5b1301a5c75e605c6432b4df87a8"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_sawmill.json",
+          "sha256": "c796f01323bbc8240124f0b23bc3d344f26b5f06261eb8dc7ebf4b0ca346bad3"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_school_remnant",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_school_remnant.json",
+          "sha256": "eba0a558609f8b6bbca80338f2eba9c78bd94f8dc1c58dd12185ce9cd4240f57"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_school_remnant.json",
+          "sha256": "171bc6057b980de9a4673f9df57e6043a471e38b58ae8db15927f55502d49b61"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_woodland_hud",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_woodland_hud.json",
+          "sha256": "b529b2975726139516702a4cd6a55e2d82267fc7a444d23c7e8aa92e05d9c1ee"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_woodland_hud.json",
+          "sha256": "7118b61f8b0ebf74ea2dad52dcc487ebbf204822d33aecf6973915e3d99dd532"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:remnant_zombie_horse_ranch",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/remnant_zombie_horse_ranch.json",
+          "sha256": "4218fa53c6a6e6d47d11dfffebe92d39e7b6b7139a3a60d57e84f714a8de383a"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/remnant_zombie_horse_ranch.json",
+          "sha256": "7243640a9543cf2b5749f3fd9781e9693774fdfb8df041c61e982c0561e2dc44"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:ruin_town",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/ruin_town.json",
+          "sha256": "1dbc5a8682b34406f40c122b67da001f675cedd91a6197aef2a5eff804ed4203"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/ruin_town.json",
+          "sha256": "57221e4ed22e257ad8a07f7ceafd89044d96bb3f1ca3e2237d71af4edcc376d1"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:village_birch",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/village_birch.json",
+          "sha256": "0543575ac61ef093a24f19635440fed812b0246b2e1c4d77e8e9a7716d385187"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/village_birch.json",
+          "sha256": "188e0fd727442aa5995b0b4ad41ff682dc8174ae9f46f5300f531a9f11f6d691"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:village_jungle",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/village_jungle.json",
+          "sha256": "5f852ae6096b957047d29471c5eaf38ea5dcb1378ce6a18624fd3a83136f2c76"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/village_jungle.json",
+          "sha256": "54352ba88dcd7177cc37101901370bba9755259a715f4a8646b813e5630605b1"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:village_swamp",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/village_swamp.json",
+          "sha256": "65ebeefc9320e71f12d2654df81034f02f3523f4ebe9101593a525d94f8b528b"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/village_swamp.json",
+          "sha256": "9212d50a6b9a850a632636643ffc212b7e800c547eb99b9a9b3fe359f62301a6"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "nova_structures:wild_ruin",
+      "providers": [
+        {
+          "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+          "path": "data/nova_structures/worldgen/structure/wild_ruin.json",
+          "sha256": "726b39d8e56d5fd0aa8ea011dbd012c734ec875c774fbffe0d87331315a98654"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_dnt_trek_curation",
+          "path": "data/nova_structures/worldgen/structure/wild_ruin.json",
+          "sha256": "3477389a49419e108ac63f6f78c101f60c8fddba92463bb4782d99ef1f85702d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "sky_whale_ship:frozen_whale",
+      "providers": [
+        {
+          "provider": "sky_whale_ship-neoforge-1.21.1.jar",
+          "path": "data/sky_whale_ship/worldgen/structure/frozen_whale.json",
+          "sha256": "2d7a6c244916ee40d057e8f36a682d0c21279693a8568de9d2b4e23d5b5121d3"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/sky_whale_ship/worldgen/structure/frozen_whale.json",
+          "sha256": "05c58d991388b819f02ddce3a0baeafb96cee238abc34aa84052a4a944622525"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "sky_whale_ship:whale",
+      "providers": [
+        {
+          "provider": "sky_whale_ship-neoforge-1.21.1.jar",
+          "path": "data/sky_whale_ship/worldgen/structure/whale.json",
+          "sha256": "e07e236e753625e0e24af7589cbd974949c93ea45619ce6e0cd8ba5fe528e535"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/sky_whale_ship/worldgen/structure/whale.json",
+          "sha256": "ef9697270a8c297b12700a1b15bab95bcae9889a02ff2328c2dea5f5258f1c72"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "sky_whale_ship:whalearena",
+      "providers": [
+        {
+          "provider": "sky_whale_ship-neoforge-1.21.1.jar",
+          "path": "data/sky_whale_ship/worldgen/structure/whalearena.json",
+          "sha256": "d0a6505eb8f495b1e7e460f6ec2eea7016fc2d4f76d47683787907b2836180c3"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/sky_whale_ship/worldgen/structure/whalearena.json",
+          "sha256": "f6fbe845c6d6ab518de199248dac08d1f84eed0a058f80b754914bcce22bb10b"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "sky_whale_ship:whalelight",
+      "providers": [
+        {
+          "provider": "sky_whale_ship-neoforge-1.21.1.jar",
+          "path": "data/sky_whale_ship/worldgen/structure/whalelight.json",
+          "sha256": "c44889db5d3d4f039b83cb27af5afc842d6ea600c51b5ef88b14993d28e91fb6"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/sky_whale_ship/worldgen/structure/whalelight.json",
+          "sha256": "bce503775987e030402ef276a1f9a16a4c882758caf5a88d63878f743354ff39"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "sky_whale_ship:whaleship",
+      "providers": [
+        {
+          "provider": "sky_whale_ship-neoforge-1.21.1.jar",
+          "path": "data/sky_whale_ship/worldgen/structure/whaleship.json",
+          "sha256": "f48ce805357c5d5f9300ddfb8d0182996cd8ea437bfdb8484964ce538b2d3cd3"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/sky_whale_ship/worldgen/structure/whaleship.json",
+          "sha256": "6d83fe8ab2232c6fa9a539938162bf9bb3d76bb267a2b6f89dc6c19694505646"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "structory_towers:pillager_lookout",
+      "providers": [
+        {
+          "provider": "Structory_Towers_1.21.x_v1.0.14.jar",
+          "path": "data/structory_towers/worldgen/structure/pillager_lookout.json",
+          "sha256": "805e41f1a442ffdc52ca860863e7ce296cb817b8d7c4192a447f2cc93f336926"
+        },
+        {
+          "provider": "local:config/paxi/datapacks/ao_compatibility",
+          "path": "data/structory_towers/worldgen/structure/pillager_lookout.json",
+          "sha256": "077fcf5f9d18c83f9d600f2f76eae6e5387218d4a38d1d356f38abe81109acd4"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure_set",
+      "id": "bosses_of_mass_destruction:lich_tower",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure_set/lich_tower.json",
+          "sha256": "bbb62744ea153da02cd2bbad07baec08467190c9da3fcdbd06381bb574f331de"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/structure_set/lich_tower.json",
+          "sha256": "3214f47c34aba2d5badd6d73bb28c26bb540c563baee1aa7efb6b84d7f577080"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure_set",
+      "id": "cataclysm:ancient_factory",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/structure_set/ancient_factory.json",
+          "sha256": "05bd51793e700c3db32ae2d6973fc3972382f1606eccad737879898f8815f8da"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/structure_set/ancient_factory.json",
+          "sha256": "0cc56f32ab962ac167a1b54cb0d765a0a2e22d27b022e006e3167566cffabc6d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure_set",
+      "id": "mowziesmobs:wrought_chambers",
+      "providers": [
+        {
+          "provider": "IMM v1.3.2-1.21.1.jar",
+          "path": "data/mowziesmobs/worldgen/structure_set/wrought_chambers.json",
+          "sha256": "00f9cb41ed2595870ab5b1c67355454b8c2cc8d8fc86bbf23ab8b4476a8204fc"
+        },
+        {
+          "provider": "mowziesmobs-1.21.1-1.8.2.jar",
+          "path": "data/mowziesmobs/worldgen/structure_set/wrought_chambers.json",
+          "sha256": "c65f545d51a0f8902e91aedaa5d09da90d1c8aa5236ee06f83c35681cc59f7a8"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "bosses_of_mass_destruction:gauntlet_arena/start_pool",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/template_pool/gauntlet_arena/start_pool.json",
+          "sha256": "dd7217676391a26dcd0fc00dd5120464b7c36501684b2e1a32aa0189b901863a"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/template_pool/gauntlet_arena/start_pool.json",
+          "sha256": "2073fd182996949ef1fc4daa94e0de5e20d1696d11c1ca5621c2642d9bd46c32"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "bosses_of_mass_destruction:lich_tower/start_pool",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/template_pool/lich_tower/start_pool.json",
+          "sha256": "97a17936430269ee9b4e753edec974f00185c82117fe441fc2495aea4a525072"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/template_pool/lich_tower/start_pool.json",
+          "sha256": "5b0ad6eed69428cfc4aa9977b516bc7220ea6f1b433b52be010ac338b46bd619"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "bosses_of_mass_destruction:obsidilith_arena/start_pool",
+      "providers": [
+        {
+          "provider": "BOMD-NeoForge-1.21-1.3.3.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/template_pool/obsidilith_arena/start_pool.json",
+          "sha256": "93a1ec2de8c31ac59dde723264e12038ffc720235da849afeead4970677fe3e7"
+        },
+        {
+          "provider": "IBOMD v1.0.0-1.21.1.jar",
+          "path": "data/bosses_of_mass_destruction/worldgen/template_pool/obsidilith_arena/start_pool.json",
+          "sha256": "bf2f3f622d3dc4a9511042da86f9694e0e8b36149c8254262985205031f89fd9"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/a",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/a.json",
+          "sha256": "506df37a8f2aba5824bce31c75af0c1d4062f58336eda926a5e977e0ad4d4a1f"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/a.json",
+          "sha256": "7e40460a00635f595f9602afcde2ee4b997d967dd4e94d0da6948a3e9a8ba692"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/d",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/d.json",
+          "sha256": "0e7104ad61310fd2de66c214565cb7108c2393f341487a15fccaf93115091172"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/d.json",
+          "sha256": "dcde8547bb7c75efc633eb125a952464eb50448858357e64dc12447f6d344ac3"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/e",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/e.json",
+          "sha256": "97cd99b74db1f36f13929f50612433514c24818492fadc81c4921a995c53a5d5"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/e.json",
+          "sha256": "e91ef22e69187e908e28f1e5db88f652336a17d7235d557e3d18a1ee61435a92"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/mob/the_harbinger",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/mob/the_harbinger.json",
+          "sha256": "ac6ff289e9a403cfb35e21d79c8e23263445b7ad0fa2cd1661148db75ceb682b"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/mob/the_harbinger.json",
+          "sha256": "ddf229c3ef89b5db6aaff9832af3e26ad9bbbd47208d50ae7e044b68e3305317"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/mob/the_prowler",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/mob/the_prowler.json",
+          "sha256": "802fc4eb23c50b3e4a14fe726a39fdda195f91c330efe4793e80c28a727fe43b"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/mob/the_prowler.json",
+          "sha256": "fea5513e04dd0f8b7bdacdb0ca979e86e03c7de3c35871d3523a03c0602eef59"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/mob/the_watcher",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/mob/the_watcher.json",
+          "sha256": "9343801e0f43e11a8a85b2297cee423e720dcbcf87e6a377728ac0b5ec392461"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/mob/the_watcher.json",
+          "sha256": "01953714d33c5ffc0cdb88193c196b66ef83738d6f01221b3f84ef6ef046100e"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/q",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/q.json",
+          "sha256": "fbbe9519cc3147f780b0181235a0ebbd44a715c12ca63da4600bc885419e23fd"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/q.json",
+          "sha256": "2978026109d222a198407c6c99efda8918c8e1c9c5163b17531becfceec7f0f5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/start_pool",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/start_pool.json",
+          "sha256": "54b68b0a926ff2bb3dffaf97d13d5c148e9dd89e0d196d529c360883756c8c76"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/start_pool.json",
+          "sha256": "78d2ac75445c95710cca838af1ae6d4bbdb08746a087f6623ab5816205ec0a20"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:ancient_factory/w",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/w.json",
+          "sha256": "31d5c00444e55c75f822f9f9f920fb6a1bd760852b377fd2e2aa31c21c592e08"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/ancient_factory/w.json",
+          "sha256": "96bacb545d3d783ba42ec53dc220df044e69c6720d67416379f6339f65183184"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_1",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_1.json",
+          "sha256": "f86138a75b7a09f35d7154433f3ea1075c5dcaa31481ffdc5584509ef38ffb89"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_1.json",
+          "sha256": "333de050d06c4fc6a57c84f2bfe0577e4cb2402c805121b56359fc03deeed400"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_10",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_10.json",
+          "sha256": "a5cb67b4e094f8a0038495e56c4e8f26a51237428527bc62182db09f43e6cd72"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_10.json",
+          "sha256": "7aed4139ba529c44a30c23be3d7b0ba9f489e30a32b22475b43cd79e7319ebf5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_11",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_11.json",
+          "sha256": "577c1179c78fa75e5e493c5d1bb05c8e3ae49f061b196a0bce99cb7006f5983b"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_11.json",
+          "sha256": "6d30d6d165e7258922a7eb223e2ca8f35870d40f1c2c55f4d1d73d8a55843915"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_12",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_12.json",
+          "sha256": "7a6e20d0ff113593a3fecfda83a7b1a7c94889bad78b5c253168a3f986e6c832"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_12.json",
+          "sha256": "fbce64d3b6beebf92067c1ccda123831b061dadfc081f70b4e927c934923f46d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_2",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_2.json",
+          "sha256": "fa259556f1f853ec917c2d14d784db6b008e59ba120f9c1d93052cc8bd7c3ca8"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_2.json",
+          "sha256": "eb9ffa010e152c783b63a31d5f77580305d0ac98b12b8f771b0b289d0af4e48a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_3",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_3.json",
+          "sha256": "b8d1ce3c2d84dd03bf00cd9ae3925b7872c111210359de9f255fc2ee245d0ffa"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_3.json",
+          "sha256": "ebe21d4013fb0409681fe9efd39e3bf1c8c6cd4a8111fda4ef45861b89566745"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_4",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_4.json",
+          "sha256": "1a2dbb60096e09bda61afcfabbd65d9c276bfbff8222ace48635b5770cb0aad5"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_4.json",
+          "sha256": "f775b7a08be8947ae8d0a068f0d7a82d0caaffc122d91e8242e1e1df14517d08"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_5",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_5.json",
+          "sha256": "f9fa812406f63f0dacd6b359a47399bc86bf48d0ce47c168bda27e8c66489c14"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_5.json",
+          "sha256": "eb2ead378cc2e0284e881b44c54c53ec26d2127fd3db1b0c2383b64760f104fd"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_6",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_6.json",
+          "sha256": "72732b4decedee5f8aaadade56ee2212e8d613d8da3d50272256fb7895b1de7b"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_6.json",
+          "sha256": "2c76f42dca43549d05ca1d0a57a522c5a3acc0fdd3228111f66215c8f670c1eb"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_7",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_7.json",
+          "sha256": "165e42e5bd03e904674e4c04123fa147e2c28e6a0a498afcb2ede937dbade654"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_7.json",
+          "sha256": "e85366336e2843cbf3f0b3cf5b713cfb80ad648fccf0951a525af5b8bff65d8d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_8",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_8.json",
+          "sha256": "21195418b99e1dd31763beaae5ab545d68699852c0086849401e1471d92ca3d8"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_8.json",
+          "sha256": "8360183062b1ad686e5b422947a5bb4e7cb83d5bd07b205d4c1573c9e302d77a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/bottom_9",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_9.json",
+          "sha256": "0d4a956d8d571923751629b7c1b1b71755d3abf851e1ac55235d1ee8bd027470"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/bottom_9.json",
+          "sha256": "32c6e95ebe35bce90f76e336b33956cd87d4c853611c263351da7846dbd367a3"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_1",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_1.json",
+          "sha256": "52390f8afb5bd670c7d43386c27646d9e96fd16fbb613985e0614e498f6ad775"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_1.json",
+          "sha256": "54193772797726c4726da5472770ee74f7f233b2e2d6d1b94efc5aff2392034b"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_10",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_10.json",
+          "sha256": "a01d0a672e4e2759f8d4af87e61ac214a0d5a1cd53f6eefc979918bce2519ee5"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_10.json",
+          "sha256": "94b637b7571ee0a34aafabf8fd13cd439ad878d61833435ab436fc550317feef"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_11",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_11.json",
+          "sha256": "13539171869cafbc0df96ee2c6cfc1f1057b298c621ce072c4395c1c79dc8637"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_11.json",
+          "sha256": "2f6ef4cc9a3c088e240dc437ce9f5638eb775723051a60278053c5863e9059e8"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_2",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_2.json",
+          "sha256": "9c04df9953ba7623ad3ac36976e983193a8c140017ad1df8b0f508022e793fdb"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_2.json",
+          "sha256": "ec87b1567a48a96f19bbdf82ea4dec20b0b62cd2e21686d3b559b7689b0e6035"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_3",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_3.json",
+          "sha256": "e5693641b496494b39eb837f07594bf02859723bf24a027d21514de3b6df1a48"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_3.json",
+          "sha256": "1881d71b43c3f1e0cab80f8ffa327edd13f069f2fbb9f62edb320e01e7129e78"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_5",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_5.json",
+          "sha256": "d5ec2e54e90066f3586cd0190cae9928fabd215c33526d77b97fd395c13d54a7"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_5.json",
+          "sha256": "6e5f6e54035b416ee41ea64b361d398d1a1ed57b92a6638731ab8c1d0a8f57ea"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_7",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_7.json",
+          "sha256": "c23f03b62e6caf7bd3dc2c9877e13ce9dca69d37076b9bdef982bc2966800dfb"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_7.json",
+          "sha256": "1e64be44342831c1331b8b5521630be9d835d69270d83286ea49e480fb6de711"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mid_9",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_9.json",
+          "sha256": "545714b262546eaef38efde163e819794e4065423fed445f2d44c7317bfae6a3"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mid_9.json",
+          "sha256": "c7d343ac7de71e46e1f793f8750c16311b5f0ec2ae18d700834863a8eb9fce82"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mob/aptrgangr",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/aptrgangr.json",
+          "sha256": "61f4a72a5095231aec533b87989a60a63605c29bf2fb23f830950a74a72c91b0"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/aptrgangr.json",
+          "sha256": "b1ce42131f33f3a0cb08ab9b6cc66c3faaf1964946900aab91f17a73f3767ae4"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mob/draugr",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/draugr.json",
+          "sha256": "68d1afe253d794aeba0192615d69cb370642aff37e76beccae06c8ba7efda29f"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/draugr.json",
+          "sha256": "792d596ea7bb85580b59632faa44731650f215f22c324ee5c041b93dfa34436a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mob/elite_draugr",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/elite_draugr.json",
+          "sha256": "99bc9068486ce2749e5ff4df8992fa5a98132d565ab9a4db0c8feb5893fccc0b"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/elite_draugr.json",
+          "sha256": "f28fd9bcfdb187887cc4c10c3bfa435e566dd1c156cf8eeb2c7fd6dd640b223a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/mob/royal_draugr",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/royal_draugr.json",
+          "sha256": "29db39e70fef448aecc4dfcb8d00c1c5d1c357bf3e56d175506ac377b1bf0cad"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/mob/royal_draugr.json",
+          "sha256": "3432299d556063135989bab6b586594e6ae6cabb92b0c71bf6615065a1988e1f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/start_pool",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/start_pool.json",
+          "sha256": "f1f47269c607768feed1217c8f179774a3e391e9490441719c77057e37410f54"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/start_pool.json",
+          "sha256": "f13948c5aef92b60601ba061fc066fd5e47d11ad23daeb9f1d9b879f10c54a27"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/top_6",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/top_6.json",
+          "sha256": "2be44c483749821e9a000949edfcedd9efbe4e4866ff65f55aaf930dee096997"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/top_6.json",
+          "sha256": "57ff624ce9ac53be667debff55ded27eda76385ccfd19f1facb2c714f2e0b23a"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/upper_6",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/upper_6.json",
+          "sha256": "f2faeee569585a659c046120ddb177c6ee82db2597eeb8c6cceb5303cb7a8bd0"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/upper_6.json",
+          "sha256": "1e5b9e5a79d193d522dcf06e4ef1eb75c1c93b50f28f2800b935e18d8a81be39"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:frosted_prison/upper_7",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/upper_7.json",
+          "sha256": "bcb050b9db87d32dbeb5c01060f286ac2abf2d6295bbf567068dc99482861e24"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/frosted_prison/upper_7.json",
+          "sha256": "91c7b84e2a8408b8b0b082d9891c5e939619f3cd0d2a67168e45d771873af09f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "cataclysm:soul_black_smith/start_pool",
+      "providers": [
+        {
+          "provider": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+          "path": "data/cataclysm/worldgen/template_pool/soul_black_smith/start_pool.json",
+          "sha256": "26d69923d0091d1eb50bb7adecec6d0ac6a5a565ddf9376e0c18a46be2deb281"
+        },
+        {
+          "provider": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+          "path": "data/cataclysm/worldgen/template_pool/soul_black_smith/start_pool.json",
+          "sha256": "9559c0559783e68a790e390e8ec87603a9c263ee7361e7c22d450e989670c379"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "eternalnether:catacomb",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "8d59445b6acfc851becdd2cad3a8d7bc47f71e915e4eb79259b14ef457325a2f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "eternalnether:citadel",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "2158b47d9f7bebbf72b3c261a0aebfd4b9d534460aa1bec3ad5b213c3e9c7d4d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure",
+      "id": "eternalnether:piglin_manor",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "9a794aa8d0c7be62ab8d24a176da6b212350aa97a172a8dc9b689edc9f05a4b5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure_set",
+      "id": "eternalnether:catacomb",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "7f32d37a9f5981457317c35ed2eef901906e5d4724f40bff9ee1b8ffe1b77602"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure_set",
+      "id": "eternalnether:citadel",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "07f19299410d23e958a675396ac74698b69012cb175d392971d1fad2d1ca7709"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/structure_set",
+      "id": "eternalnether:piglin_manor",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "cca5c5d900de46684fece746f525fab5ead5087fd3f1a3373312b5c275c54699"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/catacomb_mobs",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "03537641051bf49331cff621ced920c98fe773a7a765809ca8201ea40e65e6ef"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/left_head",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "0f82a1c31ba1949189c0973da3a1f769284084a3d6a2d72620b75d2d081d22bf"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/left_rib",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "b8659bbd280c288f8a484ede842a0910987516402446dfdbd18b35ed676dac38"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/left_rib_bent",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "209be5ee751f6472f5895f7eb96ecdc825d0a99030578db09c853bbf1133e6e5"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/left_rib_classic",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "c539d5e88760abd1916d7adf45e9c19ae9e77b924aff391e6ed449992430f37d"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/piglin_prisoner",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "b148dc572afc787154cf1fd03001d5cee56468d374cca87caa0afbf1b2f7bcb8"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/right_head",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "1884435977dcbaeaf00745b08d6a36142300c5454483d08d62fc3e84a4132e8f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/right_rib",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "807da46e4862deedbaa699c824ffd0607f97ddda370ba24c928ca5f39f9ac808"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/right_rib_bent",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "3a9d8fcc2f562204aee9f257eec40fad95258301a26bff6901cab319462a0690"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/right_rib_classic",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "1434f6c9a27035eb310b746f006a31964d7e1ba388c13d576219a9b99f19f2e6"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/shoulder",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "ba3b6e868c090caf6d80b0be78f84c9b2ef68755520efc35eaed223ef1aa26ab"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/spine",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "540670ed42892615030aa5ca49c41d381dc4b0d36dfaf89af236b4fc994161e4"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/start_pool",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "40e3b34fa0eccf1d75faafa82a609ee76125d2d5da41d0ad288a1552f30723c1"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/tail",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "70657aae8ec34e768982cfefa2368afd17967442500b09771240842504710a0c"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:catacomb/wither_skeleton",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "c099bf37e179e5da7d83a5cf0ca4e55691f4cc2c2e6293bf5c2ea23d2350337f"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:citadel/bridge",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "9b83b5d2af183bb52a16439136161abd7373da34e336dfca6d4b440814f93e20"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:citadel/bridge_top",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "f8533a6ef491130ea3f7984fd528a7887b2803c1331b0cfc7a4466db1e5b7bcf"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:citadel/start_pool",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "84a93fbca0e10838a5f9950644bea8eaa7f27d86cefbcce7488641d33def111e"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:citadel/top",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "ea67acd84c8556015ca43bd7dbfdbd244c96b0089b4046d839aa7ed122529677"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:citadel/warped_enderman",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "03a740f564486556104c3de46b40bc3e1b2c123003c04459214fe2feb0e46f90"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:piglin_manor/piglin_horse",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "019784cb81df5e93437558cad822b277360e4e4c2489d1950adb6c40d49f7a61"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:piglin_manor/piglin_mobs",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "e9fcc5a65b98051d04da8f787c6fb85bd4bfb2e4c0aa6f7ca9fc7d06d94718aa"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:piglin_manor/start_pool",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "c7366cc09abf9a3f57b6bc8d5bb31b61fe5f991ef1944485d451d5b3b08f2c94"
+        }
+      ]
+    },
+    {
+      "kind": "worldgen/template_pool",
+      "id": "eternalnether:piglin_manor/strider",
+      "providers": [
+        {
+          "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+          "sha256": "96ef5f0507ac1cc779808ddb9e049b9b2d92640cece008c4b2b4e3db861c7333"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/foundry/foundry_chains",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "2caeba94ae14ab34c4df833dadd8bc49f929a1120891d399a288027483332269"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/foundry/foundry_lava_pit",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "7ec846865ef92c94d9cb594c9101bc72a693ea17b9610fd3994413324add98b6"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/foundry/foundry_normal",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "6b56dc9a93aff660095a0a5969a1786893c1470e26a22659abc41ca4259dcd41"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/foundry/foundry_passage_exterior",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "634b4980d904f57860efe055f1913969c5007330e0a42978892b4640e4af6ae0"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/foundry/foundry_passage_normal",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "b31417a1dba78b05bb18d971599572e672e3a9e7e144795e6a3b816dc891eab0"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/foundry/foundry_treasure",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "c5e2bcd4082cc85ba769873fdc9cfed215301c697902c5c46cd780de3411542d"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/illager_fort/illager_fort_barrels",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "fbdbe494be6585bdf8af0c257140f573f10bdad95951f133f02ed1b0c714d3dd"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/illager_fort/illager_fort_normal",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "2dcbd666df7266651bea82dd92c2d1746b8730844a3b9c737e367c1080f614e7"
+        }
+      ]
+    },
+    {
+      "kind": "loot_table",
+      "id": "dungeons_arise:chests/illager_fort/illager_fort_treasure",
+      "providers": [
+        {
+          "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+          "sha256": "789e82b5872bd41478470b477b87d020aa0edae80f437f965022eaf971d2e8a9"
+        }
+      ]
+    }
+  ],
+  "arena_entity_ids": [
+    "alexscaves:brainiac",
+    "alexscaves:caniac",
+    "alexscaves:licowitch",
+    "alexsmobs:guster",
+    "alexsmobs:mimicube",
+    "alexsmobs:murmur",
+    "alexsmobs:rocky_roller",
+    "alexsmobs:warped_mosco",
+    "aquamirae:tortured_soul",
+    "born_in_chaos_v1:barrel_zombie",
+    "born_in_chaos_v1:bonescaller",
+    "born_in_chaos_v1:dark_vortex",
+    "born_in_chaos_v1:decaying_zombie",
+    "born_in_chaos_v1:dire_hound_leader",
+    "born_in_chaos_v1:door_knight",
+    "born_in_chaos_v1:dread_hound",
+    "born_in_chaos_v1:fallen_chaos_knight",
+    "born_in_chaos_v1:felsteed",
+    "born_in_chaos_v1:lifestealer_true_form",
+    "born_in_chaos_v1:missioner",
+    "born_in_chaos_v1:mother_spider",
+    "born_in_chaos_v1:mrs_pumpkin",
+    "born_in_chaos_v1:nightmare_stalker",
+    "born_in_chaos_v1:scarlet_persecutor",
+    "born_in_chaos_v1:seared_spirit",
+    "born_in_chaos_v1:siamese_skeletons",
+    "born_in_chaos_v1:skeleton_demoman",
+    "born_in_chaos_v1:skeleton_thrasher",
+    "born_in_chaos_v1:spirit_guide",
+    "born_in_chaos_v1:spiritof_chaos",
+    "born_in_chaos_v1:supreme_bonescaller",
+    "born_in_chaos_v1:swarmer",
+    "born_in_chaos_v1:zombie_bruiser",
+    "born_in_chaos_v1:zombie_clown",
+    "born_in_chaos_v1:zombie_fisherman",
+    "born_in_chaos_v1:zombie_lumberjack",
+    "bosses_of_mass_destruction:lich",
+    "bosses_of_mass_destruction:void_blossom",
+    "call_of_yucutan:blowgun_huracan",
+    "call_of_yucutan:undead_warrior",
+    "cataclysm:amethyst_crab",
+    "cataclysm:ancient_remnant",
+    "cataclysm:aptrgangr",
+    "cataclysm:cindaria",
+    "cataclysm:clawdian",
+    "cataclysm:coral_golem",
+    "cataclysm:coralssus",
+    "cataclysm:deepling",
+    "cataclysm:deepling_angler",
+    "cataclysm:deepling_brute",
+    "cataclysm:deepling_priest",
+    "cataclysm:deepling_warlock",
+    "cataclysm:draugr",
+    "cataclysm:elite_draugr",
+    "cataclysm:ender_golem",
+    "cataclysm:ender_guardian",
+    "cataclysm:hippocamtus",
+    "cataclysm:ignis",
+    "cataclysm:ignited_berserker",
+    "cataclysm:ignited_revenant",
+    "cataclysm:kobolediator",
+    "cataclysm:koboleton",
+    "cataclysm:maledictus",
+    "cataclysm:netherite_monstrosity",
+    "cataclysm:royal_draugr",
+    "cataclysm:scylla",
+    "cataclysm:the_harbinger",
+    "cataclysm:the_leviathan",
+    "cataclysm:the_prowler",
+    "cataclysm:the_watcher",
+    "cataclysm:urchinkin",
+    "cataclysm:wadjet",
+    "caverns_and_chasms:mime",
+    "eeeabsmobs:corpse_warlock",
+    "eeeabsmobs:guling_sentinel_heavy",
+    "eeeabsmobs:immortal_executioner",
+    "eternalnether:piglin_hunter",
+    "eternalnether:warped_enderman",
+    "galosphere:berserker",
+    "goety:black_beast",
+    "goety:blackguard_servant",
+    "goety:bone_spider",
+    "goety:border_wraith",
+    "goety:brood_mother",
+    "goety:cairn_necromancer",
+    "goety:conquillager",
+    "goety:crusher",
+    "goety:cryologer",
+    "goety:drowned_necromancer_servant",
+    "goety:envioker",
+    "goety:geomancer_servant",
+    "goety:grave_golem",
+    "goety:haunted_armor",
+    "goety:heretic",
+    "goety:hostile_redstone_golem",
+    "goety:hostile_redstone_monstrosity",
+    "goety:ice_golem",
+    "goety:icy_spider",
+    "goety:inferno",
+    "goety:inquillager",
+    "goety:malghast",
+    "goety:maverick",
+    "goety:minister",
+    "goety:muck_wraith",
+    "goety:necromancer",
+    "goety:piker",
+    "goety:poison_quill_vine",
+    "goety:preacher",
+    "goety:reaper",
+    "goety:skull_lord",
+    "goety:sorcerer",
+    "goety:storm_caster",
+    "goety:vanguard_servant",
+    "goety:vizier",
+    "goety:warlock",
+    "goety:web_spider",
+    "goety:whisperer",
+    "goety:wildfire",
+    "goety:wind_caller_servant",
+    "goety:wither_necromancer_servant",
+    "goety:wraith",
+    "iceandfire:troll",
+    "illageandspillage:absorber",
+    "illageandspillage:crocofang",
+    "illageandspillage:engineer",
+    "illageandspillage:igniter",
+    "illagerinvasion:alchemist",
+    "illagerinvasion:firecaller",
+    "illagerinvasion:invoker",
+    "illagerinvasion:necromancer",
+    "illagerinvasion:sorcerer",
+    "irons_spellbooks:apothecarist",
+    "irons_spellbooks:archevoker",
+    "irons_spellbooks:citadel_keeper",
+    "irons_spellbooks:cryomancer",
+    "irons_spellbooks:dead_king",
+    "irons_spellbooks:fire_boss",
+    "irons_spellbooks:necromancer",
+    "irons_spellbooks:priest",
+    "irons_spellbooks:pyromancer",
+    "irons_spellbooks:tyros",
+    "iter_rpg:air_elemental",
+    "iter_rpg:earth_elemental",
+    "iter_rpg:fire_elemental",
+    "iter_rpg:void_elemental",
+    "iter_rpg:water_elemental",
+    "legendary_monsters:ambusher",
+    "legendary_monsters:chorusling",
+    "legendary_monsters:dune_sentinel",
+    "legendary_monsters:endersent",
+    "legendary_monsters:frostbitten_golem",
+    "legendary_monsters:guard",
+    "legendary_monsters:haunted_guard",
+    "legendary_monsters:haunted_knight",
+    "legendary_monsters:hovering_hurricane",
+    "legendary_monsters:knights_armor",
+    "legendary_monsters:lava_eater",
+    "legendary_monsters:mossy_golem",
+    "legendary_monsters:overgrown_colossus",
+    "legendary_monsters:posessed_paladin",
+    "legendary_monsters:shulker_mimic",
+    "legendary_monsters:skeletosaurus",
+    "legendary_monsters:warped_fungussus",
+    "legendary_monsters:withered_abomination",
+    "luminous_beasts:bone_stalker",
+    "luminous_beasts:hermit_king",
+    "luminous_beasts:horseless_headsman",
+    "luminous_beasts:mummy",
+    "luminous_beasts:phoenixbird",
+    "luminous_beasts:piglin_executioner",
+    "luminous_beasts:tree_ent",
+    "luminous_beasts:witch_doctor",
+    "luminous_beasts:yeti",
+    "luminousworld:bone_stalker",
+    "luminousworld:king_crab",
+    "luminousworld:mummy",
+    "luminousworld:pheonix",
+    "luminousworld:treant",
+    "luminousworld:witch_doctor",
+    "luminousworld:yeti",
+    "minecraft:blaze",
+    "minecraft:enderman",
+    "minecraft:evoker",
+    "minecraft:husk",
+    "minecraft:illusioner",
+    "minecraft:magma_cube",
+    "minecraft:piglin",
+    "minecraft:pillager",
+    "minecraft:ravager",
+    "minecraft:skeleton",
+    "minecraft:slime",
+    "minecraft:stray",
+    "minecraft:vindicator",
+    "minecraft:warden",
+    "minecraft:witch",
+    "minecraft:wither",
+    "minecraft:wither_skeleton",
+    "minecraft:zoglin",
+    "minecraft:zombie",
+    "minecraft:zombified_piglin",
+    "mowziesmobs:bluff",
+    "mowziesmobs:naga",
+    "mutantmonsters:mutant_skeleton",
+    "mutantmonsters:mutant_zombie",
+    "netherexp:banshee",
+    "netherexp:ecto_slab",
+    "netherexp:vessel",
+    "nethers_exorcism_reborn:strampler",
+    "quark:forgotten",
+    "realmrpg_wyrms:ender_wyrm",
+    "realmrpg_wyrms:red_wyrm",
+    "savage_and_ravage:executioner",
+    "savage_and_ravage:griefer",
+    "savage_and_ravage:iceologer",
+    "savage_and_ravage:skeleton_villager",
+    "savage_and_ravage:trickster",
+    "scguns:blunderer",
+    "scguns:cog_knight",
+    "scguns:cog_minion",
+    "scguns:dissident",
+    "scguns:hive",
+    "scguns:redcoat",
+    "scguns:sky_carrier",
+    "scguns:zombified_hornlin",
+    "species:bewereager",
+    "species:quake",
+    "species:wicked",
+    "traveloptics:aqua_grandmaster",
+    "traveloptics:aquamancer",
+    "traveloptics:void_tome",
+    "traveloptics:voidshelf_golem",
+    "undead_unleashed:dreadknight",
+    "undead_unleashed:flamebreather"
+  ],
+  "run_ordinary_tests": true
+}

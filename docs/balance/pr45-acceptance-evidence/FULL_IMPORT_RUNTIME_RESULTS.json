@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "dd72daac0fef6c42f758728abc9b003d680b791ccfe174975ec4424cf1ad3d9f",
+  "production_physical_mods": 338,
+  "instrumentation_mods": 1,
+  "exit_code_observed": 0,
+  "client_fresh_world_start_join_save_exit": "PASS",
+  "loaded_candidate_matches_effective_fields": true,
+  "synthetic_rule_cases": 11,
+  "synthetic_rules_all_pass": true,
+  "celestisynth_registered_entities": {
+    "celestisynth:rainfall_turret": true,
+    "celestisynth:star_monolith": true,
+    "celestisynth:traverser": true
+  },
+  "structures_queried": 382,
+  "structures_missing": [],
+  "resource_checks": 192,
+  "missing_resources": [],
+  "probe_sha256": "13ae4eb2d3cc13397f2754fb2f2b24a4bf718c48d5e948ea93d507de9e37f7a4",
+  "curseforge_ui_import_tested": false,
+  "celestisynth_weapon_gameplay_tested": false,
+  "natural_generation_tested": false,
+  "elite_stacking_tested": false,
+  "dedicated_server_tested": false,
+  "multiplayer_tested": false,
+  "full_acceptance_complete": false
+}
