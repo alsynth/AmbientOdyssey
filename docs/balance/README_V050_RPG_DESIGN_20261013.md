@@ -28,8 +28,11 @@
 - **Remnant Bosses 2.7.0** update intended, GitHub issue #43; not asserted already installed.
 - Loot: Scrap / Supply / Equipment / Treasure / Grand Treasure; T0–2 mostly unchanged; early Mine Cells loot unchanged; Tier 6 boss Artifact, strong Tier 6 unlock Pinnacle + Ancient, Tier 7 Artifact/Heirloom, Tier 8 Esoteric; Tier 9 Heirloom–Esoteric power level.
 - Final mastery quest must **upgrade held item to Heirloom**, not an exploitable new /give item, if safe engine capability is established.
-- Main questline compact and accessible, optional modded realm campaigns, FTB is educational field manual. No mandatory cursed ring/Origin, guild, museum, world-first leaderboard, scheduled events, MCA Reborn or Big Globe; no unnecessary new ocean-loot redesign.
+- Main questline compact and accessible, optional modded realm campaigns, FTB is educational field manual. **No Origins gameplay, backend, races, or Origins-based classes/quests**; no mandatory cursed ring, guild, museum, world-first leaderboard, scheduled events, MCA Reborn or Big Globe; no unnecessary new ocean-loot redesign.
 - Roughly 90% tier content completion is sufficient rather than every optional boss.
+
+## Removed gameplay system — binding decision
+- **Origins is excluded entirely** from Ambient Odyssey. No Origins selection screen, Origins/NeoOrigins/Pehkui-for-Origins addons, race powers, Origin questline or Origins-dependent balance. Keep classless, gear/spell/build-based specialization where supported by other already-installed mods. See `V050_ORIGINS_EXCLUSION_20261013.md`.
 
 ## Provisional owner decisions (not final)
 1. T5 accessible main route using BOMD Lich or Void Blossom.
