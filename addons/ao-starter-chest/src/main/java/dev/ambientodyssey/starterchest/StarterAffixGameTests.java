@@ -44,10 +44,15 @@ public final class StarterAffixGameTests {
         for (int i=0; i<600; i++) {
             var items = new ObjectArrayList<ItemStack>();
             items.add(new ItemStack(Items.TORCH, 40));
-            generator.apply(items, context(h, BONUS));
+            var queriedCtx = context(h, BONUS);
+            generator.apply(items, queriedCtx);
             long affixCount = items.stream()
                 .filter(s -> !s.getOrDefault(Apoth.Components.AFFIXES, ItemAffixes.EMPTY).isEmpty()).count();
-            h.assertTrue(affixCount == 1, "Missing or duplicate real affix item at iteration " + i);
+            h.assertTrue(affixCount == 1, "Missing or duplicate affix item at iteration " + i
+                    + " queried=" + queriedCtx.getQueriedLootTableId()
+                    + " rarities=" + RarityRegistry.getSortedRarities().stream()
+                          .map(r -> RarityRegistry.INSTANCE.getKey(r).toString()).toList()
+                    + " items=" + items);
             h.assertTrue(items.size() == 2 && items.get(0).is(Items.TORCH) && items.get(0).getCount() == 40,
                     "Normal starter supplies were replaced or damaged");
             ItemStack reward = items.get(1);
