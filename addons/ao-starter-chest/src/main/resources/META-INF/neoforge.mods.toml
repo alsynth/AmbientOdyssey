@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_starter_chest"
+version="0.1.0-experimental"
+displayName="Ambient Odyssey - Starter Chest"
+description='''Curated starter Bonus Chest and genuine Apotheosis starter equipment. Experimental, runtime tests required.'''
+[[dependencies.ao_starter_chest]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_starter_chest]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_starter_chest]]
+modId="apotheosis"
+type="required"
+versionRange="[8.9.0,9.0.0)"
+ordering="AFTER"
+side="BOTH"
