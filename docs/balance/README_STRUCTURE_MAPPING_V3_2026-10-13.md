@@ -4,11 +4,11 @@
 
 ## Contents
 
-- [Approved provisional tier catalogue v3 (CSV)](./AO_STRUCTURE_TIER_CATALOGUE_V3_2026-10-13.csv): **409 records**, including **326 inherited v2** and **83 new individually named entries**.
-- [Entire historical GitHub structure registry crosswalk (CSV)](./AO_HISTORICAL_STRUCTURE_REGISTRY_CROSSWALK_2026-10-13.csv): **1,219 historical native structure IDs** matched against catalogue v3. **342 unique native IDs** have a direct catalogue match; the other 877 are not necessarily combat dungeons (many are decorative variants, structures in removed mods, or unreviewed content). Do not infer they all need balance rules.
+- [Approved provisional tier catalogue v3 (CSV)](./AO_STRUCTURE_TIER_CATALOGUE_V3_2026-10-13.csv): **427 records**, including **326 inherited v2** and **101 new individually named entries**.
+- [Entire historical GitHub structure registry crosswalk (CSV)](./AO_HISTORICAL_STRUCTURE_REGISTRY_CROSSWALK_2026-10-13.csv): **1,219 historical native structure IDs** matched against catalogue v3. **361 unique native IDs** have a direct catalogue match; the other 858 are not necessarily combat dungeons (many are decorative variants, structures in removed mods, or unreviewed content). Do not infer they all need balance rules.
 - **35** old family placeholders retained for provenance; hidden from ordinary catalogue views, **not** independent registered structures.
-- **18** individually named entries lack a provable distinct structure ID and require current mod JAR/code examination.
-- **82** extra proposals have new v3 tier values requiring explicit user review. Existing v2 tier values remain user-approved *provisional*, not runtime verified.
+- **17** individually named entries lack a provable distinct structure ID and require current mod JAR/code examination.
+- **98** extra proposals have new v3 tier values requiring explicit user review. **3** newly identified boss arenas/structures are deliberately unassigned pending tier decisions. Existing v2 tier values remain user-approved *provisional*, not runtime verified.
 
 ## Binding user decisions
 
@@ -26,7 +26,7 @@
 - `eternal_starlight:portal_ruins_common`, `portal_ruins_cold`, `portal_ruins_forest`, `portal_ruins_jungle` — Overworld entrances.
 - The `dungeons_arise:heavenly_challenger`, `heavenly_rider` and `heavenly_conqueror` IDs are listed as End dimension structures. Distinct historical *Overworld* registrations are **not evidenced**; preserve user-intended logical variants but don't implement a phantom Overworld tier rule.
 
-## Named entries with no proved distinct ID (18)
+## Named entries with no proved distinct ID (17)
 
 - `YUNG’s Better Dungeons`: **Spider Cave** (AO T2)
 - `YUNG’s Better Dungeons`: **Zombie Dungeon** (AO T2)
@@ -34,7 +34,6 @@
 - `YUNG’s Better Desert Temples`: **Better Desert Temple** (AO T3)
 - `YUNG’s Better Jungle Temples`: **Better Jungle Temple** (AO T3)
 - `YUNG’s Better Ocean Monuments`: **Better Ocean Monument** (AO T3)
-- `YUNG’s Better Nether Fortresses`: **Better Nether Fortress** (AO T4)
 - `Cataclysm`: **Cursed Graveyard — Maledictus** (AO T7)
 - `Twilight Forest`: **Naga Courtyard** (AO T2)
 - `Twilight Forest`: **Lich Tower** (AO T3)
