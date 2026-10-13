@@ -46,7 +46,7 @@ For an eligible **tested encounter only**, first candidate (not a config instruc
 Optional research candidates **Boss Ultimatum** (wipe reset) and one of **Multiplayer Bosses** / **Multiplayer Boss Attribute Modifier** are *alternatives requiring exact-version compatibility*, **not** installed on this design branch. Don't add overlapping scalers blindly.
 
 ## Gear-specific fairness and support checks
-- Fight test sets: shield/close-range, bow/mobility, Iron's spells, Ars and optionally specialized relic/Curios; no Origin or cursed-ring dependency.
+- Fight test sets: shield/close-range, bow/mobility, Iron's spells, Ars and optionally specialized relic/Curios; no cursed-ring dependency; **Origins is not part of this modpack**.
 - Audit whether status effects (withering, magic, fire, elemental, % HP) bypass armor expected from the gear atlas.
 - After armor/damage buffs, verify close-range windows are actually accessible; 'can defeat with infinite arrow cheese' is not a satisfying Tier 7 boss.
 - Target **at most two simultaneous unavoidable threats**, no unavoidable instant deaths on normal gear and max 1–2 punishing learnable errors per attempt, subject to tier tests. These are design targets, not measured tuning.
