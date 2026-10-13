@@ -19,14 +19,21 @@ This expands the **same** Regalia catalogue established by [Wave 1 / PR #47](htt
 | Reliquified L_Ender's Cataclysm | 9 | Source `RECItems`, exact IDs; installed 0.1.1 still requires comparison |
 | Flight Rings | 2 | Exact upstream `flight_rings:basic_ring`, `flight_rings:advanced_ring` and published recipes |
 | Alex's Caves | 8 | Selected registered active-tool classes; installed 2.0.3 exact recipe data pending |
-| **Total** | **320** | **Not 320 newly invented items** |
+| **L_Ender's Cataclysm** | **48** | Matching **MC1.21.1 / mod 3.33** source registry, boss gear and special-effect armor |\n| **Mowzie's Mobs** | **24** | Public 1.21 source item registry: masks, powers, boss gear, phase variants |\n| **Eternal Starlight** | **27** | Official item wiki, **IDs left blank** pending installed v0.9.1 check |\n| **Total** | **419** | **Not 419 newly invented items** |
 
 The original **Relics** and **Artifacts** rows above are **reconciliation records**; deduplicate/merge against the earlier Gear Atlas rather than double-counting. The earlier canonical source file could not be found in current GitHub or accessible Library searches. Until located, **do not overwrite an original catalogue**.
 
 ### Important version distinction
 The audited **PR #45** physical client profile has 332 installed mod JARs and identifies the exact AO mod versions. Public upstream `main` or `1.21.1` repositories can be **ahead of** the installed version. A registered upstream ID is **source-grounded**, *not* yet proven to exist in installed binary, be player-obtainable, have its anticipated loot source, or perform as current source describes.
 
-In the CSV, an empty `candidate_registry_id` means deliberately **unverified**, not missing data to guess. The previous 54 Simply Swords Uniques and most More Relics items still have unresolved exact ID/version checks. Some EL+ registry entries may be dev/creative-only. Don't claim every 320 item is realistically obtainable.
+In the CSV, an empty `candidate_registry_id` means deliberately **unverified**, not missing data to guess. The previous 54 Simply Swords Uniques and most More Relics items still have unresolved exact ID/version checks. Some EL+ registry entries may be dev/creative-only. Don't claim every 419 item is realistically obtainable.
+
+## Late added source-backed boss gear (after initial Wave 2)
+- **Cataclysm:** branch `lender544/new1.20.1@1.21` declares `minecraft_version=1.21.1` and `mod_version=3.33` — **the exact version** in the audited AO profile. The 48 added items are unique boss weapons, special defense/Curios items and armor with distinct abilities, not generic ingots or decorative blocks. Source: [ModItems 1.21](https://github.com/lender544/new1.20.1/blob/1.21/src/main/java/com/github/L_Ender/cataclysm/init/ModItems.java).
+- **Mowzie's Mobs:** 24 source-registered masks, phase/ability items, Wroughtnaut/Umvuthi/Frostmaw/Geomancer equipment and specialized boss items. [Mowzie ItemHandler main](https://github.com/BobMowzie/MowziesMobs-Public/blob/main/src/main/java/com/bobmowzie/mowziesmobs/server/item/ItemHandler.java). Not yet matched binary v1.8.2.
+- **Eternal Starlight:** 27 *named* exceptional weapons, boss trophies and active-use tools from the [official item wiki](https://github.com/LeoMinecraftModding/eternal-starlight-wiki/tree/main/items/weapons). Source records provide candidate ability and acquisition information, **not authoritative installed item registry IDs**. They have intentionally blank ID cells and are not all known to be present in installed v0.9.1. Some "Regalia" candidates may be reclassified as ordinary special weapons upon power audit.
+
+**Updated structural catalogue tally:** 419 entries, with **320 nonblank candidate IDs** and **99 unresolved IDs**; this count includes 28 Relics and 48 Artifacts *reconciliation entries* and other item-level candidates. Source names/IDs have different confidence levels. No active loot config changes.
 
 ## 15 additional Iron's Jewelry patterns — separate from item count
 A **second CSV** registers the exact 15 generated patterns from `iron431/irons-jewelry` `1.21.1` source, with full `pattern_id`, bonus type, default-unlock flag, quality multiplier and part material costs.
@@ -61,9 +68,9 @@ Examples:
 - Previous [Regalia Wave 1](README_REGALIA_CATALOGUE_EXPANSION_20261013.md)
 
 ## Remaining catalogue areas (not silently treated as complete)
-- **Cataclysm 3.33** signature boss weapons, accessories, armor pieces with unique abilities; the readily indexed `new1.20.1` public source cannot prove IDs for the installed **1.21.1–3.33**.
-- **Mowzie's Mobs 1.8.2**, **Ice and Fire 2.1.3**, **Aquamirae**, **Eternal Starlight**, **Twilight Forest**, **Iron's Spellbooks 3.16.3**, **Goety**, **Pasterdream**, and other world/boss mods with unusual equipped items — audit installed JAR item registry and actual special powers, not every ordinary armor set or material.
-- **More Relics 1.7.7** and **Simply Swords 1.70.2**: finish exact binary registry ID/effect version matching; distinguish dev-only items and prerequisites.
+- **Cataclysm 3.33**: 48 source IDs now mapped from its actual `1.21` branch declaring Minecraft 1.21.1 and Cataclysm 3.33. Actual loot/recipe/ability runtime and complete coverage still need validation.
+- **Mowzie's Mobs 1.8.2**: 24 source-registered signature entries now mapped; exact JAR/loot/effect verification still needed. **Ice and Fire 2.1.3**, **Aquamirae**, **Eternal Starlight**, **Twilight Forest**, **Iron's Spellbooks 3.16.3**, **Goety**, **Pasterdream**, and other world/boss mods with unusual equipped items — audit installed JAR item registry and actual special powers, not every ordinary armor set or material.
+- **Eternal Starlight** 27 wiki candidates are unresolved at item-ID level and are not proven in the v0.9.1 native registry.\n- **More Relics 1.7.7** and **Simply Swords 1.70.2**: finish exact binary registry ID/effect version matching; distinguish dev-only items and prerequisites.
 - **Other modular accessories**: Craft tiered power interactions without enumerating each run-of-the-mill gear component.
 - Reconcile original Gear Atlas with 28 native Relics + 48 Artifacts. Record original A/B combat-support grades and current IDs, don't duplicate.
 - Verify whether any enhanced unique rewards in the installed 332 JARs are **quest-only**, **boss-only**, **loot-only**, **craft-only**, **trader-only** or **unobtainable**.
@@ -71,4 +78,4 @@ Examples:
 ## Data quality and implementation
 This branch only adds research CSV/Markdown. Do not change loot, recipes, Curios slots, bosses, gems or client/server config. A balance recommendation in a CSV is **not approval**. Use Work/Claude to confirm the *exact installed JAR and effective datapacks* before engineering.
 
-**Recommended next batch:** locate original Regalia file; scan all installed item registries and recipe/loot tags; mark which of 320 are truly obtainable; audit boss-signature sources; then create source-backed item-by-item acquisition changes. This is discovery, not a finished loot economy.
+**Recommended next batch:** locate original Regalia file; scan all installed item registries and recipe/loot tags; mark which of 419 are truly obtainable; audit boss-signature sources; then create source-backed item-by-item acquisition changes. This is discovery, not a finished loot economy.
