@@ -8,19 +8,19 @@
 2. **Main campaign is compact and beginner-friendly**, about 80–140 eventual substantive quests across Tier 0–8, with several independent optional arcs rather than requiring every dimensional mod. Almost all major mod-specific quests belong to separately startable optional chapters.
 3. **Questlog owns story/milestone content. FTB Quests owns education.** Questlog offers a short explanation and optionally opens/refers to the relevant FTB chapter for recipes, controls, upgrade recipes, pages of material tables, alternative build setups and screenshots. Avoid two identical fetch quests and two copies of reward payouts.
 4. **Quest triggers must represent something that happened:** `visit_structure`, `visit_biome`, `visit_dimension`, `entity_kill`, `item_obtain`, `advancement`, `quest_complete`, plus command/triggers only where needed. Do not assume "placed a block", "cleared room", "used a skill" or "completed dungeon" has an automatic built-in objective type; verify predicate.
-5. **No one Origin, discipline, armor set, weapon school or cursed mode is required.** Quest completion paths should be compatible with different Origins / class configurations and co-op formations. AO boss tier is a *recommended gear benchmark*, not a hard gate for exploration.
+5. **Origins is excluded from the modpack.** No Origin/race selection, powers, backgrounds, Origin-based classes, quests, or Origin-dependent balance. Quest completion should support different equipment, weapons, magic builds and co-op formations. AO boss tier is a *recommended gear benchmark*, not a hard gate for exploration.
 6. **Per-player quest progress on a private server.** Questlog's saves are per UUID by source, but shared boss kill contribution / completion credit, death, logout and restart all need live multi-user testing. FTB Solo Quests is currently staged for a different purpose; its behavior does not prove Questlog integration.
 7. **Avoid RNG hostage quests.** Being unable to find a rare biome/structure after hours should not block the next chapter. Major optional encounters are allowed to be truly rare; the required backbone always has alternate routes.
 8. **Show impending danger without spoilering unknown secrets.** New location → short journal message → approximate boss tier, environmental hazard and recommended equipment band; hidden loot remains hidden until discovered.
 9. **Respect previously rejected features.** No exploration museum, Lost Expedition Stories/multi-location narrative, bespoke Party Expedition Planner, World-First Discovery Records, mandatory guilds or scheduled world events. Optional contracts/rumors/field notes remain allowed.
-10. **Balance targets:** Tier 2 assumes enchanted diamond armor and >=2 grade-A combat-support items. Relics, Enigmatic Legacy, Origins and advanced spells can change real readiness; the Atlas later supplies calibrated gear advice.
+10. **Balance targets:** Tier 2 assumes enchanted diamond armor and >=2 grade-A combat-support items. Relics, Enigmatic Legacy and advanced spells can change real readiness; the Atlas later supplies calibrated gear advice.
 11. **Progression chapter boundaries should be navigable, not restrictive.** Do not forbid a player entering a higher-tier location early; reveal danger and track discoveries independently of defeats.
 
 ### Depth audit supersession — 10 October 2026
 
 The [triple-pass mod content review](QUEST_DEPTH_REVIEW_REPORT_2026-10-10.md) found many large dimensions and mechanics-heavy mods were **too shallowly represented** in the original 474 quest seed list. The ranges below were expanded editorially for realm content, puzzles, native crafting and noncombat interactions; they are *not fixed quotas* or claims of completed Questlog objectives. See [250 further candidates](QUEST_DEPTH_SUPPLEMENT_V0_3.csv) and the full [265-entry per-mod depth matrix](MOD_DEPTH_REAUDIT_2026-10-10.csv). Earlier chapter targets are superseded by the latest estimates in the table, but **the nine main quest chapters remain compact and beginner-friendly**.
 
-The Bumblezone Bee Queen is a **trading NPC**, not a kill boss. End Remastered has **16 Eyes with 12 required**, subject to the actual AO 6.3.0 configuration. NeoPasterDream version-specific garden puzzles and Cold Domain should be distinct branches if reachable. Avoid forcing every rare dungeon, 16 eyes, boss spawn or Origin as a mainline gate.
+The Bumblezone Bee Queen is a **trading NPC**, not a kill boss. End Remastered has **16 Eyes with 12 required**, subject to the actual AO 6.3.0 configuration. NeoPasterDream version-specific garden puzzles and Cold Domain should be distinct branches if reachable. Avoid forcing every rare dungeon, 16 eyes, boss spawn as a mainline gate.
 
 ## Three layers
 
@@ -71,7 +71,7 @@ The Bumblezone Bee Queen is a **trading NPC**, not a kill boss. End Remastered h
 - **The Nether and End:** Incendium, BetterEnd, Better Bastions, YUNG fortresses/End island, End Remastered, Echoes of the End, Moog's End structures, modern dragon arena.
 - **Creature field notes:** Alex's Mobs, Opposing Force, Hominid, Hybrid Aquatic, Friends & Foes, Ben's Sharks, rare/boss mobs. Observe unusual creatures and choose challenging fights; no massacre of ambient animals.
 - **Daily-life cameos:** Create, Farmer's Delight plus cooking addons, sophisticated storage/backpacks, Aquaculture, Goblin Traders, Bountiful and shipbuilding. One to four thoughtful sidequests at most; offer FTB manual for serious Create complexity.
-- **Origin/discipline identity:** future Origin and combat specialty onboarding, lightweight quests, conditional branches. Currently hypothetical: must wait for installed backend/Origin decisions.
+- **Equipment and combat style discovery:** optional weapon, relic and magic-school experimentation using actual installed mechanics; **no Origins character creation, Origin skills or Origins-based quest branches**.
 - **Bonus challenge scrolls:** Gateways, arena variants, personal boss speed/no-death (only if credit technically supportable), cursed ring advanced feats. Completely optional.
 
 ## FTB Quests — educational-only architecture
@@ -85,14 +85,14 @@ Avoid duplicating complete Questlog campaigns. Use FTB **as a searchable illustr
 6. **Magic encyclopedia:** Iron's spells school tree, acquiring spells, spellbooks/slots/mana; Ars Nouveau glyph crafting, spell composition, rituals, automation; Forbidden & Arcanus and boss-spell integrations.
 7. **Optional niche systems:** Create kinetic power, farms/cooking, storage automation, fishing, improved crafting, special Portal / multiblock rules.
 8. **World/dimension reference:** what to expect in new realms and basic portal prerequisites, without spoiling optional encounters.
-9. **RPG character systems (later):** Origin passives/tradeoffs, background and discipline interactions, future respec.
+9. **Combat build guide (if useful):** equipment synergies, spells, affix/gem choices and respec only where an already-installed independent mechanic supports it. No Origins system.
 10. **Server quality & multiplayer:** permissions, separate quests, map/waypoint rules, how to ask for help, keybind troubleshooting.
 11. **Quest mechanics itself:** where to open Questlog, how prerequisites/rewards work, how to pin/find FTB reference, avoiding auto-complete/achievement confusion.
 
 ### Always-visible Tips, Tricks and Controls (approved section)
 
 - **[Tips & Tricks](FTB_TIPS_AND_TRICKS_V0_3.md):** 65 written tips, grouped by inventory/JEI, combat/gear, navigation, magic/RPG, multiplayer, performance and troubleshooting. Prioritize a ten-tip quick start and short modular subpages with relevant technical cross-links.
-- **[Keybind Cheatsheet](FTB_KEYBIND_CHEATSHEET_V0_3.md):** a five-action quick reference plus detailed key sections. Differentiate **actual AO packaged overrides** (`O` Accessories, `J` microphone mute, FTB Chunks map unbound), mod defaults (e.g. JEI `R`/`U`, Xaero `M`/`B`), and future/unknown controls (Questlog, Origins, spellbooks and backpacks). Test defaultoptions / keybindoverride behavior before publishing.
+- **[Keybind Cheatsheet](FTB_KEYBIND_CHEATSHEET_V0_3.md):** a five-action quick reference plus detailed key sections. Differentiate **actual AO packaged overrides** (`O` Accessories, `J` microphone mute, FTB Chunks map unbound), mod defaults (e.g. JEI `R`/`U`, Xaero `M`/`B`), and future/unknown controls (Questlog, spellbooks and backpacks). Test defaultoptions / keybindoverride behavior before publishing.
 - **Placement:** immediately visible in FTB main chapter, not a Questlog achievement. Optional practice prompts may refer to quests, but no double rewards for reading information.
 - **Post-expansion:** after final mod roster selection, capture fresh client `options.txt`, actual menus, item icons and screenshots; verify key conflicts across combat, inventory and Questlog, then author final FTB page/SNBT layouts.
 
