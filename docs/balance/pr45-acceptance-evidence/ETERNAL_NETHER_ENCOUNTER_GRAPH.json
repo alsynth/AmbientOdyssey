@@ -1,0 +1,991 @@
+{
+  "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+  "sha256": "9680efb45ec51250da820b8d525ab739fe0210458651ea87f13c3de9b2691a93",
+  "templates_decoded": 30,
+  "template_errors": [],
+  "pool_count": 24,
+  "structure_count": 3,
+  "structures": [
+    {
+      "structure_id": "eternalnether:catacomb",
+      "tier": null,
+      "status": "SOURCE_VERIFIED_GRAPH; HOLD_UNASSIGNED; NOT_NATURAL_GENERATION_OR_COMBAT_TESTED",
+      "definition": {
+        "type": "eternalnether:catacomb",
+        "biomes": "#eternalnether:has_structure/catacomb",
+        "max_distance_from_center": 128,
+        "size": 3,
+        "spawn_overrides": {
+          "monster": {
+            "bounding_box": "piece",
+            "spawns": [
+              {
+                "type": "minecraft:magma_cube",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "start_height": {
+          "type": "minecraft:uniform",
+          "max_inclusive": {
+            "absolute": 84
+          },
+          "min_inclusive": {
+            "absolute": 56
+          }
+        },
+        "start_pool": "eternalnether:catacomb/start_pool",
+        "step": "underground_decoration"
+      },
+      "reachable_pools": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/left_head",
+        "eternalnether:catacomb/left_rib",
+        "eternalnether:catacomb/left_rib_bent",
+        "eternalnether:catacomb/piglin_prisoner",
+        "eternalnether:catacomb/right_head",
+        "eternalnether:catacomb/right_rib",
+        "eternalnether:catacomb/right_rib_bent",
+        "eternalnether:catacomb/shoulder",
+        "eternalnether:catacomb/spine",
+        "eternalnether:catacomb/start_pool",
+        "eternalnether:catacomb/tail",
+        "eternalnether:catacomb/wither_skeleton"
+      ],
+      "reachable_templates": [
+        "eternalnether:catacomb/large_skull",
+        "eternalnether:catacomb/left_rib/bent_prison",
+        "eternalnether:catacomb/left_rib/bent_spawner",
+        "eternalnether:catacomb/left_rib/bent_treasure",
+        "eternalnether:catacomb/left_rib/bent_wither",
+        "eternalnether:catacomb/left_rib/straight_portal",
+        "eternalnether:catacomb/left_rib/straight_prison",
+        "eternalnether:catacomb/left_rib/straight_treasure",
+        "eternalnether:catacomb/left_small_skull",
+        "eternalnether:catacomb/right_rib/bent_portal",
+        "eternalnether:catacomb/right_rib/bent_prison",
+        "eternalnether:catacomb/right_rib/bent_treasure",
+        "eternalnether:catacomb/right_rib/straight_portal",
+        "eternalnether:catacomb/right_rib/straight_prison",
+        "eternalnether:catacomb/right_rib/straight_treasure",
+        "eternalnether:catacomb/right_small_skull",
+        "eternalnether:catacomb/shoulder",
+        "eternalnether:catacomb/spine",
+        "eternalnether:catacomb/tail"
+      ],
+      "configured_features": {
+        "eternalnether:mob_feature_catacomb": {
+          "config": {},
+          "type": "eternalnether:mob_feature_catacomb"
+        },
+        "eternalnether:mob_feature_piglin_prisoner": {
+          "config": {},
+          "type": "eternalnether:mob_feature_piglin_prisoner"
+        },
+        "eternalnether:mob_feature_wither_skeleton": {
+          "config": {},
+          "type": "eternalnether:mob_feature_wither_skeleton"
+        }
+      },
+      "unresolved_feature_refs": [],
+      "unresolved_pool_refs": [],
+      "unresolved_template_refs": [],
+      "spawner_blocks": 1,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipment_indicators": 0,
+      "spawner_entity_ids": [
+        "minecraft:wither_skeleton"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ]
+    },
+    {
+      "structure_id": "eternalnether:citadel",
+      "tier": null,
+      "status": "SOURCE_VERIFIED_GRAPH; HOLD_UNASSIGNED; NOT_NATURAL_GENERATION_OR_COMBAT_TESTED",
+      "definition": {
+        "type": "eternalnether:citadel",
+        "biomes": "#eternalnether:has_structure/citadel",
+        "max_distance_from_center": 116,
+        "size": 4,
+        "spawn_overrides": {
+          "monster": {
+            "bounding_box": "piece",
+            "spawns": [
+              {
+                "type": "minecraft:enderman",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 1
+              },
+              {
+                "type": "eternalnether:warped_enderman",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "start_height": {
+          "type": "minecraft:uniform",
+          "max_inclusive": {
+            "absolute": 70
+          },
+          "min_inclusive": {
+            "absolute": 48
+          }
+        },
+        "start_pool": "eternalnether:citadel/start_pool",
+        "step": "surface_structures",
+        "terrain_adaptation": "beard_thin"
+      },
+      "reachable_pools": [
+        "eternalnether:citadel/bridge",
+        "eternalnether:citadel/bridge_top",
+        "eternalnether:citadel/start_pool",
+        "eternalnether:citadel/top",
+        "eternalnether:citadel/warped_enderman"
+      ],
+      "reachable_templates": [
+        "eternalnether:citadel/citadel_base",
+        "eternalnether:citadel/citadel_branch_top",
+        "eternalnether:citadel/citadel_bridge",
+        "eternalnether:citadel/citadel_bridge_top",
+        "eternalnether:citadel/citadel_top"
+      ],
+      "configured_features": {
+        "eternalnether:mob_feature_warped_enderman": {
+          "config": {},
+          "type": "eternalnether:mob_feature_warped_enderman"
+        }
+      },
+      "unresolved_feature_refs": [],
+      "unresolved_pool_refs": [],
+      "unresolved_template_refs": [],
+      "spawner_blocks": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipment_indicators": 0,
+      "spawner_entity_ids": [],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/citadel"
+      ]
+    },
+    {
+      "structure_id": "eternalnether:piglin_manor",
+      "tier": null,
+      "status": "SOURCE_VERIFIED_GRAPH; HOLD_UNASSIGNED; NOT_NATURAL_GENERATION_OR_COMBAT_TESTED",
+      "definition": {
+        "type": "eternalnether:citadel",
+        "biomes": "#eternalnether:has_structure/piglin_manor",
+        "max_distance_from_center": 116,
+        "size": 1,
+        "spawn_overrides": {
+          "monster": {
+            "bounding_box": "piece",
+            "spawns": [
+              {
+                "type": "minecraft:piglin",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 2
+              },
+              {
+                "type": "eternalnether:piglin_hunter",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "start_height": {
+          "type": "minecraft:uniform",
+          "max_inclusive": {
+            "absolute": 72
+          },
+          "min_inclusive": {
+            "absolute": 34
+          }
+        },
+        "start_pool": "eternalnether:piglin_manor/start_pool",
+        "step": "surface_structures",
+        "terrain_adaptation": "beard_thin"
+      },
+      "reachable_pools": [
+        "eternalnether:piglin_manor/piglin_horse",
+        "eternalnether:piglin_manor/piglin_mobs",
+        "eternalnether:piglin_manor/start_pool",
+        "eternalnether:piglin_manor/strider"
+      ],
+      "reachable_templates": [
+        "eternalnether:piglin_manor/piglin_manor_1",
+        "eternalnether:piglin_manor/piglin_manor_2"
+      ],
+      "configured_features": {
+        "eternalnether:mob_feature_piglin_manor_inside": {
+          "config": {},
+          "type": "eternalnether:mob_feature_piglin_manor_inside"
+        },
+        "eternalnether:mob_feature_piglin_manor_outside": {
+          "config": {},
+          "type": "eternalnether:mob_feature_piglin_manor_outside"
+        },
+        "eternalnether:mob_feature_strider": {
+          "config": {},
+          "type": "eternalnether:mob_feature_strider"
+        }
+      },
+      "unresolved_feature_refs": [],
+      "unresolved_pool_refs": [],
+      "unresolved_template_refs": [],
+      "spawner_blocks": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipment_indicators": 0,
+      "spawner_entity_ids": [],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "minecraft:chests/bastion_hoglin_stable"
+      ]
+    }
+  ],
+  "templates": {
+    "eternalnether:catacomb/large_skull": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/large_skull.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/shoulder"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        24,
+        24,
+        24
+      ]
+    },
+    "eternalnether:catacomb/left_rib/bent_prison": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/bent_prison.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/piglin_prisoner",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/bent_spawner": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/bent_spawner.nbt",
+      "mob_spawners": 1,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "minecraft:wither_skeleton",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/bent_treasure": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/bent_treasure.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/bent_wither": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/bent_wither.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/left_rib_bent": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/left_rib_bent.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/left_rib_straight": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/left_rib_straight.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/straight_portal": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/straight_portal.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/straight_prison": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/straight_prison.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/piglin_prisoner",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_rib/straight_treasure": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_rib/straight_treasure.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/left_small_skull": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/left_small_skull.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        18,
+        21,
+        18
+      ]
+    },
+    "eternalnether:catacomb/right_rib/bent_portal": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/bent_portal.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/bent_prison": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/bent_prison.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/piglin_prisoner",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/bent_treasure": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/bent_treasure.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/right_rib_bent": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/right_rib_bent.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        9,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/right_rib_straight": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/right_rib_straight.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/straight_portal": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/straight_portal.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/straight_prison": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/straight_prison.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "eternalnether:catacomb/piglin_prisoner",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_rib/straight_treasure": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_rib/straight_treasure.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ],
+      "size": [
+        6,
+        6,
+        12
+      ]
+    },
+    "eternalnether:catacomb/right_small_skull": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/right_small_skull.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/catacomb_mobs",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        18,
+        21,
+        18
+      ]
+    },
+    "eternalnether:catacomb/shoulder": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/shoulder.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/left_head",
+        "eternalnether:catacomb/right_head",
+        "eternalnether:catacomb/spine",
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        12,
+        9,
+        36
+      ]
+    },
+    "eternalnether:catacomb/spine": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/spine.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:catacomb/left_rib",
+        "eternalnether:catacomb/left_rib_bent",
+        "eternalnether:catacomb/right_rib",
+        "eternalnether:catacomb/right_rib_bent",
+        "eternalnether:catacomb/tail",
+        "eternalnether:catacomb/wither_skeleton",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        12,
+        28,
+        12
+      ]
+    },
+    "eternalnether:catacomb/tail": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/catacomb/tail.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/catacomb/treasure_rib"
+      ],
+      "size": [
+        22,
+        14,
+        12
+      ]
+    },
+    "eternalnether:citadel/citadel_base": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/citadel/citadel_base.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:citadel/top",
+        "eternalnether:citadel/warped_enderman"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/citadel"
+      ],
+      "size": [
+        15,
+        11,
+        15
+      ]
+    },
+    "eternalnether:citadel/citadel_branch_top": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/citadel/citadel_branch_top.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:citadel/bridge",
+        "eternalnether:citadel/warped_enderman",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/citadel"
+      ],
+      "size": [
+        15,
+        9,
+        15
+      ]
+    },
+    "eternalnether:citadel/citadel_bridge": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/citadel/citadel_bridge.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:citadel/bridge_top",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [],
+      "size": [
+        4,
+        8,
+        7
+      ]
+    },
+    "eternalnether:citadel/citadel_bridge_top": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/citadel/citadel_bridge_top.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/citadel"
+      ],
+      "size": [
+        9,
+        10,
+        9
+      ]
+    },
+    "eternalnether:citadel/citadel_top": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/citadel/citadel_top.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:citadel/warped_enderman",
+        "minecraft:empty"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "eternalnether:chests/citadel"
+      ],
+      "size": [
+        15,
+        9,
+        15
+      ]
+    },
+    "eternalnether:piglin_manor/piglin_manor_1": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/piglin_manor/piglin_manor_1.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:piglin_manor/piglin_horse",
+        "eternalnether:piglin_manor/piglin_mobs",
+        "eternalnether:piglin_manor/strider"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "minecraft:chests/bastion_hoglin_stable"
+      ],
+      "size": [
+        28,
+        20,
+        23
+      ]
+    },
+    "eternalnether:piglin_manor/piglin_manor_2": {
+      "jar": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "structure_nbt": "data/eternalnether/structure/piglin_manor/piglin_manor_2.nbt",
+      "mob_spawners": 0,
+      "trial_spawners": 0,
+      "vaults": 0,
+      "equipped_mob_or_spawner_indicators": 0,
+      "spawner_entity_ids": "",
+      "trial_config_samples": "",
+      "vault_config_samples": "",
+      "scan_confidence": "STATIC_TEMPLATE_ONLY; MAY_USE_CODE_SPAWN_OR_ALTERNATE_PALETTES",
+      "jigsaw_pool_refs": [
+        "eternalnether:piglin_manor/piglin_horse",
+        "eternalnether:piglin_manor/piglin_mobs",
+        "eternalnether:piglin_manor/strider"
+      ],
+      "embedded_entity_ids": [],
+      "loot_table_refs": [
+        "minecraft:chests/bastion_hoglin_stable"
+      ],
+      "size": [
+        28,
+        20,
+        23
+      ]
+    }
+  },
+  "native_code_spawns_audited": false,
+  "runtime_generation_tested": false,
+  "pool_graph_limit": "Syntactic native resource reachability, not proof of weighted selection, processors, assembly, boss initialization or loot execution."
+}
