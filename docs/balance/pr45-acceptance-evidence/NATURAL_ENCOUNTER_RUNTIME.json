@@ -1,0 +1,52 @@
+{
+  "production_roster_mod_jars": 338,
+  "game": "Minecraft 1.21.1 / NeoForge 21.1.252",
+  "world": {
+    "seed": 48127,
+    "preset": "minecraft:normal",
+    "dimension_searched": "minecraft:the_nether",
+    "mode": "survival",
+    "difficulty": "normal"
+  },
+  "runtime": "disposable copied full import; no user save or rollback files",
+  "attempts": [
+    {
+      "radius_chunks": 16,
+      "process_exit_code": 0,
+      "client_start_world_join_save_exit": "PASS",
+      "probe_sha256": "5877a451a8b3f97a154f4ecc1ce1d124adb455ffa765ec8fd143c560233ce4f6",
+      "results_file_sha256": "f60a86ca016a07b36e70699d23f4d7090a514836169b03f30e0317a965e836f9",
+      "structures_with_natural_start": 0,
+      "statuses": {
+        "eternalnether:catacomb": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_16_CHUNKS",
+        "eternalnether:citadel": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_16_CHUNKS",
+        "eternalnether:piglin_manor": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_16_CHUNKS"
+      },
+      "watchdog_tick_over_40_seconds": false
+    },
+    {
+      "radius_chunks": 32,
+      "process_exit_code": 0,
+      "client_start_world_join_save_exit": "PASS",
+      "probe_sha256": "3598f7de066f58d6adb1598e2a16b20262cfe25b62f9da3cc55c7fb11080a44e",
+      "results_file_sha256": "0e277c1ef2e469237beba1633382628e96b01ec62e9c7ab5391acf73553d21e1",
+      "structures_with_natural_start": 0,
+      "statuses": {
+        "eternalnether:catacomb": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_32_CHUNKS",
+        "eternalnether:citadel": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_32_CHUNKS",
+        "eternalnether:piglin_manor": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_32_CHUNKS"
+      },
+      "watchdog_tick_over_40_seconds": {
+        "observed": true,
+        "logged_duration_ms": 40001,
+        "probe_operation": "findNearestMapStructure for eternalnether:catacomb",
+        "top_native_frame": "fuzs.eternalnether.world.level.levelgen.structure.CatacombStructure.checkLocation",
+        "interpretation": "The bounded test search stalled one integrated-server tick. No structure start was found, so this is not a generated-encounter or ordinary exploration tick measurement."
+      }
+    }
+  ],
+  "natural_mobs_or_spawners_observed": false,
+  "elite_initialization_observed": false,
+  "structure_encounters_tested": false,
+  "acceptance": "HOLD: natural encounters are not verified; run a targeted candidate placement test and review the locate-search stall"
+}

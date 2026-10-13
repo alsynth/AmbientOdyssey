@@ -1,0 +1,21 @@
+{
+  "world_seed": 48127,
+  "world_preset": "minecraft:normal",
+  "dimension": "minecraft:the_nether",
+  "difficulty": "normal",
+  "scope": "naturally located structures forced to FULL chunks in disposable normal-terrain world; observed mob/spawner state in generated piece bounding boxes",
+  "structures": [
+    {
+      "structure": "eternalnether:catacomb",
+      "status": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_32_CHUNKS"
+    },
+    {
+      "structure": "eternalnether:citadel",
+      "status": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_32_CHUNKS"
+    },
+    {
+      "structure": "eternalnether:piglin_manor",
+      "status": "NO_NATURAL_START_FOUND_WITHIN_RADIUS_32_CHUNKS"
+    }
+  ]
+}

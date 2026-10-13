@@ -32,7 +32,7 @@ def allowed(rules):
     return result
 
 
-def launch(install, runtime, jar, java, heap, timeout, width=960, height=540):
+def launch(install, runtime, jar, java, heap, timeout, width=960, height=540, natural_encounters=False):
     project = Path(__file__).resolve().parents[1]
     runtime = runtime.resolve()
     runtime.relative_to((project / 'build').resolve())
@@ -84,6 +84,8 @@ def launch(install, runtime, jar, java, heap, timeout, width=960, height=540):
                 result.append(item)
         return result
     args = [f'-Xmx{heap}', '-Dao.fullpack.logProbe=true', f'-Dao.fullpack.logProbeTimeoutSeconds={timeout}']
+    if natural_encounters:
+        args.append('-Dao.fullpack.naturalEncounters=true')
     args += arguments(base['arguments']['jvm'] + neo['arguments']['jvm'])
     args += [neo['mainClass']] + arguments(base['arguments']['game'] + neo['arguments']['game'])
     args += ['--width', str(width), '--height', str(height)]
@@ -115,7 +117,8 @@ if __name__ == '__main__':
     parser.add_argument('--timeout', type=int, default=240)
     parser.add_argument('--width', type=int, default=960)
     parser.add_argument('--height', type=int, default=540)
+    parser.add_argument('--natural-encounters', action='store_true', help='Generate a normal-terrain test world and inspect natural Eternal Nether structure starts')
     options = parser.parse_args()
-    result = launch(options.install.resolve(), options.game_dir, options.mod_jar.resolve(), options.java, options.heap, options.timeout, options.width, options.height)
+    result = launch(options.install.resolve(), options.game_dir, options.mod_jar.resolve(), options.java, options.heap, options.timeout, options.width, options.height, options.natural_encounters)
     print(json.dumps(result, indent=2))
     raise SystemExit(0 if result['startup_and_world_join'] == 'PASS' else 1)

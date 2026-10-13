@@ -29,9 +29,11 @@ public final class FullPackLogProbe {
    if(mc.screen instanceof AccessibilityOnboardingScreen&&mc.getOverlay()==null){mc.setScreen(new TitleScreen());return;}
    if(!opening&&mc.screen instanceof TitleScreen&&mc.getOverlay()==null){
     opening=true; mc.options.onboardAccessibility=false;mc.options.renderDistance().set(2);mc.options.simulationDistance().set(2);
-    LOG.info("AO_FULL_PACK_TITLE_PASS: creating disposable flat world for full-registry diagnosis");
-    var settings=new LevelSettings("AO full-pack log probe",GameType.CREATIVE,false,Difficulty.PEACEFUL,true,new GameRules(),WorldDataConfiguration.DEFAULT);
-    mc.createWorldOpenFlows().createFreshLevel("ao-full-pack-log-probe",settings,new WorldOptions(48127,false,false),a->a.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(WorldPresets.FLAT).value().createWorldDimensions(),new TitleScreen());
+    boolean natural=Boolean.getBoolean("ao.fullpack.naturalEncounters");
+    LOG.info("AO_FULL_PACK_TITLE_PASS: creating disposable {} world for full-registry diagnosis",natural?"normal terrain":"flat");
+    var settings=new LevelSettings("AO full-pack log probe",natural?GameType.SURVIVAL:GameType.CREATIVE,false,natural?Difficulty.NORMAL:Difficulty.PEACEFUL,true,new GameRules(),WorldDataConfiguration.DEFAULT);
+    var preset=natural?WorldPresets.NORMAL:WorldPresets.FLAT;
+    mc.createWorldOpenFlows().createFreshLevel("ao-full-pack-log-probe",settings,new WorldOptions(48127,false,true),a->a.registryOrThrow(Registries.WORLD_PRESET).getHolderOrThrow(preset).value().createWorldDimensions(),new TitleScreen());
     return;
    }
    if(mc.player==null||mc.level==null||mc.getSingleplayerServer()==null||++ticks<100)return;
@@ -39,9 +41,12 @@ public final class FullPackLogProbe {
    var type=Class.forName("dev.shadowsoffire.apotheosis.socket.gem.GemRegistry");
    var registry=type.getField("INSTANCE").get(null);
    var values=(java.util.Collection<?>)type.getMethod("getValues").invoke(registry);
-   LOG.info("AO_FULL_PACK_WORLD_JOIN_PASS: player joined disposable flat integrated world; {} native gems loaded; content errors remain diagnostic, no gameplay certification",values.size());
+   LOG.info("AO_FULL_PACK_WORLD_JOIN_PASS: player joined disposable integrated world; {} native gems loaded; content errors remain diagnostic",values.size());
    mc.getSingleplayerServer().execute(()->{
     try {
+     if(Boolean.getBoolean("ao.fullpack.naturalEncounters")) {
+      NaturalEncounterProbe.start(mc.getSingleplayerServer(),()->mc.execute(mc::stop));return;
+     }
      export(mc.getSingleplayerServer()); LOG.info("AO_PR45_RUNTIME_REGISTRY_EXPORT_PASS");
      var input=new com.google.gson.Gson().fromJson(java.nio.file.Files.readString(java.nio.file.Path.of("PR45_CHECK_INPUT.json")),com.google.gson.JsonObject.class);
      if(input.has("run_ordinary_tests")&&input.get("run_ordinary_tests").getAsBoolean()) {
