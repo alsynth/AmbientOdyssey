@@ -11,9 +11,27 @@ dependencies {
     implementation('dev.shadowsoffire:Apotheosis:1.21.1-8.9.0') { transitive = false }
     implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }
     implementation('dev.shadowsoffire:ApothicAttributes:1.21.1-2.11.0') { transitive = false }
+    runtimeOnly('vazkii.patchouli:Patchouli:1.21.1-93-NEOFORGE') { transitive = false }
 }
 neoForge {
     version = '21.1.252'
     mods { ao_starter_chest { sourceSet sourceSets.main } }
+    runs {
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'ao_starter_chest'
+        }
+    }
 }
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar') { exclude('**/StarterAffixGameTests.class') }
+tasks.named('runGameTestServer') {
+    doFirst { project.ext.aoTestStarted = System.currentTimeMillis() }
+    doLast {
+        def log = file('run/logs/latest.log')
+        if (!log.exists() || log.lastModified() < project.ext.aoTestStarted ||
+                !log.text.contains('All 2 required tests passed :)')) {
+            throw new GradleException('Fresh two-test starter affix native GameTest result missing; see run/logs/latest.log')
+        }
+    }
+}
