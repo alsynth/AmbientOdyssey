@@ -84,6 +84,19 @@ def build(base_zip, addon_jar, output_zip, expected_sha=BASE_SHA256):
         if obj.get("type") != "minecraft:crafting_shaped":
             raise ValueError("Invalid Flight Ring recipe: " + ring)
         add_or_replace(fname, data, "replace")
+    exemptions = ROOT / "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions"
+    exemptions_root = "overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/"
+    for subpath in ("pack.mcmeta", "data/apotheosis/loot_modifiers/affix_conversion.json",
+                    "data/apotheosis/loot_modifiers/affix_loot_injection.json",
+                    "data/apotheosis/loot_modifiers/gem_loot_injection.json"):
+        data = (exemptions / subpath).read_bytes()
+        parsed = json.loads(data)
+        if subpath != "pack.mcmeta":
+            assert parsed["entries"][0] == {
+                "chance": 0.0,
+                "pattern": {"domain": "minecraft", "path_regex": "chests/spawn_bonus_chest"}
+            }, f"Bonus-only loot injection exemption missing: {subpath}"
+        add_or_replace(exemptions_root + subpath, data, "new")
     goblin = ROOT / "release_030/overrides/config/paxi/datapacks/ao_goblin_trades"
     for subpath in ["pack.mcmeta", "data/goblintraders/goblin_trades/goblin_trader/epic.json"]:
         data = (goblin / subpath).read_bytes()
@@ -108,6 +121,7 @@ def build(base_zip, addon_jar, output_zip, expected_sha=BASE_SHA256):
         "Based on PR50 SHA256 " + expected_sha + "\n"
         "Starter chest: five eligible spellstones, genuine Apotheosis affix roll, torches/meat.\n"
         "Goblin Tuned chainmail: 32 diamonds + 4 Cinder Essence. Flight Ring recipes retuned.\n"
+        "Exempts ONLY the starter Bonus Chest from three native Apotheosis random injectors.\n"
         "Lootr's forced whitelist is NOT proof that the vanilla Bonus Chest converts.\n"
         "Test on a NEW world with Bonus Chest ON and TWO different non-OP accounts,\n"
         "then dedicated-server persistence, all real affix rarities and normal loot preservation.\n"
