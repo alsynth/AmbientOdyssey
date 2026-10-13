@@ -8,10 +8,8 @@ import dev.shadowsoffire.apotheosis.affix.ItemAffixes;
 import dev.shadowsoffire.apotheosis.loot.RarityRegistry;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.gametest.framework.GameTest;
 import net.minecraft.gametest.framework.GameTestHelper;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -36,7 +34,7 @@ public final class StarterAffixGameTests {
         var params = new LootParams.Builder(h.getLevel())
                 .withParameter(LootContextParams.ORIGIN, Vec3.atCenterOf(h.absolutePos(BlockPos.ZERO)))
                 .create(LootContextParamSets.CHEST);
-        return new LootContext.Builder(params).create(Optional.of(ResourceKey.create(Registries.LOOT_TABLE, id)));
+        return new LootContext.Builder(params).create(Optional.of(id));
     }
 
     @GameTest(template = "empty")
