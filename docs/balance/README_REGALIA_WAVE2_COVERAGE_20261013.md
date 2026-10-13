@@ -19,7 +19,10 @@ This expands the **same** Regalia catalogue established by [Wave 1 / PR #47](htt
 | Reliquified L_Ender's Cataclysm | 9 | Source `RECItems`, exact IDs; installed 0.1.1 still requires comparison |
 | Flight Rings | 2 | Exact upstream `flight_rings:basic_ring`, `flight_rings:advanced_ring` and published recipes |
 | Alex's Caves | 8 | Selected registered active-tool classes; installed 2.0.3 exact recipe data pending |
-| **L_Ender's Cataclysm** | **48** | Matching **MC1.21.1 / mod 3.33** source registry, boss gear and special-effect armor |\n| **Mowzie's Mobs** | **24** | Public 1.21 source item registry: masks, powers, boss gear, phase variants |\n| **Eternal Starlight** | **27** | Official item wiki, **IDs left blank** pending installed v0.9.1 check |\n| **Total** | **419** | **Not 419 newly invented items** |
+| **L_Ender's Cataclysm** | **48** | Matching **MC1.21.1 / mod 3.33** source registry, boss gear and special-effect armor |
+| **Mowzie's Mobs** | **24** | Public 1.21 source item registry: masks, powers, boss gear, phase variants |
+| **Eternal Starlight** | **27** | Official item wiki, **IDs left blank** pending installed v0.9.1 check |
+| **Total** | **419** | **Not 419 newly invented items** |
 
 The original **Relics** and **Artifacts** rows above are **reconciliation records**; deduplicate/merge against the earlier Gear Atlas rather than double-counting. The earlier canonical source file could not be found in current GitHub or accessible Library searches. Until located, **do not overwrite an original catalogue**.
 
