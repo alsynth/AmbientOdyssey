@@ -1,6 +1,9 @@
 # Ambient Odyssey v0.5 RPG design → safe implementation queue
 **13 Oct 2026 · Handoff for ChatGPT Work mode / Claude · plan/spec only, not runtime executed**
 
+## Permanent scope exclusion
+**Origins is not part of Ambient Odyssey.** Do not install Origins / NeoOrigins, Origin race/power/class/background addons, or implement any Origins chapter, Origin objective, character selection or balancing. Source roster audits have no Origins/Apoli entry; verify current build but do not remove unrelated libraries or introduce a substitute class system. See `V050_ORIGINS_EXCLUSION_20261013.md`.
+
 ## Design source order
 1. `docs/balance/V050_BOSS_ROSTER_AND_GATES_PROVISIONAL.md` and `V050_BOSS_ROSTER_PROVISIONAL.csv`
 2. `docs/balance/V050_LOOT_GEAR_ECONOMY_PROVISIONAL.md`
