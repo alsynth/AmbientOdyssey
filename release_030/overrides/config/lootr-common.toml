@@ -55,7 +55,7 @@
 	#list of loot tables which shouldn't be converted (in the format of ["modid:loot_table", "othermodid:other_loot_table"])
 	loot_table_blacklist = []
 	#list of loot tables which will forcefully be converted even if they are included in the loot table blacklist or the problematic loot tables (format: see loot_table_blacklist)
-	loot_table_forced_whitelist = []
+	loot_table_forced_whitelist = ["minecraft:chests/spawn_bonus_chest"]
 	#list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])
 	loot_modid_blacklist = []
 
