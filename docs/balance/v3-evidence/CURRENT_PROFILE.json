@@ -1,0 +1,2030 @@
+{
+  "name": "Ambient Odyssey v0.4.9 - Client Performance TEST",
+  "minecraft": "1.21.1",
+  "loader": "neoforge-21.1.252",
+  "manifest_version": "0.4.9-client-performance-test",
+  "manifest_pin_count": 328,
+  "installed_addons": [
+    {
+      "projectID": 619320,
+      "fileID": 9074514,
+      "jar": "sophisticatedstorage-1.21.1-1.6.2.2154.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 360203,
+      "fileID": 8767509,
+      "jar": "guardvillagers-2.4.12-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1099461,
+      "fileID": 8847070,
+      "jar": "cataclysm_spellbooks-1.1.14-1.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1073197,
+      "fileID": 5895490,
+      "jar": "AetherVillages-1.21.1-1.0.8-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1612974,
+      "fileID": 8895453,
+      "jar": "IBOMD v1.0.0-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 861310,
+      "fileID": 5585561,
+      "jar": "fadeless-neoforge-1.1.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 941573,
+      "fileID": 8448640,
+      "jar": "BOMD-NeoForge-1.21-1.3.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 659011,
+      "fileID": 8201775,
+      "jar": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 313970,
+      "fileID": 8993983,
+      "jar": "Apotheosis-1.21.1-8.9.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1339737,
+      "fileID": 8902209,
+      "jar": "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 602059,
+      "fileID": 8589256,
+      "jar": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1095252,
+      "fileID": 8736778,
+      "jar": "simplymore-forge-1.3.0_alpha.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1576275,
+      "fileID": 8911572,
+      "jar": "freeterraforged-1.0.0-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 442508,
+      "fileID": 7150870,
+      "jar": "DungeonsArise-1.21.1-2.1.68-release.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 634780,
+      "fileID": 9072947,
+      "jar": "astrological-1.21.1-1.7.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1314084,
+      "fileID": 8123167,
+      "jar": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 557999,
+      "fileID": 7662187,
+      "jar": "brutalbosses-1.21.1-8.6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1341317,
+      "fileID": 6964720,
+      "jar": "end_villager_outpost-1.0.0-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1365790,
+      "fileID": 9111385,
+      "jar": "endrem_additions-neoforge-1.2.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 342584,
+      "fileID": 9060865,
+      "jar": "collective-1.21.1-8.42.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1214459,
+      "fileID": 7177858,
+      "jar": "sky_whale_ship-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1123977,
+      "fileID": 9070553,
+      "jar": "fragmentum-5.2.0+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 317780,
+      "fileID": 9067277,
+      "jar": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 626761,
+      "fileID": 8657120,
+      "jar": "t_and_t-fabric-neoforge-1.13.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 790626,
+      "fileID": 8774737,
+      "jar": "modernfix-neoforge-5.27.24+mc1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 898963,
+      "fileID": 9006294,
+      "jar": "ApothicAttributes-1.21.1-2.11.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1162019,
+      "fileID": 6053314,
+      "jar": "archaeology_ruins-1.0.0-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1331880,
+      "fileID": 6918744,
+      "jar": "aquatic_creepers-neoforge-1.0.0+1.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 248787,
+      "fileID": 7854442,
+      "jar": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1225026,
+      "fileID": 9145897,
+      "jar": "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1394406,
+      "fileID": 7450829,
+      "jar": "FungiDelight-1.21.1-1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 618298,
+      "fileID": 9074355,
+      "jar": "sophisticatedcore-1.21.1-1.5.6.2374.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015144,
+      "fileID": 5812532,
+      "jar": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1063926,
+      "fileID": 9054782,
+      "jar": "ApothicEnchanting-1.21.1-1.6.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 678384,
+      "fileID": 5743914,
+      "jar": "Solas Shader V2.3.zip",
+      "enabled": true
+    },
+    {
+      "projectID": 1418999,
+      "fileID": 8296269,
+      "jar": "trek-B0.6.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1477733,
+      "fileID": 9116978,
+      "jar": "swinginglanterns-neoforge-1.21.1-2.0.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1363585,
+      "fileID": 9092152,
+      "jar": "rainbows-foliage-polytone-edition-v2.1.zip",
+      "enabled": true
+    },
+    {
+      "projectID": 953637,
+      "fileID": 7142896,
+      "jar": "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 968868,
+      "fileID": 7980010,
+      "jar": "Zeta-1.1-40.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 577805,
+      "fileID": 8021963,
+      "jar": "corn_delight-1.2.10-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1005914,
+      "fileID": 8883390,
+      "jar": "fzzy_config-0.7.7+1.21+neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1351997,
+      "fileID": 7476105,
+      "jar": "CreateOPlenty-NeoForge-Create+6.0.7-3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 889915,
+      "fileID": 8909889,
+      "jar": "ftb-xmod-compat-neoforge-21.1.12.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1473837,
+      "fileID": 8450385,
+      "jar": "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 623908,
+      "fileID": 7788733,
+      "jar": "[Neoforge]ctov-3.6.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 388800,
+      "fileID": 6794589,
+      "jar": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1200907,
+      "fileID": 6787071,
+      "jar": "neoculus-mc1.21.1-1.8.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 404183,
+      "fileID": 8503446,
+      "jar": "endrem-neoforge-1.21.1-6.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 417802,
+      "fileID": 6926284,
+      "jar": "GatewaysToEternity-1.21.1-5.1.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 240630,
+      "fileID": 6174588,
+      "jar": "JustEnoughResources-NeoForge-1.21.1-1.6.0.12.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1618019,
+      "fileID": 9099710,
+      "jar": "betterinventory-neoforge-1.21.1-1.3.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015118,
+      "fileID": 6606621,
+      "jar": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 916747,
+      "fileID": 8040848,
+      "jar": "OctoLib-NEOFORGE-0.6.2+1.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 352222,
+      "fileID": 8828150,
+      "jar": "dimdungeons-210-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1072905,
+      "fileID": 7738312,
+      "jar": "jupiter-2.3.7-1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 289412,
+      "fileID": 8885017,
+      "jar": "ftb-quests-neoforge-2101.1.36.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 361276,
+      "fileID": 8968561,
+      "jar": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 263420,
+      "fileID": 9067173,
+      "jar": "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 228525,
+      "fileID": 7606240,
+      "jar": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1218690,
+      "fileID": 8083843,
+      "jar": "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 591388,
+      "fileID": 5962249,
+      "jar": "Incendium_1.21.x_v5.4.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1088877,
+      "fileID": 8130121,
+      "jar": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 456956,
+      "fileID": 5813117,
+      "jar": "chipped-neoforge-1.21.1-4.0.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1348970,
+      "fileID": 7141559,
+      "jar": "cataclysmfortresses-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1196449,
+      "fileID": 6882233,
+      "jar": "reliquified_ars_nouveau-1.21.1-0.6.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1111930,
+      "fileID": 5808396,
+      "jar": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 936015,
+      "fileID": 8944659,
+      "jar": "lithostitched-1.8.0-neoforge-21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 401648,
+      "fileID": 5873258,
+      "jar": "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 605375,
+      "fileID": 8232359,
+      "jar": "idas-1.13.7+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1568170,
+      "fileID": 8213402,
+      "jar": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 627557,
+      "fileID": 8884654,
+      "jar": "ComplementaryReimagined_r5.9.3.zip",
+      "enabled": true
+    },
+    {
+      "projectID": 686911,
+      "fileID": 8875640,
+      "jar": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1689768,
+      "fileID": 9048666,
+      "jar": "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 871755,
+      "fileID": 8957000,
+      "jar": "exposure-neoforge-1.21.1-1.9.19.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 915902,
+      "fileID": 8884680,
+      "jar": "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015096,
+      "fileID": 5812193,
+      "jar": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 325492,
+      "fileID": 5553811,
+      "jar": "light-overlay-12.0.0-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 386134,
+      "fileID": 8231400,
+      "jar": "ftb-ultimine-neoforge-2101.1.15.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 60089,
+      "fileID": 5637846,
+      "jar": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1010066,
+      "fileID": 8837992,
+      "jar": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 915324,
+      "fileID": 8897484,
+      "jar": "formationsoverworld-1.0.5c-mc1.21+.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 362479,
+      "fileID": 8903075,
+      "jar": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1575033,
+      "fileID": 8639119,
+      "jar": "pasterdream-0.9.6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1190728,
+      "fileID": 7179736,
+      "jar": "lukis-ancient-cities-v1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1238567,
+      "fileID": 9074505,
+      "jar": "sophisticatedbackpackscreateintegration-1.21.1-0.2.2.188.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 345854,
+      "fileID": 9032258,
+      "jar": "villagernames-1.21.1-8.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1080592,
+      "fileID": 8931080,
+      "jar": "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1091632,
+      "fileID": 6561660,
+      "jar": "illagerwarship-1.0.1-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1182393,
+      "fileID": 8390081,
+      "jar": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 243707,
+      "fileID": 8842741,
+      "jar": "tombstone-neoforge-1.21.1-9.5.6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1490601,
+      "fileID": 7853647,
+      "jar": "shadowdrop-1.1.1-1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 531761,
+      "fileID": 8969738,
+      "jar": "balm-neoforge-1.21.1-21.0.66.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 896746,
+      "fileID": 8825641,
+      "jar": "amendments-1.21-2.1.10-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 890755,
+      "fileID": 7768445,
+      "jar": "jearchaeology-1.21.1-1.2.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 889079,
+      "fileID": 8726480,
+      "jar": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 549225,
+      "fileID": 7530361,
+      "jar": "framework-neoforge-1.21.1-0.13.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 379849,
+      "fileID": 7862546,
+      "jar": "The_Undergarden-1.21.1-0.9.6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 908741,
+      "fileID": 6118392,
+      "jar": "embeddium-1.0.15+mc1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 834427,
+      "fileID": 9063977,
+      "jar": "hybrid_aquatic-neoforge-1.21.1-1.7.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1040210,
+      "fileID": 8931330,
+      "jar": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 693313,
+      "fileID": 7773534,
+      "jar": "Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 545467,
+      "fileID": 5647988,
+      "jar": "SkyVillages-1.0.6-1.21.x-neoforge-release.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1003666,
+      "fileID": 7456302,
+      "jar": "lukis-grand-capitals-1.1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1272075,
+      "fileID": 8914201,
+      "jar": "whaleborne-1.21.1-1.2.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 570073,
+      "fileID": 5973188,
+      "jar": "resourcefullib-neoforge-1.21-3.0.12.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 455585,
+      "fileID": 7919192,
+      "jar": "kambrik-neoforge-8.0.0-beta.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 256717,
+      "fileID": 5623731,
+      "jar": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 969423,
+      "fileID": 5731913,
+      "jar": "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1046916,
+      "fileID": 6342780,
+      "jar": "traveloptics-4.4.0.1-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1197859,
+      "fileID": 6539516,
+      "jar": "ftboceanmobs-21.1.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 520110,
+      "fileID": 6375480,
+      "jar": "Iceberg-1.21.1-neoforge-1.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1571005,
+      "fileID": 8655331,
+      "jar": "cultofazazelneoforge-1.1.4.12.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 645559,
+      "fileID": 9110961,
+      "jar": "dungeon_difficulty-neoforge-3.9.2+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1091339,
+      "fileID": 8943912,
+      "jar": "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1281310,
+      "fileID": 9020151,
+      "jar": "jauml-neoforge-1.21.1-2.3.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 363703,
+      "fileID": 6427515,
+      "jar": "goblintraders-neoforge-1.21.1-1.11.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 412082,
+      "fileID": 8852720,
+      "jar": "supplementaries-1.21.1-3.9.9-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 360438,
+      "fileID": 8330365,
+      "jar": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 227639,
+      "fileID": 7797302,
+      "jar": "twilightforest-1.21.1-4.8.3345-universal.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 380413,
+      "fileID": 6021451,
+      "jar": "§eExtended_Illumina_1.21x.zip",
+      "enabled": true
+    },
+    {
+      "projectID": 1299492,
+      "fileID": 9073632,
+      "jar": "aces_spell_utils-1.2.7.3-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 404468,
+      "fileID": 8724782,
+      "jar": "ftb-teams-neoforge-2101.1.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 856996,
+      "fileID": 8241767,
+      "jar": "cristellib-neoforge-1.21.1-3.1.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 419699,
+      "fileID": 8492726,
+      "jar": "architectury-13.0.11-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 445274,
+      "fileID": 7586568,
+      "jar": "relics-1.21.1-0.10.7.8.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1605714,
+      "fileID": 8703116,
+      "jar": "borderlesswindow-1.6.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 255308,
+      "fileID": 7043502,
+      "jar": "aether-1.21.1-1.5.10-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 535489,
+      "fileID": 7032247,
+      "jar": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 859365,
+      "fileID": 7370269,
+      "jar": "totw_modded-neoforge-1.21-1.0.9.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1023259,
+      "fileID": 6961457,
+      "jar": "prickle-neoforge-1.21.1-21.1.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 532610,
+      "fileID": 6785734,
+      "jar": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 895603,
+      "fileID": 5924310,
+      "jar": "ArmorTrimItemFix-neoforge-1.21.1-1.2.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 348521,
+      "fileID": 5729127,
+      "jar": "cloth-config-15.0.140-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1141465,
+      "fileID": 7053645,
+      "jar": "SkyArena-1.3.6-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1531135,
+      "fileID": 8111479,
+      "jar": "delightlib-26.05.18-1.21-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 639842,
+      "fileID": 8430183,
+      "jar": "bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 955399,
+      "fileID": 8109792,
+      "jar": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015146,
+      "fileID": 5812546,
+      "jar": "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 858542,
+      "fileID": 5831692,
+      "jar": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1668579,
+      "fileID": 9084406,
+      "jar": "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 627986,
+      "fileID": 9004373,
+      "jar": "naturalist-2.0.5-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 883374,
+      "fileID": 9063597,
+      "jar": "hapi-neoforge-1.21.1-1.1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 661376,
+      "fileID": 8161672,
+      "jar": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 361579,
+      "fileID": 6225208,
+      "jar": "spark-1.10.124-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 698309,
+      "fileID": 8082824,
+      "jar": "Explorify v1.6.5.mod.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 283644,
+      "fileID": 8463693,
+      "jar": "Placebo-1.21.1-9.9.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1101111,
+      "fileID": 8365016,
+      "jar": "irons_jewelry-1.21.1-2.0.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1422283,
+      "fileID": 8608827,
+      "jar": "bclib-21.0.26.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 331936,
+      "fileID": 8458935,
+      "jar": "citadel-2.7.1-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 378609,
+      "fileID": 8769956,
+      "jar": "toms_storage-1.21-2.4.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 582327,
+      "fileID": 6296628,
+      "jar": "smoothchunk-1.21-4.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1492763,
+      "fileID": 8973642,
+      "jar": "irons_lib-1.21.1-2.2.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 853794,
+      "fileID": 5768823,
+      "jar": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1613387,
+      "fileID": 8890602,
+      "jar": "alexsmobs-1.22.9.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 958094,
+      "fileID": 9103491,
+      "jar": "polytone-1.21-5.0.3-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1302224,
+      "fileID": 8982155,
+      "jar": "Custom Nether Portals - Neoforge - MC 1.21.1- 3.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 891324,
+      "fileID": 6492670,
+      "jar": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 388172,
+      "fileID": 8893490,
+      "jar": "geckolib-neoforge-1.21.1-4.9.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 499980,
+      "fileID": 9066398,
+      "jar": "moonlight-1.21.1-3.7.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 783522,
+      "fileID": 7078283,
+      "jar": "Structory_Towers_1.21.x_v1.0.14.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 309927,
+      "fileID": 6529130,
+      "jar": "curios-neoforge-9.5.1+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1271749,
+      "fileID": 7844741,
+      "jar": "fdlib-1.0.9-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015149,
+      "fileID": 5812553,
+      "jar": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 949158,
+      "fileID": 6344382,
+      "jar": "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 636540,
+      "fileID": 8396883,
+      "jar": "Structory_26.2_v1.3.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 659110,
+      "fileID": 8419667,
+      "jar": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1717003,
+      "fileID": 9108729,
+      "jar": "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 488090,
+      "fileID": 7318664,
+      "jar": "midnightlib-neoforge-1.9.2+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 240633,
+      "fileID": 5979614,
+      "jar": "inventorysorter-1.21-24.0.18.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015155,
+      "fileID": 6294123,
+      "jar": "TravelersTitles-1.21.1-NeoForge-5.1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1299875,
+      "fileID": 8327936,
+      "jar": "strongerfireboss-2.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 417645,
+      "fileID": 7966681,
+      "jar": "JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 220318,
+      "fileID": 8288121,
+      "jar": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 276951,
+      "fileID": 7515858,
+      "jar": "comforts-neoforge-9.0.5+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1034045,
+      "fileID": 6445160,
+      "jar": "antiquetradingship-1.4.0-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 623764,
+      "fileID": 5988164,
+      "jar": "jamlib-neoforge-1.2.2-build.2+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1512955,
+      "fileID": 8174511,
+      "jar": "trmt-0.5.1-1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 416935,
+      "fileID": 6296775,
+      "jar": "valhelsia_core-neoforge-1.21.1-1.1.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 848032,
+      "fileID": 6010596,
+      "jar": "transmog-neoforge-1.6.0+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1044992,
+      "fileID": 6962784,
+      "jar": "natures_spirit-2.2.5-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 233071,
+      "fileID": 8697050,
+      "jar": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 841890,
+      "fileID": 8061947,
+      "jar": "athena-neoforge-1.21.1-4.0.6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1321476,
+      "fileID": 8493563,
+      "jar": "Bushy pink petals, wildflowers  leaf litter.zip",
+      "enabled": true
+    },
+    {
+      "projectID": 1340230,
+      "fileID": 6958326,
+      "jar": "wda_questline-1.21.1-1.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 532286,
+      "fileID": 8906178,
+      "jar": "jeed-1.21-2.3.4-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 495476,
+      "fileID": 9007719,
+      "jar": "puzzleslib-v21.1.62-mc1.21.1+neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1269280,
+      "fileID": 8685815,
+      "jar": "morerelics-1.7.7-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1070751,
+      "fileID": 9064021,
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 569737,
+      "fileID": 6058135,
+      "jar": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 550579,
+      "fileID": 8312220,
+      "jar": "servercore-neoforge-1.5.19+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1219053,
+      "fileID": 8662697,
+      "jar": "particular-1.21.1-NeoForge-1.5.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 659887,
+      "fileID": 8746001,
+      "jar": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1271707,
+      "fileID": 8373639,
+      "jar": "fdbosses-3.2-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1337167,
+      "fileID": 9047179,
+      "jar": "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1210171,
+      "fileID": 6963018,
+      "jar": "FastItemFrames-v21.1.6-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1131668,
+      "fileID": 9075472,
+      "jar": "arsdelight-2.2.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 398521,
+      "fileID": 8765184,
+      "jar": "FarmersDelight-1.21.1-1.3.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1164949,
+      "fileID": 7808552,
+      "jar": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 961988,
+      "fileID": 6179576,
+      "jar": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1391021,
+      "fileID": 9066975,
+      "jar": "enigmaticlegacyplus-1.21.1-1.1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 351264,
+      "fileID": 8335665,
+      "jar": "kotlinforforge-5.12.0-all.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 401229,
+      "fileID": 7782196,
+      "jar": "FlightRings-neoforge-2.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 368098,
+      "fileID": 7878548,
+      "jar": "mysterious_mountain_lib-1.2.15-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 314906,
+      "fileID": 8791113,
+      "jar": "ftb-chunks-neoforge-2101.1.22.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 452834,
+      "fileID": 7508749,
+      "jar": "rightclickharvest-neoforge-4.6.1+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1587709,
+      "fileID": 8960804,
+      "jar": "IMM v1.3.2-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 987388,
+      "fileID": 6553334,
+      "jar": "benssharks-1.2.6-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 306770,
+      "fileID": 7730942,
+      "jar": "Patchouli-1.21.1-93-NEOFORGE.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 309858,
+      "fileID": 6875895,
+      "jar": "forbidden_arcanus-2.6.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1713723,
+      "fileID": 8988949,
+      "jar": "betterbastions-1.0.0+neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 852465,
+      "fileID": 7843283,
+      "jar": "deep_aether-1.21.1-1.1.5.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1216244,
+      "fileID": 8754366,
+      "jar": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015127,
+      "fileID": 6300968,
+      "jar": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015100,
+      "fileID": 8894736,
+      "jar": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 940057,
+      "fileID": 6054947,
+      "jar": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015115,
+      "fileID": 5924487,
+      "jar": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1202066,
+      "fileID": 8952784,
+      "jar": "questlog-neoforge-1.21.1-3.4.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 450659,
+      "fileID": 5937999,
+      "jar": "smallships-neoforge-1.21.1-2.0.0-b2.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 404465,
+      "fileID": 9008089,
+      "jar": "ftb-library-neoforge-2101.1.37.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 326652,
+      "fileID": 8889050,
+      "jar": "cupboard-1.21.1-4.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1232116,
+      "fileID": 6882649,
+      "jar": "reliquified_lenders_cataclysm-1.21.1-0.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1704376,
+      "fileID": 8940259,
+      "jar": "NightLib-Neoforge-1.21.1-1.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1421534,
+      "fileID": 7421845,
+      "jar": "keybindoverrides-2.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 243121,
+      "fileID": 9074160,
+      "jar": "Quark-4.1-487.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1422284,
+      "fileID": 9061800,
+      "jar": "worldweaver-21.0.26.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 852670,
+      "fileID": 7021571,
+      "jar": "MobLassos-v21.1.1-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 714059,
+      "fileID": 6467772,
+      "jar": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 618790,
+      "fileID": 7033510,
+      "jar": "minecells-2.0.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 475117,
+      "fileID": 7527945,
+      "jar": "FastSuite-1.21.1-6.0.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 841262,
+      "fileID": 7939973,
+      "jar": "oceansdelight-neoforge-1.0.4-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 979809,
+      "fileID": 9101011,
+      "jar": "aaa_particles-neoforge-1.21.1-2.3.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 318449,
+      "fileID": 5845879,
+      "jar": "cardinal-components-api-6.1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1581408,
+      "fileID": 9060294,
+      "jar": "StreamsReflowing-1.21.1-neoforge-2.14.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1690092,
+      "fileID": 8995436,
+      "jar": "integrated_patches v1.2.0-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 225738,
+      "fileID": 8903254,
+      "jar": "dummmmmmy-1.21-2.1.2-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 312353,
+      "fileID": 8791899,
+      "jar": "artifacts-neoforge-13.2.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 448233,
+      "fileID": 9100286,
+      "jar": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 955605,
+      "fileID": 6483943,
+      "jar": "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 315811,
+      "fileID": 6530833,
+      "jar": "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1001614,
+      "fileID": 8345326,
+      "jar": "lionfishapi-3.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1010827,
+      "fileID": 8587525,
+      "jar": "uranus-2.4.1-bugfix-1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 583345,
+      "fileID": 9056575,
+      "jar": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 250419,
+      "fileID": 8693034,
+      "jar": "enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1222140,
+      "fileID": 8937656,
+      "jar": "cookscollection-0.6.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1232975,
+      "fileID": 8122033,
+      "jar": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 890127,
+      "fileID": 8654089,
+      "jar": "connector-2.0.0-beta.17+1.21.1-full.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1199355,
+      "fileID": 8555615,
+      "jar": "nightlights-neoforge-1.21.1-1.4.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1063296,
+      "fileID": 7547171,
+      "jar": "enhancedbossbars-1.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 854786,
+      "fileID": 6461536,
+      "jar": "biggerbetterendcities-1.21.1-1.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 309516,
+      "fileID": 7919197,
+      "jar": "bountiful-neoforge-8.0.0-beta.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 401955,
+      "fileID": 9052154,
+      "jar": "ars_nouveau-1.21.1-5.13.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1040076,
+      "fileID": 8929517,
+      "jar": "iceandfire-2.1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1613404,
+      "fileID": 8891461,
+      "jar": "alexscaves-2.0.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 60028,
+      "fileID": 7901588,
+      "jar": "Aquaculture-1.21.1-2.7.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 574622,
+      "fileID": 8876969,
+      "jar": "culturaldelights-1.21.1-0.18.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 967466,
+      "fileID": 8902210,
+      "jar": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 536254,
+      "fileID": 8931374,
+      "jar": "aquamirae-neoforge-1.21.1-7.2.10.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1460499,
+      "fileID": 8955160,
+      "jar": "eternal_starlight_delight-neoforge-1.4.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 407206,
+      "fileID": 7057837,
+      "jar": "chat_heads-0.14.0-neoforge-1.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 272515,
+      "fileID": 5850587,
+      "jar": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1413643,
+      "fileID": 7384220,
+      "jar": "denseflower-1.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1145462,
+      "fileID": 6880789,
+      "jar": "atlas_api-1.21.1-1.2.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 977515,
+      "fileID": 8123964,
+      "jar": "moredelight-26.05.20a-1.21-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 551586,
+      "fileID": 8931182,
+      "jar": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 324717,
+      "fileID": 8591319,
+      "jar": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1644371,
+      "fileID": 8614631,
+      "jar": "ftb-solo-quests-1.21.1-neoforge-1.1.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1686754,
+      "fileID": 9031486,
+      "jar": "Sinew-1.21.1-1.2.14.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1617531,
+      "fileID": 8740321,
+      "jar": "cavedust-3.3.0+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 852665,
+      "fileID": 7232511,
+      "jar": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1321830,
+      "fileID": 8507645,
+      "jar": "mapdistancefix-neoforge-1.1.2+mc1.21-1.21.11.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 870076,
+      "fileID": 9001238,
+      "jar": "Resourcify (1.21.1-neoforge)-1.8.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1226755,
+      "fileID": 8503147,
+      "jar": "sophisticatedstoragecreateintegration-1.21.1-0.1.21.209.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1214728,
+      "fileID": 9039106,
+      "jar": "easy_npc_config_ui-neoforge-1.21.1-7.14.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 250398,
+      "fileID": 6368976,
+      "jar": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 835687,
+      "fileID": 9099893,
+      "jar": "betterarcheology-neoforge-1.21.1-1.3.9.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 843344,
+      "fileID": 7917189,
+      "jar": "DustyDecorations_1.21.1Neoforge_V1.13.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 852512,
+      "fileID": 8435635,
+      "jar": "biolith-neoforge-3.0.14.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1474300,
+      "fileID": 8387448,
+      "jar": "softimprints-neoforge-1.21.1-2.8.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 693961,
+      "fileID": 6743822,
+      "jar": "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 422301,
+      "fileID": 9074419,
+      "jar": "sophisticatedbackpacks-1.21.1-3.26.8.2189.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1422273,
+      "fileID": 7469725,
+      "jar": "wunderlib-21.0.10.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 918638,
+      "fileID": 8987438,
+      "jar": "meed-1.21.1-8.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 815548,
+      "fileID": 7802495,
+      "jar": "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1422294,
+      "fileID": 8896285,
+      "jar": "BetterEnd-21.0.35.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 297680,
+      "fileID": 6584803,
+      "jar": "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1620396,
+      "fileID": 8983496,
+      "jar": "archaion-1.21.1-1.4.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 531730,
+      "fileID": 8048795,
+      "jar": "§eTorches§8-§eReimagined§0_§8[v1.8]§0.zip",
+      "enabled": true
+    },
+    {
+      "projectID": 1051360,
+      "fileID": 9041312,
+      "jar": "Opposing-Force-1.21.1-3.0.0-beta6.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 252848,
+      "fileID": 7892954,
+      "jar": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 986583,
+      "fileID": 8469405,
+      "jar": "ApothicSpawners-1.21.1-1.4.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 429235,
+      "fileID": 7524151,
+      "jar": "ferritecore-7.0.3-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 892382,
+      "fileID": 8902211,
+      "jar": "MoogsEndStructures-universal-1.21-2.1.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 986982,
+      "fileID": 6105085,
+      "jar": "apothiccombat-1.2.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 351441,
+      "fileID": 6409785,
+      "jar": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 658587,
+      "fileID": 7389814,
+      "jar": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 232131,
+      "fileID": 8498229,
+      "jar": "defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1653878,
+      "fileID": 8655579,
+      "jar": "arssophisticatedstoragecompat-0.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1479383,
+      "fileID": 7789216,
+      "jar": "large_meals-1.21.1-1.0.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 855414,
+      "fileID": 8680204,
+      "jar": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 250498,
+      "fileID": 7760267,
+      "jar": "mowziesmobs-1.21.1-1.8.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 538214,
+      "fileID": 6330030,
+      "jar": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1653477,
+      "fileID": 8653384,
+      "jar": "arssophisticatedcompat-0.3.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1105855,
+      "fileID": 9036237,
+      "jar": "knightlib-neoforge-1.21.1-2.0.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 328085,
+      "fileID": 7963363,
+      "jar": "create-1.21.1-6.0.10.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1155936,
+      "fileID": 7208601,
+      "jar": "Waves-1.21.x-1.6.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 637808,
+      "fileID": 8309583,
+      "jar": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 962544,
+      "fileID": 9062891,
+      "jar": "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 308989,
+      "fileID": 5694215,
+      "jar": "caelus-neoforge-7.0.1+1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 324973,
+      "fileID": 7887320,
+      "jar": "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1461322,
+      "fileID": 8518516,
+      "jar": "meteor_shower-0.0.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 245755,
+      "fileID": 8969751,
+      "jar": "waystones-neoforge-1.21.1-21.1.46.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 416089,
+      "fileID": 8601207,
+      "jar": "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 915115,
+      "fileID": 6789388,
+      "jar": "formations-1.0.4-neoforge-mc1.21.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1106612,
+      "fileID": 8549320,
+      "jar": "rusticdelight-neoforge-1.21-1.7.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1015157,
+      "fileID": 6485740,
+      "jar": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 237307,
+      "fileID": 5610814,
+      "jar": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 580689,
+      "fileID": 6640970,
+      "jar": "lootintegrations-1.21.1-4.7.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1729925,
+      "fileID": 9079300,
+      "jar": "Ambient-Odyssey-TO-Magic-Registry-Fix-1.0.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 656977,
+      "fileID": 8970306,
+      "jar": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1327133,
+      "fileID": 6889560,
+      "jar": "explore_ruins_aether-1.0.0-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1228716,
+      "fileID": 6410823,
+      "jar": "underwater_village-1.0.2-neoforge-1.21.1.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1690239,
+      "fileID": 8936929,
+      "jar": "Os' Colorful Grasses (Mix).zip",
+      "enabled": true
+    },
+    {
+      "projectID": 817423,
+      "fileID": 9023461,
+      "jar": "azurelib-neo-1.21.1-3.1.14.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 817709,
+      "fileID": 8943419,
+      "jar": "integrated_api-neoforge-1.21.1-1.9.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1308987,
+      "fileID": 9039094,
+      "jar": "easy_npc-neoforge-1.21.1-7.14.0.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1475755,
+      "fileID": 8715141,
+      "jar": "SimplyTooltips-neoforge-0.1.5.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1499605,
+      "fileID": 8313373,
+      "jar": "atmosfera-1.21.1-NeoForge-1.0.2.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 469915,
+      "fileID": 8026658,
+      "jar": "TansHugeTrees-1.8.0-NeoForge-1.21.1-BETA.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 1385782,
+      "fileID": 7227735,
+      "jar": "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 238222,
+      "fileID": 9068136,
+      "jar": "jei-1.21.1-neoforge-19.57.0.451.jar",
+      "enabled": true
+    },
+    {
+      "projectID": 714177,
+      "fileID": 8332463,
+      "jar": "deeper-oceans-2.0.1-neoforge-21.1.jar",
+      "enabled": true
+    }
+  ],
+  "changed_or_added_pins": [
+    {
+      "projectID": 1131668,
+      "fileID": 9075472
+    },
+    {
+      "projectID": 1196449,
+      "fileID": 6882233
+    },
+    {
+      "projectID": 1225026,
+      "fileID": 9145897
+    },
+    {
+      "projectID": 1653477,
+      "fileID": 8653384
+    },
+    {
+      "projectID": 1653878,
+      "fileID": 8655579
+    }
+  ],
+  "missing_or_replaced_manifest_pins": [
+    {
+      "projectID": 1225026,
+      "fileID": 8956092
+    }
+  ],
+  "manifest_is_not_current_binary_roster": true
+}

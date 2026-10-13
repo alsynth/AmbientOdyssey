@@ -1,0 +1,51 @@
+{
+  "BoneMonsterConfig": {
+    "grave_skitter": {
+      "movement_speed": 0.29,
+      "attack_cooldown_ticks": 32.0,
+      "special_range": 7.0,
+      "xp_reward": 6.0,
+      "armor": 4.0,
+      "special_damage": 7.0,
+      "attack_damage": 4.0,
+      "max_health": 24.0
+    },
+    "dirge_lantern": {
+      "movement_speed": 0.23,
+      "attack_cooldown_ticks": 55.0,
+      "special_range": 12.0,
+      "xp_reward": 8.0,
+      "armor": 2.0,
+      "special_damage": 7.0,
+      "attack_damage": 4.0,
+      "max_health": 28.0
+    },
+    "sickleghast": {
+      "movement_speed": 0.24,
+      "attack_cooldown_ticks": 38.0,
+      "special_range": 4.0,
+      "xp_reward": 10.0,
+      "armor": 5.0,
+      "special_damage": 9.0,
+      "attack_damage": 6.0,
+      "max_health": 40.0
+    }
+  },
+  "SovereignConfig": {
+    "eruption_damage": 18.0,
+    "summoning_enabled": 1.0,
+    "duplicate_radius": 64.0,
+    "wave_radius": 12.0,
+    "max_health": 950.0,
+    "xp_reward": 150.0,
+    "spell_range": 24.0,
+    "armor": 8.0,
+    "movement_speed": 0.25,
+    "attack_cooldown_ticks": 35.0,
+    "slam_damage": 20.0,
+    "attack_damage": 16.0,
+    "phase_two_damage_multiplier": 1.3,
+    "phase_two_percent": 45.0,
+    "beam_damage": 24.0
+  }
+}

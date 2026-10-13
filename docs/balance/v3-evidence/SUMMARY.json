@@ -1,0 +1,30 @@
+{
+  "instance": "Ambient Odyssey v0.4.9 - Client Performance TEST",
+  "source_commit": "b387dc0",
+  "catalogue_rows": 427,
+  "physical_mod_jars": 332,
+  "resource_candidates": {
+    "installed_resource_candidate": 351,
+    "overridden_precedence_unresolved": 33,
+    "archived": 41,
+    "inactive_native_replacement": 2
+  },
+  "implementation": {
+    "preserve_natural": 25,
+    "attribute_pilot": 28,
+    "hold": 374
+  },
+  "zones": 53,
+  "resource_errors": 1,
+  "collisions": 580,
+  "root_template_resources": 19597,
+  "root_mod_template_resources": 18417,
+  "nbt_decoded_templates": 18415,
+  "nbt_templates_with_indicators": 2805,
+  "nbt_decode_errors": 2,
+  "loot_table_provider_records": 15163,
+  "runtime_tested": false,
+  "nbt_indicators_do_not_prove_reachability": true,
+  "config_sha256": "a189b392296f6d368a194e107f7da4fd454aa3b490000fd3ab6ede8f3ee15016",
+  "rollback_sha256": "fd277736f1c6b4c2d517b2d480b15586696f49e5f17e324e33eb6746a9e6a010"
+}

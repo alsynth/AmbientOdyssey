@@ -1,0 +1,2116 @@
+Compiled from "BoneMonsterConfig.java"
+public final class com.nightbeam.remnants.config.BoneMonsterConfig {
+  public static final java.util.Map<java.lang.String, java.util.Map<java.lang.String, java.lang.Double>> DEFAULTS;
+
+  private com.nightbeam.remnants.config.BoneMonsterConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static java.util.Map<java.lang.String, java.lang.Double> stats(double, double, double, double, double, double, double, double);
+    Code:
+       0: ldc           #7                  // String max_health
+       2: dload_0
+       3: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+       6: ldc           #15                 // String attack_damage
+       8: dload_2
+       9: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      12: ldc           #17                 // String armor
+      14: dload         4
+      16: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      19: ldc           #19                 // String movement_speed
+      21: dload         6
+      23: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      26: ldc           #21                 // String attack_cooldown_ticks
+      28: dload         8
+      30: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      33: ldc           #23                 // String special_damage
+      35: dload         10
+      37: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      40: ldc           #25                 // String special_range
+      42: dload         12
+      44: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      47: ldc           #27                 // String xp_reward
+      49: dload         14
+      51: invokestatic  #9                  // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      54: invokestatic  #29                 // InterfaceMethod java/util/Map.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+      57: areturn
+
+  public static double value(java.lang.String, java.lang.String, double, double);
+    Code:
+       0: ldc           #35                 // String remnant/monsters
+       2: aload_0
+       3: aload_1
+       4: invokestatic  #37                 // Method com/nightbeam/remnants/config/JaumlConfigLib.getNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)D
+       7: dstore        6
+       9: dload_2
+      10: dload         4
+      12: dload         6
+      14: invokestatic  #43                 // Method java/lang/Double.isFinite:(D)Z
+      17: ifeq          25
+      20: dload         6
+      22: goto          49
+      25: getstatic     #47                 // Field DEFAULTS:Ljava/util/Map;
+      28: aload_0
+      29: invokeinterface #53,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      34: checkcast     #30                 // class java/util/Map
+      37: aload_1
+      38: invokeinterface #53,  2           // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+      43: checkcast     #10                 // class java/lang/Double
+      46: invokevirtual #57                 // Method java/lang/Double.doubleValue:()D
+      49: invokestatic  #61                 // Method java/lang/Math.min:(DD)D
+      52: invokestatic  #67                 // Method java/lang/Math.max:(DD)D
+      55: dreturn
+
+  static {};
+    Code:
+       0: ldc           #70                 // String grave_skitter
+       2: ldc2_w        #72                 // double 24.0d
+       5: ldc2_w        #74                 // double 4.0d
+       8: ldc2_w        #74                 // double 4.0d
+      11: ldc2_w        #76                 // double 0.29d
+      14: ldc2_w        #78                 // double 32.0d
+      17: ldc2_w        #80                 // double 7.0d
+      20: ldc2_w        #80                 // double 7.0d
+      23: ldc2_w        #82                 // double 6.0d
+      26: invokestatic  #84                 // Method stats:(DDDDDDDD)Ljava/util/Map;
+      29: ldc           #88                 // String sickleghast
+      31: ldc2_w        #90                 // double 40.0d
+      34: ldc2_w        #82                 // double 6.0d
+      37: ldc2_w        #92                 // double 5.0d
+      40: ldc2_w        #94                 // double 0.24d
+      43: ldc2_w        #96                 // double 38.0d
+      46: ldc2_w        #98                 // double 9.0d
+      49: ldc2_w        #74                 // double 4.0d
+      52: ldc2_w        #100                // double 10.0d
+      55: invokestatic  #84                 // Method stats:(DDDDDDDD)Ljava/util/Map;
+      58: ldc           #102                // String dirge_lantern
+      60: ldc2_w        #104                // double 28.0d
+      63: ldc2_w        #74                 // double 4.0d
+      66: ldc2_w        #106                // double 2.0d
+      69: ldc2_w        #108                // double 0.23d
+      72: ldc2_w        #110                // double 55.0d
+      75: ldc2_w        #80                 // double 7.0d
+      78: ldc2_w        #112                // double 12.0d
+      81: ldc2_w        #114                // double 8.0d
+      84: invokestatic  #84                 // Method stats:(DDDDDDDD)Ljava/util/Map;
+      87: invokestatic  #116                // InterfaceMethod java/util/Map.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+      90: putstatic     #47                 // Field DEFAULTS:Ljava/util/Map;
+      93: return
+}
+Compiled from "SovereignConfig.java"
+public final class com.nightbeam.remnants.config.SovereignConfig {
+  public static final java.util.Map<java.lang.String, java.lang.Double> DEFAULTS;
+
+  public static final java.util.Map<java.lang.String, java.lang.String> RITUAL;
+
+  private com.nightbeam.remnants.config.SovereignConfig();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static double value(java.lang.String, double, double);
+    Code:
+       0: ldc           #7                  // String remnant/bosses
+       2: ldc           #9                  // String hollow_sovereign
+       4: aload_0
+       5: invokestatic  #11                 // Method com/nightbeam/remnants/config/JaumlConfigLib.getNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)D
+       8: dstore        5
+      10: dload_1
+      11: dload_3
+      12: dload         5
+      14: invokestatic  #17                 // Method java/lang/Double.isFinite:(D)Z
+      17: ifeq          25
+      20: dload         5
+      22: goto          44
+      25: getstatic     #23                 // Field DEFAULTS:Ljava/util/Map;
+      28: aload_0
+      29: dload_1
+      30: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      33: invokeinterface #33,  3           // InterfaceMethod java/util/Map.getOrDefault:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      38: checkcast     #18                 // class java/lang/Double
+      41: invokevirtual #39                 // Method java/lang/Double.doubleValue:()D
+      44: invokestatic  #43                 // Method java/lang/Math.min:(DD)D
+      47: invokestatic  #49                 // Method java/lang/Math.max:(DD)D
+      50: dreturn
+
+  public static double visualDensity();
+    Code:
+       0: ldc           #52                 // String remnant/client
+       2: ldc           #54                 // String presentation
+       4: ldc           #56                 // String vfx_density
+       6: invokestatic  #11                 // Method com/nightbeam/remnants/config/JaumlConfigLib.getNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)D
+       9: dstore_0
+      10: dload_0
+      11: invokestatic  #17                 // Method java/lang/Double.isFinite:(D)Z
+      14: ifeq          29
+      17: dconst_0
+      18: dconst_1
+      19: dload_0
+      20: invokestatic  #43                 // Method java/lang/Math.min:(DD)D
+      23: invokestatic  #49                 // Method java/lang/Math.max:(DD)D
+      26: goto          30
+      29: dconst_1
+      30: dreturn
+
+  static {};
+    Code:
+       0: bipush        15
+       2: anewarray     #58                 // class java/util/Map$Entry
+       5: dup
+       6: iconst_0
+       7: ldc           #60                 // String max_health
+       9: ldc2_w        #62                 // double 950.0d
+      12: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      15: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+      18: aastore
+      19: dup
+      20: iconst_1
+      21: ldc           #68                 // String attack_damage
+      23: ldc2_w        #70                 // double 16.0d
+      26: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      29: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+      32: aastore
+      33: dup
+      34: iconst_2
+      35: ldc           #72                 // String armor
+      37: ldc2_w        #74                 // double 8.0d
+      40: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      43: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+      46: aastore
+      47: dup
+      48: iconst_3
+      49: ldc           #76                 // String movement_speed
+      51: ldc2_w        #78                 // double 0.25d
+      54: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      57: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+      60: aastore
+      61: dup
+      62: iconst_4
+      63: ldc           #80                 // String phase_two_percent
+      65: ldc2_w        #82                 // double 45.0d
+      68: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      71: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+      74: aastore
+      75: dup
+      76: iconst_5
+      77: ldc           #84                 // String phase_two_damage_multiplier
+      79: ldc2_w        #86                 // double 1.3d
+      82: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+      85: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+      88: aastore
+      89: dup
+      90: bipush        6
+      92: ldc           #88                 // String attack_cooldown_ticks
+      94: ldc2_w        #90                 // double 35.0d
+      97: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     100: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     103: aastore
+     104: dup
+     105: bipush        7
+     107: ldc           #92                 // String slam_damage
+     109: ldc2_w        #94                 // double 20.0d
+     112: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     115: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     118: aastore
+     119: dup
+     120: bipush        8
+     122: ldc           #96                 // String beam_damage
+     124: ldc2_w        #98                 // double 24.0d
+     127: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     130: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     133: aastore
+     134: dup
+     135: bipush        9
+     137: ldc           #100                // String eruption_damage
+     139: ldc2_w        #102                // double 18.0d
+     142: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     145: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     148: aastore
+     149: dup
+     150: bipush        10
+     152: ldc           #104                // String spell_range
+     154: ldc2_w        #98                 // double 24.0d
+     157: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     160: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     163: aastore
+     164: dup
+     165: bipush        11
+     167: ldc           #106                // String wave_radius
+     169: ldc2_w        #108                // double 12.0d
+     172: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     175: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     178: aastore
+     179: dup
+     180: bipush        12
+     182: ldc           #110                // String summoning_enabled
+     184: dconst_1
+     185: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     188: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     191: aastore
+     192: dup
+     193: bipush        13
+     195: ldc           #112                // String duplicate_radius
+     197: ldc2_w        #114                // double 64.0d
+     200: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     203: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     206: aastore
+     207: dup
+     208: bipush        14
+     210: ldc           #116                // String xp_reward
+     212: ldc2_w        #118                // double 150.0d
+     215: invokestatic  #29                 // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     218: invokestatic  #64                 // InterfaceMethod java/util/Map.entry:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map$Entry;
+     221: aastore
+     222: invokestatic  #120                // InterfaceMethod java/util/Map.ofEntries:([Ljava/util/Map$Entry;)Ljava/util/Map;
+     225: putstatic     #23                 // Field DEFAULTS:Ljava/util/Map;
+     228: ldc           #124                // String portal_activation_item
+     230: ldc           #126                // String minecraft:heart_of_the_sea
+     232: ldc           #128                // String pedestal_one_activation_block
+     234: ldc           #130                // String minecraft:bone_block
+     236: ldc           #132                // String pedestal_two_activation_block
+     238: ldc           #130                // String minecraft:bone_block
+     240: ldc           #134                // String pedestal_three_activation_block
+     242: ldc           #136                // String minecraft:skeleton_skull
+     244: ldc           #138                // String pedestal_four_activation_block
+     246: ldc           #136                // String minecraft:skeleton_skull
+     248: invokestatic  #140                // InterfaceMethod java/util/Map.of:(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+     251: putstatic     #144                // Field RITUAL:Ljava/util/Map;
+     254: return
+}
+Compiled from "JaumlConfigBootstrap.java"
+public final class com.nightbeam.remnants.config.JaumlConfigBootstrap {
+  private static final org.slf4j.Logger LOGGER;
+
+  private com.nightbeam.remnants.config.JaumlConfigBootstrap();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void initConfigs();
+    Code:
+       0: invokestatic  #7                  // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.load:()Lcom/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi;
+       3: astore_0
+       4: aload_0
+       5: ifnonnull     19
+       8: getstatic     #13                 // Field LOGGER:Lorg/slf4j/Logger;
+      11: ldc           #19                 // String JaumlConfigLib not present; skipping config bootstrap.
+      13: invokeinterface #21,  2           // InterfaceMethod org/slf4j/Logger.warn:(Ljava/lang/String;)V
+      18: return
+      19: getstatic     #27                 // Field com/nightbeam/remnants/config/BoneMonsterConfig.DEFAULTS:Ljava/util/Map;
+      22: aload_0
+      23: invokedynamic #33,  0             // InvokeDynamic #0:accept:(Lcom/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi;)Ljava/util/function/BiConsumer;
+      28: invokeinterface #37,  2           // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+      33: aload_0
+      34: ldc           #43                 // String remnant/bosses
+      36: ldc           #45                 // String hollow_sovereign
+      38: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+      41: pop
+      42: getstatic     #51                 // Field com/nightbeam/remnants/config/SovereignConfig.DEFAULTS:Ljava/util/Map;
+      45: aload_0
+      46: invokedynamic #54,  0             // InvokeDynamic #1:accept:(Lcom/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi;)Ljava/util/function/BiConsumer;
+      51: invokeinterface #37,  2           // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+      56: aload_0
+      57: ldc           #43                 // String remnant/bosses
+      59: ldc           #55                 // String hollow_sovereign_summon
+      61: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+      64: pop
+      65: getstatic     #57                 // Field com/nightbeam/remnants/config/SovereignConfig.RITUAL:Ljava/util/Map;
+      68: aload_0
+      69: invokedynamic #60,  0             // InvokeDynamic #2:accept:(Lcom/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi;)Ljava/util/function/BiConsumer;
+      74: invokeinterface #37,  2           // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+      79: aload_0
+      80: ldc           #61                 // String remnant/client
+      82: ldc           #63                 // String presentation
+      84: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+      87: pop
+      88: iconst_2
+      89: anewarray     #65                 // class java/lang/String
+      92: dup
+      93: iconst_0
+      94: ldc           #67                 // String custom_boss_bars
+      96: aastore
+      97: dup
+      98: iconst_1
+      99: ldc           #69                 // String vfx_density
+     101: aastore
+     102: astore_1
+     103: aload_1
+     104: arraylength
+     105: istore_2
+     106: iconst_0
+     107: istore_3
+     108: iload_3
+     109: iload_2
+     110: if_icmpge     151
+     113: aload_1
+     114: iload_3
+     115: aaload
+     116: astore        4
+     118: aload_0
+     119: ldc           #61                 // String remnant/client
+     121: ldc           #63                 // String presentation
+     123: aload         4
+     125: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     128: ifne          145
+     131: aload_0
+     132: ldc           #61                 // String remnant/client
+     134: ldc           #63                 // String presentation
+     136: aload         4
+     138: iconst_1
+     139: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     142: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     145: iinc          3, 1
+     148: goto          108
+     151: aload_0
+     152: ldc           #43                 // String remnant/bosses
+     154: ldc           #85                 // String ossukage_summon
+     156: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+     159: ifeq          223
+     162: aload_0
+     163: ldc           #87                 // String remnant
+     165: ldc           #89                 // String main
+     167: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+     170: ifeq          223
+     173: aload_0
+     174: ldc           #87                 // String remnant
+     176: ldc           #89                 // String main
+     178: ldc           #91                 // String config_version
+     180: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     183: ifne          198
+     186: aload_0
+     187: ldc           #87                 // String remnant
+     189: ldc           #89                 // String main
+     191: ldc           #91                 // String config_version
+     193: ldc           #93                 // String 1
+     195: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     198: aload_0
+     199: ldc           #87                 // String remnant
+     201: ldc           #89                 // String main
+     203: ldc           #99                 // String generated_by
+     205: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     208: ifne          223
+     211: aload_0
+     212: ldc           #87                 // String remnant
+     214: ldc           #89                 // String main
+     216: ldc           #99                 // String generated_by
+     218: ldc           #101                // String Remnant Bosses mod - default config
+     220: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     223: aload_0
+     224: ldc           #43                 // String remnant/bosses
+     226: ldc           #85                 // String ossukage_summon
+     228: ldc           #103                // String portal_activation_item
+     230: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     233: ifne          248
+     236: aload_0
+     237: ldc           #43                 // String remnant/bosses
+     239: ldc           #85                 // String ossukage_summon
+     241: ldc           #103                // String portal_activation_item
+     243: ldc           #105                // String minecraft:nether_star
+     245: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     248: aload_0
+     249: ldc           #43                 // String remnant/bosses
+     251: ldc           #85                 // String ossukage_summon
+     253: ldc           #107                // String pedestal_one_activation_block
+     255: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     258: ifne          273
+     261: aload_0
+     262: ldc           #43                 // String remnant/bosses
+     264: ldc           #85                 // String ossukage_summon
+     266: ldc           #107                // String pedestal_one_activation_block
+     268: ldc           #109                // String minecraft:skeleton_skull
+     270: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     273: aload_0
+     274: ldc           #43                 // String remnant/bosses
+     276: ldc           #85                 // String ossukage_summon
+     278: ldc           #111                // String pedestal_two_activation_block
+     280: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     283: ifne          298
+     286: aload_0
+     287: ldc           #43                 // String remnant/bosses
+     289: ldc           #85                 // String ossukage_summon
+     291: ldc           #111                // String pedestal_two_activation_block
+     293: ldc           #109                // String minecraft:skeleton_skull
+     295: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     298: aload_0
+     299: ldc           #43                 // String remnant/bosses
+     301: ldc           #85                 // String ossukage_summon
+     303: ldc           #113                // String pedestal_three_activation_block
+     305: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     308: ifne          323
+     311: aload_0
+     312: ldc           #43                 // String remnant/bosses
+     314: ldc           #85                 // String ossukage_summon
+     316: ldc           #113                // String pedestal_three_activation_block
+     318: ldc           #109                // String minecraft:skeleton_skull
+     320: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     323: aload_0
+     324: ldc           #43                 // String remnant/bosses
+     326: ldc           #85                 // String ossukage_summon
+     328: ldc           #115                // String pedestal_four_activation_block
+     330: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     333: ifne          348
+     336: aload_0
+     337: ldc           #43                 // String remnant/bosses
+     339: ldc           #85                 // String ossukage_summon
+     341: ldc           #115                // String pedestal_four_activation_block
+     343: ldc           #109                // String minecraft:skeleton_skull
+     345: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+     348: aload_0
+     349: ldc           #117                // String remnant/items
+     351: ldc           #119                // String ossukage_sword
+     353: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+     356: ifeq          368
+     359: aload_0
+     360: ldc           #117                // String remnant/items
+     362: ldc           #119                // String ossukage_sword
+     364: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+     367: pop
+     368: aload_0
+     369: ldc           #117                // String remnant/items
+     371: ldc           #119                // String ossukage_sword
+     373: ldc           #121                // String dash_timer
+     375: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     378: ifne          396
+     381: aload_0
+     382: ldc           #117                // String remnant/items
+     384: ldc           #119                // String ossukage_sword
+     386: ldc           #121                // String dash_timer
+     388: bipush        100
+     390: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     393: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     396: aload_0
+     397: ldc           #117                // String remnant/items
+     399: ldc           #119                // String ossukage_sword
+     401: ldc           #123                // String dash_distance
+     403: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     406: ifne          423
+     409: aload_0
+     410: ldc           #117                // String remnant/items
+     412: ldc           #119                // String ossukage_sword
+     414: ldc           #123                // String dash_distance
+     416: iconst_2
+     417: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     420: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     423: aload_0
+     424: ldc           #117                // String remnant/items
+     426: ldc           #119                // String ossukage_sword
+     428: ldc           #125                // String shuriken_timer
+     430: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     433: ifne          451
+     436: aload_0
+     437: ldc           #117                // String remnant/items
+     439: ldc           #119                // String ossukage_sword
+     441: ldc           #125                // String shuriken_timer
+     443: bipush        50
+     445: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     448: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     451: aload_0
+     452: ldc           #117                // String remnant/items
+     454: ldc           #119                // String ossukage_sword
+     456: ldc           #127                // String shuriken_damage
+     458: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     461: ifne          479
+     464: aload_0
+     465: ldc           #117                // String remnant/items
+     467: ldc           #119                // String ossukage_sword
+     469: ldc           #127                // String shuriken_damage
+     471: bipush        50
+     473: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     476: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     479: aload_0
+     480: ldc           #117                // String remnant/items
+     482: ldc           #119                // String ossukage_sword
+     484: ldc           #129                // String shuriken_knockback
+     486: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     489: ifne          506
+     492: aload_0
+     493: ldc           #117                // String remnant/items
+     495: ldc           #119                // String ossukage_sword
+     497: ldc           #129                // String shuriken_knockback
+     499: iconst_1
+     500: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     503: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     506: aload_0
+     507: ldc           #117                // String remnant/items
+     509: ldc           #119                // String ossukage_sword
+     511: ldc           #131                // String shuriken_pierce
+     513: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     516: ifne          533
+     519: aload_0
+     520: ldc           #117                // String remnant/items
+     522: ldc           #119                // String ossukage_sword
+     524: ldc           #131                // String shuriken_pierce
+     526: iconst_0
+     527: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     530: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     533: aload_0
+     534: ldc           #117                // String remnant/items
+     536: ldc           #119                // String ossukage_sword
+     538: ldc           #133                // String speed_amplifier
+     540: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     543: ifne          560
+     546: aload_0
+     547: ldc           #117                // String remnant/items
+     549: ldc           #119                // String ossukage_sword
+     551: ldc           #133                // String speed_amplifier
+     553: iconst_1
+     554: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     557: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     560: aload_0
+     561: ldc           #117                // String remnant/items
+     563: ldc           #119                // String ossukage_sword
+     565: ldc           #135                // String life_steal_power
+     567: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     570: ifne          588
+     573: aload_0
+     574: ldc           #117                // String remnant/items
+     576: ldc           #119                // String ossukage_sword
+     578: ldc           #135                // String life_steal_power
+     580: bipush        20
+     582: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     585: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     588: aload_0
+     589: ldc           #43                 // String remnant/bosses
+     591: ldc           #137                // String ossukage
+     593: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+     596: ifeq          608
+     599: aload_0
+     600: ldc           #43                 // String remnant/bosses
+     602: ldc           #137                // String ossukage
+     604: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+     607: pop
+     608: aload_0
+     609: ldc           #43                 // String remnant/bosses
+     611: ldc           #137                // String ossukage
+     613: ldc           #139                // String on_spawn_skeletons
+     615: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     618: ifne          635
+     621: aload_0
+     622: ldc           #43                 // String remnant/bosses
+     624: ldc           #137                // String ossukage
+     626: ldc           #139                // String on_spawn_skeletons
+     628: iconst_2
+     629: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     632: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     635: aload_0
+     636: ldc           #43                 // String remnant/bosses
+     638: ldc           #137                // String ossukage
+     640: ldc           #141                // String max_health_phase_1
+     642: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     645: ifne          664
+     648: aload_0
+     649: ldc           #43                 // String remnant/bosses
+     651: ldc           #137                // String ossukage
+     653: ldc           #141                // String max_health_phase_1
+     655: sipush        800
+     658: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     661: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     664: aload_0
+     665: ldc           #43                 // String remnant/bosses
+     667: ldc           #137                // String ossukage
+     669: ldc           #143                // String attack_damage_phase_1
+     671: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     674: ifne          692
+     677: aload_0
+     678: ldc           #43                 // String remnant/bosses
+     680: ldc           #137                // String ossukage
+     682: ldc           #143                // String attack_damage_phase_1
+     684: bipush        7
+     686: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     689: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     692: aload_0
+     693: ldc           #43                 // String remnant/bosses
+     695: ldc           #137                // String ossukage
+     697: ldc           #145                // String movement_speed_phase_1
+     699: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     702: ifne          721
+     705: aload_0
+     706: ldc           #43                 // String remnant/bosses
+     708: ldc           #137                // String ossukage
+     710: ldc           #145                // String movement_speed_phase_1
+     712: ldc2_w        #147                // double 0.25d
+     715: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     718: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     721: aload_0
+     722: ldc           #43                 // String remnant/bosses
+     724: ldc           #137                // String ossukage
+     726: ldc           #154                // String hp_threshold_phase_2
+     728: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     731: ifne          749
+     734: aload_0
+     735: ldc           #43                 // String remnant/bosses
+     737: ldc           #137                // String ossukage
+     739: ldc           #154                // String hp_threshold_phase_2
+     741: bipush        50
+     743: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     746: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     749: aload_0
+     750: ldc           #43                 // String remnant/bosses
+     752: ldc           #137                // String ossukage
+     754: ldc           #156                // String transform_delay_phase_2
+     756: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     759: ifne          777
+     762: aload_0
+     763: ldc           #43                 // String remnant/bosses
+     765: ldc           #137                // String ossukage
+     767: ldc           #156                // String transform_delay_phase_2
+     769: bipush        60
+     771: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     774: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     777: aload_0
+     778: ldc           #43                 // String remnant/bosses
+     780: ldc           #137                // String ossukage
+     782: ldc           #158                // String skeletons_on_transform_phase_2
+     784: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     787: ifne          804
+     790: aload_0
+     791: ldc           #43                 // String remnant/bosses
+     793: ldc           #137                // String ossukage
+     795: ldc           #158                // String skeletons_on_transform_phase_2
+     797: iconst_5
+     798: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     801: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     804: aload_0
+     805: ldc           #43                 // String remnant/bosses
+     807: ldc           #137                // String ossukage
+     809: ldc           #160                // String skeletons_on_dash_phase_2
+     811: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     814: ifne          831
+     817: aload_0
+     818: ldc           #43                 // String remnant/bosses
+     820: ldc           #137                // String ossukage
+     822: ldc           #160                // String skeletons_on_dash_phase_2
+     824: iconst_2
+     825: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     828: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     831: aload_0
+     832: ldc           #43                 // String remnant/bosses
+     834: ldc           #137                // String ossukage
+     836: ldc           #162                // String special_attack_chance_phase_2
+     838: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     841: ifne          859
+     844: aload_0
+     845: ldc           #43                 // String remnant/bosses
+     847: ldc           #137                // String ossukage
+     849: ldc           #162                // String special_attack_chance_phase_2
+     851: bipush        20
+     853: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     856: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     859: aload_0
+     860: ldc           #43                 // String remnant/bosses
+     862: ldc           #137                // String ossukage
+     864: ldc           #164                // String health_boost_timer_phase_2
+     866: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     869: ifne          888
+     872: aload_0
+     873: ldc           #43                 // String remnant/bosses
+     875: ldc           #137                // String ossukage
+     877: ldc           #164                // String health_boost_timer_phase_2
+     879: sipush        200
+     882: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     885: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     888: aload_0
+     889: ldc           #43                 // String remnant/bosses
+     891: ldc           #137                // String ossukage
+     893: ldc           #166                // String attack_damage_phase_2
+     895: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     898: ifne          916
+     901: aload_0
+     902: ldc           #43                 // String remnant/bosses
+     904: ldc           #137                // String ossukage
+     906: ldc           #166                // String attack_damage_phase_2
+     908: bipush        9
+     910: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     913: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     916: aload_0
+     917: ldc           #43                 // String remnant/bosses
+     919: ldc           #137                // String ossukage
+     921: ldc           #168                // String movement_speed_phase_2
+     923: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     926: ifne          945
+     929: aload_0
+     930: ldc           #43                 // String remnant/bosses
+     932: ldc           #137                // String ossukage
+     934: ldc           #168                // String movement_speed_phase_2
+     936: ldc2_w        #170                // double 0.3d
+     939: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+     942: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     945: aload_0
+     946: ldc           #43                 // String remnant/bosses
+     948: ldc           #137                // String ossukage
+     950: ldc           #172                // String boss_music_enabled
+     952: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     955: ifne          972
+     958: aload_0
+     959: ldc           #43                 // String remnant/bosses
+     961: ldc           #137                // String ossukage
+     963: ldc           #172                // String boss_music_enabled
+     965: iconst_1
+     966: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     969: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+     972: aload_0
+     973: ldc           #43                 // String remnant/bosses
+     975: ldc           #137                // String ossukage
+     977: ldc           #174                // String boss_music_radius
+     979: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+     982: ifne          1000
+     985: aload_0
+     986: ldc           #43                 // String remnant/bosses
+     988: ldc           #137                // String ossukage
+     990: ldc           #174                // String boss_music_radius
+     992: bipush        64
+     994: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     997: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1000: aload_0
+    1001: ldc           #43                 // String remnant/bosses
+    1003: ldc           #137                // String ossukage
+    1005: ldc           #176                // String armor_phase_1
+    1007: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1010: ifne          1028
+    1013: aload_0
+    1014: ldc           #43                 // String remnant/bosses
+    1016: ldc           #137                // String ossukage
+    1018: ldc           #176                // String armor_phase_1
+    1020: bipush        6
+    1022: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1025: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1028: aload_0
+    1029: ldc           #43                 // String remnant/bosses
+    1031: ldc           #137                // String ossukage
+    1033: ldc           #178                // String armor_phase_2
+    1035: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1038: ifne          1056
+    1041: aload_0
+    1042: ldc           #43                 // String remnant/bosses
+    1044: ldc           #137                // String ossukage
+    1046: ldc           #178                // String armor_phase_2
+    1048: bipush        8
+    1050: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1053: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1056: aload_0
+    1057: ldc           #43                 // String remnant/bosses
+    1059: ldc           #137                // String ossukage
+    1061: ldc           #180                // String follow_range
+    1063: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1066: ifne          1084
+    1069: aload_0
+    1070: ldc           #43                 // String remnant/bosses
+    1072: ldc           #137                // String ossukage
+    1074: ldc           #180                // String follow_range
+    1076: bipush        64
+    1078: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1081: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1084: aload_0
+    1085: ldc           #43                 // String remnant/bosses
+    1087: ldc           #137                // String ossukage
+    1089: ldc           #182                // String knockback_resistance
+    1091: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1094: ifne          1113
+    1097: aload_0
+    1098: ldc           #43                 // String remnant/bosses
+    1100: ldc           #137                // String ossukage
+    1102: ldc           #182                // String knockback_resistance
+    1104: ldc2_w        #184                // double 0.6d
+    1107: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1110: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1113: aload_0
+    1114: ldc           #186                // String remnant/spawning
+    1116: ldc           #188                // String rat_spawns
+    1118: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1121: ifeq          1133
+    1124: aload_0
+    1125: ldc           #186                // String remnant/spawning
+    1127: ldc           #188                // String rat_spawns
+    1129: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1132: pop
+    1133: aload_0
+    1134: ldc           #186                // String remnant/spawning
+    1136: ldc           #188                // String rat_spawns
+    1138: ldc           #190                // String enable_natural_spawning
+    1140: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1143: ifne          1158
+    1146: aload_0
+    1147: ldc           #186                // String remnant/spawning
+    1149: ldc           #188                // String rat_spawns
+    1151: ldc           #190                // String enable_natural_spawning
+    1153: ldc           #192                // String true
+    1155: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1158: aload_0
+    1159: ldc           #186                // String remnant/spawning
+    1161: ldc           #188                // String rat_spawns
+    1163: ldc           #194                // String spawn_weight
+    1165: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1168: ifne          1186
+    1171: aload_0
+    1172: ldc           #186                // String remnant/spawning
+    1174: ldc           #188                // String rat_spawns
+    1176: ldc           #194                // String spawn_weight
+    1178: bipush        10
+    1180: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1183: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1186: aload_0
+    1187: ldc           #186                // String remnant/spawning
+    1189: ldc           #188                // String rat_spawns
+    1191: ldc           #196                // String min_group_size
+    1193: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1196: ifne          1213
+    1199: aload_0
+    1200: ldc           #186                // String remnant/spawning
+    1202: ldc           #188                // String rat_spawns
+    1204: ldc           #196                // String min_group_size
+    1206: iconst_1
+    1207: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1210: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1213: aload_0
+    1214: ldc           #186                // String remnant/spawning
+    1216: ldc           #188                // String rat_spawns
+    1218: ldc           #198                // String max_group_size
+    1220: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1223: ifne          1240
+    1226: aload_0
+    1227: ldc           #186                // String remnant/spawning
+    1229: ldc           #188                // String rat_spawns
+    1231: ldc           #198                // String max_group_size
+    1233: iconst_3
+    1234: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1237: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1240: aload_0
+    1241: ldc           #186                // String remnant/spawning
+    1243: ldc           #188                // String rat_spawns
+    1245: ldc           #200                // String dimension_whitelist
+    1247: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1250: ifne          1265
+    1253: aload_0
+    1254: ldc           #186                // String remnant/spawning
+    1256: ldc           #188                // String rat_spawns
+    1258: ldc           #200                // String dimension_whitelist
+    1260: ldc           #202                // String minecraft:overworld
+    1262: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1265: aload_0
+    1266: ldc           #186                // String remnant/spawning
+    1268: ldc           #188                // String rat_spawns
+    1270: ldc           #204                // String dimension_blacklist
+    1272: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1275: ifne          1290
+    1278: aload_0
+    1279: ldc           #186                // String remnant/spawning
+    1281: ldc           #188                // String rat_spawns
+    1283: ldc           #204                // String dimension_blacklist
+    1285: ldc           #206                // String minecraft:the_nether,minecraft:the_end
+    1287: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1290: aload_0
+    1291: ldc           #186                // String remnant/spawning
+    1293: ldc           #188                // String rat_spawns
+    1295: ldc           #208                // String biome_blacklist
+    1297: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1300: ifne          1315
+    1303: aload_0
+    1304: ldc           #186                // String remnant/spawning
+    1306: ldc           #188                // String rat_spawns
+    1308: ldc           #208                // String biome_blacklist
+    1310: ldc           #210                // String
+    1312: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1315: aload_0
+    1316: ldc           #212                // String remnant/balance
+    1318: ldc           #214                // String rat_stats
+    1320: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1323: ifeq          1335
+    1326: aload_0
+    1327: ldc           #212                // String remnant/balance
+    1329: ldc           #214                // String rat_stats
+    1331: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1334: pop
+    1335: aload_0
+    1336: ldc           #212                // String remnant/balance
+    1338: ldc           #214                // String rat_stats
+    1340: ldc           #216                // String rat_health
+    1342: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1345: ifne          1364
+    1348: aload_0
+    1349: ldc           #212                // String remnant/balance
+    1351: ldc           #214                // String rat_stats
+    1353: ldc           #216                // String rat_health
+    1355: ldc2_w        #218                // double 30.0d
+    1358: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1361: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1364: aload_0
+    1365: ldc           #212                // String remnant/balance
+    1367: ldc           #214                // String rat_stats
+    1369: ldc           #220                // String rat_attack_damage
+    1371: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1374: ifne          1393
+    1377: aload_0
+    1378: ldc           #212                // String remnant/balance
+    1380: ldc           #214                // String rat_stats
+    1382: ldc           #220                // String rat_attack_damage
+    1384: ldc2_w        #222                // double 4.0d
+    1387: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1390: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1393: aload_0
+    1394: ldc           #212                // String remnant/balance
+    1396: ldc           #214                // String rat_stats
+    1398: ldc           #224                // String rat_armor
+    1400: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1403: ifne          1422
+    1406: aload_0
+    1407: ldc           #212                // String remnant/balance
+    1409: ldc           #214                // String rat_stats
+    1411: ldc           #224                // String rat_armor
+    1413: ldc2_w        #226                // double 2.0d
+    1416: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1419: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1422: aload_0
+    1423: ldc           #186                // String remnant/spawning
+    1425: ldc           #228                // String wraith_spawns
+    1427: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1430: ifeq          1442
+    1433: aload_0
+    1434: ldc           #186                // String remnant/spawning
+    1436: ldc           #228                // String wraith_spawns
+    1438: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1441: pop
+    1442: aload_0
+    1443: ldc           #186                // String remnant/spawning
+    1445: ldc           #228                // String wraith_spawns
+    1447: ldc           #190                // String enable_natural_spawning
+    1449: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1452: ifne          1467
+    1455: aload_0
+    1456: ldc           #186                // String remnant/spawning
+    1458: ldc           #228                // String wraith_spawns
+    1460: ldc           #190                // String enable_natural_spawning
+    1462: ldc           #192                // String true
+    1464: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1467: aload_0
+    1468: ldc           #186                // String remnant/spawning
+    1470: ldc           #228                // String wraith_spawns
+    1472: ldc           #194                // String spawn_weight
+    1474: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1477: ifne          1494
+    1480: aload_0
+    1481: ldc           #186                // String remnant/spawning
+    1483: ldc           #228                // String wraith_spawns
+    1485: ldc           #194                // String spawn_weight
+    1487: iconst_5
+    1488: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1491: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1494: aload_0
+    1495: ldc           #186                // String remnant/spawning
+    1497: ldc           #228                // String wraith_spawns
+    1499: ldc           #196                // String min_group_size
+    1501: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1504: ifne          1521
+    1507: aload_0
+    1508: ldc           #186                // String remnant/spawning
+    1510: ldc           #228                // String wraith_spawns
+    1512: ldc           #196                // String min_group_size
+    1514: iconst_1
+    1515: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1518: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1521: aload_0
+    1522: ldc           #186                // String remnant/spawning
+    1524: ldc           #228                // String wraith_spawns
+    1526: ldc           #198                // String max_group_size
+    1528: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1531: ifne          1548
+    1534: aload_0
+    1535: ldc           #186                // String remnant/spawning
+    1537: ldc           #228                // String wraith_spawns
+    1539: ldc           #198                // String max_group_size
+    1541: iconst_2
+    1542: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1545: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1548: aload_0
+    1549: ldc           #186                // String remnant/spawning
+    1551: ldc           #228                // String wraith_spawns
+    1553: ldc           #200                // String dimension_whitelist
+    1555: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1558: ifne          1573
+    1561: aload_0
+    1562: ldc           #186                // String remnant/spawning
+    1564: ldc           #228                // String wraith_spawns
+    1566: ldc           #200                // String dimension_whitelist
+    1568: ldc           #202                // String minecraft:overworld
+    1570: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1573: aload_0
+    1574: ldc           #186                // String remnant/spawning
+    1576: ldc           #228                // String wraith_spawns
+    1578: ldc           #204                // String dimension_blacklist
+    1580: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1583: ifne          1598
+    1586: aload_0
+    1587: ldc           #186                // String remnant/spawning
+    1589: ldc           #228                // String wraith_spawns
+    1591: ldc           #204                // String dimension_blacklist
+    1593: ldc           #206                // String minecraft:the_nether,minecraft:the_end
+    1595: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1598: aload_0
+    1599: ldc           #186                // String remnant/spawning
+    1601: ldc           #228                // String wraith_spawns
+    1603: ldc           #208                // String biome_blacklist
+    1605: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1608: ifne          1623
+    1611: aload_0
+    1612: ldc           #186                // String remnant/spawning
+    1614: ldc           #228                // String wraith_spawns
+    1616: ldc           #208                // String biome_blacklist
+    1618: ldc           #210                // String
+    1620: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1623: aload_0
+    1624: ldc           #212                // String remnant/balance
+    1626: ldc           #230                // String wraith_stats
+    1628: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1631: ifeq          1643
+    1634: aload_0
+    1635: ldc           #212                // String remnant/balance
+    1637: ldc           #230                // String wraith_stats
+    1639: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1642: pop
+    1643: aload_0
+    1644: ldc           #212                // String remnant/balance
+    1646: ldc           #230                // String wraith_stats
+    1648: ldc           #232                // String wraith_health
+    1650: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1653: ifne          1672
+    1656: aload_0
+    1657: ldc           #212                // String remnant/balance
+    1659: ldc           #230                // String wraith_stats
+    1661: ldc           #232                // String wraith_health
+    1663: ldc2_w        #234                // double 20.0d
+    1666: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1669: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1672: aload_0
+    1673: ldc           #212                // String remnant/balance
+    1675: ldc           #230                // String wraith_stats
+    1677: ldc           #236                // String wraith_attack_damage
+    1679: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1682: ifne          1701
+    1685: aload_0
+    1686: ldc           #212                // String remnant/balance
+    1688: ldc           #230                // String wraith_stats
+    1690: ldc           #236                // String wraith_attack_damage
+    1692: ldc2_w        #238                // double 3.0d
+    1695: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1698: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1701: aload_0
+    1702: ldc           #212                // String remnant/balance
+    1704: ldc           #230                // String wraith_stats
+    1706: ldc           #240                // String wraith_armor
+    1708: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1711: ifne          1728
+    1714: aload_0
+    1715: ldc           #212                // String remnant/balance
+    1717: ldc           #230                // String wraith_stats
+    1719: ldc           #240                // String wraith_armor
+    1721: dconst_0
+    1722: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1725: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1728: aload_0
+    1729: ldc           #212                // String remnant/balance
+    1731: ldc           #230                // String wraith_stats
+    1733: ldc           #242                // String wraith_movement_speed
+    1735: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1738: ifne          1757
+    1741: aload_0
+    1742: ldc           #212                // String remnant/balance
+    1744: ldc           #230                // String wraith_stats
+    1746: ldc           #242                // String wraith_movement_speed
+    1748: ldc2_w        #147                // double 0.25d
+    1751: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1754: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1757: aload_0
+    1758: ldc           #212                // String remnant/balance
+    1760: ldc           #230                // String wraith_stats
+    1762: ldc           #244                // String wraith_follow_range
+    1764: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1767: ifne          1786
+    1770: aload_0
+    1771: ldc           #212                // String remnant/balance
+    1773: ldc           #230                // String wraith_stats
+    1775: ldc           #244                // String wraith_follow_range
+    1777: ldc2_w        #246                // double 16.0d
+    1780: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    1783: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1786: aload_0
+    1787: ldc           #43                 // String remnant/bosses
+    1789: ldc           #248                // String umbrakar_summon
+    1791: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1794: pop
+    1795: aload_0
+    1796: ldc           #43                 // String remnant/bosses
+    1798: ldc           #248                // String umbrakar_summon
+    1800: ldc           #103                // String portal_activation_item
+    1802: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1805: ifne          1820
+    1808: aload_0
+    1809: ldc           #43                 // String remnant/bosses
+    1811: ldc           #248                // String umbrakar_summon
+    1813: ldc           #103                // String portal_activation_item
+    1815: ldc           #250                // String minecraft:echo_shard
+    1817: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1820: aload_0
+    1821: ldc           #43                 // String remnant/bosses
+    1823: ldc           #248                // String umbrakar_summon
+    1825: ldc           #107                // String pedestal_one_activation_block
+    1827: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1830: ifne          1845
+    1833: aload_0
+    1834: ldc           #43                 // String remnant/bosses
+    1836: ldc           #248                // String umbrakar_summon
+    1838: ldc           #107                // String pedestal_one_activation_block
+    1840: ldc           #252                // String minecraft:amethyst_block
+    1842: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1845: aload_0
+    1846: ldc           #43                 // String remnant/bosses
+    1848: ldc           #248                // String umbrakar_summon
+    1850: ldc           #111                // String pedestal_two_activation_block
+    1852: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1855: ifne          1870
+    1858: aload_0
+    1859: ldc           #43                 // String remnant/bosses
+    1861: ldc           #248                // String umbrakar_summon
+    1863: ldc           #111                // String pedestal_two_activation_block
+    1865: ldc           #254                // String minecraft:crying_obsidian
+    1867: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1870: aload_0
+    1871: ldc           #43                 // String remnant/bosses
+    1873: ldc           #248                // String umbrakar_summon
+    1875: ldc           #113                // String pedestal_three_activation_block
+    1877: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1880: ifne          1896
+    1883: aload_0
+    1884: ldc           #43                 // String remnant/bosses
+    1886: ldc           #248                // String umbrakar_summon
+    1888: ldc           #113                // String pedestal_three_activation_block
+    1890: ldc_w         #256                // String minecraft:end_stone
+    1893: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1896: aload_0
+    1897: ldc           #43                 // String remnant/bosses
+    1899: ldc           #248                // String umbrakar_summon
+    1901: ldc           #115                // String pedestal_four_activation_block
+    1903: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1906: ifne          1922
+    1909: aload_0
+    1910: ldc           #43                 // String remnant/bosses
+    1912: ldc           #248                // String umbrakar_summon
+    1914: ldc           #115                // String pedestal_four_activation_block
+    1916: ldc_w         #258                // String minecraft:sculk
+    1919: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    1922: aload_0
+    1923: ldc           #43                 // String remnant/bosses
+    1925: ldc_w         #260                // String umbrakar
+    1928: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    1931: pop
+    1932: aload_0
+    1933: ldc           #43                 // String remnant/bosses
+    1935: ldc_w         #260                // String umbrakar
+    1938: ldc_w         #262                // String max_health
+    1941: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1944: ifne          1965
+    1947: aload_0
+    1948: ldc           #43                 // String remnant/bosses
+    1950: ldc_w         #260                // String umbrakar
+    1953: ldc_w         #262                // String max_health
+    1956: sipush        750
+    1959: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1962: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1965: aload_0
+    1966: ldc           #43                 // String remnant/bosses
+    1968: ldc_w         #260                // String umbrakar
+    1971: ldc_w         #264                // String attack_damage
+    1974: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    1977: ifne          1997
+    1980: aload_0
+    1981: ldc           #43                 // String remnant/bosses
+    1983: ldc_w         #260                // String umbrakar
+    1986: ldc_w         #264                // String attack_damage
+    1989: bipush        14
+    1991: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1994: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    1997: aload_0
+    1998: ldc           #43                 // String remnant/bosses
+    2000: ldc_w         #260                // String umbrakar
+    2003: ldc_w         #266                // String movement_speed
+    2006: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2009: ifne          2030
+    2012: aload_0
+    2013: ldc           #43                 // String remnant/bosses
+    2015: ldc_w         #260                // String umbrakar
+    2018: ldc_w         #266                // String movement_speed
+    2021: ldc2_w        #268                // double 0.32d
+    2024: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    2027: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2030: aload_0
+    2031: ldc           #43                 // String remnant/bosses
+    2033: ldc_w         #260                // String umbrakar
+    2036: ldc_w         #270                // String armor
+    2039: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2042: ifne          2062
+    2045: aload_0
+    2046: ldc           #43                 // String remnant/bosses
+    2048: ldc_w         #260                // String umbrakar
+    2051: ldc_w         #270                // String armor
+    2054: bipush        10
+    2056: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2059: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2062: aload_0
+    2063: ldc           #43                 // String remnant/bosses
+    2065: ldc_w         #260                // String umbrakar
+    2068: ldc           #180                // String follow_range
+    2070: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2073: ifne          2092
+    2076: aload_0
+    2077: ldc           #43                 // String remnant/bosses
+    2079: ldc_w         #260                // String umbrakar
+    2082: ldc           #180                // String follow_range
+    2084: bipush        48
+    2086: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2089: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2092: aload_0
+    2093: ldc           #43                 // String remnant/bosses
+    2095: ldc_w         #260                // String umbrakar
+    2098: ldc_w         #272                // String orb_damage
+    2101: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2104: ifne          2124
+    2107: aload_0
+    2108: ldc           #43                 // String remnant/bosses
+    2110: ldc_w         #260                // String umbrakar
+    2113: ldc_w         #272                // String orb_damage
+    2116: bipush        8
+    2118: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2121: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2124: aload_0
+    2125: ldc           #43                 // String remnant/bosses
+    2127: ldc_w         #260                // String umbrakar
+    2130: ldc           #154                // String hp_threshold_phase_2
+    2132: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2135: ifne          2154
+    2138: aload_0
+    2139: ldc           #43                 // String remnant/bosses
+    2141: ldc_w         #260                // String umbrakar
+    2144: ldc           #154                // String hp_threshold_phase_2
+    2146: bipush        40
+    2148: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2151: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2154: aload_0
+    2155: ldc           #43                 // String remnant/bosses
+    2157: ldc_w         #260                // String umbrakar
+    2160: ldc           #166                // String attack_damage_phase_2
+    2162: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2165: ifne          2184
+    2168: aload_0
+    2169: ldc           #43                 // String remnant/bosses
+    2171: ldc_w         #260                // String umbrakar
+    2174: ldc           #166                // String attack_damage_phase_2
+    2176: bipush        18
+    2178: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2181: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2184: aload_0
+    2185: ldc           #43                 // String remnant/bosses
+    2187: ldc_w         #260                // String umbrakar
+    2190: ldc           #168                // String movement_speed_phase_2
+    2192: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2195: ifne          2215
+    2198: aload_0
+    2199: ldc           #43                 // String remnant/bosses
+    2201: ldc_w         #260                // String umbrakar
+    2204: ldc           #168                // String movement_speed_phase_2
+    2206: ldc2_w        #274                // double 0.38d
+    2209: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    2212: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2215: aload_0
+    2216: ldc           #43                 // String remnant/bosses
+    2218: ldc_w         #260                // String umbrakar
+    2221: ldc_w         #276                // String bite_damage
+    2224: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2227: ifne          2247
+    2230: aload_0
+    2231: ldc           #43                 // String remnant/bosses
+    2233: ldc_w         #260                // String umbrakar
+    2236: ldc_w         #276                // String bite_damage
+    2239: bipush        16
+    2241: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2244: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2247: aload_0
+    2248: ldc           #43                 // String remnant/bosses
+    2250: ldc_w         #260                // String umbrakar
+    2253: ldc_w         #278                // String slam_damage
+    2256: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2259: ifne          2279
+    2262: aload_0
+    2263: ldc           #43                 // String remnant/bosses
+    2265: ldc_w         #260                // String umbrakar
+    2268: ldc_w         #278                // String slam_damage
+    2271: bipush        18
+    2273: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2276: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2279: aload_0
+    2280: ldc           #43                 // String remnant/bosses
+    2282: ldc_w         #260                // String umbrakar
+    2285: ldc_w         #280                // String tail_damage
+    2288: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2291: ifne          2311
+    2294: aload_0
+    2295: ldc           #43                 // String remnant/bosses
+    2297: ldc_w         #260                // String umbrakar
+    2300: ldc_w         #280                // String tail_damage
+    2303: bipush        15
+    2305: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2308: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2311: aload_0
+    2312: ldc           #43                 // String remnant/bosses
+    2314: ldc_w         #260                // String umbrakar
+    2317: ldc_w         #282                // String roar_damage
+    2320: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2323: ifne          2343
+    2326: aload_0
+    2327: ldc           #43                 // String remnant/bosses
+    2329: ldc_w         #260                // String umbrakar
+    2332: ldc_w         #282                // String roar_damage
+    2335: bipush        8
+    2337: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2340: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2343: aload_0
+    2344: ldc           #43                 // String remnant/bosses
+    2346: ldc_w         #260                // String umbrakar
+    2349: ldc_w         #284                // String roar_range
+    2352: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2355: ifne          2375
+    2358: aload_0
+    2359: ldc           #43                 // String remnant/bosses
+    2361: ldc_w         #260                // String umbrakar
+    2364: ldc_w         #284                // String roar_range
+    2367: bipush        16
+    2369: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2372: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2375: aload_0
+    2376: ldc           #43                 // String remnant/bosses
+    2378: ldc_w         #286                // String kotsukage_summon
+    2381: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    2384: pop
+    2385: aload_0
+    2386: ldc           #43                 // String remnant/bosses
+    2388: ldc_w         #286                // String kotsukage_summon
+    2391: ldc           #103                // String portal_activation_item
+    2393: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2396: ifne          2413
+    2399: aload_0
+    2400: ldc           #43                 // String remnant/bosses
+    2402: ldc_w         #286                // String kotsukage_summon
+    2405: ldc           #103                // String portal_activation_item
+    2407: ldc_w         #288                // String minecraft:wither_skeleton_skull
+    2410: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    2413: aload_0
+    2414: ldc           #43                 // String remnant/bosses
+    2416: ldc_w         #286                // String kotsukage_summon
+    2419: ldc           #107                // String pedestal_one_activation_block
+    2421: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2424: ifne          2441
+    2427: aload_0
+    2428: ldc           #43                 // String remnant/bosses
+    2430: ldc_w         #286                // String kotsukage_summon
+    2433: ldc           #107                // String pedestal_one_activation_block
+    2435: ldc_w         #290                // String minecraft:bone_block
+    2438: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    2441: aload_0
+    2442: ldc           #43                 // String remnant/bosses
+    2444: ldc_w         #286                // String kotsukage_summon
+    2447: ldc           #111                // String pedestal_two_activation_block
+    2449: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2452: ifne          2469
+    2455: aload_0
+    2456: ldc           #43                 // String remnant/bosses
+    2458: ldc_w         #286                // String kotsukage_summon
+    2461: ldc           #111                // String pedestal_two_activation_block
+    2463: ldc_w         #292                // String minecraft:soul_sand
+    2466: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    2469: aload_0
+    2470: ldc           #43                 // String remnant/bosses
+    2472: ldc_w         #286                // String kotsukage_summon
+    2475: ldc           #113                // String pedestal_three_activation_block
+    2477: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2480: ifne          2497
+    2483: aload_0
+    2484: ldc           #43                 // String remnant/bosses
+    2486: ldc_w         #286                // String kotsukage_summon
+    2489: ldc           #113                // String pedestal_three_activation_block
+    2491: ldc_w         #294                // String minecraft:soul_soil
+    2494: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    2497: aload_0
+    2498: ldc           #43                 // String remnant/bosses
+    2500: ldc_w         #286                // String kotsukage_summon
+    2503: ldc           #115                // String pedestal_four_activation_block
+    2505: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2508: ifne          2525
+    2511: aload_0
+    2512: ldc           #43                 // String remnant/bosses
+    2514: ldc_w         #286                // String kotsukage_summon
+    2517: ldc           #115                // String pedestal_four_activation_block
+    2519: ldc_w         #296                // String minecraft:nether_wart_block
+    2522: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    2525: aload_0
+    2526: ldc           #43                 // String remnant/bosses
+    2528: ldc_w         #298                // String kotsukage
+    2531: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    2534: pop
+    2535: aload_0
+    2536: ldc           #43                 // String remnant/bosses
+    2538: ldc_w         #298                // String kotsukage
+    2541: ldc_w         #262                // String max_health
+    2544: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2547: ifne          2568
+    2550: aload_0
+    2551: ldc           #43                 // String remnant/bosses
+    2553: ldc_w         #298                // String kotsukage
+    2556: ldc_w         #262                // String max_health
+    2559: sipush        700
+    2562: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2565: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2568: aload_0
+    2569: ldc           #43                 // String remnant/bosses
+    2571: ldc_w         #298                // String kotsukage
+    2574: ldc_w         #264                // String attack_damage
+    2577: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2580: ifne          2600
+    2583: aload_0
+    2584: ldc           #43                 // String remnant/bosses
+    2586: ldc_w         #298                // String kotsukage
+    2589: ldc_w         #264                // String attack_damage
+    2592: bipush        12
+    2594: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2597: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2600: aload_0
+    2601: ldc           #43                 // String remnant/bosses
+    2603: ldc_w         #298                // String kotsukage
+    2606: ldc_w         #266                // String movement_speed
+    2609: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2612: ifne          2633
+    2615: aload_0
+    2616: ldc           #43                 // String remnant/bosses
+    2618: ldc_w         #298                // String kotsukage
+    2621: ldc_w         #266                // String movement_speed
+    2624: ldc2_w        #300                // double 0.28d
+    2627: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    2630: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2633: aload_0
+    2634: ldc           #43                 // String remnant/bosses
+    2636: ldc_w         #298                // String kotsukage
+    2639: ldc_w         #270                // String armor
+    2642: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2645: ifne          2665
+    2648: aload_0
+    2649: ldc           #43                 // String remnant/bosses
+    2651: ldc_w         #298                // String kotsukage
+    2654: ldc_w         #270                // String armor
+    2657: bipush        8
+    2659: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2662: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2665: aload_0
+    2666: ldc           #43                 // String remnant/bosses
+    2668: ldc_w         #298                // String kotsukage
+    2671: ldc           #180                // String follow_range
+    2673: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2676: ifne          2695
+    2679: aload_0
+    2680: ldc           #43                 // String remnant/bosses
+    2682: ldc_w         #298                // String kotsukage
+    2685: ldc           #180                // String follow_range
+    2687: bipush        40
+    2689: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2692: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2695: aload_0
+    2696: ldc           #43                 // String remnant/bosses
+    2698: ldc_w         #298                // String kotsukage
+    2701: ldc           #182                // String knockback_resistance
+    2703: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2706: ifne          2726
+    2709: aload_0
+    2710: ldc           #43                 // String remnant/bosses
+    2712: ldc_w         #298                // String kotsukage
+    2715: ldc           #182                // String knockback_resistance
+    2717: ldc2_w        #302                // double 0.75d
+    2720: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    2723: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2726: aload_0
+    2727: ldc           #43                 // String remnant/bosses
+    2729: ldc_w         #298                // String kotsukage
+    2732: ldc           #154                // String hp_threshold_phase_2
+    2734: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2737: ifne          2756
+    2740: aload_0
+    2741: ldc           #43                 // String remnant/bosses
+    2743: ldc_w         #298                // String kotsukage
+    2746: ldc           #154                // String hp_threshold_phase_2
+    2748: bipush        45
+    2750: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2753: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2756: aload_0
+    2757: ldc           #43                 // String remnant/bosses
+    2759: ldc_w         #298                // String kotsukage
+    2762: ldc           #166                // String attack_damage_phase_2
+    2764: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2767: ifne          2786
+    2770: aload_0
+    2771: ldc           #43                 // String remnant/bosses
+    2773: ldc_w         #298                // String kotsukage
+    2776: ldc           #166                // String attack_damage_phase_2
+    2778: bipush        16
+    2780: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2783: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2786: aload_0
+    2787: ldc           #43                 // String remnant/bosses
+    2789: ldc_w         #298                // String kotsukage
+    2792: ldc           #168                // String movement_speed_phase_2
+    2794: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2797: ifne          2817
+    2800: aload_0
+    2801: ldc           #43                 // String remnant/bosses
+    2803: ldc_w         #298                // String kotsukage
+    2806: ldc           #168                // String movement_speed_phase_2
+    2808: ldc2_w        #304                // double 0.34d
+    2811: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    2814: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2817: aload_0
+    2818: ldc           #43                 // String remnant/bosses
+    2820: ldc_w         #298                // String kotsukage
+    2823: ldc_w         #306                // String swipe_damage
+    2826: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2829: ifne          2849
+    2832: aload_0
+    2833: ldc           #43                 // String remnant/bosses
+    2835: ldc_w         #298                // String kotsukage
+    2838: ldc_w         #306                // String swipe_damage
+    2841: bipush        14
+    2843: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2846: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2849: aload_0
+    2850: ldc           #43                 // String remnant/bosses
+    2852: ldc_w         #298                // String kotsukage
+    2855: ldc_w         #308                // String stomp_damage
+    2858: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2861: ifne          2881
+    2864: aload_0
+    2865: ldc           #43                 // String remnant/bosses
+    2867: ldc_w         #298                // String kotsukage
+    2870: ldc_w         #308                // String stomp_damage
+    2873: bipush        16
+    2875: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2878: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2881: aload_0
+    2882: ldc           #43                 // String remnant/bosses
+    2884: ldc_w         #298                // String kotsukage
+    2887: ldc_w         #310                // String stomp_radius
+    2890: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2893: ifne          2912
+    2896: aload_0
+    2897: ldc           #43                 // String remnant/bosses
+    2899: ldc_w         #298                // String kotsukage
+    2902: ldc_w         #310                // String stomp_radius
+    2905: iconst_5
+    2906: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2909: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2912: aload_0
+    2913: ldc           #43                 // String remnant/bosses
+    2915: ldc_w         #298                // String kotsukage
+    2918: ldc_w         #312                // String poison_damage
+    2921: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2924: ifne          2944
+    2927: aload_0
+    2928: ldc           #43                 // String remnant/bosses
+    2930: ldc_w         #298                // String kotsukage
+    2933: ldc_w         #312                // String poison_damage
+    2936: bipush        10
+    2938: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2941: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2944: aload_0
+    2945: ldc           #43                 // String remnant/bosses
+    2947: ldc_w         #298                // String kotsukage
+    2950: ldc_w         #314                // String poison_range
+    2953: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2956: ifne          2976
+    2959: aload_0
+    2960: ldc           #43                 // String remnant/bosses
+    2962: ldc_w         #298                // String kotsukage
+    2965: ldc_w         #314                // String poison_range
+    2968: bipush        8
+    2970: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    2973: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    2976: aload_0
+    2977: ldc           #43                 // String remnant/bosses
+    2979: ldc_w         #298                // String kotsukage
+    2982: ldc_w         #316                // String poison_duration
+    2985: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    2988: ifne          3008
+    2991: aload_0
+    2992: ldc           #43                 // String remnant/bosses
+    2994: ldc_w         #298                // String kotsukage
+    2997: ldc_w         #316                // String poison_duration
+    3000: bipush        120
+    3002: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3005: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3008: aload_0
+    3009: ldc           #43                 // String remnant/bosses
+    3011: ldc_w         #298                // String kotsukage
+    3014: ldc_w         #282                // String roar_damage
+    3017: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3020: ifne          3040
+    3023: aload_0
+    3024: ldc           #43                 // String remnant/bosses
+    3026: ldc_w         #298                // String kotsukage
+    3029: ldc_w         #282                // String roar_damage
+    3032: bipush        8
+    3034: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3037: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3040: aload_0
+    3041: ldc           #43                 // String remnant/bosses
+    3043: ldc_w         #298                // String kotsukage
+    3046: ldc_w         #284                // String roar_range
+    3049: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3052: ifne          3072
+    3055: aload_0
+    3056: ldc           #43                 // String remnant/bosses
+    3058: ldc_w         #298                // String kotsukage
+    3061: ldc_w         #284                // String roar_range
+    3064: bipush        14
+    3066: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3069: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3072: aload_0
+    3073: ldc           #43                 // String remnant/bosses
+    3075: ldc_w         #298                // String kotsukage
+    3078: ldc_w         #318                // String trap_damage
+    3081: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3084: ifne          3104
+    3087: aload_0
+    3088: ldc           #43                 // String remnant/bosses
+    3090: ldc_w         #298                // String kotsukage
+    3093: ldc_w         #318                // String trap_damage
+    3096: bipush        10
+    3098: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3101: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3104: aload_0
+    3105: ldc           #43                 // String remnant/bosses
+    3107: ldc_w         #298                // String kotsukage
+    3110: ldc_w         #320                // String trap_count
+    3113: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3116: ifne          3135
+    3119: aload_0
+    3120: ldc           #43                 // String remnant/bosses
+    3122: ldc_w         #298                // String kotsukage
+    3125: ldc_w         #320                // String trap_count
+    3128: iconst_2
+    3129: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3132: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3135: aload_0
+    3136: ldc           #43                 // String remnant/bosses
+    3138: ldc_w         #298                // String kotsukage
+    3141: ldc_w         #322                // String trap_slow_duration
+    3144: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3147: ifne          3167
+    3150: aload_0
+    3151: ldc           #43                 // String remnant/bosses
+    3153: ldc_w         #298                // String kotsukage
+    3156: ldc_w         #322                // String trap_slow_duration
+    3159: bipush        80
+    3161: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3164: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3167: aload_0
+    3168: ldc           #43                 // String remnant/bosses
+    3170: ldc_w         #298                // String kotsukage
+    3173: ldc_w         #324                // String minion_count
+    3176: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3179: ifne          3198
+    3182: aload_0
+    3183: ldc           #43                 // String remnant/bosses
+    3185: ldc_w         #298                // String kotsukage
+    3188: ldc_w         #324                // String minion_count
+    3191: iconst_2
+    3192: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3195: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3198: aload_0
+    3199: ldc           #43                 // String remnant/bosses
+    3201: ldc_w         #298                // String kotsukage
+    3204: ldc           #172                // String boss_music_enabled
+    3206: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3209: ifne          3227
+    3212: aload_0
+    3213: ldc           #43                 // String remnant/bosses
+    3215: ldc_w         #298                // String kotsukage
+    3218: ldc           #172                // String boss_music_enabled
+    3220: iconst_1
+    3221: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3224: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3227: aload_0
+    3228: ldc           #43                 // String remnant/bosses
+    3230: ldc_w         #298                // String kotsukage
+    3233: ldc           #174                // String boss_music_radius
+    3235: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3238: ifne          3257
+    3241: aload_0
+    3242: ldc           #43                 // String remnant/bosses
+    3244: ldc_w         #298                // String kotsukage
+    3247: ldc           #174                // String boss_music_radius
+    3249: bipush        64
+    3251: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3254: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3257: aload_0
+    3258: ldc           #212                // String remnant/balance
+    3260: ldc_w         #326                // String skeleton_minion_stats
+    3263: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    3266: pop
+    3267: aload_0
+    3268: ldc           #212                // String remnant/balance
+    3270: ldc_w         #326                // String skeleton_minion_stats
+    3273: ldc_w         #328                // String minion_health
+    3276: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3279: ifne          3299
+    3282: aload_0
+    3283: ldc           #212                // String remnant/balance
+    3285: ldc_w         #326                // String skeleton_minion_stats
+    3288: ldc_w         #328                // String minion_health
+    3291: bipush        24
+    3293: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3296: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3299: aload_0
+    3300: ldc           #212                // String remnant/balance
+    3302: ldc_w         #326                // String skeleton_minion_stats
+    3305: ldc_w         #330                // String minion_attack_damage
+    3308: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3311: ifne          3330
+    3314: aload_0
+    3315: ldc           #212                // String remnant/balance
+    3317: ldc_w         #326                // String skeleton_minion_stats
+    3320: ldc_w         #330                // String minion_attack_damage
+    3323: iconst_5
+    3324: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3327: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3330: aload_0
+    3331: ldc           #212                // String remnant/balance
+    3333: ldc_w         #326                // String skeleton_minion_stats
+    3336: ldc_w         #332                // String minion_movement_speed
+    3339: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3342: ifne          3363
+    3345: aload_0
+    3346: ldc           #212                // String remnant/balance
+    3348: ldc_w         #326                // String skeleton_minion_stats
+    3351: ldc_w         #332                // String minion_movement_speed
+    3354: ldc2_w        #268                // double 0.32d
+    3357: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    3360: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3363: aload_0
+    3364: ldc           #212                // String remnant/balance
+    3366: ldc_w         #326                // String skeleton_minion_stats
+    3369: ldc_w         #334                // String minion_armor
+    3372: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3375: ifne          3394
+    3378: aload_0
+    3379: ldc           #212                // String remnant/balance
+    3381: ldc_w         #326                // String skeleton_minion_stats
+    3384: ldc_w         #334                // String minion_armor
+    3387: iconst_2
+    3388: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3391: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3394: aload_0
+    3395: ldc           #212                // String remnant/balance
+    3397: ldc_w         #326                // String skeleton_minion_stats
+    3400: ldc_w         #316                // String poison_duration
+    3403: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3406: ifne          3426
+    3409: aload_0
+    3410: ldc           #212                // String remnant/balance
+    3412: ldc_w         #326                // String skeleton_minion_stats
+    3415: ldc_w         #316                // String poison_duration
+    3418: bipush        60
+    3420: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3423: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3426: aload_0
+    3427: ldc           #212                // String remnant/balance
+    3429: ldc_w         #326                // String skeleton_minion_stats
+    3432: ldc_w         #336                // String leap_cooldown
+    3435: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3438: ifne          3458
+    3441: aload_0
+    3442: ldc           #212                // String remnant/balance
+    3444: ldc_w         #326                // String skeleton_minion_stats
+    3447: ldc_w         #336                // String leap_cooldown
+    3450: bipush        80
+    3452: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3455: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3458: aload_0
+    3459: ldc           #212                // String remnant/balance
+    3461: ldc_w         #326                // String skeleton_minion_stats
+    3464: ldc_w         #338                // String trap_chance
+    3467: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3470: ifne          3490
+    3473: aload_0
+    3474: ldc           #212                // String remnant/balance
+    3476: ldc_w         #326                // String skeleton_minion_stats
+    3479: ldc_w         #338                // String trap_chance
+    3482: bipush        18
+    3484: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3487: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3490: aload_0
+    3491: ldc           #212                // String remnant/balance
+    3493: ldc_w         #326                // String skeleton_minion_stats
+    3496: ldc_w         #340                // String trap_cooldown
+    3499: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3502: ifne          3523
+    3505: aload_0
+    3506: ldc           #212                // String remnant/balance
+    3508: ldc_w         #326                // String skeleton_minion_stats
+    3511: ldc_w         #340                // String trap_cooldown
+    3514: sipush        160
+    3517: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3520: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3523: aload_0
+    3524: ldc           #212                // String remnant/balance
+    3526: ldc_w         #342                // String skeleton_melee_stats
+    3529: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    3532: pop
+    3533: aload_0
+    3534: ldc           #212                // String remnant/balance
+    3536: ldc_w         #342                // String skeleton_melee_stats
+    3539: ldc_w         #262                // String max_health
+    3542: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3545: ifne          3565
+    3548: aload_0
+    3549: ldc           #212                // String remnant/balance
+    3551: ldc_w         #342                // String skeleton_melee_stats
+    3554: ldc_w         #262                // String max_health
+    3557: bipush        28
+    3559: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3562: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3565: aload_0
+    3566: ldc           #212                // String remnant/balance
+    3568: ldc_w         #342                // String skeleton_melee_stats
+    3571: ldc_w         #264                // String attack_damage
+    3574: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3577: ifne          3597
+    3580: aload_0
+    3581: ldc           #212                // String remnant/balance
+    3583: ldc_w         #342                // String skeleton_melee_stats
+    3586: ldc_w         #264                // String attack_damage
+    3589: bipush        6
+    3591: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3594: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3597: aload_0
+    3598: ldc           #212                // String remnant/balance
+    3600: ldc_w         #342                // String skeleton_melee_stats
+    3603: ldc_w         #344                // String heavy_damage
+    3606: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3609: ifne          3629
+    3612: aload_0
+    3613: ldc           #212                // String remnant/balance
+    3615: ldc_w         #342                // String skeleton_melee_stats
+    3618: ldc_w         #344                // String heavy_damage
+    3621: bipush        8
+    3623: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3626: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3629: aload_0
+    3630: ldc           #212                // String remnant/balance
+    3632: ldc_w         #342                // String skeleton_melee_stats
+    3635: ldc_w         #266                // String movement_speed
+    3638: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3641: ifne          3662
+    3644: aload_0
+    3645: ldc           #212                // String remnant/balance
+    3647: ldc_w         #342                // String skeleton_melee_stats
+    3650: ldc_w         #266                // String movement_speed
+    3653: ldc2_w        #300                // double 0.28d
+    3656: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    3659: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3662: aload_0
+    3663: ldc           #212                // String remnant/balance
+    3665: ldc_w         #342                // String skeleton_melee_stats
+    3668: ldc_w         #270                // String armor
+    3671: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3674: ifne          3693
+    3677: aload_0
+    3678: ldc           #212                // String remnant/balance
+    3680: ldc_w         #342                // String skeleton_melee_stats
+    3683: ldc_w         #270                // String armor
+    3686: iconst_4
+    3687: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3690: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3693: aload_0
+    3694: ldc           #212                // String remnant/balance
+    3696: ldc_w         #342                // String skeleton_melee_stats
+    3699: ldc           #180                // String follow_range
+    3701: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3704: ifne          3723
+    3707: aload_0
+    3708: ldc           #212                // String remnant/balance
+    3710: ldc_w         #342                // String skeleton_melee_stats
+    3713: ldc           #180                // String follow_range
+    3715: bipush        24
+    3717: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3720: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3723: aload_0
+    3724: ldc           #212                // String remnant/balance
+    3726: ldc_w         #346                // String skeleton_archer_stats
+    3729: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+    3732: pop
+    3733: aload_0
+    3734: ldc           #212                // String remnant/balance
+    3736: ldc_w         #346                // String skeleton_archer_stats
+    3739: ldc_w         #262                // String max_health
+    3742: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3745: ifne          3765
+    3748: aload_0
+    3749: ldc           #212                // String remnant/balance
+    3751: ldc_w         #346                // String skeleton_archer_stats
+    3754: ldc_w         #262                // String max_health
+    3757: bipush        22
+    3759: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3762: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3765: aload_0
+    3766: ldc           #212                // String remnant/balance
+    3768: ldc_w         #346                // String skeleton_archer_stats
+    3771: ldc_w         #264                // String attack_damage
+    3774: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3777: ifne          3796
+    3780: aload_0
+    3781: ldc           #212                // String remnant/balance
+    3783: ldc_w         #346                // String skeleton_archer_stats
+    3786: ldc_w         #264                // String attack_damage
+    3789: iconst_4
+    3790: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3793: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3796: aload_0
+    3797: ldc           #212                // String remnant/balance
+    3799: ldc_w         #346                // String skeleton_archer_stats
+    3802: ldc_w         #348                // String arrow_damage
+    3805: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3808: ifne          3827
+    3811: aload_0
+    3812: ldc           #212                // String remnant/balance
+    3814: ldc_w         #346                // String skeleton_archer_stats
+    3817: ldc_w         #348                // String arrow_damage
+    3820: iconst_4
+    3821: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3824: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3827: aload_0
+    3828: ldc           #212                // String remnant/balance
+    3830: ldc_w         #346                // String skeleton_archer_stats
+    3833: ldc_w         #350                // String charged_damage
+    3836: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3839: ifne          3859
+    3842: aload_0
+    3843: ldc           #212                // String remnant/balance
+    3845: ldc_w         #346                // String skeleton_archer_stats
+    3848: ldc_w         #350                // String charged_damage
+    3851: bipush        6
+    3853: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3856: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3859: aload_0
+    3860: ldc           #212                // String remnant/balance
+    3862: ldc_w         #346                // String skeleton_archer_stats
+    3865: ldc_w         #266                // String movement_speed
+    3868: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3871: ifne          3892
+    3874: aload_0
+    3875: ldc           #212                // String remnant/balance
+    3877: ldc_w         #346                // String skeleton_archer_stats
+    3880: ldc_w         #266                // String movement_speed
+    3883: ldc2_w        #352                // double 0.26d
+    3886: invokestatic  #149                // Method java/lang/Double.valueOf:(D)Ljava/lang/Double;
+    3889: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3892: aload_0
+    3893: ldc           #212                // String remnant/balance
+    3895: ldc_w         #346                // String skeleton_archer_stats
+    3898: ldc_w         #270                // String armor
+    3901: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3904: ifne          3923
+    3907: aload_0
+    3908: ldc           #212                // String remnant/balance
+    3910: ldc_w         #346                // String skeleton_archer_stats
+    3913: ldc_w         #270                // String armor
+    3916: iconst_2
+    3917: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3920: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3923: aload_0
+    3924: ldc           #212                // String remnant/balance
+    3926: ldc_w         #346                // String skeleton_archer_stats
+    3929: ldc           #180                // String follow_range
+    3931: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+    3934: ifne          3953
+    3937: aload_0
+    3938: ldc           #212                // String remnant/balance
+    3940: ldc_w         #346                // String skeleton_archer_stats
+    3943: ldc           #180                // String follow_range
+    3945: bipush        28
+    3947: invokestatic  #75                 // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    3950: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+    3953: return
+
+  private static void lambda$initConfigs$3(com.nightbeam.remnants.config.JaumlConfigBootstrap$JaumlApi, java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: ldc           #43                 // String remnant/bosses
+       3: ldc           #55                 // String hollow_sovereign_summon
+       5: aload_1
+       6: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+       9: ifne          22
+      12: aload_0
+      13: ldc           #43                 // String remnant/bosses
+      15: ldc           #55                 // String hollow_sovereign_summon
+      17: aload_1
+      18: aload_2
+      19: invokevirtual #95                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setStringValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+      22: return
+
+  private static void lambda$initConfigs$2(com.nightbeam.remnants.config.JaumlConfigBootstrap$JaumlApi, java.lang.String, java.lang.Double);
+    Code:
+       0: aload_0
+       1: ldc           #43                 // String remnant/bosses
+       3: ldc           #45                 // String hollow_sovereign
+       5: aload_1
+       6: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+       9: ifne          22
+      12: aload_0
+      13: ldc           #43                 // String remnant/bosses
+      15: ldc           #45                 // String hollow_sovereign
+      17: aload_1
+      18: aload_2
+      19: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+      22: return
+
+  private static void lambda$initConfigs$1(com.nightbeam.remnants.config.JaumlConfigBootstrap$JaumlApi, java.lang.String, java.util.Map);
+    Code:
+       0: aload_0
+       1: ldc_w         #354                // String remnant/monsters
+       4: aload_1
+       5: invokevirtual #47                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.createConfigFile:(Ljava/lang/String;Ljava/lang/String;)Z
+       8: pop
+       9: aload_2
+      10: aload_0
+      11: aload_1
+      12: invokedynamic #356,  0            // InvokeDynamic #3:accept:(Lcom/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi;Ljava/lang/String;)Ljava/util/function/BiConsumer;
+      17: invokeinterface #37,  2           // InterfaceMethod java/util/Map.forEach:(Ljava/util/function/BiConsumer;)V
+      22: return
+
+  private static void lambda$initConfigs$0(com.nightbeam.remnants.config.JaumlConfigBootstrap$JaumlApi, java.lang.String, java.lang.String, java.lang.Double);
+    Code:
+       0: aload_0
+       1: ldc_w         #354                // String remnant/monsters
+       4: aload_1
+       5: aload_2
+       6: invokevirtual #71                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.arrayKeyExists:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+       9: ifne          22
+      12: aload_0
+      13: ldc_w         #354                // String remnant/monsters
+      16: aload_1
+      17: aload_2
+      18: aload_3
+      19: invokevirtual #81                 // Method com/nightbeam/remnants/config/JaumlConfigBootstrap$JaumlApi.setNumberValue:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Number;)V
+      22: return
+
+  static {};
+    Code:
+       0: getstatic     #359                // Field com/nightbeam/remnants/Constants.LOG:Lorg/slf4j/Logger;
+       3: putstatic     #13                 // Field LOGGER:Lorg/slf4j/Logger;
+       6: return
+}

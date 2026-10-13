@@ -1,0 +1,926 @@
+{
+  "method": "Streaming one gzip NBT root, without requiring EOF/trailer after the parsed compound; no JAR edits",
+  "recovered": [
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/araucaria/araucaria_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/araucaria/araucaria_tree_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/araucaria/araucaria_tree_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen-shrub/aspen_shrub_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen-shrub/aspen_shrub_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen-shrub/aspen_shrub_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_canopy5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_trunk3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_trunk4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/aspen/aspen_trunk5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_boreal_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_boreal_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_tree_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_tree_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_tree_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_tree_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_yellow_boreal_canopy.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/birch/birch_yellow_boreal_trunk.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/bluff/bluff_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/bluff/bluff_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/bluff/bluff_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy6.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy7.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_canopy8.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/conifer/conifer_trunk8.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/ebony/ebony_bush_trunk.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/ebony/ebony_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/ebony/ebony_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/ebony/ebony_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/ebony/ebony_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_canopy_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_canopy_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_canopy_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_canopy_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_trunk_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_trunk_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_trunk_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/enchanted/enchanted_trunk_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/firecracker-shrub/firecracker_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/firecracker-shrub/firecracker_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/firecracker-shrub/firecracker_trunk.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/generic_shrub_trunk.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/generic_trunk.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/holly/holly_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/holly/holly_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/holly/holly_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/holly/holly_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_canopy_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_canopy_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_canopy_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_canopy_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_trunk_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_trunk_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_trunk_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/jacaranda/jacaranda_trunk_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/mahogany_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/mahogany_tree_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/mahogany_tree_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/mahogany_tree_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/mahogany_tree_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/mahogany_tree_trunk4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/mahogany/tropical_shrub_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_canopy5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_trunk3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/maple_trunk4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/red_maple_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/red_maple_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/red_maple_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/red_maple_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/silver_maple_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/maple/silver_maple_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/meadow/meadow_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/meadow/meadow_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/meadow/meadow_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/meadow/meadow_shrub_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/meadow/meadow_shrub_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/brown_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/brown_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/brown_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_brown_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_brown_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_brown_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_oak_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_oak_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_oak_trunk3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_orange_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_orange_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_orange_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_red_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_red_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/large_red_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/oak_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/oak_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/orange_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/orange_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/orange_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/red_oak_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/red_oak_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/oak/red_oak_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/orchard/orchard_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/orchard/orchard_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/orchard/orchard_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/orchard/orchard_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/orchard/orchard_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/palm/palm_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/palm/palm_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/palm/palm_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/palm/palm_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/palm/palm_trunk.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/pine/large_pine_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/pine/large_pine_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/pine/large_pine_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/pine/pine_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/pine/pine_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/rainbow-eucalyptus/rainbow_eucalyptus_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/rainbow-eucalyptus/rainbow_eucalyptus_tree_large_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/rainbow-eucalyptus/rainbow_eucalyptus_tree_large_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_canopy_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_canopy_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_canopy_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_canopy_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_canopy_5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_canopy_6.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_trunk_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_trunk_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_trunk_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_trunk_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_trunk_5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/skyris/skyris_trunk_6.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_large_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_large_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_medium_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_medium_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_medium_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_medium_canopy4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/spruce/spruce_tree_medium_trunk2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_canopy_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_canopy_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_canopy_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_canopy_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_canopy_5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_trunk_1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_trunk_2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_trunk_3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_trunk_4.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/witch-hazel/witch-hazel_trunk_5.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/woodlands/woodlands_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/woodlands/woodlands_tree_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/yucca/yucca_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/zelkova/zelkova_tree_canopy1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/zelkova/zelkova_tree_canopy2.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/zelkova/zelkova_tree_canopy3.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "structure_nbt": "data/biomeswevegone/structure/features/trees/zelkova/zelkova_tree_trunk1.nbt",
+      "error": "Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "jar": "twilightforest-1.21.1-4.8.3345-universal.jar",
+      "structure_nbt": "data/twilightforest/structure/lich_tower/grave.nbt",
+      "error": "Not a gzipped file (b'\\x1e\\xa4')"
+    },
+    {
+      "jar": "twilightforest-1.21.1-4.8.3345-universal.jar",
+      "structure_nbt": "data/twilightforest/structure/lich_tower/grave_open.nbt",
+      "error": "Not a gzipped file (b'7y')"
+    }
+  ],
+  "remaining_errors": 2
+}

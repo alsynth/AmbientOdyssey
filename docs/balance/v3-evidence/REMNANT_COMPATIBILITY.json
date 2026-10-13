@@ -1,0 +1,449 @@
+{
+  "installed": {
+    "geckolib": {
+      "jar": "geckolib-neoforge-1.21.1-4.9.3.jar",
+      "sha256": "20a1995e4074f387ff549e2c57ea79dd7d41ee83c6afb9dd6a6e840e592d1c47",
+      "version": "4.9.3",
+      "dependencies": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[21.1.150,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[1.21,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "geckoanimfix",
+          "type": "incompatible",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "jauml": {
+      "jar": "jauml-neoforge-1.21.1-2.3.1.jar",
+      "sha256": "4de4d28695d869a0f2b5bc3c1e2c114cfa2cd77239ec9f35a3206b91600660ec",
+      "version": "2.3.1",
+      "dependencies": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[21.1,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[1.21.1,1.22)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    },
+    "remnant_bosses": {
+      "jar": "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+      "sha256": "db153190802bb9b9665801521a0e5dc10bc9ee94d61e1a653030429206d2207a",
+      "version": "2.7.0",
+      "dependencies": [
+        {
+          "modId": "neoforge",
+          "type": "required",
+          "versionRange": "[21.1.219,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "minecraft",
+          "type": "required",
+          "versionRange": "[1.21.1]",
+          "ordering": "NONE",
+          "side": "BOTH"
+        },
+        {
+          "modId": "geckolib",
+          "type": "required",
+          "versionRange": "[4.8.4,)",
+          "ordering": "AFTER",
+          "side": "BOTH"
+        },
+        {
+          "modId": "jauml",
+          "type": "required",
+          "versionRange": "[1.2.0,)",
+          "ordering": "NONE",
+          "side": "BOTH"
+        }
+      ]
+    }
+  },
+  "loader": "neoforge-21.1.252",
+  "config_comparison_to_legacy_source": [
+    {
+      "path": "config/remnant/balance/rat_stats.json",
+      "sha256": "a26dc2241bb8431d8f8cc1710dbb180ded9b1fbf85767d7f55885ad233fd00a5",
+      "current": {
+        "rat_health": 30.0,
+        "rat_attack_damage": 4.0,
+        "rat_armor": 2.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/balance/skeleton_archer_stats.json",
+      "sha256": "567820022e28350cb3583a14149de4523b78fe9be7fffb4cb83a77727444f10c",
+      "current": {
+        "max_health": 22.0,
+        "attack_damage": 4.0,
+        "arrow_damage": 4.0,
+        "charged_damage": 6.0,
+        "movement_speed": 0.26,
+        "armor": 2.0,
+        "follow_range": 28.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/balance/skeleton_melee_stats.json",
+      "sha256": "5365e5fbfff24bb49f58c4859e9c04e670055820fabe04d03eb02cee58e72c34",
+      "current": {
+        "max_health": 28.0,
+        "attack_damage": 6.0,
+        "heavy_damage": 8.0,
+        "movement_speed": 0.28,
+        "armor": 4.0,
+        "follow_range": 24.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/balance/skeleton_minion_stats.json",
+      "sha256": "818d1e0702bdc4bae05ff083ed8d42748ec3eb216b4e2cc57a757b3c196c040d",
+      "current": {
+        "minion_health": 24.0,
+        "minion_attack_damage": 5.0,
+        "minion_movement_speed": 0.32,
+        "minion_armor": 2.0,
+        "poison_duration": 60.0,
+        "leap_cooldown": 80.0,
+        "trap_chance": 18.0,
+        "trap_cooldown": 160.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/balance/wraith_stats.json",
+      "sha256": "cf524d3cf697b3048773f324af89d65d73e68153206b0f04b0e7fbc6bf543eae",
+      "current": {
+        "wraith_health": 20.0,
+        "wraith_attack_damage": 3.0,
+        "wraith_armor": 0.0,
+        "wraith_movement_speed": 0.25,
+        "wraith_follow_range": 16.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/hollow_sovereign.json",
+      "sha256": "220d0918085771f49fdd454f40ce587294699e0fd9d598e5e90aad59675a308f",
+      "current": {
+        "beam_damage": 24.0,
+        "phase_two_percent": 45.0,
+        "phase_two_damage_multiplier": 1.3,
+        "attack_damage": 16.0,
+        "slam_damage": 20.0,
+        "attack_cooldown_ticks": 35.0,
+        "movement_speed": 0.25,
+        "armor": 8.0,
+        "spell_range": 24.0,
+        "xp_reward": 150.0,
+        "max_health": 950.0,
+        "wave_radius": 12.0,
+        "duplicate_radius": 64.0,
+        "summoning_enabled": 1.0,
+        "eruption_damage": 18.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/hollow_sovereign_summon.json",
+      "sha256": "2a86cbc2dea2eb881fdfe058fd73dbfc31abd41c26d2ed9b07c23657b9907501",
+      "current": {
+        "pedestal_two_activation_block": "minecraft:bone_block",
+        "pedestal_four_activation_block": "minecraft:skeleton_skull",
+        "pedestal_three_activation_block": "minecraft:skeleton_skull",
+        "portal_activation_item": "minecraft:heart_of_the_sea",
+        "pedestal_one_activation_block": "minecraft:bone_block"
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/kotsukage.json",
+      "sha256": "9941f6c894ccdbf066e1efbdbc9b2b1f94d7c3b427735afc7fabbd4d6a9e5b38",
+      "current": {
+        "max_health": 700.0,
+        "attack_damage": 12.0,
+        "movement_speed": 0.28,
+        "armor": 8.0,
+        "follow_range": 40.0,
+        "knockback_resistance": 0.75,
+        "hp_threshold_phase_2": 45.0,
+        "attack_damage_phase_2": 16.0,
+        "movement_speed_phase_2": 0.34,
+        "swipe_damage": 14.0,
+        "stomp_damage": 16.0,
+        "stomp_radius": 5.0,
+        "poison_damage": 10.0,
+        "poison_range": 8.0,
+        "poison_duration": 120.0,
+        "roar_damage": 8.0,
+        "roar_range": 14.0,
+        "trap_damage": 10.0,
+        "trap_count": 2.0,
+        "trap_slow_duration": 80.0,
+        "minion_count": 2.0,
+        "boss_music_enabled": 1.0,
+        "boss_music_radius": 64.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/kotsukage_summon.json",
+      "sha256": "77c6b330a619a17c1251745a4921dac0c6fd0ccf926b5ccd86ba861496f9762b",
+      "current": {
+        "portal_activation_item": "minecraft:wither_skeleton_skull",
+        "pedestal_one_activation_block": "minecraft:bone_block",
+        "pedestal_two_activation_block": "minecraft:soul_sand",
+        "pedestal_three_activation_block": "minecraft:soul_soil",
+        "pedestal_four_activation_block": "minecraft:nether_wart_block"
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/ossukage.json",
+      "sha256": "4078df73a352a27760724d8457e408a0279d6d2180af6d1586c95256d2cb03b0",
+      "current": {
+        "on_spawn_skeletons": 2.0,
+        "max_health_phase_1": 800.0,
+        "attack_damage_phase_1": 7.0,
+        "movement_speed_phase_1": 0.25,
+        "hp_threshold_phase_2": 50.0,
+        "transform_delay_phase_2": 60.0,
+        "skeletons_on_transform_phase_2": 5.0,
+        "skeletons_on_dash_phase_2": 2.0,
+        "special_attack_chance_phase_2": 20.0,
+        "health_boost_timer_phase_2": 200.0,
+        "attack_damage_phase_2": 9.0,
+        "movement_speed_phase_2": 0.3,
+        "boss_music_enabled": 1.0,
+        "boss_music_radius": 64.0,
+        "armor_phase_1": 6.0,
+        "armor_phase_2": 8.0,
+        "follow_range": 64.0,
+        "knockback_resistance": 0.6
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/ossukage_summon.json",
+      "sha256": "ad5deb67eaccf411e080aa4dd67bd648822a73b4ff7310518858f79d58c14807",
+      "current": {
+        "portal_activation_item": "minecraft:nether_star",
+        "pedestal_one_activation_block": "minecraft:skeleton_skull",
+        "pedestal_two_activation_block": "minecraft:skeleton_skull",
+        "pedestal_three_activation_block": "minecraft:skeleton_skull",
+        "pedestal_four_activation_block": "minecraft:skeleton_skull"
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/umbrakar.json",
+      "sha256": "3ec776783ab1f8b75ea67367343bdd10d9161a876d1f23c66bd981dc6b0de68b",
+      "current": {
+        "max_health": 750.0,
+        "attack_damage": 14.0,
+        "movement_speed": 0.32,
+        "armor": 10.0,
+        "follow_range": 48.0,
+        "orb_damage": 8.0,
+        "hp_threshold_phase_2": 40.0,
+        "attack_damage_phase_2": 18.0,
+        "movement_speed_phase_2": 0.38,
+        "bite_damage": 16.0,
+        "slam_damage": 18.0,
+        "tail_damage": 15.0,
+        "roar_damage": 8.0,
+        "roar_range": 16.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/bosses/umbrakar_summon.json",
+      "sha256": "5e8720af75cd2b127ef514ee34acccaa03c1ac1a848478a0ddc026750773cc98",
+      "current": {
+        "portal_activation_item": "minecraft:echo_shard",
+        "pedestal_one_activation_block": "minecraft:amethyst_block",
+        "pedestal_two_activation_block": "minecraft:crying_obsidian",
+        "pedestal_three_activation_block": "minecraft:end_stone",
+        "pedestal_four_activation_block": "minecraft:sculk"
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/client/presentation.json",
+      "sha256": "a09cd79360a6060d78dafb7c31d8f65459a901b8db8f887d3ef4d031e4389417",
+      "current": {
+        "custom_boss_bars": 1.0,
+        "vfx_density": 1.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/items/ossukage_sword.json",
+      "sha256": "adb9d6a98f0fb754b5fa5e5776ee5b4987db4bbfdeb029ac644dc4d7ec9979a8",
+      "current": {
+        "dash_timer": 100.0,
+        "dash_distance": 2.0,
+        "shuriken_timer": 50.0,
+        "shuriken_damage": 50.0,
+        "shuriken_knockback": 1.0,
+        "shuriken_pierce": 0.0,
+        "speed_amplifier": 1.0,
+        "life_steal_power": 20.0
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/main.json",
+      "sha256": "cb8dc07e0e81a824fa4e8ca9b7590b13693af208a5f822d6f4671b7b4363f419",
+      "current": {
+        "config_version": "1",
+        "generated_by": "Remnant Bosses mod - default config"
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/monsters/dirge_lantern.json",
+      "sha256": "26f27980bc0daa28ba33cb45d6380349b49fa1ef7b6dae68a04116518356edb5",
+      "current": {
+        "max_health": 28.0,
+        "attack_damage": 4.0,
+        "special_damage": 7.0,
+        "armor": 2.0,
+        "xp_reward": 8.0,
+        "special_range": 12.0,
+        "attack_cooldown_ticks": 55.0,
+        "movement_speed": 0.23
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/monsters/grave_skitter.json",
+      "sha256": "70340ecae70f7774ecff90f77bdcf634ae385859042feb874f39e59ed867f2c2",
+      "current": {
+        "max_health": 24.0,
+        "attack_damage": 4.0,
+        "special_damage": 7.0,
+        "armor": 4.0,
+        "xp_reward": 6.0,
+        "special_range": 7.0,
+        "attack_cooldown_ticks": 32.0,
+        "movement_speed": 0.29
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/monsters/sickleghast.json",
+      "sha256": "14ccd07d246f1c6c30aa4bdc21c5580fc97bb8c699d1d0716eca71c7ecd2d14f",
+      "current": {
+        "max_health": 40.0,
+        "attack_damage": 6.0,
+        "special_damage": 9.0,
+        "armor": 5.0,
+        "xp_reward": 10.0,
+        "special_range": 4.0,
+        "attack_cooldown_ticks": 38.0,
+        "movement_speed": 0.24
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/spawning/rat_spawns.json",
+      "sha256": "e1bd76381893a6c5ce4bc4da951f46e0afae644509bf6028c412003d096064db",
+      "current": {
+        "enable_natural_spawning": "true",
+        "spawn_weight": 10.0,
+        "min_group_size": 1.0,
+        "max_group_size": 3.0,
+        "dimension_whitelist": "minecraft:overworld",
+        "dimension_blacklist": "minecraft:the_nether,minecraft:the_end",
+        "biome_blacklist": ""
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    },
+    {
+      "path": "config/remnant/spawning/wraith_spawns.json",
+      "sha256": "128a5163463130ae0ddfa355a0b94e6bbddc58bfe0774bb14a960e8dd247491d",
+      "current": {
+        "enable_natural_spawning": "true",
+        "spawn_weight": 5.0,
+        "min_group_size": 1.0,
+        "max_group_size": 2.0,
+        "dimension_whitelist": "minecraft:overworld",
+        "dimension_blacklist": "minecraft:the_nether,minecraft:the_end",
+        "biome_blacklist": ""
+      },
+      "added_keys": [],
+      "removed_keys": [],
+      "changed_values": {}
+    }
+  ],
+  "metadata_dependency_check": "NeoForge 21.1.252 >=21.1.219; MC1.21.1; GeckoLib4.9.3 >=4.8.4; jauml2.3.1 >=1.2.0. Static metadata only; dedicated runtime pending.",
+  "runtime_tested": false
+}
