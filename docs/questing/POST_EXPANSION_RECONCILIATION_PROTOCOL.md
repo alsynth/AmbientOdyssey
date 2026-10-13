@@ -25,7 +25,7 @@ AO's final content roster is still expanding. We can write compelling quest copy
 6. Refresh the boss-tier and gear readiness information, especially Tier 2's enchanted diamond armor and two concurrently equipable A-grade combat supports.
 7. Run editorial review: clear newcomer text, optional content remains optional, no mandatory rare RNG dungeon, no forced Origin, no compelled Seven Curses acceptance and no spoilers for unseen bosses.
 8. Check generated quest definitions for unique IDs, valid references, cyclic prerequisites, duplicate/infinite rewards, feasible trigger types and notification spam.
-9. Test on a copied two-player dedicated server, including quest discovery, boss credit, multiple Origins, logout/reconnect, death and server restart.
+9. Test on a copied two-player dedicated server, including quest discovery, boss credit, distinct equipment/magic loadouts, logout/reconnect, death and server restart.
 10. Publish migration notes and update the AO wiki data only from verified content. Progress/UUIDs/coordinates must never be shared automatically.
 
 ## Content change matrix
