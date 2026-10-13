@@ -8,6 +8,11 @@ on:
       - '.github/workflows/ao-goblin-native-extraction.yml'
       - 'tools/build_ao_goblin_tuned_trade_override.py'
 
+  pull_request:
+    paths:
+      - '.github/workflows/ao-goblin-native-extraction.yml'
+      - 'tools/build_ao_goblin_tuned_trade_override.py'
+
 jobs:
   extract:
     runs-on: ubuntu-latest
