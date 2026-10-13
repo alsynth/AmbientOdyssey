@@ -1,0 +1,12 @@
+[
+  {
+    "jar": "archaion-1.21.1-1.4.4.jar",
+    "structure_nbt": "data/archaion/structure/ancient_keep/misc_room.nbt",
+    "error": "Non-Compound root tags is not supported: <class 'nbtlib.tag.End'>"
+  },
+  {
+    "jar": "archaion-1.21.1-1.4.4.jar",
+    "structure_nbt": "data/archaion/structure/ancient_keep/misc_room_x.nbt",
+    "error": "Non-Compound root tags is not supported: <class 'nbtlib.tag.End'>"
+  }
+]

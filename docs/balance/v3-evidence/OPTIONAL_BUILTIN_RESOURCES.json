@@ -1,0 +1,2878 @@
+[
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-extended-mushrooms/data/ctov/worldgen/processor_list/village/mushroom/house.json"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-extended-mushrooms/data/ctov/worldgen/processor_list/village/mushroom/house_glow.json"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-extended-mushrooms/data/ctov/worldgen/processor_list/village/mushroom/house_honey.json"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-extended-mushrooms/data/ctov/worldgen/processor_list/village/mushroom/house_poison.json"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-extended-mushrooms/data/ctov/worldgen/processor_list/village/mushroom/house_slime.json"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/badlands/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/beach/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/dark_forest/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/desert/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/jungle/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/mountain/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/plains/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/savanna/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/snowy/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/swamp/base_plate.nbt"
+  },
+  {
+    "provider": "[Neoforge]ctov-3.6.3.jar",
+    "path": "ctov-savage-and-ravage-add-on/data/ctov/structures/pillager_outpost/taiga/base_plate.nbt"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/slot/ring.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/slot/back.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/slot/charm.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/slot/cape.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/slot/hand.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/slot/necklace.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/aether/accessories/entity/humanoid.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/accessories/tags/item/ring.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/accessories/tags/item/back.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/accessories/tags/item/charm.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/accessories/tags/item/cape.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/accessories/tags/item/hand.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories_override/data/accessories/tags/item/necklace.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure/ruined_portal_swamp.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure/ruined_portal_jungle.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure/ruined_portal_aether.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure/ruined_portal_mountain.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure/ruined_portal_desert.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure/ruined_portal.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/ruined_portal/data/aether/worldgen/structure_set/ruined_portals.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/imm_ptl_compat/data/aether/custom_portal_generation/convert_aether_portal_to.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/imm_ptl_compat/data/aether/custom_portal_generation/water_bucket_create_aether_portal_from.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/imm_ptl_compat/data/aether/custom_portal_generation/water_bucket_create_aether_portal_to.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/imm_ptl_compat/data/aether/custom_portal_generation/skyroot_water_bucket_create_aether_portal_to.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/imm_ptl_compat/data/aether/custom_portal_generation/skyroot_water_bucket_create_aether_portal_from.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/imm_ptl_compat/data/aether/custom_portal_generation/convert_aether_portal_from.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/temporary_freezing/data/aether/recipe/accessory_freeze_lava.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/temporary_freezing/data/aether/recipe/accessory_freeze_water.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories/data/aether/accessories/slot/aether/gloves_slot.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories/data/aether/accessories/slot/aether/cape_slot.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories/data/aether/accessories/slot/aether/shield_slot.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories/data/aether/accessories/slot/aether/accessory_slot.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories/data/aether/accessories/slot/aether/ring_slot.json"
+  },
+  {
+    "provider": "aether-1.21.1-1.5.10-neoforge.jar",
+    "path": "packs/accessories/data/aether/accessories/slot/aether/pendant_slot.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_add_face_slot/data/trinkets/entities/face.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_add_face_slot/data/trinkets/tags/item/head/face.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_add_face_slot/data/trinkets/tags/item/head/hat.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_accessories/data/accessories/tags/item/belt.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_accessories/data/accessories/tags/item/hand.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_accessories/data/accessories/tags/item/hat.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_accessories/data/accessories/tags/item/necklace.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_accessories/data/accessories/tags/item/shoes.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_accessories/data/artifacts/accessories/entity/slots.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/artifacts/curios/entities/slots.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/artifacts/curios/slots/belt.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/artifacts/curios/slots/feet.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/artifacts/curios/slots/hands.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/artifacts/curios/slots/head.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/artifacts/curios/slots/necklace.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/curios/tags/item/belt.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/curios/tags/item/curio.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/curios/tags/item/feet.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/curios/tags/item/hands.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/curios/tags/item/head.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_curios/data/curios/tags/item/necklace.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/entities/default.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/entities/face.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/all.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/chest/necklace.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/feet/shoes.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/hand/glove.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/head/face.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/head/hat.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/legs/belt.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_disable_trinkets/data/trinkets/tags/item/offhand/glove.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/curios/tags/item/belt.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/curios/tags/item/curio.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/curios/tags/item/feet.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/curios/tags/item/hands.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/curios/tags/item/head.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/curios/tags/item/necklace.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/all.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/chest/necklace.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/feet/shoes.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/hand/glove.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/head/face.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/head/hat.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/legs/belt.json"
+  },
+  {
+    "provider": "artifacts-neoforge-13.2.5.jar",
+    "path": "overlay_remove_slot_restrictions/data/trinkets/tags/item/offhand/glove.json"
+  },
+  {
+    "provider": "BetterEnd-21.0.35.jar",
+    "path": "data/betterend/datapacks/nourish_extensions/data/nourish/tags/item/fats.json"
+  },
+  {
+    "provider": "BetterEnd-21.0.35.jar",
+    "path": "data/betterend/datapacks/nourish_extensions/data/nourish/tags/item/fruit.json"
+  },
+  {
+    "provider": "BetterEnd-21.0.35.jar",
+    "path": "data/betterend/datapacks/nourish_extensions/data/nourish/tags/item/protein.json"
+  },
+  {
+    "provider": "BetterEnd-21.0.35.jar",
+    "path": "data/betterend/datapacks/nourish_extensions/data/nourish/tags/item/sweets.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/advancement/aether_champion.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/advancement/recipe/skyjade_shield.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/advancement/recipe/skyjade_shield_repairing.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/advancement/recipe/stratus_shield_repairing.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/advancement/recipe/stratus_shield_stratus_smithing.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/recipe/pink_aercloud_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/recipe/skyjade_shield.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/recipe/skyjade_shield_repairing.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/recipe/stratus_shield_repairing.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_compat/data/deep_aether/recipe/stratus_shield_stratus_smithing.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_lost_content_not_compat/data/deep_aether/recipe/aerwhale_saddle.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_bricks_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_slab_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_slab_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_stairs_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_stairs_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_wall_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_brick_wall_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tiles_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tiles_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_slab_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_slab_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_slab_from_blightmoss_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_stairs_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_stairs_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_stairs_from_blightmoss_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_wall_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_wall_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/blightmoss_holystone_tile_wall_from_blightmoss_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_bricks_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_slab_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_slab_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_stairs_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_stairs_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_wall_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_brick_wall_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tiles_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tiles_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_slab_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_slab_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_slab_from_gilded_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_stairs_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_stairs_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_stairs_from_gilded_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_wall_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_wall_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/advancement/recipe/gilded_holystone_tile_wall_from_gilded_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_bricks.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_bricks_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_slab_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_slab_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_stairs_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_stairs_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_wall_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_brick_wall_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tiles.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tiles_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tiles_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_slab_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_slab_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_slab_from_blightmoss_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_stairs_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_stairs_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_stairs_from_blightmoss_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_wall_from_blightmoss_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_wall_from_blightmoss_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blightmoss_holystone_tile_wall_from_blightmoss_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/blue_berry_pie_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/crystal_sapling_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/divinite_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_bricks.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_bricks_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_slab_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_slab_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_stairs_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_stairs_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_wall_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_brick_wall_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tiles.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tiles_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tiles_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_slab.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_slab_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_slab_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_slab_from_gilded_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_stairs.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_stairs_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_stairs_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_stairs_from_gilded_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_wall_from_gilded_holystone_bricks_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_wall_from_gilded_holystone_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gilded_holystone_tile_wall_from_gilded_holystone_tiles_stonecutting.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/gravitite_ore_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/aether_redux_compat/data/deep_aether/recipe/mossy_holystone_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/ancient_aether_compat/data/deep_aether/recipe/aether_coarse_dirt_from_divine_gravel.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/ancient_aether_compat/data/deep_aether/recipe/raw_valkyrum_from_poison.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/conberry_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/conberry_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/cruderoot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/cruderoot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/roseroot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/roseroot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_conberry_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_conberry_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_cruderoot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_cruderoot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_roseroot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_roseroot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_sunroot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_sunroot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_yagroot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/stripped_yagroot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/sunroot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/sunroot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/yagroot_log_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/beyond_parity_compat/data/deep_aether/recipe/yagroot_wall.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/compat_recipes/protect_your_moa_compat/data/deep_aether/recipe/skyjade_moa_armor.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/overrides/golden_swet_ball/DAGoldenSwetBallAetherGenesisFixData/data/deep_aether/recipes/golden_swet_ball.json"
+  },
+  {
+    "provider": "deep_aether-1.21.1-1.1.5.1.jar",
+    "path": "packs/overrides/golden_swet_ball/DAGoldenSwetBallAetherReduxFixData/data/deep_aether/recipes/golden_swet_ball.json"
+  },
+  {
+    "provider": "Explorify v1.6.5.mod.jar",
+    "path": "f15/data/explorify/worldgen/processor_list/mausoleum_processor.json"
+  },
+  {
+    "provider": "Explorify v1.6.5.mod.jar",
+    "path": "f15/data/explorify/worldgen/processor_list/ruins_house_processor.json"
+  },
+  {
+    "provider": "Explorify v1.6.5.mod.jar",
+    "path": "f15/data/explorify/worldgen/processor_list/ruins_path_processor.json"
+  },
+  {
+    "provider": "Explorify v1.6.5.mod.jar",
+    "path": "f41/data/explorify/loot_tables/chest/dark_forest_settlement.json"
+  },
+  {
+    "provider": "Explorify v1.6.5.mod.jar",
+    "path": "f41/data/explorify/loot_tables/chest/mausoleum_pot.json"
+  },
+  {
+    "provider": "Explorify v1.6.5.mod.jar",
+    "path": "f41/data/explorify/loot_tables/chest/supply_cache.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/shield/necrotic_shield.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/shield/prismatic_shield.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/tool/infernal_wings.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/tool/hazmat_suit.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/tool/cake_batter.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/tool/infernal_feather.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/patron/daybreaker.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/patron/warping_witherblade.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/weapon/voltaic_trident.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/weapon/greatsword_of_sacrifice.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/weapon/withersbane.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/weapon/trailblazer.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/weapon/scarlet_dagger.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/artifact/weapon/firestorm.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/loot_table/reactor/waste.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/inverted_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/withered_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/weeping_valley.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/toxic_heap.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/infernal_dunes.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/volcanic_deltas.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/quartz_flats.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/worldgen/biome/ash_barrens.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/recipe/upgrade_elytra.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/item_modifier/scouts_battle_helm/update.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/incendium/tags/entity_type/other.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/worldgen/biome/warped_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/worldgen/biome/basalt_deltas.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/worldgen/biome/soul_sand_valley.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/worldgen/biome/nether_wastes.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/worldgen/biome/crimson_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/observer.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/repeater.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/piston.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/lever.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/comparator.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/dropper.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-2-overlay/data/minecraft/recipe/dispenser.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/shield/necrotic_shield.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/shield/prismatic_shield.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/shield/radiation_shield.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/misc/restless_nature.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/infernal_wings.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/unstable_powder.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/hefty_pickaxe.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/hazmat_suit.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/cake_batter.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/torch_of_lunacy.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/tool/infernal_feather.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/patron/daybreaker.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/patron/scouts_battle_helm.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/patron/holy_wrath.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/patron/warping_witherblade.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/patron/scroll_of_returning.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/voltaic_trident.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/multiplex_crossbow.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/greatsword_of_sacrifice.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/blazing_hatchet.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/withersbane.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/sentrys_wrath.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/trailblazer.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/scarlet_dagger.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/firestorm.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/chilling_blade.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/artifact/weapon/ragnarok.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/loot_table/reactor/waste.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/inverted_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/withered_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/weeping_valley.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/toxic_heap.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/infernal_dunes.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/volcanic_deltas.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/quartz_flats.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/worldgen/biome/ash_barrens.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/recipe/upgrade_elytra.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/item_modifier/scouts_battle_helm/update.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/item_modifier/infernal_wings/upgrade.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/incendium/tags/entity_type/other.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/worldgen/biome/warped_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/worldgen/biome/basalt_deltas.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/worldgen/biome/soul_sand_valley.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/worldgen/biome/nether_wastes.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/worldgen/biome/crimson_forest.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/observer.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/repeater.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/piston.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/lever.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/comparator.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/dropper.json"
+  },
+  {
+    "provider": "Incendium_1.21.x_v5.4.4.jar",
+    "path": "1-21-4-overlay/data/minecraft/recipe/dispenser.json"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/rightsideup_backhalf.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/rightsideup_backhalf_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/rightsideup_fronthalf.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/rightsideup_fronthalf_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/rightsideup_full.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/rightsideup_full_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/sideways_backhalf.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/sideways_backhalf_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/sideways_fronthalf.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/sideways_fronthalf_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/sideways_full.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/sideways_full_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/upsidedown_backhalf.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/upsidedown_backhalf_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/upsidedown_fronthalf.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/upsidedown_fronthalf_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/upsidedown_full.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/upsidedown_full_degraded.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/with_mast.nbt"
+  },
+  {
+    "provider": "lithostitched-1.8.0-neoforge-21.1.jar",
+    "path": "overlay.breaks_seed_parity/data/minecraft/structure/shipwreck/with_mast_degraded.nbt"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/100loot.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/10loot.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/1barrel.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/1cart.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/1chest.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/1frame.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/1shulker.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/25loot.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/50loot.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/all_gravel.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/archaeologist.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/pot_opened.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/root.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_advancements/data/lootr/advancement/social.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_suspicious_blocks/data/lootr/tags/block/convert/gravels.json"
+  },
+  {
+    "provider": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+    "path": "datapacks/lootr_no_suspicious_blocks/data/lootr/tags/block/convert/sands.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_desert/data/minecraft/worldgen/biome/desert.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/configured_feature/birch_bush.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/configured_feature/old_birch_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/configured_feature/flower_birch_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/configured_feature/birch_default.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/configured_feature/super_old_birch_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/configured_feature/trees_birch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/flower_birch_placed.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/patch_tall_grass_birch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/birch_bush.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/old_birch_bush.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/old_birch_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/birch_default_checked.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/patch_lush_fern_birch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/super_old_birch_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/natures_spirit/worldgen/placed_feature/birch_tall.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/biome/birch_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/biome/old_growth_birch_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/trees_birch_and_oak.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/birch_bees_005.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/super_birch_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/birch_bees_002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/super_birch_bees.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/birch_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/birch_tall.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/configured_feature/birch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_birch_forest/data/minecraft/worldgen/placed_feature/trees_birch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_savannas/data/minecraft/worldgen/biome/savanna_plateau.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_savannas/data/minecraft/worldgen/biome/savanna.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_savannas/data/minecraft/worldgen/biome/windswept_savanna.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_savannas/data/minecraft/worldgen/configured_feature/trees_savanna.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_savannas/data/minecraft/worldgen/placed_feature/trees_savanna_dense.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_savannas/data/minecraft/worldgen/placed_feature/trees_savanna.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/arts_and_crafts/worldgen/configured_feature/gypsum_patch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/arts_and_crafts/worldgen/placed_feature/gypsum_patch.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/arts_and_crafts/tags/worldgen/biome/gypsum_can_generate_in.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/arts_and_crafts/tags/worldgen/biome/soapstone_can_generate_in.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/arts_and_crafts/tags/block/gypsum_replaceable.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/chalk_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/kaolin_bricks.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/kaolin_brick_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/chalk.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/kaolin_slabs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/kaolin_brick_slabs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/kaolin.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/chalk_slabs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/arts_and_crafts/paintbrush_palette/kaolin_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/recipe/chalk_recipes/bleached_chalk.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/recipe/chalk_recipes/bleached_chalk_slab_from_stonecutting.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/recipe/chalk_recipes/bleached_chalk_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/recipe/chalk_recipes/bleached_chalk_stairs_from_stonecutting.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/recipe/chalk_recipes/bleached_chalk_slab.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/tags/item/chalk_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/tags/item/chalk.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/tags/item/chalk_slabs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/tags/block/chalk_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/tags/block/chalk.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/tags/block/chalk_slabs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/loot_table/blocks/bleached_chalk.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/loot_table/blocks/bleached_chalk_stairs.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/arts_and_crafts_dat/data/natures_spirit/loot_table/blocks/bleached_chalk_slab.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_windswept_hills/data/minecraft/worldgen/biome/windswept_gravelly_hills.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_windswept_hills/data/minecraft/worldgen/biome/windswept_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_windswept_hills/data/minecraft/worldgen/biome/windswept_hills.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_swamp/data/minecraft/worldgen/biome/swamp.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_swamp/data/minecraft/worldgen/configured_feature/patch_sugar_cane_swamp.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_swamp/data/minecraft/worldgen/placed_feature/patch_sugar_cane_swamp.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/configured_feature/flower_dark_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/configured_feature/huge_red_mushroom.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/configured_feature/huge_brown_mushroom.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/placed_feature/brown_mushroom_dark_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/placed_feature/flower_dark_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/placed_feature/red_mushroom_dark_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/natures_spirit/worldgen/placed_feature/patch_large_fern.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/minecraft/worldgen/biome/dark_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/minecraft/worldgen/configured_feature/dark_oak.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/minecraft/worldgen/configured_feature/dark_forest_vegetation.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_dark_forest/data/minecraft/worldgen/placed_feature/dark_forest_vegetation.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/biome/sparse_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/biome/jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/biome/bamboo_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/trees_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/trees_sparse_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/mega_jungle_tree.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/trees_jungle_extra.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/flower_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/jungle_bush.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/configured_feature/jungle_tree.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/placed_feature/trees_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/placed_feature/patch_jungle_fern.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/placed_feature/trees_jungle_extra.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/placed_feature/flower_jungle.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_jungle/data/minecraft/worldgen/placed_feature/jungle_bush.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_badlands/data/minecraft/worldgen/biome/eroded_badlands.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_badlands/data/minecraft/worldgen/biome/badlands.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_badlands/data/minecraft/worldgen/biome/wooded_badlands.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_badlands/data/minecraft/worldgen/placed_feature/patch_dead_bush_badlands.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/fancy_oak_bees.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/fancy_oak_bees_005.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/trees_birch_and_oak.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/patch_sugar_cane_swamp.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/fancy_oak.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/fancy_oak_bees_002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/fancy_oak_bees_0002.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/trees_plains.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_vanilla_trees/data/minecraft/worldgen/configured_feature/trees_flower_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_mountain_biomes/data/minecraft/worldgen/biome/cherry_grove.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_mountain_biomes/data/minecraft/worldgen/biome/snowy_slopes.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_mountain_biomes/data/minecraft/worldgen/biome/meadow.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_mountain_biomes/data/minecraft/worldgen/biome/grove.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/natures_spirit/worldgen/configured_feature/flower_forest_flowers.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/minecraft/worldgen/biome/flower_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/minecraft/worldgen/configured_feature/flower_flower_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/minecraft/worldgen/configured_feature/trees_flower_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/minecraft/worldgen/placed_feature/flower_flower_forest.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/minecraft/worldgen/placed_feature/flower_forest_flowers.json"
+  },
+  {
+    "provider": "natures_spirit-2.2.5-1.21.1.jar",
+    "path": "resourcepacks/modified_flower_forest/data/minecraft/worldgen/placed_feature/trees_flower_forest.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_crabs/data/c/tags/item/foods/raw_meat.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_crabs/data/c/tags/item/foods/cooked_meat.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/create/tags/block/chest_mounted_storage.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/lootr/tags/item/trapped_chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/lootr/tags/item/chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/lootr/tags/block/trapped_chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/lootr/tags/block/chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/quark/tags/item/revertable_trapped_chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/quark/tags/item/revertable_chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/c/tags/item/chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/c/tags/item/chests/trapped.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/c/tags/item/chests/wooden.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/c/tags/block/chests.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/c/tags/block/chests/trapped.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_chests/data/c/tags/block/chests/wooden.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_ladders/data/quark/tags/item/ladders.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_ladders/data/quark/tags/block/ladders.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_ladders/data/c/tags/item/ladders.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_ladders/data/c/tags/block/ladders.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_bookshelves/data/c/tags/item/bookshelves.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_variant_bookshelves/data/c/tags/block/bookshelves.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_vdo_vanilla_stone_clusters/data/minecraft/worldgen/configured_feature/ore_diorite.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_vdo_vanilla_stone_clusters/data/minecraft/worldgen/configured_feature/ore_granite.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_vdo_vanilla_stone_clusters/data/minecraft/worldgen/configured_feature/ore_andesite.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/item/stained_framed_glass_panes.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/item/framed_glasses.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/item/stained_framed_glasses.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/item/framed_glass_panes.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/block/stained_framed_glass_panes.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/block/framed_glasses.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/block/stained_framed_glasses.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/quark/tags/block/framed_glass_panes.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/c/tags/item/glass_blocks.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/c/tags/item/glass_blocks/colorless.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/c/tags/block/glass_blocks.json"
+  },
+  {
+    "provider": "Quark-4.1-487.jar",
+    "path": "datapacks/quark_ct_framed_glass/data/c/tags/block/glass_blocks/colorless.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.birch_aspen_trees/data/minecraft/worldgen/configured_feature/birch.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.birch_aspen_trees/data/minecraft/worldgen/configured_feature/birch_bees_0002.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.birch_aspen_trees/data/minecraft/worldgen/configured_feature/birch_bees_002.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.birch_aspen_trees/data/minecraft/worldgen/configured_feature/birch_bees_005.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.birch_aspen_trees/data/minecraft/worldgen/configured_feature/super_birch_bees.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.birch_aspen_trees/data/minecraft/worldgen/configured_feature/super_birch_bees_0002.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.common_grass_sprouts/data/minecraft/worldgen/configured_feature/patch_grass.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.forest_fancy_oaks/data/minecraft/worldgen/configured_feature/trees_birch_and_oak.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.oak_taller_trees/data/minecraft/worldgen/configured_feature/oak.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.oak_taller_trees/data/minecraft/worldgen/configured_feature/oak_bees_0002.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.oak_taller_trees/data/minecraft/worldgen/configured_feature/oak_bees_002.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.oak_taller_trees/data/minecraft/worldgen/configured_feature/oak_bees_005.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/black_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/blue_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/brown_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/cyan_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/gray_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/green_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/light_blue_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/light_gray_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/lime_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/magenta_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/orange_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/pink_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/purple_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/red_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/white_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.painted_planks/data/regions_unexplored/recipe/yellow_painted_planks.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.taiga_pine_trees/data/minecraft/worldgen/configured_feature/mega_pine.json"
+  },
+  {
+    "provider": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+    "path": "overlay.taiga_pine_trees/data/minecraft/worldgen/configured_feature/pine.json"
+  },
+  {
+    "provider": "Structory_Towers_1.21.x_v1.0.14.jar",
+    "path": "1-21-5-overlay/data/structory_towers/loot_table/potions/eternal_glowing.json"
+  },
+  {
+    "provider": "Structory_Towers_1.21.x_v1.0.14.jar",
+    "path": "1-21-5-overlay/data/structory_towers/loot_table/potions/death.json"
+  },
+  {
+    "provider": "Structory_Towers_1.21.x_v1.0.14.jar",
+    "path": "1-21-5-overlay/data/structory_towers/loot_table/potions/heroism.json"
+  },
+  {
+    "provider": "Structory_Towers_1.21.x_v1.0.14.jar",
+    "path": "1-21-5-overlay/data/structory_towers/loot_table/potions/darkness.json"
+  },
+  {
+    "provider": "t_and_t-fabric-neoforge-1.13.11.jar",
+    "path": "resources/t_and_t_waystones_patch/data/kaisyn/structure/village/modded/waystones/waystone_default.nbt"
+  },
+  {
+    "provider": "t_and_t-fabric-neoforge-1.13.11.jar",
+    "path": "resources/t_and_t_waystones_patch/data/kaisyn/structure/village/modded/waystones/waystone_desert.nbt"
+  },
+  {
+    "provider": "t_and_t-fabric-neoforge-1.13.11.jar",
+    "path": "resources/t_and_t_waystones_patch/data/kaisyn/structure/village/modded/waystones/waystone_mossy.nbt"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/neoforge/biome_modifier/buzzier_bees.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/tags/worldgen/placed_feature/buzzier_bees_blobs.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/configured_feature/buzzier_bees/chiseled_honeycomb_bricks_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/configured_feature/buzzier_bees/crystalline_honey_surface_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/configured_feature/buzzier_bees/honeycomb_bricks_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/configured_feature/buzzier_bees/honeycomb_tiles_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/placed_feature/buzzier_bees/chiseled_honeycomb_bricks_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/placed_feature/buzzier_bees/crystalline_honey_surface_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/placed_feature/buzzier_bees/honeycomb_bricks_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/buzzier_bees_compat/data/the_bumblezone/worldgen/placed_feature/buzzier_bees/honeycomb_tiles_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/enchanted_token_compat/data/the_bumblezone/recipes/enchanted_token/comb_cutter.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/enchanted_token_compat/data/the_bumblezone/recipes/enchanted_token/neurotoxins.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/enchanted_token_compat/data/the_bumblezone/recipes/enchanted_token/potent_poison.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/neoforge/biome_modifier/forestry_blobs.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/neoforge/biome_modifier/forestry_spikes.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/neoforge/biome_modifier/forestry_wax_spikes.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/block/dimension_teleportation/forced_allowed_teleportable_blocks.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/block/hanging_garden/allowed_leaves.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/block/hanging_garden/allowed_logs.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/block/worldgen_checks/cave_edge_blocks_for_modded_compats.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/worldgen/placed_feature/forestry_blobs.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/worldgen/placed_feature/forestry_spikes.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/tags/worldgen/placed_feature/forestry_wax_spikes.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/ceiling_cobbled_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/ceiling_honeystone_bricks_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/ceiling_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/chiseled_wax_bricks_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/floor_cobbled_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/floor_honeystone_bricks_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/floor_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/floor_wax_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/configured_feature/forestry/polished_honeystone_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/ceiling_cobbled_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/ceiling_honeystone_bricks_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/ceiling_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/chiseled_wax_bricks_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/floor_cobbled_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/floor_honeystone_bricks_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/floor_honeystone_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/floor_wax_spike.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/forestry_compat/data/the_bumblezone/worldgen/placed_feature/forestry/polished_honeystone_blob.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/jeed_effects_compat/data/the_bumblezone/recipe/jeed_effects/beenergized.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/jeed_effects_compat/data/the_bumblezone/recipe/jeed_effects/hidden.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/jeed_effects_compat/data/the_bumblezone/recipe/jeed_effects/paralyzed.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/jeed_effects_compat/data/the_bumblezone/recipe/jeed_effects/protection_of_the_hive.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/jeed_effects_compat/data/the_bumblezone/recipe/jeed_effects/wrath_of_the_hive.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/neoforge/biome_modifier/productivebees.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/tags/worldgen/placed_feature/productive_bees_combs.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/blazing_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/copper_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/crystalline_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/diamond_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/ghostly_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/glowing_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/gold_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/iron_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/lapis_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/magmatic_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/redstone_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/configured_feature/productivebees/skeletal_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/blazing_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/copper_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/crystalline_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/diamond_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/diamond_comb_vein_high.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/ghostly_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/glowing_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/gold_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/iron_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/lapis_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/magmatic_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/redstone_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/productive_bees_compat/data/the_bumblezone/worldgen/placed_feature/productivebees/skeletal_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/neoforge/biome_modifier/resourcefulbees.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/tags/block/resourcefulbees/spawns_in_bee_dungeons.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/tags/block/resourcefulbees/spawns_in_spider_infested_bee_dungeons.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/tags/entity_type/resourcefulbees/spawnable_from_brood_block.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/tags/entity_type/resourcefulbees/spawnable_from_chunk_creation.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/tags/worldgen/placed_feature/resourceful_bees_combs.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/diamond_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/dragon_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/ender_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/gold_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/iron_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/lapis_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/redstone_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/configured_feature/resourcefulbees/skeleton_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/diamond_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/diamond_comb_vein_high.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/dragon_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/ender_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/ender_comb_vein_high.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/gold_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/iron_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/lapis_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/redstone_comb_vein.json"
+  },
+  {
+    "provider": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+    "path": "datapacks/resourcefulbees_compat/data/the_bumblezone/worldgen/placed_feature/resourcefulbees/skeleton_comb_vein.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/bundle/data/minecraft/advancement/recipes/tools/bundle.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/bundle/data/minecraft/recipe/bundle.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/desert_armorer_boots_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/desert_armorer_chestplate_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/desert_armorer_chestplate_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/desert_armorer_helmet_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/desert_armorer_leggings_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/desert_armorer_leggings_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/jungle_armorer_boots_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/jungle_armorer_boots_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/jungle_armorer_chestplate_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/jungle_armorer_helmet_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/jungle_armorer_helmet_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/jungle_armorer_leggings_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/plains_armorer_boots_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/plains_armorer_boots_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/plains_armorer_chestplate_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/plains_armorer_helmet_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/plains_armorer_leggings_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/plains_armorer_leggings_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/savanna_armorer_boots_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/savanna_armorer_chestplate_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/savanna_armorer_chestplate_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/savanna_armorer_helmet_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/savanna_armorer_helmet_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/savanna_armorer_leggings_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/snow_armorer_boots_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/snow_armorer_boots_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/snow_armorer_helmet_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/snow_armorer_helmet_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/swamp_armorer_boots_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/swamp_armorer_boots_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/swamp_armorer_chestplate_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/swamp_armorer_helmet_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/swamp_armorer_helmet_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/swamp_armorer_leggings_4.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/taiga_armorer_chestplate_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/enchantment_provider/trades/taiga_armorer_leggings_5.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/loot_table/chests/abandoned_mineshaft.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/loot_table/chests/ancient_city.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/loot_table/chests/desert_pyramid.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/loot_table/chests/jungle_temple.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/loot_table/chests/pillager_outpost.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/desert_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/desert_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/jungle_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/jungle_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/plains_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/plains_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/savanna_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/savanna_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/snow_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/snow_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/swamp_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/swamp_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/taiga_common.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/enchantment/trades/taiga_special.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_desert_village_maps.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_jungle_explorer_maps.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_plains_village_maps.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_savanna_village_maps.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_snowy_village_maps.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_swamp_explorer_maps.json"
+  },
+  {
+    "provider": "minecraft_1.21.1_client.jar",
+    "path": "data/minecraft/datapacks/trade_rebalance/data/minecraft/tags/worldgen/structure/on_taiga_village_maps.json"
+  }
+]

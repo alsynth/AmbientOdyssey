@@ -1,0 +1,1409 @@
+Compiled from "Config.java"
+public class net.dungeon_difficulty.config.Config$EntityModifier$Filters {
+  public net.dungeon_difficulty.config.Config$EntityModifier$Filters$Attitude attitude;
+
+  public java.lang.String type;
+
+  public net.dungeon_difficulty.config.Config$EntityModifier$Filters();
+    Code:
+       0: aload_0
+       1: invokespecial #23                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: getstatic     #26                 // Field net/dungeon_difficulty/config/Config$EntityModifier$Filters$Attitude.ANY:Lnet/dungeon_difficulty/config/Config$EntityModifier$Filters$Attitude;
+       8: putfield      #28                 // Field attitude:Lnet/dungeon_difficulty/config/Config$EntityModifier$Filters$Attitude;
+      11: aload_0
+      12: ldc           #30                 // String
+      14: putfield      #32                 // Field type:Ljava/lang/String;
+      17: return
+}
+Compiled from "Config.java"
+public class net.dungeon_difficulty.config.Config$AttributeModifier {
+  public java.lang.String attribute;
+
+  public net.dungeon_difficulty.config.Config$Operation operation;
+
+  public float randomness;
+
+  public float value;
+
+  public float offset;
+
+  private static java.util.Random rng;
+
+  public net.dungeon_difficulty.config.Config$AttributeModifier();
+    Code:
+       0: aload_0
+       1: invokespecial #25                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: getstatic     #28                 // Field net/dungeon_difficulty/config/Config$Operation.MULTIPLY_BASE:Lnet/dungeon_difficulty/config/Config$Operation;
+       8: putfield      #30                 // Field operation:Lnet/dungeon_difficulty/config/Config$Operation;
+      11: aload_0
+      12: fconst_0
+      13: putfield      #32                 // Field randomness:F
+      16: aload_0
+      17: fconst_0
+      18: putfield      #34                 // Field value:F
+      21: aload_0
+      22: fconst_0
+      23: putfield      #36                 // Field offset:F
+      26: return
+
+  public net.dungeon_difficulty.config.Config$AttributeModifier(java.lang.String, float);
+    Code:
+       0: aload_0
+       1: invokespecial #25                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: getstatic     #28                 // Field net/dungeon_difficulty/config/Config$Operation.MULTIPLY_BASE:Lnet/dungeon_difficulty/config/Config$Operation;
+       8: putfield      #30                 // Field operation:Lnet/dungeon_difficulty/config/Config$Operation;
+      11: aload_0
+      12: fconst_0
+      13: putfield      #32                 // Field randomness:F
+      16: aload_0
+      17: fconst_0
+      18: putfield      #34                 // Field value:F
+      21: aload_0
+      22: fconst_0
+      23: putfield      #36                 // Field offset:F
+      26: aload_0
+      27: aload_1
+      28: putfield      #41                 // Field attribute:Ljava/lang/String;
+      31: aload_0
+      32: fload_2
+      33: putfield      #34                 // Field value:F
+      36: return
+
+  public float randomizedValue(int);
+    Code:
+       0: aload_0
+       1: getfield      #34                 // Field value:F
+       4: iload_1
+       5: i2f
+       6: fmul
+       7: fstore_2
+       8: aload_0
+       9: getfield      #32                 // Field randomness:F
+      12: fconst_0
+      13: fcmpl
+      14: ifle          38
+      17: getstatic     #46                 // Field rng:Ljava/util/Random;
+      20: fload_2
+      21: aload_0
+      22: getfield      #32                 // Field randomness:F
+      25: fsub
+      26: fload_2
+      27: aload_0
+      28: getfield      #32                 // Field randomness:F
+      31: fadd
+      32: invokevirtual #52                 // Method java/util/Random.nextFloat:(FF)F
+      35: goto          39
+      38: fload_2
+      39: fstore_3
+      40: aload_0
+      41: getfield      #36                 // Field offset:F
+      44: fload_3
+      45: fadd
+      46: freturn
+
+  static {};
+    Code:
+       0: new           #48                 // class java/util/Random
+       3: dup
+       4: invokespecial #55                 // Method java/util/Random."<init>":()V
+       7: putstatic     #46                 // Field rng:Ljava/util/Random;
+      10: return
+}
+Compiled from "Config.java"
+public class net.dungeon_difficulty.config.Config$SpawnerModifier {
+  public float spawn_range_multiplier;
+
+  public float spawn_count_multiplier;
+
+  public float max_nearby_entities_multiplier;
+
+  public float min_spawn_delay_multiplier;
+
+  public float max_spawn_delay_multiplier;
+
+  public float required_player_range_multiplier;
+
+  public net.dungeon_difficulty.config.Config$SpawnerModifier();
+    Code:
+       0: aload_0
+       1: invokespecial #19                 // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: fconst_0
+       6: putfield      #21                 // Field spawn_range_multiplier:F
+       9: aload_0
+      10: fconst_0
+      11: putfield      #23                 // Field spawn_count_multiplier:F
+      14: aload_0
+      15: fconst_0
+      16: putfield      #25                 // Field max_nearby_entities_multiplier:F
+      19: aload_0
+      20: fconst_0
+      21: putfield      #27                 // Field min_spawn_delay_multiplier:F
+      24: aload_0
+      25: fconst_0
+      26: putfield      #29                 // Field max_spawn_delay_multiplier:F
+      29: aload_0
+      30: fconst_0
+      31: putfield      #31                 // Field required_player_range_multiplier:F
+      34: return
+}
+Compiled from "EntityScaling.java"
+public class net.dungeon_difficulty.logic.EntityScaling {
+  public net.dungeon_difficulty.logic.EntityScaling();
+    Code:
+       0: aload_0
+       1: invokespecial #44                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void scale(net.minecraft.world.entity.Entity, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: aload_0
+       1: instanceof    #52                 // class net/minecraft/world/entity/player/Player
+       4: ifeq          8
+       7: return
+       8: aload_0
+       9: instanceof    #54                 // class net/minecraft/world/entity/LivingEntity
+      12: ifeq          139
+      15: aload_0
+      16: checkcast     #54                 // class net/minecraft/world/entity/LivingEntity
+      19: astore_2
+      20: aload_2
+      21: checkcast     #56                 // class net/dungeon_difficulty/logic/EntityDifficultyScalable
+      24: astore_3
+      25: aload_3
+      26: aload_1
+      27: invokevirtual #62                 // Method net/minecraft/server/level/ServerLevel.dimension:()Lnet/minecraft/resources/ResourceKey;
+      30: invokevirtual #68                 // Method net/minecraft/resources/ResourceKey.location:()Lnet/minecraft/resources/ResourceLocation;
+      33: invokeinterface #72,  2           // InterfaceMethod net/dungeon_difficulty/logic/EntityDifficultyScalable.isAlreadyEvaluated:(Lnet/minecraft/resources/ResourceLocation;)Z
+      38: ifeq          42
+      41: return
+      42: aload_1
+      43: aload_2
+      44: invokevirtual #76                 // Method net/minecraft/world/entity/LivingEntity.blockPosition:()Lnet/minecraft/core/BlockPos;
+      47: invokestatic  #80                 // Method net/dungeon_difficulty/logic/PatternMatching$LocationData.create:(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;)Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;
+      50: astore        4
+      52: aload_2
+      53: invokestatic  #83                 // Method net/dungeon_difficulty/logic/PatternMatching$EntityData.create:(Lnet/minecraft/world/entity/LivingEntity;)Lnet/dungeon_difficulty/logic/PatternMatching$EntityData;
+      56: astore        5
+      58: aload_3
+      59: aload         4
+      61: invokeinterface #87,  2           // InterfaceMethod net/dungeon_difficulty/logic/EntityDifficultyScalable.setScalingLocationData:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;)V
+      66: aload_2
+      67: invokevirtual #91                 // Method net/minecraft/world/entity/LivingEntity.getHealth:()F
+      70: aload_2
+      71: invokevirtual #94                 // Method net/minecraft/world/entity/LivingEntity.getMaxHealth:()F
+      74: fdiv
+      75: fstore        6
+      77: aload         5
+      79: aload_1
+      80: invokestatic  #100                // Method net/dungeon_difficulty/logic/PerPlayerDifficulty.getAttributeModifiers:(Lnet/dungeon_difficulty/logic/PatternMatching$EntityData;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$EntityScaleResult;
+      83: aload_2
+      84: invokestatic  #104                // Method apply:(Lnet/dungeon_difficulty/logic/PatternMatching$EntityScaleResult;Lnet/minecraft/world/entity/LivingEntity;)V
+      87: aload         4
+      89: aload         5
+      91: aload_1
+      92: invokestatic  #108                // Method net/dungeon_difficulty/logic/PatternMatching.getAttributeModifiersForEntity:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/dungeon_difficulty/logic/PatternMatching$EntityData;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$EntityScaleResult;
+      95: astore        7
+      97: aload         7
+      99: aload_2
+     100: invokestatic  #104                // Method apply:(Lnet/dungeon_difficulty/logic/PatternMatching$EntityScaleResult;Lnet/minecraft/world/entity/LivingEntity;)V
+     103: aload_3
+     104: aload         7
+     106: invokevirtual #112                // Method net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult.level:()I
+     109: invokeinterface #116,  2          // InterfaceMethod net/dungeon_difficulty/logic/EntityDifficultyScalable.markAlreadyScaled:(I)V
+     114: aload_3
+     115: aload         4
+     117: invokevirtual #119                // Method net/dungeon_difficulty/logic/PatternMatching$LocationData.dimensionId:()Lnet/minecraft/resources/ResourceLocation;
+     120: invokevirtual #125                // Method net/minecraft/resources/ResourceLocation.toString:()Ljava/lang/String;
+     123: invokeinterface #129,  2          // InterfaceMethod net/dungeon_difficulty/logic/EntityDifficultyScalable.markEvaluated:(Ljava/lang/String;)V
+     128: aload_2
+     129: fload         6
+     131: aload_2
+     132: invokevirtual #94                 // Method net/minecraft/world/entity/LivingEntity.getMaxHealth:()F
+     135: fmul
+     136: invokevirtual #133                // Method net/minecraft/world/entity/LivingEntity.setHealth:(F)V
+     139: return
+
+  private static void apply(net.dungeon_difficulty.logic.PatternMatching$EntityScaleResult, net.minecraft.world.entity.LivingEntity);
+    Code:
+       0: aload_0
+       1: invokevirtual #112                // Method net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult.level:()I
+       4: istore_2
+       5: iload_2
+       6: ifgt          10
+       9: return
+      10: aload_0
+      11: invokevirtual #152                // Method net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult.modifiers:()Ljava/util/List;
+      14: invokeinterface #158,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      19: astore_3
+      20: aload_3
+      21: invokeinterface #164,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      26: ifeq          461
+      29: aload_3
+      30: invokeinterface #168,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      35: checkcast     #20                 // class net/dungeon_difficulty/config/Config$AttributeModifier
+      38: astore        4
+      40: aload         4
+      42: getfield      #172                // Field net/dungeon_difficulty/config/Config$AttributeModifier.attribute:Ljava/lang/String;
+      45: astore        5
+      47: aload         5
+      49: ifnull        20
+      52: aload         5
+      54: invokevirtual #177                // Method java/lang/String.isEmpty:()Z
+      57: ifeq          63
+      60: goto          20
+      63: new           #179                // class java/util/ArrayList
+      66: dup
+      67: invokespecial #180                // Method java/util/ArrayList."<init>":()V
+      70: astore        6
+      72: aload         5
+      74: ldc           #182                // String ~
+      76: invokevirtual #186                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      79: ifeq          224
+      82: aload         5
+      84: ldc           #182                // String ~
+      86: invokevirtual #189                // Method java/lang/String.length:()I
+      89: invokevirtual #193                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      92: astore        7
+      94: aload_1
+      95: invokevirtual #197                // Method net/minecraft/world/entity/LivingEntity.getAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeMap;
+      98: checkcast     #199                // class net/dungeon_difficulty/mixin/AccessorAttributeContainer
+     101: checkcast     #201                // class net/dungeon_difficulty/mixin/AccessorDefaultAttributeContainer
+     104: invokeinterface #205,  1          // InterfaceMethod net/dungeon_difficulty/mixin/AccessorDefaultAttributeContainer.getInstances:()Ljava/util/Map;
+     109: astore        8
+     111: aload         8
+     113: invokeinterface #209,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+     118: invokeinterface #212,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+     123: astore        9
+     125: aload         9
+     127: invokeinterface #164,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     132: ifeq          221
+     135: aload         9
+     137: invokeinterface #168,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     142: checkcast     #25                 // class java/util/Map$Entry
+     145: astore        10
+     147: aload         10
+     149: invokeinterface #215,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     154: checkcast     #32                 // class net/minecraft/core/Holder
+     157: astore        11
+     159: aload         11
+     161: ifnull        125
+     164: aload         11
+     166: invokeinterface #218,  1          // InterfaceMethod net/minecraft/core/Holder.value:()Ljava/lang/Object;
+     171: ifnonnull     177
+     174: goto          125
+     177: aload         11
+     179: invokeinterface #218,  1          // InterfaceMethod net/minecraft/core/Holder.value:()Ljava/lang/Object;
+     184: checkcast     #220                // class net/minecraft/world/entity/ai/attributes/Attribute
+     187: invokevirtual #221                // Method java/lang/Object.toString:()Ljava/lang/String;
+     190: astore        12
+     192: aload         12
+     194: aload         7
+     196: invokestatic  #225                // Method net/dungeon_difficulty/logic/PatternMatching.regexMatches:(Ljava/lang/String;Ljava/lang/String;)Z
+     199: ifeq          218
+     202: aload         6
+     204: aload         10
+     206: invokeinterface #215,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     211: checkcast     #32                 // class net/minecraft/core/Holder
+     214: invokevirtual #229                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     217: pop
+     218: goto          125
+     221: goto          277
+     224: getstatic     #235                // Field net/minecraft/core/registries/BuiltInRegistries.ATTRIBUTE:Lnet/minecraft/core/Registry;
+     227: aload         4
+     229: getfield      #172                // Field net/dungeon_difficulty/config/Config$AttributeModifier.attribute:Ljava/lang/String;
+     232: invokestatic  #239                // Method net/minecraft/resources/ResourceLocation.parse:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     235: invokeinterface #245,  2          // InterfaceMethod net/minecraft/core/Registry.getHolder:(Lnet/minecraft/resources/ResourceLocation;)Ljava/util/Optional;
+     240: aconst_null
+     241: invokevirtual #251                // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+     244: checkcast     #30                 // class net/minecraft/core/Holder$Reference
+     247: astore        7
+     249: aload         7
+     251: ifnull        20
+     254: aload_1
+     255: invokevirtual #197                // Method net/minecraft/world/entity/LivingEntity.getAttributes:()Lnet/minecraft/world/entity/ai/attributes/AttributeMap;
+     258: aload         7
+     260: invokevirtual #257                // Method net/minecraft/world/entity/ai/attributes/AttributeMap.hasAttribute:(Lnet/minecraft/core/Holder;)Z
+     263: ifne          269
+     266: goto          20
+     269: aload         6
+     271: aload         7
+     273: invokevirtual #229                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+     276: pop
+     277: aload         4
+     279: iload_2
+     280: invokevirtual #261                // Method net/dungeon_difficulty/config/Config$AttributeModifier.randomizedValue:(I)F
+     283: fstore        7
+     285: aload         4
+     287: getfield      #263                // Field net/dungeon_difficulty/config/Config$AttributeModifier.value:F
+     290: ldc_w         #264                // float 0.25f
+     293: fmul
+     294: fstore        8
+     296: fload         7
+     298: f2d
+     299: fload         8
+     301: f2d
+     302: invokestatic  #270                // Method net/dungeon_difficulty/logic/MathHelper.round:(DD)D
+     305: d2f
+     306: fstore        7
+     308: ldc_w         #272                // String dungeon_difficulty
+     311: aload_0
+     312: invokevirtual #275                // Method net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult.name:()Ljava/lang/String;
+     315: invokestatic  #279                // Method net/minecraft/resources/ResourceLocation.fromNamespaceAndPath:(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+     318: astore        9
+     320: aload         6
+     322: invokevirtual #280                // Method java/util/ArrayList.iterator:()Ljava/util/Iterator;
+     325: astore        10
+     327: aload         10
+     329: invokeinterface #164,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     334: ifeq          458
+     337: aload         10
+     339: invokeinterface #168,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     344: checkcast     #32                 // class net/minecraft/core/Holder
+     347: astore        11
+     349: getstatic     #284                // Field net/dungeon_difficulty/logic/EntityScaling$1.$SwitchMap$net$dungeon_difficulty$config$Config$Operation:[I
+     352: aload         4
+     354: getfield      #288                // Field net/dungeon_difficulty/config/Config$AttributeModifier.operation:Lnet/dungeon_difficulty/config/Config$Operation;
+     357: invokevirtual #291                // Method net/dungeon_difficulty/config/Config$Operation.ordinal:()I
+     360: iaload
+     361: lookupswitch  { // 2
+
+                     1: 398
+
+                     2: 404
+               default: 388
+          }
+     388: new           #293                // class java/lang/MatchException
+     391: dup
+     392: aconst_null
+     393: aconst_null
+     394: invokespecial #296                // Method java/lang/MatchException."<init>":(Ljava/lang/String;Ljava/lang/Throwable;)V
+     397: athrow
+     398: getstatic     #300                // Field net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.ADD_VALUE:Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;
+     401: goto          407
+     404: getstatic     #303                // Field net/minecraft/world/entity/ai/attributes/AttributeModifier$Operation.ADD_MULTIPLIED_BASE:Lnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;
+     407: astore        12
+     409: new           #40                 // class net/minecraft/world/entity/ai/attributes/AttributeModifier
+     412: dup
+     413: aload         9
+     415: fload         7
+     417: f2d
+     418: aload         12
+     420: invokespecial #306                // Method net/minecraft/world/entity/ai/attributes/AttributeModifier."<init>":(Lnet/minecraft/resources/ResourceLocation;DLnet/minecraft/world/entity/ai/attributes/AttributeModifier$Operation;)V
+     423: astore        13
+     425: aload_1
+     426: aload         11
+     428: invokevirtual #310                // Method net/minecraft/world/entity/LivingEntity.getAttribute:(Lnet/minecraft/core/Holder;)Lnet/minecraft/world/entity/ai/attributes/AttributeInstance;
+     431: astore        14
+     433: aload         14
+     435: ifnull        455
+     438: aload         14
+     440: aload         9
+     442: invokevirtual #315                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.hasModifier:(Lnet/minecraft/resources/ResourceLocation;)Z
+     445: ifne          455
+     448: aload         14
+     450: aload         13
+     452: invokevirtual #319                // Method net/minecraft/world/entity/ai/attributes/AttributeInstance.addPermanentModifier:(Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;)V
+     455: goto          327
+     458: goto          20
+     461: return
+}
+Compiled from "PatternMatching.java"
+public class net.dungeon_difficulty.logic.PatternMatching {
+  public static final java.lang.String ANY;
+
+  public static final java.lang.String TAG_PREFIX;
+
+  public static final java.lang.String REGEX_PREFIX;
+
+  public static final java.lang.String NEGATE_PREFIX;
+
+  private static final java.util.Map<java.lang.String, java.util.regex.Pattern> compiledRegexes;
+
+  public net.dungeon_difficulty.logic.PatternMatching();
+    Code:
+       0: aload_0
+       1: invokespecial #120                // Method java/lang/Object."<init>":()V
+       4: return
+
+  private static boolean isInsideStructure(net.minecraft.server.level.ServerLevel, net.minecraft.core.BlockPos, net.minecraft.world.level.levelgen.structure.StructureStart);
+    Code:
+       0: aload_2
+       1: invokevirtual #133                // Method net/minecraft/world/level/levelgen/structure/StructureStart.isValid:()Z
+       4: ifeq          16
+       7: aload_2
+       8: invokevirtual #137                // Method net/minecraft/world/level/levelgen/structure/StructureStart.getBoundingBox:()Lnet/minecraft/world/level/levelgen/structure/BoundingBox;
+      11: aload_1
+      12: invokevirtual #143                // Method net/minecraft/world/level/levelgen/structure/BoundingBox.isInside:(Lnet/minecraft/core/Vec3i;)Z
+      15: ireturn
+      16: iconst_0
+      17: ireturn
+
+  public static net.dungeon_difficulty.logic.PatternMatching$ItemScaleResult getModifiersForItem(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.dungeon_difficulty.logic.PatternMatching$ItemData, net.minecraft.server.level.ServerLevel, net.dungeon_difficulty.config.Config$Rewards);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: invokevirtual #156                // Method net/dungeon_difficulty/logic/PatternMatching$ItemData.lootTableId:()Lnet/minecraft/resources/ResourceLocation;
+       5: getstatic     #162                // Field net/dungeon_difficulty/logic/ScalingGoal.LOOT:Lnet/dungeon_difficulty/logic/ScalingGoal;
+       8: aload_2
+       9: invokestatic  #166                // Method getDifficultyResult:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/minecraft/resources/ResourceLocation;Lnet/dungeon_difficulty/logic/ScalingGoal;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;
+      12: astore        4
+      14: iconst_0
+      15: istore        5
+      17: aload         4
+      19: ifnull        51
+      22: aload         4
+      24: invokevirtual #170                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:()Lnet/dungeon_difficulty/logic/Difficulty;
+      27: ifnull        51
+      30: aload         4
+      32: invokevirtual #170                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:()Lnet/dungeon_difficulty/logic/Difficulty;
+      35: invokevirtual #175                // Method net/dungeon_difficulty/logic/Difficulty.allowsLootScaling:()Z
+      38: ifeq          51
+      41: aload         4
+      43: getfield      #178                // Field net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:Lnet/dungeon_difficulty/logic/Difficulty;
+      46: invokevirtual #182                // Method net/dungeon_difficulty/logic/Difficulty.rewardLevel:()I
+      49: istore        5
+      51: aload_1
+      52: aload_3
+      53: iload         5
+      55: invokestatic  #186                // Method getItemScaleResult:(Lnet/dungeon_difficulty/logic/PatternMatching$ItemData;Lnet/dungeon_difficulty/config/Config$Rewards;I)Lnet/dungeon_difficulty/logic/PatternMatching$ItemScaleResult;
+      58: areturn
+
+  public static net.dungeon_difficulty.logic.PatternMatching$ItemScaleResult getItemScaleResult(net.dungeon_difficulty.logic.PatternMatching$ItemData, net.dungeon_difficulty.config.Config$Rewards, int);
+    Code:
+       0: new           #195                // class java/util/ArrayList
+       3: dup
+       4: invokespecial #196                // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: aload_1
+       9: ifnull        128
+      12: iload_2
+      13: ifle          128
+      16: aconst_null
+      17: astore        4
+      19: aload_0
+      20: getfield      #200                // Field net/dungeon_difficulty/logic/PatternMatching$ItemData.kind:Lnet/dungeon_difficulty/logic/PatternMatching$ItemKind;
+      23: invokevirtual #203                // Method net/dungeon_difficulty/logic/PatternMatching$ItemKind.ordinal:()I
+      26: lookupswitch  { // 2
+
+                     0: 52
+
+                     1: 61
+               default: 67
+          }
+      52: aload_1
+      53: getfield      #207                // Field net/dungeon_difficulty/config/Config$Rewards.armor:Ljava/util/List;
+      56: astore        4
+      58: goto          67
+      61: aload_1
+      62: getfield      #210                // Field net/dungeon_difficulty/config/Config$Rewards.weapons:Ljava/util/List;
+      65: astore        4
+      67: aload         4
+      69: ifnull        128
+      72: aload         4
+      74: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      79: astore        5
+      81: aload         5
+      83: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      88: ifeq          128
+      91: aload         5
+      93: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      98: checkcast     #45                 // class net/dungeon_difficulty/config/Config$ItemModifier
+     101: astore        6
+     103: aload_0
+     104: aload         6
+     106: getfield      #229                // Field net/dungeon_difficulty/config/Config$ItemModifier.item_matches:Lnet/dungeon_difficulty/config/Config$ItemModifier$Filters;
+     109: invokevirtual #233                // Method net/dungeon_difficulty/logic/PatternMatching$ItemData.matches:(Lnet/dungeon_difficulty/config/Config$ItemModifier$Filters;)Z
+     112: ifeq          125
+     115: aload_3
+     116: aload         6
+     118: getfield      #236                // Field net/dungeon_difficulty/config/Config$ItemModifier.attributes:Ljava/util/List;
+     121: invokevirtual #240                // Method java/util/ArrayList.addAll:(Ljava/util/Collection;)Z
+     124: pop
+     125: goto          81
+     128: new           #17                 // class net/dungeon_difficulty/logic/PatternMatching$ItemScaleResult
+     131: dup
+     132: aload_3
+     133: iload_2
+     134: invokespecial #243                // Method net/dungeon_difficulty/logic/PatternMatching$ItemScaleResult."<init>":(Ljava/util/List;I)V
+     137: areturn
+
+  public static net.dungeon_difficulty.logic.PatternMatching$EntityScaleResult getAttributeModifiersForEntity(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.dungeon_difficulty.logic.PatternMatching$EntityData, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: new           #195                // class java/util/ArrayList
+       3: dup
+       4: invokespecial #196                // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: aload_0
+       9: aload_1
+      10: invokevirtual #256                // Method net/dungeon_difficulty/logic/PatternMatching$EntityData.entityId:()Lnet/minecraft/resources/ResourceLocation;
+      13: getstatic     #259                // Field net/dungeon_difficulty/logic/ScalingGoal.ENTITY:Lnet/dungeon_difficulty/logic/ScalingGoal;
+      16: aload_2
+      17: invokestatic  #166                // Method getDifficultyResult:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/minecraft/resources/ResourceLocation;Lnet/dungeon_difficulty/logic/ScalingGoal;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;
+      20: astore        4
+      22: iconst_0
+      23: istore        5
+      25: fconst_0
+      26: fstore        6
+      28: getstatic     #263                // Field net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult.EMPTY:Lnet/dungeon_difficulty/logic/PatternMatching$EntityScaleResult;
+      31: invokevirtual #267                // Method net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult.name:()Ljava/lang/String;
+      34: astore        7
+      36: aload         4
+      38: ifnull        142
+      41: aload         4
+      43: getfield      #178                // Field net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:Lnet/dungeon_difficulty/logic/Difficulty;
+      46: ifnull        142
+      49: aload         4
+      51: getfield      #178                // Field net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:Lnet/dungeon_difficulty/logic/Difficulty;
+      54: astore        8
+      56: aload         8
+      58: invokevirtual #270                // Method net/dungeon_difficulty/logic/Difficulty.entityLevel:()I
+      61: istore        5
+      63: iload         5
+      65: ifeq          132
+      68: aload         8
+      70: invokevirtual #274                // Method net/dungeon_difficulty/logic/Difficulty.type:()Lnet/dungeon_difficulty/config/Config$DifficultyType;
+      73: getfield      #277                // Field net/dungeon_difficulty/config/Config$DifficultyType.entities:Ljava/util/List;
+      76: aload_1
+      77: invokestatic  #281                // Method getModifiersForEntity:(Ljava/util/List;Lnet/dungeon_difficulty/logic/PatternMatching$EntityData;)Ljava/util/List;
+      80: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      85: astore        9
+      87: aload         9
+      89: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      94: ifeq          132
+      97: aload         9
+      99: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     104: checkcast     #56                 // class net/dungeon_difficulty/config/Config$EntityModifier
+     107: astore        10
+     109: aload_3
+     110: aload         10
+     112: getfield      #286                // Field net/dungeon_difficulty/config/Config$EntityModifier.attributes:Ljava/util/List;
+     115: invokevirtual #240                // Method java/util/ArrayList.addAll:(Ljava/util/Collection;)Z
+     118: pop
+     119: fload         6
+     121: aload         10
+     123: getfield      #290                // Field net/dungeon_difficulty/config/Config$EntityModifier.experience_multiplier:F
+     126: fadd
+     127: fstore        6
+     129: goto          87
+     132: aload         8
+     134: invokevirtual #274                // Method net/dungeon_difficulty/logic/Difficulty.type:()Lnet/dungeon_difficulty/config/Config$DifficultyType;
+     137: getfield      #292                // Field net/dungeon_difficulty/config/Config$DifficultyType.name:Ljava/lang/String;
+     140: astore        7
+     142: new           #13                 // class net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult
+     145: dup
+     146: ldc_w         #294                // String location
+     149: aload_3
+     150: iload         5
+     152: fload         6
+     154: invokespecial #297                // Method net/dungeon_difficulty/logic/PatternMatching$EntityScaleResult."<init>":(Ljava/lang/String;Ljava/util/List;IF)V
+     157: areturn
+
+  public static net.dungeon_difficulty.logic.PatternMatching$SpawnerScaleResult getModifiersForSpawner(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.dungeon_difficulty.logic.PatternMatching$EntityData, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: new           #195                // class java/util/ArrayList
+       3: dup
+       4: invokespecial #196                // Method java/util/ArrayList."<init>":()V
+       7: astore_3
+       8: aload_0
+       9: aload_2
+      10: invokestatic  #307                // Method getDifficulty:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/Difficulty;
+      13: astore        4
+      15: iconst_0
+      16: istore        5
+      18: aload         4
+      20: ifnull        97
+      23: aload         4
+      25: invokevirtual #270                // Method net/dungeon_difficulty/logic/Difficulty.entityLevel:()I
+      28: istore        5
+      30: iload         5
+      32: ifeq          97
+      35: aload         4
+      37: invokevirtual #274                // Method net/dungeon_difficulty/logic/Difficulty.type:()Lnet/dungeon_difficulty/config/Config$DifficultyType;
+      40: getfield      #277                // Field net/dungeon_difficulty/config/Config$DifficultyType.entities:Ljava/util/List;
+      43: aload_1
+      44: invokestatic  #281                // Method getModifiersForEntity:(Ljava/util/List;Lnet/dungeon_difficulty/logic/PatternMatching$EntityData;)Ljava/util/List;
+      47: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      52: astore        6
+      54: aload         6
+      56: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      61: ifeq          97
+      64: aload         6
+      66: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      71: checkcast     #56                 // class net/dungeon_difficulty/config/Config$EntityModifier
+      74: astore        7
+      76: aload         7
+      78: getfield      #311                // Field net/dungeon_difficulty/config/Config$EntityModifier.spawners:Lnet/dungeon_difficulty/config/Config$SpawnerModifier;
+      81: ifnull        94
+      84: aload_3
+      85: aload         7
+      87: getfield      #311                // Field net/dungeon_difficulty/config/Config$EntityModifier.spawners:Lnet/dungeon_difficulty/config/Config$SpawnerModifier;
+      90: invokevirtual #315                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      93: pop
+      94: goto          54
+      97: new           #11                 // class net/dungeon_difficulty/logic/PatternMatching$SpawnerScaleResult
+     100: dup
+     101: aload_3
+     102: iload         5
+     104: invokespecial #316                // Method net/dungeon_difficulty/logic/PatternMatching$SpawnerScaleResult."<init>":(Ljava/util/List;I)V
+     107: areturn
+
+  public static java.util.List<net.dungeon_difficulty.config.Config$EntityModifier> getModifiersForEntity(java.util.List<net.dungeon_difficulty.config.Config$EntityModifier>, net.dungeon_difficulty.logic.PatternMatching$EntityData);
+    Code:
+       0: new           #195                // class java/util/ArrayList
+       3: dup
+       4: invokespecial #196                // Method java/util/ArrayList."<init>":()V
+       7: astore_2
+       8: aload_0
+       9: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      14: astore_3
+      15: aload_3
+      16: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      21: ifeq          57
+      24: aload_3
+      25: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      30: checkcast     #56                 // class net/dungeon_difficulty/config/Config$EntityModifier
+      33: astore        4
+      35: aload_1
+      36: aload         4
+      38: getfield      #324                // Field net/dungeon_difficulty/config/Config$EntityModifier.entity_matches:Lnet/dungeon_difficulty/config/Config$EntityModifier$Filters;
+      41: invokevirtual #327                // Method net/dungeon_difficulty/logic/PatternMatching$EntityData.matches:(Lnet/dungeon_difficulty/config/Config$EntityModifier$Filters;)Z
+      44: ifeq          54
+      47: aload_2
+      48: aload         4
+      50: invokevirtual #315                // Method java/util/ArrayList.add:(Ljava/lang/Object;)Z
+      53: pop
+      54: goto          15
+      57: aload_2
+      58: areturn
+
+  public static net.dungeon_difficulty.logic.Difficulty getDifficulty(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: aload_0
+       1: aconst_null
+       2: aload_1
+       3: invokestatic  #334                // Method getDifficulty:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/Difficulty;
+       6: areturn
+
+  public static net.dungeon_difficulty.logic.Difficulty getDifficulty(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.minecraft.resources.ResourceLocation, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getstatic     #259                // Field net/dungeon_difficulty/logic/ScalingGoal.ENTITY:Lnet/dungeon_difficulty/logic/ScalingGoal;
+       5: aload_2
+       6: invokestatic  #166                // Method getDifficultyResult:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/minecraft/resources/ResourceLocation;Lnet/dungeon_difficulty/logic/ScalingGoal;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;
+       9: astore_3
+      10: aload_3
+      11: ifnull        19
+      14: aload_3
+      15: invokevirtual #170                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:()Lnet/dungeon_difficulty/logic/Difficulty;
+      18: areturn
+      19: aconst_null
+      20: areturn
+
+  public static net.dungeon_difficulty.logic.PatternMatching$DifficultySearchResult getDifficultyResult(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.minecraft.resources.ResourceLocation, net.dungeon_difficulty.logic.ScalingGoal, net.minecraft.server.level.ServerLevel);
+    Code:
+       0: getstatic     #343                // Field net/dungeon_difficulty/DungeonDifficulty.config:Lnet/tiny_config/ConfigManager;
+       3: getfield      #349                // Field net/tiny_config/ConfigManager.value:Ljava/lang/Object;
+       6: checkcast     #40                 // class net/dungeon_difficulty/config/Config
+       9: getfield      #353                // Field net/dungeon_difficulty/config/Config.dimensions:[Lnet/dungeon_difficulty/config/Config$Dimension;
+      12: astore        4
+      14: aload         4
+      16: arraylength
+      17: istore        5
+      19: iconst_0
+      20: istore        6
+      22: iload         6
+      24: iload         5
+      26: if_icmpge     304
+      29: aload         4
+      31: iload         6
+      33: aaload
+      34: astore        7
+      36: aload_0
+      37: aload         7
+      39: getfield      #358                // Field net/dungeon_difficulty/config/Config$Dimension.world_matches:Lnet/dungeon_difficulty/config/Config$Dimension$Filters;
+      42: invokevirtual #361                // Method net/dungeon_difficulty/logic/PatternMatching$LocationData.matches:(Lnet/dungeon_difficulty/config/Config$Dimension$Filters;)Z
+      45: ifeq          298
+      48: aconst_null
+      49: astore        8
+      51: aload         7
+      53: getfield      #364                // Field net/dungeon_difficulty/config/Config$Dimension.zones:Ljava/util/List;
+      56: ifnull        233
+      59: aload         7
+      61: getfield      #364                // Field net/dungeon_difficulty/config/Config$Dimension.zones:Ljava/util/List;
+      64: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      69: astore        9
+      71: aload         9
+      73: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      78: ifeq          156
+      81: aload         9
+      83: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      88: checkcast     #70                 // class net/dungeon_difficulty/config/Config$Zone
+      91: astore        10
+      93: aload_0
+      94: aload         10
+      96: getfield      #368                // Field net/dungeon_difficulty/config/Config$Zone.zone_matches:Lnet/dungeon_difficulty/config/Config$Zone$Filters;
+      99: aload_3
+     100: invokevirtual #371                // Method net/dungeon_difficulty/logic/PatternMatching$LocationData.matches:(Lnet/dungeon_difficulty/config/Config$Zone$Filters;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$LocationData$Match;
+     103: astore        11
+     105: aload         11
+     107: invokevirtual #373                // Method net/dungeon_difficulty/logic/PatternMatching$LocationData$Match.matches:()Z
+     110: ifeq          153
+     113: aload         10
+     115: getfield      #376                // Field net/dungeon_difficulty/config/Config$Zone.difficulty:Lnet/dungeon_difficulty/config/Config$DifficultyReference;
+     118: invokestatic  #380                // Method findDifficulty:(Lnet/dungeon_difficulty/config/Config$DifficultyReference;)Lnet/dungeon_difficulty/logic/Difficulty;
+     121: astore        12
+     123: aload         12
+     125: ifnull        153
+     128: aload         12
+     130: invokevirtual #381                // Method net/dungeon_difficulty/logic/Difficulty.isValid:()Z
+     133: ifeq          153
+     136: new           #9                  // class net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult
+     139: dup
+     140: aload         12
+     142: aload_0
+     143: aload         11
+     145: invokespecial #384                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult."<init>":(Lnet/dungeon_difficulty/logic/Difficulty;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData$Match;)V
+     148: astore        8
+     150: goto          156
+     153: goto          71
+     156: aload         8
+     158: ifnull        233
+     161: aload         7
+     163: getfield      #389                // Field net/dungeon_difficulty/config/Config$Dimension.zone_specifiers:Ljava/util/List;
+     166: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     171: astore        9
+     173: aload         9
+     175: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     180: ifeq          233
+     183: aload         9
+     185: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     190: checkcast     #79                 // class net/dungeon_difficulty/config/Config$Zone$TypeOverride
+     193: astore        10
+     195: aload_0
+     196: aload         10
+     198: getfield      #390                // Field net/dungeon_difficulty/config/Config$Zone$TypeOverride.zone_matches:Lnet/dungeon_difficulty/config/Config$Zone$Filters;
+     201: aload_3
+     202: invokevirtual #371                // Method net/dungeon_difficulty/logic/PatternMatching$LocationData.matches:(Lnet/dungeon_difficulty/config/Config$Zone$Filters;Lnet/minecraft/server/level/ServerLevel;)Lnet/dungeon_difficulty/logic/PatternMatching$LocationData$Match;
+     205: astore        11
+     207: aload         11
+     209: invokevirtual #373                // Method net/dungeon_difficulty/logic/PatternMatching$LocationData$Match.matches:()Z
+     212: ifeq          230
+     215: aload         8
+     217: aload         10
+     219: getfield      #393                // Field net/dungeon_difficulty/config/Config$Zone$TypeOverride.difficulty_name:Ljava/lang/String;
+     222: invokevirtual #397                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.withType:(Ljava/lang/String;)Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;
+     225: astore        8
+     227: goto          233
+     230: goto          173
+     233: aload_0
+     234: aload_1
+     235: aload_2
+     236: aload         7
+     238: getfield      #398                // Field net/dungeon_difficulty/config/Config$Dimension.entities:Ljava/util/List;
+     241: invokestatic  #402                // Method matchEntityDifficulty:(Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/minecraft/resources/ResourceLocation;Lnet/dungeon_difficulty/logic/ScalingGoal;Ljava/util/List;)Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;
+     244: astore        9
+     246: aload         8
+     248: aload         9
+     250: invokestatic  #406                // Method chooseHigherDifficulty:(Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;)Lnet/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult;
+     253: astore        10
+     255: aload         10
+     257: ifnull        263
+     260: aload         10
+     262: areturn
+     263: aload         7
+     265: getfield      #407                // Field net/dungeon_difficulty/config/Config$Dimension.difficulty:Lnet/dungeon_difficulty/config/Config$DifficultyReference;
+     268: invokestatic  #380                // Method findDifficulty:(Lnet/dungeon_difficulty/config/Config$DifficultyReference;)Lnet/dungeon_difficulty/logic/Difficulty;
+     271: astore        11
+     273: aload         11
+     275: ifnull        298
+     278: aload         11
+     280: invokevirtual #381                // Method net/dungeon_difficulty/logic/Difficulty.isValid:()Z
+     283: ifeq          298
+     286: new           #9                  // class net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult
+     289: dup
+     290: aload         11
+     292: aload_0
+     293: aconst_null
+     294: invokespecial #384                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult."<init>":(Lnet/dungeon_difficulty/logic/Difficulty;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData$Match;)V
+     297: areturn
+     298: iinc          6, 1
+     301: goto          22
+     304: aconst_null
+     305: areturn
+
+  private static net.dungeon_difficulty.logic.PatternMatching$DifficultySearchResult chooseHigherDifficulty(net.dungeon_difficulty.logic.PatternMatching$DifficultySearchResult, net.dungeon_difficulty.logic.PatternMatching$DifficultySearchResult);
+    Code:
+       0: aload_0
+       1: ifnonnull     10
+       4: aload_1
+       5: ifnonnull     10
+       8: aconst_null
+       9: areturn
+      10: aload_0
+      11: ifnull        24
+      14: aload_0
+      15: invokevirtual #170                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:()Lnet/dungeon_difficulty/logic/Difficulty;
+      18: invokevirtual #423                // Method net/dungeon_difficulty/logic/Difficulty.level:()I
+      21: goto          26
+      24: bipush        -100
+      26: istore_2
+      27: aload_1
+      28: ifnull        41
+      31: aload_1
+      32: invokevirtual #170                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult.difficulty:()Lnet/dungeon_difficulty/logic/Difficulty;
+      35: invokevirtual #423                // Method net/dungeon_difficulty/logic/Difficulty.level:()I
+      38: goto          43
+      41: bipush        -100
+      43: istore_3
+      44: iload_2
+      45: iload_3
+      46: if_icmplt     51
+      49: aload_0
+      50: areturn
+      51: aload_1
+      52: areturn
+
+  private static net.dungeon_difficulty.logic.PatternMatching$DifficultySearchResult matchEntityDifficulty(net.dungeon_difficulty.logic.PatternMatching$LocationData, net.minecraft.resources.ResourceLocation, net.dungeon_difficulty.logic.ScalingGoal, java.util.List<net.dungeon_difficulty.config.Config$EntityMatcher>);
+    Code:
+       0: aload_1
+       1: ifnull        193
+       4: aload_3
+       5: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      10: astore        4
+      12: aload         4
+      14: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      19: ifeq          193
+      22: aload         4
+      24: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      29: checkcast     #82                 // class net/dungeon_difficulty/config/Config$EntityMatcher
+      32: astore        5
+      34: getstatic     #431                // Field net/dungeon_difficulty/logic/PatternMatching$1.$SwitchMap$net$dungeon_difficulty$logic$ScalingGoal:[I
+      37: aload_2
+      38: invokevirtual #432                // Method net/dungeon_difficulty/logic/ScalingGoal.ordinal:()I
+      41: iaload
+      42: lookupswitch  { // 2
+
+                     1: 68
+
+                     2: 145
+               default: 190
+          }
+      68: aload         5
+      70: getfield      #435                // Field net/dungeon_difficulty/config/Config$EntityMatcher.entity_type:Ljava/lang/String;
+      73: ifnull        190
+      76: getstatic     #441                // Field net/minecraft/core/registries/BuiltInRegistries.ENTITY_TYPE:Lnet/minecraft/core/DefaultedRegistry;
+      79: aload_1
+      80: invokeinterface #447,  2          // InterfaceMethod net/minecraft/core/DefaultedRegistry.getHolder:(Lnet/minecraft/resources/ResourceLocation;)Ljava/util/Optional;
+      85: astore        6
+      87: aload         6
+      89: invokevirtual #452                // Method java/util/Optional.isEmpty:()Z
+      92: ifeq          98
+      95: goto          12
+      98: aload         6
+     100: invokevirtual #455                // Method java/util/Optional.get:()Ljava/lang/Object;
+     103: checkcast     #93                 // class net/minecraft/core/Holder
+     106: getstatic     #460                // Field net/minecraft/core/registries/Registries.ENTITY_TYPE:Lnet/minecraft/resources/ResourceKey;
+     109: aload         5
+     111: getfield      #435                // Field net/dungeon_difficulty/config/Config$EntityMatcher.entity_type:Ljava/lang/String;
+     114: invokestatic  #464                // Method universalMatch:(Lnet/minecraft/core/Holder;Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Z
+     117: ifeq          142
+     120: aload         5
+     122: getfield      #465                // Field net/dungeon_difficulty/config/Config$EntityMatcher.difficulty:Lnet/dungeon_difficulty/config/Config$DifficultyReference;
+     125: invokestatic  #380                // Method findDifficulty:(Lnet/dungeon_difficulty/config/Config$DifficultyReference;)Lnet/dungeon_difficulty/logic/Difficulty;
+     128: astore        7
+     130: new           #9                  // class net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult
+     133: dup
+     134: aload         7
+     136: aload_0
+     137: aconst_null
+     138: invokespecial #384                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult."<init>":(Lnet/dungeon_difficulty/logic/Difficulty;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData$Match;)V
+     141: areturn
+     142: goto          190
+     145: aload         5
+     147: getfield      #468                // Field net/dungeon_difficulty/config/Config$EntityMatcher.loot_table:Ljava/lang/String;
+     150: ifnull        190
+     153: aload_1
+     154: invokevirtual #471                // Method net/minecraft/resources/ResourceLocation.toString:()Ljava/lang/String;
+     157: aload         5
+     159: getfield      #468                // Field net/dungeon_difficulty/config/Config$EntityMatcher.loot_table:Ljava/lang/String;
+     162: invokestatic  #475                // Method regexMatches:(Ljava/lang/String;Ljava/lang/String;)Z
+     165: ifeq          190
+     168: aload         5
+     170: getfield      #465                // Field net/dungeon_difficulty/config/Config$EntityMatcher.difficulty:Lnet/dungeon_difficulty/config/Config$DifficultyReference;
+     173: invokestatic  #380                // Method findDifficulty:(Lnet/dungeon_difficulty/config/Config$DifficultyReference;)Lnet/dungeon_difficulty/logic/Difficulty;
+     176: astore        6
+     178: new           #9                  // class net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult
+     181: dup
+     182: aload         6
+     184: aload_0
+     185: aconst_null
+     186: invokespecial #384                // Method net/dungeon_difficulty/logic/PatternMatching$DifficultySearchResult."<init>":(Lnet/dungeon_difficulty/logic/Difficulty;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData;Lnet/dungeon_difficulty/logic/PatternMatching$LocationData$Match;)V
+     189: areturn
+     190: goto          12
+     193: aconst_null
+     194: areturn
+
+  private static net.dungeon_difficulty.logic.Difficulty findDifficulty(net.dungeon_difficulty.config.Config$DifficultyReference);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: aconst_null
+       5: areturn
+       6: aload_0
+       7: getfield      #483                // Field net/dungeon_difficulty/config/Config$DifficultyReference.name:Ljava/lang/String;
+      10: astore_1
+      11: aload_1
+      12: ifnull        22
+      15: aload_1
+      16: invokevirtual #484                // Method java/lang/String.isEmpty:()Z
+      19: ifeq          24
+      22: aconst_null
+      23: areturn
+      24: getstatic     #489                // Field net/dungeon_difficulty/logic/DifficultyTypes.resolved:Ljava/util/List;
+      27: invokeinterface #216,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      32: astore_2
+      33: aload_2
+      34: invokeinterface #221,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      39: ifeq          129
+      42: aload_2
+      43: invokeinterface #225,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      48: checkcast     #53                 // class net/dungeon_difficulty/config/Config$DifficultyType
+      51: astore_3
+      52: aload_1
+      53: aload_3
+      54: getfield      #292                // Field net/dungeon_difficulty/config/Config$DifficultyType.name:Ljava/lang/String;
+      57: invokevirtual #492                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      60: ifeq          126
+      63: aload_0
+      64: getfield      #496                // Field net/dungeon_difficulty/config/Config$DifficultyReference.reward_level:Ljava/lang/Integer;
+      67: ifnull        80
+      70: aload_0
+      71: getfield      #496                // Field net/dungeon_difficulty/config/Config$DifficultyReference.reward_level:Ljava/lang/Integer;
+      74: invokevirtual #501                // Method java/lang/Integer.intValue:()I
+      77: goto          84
+      80: aload_0
+      81: getfield      #503                // Field net/dungeon_difficulty/config/Config$DifficultyReference.level:I
+      84: istore        4
+      86: aload_0
+      87: getfield      #506                // Field net/dungeon_difficulty/config/Config$DifficultyReference.entity_level:Ljava/lang/Integer;
+      90: ifnull        103
+      93: aload_0
+      94: getfield      #506                // Field net/dungeon_difficulty/config/Config$DifficultyReference.entity_level:Ljava/lang/Integer;
+      97: invokevirtual #501                // Method java/lang/Integer.intValue:()I
+     100: goto          107
+     103: aload_0
+     104: getfield      #503                // Field net/dungeon_difficulty/config/Config$DifficultyReference.level:I
+     107: istore        5
+     109: new           #172                // class net/dungeon_difficulty/logic/Difficulty
+     112: dup
+     113: aload_3
+     114: aload_0
+     115: getfield      #503                // Field net/dungeon_difficulty/config/Config$DifficultyReference.level:I
+     118: iload         5
+     120: iload         4
+     122: invokespecial #509                // Method net/dungeon_difficulty/logic/Difficulty."<init>":(Lnet/dungeon_difficulty/config/Config$DifficultyType;III)V
+     125: areturn
+     126: goto          33
+     129: aconst_null
+     130: areturn
+
+  public static <T> boolean universalMatch(net.minecraft.core.Holder<T>, net.minecraft.resources.ResourceKey<net.minecraft.core.Registry<T>>, java.lang.String);
+    Code:
+       0: aload_2
+       1: ifnull        20
+       4: aload_2
+       5: invokevirtual #484                // Method java/lang/String.isEmpty:()Z
+       8: ifne          20
+      11: aload_2
+      12: ldc           #104                // String *
+      14: invokevirtual #492                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      17: ifeq          22
+      20: iconst_1
+      21: ireturn
+      22: aload_0
+      23: ifnonnull     28
+      26: iconst_0
+      27: ireturn
+      28: aload_2
+      29: ldc           #113                // String !
+      31: invokevirtual #517                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      34: ifeq          56
+      37: aload_0
+      38: aload_1
+      39: aload_2
+      40: iconst_1
+      41: invokevirtual #521                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      44: invokestatic  #524                // Method entryMatches:(Lnet/minecraft/core/Holder;Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Z
+      47: ifne          54
+      50: iconst_1
+      51: goto          55
+      54: iconst_0
+      55: ireturn
+      56: aload_0
+      57: aload_1
+      58: aload_2
+      59: invokestatic  #524                // Method entryMatches:(Lnet/minecraft/core/Holder;Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Z
+      62: ireturn
+
+  public static <T> boolean universalMatch(net.minecraft.resources.ResourceLocation, java.lang.String);
+    Code:
+       0: aload_1
+       1: ifnull        20
+       4: aload_1
+       5: invokevirtual #484                // Method java/lang/String.isEmpty:()Z
+       8: ifne          20
+      11: aload_1
+      12: ldc           #104                // String *
+      14: invokevirtual #492                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      17: ifeq          22
+      20: iconst_1
+      21: ireturn
+      22: aload_1
+      23: ldc           #113                // String !
+      25: invokevirtual #517                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      28: ifeq          49
+      31: aload_0
+      32: aload_1
+      33: iconst_1
+      34: invokevirtual #521                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      37: invokestatic  #533                // Method idMatches:(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Z
+      40: ifne          47
+      43: iconst_1
+      44: goto          48
+      47: iconst_0
+      48: ireturn
+      49: aload_0
+      50: aload_1
+      51: invokestatic  #533                // Method idMatches:(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Z
+      54: ireturn
+
+  public static <T> boolean entryMatches(net.minecraft.core.Holder<T>, net.minecraft.resources.ResourceKey<net.minecraft.core.Registry<T>>, java.lang.String);
+    Code:
+       0: aload_2
+       1: ldc           #107                // String #
+       3: invokevirtual #517                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+       6: ifeq          30
+       9: aload_1
+      10: aload_2
+      11: iconst_1
+      12: invokevirtual #521                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      15: invokestatic  #537                // Method net/minecraft/resources/ResourceLocation.parse:(Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;
+      18: invokestatic  #543                // Method net/minecraft/tags/TagKey.create:(Lnet/minecraft/resources/ResourceKey;Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraft/tags/TagKey;
+      21: astore_3
+      22: aload_0
+      23: aload_3
+      24: invokeinterface #547,  2          // InterfaceMethod net/minecraft/core/Holder.is:(Lnet/minecraft/tags/TagKey;)Z
+      29: ireturn
+      30: aload_0
+      31: invokeinterface #551,  1          // InterfaceMethod net/minecraft/core/Holder.unwrapKey:()Ljava/util/Optional;
+      36: invokevirtual #455                // Method java/util/Optional.get:()Ljava/lang/Object;
+      39: checkcast     #553                // class net/minecraft/resources/ResourceKey
+      42: invokevirtual #555                // Method net/minecraft/resources/ResourceKey.location:()Lnet/minecraft/resources/ResourceLocation;
+      45: aload_2
+      46: invokestatic  #533                // Method idMatches:(Lnet/minecraft/resources/ResourceLocation;Ljava/lang/String;)Z
+      49: ireturn
+
+  public static boolean idMatches(net.minecraft.resources.ResourceLocation, java.lang.String);
+    Code:
+       0: aload_0
+       1: invokevirtual #471                // Method net/minecraft/resources/ResourceLocation.toString:()Ljava/lang/String;
+       4: astore_2
+       5: aload_1
+       6: ldc           #110                // String ~
+       8: invokevirtual #517                // Method java/lang/String.startsWith:(Ljava/lang/String;)Z
+      11: ifeq          24
+      14: aload_2
+      15: aload_1
+      16: iconst_1
+      17: invokevirtual #521                // Method java/lang/String.substring:(I)Ljava/lang/String;
+      20: invokestatic  #475                // Method regexMatches:(Ljava/lang/String;Ljava/lang/String;)Z
+      23: ireturn
+      24: aload_2
+      25: aload_1
+      26: invokevirtual #492                // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+      29: ireturn
+
+  public static boolean regexMatches(java.lang.String, java.lang.String);
+    Code:
+       0: aload_0
+       1: ifnonnull     6
+       4: iconst_0
+       5: ireturn
+       6: aload_1
+       7: ifnull        17
+      10: aload_1
+      11: invokevirtual #484                // Method java/lang/String.isEmpty:()Z
+      14: ifeq          19
+      17: iconst_1
+      18: ireturn
+      19: getstatic     #563                // Field compiledRegexes:Ljava/util/Map;
+      22: aload_1
+      23: invokedynamic #582,  0            // InvokeDynamic #0:apply:()Ljava/util/function/Function;
+      28: invokeinterface #588,  3          // InterfaceMethod java/util/Map.computeIfAbsent:(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;
+      33: checkcast     #590                // class java/util/regex/Pattern
+      36: astore_2
+      37: aload_2
+      38: aload_0
+      39: invokevirtual #594                // Method java/util/regex/Pattern.matcher:(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+      42: astore_3
+      43: aload_3
+      44: invokevirtual #599                // Method java/util/regex/Matcher.find:()Z
+      47: ireturn
+
+  private static java.util.regex.Pattern lambda$regexMatches$0(java.lang.String);
+    Code:
+       0: aload_0
+       1: iconst_2
+       2: invokestatic  #606                // Method java/util/regex/Pattern.compile:(Ljava/lang/String;I)Ljava/util/regex/Pattern;
+       5: areturn
+
+  static {};
+    Code:
+       0: new           #609                // class java/util/concurrent/ConcurrentHashMap
+       3: dup
+       4: invokespecial #610                // Method java/util/concurrent/ConcurrentHashMap."<init>":()V
+       7: putstatic     #563                // Field compiledRegexes:Ljava/util/Map;
+      10: return
+}
+Compiled from "DungeonDifficulty.java"
+public class net.dungeon_difficulty.DungeonDifficulty {
+  public static final java.lang.String MODID;
+
+  public static net.tiny_config.ConfigManager<net.dungeon_difficulty.config.RegistryConfig> registryConfig;
+
+  public static net.tiny_config.ConfigManager<net.dungeon_difficulty.config.Config> config;
+
+  public static net.tiny_config.ConfigManager<net.dungeon_difficulty.config.ClientConfig> clientConfig;
+
+  public net.dungeon_difficulty.DungeonDifficulty();
+    Code:
+       0: aload_0
+       1: invokespecial #35                 // Method java/lang/Object."<init>":()V
+       4: return
+
+  public static void init();
+    Code:
+       0: invokestatic  #41                 // Method reloadClientConfig:()V
+       3: invokestatic  #44                 // Method reloadConfig:()V
+       6: invokestatic  #48                 // Method net/dungeon_difficulty/compat/waystones/WaystonesCompat.init:()V
+       9: return
+
+  public static void registerCommands(com.mojang.brigadier.CommandDispatcher<net.minecraft.commands.CommandSourceStack>);
+    Code:
+       0: aload_0
+       1: invokestatic  #57                 // Method net/dungeon_difficulty/naming/StructureNamingCommands.register:(Lcom/mojang/brigadier/CommandDispatcher;)V
+       4: aload_0
+       5: ldc           #59                 // String dungeon_difficulty_config_reload
+       7: invokestatic  #65                 // Method net/minecraft/commands/Commands.literal:(Ljava/lang/String;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
+      10: invokedynamic #84,  0             // InvokeDynamic #0:test:()Ljava/util/function/Predicate;
+      15: invokevirtual #90                 // Method com/mojang/brigadier/builder/LiteralArgumentBuilder.requires:(Ljava/util/function/Predicate;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      18: checkcast     #86                 // class com/mojang/brigadier/builder/LiteralArgumentBuilder
+      21: invokedynamic #100,  0            // InvokeDynamic #1:run:()Lcom/mojang/brigadier/Command;
+      26: invokevirtual #104                // Method com/mojang/brigadier/builder/LiteralArgumentBuilder.executes:(Lcom/mojang/brigadier/Command;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      29: checkcast     #86                 // class com/mojang/brigadier/builder/LiteralArgumentBuilder
+      32: invokevirtual #109                // Method com/mojang/brigadier/CommandDispatcher.register:(Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;)Lcom/mojang/brigadier/tree/LiteralCommandNode;
+      35: pop
+      36: aload_0
+      37: ldc           #111                // String power_level
+      39: invokestatic  #65                 // Method net/minecraft/commands/Commands.literal:(Ljava/lang/String;)Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;
+      42: invokedynamic #116,  0            // InvokeDynamic #2:test:()Ljava/util/function/Predicate;
+      47: invokevirtual #90                 // Method com/mojang/brigadier/builder/LiteralArgumentBuilder.requires:(Ljava/util/function/Predicate;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      50: checkcast     #86                 // class com/mojang/brigadier/builder/LiteralArgumentBuilder
+      53: ldc           #118                // String players
+      55: invokestatic  #124                // Method net/minecraft/commands/arguments/EntityArgument.player:()Lnet/minecraft/commands/arguments/EntityArgument;
+      58: invokestatic  #128                // Method net/minecraft/commands/Commands.argument:(Ljava/lang/String;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/RequiredArgumentBuilder;
+      61: ldc           #130                // String level
+      63: iconst_0
+      64: invokestatic  #136                // Method com/mojang/brigadier/arguments/IntegerArgumentType.integer:(I)Lcom/mojang/brigadier/arguments/IntegerArgumentType;
+      67: invokestatic  #128                // Method net/minecraft/commands/Commands.argument:(Ljava/lang/String;Lcom/mojang/brigadier/arguments/ArgumentType;)Lcom/mojang/brigadier/builder/RequiredArgumentBuilder;
+      70: invokedynamic #141,  0            // InvokeDynamic #3:run:()Lcom/mojang/brigadier/Command;
+      75: invokevirtual #144                // Method com/mojang/brigadier/builder/RequiredArgumentBuilder.executes:(Lcom/mojang/brigadier/Command;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      78: invokevirtual #148                // Method com/mojang/brigadier/builder/RequiredArgumentBuilder.then:(Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      81: invokevirtual #149                // Method com/mojang/brigadier/builder/LiteralArgumentBuilder.then:(Lcom/mojang/brigadier/builder/ArgumentBuilder;)Lcom/mojang/brigadier/builder/ArgumentBuilder;
+      84: checkcast     #86                 // class com/mojang/brigadier/builder/LiteralArgumentBuilder
+      87: invokevirtual #109                // Method com/mojang/brigadier/CommandDispatcher.register:(Lcom/mojang/brigadier/builder/LiteralArgumentBuilder;)Lcom/mojang/brigadier/tree/LiteralCommandNode;
+      90: pop
+      91: return
+
+  public static void reloadClientConfig();
+    Code:
+       0: getstatic     #153                // Field clientConfig:Lnet/tiny_config/ConfigManager;
+       3: invokevirtual #156                // Method net/tiny_config/ConfigManager.refresh:()V
+       6: invokestatic  #161                // Method net/dungeon_difficulty/logic/RarityColors.initialize:()V
+       9: return
+
+  public static void reloadConfig();
+    Code:
+       0: getstatic     #163                // Field config:Lnet/tiny_config/ConfigManager;
+       3: invokevirtual #166                // Method net/tiny_config/ConfigManager.load:()V
+       6: getstatic     #163                // Field config:Lnet/tiny_config/ConfigManager;
+       9: getfield      #170                // Field net/tiny_config/ConfigManager.value:Ljava/lang/Object;
+      12: checkcast     #9                  // class net/dungeon_difficulty/config/Config
+      15: astore_0
+      16: aload_0
+      17: getfield      #174                // Field net/dungeon_difficulty/config/Config.meta:Lnet/dungeon_difficulty/config/Config$Meta;
+      20: ifnull        36
+      23: getstatic     #163                // Field config:Lnet/tiny_config/ConfigManager;
+      26: aload_0
+      27: getfield      #174                // Field net/dungeon_difficulty/config/Config.meta:Lnet/dungeon_difficulty/config/Config$Meta;
+      30: getfield      #178                // Field net/dungeon_difficulty/config/Config$Meta.sanitize_config:Z
+      33: putfield      #181                // Field net/tiny_config/ConfigManager.sanitize:Z
+      36: invokestatic  #186                // Method net/dungeon_difficulty/logic/DifficultyTypes.resolve:()V
+      39: invokestatic  #189                // Method net/dungeon_difficulty/naming/StructureNaming.reloadConfig:()V
+      42: invokestatic  #194                // Method net/dungeon_difficulty/logic/GivenEffects.clearCache:()V
+      45: getstatic     #163                // Field config:Lnet/tiny_config/ConfigManager;
+      48: invokevirtual #197                // Method net/tiny_config/ConfigManager.save:()V
+      51: return
+
+  public static void registerEffects();
+    Code:
+       0: getstatic     #201                // Field registryConfig:Lnet/tiny_config/ConfigManager;
+       3: invokevirtual #205                // Method net/tiny_config/ConfigManager.safeValue:()Ljava/lang/Object;
+       6: checkcast     #207                // class net/dungeon_difficulty/config/RegistryConfig
+       9: getfield      #210                // Field net/dungeon_difficulty/config/RegistryConfig.register_status_effects:Z
+      12: ifne          16
+      15: return
+      16: invokestatic  #214                // Method net/dungeon_difficulty/effect/DifficultyEffects.register:()V
+      19: return
+
+  public static void registerLootFunctions();
+    Code:
+       0: getstatic     #221                // Field net/minecraft/core/registries/BuiltInRegistries.LOOT_FUNCTION_TYPE:Lnet/minecraft/core/Registry;
+       3: getstatic     #227                // Field net/dungeon_difficulty/logic/LocalScalingLootFunction.ID:Lnet/minecraft/resources/ResourceLocation;
+       6: getstatic     #231                // Field net/dungeon_difficulty/logic/LocalScalingLootFunction.TYPE:Lnet/minecraft/world/level/storage/loot/functions/LootItemFunctionType;
+       9: invokestatic  #236                // InterfaceMethod net/minecraft/core/Registry.register:(Lnet/minecraft/core/Registry;Lnet/minecraft/resources/ResourceLocation;Ljava/lang/Object;)Ljava/lang/Object;
+      12: pop
+      13: return
+
+  private static int lambda$registerCommands$3(com.mojang.brigadier.context.CommandContext) throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+    Code:
+       0: aload_0
+       1: ldc           #118                // String players
+       3: invokestatic  #243                // Method net/minecraft/commands/arguments/EntityArgument.getPlayers:(Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)Ljava/util/Collection;
+       6: astore_1
+       7: aload_0
+       8: ldc           #130                // String level
+      10: invokestatic  #247                // Method com/mojang/brigadier/arguments/IntegerArgumentType.getInteger:(Lcom/mojang/brigadier/context/CommandContext;Ljava/lang/String;)I
+      13: istore_2
+      14: iload_2
+      15: ifge          20
+      18: iconst_0
+      19: istore_2
+      20: aload_1
+      21: invokeinterface #253,  1          // InterfaceMethod java/util/Collection.iterator:()Ljava/util/Iterator;
+      26: astore_3
+      27: aload_3
+      28: invokeinterface #259,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      33: ifeq          63
+      36: aload_3
+      37: invokeinterface #262,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      42: checkcast     #264                // class net/minecraft/server/level/ServerPlayer
+      45: astore        4
+      47: aload         4
+      49: invokevirtual #268                // Method net/minecraft/server/level/ServerPlayer.getMainHandItem:()Lnet/minecraft/world/item/ItemStack;
+      52: astore        5
+      54: aload         5
+      56: iload_2
+      57: invokestatic  #274                // Method net/dungeon_difficulty/logic/ItemScaling.rescale:(Lnet/minecraft/world/item/ItemStack;I)V
+      60: goto          27
+      63: iconst_1
+      64: ireturn
+
+  private static boolean lambda$registerCommands$2(net.minecraft.commands.CommandSourceStack);
+    Code:
+       0: aload_0
+       1: iconst_2
+       2: invokevirtual #288                // Method net/minecraft/commands/CommandSourceStack.hasPermission:(I)Z
+       5: ireturn
+
+  private static int lambda$registerCommands$1(com.mojang.brigadier.context.CommandContext) throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+    Code:
+       0: getstatic     #297                // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: ldc_w         #299                // String Reloading Dungeon Difficulty config
+       6: invokevirtual #305                // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+       9: invokestatic  #41                 // Method reloadClientConfig:()V
+      12: invokestatic  #44                 // Method reloadConfig:()V
+      15: aload_0
+      16: invokevirtual #310                // Method com/mojang/brigadier/context/CommandContext.getSource:()Ljava/lang/Object;
+      19: checkcast     #284                // class net/minecraft/commands/CommandSourceStack
+      22: invokevirtual #314                // Method net/minecraft/commands/CommandSourceStack.getServer:()Lnet/minecraft/server/MinecraftServer;
+      25: invokevirtual #320                // Method net/minecraft/server/MinecraftServer.getPlayerList:()Lnet/minecraft/server/players/PlayerList;
+      28: invokevirtual #325                // Method net/minecraft/server/players/PlayerList.getPlayers:()Ljava/util/List;
+      31: invokeinterface #328,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+      36: astore_1
+      37: aload_1
+      38: invokeinterface #259,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+      43: ifeq          73
+      46: aload_1
+      47: invokeinterface #262,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      52: checkcast     #264                // class net/minecraft/server/level/ServerPlayer
+      55: astore_2
+      56: aload_2
+      57: checkcast     #330                // class net/dungeon_difficulty/logic/DifficultyHandler
+      60: invokeinterface #333,  1          // InterfaceMethod net/dungeon_difficulty/logic/DifficultyHandler.getLastDifficultyAnnouncements:()Ljava/util/List;
+      65: invokeinterface #336,  1          // InterfaceMethod java/util/List.clear:()V
+      70: goto          37
+      73: goto          77
+      76: astore_1
+      77: iconst_1
+      78: ireturn
+    Exception table:
+       from    to  target type
+          15    73    76   Class java/lang/Exception
+
+  private static boolean lambda$registerCommands$0(net.minecraft.commands.CommandSourceStack);
+    Code:
+       0: aload_0
+       1: iconst_2
+       2: invokevirtual #288                // Method net/minecraft/commands/CommandSourceStack.hasPermission:(I)Z
+       5: ireturn
+
+  static {};
+    Code:
+       0: new           #14                 // class net/tiny_config/ConfigManager
+       3: dup
+       4: ldc_w         #339                // String registry
+       7: new           #207                // class net/dungeon_difficulty/config/RegistryConfig
+      10: dup
+      11: invokespecial #340                // Method net/dungeon_difficulty/config/RegistryConfig."<init>":()V
+      14: invokespecial #343                // Method net/tiny_config/ConfigManager."<init>":(Ljava/lang/String;Ljava/lang/Object;)V
+      17: invokevirtual #347                // Method net/tiny_config/ConfigManager.builder:()Lnet/tiny_config/ConfigManager$Builder;
+      20: ldc           #24                 // String dungeon_difficulty
+      22: invokevirtual #351                // Method net/tiny_config/ConfigManager$Builder.setDirectory:(Ljava/lang/String;)Lnet/tiny_config/ConfigManager$Builder;
+      25: iconst_1
+      26: invokevirtual #354                // Method net/tiny_config/ConfigManager$Builder.sanitize:(Z)Lnet/tiny_config/ConfigManager$Builder;
+      29: invokevirtual #358                // Method net/tiny_config/ConfigManager$Builder.build:()Lnet/tiny_config/ConfigManager;
+      32: putstatic     #201                // Field registryConfig:Lnet/tiny_config/ConfigManager;
+      35: new           #14                 // class net/tiny_config/ConfigManager
+      38: dup
+      39: ldc_w         #360                // String difficulty_v2
+      42: getstatic     #364                // Field net/dungeon_difficulty/config/Default.config:Lnet/dungeon_difficulty/config/Config;
+      45: invokespecial #343                // Method net/tiny_config/ConfigManager."<init>":(Ljava/lang/String;Ljava/lang/Object;)V
+      48: invokevirtual #347                // Method net/tiny_config/ConfigManager.builder:()Lnet/tiny_config/ConfigManager$Builder;
+      51: ldc           #24                 // String dungeon_difficulty
+      53: invokevirtual #351                // Method net/tiny_config/ConfigManager$Builder.setDirectory:(Ljava/lang/String;)Lnet/tiny_config/ConfigManager$Builder;
+      56: iconst_1
+      57: invokevirtual #354                // Method net/tiny_config/ConfigManager$Builder.sanitize:(Z)Lnet/tiny_config/ConfigManager$Builder;
+      60: invokevirtual #358                // Method net/tiny_config/ConfigManager$Builder.build:()Lnet/tiny_config/ConfigManager;
+      63: putstatic     #163                // Field config:Lnet/tiny_config/ConfigManager;
+      66: new           #14                 // class net/tiny_config/ConfigManager
+      69: dup
+      70: ldc_w         #366                // String client_settings
+      73: new           #368                // class net/dungeon_difficulty/config/ClientConfig
+      76: dup
+      77: invokespecial #369                // Method net/dungeon_difficulty/config/ClientConfig."<init>":()V
+      80: invokespecial #343                // Method net/tiny_config/ConfigManager."<init>":(Ljava/lang/String;Ljava/lang/Object;)V
+      83: invokevirtual #347                // Method net/tiny_config/ConfigManager.builder:()Lnet/tiny_config/ConfigManager$Builder;
+      86: ldc           #24                 // String dungeon_difficulty
+      88: invokevirtual #351                // Method net/tiny_config/ConfigManager$Builder.setDirectory:(Ljava/lang/String;)Lnet/tiny_config/ConfigManager$Builder;
+      91: iconst_1
+      92: invokevirtual #354                // Method net/tiny_config/ConfigManager$Builder.sanitize:(Z)Lnet/tiny_config/ConfigManager$Builder;
+      95: invokevirtual #358                // Method net/tiny_config/ConfigManager$Builder.build:()Lnet/tiny_config/ConfigManager;
+      98: putstatic     #153                // Field clientConfig:Lnet/tiny_config/ConfigManager;
+     101: return
+}

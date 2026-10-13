@@ -1,0 +1,26 @@
+{
+  "scope": "Static source/configuration checks only",
+  "minecraft_runtime_tested": false,
+  "new_reconciliation_and_safety_tests": {"passed": 10, "failed": 0},
+  "inherited_spellstone_difficulty_tests": {"passed": 3, "failed": 0},
+  "native_DD_3_9_2_Gson_schema_probe": "PASS; exact installed Config classes; no registry sanitization or Minecraft execution",
+  "native_Remnant_2_7_0_constant_map_probe": "PASS; four inspected monster/Sovereign schemas have all expected keys in installed configs; config bootstrap not invoked",
+  "Remnant_declared_dependency_versions": "PASS_STATIC_METADATA_ONLY",
+  "inherited_checks": {
+    "quest_campaign_52_quests_13_chapters": "PASS_STATIC_ONLY",
+    "questlog_source": "PASS_STATIC_ONLY",
+    "FTB_manual_32_pages": "PASS_STATIC_ONLY",
+    "source_FG_dependencies_and_repairs": "PASS_STATIC_ONLY; legacy source refs do not define current installed roster",
+    "original_six_zone_DD_pilot": "PASS_STATIC_ONLY"
+  },
+  "pending": [
+    "Client and dedicated-server startup with candidate",
+    "Effective loaded registries, datapack order and natural generation",
+    "Elite stacking exclusions or measured combined caps",
+    "Equipment, wave composition, trial-spawner and vault authoring",
+    "Native boss scripted damage and phases",
+    "Solo, two-player and 5-7-player encounter tests",
+    "Loot economy, repeat rewards and farm exploits",
+    "Performance, save/restart and complete-import preflight"
+  ]
+}

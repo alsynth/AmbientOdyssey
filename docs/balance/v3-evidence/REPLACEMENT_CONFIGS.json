@@ -1,0 +1,22 @@
+{
+  "betteroceanmonuments-neoforge-1_21.toml": {
+    "sha256": "6c09d2a75810e76c719b355c3480d1dc14b135f944f4a85d2118a395efc916c5",
+    "data": {
+      "YUNG's Better Ocean Monuments": {
+        "General": {
+          "Disable Vanilla Ocean Monuments": true
+        }
+      }
+    }
+  },
+  "betterfortresses-neoforge-1_21.toml": {
+    "sha256": "0bef433c8253f63704694528c33dc854f2b28da084d420a61c43fd62d6e5301b",
+    "data": {
+      "YUNG's Better Nether Fortresses": {
+        "General": {
+          "Disable Vanilla Nether Fortresses": true
+        }
+      }
+    }
+  }
+}

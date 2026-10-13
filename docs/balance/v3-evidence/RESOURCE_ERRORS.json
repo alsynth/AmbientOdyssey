@@ -1,0 +1,7 @@
+[
+  {
+    "provider": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+    "path": "data/minecraft/worldgen/template_pool/illager_mansion/illager_mansion_room_basement.json",
+    "error": "Expecting value: line 9 column 23 (char 234)"
+  }
+]

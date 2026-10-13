@@ -1,0 +1,427 @@
+[
+  {
+    "kind": "trial_spawner",
+    "id": "mns:dragon_arena/normal",
+    "providers": [
+      {
+        "provider": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+        "path": "data/mns/trial_spawner/dragon_arena/normal.json",
+        "sha256": "5096c5324fa1c6125c51f502acba609660f381e394a5b0d7211e96b297e79618",
+        "data": {
+          "simultaneous_mobs": 3.0,
+          "simultaneous_mobs_added_per_player": 1.0,
+          "total_mobs": 10.0,
+          "total_mobs_added_per_player": 2.0,
+          "ticks_between_spawn": 40,
+          "spawn_potentials": [
+            {
+              "weight": 6,
+              "data": {
+                "entity": {
+                  "id": "minecraft:wither_skeleton"
+                }
+              }
+            },
+            {
+              "weight": 3,
+              "data": {
+                "entity": {
+                  "id": "minecraft:blaze"
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "entity": {
+                  "id": "minecraft:magma_cube",
+                  "Size": 2
+                }
+              }
+            }
+          ],
+          "loot_tables_to_eject": [
+            {
+              "data": "mns:spawners/dragon_arena/trial_reward_key",
+              "weight": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "kind": "trial_spawner",
+    "id": "mns:dragon_arena/ominous",
+    "providers": [
+      {
+        "provider": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+        "path": "data/mns/trial_spawner/dragon_arena/ominous.json",
+        "sha256": "735d9af3cc27daabe69f00807c3f22e47a441b0873c325ef3bfdf59fcb005583",
+        "data": {
+          "simultaneous_mobs": 4.0,
+          "simultaneous_mobs_added_per_player": 1.0,
+          "total_mobs": 14.0,
+          "total_mobs_added_per_player": 2.0,
+          "ticks_between_spawn": 30,
+          "spawn_potentials": [
+            {
+              "weight": 7,
+              "data": {
+                "entity": {
+                  "id": "minecraft:wither_skeleton"
+                }
+              }
+            },
+            {
+              "weight": 3,
+              "data": {
+                "entity": {
+                  "id": "minecraft:blaze"
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "entity": {
+                  "id": "minecraft:breeze"
+                }
+              }
+            }
+          ],
+          "loot_tables_to_eject": [
+            {
+              "data": "mns:spawners/dragon_arena/trial_reward_key_ominous",
+              "weight": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "kind": "trial_spawner",
+    "id": "mns:large_arena/normal",
+    "providers": [
+      {
+        "provider": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+        "path": "data/mns/trial_spawner/large_arena/normal.json",
+        "sha256": "8ae2bd43e4b498dabb7dae5d06b739f99aa39ea4650e02e4871486c3b54cf939",
+        "data": {
+          "simultaneous_mobs": 2.0,
+          "simultaneous_mobs_added_per_player": 1.0,
+          "total_mobs": 7.0,
+          "total_mobs_added_per_player": 2.0,
+          "ticks_between_spawn": 40,
+          "spawn_potentials": [
+            {
+              "weight": 3,
+              "data": {
+                "entity": {
+                  "id": "minecraft:wither_skeleton",
+                  "ArmorItems": [
+                    {
+                      "id": "minecraft:iron_boots",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_leggings",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_chestplate",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_helmet",
+                      "count": 1
+                    }
+                  ],
+                  "HandItems": [
+                    {
+                      "id": "minecraft:iron_sword",
+                      "count": 1
+                    },
+                    {}
+                  ],
+                  "ArmorDropChances": [
+                    0.02,
+                    0.02,
+                    0.02,
+                    0.02
+                  ],
+                  "HandDropChances": [
+                    0.05,
+                    0.0
+                  ]
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "entity": {
+                  "id": "minecraft:skeleton",
+                  "ArmorItems": [
+                    {
+                      "id": "minecraft:iron_boots",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_leggings",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_chestplate",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_helmet",
+                      "count": 1
+                    }
+                  ],
+                  "HandItems": [
+                    {
+                      "id": "minecraft:bow",
+                      "count": 1
+                    },
+                    {}
+                  ],
+                  "ArmorDropChances": [
+                    0.02,
+                    0.02,
+                    0.02,
+                    0.02
+                  ],
+                  "HandDropChances": [
+                    0.05,
+                    0.0
+                  ]
+                }
+              }
+            }
+          ],
+          "loot_tables_to_eject": [
+            {
+              "data": "mns:spawners/large_arena/trial_reward_key",
+              "weight": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "kind": "trial_spawner",
+    "id": "mns:large_arena/ominous",
+    "providers": [
+      {
+        "provider": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+        "path": "data/mns/trial_spawner/large_arena/ominous.json",
+        "sha256": "51212c34bbb7cfa3e32547a177a6562ea159647ece0fe386ac9099ac83c79a46",
+        "data": {
+          "simultaneous_mobs": 3.0,
+          "simultaneous_mobs_added_per_player": 1.0,
+          "total_mobs": 10.0,
+          "total_mobs_added_per_player": 2.0,
+          "ticks_between_spawn": 30,
+          "spawn_potentials": [
+            {
+              "weight": 3,
+              "data": {
+                "entity": {
+                  "id": "minecraft:wither_skeleton",
+                  "ArmorItems": [
+                    {
+                      "id": "minecraft:iron_boots",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_leggings",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_chestplate",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_helmet",
+                      "count": 1
+                    }
+                  ],
+                  "HandItems": [
+                    {
+                      "id": "minecraft:iron_sword",
+                      "count": 1
+                    },
+                    {}
+                  ],
+                  "ArmorDropChances": [
+                    0.02,
+                    0.02,
+                    0.02,
+                    0.02
+                  ],
+                  "HandDropChances": [
+                    0.05,
+                    0.0
+                  ]
+                }
+              }
+            },
+            {
+              "weight": 2,
+              "data": {
+                "entity": {
+                  "id": "minecraft:skeleton",
+                  "ArmorItems": [
+                    {
+                      "id": "minecraft:iron_boots",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_leggings",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_chestplate",
+                      "count": 1
+                    },
+                    {
+                      "id": "minecraft:iron_helmet",
+                      "count": 1
+                    }
+                  ],
+                  "HandItems": [
+                    {
+                      "id": "minecraft:bow",
+                      "count": 1
+                    },
+                    {}
+                  ],
+                  "ArmorDropChances": [
+                    0.02,
+                    0.02,
+                    0.02,
+                    0.02
+                  ],
+                  "HandDropChances": [
+                    0.05,
+                    0.0
+                  ]
+                }
+              }
+            }
+          ],
+          "loot_tables_to_eject": [
+            {
+              "data": "mns:spawners/large_arena/trial_reward_key_ominous",
+              "weight": 1
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "kind": "trial_spawner",
+    "id": "mss:arena/normal",
+    "providers": [
+      {
+        "provider": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+        "path": "data/mss/trial_spawner/arena/normal.json",
+        "sha256": "c727cfb05afe1ef0c388449f7b5cc3ad752e57d76344e4755794508b6fcd7273",
+        "data": {
+          "simultaneous_mobs": 4.0,
+          "simultaneous_mobs_added_per_player": 0.5,
+          "total_mobs": 10.0,
+          "total_mobs_added_per_player": 2.0,
+          "ticks_between_spawn": 20,
+          "spawn_potentials": [
+            {
+              "data": {
+                "entity": {
+                  "id": "minecraft:bogged"
+                }
+              },
+              "weight": 6
+            },
+            {
+              "data": {
+                "entity": {
+                  "id": "minecraft:skeleton"
+                }
+              },
+              "weight": 1
+            }
+          ],
+          "loot_tables_to_eject": [
+            {
+              "data": "mss:arena/trial_spawner/key",
+              "weight": 6
+            },
+            {
+              "data": "mss:arena/trial_spawner/consumables",
+              "weight": 4
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "kind": "trial_spawner",
+    "id": "mss:arena/ominous",
+    "providers": [
+      {
+        "provider": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+        "path": "data/mss/trial_spawner/arena/ominous.json",
+        "sha256": "10aa50e0024023a56f6bc5c3bcfcf0f957a9e532b36ed885caad5c8887875f57",
+        "data": {
+          "simultaneous_mobs": 5.0,
+          "simultaneous_mobs_added_per_player": 0.5,
+          "total_mobs": 14.0,
+          "total_mobs_added_per_player": 3.0,
+          "ticks_between_spawn": 20,
+          "spawn_potentials": [
+            {
+              "data": {
+                "entity": {
+                  "id": "minecraft:bogged"
+                },
+                "equipment": {
+                  "loot_table": "minecraft:equipment/trial_chamber_ranged",
+                  "slot_drop_chances": 0.0
+                }
+              },
+              "weight": 6
+            },
+            {
+              "data": {
+                "entity": {
+                  "id": "minecraft:skeleton"
+                },
+                "equipment": {
+                  "loot_table": "minecraft:equipment/trial_chamber_ranged",
+                  "slot_drop_chances": 0.0
+                }
+              },
+              "weight": 1
+            }
+          ],
+          "loot_tables_to_eject": [
+            {
+              "data": "mss:arena/trial_spawner/ominous_key",
+              "weight": 7
+            },
+            {
+              "data": "mss:arena/trial_spawner/ominous_consumables",
+              "weight": 3
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
