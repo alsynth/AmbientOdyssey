@@ -1,0 +1,2380 @@
+{
+  "loaded_dd_config": {
+    "meta": {
+      "sanitize_config": false,
+      "rounding_unit": 0.5,
+      "merge_item_modifiers": true
+    },
+    "announcement": {
+      "enabled": false,
+      "check_interval_seconds": 5,
+      "history_size": 2,
+      "roman_format": false
+    },
+    "player_effects": {
+      "enabled": false,
+      "duration_margin_seconds": 3,
+      "skip_creative": true,
+      "rules": []
+    },
+    "per_player_difficulty": {
+      "enabled": false,
+      "counting": "DIMENSION",
+      "cap": 3,
+      "entities": []
+    },
+    "difficulty_types": [
+      {
+        "name": "ao_patrol",
+        "allow_loot_scaling": false,
+        "entities": [
+          {
+            "entity_matches": {
+              "attitude": "HOSTILE",
+              "type": "~^(?:minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)|(?:(?:born_in_chaos_v1|illagerinvasion|rottencreatures|creeperoverhaul|dungeoncrawl):)(?![a-z0-9_]*(?:boss|king|queen|lord|guardian|monarch|chieftain|warlord)[a-z0-9_]*$)[a-z0-9_]+)$"
+            },
+            "spawners": {
+              "spawn_range_multiplier": 0.0,
+              "spawn_count_multiplier": 0.0,
+              "max_nearby_entities_multiplier": 0.0,
+              "min_spawn_delay_multiplier": 0.0,
+              "max_spawn_delay_multiplier": 0.0,
+              "required_player_range_multiplier": 0.0
+            },
+            "attributes": [
+              {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "MULTIPLY_BASE",
+                "randomness": 0.0,
+                "value": 0.1,
+                "offset": 0.0
+              },
+              {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "MULTIPLY_BASE",
+                "randomness": 0.0,
+                "value": 0.05,
+                "offset": 0.0
+              },
+              {
+                "attribute": "minecraft:generic.armor",
+                "operation": "ADDITION",
+                "randomness": 0.0,
+                "value": 0.4,
+                "offset": 0.0
+              }
+            ],
+            "experience_multiplier": 0.0
+          }
+        ]
+      },
+      {
+        "name": "ao_dungeon",
+        "allow_loot_scaling": false,
+        "entities": [
+          {
+            "entity_matches": {
+              "attitude": "HOSTILE",
+              "type": "~^(?:minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)|(?:(?:born_in_chaos_v1|illagerinvasion|rottencreatures|creeperoverhaul|dungeoncrawl):)(?![a-z0-9_]*(?:boss|king|queen|lord|guardian|monarch|chieftain|warlord)[a-z0-9_]*$)[a-z0-9_]+)$"
+            },
+            "spawners": {
+              "spawn_range_multiplier": 0.0,
+              "spawn_count_multiplier": 0.0,
+              "max_nearby_entities_multiplier": 0.0,
+              "min_spawn_delay_multiplier": 0.0,
+              "max_spawn_delay_multiplier": 0.0,
+              "required_player_range_multiplier": 0.0
+            },
+            "attributes": [
+              {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "MULTIPLY_BASE",
+                "randomness": 0.0,
+                "value": 0.12,
+                "offset": 0.0
+              },
+              {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "MULTIPLY_BASE",
+                "randomness": 0.0,
+                "value": 0.07,
+                "offset": 0.0
+              },
+              {
+                "attribute": "minecraft:generic.armor",
+                "operation": "ADDITION",
+                "randomness": 0.0,
+                "value": 0.5,
+                "offset": 0.0
+              }
+            ],
+            "experience_multiplier": 0.0
+          }
+        ]
+      },
+      {
+        "name": "ao_trial",
+        "allow_loot_scaling": false,
+        "entities": [
+          {
+            "entity_matches": {
+              "attitude": "HOSTILE",
+              "type": "~^(?:minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|creeper|pillager|vindicator|evoker|vex|ravager|witch|silverfish|endermite|breeze|blaze|piglin_brute)|(?:(?:born_in_chaos_v1|illagerinvasion|rottencreatures|creeperoverhaul|dungeoncrawl):)(?![a-z0-9_]*(?:boss|king|queen|lord|guardian|monarch|chieftain|warlord)[a-z0-9_]*$)[a-z0-9_]+)$"
+            },
+            "spawners": {
+              "spawn_range_multiplier": 0.0,
+              "spawn_count_multiplier": 0.0,
+              "max_nearby_entities_multiplier": 0.0,
+              "min_spawn_delay_multiplier": 0.0,
+              "max_spawn_delay_multiplier": 0.0,
+              "required_player_range_multiplier": 0.0
+            },
+            "attributes": [
+              {
+                "attribute": "minecraft:generic.max_health",
+                "operation": "MULTIPLY_BASE",
+                "randomness": 0.0,
+                "value": 0.14,
+                "offset": 0.0
+              },
+              {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "MULTIPLY_BASE",
+                "randomness": 0.0,
+                "value": 0.08,
+                "offset": 0.0
+              },
+              {
+                "attribute": "minecraft:generic.armor",
+                "operation": "ADDITION",
+                "randomness": 0.0,
+                "value": 0.5,
+                "offset": 0.0
+              }
+            ],
+            "experience_multiplier": 0.0
+          }
+        ]
+      }
+    ],
+    "loot_scaling": {
+      "armor": [],
+      "weapons": [],
+      "smithing_upgrade": {
+        "enabled": false,
+        "add_upon_upgrade": 0,
+        "multiply_upon_upgrade": 1.0
+      }
+    },
+    "dimensions": [
+      {
+        "world_matches": {
+          "dimension": "minecraft:overworld"
+        },
+        "zones": [
+          {
+            "zone_matches": {
+              "structure": "dungeoncrawl:dungeon"
+            },
+            "difficulty": {
+              "name": "ao_dungeon",
+              "level": 2
+            }
+          },
+          {
+            "zone_matches": {
+              "structure": "adventuredungeons:trialrooms"
+            },
+            "difficulty": {
+              "name": "ao_trial",
+              "level": 2
+            }
+          },
+          {
+            "zone_matches": {
+              "structure": "dungeons_arise:illager_fort"
+            },
+            "difficulty": {
+              "name": "ao_patrol",
+              "level": 2
+            }
+          },
+          {
+            "zone_matches": {
+              "structure": "dungeons_arise:keep_kayra"
+            },
+            "difficulty": {
+              "name": "ao_dungeon",
+              "level": 3
+            }
+          },
+          {
+            "zone_matches": {
+              "structure": "dungeons_arise:plague_asylum"
+            },
+            "difficulty": {
+              "name": "ao_dungeon",
+              "level": 3
+            }
+          },
+          {
+            "zone_matches": {
+              "structure": "irons_spellbooks:catacombs"
+            },
+            "difficulty": {
+              "name": "ao_dungeon",
+              "level": 2
+            }
+          }
+        ],
+        "zone_specifiers": [],
+        "entities": []
+      }
+    ]
+  },
+  "structure_registry_membership": {
+    "adventuredungeons:bygonedungeon": true,
+    "adventuredungeons:coldlair": true,
+    "adventuredungeons:murkydungeon": true,
+    "adventuredungeons:ruins_desert": true,
+    "adventuredungeons:ruins_snow": true,
+    "adventuredungeons:ruins_standard": true,
+    "adventuredungeons:trialrooms": true,
+    "adventuredungeons:underground_camp": true,
+    "aether:bronze_dungeon": true,
+    "aether:gold_dungeon": true,
+    "aether:silver_dungeon": true,
+    "aether_villages:olympic_citadel": true,
+    "alexscaves:abyssal_ruins": true,
+    "alexscaves:acid_pit": true,
+    "alexscaves:dino_bowl": true,
+    "alexscaves:ferrocave": true,
+    "alexscaves:forlorn_bridge": true,
+    "alexscaves:forlorn_canyon": true,
+    "alexscaves:licowitch_tower": true,
+    "alexscaves:ocean_trench": true,
+    "antiquetradingship:antique_trading_ship": true,
+    "apotheosis:tower_leaf": true,
+    "apotheosis:tower_main": true,
+    "apotheosis:tower_sand": true,
+    "apotheosis:tower_spruce": true,
+    "archaeology_ruins:ruined_desert_pyramid": true,
+    "archaeology_ruins:ruined_ocean_monument": true,
+    "archaeology_ruins:ruinedjungletemple": true,
+    "betterend:end_village": true,
+    "betterfortresses:fortress": true,
+    "betteroceanmonuments:ocean_monument": true,
+    "biomeswevegone:aspen_manor_1": true,
+    "biomeswevegone:aspen_manor_2": true,
+    "biomeswevegone:bog_trial": true,
+    "block_factorys_bosses:dragon_tower": true,
+    "block_factorys_bosses:kraken_ship": true,
+    "block_factorys_bosses:sandworm_nest": true,
+    "block_factorys_bosses:underworld_arena": true,
+    "block_factorys_bosses:yeti_hideout": true,
+    "bosses_of_mass_destruction:gauntlet_arena": true,
+    "bosses_of_mass_destruction:lich_tower": true,
+    "bosses_of_mass_destruction:obsidilith_arena": true,
+    "bosses_of_mass_destruction:void_blossom": true,
+    "cataclysm:abandoned_spire": true,
+    "cataclysm:abandoned_temple": true,
+    "cataclysm:abandoned_village": true,
+    "cataclysm:amethyst_nest": true,
+    "cataclysm:ancient_factory": true,
+    "cataclysm:burning_arena": true,
+    "cataclysm:cursed_pyramid": true,
+    "cataclysm:desert_site": true,
+    "cataclysm:desert_temple": true,
+    "cataclysm:frosted_prison": true,
+    "cataclysm:kobolediator_shrine": true,
+    "cataclysm:ruined_citadel": true,
+    "cataclysm:soul_black_smith": true,
+    "cataclysm:sunken_city": true,
+    "dungeons_arise:abandoned_temple": true,
+    "dungeons_arise:aviary": true,
+    "dungeons_arise:bandit_towers": true,
+    "dungeons_arise:bandit_village": true,
+    "dungeons_arise:bathhouse": true,
+    "dungeons_arise:ceryneian_hind": true,
+    "dungeons_arise:coliseum": true,
+    "dungeons_arise:fishing_hut": true,
+    "dungeons_arise:foundry": true,
+    "dungeons_arise:giant_mushroom": true,
+    "dungeons_arise:greenwood_pub": true,
+    "dungeons_arise:heavenly_challenger": true,
+    "dungeons_arise:heavenly_conqueror": true,
+    "dungeons_arise:heavenly_rider": true,
+    "dungeons_arise:illager_campsite": true,
+    "dungeons_arise:illager_corsair": true,
+    "dungeons_arise:illager_fort": true,
+    "dungeons_arise:illager_galley": true,
+    "dungeons_arise:illager_windmill": true,
+    "dungeons_arise:infested_temple": true,
+    "dungeons_arise:jungle_tree_house": true,
+    "dungeons_arise:keep_kayra": true,
+    "dungeons_arise:kisegi_sanctuary": true,
+    "dungeons_arise:lighthouse": true,
+    "dungeons_arise:mechanical_nest": true,
+    "dungeons_arise:merchant_campsite": true,
+    "dungeons_arise:mining_complex": true,
+    "dungeons_arise:mining_system": true,
+    "dungeons_arise:monastery": true,
+    "dungeons_arise:mushroom_house": true,
+    "dungeons_arise:mushroom_mines": true,
+    "dungeons_arise:mushroom_village": true,
+    "dungeons_arise:plague_asylum": true,
+    "dungeons_arise:scorched_mines": true,
+    "dungeons_arise:shiraz_palace": true,
+    "dungeons_arise:small_blimp": true,
+    "dungeons_arise:thornborn_towers": true,
+    "dungeons_arise:typhon": true,
+    "dungeons_arise:undead_pirate_ship": true,
+    "dungeons_arise:wishing_well": true,
+    "dungeons_arise_seven_seas:corsair_corvette": true,
+    "dungeons_arise_seven_seas:pirate_junk": true,
+    "dungeons_arise_seven_seas:small_yacht": true,
+    "dungeons_arise_seven_seas:unicorn_galleon": true,
+    "dungeons_arise_seven_seas:victory_frigate": true,
+    "echoes_of_the_end__structures_:crying_obsidian_tower": true,
+    "echoes_of_the_end__structures_:end_dungeon_tower": true,
+    "echoes_of_the_end__structures_:end_enchanted_temple": true,
+    "echoes_of_the_end__structures_:end_shulker_tower": true,
+    "echoes_of_the_end__structures_:end_temple": true,
+    "echoes_of_the_end__structures_:end_warship": true,
+    "end_villager_outpost:end_villager_outpost": true,
+    "eternal_starlight:cursed_garden": true,
+    "eternal_starlight:golem_forge": true,
+    "eternal_starlight:portal_ruins_cold": true,
+    "eternal_starlight:portal_ruins_common": true,
+    "eternal_starlight:portal_ruins_desert": true,
+    "eternal_starlight:portal_ruins_forest": true,
+    "eternal_starlight:portal_ruins_jungle": true,
+    "eternal_starlight:stranghoul_den": true,
+    "explore_ruins_aether:holy_shrine": true,
+    "explore_ruins_aether:small_hellfire_dungeon": true,
+    "explore_ruins_aether:valkyrie_ship": true,
+    "fdbosses:chesed_arena": true,
+    "fdbosses:geburah_arena": true,
+    "fdbosses:malkuth_arena": true,
+    "floating_islands:amethyst_island": true,
+    "floating_islands:camp_island": true,
+    "floating_islands:cemetery_island": true,
+    "floating_islands:cherry_island_with_shrine": true,
+    "floating_islands:pillager_camp": true,
+    "floating_islands:spider_ruin": true,
+    "floating_islands:steampunk_island": true,
+    "floating_islands:tower_island": true,
+    "floating_islands:witch_island": true,
+    "formationsoverworld:copper_spire": true,
+    "formationsoverworld:graveyard": true,
+    "formationsoverworld:ice_castle": true,
+    "formationsoverworld:ice_spire": true,
+    "formationsoverworld:large_temple": true,
+    "formationsoverworld:mesoamerican_temple": true,
+    "formationsoverworld:stone_tower": true,
+    "formationsoverworld:witch_tower": true,
+    "friendsandfoes:citadel": true,
+    "graveyard:altar": true,
+    "graveyard:crypt": true,
+    "graveyard:haunted_house": true,
+    "graveyard:large_graveyard": true,
+    "graveyard:lich_prison": true,
+    "graveyard:medium_graveyard": true,
+    "graveyard:ruins": true,
+    "iceandfire:cyclops_cave": true,
+    "iceandfire:fire_dragon_cave": true,
+    "iceandfire:fire_dragon_roost": true,
+    "iceandfire:gorgon_temple": true,
+    "iceandfire:graveyard": true,
+    "iceandfire:hydra_cave": true,
+    "iceandfire:ice_dragon_cave": true,
+    "iceandfire:ice_dragon_roost": true,
+    "iceandfire:lightning_dragon_cave": true,
+    "iceandfire:lightning_dragon_roost": true,
+    "iceandfire:mausoleum": true,
+    "iceandfire:pixie_village": true,
+    "iceandfire:siren_island": true,
+    "idas:ancient_mines": true,
+    "idas:ancient_portal/ancient_portal": true,
+    "idas:ancient_portal/nether_ancient_portal": true,
+    "idas:ars_nouveau/archmages_tower": true,
+    "idas:castle": true,
+    "idas:desert_pyramid": true,
+    "idas:desert_ruins": true,
+    "idas:enchantingtower": true,
+    "idas:frozen_crypt": true,
+    "idas:haunted_manor": true,
+    "idas:iceandfire/dread_citadel": true,
+    "idas:iceandfire/sirens_cove": true,
+    "idas:labyrinth": true,
+    "idas:necromancers_spire": true,
+    "idas:nexus": true,
+    "idas:pillager_fortress": true,
+    "idas:redhorn_guild": true,
+    "idas:ruined_church": true,
+    "idas:ruined_fort": true,
+    "idas:ruins_of_the_deep": true,
+    "idas:sunken_ship/sunken_ship": true,
+    "idas:sunken_ship/sunken_ship_coral": true,
+    "idas:sunken_ship/sunken_ship_ruins": true,
+    "idas:tinkers_citadel": true,
+    "idas:wizard_tower": true,
+    "illagerwarship:warship": true,
+    "incendium:abandoned_tower": true,
+    "incendium:forbidden_castle": true,
+    "incendium:infernal_altar": true,
+    "incendium:nether_reactor": true,
+    "incendium:piglin_village": true,
+    "incendium:pipeline": true,
+    "incendium:quartz_kitchen": true,
+    "incendium:ruined_lab": true,
+    "incendium:sanctum": true,
+    "integrated_stronghold:stronghold": true,
+    "integrated_villages:airship_village": true,
+    "irons_spellbooks:ancient_battleground": true,
+    "irons_spellbooks:catacombs": true,
+    "irons_spellbooks:citadel": true,
+    "irons_spellbooks:evoker_fort": true,
+    "irons_spellbooks:ice_spider_den": true,
+    "irons_spellbooks:impaled_icebreaker": true,
+    "irons_spellbooks:mangrove_hut": true,
+    "irons_spellbooks:mountain_tower": true,
+    "irons_spellbooks:pyromancer_tower": true,
+    "mes:astral_hideaway": true,
+    "mes:astral_meteorite": true,
+    "mes:ender_spire": true,
+    "mes:enderkeep_courtyard": true,
+    "mes:enderwatch_tower": true,
+    "mes:manuscript_shrine": true,
+    "mes:mega_ship": true,
+    "mes:mega_ship_basic": true,
+    "mes:mega_ship_crashed": true,
+    "mes:mega_ship_crashed_2": true,
+    "mes:mega_ship_crashed_deepslate": true,
+    "mes:mega_ship_deepslate": true,
+    "mes:mega_ship_deepslate_2": true,
+    "mes:mega_ship_deepslate_3": true,
+    "mes:monolith": true,
+    "mes:mythic_garden": true,
+    "mes:phantom_citadel": true,
+    "mes:ruined_pillar": true,
+    "mes:starlight_voyager": true,
+    "minecraft:ancient_city": true,
+    "minecraft:bastion_remnant": true,
+    "minecraft:end_city": true,
+    "minecraft:fortress": true,
+    "minecraft:mansion": true,
+    "minecraft:monument": true,
+    "minecraft:pillager_outpost": true,
+    "minecraft:stronghold": true,
+    "minecraft:trial_chambers": true,
+    "mns:copper_tower": true,
+    "mns:crimson_forge": true,
+    "mns:dragon_arena": true,
+    "mns:giant_skull": true,
+    "mns:grave_yard": true,
+    "mns:large_arena": true,
+    "mns:large_nether_brick": true,
+    "mns:mega_fortress": true,
+    "mns:nether_tower": true,
+    "mns:shrine": true,
+    "mns:small_arena": true,
+    "mns:smoking_shrine": true,
+    "mns:train": true,
+    "mns:warped_dome": true,
+    "mowziesmobs:wrought_chamber": true,
+    "mss:arena": true,
+    "mss:castle_ruin": true,
+    "mss:castle_tower": true,
+    "mss:desert_pyramid": true,
+    "mss:large_tower": true,
+    "mss:nether_portal": true,
+    "mss:palm_island": true,
+    "mss:small_tower": true,
+    "mss:volcano": true,
+    "mtr:badlands_temple": true,
+    "mtr:desert_temple": true,
+    "mtr:jungle_temple": true,
+    "mtr:nether_temple": true,
+    "mtr:ocean_temple": true,
+    "mvs:cartographer_tower": true,
+    "mvs:castle_ruins": true,
+    "mvs:cathedral": true,
+    "mvs:diorite_tower": true,
+    "mvs:floating_islands": true,
+    "mvs:jungle_tower": true,
+    "mvs:large_floating_island": true,
+    "mvs:large_mushroom": true,
+    "mvs:large_warped_tower": true,
+    "mvs:ocean_tower": true,
+    "mvs:red_tower": true,
+    "mvs:small_pillager_tower": true,
+    "mvs:small_ship": true,
+    "mvs:small_tower_well": true,
+    "nova_structures:badlands_miner_outpost": true,
+    "nova_structures:bunker": true,
+    "nova_structures:conduit_ruin": true,
+    "nova_structures:creeping_crypt": true,
+    "nova_structures:deepslate_camp": true,
+    "nova_structures:desert_ruins": true,
+    "nova_structures:end_castle": true,
+    "nova_structures:end_lighthouse": true,
+    "nova_structures:end_ship": true,
+    "nova_structures:illager_camp": true,
+    "nova_structures:illager_hideout": true,
+    "nova_structures:illager_manor": true,
+    "nova_structures:jungle_ruins": true,
+    "nova_structures:lone_citadel": true,
+    "nova_structures:nether_keep": true,
+    "nova_structures:nether_skeleton_tower_crimson": true,
+    "nova_structures:nether_skeleton_tower_soul": true,
+    "nova_structures:nether_skeleton_tower_warped": true,
+    "nova_structures:nether_skeleton_tower_waste": true,
+    "nova_structures:piglin_camp": true,
+    "nova_structures:piglin_donjon": true,
+    "nova_structures:piglin_outstation": true,
+    "nova_structures:remnant_taiga_castle": true,
+    "nova_structures:ruin_town": true,
+    "nova_structures:shrine_combat_tier_1": true,
+    "nova_structures:shrine_combat_tier_2": true,
+    "nova_structures:shrine_combat_tier_3": true,
+    "nova_structures:shrine_combat_tier_4": true,
+    "nova_structures:shrine_combat_tier_5": true,
+    "nova_structures:shrine_tower": true,
+    "nova_structures:stray_fort": true,
+    "nova_structures:toxic_lair": true,
+    "nova_structures:trident_trial_monument": true,
+    "nova_structures:undead_crypt": true,
+    "nova_structures:witch_villa": true,
+    "pasterdream:aaroncos_arena_portal": true,
+    "pasterdream:aaroncos_arena_portals": true,
+    "pasterdream:desert_fortress_0": true,
+    "pasterdream:dream_church_0": true,
+    "pasterdream:dream_church_1": true,
+    "pasterdream:dream_church_2": true,
+    "pasterdream:dyedream_floating_temple": true,
+    "pasterdream:dyedream_laboratory_0": true,
+    "pasterdream:dyedream_tower_0": true,
+    "pasterdream:dyedream_tower_1": true,
+    "pasterdream:dyedream_worldtree_0": true,
+    "pasterdream:dyedream_worldtree_1": true,
+    "pasterdream:garden_decryption_0": true,
+    "pasterdream:garden_decryption_1": true,
+    "pasterdream:garden_decryption_2": true,
+    "pasterdream:lifecrystal_cave_0": true,
+    "pasterdream:lost_windknight_ruins": true,
+    "pasterdream:shadow_dungeon": true,
+    "pasterdream:shadow_foundry_0": true,
+    "pasterdream:shadow_foundry_1": true,
+    "pasterdream:shadow_foundry_2": true,
+    "pasterdream:shadow_fungus_nest_0": true,
+    "pasterdream:shadow_fungus_nest_1": true,
+    "pasterdream:shadow_fungus_nest_2": true,
+    "pasterdream:shadow_underground_workroom_0": true,
+    "pasterdream:shadow_underground_workroom_1": true,
+    "pasterdream:shadow_world_door": true,
+    "pasterdream:wind_island_0": true,
+    "philipsruins:ancient_crypt": true,
+    "philipsruins:ancient_dungeon": true,
+    "philipsruins:ancient_ruins": true,
+    "philipsruins:ancient_towers": true,
+    "philipsruins:level_one_ruins": true,
+    "philipsruins:level_three_ruins": true,
+    "philipsruins:level_two_ruins": true,
+    "philipsruins:lost_soul_city": true,
+    "philipsruins:lost_soul_dungeon": true,
+    "philipsruins:ocean_fortress": true,
+    "philipsruins:ocean_ruins": true,
+    "philipsruins:rare_ruin": true,
+    "philipsruins:underground_structures": true,
+    "sky_whale_ship:whalearena": true,
+    "sky_whale_ship:whaleship": true,
+    "skyarena:ice_arena": true,
+    "skyarena:sky_arena": true,
+    "structory:jungle_ruin": true,
+    "structory:northern_ruin": true,
+    "structory:swamp_ruin": true,
+    "structory:taiga_ruin_underground": true,
+    "twilightforest:aurora_palace": true,
+    "twilightforest:dark_tower": true,
+    "twilightforest:final_castle": true,
+    "twilightforest:hedge_maze": true,
+    "twilightforest:hydra_lair": true,
+    "twilightforest:knight_stronghold": true,
+    "twilightforest:labyrinth": true,
+    "twilightforest:lich_tower": true,
+    "twilightforest:naga_courtyard": true,
+    "twilightforest:troll_cave": true,
+    "underwater_village:dungeon": true,
+    "underwater_village:ruins": true,
+    "underwater_village:shrine": true,
+    "underwater_village:temple": true,
+    "underwater_village:temple_broken": true,
+    "underwater_village:temple_ruins": true,
+    "underwater_village:tower": true
+  },
+  "arena_entity_registry_membership": {
+    "alexscaves:brainiac": true,
+    "alexscaves:caniac": true,
+    "alexscaves:licowitch": true,
+    "alexsmobs:guster": true,
+    "alexsmobs:mimicube": true,
+    "alexsmobs:murmur": true,
+    "alexsmobs:rocky_roller": true,
+    "alexsmobs:warped_mosco": true,
+    "aquamirae:tortured_soul": true,
+    "born_in_chaos_v1:barrel_zombie": false,
+    "born_in_chaos_v1:bonescaller": false,
+    "born_in_chaos_v1:dark_vortex": false,
+    "born_in_chaos_v1:decaying_zombie": false,
+    "born_in_chaos_v1:dire_hound_leader": false,
+    "born_in_chaos_v1:door_knight": false,
+    "born_in_chaos_v1:dread_hound": false,
+    "born_in_chaos_v1:fallen_chaos_knight": false,
+    "born_in_chaos_v1:felsteed": false,
+    "born_in_chaos_v1:lifestealer_true_form": false,
+    "born_in_chaos_v1:missioner": false,
+    "born_in_chaos_v1:mother_spider": false,
+    "born_in_chaos_v1:mrs_pumpkin": false,
+    "born_in_chaos_v1:nightmare_stalker": false,
+    "born_in_chaos_v1:scarlet_persecutor": false,
+    "born_in_chaos_v1:seared_spirit": false,
+    "born_in_chaos_v1:siamese_skeletons": false,
+    "born_in_chaos_v1:skeleton_demoman": false,
+    "born_in_chaos_v1:skeleton_thrasher": false,
+    "born_in_chaos_v1:spirit_guide": false,
+    "born_in_chaos_v1:spiritof_chaos": false,
+    "born_in_chaos_v1:supreme_bonescaller": false,
+    "born_in_chaos_v1:swarmer": false,
+    "born_in_chaos_v1:zombie_bruiser": false,
+    "born_in_chaos_v1:zombie_clown": false,
+    "born_in_chaos_v1:zombie_fisherman": false,
+    "born_in_chaos_v1:zombie_lumberjack": false,
+    "bosses_of_mass_destruction:lich": true,
+    "bosses_of_mass_destruction:void_blossom": true,
+    "call_of_yucutan:blowgun_huracan": false,
+    "call_of_yucutan:undead_warrior": false,
+    "cataclysm:amethyst_crab": true,
+    "cataclysm:ancient_remnant": true,
+    "cataclysm:aptrgangr": true,
+    "cataclysm:cindaria": true,
+    "cataclysm:clawdian": true,
+    "cataclysm:coral_golem": true,
+    "cataclysm:coralssus": true,
+    "cataclysm:deepling": true,
+    "cataclysm:deepling_angler": true,
+    "cataclysm:deepling_brute": true,
+    "cataclysm:deepling_priest": true,
+    "cataclysm:deepling_warlock": true,
+    "cataclysm:draugr": true,
+    "cataclysm:elite_draugr": true,
+    "cataclysm:ender_golem": true,
+    "cataclysm:ender_guardian": true,
+    "cataclysm:hippocamtus": true,
+    "cataclysm:ignis": true,
+    "cataclysm:ignited_berserker": true,
+    "cataclysm:ignited_revenant": true,
+    "cataclysm:kobolediator": true,
+    "cataclysm:koboleton": true,
+    "cataclysm:maledictus": true,
+    "cataclysm:netherite_monstrosity": true,
+    "cataclysm:royal_draugr": true,
+    "cataclysm:scylla": true,
+    "cataclysm:the_harbinger": true,
+    "cataclysm:the_leviathan": true,
+    "cataclysm:the_prowler": true,
+    "cataclysm:the_watcher": true,
+    "cataclysm:urchinkin": true,
+    "cataclysm:wadjet": true,
+    "caverns_and_chasms:mime": false,
+    "eeeabsmobs:corpse_warlock": false,
+    "eeeabsmobs:guling_sentinel_heavy": false,
+    "eeeabsmobs:immortal_executioner": false,
+    "galosphere:berserker": false,
+    "goety:black_beast": false,
+    "goety:blackguard_servant": false,
+    "goety:bone_spider": false,
+    "goety:border_wraith": false,
+    "goety:brood_mother": false,
+    "goety:cairn_necromancer": false,
+    "goety:conquillager": false,
+    "goety:crusher": false,
+    "goety:cryologer": false,
+    "goety:drowned_necromancer_servant": false,
+    "goety:envioker": false,
+    "goety:geomancer_servant": false,
+    "goety:grave_golem": false,
+    "goety:haunted_armor": false,
+    "goety:heretic": false,
+    "goety:hostile_redstone_golem": false,
+    "goety:hostile_redstone_monstrosity": false,
+    "goety:ice_golem": false,
+    "goety:icy_spider": false,
+    "goety:inferno": false,
+    "goety:inquillager": false,
+    "goety:malghast": false,
+    "goety:maverick": false,
+    "goety:minister": false,
+    "goety:muck_wraith": false,
+    "goety:necromancer": false,
+    "goety:piker": false,
+    "goety:poison_quill_vine": false,
+    "goety:preacher": false,
+    "goety:reaper": false,
+    "goety:skull_lord": false,
+    "goety:sorcerer": false,
+    "goety:storm_caster": false,
+    "goety:vanguard_servant": false,
+    "goety:vizier": false,
+    "goety:warlock": false,
+    "goety:web_spider": false,
+    "goety:whisperer": false,
+    "goety:wildfire": false,
+    "goety:wind_caller_servant": false,
+    "goety:wither_necromancer_servant": false,
+    "goety:wraith": false,
+    "iceandfire:troll": true,
+    "illageandspillage:absorber": false,
+    "illageandspillage:crocofang": false,
+    "illageandspillage:engineer": false,
+    "illageandspillage:igniter": false,
+    "illagerinvasion:alchemist": true,
+    "illagerinvasion:firecaller": true,
+    "illagerinvasion:invoker": true,
+    "illagerinvasion:necromancer": true,
+    "illagerinvasion:sorcerer": true,
+    "irons_spellbooks:apothecarist": true,
+    "irons_spellbooks:archevoker": true,
+    "irons_spellbooks:citadel_keeper": true,
+    "irons_spellbooks:cryomancer": true,
+    "irons_spellbooks:dead_king": true,
+    "irons_spellbooks:fire_boss": true,
+    "irons_spellbooks:necromancer": true,
+    "irons_spellbooks:priest": true,
+    "irons_spellbooks:pyromancer": true,
+    "irons_spellbooks:tyros": false,
+    "iter_rpg:air_elemental": false,
+    "iter_rpg:earth_elemental": false,
+    "iter_rpg:fire_elemental": false,
+    "iter_rpg:void_elemental": false,
+    "iter_rpg:water_elemental": false,
+    "legendary_monsters:ambusher": false,
+    "legendary_monsters:chorusling": false,
+    "legendary_monsters:dune_sentinel": false,
+    "legendary_monsters:endersent": false,
+    "legendary_monsters:frostbitten_golem": false,
+    "legendary_monsters:guard": false,
+    "legendary_monsters:haunted_guard": false,
+    "legendary_monsters:haunted_knight": false,
+    "legendary_monsters:hovering_hurricane": false,
+    "legendary_monsters:knights_armor": false,
+    "legendary_monsters:lava_eater": false,
+    "legendary_monsters:mossy_golem": false,
+    "legendary_monsters:overgrown_colossus": false,
+    "legendary_monsters:posessed_paladin": false,
+    "legendary_monsters:shulker_mimic": false,
+    "legendary_monsters:skeletosaurus": false,
+    "legendary_monsters:warped_fungussus": false,
+    "legendary_monsters:withered_abomination": false,
+    "luminous_beasts:bone_stalker": false,
+    "luminous_beasts:hermit_king": false,
+    "luminous_beasts:horseless_headsman": false,
+    "luminous_beasts:mummy": false,
+    "luminous_beasts:phoenixbird": false,
+    "luminous_beasts:piglin_executioner": false,
+    "luminous_beasts:tree_ent": false,
+    "luminous_beasts:witch_doctor": false,
+    "luminous_beasts:yeti": false,
+    "luminousworld:bone_stalker": false,
+    "luminousworld:king_crab": false,
+    "luminousworld:mummy": false,
+    "luminousworld:pheonix": false,
+    "luminousworld:treant": false,
+    "luminousworld:witch_doctor": false,
+    "luminousworld:yeti": false,
+    "minecraft:blaze": true,
+    "minecraft:evoker": true,
+    "minecraft:husk": true,
+    "minecraft:illusioner": true,
+    "minecraft:magma_cube": true,
+    "minecraft:pillager": true,
+    "minecraft:ravager": true,
+    "minecraft:skeleton": true,
+    "minecraft:slime": true,
+    "minecraft:stray": true,
+    "minecraft:vindicator": true,
+    "minecraft:warden": true,
+    "minecraft:witch": true,
+    "minecraft:wither": true,
+    "minecraft:wither_skeleton": true,
+    "minecraft:zoglin": true,
+    "minecraft:zombie": true,
+    "minecraft:zombified_piglin": true,
+    "mowziesmobs:bluff": true,
+    "mowziesmobs:naga": true,
+    "mutantmonsters:mutant_skeleton": true,
+    "mutantmonsters:mutant_zombie": true,
+    "netherexp:banshee": false,
+    "netherexp:ecto_slab": false,
+    "netherexp:vessel": false,
+    "nethers_exorcism_reborn:strampler": false,
+    "quark:forgotten": true,
+    "realmrpg_wyrms:ender_wyrm": false,
+    "realmrpg_wyrms:red_wyrm": false,
+    "savage_and_ravage:executioner": false,
+    "savage_and_ravage:griefer": false,
+    "savage_and_ravage:iceologer": false,
+    "savage_and_ravage:skeleton_villager": false,
+    "savage_and_ravage:trickster": false,
+    "scguns:blunderer": false,
+    "scguns:cog_knight": false,
+    "scguns:cog_minion": false,
+    "scguns:dissident": false,
+    "scguns:hive": false,
+    "scguns:redcoat": false,
+    "scguns:sky_carrier": false,
+    "scguns:zombified_hornlin": false,
+    "species:bewereager": false,
+    "species:quake": false,
+    "species:wicked": false,
+    "traveloptics:aqua_grandmaster": false,
+    "traveloptics:aquamancer": false,
+    "traveloptics:void_tome": false,
+    "traveloptics:voidshelf_golem": false,
+    "undead_unleashed:dreadknight": false,
+    "undead_unleashed:flamebreather": false
+  },
+  "effective_resource_winners": [
+    {
+      "id": "archaion:ancient_keep",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_worldgen_final_fixes",
+      "sha256": "4c495b310978a3f2f428c9b29fc58dc979785e9c72e84c34ce1e3b05787d4b78",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_worldgen_final_fixes"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:gauntlet_arena",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_bosses_of_mass_destruction",
+      "sha256": "9ba90123f3ebe54e5a8adc0df79a0f87b1a65280ef2c952191814a35fcbcbf80",
+      "matching_audited_providers": [
+        "IBOMD v1.0.0-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich_tower",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_bosses_of_mass_destruction",
+      "sha256": "3ab2d44f0c3d32bdb91cc1f72f55d0112b8e07091f16027e8572379a61d42684",
+      "matching_audited_providers": [
+        "IBOMD v1.0.0-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:obsidilith_arena",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_bosses_of_mass_destruction",
+      "sha256": "7cf9fd90570099508adb35566b029bb2588cc262cb2cbec143869fea152c5bb2",
+      "matching_audited_providers": [
+        "IBOMD v1.0.0-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "6847ac6edd4029d1d09868ab331f064d17297f04492b1e7de8956aed5e477066",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:burning_arena",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "5e01b86ac588f88922c254f179a2a655f5180cb7cddd9572bd1296858efdf08a",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:cursed_pyramid",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "d726fe56557c2628276494f3bc06007974501942056bbb7a18f295a37b00505d",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "281faa9382be8fc6f29320339aed30f0fd5b3d5a47358ddfe72307b0c92e3186",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ruined_citadel",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "21dccc9e385cb2f52ae890bfba524da226b4ea3c325f6a7c859dc02fc395ae42",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:soul_black_smith",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "e02edd3ca82ff703a95ad2f23d437f63716e84450dc0d0bf48b0cf40e4f868dd",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:sunken_city",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "a102ccf2573e1e4fb5d01d6326b993eb8c7b69cf6ffe17e546c095de4fd69d65",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "create_easy_structures:foresttracks",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "f75da12e23c9f32e0287cc49ab2a32d87353c87ded3b80d8f52033f57c80e50a",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "create_rustic_structures:rustic_barn",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "9a2d74907e2c120cc3eaa0289ef05e2c3805e40b3e483ae6d1889af8cd711e9e",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "create_rustic_structures:rustic_smithy",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "09d1a8ee942d80cd9fc43649bc73e56b04d4cfef8bd57f14113f8766c4a5e9c8",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "create_rustic_structures:rustic_well",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "7dc84485719e2f8ed9118ee9bb86082f3e3c840de8e8818330a1f39052773033",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "create_rustic_structures:rustic_windmill",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "5afd2c32491bb26dbfe3368b7485bd6d1aebb6f76df86b30445ec18454c9ae78",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "create_structures_arise:createdesertwell",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "8f6452e3c857d43f36811def759b11c6e169e2504bfa71e188f721e271dcdd83",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "create_structures_arise:createwitchhut",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "f84e680b54df64178064dde8b985747c679c44ce39008f0ffd0da7113486ce1f",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_christmas",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "3968f5ac4c9fbe3435a900533deae949de0b046ff56ef7903c00efe48d9be1f9",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_dark_forest",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "5670f7cde76980a1bb4818f78d9819f354c1fb8eab61872fd66a3718df2ea21a",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_plains",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "518ea1167058e48bc93419e74e0b07df4ea022d15393fbee4f8a3e923b40ebf5",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_plains_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "a71db28188977c52a1c47d0657f4f200dc7d8fc804e6f7f90cd95772a4304d38",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_snowy_igloo",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "ebf750c236a9df63ba29944c28f0b74fec3ce0ed3ac2b66af83de40d88e9369d",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_swamp",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "6b65e4422622f1a02cc96bad793ffd5063500d60eac293b8faad2f03ee68d54a",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_swamp_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "8349d4cffc7c9c0b19c72f763702488e45cdc636372caa2a4a6bb769d71d9b1e",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_taiga",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "d35204179e2779c2b18ad022c77288ca90a672824119072d32c570ccccad75f6",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:large/village_taiga_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "79dbaec2177671368e790b81cb3dfc8dfc41c01eb92f0697d5253f17ea3472e9",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_christmas",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "a9aeafab095d8eef51c7203bc0b8ffaf9437622de7b559831c666835edd309b1",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_dark_forest",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "8d3d95935a5a3f2506ff84e329de3c6ea93ea24677530c9f556d55258f500fb1",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_plains",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "668ccf2e220761068203a675b63177f38a2eacbe734827b44ae1da679c72ef8a",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_plains_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "9ca8ef43f7a9eb68563159efb57d4aa40e9375e2252fe2f6cf6c80c99ab267bf",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_snowy_igloo",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "635206164a2c3a6f5fa16073e9389c63b0dfc532748c4a5f6ad7e2d5f2a24910",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_swamp",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "97f40d3244602adf2898cff99e7fcbd7b721248226c612c63f1778792a80cd5a",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_swamp_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "c91f36475c927cb6cd1a97fd10ec0d020e805e3c8ce81f6053e2a8913f651498",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_taiga",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "1198961db96d46b777d4ea8c7d16b0c1ffbae635d5bf3c6a05d63013a846a8f6",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:medium/village_taiga_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "015a3f6a79bfba2fb3aa782f5a18062cb99ba75c6ef5ab67be875aa70fdf314d",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:pillager_outpost_dark_forest",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "26cad6177fb9c5428701693e6149fedfcffd08748c092d096da8253b4d1bb198",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:pillager_outpost_plains",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "de41f942794f204eacb31a84da4f5f245f8058be5e8a90de14be4efb3832b27d",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:pillager_outpost_snowy",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "92ea2f96eb9b2f6186e10aa33864e765786ac3a380225cd4f3f36b7974bd69ff",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:pillager_outpost_swamp",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "66099f1d63a56868ece75855880c2eca9c9edf11c71c92857e4f84f0a238d8ec",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:pillager_outpost_taiga",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "b4bde5c0eb320fc45bd2f2db5cb0c1749cdd5af6e5f5b28fc6be950a1253f4fd",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_christmas",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "9db0e1885edec86b6b87c3fc8a3729a46d83ac05388531c6c5babdc61ccfb1c6",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_dark_forest",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "bbaced7d2aab0133d36221bec18b461cadc0f93c90b27d331ba158607237b2a4",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_plains",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "a25bc3be8a92757cb6751682884f520cf34c28c429ffe2c6c3a31a37a62b7763",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_plains_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "6e92279343aa41842f666bd00f5b2d281ce8c6bd7bb2a9cdf2bc3a0e7489d299",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_snowy_igloo",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "3735dbd846ae369c1293caba08befb56550ee7c9328f6e6b7139f6b4e0efe112",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_swamp",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "636441490848e8164dd5dd204114e3f050539738816c298b3bb125293f6ddef7",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_swamp_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "86a97f153ba32a304b38c049df53c589c341645e4af9f892511e1839002d5ec5",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_taiga",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "27755132894518c3a4f248aa41d775ed749168b2413888d9d0491b0ec78eb768",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "ctov:small/village_taiga_fortified",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "ec0fd3052beba2a46d1d39d54a459ed79d7520dfe147165355403296a4845a56",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "dungeons_arise:heavenly_challenger",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_structure_density",
+      "sha256": "9f513612a1d0027eacb597cb94ca631230b525c08196191a7f157e1bf678cf8f",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_structure_density"
+      ]
+    },
+    {
+      "id": "dungeons_arise:heavenly_conqueror",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_structure_density",
+      "sha256": "bff1017918f52cfbb4be2a740957f224c71505d5219d4da50d42f7bc6c49b527",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_structure_density"
+      ]
+    },
+    {
+      "id": "dungeons_arise:heavenly_rider",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_structure_density",
+      "sha256": "d566a7441d90419501f311fbbd077f7de85979282ec9a314f97d0c9be7a61afc",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_structure_density"
+      ]
+    },
+    {
+      "id": "fdbosses:malkuth_arena",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_structure_repairs",
+      "sha256": "fc1338fdf2987ba811f109fdad8f8943ddeae5f11cce74f5c44cf3519518674d",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_structure_repairs"
+      ]
+    },
+    {
+      "id": "iceandfire:fire_dragon_cave",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dragon_caves",
+      "sha256": "03bf626e386101ea5bee73232277ad2fc4f74d13a794744ccb01f89be81b7be9",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dragon_caves"
+      ]
+    },
+    {
+      "id": "iceandfire:ice_dragon_cave",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dragon_caves",
+      "sha256": "146248b8bdb042c31c1d93512b87e07aaf4578e2c9a70f65ff26c31e5e39b6a3",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dragon_caves"
+      ]
+    },
+    {
+      "id": "iceandfire:lightning_dragon_cave",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dragon_caves",
+      "sha256": "08650920e4fc4f61b16c9e453e1e87f029a926ba6a768265dd2a5e7df6187c84",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dragon_caves"
+      ]
+    },
+    {
+      "id": "minecraft:ancient_city",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_ancientcities",
+      "sha256": "f15b9cfafc61c53306f98d05898332509d9b3d10b7fe21af84758e5a41bc7b20",
+      "matching_audited_providers": [
+        "lukis-ancient-cities-v1.2.jar"
+      ]
+    },
+    {
+      "id": "minecraft:bastion_remnant",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/betterbastions",
+      "sha256": "960fc221b7bb2defc1173acebfd94d9c8d2f640b638ae5c2c381d16767bc5105",
+      "matching_audited_providers": [
+        "betterbastions-1.0.0+neoforge-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "minecraft:mansion",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_woodlandmansions",
+      "sha256": "6484d5ffbe3250fcea5bce2027b8dc4c4112a1c96471e85122cb99646827cd6a",
+      "matching_audited_providers": [
+        "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar"
+      ]
+    },
+    {
+      "id": "minecraft:pillager_outpost",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_trek",
+      "sha256": "360188cf3176fd564f2eab32343d13fe8b3143f9cec5cfe434e6a1baac3390d6",
+      "matching_audited_providers": [
+        "trek-B0.6.2.jar"
+      ]
+    },
+    {
+      "id": "minecraft:shipwreck",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/bettershipwrecks",
+      "sha256": "d26f6409368a145a299d7c514a8850d337cc4da6a74653e44b04a496d92a9cad",
+      "matching_audited_providers": [
+        "bettershipwrecks-1.0.3+neoforge-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "minecraft:shipwreck_beached",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/bettershipwrecks",
+      "sha256": "361cbea1c115a2397944d245aac8ba4877f9ab5e06e2efeb2f9350bdfdc1f68f",
+      "matching_audited_providers": [
+        "bettershipwrecks-1.0.3+neoforge-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "minecraft:swamp_hut",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_grandcapitals",
+      "sha256": "121a894b5ca0d23a46fece1b10c3a2aab405362be42f5e50114b236ef25d6938",
+      "matching_audited_providers": [
+        "lukis-grand-capitals-1.1.3.jar"
+      ]
+    },
+    {
+      "id": "minecraft:village_desert",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_grandcapitals",
+      "sha256": "438f09bdf39cf3866174a63765b79cdc4a687a9237fdbc889744583b45516fb9",
+      "matching_audited_providers": [
+        "lukis-grand-capitals-1.1.3.jar"
+      ]
+    },
+    {
+      "id": "minecraft:village_plains",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_grandcapitals",
+      "sha256": "8efeabc88ef4b28f559ccf8e2d65980ba9335ccb39f11cddb3afce24b409deb4",
+      "matching_audited_providers": [
+        "lukis-grand-capitals-1.1.3.jar"
+      ]
+    },
+    {
+      "id": "minecraft:village_savanna",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_grandcapitals",
+      "sha256": "ebe0ab72fc31fef2db96b02e0fa9574711afb88750f312c3c6b22c4b0902e25e",
+      "matching_audited_providers": [
+        "lukis-grand-capitals-1.1.3.jar"
+      ]
+    },
+    {
+      "id": "minecraft:village_snowy",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_grandcapitals",
+      "sha256": "306f27e27b5863c472fd7a914c6ee64357b185590c87675f0793fa29a2fd9bde",
+      "matching_audited_providers": [
+        "lukis-grand-capitals-1.1.3.jar"
+      ]
+    },
+    {
+      "id": "minecraft:village_taiga",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/mr_lukis_grandcapitals",
+      "sha256": "21acb1496302f767cee25dc2fa47901a934cc82509666fea228de391d004ef20",
+      "matching_audited_providers": [
+        "lukis-grand-capitals-1.1.3.jar"
+      ]
+    },
+    {
+      "id": "mowziesmobs:frostmaw_spawn",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_mowzies_mobs",
+      "sha256": "f7f9a24c5ddae500ee845eb5c4313dfe1b2b5ccf39db4c50eae84e066bb6917f",
+      "matching_audited_providers": [
+        "IMM v1.3.2-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "mowziesmobs:monastery",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_mowzies_mobs",
+      "sha256": "f6a1cf479862051542abfb8ba321a8ac135b41bc69ecfb1a40e9a309e4f64d04",
+      "matching_audited_providers": [
+        "IMM v1.3.2-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "mowziesmobs:umvuthana_grove",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_mowzies_mobs",
+      "sha256": "2e4737d60606cf24efec92d1ddbee5c4d9cdb6cbe1bd9c349251bbbb7bcb4f4b",
+      "matching_audited_providers": [
+        "IMM v1.3.2-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "mowziesmobs:wrought_chamber",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "mod/integrated_mowzies_mobs",
+      "sha256": "0523be1f131986adb0a3a2064a72da6857b9eb6335ef3411e43686aebcfbe68f",
+      "matching_audited_providers": [
+        "IMM v1.3.2-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "nova_structures:desert_ruins",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "932519ef3e8c4a281f689e62d18dbc6f2f92899ef78e9f2781b3c14dfce7be15",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:jungle_ruins",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "978e5e1fca5b9286f07a3bf73f932c32f87fe0a041f342a8490672957cd2fa28",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_bee_keeper",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "47064a8084af008f036729b8a0bb69e58724b073765473021e1db5af02d54494",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_big_remnant",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "102ee6416e1b7e782e3a91080d68e1c519a06d7a3bfe91b1d80fc25570d3f7bf",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_big_remnant_2",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "285e2e6815b780f1f75b665aa417edbcafe9406a984616c5af3f545b35519295",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_big_remnant_3",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "da84ad2a58f5638dda65407afd0665879d36172c4f999e4cac8a83c4e21668e8",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_birch_graveyard",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "61549e27387768356a63b300bd4dfbe2a62957e73a0d731db39c1ad49e80f6e9",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_bridge_remnant",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "65458fa4090b57007776969879872ca781c8b31fdcf8287866e1ebb5146e7e66",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_bunny_base",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "7462613db85bde7f2c82fd2454103c56b516066cd4f29257c8bff3a92ac73281",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_classic_village",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "563007d6c86d66891b6d900df00982f147e635fc115d4abd65b19a05f9169549",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_desert_remnant",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "1ad44a5db2b8954c020f77f811c569dbef61df97880acfa822178edba0e1d2fa",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_forest_smith",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "dc620c9c17cc0005412b476a0f7c4491dd7b3c985efd3694c05c0933f2fed597",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_frog_ranch",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "a967370c53e1e68fd2fee5173aa170f5761f8a94b18119dd1975f27c682ca8c9",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_graveyard",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "70e065584342a867b1f414c8a8ab23cf7e8d9fe627e93cb89eab5c5ae18a5302",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_medium_remnant",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "47dbcb183a4f7775cb96fbbf44bdb3290e091ba7e6b8da89b426276f2c6b895d",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_medium_remnant_2",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "f6d134087e82e846d6d53ad2551e4f787fb2fd75fc2a3a23a48fb3bd57f0b93f",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_miner_hut",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "3850b463777ddad3b44ca3a9aae8a2d3820a395e174bf0039348abbbe649d1ac",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_mud_brick_constructor",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "d7358fa190d551830ee2d29515e334b3891afadd4d189e399271732503cdbb45",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_ominous_shop",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "0b4c46fc08e99589f420a0547192094949e439ba8819061e206538544ac1e235",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_ruin_farmer",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "a26c816f80fa92a5427dd78050799cebc9276ca24a455b81bdcfafd2ccab08f5",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_ruin_smith",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "1b89c8bb8c4cc052313df918a5d4b8f0728d7d794be12b2ae4d04d2ec4ff30e7",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_sawmill",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "c796f01323bbc8240124f0b23bc3d344f26b5f06261eb8dc7ebf4b0ca346bad3",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_school_remnant",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "171bc6057b980de9a4673f9df57e6043a471e38b58ae8db15927f55502d49b61",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_woodland_hud",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "7118b61f8b0ebf74ea2dad52dcc487ebbf204822d33aecf6973915e3d99dd532",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:remnant_zombie_horse_ranch",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "7243640a9543cf2b5749f3fd9781e9693774fdfb8df041c61e982c0561e2dc44",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:ruin_town",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "57221e4ed22e257ad8a07f7ceafd89044d96bb3f1ca3e2237d71af4edcc376d1",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:village_birch",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "188e0fd727442aa5995b0b4ad41ff682dc8174ae9f46f5300f531a9f11f6d691",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:village_jungle",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "54352ba88dcd7177cc37101901370bba9755259a715f4a8646b813e5630605b1",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:village_swamp",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "9212d50a6b9a850a632636643ffc212b7e800c547eb99b9a9b3fe359f62301a6",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "nova_structures:wild_ruin",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_dnt_trek_curation",
+      "sha256": "3477389a49419e108ac63f6f78c101f60c8fddba92463bb4782d99ef1f85702d",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_dnt_trek_curation"
+      ]
+    },
+    {
+      "id": "sky_whale_ship:frozen_whale",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "05c58d991388b819f02ddce3a0baeafb96cee238abc34aa84052a4a944622525",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "sky_whale_ship:whale",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "ef9697270a8c297b12700a1b15bab95bcae9889a02ff2328c2dea5f5258f1c72",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "sky_whale_ship:whalearena",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "f6fbe845c6d6ab518de199248dac08d1f84eed0a058f80b754914bcce22bb10b",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "sky_whale_ship:whalelight",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "bce503775987e030402ef276a1f9a16a4c882758caf5a88d63878f743354ff39",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "sky_whale_ship:whaleship",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "6d83fe8ab2232c6fa9a539938162bf9bb3d76bb267a2b6f89dc6c19694505646",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "structory_towers:pillager_lookout",
+      "kind": "worldgen/structure",
+      "present": true,
+      "source_pack": "ao_compatibility",
+      "sha256": "077fcf5f9d18c83f9d600f2f76eae6e5387218d4a38d1d356f38abe81109acd4",
+      "matching_audited_providers": [
+        "local:config/paxi/datapacks/ao_compatibility"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich_tower",
+      "kind": "worldgen/structure_set",
+      "present": true,
+      "source_pack": "cristellib:runtime_pack",
+      "sha256": "b36a89a9afee6f304441b5fbd1240b14025f725475e21fd678b895fe643eebd0",
+      "matching_audited_providers": []
+    },
+    {
+      "id": "cataclysm:ancient_factory",
+      "kind": "worldgen/structure_set",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "05bd51793e700c3db32ae2d6973fc3972382f1606eccad737879898f8815f8da",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "mowziesmobs:wrought_chambers",
+      "kind": "worldgen/structure_set",
+      "present": true,
+      "source_pack": "mod/integrated_mowzies_mobs",
+      "sha256": "00f9cb41ed2595870ab5b1c67355454b8c2cc8d8fc86bbf23ab8b4476a8204fc",
+      "matching_audited_providers": [
+        "IMM v1.3.2-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:gauntlet_arena/start_pool",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_bosses_of_mass_destruction",
+      "sha256": "2073fd182996949ef1fc4daa94e0de5e20d1696d11c1ca5621c2642d9bd46c32",
+      "matching_audited_providers": [
+        "IBOMD v1.0.0-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich_tower/start_pool",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_bosses_of_mass_destruction",
+      "sha256": "5b0ad6eed69428cfc4aa9977b516bc7220ea6f1b433b52be010ac338b46bd619",
+      "matching_audited_providers": [
+        "IBOMD v1.0.0-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "bosses_of_mass_destruction:obsidilith_arena/start_pool",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_bosses_of_mass_destruction",
+      "sha256": "bf2f3f622d3dc4a9511042da86f9694e0e8b36149c8254262985205031f89fd9",
+      "matching_audited_providers": [
+        "IBOMD v1.0.0-1.21.1.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/a",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "506df37a8f2aba5824bce31c75af0c1d4062f58336eda926a5e977e0ad4d4a1f",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/d",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "0e7104ad61310fd2de66c214565cb7108c2393f341487a15fccaf93115091172",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/e",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "97cd99b74db1f36f13929f50612433514c24818492fadc81c4921a995c53a5d5",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/mob/the_harbinger",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "ac6ff289e9a403cfb35e21d79c8e23263445b7ad0fa2cd1661148db75ceb682b",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/mob/the_prowler",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "802fc4eb23c50b3e4a14fe726a39fdda195f91c330efe4793e80c28a727fe43b",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/mob/the_watcher",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "9343801e0f43e11a8a85b2297cee423e720dcbcf87e6a377728ac0b5ec392461",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/q",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "fbbe9519cc3147f780b0181235a0ebbd44a715c12ca63da4600bc885419e23fd",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/start_pool",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "54b68b0a926ff2bb3dffaf97d13d5c148e9dd89e0d196d529c360883756c8c76",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:ancient_factory/w",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "31d5c00444e55c75f822f9f9f920fb6a1bd760852b377fd2e2aa31c21c592e08",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_1",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "f86138a75b7a09f35d7154433f3ea1075c5dcaa31481ffdc5584509ef38ffb89",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_10",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "a5cb67b4e094f8a0038495e56c4e8f26a51237428527bc62182db09f43e6cd72",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_11",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "577c1179c78fa75e5e493c5d1bb05c8e3ae49f061b196a0bce99cb7006f5983b",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_12",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "7a6e20d0ff113593a3fecfda83a7b1a7c94889bad78b5c253168a3f986e6c832",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_2",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "fa259556f1f853ec917c2d14d784db6b008e59ba120f9c1d93052cc8bd7c3ca8",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_3",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "b8d1ce3c2d84dd03bf00cd9ae3925b7872c111210359de9f255fc2ee245d0ffa",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_4",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "1a2dbb60096e09bda61afcfabbd65d9c276bfbff8222ace48635b5770cb0aad5",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_5",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "f9fa812406f63f0dacd6b359a47399bc86bf48d0ce47c168bda27e8c66489c14",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_6",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "72732b4decedee5f8aaadade56ee2212e8d613d8da3d50272256fb7895b1de7b",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_7",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "165e42e5bd03e904674e4c04123fa147e2c28e6a0a498afcb2ede937dbade654",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_8",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "21195418b99e1dd31763beaae5ab545d68699852c0086849401e1471d92ca3d8",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/bottom_9",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "0d4a956d8d571923751629b7c1b1b71755d3abf851e1ac55235d1ee8bd027470",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_1",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "52390f8afb5bd670c7d43386c27646d9e96fd16fbb613985e0614e498f6ad775",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_10",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "a01d0a672e4e2759f8d4af87e61ac214a0d5a1cd53f6eefc979918bce2519ee5",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_11",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "13539171869cafbc0df96ee2c6cfc1f1057b298c621ce072c4395c1c79dc8637",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_2",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "9c04df9953ba7623ad3ac36976e983193a8c140017ad1df8b0f508022e793fdb",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_3",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "e5693641b496494b39eb837f07594bf02859723bf24a027d21514de3b6df1a48",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_5",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "d5ec2e54e90066f3586cd0190cae9928fabd215c33526d77b97fd395c13d54a7",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_7",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "c23f03b62e6caf7bd3dc2c9877e13ce9dca69d37076b9bdef982bc2966800dfb",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mid_9",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "545714b262546eaef38efde163e819794e4065423fed445f2d44c7317bfae6a3",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mob/aptrgangr",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "61f4a72a5095231aec533b87989a60a63605c29bf2fb23f830950a74a72c91b0",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mob/draugr",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "68d1afe253d794aeba0192615d69cb370642aff37e76beccae06c8ba7efda29f",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mob/elite_draugr",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "99bc9068486ce2749e5ff4df8992fa5a98132d565ab9a4db0c8feb5893fccc0b",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/mob/royal_draugr",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "29db39e70fef448aecc4dfcb8d00c1c5d1c357bf3e56d175506ac377b1bf0cad",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/start_pool",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "f1f47269c607768feed1217c8f179774a3e391e9490441719c77057e37410f54",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/top_6",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "2be44c483749821e9a000949edfcedd9efbe4e4866ff65f55aaf930dee096997",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/upper_6",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "f2faeee569585a659c046120ddb177c6ee82db2597eeb8c6cceb5303cb7a8bd0",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:frosted_prison/upper_7",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "bcb050b9db87d32dbeb5c01060f286ac2abf2d6295bbf567068dc99482861e24",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    },
+    {
+      "id": "cataclysm:soul_black_smith/start_pool",
+      "kind": "worldgen/template_pool",
+      "present": true,
+      "source_pack": "mod/integrated_cataclysm",
+      "sha256": "26d69923d0091d1eb50bb7adecec6d0ac6a5a565ddf9376e0c18a46be2deb281",
+      "matching_audited_providers": [
+        "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar"
+      ]
+    }
+  ],
+  "encounter_gameplay_tested": false,
+  "dedicated_server_tested": false,
+  "multiplayer_tested": false
+}

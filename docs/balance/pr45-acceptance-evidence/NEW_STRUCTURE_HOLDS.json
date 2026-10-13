@@ -1,0 +1,20 @@
+[
+  {
+    "id": "eternalnether:catacomb",
+    "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+    "tier": null,
+    "status": "SOURCE_VERIFIED_HOLD_UNASSIGNED; NBT/natural encounter audit pending"
+  },
+  {
+    "id": "eternalnether:citadel",
+    "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+    "tier": null,
+    "status": "SOURCE_VERIFIED_HOLD_UNASSIGNED; NBT/natural encounter audit pending"
+  },
+  {
+    "id": "eternalnether:piglin_manor",
+    "provider": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+    "tier": null,
+    "status": "SOURCE_VERIFIED_HOLD_UNASSIGNED; NBT/natural encounter audit pending"
+  }
+]

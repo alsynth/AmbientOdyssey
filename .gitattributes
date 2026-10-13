@@ -20,3 +20,4 @@ docs/performance/v049-followup/*.toml -text -eol
 # Preserve experimental config/rollback and captured evidence bytes for hashes.
 experiments/structure-difficulty-v3/** -text -eol
 docs/balance/v3-evidence/** -text -eol
+docs/balance/pr45-acceptance-evidence/** -text -eol

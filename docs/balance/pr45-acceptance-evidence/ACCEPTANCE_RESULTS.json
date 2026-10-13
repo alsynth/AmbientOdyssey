@@ -1,0 +1,49 @@
+{
+  "acceptance_complete": false,
+  "elite_stacking_tested": false,
+  "natural_encounters_tested": false,
+  "dedicated_server_tested": false,
+  "multiplayer_tested": false,
+  "loot_overrides_installed": false,
+  "quest_prototypes_installed": false,
+  "celestisynth_runtime_tested": false,
+  "gate": "HOLD: elite cap/exclusion, natural encounter, dedicated-server and multiplayer acceptance remain pending",
+  "original_332_runtime": {
+    "status": "CLIENT_RUNTIME_PASS_FRESH_FLAT_WORLD",
+    "exit_code_observed": 0,
+    "structures_queried": 379,
+    "resource_checks": 153
+  },
+  "runs": {
+    "337_candidate": {
+      "status": "CLIENT_RUNTIME_PASS_LIMITED_REHEARSAL",
+      "exit_code_observed": 0,
+      "config_matches_original_json_with_float_tolerance_and_gson_null_elision": true,
+      "prepared_overlay_sha256": "a189b392296f6d368a194e107f7da4fd454aa3b490000fd3ab6ede8f3ee15016",
+      "post_runtime_overlay_sha256": "3cd291a4ff26b27dcf7866807ed804404da02d2ec678971ee0dff37d11b4f843",
+      "probe_sha256": "13ae4eb2d3cc13397f2754fb2f2b24a4bf718c48d5e948ea93d507de9e37f7a4",
+      "production_physical_jars": 337,
+      "instrumentation_jars": 1,
+      "structure_ids_queried": 382,
+      "structure_ids_missing": [],
+      "effective_resource_checks": 192,
+      "resource_checks_missing": [],
+      "synthetic_rules_all_pass": true,
+      "synthetic_case_count": 11
+    },
+    "337_rollback": {
+      "status": "CLIENT_RUNTIME_PASS_LIMITED_REHEARSAL",
+      "exit_code_observed": 0,
+      "config_matches_original_json_with_float_tolerance_and_gson_null_elision": true,
+      "prepared_overlay_sha256": "fd277736f1c6b4c2d517b2d480b15586696f49e5f17e324e33eb6746a9e6a010",
+      "post_runtime_overlay_sha256": "fd277736f1c6b4c2d517b2d480b15586696f49e5f17e324e33eb6746a9e6a010",
+      "probe_sha256": "52c91b9d15bfca1311d2e6118712dcb83db4335dbdbb76f74e520b748599b438",
+      "production_physical_jars": 337,
+      "instrumentation_jars": 1,
+      "structure_ids_queried": 379,
+      "structure_ids_missing": [],
+      "effective_resource_checks": 153,
+      "resource_checks_missing": []
+    }
+  }
+}
