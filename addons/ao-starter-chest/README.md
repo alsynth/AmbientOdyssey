@@ -10,6 +10,8 @@ This source module is **not** automatically installed by the existing CurseForge
 
 The bundled `minecraft:chests/spawn_bonus_chest` loot table supplies the first, third, and fourth categories. The custom NeoForge global loot modifier supplies the actual affix item, because ordinary vanilla loot JSON cannot guarantee correct Apotheosis-generated affixes at fixed rarity percentages.
 
+Apotheosis's native 1.21 chest-loot modifiers otherwise match the Bonus Chest (`chests.*`), injecting extra affix loot and sometimes gems. AO stages three **first-match, zero-chance Bonus-Chest-only exclusions** under `config/paxi/datapacks/ao_starter_apotheosis_exemptions`: `affix_conversion`, `affix_loot_injection` and `gem_loot_injection`. The remainder of each mod's native data is preserved, and `tools/validate_ao_starter_apotheosis_exemptions.py` compares it with the installed pinned 8.9.0 JAR. This should prevent duplicate random rewards without changing normal dungeon chests, subject to Paxi load-priority verification.
+
 **Critical gates before shipping:**
 1. Native Gradle compilation against pinned Apotheosis 8.9.0/NeoForge 21.1.252.
 2. Confirm exactly ONE affixed item from each Bonus Chest, despite generic Apotheosis chest-injection modifiers; their execution order is load-order-sensitive. Do not assume the `removeIf` guard is sufficient if another modifier executes after it.
