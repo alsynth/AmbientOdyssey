@@ -1,6 +1,8 @@
 # Ambient Odyssey — Regalia catalogue expansion, Wave 2
 **13 October 2026 · Research only · Minecraft 1.21.1 / NeoForge**
 
+> **Later update (Regalia Ranking v0.1):** This document is the historical **Wave 2 baseline of 419 entries**. The newer [ranking README](README_REGALIA_COMBAT_RANKING_20261013.md) and [master candidate CSV](REGALIA_ITEM_CATALOGUE_EXPANSION_2026-10-13.csv) now cover **497 entries across 14 providers**, including Pasterdream and Aquamirae. The 419 count in the table below remains the Wave 2 checkpoint, not the latest total.
+
 ## Status
 This expands the **same** Regalia catalogue established by [Wave 1 / PR #47](https://github.com/alsynth/AmbientOdyssey/pull/47). It does **not** invent a separate item-rarity class or change game balance.
 
