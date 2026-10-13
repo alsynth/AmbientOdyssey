@@ -59,13 +59,13 @@ To avoid fake precision, start with *chest-class composition by structure*, **no
 | Tier | Expected viable setup | Clear warning signals | Build diversity |
 |---|---|---|---|
 | 0–1 | Vanilla survival basics: armor, shield or dodge, food, travel | Night mobs kill new player very quickly | Melee/ranged default both valid |
-| 2 | **Enchanted diamond** and **≥2 grade-A combat-support items** (existing AO design anchor) | Two ordinary enemies overwhelm player without warning | No compulsory unique Origin or spellbook |
+| 2 | **Enchanted diamond** and **≥2 grade-A combat-support items** (existing AO design anchor) | Two ordinary enemies overwhelm player without warning | No compulsory spellbook, race power or character-creation prerequisite |
 | 3 | Developed enchants, one clear fighting style, decent healing/range | Unavoidable AoE or frequent gear break | Melee/ranged/spell routes should work |
 | 4 | Sustain/resistance prep, multiple usable utilities, first substantial affixes or niche relic | Boss drops in one hit despite defensive prep | Viable solo Mine Cells / early dimension encounters |
 | 5 | Coherent offensive + defensive synergies, non-trivial accessories, better targeting/positioning | Requires perfect rare drop or one cursed ring | Multiple independent loot routes |
 | 6 | Endgame-ready with enchant/affix and specialist response tools, likely good gem kit | Arbitrary DPS/HP check with no alternative | T6 boss reward unlocks further gear |
 | 7 | Pinnacle-aware Ancient access and Artifact/Heirloom path, viable control/avoidance | Generic T4 loot invalidates all upgrades | Strong but readable combat |
-| 8 | Heirloom / Esoteric targeted build, advanced fight-specific counters | Forced single invincible item/Origin | High specialization but nonmandatory |
+| 8 | Heirloom / Esoteric targeted build, advanced fight-specific counters | Forced single invincible item or specific build | High specialization but nonmandatory |
 | 9 | Mastered Heirloom–Esoteric builds, telegraph literacy, pressure resilience | Boss-only works for scripted 5+ player group | Soloable ideally; rare team-oriented prestige variant acceptable |
 
 No raw HP, weapon DPS or spell coefficient targets can be responsibly locked without actual equipment-stat survey and boss combat probes. Log each candidate's **damage taken per telegraphed hit, %HP swing, kill time, potion usage and performance** before publishing numbers.
@@ -75,7 +75,7 @@ No raw HP, weapon DPS or spell coefficient targets can be responsibly locked wit
 
 **Goblin Traders:** actual NeoForge implementation allows tuned chainmail for **1–3 iron plus 6–14 emeralds**; earlier proposed **4–8 diamonds + 16–32 emeralds** is a **trial economy placeholder**, pending measured material flow. Netherite currently trades at **2 Nether Stars + 1 Dragon Head**; do not harden costs without Wither farmability analysis. Don't overwrite trade output components.
 
-**Relics/Artifacts/Curios/Spell gear:** draw from validated native mods' item families; check how powerful support items bypass raw armor/HP assumptions. No mandatory Origin, curse, one spell school or exact RNG item.
+**Relics/Artifacts/Curios/Spell gear:** draw from validated native mods' item families; check how powerful support items bypass raw armor/HP assumptions. **No Origins system whatsoever**; no mandatory curse, spell school or exact RNG item.
 
 **Mine Cells/Trial Chambers:** preserve baseline Mine Cells early rewards. Separately author improved **Tier 4 Trial Chamber waves/vault rewards** only after actual normal/ominous/vault source data inspection; do not assume Dungeon Difficulty rewrites trial configuration.
 
