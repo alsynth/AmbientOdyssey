@@ -34,3 +34,8 @@ jobs:
           gradle-version: '8.14'
       - name: Compile experimental starter chest addon
         run: gradle -p addons/ao-starter-chest build --no-daemon
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ao-starter-chest-compiled-experimental
+          path: addons/ao-starter-chest/build/libs/ao-starter-chest-0.1.0-experimental.jar
+          if-no-files-found: error
