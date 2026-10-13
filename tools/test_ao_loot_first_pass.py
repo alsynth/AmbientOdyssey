@@ -75,7 +75,22 @@ def check():
         assert trade["secondary_payment_item"] == {"id":"irons_spellbooks:cinder_essence","count":4}
         assert "minecraft:attribute_modifiers" in trade["offer_item"]["components"]
     assert result["trades"][-1]["offer_item"]["id"] == "minecraft:apple"
-    print("AO loot source checks passed: ring recipes, three starter pools, affix modifier definition and synthetic Goblin trade transform.")
+    native_override = ROOT / "release_030/overrides/config/paxi/datapacks/ao_goblin_trades/data/goblintraders/goblin_trades/goblin_trader/epic.json"
+    native = json.loads(native_override.read_text())
+    assert native.get("replace") is False and len(native["trades"]) == 22
+    tuned = [x for x in native["trades"] if x.get("offer_item", {}).get("id") in {
+        f"minecraft:chainmail_{part}" for part in ("helmet", "chestplate", "leggings", "boots")
+    }]
+    assert len(tuned) == 4
+    for offer in tuned:
+        assert offer["payment_item"] == {"id":"minecraft:diamond","count":32}
+        assert offer["secondary_payment_item"] == {"id":"irons_spellbooks:cinder_essence","count":4}
+        assert offer["max_trades"] == 1
+        assert "minecraft:attribute_modifiers" in offer["offer_item"]["components"]
+        assert "minecraft:max_damage" in offer["offer_item"]["components"]
+    assert json.loads((native_override.parents[4] / "pack.mcmeta").read_text())["pack"]["pack_format"] == 48
+
+    print("AO loot source checks passed: ring recipes, three starter pools, affix modifier definition and synthetic and pinned-native Goblin trade transform.")
     print("NOT TESTED: live native Goblin JAR output, compilation, real Apotheosis affix rolls, Lootr / Minecraft runtime.")
 
 if __name__ == "__main__":
