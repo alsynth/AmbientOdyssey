@@ -6,7 +6,10 @@ group = 'dev.ambientodyssey.starterchest'
 version = '0.1.0-experimental'
 base { archivesName = 'ao-starter-chest' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
-repositories { maven { url = 'https://maven.shadowsoffire.dev/releases' } }
+repositories {
+    maven { url = 'https://maven.shadowsoffire.dev/releases' }
+    maven { url = 'https://maven.blamejared.com' }
+}
 dependencies {
     implementation('dev.shadowsoffire:Apotheosis:1.21.1-8.9.0') { transitive = false }
     implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }
