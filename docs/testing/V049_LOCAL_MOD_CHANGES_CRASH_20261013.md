@@ -44,3 +44,11 @@ At 20:24:42, Simply More 1.3.0 Alpha StunEffect.applyEffectTick invokes EntityUt
 
 ## Next actions
 Compare complete 423-JAR local snapshot against actual pre-v0.4.9 manifest and classify all added, changed, removed mods; only then add approved changes to release. Keep Mob Plaques out. No runtime validation, release edits, or actual mod changes made by this note.
+
+
+## Next client build — disable stun and fatal flickering (requested 13 October 2026)
+**Status: TODO — user-approved target, NOT yet implemented or tested.**
+
+- **Disable Simply More Stun** in the next experimental client, while preserving Simply More weapons and unrelated abilities. The logged Simply More 1.3.0 Alpha stun callback incorrectly casts `ClientLevel` to `ServerLevel` when a target dummy is ticked. Investigate native config first; if unsupported, implement a narrowly scoped, reversible compatibility fix that prevents the faulty callback from executing (merely clearing the status effect after a tick may be too late). Test client, dedicated server, multiplayer and dummy interaction.
+- **Disable fatal/intense flickering / flashing visual effects** in the next client. Identify the actual source effect(s), including Simply More's Lustrous Moxie flash, and suppress or reduce flashing without unnecessarily removing weapon mechanics. Prefer client-only settings/visual overrides where feasible. Review other screen-flash effects in the pack separately; do not claim a universal solution without testing.
+- Include both changes in the next-client checklist/changelog, and verify that the effects are gone and no Stun crash occurs. Preserve rollback capability.
