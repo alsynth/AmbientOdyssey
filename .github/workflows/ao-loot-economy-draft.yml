@@ -39,3 +39,16 @@ jobs:
           name: ao-starter-chest-compiled-experimental
           path: addons/ao-starter-chest/build/libs/ao-starter-chest-0.1.0-experimental.jar
           if-no-files-found: error
+      - name: Copy existing verified empty structure fixture for native tests
+        run: |
+          mkdir -p addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/structure/
+          cp addons/ao-affix-trims/src/main/resources/data/ao_affix_trims/structure/empty.nbt addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/structure/empty.nbt
+      - name: Native Apotheosis affix GameTests (600 real rarity rolls)
+        run: gradle -p addons/ao-starter-chest runGameTestServer --no-daemon
+      - name: Upload native test logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ao-starter-native-test-logs
+          path: addons/ao-starter-chest/run/logs/latest.log
+          if-no-files-found: ignore
