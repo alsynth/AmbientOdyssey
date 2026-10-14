@@ -113,6 +113,29 @@ def run(jar, root):
                            "direct_replaced_vanilla": sorted(replaced_vanilla.intersection(row["biomes"])) if row else []}
         forest_path = PREFIX + "worldgen/structure/firewatch_tower_forest.json"
         forest = text_json(zf, forest_path)
+        candidate_originals = {
+            suffix: text_json(zf, PREFIX + f"worldgen/structure/firewatch_tower_{suffix}.json")
+            for suffix in ("birch", "cherry", "savanna", "forest")
+        }
+        land_ref = "#nova_structures:collections/land"
+        land_direct_consumers = sorted(selector_consumers.get(land_ref, []))
+        # A collection tag may be used indirectly by other biome tags, including land.
+        for name in COLLECTIONS:
+            key = "nova_structures:collections/" + name
+            upward = [key]
+            visited = set()
+            while upward:
+                key_now = upward.pop()
+                if key_now in visited:
+                    continue
+                visited.add(key_now)
+                for ancestor, row in tag_data.items():
+                    if "#" + key_now in row["values"]:
+                        upward.append(ancestor)
+            draft[name]["transitive_tag_keys"] = sorted(visited)
+            draft[name]["transitive_structure_consumers"] = sorted({
+                sid for tagkey in visited for sid in selector_consumers.get("#" + tagkey, [])
+            })
 
         paxi_overrides = []
         paxi_root = root / PAXI
@@ -134,6 +157,8 @@ def run(jar, root):
                 if key in {"#nova_structures:collections/" + t for t in COLLECTIONS}
             },
             "forest_original_native_structure_json": forest,
+            "four_original_native_structure_json": candidate_originals,
+            "land_collection_direct_structure_consumers": land_direct_consumers,
             "forest_native_source_file": forest_path,
             "current_researched_repo_paxi_firewatch_overrides": sorted(paxi_overrides),
             "declared_biolith_replacement_targets": sorted(replaced_vanilla),
