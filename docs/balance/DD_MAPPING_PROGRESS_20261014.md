@@ -1,5 +1,8 @@
 # Ambient Odyssey — Structure Catalogue Progress (October 14, 2026)
 
+> **MOST RECENT OWNER APPROVAL — 14 October:** The previous 26 spawner-positive review holds are **all owner-approved Tier 0**, preserving their source NBT spawner evidence and leaving native spawns intact. The Dungeon Crawl structure `dungeoncrawl:dungeon` is **owner-approved overall Tier 4** (was provisional Tier 3), but the user requests **upper floors Tier 2**. The available DD configuration has no floor/height-aware selector; a relative-floor resolver is a separately gated implementation. **No live DD config changed.** The existing 100% known-ID tier completeness remains unchanged. Counts: 157 HIGH, 637 MEDIUM, 420 LOW, **26 OWNER_APPROVED**, zero remaining former owner holds. See [floor implementation note](DD_DUNGEON_CRAWL_FLOOR_TIER_2_TO_4_PLAN_20261014.md).
+
+
 > **LATEST STATUS — 14 October, superseding historical progress tables below:** **1,240/1,240 known native IDs** and **1,130/1,130 current-profile known IDs** have numerical **first-pass PROVISIONAL** tiers. This is *not* 100% of the live registry, accurate encountered difficulty, owner approval, or shipped Dungeon Difficulty. **157 HIGH, 637 MEDIUM, 420 LOW, 26 OWNER_HOLD** confidence classifications; all 26 owner-held numeric placeholders are blocked from deployment. See [34-site postmap audit](DD_POSTMAP_CRITICAL_AUDIT_20261014.md), [34-ID worklist](DD_POSTMAP_CRITICAL_34_TIER_REVIEW_20261014.csv), and [5-site exact entity matcher audit](DD_POSTMAP_FIVE_SITE_ENTITY_MATCHER_20261014.csv). No gameplay changes. The former percentage tables remain solely as a chronological history.
 
 
