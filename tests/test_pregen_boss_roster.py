@@ -23,13 +23,16 @@ class PregenBossGateRegression(unittest.TestCase):
         report=audit.audit()
         absent=set(report["absent_from_named_pinned_mod_roster"])
         self.assertIn("Bosses' Rise",absent)
-        self.assertIn("Bosses of Mass Destruction",absent)
+        self.assertNotIn("Bosses of Mass Destruction",absent)
         rise=[e for e in report["bosses"] if e["source_mod"]=="Bosses' Rise"]
         bomd=[e for e in report["bosses"] if e["source_mod"]=="Bosses of Mass Destruction"]
         self.assertEqual(len(rise),5)
         self.assertEqual(len(bomd),4)
         self.assertTrue(all(e["source_mod_pin_status"]=="NO_MATCHING_PINNED_MOD_FILENAME"
-                            for e in rise+bomd))
+                            for e in rise))
+        self.assertTrue(all(e["source_mod_pin_status"]=="MATCHING_PINNED_MOD_FILENAME"
+                            and e["matching_CF_mod_names"]==["BOMD-NeoForge-1.21-1.3.3.jar"]
+                            for e in bomd))
         self.assertFalse(audit.roster_provider(
             "Bosses' Rise",[{"name":"block_factorys_bosses-2.1.2-neo-1.21.1.jar"}]))
         self.assertFalse(audit.roster_provider(
