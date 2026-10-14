@@ -15,7 +15,7 @@
   "healthMultiplier": {
     // Global difficulty multiplier, affects health of all bosses, 
     // Default:1.0
-    "healthMultiplier": 3.0
+    "healthMultiplier": 4.0
   },
 
   "globalBossSpawnChance": {
