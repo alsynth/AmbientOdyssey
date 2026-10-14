@@ -36,6 +36,33 @@ class OwnerBossCentricGuard(unittest.TestCase):
             and not r["executable_approval_for_live_scaling"]
             for r in p["rules"]))
 
+    def test_native_source_does_not_invent_mechanical_nest_boss_identity(self):
+        evidence=ROOT/"docs/balance/DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json"
+        doc=json.loads(evidence.read_text(encoding="utf-8"))
+        self.assertFalse(doc["mechanical_nest"]["native_boss_found_by_source_scan"])
+        self.assertEqual(doc["mechanical_nest"]["boss_entity_id"],"UNKNOWN")
+        named=doc["mechanical_nest"]["unique_explicit_custom_name_entities"]
+        self.assertEqual({v["name"] for v in named},{"Gearling"})
+        self.assertTrue(all(v["source_health"]==6 and v["is_baby"] for v in named))
+        self.assertFalse(doc["native_boss_runtime_tested"])
+        self.assertFalse(doc["live_dd_deployment_authorized"])
+        gaps={v["ref"] for v in doc["mechanical_nest"]["native_resource_reference_gaps"]}
+        self.assertEqual(gaps,{
+            "dungeons_arise:mechanical_nest/mechanical_nest_spawner_6",
+            "dungeons_arise:mechanical_nest/mechanical_nest_bridge_terminator_6_",
+            "dungeons_arise:mechanical_nest/mechanical_nest_decoration"})
+        self.assertTrue(all(not v.get("resolution","").endswith("AUTOFIX")
+                            for v in doc["mechanical_nest"]["native_resource_reference_gaps"]))
+
+    def test_foundry_named_native_encounters_are_not_assumed_bosses(self):
+        evidence=ROOT/"docs/balance/DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json"
+        doc=json.loads(evidence.read_text(encoding="utf-8"))
+        foundry=doc["foundry"]
+        self.assertEqual({x["name"] for x in foundry["named_native_spawner_entity_types"]},
+                         {"Foundry Guardian","Forge Sentry","Debris Miner"})
+        self.assertEqual({x["source_health"] for x in foundry["named_native_spawner_entity_types"]},
+                         {50,55,80})
+        self.assertFalse(foundry["unresolved_jigsaw_pool_reference"]["change_authorized"])
     def test_foundry_missing_native_reference_is_not_fixed_by_guess(self):
         p=json.loads(POLICY.read_text(encoding="utf-8"))
         foundry=next(r for r in p["rules"] if r["structure_id"]=="dungeons_arise:foundry")
