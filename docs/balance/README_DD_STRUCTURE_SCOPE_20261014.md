@@ -168,3 +168,39 @@ The list of known vanilla-hostile names is a **triage heuristic**, not a new DD 
 - Each backlog row records original tier, named vanilla-hostile/modded mob leads when static NBT decodes them, and whether the existing PR45 project holds the site for unproven compatible ordinary mobs.
 - A source template spawner block, or even a hostile entity ID, does **not** mean DD should be enabled. This phase only prioritizes targeted native-source and runtime checks.
 - User-deferred structures stay **UNRANKED** in the authoritative working scope until the owner personally reviews them; no automatic rank changes or pending DD work assigned to those 26 records.
+
+## Fifth pass — exact DD regex versus known source entity IDs (14 Oct 2026)
+
+**Config-accurate scope refinement:** Compared all **57 unique non-owner source leads** to the *actual* `entity_matches.type` regex shared by `ao_tier_2` through `ao_tier_6` in experimental DD 3.9.2 `difficulty_v2.json`. The filter also requires `attitude=HOSTILE`; an ID regex match alone is **not** enough.
+
+Files: [per-site compatibility](DD_ENTITY_MATCHER_AUDIT_20261014.csv), [per-entity family/coverage](DD_ENTITY_COVERAGE_BY_MOB_20261014.csv), and revised [57-site non-owner backlog](DD_NONOWNER_COMBAT_EVIDENCE_BACKLOG_20261014.csv) with safe next action.
+
+| Source-entity evidence | Unique structures |
+|---|---:|
+| `KNOWN_IDS_MATCH_DD_REGEX` | 17 |
+| `NO_ENTITY_IDS_DECODED` | 20 |
+| `ONLY_MODDED_ENTITY_IDS` | 6 |
+| `VANILLA_ENTITY_IDS_OUTSIDE_DD_REGEX` | 14 |
+
+**Interpretation:**
+- **17** structures have at least one decoded `minecraft:...` ID that matches the exact DD entity regex; **4** have trial-spawner template evidence and require native wave-mechanics auditing; **2** have no owner-assigned tier. This leaves **11** *source-only, non-trial, tentatively tiered* candidates — **zero are deployable/approved**, and none has been added to DD.
+- Existing `AO_STRUCTURE_TIER_CATALOGUE_V3` labels for all 11 candidates have `NEW proposed tier — user approval pending` review status despite `V2 approved provisional` provenance. **Do not conflate tier-source shorthand with owner authorization.**
+- **20** sites have vanilla entity IDs outside the regex. Some are true special foes (e.g. `enderman`, `phantom`, `shulker`, `vex`, `magma_cube`, `creeper`, `hoglin`) and some are nonhostile/utility (e.g. `pig`, `firework_rocket`). Neither group can be safely promised DD buffs merely because a block template exists.
+- Modded mobs (`graveyard:...`, `quark:...`, `alexsmobs:...`, `cataclysm:...`) are **not selected by this exact minecraft-only regex**. Their ability to receive another DD rule, immunity, native equipment, and combined Apotheosis behavior remains untested.
+- The 26 owner-deferred low-tier-looking spawner sites are **intentionally absent** from all 57 non-owner work entries. `mns:giant_skull` and `mss:nether_portal` remain effectively **UNRANKED** in the working ledger; no user-deferred structure is promoted.
+
+**Investigate these 11 non-trial, exact-regex source-match candidates next** (still *not approved*):
+- `idas:labyrinth` — historical Tier 4; source entity leads `minecraft:blaze`, `|`, `minecraft:cave_spider`, `|`, `minecraft:husk`, `|`, `minecraft:spider`, `|`, `minecraft:stray`
+- `idas:pillager_fortress` — historical Tier 4; source entity leads `minecraft:pillager`
+- `idas:tinkers_citadel` — historical Tier 4; source entity leads `minecraft:skeleton`, `|`, `minecraft:zombie`
+- `idas:necromancers_spire` — historical Tier 4; source entity leads `minecraft:skeleton`
+- `idas:ancient_mines` — historical Tier 3; source entity leads `minecraft:stray`, `|`, `minecraft:cave_spider`, `|`, `minecraft:spider`
+- `idas:ruins_of_the_deep` — historical Tier 3; source entity leads `minecraft:drowned`
+- `idas:desert_pyramid` — historical Tier 3; source entity leads `minecraft:skeleton`, `|`, `minecraft:husk`, `|`, `minecraft:cave_spider`
+- `idas:haunted_manor` — historical Tier 3; source entity leads `minecraft:cave_spider`, `|`, `minecraft:skeleton`, `|`, `minecraft:zombie`
+- `nova_structures:undead_crypt` — historical Tier 3; source entity leads `minecraft:zombie`, `|`, `minecraft:skeleton`, `|`, `minecraft:spider`
+- `idas:frozen_crypt` — historical Tier 3; source entity leads `minecraft:stray`
+- `nova_structures:badlands_miner_outpost` — historical Tier 2; source entity leads `minecraft:cave_spider`
+
+**Next verification must demonstrate** (1) the current PR50 mod/registry/datapack and relevant source template are actually enabled; (2) the structure template is reachable in the active jigsaw pool; (3) the listed mob spawns with HOSTILE attitude in that zone; (4) no scripted, trial, boss or Apotheosis elite double scaling; and (5) owner approval of the proposed tier. This audit **does not change DD configs, worldgen, boss assignments, loot, or mod roster**.
+
