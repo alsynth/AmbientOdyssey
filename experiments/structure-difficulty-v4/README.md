@@ -23,3 +23,7 @@ Design intent: prevent Apotheosis progression from trivializing later dungeons, 
 **Proposed tips-and-tricks loading screen / questbook copy:** "Tier 4+ dungeons are dangerous. We recommend exploring them with at least two players—especially when a Brutal Boss is present."
 
 The wording is a gameplay recommendation, not a hard multiplayer requirement. Tips are documented here only; actual in-game tip resource integration is still pending.
+
+## Mechanical Nest owner update
+
+Owner assigns the **Mechanical Nest main boss** to the **same boss difficulty tier as Cataclysm's The Harbinger**. Keep boss tier distinct from the structure's older provisional Tier5 label. The current 38-row PR44 boss roster does not explicitly enumerate Harbinger; resolve the exact number against the owner's final tier assignments before implementing its numeric boss scaling. **Do not reinstate the blanket Mechanical Nest DD mob zone**; tune its actual boss through the dedicated boss-balance pass after verifying the entity/source. Ordinary Mechanical Nest minions remain excluded from individual tuning.
