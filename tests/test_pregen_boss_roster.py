@@ -45,7 +45,7 @@ class PregenBossGateRegression(unittest.TestCase):
         self.assertEqual(len([b for b in r["bosses"]
                               if b["source_mod"]=="Unselected"]),2)
         self.assertTrue(r["T9_third_End_boss_reserved_not_selected"])
-        self.assertTrue(any("Integrated" in x for x in r["hard_stop_decisions"]))
+        self.assertTrue(any("integrated" in x.lower() for x in r["hard_stop_decisions"]))
         self.assertIn("NO_GO",audit.markdown(r))
 
 if __name__=="__main__":unittest.main()
