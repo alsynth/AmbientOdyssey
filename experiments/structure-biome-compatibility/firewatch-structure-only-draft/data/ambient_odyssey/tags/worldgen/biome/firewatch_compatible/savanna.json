@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#nova_structures:collections/savannas",
+    "biomeswevegone:prairie",
+    "regions_unexplored:grassland",
+    "natures_spirit:floral_ridges"
+  ]
+}
