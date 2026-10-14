@@ -1,0 +1,349 @@
+{
+  "curated_biomes": [
+    "biomesoplenty:auroral_garden",
+    "biomesoplenty:highland",
+    "biomesoplenty:hot_springs",
+    "biomesoplenty:ominous_woods",
+    "biomesoplenty:pumpkin_patch",
+    "biomesoplenty:snowblossom_grove",
+    "biomesoplenty:volcano",
+    "biomeswevegone:bayou",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:frosted_coniferous_forest",
+    "biomeswevegone:lush_stacks",
+    "biomeswevegone:maple_taiga",
+    "biomeswevegone:prairie",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:shattered_glacier",
+    "biomeswevegone:skyris_vale",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges",
+    "natures_spirit:windswept_sugi_forest",
+    "regions_unexplored:ashen_woodland",
+    "regions_unexplored:blackstone_basin",
+    "regions_unexplored:cold_deciduous_forest",
+    "regions_unexplored:fen",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:frozen_pine_taiga",
+    "regions_unexplored:grassland",
+    "regions_unexplored:grassy_beach",
+    "regions_unexplored:hyacinth_deeps",
+    "regions_unexplored:icy_heights",
+    "regions_unexplored:infernal_holt",
+    "regions_unexplored:maple_forest",
+    "regions_unexplored:marsh",
+    "regions_unexplored:muddy_river",
+    "regions_unexplored:orchard",
+    "regions_unexplored:redwoods",
+    "regions_unexplored:rocky_meadow",
+    "regions_unexplored:rocky_reef",
+    "regions_unexplored:spires"
+  ],
+  "method": "PR50_SHA1_PINNED_NATIVE_JARS_ONLY; NO_RUNTIME_TEST",
+  "providers": {
+    "adventuredungeons": {
+      "actual_game_runtime_tested": false,
+      "curated_modded_biome_count": 42,
+      "effective_external_tag_resolution_tested": false,
+      "invalid_native_json": {},
+      "native_counts": {
+        "biome_tags": 7,
+        "dimension_or_biome_assets": 0,
+        "sets": 8,
+        "structures": 12
+      },
+      "no_worldgen_files_changed": true,
+      "pin": {
+        "fileID": 5808396,
+        "name": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+        "projectID": 1111930,
+        "sha1": "706092299886721473b0ef7d5e4f7aa2a073c8de",
+        "special_resource_terms": [
+          "pillager_outpost",
+          "underground_camp"
+        ],
+        "targets": [
+          "adventuredungeons:underground_camp"
+        ]
+      },
+      "selected_biome_tags": {},
+      "selected_dimension_or_biome_assets": {},
+      "selected_sets": {
+        "adventuredungeons:underground_camp": {
+          "source": "data/adventuredungeons/worldgen/structure_set/underground_camp.json",
+          "source_content": {
+            "placement": {
+              "salt": 75474567,
+              "separation": 12,
+              "spacing": 35,
+              "spread_type": "linear",
+              "type": "minecraft:random_spread"
+            },
+            "structures": [
+              {
+                "structure": "adventuredungeons:underground_camp",
+                "weight": 1
+              }
+            ]
+          }
+        }
+      },
+      "selected_structures": {
+        "adventuredungeons:underground_camp": {
+          "source": "data/adventuredungeons/worldgen/structure/underground_camp.json",
+          "source_content": {
+            "biomes": "#minecraft:has_structure/pillager_outpost",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 116,
+            "size": 7,
+            "spawn_overrides": {},
+            "start_height": {
+              "max_inclusive": {
+                "absolute": 40
+              },
+              "min_inclusive": {
+                "absolute": -20
+              },
+              "type": "minecraft:uniform"
+            },
+            "start_pool": "adventuredungeons:underground_camp/main",
+            "step": "underground_decoration",
+            "terrain_adaptation": "none",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          }
+        }
+      },
+      "target_ids_missing_exact_native_structure_json": [],
+      "verified_sha1": "706092299886721473b0ef7d5e4f7aa2a073c8de"
+    },
+    "lukis": {
+      "actual_game_runtime_tested": false,
+      "curated_modded_biome_count": 42,
+      "effective_external_tag_resolution_tested": false,
+      "invalid_native_json": {},
+      "native_counts": {
+        "biome_tags": 0,
+        "dimension_or_biome_assets": 0,
+        "sets": 1,
+        "structures": 7
+      },
+      "no_worldgen_files_changed": true,
+      "pin": {
+        "fileID": 7456302,
+        "name": "lukis-grand-capitals-1.1.3.jar",
+        "projectID": 1003666,
+        "sha1": "a07986ac59268f1343737b81acd24ad34e5371ca",
+        "special_resource_terms": [
+          "village_plains",
+          "village_snowy",
+          "villages"
+        ],
+        "targets": [
+          "minecraft:village_plains",
+          "minecraft:village_snowy"
+        ]
+      },
+      "selected_biome_tags": {},
+      "selected_dimension_or_biome_assets": {},
+      "selected_sets": {
+        "minecraft:villages": {
+          "source": "data/minecraft/worldgen/structure_set/villages.json",
+          "source_content": {
+            "placement": {
+              "salt": 213742069,
+              "separation": 35,
+              "spacing": 50,
+              "type": "minecraft:random_spread"
+            },
+            "structures": [
+              {
+                "structure": "minecraft:village_plains",
+                "weight": 1
+              },
+              {
+                "structure": "minecraft:village_desert",
+                "weight": 1
+              },
+              {
+                "structure": "minecraft:village_taiga",
+                "weight": 1
+              },
+              {
+                "structure": "minecraft:village_savanna",
+                "weight": 1
+              },
+              {
+                "structure": "minecraft:village_snowy",
+                "weight": 1
+              }
+            ]
+          }
+        }
+      },
+      "selected_structures": {
+        "minecraft:village_plains": {
+          "source": "data/minecraft/worldgen/structure/village_plains.json",
+          "source_content": {
+            "biomes": "#minecraft:has_structure/village_plains",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 80,
+            "project_start_to_heightmap": "WORLD_SURFACE",
+            "size": 5,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "revampedvillages:start",
+            "step": "surface_structures",
+            "terrain_adaptation": "beard_thin",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          }
+        },
+        "minecraft:village_snowy": {
+          "source": "data/minecraft/worldgen/structure/village_snowy.json",
+          "source_content": {
+            "biomes": "#minecraft:has_structure/village_snowy",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 80,
+            "project_start_to_heightmap": "WORLD_SURFACE",
+            "size": 5,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "revampedvillages:snowy/start",
+            "step": "surface_structures",
+            "terrain_adaptation": "beard_thin",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          }
+        }
+      },
+      "target_ids_missing_exact_native_structure_json": [],
+      "verified_sha1": "a07986ac59268f1343737b81acd24ad34e5371ca"
+    },
+    "pasterdream": {
+      "actual_game_runtime_tested": false,
+      "curated_modded_biome_count": 42,
+      "effective_external_tag_resolution_tested": false,
+      "invalid_native_json": {},
+      "native_counts": {
+        "biome_tags": 7,
+        "dimension_or_biome_assets": 27,
+        "sets": 115,
+        "structures": 116
+      },
+      "no_worldgen_files_changed": true,
+      "pin": {
+        "fileID": 8639119,
+        "name": "pasterdream-0.9.6.jar",
+        "projectID": 1575033,
+        "sha1": "d5d95c8a049d868a844132ac1e47261eff0067f8",
+        "special_resource_terms": [
+          "fourleaf_clover",
+          "picnic_basket"
+        ],
+        "targets": [
+          "pasterdream:fourleaf_clover_plant",
+          "pasterdream:picnic_basket_structure"
+        ]
+      },
+      "selected_biome_tags": {},
+      "selected_dimension_or_biome_assets": {},
+      "selected_sets": {
+        "pasterdream:fourleaf_clover_plant": {
+          "source": "data/pasterdream/worldgen/structure_set/fourleaf_clover_plant.json",
+          "source_content": {
+            "placement": {
+              "salt": 88878628,
+              "separation": 32,
+              "spacing": 44,
+              "type": "minecraft:random_spread"
+            },
+            "structures": [
+              {
+                "structure": "pasterdream:fourleaf_clover_plant",
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "pasterdream:picnic_basket_structure_set": {
+          "source": "data/pasterdream/worldgen/structure_set/picnic_basket_structure_set.json",
+          "source_content": {
+            "placement": {
+              "salt": 1295591192,
+              "separation": 10,
+              "spacing": 20,
+              "type": "minecraft:random_spread"
+            },
+            "structures": [
+              {
+                "structure": "pasterdream:picnic_basket_structure",
+                "weight": 1
+              }
+            ]
+          }
+        }
+      },
+      "selected_structures": {
+        "pasterdream:fourleaf_clover_plant": {
+          "source": "data/pasterdream/worldgen/structure/fourleaf_clover_plant.json",
+          "source_content": {
+            "biomes": "plains",
+            "max_distance_from_center": 64,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 1,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 1
+            },
+            "start_pool": "pasterdream:fourleaf_clover_plant",
+            "step": "surface_structures",
+            "terrain_adaptation": "none",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          }
+        },
+        "pasterdream:picnic_basket_structure": {
+          "source": "data/pasterdream/worldgen/structure/picnic_basket_structure.json",
+          "source_content": {
+            "biomes": [
+              "plains",
+              "pasterdream:biome_dyedream_0",
+              "pasterdream:biome_dyedream_1",
+              "pasterdream:biome_dyedream_2",
+              "pasterdream:wind_journey_biome_0"
+            ],
+            "max_distance_from_center": 64,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 1,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 1
+            },
+            "start_pool": "pasterdream:picnic_basket_structure",
+            "step": "surface_structures",
+            "terrain_adaptation": "none",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          }
+        }
+      },
+      "target_ids_missing_exact_native_structure_json": [],
+      "verified_sha1": "d5d95c8a049d868a844132ac1e47261eff0067f8"
+    }
+  },
+  "provenance": {
+    "github_actions_run_id": 38606619702,
+    "github_actions_job_id": 115999043101,
+    "head_commit": "3ff83c818febdeeef6a644c3e3e863841b0b3965",
+    "scope": "SOURCE_JAR_AND_MODDED_CURATED_ROSTER_NOT_GAME_RUNTIME"
+  }
+}
