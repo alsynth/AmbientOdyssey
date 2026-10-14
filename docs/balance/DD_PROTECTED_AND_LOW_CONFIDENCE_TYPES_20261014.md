@@ -1,48 +1,48 @@
-# AO structure review: 26 protected IDs and 420 low-confidence IDs by type (14 Oct 2026)
+# AO structure review: 26 owner-approved Tier0 IDs (formerly protected) and 420 low-confidence IDs by type (14 Oct 2026)
 
-**Structure-kind classification only, not numeric tier corrections, source-verified peacefulness or DD changes.** All 1,240 existing first-pass tier estimates remain unchanged. The 420 LOW entries are grouped by exact registered-ID name and mod context, not actual in-game encounters; every one remains LOW confidence.
+**Update — 14 Oct 2026:** Owner explicitly approved all formerly held 26 IDs at Tier 0, replacing their earlier placeholder estimates. All 420 LOW group classifications and their prior tiers are unaffected; no live Dungeon Difficulty or natural mob changes were made. The 420 LOW entries are grouped by exact registered-ID name and mod context, not actual in-game encounters; every one remains LOW confidence.
 
-## Protected positive-spawner leads — 26 IDs
+## Owner-approved Tier 0 structures with positive native spawner evidence — 26 IDs
 
-These IDs have positive static source-template NBT spawner indicators; indicators **do not prove real live spawns**. The user requested manual inspection before any DD rule may apply. Every row remains `OWNER_HOLD_NO_DEPLOY`, and the guessed numeric tier is a **placeholder**.
+These 26 IDs were formerly protected for owner inspection because native static NBT templates show spawners. **The user has explicitly approved Tier 0 for every one.** The previous `OWNER_HOLD` status is superseded; positive source-spawner findings remain true and unchanged. Tier 0 means no extra Dungeon Difficulty scaling, **not** that vanilla/native spawns or spawners should be disabled. The indicators do not prove live spawn behavior.
 
 ### IDAS (7)
 
-- `idas:abandonedhouse` — template spawner indicators 6, tentative Tier 1 (**owner hold**)
-- `idas:apothecary_abode` — template spawner indicators 3, tentative Tier 1 (**owner hold**)
-- `idas:brickhouse` — template spawner indicators 1, tentative Tier 1 (**owner hold**)
-- `idas:collectors_museum` — template spawner indicators 18, tentative Tier 1 (**owner hold**)
-- `idas:farmhouse` — template spawner indicators 2, tentative Tier 1 (**owner hold**)
-- `idas:hunters_cabin` — template spawner indicators 4, tentative Tier 1 (**owner hold**)
-- `idas:tinkers_workshop` — template spawner indicators 10, tentative Tier 1 (**owner hold**)
+- `idas:abandonedhouse` — template spawner indicators 6, owner-approved **Tier 0** (formerly on hold)
+- `idas:apothecary_abode` — template spawner indicators 3, owner-approved **Tier 0** (formerly on hold)
+- `idas:brickhouse` — template spawner indicators 1, owner-approved **Tier 0** (formerly on hold)
+- `idas:collectors_museum` — template spawner indicators 18, owner-approved **Tier 0** (formerly on hold)
+- `idas:farmhouse` — template spawner indicators 2, owner-approved **Tier 0** (formerly on hold)
+- `idas:hunters_cabin` — template spawner indicators 4, owner-approved **Tier 0** (formerly on hold)
+- `idas:tinkers_workshop` — template spawner indicators 10, owner-approved **Tier 0** (formerly on hold)
 
 ### Moog's Nether Structures (6)
 
-- `mns:circle_blackstone` — template spawner indicators 1, tentative Tier 1 (**owner hold**)
-- `mns:circle_nether_brick` — template spawner indicators 4, tentative Tier 1 (**owner hold**)
-- `mns:giant_skull` — template spawner indicators 2, tentative Tier 2 (**owner hold**)
-- `mns:large_house_1` — template spawner indicators 21, tentative Tier 1 (**owner hold**)
-- `mns:medium_house` — template spawner indicators 8, tentative Tier 1 (**owner hold**)
-- `mns:medium_house_2` — template spawner indicators 4, tentative Tier 1 (**owner hold**)
+- `mns:circle_blackstone` — template spawner indicators 1, owner-approved **Tier 0** (formerly on hold)
+- `mns:circle_nether_brick` — template spawner indicators 4, owner-approved **Tier 0** (formerly on hold)
+- `mns:giant_skull` — template spawner indicators 2, owner-approved **Tier 0** (formerly on hold)
+- `mns:large_house_1` — template spawner indicators 21, owner-approved **Tier 0** (formerly on hold)
+- `mns:medium_house` — template spawner indicators 8, owner-approved **Tier 0** (formerly on hold)
+- `mns:medium_house_2` — template spawner indicators 4, owner-approved **Tier 0** (formerly on hold)
 
 ### Moog's Soaring Structures (9)
 
-- `mss:jungle` — template spawner indicators 8, tentative Tier 1 (**owner hold**)
-- `mss:leaf_hollow` — template spawner indicators 6, tentative Tier 1 (**owner hold**)
-- `mss:mangrove` — template spawner indicators 6, tentative Tier 1 (**owner hold**)
-- `mss:muddy_water_hole` — template spawner indicators 7, tentative Tier 1 (**owner hold**)
-- `mss:mushroom` — template spawner indicators 6, tentative Tier 1 (**owner hold**)
-- `mss:nether_portal` — template spawner indicators 4, tentative Tier 2 (**owner hold**)
-- `mss:red_sand` — template spawner indicators 20, tentative Tier 1 (**owner hold**)
-- `mss:small_deepslate_house` — template spawner indicators 8, tentative Tier 1 (**owner hold**)
-- `mss:taiga` — template spawner indicators 18, tentative Tier 1 (**owner hold**)
+- `mss:jungle` — template spawner indicators 8, owner-approved **Tier 0** (formerly on hold)
+- `mss:leaf_hollow` — template spawner indicators 6, owner-approved **Tier 0** (formerly on hold)
+- `mss:mangrove` — template spawner indicators 6, owner-approved **Tier 0** (formerly on hold)
+- `mss:muddy_water_hole` — template spawner indicators 7, owner-approved **Tier 0** (formerly on hold)
+- `mss:mushroom` — template spawner indicators 6, owner-approved **Tier 0** (formerly on hold)
+- `mss:nether_portal` — template spawner indicators 4, owner-approved **Tier 0** (formerly on hold)
+- `mss:red_sand` — template spawner indicators 20, owner-approved **Tier 0** (formerly on hold)
+- `mss:small_deepslate_house` — template spawner indicators 8, owner-approved **Tier 0** (formerly on hold)
+- `mss:taiga` — template spawner indicators 18, owner-approved **Tier 0** (formerly on hold)
 
 ### Moog's Voyager Structures (4)
 
-- `mvs:mine_with_campsite` — template spawner indicators 1, tentative Tier 2 (**owner hold**)
-- `mvs:prismarine_house_1` — template spawner indicators 8, tentative Tier 1 (**owner hold**)
-- `mvs:prismarine_house_2` — template spawner indicators 3, tentative Tier 1 (**owner hold**)
-- `mvs:small_igloo` — template spawner indicators 1, tentative Tier 1 (**owner hold**)
+- `mvs:mine_with_campsite` — template spawner indicators 1, owner-approved **Tier 0** (formerly on hold)
+- `mvs:prismarine_house_1` — template spawner indicators 8, owner-approved **Tier 0** (formerly on hold)
+- `mvs:prismarine_house_2` — template spawner indicators 3, owner-approved **Tier 0** (formerly on hold)
+- `mvs:small_igloo` — template spawner indicators 1, owner-approved **Tier 0** (formerly on hold)
 
 ## The 420 LOW-confidence structures: functional kinds
 
@@ -542,5 +542,5 @@ There are **16 functional groups**. The user can check exact rows and placeholde
 - `LOW` remains `LOW`: splitting them by name does not confirm encounter level, spawner logic, boss triggers, structure set, mod registration, or actual naturally generated locations.
 - Distinguish tiny decoration (lamps, wells, carts, ponds) from substantial forts, arenas and special portal structures. These should not inherit one blanket Tier or DD behavior.
 - Pasterdream entries are separated into environmental scenery, houses/social structures, magical puzzles/gates, and possible dungeons/encounters; their active mechanics and exact dimension eligibility remain unverified.
-- Protected source-positive spawner structures are **separate from the 420 LOW group** (they form their own 26-row `OWNER_HOLD` tier confidence category).
+- The 26 now owner-approved Tier 0 source-spawner structures remain **separate from the 420 LOW group** (their confidence category is `OWNER_APPROVED`, not `OWNER_HOLD`).
 - All numeric tiers retained exactly as in `DD_PROVISIONAL_CATEGORIES_CONFIDENCE_20261014.csv`; **no deployable DD configurations generated**.
