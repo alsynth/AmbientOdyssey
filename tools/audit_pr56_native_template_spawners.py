@@ -17,6 +17,10 @@ import zlib
 import zipfile
 from collections import Counter, deque
 from pathlib import Path
+try:
+ from pr56_stream_nbt import extract_selected
+except ModuleNotFoundError:
+ from tools.pr56_stream_nbt import extract_selected
 
 PINS={
  "dungeons_arise":{"sha1":"c651339154da7b9e9cf47a80fdef22c4d59cad5c",
@@ -217,8 +221,12 @@ def inspect(jar,label,max_pools=160,max_templates=400):
      if actual is None:
       errors.append("MISSING_EXTERNAL_OR_NATIVE_TEMPLATE:"+str(template));continue
      try:
-      parsed=extract_template(nbt_from_bytes(z.read(actual)))
-     except (ValueError,KeyError,IndexError,RecursionError) as e:
+      if template.startswith("dungeons_arise:keep_kayra/"):
+       selected,scan_info=extract_selected(z,actual)
+       parsed=extract_template(selected)
+      else:
+       parsed=extract_template(nbt_from_bytes(z.read(actual)))
+     except (ValueError,KeyError,IndexError,RecursionError,EOFError) as e:
       errors.append("NBT_PARSE_FAILED:"+template+":"+str(e));continue
      totals["normal_spawners"]+=parsed["normal_spawners"]
      totals["trial_spawners"]+=parsed["trial_spawners"]
