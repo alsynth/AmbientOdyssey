@@ -16,6 +16,7 @@ on:
       - 'tools/audit_pr56_dnt_firewatch_source.py'
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
       - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
+      - 'tools/audit_pr56_remaining_worldgen_native.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -34,6 +35,7 @@ on:
       - 'tools/audit_pr56_dnt_firewatch_source.py'
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
       - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
+      - 'tools/audit_pr56_remaining_worldgen_native.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -163,4 +165,43 @@ jobs:
         with:
           name: pr56-yungs-native-biome-tags-json
           path: /tmp/pr56-yungs-native-biome-tags.json
+          retention-days: 14
+
+  remaining-worldgen-native-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download exact PR50-pinned Adventure Dungeons, Luki and Pasterdream native JARs
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/5808/396/adventuredungeons-neoforge-1.21-1.3.1.jar' \
+            --output /tmp/pr56-adventuredungeons.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/7456/302/lukis-grand-capitals-1.1.3.jar' \
+            --output /tmp/pr56-lukis.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 240 \
+            'https://mediafilez.forgecdn.net/files/8639/119/pasterdream-0.9.6.jar' \
+            --output /tmp/pr56-pasterdream.jar
+          echo '706092299886721473b0ef7d5e4f7aa2a073c8de  /tmp/pr56-adventuredungeons.jar' | sha1sum --check
+          echo 'a07986ac59268f1343737b81acd24ad34e5371ca  /tmp/pr56-lukis.jar' | sha1sum --check
+          echo 'd5d95c8a049d868a844132ac1e47261eff0067f8  /tmp/pr56-pasterdream.jar' | sha1sum --check
+      - name: Extract native structure selectors without changing any active files
+        run: |
+          python tools/audit_pr56_remaining_worldgen_native.py \
+            --adventuredungeons /tmp/pr56-adventuredungeons.jar \
+            --lukis /tmp/pr56-lukis.jar \
+            --pasterdream /tmp/pr56-pasterdream.jar \
+            --out /tmp/pr56-remaining-five-native-selectors.json
+          echo '---BEGIN THREE MOD NATIVE REPORT---'
+          cat /tmp/pr56-remaining-five-native-selectors.json
+          echo '---END THREE MOD NATIVE REPORT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-remaining-native-worldgen-json
+          path: /tmp/pr56-remaining-five-native-selectors.json
           retention-days: 14
