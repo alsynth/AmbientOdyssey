@@ -36,7 +36,8 @@ SIGNAL_FIELDS=("CustomName","custom_name","Tags","tags","Health","health",
                "equipped","equipment","HandItems","ArmorItems")
 SPECIAL_BLOCKS={"minecraft:spawner","minecraft:trial_spawner",
                 "minecraft:command_block","minecraft:chain_command_block",
-                "minecraft:repeating_command_block","minecraft:structure_block"}
+                "minecraft:repeating_command_block","minecraft:structure_block",
+                "minecraft:jigsaw"}
 FLAGS=("boss","guardian","captain","king","queen","champion",
        "mechanical_nest","mechanical_nest_","foundry")
 
@@ -101,7 +102,9 @@ def summarize_nbt(root,path):
         else:
             record["block_entity_extra"]={k:normalize(data[k]) for k in SIGNAL_FIELDS if k in data}
             if "Command" in data:record["command_sample"]=str(data["Command"])[:350]
-        if record.get("spawn_entities") or record.get("block_entity_extra") or record.get("command_sample"):
+            if block=="minecraft:jigsaw" and isinstance(data.get("pool"),str):
+                record["jigsaw_pool_reference"]=data["pool"]
+        if record.get("spawn_entities") or record.get("block_entity_extra") or record.get("command_sample") or record.get("jigsaw_pool_reference"):
             flags.append(record)
     for e in root.get("entities",[]) if isinstance(root.get("entities"),list) else []:
         if not isinstance(e,dict):continue
@@ -129,6 +132,11 @@ def audit(jar):
             candidates=sorted(n for n in names if n.startswith("data/dungeons_arise/")
                               and n.endswith(".nbt") and section_path in n)
             source_counts=Counter();signals=[];failure=[];interesting_paths=[]
+            jigsaw_missing_native=[]
+            named_spawner_entities=[];named_prebuilt_entities=[]
+            native_pool_files={n for n in names if
+                n.startswith("data/dungeons_arise/worldgen/template_pool/")
+                and n.endswith(".json")}
             for name in candidates:
                 try:
                     # These subtrees have been observed to fit the existing
@@ -143,6 +151,20 @@ def audit(jar):
                     for f in flags:
                         ent=f.get("entity_record")
                         spawn=f.get("spawn_entities",[])
+                        for entity in spawn:
+                            if entity["unusual_entity_markers"].get("CustomName") or entity["unusual_entity_markers"].get("custom_name"):
+                                named_spawner_entities.append({"source_file":name,**entity})
+                        if ent and (ent["unusual_entity_markers"].get("CustomName") or ent["unusual_entity_markers"].get("custom_name")):
+                            named_prebuilt_entities.append({"source_file":name,**ent})
+                        reference=f.get("jigsaw_pool_reference")
+                        if reference and reference!="minecraft:empty":
+                            pool_ref=loc_to_resource("dungeons_arise",reference,"worldgen/template_pool")
+                            if pool_ref and pool_ref+".json" not in native_pool_files:
+                                jigsaw_missing_native.append({
+                                    "source_file":name,"jigsaw_pool_reference":reference,
+                                    "status":"MISSING_NATIVE_POOL_OR_EXTERNAL_DATAPACK",
+                                    "suggestions":nearby_native_resources(names,"dungeons_arise",reference,"pool")
+                                })
                         named=bool(ent and ent["unusual_entity_markers"]) or any(
                             x["unusual_entity_markers"] for x in spawn)
                         if named or f.get("command_sample"):
@@ -188,6 +210,12 @@ def audit(jar):
                 "native_nbt_files_checked":len(candidates),
                 "native_spawner_and_special_block_counts":dict(source_counts),
                 "named_or_attribute_or_command_signals":signals[:100],
+                "explicit_custom_name_spawner_entities":named_spawner_entities[:60],
+                "explicit_custom_name_prebuilt_entities":named_prebuilt_entities[:60],
+                "explicit_custom_name_spawner_count":len(named_spawner_entities),
+                "explicit_custom_name_prebuilt_count":len(named_prebuilt_entities),
+                "jigsaw_block_pools_missing_from_native_jar":jigsaw_missing_native[:40],
+                "jigsaw_pool_refs_truncated":len(jigsaw_missing_native)>40,
                 "boss_like_signals":boss_like[:60],
                 "signals_truncated":len(signals)>100 or len(boss_like)>60,
                 "spawner_id_paths_without_special_fields":interesting_paths[:60],
@@ -214,9 +242,16 @@ def main():
               "nbt",row["native_nbt_files_checked"],
               "spawners",row["native_spawner_and_special_block_counts"],
               "named-signals",len(row["named_or_attribute_or_command_signals"]),
+              "explicit-named-spawner-entities",row["explicit_custom_name_spawner_count"],
+              "explicit-named-prebuilt",row["explicit_custom_name_prebuilt_count"],
+              "jigsaw-missing-native-pools",len(row["jigsaw_block_pools_missing_from_native_jar"]),
               "boss-like",len(row["boss_like_signals"]),
               "missing-native-refs",len(row["pool_resource_references_missing_in_native_jar"]),
               "parser-errors",len(row["nbt_parse_failures"]))
+        for named in row["explicit_custom_name_spawner_entities"][:15]:
+            print("EXPLICIT NAMED SPAWNER",name,json.dumps(named,sort_keys=True)[:1300])
+        for missing in row["jigsaw_block_pools_missing_from_native_jar"][:8]:
+            print("JIGSAW MISSING NATIVE POOL",name,json.dumps(missing,sort_keys=True)[:900])
         for signal in row["boss_like_signals"][:10]:
             print("BOSS-LIKE SIGNAL",name,json.dumps(signal,sort_keys=True)[:950])
         for item in row["pool_resource_references_missing_in_native_jar"][:8]:
