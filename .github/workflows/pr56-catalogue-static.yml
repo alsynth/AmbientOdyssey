@@ -15,6 +15,7 @@ on:
       - 'docs/audits/CURRENT_BIOME_ROSTER.json'
       - 'tools/audit_pr56_dnt_firewatch_source.py'
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
+      - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
       - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
@@ -31,6 +32,7 @@ on:
       - 'docs/audits/CURRENT_BIOME_ROSTER.json'
       - 'tools/audit_pr56_dnt_firewatch_source.py'
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
+      - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
       - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
@@ -107,4 +109,20 @@ jobs:
         with:
           name: pr56-paxi-source-comparison-json
           path: /tmp/pr56-paxi-source-stack.json
+          retention-days: 14
+
+      - name: Package PR56 four-tower TEST ONLY ZIP (do not add to Paxi or modpack)
+        run: |
+          python tools/package_pr56_firewatch_test_datapack.py \
+            --paxi-report /tmp/pr56-paxi-source-stack.json \
+            --out /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip \
+            --manifest /tmp/pr56-firewatch-four-towers-TEST-ONLY.manifest.json
+          unzip -l /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip
+      - name: Archive TEST-ONLY isolated datapack and manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr56-four-tower-worldgen-TEST-ONLY
+          path: |
+            /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip
+            /tmp/pr56-firewatch-four-towers-TEST-ONLY.manifest.json
           retention-days: 14
