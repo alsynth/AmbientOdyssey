@@ -202,9 +202,9 @@ def inspect(jar,label,max_pools=160,max_templates=400):
      errors.append("INVALID_NATIVE_POOL:"+str(pool)+":"+str(e));continue
     if body.get("fallback") and body["fallback"]!="minecraft:empty":to_visit.append(body["fallback"])
     elements_in_pool=pool_elements(body)
-    if not elements_in_pool and body.get("elements"):
-     errors.append("POOL_NO_SINGLE_TEMPLATE_LOCATIONS:"+str(pool)+":"+
-                   json.dumps(body.get("elements",[])[:2],sort_keys=True)[:900])
+    if not elements_in_pool:
+     errors.append("POOL_WITHOUT_RECOGNIZED_SINGLE_TEMPLATE_LOCATIONS:"+str(pool)+":"+
+                   json.dumps(body,sort_keys=True)[:1100])
     for template in elements_in_pool:
      if template in seen_templates:continue
      if len(seen_templates)>=max_templates:
