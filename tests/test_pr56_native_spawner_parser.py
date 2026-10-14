@@ -45,6 +45,36 @@ class NativeSourceParserSafety(unittest.TestCase):
                      "minecraft:mob_spawner","minecraft:diamond_axe"):
             self.assertNotIn(item,parsed["normal_spawn_entity_ids"])
 
+    def test_mount_pair_spawner_and_prebuilt_entities_exclude_item_ids(self):
+        compound={"palette":[{"Name":"minecraft:spawner"},{"Name":"minecraft:trial_spawner"}],
+          "blocks":[
+            {"state":0,"nbt":{"SpawnData":{"entity":{
+              "id":"minecraft:slime",
+              "Passengers":[{"id":"minecraft:creeper",
+                 "HandItems":[{"id":"minecraft:diamond_sword"}],
+                 "Passengers":[{"id":"minecraft:skeleton"}]}],
+              "ArmorItems":[{"id":"minecraft:netherite_chestplate"}]}}}},
+            {"state":1,"nbt":{"normal_config":{"spawn_potentials":[
+                {"data":{"entity":{"id":"minecraft:spider",
+                  "Passengers":[{"id":"minecraft:cave_spider"}]}}}]}}}],
+          "entities":[{"nbt":{"id":"minecraft:slime",
+            "Passengers":[{"id":"minecraft:creeper"}]}}]}
+        result=scan.extract_template(compound)
+        self.assertEqual(result["normal_spawn_entity_ids"],["minecraft:slime"])
+        self.assertEqual(result["trial_spawn_entity_ids"],["minecraft:spider"])
+        self.assertEqual(result["normal_spawner_passenger_entity_ids"],
+                         ["minecraft:creeper","minecraft:skeleton"])
+        self.assertEqual(result["trial_spawner_passenger_entity_ids"],["minecraft:cave_spider"])
+        self.assertEqual(result["normal_spawner_mount_pairs"],[
+            {"vehicle":"minecraft:creeper","passenger":"minecraft:skeleton"},
+            {"vehicle":"minecraft:slime","passenger":"minecraft:creeper"}])
+        self.assertEqual(result["trial_spawner_mount_pairs"],[
+            {"vehicle":"minecraft:spider","passenger":"minecraft:cave_spider"}])
+        self.assertEqual(result["prebuilt_mount_pairs"],[
+            {"vehicle":"minecraft:slime","passenger":"minecraft:creeper"}])
+        self.assertNotIn("minecraft:diamond_sword",result["normal_spawner_passenger_entity_ids"])
+        self.assertNotIn("minecraft:netherite_chestplate",result["normal_spawner_passenger_entity_ids"])
+
     def test_trial_spawner_does_not_get_classified_normal(self):
         j={"palette":[{"Name":"minecraft:trial_spawner"}],
            "blocks":[{"state":0,"nbt":{
