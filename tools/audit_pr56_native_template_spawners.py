@@ -132,15 +132,23 @@ def extract_template(nbt):
   if name in ("minecraft:spawner","minecraft:trial_spawner"):
    counts[name]+=1
    ids=set()
-   # Account for both classic MobSpawnerTileEntity format and 1.21
-   # spawner's SpawnData + weighted SpawnPotentials variants.
+   # Only collect the entity ID at a spawner's actual entity payload.
+   # A broad recursive search for all keys named 'id' is WRONG: it
+   # misclassifies equipment, enchanted books and item IDs as mobs.
    def scan(x,depth=0):
     if depth>18:return
     if isinstance(x,dict):
-     value=x.get("id")
-     if isinstance(value,str) and ":" in value:ids.add(value)
-     for k,v in x.items():
-      if isinstance(v,(dict,list)):scan(v,depth+1)
+     for key in ("entity","Entity"):
+      entity=x.get(key)
+      if isinstance(entity,dict):
+       value=entity.get("id")
+       if isinstance(value,str) and ":" in value:ids.add(value)
+     entity_id=x.get("EntityId")
+     if isinstance(entity_id,str) and ":" in entity_id:ids.add(entity_id)
+     for key in ("SpawnData","SpawnPotentials","spawn_data","spawn_potentials",
+                 "data","Data","normal_config","ominous_config","spawn_potentials"):
+      child=x.get(key)
+      if isinstance(child,(dict,list)):scan(child,depth+1)
     elif isinstance(x,list):
      for y in x:scan(y,depth+1)
    scan(detail)
@@ -220,6 +228,8 @@ def inspect(jar,label,max_pools=160,max_templates=400):
                     "normal_spawn_entity_ids":parsed["normal_spawn_entity_ids"],
                     "trial_spawn_entity_ids":parsed["trial_spawn_entity_ids"],
                     "prebuilt_entity_ids":parsed["prebuilt_entity_ids"]})
+   if not seen_templates:
+    errors.append("NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS")
    structures[sid]={
     "source_structure_present":True,"native_start_pool":start,
     "pools_visited":len(seen_pools),"templates_inspected":len(seen_templates),
@@ -258,7 +268,9 @@ def main():
          "trial:",x.get("source_trial_spawner_blocks",0),
          "mob IDs:",x.get("source_normal_spawner_entity_ids",[]),
          "graph complete:",x.get("native_graph_complete"),
-         "issues:",len(x.get("source_graph_errors",[])))
+         "issues:",len(x.get("source_graph_errors",[])),
+         "start_pool:",x.get("native_start_pool"),
+         "sample_issues:",x.get("source_graph_errors",[])[:3])
  print("EVIDENCE:",a.out)
 
 if __name__=="__main__":main()
