@@ -57,5 +57,27 @@ class NativeSourceParserSafety(unittest.TestCase):
         with self.assertRaises(ValueError):
             scan.nbt_from_bytes(b"\x0d\x00\x00")
 
+
+    def test_committed_source_evidence_is_positive_but_not_runtime_approved(self):
+        import json
+        path=ROOT/"docs/balance/DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json"
+        report=json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(report["summary"]["structures_scanned"],10)
+        self.assertEqual(report["summary"]["structures_in_53_zone_candidate"],7)
+        self.assertEqual(report["summary"]["DD_zone_structures_with_positive_source_spawner_evidence"],6)
+        self.assertEqual(report["summary"]["scanned_template_spawner_occurrences"],45)
+        self.assertTrue(report["summary"]["not_runtime_count_or_guaranteed_spawn"])
+        sites={z["structure_id"]:z for z in report["sites"]}
+        self.assertEqual(sites["dungeons_arise:bandit_towers"]["native_source_spawner_block_occurrences"],10)
+        self.assertEqual(sites["dungeons_arise:keep_kayra"]["source_graph_complete"],False)
+        self.assertEqual(sites["idas:pillager_camp"]["source_graph_complete"],False)
+        self.assertIn("minecraft:hoglin",sites["dungeons_arise:foundry"]["source_DD_entity_matcher_misses"])
+        self.assertIn("minecraft:blaze",sites["dungeons_arise:foundry"]["source_DD_entity_matcher_matches"])
+        for item in ("minecraft:diamond_sword","minecraft:netherite_chestplate",
+                     "minecraft:mob_spawner","minecraft:diamond_axe"):
+            self.assertTrue(all(item not in r["source_entity_type_ids"] for r in report["sites"]))
+        self.assertTrue(all(r["eligibility_for_live_DD"]=="NO" and
+                            r["source_evidence_not_live_spawner_proof"] for r in report["sites"]))
+
 if __name__=="__main__":
     unittest.main()
