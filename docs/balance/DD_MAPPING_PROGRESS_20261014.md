@@ -38,3 +38,17 @@ This is the reproducible **mapping denominator** used in replies. All figures ar
 **No gameplay files changed.** No Minecraft runtime tests were performed in this catalogue pass; registry-query results are inherited from PR50's previously executed client experiment and not dedicated-server/natural-generation acceptance.
 
 **Variant correction:** Three historical Dungeons Arise identifiers (`heavenly_challenger`, `heavenly_conqueror`, `heavenly_rider`) already had multi-tier labels (`3|6`, `4|6`, `4|6`); harmonized their working state with `minecraft:end_city` as 4 **variant conflicts**. These count as mapped-but-not-resolved working tier variants, not four deployable DD rules. Total 370 numeric + 4 variant = 374 tier-labelled, and 866 unranked.
+
+## Seventh-pass focused worldgen evidence — Eternal Nether 3 locations
+
+The [Eternal Nether source-graph extraction](DD_ETERNAL_NETHER_REGISTERED_WORLDGEN_EVIDENCE_20261014.csv) adds dimension, exact **biome selector**, start pool, jigsaw size, spawn override mobs, source reachable pools/templates and unresolved source refs for the three PR50 client-registry-positive structures. **All 3 remain UNRANKED**.
+
+| Native registered ID | Source templates | Explicit worldgen spawn overrides | Special evidence |
+|---|---:|---|---|
+| `eternalnether:catacomb` | 19 | `minecraft:magma_cube` | Vanilla wither-skeleton NBT spawner + 3 native configured features |
+| `eternalnether:citadel` | 5 | `minecraft:enderman | eternalnether:warped_enderman` | Warped Enderman native feature |
+| `eternalnether:piglin_manor` | 2 | `minecraft:piglin | eternalnether:piglin_hunter` | Piglin hunter + additional strider/piglin features; type annotation discrepancy |
+
+**Pre-pregen diagnostic:** Piglin Manor's source definition is stored at registry ID `eternalnether:piglin_manor` but its `type` field is `eternalnether:citadel`. That *might* be an intentionally shared codec/type, or a copy/paste wiring mistake. **Flag for actual worldgen verification**, do not assume it fails and do not silently correct it. Prior PR50 natural probes didn't encounter all 3, and broad Nether `/locate` could stall server ticks; prefer bounded exploration/worldgen checks.
+
+**Confidence:** structural source graph checked; in-game registration checked in a scoped PR50 client query; natural generation **not** demonstrated; no DD/boss settings touched; DD itself may not cover modded feature-generated mobs.
