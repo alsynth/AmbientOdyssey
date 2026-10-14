@@ -87,5 +87,25 @@ class PR56NativeWorldgenSourcePolicy(unittest.TestCase):
         self.assertNotEqual("c:plains","c:is_plains")
 
 
+    def test_source_priority_149_is_fail_closed_and_only_two_outstanding(self):
+        import csv
+        path=ROOT/"docs/balance/DD_149_TAG_SOURCE_PRIORITY_QUEUE_20261014.csv"
+        with path.open(encoding="utf-8",newline="") as handle:
+            rows=list(csv.DictReader(handle))
+        self.assertEqual(len(rows),149)
+        self.assertEqual(len({r["structure_id"] for r in rows}),149)
+        self.assertTrue(all(r["owner_needed_now"]=="NO" and
+                            r["worldgen_edit_authorized"]=="NO" and
+                            r["live_registration_or_generation_proven"]=="NO"
+                            for r in rows))
+        high=[r for r in rows if r["review_priority"]==
+              "PRIORITY_COMBAT_UNRESOLVED_BIOME_TAG_SOURCE"]
+        self.assertEqual({r["structure_id"] for r in high},
+            {"friendsandfoes:citadel","mtr:badlands_temple"})
+        sourced=[r for r in rows if r["review_priority"]==
+                "COMBAT_NATIVE_SOURCE_TAG_TRACED__NO_AUTO_REPAIR"]
+        self.assertEqual(len(sourced),16)
+
+
 if __name__=="__main__":
     unittest.main()
