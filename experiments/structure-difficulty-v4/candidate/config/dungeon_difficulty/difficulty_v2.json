@@ -53,21 +53,21 @@
               "attribute": "minecraft:generic.max_health",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.2,
+              "value": 1,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.attack_damage",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.1,
+              "value": 0.4,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.armor",
               "operation": "ADDITION",
               "randomness": 0,
-              "value": 1,
+              "value": 3,
               "offset": 0
             }
           ],
@@ -99,21 +99,21 @@
               "attribute": "minecraft:generic.max_health",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.4,
+              "value": 1.5,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.attack_damage",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.15,
+              "value": 0.6,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.armor",
               "operation": "ADDITION",
               "randomness": 0,
-              "value": 2,
+              "value": 5,
               "offset": 0
             }
           ],
@@ -145,21 +145,21 @@
               "attribute": "minecraft:generic.max_health",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.7,
+              "value": 2,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.attack_damage",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.25,
+              "value": 0.8,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.armor",
               "operation": "ADDITION",
               "randomness": 0,
-              "value": 3,
+              "value": 8,
               "offset": 0
             }
           ],
@@ -191,21 +191,21 @@
               "attribute": "minecraft:generic.max_health",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 1,
+              "value": 2.5,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.attack_damage",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.35,
+              "value": 1,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.armor",
               "operation": "ADDITION",
               "randomness": 0,
-              "value": 4,
+              "value": 11,
               "offset": 0
             }
           ],
@@ -237,21 +237,21 @@
               "attribute": "minecraft:generic.max_health",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 1.5,
+              "value": 3,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.attack_damage",
               "operation": "MULTIPLY_BASE",
               "randomness": 0,
-              "value": 0.5,
+              "value": 2,
               "offset": 0
             },
             {
               "attribute": "minecraft:generic.armor",
               "operation": "ADDITION",
               "randomness": 0,
-              "value": 6,
+              "value": 15,
               "offset": 0
             }
           ],
