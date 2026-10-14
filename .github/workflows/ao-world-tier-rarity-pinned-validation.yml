@@ -1,0 +1,38 @@
+name: AO World Tier Rarity Pin Validation
+
+on:
+  push:
+    branches:
+      - experimental/apotheosis-world-tier-rarity-20261014
+    paths:
+      - 'release_030/overrides/config/paxi/datapacks/ao_world_tier_balance/**'
+      - 'tools/validate_ao_world_tier_rarity.py'
+      - '.github/workflows/ao-world-tier-rarity-pinned-validation.yml'
+  pull_request:
+    paths:
+      - 'release_030/overrides/config/paxi/datapacks/ao_world_tier_balance/**'
+      - 'tools/validate_ao_world_tier_rarity.py'
+      - '.github/workflows/ao-world-tier-rarity-pinned-validation.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14'
+      - name: Resolve exact pinned Apotheosis 8.9.0 runtime compile dependency
+        run: gradle -p addons/ao-starter-chest compileJava --no-daemon
+      - name: Verify all 7 changes against official pinned rarity JSON in JAR
+        run: |
+          set -eu
+          PINNED="$HOME/.gradle/caches/modules-2/files-2.1/dev.shadowsoffire/Apotheosis/1.21.1-8.9.0"
+          SOURCE="$(find "$PINNED" -type f -name 'Apotheosis-1.21.1-8.9.0.jar' | head -n 1)"
+          test -n "$SOURCE"
+          python3 tools/validate_ao_world_tier_rarity.py "$SOURCE"
