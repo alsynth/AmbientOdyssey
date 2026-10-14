@@ -227,6 +227,28 @@ def audit(jar):
                 "source_packed_NBT_does_not_prove_actual_boss_runtime":True,
                 "all_native_source_references_are_not_a_complete_effective_Paxi_registry":True,
             }
+    # A resource missing in the mod's JAR can be supplied by Paxi. This
+    # checks only *checked-in* AO Paxi source datapacks, not the runtime
+    # winner after mod updates and external world datapacks.
+    paxi=ROOT/"release_030/overrides/config/paxi/datapacks"
+    for label,source in report["structures"].items():
+        for collection in ("jigsaw_block_pools_missing_from_native_jar",
+                           "pool_resource_references_missing_in_native_jar"):
+            for row in source[collection]:
+                ref=row.get("jigsaw_pool_reference",row.get("reference"))
+                if not ref:continue
+                kind=("worldgen/template_pool" if collection=="jigsaw_block_pools_missing_from_native_jar"
+                      or row.get("status")=="MISSING_FALLBACK_POOL_FROM_PINNED_NATIVE_JAR"
+                      else "structure")
+                rel=loc_to_resource("dungeons_arise",ref,kind)
+                if not rel:continue
+                rel=rel+(".json" if kind=="worldgen/template_pool" else ".nbt")
+                row["missing_reference_checked_in_AO_Paxi"]=sorted(
+                    pack.name for pack in paxi.iterdir()
+                    if pack.is_dir() and (pack/rel).is_file()
+                ) if paxi.exists() else []
+                row["no_active_runtime_priority_verified"]=True
+        source["repo_Paxi_not_a_live_modpack_snapshot"]=True
     return report
 
 def main():
