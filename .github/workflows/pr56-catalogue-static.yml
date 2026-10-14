@@ -14,6 +14,7 @@ on:
       - 'experiments/structure-biome-compatibility/**'
       - 'docs/audits/CURRENT_BIOME_ROSTER.json'
       - 'tools/audit_pr56_dnt_firewatch_source.py'
+      - 'tools/audit_pr56_firewatch_paxi_stack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
       - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
@@ -29,6 +30,7 @@ on:
       - 'experiments/structure-biome-compatibility/**'
       - 'docs/audits/CURRENT_BIOME_ROSTER.json'
       - 'tools/audit_pr56_dnt_firewatch_source.py'
+      - 'tools/audit_pr56_firewatch_paxi_stack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
       - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
@@ -76,4 +78,33 @@ jobs:
         with:
           name: pr56-dnt-verified-native-source-report
           path: /tmp/pr56-dnt-native-audit.json
+          retention-days: 14
+
+  source-paxi-precedence-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch isolated PR50 source snapshot (not the live import)
+        run: |
+          git fetch --depth=1 origin experimental/pr45-runtime-rpg-acceptance-20261013
+          mkdir -p /tmp/pr56-pr50-source
+          git archive FETCH_HEAD release_030/overrides/config/paxi/datapacks | tar -x -C /tmp/pr56-pr50-source
+      - name: Audit PR56 and PR50 Paxi native firewatch overrides
+        run: |
+          python tools/audit_pr56_firewatch_paxi_stack.py \
+            --current release_030/overrides/config/paxi/datapacks \
+            --reference /tmp/pr56-pr50-source/release_030/overrides/config/paxi/datapacks \
+            --out /tmp/pr56-paxi-source-stack.json
+          echo '---BEGIN PAXI SOURCE AUDIT---'
+          cat /tmp/pr56-paxi-source-stack.json
+          echo '---END PAXI SOURCE AUDIT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-paxi-source-comparison-json
+          path: /tmp/pr56-paxi-source-stack.json
           retention-days: 14
