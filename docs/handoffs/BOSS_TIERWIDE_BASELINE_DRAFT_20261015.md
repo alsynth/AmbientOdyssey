@@ -44,3 +44,9 @@
 This is the current approved schedule and **supersedes the older T6 x3 attack proposal**. T2 HP x2 / ordinary attack x1.5; T3 x3 / x2; T4 x5 / x3; T5 x7 / x4; **T6 x10 / x5**; T7 x10 / x6; T8 x10 / x10; T9 x10 / x10.
 
 Apply available native config/attribute multipliers to ordinary bosses, accepting observed vanilla HP ceiling ~1024 and as-yet unconfirmed attack caps. Modded ability damage may exceed vanilla attribute caps; do not claim ordinary attack scalar alters spells or scripted attacks. Future post-worldgen addon will reinforce high-end bosses as a separate layer. Do not block baseline on exceptional mechanics; mark exceptions for follow-up. Preserve Chesed, Malkuth, Geburah hit-count mechanics; avoid blanket Ice & Fire settings that affect unrelated low-tier surface dragons. Dungeon Difficulty is separate from boss native stats. **Approval is for balance targets, not proof they have been implemented or runtime-tested.**
+
+## Latest owner exception and work order — 15 October 2026
+
+**Chesed, Malkuth, Geburah: Tier 5**, superseding their earlier T7/TBD boss assignments. **All three are EXEMPT from tier-wide HP and damage multipliers** because of their hit-count/special mechanics; revisit separately later, not as ordinary T5 bosses. This exception overrides the default T5 HP x7 / ordinary attack x4 schedule. Their *boss* tiers do not automatically change any DD *structure* tiers or arena ratings; reconcile those independently.
+
+**Priority:** finish implementation review and ordinary native buffs for **T2–T6 first**, validating configuration paths and recording what was actually applied. Defer **T7–T9 boss-by-boss review until last**, since special damage, caps and the future addon require additional work. Approved tier-wide targets remain T2 x2/x1.5, T3 x3/x2, T4 x5/x3, T5 x7/x4 (except these 3), T6 x10/x5, T7 x10/x6, T8 x10/x10, T9 x10/x10. No boss configs or gameplay files are changed by this planning note.
