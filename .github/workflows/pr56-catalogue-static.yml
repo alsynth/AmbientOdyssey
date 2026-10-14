@@ -284,6 +284,9 @@ jobs:
                           "trial_spawners":v.get("source_trial_spawner_blocks",0),
                           "spawn_ids":v.get("source_normal_spawner_entity_ids",[]),
                           "trial_spawn_ids":v.get("source_trial_spawner_entity_ids",[]),
+                          "normal_passengers":v.get("source_normal_spawner_passenger_entity_ids",[]),
+                          "normal_mount_pairs":v.get("source_normal_spawner_mount_pairs",[]),
+                          "prebuilt_mount_pairs":v.get("source_prebuilt_mount_pairs",[]),
                           "graph_complete":v.get("native_graph_complete",False),
                           "graph_errors":v.get("source_graph_errors",[])[:5]}
           print('---BEGIN COMPACT NBT EVIDENCE---')
