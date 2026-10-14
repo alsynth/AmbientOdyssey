@@ -1,0 +1,283 @@
+{
+  "method": "PINNED_NATIVE_JAR_JIGSAW_POOL_AND_NBT_TEMPLATE_SOURCE_SCAN",
+  "source_ci_run_id": 38614859308,
+  "source_ci_job_id": 116027224224,
+  "DD_candidate_filter": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$",
+  "summary": {
+    "structures_scanned": 10,
+    "structures_in_53_zone_candidate": 7,
+    "DD_zone_structures_with_positive_source_spawner_evidence": 6,
+    "DD_zone_structures_with_complete_scanned_native_graph": 4,
+    "scanned_template_spawner_occurrences": 45,
+    "not_runtime_count_or_guaranteed_spawn": true
+  },
+  "sites": [
+    {
+      "structure_id": "dungeons_arise:aviary",
+      "candidate_DD_zone": true,
+      "planned_tier": 6,
+      "dimension": "minecraft:the_end",
+      "native_jigsaw_pools_visited": 3,
+      "native_templates_inspected": 32,
+      "native_source_spawner_block_occurrences": 5,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [
+        "minecraft:creeper",
+        "minecraft:phantom",
+        "minecraft:skeleton"
+      ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:skeleton"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "minecraft:creeper",
+        "minecraft:phantom"
+      ],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "ENTITY_MATCHER_COVERAGE_AND_ELITE_STACKING_RUNTIME_TEST"
+    },
+    {
+      "structure_id": "dungeons_arise:bandit_towers",
+      "candidate_DD_zone": true,
+      "planned_tier": 2,
+      "dimension": "minecraft:overworld",
+      "native_jigsaw_pools_visited": 7,
+      "native_templates_inspected": 26,
+      "native_source_spawner_block_occurrences": 10,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [
+        "minecraft:firework_rocket",
+        "minecraft:pillager",
+        "minecraft:skeleton"
+      ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:pillager",
+        "minecraft:skeleton"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "minecraft:firework_rocket"
+      ],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "ENTITY_MATCHER_COVERAGE_AND_ELITE_STACKING_RUNTIME_TEST"
+    },
+    {
+      "structure_id": "dungeons_arise:foundry",
+      "candidate_DD_zone": true,
+      "planned_tier": 5,
+      "dimension": "minecraft:overworld",
+      "native_jigsaw_pools_visited": 8,
+      "native_templates_inspected": 45,
+      "native_source_spawner_block_occurrences": 8,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [
+        "minecraft:blaze",
+        "minecraft:hoglin",
+        "minecraft:magma_cube",
+        "minecraft:phantom",
+        "minecraft:piglin_brute",
+        "minecraft:wither_skeleton"
+      ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:blaze",
+        "minecraft:piglin_brute",
+        "minecraft:wither_skeleton"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "minecraft:hoglin",
+        "minecraft:magma_cube",
+        "minecraft:phantom"
+      ],
+      "source_graph_complete": false,
+      "unresolved_native_graph_errors": [
+        "MISSING_NATIVE_OR_EXTERNAL_POOL:dungeons_arise:underworld/foundry/foundry_corridor_gears"
+      ],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "NATIVE_MISSING_JIGSAW_POOL_OR_TEMPLATE__VERIFY_PACK_RESOURCE_GRAPH"
+    },
+    {
+      "structure_id": "dungeons_arise:illager_fort",
+      "candidate_DD_zone": true,
+      "planned_tier": 3,
+      "dimension": "minecraft:overworld",
+      "native_jigsaw_pools_visited": 4,
+      "native_templates_inspected": 21,
+      "native_source_spawner_block_occurrences": 4,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [
+        "minecraft:cave_spider"
+      ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:cave_spider"
+      ],
+      "source_DD_entity_matcher_misses": [],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "ENTITY_MATCHER_COVERAGE_AND_ELITE_STACKING_RUNTIME_TEST"
+    },
+    {
+      "structure_id": "dungeons_arise:keep_kayra",
+      "candidate_DD_zone": true,
+      "planned_tier": 6,
+      "dimension": "minecraft:overworld",
+      "native_jigsaw_pools_visited": 1,
+      "native_templates_inspected": 1,
+      "native_source_spawner_block_occurrences": 0,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [],
+      "source_DD_entity_matcher_matches": [],
+      "source_DD_entity_matcher_misses": [],
+      "source_graph_complete": false,
+      "unresolved_native_graph_errors": [
+        "NBT_PARSE_FAILED:dungeons_arise:keep_kayra/keep_kayra_main_0:NBT inflated byte limit exceeded"
+      ],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "MAIN_NBT_OVER_42MB_LIMIT__BOUNDED_STREAMING_OR_RUNTIME"
+    },
+    {
+      "structure_id": "dungeons_arise:mechanical_nest",
+      "candidate_DD_zone": true,
+      "planned_tier": 5,
+      "dimension": "minecraft:overworld",
+      "native_jigsaw_pools_visited": 10,
+      "native_templates_inspected": 162,
+      "native_source_spawner_block_occurrences": 12,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [
+        "minecraft:potion",
+        "minecraft:ravager",
+        "minecraft:skeleton",
+        "minecraft:wither_skeleton",
+        "minecraft:zombie"
+      ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:skeleton",
+        "minecraft:wither_skeleton",
+        "minecraft:zombie"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "minecraft:potion",
+        "minecraft:ravager"
+      ],
+      "source_graph_complete": false,
+      "unresolved_native_graph_errors": [
+        "MISSING_EXTERNAL_OR_NATIVE_TEMPLATE:dungeons_arise:mechanical_nest/mechanical_nest_bridge_terminator_6_",
+        "MISSING_EXTERNAL_OR_NATIVE_TEMPLATE:dungeons_arise:mechanical_nest/mechanical_nest_spawner_6",
+        "MISSING_NATIVE_OR_EXTERNAL_POOL:dungeons_arise:mechanical_nest/mechanical_nest_decoration"
+      ],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "NATIVE_MISSING_JIGSAW_POOL_OR_TEMPLATE__VERIFY_PACK_RESOURCE_GRAPH"
+    },
+    {
+      "structure_id": "dungeons_arise:plague_asylum",
+      "candidate_DD_zone": true,
+      "planned_tier": 3,
+      "dimension": "minecraft:overworld",
+      "native_jigsaw_pools_visited": 6,
+      "native_templates_inspected": 33,
+      "native_source_spawner_block_occurrences": 6,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [
+        "minecraft:evoker_fangs",
+        "minecraft:husk",
+        "minecraft:skeleton",
+        "minecraft:witch",
+        "minecraft:wither_skeleton"
+      ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:husk",
+        "minecraft:skeleton",
+        "minecraft:witch",
+        "minecraft:wither_skeleton"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "minecraft:evoker_fangs"
+      ],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "ENTITY_MATCHER_COVERAGE_AND_ELITE_STACKING_RUNTIME_TEST"
+    },
+    {
+      "structure_id": "idas:labyrinth",
+      "candidate_DD_zone": false,
+      "planned_tier": null,
+      "dimension": null,
+      "native_jigsaw_pools_visited": 1,
+      "native_templates_inspected": 0,
+      "native_source_spawner_block_occurrences": 0,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [],
+      "source_DD_entity_matcher_matches": [],
+      "source_DD_entity_matcher_misses": [],
+      "source_graph_complete": false,
+      "unresolved_native_graph_errors": [
+        "NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS"
+      ],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "IDAS_CUSTOM_NATIVE_POOL_ELEMENT_FORMAT_NOT_RESOLVED"
+    },
+    {
+      "structure_id": "idas:necromancers_spire",
+      "candidate_DD_zone": false,
+      "planned_tier": null,
+      "dimension": null,
+      "native_jigsaw_pools_visited": 1,
+      "native_templates_inspected": 0,
+      "native_source_spawner_block_occurrences": 0,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [],
+      "source_DD_entity_matcher_matches": [],
+      "source_DD_entity_matcher_misses": [],
+      "source_graph_complete": false,
+      "unresolved_native_graph_errors": [
+        "NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS"
+      ],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "IDAS_CUSTOM_NATIVE_POOL_ELEMENT_FORMAT_NOT_RESOLVED"
+    },
+    {
+      "structure_id": "idas:pillager_camp",
+      "candidate_DD_zone": false,
+      "planned_tier": null,
+      "dimension": null,
+      "native_jigsaw_pools_visited": 1,
+      "native_templates_inspected": 0,
+      "native_source_spawner_block_occurrences": 0,
+      "native_source_trial_spawner_block_occurrences": 0,
+      "source_entity_type_ids": [],
+      "source_DD_entity_matcher_matches": [],
+      "source_DD_entity_matcher_misses": [],
+      "source_graph_complete": false,
+      "unresolved_native_graph_errors": [
+        "NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS"
+      ],
+      "source_evidence_not_live_spawner_proof": true,
+      "source_template_alternatives_may_not_all_generate": true,
+      "eligibility_for_live_DD": "NO",
+      "high_priority_next_action": "IDAS_CUSTOM_NATIVE_POOL_ELEMENT_FORMAT_NOT_RESOLVED"
+    }
+  ]
+}
