@@ -20,6 +20,7 @@ on:
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
       - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
       - 'tools/audit_pr56_remaining_worldgen_native.py'
+      - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -42,6 +43,7 @@ on:
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
       - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
       - 'tools/audit_pr56_remaining_worldgen_native.py'
+      - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -210,4 +212,38 @@ jobs:
         with:
           name: pr56-remaining-native-worldgen-json
           path: /tmp/pr56-remaining-five-native-selectors.json
+          retention-days: 14
+
+  combat-dungeon-biome-native-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch exact PR50-pinned Dungeons Arise and IDAS JARs
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/7150/870/DungeonsArise-1.21.1-2.1.68-release.jar' \
+            --output /tmp/pr56-dungeons-arise-2168.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/8232/359/idas-1.13.7%2B1.21.1-neoforge.jar' \
+            --output /tmp/pr56-idas-1137.jar
+          echo 'c651339154da7b9e9cf47a80fdef22c4d59cad5c  /tmp/pr56-dungeons-arise-2168.jar' | sha1sum --check
+          echo '154f275823f5f949ed492ac6ce078a80fc3c759a  /tmp/pr56-idas-1137.jar' | sha1sum --check
+      - name: Audit combat dungeons using only pinned native sources and AO Paxi files
+        run: |
+          python tools/audit_pr56_dungeon_biome_sources.py \
+            --dungeons-arise /tmp/pr56-dungeons-arise-2168.jar \
+            --idas /tmp/pr56-idas-1137.jar \
+            --out /tmp/pr56-combat-dungeon-native-biome-tags.json
+          echo '---BEGIN COMBAT DUNGEON NATIVE REPORT---'
+          cat /tmp/pr56-combat-dungeon-native-biome-tags.json
+          echo '---END COMBAT DUNGEON NATIVE REPORT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-combat-dungeon-native-biome-tags-json
+          path: /tmp/pr56-combat-dungeon-native-biome-tags.json
           retention-days: 14
