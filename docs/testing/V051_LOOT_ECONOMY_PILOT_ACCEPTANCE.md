@@ -13,6 +13,7 @@ Status: executable acceptance checklist, NOT certification. Source branch: `expe
 ## Starter chest in an isolated fresh world
 - Create a new world, **Bonus Chest ON**. Verify that the actual spawn chest converts to Lootr before any player opens it (visible type/appearance; or inspect server block entity). `loot_table_forced_whitelist` is enabled for that specific chest table but does not prove conversion.
 - Two separate non-OP accounts A and B: A opens, receives rewards and empties; B opens same physical chest and still receives independent rolled rewards.
+- Each player must ALSO receive normal independent vanilla Bonus Chest rolls (such as the standard tools/supplies), not just AO additions. Check the vanilla contents remain statistically available across fresh chests; a total replacement is a failure.
 - Each player should receive **exactly one** of these five items from `enigmaticlegacyplus`: `blazing_core`, `golem_heart`, `ocean_stone`, `angel_blessing`, `lost_engine`.
 - Each gets **exactly one real Apotheosis affix item**, Common 55%, Uncommon 30%, Rare 15% over many rolls. Inspect actual generated rarity and affix data components; fake rarity lore doesn't count.
 - Each gets **32–48 torches** and **16–48** one type of cooked beef/pork/chicken/mutton. No additional Apotheosis affix or gem drops from native random-injection hooks.
