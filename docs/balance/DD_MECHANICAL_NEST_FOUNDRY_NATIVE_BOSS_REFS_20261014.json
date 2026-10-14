@@ -37,14 +37,18 @@
         "ref": "dungeons_arise:mechanical_nest/mechanical_nest_spawner_6",
         "source": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_spawners.json",
         "expected": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_spawner_6.nbt",
-        "resolution": "NOT_PRESENT_IN_PINNED_JAR__NO_AUTOFIX"
+        "resolution": "NOT_PRESENT_IN_PINNED_JAR__NO_AUTOFIX",
+        "existing_checked_in_Paxi_NBT_alias_found": false,
+        "native_reference_runtime_effect_unknown": true
       },
       {
         "ref": "dungeons_arise:mechanical_nest/mechanical_nest_bridge_terminator_6_",
         "source": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_terminators.json",
         "expected": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_bridge_terminator_6_.nbt",
         "observed_similar": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_bridge_terminator_6.nbt",
-        "resolution": "SOURCE_NAME_MISMATCH_SUSPECTED__DO_NOT_RENAME_WITHOUT_ACCEPTANCE"
+        "resolution": "SOURCE_NAME_MISMATCH_SUSPECTED__DO_NOT_RENAME_WITHOUT_ACCEPTANCE",
+        "existing_checked_in_Paxi_NBT_alias_found": false,
+        "native_reference_runtime_effect_unknown": true
       },
       {
         "ref": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
@@ -56,7 +60,10 @@
         "alias_datapack": "ao_structure_repairs",
         "alias_path": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decoration.json",
         "runtime_alias_activation_verified": false,
-        "correction": "MISSING_FROM_ORIGINAL_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE"
+        "correction": "MISSING_FROM_ORIGINAL_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE",
+        "AO_Paxi_alias_native_templates_resolved": 21,
+        "AO_Paxi_alias_missing_NBT_targets": [],
+        "AO_Paxi_alias_static_status": "VALID__21_NATIVE_NBT_TARGETS_RESOLVED"
       }
     ]
   },
@@ -105,7 +112,10 @@
       "alias_datapack": "ao_structure_repairs",
       "alias_path": "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridor_gears.json",
       "runtime_alias_activation_verified": false,
-      "correction": "MISSING_FROM_PINNED_NATIVE_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE"
+      "correction": "MISSING_FROM_PINNED_NATIVE_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE",
+      "AO_Paxi_alias_native_templates_resolved": 2,
+      "AO_Paxi_alias_missing_NBT_targets": [],
+      "AO_Paxi_alias_static_status": "VALID__2_NATIVE_NBT_TARGETS_RESOLVED"
     }
   },
   "conclusions": [
@@ -117,5 +127,11 @@
     "No live AO config, Paxi, boss, DD, mob, loot, structure pool or world modified."
   ],
   "native_boss_runtime_tested": false,
-  "live_dd_deployment_authorized": false
+  "live_dd_deployment_authorized": false,
+  "source_validation": {
+    "pinned_native_sha1_checked": true,
+    "ci_run_id": 38625332730,
+    "ci_outcome": "SEVEN_JOBS_PASSED",
+    "AO_repo_Paxi_alias_source_validation": "PASSED_SOURCE_ONLY__NOT_RUNTIME_WINNER"
+  }
 }
