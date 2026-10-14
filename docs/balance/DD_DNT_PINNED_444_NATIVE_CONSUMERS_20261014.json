@@ -1,0 +1,417 @@
+{
+  "candidate_tag_analysis": {
+    "birch_forests": {
+      "candidate_additions": [
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:zelkova_forest",
+        "regions_unexplored:maple_forest"
+      ],
+      "candidate_already_in_native": [],
+      "candidate_are_curated": true,
+      "direct_structure_consumers": [
+        "nova_structures:firewatch_tower_birch",
+        "nova_structures:remnant_birch_graveyard",
+        "nova_structures:tavern_birch",
+        "nova_structures:village_birch",
+        "nova_structures:well_birch"
+      ],
+      "native_curated_direct_overlap": [],
+      "native_file": "data/nova_structures/tags/worldgen/biome/collections/birch_forests.json",
+      "native_replace": false,
+      "native_tag_exists": true,
+      "native_values": [
+        "minecraft:birch_forest",
+        "minecraft:old_growth_birch_forest",
+        "c:birch_forest",
+        "forge:birch_forest",
+        "terralith:temperate_highlands",
+        "terralith:birch_taiga",
+        "terralith:white_cliffs",
+        "byg:aspen_forest",
+        "byg:temperate_grove",
+        "projectvibrantjourneys:aspen_grove",
+        "wythers:autumnal_birch_forest",
+        "wythers:birch_swamp",
+        "wythers:birch_taiga",
+        "wythers:warm_birch_forest",
+        "regions_unexplored:golden_boreal_forest",
+        "regions_unexplored:lupine_plains",
+        "regions_unexplored:silver_birch_forest",
+        "#clifftree:birch_forests"
+      ],
+      "nested_other_tag_references": [
+        "nova_structures:collections/land"
+      ],
+      "non_firewatch_consumers": [
+        "nova_structures:remnant_birch_graveyard",
+        "nova_structures:tavern_birch",
+        "nova_structures:village_birch",
+        "nova_structures:well_birch"
+      ],
+      "transitive_structure_consumers": [
+        "nova_structures:bunker",
+        "nova_structures:firewatch_tower_birch",
+        "nova_structures:remnant_big_remnant",
+        "nova_structures:remnant_big_remnant_2",
+        "nova_structures:remnant_big_remnant_3",
+        "nova_structures:remnant_birch_graveyard",
+        "nova_structures:remnant_bridge_remnant",
+        "nova_structures:remnant_medium_remnant",
+        "nova_structures:remnant_medium_remnant_2",
+        "nova_structures:remnant_miner_hut",
+        "nova_structures:remnant_school_remnant",
+        "nova_structures:ruin_town",
+        "nova_structures:shrine_combat_tier_1",
+        "nova_structures:shrine_combat_tier_2",
+        "nova_structures:shrine_combat_tier_3",
+        "nova_structures:shrine_combat_tier_4",
+        "nova_structures:shrine_combat_tier_5",
+        "nova_structures:shrine_tower",
+        "nova_structures:tavern_birch",
+        "nova_structures:village_birch",
+        "nova_structures:well_birch",
+        "nova_structures:wild_ruin"
+      ],
+      "transitive_tag_keys": [
+        "nova_structures:collections/birch_forests",
+        "nova_structures:collections/land"
+      ]
+    },
+    "cherry_forests": {
+      "candidate_additions": [
+        "biomeswevegone:sakura_grove",
+        "biomesoplenty:snowblossom_grove"
+      ],
+      "candidate_already_in_native": [],
+      "candidate_are_curated": true,
+      "direct_structure_consumers": [
+        "nova_structures:firewatch_tower_cherry",
+        "nova_structures:tavern_cherry"
+      ],
+      "native_curated_direct_overlap": [],
+      "native_file": "data/nova_structures/tags/worldgen/biome/collections/cherry_forests.json",
+      "native_replace": false,
+      "native_tag_exists": true,
+      "native_values": [
+        "minecraft:cherry_grove",
+        "c:cherry_grove",
+        "forge:birch_forest",
+        "regions_unexplored:cherry_hills",
+        "regions_unexplored:mauve_hills",
+        "regions_unexplored:meadow"
+      ],
+      "nested_other_tag_references": [
+        "nova_structures:collections/land"
+      ],
+      "non_firewatch_consumers": [
+        "nova_structures:tavern_cherry"
+      ],
+      "transitive_structure_consumers": [
+        "nova_structures:bunker",
+        "nova_structures:firewatch_tower_cherry",
+        "nova_structures:remnant_big_remnant",
+        "nova_structures:remnant_big_remnant_2",
+        "nova_structures:remnant_big_remnant_3",
+        "nova_structures:remnant_bridge_remnant",
+        "nova_structures:remnant_medium_remnant",
+        "nova_structures:remnant_medium_remnant_2",
+        "nova_structures:remnant_miner_hut",
+        "nova_structures:remnant_school_remnant",
+        "nova_structures:ruin_town",
+        "nova_structures:shrine_combat_tier_1",
+        "nova_structures:shrine_combat_tier_2",
+        "nova_structures:shrine_combat_tier_3",
+        "nova_structures:shrine_combat_tier_4",
+        "nova_structures:shrine_combat_tier_5",
+        "nova_structures:shrine_tower",
+        "nova_structures:tavern_cherry",
+        "nova_structures:wild_ruin"
+      ],
+      "transitive_tag_keys": [
+        "nova_structures:collections/cherry_forests",
+        "nova_structures:collections/land"
+      ]
+    },
+    "savannas": {
+      "candidate_additions": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:grassland",
+        "natures_spirit:floral_ridges"
+      ],
+      "candidate_already_in_native": [],
+      "candidate_are_curated": true,
+      "direct_structure_consumers": [
+        "nova_structures:firewatch_tower_savanna",
+        "nova_structures:tavern_acacia",
+        "nova_structures:well_savana"
+      ],
+      "native_curated_direct_overlap": [],
+      "native_file": "data/nova_structures/tags/worldgen/biome/collections/savannas.json",
+      "native_replace": false,
+      "native_tag_exists": true,
+      "native_values": [
+        "#minecraft:is_savanna",
+        "terralith:arid_highlands",
+        "terralith:hot_shrubland",
+        "terralith:sakura_grove",
+        "terralith:sakura_valley",
+        "projectvibrantjourneys:baobab_fields",
+        "#forge:is_savanna",
+        "#c:savanna",
+        "regions_unexplored:baobab_savanna",
+        "regions_unexplored:barley_fields",
+        "regions_unexplored:dry_bushland",
+        "regions_unexplored:steppe"
+      ],
+      "nested_other_tag_references": [
+        "nova_structures:collections/land"
+      ],
+      "non_firewatch_consumers": [
+        "nova_structures:tavern_acacia",
+        "nova_structures:well_savana"
+      ],
+      "transitive_structure_consumers": [
+        "nova_structures:bunker",
+        "nova_structures:firewatch_tower_savanna",
+        "nova_structures:remnant_big_remnant",
+        "nova_structures:remnant_big_remnant_2",
+        "nova_structures:remnant_big_remnant_3",
+        "nova_structures:remnant_bridge_remnant",
+        "nova_structures:remnant_medium_remnant",
+        "nova_structures:remnant_medium_remnant_2",
+        "nova_structures:remnant_miner_hut",
+        "nova_structures:remnant_school_remnant",
+        "nova_structures:ruin_town",
+        "nova_structures:shrine_combat_tier_1",
+        "nova_structures:shrine_combat_tier_2",
+        "nova_structures:shrine_combat_tier_3",
+        "nova_structures:shrine_combat_tier_4",
+        "nova_structures:shrine_combat_tier_5",
+        "nova_structures:shrine_tower",
+        "nova_structures:tavern_acacia",
+        "nova_structures:well_savana",
+        "nova_structures:wild_ruin"
+      ],
+      "transitive_tag_keys": [
+        "nova_structures:collections/land",
+        "nova_structures:collections/savannas"
+      ]
+    }
+  },
+  "complete_structure_selector_consumers_for_candidate_tags": {
+    "##nova_structures:collections/birch_forests": [
+      "nova_structures:firewatch_tower_birch",
+      "nova_structures:remnant_birch_graveyard",
+      "nova_structures:tavern_birch",
+      "nova_structures:village_birch",
+      "nova_structures:well_birch"
+    ],
+    "##nova_structures:collections/cherry_forests": [
+      "nova_structures:firewatch_tower_cherry",
+      "nova_structures:tavern_cherry"
+    ],
+    "##nova_structures:collections/savannas": [
+      "nova_structures:firewatch_tower_savanna",
+      "nova_structures:tavern_acacia",
+      "nova_structures:well_savana"
+    ]
+  },
+  "current_researched_repo_paxi_firewatch_overrides": [],
+  "curseforge_file_id": 5768823,
+  "curseforge_project_id": 853794,
+  "declared_biolith_replacement_targets": [
+    "minecraft:bamboo_jungle",
+    "minecraft:birch_forest",
+    "minecraft:flower_forest",
+    "minecraft:forest",
+    "minecraft:jungle",
+    "minecraft:old_growth_birch_forest",
+    "minecraft:plains",
+    "minecraft:savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:sparse_jungle",
+    "minecraft:sunflower_plains",
+    "minecraft:windswept_savanna"
+  ],
+  "filename": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+  "forest_native_source_file": "data/nova_structures/worldgen/structure/firewatch_tower_forest.json",
+  "forest_original_native_structure_json": {
+    "biomes": [
+      "minecraft:forest"
+    ],
+    "liquid_settings": "ignore_waterlogging",
+    "max_distance_from_center": 80,
+    "project_start_to_heightmap": "WORLD_SURFACE_WG",
+    "size": 1,
+    "spawn_overrides": {},
+    "start_height": {
+      "absolute": 0
+    },
+    "start_pool": "nova_structures:firewatch_tower_forest",
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_box",
+    "type": "minecraft:jigsaw",
+    "use_expansion_hack": true
+  },
+  "four_original_native_structure_json": {
+    "birch": {
+      "biomes": "#nova_structures:collections/birch_forests",
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "nova_structures:firewatch_tower_birch",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_box",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "cherry": {
+      "biomes": "#nova_structures:collections/cherry_forests",
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "nova_structures:firewatch_tower_cherry",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_box",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "forest": {
+      "biomes": [
+        "minecraft:forest"
+      ],
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "nova_structures:firewatch_tower_forest",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_box",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    },
+    "savanna": {
+      "biomes": "#nova_structures:collections/savannas",
+      "liquid_settings": "ignore_waterlogging",
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 1,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "nova_structures:firewatch_tower_savanna",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_box",
+      "type": "minecraft:jigsaw",
+      "use_expansion_hack": true
+    }
+  },
+  "land_collection_direct_structure_consumers": [
+    "nova_structures:bunker",
+    "nova_structures:remnant_big_remnant",
+    "nova_structures:remnant_big_remnant_2",
+    "nova_structures:remnant_big_remnant_3",
+    "nova_structures:remnant_bridge_remnant",
+    "nova_structures:remnant_medium_remnant",
+    "nova_structures:remnant_medium_remnant_2",
+    "nova_structures:remnant_miner_hut",
+    "nova_structures:remnant_school_remnant",
+    "nova_structures:ruin_town",
+    "nova_structures:shrine_combat_tier_1",
+    "nova_structures:shrine_combat_tier_2",
+    "nova_structures:shrine_combat_tier_3",
+    "nova_structures:shrine_combat_tier_4",
+    "nova_structures:shrine_combat_tier_5",
+    "nova_structures:shrine_tower",
+    "nova_structures:wild_ruin"
+  ],
+  "native_biome_tag_count": 48,
+  "native_firewatch_structures": {
+    "nova_structures:firewatch_tower_birch": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "#nova_structures:collections/birch_forests"
+      ]
+    },
+    "nova_structures:firewatch_tower_cherry": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "#nova_structures:collections/cherry_forests"
+      ]
+    },
+    "nova_structures:firewatch_tower_dark_oak": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "#nova_structures:collections/spooky_forests"
+      ]
+    },
+    "nova_structures:firewatch_tower_forest": {
+      "direct_replaced_vanilla": [
+        "minecraft:forest"
+      ],
+      "registered_native_structure_json": true,
+      "selector": [
+        "minecraft:forest"
+      ]
+    },
+    "nova_structures:firewatch_tower_jungle": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "#nova_structures:collections/jungles"
+      ]
+    },
+    "nova_structures:firewatch_tower_mangrove": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "minecraft:mangrove_swamp"
+      ]
+    },
+    "nova_structures:firewatch_tower_savanna": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "#nova_structures:collections/savannas"
+      ]
+    },
+    "nova_structures:firewatch_tower_swamp": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "minecraft:swamp"
+      ]
+    },
+    "nova_structures:firewatch_tower_taiga": {
+      "direct_replaced_vanilla": [],
+      "registered_native_structure_json": true,
+      "selector": [
+        "#nova_structures:collections/any_taiga"
+      ]
+    }
+  },
+  "native_structure_json_count": 96,
+  "native_worldgen_tested": false,
+  "profile_resource_priority_runtime_tested": false,
+  "safe_to_deploy": false,
+  "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3",
+  "source": "OFFICIAL_PR50_CURSEFORGE_PIN_SHA1_MATCH"
+}
