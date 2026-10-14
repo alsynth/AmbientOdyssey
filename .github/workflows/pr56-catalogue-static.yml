@@ -118,6 +118,13 @@ jobs:
             --out /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip \
             --manifest /tmp/pr56-firewatch-four-towers-TEST-ONLY.manifest.json
           unzip -l /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip
+          # Independently rebuild with different output paths to verify deterministic bytes.
+          python tools/package_pr56_firewatch_test_datapack.py \
+            --paxi-report /tmp/pr56-paxi-source-stack.json \
+            --out /tmp/pr56-second-repro-check.zip \
+            --manifest /tmp/pr56-second-repro-check.manifest.json
+          cmp /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip /tmp/pr56-second-repro-check.zip
+          echo 'PR56 test-only datapack reproducible byte-for-byte'
       - name: Archive TEST-ONLY isolated datapack and manifest
         uses: actions/upload-artifact@v4
         with:
