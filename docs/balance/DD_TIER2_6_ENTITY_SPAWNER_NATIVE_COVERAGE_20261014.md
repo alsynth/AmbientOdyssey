@@ -1,5 +1,7 @@
 # PR56 — Tier 2–6 Dungeon Difficulty source-encounter audit (14 Oct 2026)
 
+> **LATEST validation:** PR56 source scanner now supports exact IDAS `integrated_api:integrated_api_single_pool_element` templates, adding **24** IDAS source spawner-block occurrences to the earlier **45** Dungeons Arise ones. **69 total source-template occurrences** across 10 audited IDs, **not generated-world spawn totals**. This does not change the 6/28 positive DD-zone count because the three new IDAS structures were not in the original 53 candidate rules. [Machine-readable report](DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json).
+
 **Decision: DO NOT DEPLOY or widen the vanilla-only DD matcher yet.** This is a read-only native source inspection, not proof that a mob spawns, that DD applies at runtime, that an Apotheosis invader would not be double-stacked, or that alternate jigsaw pieces are reachable/selected naturally. The target is to verify *actual* coverage before buffing content.
 
 ## Existing candidate consistency — all static checks passed
@@ -13,7 +15,7 @@
 | Tier0 owner-approved (26) structures incorrectly given active T2+ DD | **0** |
 | Exact vanilla entity types in candidate matcher | **17** |
 | Old historical linked-positive NBT evidence among the 28 | **0 of 28** |
-| **New** targeted pinned-JAR template scan positive in scaled candidate | **6 of 28** (seven candidate zones specifically scanned; one too large) |
+| **New** targeted pinned-JAR template scan positive in scaled candidate | **6 of 28** (seven candidate zones scanned; Keep Kayra too large) |
 | Candidate changes to vanilla spawner spawn count/delay/range | **0** — the candidate entity-rule's `spawners` multipliers are all zero |
 | Gameplay configurations actually installed from PR56 | **0** |
 
@@ -31,7 +33,7 @@ The old ledger's 0/28 was an **evidence gap, not a count of mob-free dungeons**.
 | `dungeons_arise:keep_kayra` | 6 | 1 | **0 observed** | **Blocked**: main `.nbt` exceeds conservative 42 MB decompressed scan limit; **not proof of no mobs** |
 | `dungeons_arise:aviary` (End) | 6 | 32 | **5** | Native graph traversed without identified errors |
 
-**Total observed: 45 spawner-block occurrences across different source templates**, NOT 45 spawners inside one generated dungeon. Multiple templates can be alternatives, omitted, rotated or instantiated with different pool weights. No trial-spawner blocks were found in the successfully parsed selected templates, but this says **nothing** about unscanned pieces, scripts, later dynamic placements or custom trial mechanics.
+**Dungeons Arise subtotal: 45 spawner-block occurrences across different source templates**, NOT 45 spawners inside one generated dungeon. Multiple templates can be alternatives, omitted, rotated or instantiated with different pool weights. No trial-spawner blocks were found in the successfully parsed selected templates, but this says **nothing** about unscanned pieces, scripts, later dynamic placements or custom trial mechanics.
 
 ### Exact-type DD coverage gap
 
@@ -48,13 +50,30 @@ These are **spawner entity IDs in successfully parsed source NBT**. Type-only re
 
 **Potential hostile-mob coverage omissions:** `minecraft:creeper`, `minecraft:hoglin`, `minecraft:magma_cube`, `minecraft:phantom`, `minecraft:ravager`. They are legitimate source *review candidates*, **not an approval to include them globally**. In particular the existing filter deliberately avoids many explosive, flying, elite or boss-like types. Projectile/effect IDs `firework_rocket`, `potion` and `evoker_fangs` should **not** be added to the ordinary mob attribute regex.
 
-## IDAS source NBT still unverified via this scanner
+## IDAS — Integrated API native element support now VERIFIED
 
-The source graph traversal of `idas:pillager_camp`, `idas:labyrinth` and `idas:necromancers_spire` did not yield recognizable single-template NBT paths using the vanilla weighted-pool parser. These are **incomplete source parser capabilities, not empty native structures**. The old IDAS Pillager Camp path heuristic found **four spawner blocks** with `minecraft:pillager` in `data/idas/structure/pillager_camp/pillager_camp1.nbt`. That old finding remains positive source evidence but was not newly verified as a *reachable start-pool descendant*. The next source task is understanding IDAS's `integrated_api` pool-element serialization before joining native structure IDs to concrete NBT templates.
+The native IDAS jigsaw pool uses **`integrated_api:integrated_api_single_pool_element`** rather than Minecraft's default single-pool element. After adding source-exact parser support, the SHA-1 verified IDAS 1.13.7 JAR now traces genuine start-pool descendants without missing-template errors:
+
+| IDAS source structure | Native templates inspected | Ordinary spawner **block occurrences** | Spawner ID samples | Source pool graph |
+|---|---:|---:|---|---|
+| `idas:pillager_camp` | 1 | **2** | `minecraft:pillager` | Traversed successfully |
+| `idas:labyrinth` | 5 | **18** | `minecraft:blaze`, `cave_spider`, `husk`, `spider`, `stray`, `alexsmobs:anaconda`, `quark:forgotten`, `quark:wraith` | Traversed successfully |
+| `idas:necromancers_spire` | 4 | **4** | `minecraft:skeleton`, `alexsmobs:soul_vulture` | Traversed successfully |
+
+**IDAS subtotal: 24 additional source template occurrences. Grand total for all 10 scanned structure IDs: 69 ordinary spawner blocks in distinct source templates (9 sites positive; Keep Kayra could not be parsed).** Seven native pool graphs were traversed without identified parser/source errors, three remain partial or blocked. These are *not* natural spawn counts or proven effective DD targets.
+
+The previous filename/path heuristic had reported **four** spawner blocks in `data/idas/structure/pillager_camp/pillager_camp1.nbt`; the actual current native `pillager_camp` start pool points to a different template location with **two** observed spawner blocks. These are different source-scan scopes; **do not sum or silently replace the old count**.
+
+### Modded entity compatibility
+
+The exact PR50 import manifest includes `alexsmobs-1.22.9.jar` (Alex's Mobs) and `Quark-4.1-487.jar`. Thus **the provider JARs are present by filename**; don't claim the NBT IDs `alexsmobs:anaconda`, `alexsmobs:soul_vulture`, `quark:forgotten` or `quark:wraith` are missing merely because they are not vanilla. However, actual entity registration, spawn behavior, hostility and elite interactions in the effective client remain unverified.
+
+All four of those modded entity IDs are outside the existing `minecraft:`-only DD regex. **IDAS Labyrinth is provisionally Tier 4, but is not one of the 53 original candidate DD zones**, and the Nether-tagged Necromancer's Spire requires its separate dimension review. No widening of regex or deployment is authorized from these findings.
+
 
 ## Priorities for the next automated pass
 
-1. Inspect source-specific pool-element serialization for **IDAS**, separately from vanilla D&T/Dungeons Arise jigsaw formats.
+1. **DONE:** Verify IDAS custom `integrated_api` pool-element serialization and cross-check its actual start-pool linked spawner/entity source IDs.
 2. Identify a safe bounded method for **Keep Kayra** large-template NBT parsing; do not uncap memory blindly.
 3. Verify Foundry missing corridor pool and Mechanical Nest missing NBT references are intentional/non-required or evidence of actual generator problems. **Do not edit installed structure pools without reproducing and validating behavior**.
 4. Source-vs-live test ordinary DD attributes on representative zombies/skeletons/pillagers, then *omitted* vanilla hostiles on actual source spawners. Explicitly test Apotheosis modifiers and boss/native scripts for double stacking.
