@@ -1,10 +1,10 @@
 review_lane,remaining_native_IDs,example_IDs,next_action
+OWNER_HOLD_UNRANKED_SPAWNER,26,idas:abandonedhouse | idas:apothecary_abode | idas:brickhouse | idas:collectors_museum,Do not tier until user inspection; no DD
 P0_NETHER_WORLDGEN_FREEZE_GATE,3,eternalnether:catacomb | eternalnether:citadel | eternalnether:piglin_manor,Client-registered and source graph verified; natural placement not yet tested
-P1_PILLAGER_OUTPOST_SOURCE_REVIEW,43,ctov:pillager_outpost_badlands | ctov:pillager_outpost_beach | ctov:pillager_outpost_dark_forest | ctov:pillager_outpost_desert,"Outpost encounter likely, no native ordinary spawner proof needed to keep review open"
 P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,23,dungeoncrawl:dungeon | nova_structures:firewatch_tower_birch | nova_structures:firewatch_tower_cherry | nova_structures:firewatch_tower_dark_oak,Confirm enemy source mechanics and rank after native template/source review
+P1_PILLAGER_OUTPOST_SOURCE_REVIEW,1,ctov:pillager_outpost_mesa,"Outpost encounter likely, no native ordinary spawner proof needed to keep review open"
 P1_STATIC_NBT_SPAWNER_TIER_UNRANKED,2,nova_structures:nether_port | idas:pillager_camp,"Positive static NBT encounter signal, not owner-deferred; verify hostile entity/tier"
 P2_PASTERDREAM_DIMENSION_SOURCE_REVIEW,87,pasterdream:big_bubbles_0 | pasterdream:big_bubbles_1 | pasterdream:big_bubbles_2 | pasterdream:big_bubbles_3,Pasterdream custom dimension/template/code encounter source unknown
-P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,142,ctov:large/village_mesa_fortified | ctov:large/village_plains_fortified | ctov:large/village_swamp_fortified | ctov:large/village_taiga_fortified,Low priority but avoid automatic Tier0 without native template or stronger name confidence
 P2_PROVIDER_FAMILY_PROBE,115,formationsoverworld:campsite | formationsoverworld:cobble_hole | formationsoverworld:desert_houses | formationsoverworld:farmland_field,Needs native provider metadata and encounter review
+P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,142,ctov:large/village_mesa_fortified | ctov:large/village_plains_fortified | ctov:large/village_swamp_fortified | ctov:large/village_taiga_fortified,Low priority but avoid automatic Tier0 without native template or stronger name confidence
 P2_UNKNOWN_NO_TIER_EVIDENCE,96,aether:large_aercloud | alexscaves:cake_cave | alexscaves:gingerbread_town | alexscaves:soda_bottle,Source or dimension/encounter not sufficiently mapped
-OWNER_HOLD_UNRANKED_SPAWNER,26,idas:abandonedhouse | idas:apothecary_abode | idas:brickhouse | idas:collectors_museum,Do not tier until user inspection; no DD
