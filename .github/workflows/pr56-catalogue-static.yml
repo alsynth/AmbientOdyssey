@@ -22,6 +22,7 @@ on:
       - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
       - 'tools/audit_pr56_remaining_worldgen_native.py'
       - 'tools/audit_pr56_dungeon_biome_sources.py'
+      - 'tools/audit_pr56_dd_zone_coverage.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -46,6 +47,7 @@ on:
       - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
       - 'tools/audit_pr56_remaining_worldgen_native.py'
       - 'tools/audit_pr56_dungeon_biome_sources.py'
+      - 'tools/audit_pr56_dd_zone_coverage.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -258,4 +260,25 @@ jobs:
         with:
           name: pr56-combat-dungeon-native-biome-tags-json
           path: /tmp/pr56-combat-dungeon-native-biome-tags.json
+          retention-days: 14
+
+  candidate-DD-zone-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: DD Tier2–6 candidate source coverage — NOT a runtime test
+        run: |
+          python tools/audit_pr56_dd_zone_coverage.py --out /tmp/pr56-dd-candidate-source-coverage.json
+          echo '---BEGIN DD CANDIDATE SOURCE COVERAGE---'
+          cat /tmp/pr56-dd-candidate-source-coverage.json
+          echo '---END DD CANDIDATE SOURCE COVERAGE---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-dd-candidate-source-coverage-json
+          path: /tmp/pr56-dd-candidate-source-coverage.json
           retention-days: 14
