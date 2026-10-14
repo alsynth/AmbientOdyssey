@@ -47,3 +47,21 @@
 - [Existing 26 owner-deferred](DD_OWNER_UNRANKED_SPAWNER_REVIEW_20261014.csv)
 - [Source-only 63 unverified families](DD_UNMAPPED_PROVIDER_ENCOUNTER_FAMILIES_20261014.csv)
 - [Machine-readable progress JSON](DD_MAPPING_PROGRESS_BASELINE_20261014.json)
+
+## Remaining unranked current-pack IDs — prioritized after Tier0 proposal screen
+
+The [537-record remaining source/encounter priority queue](DD_REMAINING_ACTIVE_UNRANKED_PRIORITY_20261014.csv) and [provider-level backlog](DD_REMAINING_BY_PROVIDER_20261014.csv) classify unresolved known current-package identifiers without promoting them. **These are unranked research records; some are disabled, incomplete, noncombat, aliases or differently dimensioned, so this queue is not a deployable 537-rule DD plan.**
+
+| Review lane | Unranked native IDs |
+|---|---:|
+| `P0_NETHER_WORLDGEN_FREEZE_GATE` | 3 |
+| `P1_PILLAGER_OUTPOST_SOURCE_REVIEW` | 43 |
+| `P1_COMBAT_DUNGEON_OR_BOSS_REVIEW` | 23 |
+| `P1_STATIC_NBT_SPAWNER_TIER_UNRANKED` | 2 |
+| `P2_PASTERDREAM_DIMENSION_SOURCE_REVIEW` | 87 |
+| `P2_SCENERY_OR_SETTLEMENT_UNVERIFIED` | 142 |
+| `P2_PROVIDER_FAMILY_PROBE` | 115 |
+| `P2_UNKNOWN_NO_TIER_EVIDENCE` | 96 |
+| `OWNER_HOLD_UNRANKED_SPAWNER` | 26 |
+
+The **26 owner-deferred spawner cases stay UNRANKED** and are intentionally last in operational review. CTOV/Towns & Towers pillager outposts remain separate **43-source-ID combat review targets**, not low-tier presumptions. Eternal Nether 3 are worldgen gates that require generation verification before pregeneration. Pasterdream's 87 unranked entries require dimension/code-level analysis. All other structure tiers remain provisional unless explicitly user-confirmed.
