@@ -1,0 +1,33 @@
+structure_id,owner_decision,owner_selected_tier,catalogue_tier_at_review,implementation_status,notes
+block_factorys_bosses:dragon_tower,KEEP,,8,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+block_factorys_bosses:kraken_ship,KEEP,,8,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+block_factorys_bosses:sandworm_nest,KEEP,,8,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+block_factorys_bosses:underworld_arena,KEEP,,8,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+block_factorys_bosses:yeti_hideout,KEEP,,8,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+bosses_of_mass_destruction:gauntlet_arena,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+bosses_of_mass_destruction:lich_tower,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+bosses_of_mass_destruction:void_blossom,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+cataclysm:burning_arena,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+cataclysm:kobolediator_shrine,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+cataclysm:ruined_citadel,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+fdbosses:chesed_arena,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+fdbosses:geburah_arena,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+fdbosses:malkuth_arena,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+nova_structures:lone_citadel,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+nova_structures:shrine_combat_tier_2,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+nova_structures:shrine_combat_tier_3,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+nova_structures:shrine_combat_tier_4,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+nova_structures:shrine_combat_tier_5,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+nova_structures:shrine_tower,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+aether_villages:olympic_citadel,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+floating_islands:shrine,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+friendsandfoes:citadel,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+idas:windswept_shrine,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+irons_spellbooks:citadel,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+mss:arena,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+bosses_of_mass_destruction:obsidilith_arena,CHANGE,9,6,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
+cataclysm:acropolis,CHANGE,9,7,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
+dungeons_arise:shiraz_palace,CHANGE,6,5,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
+idas:iceandfire/dread_citadel,CHANGE,7,4,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
+idas:tinkers_citadel,CHANGE,3,4,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
+pasterdream:aaroncos_arena_portal,DEFER,,3,PLAN_ONLY_NOT_ACTIVATED,Owner requests no activation pending later review
