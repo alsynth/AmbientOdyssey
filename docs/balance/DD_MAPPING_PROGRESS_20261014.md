@@ -1,3 +1,5 @@
+> **LATEST OWNER CORRECTION (2026-10-14):** `dungeoncrawl:dungeon` is Tier **3 across all floors**. Supersedes the earlier Tier4 overall / upper Tier2 proposal; no floor resolver or addon. All 26 former holds remain owner-approved Tier0. No live DD config has changed.
+
 # Ambient Odyssey — Structure Catalogue Progress (October 14, 2026)
 
 > **MOST RECENT OWNER APPROVAL — 14 October:** The previous 26 spawner-positive review holds are **all owner-approved Tier 0**, preserving their source NBT spawner evidence and leaving native spawns intact. The Dungeon Crawl structure `dungeoncrawl:dungeon` is **owner-approved overall Tier 4** (was provisional Tier 3), but the user requests **upper floors Tier 2**. The available DD configuration has no floor/height-aware selector; a relative-floor resolver is a separately gated implementation. **No live DD config changed.** The existing 100% known-ID tier completeness remains unchanged. Counts: 157 HIGH, 637 MEDIUM, 420 LOW, **26 OWNER_APPROVED**, zero remaining former owner holds. See [floor implementation note](DD_DUNGEON_CRAWL_FLOOR_TIER_2_TO_4_PLAN_20261014.md).
