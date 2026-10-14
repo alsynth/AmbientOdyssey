@@ -51,8 +51,9 @@ class OwnerBossCentricGuard(unittest.TestCase):
             "dungeons_arise:mechanical_nest/mechanical_nest_spawner_6",
             "dungeons_arise:mechanical_nest/mechanical_nest_bridge_terminator_6_",
             "dungeons_arise:mechanical_nest/mechanical_nest_decoration"})
-        self.assertTrue(all(not v.get("resolution","").endswith("AUTOFIX")
-                            for v in doc["mechanical_nest"]["native_resource_reference_gaps"]))
+        self.assertTrue(all(
+            any(marker in v["resolution"] for marker in ("NO_AUTOFIX","DO_NOT_RENAME"))
+            for v in doc["mechanical_nest"]["native_resource_reference_gaps"]))
 
     def test_foundry_named_native_encounters_are_not_assumed_bosses(self):
         evidence=ROOT/"docs/balance/DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json"
