@@ -522,6 +522,16 @@
             "name": "ao_tier_6",
             "level": 1
           }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "dungeoncrawl:dungeon"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
         }
       ],
       "zone_specifiers": [],
