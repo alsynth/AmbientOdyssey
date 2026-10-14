@@ -106,8 +106,10 @@ def pool_elements(obj):
    if isinstance(location,str) and obj.get("element_type") in (
     "minecraft:single_pool_element","minecraft:legacy_single_pool_element"):
     found.append(location)
+   if isinstance(obj.get("element"),dict):
+    visit(obj["element"])
    for child in obj.get("elements",[]) if isinstance(obj.get("elements"),list) else []:
-    visit(child.get("element",child) if isinstance(child,dict) else child)
+    visit(child)
   elif isinstance(obj,list):
    for item in obj:visit(item)
  visit(obj.get("elements",[]))
