@@ -4,8 +4,8 @@ Research-only classification, part of draft PR #56. No Minecraft settings change
 
 ## Totals
 - All known structure IDs: **1,240 / 1,240** have previously assigned first-pass numeric estimates. Known current-profile roster: **1,130 / 1,130**. **These percentages measure completeness, not confidence, registration, or gameplay correctness.**
-- **157 HIGH**, **637 MEDIUM**, **420 LOW**, **26 OWNER_HOLD**. Only HIGH entries are in the tier shortlist. No rating signifies runtime validation or authorization for DD rules.
-- 26 spawner-positive small-looking IDs still owner protected, even with prior numeric placeholder guesses. Additional 15 source-only family holds not counted as structure IDs.
+- **157 HIGH**, **637 MEDIUM**, **420 LOW**, **26 OWNER_APPROVED_T0**. Only HIGH entries are in the tier shortlist. No rating signifies runtime validation or authorization for DD rules.
+- All 26 formerly protected spawner-positive small-looking IDs received explicit owner approval for Tier 0 on 14 Oct 2026; native spawner evidence is retained. Additional 15 source-only family holds not counted as structure IDs.
 - 107 historical Repurposed Structures ID variants are absent from the current modpack JAR profile, not counted among HIGH entries.
 
 ## Provisional progression bands
@@ -46,7 +46,7 @@ The shortlist has high confidence in **structure archetype and broad proposed pr
 - **HIGH**: vanilla-defined, documented CTOV/Towns & Towers villages and pillager outposts, documented YUNG abandoned mineshaft family, or clearly named boss encounters already placed in the AO boss-tier plan. **Not runtime-tested; no DD generated.**
 - **MEDIUM**: strongly suggested encounter type but mob strength, native rules, active registration or effective datapack source unverified.
 - **LOW**: not enough evidence beyond provisional numeric heuristic; Pasterdream, fortified/underground CTOV, and unresolved special sites require later study.
-- **OWNER_HOLD**: never deploy a tier until the user reviews the original 26 positive-spawner structures.
+- **OWNER_APPROVED_T0**: the user reviewed the original 26 positive-spawner structures and approved Tier 0. Leave their native spawners untouched; do not apply extra scaling.
 - Existing known inconsistency: `twilightforest:hydra_lair` remains historical Tier 4 in this catalogue although the user's subsequent boss plan has Hydra at Tier 7. Its tier is deliberately not considered HIGH. `minecraft:end_city` also has an unresolved original mixed tier interpretation (2|5) and is LOW.
 
 ## Data
@@ -61,3 +61,10 @@ The shortlist has high confidence in **structure archetype and broad proposed pr
 - [Repurposed Structures](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures) — vanilla structure analogues, only historical scope in this PR.
 
 **No source scan, Natural Generation, Paxi, DD entity matcher, boss scaling or server test was run by this classification.**
+
+
+## 14 October owner decisions
+
+- The 26 native static-spawner-evidence sites formerly marked `OWNER_HOLD` are now explicitly **Tier 0 approved**. They still may contain mobs; do not remove or suppress original mob spawners.
+- `dungeoncrawl:dungeon`: overall owner-approved **Tier 4**, with an upper-floor **Tier 2** exception requested. Floor-aware implementation is not present in native DD config; see `DD_DUNGEON_CRAWL_FLOOR_TIER_2_TO_4_PLAN_20261014.md`.
+- No deployment, native spawner edits or worldgen changes have been made.
