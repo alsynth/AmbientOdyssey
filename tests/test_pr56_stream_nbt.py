@@ -75,6 +75,32 @@ class KeepKayraStreamRegression(unittest.TestCase):
         self.assertNotIn("minecraft:diamond_sword",parsed["normal_spawn_entity_ids"])
         self.assertEqual(parsed["jigsaw_child_pools"],["dungeons_arise:keep_kayra/pieces"])
 
+    def test_streaming_prebuilt_slime_passenger_creeper(self):
+        source=bytes([10])+string("")+comp(
+            list_tag("palette",10,[comp(str_tag("Name","minecraft:stone"))]),
+            list_tag("blocks",0,[]),
+            list_tag("entities",10,[
+                comp(compound_tag("nbt",
+                    str_tag("id","minecraft:slime"),
+                    list_tag("Passengers",10,[
+                        comp(str_tag("id","minecraft:creeper"),
+                             list_tag("HandItems",10,[
+                                 comp(str_tag("id","minecraft:diamond_sword"))]))
+                    ])))
+            ]))
+        zip_mem=io.BytesIO()
+        with zipfile.ZipFile(zip_mem,"w") as z:
+            z.writestr("source.nbt",gzip.compress(source))
+        zip_mem.seek(0)
+        with zipfile.ZipFile(zip_mem) as z:
+            selected,meta=extract_selected(z,"source.nbt")
+        observed=extract_template(selected)
+        self.assertEqual(observed["prebuilt_entity_ids"],["minecraft:slime"])
+        self.assertEqual(observed["prebuilt_passenger_entity_ids"],["minecraft:creeper"])
+        self.assertEqual(observed["prebuilt_mount_pairs"],[
+            {"vehicle":"minecraft:slime","passenger":"minecraft:creeper"}])
+        self.assertNotIn("minecraft:diamond_sword",observed["prebuilt_passenger_entity_ids"])
+
     def test_uncompressed_byte_budget_and_reject_unknown_compression(self):
         zdata=io.BytesIO()
         with zipfile.ZipFile(zdata,"w") as z:
