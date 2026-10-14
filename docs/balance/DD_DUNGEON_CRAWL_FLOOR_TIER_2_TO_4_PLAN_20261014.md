@@ -1,3 +1,5 @@
+> **SUPERSEDED / CANCELLED — final owner decision 2026-10-14:** The whole Dungeon Crawl structure is Tier **3**, with **no upper-floor Tier2 or deeper-floor Tier4 split**. This document records a rejected technical option for historical context only. Do not implement the floor resolver or Tier4 zone.
+
 # Dungeon Crawl: Tier 4 overall, Tier 2 upper-floor exception — 14 Oct 2026
 
 Owner: dungeoncrawl:dungeon is **Tier 4 overall**, with the upper floors kept at **Tier 2**. An intermediate **Tier 3** band is suggested (not yet separately approved). Source mod in AO PR50: DungeonCrawl-NeoForge-1.21-2.3.17.jar.
