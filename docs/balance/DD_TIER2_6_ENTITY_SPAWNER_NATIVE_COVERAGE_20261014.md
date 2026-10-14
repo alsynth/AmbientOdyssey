@@ -91,6 +91,17 @@ The exact PR50 import manifest includes `alexsmobs-1.22.9.jar` (Alex's Mobs) and
 All four of those modded entity IDs are outside the existing `minecraft:`-only DD regex. **IDAS Labyrinth is provisionally Tier 4, but is not one of the 53 original candidate DD zones**, and the Nether-tagged Necromancer's Spire requires its separate dimension review. No widening of regex or deployment is authorized from these findings.
 
 
+## Other native mounted-encounter exceptions
+
+The same passenger scanner found additional intentionally combined native encounters in the pinned source. These are **source NBT pairs**, not guaranteed natural-generation outcomes:
+
+| Source | Mounted pair | Implication for future DD work |
+|---|---|---|
+| Foundry, `foundry_wither_skeleton_1.nbt` | Hoglin carrying Wither Skeleton | Avoid unintentionally overbuffing the rider relative to its mount; test exact encounter first |
+| Foundry, `foundry_wither_skeleton_3.nbt` | Phantom carrying Wither Skeleton | Flying mount mechanics; preserve before general phantom scaling |
+| Mechanical Nest, `mechanical_nest_spawner_4.nbt` | Ravager carrying Creeper | Preserve explosive mounted mechanic; don't expand creeper/ravager DD globally from this one example |
+
+Other passenger entities include potions, fireworks and lightning effects. They are **not ordinary hostile mob targets**. No change to the 17-vanilla-mob DD candidate regex is authorized; Apex/boss and Apotheosis interactions remain outside this passive source scan.
 ## Priorities for the next automated pass
 
 1. **DONE:** Verify IDAS custom `integrated_api` pool-element serialization and cross-check its actual start-pool linked spawner/entity source IDs.
