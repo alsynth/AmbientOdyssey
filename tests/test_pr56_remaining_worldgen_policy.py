@@ -100,11 +100,33 @@ class PR56NativeWorldgenSourcePolicy(unittest.TestCase):
                             for r in rows))
         high=[r for r in rows if r["review_priority"]==
               "PRIORITY_COMBAT_UNRESOLVED_BIOME_TAG_SOURCE"]
-        self.assertEqual({r["structure_id"] for r in high},
-            {"friendsandfoes:citadel","mtr:badlands_temple"})
+        self.assertEqual(high, [])
         sourced=[r for r in rows if r["review_priority"]==
                 "COMBAT_NATIVE_SOURCE_TAG_TRACED__NO_AUTO_REPAIR"]
-        self.assertEqual(len(sourced),16)
+        self.assertEqual(len(sourced),17)
+        nether=[r for r in rows if r["review_priority"]==
+                "COMBAT_NETHER_SEPARATE_PREGEN_GATE"]
+        self.assertEqual(len(nether),8)
+        self.assertIn("friendsandfoes:citadel",{r["structure_id"] for r in nether})
+
+
+    def test_last_two_combat_sites_are_nethernative_and_badlands_native(self):
+        path=ROOT/"docs/balance/DD_FOUR_PROVIDER_COMBAT_BIOME_SOURCE_20261014.json"
+        report=json.loads(path.read_text(encoding="utf-8"))
+        ff=report["providers"]["friendsandfoes"]
+        mtr=report["providers"]["mtr"]
+        self.assertEqual(ff["jar_sha1"],"3967c4e91662e3997318329b13af19816968b56a")
+        self.assertEqual(mtr["jar_sha1"],"d4078318221c74265156f470b1ac321f14069b34")
+        ff_site=ff["targets"]["friendsandfoes:citadel"]
+        self.assertEqual(ff_site["native_structure_definition"]["biomes"],
+                         "#friendsandfoes:has_structure/citadel")
+        ff_values=ff_site["source_selector_tags"]["friendsandfoes:has_structure/citadel"]["contributing_sources"][0]["values"]
+        self.assertEqual(set(ff_values),{"#minecraft:is_nether","#c:in_nether"})
+        temple=mtr["targets"]["mtr:badlands_temple"]
+        temple_values=temple["source_selector_tags"]["mtr:has_structure/badlands_biomes"]["contributing_sources"][0]["values"]
+        self.assertEqual(set(temple_values),{"#minecraft:is_badlands","#c:is_badlands"})
+        self.assertFalse(ff_site["runtime_generation_verified"])
+        self.assertFalse(temple["runtime_generation_verified"])
 
 
 if __name__=="__main__":
