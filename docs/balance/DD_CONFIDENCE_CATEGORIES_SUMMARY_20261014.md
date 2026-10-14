@@ -68,3 +68,8 @@ The shortlist has high confidence in **structure archetype and broad proposed pr
 - The 26 native static-spawner-evidence sites formerly marked `OWNER_HOLD` are now explicitly **Tier 0 approved**. They still may contain mobs; do not remove or suppress original mob spawners.
 - `dungeoncrawl:dungeon`: overall owner-approved **Tier 4**, with an upper-floor **Tier 2** exception requested. Floor-aware implementation is not present in native DD config; see `DD_DUNGEON_CRAWL_FLOOR_TIER_2_TO_4_PLAN_20261014.md`.
 - No deployment, native spawner edits or worldgen changes have been made.
+
+
+## Final Dungeon Crawl decision (supersedes prior Tier4 draft)
+
+- `dungeoncrawl:dungeon`: **Tier 3 for the entire structure**, no floor-specific scaling or addon requested. Tier4 overall/upper Tier2 proposal cancelled by user on 2026-10-14. Catalogue only; no live DD config deployed.
