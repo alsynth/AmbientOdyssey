@@ -2,6 +2,24 @@
 
 **Status: source-level risk screen + INERT experimental datapack ONLY.** No active `release_030`/Paxi/structure_set/DD/worldgen payload was changed. The older Test5 source/catalogue and AO curated-roster documents may not equal the effective PR50 338-mod profile; validate deployment precedence and dynamic biome availability before any live change.
 
+## Wider Test5 structure triage — corrected 1,506-row CSV parse
+
+[All 705 zero-curated-overlap rows](DD_HISTORICAL_705_ZERO_CURATED_BIOME_TRIAGE_20261014.csv) were regenerated directly from the historical `STRUCTURE_REGISTRY_CATALOG.csv` using strict CSV quoting/18-column validation: **1,506 source structure rows, 705 with `curated_ow_test5_count=0`**. Zero is a *curated modded-biome overlap* count, not evidence of an inactive structure, particularly in Nether/End or on existing vanilla biomes. These numbers are historical Test5, not live PR50 generation.
+
+Review lane | Source rows
+:-- | --:
+Explicit *direct* Biolith-replaced vanilla selector (**forest firewatch**) | **1**
+Zero Nova collection tag overlap (**birch, cherry, savanna firewatch**) | **3**
+Vanilla swamp/mangrove still possible (tower variants) | **2**
+Intentionally disabled by AO D&T curation (**jungle village, birch graveyard**) | **2**
+Overworld historical-zero cases requiring exact selector/vanilla checks | **7**
+Unlinked historical set (may be intentionally disabled) | **9**
+Unresolved effective tags in old catalogue | **149**
+All other zero modded-curated overlap cases, not broken by default | **532**
+**Total** | **705**
+
+**Do not automatically restore any removed biome.** The P1 label on four tower variants only authorizes follow-up or *inactive staged proposals*, never generation edits. The 149 unresolved-tag cases are grouped for resource-precedence checks, not 149 confirmed breaks. Each CSV row explicitly carries `authorized_to_change_worldgen=NO` and `runtime_generation_verified=NO__HISTORIC_ONLY`.
+
 ## Verified source boundaries
 - Pinned prior source mod: `dungeons-and-taverns-v4.4.4 [NeoForge].jar`. Historical `STRUCTURE_REGISTRY_CATALOG.csv` records all 9 D&T `nova_structures:firewatch_tower_*` definitions and the shared `nova_structures:firewatch_towers` structure set. Historical `STRUCTURE_SET_CATALOG.csv`: **spacing 50, separation 15**, nine equally weighted variants; exclusion 10 chunks around the village set. **Do not change** this.
 - AO curated snapshot `docs/audits/CURRENT_BIOME_ROSTER.json`: 42 enumerated modded biome IDs across listed providers (NOT all necessarily Overworld or proof of all possible biomes). `docs/audits/CURRENT_BIOLITH_PLACEMENT.json` explicitly replaces most **forest, birch, savanna, jungle** candidates; it **does not list `minecraft:swamp` or `minecraft:mangrove_swamp` as replacement targets**. Therefore historic Test5 zero-curated-biome hits for swamp and mangrove are **not evidence they are missing**.
