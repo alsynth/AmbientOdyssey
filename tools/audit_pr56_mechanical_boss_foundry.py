@@ -251,7 +251,7 @@ def audit(jar):
                 native_source_pool=row.get("source_pool")
                 if native_source_pool:
                     overrides=[]
-                    for pack in sorted(paxi.iterdir()) if paxi.exists() else []:
+                    for pack in (sorted(paxi.iterdir()) if paxi.exists() else []):
                         candidate=pack/native_source_pool
                         if not pack.is_dir() or not candidate.is_file():continue
                         definition=json.loads(candidate.read_text(encoding="utf-8"))
