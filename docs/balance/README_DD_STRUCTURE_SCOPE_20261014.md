@@ -75,3 +75,48 @@ Totals above represent **historical native IDs**, not unique balance jobs and no
 **25 of 53 current DD zone mappings are Tier 0 or 1 and have no entity-attribute effects.** They can be **omitted from a future v4 candidate** without changing the combat-buff intent; leave the actual PR #45/PR #50 config untouched until its own regression/rollback checks pass. There are currently **28 Tier 2–6 attribute-buff rules**, not 53 hard combat rules. One of the T1 legacy site IDs is `dungeons_arise:small_blimp`, previously disabled from natural generation; removing a no-op rule does not re-enable the structure.
 
 When implementing v4, preserve the same qualified T2–6 whitelist and ensure no removed T0–1 record was previously used for an unintended location fallback. Do not treat the arithmetic reduction as gameplay-runtime verification.
+
+## Second catalogue pass — direct template indicator audit (14 Oct)
+
+**Source evidence added, NOT Minecraft runtime validation.** Joined the 1,219-row native-ID scope ledger with PR45's **2,805 NBT indicator template rows** and 130 `ENCOUNTER_CONTROL_GAPS` rows (28 selected pilots + 102 held), without modifying native resource files. `ENCOUNTER_NBT.csv` is an **indicator-only census**, not a list of all structure templates. A missing record can mean *not scanned / no indicator / native code-based spawn*, never evidence of no combat.
+
+### New files
+- [NBT joined native-ID scope ledger](DD_NATIVE_NBT_EVIDENCE_20261014.csv): 1,219 rows with resource-path association and sample template; zero DD config modifications.
+- [Prioritized linked structure review](DD_NBT_COMBAT_REVIEW_QUEUE_20261014.csv): 70 records with positive NBT spawner/trial indicators. Based on names/path heuristics only, not actual reachable game assembly.
+- [All PR45 held encounter candidates](DD_HELD_ENCOUNTER_EVIDENCE_20261014.csv): 102 held review records; 24 have traced NBT spawner/trial markers, **not necessarily DD-compatible vanilla entities**.
+
+### Quantified findings
+- 121 structure IDs have at least one path-associated NBT indicator template; 70 have NBT mob spawner or trial spawner blocks. *Templates may repeat across versioned folders and may not be reachable; counts must not be interpreted as spawned enemies.*
+- **8 formerly name-screened low-priority exploration structures have template spawner/trial evidence** and are now flagged for an encounter review. This is a **review upgrade**, **not a tier assignment**.
+- 18 previously uncertain/unmapped IDs show similar positive indicators.
+- 2 T0–1 structures have templates with spawners. They remain **excluded from DD** by owner policy, but should not be described as purely peaceful.
+- 42 already mapped T2–6 IDs have path-associated template encounter evidence. These are not automatically eligible for DD attribute buffs, since modded mobs, projectile damage, and special scripts often bypass its vanilla allowlist.
+
+**Highest-priority additions from low-priority or unknown scope:**
+
+| Native structure | Template spawners | Trial spawners | Association |
+|---|---:|---:|---|
+| `mns:large_house_1` | 21 | 0 | source_nbt_path_correspondence |
+| `mss:red_sand` | 20 | 0 | source_nbt_path_correspondence |
+| `idas:collectors_museum` | 18 | 0 | source_nbt_path_correspondence |
+| `mss:taiga` | 18 | 0 | source_nbt_path_correspondence |
+| `idas:tinkers_workshop` | 10 | 0 | source_nbt_path_correspondence |
+| `mns:medium_house` | 8 | 0 | prefix_template_path_candidate |
+| `mss:small_deepslate_house` | 8 | 0 | source_nbt_path_correspondence |
+| `mvs:prismarine_house_1` | 8 | 0 | source_nbt_path_correspondence |
+| `mss:jungle` | 8 | 0 | source_nbt_path_correspondence |
+| `mss:muddy_water_hole` | 7 | 0 | source_nbt_path_correspondence |
+| `idas:abandonedhouse` | 6 | 0 | source_nbt_path_correspondence |
+| `mss:leaf_hollow` | 6 | 0 | prefix_template_path_candidate |
+| `mss:mangrove` | 6 | 0 | source_nbt_path_correspondence |
+| `mss:mushroom` | 6 | 0 | source_nbt_path_correspondence |
+
+**Important limitations and guards**:
+1. Resource joining is **conservative and limited** to Moog's Voyager/Nether/End/Soaring, IDAS, Dungeons & Taverns and Pasterdream, with exact filename/namespace/path conventions; native provider name collisions, replaced templates and code-spawned entities remain unresolved. For conflicting prefixes (e.g. `mega_ship` vs `mega_ship_crashed` or `medium_house` vs `medium_house_2`), longer matching ID wins; ambiguous associations are marked and excluded from counted evidence.
+2. Template `equipped_mob_or_spawner_indicators` can be **ordinary equipment marker strings**, not proof an enemy actually spawns. **Positive mob-spawner/trial-spawner block counts** are stronger evidence, but no active encounter claim.
+3. CTOV and Towns & Towers cannot be certified peaceful by a lack of NBT spawners; outposts commonly rely on jigsaw pools or mod mob-spawn mechanics. Reconcile the actual effective start pools and code.
+4. Sky/Ice Arena, Pasterdream, Cataclysm and some boss structures have scripted or native mob spawning: no NBT indicator may exist even if an encounter is dangerous.
+5. Exact installed PR50 roster still requires dedicated-server and enabled-datapack verification before making changes.
+6. The existing 25 Tier 0–1 DD no-op zone entries can be removed in a *future* v4 candidate; this source pass leaves current PR45/50 configs untouched.
+
+**Next work:** manually map the 26 upgraded/newly evidenced candidate IDs to native entity IDs, identify modded IDs unavailable in the PR50 registry, validate whether each template is reachable from the structure's actual pool, and split DD-compatible vanilla enemies from native-special mobs. Continue with the 24 existing held PR45 structures that contain spawner/trial evidence and test elite stacking before any config rollout.
