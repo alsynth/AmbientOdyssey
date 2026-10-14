@@ -1,15 +1,18 @@
 {
   "method": "PINNED_NATIVE_JAR_JIGSAW_POOL_AND_NBT_TEMPLATE_SOURCE_SCAN",
-  "source_ci_run_id": 38614859308,
-  "source_ci_job_id": 116027224224,
+  "source_ci_run_id": 38615834198,
+  "source_ci_job_id": 116030545425,
   "DD_candidate_filter": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$",
   "summary": {
     "structures_scanned": 10,
     "structures_in_53_zone_candidate": 7,
     "DD_zone_structures_with_positive_source_spawner_evidence": 6,
     "DD_zone_structures_with_complete_scanned_native_graph": 4,
-    "scanned_template_spawner_occurrences": 45,
-    "not_runtime_count_or_guaranteed_spawn": true
+    "scanned_template_spawner_occurrences": 69,
+    "not_runtime_count_or_guaranteed_spawn": true,
+    "structures_with_positive_source_spawner_evidence": 9,
+    "structures_with_complete_native_graph": 7,
+    "newly_connected_idas_spawner_occurrences": 24
   },
   "sites": [
     {
@@ -221,42 +224,64 @@
       "candidate_DD_zone": false,
       "planned_tier": null,
       "dimension": null,
-      "native_jigsaw_pools_visited": 1,
-      "native_templates_inspected": 0,
-      "native_source_spawner_block_occurrences": 0,
+      "native_jigsaw_pools_visited": 5,
+      "native_templates_inspected": 5,
+      "native_source_spawner_block_occurrences": 18,
       "native_source_trial_spawner_block_occurrences": 0,
-      "source_entity_type_ids": [],
-      "source_DD_entity_matcher_matches": [],
-      "source_DD_entity_matcher_misses": [],
-      "source_graph_complete": false,
-      "unresolved_native_graph_errors": [
-        "NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS"
+      "source_entity_type_ids": [
+        "alexsmobs:anaconda",
+        "minecraft:blaze",
+        "minecraft:cave_spider",
+        "minecraft:husk",
+        "minecraft:spider",
+        "minecraft:stray",
+        "quark:forgotten",
+        "quark:wraith"
       ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:blaze",
+        "minecraft:cave_spider",
+        "minecraft:husk",
+        "minecraft:spider",
+        "minecraft:stray"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "alexsmobs:anaconda",
+        "quark:forgotten",
+        "quark:wraith"
+      ],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
       "source_evidence_not_live_spawner_proof": true,
       "source_template_alternatives_may_not_all_generate": true,
       "eligibility_for_live_DD": "NO",
-      "high_priority_next_action": "IDAS_CUSTOM_NATIVE_POOL_ELEMENT_FORMAT_NOT_RESOLVED"
+      "high_priority_next_action": "SOURCE_POSITIVE_INTEGRATED_API_NATIVE_POOLS__CHECK_MODDED_MOBS_AND_ELITE_STACKING"
     },
     {
       "structure_id": "idas:necromancers_spire",
       "candidate_DD_zone": false,
       "planned_tier": null,
       "dimension": null,
-      "native_jigsaw_pools_visited": 1,
-      "native_templates_inspected": 0,
-      "native_source_spawner_block_occurrences": 0,
+      "native_jigsaw_pools_visited": 4,
+      "native_templates_inspected": 4,
+      "native_source_spawner_block_occurrences": 4,
       "native_source_trial_spawner_block_occurrences": 0,
-      "source_entity_type_ids": [],
-      "source_DD_entity_matcher_matches": [],
-      "source_DD_entity_matcher_misses": [],
-      "source_graph_complete": false,
-      "unresolved_native_graph_errors": [
-        "NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS"
+      "source_entity_type_ids": [
+        "alexsmobs:soul_vulture",
+        "minecraft:skeleton"
       ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:skeleton"
+      ],
+      "source_DD_entity_matcher_misses": [
+        "alexsmobs:soul_vulture"
+      ],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
       "source_evidence_not_live_spawner_proof": true,
       "source_template_alternatives_may_not_all_generate": true,
       "eligibility_for_live_DD": "NO",
-      "high_priority_next_action": "IDAS_CUSTOM_NATIVE_POOL_ELEMENT_FORMAT_NOT_RESOLVED"
+      "high_priority_next_action": "SOURCE_POSITIVE_INTEGRATED_API_NATIVE_POOLS__CHECK_MODDED_MOBS_AND_ELITE_STACKING"
     },
     {
       "structure_id": "idas:pillager_camp",
@@ -264,20 +289,27 @@
       "planned_tier": null,
       "dimension": null,
       "native_jigsaw_pools_visited": 1,
-      "native_templates_inspected": 0,
-      "native_source_spawner_block_occurrences": 0,
+      "native_templates_inspected": 1,
+      "native_source_spawner_block_occurrences": 2,
       "native_source_trial_spawner_block_occurrences": 0,
-      "source_entity_type_ids": [],
-      "source_DD_entity_matcher_matches": [],
-      "source_DD_entity_matcher_misses": [],
-      "source_graph_complete": false,
-      "unresolved_native_graph_errors": [
-        "NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS"
+      "source_entity_type_ids": [
+        "minecraft:pillager"
       ],
+      "source_DD_entity_matcher_matches": [
+        "minecraft:pillager"
+      ],
+      "source_DD_entity_matcher_misses": [],
+      "source_graph_complete": true,
+      "unresolved_native_graph_errors": [],
       "source_evidence_not_live_spawner_proof": true,
       "source_template_alternatives_may_not_all_generate": true,
       "eligibility_for_live_DD": "NO",
-      "high_priority_next_action": "IDAS_CUSTOM_NATIVE_POOL_ELEMENT_FORMAT_NOT_RESOLVED"
+      "high_priority_next_action": "SOURCE_POSITIVE_INTEGRATED_API_NATIVE_POOLS__CHECK_MODDED_MOBS_AND_ELITE_STACKING"
     }
-  ]
+  ],
+  "mod_namespace_provider_presence_in_PR50_filename_roster": {
+    "alexsmobs": "alexsmobs-1.22.9.jar",
+    "quark": "Quark-4.1-487.jar",
+    "meaning": "Provider JAR filename present in PR50 pinned import, not proof that each exact entity is registered at runtime."
+  }
 }
