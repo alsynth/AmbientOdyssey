@@ -65,7 +65,7 @@ def build(base, starter, sigils, output, campaign=None):
         for name in ('dev/ambientodyssey/campaign/AOCampaign.class', 'dev/ambientodyssey/campaign/RageGloveGate.class',
                      'dev/ambientodyssey/campaign/BossGems.class', 'META-INF/neoforge.mods.toml'):
             if name not in campaign_members: raise ValueError('Incomplete campaign JAR: ' + name)
-        loot.checked_add(payload, loot.MOD_ROOT + 'ao-campaign-0.1.0-experimental.jar', campaign.read_bytes())
+        loot.checked_add(payload, loot.MOD_ROOT + campaign.name, campaign.read_bytes())
         overlay = ROOT / 'release_030/experimental_overlays/v050/overrides'
         for p in sorted(overlay.rglob('*')):
             if p.is_file():

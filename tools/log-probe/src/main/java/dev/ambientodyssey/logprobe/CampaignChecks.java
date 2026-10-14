@@ -30,8 +30,10 @@ import net.minecraft.world.phys.Vec3;
 
 /** Synthetic full-pack engine checks. This is not a natural boss fight or multiplayer certification. */
 public final class CampaignChecks {
- private static void check(boolean pass,String message){if(!pass)throw new IllegalStateException(message);}
+ private static final java.util.List<String> failures=new java.util.ArrayList<>();
+ private static void check(boolean pass,String message){if(!pass){failures.add(message);com.mojang.logging.LogUtils.getLogger().error("AO_CAMPAIGN_CHECK_FAIL: {}",message);}}
  public static void run(MinecraftServer server){
+  failures.clear();
   var player=server.getPlayerList().getPlayers().getFirst();
   var level=player.serverLevel();
   for(String id:AOCampaign.BOSSES.keySet()) check(BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id)),"Missing boss registry: "+id);
@@ -76,6 +78,7 @@ public final class CampaignChecks {
    var all=(java.util.List<?>)manager.getMethod("getAllQuests").invoke(quests);
    check(all.size()==153,"Native Questlog loaded "+all.size()+" rather than 153 quests");
   }catch(ReflectiveOperationException e){throw new IllegalStateException("Questlog native parse check failed",e);}
+  if(!failures.isEmpty())throw new IllegalStateException(String.join("; ",failures));
   com.mojang.logging.LogUtils.getLogger().info("AO_CAMPAIGN_SYNTHETIC_PASS: boss/effect registries, native gem grades, r19 Sigil alias, loot filter, guarded held-item preservation/one-claim and 153 native quests");
  }
 }

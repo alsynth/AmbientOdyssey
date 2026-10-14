@@ -15,3 +15,11 @@ Packaging: 338 unchanged CF references, 10 custom JARs / expected 341 physical m
 Pre-upload evidence: base SHA and ZIP CRC/member readback; campaign compilation; corrected Sigil native tests pass after fixing missing template setup; existing 52-quest and 32-manual source checks pass. Combined startup, loot order, gameplay, UI, multiplayer and persistence NOT TESTED at upload.
 
 Open implementation: third End boss / Geburah undecided; T6 alternate equivalence unproven; contribution-based party credit, five-class structure chest remapping, optional realm campaigns, measured boss attacks/scaling and Simply Swords damage proposals unfinished. Broad deferred-design request is partially implemented, not complete. Do not mark production ready.
+
+## R2 after first native rehearsal
+
+The first uploaded ZIP loaded and joined a disposable world, parsed 153 native quests, and shut down with exit 0. The synthetic probe failed on the incorrect `cataclysm:leviathan` ID. It did not complete the remaining checks. Native chapter loading reports 21 including Questlog's generated/default chapter, versus 20 configured chapter files.
+
+Source-verified correction: `cataclysm:the_leviathan`. Added native Remnant 2.7.0 `remnant_bosses:ossukage`, `kotsukage` and `umbrakar` milestone routes; campaign addon bumped to 0.1.1. R2 is a separate ZIP, uploaded before its tests with explicit owner approval for corrected uploads to the same unpublished release.
+
+R2: 154480384 bytes; SHA256 `8cfb456033f4b79d27862750a15f0a109379088cd0ca4f5a0d7ba511e1930b3a`. Runtime status pending.

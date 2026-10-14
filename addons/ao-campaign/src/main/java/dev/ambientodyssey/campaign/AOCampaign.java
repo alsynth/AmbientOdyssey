@@ -35,9 +35,11 @@ public final class AOCampaign {
         Map.entry("bosses_of_mass_destruction:lich", 5), Map.entry("bosses_of_mass_destruction:void_blossom", 5),
         Map.entry("irons_spellbooks:dead_king", 6), Map.entry("cataclysm:kobolediator", 6),
         Map.entry("cataclysm:netherite_monstrosity", 7), Map.entry("cataclysm:ignis", 7),
-        Map.entry("cataclysm:leviathan", 7), Map.entry("cataclysm:maledictus", 7),
+        Map.entry("cataclysm:the_leviathan", 7), Map.entry("cataclysm:maledictus", 7),
         Map.entry("cataclysm:ender_guardian", 7), Map.entry("cataclysm:ancient_remnant", 7),
         Map.entry("fdbosses:chesed", 7), Map.entry("fdbosses:malkuth", 7),
+        Map.entry("remnant_bosses:ossukage", 7), Map.entry("remnant_bosses:kotsukage", 7),
+        Map.entry("remnant_bosses:umbrakar", 8),
         Map.entry("archaion:last_of_deepslate", 8),
         Map.entry("irons_spellbooks:fire_boss", 9), Map.entry("cataclysm:scylla", 9));
     private static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT =
