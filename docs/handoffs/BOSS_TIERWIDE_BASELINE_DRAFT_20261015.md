@@ -30,3 +30,11 @@
 6. Record all changed keys, before/after values, hashes, and rollback commands before releasing a test build.
 
 **This document deliberately does not claim an effective playable patch:** tier multipliers alone are not safe to transcribe into incompatible mod config schemas, and the owner will test tiers before approving final difficulty.
+
+## Owner superseding multipliers — 15 October 2026
+
+**This section supersedes all earlier tier-wide proposals in this document.** Owner-selected targets: **T6 HP x10, ordinary attack x3; T7 HP x10, attack x6; T8 HP x10, attack x10; T9 HP x10, attack x10**. They are playtest targets, not implemented native config values or in-game validated.
+
+**Critical implementation gate:** the documented effective max-health cap at 1024 prevents native attribute-based x10 HP on bosses with baseline HP greater than 102.4. Do not silently clamp the target and describe it as x10; retain both the uncapped x10 target and achieved actual health separately. Before implementation, verify a reliable workaround using boss addon mechanics or multi-phase/health replacement rather than blindly writing values above cap. For hit-count bosses (Chesed, Malkuth, and Geburah pending tier), do NOT multiply visible HP by x10 as if it represented survival time; handle hit-count gates separately. Fixed-damage attacks and special abilities need distinct treatment from vanilla attack attributes; actual T6/7/8/9 damage will not necessarily become x3/x6/x10/x10 without source-specific changes. Health caps and special-mechanic blocks are owner review checkpoints. Preserve Brutal Bosses independent 4x HP/3x damage decision, not these tier-wide boss targets.
+
+**Status:** planning only. No native boss config, datapack, addon or production file changed by this update.
