@@ -24,6 +24,8 @@ on:
       - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/audit_pr56_dd_zone_coverage.py'
       - 'tools/audit_pr56_native_template_spawners.py'
+      - 'tools/audit_pr56_mechanical_boss_foundry.py'
+      - 'tests/test_pr56_mechanical_boss_source.py'
       - 'tools/pr56_stream_nbt.py'
       - 'tests/test_pr56_stream_nbt.py'
       - 'tests/test_pr56_native_spawner_parser.py'
@@ -54,6 +56,8 @@ on:
       - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/audit_pr56_dd_zone_coverage.py'
       - 'tools/audit_pr56_native_template_spawners.py'
+      - 'tools/audit_pr56_mechanical_boss_foundry.py'
+      - 'tests/test_pr56_mechanical_boss_source.py'
       - 'tools/pr56_stream_nbt.py'
       - 'tests/test_pr56_stream_nbt.py'
       - 'tests/test_pr56_native_spawner_parser.py'
@@ -299,6 +303,18 @@ jobs:
           print(json.dumps(q,sort_keys=True))
           print('---END COMPACT NBT EVIDENCE---')
           PY
+      - name: Source-only mechanical boss signal / Foundry reference audit
+        run: |
+          python tools/audit_pr56_mechanical_boss_foundry.py \
+            --jar /tmp/pr56-dungeons-arise-2168.jar \
+            --out /tmp/pr56-mechanical-boss-foundry-source.json
+          echo 'No native boss identity inferred from a mere structure label'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-mechanical-boss-foundry-source-json
+          path: /tmp/pr56-mechanical-boss-foundry-source.json
+          retention-days: 14
       - uses: actions/upload-artifact@v4
         if: success()
         with:
