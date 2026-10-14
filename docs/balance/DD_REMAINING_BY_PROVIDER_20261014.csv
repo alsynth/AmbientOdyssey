@@ -1,8 +1,8 @@
 source_provider,remaining_unranked,high_priority_open,owner_held,source_scoped_runtime_query_true,top_review_lane,next_action
 pasterdream-0.9.6.jar,87,0,0,0,P2_PASTERDREAM_DIMENSION_SOURCE_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-dungeons-and-taverns-v4.4.4 [NeoForge].jar,61,12,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-idas-1.13.7+1.21.1-neoforge.jar,59,1,7,0,P1_STATIC_NBT_SPAWNER_TIER_UNRANKED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-MoogsVoyagerStructures-universal-1.21-5.1.3.jar,36,0,4,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+dungeons-and-taverns-v4.4.4 [NeoForge].jar,36,12,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+idas-1.13.7+1.21.1-neoforge.jar,49,1,7,0,P1_STATIC_NBT_SPAWNER_TIER_UNRANKED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+MoogsVoyagerStructures-universal-1.21-5.1.3.jar,22,0,4,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 MoogsSoaringStructures-universal-1.21-2.2.0.jar,12,0,9,1,P2_PROVIDER_FAMILY_PROBE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 formationsoverworld-1.0.5c-mc1.21+.jar,13,2,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 totw_modded-neoforge-1.21-1.0.9.jar,22,0,0,0,P2_PROVIDER_FAMILY_PROBE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
@@ -11,19 +11,19 @@ MoogsNetherStructures-universal-1.21-3.1.1.jar,16,0,6,1,P2_SCENERY_OR_SETTLEMENT
 YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar,13,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 Structory_26.2_v1.3.7.jar,11,2,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 graveyard-2.6.2 NeoForge 1.21.1.jar,7,2,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-archaeology_ruins-1.0.0-neoforge-1.21.1.jar,8,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-floating_islands-1.5.3-1.21.1-neoforge.jar,4,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar,8,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+archaeology_ruins-1.0.0-neoforge-1.21.1.jar,5,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+floating_islands-1.5.3-1.21.1-neoforge.jar,3,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar,6,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 FarmersStructures-1.0.6-1.21.1_neoforge.jar,8,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 alexscaves-2.0.3.jar,4,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 MoogsEndStructures-universal-1.21-2.1.1.jar,1,0,0,0,P2_PROVIDER_FAMILY_PROBE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-lukis-grand-capitals-1.1.3.jar,5,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+lukis-grand-capitals-1.1.3.jar,1,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 underwater_village-1.0.2-neoforge-1.21.1.jar,1,0,0,0,P2_PROVIDER_FAMILY_PROBE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 Philips-Ruins1.21.1-2.0-NeoForge.jar,1,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 explore_ruins_aether-1.0.0-neoforge-1.21.1.jar,4,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 NOT_PRESENT_IN_HISTORICAL_NATIVE_JAR_LIST,3,3,0,3,P0_NETHER_WORLDGEN_FREEZE_GATE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 IMM v1.3.2-1.21.1.jar | mowziesmobs-1.21.1-1.8.2.jar,3,1,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar,3,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar,1,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 integrated_villages-1.3.3+1.21.1-neoforge.jar,3,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 t_and_t-fabric-neoforge-1.13.11.jar,3,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 ars_nouveau-1.21.1-5.13.3.jar,3,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
@@ -38,6 +38,6 @@ DungeonCrawl-NeoForge-1.21-2.3.17.jar,1,1,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,G
 fdbosses-3.2-1.21.1.jar,1,1,0,1,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 MoogsTemplesReimagined-universal-1.21-2.0.4.jar,1,1,0,0,P1_COMBAT_DUNGEON_OR_BOSS_REVIEW,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 enigmaticlegacyplus-1.21.1-1.1.2.jar,1,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
-lukis-grand-capitals-1.1.3.jar | dungeons-and-taverns-v4.4.4 [NeoForge].jar,1,0,0,0,P2_SCENERY_OR_SETTLEMENT_UNVERIFIED,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
+lukis-grand-capitals-1.1.3.jar | dungeons-and-taverns-v4.4.4 [NeoForge].jar,0,0,0,0,NONE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 aether-1.21.1-1.5.10-neoforge.jar,1,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
 SkyVillages-1.0.6-1.21.x-neoforge-release.jar,1,0,0,0,P2_UNKNOWN_NO_TIER_EVIDENCE,Get source/registry and encounter evidence; owner deferred low tiers remain unranked
