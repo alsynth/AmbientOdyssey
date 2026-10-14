@@ -36,6 +36,7 @@ PINS = {
     },
 }
 ROSTER = Path("docs/audits/CURRENT_BIOME_ROSTER.json")
+PAXI_ROOT = Path("release_030/overrides/config/paxi/datapacks")
 
 def digest(p):
     h = hashlib.sha1()
@@ -115,6 +116,67 @@ def inspect(label,jar,curated):
             p="data/"+target.split(":")[0]+"/worldgen/structure/"+target.split(":")[1]+".json"
             if p in zf.namelist():
                 structures[target]={"source":p,"source_content":maybe_json(zf,p)}
+    # This directory scan records actual AO Paxi source resources that can
+    # win over the mod-native definitions. It is NOT a runtime resolved
+    # datapack priority/effective registry assertion.
+    resource_interest = {
+        "adventuredungeons": (
+            "data/minecraft/tags/worldgen/biome/has_structure/pillager_outpost.json",
+            "data/adventuredungeons/worldgen/structure/underground_camp.json",
+            "data/adventuredungeons/worldgen/structure_set/underground_camp.json",
+        ),
+        "lukis": (
+            "data/minecraft/tags/worldgen/biome/has_structure/village_plains.json",
+            "data/minecraft/tags/worldgen/biome/has_structure/village_snowy.json",
+            "data/minecraft/worldgen/structure/village_plains.json",
+            "data/minecraft/worldgen/structure/village_snowy.json",
+            "data/minecraft/worldgen/structure_set/villages.json",
+        ),
+        "pasterdream": (
+            "data/pasterdream/worldgen/structure/fourleaf_clover_plant.json",
+            "data/pasterdream/worldgen/structure/picnic_basket_structure.json",
+            "data/pasterdream/worldgen/structure_set/fourleaf_clover_plant.json",
+            "data/pasterdream/worldgen/structure_set/picnic_basket_structure_set.json",
+            "data/c/tags/worldgen/biome/plains.json",
+            "data/c/tags/worldgen/biome/is_plains.json",
+        ),
+    }
+    ao_paxi_sources={}
+    if PAXI_ROOT.is_dir():
+        for pack in sorted(PAXI_ROOT.iterdir()):
+            if not pack.is_dir():continue
+            for relative in resource_interest[label]:
+                candidate=pack/relative
+                if candidate.is_file():
+                    ao_paxi_sources.setdefault(relative,[]).append({
+                        "pack":pack.name, "json":json.loads(candidate.read_text(encoding="utf-8"))
+                    })
+    pasterdream_native_named_biomes={}
+    if label=="pasterdream":
+        picnic=structures.get("pasterdream:picnic_basket_structure",{})
+        biomes=picnic.get("source_content",{}).get("biomes",[])
+        for biome in biomes if isinstance(biomes,list) else []:
+            if not isinstance(biome,str) or not biome.startswith("pasterdream:"):
+                continue
+            src="data/pasterdream/worldgen/biome/"+biome.split(":",1)[1]+".json"
+            pasterdream_native_named_biomes[biome]={
+                "native_biome_json_path":src,
+                "native_biome_json_present":src in allnames,
+                "runtime_dimension_and_registration_verified":False,
+            }
+    native_vs_ao_village_set=None
+    if label=="lukis":
+        native=sets.get("minecraft:villages",{}).get("source_content")
+        override_list=ao_paxi_sources.get("data/minecraft/worldgen/structure_set/villages.json",[])
+        if native and override_list:
+            native_vs_ao_village_set={
+                "native_placement":native.get("placement"),
+                "AO_Paxi_source_overrides":[{"pack":p["pack"],
+                    "placement":p["json"].get("placement"),
+                    "structures":p["json"].get("structures")} for p in override_list],
+                "profile_runtime_resource_winner_verified":False,
+                "preserve_existing_AO_override_no_auto_reversion":True,
+            }
     return {
         "verified_sha1":sha,
         "pin":pin,
@@ -124,6 +186,9 @@ def inspect(label,jar,curated):
         "selected_sets":sets,
         "selected_biome_tags":tags,
         "selected_dimension_or_biome_assets":interesting,
+        "AO_Paxi_source_override_candidates":ao_paxi_sources,
+        "pasterdream_referenced_native_biome_files":pasterdream_native_named_biomes,
+        "native_vs_AO_village_structure_set":native_vs_ao_village_set,
         "invalid_native_json":invalid,
         "target_ids_missing_exact_native_structure_json":[k for k in pin["targets"] if k not in structures],
         "curated_modded_biome_count":len(curated),
