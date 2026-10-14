@@ -64,6 +64,32 @@ class OwnerBossCentricGuard(unittest.TestCase):
         self.assertEqual({x["source_health"] for x in foundry["named_native_spawner_entity_types"]},
                          {50,55,80})
         self.assertFalse(foundry["unresolved_jigsaw_pool_reference"]["change_authorized"])
+    def test_AO_Paxi_already_supplies_both_missing_native_pool_aliases(self):
+        root=ROOT/"release_030/overrides/config/paxi/datapacks/ao_structure_repairs"
+        cases={
+            "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridor_gears.json":
+                "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+            "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decoration.json":
+                "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+        }
+        for rel,name in cases.items():
+            with self.subTest(name=name):
+                file=root/rel
+                self.assertTrue(file.is_file())
+                j=json.loads(file.read_text(encoding="utf-8"))
+                self.assertEqual(j["name"],name)
+                self.assertGreater(len(j["elements"]),0)
+                self.assertTrue(all(
+                    "location" in e.get("element",{}) and e.get("weight",0)>0
+                    for e in j["elements"]))
+        policy=ROOT/"docs/balance/DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json"
+        documented=json.loads(policy.read_text(encoding="utf-8"))
+        self.assertTrue(documented["foundry"]["unresolved_jigsaw_pool_reference"][
+            "checked_in_AO_Paxi_alias_present"])
+        decoration=next(x for x in documented["mechanical_nest"]["native_resource_reference_gaps"]
+                        if x["ref"]=="dungeons_arise:mechanical_nest/mechanical_nest_decoration")
+        self.assertTrue(decoration["checked_in_AO_Paxi_alias_present"])
+
     def test_foundry_missing_native_reference_is_not_fixed_by_guess(self):
         p=json.loads(POLICY.read_text(encoding="utf-8"))
         foundry=next(r for r in p["rules"] if r["structure_id"]=="dungeons_arise:foundry")
