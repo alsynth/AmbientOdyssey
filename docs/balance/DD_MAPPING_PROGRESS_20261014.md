@@ -113,3 +113,17 @@ Separate user-requested reference: `AO_APOTHEOSIS_BASE_VS_PR53_RARITY_20261014.m
 - Full 1,240-ID set is **historical 1,219-ID union + 21 scoped runtime positives**; not an exhaustive live registry enumeration. Some 107 historical IDs are from absent JARs and 3 AO clone IDs remain runtime-unverified. **Do not say 100% of every live structure without enumerating the active registry.**
 - Owner holds: **26 native positive-spawner IDs** have guessed numeric tiers solely to satisfy 100% first-pass categorization, but remain **OWNER_HOLD_NO_DEPLOY**. 15 additional source-template family holds are **not registered IDs** and are not artificially added to denominator.
 - All previously assigned 865 numeric tiers remain unchanged. No direct runtime evidence of combat and no new DD zone configuration.
+
+
+## 14 Oct — Functional categories and confidence-ranked first-pass tiers
+
+**Numeric coverage stays 1,240/1,240 (100%)**, but this does **not** imply 1,240 validated/approved tiers. A confidence audit has now separated:
+
+| Provisional confidence | IDs | Interpretation |
+|---|---:|---|
+| HIGH | **157** | Well-characterized archetype and broad proposed tier, still not runtime/owner approved |
+| MEDIUM | **637** | Structure function suggested by family/name or partial source proof; specific combat/difficulty not verified |
+| LOW | **420** | Name-only or unknown custom mechanics; no deployment recommendation |
+| OWNER_HOLD | **26** | Positive spawner-source indicators; numeric tier placeholder but owner approval mandatory |
+
+Read [complete per-ID category confidence](DD_PROVISIONAL_CATEGORIES_CONFIDENCE_20261014.csv), [157 high-confidence provisional tier shortlist](DD_HIGH_CONFIDENCE_TIER_SHORTLIST_20261014.csv) and [source/definitions](DD_CONFIDENCE_CATEGORIES_SUMMARY_20261014.md). Confidence here means reasonableness of rough archetype placement, not verified natural placement, native hostile mobs, Paxi override compatibility or active DD zone. Original first-pass tiers, owner holds, config and gameplay are unchanged.
