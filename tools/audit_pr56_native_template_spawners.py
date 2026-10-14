@@ -104,7 +104,8 @@ def pool_elements(obj):
   if isinstance(obj,dict):
    location=obj.get("location")
    if isinstance(location,str) and obj.get("element_type") in (
-    "minecraft:single_pool_element","minecraft:legacy_single_pool_element"):
+    "minecraft:single_pool_element","minecraft:legacy_single_pool_element",
+    "integrated_api:integrated_api_single_pool_element"):
     found.append(location)
    if isinstance(obj.get("element"),dict):
     visit(obj["element"])
