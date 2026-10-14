@@ -232,11 +232,21 @@ jobs:
             --output /tmp/pr56-idas-1137.jar
           echo 'c651339154da7b9e9cf47a80fdef22c4d59cad5c  /tmp/pr56-dungeons-arise-2168.jar' | sha1sum --check
           echo '154f275823f5f949ed492ac6ce078a80fc3c759a  /tmp/pr56-idas-1137.jar' | sha1sum --check
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/8589/256/friendsandfoes-neoforge-4.0.27%2Bmc1.21.1.jar' \
+            --output /tmp/pr56-friendsandfoes.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/8902/209/MoogsTemplesReimagined-universal-1.21-2.0.4.jar' \
+            --output /tmp/pr56-mtr.jar
+          echo '3967c4e91662e3997318329b13af19816968b56a  /tmp/pr56-friendsandfoes.jar' | sha1sum --check
+          echo 'd4078318221c74265156f470b1ac321f14069b34  /tmp/pr56-mtr.jar' | sha1sum --check
       - name: Audit combat dungeons using only pinned native sources and AO Paxi files
         run: |
           python tools/audit_pr56_dungeon_biome_sources.py \
             --dungeons-arise /tmp/pr56-dungeons-arise-2168.jar \
             --idas /tmp/pr56-idas-1137.jar \
+            --friendsandfoes /tmp/pr56-friendsandfoes.jar \
+            --mtr /tmp/pr56-mtr.jar \
             --out /tmp/pr56-combat-dungeon-native-biome-tags.json
           echo '---BEGIN COMBAT DUNGEON NATIVE REPORT---'
           cat /tmp/pr56-combat-dungeon-native-biome-tags.json
