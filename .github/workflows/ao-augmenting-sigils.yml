@@ -1,0 +1,47 @@
+name: AO Augmenting Sigil Rarity Validation
+
+on:
+  push:
+    branches:
+      - experimental/apotheosis-augmenting-sigil-costs-20261014
+    paths:
+      - 'addons/ao-augmenting-sigils/**'
+      - '.github/workflows/ao-augmenting-sigils.yml'
+  pull_request:
+    paths:
+      - 'addons/ao-augmenting-sigils/**'
+      - '.github/workflows/ao-augmenting-sigils.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14'
+      - name: Compile rarity-priced server/client mixins and build addon
+        run: gradle -p addons/ao-augmenting-sigils build --no-daemon
+      - name: Copy shared verified empty GameTest structure
+        run: |
+          mkdir -p addons/ao-augmenting-sigils/src/main/resources/data/ao_augmenting_sigils/structure
+          cp addons/ao-affix-trims/src/main/resources/data/ao_affix_trims/structure/empty.nbt addons/ao-augmenting-sigils/src/main/resources/data/ao_augmenting_sigils/structure/empty.nbt
+      - name: Execute native NeoForge cost and stack GameTests
+        run: gradle -p addons/ao-augmenting-sigils runGameTestServer --no-daemon
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: ao-augmenting-sigils-experimental-jar
+          path: addons/ao-augmenting-sigils/build/libs/ao-augmenting-sigils-0.1.0-experimental.jar
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: ao-augmenting-sigils-validation-log
+          path: addons/ao-augmenting-sigils/run/logs/latest.log
+          if-no-files-found: ignore

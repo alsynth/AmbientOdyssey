@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+group = 'dev.ambientodyssey.augmentingsigils'
+version = '0.1.0-experimental'
+base { archivesName = 'ao-augmenting-sigils' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories {
+    maven { url = 'https://maven.shadowsoffire.dev/releases' }
+    maven { url = 'https://maven.blamejared.com' }
+}
+dependencies {
+    implementation('dev.shadowsoffire:Apotheosis:1.21.1-8.9.0') { transitive = false }
+    implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }
+    implementation('dev.shadowsoffire:ApothicAttributes:1.21.1-2.11.0') { transitive = false }
+    runtimeOnly('vazkii.patchouli:Patchouli:1.21.1-93-NEOFORGE') { transitive = false }
+}
+neoForge {
+    version = '21.1.252'
+    mods { ao_augmenting_sigils { sourceSet sourceSets.main } }
+    runs {
+        gameTestServer {
+            type = 'gameTestServer'
+            systemProperty 'neoforge.enabledGameTestNamespaces', 'ao_augmenting_sigils'
+        }
+    }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar') { exclude('**/AOAugmentingGameTests.class') }
+tasks.named('runGameTestServer') {
+    doFirst { project.ext.aoTestStarted = System.currentTimeMillis() }
+    doLast {
+        def log = file('run/logs/latest.log')
+        if (!log.exists() || log.lastModified() < project.ext.aoTestStarted ||
+                !log.text.contains('All 2 required tests passed :)')) {
+            throw new GradleException('Fresh Augmenting Table test run required; inspect run/logs/latest.log')
+        }
+    }
+}
