@@ -9,24 +9,24 @@
   "damageMultiplier": {
     // Global difficulty multiplier, affects damage of all bosses, 
     // Default:1.0
-    "damageMultiplier": 1.0
+    "damageMultiplier": 3.0
   },
 
   "healthMultiplier": {
     // Global difficulty multiplier, affects health of all bosses, 
     // Default:1.0
-    "healthMultiplier": 1.0
+    "healthMultiplier": 4.0
   },
 
   "globalBossSpawnChance": {
     // Global boss spawn chance, determines the chance per treasure chest spawn at which a boss can appear in a structure. Chance X in 100, 
     // Default = 30
-    "globalBossSpawnChance": 30
+    "globalBossSpawnChance": 70
   },
 
   "minDistance": {
     // Minimum distance in blocks between spawning, is not 100% guranteed compares last 20 spawns. 
     // Default = 100
-    "minDistance": 100
+    "minDistance": 30
   }
 }
