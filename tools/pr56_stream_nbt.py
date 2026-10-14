@@ -144,6 +144,17 @@ def extract_selected(zf, name, max_bytes=MAX_UNCOMPRESSED):
     valid={"minecraft:spawner","minecraft:trial_spawner","minecraft:jigsaw"}
     interesting=[]
     ids=[]
+    def passenger_summary(node,depth=0):
+        """Keep only entity IDs and nested passengers, never equipment/items."""
+        if depth>16 or not isinstance(node,dict):return {}
+        result={}
+        entity_id=node.get("id")
+        if isinstance(entity_id,str):result["id"]=entity_id
+        nested=node.get("Passengers")
+        if isinstance(nested,list):
+            result["Passengers"]=[passenger_summary(p,depth+1) for p in nested[:64]
+                                  if isinstance(p,dict)]
+        return result
     def second_pass(parser,key,tag):
         if key=="blocks":
             def block_visit(b):
@@ -158,7 +169,7 @@ def extract_selected(zf, name, max_bytes=MAX_UNCOMPRESSED):
             def entity_visit(e):
                 n=e.get("nbt",{}) if isinstance(e,dict) else {}
                 if isinstance(n,dict) and isinstance(n.get("id"),str):
-                    ids.append({"nbt":{"id":n["id"]}})
+                    ids.append({"nbt":passenger_summary(n)})
             parser.each_list_compound(tag,entity_visit)
     source,limited=open_nbt(zf,name,max_bytes)
     try:
