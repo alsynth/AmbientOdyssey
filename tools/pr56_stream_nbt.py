@@ -102,8 +102,10 @@ class SelectiveNBT:
     def each_list_compound(self, tag, visit):
         if tag!=9:raise ValueError("EXPECTED_NBT_LIST")
         typ=self.unpack("B")
-        if typ!=10:raise ValueError("EXPECTED_COMPOUND_LIST")
         count=self.length(9)
+        # Mojang NBT uses END (0) for empty list element type.
+        if typ==0 and count==0:return
+        if typ!=10:raise ValueError("EXPECTED_COMPOUND_LIST")
         for _ in range(count):
             visit(self.read_payload(10))
 
