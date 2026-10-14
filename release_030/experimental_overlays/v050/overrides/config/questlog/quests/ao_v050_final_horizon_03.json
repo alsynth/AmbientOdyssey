@@ -1,0 +1,22 @@
+{
+  "title": "Third End superboss slot reserved and unassigned",
+  "description": "Tyros and Scylla are optional superboss challenges. After a Tier 8 milestone and both victories, hold one affixed equipment item below Heirloom and use /ao_mastery upgrade. This changes the held item once; it does not give a second item.\n\nThird End superboss slot reserved and unassigned.\n\nThis reserved encounter has no selected boss and does not block the final mastery upgrade.",
+  "chapter": "questlog:v050_final_horizon",
+  "sort_order": 103,
+  "icon": {
+    "item": "minecraft:dragon_egg"
+  },
+  "objectives": [
+    {
+      "type": "questlog:unobtainable",
+      "name": "Reserved: third End superboss remains unselected"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false
+}

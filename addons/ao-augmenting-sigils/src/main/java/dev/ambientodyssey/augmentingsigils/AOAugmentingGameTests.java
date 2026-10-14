@@ -25,7 +25,7 @@ public final class AOAugmentingGameTests {
             int upgrade = SigilCosts.fromId(key, 2, true);
             h.assertTrue(reroll == rerolls[i] && upgrade == rerolls[i] * 2,
                     "Wrong "+key+": "+reroll+"/"+upgrade);
-            if (i > 0) {
+            {
                 var alt = ResourceLocation.fromNamespaceAndPath("ao_apotheotic_port", rarities[i]);
                 h.assertTrue(SigilCosts.fromId(alt, 1, false) == rerolls[i],
                         "AO prototype alias must match");

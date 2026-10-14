@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="MIT"
 [[mods]]
 modId="ao_augmenting_sigils"
-version="0.1.0-experimental"
+version="0.1.1-experimental"
 displayName="Ambient Odyssey - Rarity-Based Augmenting Sigils"
 description='''Apotheosis Augmenting Table costs 1/2 Common-Mythic, 6/12 Ancient, 18/36 Artifact, 24/48 Heirloom, 32/64 Esoteric. Preserves XP and affix logic.'''
 [[mixins]]

@@ -37,7 +37,7 @@ jobs:
         if: success()
         with:
           name: ao-augmenting-sigils-experimental-jar
-          path: addons/ao-augmenting-sigils/build/libs/ao-augmenting-sigils-0.1.0-experimental.jar
+          path: addons/ao-augmenting-sigils/build/libs/ao-augmenting-sigils-0.1.1-experimental.jar
           if-no-files-found: error
       - uses: actions/upload-artifact@v4
         if: failure()

@@ -1,0 +1,10 @@
+{
+  "name": "The Wider World",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:bow"
+  },
+  "order": 16,
+  "default_chapter": false,
+  "hidden": false
+}

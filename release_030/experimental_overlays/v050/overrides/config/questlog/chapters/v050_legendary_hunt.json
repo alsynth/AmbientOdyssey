@@ -1,0 +1,10 @@
+{
+  "name": "The Legendary Hunt",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "order": 19,
+  "default_chapter": false,
+  "hidden": false
+}

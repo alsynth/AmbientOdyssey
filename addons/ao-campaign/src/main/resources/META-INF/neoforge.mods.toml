@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_campaign"
+version="0.1.0-experimental"
+displayName="Ambient Odyssey - Experimental Campaign"
+description='''Per-player boss milestones, guarded mastery upgrade, Rage Glove boss loot, and Simply More stun/flash suppression.'''
+[[dependencies.ao_campaign]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_campaign]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_campaign]]
+modId="apotheosis"
+type="required"
+versionRange="[8.9.0,9.0.0)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.ao_campaign]]
+modId="relics"
+type="optional"
+versionRange="[0.10.7.8,)"
+ordering="AFTER"
+side="BOTH"

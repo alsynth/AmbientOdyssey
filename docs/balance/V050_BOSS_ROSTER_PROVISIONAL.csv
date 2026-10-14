@@ -1,0 +1,40 @@
+tier,encounter,source_mod,candidate_structure_id,decision_status,role,reward_access,engineering_check
+T4,Mine Cells main encounter pending,Mine Cells,,provisional,optional midgame route,native early loot unchanged,identify exact boss and native trigger
+T4,Twilight Forest Hydra,Twilight Forest,twilightforest:hydra_lair,structure T4 user-confirmed,optional,native thematic loot,distinguish Ice and Fire Hydra
+T5,Lich,Bosses of Mass Destruction,bosses_of_mass_destruction:lich_tower,provisional new,mainline alternate A,native plus curated,actual boss HP and spawn
+T5,Void Blossom,Bosses of Mass Destruction,bosses_of_mass_destruction:void_blossom,provisional new,mainline alternate B,native plus curated,native version and drops
+T5,Gauntlet,Bosses of Mass Destruction,bosses_of_mass_destruction:gauntlet_arena,provisional new,optional,native treasure,arena integrated override
+T5,Obsidilith,Bosses of Mass Destruction,bosses_of_mass_destruction:obsidilith_arena,provisional new,optional End branch,native treasure,not Tier 9 by default
+T6,Dead King,Iron's Spells,,provisional strong boss gate,primary Pinnacle candidate,Artifact boss and Ancient unlock,verify exact kill objective
+T6,Comparable strong T6 boss not yet named,Unselected,,placeholder,alternative Pinnacle candidate,Artifact boss and Ancient unlock,find accessible boss not fabricated
+T6,Ignited Revenant,Cataclysm,,prior user tier plan,optional,native curated,entity mechanics
+T6,Coralssus,Cataclysm,,prior user tier plan,optional,native curated,entity mechanics
+T6,Kobolediator,Cataclysm,cataclysm:kobolediator_shrine,prior user tier plan,optional,native curated,source and arena
+T6,Eternal Starlight boss family,Eternal Starlight,,provisional family,optional,native thematic,split real boss IDs
+T6,Mother of Maze,Aquamirae,,provisional,optional,native thematic,verify current version encounter
+T6,Cornelia,Aquamirae,,provisional,optional,native thematic,verify current version encounter
+T6,Underground dragons,Ice and Fire,,provisional family,optional,native thematic,age and species
+T7,Netherite Monstrosity,Cataclysm,,prior user tier plan,optional mastery,Artifact or Heirloom,attack damage caps
+T7,Ancient Remnant,Cataclysm,cataclysm:cursed_pyramid,prior user tier plan,optional mastery,Artifact or Heirloom,arena origin
+T7,Ender Guardian,Cataclysm,cataclysm:ruined_citadel,prior user tier plan,optional mastery,Artifact or Heirloom,do not promote to Tier9
+T7,Ender Golem,Cataclysm,,prior user tier plan,optional mastery,Artifact or Heirloom,independent boss source
+T7,Ignis,Cataclysm,cataclysm:burning_arena,latest user tier plan; older T8 conflict,optional mastery,Artifact or Heirloom,resolve only if user revisits
+T7,Maledictus,Cataclysm,cataclysm:frosted_prison,user confirmed,optional mastery,Artifact or Heirloom,not cursed graveyard
+T7,Leviathan,Cataclysm,cataclysm:sunken_city,latest user tier plan; older T8 conflict,optional mastery,Artifact or Heirloom,underwater combat
+T7,Ice and Fire Hydra,Ice and Fire,iceandfire:hydra_cave,prior user tier plan,optional mastery,Artifact or Heirloom,not Twilight Forest Hydra
+T7,Ossukage,Remnant Bosses,,prior user tier plan,optional,Artifact or Heirloom,upgrade 2.7.0
+T7,Kotsukage,Remnant Bosses,,prior user tier plan,optional,Artifact or Heirloom,upgrade 2.7.0
+T7,Chesed,F.D. Bosses,fdbosses:chesed_arena,prior user tier plan,optional,Artifact or Heirloom,hit-count damage
+T7,Malkuth,F.D. Bosses,fdbosses:malkuth_arena,prior user tier plan,optional,Artifact or Heirloom,hit-count damage
+—,Geburah,F.D. Bosses,fdbosses:geburah_arena,user explicitly undecided,optional,unassigned,do not infer from Chesed
+T8,Bosses Rise boss 1 of 5,Bosses' Rise,,user approved family; ID pending,optional mastery,Esoteric,do not conflate Block Factory
+T8,Bosses Rise boss 2 of 5,Bosses' Rise,,user approved family; ID pending,optional mastery,Esoteric,exact registry pending
+T8,Bosses Rise boss 3 of 5,Bosses' Rise,,user approved family; ID pending,optional mastery,Esoteric,exact registry pending
+T8,Bosses Rise boss 4 of 5,Bosses' Rise,,user approved family; ID pending,optional mastery,Esoteric,exact registry pending
+T8,Bosses Rise boss 5 of 5,Bosses' Rise,,user approved family; ID pending,optional mastery,Esoteric,exact registry pending
+T8,Umbrakar,Remnant Bosses,,user tier plan,optional mastery,Esoteric,upgrade 2.7.0
+T8,Last of Deepslate,Archaion,,user tier plan,optional mastery,Esoteric,confirm installed source
+T9,Tyros,Iron's Spells,,latest user-confirmed T9,optional superboss,Heirloom or Esoteric build,phases and spells
+T9,Scylla,Cataclysm,cataclysm:acropolis,latest user-confirmed T9,optional superboss,Heirloom or Esoteric build,verify placement and trigger
+T9,Third End superboss not selected,Unselected,,reserved no decision,optional superboss,to be decided,do not invent ID
+

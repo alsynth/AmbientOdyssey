@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 group = 'dev.ambientodyssey.augmentingsigils'
-version = '0.1.0-experimental'
+version = '0.1.1-experimental'
 base { archivesName = 'ao-augmenting-sigils' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 repositories {

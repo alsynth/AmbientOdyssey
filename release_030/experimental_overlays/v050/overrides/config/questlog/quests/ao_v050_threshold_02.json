@@ -1,0 +1,30 @@
+{
+  "title": "Explore a verified Nether landmark",
+  "description": "The Nether, a Trial Chamber or a Mine Cells expedition can be your next challenge. Leave early Mine Cells loot as you find it; prepare a safe retreat.\n\nExplore a verified Nether landmark.",
+  "chapter": "questlog:v050_threshold",
+  "sort_order": 102,
+  "icon": {
+    "item": "minecraft:blaze_rod"
+  },
+  "objectives": [
+    {
+      "type": "questlog:visit_dimension",
+      "dimension": "minecraft:the_nether",
+      "required_amount": 1,
+      "name": "Enter the Nether"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_threshold_01"
+    }
+  ]
+}
