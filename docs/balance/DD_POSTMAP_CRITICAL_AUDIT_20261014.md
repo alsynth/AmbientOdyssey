@@ -1,5 +1,7 @@
 # PR #56 — Post-100%-mapping critical audit (14 October 2026)
 
+> **LATEST USER DIRECTIVE (14 Oct 2026):** 26 formerly owner-held source-spawner IDs now **Tier 0 approved**, no extra DD scaling; `dungeoncrawl:dungeon` **Tier 4 overall**, but **upper floors requested Tier 2**. Native DD zone filters have no vertical/floor selector, so no blanket Tier 4 rule should ship yet. Prior audit tables below are preserved as historical as-of-research snapshots. See [floor-split implementation note](DD_DUNGEON_CRAWL_FLOOR_TIER_2_TO_4_PLAN_20261014.md).
+
 **Status:** research / planning, draft only. The earlier milestone is **100% numeric first-pass of the _known_ 1,240-ID union**, not 100% registry discovery, accurate encounter tiers, approval, or applied DD behavior. This document begins the owner's requested *details-after-100%-mapping* phase.
 
 ## Consistency checkpoint — completed using PR #56 current CSV files
