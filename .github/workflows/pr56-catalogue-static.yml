@@ -1,0 +1,36 @@
+name: PR56 catalogue static safety
+
+on:
+  push:
+    branches:
+      - research/dd-native-structure-scope-20261014
+    paths:
+      - 'docs/balance/DD_*20261014.csv'
+      - 'docs/balance/DD_MAPPING_PROGRESS_BASELINE_20261014.json'
+      - 'tests/test_pr56_catalogue_policy.py'
+      - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
+      - '.github/workflows/pr56-catalogue-static.yml'
+  pull_request:
+    paths:
+      - 'docs/balance/DD_*20261014.csv'
+      - 'docs/balance/DD_MAPPING_PROGRESS_BASELINE_20261014.json'
+      - 'tests/test_pr56_catalogue_policy.py'
+      - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
+      - '.github/workflows/pr56-catalogue-static.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-ledger-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify known-ID first-pass consistency and owner policy
+        run: python -m unittest discover -s tests -p 'test_pr56_catalogue_policy.py' -v
