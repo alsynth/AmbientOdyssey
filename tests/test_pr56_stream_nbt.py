@@ -54,7 +54,7 @@ def fixture():
     root=bytes([10])+string("")+comp(
         list_tag("blocks",10,blocks),
         list_tag("palette",10,palette),
-        list_tag("entities",10,[]))
+        list_tag("entities",0,[]))
     return gzip.compress(root)
 
 class KeepKayraStreamRegression(unittest.TestCase):
