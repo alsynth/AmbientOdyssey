@@ -101,3 +101,15 @@ Mapped four previously UNRANKED small surface ruin IDs as owner-pending provisio
 Current known-ID catalogue = **758/1240 (61.13%)**; current profile = **758/1130 (67.08%)**, leaving **372** unranked. Compared with preceding 754/1130 (66.73%), this is **+4 IDs, +0.35 pp**. Current authoritative numbers live in `DD_MAPPING_PROGRESS_BASELINE_20261014.json`; prior sections remain historical progress snapshots.
 
 Separate user-requested reference: `AO_APOTHEOSIS_BASE_VS_PR53_RARITY_20261014.md` compares default Apotheosis World Tier affix-rarity weights against AO PR53's validated but **not confirmed deployed** tuning. It does not change affix-item injection chances.
+
+
+## 14 October — Full FIRST-PASS numeric tier coverage (supersedes historical snapshots above)
+
+**1,240/1,240 known native structure IDs (100%) have an explicit numeric proposed tier; 1,130/1,130 current-profile-relevant IDs (100%) have a numeric proposed tier.** Starting state 869/1240 and 869/1130. Newly proposed **371** numeric tiers; **4** previously tier-conflicted shared IDs tentatively resolved using the highest existing variant tier. New proposal ranges include 107 historical Repurposed Structures IDs **absent from the active modpack**, 87 Pasterdream IDs, current complex dungeon/boss/arena IDs, and all 26 owner-held spawner-positive IDs **whose owner HOLD flag remains set**. Tier mapping **does not mean inspected, owner approved, live-registered, naturally placed, or config-deployed**. No Dungeon Difficulty rules or worldgen modified.
+
+- [Full 1240-ID numeric map](DD_FULL_FIRST_PASS_TIER_MAP_20261014.csv) provides per-ID original tier, new tier, confidence, source status, and deployment = NO.
+- [375-item review backlog](DD_FULL_FIRST_PASS_UNVERIFIED_BACKLOG_20261014.csv) keeps all new and variant-conflicted cases for later inspection.
+- [Pre-pass original 261-ID active unranked queue](DD_PRE_FULL_PASS_UNRANKED_QUEUE_SNAPSHOT_20261014.csv) is preserved for provenance. The current UNRANKED queue now contains zero entries; **this does not mean zero verification tasks**.
+- Full 1,240-ID set is **historical 1,219-ID union + 21 scoped runtime positives**; not an exhaustive live registry enumeration. Some 107 historical IDs are from absent JARs and 3 AO clone IDs remain runtime-unverified. **Do not say 100% of every live structure without enumerating the active registry.**
+- Owner holds: **26 native positive-spawner IDs** have guessed numeric tiers solely to satisfy 100% first-pass categorization, but remain **OWNER_HOLD_NO_DEPLOY**. 15 additional source-template family holds are **not registered IDs** and are not artificially added to denominator.
+- All previously assigned 865 numeric tiers remain unchanged. No direct runtime evidence of combat and no new DD zone configuration.
