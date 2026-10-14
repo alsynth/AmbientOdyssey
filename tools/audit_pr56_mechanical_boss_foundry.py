@@ -314,6 +314,16 @@ def main():
             print("BOSS-LIKE SIGNAL",name,json.dumps(signal,sort_keys=True)[:950])
         for item in row["pool_resource_references_missing_in_native_jar"][:8]:
             print("MISSING NATIVE REF",name,json.dumps(item,sort_keys=True)[:800])
+        for collection in ("jigsaw_block_pools_missing_from_native_jar",
+                           "pool_resource_references_missing_in_native_jar"):
+            for source in row[collection]:
+                print("PAXI_ALIAS_CHECK",name,
+                      json.dumps({
+                          "ref":source.get("jigsaw_pool_reference",source.get("reference")),
+                          "checked_in_alias_packs":source.get("missing_reference_checked_in_AO_Paxi",[]),
+                          "alias_template_validation":source.get("resolved_AO_Paxi_pool_alias_candidates",[]),
+                          "source_pool_override_checks":source.get("source_pool_Paxi_overrides",[])
+                      },sort_keys=True)[:1600])
     print("SOURCE ONLY; boss identity not runtime verified")
     print("REPORT:",args.out)
 
