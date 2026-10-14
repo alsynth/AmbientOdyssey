@@ -65,3 +65,18 @@ The [537-record remaining source/encounter priority queue](DD_REMAINING_ACTIVE_U
 | `OWNER_HOLD_UNRANKED_SPAWNER` | 26 |
 
 The **26 owner-deferred spawner cases stay UNRANKED** and are intentionally last in operational review. CTOV/Towns & Towers pillager outposts remain separate **43-source-ID combat review targets**, not low-tier presumptions. Eternal Nether 3 are worldgen gates that require generation verification before pregeneration. Pasterdream's 87 unranked entries require dimension/code-level analysis. All other structure tiers remain provisional unless explicitly user-confirmed.
+
+
+## October 14 — 42 provisional Tier 2 outpost variants
+
+Mapped **42 pillager-outpost IDs** (31 Towns & Towers and 11 CTOV) to **proposed/unapproved Tier 2**, inheriting existing **provisional** vanilla Pillager Outpost Tier 2. The source archive identifies `towns_and_towers:towers` versus `minecraft:pillager_outposts` structure sets, not guaranteed equivalent enemy mechanics. **5 CTOV variants** have AO-compatibility datapack worldgen resource collisions requiring effective winner checks; optional Savage & Ravage addon resources may be disabled. **One other outpost, `ctov:pillager_outpost_mesa`, remains UNRANKED** due to no historical structure-set link. 42 IDs were not in the scoped positive PR50 client registry query, and there is no natural-generation or combat test.
+
+| Mapping coverage | Previous | Current |
+|---|---:|---:|
+| Working-tier labels (all 1240 known IDs) | 593 (47.82%) | **635 (51.21%)** |
+| Working-tier labels (1130 current-profile known IDs) | 593 (52.48%) | **635 (56.19%)** |
+| Current-profile ID records still UNRANKED | 537 | **495** |
+| Protected owner deferred native ID records | 26 | **26** |
+| Protected source-template families | 15 | **15** |
+
+[42 Tier2 outpost proposals](DD_PROVISIONAL_T2_PILLAGER_OUTPOSTS_20261014.csv). [495 remaining current-profile unranked](DD_REMAINING_ACTIVE_UNRANKED_PRIORITY_20261014.csv). Working tier coverage is not owner approval, DD functionality or natural-generation coverage. No mod, worldgen, loot, boss or DD configuration edits.
