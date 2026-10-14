@@ -13,11 +13,18 @@ import zipfile
 from collections import Counter
 from pathlib import Path
 
-from audit_pr56_native_template_spawners import (
-    nbt_from_bytes, extract_template, loc_to_resource, pool_elements, sha1,
-    nearby_native_resources,
-)
-from pr56_stream_nbt import extract_selected
+try:
+    from audit_pr56_native_template_spawners import (
+        nbt_from_bytes, loc_to_resource, pool_elements, sha1,
+        nearby_native_resources,
+    )
+    from pr56_stream_nbt import extract_selected
+except ModuleNotFoundError:
+    from tools.audit_pr56_native_template_spawners import (
+        nbt_from_bytes, loc_to_resource, pool_elements, sha1,
+        nearby_native_resources,
+    )
+    from tools.pr56_stream_nbt import extract_selected
 
 PINNED_SHA1="c651339154da7b9e9cf47a80fdef22c4d59cad5c"
 ROOT=Path(__file__).resolve().parents[1]
