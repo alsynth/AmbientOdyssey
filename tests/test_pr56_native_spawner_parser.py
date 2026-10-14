@@ -131,6 +131,13 @@ class NativeSourceParserSafety(unittest.TestCase):
         self.assertTrue(report["summary"]["keep_kayra_slime_creeper_source_confirmed"])
         self.assertIn({"vehicle":"minecraft:slime","passenger":"minecraft:creeper"},
                       keep["source_normal_spawner_mount_pairs"])
+        self.assertEqual(report["summary"]["keep_kayra_creeper_slime_template"],
+                         "dungeons_arise:keep_kayra/keep_kayra_spawner_3")
+        self.assertTrue(any(
+            x["nbt_resource"]=="data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_3.nbt"
+            and {"vehicle":"minecraft:slime","passenger":"minecraft:creeper"}
+                in x["mount_pairs"]
+            for x in keep["source_mounted_encounter_templates"]))
         self.assertEqual(keep["source_entity_type_ids"],[
             "minecraft:skeleton","minecraft:slime","minecraft:wither_skeleton"])
         self.assertIn("minecraft:creeper",keep["source_normal_spawner_passenger_entity_ids"])
