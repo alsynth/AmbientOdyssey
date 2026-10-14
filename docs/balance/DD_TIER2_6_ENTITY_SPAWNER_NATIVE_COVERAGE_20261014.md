@@ -1,6 +1,6 @@
 # PR56 — Tier 2–6 Dungeon Difficulty source-encounter audit (14 Oct 2026)
 
-> **LATEST validation:** PR56 source scanner now supports exact IDAS `integrated_api:integrated_api_single_pool_element` templates, adding **24** IDAS source spawner-block occurrences to the earlier **45** Dungeons Arise ones. **69 total source-template occurrences** across 10 audited IDs, **not generated-world spawn totals**. This does not change the 6/28 positive DD-zone count because the three new IDAS structures were not in the original 53 candidate rules. [Machine-readable report](DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json).
+> **LATEST pinned-source result:** A bounded streaming NBT reader now successfully scans Keep Kayra’s large templates and detects **9 ordinary source spawners** plus **the exact slime → creeper passenger combination** reported by the owner. The full read-only scan covers **78 spawner-block occurrences in alternative NBT templates across 10 structure IDs** (Dungeons Arise **54**, IDAS **24**) and yields **7/28** candidate DD Tier 2–6 zones with positive pinned-native encounter evidence. This is **not** an in-game spawn count or proof of DD application. [Machine-readable report](DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json).
 
 **Decision: DO NOT DEPLOY or widen the vanilla-only DD matcher yet.** This is a read-only native source inspection, not proof that a mob spawns, that DD applies at runtime, that an Apotheosis invader would not be double-stacked, or that alternate jigsaw pieces are reachable/selected naturally. The target is to verify *actual* coverage before buffing content.
 
@@ -15,12 +15,29 @@
 | Tier0 owner-approved (26) structures incorrectly given active T2+ DD | **0** |
 | Exact vanilla entity types in candidate matcher | **17** |
 | Old historical linked-positive NBT evidence among the 28 | **0 of 28** |
-| **New** targeted pinned-JAR template scan positive in scaled candidate | **6 of 28** (seven candidate zones scanned; Keep Kayra too large) |
+| **New** targeted pinned-JAR template scan positive in scaled candidate | **7 of 28** (all seven candidate Dungeons Arise structures scanned) |
 | Candidate changes to vanilla spawner spawn count/delay/range | **0** — the candidate entity-rule's `spawners` multipliers are all zero |
 | Gameplay configurations actually installed from PR56 | **0** |
 
 The old ledger's 0/28 was an **evidence gap, not a count of mob-free dungeons**. New native positive findings supersede that negative screen. Direct sources: [53-zone coverage script](../../tools/audit_pr56_dd_zone_coverage.py), [new pinned source 10-site evidence](DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json), candidate `experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json`. The evidence is built from the exact PR50-pinned NeoForge Dungeons Arise v2.1.68 and IDAS v1.13.7 JARs, SHA-1-verified by CI.
 
+## Keep Kayra — native mounted encounters verified
+
+From the exact pinned Dungeons Arise JAR, the Keep Kayra start-pool graph reaches **10 NBT templates containing nine ordinary spawner block occurrences**, with **skeleton**, **slime** and **wither skeleton** as primary spawner entities. The source graph has no identified missing resources under the updated bounded scanner.
+
+The scanner follows SpawnData.entity.Passengers, SpawnPotentials entity payloads, nested passengers, and prebuilt entity passengers without misidentifying equipment/item IDs as mobs.
+
+| Vehicle | Passenger | Recommended treatment |
+|---|---|---|
+| Slime | Creeper | **User-observed combination verified in source. Preserve without specially buffing either half.** |
+| Skeleton | Potion entity | Projectile/effect, not a hostile-mob DD attribute target |
+| Wither Skeleton | Potion entity | Same; preserve the scripted pairing |
+
+The candidate vanilla DD type filter covers skeleton and wither skeleton, **but excludes both slime and creeper**, so the slime/creeper pair is outside this generic entity-type rule. Other game systems may affect them, and runtime behavior has not been tested.
+
+The owner also remembers zombies in Keep Kayra. Zombies are not among the primary IDs in the nine linked spawners inspected here, but may occur through other spawn sources. Do **not** conclude there are no zombies.
+
+**Balancing preference:** Prioritize ordinary vanilla hostiles that define each dungeon. Quark and Alex's Mobs appear only as incidental enemies in current planning and do **not** merit special DD tuning by default. Preserve mounted encounters, boss-specific mechanics, and Apotheosis modifier interactions until a targeted runtime check.
 ## Seven candidate Dungeons Arise sites — spawners in scanned source NBT templates
 
 | ID | Planned tier | Distinct jigsaw templates inspected | Ordinary spawner **block occurrences** | Pool/NER scan status |
@@ -30,10 +47,10 @@ The old ledger's 0/28 was an **evidence gap, not a count of mob-free dungeons**.
 | `dungeons_arise:plague_asylum` | 3 | 33 | **6** | Native graph traversed without identified errors |
 | `dungeons_arise:foundry` | 5 | 45 | **8** | **Partial**: jigsaw reference to a missing or externally supplied `foundry_corridor_gears` pool |
 | `dungeons_arise:mechanical_nest` | 5 | 162 | **12** | **Partial**: missing native child-pool and template references |
-| `dungeons_arise:keep_kayra` | 6 | 1 | **0 observed** | **Blocked**: main `.nbt` exceeds conservative 42 MB decompressed scan limit; **not proof of no mobs** |
+| `dungeons_arise:keep_kayra` | 6 | 10 | **9** | Source graph traversed using bounded two-pass NBT parsing; mount pairs verified |
 | `dungeons_arise:aviary` (End) | 6 | 32 | **5** | Native graph traversed without identified errors |
 
-**Dungeons Arise subtotal: 45 spawner-block occurrences across different source templates**, NOT 45 spawners inside one generated dungeon. Multiple templates can be alternatives, omitted, rotated or instantiated with different pool weights. No trial-spawner blocks were found in the successfully parsed selected templates, but this says **nothing** about unscanned pieces, scripts, later dynamic placements or custom trial mechanics.
+**Dungeons Arise subtotal: 54 spawner-block occurrences across different source templates**, NOT 54 spawners inside one generated dungeon. Multiple templates can be alternatives, omitted, rotated or instantiated with different pool weights. No trial-spawner blocks were found in the successfully parsed selected templates, but this says **nothing** about unscanned pieces, scripts, later dynamic placements or custom trial mechanics.
 
 ### Exact-type DD coverage gap
 
@@ -47,6 +64,7 @@ These are **spawner entity IDs in successfully parsed source NBT**. Type-only re
 | Foundry | `minecraft:blaze`, `minecraft:piglin_brute`, `minecraft:wither_skeleton` | `minecraft:hoglin`, `minecraft:magma_cube`, `minecraft:phantom` |
 | Mechanical Nest | `minecraft:skeleton`, `minecraft:wither_skeleton`, `minecraft:zombie` | `minecraft:ravager`, `minecraft:potion` (projectile) |
 | Aviary | `minecraft:skeleton` | `minecraft:creeper`, `minecraft:phantom` |
+| Keep Kayra (root spawner entities) | `minecraft:skeleton`, `minecraft:wither_skeleton` | `minecraft:slime`; passenger `minecraft:creeper` (excluded), `minecraft:potion` (non-mob) |
 
 **Potential hostile-mob coverage omissions:** `minecraft:creeper`, `minecraft:hoglin`, `minecraft:magma_cube`, `minecraft:phantom`, `minecraft:ravager`. They are legitimate source *review candidates*, **not an approval to include them globally**. In particular the existing filter deliberately avoids many explosive, flying, elite or boss-like types. Projectile/effect IDs `firework_rocket`, `potion` and `evoker_fangs` should **not** be added to the ordinary mob attribute regex.
 
@@ -60,7 +78,7 @@ The native IDAS jigsaw pool uses **`integrated_api:integrated_api_single_pool_el
 | `idas:labyrinth` | 5 | **18** | `minecraft:blaze`, `cave_spider`, `husk`, `spider`, `stray`, `alexsmobs:anaconda`, `quark:forgotten`, `quark:wraith` | Traversed successfully |
 | `idas:necromancers_spire` | 4 | **4** | `minecraft:skeleton`, `alexsmobs:soul_vulture` | Traversed successfully |
 
-**IDAS subtotal: 24 additional source template occurrences. Grand total for all 10 scanned structure IDs: 69 ordinary spawner blocks in distinct source templates (9 sites positive; Keep Kayra could not be parsed).** Seven native pool graphs were traversed without identified parser/source errors, three remain partial or blocked. These are *not* natural spawn counts or proven effective DD targets.
+**IDAS subtotal: 24 additional source template occurrences. Grand total for all 10 scanned structure IDs: 78 ordinary spawner blocks in distinct source templates (all 10 sites source-positive).** Eight native pool graphs were traversed without identified parser/source errors; Foundry and Mechanical Nest remain partial. These are *not* natural spawn counts or proven effective DD targets.
 
 The previous filename/path heuristic had reported **four** spawner blocks in `data/idas/structure/pillager_camp/pillager_camp1.nbt`; the actual current native `pillager_camp` start pool points to a different template location with **two** observed spawner blocks. These are different source-scan scopes; **do not sum or silently replace the old count**.
 
@@ -74,7 +92,7 @@ All four of those modded entity IDs are outside the existing `minecraft:`-only D
 ## Priorities for the next automated pass
 
 1. **DONE:** Verify IDAS custom `integrated_api` pool-element serialization and cross-check its actual start-pool linked spawner/entity source IDs.
-2. Identify a safe bounded method for **Keep Kayra** large-template NBT parsing; do not uncap memory blindly.
+2. **DONE:** Use bounded two-pass NBT streaming for Keep Kayra; detect nested passenger pairs without classifying item IDs as mobs.
 3. Verify Foundry missing corridor pool and Mechanical Nest missing NBT references are intentional/non-required or evidence of actual generator problems. **Do not edit installed structure pools without reproducing and validating behavior**.
 4. Source-vs-live test ordinary DD attributes on representative zombies/skeletons/pillagers, then *omitted* vanilla hostiles on actual source spawners. Explicitly test Apotheosis modifiers and boss/native scripts for double stacking.
 5. Only after representative live DD acceptance, draft *isolated* rules for genuinely unsupported standard hostiles, preserving the no-native-boss/global-spawner modifications policy.
