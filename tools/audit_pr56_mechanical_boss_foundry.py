@@ -247,6 +247,26 @@ def audit(jar):
                     pack.name for pack in paxi.iterdir()
                     if pack.is_dir() and (pack/rel).is_file()
                 ) if paxi.exists() else []
+                row["resolved_AO_Paxi_pool_alias_candidates"]=[]
+                if kind=="worldgen/template_pool":
+                    for pack in (sorted(paxi.iterdir()) if paxi.exists() else []):
+                        alias=pack/rel
+                        if not pack.is_dir() or not alias.is_file():continue
+                        pool=json.loads(alias.read_text(encoding="utf-8"))
+                        elements=pool_elements(pool)
+                        missing=[]
+                        for element in elements:
+                            nbt=loc_to_resource("dungeons_arise",element,"structure")
+                            if not nbt:continue
+                            if nbt+".nbt" not in names and nbt.replace("/structure/","/structures/")+".nbt" not in names:
+                                missing.append(element)
+                        row["resolved_AO_Paxi_pool_alias_candidates"].append({
+                            "pack":pack.name,
+                            "native_elements_referenced":len(elements),
+                            "missing_native_NBT_templates_for_alias":missing,
+                            "source_alias_natively_resolvable":not missing,
+                            "effective_live_Paxi_winner_verified":False
+                        })
                 row["no_active_runtime_priority_verified"]=True
                 native_source_pool=row.get("source_pool")
                 if native_source_pool:
