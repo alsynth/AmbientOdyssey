@@ -1,0 +1,66 @@
+native_jar,pr50_roster_status,historical_ids,mapped_t0_1,mapped_t2_6,mapped_t7_9,mapped_multi_tier,unmapped_low_priority,unmapped_combat_review,unmapped_unknown,not_in_pr50,ao_generated,pending_source_or_runtime_evidence
+MoogsVoyagerStructures-universal-1.21-5.1.3.jar,present_pr50_by_filename,130,4,10,0,0,101,1,14,0,0,YES
+pasterdream-0.9.6.jar,present_pr50_by_filename,115,3,25,0,0,63,0,24,0,0,YES
+repurposed_structures-7.5.22+1.21.1-neoforge.jar,absent_pr50_by_filename,107,0,0,0,0,0,0,0,107,0,YES
+dungeons-and-taverns-v4.4.4 [NeoForge].jar,present_pr50_by_filename,96,2,33,0,0,28,15,18,0,0,YES
+idas-1.13.7+1.21.1-neoforge.jar,present_pr50_by_filename,84,1,24,0,0,13,1,45,0,0,YES
+[Neoforge]ctov-3.6.3.jar,present_pr50_by_filename,78,0,0,0,0,66,12,0,0,0,YES
+t_and_t-fabric-neoforge-1.13.11.jar,present_pr50_by_filename,60,0,0,0,0,29,31,0,0,0,YES
+MoogsNetherStructures-universal-1.21-3.1.1.jar,present_pr50_by_filename,52,1,13,0,0,14,0,24,0,0,YES
+DungeonsArise-1.21.1-2.1.68-release.jar,present_pr50_by_filename,40,12,28,0,0,0,0,0,0,0,YES
+MoogsSoaringStructures-universal-1.21-2.2.0.jar,present_pr50_by_filename,35,2,7,0,0,16,0,10,0,0,YES
+formationsoverworld-1.0.5c-mc1.21+.jar,present_pr50_by_filename,30,0,8,0,0,7,2,13,0,0,YES
+MoogsEndStructures-universal-1.21-2.1.1.jar,present_pr50_by_filename,25,1,18,0,0,0,0,6,0,0,YES
+totw_modded-neoforge-1.21-1.0.9.jar,present_pr50_by_filename,22,0,0,0,0,0,0,22,0,0,YES
+FarmersStructures-1.0.6-1.21.1_neoforge.jar,present_pr50_by_filename,20,0,0,0,0,1,0,19,0,0,YES
+Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar,present_pr50_by_filename,18,0,3,0,0,7,0,8,0,0,YES
+floating_islands-1.5.3-1.21.1-neoforge.jar,present_pr50_by_filename,17,3,6,0,0,2,0,6,0,0,YES
+graveyard-2.6.2 NeoForge 1.21.1.jar,present_pr50_by_filename,17,1,6,0,0,2,0,8,0,0,YES
+Philips-Ruins1.21.1-2.0-NeoForge.jar,present_pr50_by_filename,17,1,12,0,0,4,0,0,0,0,YES
+underwater_village-1.0.2-neoforge-1.21.1.jar,present_pr50_by_filename,17,0,7,0,0,4,0,6,0,0,YES
+Structory_26.2_v1.3.7.jar,present_pr50_by_filename,15,0,4,0,0,3,0,8,0,0,YES
+alexscaves-2.0.3.jar,present_pr50_by_filename,14,1,7,0,0,1,1,4,0,0,YES
+BetterEnd-21.0.35.jar,present_pr50_by_filename,14,1,0,0,0,1,1,11,0,0,YES
+iceandfire-2.1.3.jar,present_pr50_by_filename,13,0,13,0,0,0,0,0,0,0,YES
+YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar,present_pr50_by_filename,13,0,0,0,0,0,0,13,0,0,YES
+integrated_villages-1.3.3+1.21.1-neoforge.jar,present_pr50_by_filename,12,1,0,0,0,9,1,1,0,0,YES
+archaeology_ruins-1.0.0-neoforge-1.21.1.jar,present_pr50_by_filename,11,3,0,0,0,3,0,5,0,0,YES
+echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar,present_pr50_by_filename,9,0,6,0,0,2,0,1,0,0,YES
+Incendium_1.21.x_v5.4.4.jar,present_pr50_by_filename,9,1,8,0,0,0,0,0,0,0,YES
+irons_spellbooks-1.21.1-3.16.3.jar,present_pr50_by_filename,9,1,8,0,0,0,0,0,0,0,YES
+adventuredungeons-neoforge-1.21-1.3.1.jar,present_pr50_by_filename,8,3,5,0,0,0,0,0,0,0,YES
+eternalstarlight-0.9.1+1.21.1+neoforge.jar,present_pr50_by_filename,8,5,3,0,0,0,0,0,0,0,YES
+L_Ender's Cataclysm 1.21.1-3.33.jar,present_pr50_by_filename,8,0,6,0,0,1,0,1,0,0,YES
+explore_ruins_aether-1.0.0-neoforge-1.21.1.jar,present_pr50_by_filename,7,1,2,0,0,0,0,4,0,0,YES
+L_Ender's Cataclysm 1.21.1-3.33.jar | integrated_cataclysm-1.0.6+1.21.1-neoforge.jar,present_pr50_by_filename,7,0,1,6,0,0,0,0,0,0,YES
+lukis-grand-capitals-1.1.3.jar,present_pr50_by_filename,6,0,1,0,0,5,0,0,0,0,YES
+MoogsTemplesReimagined-universal-1.21-2.0.4.jar,present_pr50_by_filename,6,0,5,0,0,0,1,0,0,0,YES
+block_factorys_bosses-2.1.2-neo-1.21.1.jar,present_pr50_by_filename,5,0,0,5,0,0,0,0,0,0,YES
+DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar,present_pr50_by_filename,5,0,5,0,0,0,0,0,0,0,YES
+sky_whale_ship-neoforge-1.21.1.jar,present_pr50_by_filename,5,0,2,0,0,0,0,3,0,0,YES
+aether-1.21.1-1.5.10-neoforge.jar,present_pr50_by_filename,4,0,3,0,0,0,0,1,0,0,YES
+Apotheosis-1.21.1-8.9.0.jar,present_pr50_by_filename,4,0,4,0,0,0,0,0,0,0,YES
+create_rustic_structures-1.0.1-neoforge-1.21.1.jar,present_pr50_by_filename,4,0,0,0,0,1,0,3,0,0,YES
+friendsandfoes-neoforge-4.0.27+mc1.21.1.jar,present_pr50_by_filename,4,0,1,0,0,0,0,3,0,0,YES
+IMM v1.3.2-1.21.1.jar | mowziesmobs-1.21.1-1.8.2.jar,present_pr50_by_filename,4,0,1,0,0,0,0,3,0,0,YES
+natures_spirit-2.2.5-1.21.1.jar,present_pr50_by_filename,4,0,0,0,0,4,0,0,0,0,YES
+AO native-template clone,ao_generated_check_effective_datapack,3,0,0,0,0,0,0,0,0,3,YES
+ars_nouveau-1.21.1-5.13.3.jar,present_pr50_by_filename,3,0,0,0,0,0,0,3,0,0,YES
+BOMD-NeoForge-1.21-1.3.3.jar | IBOMD v1.0.0-1.21.1.jar,present_pr50_by_filename,3,0,3,0,0,0,0,0,0,0,YES
+fdbosses-3.2-1.21.1.jar,present_pr50_by_filename,3,0,0,2,0,0,1,0,0,0,YES
+SkyArena-1.3.6-1.21.1.jar,present_pr50_by_filename,2,0,0,0,0,0,2,0,0,0,YES
+supplementaries-1.21.1-3.9.9-neoforge.jar,present_pr50_by_filename,2,0,0,0,0,0,0,2,0,0,YES
+YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar,present_pr50_by_filename,2,0,0,0,0,0,2,0,0,0,YES
+AetherVillages-1.21.1-1.0.8-neoforge.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
+antiquetradingship-1.4.0-neoforge-1.21.1.jar,present_pr50_by_filename,1,1,0,0,0,0,0,0,0,0,YES
+BOMD-NeoForge-1.21-1.3.3.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
+DungeonCrawl-NeoForge-1.21-2.3.17.jar,present_pr50_by_filename,1,0,0,0,0,0,1,0,0,0,YES
+end_villager_outpost-1.0.0-neoforge-1.21.1.jar,present_pr50_by_filename,1,1,0,0,0,0,0,0,0,0,YES
+enigmaticlegacyplus-1.21.1-1.1.2.jar,present_pr50_by_filename,1,0,0,0,0,1,0,0,0,0,YES
+illagerwarship-1.0.1-neoforge-1.21.1.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
+integrated_cataclysm-1.0.6+1.21.1-neoforge.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
+integrated_stronghold-1.1.4+1.21.1-neoforge.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
+lukis-ancient-cities-v1.2.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
+lukis-grand-capitals-1.1.3.jar | dungeons-and-taverns-v4.4.4 [NeoForge].jar,present_pr50_by_filename,1,0,0,0,0,1,0,0,0,0,YES
+SkyVillages-1.0.6-1.21.x-neoforge-release.jar,present_pr50_by_filename,1,0,0,0,0,0,0,1,0,0,YES
+YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar,present_pr50_by_filename,1,0,1,0,0,0,0,0,0,0,YES
