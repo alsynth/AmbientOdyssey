@@ -38,11 +38,11 @@ NATIVE_PROVIDER_FILENAME_PATTERNS={
 SPECS={
  "REMOVAL_APPROVED_DONT_RETAIN_IN_FINAL_PACK":"SkyArena-1.3.6-1.21.1.jar",
  "REQUIRED_MOD_TIER8":"Bosses' Rise",
- "REVIEW_PROVISIONAL_TIER5":"Bosses of Mass Destruction",
+ "PINNED_PROVISIONAL_TIER5_NEEDS_RUNTIME_ARENA_CHECK":"Bosses of Mass Destruction",
 }
 BUILTIN_ISSUES={
  "Bosses' Rise":"No matching named JAR in pinned import; investigate whether an alternative filename, external archive, or planned new mod accounts for the approved five T8 boss encounters.",
- "Bosses of Mass Destruction":"No matching named JAR in pinned import; proposed T5 Lich/Void Blossom and optional Gauntlet/Obsidilith are not verified as installed. Approval to omit/change paths is NOT inferred.",
+ "Bosses of Mass Destruction":"Filename selector must recognize BOMD-NeoForge; if missing from a later pinned import, review T5 plans before pregen.",
 }
 EARLY_GATE="NO_GO__PINNED_BOSS_ROSTER_OR_ARENA_VERIFICATION_INCOMPLETE"
 
@@ -129,7 +129,7 @@ def audit(manifest=MANIFEST,bosses=BOSSES,structures=STRUCTURES):
       "hard_stop_decisions":[
         "Resolve five Bosses' Rise T8 encounters: matching source mod not identified in the inherited pinned manifest",
         "Remove or explicitly reconcile Sky Arena/Ice Arena from effective next test import before permanent pregen",
-        "Determine whether BOMD T5 boss/arena additions are still required, then pin and validate or explicitly defer",
+        "BOMD-NeoForge-1.21-1.3.3.jar and Integrated BOMD are already pinned; confirm native-vs-integrated arena resource winner and natural generation before worldgen freeze",
         "Confirm true boss-ARENA placement and spawn mechanisms in fresh disposable world on exact full candidate before any Chunky 10–20k freeze",
         "Any newly selected third T9 End boss needing NEW terrain/arena/dimension content must be included before pregeneration; otherwise keep that slot explicitly reserved",
         "Integrate the distinct Brutal Bosses 70/30/HP4/damage3 patch before generating production chunks",
@@ -145,7 +145,7 @@ def markdown(r):
     lines=[
       "# AO permanent-world boss/arena pregeneration gate",
       "",
-      "**Source-only NO-GO** until the owner and build pipeline resolve the roster and naturally generated arena checks. This does not certify whether a mod exists in a different local profile.",
+      "**Source-only NO_GO** until the owner and build pipeline resolve the roster and naturally generated arena checks. This does not certify whether a mod exists in a different local profile.",
       "",
       "## Confirmed pinned import facts",
       "",
