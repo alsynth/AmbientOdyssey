@@ -1,5 +1,12 @@
 # PR56: curated-biome / Dungeons & Taverns firewatch audit (14 Oct 2026)
 
+> **LATEST SOURCE-VERIFIED CONCLUSION (14 Oct):** This page's older **shared-tag bridge is SUPERSEDED and must not be installed**. A fresh GitHub Actions audit of the exact CurseForge **v4.4.4 NeoForge JAR**, file `5768823`, PR50 pinned SHA-1 `249a5bdd0e8622b8a11f88758e6f5fd5fda036a3`, extracted 96 original native structure JSONs and 48 biome-tag JSONs. The three shared collection tags feed `collections/land`, affecting **22 birch / 19 cherry / 20 savanna native structures transitively** (not only towers), including 17 direct land-tag consumers such as shrines. Saved source evidence: [verified JAR consumer report](DD_DNT_PINNED_444_NATIVE_CONSUMERS_20261014.json).
+>
+> **New safe experimental candidate:** [four-tower structure-only draft](../../experiments/structure-biome-compatibility/firewatch-structure-only-draft/README.md) edits only the `biomes` selector of the four verified native `firewatch_tower_birch/cherry/forest/savanna` definitions, pointing each to a *private* AO biome tag that preserves original eligibility plus curated additions. **No native shared D&T collection tag is changed.** Both offline retained-source tests and an **independent fresh JAR SHA-1 + exact-field-diff test** passed in GitHub Actions [run 38594939441](https://github.com/alsynth/AmbientOdyssey/actions/runs/38594939441). It is NOT in active Paxi/PR50 playable import or a world. Actual natural placement, final active profile priorities and structure frequency effect remain UNTESTED.
+>
+> **Decision:** Leave existing disabled D&T structures disabled; retain vanilla swamp/mangrove fallback variants; do not introduce global biome-tag changes. No owner action needed now, but test exact profile and bounded natural generation before selecting a final worldgen release.
+
+
 **Status: source-level risk screen + INERT experimental datapack ONLY.** No active `release_030`/Paxi/structure_set/DD/worldgen payload was changed. The older Test5 source/catalogue and AO curated-roster documents may not equal the effective PR50 338-mod profile; validate deployment precedence and dynamic biome availability before any live change.
 
 ## Wider Test5 structure triage — corrected 1,506-row CSV parse
