@@ -50,3 +50,12 @@ Apply available native config/attribute multipliers to ordinary bosses, acceptin
 **Chesed, Malkuth, Geburah: Tier 5**, superseding their earlier T7/TBD boss assignments. **All three are EXEMPT from tier-wide HP and damage multipliers** because of their hit-count/special mechanics; revisit separately later, not as ordinary T5 bosses. This exception overrides the default T5 HP x7 / ordinary attack x4 schedule. Their *boss* tiers do not automatically change any DD *structure* tiers or arena ratings; reconcile those independently.
 
 **Priority:** finish implementation review and ordinary native buffs for **T2–T6 first**, validating configuration paths and recording what was actually applied. Defer **T7–T9 boss-by-boss review until last**, since special damage, caps and the future addon require additional work. Approved tier-wide targets remain T2 x2/x1.5, T3 x3/x2, T4 x5/x3, T5 x7/x4 (except these 3), T6 x10/x5, T7 x10/x6, T8 x10/x10, T9 x10/x10. No boss configs or gameplay files are changed by this planning note.
+
+## Owner decisions — boss repeatability and upper-tier treatment (15 Oct 2026)
+
+- **All Cataclysm bosses are treated as respawnable** in AO's planned progression. Record this as owner-confirmed intended repeatability, while exact individual survival respawn mechanics remain subject to runtime verification.
+- **Dead King** (Iron's Spellbooks) and **Captain Cornelia** (Aquamirae) retain **Tier 6 boss category, unlock/reward classification and placement**, but receive **Tier 7 baseline combat multipliers**: HP x10, ordinary attack x6 (instead of Tier 6 x10/x5). These are explicit per-boss exceptions and should not silently move their reward or arena tier.
+- **No additional upper-tier gatekeeper boss selections** for T4–T7 at this time; the owner considers the major boss roster too limited. Existing tier/campaign gates remain separate decisions and should not be inferred to be deleted.
+- Chesed, Malkuth, Geburah remain Tier 5 and entirely exempt from ordinary HP/damage scaling. T7–T9 special boss reviews remain last.
+
+**Planning only:** none of the above has been translated to executable configs or runtime tested.
