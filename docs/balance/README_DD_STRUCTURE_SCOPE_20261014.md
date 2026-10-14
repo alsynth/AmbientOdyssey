@@ -151,3 +151,20 @@ The list of known vanilla-hostile names is a **triage heuristic**, not a new DD 
 - Do not block Chunky pregeneration on future owner review of these *tiers* unless a separate actual worldgen/structure generation fault is proven. Boss arenas/structure worldgen freeze remains independent.
 
 **Next productive catalogue phase (without owner input):** evidence-check the clearly combat-oriented held T2–6 structures, fix stale native mob IDs, verify actual template-pool reachability, and test DD native elite/mob scaling safely; user-deferred 26-site list should simply remain parked.
+
+## Fourth pass — non-owner research workload after deferring Tier 0–1-looking spawner sites
+
+[Non-owner combat evidence backlog](DD_NONOWNER_COMBAT_EVIDENCE_BACKLOG_20261014.csv) combines **44 non-owner NBT-path leads** and **24 source-positive PR45 held encounters**, of which **11 overlap**, leaving **57 unique research leads**. **These are 57 research records, NOT 57 deployable DD rules**. All 26 owner-deferred low-looking spawner structures are excluded from this backlog.
+
+| Next evidence action | Unique records |
+|---|---:|
+| `P1_HIGH_TIER_NATIVE_OR_BOSS` | 1 |
+| `P1_NATIVE_TRIAL_MECHANICS` | 12 |
+| `P1_VANILLA_HOSTILE_SOURCE_VERIFY` | 21 |
+| `P2_MODDED_MOB_NATIVE_CONFIG` | 3 |
+| `P2_TIER_UNRANKED_COMBAT_REVIEW` | 2 |
+| `P2_UNKNOWN_SPAWNER_ENTITY` | 18 |
+
+- Each backlog row records original tier, named vanilla-hostile/modded mob leads when static NBT decodes them, and whether the existing PR45 project holds the site for unproven compatible ordinary mobs.
+- A source template spawner block, or even a hostile entity ID, does **not** mean DD should be enabled. This phase only prioritizes targeted native-source and runtime checks.
+- User-deferred structures stay **UNRANKED** in the authoritative working scope until the owner personally reviews them; no automatic rank changes or pending DD work assigned to those 26 records.
