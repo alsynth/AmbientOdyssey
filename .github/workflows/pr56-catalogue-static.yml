@@ -15,6 +15,7 @@ on:
       - 'docs/audits/CURRENT_BIOME_ROSTER.json'
       - 'tools/audit_pr56_dnt_firewatch_source.py'
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
+      - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -32,6 +33,7 @@ on:
       - 'docs/audits/CURRENT_BIOME_ROSTER.json'
       - 'tools/audit_pr56_dnt_firewatch_source.py'
       - 'tools/audit_pr56_firewatch_paxi_stack.py'
+      - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -132,4 +134,33 @@ jobs:
           path: |
             /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip
             /tmp/pr56-firewatch-four-towers-TEST-ONLY.manifest.json
+          retention-days: 14
+
+  yungs-mineshaft-native-tag-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch PR50-pinned YUNG's Better Mineshafts JAR only
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 120 \
+            'https://mediafilez.forgecdn.net/files/5812/193/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar' \
+            --output /tmp/pr56-yungs-better-mineshafts-511.jar
+          echo '6a14e1d8201f068ca87ef8333e471c5378955906  /tmp/pr56-yungs-better-mineshafts-511.jar' | sha1sum --check
+      - name: Inspect YUNG mineshaft native eligibility without changing worldgen
+        run: |
+          python tools/audit_pr56_yungs_mineshaft_biomes.py \
+            --jar /tmp/pr56-yungs-better-mineshafts-511.jar \
+            --out /tmp/pr56-yungs-native-biome-tags.json
+          echo '---BEGIN PR56 YUNGS NATIVE REPORT---'
+          cat /tmp/pr56-yungs-native-biome-tags.json
+          echo '---END PR56 YUNGS NATIVE REPORT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-yungs-native-biome-tags-json
+          path: /tmp/pr56-yungs-native-biome-tags.json
           retention-days: 14
