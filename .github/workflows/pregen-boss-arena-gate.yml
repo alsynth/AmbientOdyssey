@@ -1,0 +1,47 @@
+name: AO pregen boss-arena source gate
+on:
+  push:
+    branches:
+      - research/pregen-boss-roster-freeze-gate-20261014
+    paths:
+      - 'tools/audit_pregen_boss_roster.py'
+      - 'tests/test_pregen_boss_roster.py'
+      - 'docs/balance/pr45-acceptance-evidence/FULL_IMPORT_INPUTS.json'
+      - 'docs/balance/V050_BOSS_ROSTER_PROVISIONAL.csv'
+      - 'docs/balance/AO_STRUCTURE_TIER_CATALOGUE_V3_2026-10-13.csv'
+      - '.github/workflows/pregen-boss-arena-gate.yml'
+  pull_request:
+    paths:
+      - 'tools/audit_pregen_boss_roster.py'
+      - 'tests/test_pregen_boss_roster.py'
+      - 'docs/balance/pr45-acceptance-evidence/FULL_IMPORT_INPUTS.json'
+      - 'docs/balance/V050_BOSS_ROSTER_PROVISIONAL.csv'
+      - 'docs/balance/AO_STRUCTURE_TIER_CATALOGUE_V3_2026-10-13.csv'
+      - '.github/workflows/pregen-boss-arena-gate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  pregen-boss-roster-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Boss roster and pre-generation guard regression
+        run: python -m unittest discover -s tests -p 'test_pregen_boss_roster.py' -v
+      - name: Render decision-ready boss and arena source inventory
+        run: |
+          python tools/audit_pregen_boss_roster.py \
+            --output-json /tmp/ao-pregen-boss-arena-source.json \
+            --output-md /tmp/ao-pregen-boss-arena-source.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ao-pregen-boss-arena-source-inventory
+          path: |
+            /tmp/ao-pregen-boss-arena-source.json
+            /tmp/ao-pregen-boss-arena-source.md
+          retention-days: 14
