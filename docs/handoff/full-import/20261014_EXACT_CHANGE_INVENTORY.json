@@ -1,0 +1,1558 @@
+{
+  "schema": "ambient_odyssey_full_import_change_ledger_v1",
+  "generated": "2026-10-14",
+  "target": "Work-mode full private experimental CurseForge import handoff; data only, no merge",
+  "runtime_base": {
+    "branch": "experimental/pr45-runtime-rpg-acceptance-20261013",
+    "sha256": "dd72daac0fef6c42f758728abc9b003d680b791ccfe174975ec4424cf1ad3d9f",
+    "zip_name": "Ambient-Odyssey-v0491-Structure-Celestisynth-FULL-IMPORT.zip",
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.252",
+    "manifest_refs": 338,
+    "official_mod_refs": 331,
+    "shader_resource_refs": 7,
+    "bundled_custom_jars": 7,
+    "physical_mod_jars": 338,
+    "source_evidence": "docs/balance/pr45-acceptance-evidence/FULL_IMPORT_INPUTS.json"
+  },
+  "PR50_from_v049_export": {
+    "added_official_mods": [
+      {
+        "projectID": 1369926,
+        "fileID": 8122244,
+        "name": "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+        "kind": "mod",
+        "sha1": "9b67474f98fd14110cbcefd406b18e05def36b63"
+      },
+      {
+        "projectID": 1196449,
+        "fileID": 6882233,
+        "name": "reliquified_ars_nouveau-1.21.1-0.6.1.jar",
+        "kind": "mod",
+        "sha1": "882aba237860441a7ad2943775ffa3cc4d6324a9"
+      },
+      {
+        "projectID": 1370532,
+        "fileID": 8122664,
+        "name": "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+        "kind": "mod",
+        "sha1": "0587cee8edd1eb146f125b100e6c878bf7dabf5f"
+      },
+      {
+        "projectID": 319351,
+        "fileID": 6740123,
+        "name": "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+        "kind": "mod",
+        "sha1": "1f4695061a2134a6361dcab03ec76c7a0a6428e2"
+      },
+      {
+        "projectID": 852662,
+        "fileID": 5770623,
+        "name": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+        "kind": "mod",
+        "sha1": "a9dea4b9ef893fc955512ff2dee75c9c82e09a52"
+      },
+      {
+        "projectID": 1131668,
+        "fileID": 9075472,
+        "name": "arsdelight-2.2.5.jar",
+        "kind": "mod",
+        "sha1": "f4915ccd62442e308b2c0879c3c4ce35b9c59658"
+      },
+      {
+        "projectID": 1252482,
+        "fileID": 6751611,
+        "name": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+        "kind": "mod",
+        "sha1": "3460532417842063306c5a12428b3c877e18d073"
+      },
+      {
+        "projectID": 1653878,
+        "fileID": 8655579,
+        "name": "arssophisticatedstoragecompat-0.3.0.jar",
+        "kind": "mod",
+        "sha1": "1a5b5e262b577a0ffa015060bdfe610c0bc7ba01"
+      },
+      {
+        "projectID": 1653477,
+        "fileID": 8653384,
+        "name": "arssophisticatedcompat-0.3.0.jar",
+        "kind": "mod",
+        "sha1": "7cc6c1e1d92d109230f68b6a63dc4bfb13c245a6"
+      },
+      {
+        "projectID": 1672331,
+        "fileID": 8867800,
+        "name": "celestisynth-1.21.1-1.3.9.jar",
+        "kind": "mod",
+        "sha1": "f34c317e9394314446813f9c9d46f16e9c0ba745",
+        "sha256": "03225d0ac3789f8cd1df90df1793f080ab36c4c1143a4f15b622f88bb41bd9de"
+      }
+    ],
+    "updated_official_mods": [
+      {
+        "projectID": 1225026,
+        "fileID": 9145897,
+        "name": "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+        "kind": "mod",
+        "sha1": "501e879187dfbdc1e24539362d3728d1b1c88ebb"
+      }
+    ],
+    "verified_original_jars_missing": [],
+    "custom_jars": [
+      {
+        "jar": "ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar",
+        "sha256": "434040e5459bd552939fd7f966091421d00a058e0be736bb8f76a435257e7995"
+      },
+      {
+        "jar": "ao-affix-trims-0.1.1-experimental.jar",
+        "sha256": "d6ec53ccb5ff271c9aac41d51e87374d0f090640979c1d8e3f670aff6a35d37c"
+      },
+      {
+        "jar": "ao-apotheotic-port-prototype-0.4.8-prototype.jar",
+        "sha256": "5baeb9321dcabdad2664f159a089e6e7265f7b14072ccf1bb5cdf3ffec1df6e4"
+      },
+      {
+        "jar": "ao-enigmatic-betterinventory-0.1.0.jar",
+        "sha256": "e0672a3416ce77e4e995489891533f051d7b080beedd53a540fc95dbd4a8d1f2"
+      },
+      {
+        "jar": "ao-questlog-betterinventory-0.1.6.jar",
+        "sha256": "b1fc9f30b49140acb16284b8b12c89e05e40302e5b856d40de2629e918c5ef2e"
+      },
+      {
+        "jar": "ao-wet-sand-prototype-0.0.1-source-prototype.jar",
+        "sha256": "fc7e84d341339f5ad88d9485ab6316b86edacfc9c1e9caccef2c562d0f3a5b49"
+      },
+      {
+        "jar": "ao-worldgen-safety-0.1.4-experimental.jar",
+        "sha256": "4cd9ee8317b98417b47eca425f644d5e8cac401f98b6e1ae4032339461f10a17"
+      }
+    ],
+    "complete_changes_vs_r19": [
+      {
+        "path": ".gitattributes",
+        "status": "modified"
+      },
+      {
+        "path": "AGENTS.md",
+        "status": "modified"
+      },
+      {
+        "path": "TODO.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/balance/AO_HISTORICAL_STRUCTURE_REGISTRY_CROSSWALK_2026-10-13.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/AO_STRUCTURE_TIER_CATALOGUE_V3_2026-10-13.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/PR45_FULL_IMPORT_AND_ETERNAL_NETHER_20261013.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/PR45_RUNTIME_ACCEPTANCE_FOLLOWUP_20261013.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/PR50_MERGE_READINESS_20261013.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/README_STRUCTURE_MAPPING_V3_2026-10-13.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/STRUCTURE_DIFFICULTY_V3_IMPLEMENTATION.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/V041_DUNGEON_BOSS_BALANCE_AUDIT_20261011.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/V041_ENCOUNTER_EDITABILITY_MATRIX.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/332_RUNTIME_MARKERS.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/332_RUNTIME_REGISTRIES.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/332_SNAPSHOT.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_ORDINARY_RULE_TESTS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_candidate_RUNTIME_MARKERS.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_candidate_RUNTIME_REGISTRIES.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_candidate_SNAPSHOT.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_rollback_RUNTIME_MARKERS.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_rollback_RUNTIME_REGISTRIES.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/337_rollback_SNAPSHOT.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/ACCEPTANCE_RESULTS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/ETERNAL_NETHER_ENCOUNTER_GRAPH.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/ETERNAL_NETHER_NATIVE_MOB_FEATURES.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/FOLLOWUP_MOD_RECONCILIATION.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/FULL_IMPORT_INPUTS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/FULL_IMPORT_RUNTIME_MARKERS.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/FULL_IMPORT_RUNTIME_RESULTS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/GITHUB_FOLLOWUP_NOTE.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/NATURAL_ENCOUNTERS_RADIUS16.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/NATURAL_ENCOUNTERS_RADIUS32.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/NATURAL_ENCOUNTER_RUNTIME.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/NATURAL_ENCOUNTER_RUNTIME_MARKERS.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/NEW_STRUCTURE_HOLDS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/pr45-acceptance-evidence/RUNTIME_CHECK_INPUT.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/APPROVED_TIER_MAPPING.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/CURRENT_PROFILE.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/DD_3.9.2_BYTECODE.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/ENCOUNTER_CONTROL_GAPS.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/ENCOUNTER_NBT.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/ENCOUNTER_NBT.errors.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/ENCOUNTER_NBT.recovery.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/INSTALLED_JARS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/LOOT_TABLE_INDEX.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/OPTIONAL_BUILTIN_RESOURCES.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/RECONCILED_CATALOGUE.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/REMNANT_2.7.0_BYTECODE.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/REMNANT_2.7.0_DEFAULTS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/REMNANT_COMPATIBILITY.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/REPLACEMENT_CONFIGS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/RESOURCE_COLLISIONS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/RESOURCE_ERRORS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/SKY_ARENA_NATIVE_CONTROLS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/SUMMARY.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/TEMPLATE_RESOURCE_LINKS.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/TRIAL_AND_LOOT_RESOURCES.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/v3-evidence/VALIDATION.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/V049_IMPLEMENTATION_20261012.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/V049_OVERHAUL_PREP_20261012.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/V049_VISUAL_ECOLOGY_20261013.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-followup/CHANGES.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-followup/MOD_AUDIT.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-followup/alexsmobs.toml",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-followup/particular-common.toml",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-library-reference-audit.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-native-validation/MARKERS.txt",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-native-validation/RESULTS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/BASELINE.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/BENCHMARKS.csv",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/CANDIDATE_VERSIONS.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/COMPLEMENTARY_MEDIUM_REFERENCE.properties",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/MOD_DEPENDENCY_AUDIT.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/STREAMS_BALANCED_CANDIDATE.toml",
+        "status": "added"
+      },
+      {
+        "path": "docs/performance/v049-prep/VALIDATION.json",
+        "status": "added"
+      },
+      {
+        "path": "docs/status/AGENT_WORKFLOW.md",
+        "status": "modified"
+      },
+      {
+        "path": "docs/status/CURRENT_STATE.md",
+        "status": "modified"
+      },
+      {
+        "path": "experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json",
+        "status": "added"
+      },
+      {
+        "path": "experiments/structure-difficulty-v3/requirements.txt",
+        "status": "added"
+      },
+      {
+        "path": "experiments/structure-difficulty-v3/rollback/config/dungeon_difficulty/difficulty_v2.json",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/alexsmobs.toml",
+        "status": "modified"
+      },
+      {
+        "path": "release_030/overrides/config/entityculling.json",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/equipmentcompare.toml",
+        "status": "removed"
+      },
+      {
+        "path": "release_030/overrides/config/euphoria_patcher/settings.toml",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/legendarytooltips.toml",
+        "status": "removed"
+      },
+      {
+        "path": "release_030/overrides/config/oculus.properties",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/particular-common.toml",
+        "status": "modified"
+      },
+      {
+        "path": "release_030/overrides/config/streamsreflowing-client.toml",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/shaderpacks/AO Balanced.txt",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/shaderpacks/AO Performance.txt",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/shaderpacks/AO Quality.txt",
+        "status": "added"
+      },
+      {
+        "path": "release_030/release-lock.json",
+        "status": "modified"
+      },
+      {
+        "path": "tests/test_perf_v041_log_report.py",
+        "status": "added"
+      },
+      {
+        "path": "tests/test_perf_v041_trials.py",
+        "status": "added"
+      },
+      {
+        "path": "tests/test_structure_difficulty_v3.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/DDV3SchemaProbe.java",
+        "status": "added"
+      },
+      {
+        "path": "tools/RemnantV270DefaultsProbe.java",
+        "status": "added"
+      },
+      {
+        "path": "tools/audit_encounter_nbt_041.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/audit_eternalnether_followup.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/package_pr45_full_import.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/package_pr45_runtime_followup.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/package_v049_client_test.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/package_v049_performance_prep.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/package_v049_visual_ecology.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/perf_v041_log_report.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/perf_v041_trials.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/performance-probe/build.gradle",
+        "status": "added"
+      },
+      {
+        "path": "tools/performance-probe/settings.gradle",
+        "status": "added"
+      },
+      {
+        "path": "tools/performance-probe/src/main/java/dev/ambientodyssey/logprobe/FullPackLogProbe.java",
+        "status": "added"
+      },
+      {
+        "path": "tools/performance-probe/src/main/resources/META-INF/neoforge.mods.toml",
+        "status": "added"
+      },
+      {
+        "path": "tools/pr45-runtime-probe/build.gradle",
+        "status": "added"
+      },
+      {
+        "path": "tools/pr45-runtime-probe/settings.gradle",
+        "status": "added"
+      },
+      {
+        "path": "tools/pr45-runtime-probe/src/main/java/dev/ambientodyssey/logprobe/FullPackLogProbe.java",
+        "status": "added"
+      },
+      {
+        "path": "tools/pr45-runtime-probe/src/main/java/dev/ambientodyssey/logprobe/NaturalEncounterProbe.java",
+        "status": "added"
+      },
+      {
+        "path": "tools/pr45-runtime-probe/src/main/java/dev/ambientodyssey/logprobe/OrdinaryRuleProbe.java",
+        "status": "added"
+      },
+      {
+        "path": "tools/pr45-runtime-probe/src/main/resources/META-INF/neoforge.mods.toml",
+        "status": "added"
+      },
+      {
+        "path": "tools/prepare_pr45_frozen_rehearsal.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/prepare_pr45_full_import_rehearsal.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/prepare_pr45_runtime_snapshot.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/reconcile_pr45_followup_mods.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/run_full_pack_log_probe.py",
+        "status": "modified"
+      },
+      {
+        "path": "tools/structure_difficulty_v3.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/summarize_pr45_acceptance.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/validate_structure_difficulty_v3_kit.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/validate_v04_fg.py",
+        "status": "modified"
+      },
+      {
+        "path": "tools/validate_v04_questlog.py",
+        "status": "modified"
+      },
+      {
+        "path": "tools/validate_v04_trek_curated.py",
+        "status": "modified"
+      }
+    ],
+    "removed_paths": [
+      "release_030/overrides/config/equipmentcompare.toml",
+      "release_030/overrides/config/legendarytooltips.toml"
+    ]
+  },
+  "PR51_overlay": {
+    "base": "experimental/pr45-runtime-rpg-acceptance-20261013",
+    "branch": "experimental/loot-economy-first-pass-20261013",
+    "changes": [
+      {
+        "path": ".github/workflows/ao-goblin-native-extraction.yml",
+        "status": "added"
+      },
+      {
+        "path": ".github/workflows/ao-loot-economy-draft.yml",
+        "status": "added"
+      },
+      {
+        "path": ".github/workflows/ao-starter-full-native-smoke.yml",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/README.md",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/build.gradle",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/settings.gradle",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/java/dev/ambientodyssey/starterchest/AOStarterChestMod.java",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/java/dev/ambientodyssey/starterchest/StarterAffixGameTests.java",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/java/dev/ambientodyssey/starterchest/StarterAffixModifier.java",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/resources/META-INF/neoforge.mods.toml",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/loot_modifiers/starter_affix.json",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/resources/data/minecraft/loot_table/chests/spawn_bonus_chest.json",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
+        "status": "added"
+      },
+      {
+        "path": "addons/ao-starter-chest/src/main/resources/pack.mcmeta",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/LOOT_ECONOMY_TARGETED_WAVE_20261013.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/balance/STARTER_CHEST_IMPLEMENTATION_HANDOFF_20261014.md",
+        "status": "added"
+      },
+      {
+        "path": "docs/testing/V051_LOOT_ECONOMY_PILOT_ACCEPTANCE.md",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/lootr-common.toml",
+        "status": "modified"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_flight_balance/data/flight_rings/recipe/advanced_ring.json",
+        "status": "modified"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_flight_balance/data/flight_rings/recipe/basic_ring.json",
+        "status": "modified"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_goblin_trades/data/goblintraders/goblin_trades/goblin_trader/epic.json",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_goblin_trades/pack.mcmeta",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/data/apotheosis/loot_modifiers/affix_conversion.json",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/data/apotheosis/loot_modifiers/affix_loot_injection.json",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/data/apotheosis/loot_modifiers/gem_loot_injection.json",
+        "status": "added"
+      },
+      {
+        "path": "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/pack.mcmeta",
+        "status": "added"
+      },
+      {
+        "path": "tools/build_ao_goblin_tuned_trade_override.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/package_ao_loot_economy_pilot.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/test_ao_loot_first_pass.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/test_ao_loot_packager.py",
+        "status": "added"
+      },
+      {
+        "path": "tools/validate_ao_starter_apotheosis_exemptions.py",
+        "status": "added"
+      }
+    ],
+    "gameplay_policy": {
+      "starter_stones": [
+        "enigmaticlegacyplus:blazing_core",
+        "enigmaticlegacyplus:golem_heart",
+        "enigmaticlegacyplus:ocean_stone",
+        "enigmaticlegacyplus:angel_blessing",
+        "enigmaticlegacyplus:lost_engine"
+      ],
+      "starter_stone_chance_each_pct": 20,
+      "apotheosis_affix": {
+        "common_pct": 55,
+        "uncommon_pct": 30,
+        "rare_pct": 15
+      },
+      "torches": [
+        32,
+        48
+      ],
+      "cooked_meat": [
+        16,
+        48
+      ],
+      "goblin_tuned_chainmail_per_piece": {
+        "minecraft:diamond": 32,
+        "irons_spellbooks:cinder_essence": 4
+      },
+      "rage_glove": "deferred; Tier 7 Nether boss TBD",
+      "early_mid_chests": "no global rewrite"
+    }
+  },
+  "LOCAL_OCT13_log_reconciliation": {
+    "source": "User-provided latest(20261013-182534).log from Library and main docs/testing/V049_LOCAL_MOD_CHANGES_CRASH_20261013.md",
+    "found_mod_file_events": 423,
+    "top_level_mod_folder_jars": 333,
+    "exact_matches_vs_PR50": 332,
+    "PR50_physical_jars": 338,
+    "local_only_jar_names": [
+      "MobPlaques-v21.1.1-1.21.1-NeoForge.jar"
+    ],
+    "missing_from_direct_mod_folder_entries": [
+      {
+        "jar": "cardinal-components-api-6.1.2.jar",
+        "interpretation": "Connector remaps to mapped_moj and Cardinal sub-mods; loaded under different names, not a confirmed deletion"
+      },
+      {
+        "jar": "celestisynth-1.21.1-1.3.9.jar",
+        "interpretation": "PR50 newly added; absent in Oct13 earlier local log, intended full-import inclusion"
+      },
+      {
+        "jar": "connector-2.0.0-beta.17+1.21.1-full.jar",
+        "interpretation": "top-level packaged Connector represented in log by org.sinytra.connector-...-mod.jar; not confirmed removed"
+      },
+      {
+        "jar": "kotlinforforge-5.12.0-all.jar",
+        "interpretation": "jar-in-jar log exposes thedarkcolour.kffmod-5.12.0.jar with parent KotlinForForge"
+      },
+      {
+        "jar": "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+        "interpretation": "jar-in-jar log exposes mezz_config-...jar with standalone parent"
+      },
+      {
+        "jar": "minecells-2.0.3.jar",
+        "interpretation": "Connector remapped minecells-2.0.3_mapped_moj_1.21.1.jar (plus gimm1q), not confirmed removed"
+      }
+    ],
+    "full_top_level_mod_folder_jars": [
+      "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+      "AetherVillages-1.21.1-1.0.8-neoforge.jar",
+      "Ambient-Odyssey-TO-Magic-Registry-Fix-1.0.0.jar",
+      "Apotheosis-1.21.1-8.9.0.jar",
+      "ApothicAttributes-1.21.1-2.11.0.jar",
+      "ApothicEnchanting-1.21.1-1.6.3.jar",
+      "ApothicSpawners-1.21.1-1.4.0.jar",
+      "Aquaculture-1.21.1-2.7.21.jar",
+      "ArmorTrimItemFix-neoforge-1.21.1-1.2.0.jar",
+      "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+      "BOMD-NeoForge-1.21-1.3.3.jar",
+      "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "BetterEnd-21.0.35.jar",
+      "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+      "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+      "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+      "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+      "CreateOPlenty-NeoForge-Create+6.0.7-3.0.jar",
+      "Custom Nether Portals - Neoforge - MC 1.21.1- 3.0.0.jar",
+      "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+      "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
+      "DungeonsArise-1.21.1-2.1.68-release.jar",
+      "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar",
+      "DustyDecorations_1.21.1Neoforge_V1.13.jar",
+      "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar",
+      "Explorify v1.6.5.mod.jar",
+      "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+      "FarmersDelight-1.21.1-1.3.4.jar",
+      "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+      "FastItemFrames-v21.1.6-1.21.1-NeoForge.jar",
+      "FastSuite-1.21.1-6.0.7.jar",
+      "FlightRings-neoforge-2.0.0.jar",
+      "FungiDelight-1.21.1-1.3.jar",
+      "GatewaysToEternity-1.21.1-5.1.0.jar",
+      "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "IBOMD v1.0.0-1.21.1.jar",
+      "IMM v1.3.2-1.21.1.jar",
+      "Iceberg-1.21.1-neoforge-1.3.0.jar",
+      "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+      "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+      "Incendium_1.21.x_v5.4.4.jar",
+      "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar",
+      "JustEnoughResources-NeoForge-1.21.1-1.6.0.12.jar",
+      "L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "MobLassos-v21.1.1-1.21.1-NeoForge.jar",
+      "MobPlaques-v21.1.1-1.21.1-NeoForge.jar",
+      "MoogsEndStructures-universal-1.21-2.1.1.jar",
+      "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+      "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+      "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+      "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+      "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+      "NightLib-Neoforge-1.21.1-1.3.0.jar",
+      "OctoLib-NEOFORGE-0.6.2+1.21.jar",
+      "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.4.jar",
+      "Opposing-Force-1.21.1-3.0.0-beta6.jar",
+      "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "Patchouli-1.21.1-93-NEOFORGE.jar",
+      "Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+      "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "Placebo-1.21.1-9.9.2.jar",
+      "Quark-4.1-487.jar",
+      "Resourcify (1.21.1-neoforge)-1.8.7.jar",
+      "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "SimplyTooltips-neoforge-0.1.5.jar",
+      "Sinew-1.21.1-1.2.14.jar",
+      "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+      "SkyArena-1.3.6-1.21.1.jar",
+      "SkyVillages-1.0.6-1.21.x-neoforge-release.jar",
+      "StreamsReflowing-1.21.1-neoforge-2.14.4.jar",
+      "Structory_26.2_v1.3.7.jar",
+      "Structory_Towers_1.21.x_v1.0.14.jar",
+      "TansHugeTrees-1.8.0-NeoForge-1.21.1-BETA.jar",
+      "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "The_Undergarden-1.21.1-0.9.6.jar",
+      "TravelersTitles-1.21.1-NeoForge-5.1.3.jar",
+      "Waves-1.21.x-1.6.1.jar",
+      "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+      "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "Zeta-1.1-40.jar",
+      "[Neoforge]ctov-3.6.3.jar",
+      "aaa_particles-neoforge-1.21.1-2.3.3.jar",
+      "aces_spell_utils-1.2.7.3-1.21.1.jar",
+      "adventuredungeons-neoforge-1.21-1.3.1.jar",
+      "aether-1.21.1-1.5.10-neoforge.jar",
+      "alexscaves-2.0.3.jar",
+      "alexsmobs-1.22.9.jar",
+      "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+      "ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar",
+      "amendments-1.21-2.1.10-neoforge.jar",
+      "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "antiquetradingship-1.4.0-neoforge-1.21.1.jar",
+      "ao-affix-trims-0.1.1-experimental.jar",
+      "ao-apotheotic-port-prototype-0.4.8-prototype.jar",
+      "ao-enigmatic-betterinventory-0.1.0.jar",
+      "ao-questlog-betterinventory-0.1.6.jar",
+      "ao-wet-sand-prototype-0.0.1-source-prototype.jar",
+      "ao-worldgen-safety-0.1.4-experimental.jar",
+      "apothiccombat-1.2.1.jar",
+      "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "aquamirae-neoforge-1.21.1-7.2.10.jar",
+      "aquatic_creepers-neoforge-1.0.0+1.21.jar",
+      "archaeology_ruins-1.0.0-neoforge-1.21.1.jar",
+      "archaion-1.21.1-1.4.4.jar",
+      "architectury-13.0.11-neoforge.jar",
+      "ars_nouveau-1.21.1-5.13.3.jar",
+      "arsdelight-2.2.5.jar",
+      "arssophisticatedcompat-0.3.0.jar",
+      "arssophisticatedstoragecompat-0.3.0.jar",
+      "artifacts-neoforge-13.2.5.jar",
+      "astrological-1.21.1-1.7.1.jar",
+      "athena-neoforge-1.21.1-4.0.6.jar",
+      "atlas_api-1.21.1-1.2.0.jar",
+      "atmosfera-1.21.1-NeoForge-1.0.2.jar",
+      "azurelib-neo-1.21.1-3.1.14.jar",
+      "balm-neoforge-1.21.1-21.0.66.jar",
+      "bclib-21.0.26.jar",
+      "benssharks-1.2.6-neoforge-1.21.1.jar",
+      "betterarcheology-neoforge-1.21.1-1.3.9.jar",
+      "betterbastions-1.0.0+neoforge-1.21.1.jar",
+      "bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "betterinventory-neoforge-1.21.1-1.3.2.jar",
+      "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+      "biggerbetterendcities-1.21.1-1.0.0.jar",
+      "biolith-neoforge-3.0.14.jar",
+      "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "borderlesswindow-1.6.0.jar",
+      "bountiful-neoforge-8.0.0-beta.2.jar",
+      "brutalbosses-1.21.1-8.6.jar",
+      "caelus-neoforge-7.0.1+1.21.1.jar",
+      "cataclysm_spellbooks-1.1.14-1.21.jar",
+      "cataclysmfortresses-1.21.1-NeoForge.jar",
+      "cavedust-3.3.0+1.21.1-neoforge.jar",
+      "chat_heads-0.14.0-neoforge-1.21.jar",
+      "chipped-neoforge-1.21.1-4.0.2.jar",
+      "citadel-2.7.1-1.21.1.jar",
+      "cloth-config-15.0.140-neoforge.jar",
+      "collective-1.21.1-8.42.jar",
+      "comforts-neoforge-9.0.5+1.21.1.jar",
+      "cookscollection-0.6.1.jar",
+      "corn_delight-1.2.10-1.21.1.jar",
+      "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "create-1.21.1-6.0.10.jar",
+      "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+      "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+      "cristellib-neoforge-1.21.1-3.1.7.jar",
+      "cultofazazelneoforge-1.1.4.12.jar",
+      "culturaldelights-1.21.1-0.18.1.jar",
+      "cupboard-1.21.1-4.2.jar",
+      "curios-neoforge-9.5.1+1.21.1.jar",
+      "deep_aether-1.21.1-1.1.5.1.jar",
+      "deeper-oceans-2.0.1-neoforge-21.1.jar",
+      "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "delightlib-26.05.18-1.21-neoforge.jar",
+      "denseflower-1.0.0.jar",
+      "dimdungeons-210-neoforge-1.21.1.jar",
+      "dummmmmmy-1.21-2.1.2-neoforge.jar",
+      "dungeon_difficulty-neoforge-3.9.2+1.21.1.jar",
+      "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+      "easy_npc-neoforge-1.21.1-7.14.0.jar",
+      "easy_npc_config_ui-neoforge-1.21.1-7.14.0.jar",
+      "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar",
+      "embeddium-1.0.15+mc1.21.1.jar",
+      "enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "end_villager_outpost-1.0.0-neoforge-1.21.1.jar",
+      "endrem-neoforge-1.21.1-6.3.0.jar",
+      "endrem_additions-neoforge-1.2.0.jar",
+      "enhancedbossbars-1.0.0.jar",
+      "enigmaticlegacyplus-1.21.1-1.1.2.jar",
+      "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "eternal_starlight_delight-neoforge-1.4.0.jar",
+      "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+      "explore_ruins_aether-1.0.0-neoforge-1.21.1.jar",
+      "exposure-neoforge-1.21.1-1.9.19.jar",
+      "fadeless-neoforge-1.1.0.jar",
+      "fdbosses-3.2-1.21.1.jar",
+      "fdlib-1.0.9-1.21.1.jar",
+      "ferritecore-7.0.3-neoforge.jar",
+      "floating_islands-1.5.3-1.21.1-neoforge.jar",
+      "forbidden_arcanus-2.6.1.jar",
+      "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+      "formations-1.0.4-neoforge-mc1.21.jar",
+      "formationsoverworld-1.0.5c-mc1.21+.jar",
+      "fragmentum-5.2.0+1.21.1-neoforge.jar",
+      "framework-neoforge-1.21.1-0.13.11.jar",
+      "freeterraforged-1.0.0-neoforge-1.21.1.jar",
+      "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+      "ftb-chunks-neoforge-2101.1.22.jar",
+      "ftb-library-neoforge-2101.1.37.jar",
+      "ftb-quests-neoforge-2101.1.36.jar",
+      "ftb-solo-quests-1.21.1-neoforge-1.1.2.jar",
+      "ftb-teams-neoforge-2101.1.11.jar",
+      "ftb-ultimine-neoforge-2101.1.15.jar",
+      "ftb-xmod-compat-neoforge-21.1.12.jar",
+      "ftboceanmobs-21.1.4.jar",
+      "fzzy_config-0.7.7+1.21+neoforge.jar",
+      "geckolib-neoforge-1.21.1-4.9.3.jar",
+      "goblintraders-neoforge-1.21.1-1.11.2.jar",
+      "graveyard-2.6.2 NeoForge 1.21.1.jar",
+      "guardvillagers-2.4.12-1.21.1.jar",
+      "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "hapi-neoforge-1.21.1-1.1.3.jar",
+      "hybrid_aquatic-neoforge-1.21.1-1.7.4.jar",
+      "iceandfire-2.1.3.jar",
+      "idas-1.13.7+1.21.1-neoforge.jar",
+      "illagerwarship-1.0.1-neoforge-1.21.1.jar",
+      "integrated_api-neoforge-1.21.1-1.9.0.jar",
+      "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+      "integrated_patches v1.2.0-1.21.1.jar",
+      "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+      "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+      "inventorysorter-1.21-24.0.18.jar",
+      "irons_jewelry-1.21.1-2.0.2.jar",
+      "irons_lib-1.21.1-2.2.0.jar",
+      "irons_spellbooks-1.21.1-3.16.3.jar",
+      "jamlib-neoforge-1.2.2-build.2+1.21.1.jar",
+      "jauml-neoforge-1.21.1-2.3.1.jar",
+      "jearchaeology-1.21.1-1.2.0.jar",
+      "jeed-1.21-2.3.4-neoforge.jar",
+      "jei-1.21.1-neoforge-19.57.0.451.jar",
+      "jupiter-2.3.7-1.21.1-neoforge.jar",
+      "kambrik-neoforge-8.0.0-beta.2.jar",
+      "keybindoverrides-2.0.0.jar",
+      "knightlib-neoforge-1.21.1-2.0.4.jar",
+      "large_meals-1.21.1-1.0.1.jar",
+      "light-overlay-12.0.0-neoforge.jar",
+      "lionfishapi-3.1.jar",
+      "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "lithostitched-1.8.0-neoforge-21.1.jar",
+      "lootintegrations-1.21.1-4.7.jar",
+      "lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "lukis-ancient-cities-v1.2.jar",
+      "lukis-grand-capitals-1.1.3.jar",
+      "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+      "mapdistancefix-neoforge-1.1.2+mc1.21-1.21.11.jar",
+      "meed-1.21.1-8.3.0.jar",
+      "meteor_shower-0.0.5.jar",
+      "midnightlib-neoforge-1.9.2+1.21.1.jar",
+      "modernfix-neoforge-5.27.24+mc1.21.1.jar",
+      "moonlight-1.21.1-3.7.1-neoforge.jar",
+      "moredelight-26.05.20a-1.21-neoforge.jar",
+      "morerelics-1.7.7-1.21.1.jar",
+      "mowziesmobs-1.21.1-1.8.2.jar",
+      "mysterious_mountain_lib-1.2.15-1.21.1.jar",
+      "naturalist-2.0.5-neoforge-1.21.1.jar",
+      "natures_spirit-2.2.5-1.21.1.jar",
+      "neoculus-mc1.21.1-1.8.7.jar",
+      "nightlights-neoforge-1.21.1-1.4.0.jar",
+      "oceansdelight-neoforge-1.0.4-1.21.1.jar",
+      "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "particular-1.21.1-NeoForge-1.5.7.jar",
+      "pasterdream-0.9.6.jar",
+      "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "polytone-1.21-5.0.3-neoforge.jar",
+      "prickle-neoforge-1.21.1-21.1.11.jar",
+      "puzzleslib-v21.1.62-mc1.21.1+neoforge.jar",
+      "questlog-neoforge-1.21.1-3.4.1.jar",
+      "regions-unexplored-0.6.2-neoforge-21.1.jar",
+      "relics-1.21.1-0.10.7.8.jar",
+      "reliquified_ars_nouveau-1.21.1-0.6.1.jar",
+      "reliquified_lenders_cataclysm-1.21.1-0.1.1.jar",
+      "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+      "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "resourcefullib-neoforge-1.21-3.0.12.jar",
+      "rightclickharvest-neoforge-4.6.1+1.21.1.jar",
+      "rusticdelight-neoforge-1.21-1.7.1.jar",
+      "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar",
+      "servercore-neoforge-1.5.19+1.21.1.jar",
+      "shadowdrop-1.1.1-1.21.1-neoforge.jar",
+      "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+      "simplymore-forge-1.3.0_alpha.jar",
+      "simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "sky_whale_ship-neoforge-1.21.1.jar",
+      "smallships-neoforge-1.21.1-2.0.0-b2.1.jar",
+      "smoothchunk-1.21-4.1.jar",
+      "softimprints-neoforge-1.21.1-2.8.0.jar",
+      "sophisticatedbackpacks-1.21.1-3.26.8.2189.jar",
+      "sophisticatedbackpackscreateintegration-1.21.1-0.2.2.188.jar",
+      "sophisticatedcore-1.21.1-1.5.6.2374.jar",
+      "sophisticatedstorage-1.21.1-1.6.2.2154.jar",
+      "sophisticatedstoragecreateintegration-1.21.1-0.1.21.209.jar",
+      "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "spark-1.10.124-neoforge.jar",
+      "strongerfireboss-2.0.0.jar",
+      "supplementaries-1.21.1-3.9.9-neoforge.jar",
+      "swinginglanterns-neoforge-1.21.1-2.0.4.jar",
+      "t_and_t-fabric-neoforge-1.13.11.jar",
+      "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+      "tombstone-neoforge-1.21.1-9.5.6.jar",
+      "toms_storage-1.21-2.4.2.jar",
+      "totw_modded-neoforge-1.21-1.0.9.jar",
+      "transmog-neoforge-1.6.0+1.21.1.jar",
+      "traveloptics-4.4.0.1-1.21.1.jar",
+      "trek-B0.6.2.jar",
+      "trmt-0.5.1-1.21.1-neoforge.jar",
+      "twilightforest-1.21.1-4.8.3345-universal.jar",
+      "underwater_village-1.0.2-neoforge-1.21.1.jar",
+      "uranus-2.4.1-bugfix-1.21.1-neoforge.jar",
+      "valhelsia_core-neoforge-1.21.1-1.1.5.jar",
+      "villagernames-1.21.1-8.7.jar",
+      "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "waystones-neoforge-1.21.1-21.1.46.jar",
+      "wda_questline-1.21.1-1.0.0.jar",
+      "whaleborne-1.21.1-1.2.5.jar",
+      "worldweaver-21.0.26.jar",
+      "wunderlib-21.0.10.jar",
+      "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "xaeroworldmap-neoforge-1.21.1-1.47.0.jar"
+    ],
+    "baseline_expected_jars": [
+      "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+      "AetherVillages-1.21.1-1.0.8-neoforge.jar",
+      "Ambient-Odyssey-TO-Magic-Registry-Fix-1.0.0.jar",
+      "Apotheosis-1.21.1-8.9.0.jar",
+      "ApothicAttributes-1.21.1-2.11.0.jar",
+      "ApothicEnchanting-1.21.1-1.6.3.jar",
+      "ApothicSpawners-1.21.1-1.4.0.jar",
+      "Aquaculture-1.21.1-2.7.21.jar",
+      "ArmorTrimItemFix-neoforge-1.21.1-1.2.0.jar",
+      "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+      "BOMD-NeoForge-1.21-1.3.3.jar",
+      "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "BetterEnd-21.0.35.jar",
+      "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+      "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+      "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+      "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+      "CreateOPlenty-NeoForge-Create+6.0.7-3.0.jar",
+      "Custom Nether Portals - Neoforge - MC 1.21.1- 3.0.0.jar",
+      "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+      "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
+      "DungeonsArise-1.21.1-2.1.68-release.jar",
+      "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar",
+      "DustyDecorations_1.21.1Neoforge_V1.13.jar",
+      "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar",
+      "Explorify v1.6.5.mod.jar",
+      "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+      "FarmersDelight-1.21.1-1.3.4.jar",
+      "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+      "FastItemFrames-v21.1.6-1.21.1-NeoForge.jar",
+      "FastSuite-1.21.1-6.0.7.jar",
+      "FlightRings-neoforge-2.0.0.jar",
+      "FungiDelight-1.21.1-1.3.jar",
+      "GatewaysToEternity-1.21.1-5.1.0.jar",
+      "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "IBOMD v1.0.0-1.21.1.jar",
+      "IMM v1.3.2-1.21.1.jar",
+      "Iceberg-1.21.1-neoforge-1.3.0.jar",
+      "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+      "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+      "Incendium_1.21.x_v5.4.4.jar",
+      "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar",
+      "JustEnoughResources-NeoForge-1.21.1-1.6.0.12.jar",
+      "L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "MobLassos-v21.1.1-1.21.1-NeoForge.jar",
+      "MoogsEndStructures-universal-1.21-2.1.1.jar",
+      "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+      "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+      "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+      "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+      "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+      "NightLib-Neoforge-1.21.1-1.3.0.jar",
+      "OctoLib-NEOFORGE-0.6.2+1.21.jar",
+      "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.4.jar",
+      "Opposing-Force-1.21.1-3.0.0-beta6.jar",
+      "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "Patchouli-1.21.1-93-NEOFORGE.jar",
+      "Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+      "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "Placebo-1.21.1-9.9.2.jar",
+      "Quark-4.1-487.jar",
+      "Resourcify (1.21.1-neoforge)-1.8.7.jar",
+      "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "SimplyTooltips-neoforge-0.1.5.jar",
+      "Sinew-1.21.1-1.2.14.jar",
+      "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+      "SkyArena-1.3.6-1.21.1.jar",
+      "SkyVillages-1.0.6-1.21.x-neoforge-release.jar",
+      "StreamsReflowing-1.21.1-neoforge-2.14.4.jar",
+      "Structory_26.2_v1.3.7.jar",
+      "Structory_Towers_1.21.x_v1.0.14.jar",
+      "TansHugeTrees-1.8.0-NeoForge-1.21.1-BETA.jar",
+      "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "The_Undergarden-1.21.1-0.9.6.jar",
+      "TravelersTitles-1.21.1-NeoForge-5.1.3.jar",
+      "Waves-1.21.x-1.6.1.jar",
+      "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+      "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "Zeta-1.1-40.jar",
+      "[Neoforge]ctov-3.6.3.jar",
+      "aaa_particles-neoforge-1.21.1-2.3.3.jar",
+      "aces_spell_utils-1.2.7.3-1.21.1.jar",
+      "adventuredungeons-neoforge-1.21-1.3.1.jar",
+      "aether-1.21.1-1.5.10-neoforge.jar",
+      "alexscaves-2.0.3.jar",
+      "alexsmobs-1.22.9.jar",
+      "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+      "ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar",
+      "amendments-1.21-2.1.10-neoforge.jar",
+      "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "antiquetradingship-1.4.0-neoforge-1.21.1.jar",
+      "ao-affix-trims-0.1.1-experimental.jar",
+      "ao-apotheotic-port-prototype-0.4.8-prototype.jar",
+      "ao-enigmatic-betterinventory-0.1.0.jar",
+      "ao-questlog-betterinventory-0.1.6.jar",
+      "ao-wet-sand-prototype-0.0.1-source-prototype.jar",
+      "ao-worldgen-safety-0.1.4-experimental.jar",
+      "apothiccombat-1.2.1.jar",
+      "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "aquamirae-neoforge-1.21.1-7.2.10.jar",
+      "aquatic_creepers-neoforge-1.0.0+1.21.jar",
+      "archaeology_ruins-1.0.0-neoforge-1.21.1.jar",
+      "archaion-1.21.1-1.4.4.jar",
+      "architectury-13.0.11-neoforge.jar",
+      "ars_nouveau-1.21.1-5.13.3.jar",
+      "arsdelight-2.2.5.jar",
+      "arssophisticatedcompat-0.3.0.jar",
+      "arssophisticatedstoragecompat-0.3.0.jar",
+      "artifacts-neoforge-13.2.5.jar",
+      "astrological-1.21.1-1.7.1.jar",
+      "athena-neoforge-1.21.1-4.0.6.jar",
+      "atlas_api-1.21.1-1.2.0.jar",
+      "atmosfera-1.21.1-NeoForge-1.0.2.jar",
+      "azurelib-neo-1.21.1-3.1.14.jar",
+      "balm-neoforge-1.21.1-21.0.66.jar",
+      "bclib-21.0.26.jar",
+      "benssharks-1.2.6-neoforge-1.21.1.jar",
+      "betterarcheology-neoforge-1.21.1-1.3.9.jar",
+      "betterbastions-1.0.0+neoforge-1.21.1.jar",
+      "bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "betterinventory-neoforge-1.21.1-1.3.2.jar",
+      "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+      "biggerbetterendcities-1.21.1-1.0.0.jar",
+      "biolith-neoforge-3.0.14.jar",
+      "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "borderlesswindow-1.6.0.jar",
+      "bountiful-neoforge-8.0.0-beta.2.jar",
+      "brutalbosses-1.21.1-8.6.jar",
+      "caelus-neoforge-7.0.1+1.21.1.jar",
+      "cardinal-components-api-6.1.2.jar",
+      "cataclysm_spellbooks-1.1.14-1.21.jar",
+      "cataclysmfortresses-1.21.1-NeoForge.jar",
+      "cavedust-3.3.0+1.21.1-neoforge.jar",
+      "celestisynth-1.21.1-1.3.9.jar",
+      "chat_heads-0.14.0-neoforge-1.21.jar",
+      "chipped-neoforge-1.21.1-4.0.2.jar",
+      "citadel-2.7.1-1.21.1.jar",
+      "cloth-config-15.0.140-neoforge.jar",
+      "collective-1.21.1-8.42.jar",
+      "comforts-neoforge-9.0.5+1.21.1.jar",
+      "connector-2.0.0-beta.17+1.21.1-full.jar",
+      "cookscollection-0.6.1.jar",
+      "corn_delight-1.2.10-1.21.1.jar",
+      "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "create-1.21.1-6.0.10.jar",
+      "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+      "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+      "cristellib-neoforge-1.21.1-3.1.7.jar",
+      "cultofazazelneoforge-1.1.4.12.jar",
+      "culturaldelights-1.21.1-0.18.1.jar",
+      "cupboard-1.21.1-4.2.jar",
+      "curios-neoforge-9.5.1+1.21.1.jar",
+      "deep_aether-1.21.1-1.1.5.1.jar",
+      "deeper-oceans-2.0.1-neoforge-21.1.jar",
+      "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "delightlib-26.05.18-1.21-neoforge.jar",
+      "denseflower-1.0.0.jar",
+      "dimdungeons-210-neoforge-1.21.1.jar",
+      "dummmmmmy-1.21-2.1.2-neoforge.jar",
+      "dungeon_difficulty-neoforge-3.9.2+1.21.1.jar",
+      "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+      "easy_npc-neoforge-1.21.1-7.14.0.jar",
+      "easy_npc_config_ui-neoforge-1.21.1-7.14.0.jar",
+      "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar",
+      "embeddium-1.0.15+mc1.21.1.jar",
+      "enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "end_villager_outpost-1.0.0-neoforge-1.21.1.jar",
+      "endrem-neoforge-1.21.1-6.3.0.jar",
+      "endrem_additions-neoforge-1.2.0.jar",
+      "enhancedbossbars-1.0.0.jar",
+      "enigmaticlegacyplus-1.21.1-1.1.2.jar",
+      "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "eternal_starlight_delight-neoforge-1.4.0.jar",
+      "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+      "explore_ruins_aether-1.0.0-neoforge-1.21.1.jar",
+      "exposure-neoforge-1.21.1-1.9.19.jar",
+      "fadeless-neoforge-1.1.0.jar",
+      "fdbosses-3.2-1.21.1.jar",
+      "fdlib-1.0.9-1.21.1.jar",
+      "ferritecore-7.0.3-neoforge.jar",
+      "floating_islands-1.5.3-1.21.1-neoforge.jar",
+      "forbidden_arcanus-2.6.1.jar",
+      "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+      "formations-1.0.4-neoforge-mc1.21.jar",
+      "formationsoverworld-1.0.5c-mc1.21+.jar",
+      "fragmentum-5.2.0+1.21.1-neoforge.jar",
+      "framework-neoforge-1.21.1-0.13.11.jar",
+      "freeterraforged-1.0.0-neoforge-1.21.1.jar",
+      "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+      "ftb-chunks-neoforge-2101.1.22.jar",
+      "ftb-library-neoforge-2101.1.37.jar",
+      "ftb-quests-neoforge-2101.1.36.jar",
+      "ftb-solo-quests-1.21.1-neoforge-1.1.2.jar",
+      "ftb-teams-neoforge-2101.1.11.jar",
+      "ftb-ultimine-neoforge-2101.1.15.jar",
+      "ftb-xmod-compat-neoforge-21.1.12.jar",
+      "ftboceanmobs-21.1.4.jar",
+      "fzzy_config-0.7.7+1.21+neoforge.jar",
+      "geckolib-neoforge-1.21.1-4.9.3.jar",
+      "goblintraders-neoforge-1.21.1-1.11.2.jar",
+      "graveyard-2.6.2 NeoForge 1.21.1.jar",
+      "guardvillagers-2.4.12-1.21.1.jar",
+      "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "hapi-neoforge-1.21.1-1.1.3.jar",
+      "hybrid_aquatic-neoforge-1.21.1-1.7.4.jar",
+      "iceandfire-2.1.3.jar",
+      "idas-1.13.7+1.21.1-neoforge.jar",
+      "illagerwarship-1.0.1-neoforge-1.21.1.jar",
+      "integrated_api-neoforge-1.21.1-1.9.0.jar",
+      "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+      "integrated_patches v1.2.0-1.21.1.jar",
+      "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+      "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+      "inventorysorter-1.21-24.0.18.jar",
+      "irons_jewelry-1.21.1-2.0.2.jar",
+      "irons_lib-1.21.1-2.2.0.jar",
+      "irons_spellbooks-1.21.1-3.16.3.jar",
+      "jamlib-neoforge-1.2.2-build.2+1.21.1.jar",
+      "jauml-neoforge-1.21.1-2.3.1.jar",
+      "jearchaeology-1.21.1-1.2.0.jar",
+      "jeed-1.21-2.3.4-neoforge.jar",
+      "jei-1.21.1-neoforge-19.57.0.451.jar",
+      "jupiter-2.3.7-1.21.1-neoforge.jar",
+      "kambrik-neoforge-8.0.0-beta.2.jar",
+      "keybindoverrides-2.0.0.jar",
+      "knightlib-neoforge-1.21.1-2.0.4.jar",
+      "kotlinforforge-5.12.0-all.jar",
+      "large_meals-1.21.1-1.0.1.jar",
+      "light-overlay-12.0.0-neoforge.jar",
+      "lionfishapi-3.1.jar",
+      "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "lithostitched-1.8.0-neoforge-21.1.jar",
+      "lootintegrations-1.21.1-4.7.jar",
+      "lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "lukis-ancient-cities-v1.2.jar",
+      "lukis-grand-capitals-1.1.3.jar",
+      "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+      "mapdistancefix-neoforge-1.1.2+mc1.21-1.21.11.jar",
+      "meed-1.21.1-8.3.0.jar",
+      "meteor_shower-0.0.5.jar",
+      "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+      "midnightlib-neoforge-1.9.2+1.21.1.jar",
+      "minecells-2.0.3.jar",
+      "modernfix-neoforge-5.27.24+mc1.21.1.jar",
+      "moonlight-1.21.1-3.7.1-neoforge.jar",
+      "moredelight-26.05.20a-1.21-neoforge.jar",
+      "morerelics-1.7.7-1.21.1.jar",
+      "mowziesmobs-1.21.1-1.8.2.jar",
+      "mysterious_mountain_lib-1.2.15-1.21.1.jar",
+      "naturalist-2.0.5-neoforge-1.21.1.jar",
+      "natures_spirit-2.2.5-1.21.1.jar",
+      "neoculus-mc1.21.1-1.8.7.jar",
+      "nightlights-neoforge-1.21.1-1.4.0.jar",
+      "oceansdelight-neoforge-1.0.4-1.21.1.jar",
+      "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "particular-1.21.1-NeoForge-1.5.7.jar",
+      "pasterdream-0.9.6.jar",
+      "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "polytone-1.21-5.0.3-neoforge.jar",
+      "prickle-neoforge-1.21.1-21.1.11.jar",
+      "puzzleslib-v21.1.62-mc1.21.1+neoforge.jar",
+      "questlog-neoforge-1.21.1-3.4.1.jar",
+      "regions-unexplored-0.6.2-neoforge-21.1.jar",
+      "relics-1.21.1-0.10.7.8.jar",
+      "reliquified_ars_nouveau-1.21.1-0.6.1.jar",
+      "reliquified_lenders_cataclysm-1.21.1-0.1.1.jar",
+      "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+      "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "resourcefullib-neoforge-1.21-3.0.12.jar",
+      "rightclickharvest-neoforge-4.6.1+1.21.1.jar",
+      "rusticdelight-neoforge-1.21-1.7.1.jar",
+      "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar",
+      "servercore-neoforge-1.5.19+1.21.1.jar",
+      "shadowdrop-1.1.1-1.21.1-neoforge.jar",
+      "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+      "simplymore-forge-1.3.0_alpha.jar",
+      "simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "sky_whale_ship-neoforge-1.21.1.jar",
+      "smallships-neoforge-1.21.1-2.0.0-b2.1.jar",
+      "smoothchunk-1.21-4.1.jar",
+      "softimprints-neoforge-1.21.1-2.8.0.jar",
+      "sophisticatedbackpacks-1.21.1-3.26.8.2189.jar",
+      "sophisticatedbackpackscreateintegration-1.21.1-0.2.2.188.jar",
+      "sophisticatedcore-1.21.1-1.5.6.2374.jar",
+      "sophisticatedstorage-1.21.1-1.6.2.2154.jar",
+      "sophisticatedstoragecreateintegration-1.21.1-0.1.21.209.jar",
+      "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "spark-1.10.124-neoforge.jar",
+      "strongerfireboss-2.0.0.jar",
+      "supplementaries-1.21.1-3.9.9-neoforge.jar",
+      "swinginglanterns-neoforge-1.21.1-2.0.4.jar",
+      "t_and_t-fabric-neoforge-1.13.11.jar",
+      "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+      "tombstone-neoforge-1.21.1-9.5.6.jar",
+      "toms_storage-1.21-2.4.2.jar",
+      "totw_modded-neoforge-1.21-1.0.9.jar",
+      "transmog-neoforge-1.6.0+1.21.1.jar",
+      "traveloptics-4.4.0.1-1.21.1.jar",
+      "trek-B0.6.2.jar",
+      "trmt-0.5.1-1.21.1-neoforge.jar",
+      "twilightforest-1.21.1-4.8.3345-universal.jar",
+      "underwater_village-1.0.2-neoforge-1.21.1.jar",
+      "uranus-2.4.1-bugfix-1.21.1-neoforge.jar",
+      "valhelsia_core-neoforge-1.21.1-1.1.5.jar",
+      "villagernames-1.21.1-8.7.jar",
+      "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "waystones-neoforge-1.21.1-21.1.46.jar",
+      "wda_questline-1.21.1-1.0.0.jar",
+      "whaleborne-1.21.1-1.2.5.jar",
+      "worldweaver-21.0.26.jar",
+      "wunderlib-21.0.10.jar",
+      "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "xaeroworldmap-neoforge-1.21.1-1.47.0.jar"
+    ],
+    "interpretation": "423 Found mod file events include NeoForge, child JIJ, and Connector-transformed modules; not 423 original distributable files. 333 native mods-folder JARs, 332 exact PR50 matches. User rejects Mob Plaques, despite its appearance in local test."
+  },
+  "DEFERRED_NOT_SHIPPED": [
+    {
+      "item": "Disable Simply More Stun",
+      "status": "requested TODO, not implemented"
+    },
+    {
+      "item": "Disable fatal/intense flashing/flickering",
+      "status": "requested TODO, not implemented"
+    },
+    {
+      "item": "Tier 7 Nether boss RNG Rage Glove reward",
+      "status": "owner-approved design only; boss not identified"
+    },
+    {
+      "item": "RPG boss/quest/regalia research PR44, PR47-49",
+      "status": "research/docs only, not gameplay changes"
+    },
+    {
+      "item": "Apotheosis World Tier tuning",
+      "status": "future design, do not invent configs"
+    },
+    {
+      "item": "Simply Swords unique +1/+2 attack damage",
+      "status": "test/proposal, not implemented"
+    }
+  ],
+  "REMOVE_EXCLUDE": [
+    {
+      "item": "MobPlaques-v21.1.1-1.21.1-NeoForge.jar",
+      "reason": "explicit user rejection"
+    },
+    {
+      "item": "Extra test-only instrumentation/probe JARs",
+      "reason": "not production mod"
+    },
+    {
+      "item": "Personal files: saves, logs, account files, server lists",
+      "reason": "private and unnecessary for CurseForge import"
+    }
+  ]
+}
