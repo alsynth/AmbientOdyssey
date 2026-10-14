@@ -68,7 +68,8 @@ def inspect(label,jar,curated):
     struct_count=0;set_count=0;tag_count=0;other_source=0
     structures={}; sets={}; tags={};interesting={}; invalid={}
     with zipfile.ZipFile(jar) as zf:
-        for src in zf.namelist():
+        allnames=set(zf.namelist())
+        for src in sorted(allnames):
             if not src.endswith(".json") or not src.startswith("data/"):
                 continue
             if "/worldgen/structure/" in src:
