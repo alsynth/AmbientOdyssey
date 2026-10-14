@@ -1,4 +1,47 @@
 {
+  "candidate_structure_only_diff_checks": {
+    "birch": {
+      "active_profile_runtime_tested": false,
+      "curated_additions": [
+        "biomeswevegone:sakura_grove",
+        "biomeswevegone:zelkova_forest",
+        "regions_unexplored:maple_forest"
+      ],
+      "matches_native_json_except_biomes": true,
+      "original_selector_retained_in_new_private_tag": true
+    },
+    "cherry": {
+      "active_profile_runtime_tested": false,
+      "curated_additions": [
+        "biomeswevegone:sakura_grove",
+        "biomesoplenty:snowblossom_grove"
+      ],
+      "matches_native_json_except_biomes": true,
+      "original_selector_retained_in_new_private_tag": true
+    },
+    "forest": {
+      "active_profile_runtime_tested": false,
+      "curated_additions": [
+        "biomeswevegone:ebony_woods",
+        "biomeswevegone:redwood_thicket",
+        "biomeswevegone:zelkova_forest",
+        "regions_unexplored:maple_forest",
+        "regions_unexplored:redwoods"
+      ],
+      "matches_native_json_except_biomes": true,
+      "original_selector_retained_in_new_private_tag": true
+    },
+    "savanna": {
+      "active_profile_runtime_tested": false,
+      "curated_additions": [
+        "biomeswevegone:prairie",
+        "regions_unexplored:grassland",
+        "natures_spirit:floral_ridges"
+      ],
+      "matches_native_json_except_biomes": true,
+      "original_selector_retained_in_new_private_tag": true
+    }
+  },
   "candidate_tag_analysis": {
     "birch_forests": {
       "candidate_additions": [
@@ -410,8 +453,114 @@
   },
   "native_structure_json_count": 96,
   "native_worldgen_tested": false,
+  "next_wave_three_native_structure_selector_audits": {
+    "nova_structures:badlands_miner_outpost": {
+      "direct_curated_overlap": [],
+      "effective_runtime_biome_eligibility_verified": false,
+      "external_tags_unresolved_by_native_jar": [
+        "c:badlands",
+        "c:in_mesa",
+        "forge:is_badlands",
+        "forge:is_mesa"
+      ],
+      "native_direct_biome_values": [
+        "byg:atacama_desert",
+        "minecraft:badlands",
+        "minecraft:wooded_badlands",
+        "regions_unexplored:arid_mountains",
+        "regions_unexplored:outback",
+        "terralith:savanna_badlands"
+      ],
+      "native_source_file": "data/nova_structures/worldgen/structure/badlands_miner_outpost.json",
+      "native_tag_closure": {
+        "nova_structures:collections/badlands": {
+          "path": "data/nova_structures/tags/worldgen/biome/collections/badlands.json",
+          "replace": false,
+          "values": [
+            "minecraft:badlands",
+            "minecraft:wooded_badlands",
+            "terralith:savanna_badlands",
+            "byg:atacama_desert",
+            "#forge:is_mesa",
+            "#c:in_mesa",
+            "#forge:is_badlands",
+            "#c:badlands",
+            "regions_unexplored:arid_mountains",
+            "regions_unexplored:outback"
+          ]
+        }
+      },
+      "no_worldgen_changes_from_this_audit": true,
+      "original_native_biomes": [
+        "#nova_structures:collections/badlands"
+      ]
+    },
+    "nova_structures:desert_ruins": {
+      "direct_curated_overlap": [],
+      "effective_runtime_biome_eligibility_verified": false,
+      "external_tags_unresolved_by_native_jar": [
+        "c:desert",
+        "forge:is_desert"
+      ],
+      "native_direct_biome_values": [
+        "biomesoplenty:lush_desert",
+        "clifftree:oasis",
+        "clifftree:shrubland",
+        "minecraft:desert",
+        "projectvibrantjourneys:desert_shrubland",
+        "projectvibrantjourneys:verdant_sands",
+        "regions_unexplored:joshua_desert",
+        "regions_unexplored:saquaro_desert",
+        "terralith:lush_desert"
+      ],
+      "native_source_file": "data/nova_structures/worldgen/structure/desert_ruins.json",
+      "native_tag_closure": {
+        "nova_structures:collections/deserts": {
+          "path": "data/nova_structures/tags/worldgen/biome/collections/deserts.json",
+          "replace": false,
+          "values": [
+            "minecraft:desert",
+            "terralith:lush_desert",
+            "biomesoplenty:lush_desert",
+            "projectvibrantjourneys:desert_shrubland",
+            "projectvibrantjourneys:verdant_sands",
+            "#forge:is_desert",
+            "#c:desert",
+            "regions_unexplored:joshua_desert",
+            "regions_unexplored:saquaro_desert",
+            "clifftree:oasis",
+            "clifftree:shrubland"
+          ]
+        }
+      },
+      "no_worldgen_changes_from_this_audit": true,
+      "original_native_biomes": [
+        "#nova_structures:collections/deserts"
+      ]
+    },
+    "nova_structures:trident_trial_monument": {
+      "direct_curated_overlap": [],
+      "effective_runtime_biome_eligibility_verified": false,
+      "external_tags_unresolved_by_native_jar": [
+        "minecraft:has_structure/ocean_monument"
+      ],
+      "native_direct_biome_values": [],
+      "native_source_file": "data/nova_structures/worldgen/structure/trident_trial_monument.json",
+      "native_tag_closure": {},
+      "no_worldgen_changes_from_this_audit": true,
+      "original_native_biomes": [
+        "#minecraft:has_structure/ocean_monument"
+      ]
+    }
+  },
   "profile_resource_priority_runtime_tested": false,
   "safe_to_deploy": false,
   "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3",
-  "source": "OFFICIAL_PR50_CURSEFORGE_PIN_SHA1_MATCH"
+  "source": "OFFICIAL_PR50_CURSEFORGE_PIN_SHA1_MATCH",
+  "native_evidence_latest": {
+    "workflow_run_id": 38608440998,
+    "workflow_job_id": 116005270740,
+    "git_head": "57a86885726f61821e53e562340ac538ea8e0752",
+    "runtime_verified": false
+  }
 }
