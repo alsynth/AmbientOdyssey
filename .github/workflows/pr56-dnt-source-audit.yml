@@ -1,0 +1,40 @@
+name: PR56 pinned DNT native source audit
+
+on:
+  push:
+    branches:
+      - research/dd-native-structure-scope-20261014
+    paths:
+      - 'tools/audit_pr56_dnt_firewatch_source.py'
+      - '.github/workflows/pr56-dnt-source-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pinned-source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download exact 1.21.1 NeoForge v4.4.4 pinned CurseForge JAR
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 160             'https://mediafilez.forgecdn.net/files/5768/823/dungeons-and-taverns-v4.4.4%20%5BNeoForge%5D.jar'             --output /tmp/pr56-dnt-v444-pinned.jar
+          echo '249a5bdd0e8622b8a11f88758e6f5fd5fda036a3  /tmp/pr56-dnt-v444-pinned.jar' | sha1sum --check --status
+      - name: Inspect only the verified official jar and AO repo overrides
+        run: |
+          python tools/audit_pr56_dnt_firewatch_source.py             --jar /tmp/pr56-dnt-v444-pinned.jar             --out /tmp/pr56-dnt-native-audit.json
+          echo '---BEGIN VERIFIED PR56 JSON---'
+          cat /tmp/pr56-dnt-native-audit.json
+          echo '---END VERIFIED PR56 JSON---'
+      - name: Save small JSON audit only — never redistribute JAR
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr56-dnt-v444-native-json-only
+          path: /tmp/pr56-dnt-native-audit.json
+          retention-days: 14
