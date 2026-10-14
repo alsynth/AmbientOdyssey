@@ -57,3 +57,21 @@ Totals above represent **historical native IDs**, not unique balance jobs and no
 7. Before production, compare actual effective resource providers, loaded datapacks, natural generation, elite modifiers and current dedicated-server roster. PR #50 filename match is **not** that test.
 
 **Worldgen freeze policy:** This catalogue update changes no mod roster, placement, biome eligibility, templates, loot, entity stats or generated chunks. DD screening does **not** block pregeneration after the actual structure/arena and terrain generation freeze is accepted.
+
+## Current DD configuration — direct 53-zone triage (14 Oct)
+
+[Exact existing rule triage](DD_EXISTING_ZONE_TRIAGE_20261014.csv) compares every `zone_matches.structure` in the **PR #45 candidate** against the user-approved T0–1 exclusion. **No DD config edits have been made.**
+
+| Config tier | Current zones | Next v4 handling |
+|---|---:|---|
+| 0 | 6 | Remove redundant no-op zones |
+| 1 | 19 | Remove redundant no-op zones |
+| 2 | 7 | Retain *only* on proven combat sites |
+| 3 | 10 | Prove combat eligibility / no native double-scaling |
+| 4 | 7 | Same; inspect trial/spawner/native effects |
+| 5 | 2 | Same; test elites first |
+| 6 | 2 | Same; test elites first |
+
+**25 of 53 current DD zone mappings are Tier 0 or 1 and have no entity-attribute effects.** They can be **omitted from a future v4 candidate** without changing the combat-buff intent; leave the actual PR #45/PR #50 config untouched until its own regression/rollback checks pass. There are currently **28 Tier 2–6 attribute-buff rules**, not 53 hard combat rules. One of the T1 legacy site IDs is `dungeons_arise:small_blimp`, previously disabled from natural generation; removing a no-op rule does not re-enable the structure.
+
+When implementing v4, preserve the same qualified T2–6 whitelist and ensure no removed T0–1 record was previously used for an unintended location fallback. Do not treat the arithmetic reduction as gameplay-runtime verification.
