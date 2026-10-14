@@ -84,5 +84,27 @@ class PR56FirewatchBiomeBridgeSafety(unittest.TestCase):
         )
 
 
+    def test_zero_curated_historical_audit_is_complete_and_fail_closed(self):
+        path = ROOT / "docs/balance/DD_HISTORICAL_705_ZERO_CURATED_BIOME_TRIAGE_20261014.csv"
+        with path.open(encoding="utf-8", newline="") as f:
+            rows = list(csv.DictReader(f))
+        self.assertEqual(len(rows), 705)
+        self.assertEqual(len({r["structure_id"] for r in rows}), 705)
+        self.assertTrue(all(r["historical_curated_test5_hits"] == "0" for r in rows))
+        self.assertTrue(all(r["runtime_generation_verified"] == "NO__HISTORIC_ONLY" and
+                            r["authorized_to_change_worldgen"] == "NO" for r in rows))
+        by_id = {r["structure_id"]: r for r in rows}
+        self.assertEqual(by_id["nova_structures:firewatch_tower_forest"]["priority_lane"],
+                         "P1_DIRECT_VANILLA_SELECTOR_REPLACED")
+        for name in ("birch", "cherry", "savanna"):
+            self.assertEqual(
+                by_id["nova_structures:firewatch_tower_" + name]["priority_lane"],
+                "P1_NOVA_COLLECTION_TAG_ZERO_HITS",
+            )
+        for structure in ("nova_structures:village_jungle",
+                          "nova_structures:remnant_birch_graveyard"):
+            self.assertEqual(by_id[structure]["priority_lane"], "INTENTIONAL_CURATED_OFF")
+
+
 if __name__ == "__main__":
     unittest.main()
