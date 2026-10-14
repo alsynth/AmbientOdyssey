@@ -92,3 +92,12 @@ Selected narrowly name-based scenery/utility archetypes: Moog Soaring trees and 
 ## 14 October third T0 mapping batch — 62 provisional settlement/utility names
 
 Previous current-profile progress: **692/1130 (61.24%)**; new: **754/1130 (66.73%)**; remaining 376. All known: **754/1240 (60.81%)**; remaining 486. This batch includes regular villages (excluding fortified/underground/occupied), taverns, wells, cottages, statues, small settlements and utilities with no positive linked NBT spawner or trial indicators in the *partial* scan. All assignments provisional Tier0 / user review pending; do not assume peaceful or deploy Dungeon Difficulty. Protected 26 owner-held positive-spawner native IDs and 15 low-looking source families unchanged.
+
+
+## Later continuation: +4 provisional Tier1 small surface ruins and Apotheosis comparison
+
+Mapped four previously UNRANKED small surface ruin IDs as owner-pending provisional Tier1: `mvs:small_ruin`, `structory:dense_forest_ruin`, `structory:ruin_grassy`, `structory:taiga_ruin_surface`. These have **zero linked spawner/trial indicators in the incomplete source scan**, not proof that there are no spawners or mobs; mark outside DD until inspected. Twenty-six user-held native spawner IDs remain UNRANKED.
+
+Current known-ID catalogue = **758/1240 (61.13%)**; current profile = **758/1130 (67.08%)**, leaving **372** unranked. Compared with preceding 754/1130 (66.73%), this is **+4 IDs, +0.35 pp**. Current authoritative numbers live in `DD_MAPPING_PROGRESS_BASELINE_20261014.json`; prior sections remain historical progress snapshots.
+
+Separate user-requested reference: `AO_APOTHEOSIS_BASE_VS_PR53_RARITY_20261014.md` compares default Apotheosis World Tier affix-rarity weights against AO PR53's validated but **not confirmed deployed** tuning. It does not change affix-item injection chances.
