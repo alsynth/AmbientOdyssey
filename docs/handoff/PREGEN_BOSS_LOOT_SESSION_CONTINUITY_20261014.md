@@ -94,7 +94,7 @@ Current working priorities (full provisional 38-row source list: PR44 `docs/bala
 
 ## 5. Installed roster and exclusions — correct two false/overconfident claims
 
-Pinned PR50 manifest `docs/balance/pr45-acceptance-evidence/FULL_IMPORT_INPUTS.json` has **338 total roster entries / 338 physical mod JAR candidate**, including:
+Pinned PR50 manifest `docs/balance/pr45-acceptance-evidence/FULL_IMPORT_INPUTS.json` has **338 referenced roster entries** (including mod and resource/shader references), while PR50 separately reports a full import of **338 physical mod JARs** including bundled custom JARs. These are distinct counts. Important entries:
 - **BOMD IS PRESENT**: `BOMD-NeoForge-1.21-1.3.3.jar` (CF project 941573) and Integrated BOMD `IBOMD v1.0.0-1.21.1.jar`. The earlier statement that it was absent was **incorrect** because its name is abbreviated. Beware structure/arena native-vs-Integrated overrides.
 - **Bosses’ Rise not identified by exact recognizable name in PR50's recorded roster**. This is **not** definitive proof it is absent from the owner's current local profile or that an alias/addon has not supplied its boss content. **Action:** reconcile exact current physical mod filenames, mod ID, mod project and native boss entity registries BEFORE frozen worldgen. It's a **major intended Tier8 encounter family**; if a missing worldgen mod is approved for addition, it must happen before pregen.
 - `SkyArena-1.3.6-1.21.1.jar` (Demi's Sky Arena, CF project 1141465/file 7053645) is **still present in pinned PR50**. **Owner explicitly requested REMOVE Demi's Sky Arena** (both Sky and Ice Arena sites) in the next effective client before permanent worldgen. [Issue58](https://github.com/alsynth/AmbientOdyssey/issues/58) is tracked-only; removal not implemented or tested. Older historical Tier3 Sky/Ice arena proposals are **OBSOLETE pending removal**; do not work on their waves or DD as though still retained.
@@ -133,7 +133,7 @@ Claude was given a [boss balance implementation handoff](https://github.com/alsy
 - [ ] Integrate the config into the *effective* candidate **before** pregeneration, with install verification.
 - [ ] Remove `SkyArena` via Issue58; verify against active full-pack build, not only old roster.
 - [ ] Verify Bosses’ Rise binary/mod ID and all planned T6–9 arena locations; classify `WORLDGEN_HARD` vs `TUNE_LATER`.
-- [ ] Audit chest assignment and prefilled inventories with live Lootr and Apocalypse/Apotheosis behavior, do not overwrite shared loot without scoping.
+- [ ] Audit chest assignment and prefilled inventories with live Lootr and Apotheosis behavior, do not overwrite shared loot without scoping.
 - [ ] Preserve Mechanical Nest boss-first and Keep Kayra creeper-on-slime, Tier0 protected26, Dungeon Crawl all Tier3, Quark/Alex minor mobs untouched.
 - [ ] Keep Claude advanced boss addon and owner quest plans out of current worldgen edits.
 - [ ] Build dedicated server test + disposable 1k Chunky before any permanent 10–20k.
