@@ -502,6 +502,26 @@
             "name": "ao_tier_2",
             "level": 1
           }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "cataclysm:frosted_prison"
+          },
+          "difficulty": {
+            "name": "ao_tier_6",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "cataclysm:sunken_city"
+          },
+          "difficulty": {
+            "name": "ao_tier_6",
+            "level": 1
+          }
         }
       ],
       "zone_specifiers": [],
@@ -516,6 +536,16 @@
           "zone_matches": {
             "biome": null,
             "structure": "dungeons_arise:aviary"
+          },
+          "difficulty": {
+            "name": "ao_tier_6",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "cataclysm:acropolis"
           },
           "difficulty": {
             "name": "ao_tier_6",
