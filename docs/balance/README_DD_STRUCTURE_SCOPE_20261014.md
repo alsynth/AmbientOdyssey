@@ -246,3 +246,17 @@ Files: [per-site compatibility](DD_ENTITY_MATCHER_AUDIT_20261014.csv), [per-enti
 4. Worldgen must freeze before pregeneration; purely DD entity scaling can be adjusted on new spawns later without changing existing generated structure assets.
 
 **Commit scope:** catalogue research CSV and documentation only; no mods added/removed, no structure registrations, no biome/worldgen/DD configs edited, and no game/runtime tests claimed.
+
+### Composite-JAR provider alias reconciliation (14 Oct, source-confidence correction)
+
+A follow-up check of historical `native_jar` fields split on ` | ` found **3 of the 16 zero-EXACT-JAR-match providers** are **already represented as components of a combined-provider field**:
+
+| JAR | Historical combined-source structure IDs |
+|---|---|
+| `IMM v1.3.2-1.21.1.jar` | `mowziesmobs:frostmaw_spawn`, `mowziesmobs:monastery`, `mowziesmobs:umvuthana_grove`, `mowziesmobs:wrought_chamber` |
+| `IBOMD v1.0.0-1.21.1.jar` | `bosses_of_mass_destruction:gauntlet_arena`, `bosses_of_mass_destruction:lich_tower`, `bosses_of_mass_destruction:obsidilith_arena` |
+| `mowziesmobs-1.21.1-1.8.2.jar` | `mowziesmobs:frostmaw_spawn`, `mowziesmobs:monastery`, `mowziesmobs:umvuthana_grove`, `mowziesmobs:wrought_chamber` |
+
+Therefore, the precise accounting is **16 providers with zero exact-JAR-native-ID rows; 3 have historical combined-provider aliases; 13 have neither exact nor combined-provider native-ID rows**. Previous figure of “16 installed providers omitted” meant **zero exact matches**, not that every mod was completely absent from previous catalogue metadata.
+
+The combined-provider IDs, including `mowziesmobs:monastery`, `mowziesmobs:wrought_chamber`, and `bosses_of_mass_destruction:lich_tower`, **may correspond** to source NBT families but are *not yet proven to be actual effective placed/registered structures*. Added exact-composite and tentative family correspondence columns to the new provider summary and NBT family catalogue. Keep composite-derived candidates out of any “missing mod, add it” backlog, and never assign tiers or DD by name-match alone.
