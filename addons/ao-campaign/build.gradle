@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+group = 'dev.ambientodyssey.campaign'
+version = '0.1.1-experimental'
+base { archivesName = 'ao-campaign' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+repositories { maven { url = 'https://maven.shadowsoffire.dev/releases' } }
+dependencies {
+    implementation('dev.shadowsoffire:Apotheosis:1.21.1-8.9.0') { transitive = false }
+    implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }
+    implementation('dev.shadowsoffire:ApothicAttributes:1.21.1-2.11.0') { transitive = false }
+}
+neoForge {
+    version = '21.1.252'
+    mods { ao_campaign { sourceSet sourceSets.main } }
+    runs { gameTestServer { type = 'gameTestServer'; systemProperty 'neoforge.enabledGameTestNamespaces', 'ao_campaign' } }
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+tasks.named('jar') { exclude('**/CampaignGameTests.class') }

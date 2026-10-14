@@ -34,7 +34,7 @@ public final class SigilCosts {
         if (rarity == null) return vanillaCost;
         String ns = rarity.getNamespace(), path = rarity.getPath();
         int reroll = switch (path) {
-            case "ancient" -> "apotheosis".equals(ns) ? 6 : 0;
+            case "ancient" -> "apotheosis".equals(ns) || approvedPortNamespace(ns) ? 6 : 0;
             case "artifact" -> approvedPortNamespace(ns) ? 18 : 0;
             case "heirloom" -> approvedPortNamespace(ns) ? 24 : 0;
             case "esoteric" -> approvedPortNamespace(ns) ? 32 : 0;

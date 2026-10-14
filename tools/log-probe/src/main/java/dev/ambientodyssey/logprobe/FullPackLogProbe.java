@@ -39,6 +39,10 @@ public final class FullPackLogProbe {
    var type=Class.forName("dev.shadowsoffire.apotheosis.socket.gem.GemRegistry");
    var registry=type.getField("INSTANCE").get(null);
    var values=(java.util.Collection<?>)type.getMethod("getValues").invoke(registry);
+   if(Boolean.getBoolean("ao.fullpack.campaignChecks")) {
+    Class.forName("dev.shadowsoffire.apotheosis.affix.augmenting.AugmentingScreen$FatTexButton");
+    mc.getSingleplayerServer().submit(() -> CampaignChecks.run(mc.getSingleplayerServer())).get();
+   }
    LOG.info("AO_FULL_PACK_WORLD_JOIN_PASS: player joined disposable flat integrated world; {} native gems loaded; content errors remain diagnostic, no gameplay certification",values.size());
    mc.stop();
   }catch(Exception|LinkageError e){finished=true;LOG.error("AO_FULL_PACK_PROBE_FAIL",e);mc.stop();}

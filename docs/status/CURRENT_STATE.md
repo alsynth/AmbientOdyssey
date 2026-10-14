@@ -1,5 +1,10 @@
 # Ambient Odyssey — Current state
 
+## 14 October — full PR54 campaign experiment
+
+Isolated branch experimental/full-pack-through-pr54-20261014. Full test ZIP uploaded before combined tests: 338 CF references, 10 custom JARs / expected 341 physical mods; 153 journal entries / 20 chapters, preserved 32 manual pages. Broad deferred-design request is partly implemented. See [scope and evidence](../testing/FULL_PR54_CAMPAIGN_20261014.md). Do not call it complete or runtime accepted.
+
+
 **As of 10 October 2026.** This page is the current handoff, not a chronological log. Previous 64 KB handoff preserved in [full historical status](../archive/history/CURRENT_STATE_full_2026-10-10.md).
 
 ## Current working source
@@ -37,7 +42,7 @@ The private package was rebuilt twice byte-identically; FTB/Questlog/ZIP/331-ref
 - [Q1 runtime matrix](../questing/QUESTLOG_Q1_RUNTIME_TESTS.md), [full first-test field sheet](../testing/V04H_TEST_SESSION_FIELD_SHEET.md).
 - Historical Q1-only candidate [38079305682](https://github.com/alsynth/AmbientOdyssey/actions/runs/38079305682), launch-ready 331-mod no-quest candidate [38077302870](https://github.com/alsynth/AmbientOdyssey/actions/runs/38077302870), and Test6/8 historical reports remain accessible in Git history and the archive.
 
-## 12 October � two-addon fixes
+## 12 October � two-addon fixes
 
 Isolated branch `fix/affix-trims-questlog-placement-20261012`, based on v045 `6228a5a`. Armor trim addon 0.1.1: eight native tests PASS (factory, old drops/chests, preservation). Questlog bridge 0.1.5: actual native client screenshots and click/return PASS at GUI scales 2/3/4. Separate update kit and v045.1 test import, all 330 original pins unchanged. Full AO overlays/multiplayer remain pending. See [evidence and install instructions](../testing/ARMOR_TRIMS_QUESTLOG_FIX_2026-10-12.md). v046 ports remain separate.
 

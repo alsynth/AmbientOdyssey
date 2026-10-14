@@ -1,0 +1,30 @@
+{
+  "title": "Reach a village or safe ruin",
+  "description": "Choose a landmark that interests you and leave a waypoint before going underground. A sensible route home matters more than travelling far.\n\nReach a village or safe ruin.",
+  "chapter": "questlog:open_road",
+  "sort_order": 102,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:torch",
+      "required_amount": 32,
+      "name": "Carry 32 torch"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_open_road_01"
+    }
+  ]
+}

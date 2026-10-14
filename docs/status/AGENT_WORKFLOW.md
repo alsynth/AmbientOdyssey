@@ -33,3 +33,7 @@ Use `tools/package_v0484_r19_test.py` with the exact v0483 base and r19 SHA `5ba
 ## Performance phase authorized
 
 Use r19 commit92575df / exact v0484 import as baseline. Follow [v049 preparation](../performance/V049_OVERHAUL_PREP_20261012.md); profile representative survival worlds, keep cold/warm and CPU/GPU evidence separate, preserve rollback. Actual candidate renderer metadata blocks blind migration. Performance work can proceed while outstanding gameplay acceptance continues.
+
+## 14 October — full PR54 experiment
+
+Use experimental/full-pack-through-pr54-20261014 and [its report](../testing/FULL_PR54_CAMPAIGN_20261014.md). Preserve the initial uploaded ZIP/hash; any fixes require a new version. Full-pack testing follows upload at owner request. Complete open design slices without treating reading acknowledgement as fight detection or assigning the reserved End boss/Geburah.

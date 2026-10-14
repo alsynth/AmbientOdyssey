@@ -32,7 +32,7 @@ def allowed(rules):
     return result
 
 
-def launch(install, runtime, jar, java, heap, timeout, width=960, height=540, natural_encounters=False):
+def launch(install, runtime, jar, java, heap, timeout, width=960, height=540, natural_encounters=False, campaign_checks=False):
     project = Path(__file__).resolve().parents[1]
     runtime = runtime.resolve()
     runtime.relative_to((project / 'build').resolve())
@@ -86,6 +86,8 @@ def launch(install, runtime, jar, java, heap, timeout, width=960, height=540, na
     args = [f'-Xmx{heap}', '-Dao.fullpack.logProbe=true', f'-Dao.fullpack.logProbeTimeoutSeconds={timeout}']
     if natural_encounters:
         args.append('-Dao.fullpack.naturalEncounters=true')
+    if campaign_checks:
+        args.append('-Dao.fullpack.campaignChecks=true')
     args += arguments(base['arguments']['jvm'] + neo['arguments']['jvm'])
     args += [neo['mainClass']] + arguments(base['arguments']['game'] + neo['arguments']['game'])
     args += ['--width', str(width), '--height', str(height)]

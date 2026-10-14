@@ -1,0 +1,30 @@
+{
+  "title": "Win a qualifying strong Tier 6 boss encounter",
+  "description": "The Dead King is the primary experimental Pinnacle route. Kobolediator is a provisional alternate whose combat equivalence still needs testing. Winning grants access without changing your active difficulty.\n\nWin a qualifying strong Tier 6 boss encounter.",
+  "chapter": "questlog:v050_legendary_hunt",
+  "sort_order": 105,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "objectives": [
+    {
+      "type": "questlog:advancement",
+      "advancement": "ao_campaign:milestones/tier_6",
+      "required_amount": 1,
+      "name": "Complete the tier 6 milestone"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_legendary_hunt_01"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "The Final Horizon",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:dragon_egg"
+  },
+  "order": 22,
+  "default_chapter": false,
+  "hidden": false
+}

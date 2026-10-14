@@ -1,0 +1,28 @@
+{
+  "title": "Test the boss first phase and retreat safely",
+  "description": "The Dead King is the primary experimental Pinnacle route. Kobolediator is a provisional alternate whose combat equivalence still needs testing. Winning grants access without changing your active difficulty.\n\nTest the boss first phase and retreat safely.\n\nThis entry records that you read the advice. It does not detect a fight, gear quality, a completed expedition or a claimed reward.",
+  "chapter": "questlog:v050_legendary_hunt",
+  "sort_order": 104,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read and acknowledge this expedition note"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_legendary_hunt_01"
+    }
+  ]
+}

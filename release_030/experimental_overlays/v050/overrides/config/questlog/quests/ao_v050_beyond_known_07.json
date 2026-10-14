@@ -1,0 +1,28 @@
+{
+  "title": "Complete a high-tier alternate challenge",
+  "description": "The Last of Deepslate is the first verified registry route for this experimental mastery milestone. Other Tier 8 encounters remain in the field dossiers until their triggers are confirmed.\n\nComplete a high-tier alternate challenge.\n\nThis entry records that you read the advice. It does not detect a fight, gear quality, a completed expedition or a claimed reward.",
+  "chapter": "questlog:v050_beyond_known",
+  "sort_order": 107,
+  "icon": {
+    "item": "minecraft:dragon_breath"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read and acknowledge this expedition note"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_beyond_known_01"
+    }
+  ]
+}

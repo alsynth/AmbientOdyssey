@@ -1,0 +1,30 @@
+{
+  "title": "Claim first boss-exclusive Artifact grade reward if supported",
+  "description": "The Dead King is the primary experimental Pinnacle route. Kobolediator is a provisional alternate whose combat equivalence still needs testing. Winning grants access without changing your active difficulty.\n\nClaim first boss-exclusive Artifact grade reward if supported.",
+  "chapter": "questlog:v050_legendary_hunt",
+  "sort_order": 106,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "objectives": [
+    {
+      "type": "questlog:advancement",
+      "advancement": "ao_campaign:milestones/artifact_reward",
+      "required_amount": 1,
+      "name": "Complete the artifact reward milestone"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_legendary_hunt_01"
+    }
+  ]
+}

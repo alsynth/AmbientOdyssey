@@ -1,0 +1,28 @@
+{
+  "title": "Learn how to upgrade gems and sockets",
+  "description": "The Nether, a Trial Chamber or a Mine Cells expedition can be your next challenge. Leave early Mine Cells loot as you find it; prepare a safe retreat.\n\nLearn how to upgrade gems and sockets.\n\nThis entry records that you read the advice. It does not detect a fight, gear quality, a completed expedition or a claimed reward.",
+  "chapter": "questlog:v050_threshold",
+  "sort_order": 108,
+  "icon": {
+    "item": "minecraft:blaze_rod"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read and acknowledge this expedition note"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_threshold_01"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Beyond the Known",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:dragon_breath"
+  },
+  "order": 21,
+  "default_chapter": false,
+  "hidden": false
+}
