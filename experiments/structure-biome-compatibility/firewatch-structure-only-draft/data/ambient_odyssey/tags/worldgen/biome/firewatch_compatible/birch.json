@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#nova_structures:collections/birch_forests",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:zelkova_forest",
+    "regions_unexplored:maple_forest"
+  ]
+}

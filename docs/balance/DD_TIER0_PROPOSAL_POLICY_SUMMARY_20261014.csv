@@ -1,0 +1,12 @@
+policy,count,confidence,example_IDs
+MOOG_SCENERY_PROPS,68,HIGH_NAME_DECOR,mvs:acacia_log_pile | mvs:acacia_tree | mvs:acacia_well | mvs:bench
+CTOV_STANDARD_VILLAGES,51,MEDIUM_NAME_ARCHETYPE,ctov:large/village_beach | ctov:large/village_christmas | ctov:large/village_dark_forest | ctov:large/village_desert
+TOWNS_AND_TOWERS_VILLAGES,26,MEDIUM_NAME_ARCHETYPE,towns_and_towers:exclusives/village_classic | towns_and_towers:exclusives/village_iberian | towns_and_towers:exclusives/village_mediterranean | towns_and_towers:exclusives/village_nilotic
+MOOG_NETHER_SCENERY,23,HIGH_NAME_DECOR,mns:bridge_1 | mns:bridge_2 | mns:bridge_3 | mns:bridge_4
+FARMERS_OVERWORLD,12,MEDIUM_NAME_ARCHETYPE,farmers_structures:aquacultures_beach | farmers_structures:aquacultures_cod | farmers_structures:aquacultures_common | farmers_structures:cacaos
+BETTEREND_TERRAIN,11,HIGH_NAME_DECOR,betterend:end_bridge | betterend:end_lake | betterend:end_lake_normal | betterend:end_lake_rare
+INTEGRATED_VILLAGES,8,MEDIUM_NAME_ARCHETYPE,integrated_villages:cabin_village | integrated_villages:clockwork_village | integrated_villages:kutcha_village | integrated_villages:marketstead_village
+BWG_NATURE,7,HIGH_NAME_DECOR,biomeswevegone:dripstone_arch | biomeswevegone:ironwood_gour_plateau | biomeswevegone:large_cold_lake | biomeswevegone:lush_arch
+UNDERWATER_NONCOMBAT_DECOR,5,MEDIUM_NAME_ARCHETYPE,underwater_village:cold_fountain | underwater_village:cold_gate | underwater_village:small_gate | underwater_village:warm_fountain
+CREATE_RUSTIC_BUILDINGS,4,MEDIUM_NAME_ARCHETYPE,create_rustic_structures:rustic_barn | create_rustic_structures:rustic_smithy | create_rustic_structures:rustic_well | create_rustic_structures:rustic_windmill
+NATURES_SPIRIT_VILLAGES,4,MEDIUM_NAME_ARCHETYPE,natures_spirit:village_adobe | natures_spirit:village_coconut | natures_spirit:village_cypress | natures_spirit:village_wisteria

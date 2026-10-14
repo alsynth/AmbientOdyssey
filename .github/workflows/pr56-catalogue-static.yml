@@ -1,0 +1,356 @@
+name: PR56 catalogue static safety
+
+on:
+  push:
+    branches:
+      - research/dd-native-structure-scope-20261014
+    paths:
+      - 'docs/balance/DD_*20261014.csv'
+      - 'docs/balance/DD_MAPPING_PROGRESS_BASELINE_20261014.json'
+      - 'tests/test_pr56_catalogue_policy.py'
+      - 'tests/test_pr56_biome_bridge.py'
+      - 'tests/test_pr56_scoped_firewatch.py'
+      - 'tests/test_pr56_remaining_worldgen_policy.py'
+      - 'docs/balance/DD_ADVENTURE_LUKI_PASTERDREAM_PINNED_NATIVE_20261014.json'
+      - 'docs/balance/DD_FOUR_PROVIDER_COMBAT_BIOME_SOURCE_20261014.json'
+      - 'docs/balance/DD_YUNGS_MINE_SHAFT_NATIVE_BIOME_SOURCE_20261014.json'
+      - 'docs/balance/DD_DNT_PINNED_444_NATIVE_CONSUMERS_20261014.json'
+      - 'experiments/structure-biome-compatibility/**'
+      - 'docs/audits/CURRENT_BIOME_ROSTER.json'
+      - 'tools/audit_pr56_dnt_firewatch_source.py'
+      - 'tools/audit_pr56_firewatch_paxi_stack.py'
+      - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
+      - 'tools/audit_pr56_remaining_worldgen_native.py'
+      - 'tools/audit_pr56_dungeon_biome_sources.py'
+      - 'tools/audit_pr56_dd_zone_coverage.py'
+      - 'tools/audit_pr56_native_template_spawners.py'
+      - 'tools/audit_pr56_mechanical_boss_foundry.py'
+      - 'tests/test_pr56_mechanical_boss_source.py'
+      - 'tests/test_pr56_boss_only_owner_policy.py'
+      - 'docs/balance/DD_OWNER_BOSS_CENTRIC_SCOPE_20261014.json'
+      - 'docs/balance/DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json'
+      - 'tools/pr56_stream_nbt.py'
+      - 'tests/test_pr56_stream_nbt.py'
+      - 'tests/test_pr56_native_spawner_parser.py'
+      - 'docs/balance/DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json'
+      - 'tools/package_pr56_firewatch_test_datapack.py'
+      - '.github/workflows/pr56-dnt-source-audit.yml'
+      - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
+      - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
+      - '.github/workflows/pr56-catalogue-static.yml'
+  pull_request:
+    paths:
+      - 'docs/balance/DD_*20261014.csv'
+      - 'docs/balance/DD_MAPPING_PROGRESS_BASELINE_20261014.json'
+      - 'tests/test_pr56_catalogue_policy.py'
+      - 'tests/test_pr56_biome_bridge.py'
+      - 'tests/test_pr56_scoped_firewatch.py'
+      - 'tests/test_pr56_remaining_worldgen_policy.py'
+      - 'docs/balance/DD_ADVENTURE_LUKI_PASTERDREAM_PINNED_NATIVE_20261014.json'
+      - 'docs/balance/DD_FOUR_PROVIDER_COMBAT_BIOME_SOURCE_20261014.json'
+      - 'docs/balance/DD_YUNGS_MINE_SHAFT_NATIVE_BIOME_SOURCE_20261014.json'
+      - 'docs/balance/DD_DNT_PINNED_444_NATIVE_CONSUMERS_20261014.json'
+      - 'experiments/structure-biome-compatibility/**'
+      - 'docs/audits/CURRENT_BIOME_ROSTER.json'
+      - 'tools/audit_pr56_dnt_firewatch_source.py'
+      - 'tools/audit_pr56_firewatch_paxi_stack.py'
+      - 'tools/audit_pr56_yungs_mineshaft_biomes.py'
+      - 'tools/audit_pr56_remaining_worldgen_native.py'
+      - 'tools/audit_pr56_dungeon_biome_sources.py'
+      - 'tools/audit_pr56_dd_zone_coverage.py'
+      - 'tools/audit_pr56_native_template_spawners.py'
+      - 'tools/audit_pr56_mechanical_boss_foundry.py'
+      - 'tests/test_pr56_mechanical_boss_source.py'
+      - 'tests/test_pr56_boss_only_owner_policy.py'
+      - 'docs/balance/DD_OWNER_BOSS_CENTRIC_SCOPE_20261014.json'
+      - 'docs/balance/DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json'
+      - 'tools/pr56_stream_nbt.py'
+      - 'tests/test_pr56_stream_nbt.py'
+      - 'tests/test_pr56_native_spawner_parser.py'
+      - 'docs/balance/DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json'
+      - 'tools/package_pr56_firewatch_test_datapack.py'
+      - '.github/workflows/pr56-dnt-source-audit.yml'
+      - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
+      - 'experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json'
+      - '.github/workflows/pr56-catalogue-static.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-ledger-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify PR56 catalogue, owner policy and inert biome bridge
+        run: python -m unittest discover -s tests -p 'test_pr56_*.py' -v
+
+  pinned-native-dnt-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve exact DNT v4.4.4 NeoForge and verify PR50 SHA1
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 160 \
+            'https://mediafilez.forgecdn.net/files/5768/823/dungeons-and-taverns-v4.4.4%20%5BNeoForge%5D.jar' \
+            --output /tmp/pr56-dnt-v444-pinned.jar
+          echo '249a5bdd0e8622b8a11f88758e6f5fd5fda036a3  /tmp/pr56-dnt-v444-pinned.jar' | sha1sum --check
+      - name: Native consumer and firewatch source report
+        run: |
+          python tools/audit_pr56_dnt_firewatch_source.py --jar /tmp/pr56-dnt-v444-pinned.jar --out /tmp/pr56-dnt-native-audit.json
+          echo '---BEGIN VERIFIED PR56 JSON---'
+          cat /tmp/pr56-dnt-native-audit.json
+          echo '---END VERIFIED PR56 JSON---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-dnt-verified-native-source-report
+          path: /tmp/pr56-dnt-native-audit.json
+          retention-days: 14
+
+  source-paxi-precedence-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch isolated PR50 source snapshot (not the live import)
+        run: |
+          git fetch --depth=1 origin experimental/pr45-runtime-rpg-acceptance-20261013
+          mkdir -p /tmp/pr56-pr50-source
+          git archive FETCH_HEAD release_030/overrides/config/paxi/datapacks | tar -x -C /tmp/pr56-pr50-source
+      - name: Audit PR56 and PR50 Paxi native firewatch overrides
+        run: |
+          python tools/audit_pr56_firewatch_paxi_stack.py \
+            --current release_030/overrides/config/paxi/datapacks \
+            --reference /tmp/pr56-pr50-source/release_030/overrides/config/paxi/datapacks \
+            --out /tmp/pr56-paxi-source-stack.json
+          echo '---BEGIN PAXI SOURCE AUDIT---'
+          cat /tmp/pr56-paxi-source-stack.json
+          echo '---END PAXI SOURCE AUDIT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-paxi-source-comparison-json
+          path: /tmp/pr56-paxi-source-stack.json
+          retention-days: 14
+
+      - name: Package PR56 four-tower TEST ONLY ZIP (do not add to Paxi or modpack)
+        run: |
+          python tools/package_pr56_firewatch_test_datapack.py \
+            --paxi-report /tmp/pr56-paxi-source-stack.json \
+            --out /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip \
+            --manifest /tmp/pr56-firewatch-four-towers-TEST-ONLY.manifest.json
+          unzip -l /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip
+          # Independently rebuild with different output paths to verify deterministic bytes.
+          python tools/package_pr56_firewatch_test_datapack.py \
+            --paxi-report /tmp/pr56-paxi-source-stack.json \
+            --out /tmp/pr56-second-repro-check.zip \
+            --manifest /tmp/pr56-second-repro-check.manifest.json
+          cmp /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip /tmp/pr56-second-repro-check.zip
+          echo 'PR56 test-only datapack reproducible byte-for-byte'
+      - name: Archive TEST-ONLY isolated datapack and manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr56-four-tower-worldgen-TEST-ONLY
+          path: |
+            /tmp/pr56-firewatch-four-towers-TEST-ONLY.zip
+            /tmp/pr56-firewatch-four-towers-TEST-ONLY.manifest.json
+          retention-days: 14
+
+  yungs-mineshaft-native-tag-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch PR50-pinned YUNG's Better Mineshafts JAR only
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 120 \
+            'https://mediafilez.forgecdn.net/files/5812/193/YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar' \
+            --output /tmp/pr56-yungs-better-mineshafts-511.jar
+          echo '6a14e1d8201f068ca87ef8333e471c5378955906  /tmp/pr56-yungs-better-mineshafts-511.jar' | sha1sum --check
+      - name: Inspect YUNG mineshaft native eligibility without changing worldgen
+        run: |
+          python tools/audit_pr56_yungs_mineshaft_biomes.py \
+            --jar /tmp/pr56-yungs-better-mineshafts-511.jar \
+            --out /tmp/pr56-yungs-native-biome-tags.json
+          echo '---BEGIN PR56 YUNGS NATIVE REPORT---'
+          cat /tmp/pr56-yungs-native-biome-tags.json
+          echo '---END PR56 YUNGS NATIVE REPORT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-yungs-native-biome-tags-json
+          path: /tmp/pr56-yungs-native-biome-tags.json
+          retention-days: 14
+
+  remaining-worldgen-native-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download exact PR50-pinned Adventure Dungeons, Luki and Pasterdream native JARs
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/5808/396/adventuredungeons-neoforge-1.21-1.3.1.jar' \
+            --output /tmp/pr56-adventuredungeons.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/7456/302/lukis-grand-capitals-1.1.3.jar' \
+            --output /tmp/pr56-lukis.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 240 \
+            'https://mediafilez.forgecdn.net/files/8639/119/pasterdream-0.9.6.jar' \
+            --output /tmp/pr56-pasterdream.jar
+          echo '706092299886721473b0ef7d5e4f7aa2a073c8de  /tmp/pr56-adventuredungeons.jar' | sha1sum --check
+          echo 'a07986ac59268f1343737b81acd24ad34e5371ca  /tmp/pr56-lukis.jar' | sha1sum --check
+          echo 'd5d95c8a049d868a844132ac1e47261eff0067f8  /tmp/pr56-pasterdream.jar' | sha1sum --check
+      - name: Extract native structure selectors without changing any active files
+        run: |
+          python tools/audit_pr56_remaining_worldgen_native.py \
+            --adventuredungeons /tmp/pr56-adventuredungeons.jar \
+            --lukis /tmp/pr56-lukis.jar \
+            --pasterdream /tmp/pr56-pasterdream.jar \
+            --out /tmp/pr56-remaining-five-native-selectors.json
+          echo '---BEGIN THREE MOD NATIVE REPORT---'
+          cat /tmp/pr56-remaining-five-native-selectors.json
+          echo '---END THREE MOD NATIVE REPORT---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-remaining-native-worldgen-json
+          path: /tmp/pr56-remaining-five-native-selectors.json
+          retention-days: 14
+
+  combat-dungeon-biome-native-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch exact PR50-pinned Dungeons Arise and IDAS JARs
+        run: |
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/7150/870/DungeonsArise-1.21.1-2.1.68-release.jar' \
+            --output /tmp/pr56-dungeons-arise-2168.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/8232/359/idas-1.13.7%2B1.21.1-neoforge.jar' \
+            --output /tmp/pr56-idas-1137.jar
+          echo 'c651339154da7b9e9cf47a80fdef22c4d59cad5c  /tmp/pr56-dungeons-arise-2168.jar' | sha1sum --check
+          echo '154f275823f5f949ed492ac6ce078a80fc3c759a  /tmp/pr56-idas-1137.jar' | sha1sum --check
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/8589/256/friendsandfoes-neoforge-4.0.27%2Bmc1.21.1.jar' \
+            --output /tmp/pr56-friendsandfoes.jar
+          curl --fail --location --silent --show-error --retry 2 --max-time 180 \
+            'https://mediafilez.forgecdn.net/files/8902/209/MoogsTemplesReimagined-universal-1.21-2.0.4.jar' \
+            --output /tmp/pr56-mtr.jar
+          echo '3967c4e91662e3997318329b13af19816968b56a  /tmp/pr56-friendsandfoes.jar' | sha1sum --check
+          echo 'd4078318221c74265156f470b1ac321f14069b34  /tmp/pr56-mtr.jar' | sha1sum --check
+      - name: Audit combat dungeons using only pinned native sources and AO Paxi files
+        run: |
+          python tools/audit_pr56_dungeon_biome_sources.py \
+            --dungeons-arise /tmp/pr56-dungeons-arise-2168.jar \
+            --idas /tmp/pr56-idas-1137.jar \
+            --friendsandfoes /tmp/pr56-friendsandfoes.jar \
+            --mtr /tmp/pr56-mtr.jar \
+            --out /tmp/pr56-combat-dungeon-native-biome-tags.json
+          echo '---BEGIN COMBAT DUNGEON NATIVE REPORT---'
+          cat /tmp/pr56-combat-dungeon-native-biome-tags.json
+          echo '---END COMBAT DUNGEON NATIVE REPORT---'
+      - name: Trace pinned native jigsaw template NBT for spawners (read-only)
+        run: |
+          python tools/audit_pr56_native_template_spawners.py \
+            --dungeons-arise /tmp/pr56-dungeons-arise-2168.jar \
+            --idas /tmp/pr56-idas-1137.jar \
+            --out /tmp/pr56-native-template-encounter-indicators.json
+          python - <<'PY'
+          import json
+          p='/tmp/pr56-native-template-encounter-indicators.json'
+          j=json.load(open(p,encoding='utf-8'))
+          q={}
+          for name,p in j["providers"].items():
+              for sid,v in p["structures"].items():
+                  q[sid]={"pools":v.get("pools_visited",0),
+                          "templates":v.get("templates_inspected",0),
+                          "normal_spawners":v.get("source_normal_spawner_blocks",0),
+                          "trial_spawners":v.get("source_trial_spawner_blocks",0),
+                          "spawn_ids":v.get("source_normal_spawner_entity_ids",[]),
+                          "trial_spawn_ids":v.get("source_trial_spawner_entity_ids",[]),
+                          "normal_passengers":v.get("source_normal_spawner_passenger_entity_ids",[]),
+                          "normal_mount_pairs":v.get("source_normal_spawner_mount_pairs",[]),
+                          "prebuilt_mount_pairs":v.get("source_prebuilt_mount_pairs",[]),
+                          "mounted_template_sources":[
+                            {"template":record["template"],
+                             "nbt_resource":record["source_path"],
+                             "mount_pairs":record.get("normal_spawner_mount_pairs",[])}
+                            for record in v.get("positive_source_template_samples",[])
+                            if record.get("normal_spawner_mount_pairs")],
+                          "graph_complete":v.get("native_graph_complete",False),
+                          "graph_errors":v.get("source_graph_errors",[])[:5]}
+          print('---BEGIN COMPACT NBT EVIDENCE---')
+          print(json.dumps(q,sort_keys=True))
+          print('---END COMPACT NBT EVIDENCE---')
+          PY
+      - name: Source-only mechanical boss signal / Foundry reference audit
+        run: |
+          python tools/audit_pr56_mechanical_boss_foundry.py \
+            --jar /tmp/pr56-dungeons-arise-2168.jar \
+            --out /tmp/pr56-mechanical-boss-foundry-source.json
+          echo 'No native boss identity inferred from a mere structure label'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-mechanical-boss-foundry-source-json
+          path: /tmp/pr56-mechanical-boss-foundry-source.json
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-native-template-spawner-indicators-json
+          path: /tmp/pr56-native-template-encounter-indicators.json
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-combat-dungeon-native-biome-tags-json
+          path: /tmp/pr56-combat-dungeon-native-biome-tags.json
+          retention-days: 14
+
+  candidate-DD-zone-coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: DD Tier2–6 candidate source coverage — NOT a runtime test
+        run: |
+          python tools/audit_pr56_dd_zone_coverage.py --out /tmp/pr56-dd-candidate-source-coverage.json
+          echo '---BEGIN DD CANDIDATE SOURCE COVERAGE---'
+          cat /tmp/pr56-dd-candidate-source-coverage.json
+          echo '---END DD CANDIDATE SOURCE COVERAGE---'
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-dd-candidate-source-coverage-json
+          path: /tmp/pr56-dd-candidate-source-coverage.json
+          retention-days: 14

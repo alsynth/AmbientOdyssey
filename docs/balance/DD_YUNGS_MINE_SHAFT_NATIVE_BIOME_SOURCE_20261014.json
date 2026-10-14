@@ -1,0 +1,235 @@
+{
+  "curseforge_file_id": 5812193,
+  "curseforge_project_id": 1015096,
+  "full_native_tag_keys": [
+    "bettermineshafts:has_structure/better_mineshaft_acacia",
+    "bettermineshafts:has_structure/better_mineshaft_desert",
+    "bettermineshafts:has_structure/better_mineshaft_dripstone",
+    "bettermineshafts:has_structure/better_mineshaft_ice",
+    "bettermineshafts:has_structure/better_mineshaft_jungle",
+    "bettermineshafts:has_structure/better_mineshaft_lush",
+    "bettermineshafts:has_structure/better_mineshaft_mesa",
+    "bettermineshafts:has_structure/better_mineshaft_mushroom",
+    "bettermineshafts:has_structure/better_mineshaft_oak",
+    "bettermineshafts:has_structure/better_mineshaft_overgrown",
+    "bettermineshafts:has_structure/better_mineshaft_red_desert",
+    "bettermineshafts:has_structure/better_mineshaft_spruce",
+    "bettermineshafts:has_structure/better_mineshaft_spruce_snowy"
+  ],
+  "native_biome_tag_count": 13,
+  "native_structure_definition_count": 16,
+  "native_structure_set_count": 1,
+  "natural_generation_verified": false,
+  "no_worldgen_or_gameplay_files_changed": true,
+  "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906",
+  "source": "SHA1_VERIFIED_PR50_CURSEFORGE_YUNGS_BETTER_MINESHAFTS",
+  "target_results": {
+    "bettermineshafts:mineshaft_acacia": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_acacia",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_acacia.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [
+        "minecraft:savanna",
+        "minecraft:savanna_plateau",
+        "projectvibrantjourneys:baobab_fields",
+        "terralith:arid_highlands",
+        "terralith:hot_shrubland",
+        "terralith:sakura_grove",
+        "terralith:sakura_valley"
+      ],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_acacia",
+        "c:savanna",
+        "forge:is_savanna"
+      ],
+      "unresolved_nested_native_tags": [
+        "c:savanna",
+        "forge:is_savanna"
+      ]
+    },
+    "bettermineshafts:mineshaft_desert": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_desert",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_desert.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [
+        "biomesoplenty:lush_desert",
+        "minecraft:desert",
+        "projectvibrantjourneys:desert_shrubland",
+        "projectvibrantjourneys:verdant_sands",
+        "terralith:lush_desert"
+      ],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_desert",
+        "c:desert",
+        "forge:is_desert"
+      ],
+      "unresolved_nested_native_tags": [
+        "c:desert",
+        "forge:is_desert"
+      ]
+    },
+    "bettermineshafts:mineshaft_mesa": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_mesa",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_mesa.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_mesa",
+        "c:badlands",
+        "c:in_mesa",
+        "forge:is_badlands",
+        "forge:is_mesa",
+        "minecraft:is_badlands"
+      ],
+      "unresolved_nested_native_tags": [
+        "c:badlands",
+        "c:in_mesa",
+        "forge:is_badlands",
+        "forge:is_mesa",
+        "minecraft:is_badlands"
+      ]
+    },
+    "bettermineshafts:mineshaft_mushroom": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_mushroom",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_mushroom.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [
+        "biomesoplenty:fungal_jungle",
+        "minecraft:mushroom_fields"
+      ],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_mushroom",
+        "c:mushroom",
+        "forge:is_mushroom"
+      ],
+      "unresolved_nested_native_tags": [
+        "c:mushroom",
+        "forge:is_mushroom"
+      ]
+    },
+    "bettermineshafts:mineshaft_oak": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_oak",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_oak.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [
+        "minecraft:meadow",
+        "minecraft:plains",
+        "minecraft:sunflower_plains",
+        "minecraft:swamp",
+        "projectvibrantjourneys:prairie",
+        "terralith:brushland"
+      ],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_oak",
+        "c:plains"
+      ],
+      "unresolved_nested_native_tags": [
+        "c:plains"
+      ]
+    },
+    "bettermineshafts:mineshaft_red_desert": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_red_desert",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_red_desert.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_red_desert",
+        "c:badlands",
+        "forge:is_badlands",
+        "minecraft:is_badlands"
+      ],
+      "unresolved_nested_native_tags": [
+        "c:badlands",
+        "forge:is_badlands",
+        "minecraft:is_badlands"
+      ]
+    },
+    "bettermineshafts:mineshaft_spruce_snowy": {
+      "AO_Paxi_effective_biome_tags_checked": false,
+      "minecraft_tag_sources_may_be_external": true,
+      "native_direct_curated_overlap": [],
+      "native_set_memberships": [
+        "bettermineshafts:mineshafts"
+      ],
+      "native_structure_definition": {
+        "biomes": "#bettermineshafts:has_structure/better_mineshaft_spruce_snowy",
+        "source": "data/bettermineshafts/worldgen/structure/mineshaft_spruce_snowy.json",
+        "type": "bettermineshafts:mineshaft"
+      },
+      "naturally_generated_in_current_profile": false,
+      "resolved_in_jar_tag_entries": [
+        "minecraft:jagged_peaks",
+        "minecraft:snowy_plains",
+        "minecraft:snowy_slopes",
+        "minecraft:snowy_taiga",
+        "terralith:cold_shrubland",
+        "terralith:rocky_shrubland",
+        "terralith:wintry_forest"
+      ],
+      "source_tag_keys_seen": [
+        "bettermineshafts:has_structure/better_mineshaft_spruce_snowy"
+      ],
+      "unresolved_nested_native_tags": []
+    }
+  },
+  "native_evidence_latest": {
+    "workflow_run_id": 38608440998,
+    "workflow_job_id": 116005270739,
+    "git_head": "57a86885726f61821e53e562340ac538ea8e0752",
+    "runtime_verified": false
+  }
+}

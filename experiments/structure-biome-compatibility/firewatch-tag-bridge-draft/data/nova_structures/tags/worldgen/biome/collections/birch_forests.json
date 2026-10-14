@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:zelkova_forest",
+    "regions_unexplored:maple_forest"
+  ]
+}

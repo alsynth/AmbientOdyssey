@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#nova_structures:collections/cherry_forests",
+    "biomeswevegone:sakura_grove",
+    "biomesoplenty:snowblossom_grove"
+  ]
+}
