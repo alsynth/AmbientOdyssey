@@ -27,6 +27,8 @@ From the exact pinned Dungeons Arise JAR, the Keep Kayra start-pool graph reache
 
 The scanner follows SpawnData.entity.Passengers, SpawnPotentials entity payloads, nested passengers, and prebuilt entity passengers without misidentifying equipment/item IDs as mobs.
 
+**Exact source location:** `dungeons_arise:keep_kayra/keep_kayra_spawner_3` (`data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_3.nbt`) contains the slime vehicle with a creeper passenger. The reference was traced from the pinned v2.1.68 native start-pool graph, not inferred from an image or a structure name. See [the retained per-template evidence](DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json).
+
 | Vehicle | Passenger | Recommended treatment |
 |---|---|---|
 | Slime | Creeper | **User-observed combination verified in source. Preserve without specially buffing either half.** |
