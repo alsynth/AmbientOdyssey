@@ -39,7 +39,7 @@ class PR56FirewatchBiomeBridgeSafety(unittest.TestCase):
         self.assertIn("EXPERIMENT", pack["pack"]["description"])
         self.assertFalse((COMPAT / DRAFT.name).exists())
         paths = {f.relative_to(DRAFT).as_posix() for f in DRAFT.rglob("*") if f.is_file()}
-        expected = {"pack.mcmeta"} | {
+        expected = {"pack.mcmeta", "README.md"} | {
             "data/nova_structures/tags/worldgen/biome/collections/" + name + ".json"
             for name in PROPOSALS
         }
