@@ -32,7 +32,7 @@
   "owner_review_pending_on_all_new_assignments": true,
   "user_deferred_native_IDs_retained_unranked": 0,
   "named_classification_not_verified_natural_generation": true,
-  "current_mapping_stage": "100% OF KNOWN HISTORICAL+SCOPED RUNTIME ID UNION PRELIMINARY TIER DRAFT, NOT VERIFIED OR DEPLOYABLE",
+  "current_mapping_stage": "100% numeric first pass; 157 archetype-supported provisional tiers (not approved for live DD)",
   "new_provisional_tier2_pillager_outpost_assignments": 42,
   "unranked_CTOV_missing_structure_set_ID": "ctov:pillager_outpost_mesa",
   "current_batch_approval_status": "375 draft decisions including 26 owner holds and 4 conflict resolutions; NO gameplay rules; not current registry enumeration",
@@ -49,5 +49,13 @@
   "user_deferred_native_IDs_retained_OWNER_HOLD_NO_DEPLOY": 26,
   "all_new_draft_assignments_approved": false,
   "full_pass_tier_map_path": "docs/balance/DD_FULL_FIRST_PASS_TIER_MAP_20261014.csv",
-  "full_pass_review_backlog_path": "docs/balance/DD_FULL_FIRST_PASS_UNVERIFIED_BACKLOG_20261014.csv"
+  "full_pass_review_backlog_path": "docs/balance/DD_FULL_FIRST_PASS_UNVERIFIED_BACKLOG_20261014.csv",
+  "confidence_review_known_IDs": 1240,
+  "high_confidence_provisional_tiers": 157,
+  "medium_confidence_provisional_tiers": 637,
+  "low_confidence_provisional_tiers": 420,
+  "owner_hold_numeric_placeholders": 26,
+  "high_confidence_fraction_of_active_known_percent": 13.89,
+  "high_confidence_shortlist": "docs/balance/DD_HIGH_CONFIDENCE_TIER_SHORTLIST_20261014.csv",
+  "confidence_is_not_natural_generation_verification": true
 }
