@@ -1,0 +1,61 @@
+name: AO Starter Chest Full Native Content Smoke
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - experimental/loot-economy-first-pass-20261013
+    paths:
+      - 'addons/ao-starter-chest/**'
+      - '.github/workflows/ao-starter-full-native-smoke.yml'
+
+jobs:
+  native-with-enigmatic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14'
+      - name: Fetch SHA1-pinned Enigmatic Legacy Plus JAR (Curios/Caelus via author Maven)
+        run: |
+          set -eu
+          mkdir -p addons/ao-starter-chest/run/mods
+          cd addons/ao-starter-chest/run/mods
+          fetch() {
+            filename="$1"
+            idprefix="$2"
+            idsuffix="$3"
+            expected="$4"
+            curl -fL --retry 3 --max-time 90 "https://mediafilez.forgecdn.net/files/${idprefix}/${idsuffix}/${filename}" -o "$filename"
+            echo "$expected  $filename" | sha1sum -c -
+          }
+          fetch 'enigmaticlegacyplus-1.21.1-1.1.2.jar' 9066 975 '6794e1e04f65e07839989360f508c2cb66097dc7'
+      - name: Install isolated empty structure fixture
+        run: |
+          mkdir -p addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/structure/
+          cp addons/ao-affix-trims/src/main/resources/data/ao_affix_trims/structure/empty.nbt addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/structure/empty.nbt
+      - name: Run native GameTests with real Enigmatic Legacy Plus installed
+        run: gradle -p addons/ao-starter-chest runGameTestServer --no-daemon
+      - name: Assert all five starter Spellstone IDs successfully loaded
+        run: |
+          set -eu
+          LOG='addons/ao-starter-chest/run/logs/latest.log'
+          grep -F 'All 2 required tests passed :)' "$LOG"
+          if grep -E 'Couldn.t parse element.*minecraft:chests/spawn_bonus_chest|Unknown registry key.*enigmaticlegacyplus:(lost_engine|angel_blessing|ocean_stone|golem_heart|blazing_core)' "$LOG"; then
+            echo 'ERROR: Bonus Chest loot table or Spellstone item registry not resolved'
+            exit 1
+          fi
+          echo 'PASS: native affix tests + complete Bonus Chest table parsed against pinned Enigmatic Legacy Plus'
+      - name: Upload logs for diagnosis
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ao-starter-enigmatic-runtime-logs
+          path: addons/ao-starter-chest/run/logs/latest.log
+          if-no-files-found: ignore

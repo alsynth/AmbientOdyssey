@@ -4,14 +4,14 @@
   "pattern": [
     "ENE",
     "DAD",
-    "ESE"
+    "IRI"
   ],
   "key": {
     "E": {
       "item": "minecraft:ender_eye"
     },
     "N": {
-      "item": "minecraft:nether_star"
+      "item": "irons_spellbooks:cinder_essence"
     },
     "D": {
       "item": "minecraft:netherite_ingot"
@@ -19,8 +19,11 @@
     "A": {
       "item": "flight_rings:basic_ring"
     },
-    "S": {
-      "item": "minecraft:echo_shard"
+    "I": {
+      "item": "irons_spellbooks:arcane_ingot"
+    },
+    "R": {
+      "item": "ars_nouveau:air_essence"
     }
   },
   "result": {

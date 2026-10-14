@@ -1,0 +1,43 @@
+name: AO Goblin Tuned Exact Trade Extraction
+
+on:
+  push:
+    branches:
+      - experimental/loot-economy-first-pass-20261013
+    paths:
+      - '.github/workflows/ao-goblin-native-extraction.yml'
+      - 'tools/build_ao_goblin_tuned_trade_override.py'
+
+  pull_request:
+    paths:
+      - '.github/workflows/ao-goblin-native-extraction.yml'
+      - 'tools/build_ao_goblin_tuned_trade_override.py'
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch hash-pinned official 1.21.1 Goblin Traders JAR
+        run: |
+          set -eu
+          URL='https://mediafilez.forgecdn.net/files/6427/515/goblintraders-neoforge-1.21.1-1.11.2.jar'
+          curl -fL --retry 2 --max-time 40 "$URL" -o /tmp/goblintraders.jar
+          echo '4507faefb977321b598daa3fb35d7e1a9a03eb80  /tmp/goblintraders.jar' | sha1sum -c -
+      - name: Generate component-preserving tuned armor trade override
+        run: |
+          python3 tools/build_ao_goblin_tuned_trade_override.py /tmp/goblintraders.jar --output build/ao-goblin-trade-overrides
+      - name: Emit validated native JSON for draft review
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('build/ao-goblin-trade-overrides/data/goblintraders/goblin_trades/goblin_trader/epic.json')
+          print('AO_GOBLIN_TRADE_JSON_BEGIN')
+          print(p.read_text())
+          print('AO_GOBLIN_TRADE_JSON_END')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ao-goblin-tuned-trade-datapack
+          path: build/ao-goblin-trade-overrides/
+          if-no-files-found: error

@@ -1,0 +1,67 @@
+name: AO Loot Economy Draft Checks
+
+on:
+  push:
+    branches:
+      - experimental/loot-economy-first-pass-20261013
+    paths:
+      - 'addons/ao-starter-chest/**'
+      - 'tools/test_ao_loot_first_pass.py'
+      - 'tools/test_ao_loot_packager.py'
+      - 'tools/package_ao_loot_economy_pilot.py'
+      - 'tools/validate_ao_starter_apotheosis_exemptions.py'
+      - 'release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/**'
+      - 'tools/build_ao_goblin_tuned_trade_override.py'
+      - 'release_030/overrides/config/paxi/datapacks/ao_flight_balance/**'
+      - '.github/workflows/ao-loot-economy-draft.yml'
+  pull_request:
+    paths:
+      - 'addons/ao-starter-chest/**'
+      - 'tools/test_ao_loot_first_pass.py'
+      - 'tools/build_ao_goblin_tuned_trade_override.py'
+      - 'release_030/overrides/config/paxi/datapacks/ao_flight_balance/**'
+      - '.github/workflows/ao-loot-economy-draft.yml'
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check starter loot JSON, ring recipes and synthetic trades
+        run: python3 tools/test_ao_loot_first_pass.py
+      - name: Verify deterministic full-import overlay with synthetic archive
+        run: python3 tools/test_ao_loot_packager.py
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.14'
+      - name: Compile experimental starter chest addon
+        run: gradle -p addons/ao-starter-chest build --no-daemon
+      - name: Verify exact pinned Apotheosis native loot modifier safety
+        run: |
+          set -eu
+          PINNED="$HOME/.gradle/caches/modules-2/files-2.1/dev.shadowsoffire/Apotheosis/1.21.1-8.9.0"
+          SOURCE="$(find "$PINNED" -type f -name 'Apotheosis-1.21.1-8.9.0.jar' | head -n 1)"
+          test -n "$SOURCE"
+          python3 tools/validate_ao_starter_apotheosis_exemptions.py "$SOURCE"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ao-starter-chest-compiled-experimental
+          path: addons/ao-starter-chest/build/libs/ao-starter-chest-0.1.0-experimental.jar
+          if-no-files-found: error
+      - name: Copy existing verified empty structure fixture for native tests
+        run: |
+          mkdir -p addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/structure/
+          cp addons/ao-affix-trims/src/main/resources/data/ao_affix_trims/structure/empty.nbt addons/ao-starter-chest/src/main/resources/data/ao_starter_chest/structure/empty.nbt
+      - name: Native Apotheosis affix GameTests (600 real rarity rolls)
+        run: gradle -p addons/ao-starter-chest runGameTestServer --no-daemon
+      - name: Upload native test logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ao-starter-native-test-logs
+          path: addons/ao-starter-chest/run/logs/latest.log
+          if-no-files-found: ignore
