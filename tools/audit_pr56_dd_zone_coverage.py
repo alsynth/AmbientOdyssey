@@ -154,7 +154,7 @@ def audit():
         "new_pinned_JAR_source_positive_scaled_zones":sum(z["new_pinned_JAR_source_spawner_occurrences"]>0 for z in high),
         "new_pinned_JAR_source_positive_indicators_total":sum(z["new_pinned_JAR_source_spawner_occurrences"] for z in high),
         "scaled_zones_without_NEW_positive_pinned_JAR_NBT_evidence":sum(z["new_pinned_JAR_source_spawner_occurrences"]==0 for z in high),
-        "source_snapshot_note":"Old linked NBT indicator count is 0/28 but NEW targeted native JAR evidence is positive for 6/28; absence of evidence on other zones or partial graphs is not proof of no mobs.",
+        "source_snapshot_note":"Old linked NBT indicator count is 0/28; new source evidence reaches 7/28 including Keep Kayra. Remaining source gaps are not proof of empty structures. Mounted passengers may require separate analysis.",
         "source_matcher_examples_total":len(matched_evidence),
         "source_matcher_examples_matched":sum(x["regex_match"]=="YES" for x in matched_evidence),
         "source_matcher_examples_unmatched":sum(x["regex_match"]=="NO" for x in matched_evidence),
