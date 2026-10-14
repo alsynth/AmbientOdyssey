@@ -1,7 +1,7 @@
 {
   "method": "PINNED_NATIVE_JAR_JIGSAW_POOL_AND_NBT_TEMPLATE_SOURCE_SCAN",
-  "source_ci_run_id": 38620901592,
-  "source_ci_job_id": 116047845952,
+  "source_ci_run_id": 38621571318,
+  "source_ci_job_id": 116050135731,
   "DD_candidate_filter": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$",
   "summary": {
     "structures_scanned": 10,
@@ -16,7 +16,9 @@
     "newly_connected_keep_kayra_spawner_occurrences": 9,
     "source_normal_mount_pair_types_total": 12,
     "keep_kayra_slime_creeper_source_confirmed": true,
-    "warning": "Counts across alternate source templates are not generated-world spawner counts. Mounted passengers need entity-level review; no DD change authorized."
+    "warning": "Counts across alternate source templates are not generated-world spawner counts. Mounted passengers need entity-level review; no DD change authorized.",
+    "keep_kayra_creeper_slime_template": "dungeons_arise:keep_kayra/keep_kayra_spawner_3",
+    "keep_kayra_creeper_slime_nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_3.nbt"
   },
   "sites": [
     {
@@ -59,6 +61,18 @@
       "source_mount_passengers_matched_by_vanilla_only_DD": [],
       "source_mount_passengers_excluded_by_vanilla_only_DD": [
         "minecraft:guardian"
+      ],
+      "source_mounted_encounter_templates": [
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:guardian",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/aviary/aviary_guardian_3.nbt",
+          "template": "dungeons_arise:aviary/aviary_guardian_3"
+        }
       ]
     },
     {
@@ -108,6 +122,38 @@
       ],
       "source_mount_passengers_excluded_by_vanilla_only_DD": [
         "minecraft:potion"
+      ],
+      "source_mounted_encounter_templates": [
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:husk",
+              "vehicle": "minecraft:firework_rocket"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_0.nbt",
+          "template": "dungeons_arise:bandit_towers/bandit_towers_part_0"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/bandit_towers/bandit_towers_skeleton_juggernaut_2.nbt",
+          "template": "dungeons_arise:bandit_towers/bandit_towers_skeleton_juggernaut_2"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:husk",
+              "vehicle": "minecraft:firework_rocket"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_5.nbt",
+          "template": "dungeons_arise:bandit_towers/bandit_towers_crossing_5"
+        }
       ]
     },
     {
@@ -162,7 +208,29 @@
       "source_mount_passengers_matched_by_vanilla_only_DD": [
         "minecraft:wither_skeleton"
       ],
-      "source_mount_passengers_excluded_by_vanilla_only_DD": []
+      "source_mount_passengers_excluded_by_vanilla_only_DD": [],
+      "source_mounted_encounter_templates": [
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:wither_skeleton",
+              "vehicle": "minecraft:hoglin"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/foundry/foundry_wither_skeleton_1.nbt",
+          "template": "dungeons_arise:foundry/foundry_wither_skeleton_1"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:wither_skeleton",
+              "vehicle": "minecraft:phantom"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/foundry/foundry_wither_skeleton_3.nbt",
+          "template": "dungeons_arise:foundry/foundry_wither_skeleton_3"
+        }
+      ]
     },
     {
       "structure_id": "dungeons_arise:illager_fort",
@@ -190,7 +258,8 @@
       "source_normal_spawner_mount_pairs": [],
       "source_prebuilt_mount_pairs": [],
       "source_mount_passengers_matched_by_vanilla_only_DD": [],
-      "source_mount_passengers_excluded_by_vanilla_only_DD": []
+      "source_mount_passengers_excluded_by_vanilla_only_DD": [],
+      "source_mounted_encounter_templates": []
     },
     {
       "structure_id": "dungeons_arise:keep_kayra",
@@ -242,6 +311,68 @@
       "source_mount_passengers_excluded_by_vanilla_only_DD": [
         "minecraft:creeper",
         "minecraft:potion"
+      ],
+      "source_mounted_encounter_templates": [
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_0.nbt",
+          "template": "dungeons_arise:keep_kayra/keep_kayra_spawner_0"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:wither_skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_1.nbt",
+          "template": "dungeons_arise:keep_kayra/keep_kayra_spawner_1"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_2.nbt",
+          "template": "dungeons_arise:keep_kayra/keep_kayra_spawner_2"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:creeper",
+              "vehicle": "minecraft:slime"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_3.nbt",
+          "template": "dungeons_arise:keep_kayra/keep_kayra_spawner_3"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_4.nbt",
+          "template": "dungeons_arise:keep_kayra/keep_kayra_spawner_4"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/keep_kayra/keep_kayra_spawner_6.nbt",
+          "template": "dungeons_arise:keep_kayra/keep_kayra_spawner_6"
+        }
       ]
     },
     {
@@ -304,6 +435,38 @@
         "minecraft:creeper",
         "minecraft:firework_rocket",
         "minecraft:lightning_bolt"
+      ],
+      "source_mounted_encounter_templates": [
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:lightning_bolt",
+              "vehicle": "minecraft:potion"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_crossing_8.nbt",
+          "template": "dungeons_arise:mechanical_nest/mechanical_nest_crossing_8"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:firework_rocket",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_spawner_1.nbt",
+          "template": "dungeons_arise:mechanical_nest/mechanical_nest_spawner_1"
+        },
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:creeper",
+              "vehicle": "minecraft:ravager"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_spawner_4.nbt",
+          "template": "dungeons_arise:mechanical_nest/mechanical_nest_spawner_4"
+        }
       ]
     },
     {
@@ -350,6 +513,18 @@
       "source_mount_passengers_matched_by_vanilla_only_DD": [],
       "source_mount_passengers_excluded_by_vanilla_only_DD": [
         "minecraft:potion"
+      ],
+      "source_mounted_encounter_templates": [
+        {
+          "mount_pairs": [
+            {
+              "passenger": "minecraft:potion",
+              "vehicle": "minecraft:skeleton"
+            }
+          ],
+          "nbt_resource": "data/dungeons_arise/structure/plague_asylum/plague_asylum_skeleton_1.nbt",
+          "template": "dungeons_arise:plague_asylum/plague_asylum_skeleton_1"
+        }
       ]
     },
     {
@@ -393,7 +568,8 @@
       "source_normal_spawner_mount_pairs": [],
       "source_prebuilt_mount_pairs": [],
       "source_mount_passengers_matched_by_vanilla_only_DD": [],
-      "source_mount_passengers_excluded_by_vanilla_only_DD": []
+      "source_mount_passengers_excluded_by_vanilla_only_DD": [],
+      "source_mounted_encounter_templates": []
     },
     {
       "structure_id": "idas:necromancers_spire",
@@ -424,7 +600,8 @@
       "source_normal_spawner_mount_pairs": [],
       "source_prebuilt_mount_pairs": [],
       "source_mount_passengers_matched_by_vanilla_only_DD": [],
-      "source_mount_passengers_excluded_by_vanilla_only_DD": []
+      "source_mount_passengers_excluded_by_vanilla_only_DD": [],
+      "source_mounted_encounter_templates": []
     },
     {
       "structure_id": "idas:pillager_camp",
@@ -452,7 +629,8 @@
       "source_normal_spawner_mount_pairs": [],
       "source_prebuilt_mount_pairs": [],
       "source_mount_passengers_matched_by_vanilla_only_DD": [],
-      "source_mount_passengers_excluded_by_vanilla_only_DD": []
+      "source_mount_passengers_excluded_by_vanilla_only_DD": [],
+      "source_mounted_encounter_templates": []
     }
   ],
   "mod_namespace_provider_presence_in_PR50_filename_roster": {
