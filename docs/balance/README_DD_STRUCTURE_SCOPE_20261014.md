@@ -204,3 +204,45 @@ Files: [per-site compatibility](DD_ENTITY_MATCHER_AUDIT_20261014.csv), [per-enti
 
 **Next verification must demonstrate** (1) the current PR50 mod/registry/datapack and relevant source template are actually enabled; (2) the structure template is reachable in the active jigsaw pool; (3) the listed mob spawns with HOSTILE attitude in that zone; (4) no scripted, trial, boss or Apotheosis elite double scaling; and (5) owner approval of the proposed tier. This audit **does not change DD configs, worldgen, boss assignments, loot, or mod roster**.
 
+
+## Sixth pass — installed-provider historical-ID blind spots (14 Oct 2026)
+
+**New coverage finding:** The historical registry crosswalk omits **16 PR50-installed exact JAR providers** with static NBT spawner/trial evidence. This is a *registry coverage gap*, **not proof their native registry is absent**. Our 1,219-ID working ledger remains unchanged; provider/template *families* without proven IDs are stored in a separate inventory, not appended as fake ID rows.
+
+- [63 spawner-positive NBT source families](DD_UNMAPPED_PROVIDER_ENCOUNTER_FAMILIES_20261014.csv): namespace/family, example template, source entity IDs, raw NBT block counts, mirrored-path estimate, **native ID=UNKNOWN**, all **UNRANKED**.
+- [16-provider installed coverage report](DD_UNMAPPED_PROVIDER_EVIDENCE_SUMMARY_20261014.csv): which current providers need native structure JSON/code registry extraction and placement/biome verification.
+- [15 low-looking **new** template families to reserve for owner review](DD_NEW_OWNER_UNRANKED_SOURCE_FAMILIES_20261014.csv): separate from the **existing 26 exact native IDs** on the unchanged owner review list; **no automatic Tier 0/1/2**.
+- Across these providers the original NBT indicator scan contains **135 spawner/trial-bearing NBT records**, **406 summed raw mob-spawner-block observations** and **10 trial-spawner observations**. A conservative **path-root-only mirror collapse** (`data/ns/structure/X` and `data/ns/structures/X`) estimates **313 mob-spawner observations** across possible unique resource paths; **not a unique spawned-mob count**, and mirrored file contents are not verified identical. The mirror-normalized estimate is **not used for balancing**.
+
+### Major worldgen/encounter-source gaps
+
+| PR50 installed provider | Raw mob-spawner block indicators | Root-mirror-collapsed estimate | Number of grouped families |
+|---|---:|---:|---:|
+| `Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar` | 176 | 88 | 9 |
+| `IMM v1.3.2-1.21.1.jar` | 56 | 56 | 3 |
+| `the_bumblezone-7.16.1+1.21.1-neoforge.jar` | 42 | 42 | 4 |
+| `AdditionalStructures-1.21-(v.6.3.2-NEO).jar` | 31 | 31 | 14 |
+| `trek-B0.6.2.jar` | 31 | 31 | 9 |
+| `cultofazazelneoforge-1.1.4.12.jar` | 20 | 20 | 1 |
+| `betterarcheology-neoforge-1.21.1-1.3.9.jar` | 13 | 13 | 5 |
+| `dimdungeons-210-neoforge-1.21.1.jar` | 10 | 10 | 3 |
+| `Explorify v1.6.5.mod.jar` | 10 | 5 | 3 |
+| `IBOMD v1.0.0-1.21.1.jar` | 5 | 5 | 1 |
+| `ancient_remnants-1.5.2+1.21.1-neoforge.jar` | 5 | 5 | 5 |
+
+**Noteworthy source interpretation:**
+- **Create: Structures Arise** has heavy combat-looking templates including the `tower_of_ochem_new` / `tower_of_ochrum`, `pillager_boat`, `pillager_massive_warship`, `darkest_castle`, `create_bastion` groups. Source scan has parallel `structure/` and `structures/` paths; cannot count as separate encounters until native registration is proven. This provider is relevant to the **worldgen freeze**, because the approved mod is installed but its true natural placements have not been reconfirmed here.
+- **Mowzie's Mobs integration / IMM**: monastery and Wroughtnaut chamber templates with combat markers belong to **native boss/arena validation**, not blind ordinary DD multipliers.
+- **Bumblezone / Deep Aether / Dimensional Dungeons**: source templates represent mod-dimension/instanced encounters. Do not block **Overworld** pregeneration because of missing registry tiers for other dimensions.
+- **Luki's Woodland Mansions** contains **9 raw trial-spawner block indicators** (0 mob spawner blocks); native trial mechanics require separate analysis, not ordinary DD entity values.
+- **Trek** is a possible `minecraft` namespace override (stronghold, woodland mansion, end-city templates) alongside `trek`-namespaced monster rooms. This requires effective resource precedence checks before attaching template evidence to any specific structure or altering pregeneration.
+- **Explorify** still has `bastion_spiral` NBT in its mod file, but user explicitly requested the Nether Black Spiral structure disabled. Presence in JAR **does not establish enabled worldgen**. Verify active datapack/config before assigning anything.
+- Small **ruins, altars, mausoleums, and other low-looking spawner-bearing source families** in the new owner list remain **UNRANKED** regardless of how many static spawner blocks they contain. All old 26 owner-deferred exact IDs remain unchanged.
+
+### Next source-extraction / worldgen validation
+1. For each missing provider, extract actual `data/*/worldgen/structure/*.json`, `structure_set`, biome selectors and any loader-side dynamic registrations in the effective installed pack; match them to **real registry IDs**. **Do not infer registered structure IDs from NBT file names.**
+2. Confirm intentional disabled structures (e.g. Explorify Black Spiral) and duplicate/effective resource providers; run targeted **natural** generation verification before worldgen freeze for active Overworld/Nether boss arenas and large Create structures.
+3. Once actual structure IDs and placement are proven, assign meaningful provisional encounter tiers for owner approval, respecting the **low-looking spawner → UNRANKED / owner review** rule. Do not create DD rules unless suitable ordinary mob & elite-stack checks pass.
+4. Worldgen must freeze before pregeneration; purely DD entity scaling can be adjusted on new spawns later without changing existing generated structure assets.
+
+**Commit scope:** catalogue research CSV and documentation only; no mods added/removed, no structure registrations, no biome/worldgen/DD configs edited, and no game/runtime tests claimed.
