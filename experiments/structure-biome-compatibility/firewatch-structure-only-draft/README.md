@@ -29,6 +29,12 @@ Each custom tag includes the original `#nova_structures:collections/...` as a re
 
 **Not included:** D&T's dark-oak, jungle and taiga towers (historical positive curated-biome intersections); swamp and mangrove towers (vanilla source biomes not directly Biolith-replaced); intentionally disabled D&T structures; AO RPG tiers, DD attributes, mobs, loot, spawners, set weights and other worldgen definitions.
 
+## Reproducible TEST ONLY ZIP
+
+[Actions run #38603628576](https://github.com/alsynth/AmbientOdyssey/actions/runs/38603628576) produces the artifact `pr56-four-tower-worldgen-TEST-ONLY`, containing `pr56-firewatch-four-towers-TEST-ONLY.zip` and the matching SHA-256 manifest. It contains **9 datapack members** and was built twice with **identical SHA-256 `a797057bfe057a88212a56a3462ee8df6b1e9108e72a6e78ece485bd411b2db6`**. Source PR50/Paxi parity: [persistent report](../../../docs/balance/DD_PR56_PR50_PAXI_SOURCE_PARITY_20261014.json). [Disposable-world-only test sheet](../../../docs/testing/PR56_FIREWATCH_TEST_ONLY_ACCEPTANCE_20261014.md).
+
+This ZIP is a standalone Minecraft datapack, NOT a CurseForge modpack import, and is not installed anywhere by the build. Do not install into the production profile. Runtime resource-winner, natural generation and density still need testing.
+
 ## Required verification before an ACTIVE integration
 
 1. Pass the new PR56 GitHub static guards **and** the SHA-1-pinned native diff gate. Every field other than `biomes` must match the actual v4.4.4 JAR, and all added biome IDs must be present in the curated source roster. **No claims of full effective live registry or natural generation from static checks.**
