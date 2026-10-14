@@ -120,3 +120,34 @@ When implementing v4, preserve the same qualified T2–6 whitelist and ensure no
 6. The existing 25 Tier 0–1 DD no-op zone entries can be removed in a *future* v4 candidate; this source pass leaves current PR45/50 configs untouched.
 
 **Next work:** manually map the 26 upgraded/newly evidenced candidate IDs to native entity IDs, identify modded IDs unavailable in the PR50 registry, validate whether each template is reachable from the structure's actual pool, and split DD-compatible vanilla enemies from native-special mobs. Continue with the 24 existing held PR45 structures that contain spawner/trial evidence and test elite stacking before any config rollout.
+
+## Third catalogue pass — owner override: leave low-looking spawner sites UNRANKED (14 Oct)
+
+**Owner instruction:** Any structure that *appears* Tier 0–1 but has spawner evidence must remain **unranked for manual inspection later**. Do **not** auto-promote to Tier 2. User review is not a prerequisite for finishing other DD research. This policy supersedes **working tier labels**, while historical catalogue/crosswalk tier fields are retained *only as provenance*.
+
+### Effective working-tier results
+- **26 structures** were placed in the dedicated [owner-deferred, unranked list](DD_OWNER_UNRANKED_SPAWNER_REVIEW_20261014.csv): 10 originally low-tier/low-priority name candidates plus 16 other small/exploration-looking unmapped examples with static spawner evidence. No new tier numbers assigned.
+- In particular, **`mns:giant_skull`** and **`mss:nether_portal`** were provisionally Tier 1 in the historical source but **are now `UNRANKED` in the working overlay**. Keep original “1” in `historical_tier` for traceability only; do not let a future DD script read the old value as an approved Tier 1 assignment.
+- The other 2 previously unmapped obvious combat candidates (`idas:pillager_camp`, `nova_structures:nether_port`) also remain **unranked**, but belong to the *combat-tier review* lane rather than the low-looking/decorative owner list.
+- Working tier/status/action now appear in [updated all-native ledger](DD_NATIVE_NBT_EVIDENCE_20261014.csv) for **all 1,219 native IDs**. The effective tier field is `dd_working_tier`: it takes precedence over the archived `historical_tier` for this research branch.
+- [Updated 70-evidence queue](DD_NBT_COMBAT_REVIEW_QUEUE_20261014.csv) now carries `dd_working_tier` and `dd_disposition` so owner-deferred structures cannot accidentally become implementation targets.
+
+### Static mob identity refinement on the 70-evidence queue
+
+| Static NBT entity evidence class | Structures |
+|---|---:|
+| Contains listed vanilla-hostile entity ID | 30 |
+| No vanilla-hostile ID but has modded entity ID | 2 |
+| No decoded mob/entity ID despite spawner/trial block | 37 |
+| Only non-hostile or projectile-like decoded IDs | 1 |
+
+The list of known vanilla-hostile names is a **triage heuristic**, not a new DD allowlist or a runtime spawn validation. Non-vanilla entities may be perfectly valid but need specific mod/entity integration. Generic spawner-block presence is *not* evidence of an ordinary compatible enemy.
+
+[102 held encounter source records](DD_HELD_ENCOUNTER_EVIDENCE_20261014.csv) additionally contain separated vanilla-hostile vs modded entity leads, preserving the original hold reasons and lack of runtime acceptance. The 24 source-spawner/trial-positive held cases remain **held**, not newly DD-enabled.
+
+### Production protection
+- **No changes to `AO_STRUCTURE_TIER_CATALOGUE_V3_2026-10-13.csv`**, the immutable historical/source ranking document, or to `difficulty_v2.json`. Override is explicit in the new working layer, so provenance remains auditable and any future integration must consume `dd_working_tier` instead of archived `historical_tier`.
+- **No Tier 2 assignment or DD balance change** for owner-deferred sites; do not infer challenge from spawner-block quantity, which can include alternative/unreachable templates and version duplicates.
+- Do not block Chunky pregeneration on future owner review of these *tiers* unless a separate actual worldgen/structure generation fault is proven. Boss arenas/structure worldgen freeze remains independent.
+
+**Next productive catalogue phase (without owner input):** evidence-check the clearly combat-oriented held T2–6 structures, fix stale native mob IDs, verify actual template-pool reachability, and test DD native elite/mob scaling safely; user-deferred 26-site list should simply remain parked.
