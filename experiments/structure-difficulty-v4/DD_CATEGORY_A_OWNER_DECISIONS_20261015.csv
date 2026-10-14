@@ -7,7 +7,7 @@ block_factorys_bosses:yeti_hideout,KEEP,,8,PLAN_ONLY_NOT_ACTIVATED,Owner accepts
 bosses_of_mass_destruction:gauntlet_arena,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 bosses_of_mass_destruction:lich_tower,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 bosses_of_mass_destruction:void_blossom,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
-cataclysm:burning_arena,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+cataclysm:burning_arena,REVIEW_LATER,,7,NON_OVERWORLD_HOLD_NOT_ACTIVATED,Dimension hold; previous decision KEEP preserved for later review
 cataclysm:kobolediator_shrine,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 cataclysm:ruined_citadel,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 fdbosses:chesed_arena,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
@@ -19,14 +19,14 @@ nova_structures:shrine_combat_tier_3,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accep
 nova_structures:shrine_combat_tier_4,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 nova_structures:shrine_combat_tier_5,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 nova_structures:shrine_tower,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
-aether_villages:olympic_citadel,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+aether_villages:olympic_citadel,REVIEW_LATER,,2,NON_OVERWORLD_HOLD_NOT_ACTIVATED,Dimension hold; previous decision KEEP preserved for later review
 floating_islands:shrine,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
-friendsandfoes:citadel,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
+friendsandfoes:citadel,REVIEW_LATER,,3,NON_OVERWORLD_HOLD_NOT_ACTIVATED,Dimension hold; previous decision KEEP preserved for later review
 idas:windswept_shrine,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 irons_spellbooks:citadel,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
 mss:arena,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts catalogue's provisional structure tier; not runtime activated
-bosses_of_mass_destruction:obsidilith_arena,CHANGE,9,6,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
-cataclysm:acropolis,CHANGE,9,7,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
+bosses_of_mass_destruction:obsidilith_arena,REVIEW_LATER,9,6,NON_OVERWORLD_HOLD_NOT_ACTIVATED,Dimension hold; previous decision CHANGE owner tier 9 preserved for later review
+cataclysm:acropolis,REVIEW_LATER,9,7,NON_OVERWORLD_HOLD_NOT_ACTIVATED,Dimension hold; previous decision CHANGE owner tier 9 preserved for later review
 dungeons_arise:shiraz_palace,CHANGE,6,5,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
 idas:iceandfire/dread_citadel,CHANGE,7,4,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
 idas:tinkers_citadel,CHANGE,3,4,PLAN_ONLY_NOT_ACTIVATED,Owner-selected structure tier; Tier 7–9 needs DD type and encounter matching implementation
