@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:forest",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:zelkova_forest",
+    "regions_unexplored:maple_forest",
+    "regions_unexplored:redwoods"
+  ]
+}
