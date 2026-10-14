@@ -18,6 +18,7 @@ TIER= BAL/"DD_FULL_FIRST_PASS_TIER_MAP_20261014.csv"
 NBT = BAL/"DD_NATIVE_NBT_EVIDENCE_20261014.csv"
 APPROVED = BAL/"DD_OWNER_PROTECTED_26_SPAWNER_STRUCTURES_20261014.csv"
 SOURCE_MATCHER=BAL/"DD_POSTMAP_FIVE_SITE_ENTITY_MATCHER_20261014.csv"
+NEW_PINNED_NBT=BAL/"DD_PINNED_NATIVE_TEMPLATE_SPAWNER_AUDIT_20261014.json"
 
 def read_csv(path):
     with path.open(encoding="utf-8-sig",newline="") as h:
@@ -38,6 +39,8 @@ def audit():
     source=read_id_map(NBT)
     owner=read_id_map(APPROVED)
     matched_evidence=read_csv(SOURCE_MATCHER)
+    pinned_native=json.loads(NEW_PINNED_NBT.read_text(encoding="utf-8"))
+    current_native_by_id={x["structure_id"]:x for x in pinned_native["sites"]}
     difficulties={x["name"]:x for x in cfg["difficulty_types"]}
     assert len(difficulties)==len(cfg["difficulty_types"])==7
     assert set(difficulties)=={f"ao_tier_{n}" for n in range(7)}
@@ -104,6 +107,7 @@ def audit():
             nbt_coverage="POSITIVE_SOURCE_TEMPLATE_INDICATOR" if positive else (
                 "NO_LINKED_TEMPLATE_EVIDENCE__NOT_PROOF_EMPTY")
             source_pairs=source_sites.get(structure,[])
+            fresh=current_native_by_id.get(structure)
             zones.append({
                 "dimension":dim,"structure_id":structure,
                 "candidate_DD_tier":tier_in_cfg,"catalogue_tier":expected,
@@ -113,6 +117,13 @@ def audit():
                 "source_trial_spawner_count":count_trial,
                 "source_mob_id_examples":source_entities,
                 "linked_NBT_coverage":nbt_coverage,
+                "new_pinned_JAR_templates_inspected":fresh["native_templates_inspected"] if fresh else 0,
+                "new_pinned_JAR_source_spawner_occurrences":fresh["native_source_spawner_block_occurrences"] if fresh else 0,
+                "new_pinned_JAR_source_graph_complete":fresh["source_graph_complete"] if fresh else False,
+                "new_pinned_JAR_source_entity_ids":fresh["source_entity_type_ids"] if fresh else [],
+                "new_pinned_JAR_DD_type_matches":fresh["source_DD_entity_matcher_matches"] if fresh else [],
+                "new_pinned_JAR_DD_type_misses":fresh["source_DD_entity_matcher_misses"] if fresh else [],
+                "new_pinned_JAR_scan_error":fresh["unresolved_native_graph_errors"] if fresh else ["NOT_PART_OF_THIS_TARGETED_JAR_SCAN"],
                 "matcher_source_pairs":len(source_pairs),
                 "DD_regex_example_matches":[v for v in source_entities if regex.fullmatch(v)],
                 "DD_regex_example_misses":[v for v in source_entities if not regex.fullmatch(v)],
@@ -140,6 +151,10 @@ def audit():
         "spawner_mutations_in_candidate_attributes":False,
         "source_ledger_explicit_spawner_indicators_in_scaled_zones":sum(z["linked_NBT_coverage"]=="POSITIVE_SOURCE_TEMPLATE_INDICATOR" for z in high),
         "scaled_zones_without_positive_linked_NBT_indicators":sum(z["linked_NBT_coverage"]!="POSITIVE_SOURCE_TEMPLATE_INDICATOR" for z in high),
+        "new_pinned_JAR_source_positive_scaled_zones":sum(z["new_pinned_JAR_source_spawner_occurrences"]>0 for z in high),
+        "new_pinned_JAR_source_positive_indicators_total":sum(z["new_pinned_JAR_source_spawner_occurrences"] for z in high),
+        "scaled_zones_without_NEW_positive_pinned_JAR_NBT_evidence":sum(z["new_pinned_JAR_source_spawner_occurrences"]==0 for z in high),
+        "source_snapshot_note":"Old linked NBT indicator count is 0/28 but NEW targeted native JAR evidence is positive for 6/28; absence of evidence on other zones or partial graphs is not proof of no mobs.",
         "source_matcher_examples_total":len(matched_evidence),
         "source_matcher_examples_matched":sum(x["regex_match"]=="YES" for x in matched_evidence),
         "source_matcher_examples_unmatched":sum(x["regex_match"]=="NO" for x in matched_evidence),
@@ -161,6 +176,7 @@ def main():
     print("Exact tier mismatches:",obj["exact_catalogue_tier_mismatches"])
     print("Historical linked spawner positive in T2–T6:",obj["source_ledger_explicit_spawner_indicators_in_scaled_zones"])
     print("NO POSITIVE SOURCE NBT IS NOT PROOF OF NO MOBS")
+    print("NEW targeted pinned JAR positive DD zones:",obj["new_pinned_JAR_source_positive_scaled_zones"],"/",obj["attribute_scaled_T2_T6_zones"])
     print("Vanilla eligible mob types:",obj["candidate_entity_type_count"])
     print("Out-of-candidate example matches:",obj["source_matcher_examples_matched"],"of",obj["source_matcher_examples_total"])
     print("Report:",args.out)
