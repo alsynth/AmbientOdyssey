@@ -36,6 +36,26 @@ class NativeBossSourceSafety(unittest.TestCase):
         self.assertEqual(c["minecraft:spawner"],1)
         self.assertEqual(records[0]["spawn_entities"][0]["unusual_entity_markers"],{})
 
+    def test_jigsaw_child_pool_reference_is_reported_not_automatically_fixed(self):
+        obj={"palette":[{"Name":"minecraft:jigsaw"}],
+             "blocks":[{"state":0,"pos":[1,2,3],
+                        "nbt":{"pool":"dungeons_arise:underworld/foundry/foundry_corridor_gears"}}]}
+        counters,flags=scan.summarize_nbt(obj,"foundry_bridge.nbt")
+        self.assertEqual(counters["minecraft:jigsaw"],1)
+        self.assertEqual(len(flags),1)
+        self.assertEqual(flags[0]["jigsaw_pool_reference"],
+                         "dungeons_arise:underworld/foundry/foundry_corridor_gears")
+
+    def test_explicit_custom_name_is_distinct_from_default_health_and_attributes(self):
+        default=scan.summarize_entity({"id":"minecraft:creeper","Health":20.0,
+                                      "Attributes":[{"Name":"minecraft:generic.max_health","Base":20}]})
+        named=scan.summarize_entity({"id":"minecraft:blaze",
+                                    "CustomName":'{"text":"Foundry Guardian"}',
+                                    "Health":55.0})
+        self.assertNotIn("CustomName",default["unusual_entity_markers"])
+        self.assertEqual(named["unusual_entity_markers"]["Health"],55.0)
+        self.assertIn("Foundry Guardian",named["unusual_entity_markers"]["CustomName"])
+
     def test_mount_is_preserved_but_not_promoted_to_boss(self):
         source={"SpawnPotentials":[{"data":{"entity":{
             "id":"minecraft:ravager","Passengers":[{"id":"minecraft:creeper"}]}}}]}
