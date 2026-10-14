@@ -24,6 +24,7 @@ on:
       - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/audit_pr56_dd_zone_coverage.py'
       - 'tools/audit_pr56_native_template_spawners.py'
+      - 'tests/test_pr56_native_spawner_parser.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -50,6 +51,7 @@ on:
       - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/audit_pr56_dd_zone_coverage.py'
       - 'tools/audit_pr56_native_template_spawners.py'
+      - 'tests/test_pr56_native_spawner_parser.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -263,6 +265,25 @@ jobs:
             --dungeons-arise /tmp/pr56-dungeons-arise-2168.jar \
             --idas /tmp/pr56-idas-1137.jar \
             --out /tmp/pr56-native-template-encounter-indicators.json
+          python - <<'PY'
+          import json
+          p='/tmp/pr56-native-template-encounter-indicators.json'
+          j=json.load(open(p,encoding='utf-8'))
+          q={}
+          for name,p in j["providers"].items():
+              for sid,v in p["structures"].items():
+                  q[sid]={"pools":v.get("pools_visited",0),
+                          "templates":v.get("templates_inspected",0),
+                          "normal_spawners":v.get("source_normal_spawner_blocks",0),
+                          "trial_spawners":v.get("source_trial_spawner_blocks",0),
+                          "spawn_ids":v.get("source_normal_spawner_entity_ids",[]),
+                          "trial_spawn_ids":v.get("source_trial_spawner_entity_ids",[]),
+                          "graph_complete":v.get("native_graph_complete",False),
+                          "graph_errors":v.get("source_graph_errors",[])[:5]}
+          print('---BEGIN COMPACT NBT EVIDENCE---')
+          print(json.dumps(q,sort_keys=True))
+          print('---END COMPACT NBT EVIDENCE---')
+          PY
       - uses: actions/upload-artifact@v4
         if: success()
         with:
