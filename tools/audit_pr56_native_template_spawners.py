@@ -121,12 +121,36 @@ def pool_elements(obj):
  visit(obj.get("elements",[]))
  return sorted(set(found))
 
+def mounted_entities(root, max_depth=16):
+ """Trace NBT Passengers of an entity payload, never item/equipment IDs.
+
+ Vanilla entity 'Passengers' is a list of passenger entity compounds attached
+ to the vehicle root. A spawner may put this payload under SpawnData.entity or
+ SpawnPotentials[].data.entity. This reports source relationships only.
+ """
+ pairs=set();passenger_ids=set()
+ def visit(node, depth):
+  if depth>max_depth or not isinstance(node,dict):return
+  parent=node.get("id")
+  for passenger in node.get("Passengers",[]) if isinstance(node.get("Passengers"),list) else []:
+   if not isinstance(passenger,dict):continue
+   rider=passenger.get("id")
+   if isinstance(rider,str) and ":" in rider:
+    passenger_ids.add(rider)
+    if isinstance(parent,str) and ":" in parent:
+     pairs.add((parent,rider))
+   visit(passenger,depth+1)
+ visit(root,0)
+ return passenger_ids,pairs
+
 def extract_template(nbt):
  palettes=nbt.get("palette",[])
  if not palettes and nbt.get("palettes"):palettes=nbt["palettes"][0]
  blocks=nbt.get("blocks",[])
  entities=nbt.get("entities",[])
  counts=Counter();mob_ids=set();trials=set();jigsaw_pools=set();unknown_ids=set()
+ normal_passengers=set();trial_passengers=set();normal_mounts=set();trial_mounts=set()
+ prebuilt_passengers=set();prebuilt_mounts=set()
  for block in blocks:
   if not isinstance(block,dict):continue
   state=block.get("state",-1)
@@ -149,6 +173,11 @@ def extract_template(nbt):
       if isinstance(entity,dict):
        value=entity.get("id")
        if isinstance(value,str) and ":" in value:ids.add(value)
+       nested,pairs=mounted_entities(entity)
+       if name=="minecraft:spawner":
+        normal_passengers.update(nested);normal_mounts.update(pairs)
+       else:
+        trial_passengers.update(nested);trial_mounts.update(pairs)
      entity_id=x.get("EntityId")
      if isinstance(entity_id,str) and ":" in entity_id:ids.add(entity_id)
      for key in ("SpawnData","SpawnPotentials","spawn_data","spawn_potentials",
@@ -167,11 +196,19 @@ def extract_template(nbt):
   n=entity.get("nbt",{}) if isinstance(entity,dict) else {}
   value=n.get("id")
   if isinstance(value,str) and ":" in value:unknown_ids.add(value)
+  nested,pairs=mounted_entities(n)
+  prebuilt_passengers.update(nested);prebuilt_mounts.update(pairs)
  return {"normal_spawners":counts["minecraft:spawner"],
          "trial_spawners":counts["minecraft:trial_spawner"],
          "normal_spawn_entity_ids":sorted(mob_ids),
          "trial_spawn_entity_ids":sorted(trials),
          "prebuilt_entity_ids":sorted(unknown_ids),
+         "normal_spawner_passenger_entity_ids":sorted(normal_passengers),
+         "trial_spawner_passenger_entity_ids":sorted(trial_passengers),
+         "prebuilt_passenger_entity_ids":sorted(prebuilt_passengers),
+         "normal_spawner_mount_pairs":[{"vehicle":a,"passenger":b} for a,b in sorted(normal_mounts)],
+         "trial_spawner_mount_pairs":[{"vehicle":a,"passenger":b} for a,b in sorted(trial_mounts)],
+         "prebuilt_mount_pairs":[{"vehicle":a,"passenger":b} for a,b in sorted(prebuilt_mounts)],
          "jigsaw_child_pools":sorted(jigsaw_pools)}
 
 def nearby_native_resources(names, namespace, resource, kind, max_results=5):
@@ -207,6 +244,8 @@ def inspect(jar,label,max_pools=160,max_templates=400):
    start=definition.get("start_pool")
    to_visit=deque([start] if isinstance(start,str) else [])
    seen_pools=set();seen_templates=set();errors=[];pairs=[];totals=Counter();mobs=set();trial=set();prebuilt=set()
+   normal_passengers=set();trial_passengers=set();prebuilt_passengers=set()
+   normal_mount_pairs=set();trial_mount_pairs=set();prebuilt_mount_pairs=set()
    while to_visit:
     if len(seen_pools)>=max_pools or len(seen_templates)>=max_templates:
      errors.append("SOURCE_GRAPH_BUDGET_EXCEEDED__TRUNCATED")
@@ -249,6 +288,12 @@ def inspect(jar,label,max_pools=160,max_templates=400):
      mobs.update(parsed["normal_spawn_entity_ids"])
      trial.update(parsed["trial_spawn_entity_ids"])
      prebuilt.update(parsed["prebuilt_entity_ids"])
+     normal_passengers.update(parsed["normal_spawner_passenger_entity_ids"])
+     trial_passengers.update(parsed["trial_spawner_passenger_entity_ids"])
+     prebuilt_passengers.update(parsed["prebuilt_passenger_entity_ids"])
+     normal_mount_pairs.update((p["vehicle"],p["passenger"]) for p in parsed["normal_spawner_mount_pairs"])
+     trial_mount_pairs.update((p["vehicle"],p["passenger"]) for p in parsed["trial_spawner_mount_pairs"])
+     prebuilt_mount_pairs.update((p["vehicle"],p["passenger"]) for p in parsed["prebuilt_mount_pairs"])
      to_visit.extend(parsed["jigsaw_child_pools"])
      if parsed["normal_spawners"] or parsed["trial_spawners"] or parsed["prebuilt_entity_ids"]:
       pairs.append({"template":template,"source_path":actual,
@@ -256,7 +301,11 @@ def inspect(jar,label,max_pools=160,max_templates=400):
                     "trial_spawners":parsed["trial_spawners"],
                     "normal_spawn_entity_ids":parsed["normal_spawn_entity_ids"],
                     "trial_spawn_entity_ids":parsed["trial_spawn_entity_ids"],
-                    "prebuilt_entity_ids":parsed["prebuilt_entity_ids"]})
+                    "prebuilt_entity_ids":parsed["prebuilt_entity_ids"],
+                    "normal_spawner_passenger_entity_ids":parsed["normal_spawner_passenger_entity_ids"],
+                    "normal_spawner_mount_pairs":parsed["normal_spawner_mount_pairs"],
+                    "trial_spawner_mount_pairs":parsed["trial_spawner_mount_pairs"],
+                    "prebuilt_mount_pairs":parsed["prebuilt_mount_pairs"]})
    if not seen_templates:
     errors.append("NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS")
    missing_reference_diagnostics=[]
@@ -279,6 +328,12 @@ def inspect(jar,label,max_pools=160,max_templates=400):
     "source_normal_spawner_entity_ids":sorted(mobs),
     "source_trial_spawner_entity_ids":sorted(trial),
     "source_prebuilt_entity_ids":sorted(prebuilt),
+    "source_normal_spawner_passenger_entity_ids":sorted(normal_passengers),
+    "source_trial_spawner_passenger_entity_ids":sorted(trial_passengers),
+    "source_prebuilt_passenger_entity_ids":sorted(prebuilt_passengers),
+    "source_normal_spawner_mount_pairs":[{"vehicle":a,"passenger":b} for a,b in sorted(normal_mount_pairs)],
+    "source_trial_spawner_mount_pairs":[{"vehicle":a,"passenger":b} for a,b in sorted(trial_mount_pairs)],
+    "source_prebuilt_mount_pairs":[{"vehicle":a,"passenger":b} for a,b in sorted(prebuilt_mount_pairs)],
     "native_graph_complete":not errors,
     "source_graph_errors":errors[:70],
     "unresolved_resource_reference_diagnostics":missing_reference_diagnostics[:15],
@@ -307,6 +362,8 @@ def main():
          "normal spawners:",x.get("source_normal_spawner_blocks",0),
          "trial:",x.get("source_trial_spawner_blocks",0),
          "mob IDs:",x.get("source_normal_spawner_entity_ids",[]),
+         "spawner passengers:",x.get("source_normal_spawner_passenger_entity_ids",[]),
+         "mount pairs:",x.get("source_normal_spawner_mount_pairs",[]),
          "graph complete:",x.get("native_graph_complete"),
          "issues:",len(x.get("source_graph_errors",[])),
          "start_pool:",x.get("native_start_pool"),
