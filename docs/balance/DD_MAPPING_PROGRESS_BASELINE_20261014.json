@@ -32,7 +32,7 @@
   "owner_review_pending_on_all_new_assignments": true,
   "user_deferred_native_IDs_retained_unranked": 0,
   "named_classification_not_verified_natural_generation": true,
-  "current_mapping_stage": "Complete 1240 known tier draft; 26 owner-approved T0; Dungeon Crawl overall T4 pending floor-aware upper T2 implementation",
+  "current_mapping_stage": "Known-ID draft complete; 26 owner-approved Tier0, Dungeon Crawl owner-approved Tier3 entire structure, no floor split",
   "new_provisional_tier2_pillager_outpost_assignments": 42,
   "unranked_CTOV_missing_structure_set_ID": "ctov:pillager_outpost_mesa",
   "current_batch_approval_status": "375 draft decisions including 26 owner holds and 4 conflict resolutions; NO gameplay rules; not current registry enumeration",
@@ -62,7 +62,9 @@
   "owner_approved_native_tier0_ids": 26,
   "owner_approved_native_tier0_source_spawner_indicators_retained": true,
   "owner_approved_confidence_category_ids": 26,
-  "owner_approved_dungeon_crawl_overall_tier": 4,
-  "dungeon_crawl_upper_floor_requested_tier": 2,
-  "dungeon_crawl_floor_split_config_implemented": false
+  "owner_approved_dungeon_crawl_overall_tier": 3,
+  "dungeon_crawl_upper_floor_requested_tier": null,
+  "dungeon_crawl_floor_split_config_implemented": false,
+  "dungeon_crawl_single_tier_all_floors": true,
+  "dungeon_crawl_floor_split_cancelled_by_owner": true
 }
