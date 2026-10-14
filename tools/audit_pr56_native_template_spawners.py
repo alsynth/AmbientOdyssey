@@ -8,6 +8,7 @@ as incomplete: zero evidence is never proof that a dungeon has no encounters.
 No files in the client/pack are modified.
 """
 import argparse
+import difflib
 import gzip
 import hashlib
 import io
@@ -173,6 +174,21 @@ def extract_template(nbt):
          "prebuilt_entity_ids":sorted(unknown_ids),
          "jigsaw_child_pools":sorted(jigsaw_pools)}
 
+def nearby_native_resources(names, namespace, resource, kind, max_results=5):
+    """Suggest filenames, never silently replace a missing jigsaw reference."""
+    prefix=f"data/{namespace}/"
+    candidates=sorted(n for n in names if n.startswith(prefix) and
+                      ("/worldgen/template_pool/" in n if kind=="pool"
+                       else ("/structure/" in n or "/structures/" in n)) and
+                      n.endswith(".json" if kind=="pool" else ".nbt"))
+    desired=(loc_to_resource(namespace,resource,"worldgen/template_pool")+".json"
+             if kind=="pool" else
+             loc_to_resource(namespace,resource,"structure")+".nbt")
+    guesses=difflib.get_close_matches(desired,candidates,n=max_results,cutoff=.50)
+    return {"missing_reference":resource,"expected_path":desired,
+            "best_existing_native_paths":guesses,
+            "automatic_fix_authorized":False}
+
 def inspect(jar,label,max_pools=160,max_templates=400):
  expected=PINS[label]
  digest=sha1(jar)
@@ -243,6 +259,16 @@ def inspect(jar,label,max_pools=160,max_templates=400):
                     "prebuilt_entity_ids":parsed["prebuilt_entity_ids"]})
    if not seen_templates:
     errors.append("NO_NATIVE_TEMPLATES_RESOLVED_FROM_START_POOL__NOT_PROOF_NO_MOBS")
+   missing_reference_diagnostics=[]
+   for err in errors:
+    if err.startswith("MISSING_NATIVE_OR_EXTERNAL_POOL:"):
+     ref=err.split(":",1)[1]
+     missing_reference_diagnostics.append(
+         nearby_native_resources(names,label,ref,"pool"))
+    elif err.startswith("MISSING_EXTERNAL_OR_NATIVE_TEMPLATE:"):
+     ref=err.split(":",1)[1]
+     missing_reference_diagnostics.append(
+         nearby_native_resources(names,label,ref,"template"))
    structures[sid]={
     "source_structure_present":True,"native_start_pool":start,
     "pools_visited":len(seen_pools),"templates_inspected":len(seen_templates),
@@ -255,6 +281,7 @@ def inspect(jar,label,max_pools=160,max_templates=400):
     "source_prebuilt_entity_ids":sorted(prebuilt),
     "native_graph_complete":not errors,
     "source_graph_errors":errors[:70],
+    "unresolved_resource_reference_diagnostics":missing_reference_diagnostics[:15],
     "source_graph_errors_truncated":len(errors)>70,
     "source_templates_do_NOT_establish_runtime_spawn_or_weighted_pool_reachability":True,
     "natural_generation_tested":False,
