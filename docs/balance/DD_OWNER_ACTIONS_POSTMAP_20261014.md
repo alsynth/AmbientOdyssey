@@ -1,5 +1,10 @@
 # Ambient Odyssey PR56 — What the owner actually needs to do (14 October 2026)
 
+> **Current source resolution:** The exact pinned D&T v4.4.4 NeoForge JAR has been verified by SHA-1 and audited. The first shared-tag candidate was **cancelled for scope risk** (up to 22/19/20 native structures affected through `collections/land`). The new [four-tower structure-only candidate](../../experiments/structure-biome-compatibility/firewatch-structure-only-draft/README.md) passes offline and fresh-JAR source-diff checks; it is **NOT ACTIVE**. Owners do **not** need to manually verify any of this static work. The later in-game task, **only after** an approved playable test ZIP exists, is bounded natural generation of birch/cherry/forest/savanna firewatch variants in representative preserved curated biomes and comparison with original controls. Do not run broad `/locate` on the production server.
+>
+> **GitHub source evidence:** [Pinned JAR consumer + structure JSON report](DD_DNT_PINNED_444_NATIVE_CONSUMERS_20261014.json); [full firewatch research](DD_FIREWATCH_CURATED_BIOME_BRIDGE_RESEARCH_20261014.md). Exact code change from original per tower: `biomes` field only, leaving source pools, size, terrain adaptation, step and shared structure-set untouched. Runtime density/priority remains unknown.
+
+
 **Working principle:** Continue all static/source/catalogue work autonomously. Do **not** ask the owner to repeat decisions or test the entire 1,240-ID tier map. PR56 remains RESEARCH-ONLY and draft. Screenshots or logs of a manually placed structure are **not** proof of its *natural generation*.
 
 ## Confirmed owner decisions: no more owner input needed
@@ -32,7 +37,7 @@
 
 ## Assistant-owned work — continue without owner interruption
 
-- Resolve the **historical Test5 zero-curated-biome intersections for 6/9 firewatch tower variants** against *current* effective selector and Paxi resources; the historical zero is a suspicion, not proof they are missing today. Details: [29-site crosscheck](DD_29_WORLDGEN_LEGACY_EVIDENCE_CROSSCHECK_20261014.csv).
+- **D&T firewatch source work completed:** exact native JAR + shared-tag consumers + four scoped selector overrides staged in inactive experiment. Remaining assistant-owned step: reconcile winning Paxi/current PR50 resource pack precedence, prepare an isolated acceptance build, then record bounded real-generation tests. Do not enable the superseded shared-tag pack. See [source report](DD_DNT_PINNED_444_NATIVE_CONSUMERS_20261014.json).
 - Resolve `ctov:pillager_outpost_mesa` vs the **enabled** `ctov:pillager_outpost_badlands` based on the source triage; do not ask owner to test the likely orphan Mesa ID unless current build evidence differs.
 - Resolve Eternal Nether `piglin_manor` source `definition.type=eternalnether:citadel`, pool reachability, and source mob features. Registration is already confirmed in a **scoped PR50 client** query; natural placement remains unproven.
 - Split ordinary vanilla DD-compatible mob sources from trial-spawner mechanics and scripted/modded boss entities; do not widen regex blindly.
