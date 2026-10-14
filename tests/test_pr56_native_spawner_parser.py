@@ -55,6 +55,24 @@ class NativeSourceParserSafety(unittest.TestCase):
         self.assertEqual(o["trial_spawners"],1)
         self.assertEqual(o["trial_spawn_entity_ids"],["minecraft:breeze","minecraft:skeleton"])
 
+    def test_missing_native_pool_or_template_only_suggests_matches(self):
+        names={
+            "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridor_gear.json",
+            "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_main.json",
+            "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_bridge_terminator_6.nbt",
+        }
+        pool=scan.nearby_native_resources(
+            names,"dungeons_arise",
+            "dungeons_arise:underworld/foundry/foundry_corridor_gears","pool")
+        self.assertIn("foundry_corridor_gear.json",str(pool["best_existing_native_paths"]))
+        self.assertFalse(pool["automatic_fix_authorized"])
+        struct=scan.nearby_native_resources(
+            names,"dungeons_arise",
+            "dungeons_arise:mechanical_nest/mechanical_nest_bridge_terminator_6_","template")
+        self.assertIn("mechanical_nest_bridge_terminator_6.nbt",
+                      str(struct["best_existing_native_paths"]))
+        self.assertFalse(struct["automatic_fix_authorized"])
+
     def test_nbt_truncated_and_unknown_tag_rejected(self):
         with self.assertRaises(ValueError):
             scan.nbt_from_bytes(b"\x0a\x00\x00\x03\x00\x04hello")
