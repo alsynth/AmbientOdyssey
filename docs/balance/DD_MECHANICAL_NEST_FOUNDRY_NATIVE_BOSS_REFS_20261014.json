@@ -51,7 +51,12 @@
         "source": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_towers_1.nbt",
         "expected": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decoration.json",
         "observed_similar": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decorations.json",
-        "resolution": "SOURCE_POOL_SINGULAR_PLURAL_MISMATCH_SUSPECTED__NO_AUTOFIX"
+        "resolution": "SOURCE_POOL_SINGULAR_PLURAL_MISMATCH_SUSPECTED__NO_AUTOFIX",
+        "checked_in_AO_Paxi_alias_present": true,
+        "alias_datapack": "ao_structure_repairs",
+        "alias_path": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decoration.json",
+        "runtime_alias_activation_verified": false,
+        "correction": "MISSING_FROM_ORIGINAL_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE"
       }
     ]
   },
@@ -95,10 +100,16 @@
       "verified_in_pinned_jar": false,
       "repo_profile_winner_verified": false,
       "natural_generation_consequence_verified": false,
-      "change_authorized": false
+      "change_authorized": false,
+      "checked_in_AO_Paxi_alias_present": true,
+      "alias_datapack": "ao_structure_repairs",
+      "alias_path": "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridor_gears.json",
+      "runtime_alias_activation_verified": false,
+      "correction": "MISSING_FROM_PINNED_NATIVE_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE"
     }
   },
   "conclusions": [
+    "CORRECTION: The native JAR lacks Foundry corridor-gears and Mechanical Nest singular-decoration pools, but both aliases were already implemented in AO's checked-in ao_structure_repairs Paxi datapack. Do not report them as unaddressed AO source files, and do not create duplicate packs.",
     "Mechanical Nest scaling research should target its boss and explicitly NOT spend time balancing every normal mob or mounted oddity.",
     "Identify the actual Mechanical Nest boss and origin before adding any boss-specific DD/native changes.",
     "Foundry has named and NBT-modified vanilla spawner enemies whose native stats may compound generic DD and Apotheosis. Test a controlled spawned instance before changing multipliers.",
