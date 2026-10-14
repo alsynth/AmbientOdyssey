@@ -339,7 +339,7 @@
             "structure": "dungeons_arise:foundry"
           },
           "difficulty": {
-            "name": "ao_tier_5",
+            "name": "ao_tier_6",
             "level": 1
           }
         },
@@ -541,28 +541,7 @@
       "world_matches": {
         "dimension": "minecraft:the_end"
       },
-      "zones": [
-        {
-          "zone_matches": {
-            "biome": null,
-            "structure": "dungeons_arise:aviary"
-          },
-          "difficulty": {
-            "name": "ao_tier_6",
-            "level": 1
-          }
-        },
-        {
-          "zone_matches": {
-            "biome": null,
-            "structure": "cataclysm:acropolis"
-          },
-          "difficulty": {
-            "name": "ao_tier_6",
-            "level": 1
-          }
-        }
-      ],
+      "zones": [],
       "zone_specifiers": [],
       "entities": []
     },
@@ -570,48 +549,7 @@
       "world_matches": {
         "dimension": "minecraft:the_nether"
       },
-      "zones": [
-        {
-          "zone_matches": {
-            "biome": null,
-            "structure": "betterfortresses:fortress"
-          },
-          "difficulty": {
-            "name": "ao_tier_4",
-            "level": 1
-          }
-        },
-        {
-          "zone_matches": {
-            "biome": null,
-            "structure": "incendium:forbidden_castle"
-          },
-          "difficulty": {
-            "name": "ao_tier_4",
-            "level": 1
-          }
-        },
-        {
-          "zone_matches": {
-            "biome": null,
-            "structure": "nova_structures:nether_keep"
-          },
-          "difficulty": {
-            "name": "ao_tier_4",
-            "level": 1
-          }
-        },
-        {
-          "zone_matches": {
-            "biome": null,
-            "structure": "nova_structures:piglin_donjon"
-          },
-          "difficulty": {
-            "name": "ao_tier_4",
-            "level": 1
-          }
-        }
-      ],
+      "zones": [],
       "zone_specifiers": [],
       "entities": []
     }
