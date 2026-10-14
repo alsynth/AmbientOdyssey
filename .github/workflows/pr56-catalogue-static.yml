@@ -23,6 +23,7 @@ on:
       - 'tools/audit_pr56_remaining_worldgen_native.py'
       - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/audit_pr56_dd_zone_coverage.py'
+      - 'tools/audit_pr56_native_template_spawners.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -48,6 +49,7 @@ on:
       - 'tools/audit_pr56_remaining_worldgen_native.py'
       - 'tools/audit_pr56_dungeon_biome_sources.py'
       - 'tools/audit_pr56_dd_zone_coverage.py'
+      - 'tools/audit_pr56_native_template_spawners.py'
       - 'tools/package_pr56_firewatch_test_datapack.py'
       - '.github/workflows/pr56-dnt-source-audit.yml'
       - 'docs/audits/CURRENT_BIOLITH_PLACEMENT.json'
@@ -255,6 +257,18 @@ jobs:
           echo '---BEGIN COMBAT DUNGEON NATIVE REPORT---'
           cat /tmp/pr56-combat-dungeon-native-biome-tags.json
           echo '---END COMBAT DUNGEON NATIVE REPORT---'
+      - name: Trace pinned native jigsaw template NBT for spawners (read-only)
+        run: |
+          python tools/audit_pr56_native_template_spawners.py \
+            --dungeons-arise /tmp/pr56-dungeons-arise-2168.jar \
+            --idas /tmp/pr56-idas-1137.jar \
+            --out /tmp/pr56-native-template-encounter-indicators.json
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: pr56-native-template-spawner-indicators-json
+          path: /tmp/pr56-native-template-encounter-indicators.json
+          retention-days: 14
       - uses: actions/upload-artifact@v4
         if: success()
         with:
