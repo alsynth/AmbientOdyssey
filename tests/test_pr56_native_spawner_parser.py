@@ -19,8 +19,12 @@ class NativeSourceParserSafety(unittest.TestCase):
             {"weight":3,"element":{"element_type":"minecraft:single_pool_element","location":"dungeons_arise:some/spawner"}},
             {"weight":1,"element":{"element_type":"minecraft:list_pool_element","elements":[
                 {"element_type":"minecraft:legacy_single_pool_element","location":"dungeons_arise:some/hall"}]}},
+            {"weight":1,"element":{"element_type":"integrated_api:integrated_api_single_pool_element",
+                                   "location":"idas:pillager_camp/pillager_camp1","processors":"idas:pillager_processor"}},
         ]}
-        self.assertEqual(scan.pool_elements(pool),["dungeons_arise:some/hall","dungeons_arise:some/spawner"])
+        self.assertEqual(scan.pool_elements(pool),[
+            "dungeons_arise:some/hall","dungeons_arise:some/spawner",
+            "idas:pillager_camp/pillager_camp1"])
 
     def test_spawner_entity_not_item_ids(self):
         root={"palette":[{"Name":"minecraft:spawner"},{"Name":"minecraft:jigsaw"}],
