@@ -137,6 +137,38 @@ def run(jar, root):
                 sid for tagkey in visited for sid in selector_consumers.get("#" + tagkey, [])
             })
 
+        # Validate the alternative structure-specific patch against the freshly
+        # SHA1-verified JAR, not just against a stored report. Fail closed.
+        scoped_root = root / "experiments/structure-biome-compatibility/firewatch-structure-only-draft"
+        candidate_check = {}
+        for suffix, native_original in candidate_originals.items():
+            if not native_original:
+                raise RuntimeError("Missing pinned native tower structure: " + suffix)
+            name = f"nova_structures/worldgen/structure/firewatch_tower_{suffix}.json"
+            staged = json.loads((scoped_root / "data" / name).read_text(encoding="utf-8"))
+            expected = dict(native_original)
+            expected["biomes"] = "#ambient_odyssey:firewatch_compatible/" + suffix
+            if staged != expected:
+                raise RuntimeError("Scoped patch changes native fields besides biomes: " + suffix)
+            tag_path = scoped_root / "data/ambient_odyssey/tags/worldgen/biome/firewatch_compatible" / (suffix + ".json")
+            tag_json = json.loads(tag_path.read_text(encoding="utf-8"))
+            anchor = native_original["biomes"]
+            if isinstance(anchor, list):
+                if len(anchor) != 1:
+                    raise RuntimeError("Unexpected multiselect native tower source: " + suffix)
+                anchor = anchor[0]
+            values = tag_json["values"]
+            if tag_json.get("replace", False) or not values or values[0] != anchor:
+                raise RuntimeError("Scoped private tag fails to retain original selector: " + suffix)
+            if len(values) != len(set(values)) or not all(x in curated for x in values[1:]):
+                raise RuntimeError("Scoped tag has unsupported or duplicate curated biome: " + suffix)
+            candidate_check[suffix] = {
+                "matches_native_json_except_biomes": True,
+                "original_selector_retained_in_new_private_tag": True,
+                "curated_additions": values[1:],
+                "active_profile_runtime_tested": False,
+            }
+
         paxi_overrides = []
         paxi_root = root / PAXI
         if paxi_root.exists():
@@ -158,6 +190,7 @@ def run(jar, root):
             },
             "forest_original_native_structure_json": forest,
             "four_original_native_structure_json": candidate_originals,
+            "candidate_structure_only_diff_checks": candidate_check,
             "land_collection_direct_structure_consumers": land_direct_consumers,
             "forest_native_source_file": forest_path,
             "current_researched_repo_paxi_firewatch_overrides": sorted(paxi_overrides),
