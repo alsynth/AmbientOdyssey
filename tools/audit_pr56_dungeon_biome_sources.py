@@ -23,6 +23,18 @@ PINS={
               "dungeons_arise:ceryneian_hind","dungeons_arise:scorched_mines",
               "dungeons_arise:shiraz_palace"),
  },
+ "friendsandfoes":{
+   "sha1":"3967c4e91662e3997318329b13af19816968b56a",
+   "file":"friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+   "project":602059,"fileID":8589256,
+   "targets":("friendsandfoes:citadel",),
+ },
+ "mtr":{
+   "sha1":"d4078318221c74265156f470b1ac321f14069b34",
+   "file":"MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+   "project":1339737,"fileID":8902209,
+   "targets":("mtr:badlands_temple",),
+ },
  "idas":{
    "sha1":"154f275823f5f949ed492ac6ce078a80fc3c759a",
    "file":"idas-1.13.7+1.21.1-neoforge.jar",
@@ -148,6 +160,8 @@ def main():
  p=argparse.ArgumentParser()
  p.add_argument("--dungeons-arise",type=Path,required=True,dest="dungeons_arise")
  p.add_argument("--idas",type=Path,required=True)
+ p.add_argument("--friendsandfoes",type=Path,required=True)
+ p.add_argument("--mtr",type=Path,required=True)
  p.add_argument("--out",type=Path,required=True)
  a=p.parse_args()
  roster=json.loads(ROSTER.read_text(encoding="utf-8"))
