@@ -7,12 +7,12 @@ This is the reproducible **mapping denominator** used in replies. All figures ar
 |---|---:|
 | Known unique native IDs (historical + scoped client query extras) | **1240** |
 | IDs with single working numeric tier | **370** |
-| IDs with variant-dependent multiple tiers, needing per-site resolution | **1** |
-| **Working tier coverage on known IDs** | **371/1240 = 29.92%** |
+| IDs with variant-dependent multiple tiers, needing per-site resolution | **4** |
+| **Working tier coverage on known IDs** | **374/1240 = 30.16%** |
 | **Still without any numeric/variant tier** | **866** |
 | Exact-PR50-current-JAR or runtime-registered known IDs | **1130** |
-| Working-tier coverage in that relevant subset | **371/1130 = 32.83%** |
-| Relevant subset without numeric/variant tiers | **759** |
+| Working-tier coverage in that relevant subset | **374/1130 = 33.10%** |
+| Relevant subset without numeric/variant tiers | **756** |
 | Historical IDs belonging to an absent JAR | **107** |
 | Historical AO-generated clone records requiring effective datapack check | **3** |
 | IDs actually **queried** by PR50 337-client membership test | **382** (all true, but **only scoped queries**) |
@@ -30,9 +30,11 @@ This is the reproducible **mapping denominator** used in replies. All figures ar
 
 **Priorities:** 
 - **Before Chunky pregeneration:** finish active Overworld/Nether structural roster and placement, particularly Create: Structures Arise, Eternal Nether 3, and effective replacement mods; get registered IDs + real natural placement and dimension checks.
-- **After/parallel to pregen:** work through 759 unranked known active ID records, filtering decor/settlements by enemy evidence without automatic tiering. Owner-deferred 26 exact native IDs and 15 source families remain untouched.
+- **After/parallel to pregen:** work through 756 unranked known active ID records, filtering decor/settlements by enemy evidence without automatic tiering. Owner-deferred 26 exact native IDs and 15 source families remain untouched.
 - **Later balance:** confirm structure/DD eligible mobs, tier owner signoff, native boss mechanics and elite stacking; no blanket DD for all structures.
 
 [Union ledger](DD_KNOWN_NATIVE_ID_MAPPING_LEDGER_20261014.csv) | [21 additional client-verified native IDs](DD_21_PR50_RUNTIME_EXTRA_IDS_20261014.csv) | [source family evidence](DD_UNMAPPED_PROVIDER_ENCOUNTER_FAMILIES_20261014.csv) | [machine-readable metric snapshot](DD_MAPPING_PROGRESS_BASELINE_20261014.json)
 
 **No gameplay files changed.** No Minecraft runtime tests were performed in this catalogue pass; registry-query results are inherited from PR50's previously executed client experiment and not dedicated-server/natural-generation acceptance.
+
+**Variant correction:** Three historical Dungeons Arise identifiers (`heavenly_challenger`, `heavenly_conqueror`, `heavenly_rider`) already had multi-tier labels (`3|6`, `4|6`, `4|6`); harmonized their working state with `minecraft:end_city` as 4 **variant conflicts**. These count as mapped-but-not-resolved working tier variants, not four deployable DD rules. Total 370 numeric + 4 variant = 374 tier-labelled, and 866 unranked.
