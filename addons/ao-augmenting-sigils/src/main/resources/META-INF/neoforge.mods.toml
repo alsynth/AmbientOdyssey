@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+[[mods]]
+modId="ao_augmenting_sigils"
+version="0.1.0-experimental"
+displayName="Ambient Odyssey - Rarity-Based Augmenting Sigils"
+description='''Apotheosis Augmenting Table costs 1/2 Common-Mythic, 6/12 Ancient, 18/36 Artifact, 24/48 Heirloom, 32/64 Esoteric. Preserves XP and affix logic.'''
+[[mixins]]
+config="ao_augmenting_sigils.mixins.json"
+[[dependencies.ao_augmenting_sigils]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_augmenting_sigils]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.252,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.ao_augmenting_sigils]]
+modId="apotheosis"
+type="required"
+versionRange="[8.9.0,9.0.0)"
+ordering="AFTER"
+side="BOTH"
