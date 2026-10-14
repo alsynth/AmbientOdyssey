@@ -80,3 +80,10 @@ Mapped **42 pillager-outpost IDs** (31 Towns & Towers and 11 CTOV) to **proposed
 | Protected source-template families | 15 | **15** |
 
 [42 Tier2 outpost proposals](DD_PROVISIONAL_T2_PILLAGER_OUTPOSTS_20261014.csv). [495 remaining current-profile unranked](DD_REMAINING_ACTIVE_UNRANKED_PRIORITY_20261014.csv). Working tier coverage is not owner approval, DD functionality or natural-generation coverage. No mod, worldgen, loot, boss or DD configuration edits.
+
+
+## October 14 continuation: +57 additional conservative Tier 0 proposals
+
+The **latest authoritative totals** are **692/1240 (55.81%)** known ID working tier/variant labels, **548** still unranked; and **692/1130 (61.24%)** current-profile relevant tier labels, **438** still unranked. Previous PR56 totals immediately before this pass: 635/1240 (51.21%) and 635/1130 (56.19%). **+57 IDs; +4.60 pp all known; +5.05 pp current profile.** The earlier table in this document is historical (first 219 batch), not latest. Source JSON progress baseline and master ledger are authoritative.
+
+Selected narrowly name-based scenery/utility archetypes: Moog Soaring trees and small cottages, Moog Voyager harmless-looking huts and log piles, Formations small houses/fountains/wells, nature End formations, scenery islands, small ruins and underwater broken-house/gate variants. Selection excluded all current owner-deferred IDs and all positive linked spawner/trial indicators in the partial source scan. **This is NOT verified peaceful placement or approval**; actual NBT and in-game spawn mechanics might differ. They are **provisional Tier0 labels only**, create no Dungeon Difficulty rules or gameplay config change. Existing 26 exact owner holds and 15 source-template family holds remain UNRANKED. This batch addresses catalogue % rather than claiming DD readiness.
