@@ -91,6 +91,17 @@ The exact PR50 import manifest includes `alexsmobs-1.22.9.jar` (Alex's Mobs) and
 All four of those modded entity IDs are outside the existing `minecraft:`-only DD regex. **IDAS Labyrinth is provisionally Tier 4, but is not one of the 53 original candidate DD zones**, and the Nether-tagged Necromancer's Spire requires its separate dimension review. No widening of regex or deployment is authorized from these findings.
 
 
+## Mechanical Nest — owner-approved boss-first exception
+
+**Owner decision (14 Oct):** Mechanical Nest's **boss is the only balancing-critical encounter**. Treat ordinary zombies, skeletons, ravagers and mounted creepers as incidental; **do not** spend time scaling each of them with DD. The provisional structure Tier 5 remains research-only, and the previous whole-structure `ao_tier_5` DD zone is **not approved for deployment unchanged**. When the boss is identified, prefer native/boss-specific tuning and guard against Apotheosis double-stacking. No live DD configuration has been modified.
+
+**Native source reality:** The exact PR50 SHA1-pinned Dungeons Arise 2.1.68 JAR contains **160 Mechanical Nest `.nbt` templates**, including spawner variants. The only explicitly named native spawner payload recognized by the audit is **Gearling** (`minecraft:zombie`, baby, 6 NBT Health), which is **not verified to be the boss**. A distinct boss identity/mechanism could be introduced through other installed mods or game logic. The source scan does **not** prove the boss is missing or establish what to buff.
+
+**Mechanical Nest native source resource warnings (no auto-repair):** `mechanical_nest_spawner_6.nbt` is referenced but missing from the pinned native JAR; `mechanical_nest_bridge_terminator_6_.nbt` includes an extra trailing underscore compared with a similar existing file; the template `mechanical_nest_towers_1.nbt` points at singular `mechanical_nest_decoration`, while a plural `mechanical_nest_decorations` pool exists. These are potential native-source mismatches, not yet evidence of a broken deployed dungeon. Do not alter the effective Paxi/worldgen profile without controlled repro.
+
+**Foundry:** Source spawners contain named, stat-modified vanilla enemies—Foundry Guardian (blaze, 55 NBT Health), Debris Miner (piglin brute, 50), and Forge Sentry (wither skeleton, 55 or 80). These need **avoidance of blind generic double-scaling**, not automatic boss classification. `foundry_corridor_crossing_2.nbt` references absent native pool `dungeons_arise:underworld/foundry/foundry_corridor_gears`; check the final effective source and test generation before editing.
+
+See [pinned native boss / jigsaw evidence](DD_MECHANICAL_NEST_FOUNDRY_NATIVE_BOSS_REFS_20261014.json) and [owner's boss-only policy file](DD_OWNER_BOSS_CENTRIC_SCOPE_20261014.json). Both were recorded while keeping the active modpack unchanged.
 ## Other native mounted-encounter exceptions
 
 The same passenger scanner found additional intentionally combined native encounters in the pinned source. These are **source NBT pairs**, not guaranteed natural-generation outcomes:
@@ -106,7 +117,7 @@ Other passenger entities include potions, fireworks and lightning effects. They 
 
 1. **DONE:** Verify IDAS custom `integrated_api` pool-element serialization and cross-check its actual start-pool linked spawner/entity source IDs.
 2. **DONE:** Use bounded two-pass NBT streaming for Keep Kayra; detect nested passenger pairs without classifying item IDs as mobs.
-3. Verify Foundry missing corridor pool and Mechanical Nest missing NBT references are intentional/non-required or evidence of actual generator problems. **Do not edit installed structure pools without reproducing and validating behavior**.
+3. **PINNED SOURCE COMPLETE, RUNTIME PENDING:** Foundry absent corridor-gears pool and three Mechanical Nest native asset-name gaps identified with exact paths. Reproduce the **effective** datapack winner and generation consequences before proposing any pool fixes. For Mechanical Nest, prioritize finding and testing its boss, not scaling incidental spawner mobs.
 4. Source-vs-live test ordinary DD attributes on representative zombies/skeletons/pillagers, then *omitted* vanilla hostiles on actual source spawners. Explicitly test Apotheosis modifiers and boss/native scripts for double stacking.
 5. Only after representative live DD acceptance, draft *isolated* rules for genuinely unsupported standard hostiles, preserving the no-native-boss/global-spawner modifications policy.
 
