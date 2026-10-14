@@ -287,6 +287,12 @@ jobs:
                           "normal_passengers":v.get("source_normal_spawner_passenger_entity_ids",[]),
                           "normal_mount_pairs":v.get("source_normal_spawner_mount_pairs",[]),
                           "prebuilt_mount_pairs":v.get("source_prebuilt_mount_pairs",[]),
+                          "mounted_template_sources":[
+                            {"template":record["template"],
+                             "nbt_resource":record["source_path"],
+                             "mount_pairs":record.get("normal_spawner_mount_pairs",[])}
+                            for record in v.get("positive_source_template_samples",[])
+                            if record.get("normal_spawner_mount_pairs")],
                           "graph_complete":v.get("native_graph_complete",False),
                           "graph_errors":v.get("source_graph_errors",[])[:5]}
           print('---BEGIN COMPACT NBT EVIDENCE---')
