@@ -248,6 +248,22 @@ def audit(jar):
                     if pack.is_dir() and (pack/rel).is_file()
                 ) if paxi.exists() else []
                 row["no_active_runtime_priority_verified"]=True
+                native_source_pool=row.get("source_pool")
+                if native_source_pool:
+                    overrides=[]
+                    for pack in sorted(paxi.iterdir()) if paxi.exists() else []:
+                        candidate=pack/native_source_pool
+                        if not pack.is_dir() or not candidate.is_file():continue
+                        definition=json.loads(candidate.read_text(encoding="utf-8"))
+                        referenced=pool_elements(definition)
+                        overrides.append({
+                            "pack":pack.name,
+                            "source_pool_json":native_source_pool,
+                            "missing_native_ref_still_present_in_override":ref in referenced,
+                            "candidate_reference_count":len(referenced),
+                            "effective_runtime_winner_verified":False
+                        })
+                    row["source_pool_Paxi_overrides"]=overrides
         source["repo_Paxi_not_a_live_modpack_snapshot"]=True
     return report
 
