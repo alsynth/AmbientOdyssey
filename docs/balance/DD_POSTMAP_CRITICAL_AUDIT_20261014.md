@@ -57,3 +57,20 @@ This is a **static consistency and prioritization audit** of already committed c
 - [Earlier 29 high-priority site verification protocol](DD_29_SITE_ENCOUNTER_VERIFICATION_PLAN_20261014.md)
 - [Eternal Nether source-graph evidence](DD_ETERNAL_NETHER_REGISTERED_WORLDGEN_EVIDENCE_20261014.csv)
 - [26 owner-held native ID records](DD_OWNER_UNRANKED_SPAWNER_REVIEW_20261014.csv)
+
+## Targeted exact DD entity-matcher audit — 5 sites, 8 source entity IDs
+
+The installed PR45 candidate file `experiments/structure-difficulty-v3/candidate/config/dungeon_difficulty/difficulty_v2.json` has the **same** `entity_matches.type` regex and `HOSTILE` attitude condition in all five Tier2–6 definitions. We compared that exact regex against linked static NBT IDs and Eternal Nether registered worldgen spawn-override IDs. [Machine-readable 8-row comparison](DD_POSTMAP_FIVE_SITE_ENTITY_MATCHER_20261014.csv).
+
+| Structure ID | Source entity ID / kind | Matches current T2–6 type regex? |
+|---|---|---|
+| `idas:pillager_camp` | `minecraft:pillager`, source NBT spawner | **YES** |
+| `nova_structures:nether_port` | `minecraft:blaze`, source NBT spawner | **YES** |
+| `eternalnether:catacomb` | `minecraft:wither_skeleton`, NBT spawner | **YES** |
+| `eternalnether:catacomb` | `minecraft:magma_cube`, worldgen override | **NO** |
+| `eternalnether:citadel` | `minecraft:enderman`, worldgen override | **NO** |
+| `eternalnether:citadel` | `eternalnether:warped_enderman`, worldgen override | **NO** |
+| `eternalnether:piglin_manor` | `minecraft:piglin`, worldgen override | **NO** |
+| `eternalnether:piglin_manor` | `eternalnether:piglin_hunter`, worldgen override | **NO** |
+
+**3/8 source IDs match the type regex, 5/8 do not.** Matching **does not** establish the additional HOSTILE-attitude predicate, actual spawns, natural structure placement, reachability in the effective datapack/pool, attribute applicability, elite compatibility or approved tiers. In particular, Piglin Manor currently has **zero positive type-regex matches among its two documented spawn-override IDs**, so the provisional Tier3 site label must not be interpreted as an already working DD Tier3 boost. These eight are IDs in five source structures, **not** all mobs across the modpack or proof of each site's enemy population. No whitelist expansions are recommended without mechanic review.
