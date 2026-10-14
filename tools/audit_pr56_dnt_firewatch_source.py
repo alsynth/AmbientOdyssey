@@ -169,6 +169,44 @@ def run(jar, root):
                 "active_profile_runtime_tested": False,
             }
 
+        # Next-wave native selectors: historical Test5 zero-curated sites.
+        # Evidence only. In particular the vanilla ocean-monument tag is
+        # external to this pinned D&T JAR and may be populated at runtime.
+        secondary={}
+        for sid in ("nova_structures:badlands_miner_outpost",
+                    "nova_structures:desert_ruins",
+                    "nova_structures:trident_trial_monument"):
+            base=structure_sources.get(sid)
+            if not base:
+                raise RuntimeError("Missing pinned D&T secondary structure: "+sid)
+            selected=base["biomes"]
+            visited=set();missing=set();direct=set();tag_closure={}
+            stack=list(selected)
+            while stack:
+                value=stack.pop()
+                if not isinstance(value,str):continue
+                if not value.startswith("#"):
+                    direct.add(value)
+                    continue
+                tag=value[1:]
+                if tag in visited:continue
+                visited.add(tag)
+                entry=tag_data.get(tag)
+                if entry:
+                    tag_closure[tag]=entry
+                    stack.extend(entry["values"])
+                else:missing.add(tag)
+            secondary[sid]={
+                "native_source_file":base["path"],
+                "original_native_biomes":selected,
+                "native_tag_closure":tag_closure,
+                "native_direct_biome_values":sorted(direct),
+                "direct_curated_overlap":sorted(curated.intersection(direct)),
+                "external_tags_unresolved_by_native_jar":sorted(missing),
+                "effective_runtime_biome_eligibility_verified":False,
+                "no_worldgen_changes_from_this_audit":True,
+            }
+
         paxi_overrides = []
         paxi_root = root / PAXI
         if paxi_root.exists():
@@ -192,6 +230,7 @@ def run(jar, root):
             "four_original_native_structure_json": candidate_originals,
             "candidate_structure_only_diff_checks": candidate_check,
             "land_collection_direct_structure_consumers": land_direct_consumers,
+            "next_wave_three_native_structure_selector_audits": secondary,
             "forest_native_source_file": forest_path,
             "current_researched_repo_paxi_firewatch_overrides": sorted(paxi_overrides),
             "declared_biolith_replacement_targets": sorted(replaced_vanilla),
