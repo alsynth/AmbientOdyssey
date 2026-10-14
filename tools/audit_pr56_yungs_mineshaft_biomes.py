@@ -1,7 +1,7 @@
 """Read-only SHA-1-pinned native YUNG's Better Mineshafts biome eligibility probe.
 
 Not a dynamic registry or natural-worldgen proof. Looks for native biome tags
-and their nested references for the two *historically* zero-curated Overworld
+and their nested references for seven *historically* zero-curated Overworld
 mineshaft variants; does not stage any biome changes.
 """
 import argparse
@@ -13,7 +13,12 @@ from pathlib import Path
 EXPECTED_SHA1="6a14e1d8201f068ca87ef8333e471c5378955906"
 EXPECTED_FILE="YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar"
 TARGETS=("bettermineshafts:mineshaft_oak",
-         "bettermineshafts:mineshaft_spruce_snowy")
+         "bettermineshafts:mineshaft_spruce_snowy",
+         "bettermineshafts:mineshaft_acacia",
+         "bettermineshafts:mineshaft_desert",
+         "bettermineshafts:mineshaft_mesa",
+         "bettermineshafts:mineshaft_mushroom",
+         "bettermineshafts:mineshaft_red_desert")
 ROOT=Path(__file__).resolve().parents[1]
 
 def digest(path):
