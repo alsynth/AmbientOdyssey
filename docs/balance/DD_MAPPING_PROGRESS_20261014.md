@@ -1,5 +1,8 @@
 # Ambient Odyssey — Structure Catalogue Progress (October 14, 2026)
 
+> **LATEST STATUS — 14 October, superseding historical progress tables below:** **1,240/1,240 known native IDs** and **1,130/1,130 current-profile known IDs** have numerical **first-pass PROVISIONAL** tiers. This is *not* 100% of the live registry, accurate encountered difficulty, owner approval, or shipped Dungeon Difficulty. **157 HIGH, 637 MEDIUM, 420 LOW, 26 OWNER_HOLD** confidence classifications; all 26 owner-held numeric placeholders are blocked from deployment. See [34-site postmap audit](DD_POSTMAP_CRITICAL_AUDIT_20261014.md), [34-ID worklist](DD_POSTMAP_CRITICAL_34_TIER_REVIEW_20261014.csv), and [5-site exact entity matcher audit](DD_POSTMAP_FIVE_SITE_ENTITY_MATCHER_20261014.csv). No gameplay changes. The former percentage tables remain solely as a chronological history.
+
+
 **Current known-ID universe only, not proof all registered worldgen structures have been discovered.** All new Tier 0 assignments are **name/archetype-based proposals pending approval**; none changed the gameplay config.
 
 | Metric | Previous | Current | Change |
