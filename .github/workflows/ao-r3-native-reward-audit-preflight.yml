@@ -1,0 +1,28 @@
+name: AO R3 Native Reward Source Preflight
+on:
+  push:
+    branches:
+      - experimental/master-integration-20261015
+    paths:
+      - tools/audit_r3_native_reward_sources.py
+      - tests/test_audit_r3_native_reward_sources.py
+      - .github/workflows/ao-r3-native-reward-audit-preflight.yml
+  pull_request:
+    paths:
+      - tools/audit_r3_native_reward_sources.py
+      - tests/test_audit_r3_native_reward_sources.py
+  workflow_dispatch:
+
+jobs:
+  source-audit-static-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check syntax
+        run: python -m py_compile tools/audit_r3_native_reward_sources.py tests/test_audit_r3_native_reward_sources.py
+      - name: Run synthetic local-JAR source audits
+        run: python -m unittest -v tests/test_audit_r3_native_reward_sources.py
