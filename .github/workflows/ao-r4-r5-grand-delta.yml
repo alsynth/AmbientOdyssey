@@ -47,10 +47,22 @@ jobs:
           assert all(not x['gameplay_accepted'] for x in j['changed_pools'])
           print('PASS: no runtime/gameplay approval, exactly five review-only R4 Grand pool choices')
           PY
+      - name: Create denied-by-default five-chest review template
+        run: |
+          python tools/patch_r5_grand_from_r4.py --mode draft \
+            --preview build/r5-grand/ao_loot_policy.REVIEW_ONLY.json \
+            --out build/r5-grand/R5_GRAND_FIVE_DECISIONS_DRAFT_NOT_APPROVED.json
+          python - <<'PY'
+          import json
+          j=json.load(open('build/r5-grand/R5_GRAND_FIVE_DECISIONS_DRAFT_NOT_APPROVED.json'))
+          assert j['status']=='DRAFT_NOT_APPROVED'
+          assert len(j['decisions'])==5 and all(not r['approved_for_experimental_test_only'] for r in j['decisions'])
+          print('PASS: all five experimental approval fields are denied by default')
+          PY
       - name: Upload ONLY review preview; never a client-import ZIP
         uses: actions/upload-artifact@v4
         with:
           name: ao-r4-r5-grand-pool-review-only
-          path: build/r5-grand/ao_loot_policy.REVIEW_ONLY.json
+          path: build/r5-grand/*.json
           retention-days: 30
           if-no-files-found: error
