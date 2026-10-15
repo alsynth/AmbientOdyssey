@@ -53,3 +53,18 @@ Non-Enigmatic items approved in the first C3 batch: Evasion Cloak, Counter Ring,
 - Do not spend effort on restrictive per-item Eternal Starlight classification; owner says those items are not a major concern. Preserve native sources, use verified entries in broad rewards where eligible.
 - Every eligible boss additionally gets **one random Simply Swords sword from the entire installed sword pool**, separately from (1) its guaranteed Apotheosis-affixed item and (2) its guaranteed Regalia reward; independent of preserved native loot. Include all sword variants and uniques with registered item IDs; no arbitrary exclusion based solely on strength. Verify what the installed mod actually classifies as swords. Roll semantics/weights remain implementation details pending verification; uniform random across registered swords is the initial assumption, not an approved numerical distribution.
 - Do not let the broad Simply Swords pool accidentally re-add excluded Pasterdream or Enigmatic items to Regalia; maintain three distinct reward mechanisms. No executable modifications in this document.
+
+## Regalia C3/C4 residual audit and next loot economy design (15 Oct 2026)
+Against `REGALIA_COMBAT_PRIORITY_RANKING_20261013.csv` (497 total, 32 C3/C4), excluding Enigmatic Legacy/Plus, Pasterdream candidate entries, Simply Swords (separate whole-sword reward) and Eternal Starlight (no special review), only four C3/C4 remain:
+- Abyssal Tiara / Aquamirae: owner approved T2–T5 guaranteed Regalia pool.
+- Tempest Trident / Aquamirae: owner approved T2–T5 pool.
+- Cursium Chestplate / Cataclysm: owner excluded (native only).
+- The Annihilator / Cataclysm: **owner decision outstanding**; tentative T2–T5 suggested, NOT approved.
+The 421 C? entries have *not* been authenticated as safe, craftable, or registered. Source validation of actual eligible IDs and high-impact effects is needed before generating any broad reward pool. Keep Pasterdream **accessories** out; do not blanket-exclude unrelated weapon families based on their mod. Preserve the entire Simply Swords *sword* pool as its own independent bonus.
+
+## Next design stage
+Leave generic chest Apotheosis affix rarity/odds and native special boss drops alone. Design only additive boss reward components and scarce gem/affix equipment higher-tier distributions, separating:
+1) guaranteed random affix item, guaranteed eligible Regalia, guaranteed random full-pool Simply Swords sword;
+2) native thematic boss unique drops (unmodified);
+3) **additional chance-based** high-grade affix/gem/material drops, respecting user-approved T6 Artifact very rare / Ancient okayish; T7 Heirloom very rare and Artifact/Ancient low; T8 Esoteric rare, Heirloom/Artifact small chances; T9 special prestige, not an invented grade.
+Do not lock probabilities without user approval or conflate Apotheosis item rarity with gem grade. Ensure repeatable bosses and 5–7 player multiplayer cannot trivially flood the economy; preserve loot ownership and native Bosses mechanics.
