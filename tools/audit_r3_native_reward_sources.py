@@ -20,6 +20,8 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CANDIDATES=ROOT/'docs/handoffs/loot-update-20261015/grand-treasure-candidates.json'
 CATALOGUE=ROOT/'docs/balance/REGALIA_ITEM_CATALOGUE_EXPANSION_2026-10-13.csv'
+RANKING=ROOT/'docs/balance/REGALIA_COMBAT_PRIORITY_RANKING_20261013.csv'
+CURRENT_POLICY=ROOT/'docs/handoffs/loot-update-20261015/effective-loot-policy.json'
 
 def digest(data): return hashlib.sha256(data).hexdigest()
 
@@ -131,6 +133,9 @@ def grand_check(rows,mods,index,paxi=None):
 def regalia_check(mods,index,mod_sources):
     with CATALOGUE.open(encoding='utf-8-sig',newline='') as file:
         rows=list(csv.DictReader(file))
+    with RANKING.open(encoding='utf-8-sig',newline='') as file:
+        ranked={r['item_registry_candidate']:r for r in csv.DictReader(file)}
+    current=set(json.loads(CURRENT_POLICY.read_text(encoding='utf-8'))['regalia'])
     found=[]
     for r in rows:
         ident=r.get('candidate_registry_id','')
@@ -171,7 +176,10 @@ def regalia_check(mods,index,mod_sources):
             'installed_jar_in_catalogue':expected,
             'jar_candidates':jars,'resource_clues':clues,
             'resource_clues_are_not_registry_proof':True,
-            'registered_item_verified':False,'owner_disposition':disposition,
+            'registered_item_verified':False,
+            'currently_in_r2_reward_pool':ident in current,
+            'known_combat_risk_band':ranked.get(ident,{}).get('combat_risk_band','C? — unscored'),
+            'owner_disposition':disposition,
         })
     return found
 
@@ -191,6 +199,8 @@ def audit(mods,paxi=None):
         'grand':grand,
         'catalogue_rows_checked':len(regalia),
         'regalia_native_only_count':sum(r['owner_disposition']=='NATIVE_ONLY_NO_NEW_REGALIA_REWARD' for r in regalia),
+        'regalia_already_in_r2_reward_pool':sum(r['currently_in_r2_reward_pool'] for r in regalia),
+        'regalia_unscored_candidates':sum(r['known_combat_risk_band'].startswith('C?') for r in regalia),
         'regalia_source_evidence_only':regalia,
         'limitations':[
             'Compiled items may lack model/recipe resources; static clues never prove registration or gameplay safety.',
