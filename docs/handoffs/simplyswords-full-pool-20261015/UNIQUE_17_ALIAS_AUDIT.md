@@ -37,7 +37,7 @@ Totals: **6 obsolete aliases**, all of which duplicate a pool base item. **0 inc
 1. **What the player ends up holding:** an AO boss reward of an alias ID turns into the base item once it's in the inventory. Delivery itself isn't affected.
 2. **Components carry over:** conversion uses `ItemStack.transmuteCopy`, so data components such as Apotheosis affixes survive (static reading; not engine-tested).
 3. **Uneven odds:** with a uniform roll over 133 IDs, `slumbering_lichblade` effectively has 3 chances (itself + 2 aliases) and `dormant_relic` 5 (itself + 4). They come out pre-awakened, so they skip upgrade steps.
-4. **Records:** AO reward logs and tests record the alias ID, not the item the player keeps. Any later "already owned" or duplicate check that uses IDs would be wrong for these 6.
+4. **Records:** `BossRewards` doesn't log granted IDs today. Engine fixtures that sample reward IDs, and any future "already owned" or duplicate check based on IDs, would see the alias, not the item the player keeps.
 5. **Registry checks still pass:** `swordPoolIds()` filters by registry + sword tag, and all 6 aliases are registered and tagged.
 
 ## Open point for you
