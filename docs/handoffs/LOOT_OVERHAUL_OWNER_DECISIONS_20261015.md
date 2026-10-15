@@ -76,3 +76,10 @@ Do not lock probabilities without user approval or conflate Apotheosis item rari
 - These supersede previously proposed T8 Heirloom 8% and Esoteric 2%. Apply to bonus rarity rolls **separate from the guaranteed affixed item**, subject to exact loot API and compatibility validation; no production implementation yet.
 - T8 Ancient 30% and Artifact 15%, and other tier rates mentioned in the conversation were **proposals**, not expressly approved by this latest owner response. Leave those open for review rather than silently freezing them.
 - **Tier 9 loot design deferred**, no new odds or special reward commitments now.
+
+## Owner correction — Heirloom probabilities (15 October 2026; latest instruction wins)
+
+- **T7 Heirloom: 5%** additional rare affixed-item roll (supersedes earlier proposed T7 1%).
+- **T8 Heirloom: 8%** additional rare affixed-item roll (restores the earlier proposed T8 8%; supersedes the mistaken T8 5% confirmation).
+- **T8 Esoteric: 5%** additional rare affixed-item roll remains owner-approved.
+- Other rates, including T8 Ancient 30% and Artifact 15%, remain proposals rather than approvals. T9 remains deferred. Keep rare bonus independent of the guaranteed affixed item; this is a design record, not implemented loot.
