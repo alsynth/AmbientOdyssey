@@ -1,0 +1,78 @@
+{
+  "release_url": "https://github.com/alsynth/AmbientOdyssey/releases/tag/untagged-288bd4f89b923343564e",
+  "release_id": 413791322,
+  "draft": true,
+  "source_head": "af41cc88cb28d662edf6f0d7b1690933b8edd208",
+  "assets": [
+    {
+      "name": "Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015.zip",
+      "id": 643818452,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015.zip",
+      "sha256": "5debe094c047162f0b30f2dd76e2ab85201310c480b64333eca89a4f4376ac99",
+      "size": 154493498
+    },
+    {
+      "name": "Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015-Rollback.zip",
+      "id": 643818941,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015-Rollback.zip",
+      "sha256": "8b0793cd71d53099477b7cbdfd35d0f0cfe51dd62a6e8b56b32c75c6120e1d51",
+      "size": 54313
+    },
+    {
+      "name": "Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015.zip.report.json",
+      "id": 643818977,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015.zip.report.json",
+      "sha256": "f02b5f6b57d2384c2f5d013ec844c209ddde6265a0164b9fea82e35fc178dfef",
+      "size": 936210
+    },
+    {
+      "name": "R3-RECONCILED-README-TESTS-AND-ROLLBACK.md",
+      "id": 643821399,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-README-TESTS-AND-ROLLBACK.md",
+      "sha256": "07b5ae9d3dd0a2d5a04d790ccd01f62007cd6a102adedf9816d6e16e75d4d0e1",
+      "size": 8888
+    },
+    {
+      "name": "R3-RECONCILED-STATIC-VERIFICATION.json",
+      "id": 643819051,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-STATIC-VERIFICATION.json",
+      "sha256": "7beef47f69ca0fbf996856bbcf85ab094ec3a77444206576a27c0d3f291de8c8",
+      "size": 3994
+    },
+    {
+      "name": "R3-RECONCILED-DEPENDENCY-AUDIT.json",
+      "id": 643819067,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-DEPENDENCY-AUDIT.json",
+      "sha256": "227715d8f5342446e1f1662b94e1b30573751134620b3be5020eb9d862f2c68d",
+      "size": 27845
+    },
+    {
+      "name": "R3-RECONCILED-DRAFT-AND-PLAN-AUDIT.md",
+      "id": 643821451,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-DRAFT-AND-PLAN-AUDIT.md",
+      "sha256": "0eb7a3d95d6f52f9b81c1e074de94505a6367bab3e5e2224ab557104dcfd52c6",
+      "size": 14101
+    },
+    {
+      "name": "R3-RECONCILED-PLAN-COVERAGE.json",
+      "id": 643819139,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-PLAN-COVERAGE.json",
+      "sha256": "e8d6a68281b7f9ef657ae7093de50bbfb2845293d4e2608457f592a7ba6f4bc8",
+      "size": 608261
+    },
+    {
+      "name": "R3-RECONCILED-PYTHON-TESTS.log",
+      "id": 643819160,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-PYTHON-TESTS.log",
+      "sha256": "139ca8ff62c37c70d8c5b5027700bd961acdfa092c87fe9da305d72880e4e1dc",
+      "size": 1166
+    },
+    {
+      "name": "R3-RECONCILED-NATIVE-SOURCE-AUDIT.json",
+      "id": 643819197,
+      "url": "https://github.com/alsynth/AmbientOdyssey/releases/download/untagged-288bd4f89b923343564e/R3-RECONCILED-NATIVE-SOURCE-AUDIT.json",
+      "sha256": "bda14b0a8aa6a64e1d82004898d1748ac7e3cc6250120677f0bf0bdf0771e180",
+      "size": 334662
+    }
+  ]
+}
