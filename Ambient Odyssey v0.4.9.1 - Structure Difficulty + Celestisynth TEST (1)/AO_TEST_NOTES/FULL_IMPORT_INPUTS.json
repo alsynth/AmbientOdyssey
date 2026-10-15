@@ -1,0 +1,2475 @@
+{
+  "kind": "FULL_PRIVATE_CURSEFORGE_EXPERIMENTAL_IMPORT",
+  "base_sha256": "8643e31b8f086dfde6c9729643ac5b77c692edb38ac000e7186a767b996c67a9",
+  "cf_download_pins": 338,
+  "cf_mod_pins": 331,
+  "resource_shader_pins": 7,
+  "bundled_custom_mods": 7,
+  "expected_physical_mod_jars": 338,
+  "added_vs_export": [
+    {
+      "projectID": 1369926,
+      "fileID": 8122244,
+      "name": "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "9b67474f98fd14110cbcefd406b18e05def36b63"
+    },
+    {
+      "projectID": 1196449,
+      "fileID": 6882233,
+      "name": "reliquified_ars_nouveau-1.21.1-0.6.1.jar",
+      "kind": "mod",
+      "sha1": "882aba237860441a7ad2943775ffa3cc4d6324a9"
+    },
+    {
+      "projectID": 1370532,
+      "fileID": 8122664,
+      "name": "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "0587cee8edd1eb146f125b100e6c878bf7dabf5f"
+    },
+    {
+      "projectID": 319351,
+      "fileID": 6740123,
+      "name": "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "1f4695061a2134a6361dcab03ec76c7a0a6428e2"
+    },
+    {
+      "projectID": 852662,
+      "fileID": 5770623,
+      "name": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "a9dea4b9ef893fc955512ff2dee75c9c82e09a52"
+    },
+    {
+      "projectID": 1131668,
+      "fileID": 9075472,
+      "name": "arsdelight-2.2.5.jar",
+      "kind": "mod",
+      "sha1": "f4915ccd62442e308b2c0879c3c4ce35b9c59658"
+    },
+    {
+      "projectID": 1252482,
+      "fileID": 6751611,
+      "name": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "3460532417842063306c5a12428b3c877e18d073"
+    },
+    {
+      "projectID": 1653878,
+      "fileID": 8655579,
+      "name": "arssophisticatedstoragecompat-0.3.0.jar",
+      "kind": "mod",
+      "sha1": "1a5b5e262b577a0ffa015060bdfe610c0bc7ba01"
+    },
+    {
+      "projectID": 1653477,
+      "fileID": 8653384,
+      "name": "arssophisticatedcompat-0.3.0.jar",
+      "kind": "mod",
+      "sha1": "7cc6c1e1d92d109230f68b6a63dc4bfb13c245a6"
+    },
+    {
+      "projectID": 1672331,
+      "fileID": 8867800,
+      "name": "celestisynth-1.21.1-1.3.9.jar",
+      "kind": "mod",
+      "sha1": "f34c317e9394314446813f9c9d46f16e9c0ba745",
+      "sha256": "03225d0ac3789f8cd1df90df1793f080ab36c4c1143a4f15b622f88bb41bd9de"
+    }
+  ],
+  "updated_vs_export": [
+    {
+      "projectID": 1225026,
+      "fileID": 9145897,
+      "name": "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+      "kind": "mod",
+      "sha1": "501e879187dfbdc1e24539362d3728d1b1c88ebb"
+    }
+  ],
+  "roster": [
+    {
+      "projectID": 619320,
+      "fileID": 9074514,
+      "name": "sophisticatedstorage-1.21.1-1.6.2.2154.jar",
+      "kind": "mod",
+      "sha1": "cff78bd00bcb8328390e4dd70d03910182d34427"
+    },
+    {
+      "projectID": 360203,
+      "fileID": 8767509,
+      "name": "guardvillagers-2.4.12-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "a817f2263e93aad5bdbe65eeafd2f27489b47ccf"
+    },
+    {
+      "projectID": 1099461,
+      "fileID": 8847070,
+      "name": "cataclysm_spellbooks-1.1.14-1.21.jar",
+      "kind": "mod",
+      "sha1": "568d798862a61a374ab1e55dcddf5b2e3326b8b5"
+    },
+    {
+      "projectID": 1073197,
+      "fileID": 5895490,
+      "name": "AetherVillages-1.21.1-1.0.8-neoforge.jar",
+      "kind": "mod",
+      "sha1": "0795d6a8934c90475c930149940937d6bea515af"
+    },
+    {
+      "projectID": 1612974,
+      "fileID": 8895453,
+      "name": "IBOMD v1.0.0-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "eb279322e3e7937b190974aa096f28de4e1b7fa8"
+    },
+    {
+      "projectID": 861310,
+      "fileID": 5585561,
+      "name": "fadeless-neoforge-1.1.0.jar",
+      "kind": "mod",
+      "sha1": "76cb5746d6e93af2c74a06251100aad27363637f"
+    },
+    {
+      "projectID": 941573,
+      "fileID": 8448640,
+      "name": "BOMD-NeoForge-1.21-1.3.3.jar",
+      "kind": "mod",
+      "sha1": "446ff63afb858ad49149d24b72541739de83d38d"
+    },
+    {
+      "projectID": 659011,
+      "fileID": 8201775,
+      "name": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "kind": "mod",
+      "sha1": "b6094adde68bd4b909bc75c64901e1f3fb99ad8f"
+    },
+    {
+      "projectID": 313970,
+      "fileID": 8993983,
+      "name": "Apotheosis-1.21.1-8.9.0.jar",
+      "kind": "mod",
+      "sha1": "2d8b59070a221bcc2e3ea08b3b48cbf034b77c71"
+    },
+    {
+      "projectID": 1339737,
+      "fileID": 8902209,
+      "name": "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+      "kind": "mod",
+      "sha1": "d4078318221c74265156f470b1ac321f14069b34"
+    },
+    {
+      "projectID": 602059,
+      "fileID": 8589256,
+      "name": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+      "kind": "mod",
+      "sha1": "3967c4e91662e3997318329b13af19816968b56a"
+    },
+    {
+      "projectID": 1095252,
+      "fileID": 8736778,
+      "name": "simplymore-forge-1.3.0_alpha.jar",
+      "kind": "mod",
+      "sha1": "51636477cd5c378f42d9700e1fe35cd952c8f4f1"
+    },
+    {
+      "projectID": 1576275,
+      "fileID": 8911572,
+      "name": "freeterraforged-1.0.0-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "83ca8bd7c6a5c4d4fabb135a5edcc958f14e4b6c"
+    },
+    {
+      "projectID": 442508,
+      "fileID": 7150870,
+      "name": "DungeonsArise-1.21.1-2.1.68-release.jar",
+      "kind": "mod",
+      "sha1": "c651339154da7b9e9cf47a80fdef22c4d59cad5c"
+    },
+    {
+      "projectID": 634780,
+      "fileID": 9072947,
+      "name": "astrological-1.21.1-1.7.1.jar",
+      "kind": "mod",
+      "sha1": "aabf7211c63ecdf78419ee12232db48c57592eb7"
+    },
+    {
+      "projectID": 1314084,
+      "fileID": 8123167,
+      "name": "block_factorys_bosses-2.1.2-neo-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "249a5f2ba43fd341d4a2831691c154d92aa5a12d"
+    },
+    {
+      "projectID": 557999,
+      "fileID": 7662187,
+      "name": "brutalbosses-1.21.1-8.6.jar",
+      "kind": "mod",
+      "sha1": "47154ce207ca3bbcfba1bf56c6d2d6a58511a102"
+    },
+    {
+      "projectID": 1341317,
+      "fileID": 6964720,
+      "name": "end_villager_outpost-1.0.0-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "519db3ab64b92064036566f6ee71fd422d04d27e"
+    },
+    {
+      "projectID": 1365790,
+      "fileID": 9111385,
+      "name": "endrem_additions-neoforge-1.2.0.jar",
+      "kind": "mod",
+      "sha1": "ca7244d6160e4599d422d59f99f67e72698c2d35"
+    },
+    {
+      "projectID": 342584,
+      "fileID": 9060865,
+      "name": "collective-1.21.1-8.42.jar",
+      "kind": "mod",
+      "sha1": "b9db90bc675290ad490300b056d3f3f82425f2eb"
+    },
+    {
+      "projectID": 1214459,
+      "fileID": 7177858,
+      "name": "sky_whale_ship-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "6e2cba680535a5900b83fa4a4dd9f332141a36b9"
+    },
+    {
+      "projectID": 1123977,
+      "fileID": 9070553,
+      "name": "fragmentum-5.2.0+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "b4b7aed92ff5bfd61c2d0b0a894268d03c3f8f8c"
+    },
+    {
+      "projectID": 317780,
+      "fileID": 9067277,
+      "name": "xaeroworldmap-neoforge-1.21.1-1.47.0.jar",
+      "kind": "mod",
+      "sha1": "2936c9cb9dfbdab145fe6f1e8ae2c68915246a5f"
+    },
+    {
+      "projectID": 626761,
+      "fileID": 8657120,
+      "name": "t_and_t-fabric-neoforge-1.13.11.jar",
+      "kind": "mod",
+      "sha1": "8f00e36a11568c0b66bbdf5c0e9ee492e511b303"
+    },
+    {
+      "projectID": 790626,
+      "fileID": 8774737,
+      "name": "modernfix-neoforge-5.27.24+mc1.21.1.jar",
+      "kind": "mod",
+      "sha1": "1fe7f8b4176e86507cc8ed5460b6acdd3dac5529"
+    },
+    {
+      "projectID": 898963,
+      "fileID": 9006294,
+      "name": "ApothicAttributes-1.21.1-2.11.0.jar",
+      "kind": "mod",
+      "sha1": "7ff0e452e10cb582c188626a413037e63db9ca04"
+    },
+    {
+      "projectID": 1369926,
+      "fileID": 8122244,
+      "name": "ArmoredFoes-v21.1.0-mc1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "9b67474f98fd14110cbcefd406b18e05def36b63"
+    },
+    {
+      "projectID": 1162019,
+      "fileID": 6053314,
+      "name": "archaeology_ruins-1.0.0-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "2d77453d9a5e3b164ed31c6e659a3d6cce50a53a"
+    },
+    {
+      "projectID": 1331880,
+      "fileID": 6918744,
+      "name": "aquatic_creepers-neoforge-1.0.0+1.21.jar",
+      "kind": "mod",
+      "sha1": "e36d664b1c4005813183f525df9de8f5f366442b"
+    },
+    {
+      "projectID": 248787,
+      "fileID": 7854442,
+      "name": "appleskin-neoforge-mc1.21-3.0.9.jar",
+      "kind": "mod",
+      "sha1": "81cf0e668f991f83ac8820c386fbd6c9c3602246"
+    },
+    {
+      "projectID": 1225026,
+      "fileID": 9145897,
+      "name": "remnant_bosses-neoforge-1.21.1-2.7.0.jar",
+      "kind": "mod",
+      "sha1": "501e879187dfbdc1e24539362d3728d1b1c88ebb"
+    },
+    {
+      "projectID": 1394406,
+      "fileID": 7450829,
+      "name": "FungiDelight-1.21.1-1.3.jar",
+      "kind": "mod",
+      "sha1": "823e15ce8eec094a97f7d05d3edb47b0eb1a820f"
+    },
+    {
+      "projectID": 618298,
+      "fileID": 9074355,
+      "name": "sophisticatedcore-1.21.1-1.5.6.2374.jar",
+      "kind": "mod",
+      "sha1": "d517ce8b730bb5511f158909aeaf873e0ebb338f"
+    },
+    {
+      "projectID": 1015144,
+      "fileID": 5812532,
+      "name": "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar",
+      "kind": "mod",
+      "sha1": "bbf6c91f4a2829c58bc024eaaab821986bc93de6"
+    },
+    {
+      "projectID": 1063926,
+      "fileID": 9054782,
+      "name": "ApothicEnchanting-1.21.1-1.6.3.jar",
+      "kind": "mod",
+      "sha1": "176b656816f45ef24a02172c5d8a3d3043e3bb18"
+    },
+    {
+      "projectID": 678384,
+      "fileID": 5743914,
+      "name": "Solas Shader V2.3.zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "0382005c6dd75dadc2a6b6f1d6fe07d2af5b0239"
+    },
+    {
+      "projectID": 1418999,
+      "fileID": 8296269,
+      "name": "trek-B0.6.2.jar",
+      "kind": "mod",
+      "sha1": "e83cbdbe987129cb039ead47d11994d8cbdb1ade"
+    },
+    {
+      "projectID": 1477733,
+      "fileID": 9116978,
+      "name": "swinginglanterns-neoforge-1.21.1-2.0.4.jar",
+      "kind": "mod",
+      "sha1": "58f89033b37830ae7b1456d5345a452c95f7d715"
+    },
+    {
+      "projectID": 1363585,
+      "fileID": 9092152,
+      "name": "rainbows-foliage-polytone-edition-v2.1.zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "9a0f701acbdd076bf70ef35220a48181f2540722"
+    },
+    {
+      "projectID": 953637,
+      "fileID": 7142896,
+      "name": "DungeonsAriseSevenSeas-1.21.x-1.0.4-neoforge.jar",
+      "kind": "mod",
+      "sha1": "ac9edb266a1360e9e4c80ed0b2f931f1505307eb"
+    },
+    {
+      "projectID": 968868,
+      "fileID": 7980010,
+      "name": "Zeta-1.1-40.jar",
+      "kind": "mod",
+      "sha1": "72f6efe421cfc0547c774ae8241d727b7d996754"
+    },
+    {
+      "projectID": 577805,
+      "fileID": 8021963,
+      "name": "corn_delight-1.2.10-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "644fa3a8a9ea1be375c1aefff5cf919e36a7835f"
+    },
+    {
+      "projectID": 1005914,
+      "fileID": 8883390,
+      "name": "fzzy_config-0.7.7+1.21+neoforge.jar",
+      "kind": "mod",
+      "sha1": "518eadc53c065a74a49207769209c116e77d1849"
+    },
+    {
+      "projectID": 1351997,
+      "fileID": 7476105,
+      "name": "CreateOPlenty-NeoForge-Create+6.0.7-3.0.jar",
+      "kind": "mod",
+      "sha1": "9c636f52e9354fdccc0b53201c22dfb5887f0589"
+    },
+    {
+      "projectID": 889915,
+      "fileID": 8909889,
+      "name": "ftb-xmod-compat-neoforge-21.1.12.jar",
+      "kind": "mod",
+      "sha1": "1f68bf714cf7ea3e07b23c6b8c1ebe516b325047"
+    },
+    {
+      "projectID": 1473837,
+      "fileID": 8450385,
+      "name": "tarotcards-2.3.5-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "57a828f466a933b741d5778c1e8134955bb67bc2"
+    },
+    {
+      "projectID": 623908,
+      "fileID": 7788733,
+      "name": "[Neoforge]ctov-3.6.3.jar",
+      "kind": "mod",
+      "sha1": "c5fe733d743af20f84eb87dd75b5bb57684f3e05"
+    },
+    {
+      "projectID": 388800,
+      "fileID": 6794589,
+      "name": "polymorph-neoforge-1.1.0+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "84f8c539fa326dc723ae62b7a6916d6b01982d07"
+    },
+    {
+      "projectID": 1200907,
+      "fileID": 6787071,
+      "name": "neoculus-mc1.21.1-1.8.7.jar",
+      "kind": "mod",
+      "sha1": "561550dd5a4ca05bb31b90e50bc7194c263065ff"
+    },
+    {
+      "projectID": 404183,
+      "fileID": 8503446,
+      "name": "endrem-neoforge-1.21.1-6.3.0.jar",
+      "kind": "mod",
+      "sha1": "d3fca102a9f5aeb108d5118665b86ead1dd30988"
+    },
+    {
+      "projectID": 417802,
+      "fileID": 6926284,
+      "name": "GatewaysToEternity-1.21.1-5.1.0.jar",
+      "kind": "mod",
+      "sha1": "f91a593378209f527fe81e731ca60fe8f8da2319"
+    },
+    {
+      "projectID": 240630,
+      "fileID": 6174588,
+      "name": "JustEnoughResources-NeoForge-1.21.1-1.6.0.12.jar",
+      "kind": "mod",
+      "sha1": "36dadee431118e7b7912cf8981d4afa7992dc93d"
+    },
+    {
+      "projectID": 1618019,
+      "fileID": 9099710,
+      "name": "betterinventory-neoforge-1.21.1-1.3.2.jar",
+      "kind": "mod",
+      "sha1": "38ef7770f4a4e1b3227563c0627b7436bec86ca9"
+    },
+    {
+      "projectID": 1015118,
+      "fileID": 6606621,
+      "name": "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar",
+      "kind": "mod",
+      "sha1": "4061ece2141475227646649046fc14c2da505922"
+    },
+    {
+      "projectID": 916747,
+      "fileID": 8040848,
+      "name": "OctoLib-NEOFORGE-0.6.2+1.21.jar",
+      "kind": "mod",
+      "sha1": "f4f66d677b104c6af7f5c0f7e3c08d8e4370ecad"
+    },
+    {
+      "projectID": 352222,
+      "fileID": 8828150,
+      "name": "dimdungeons-210-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "fcbccc4478a6b79079717af754f2c2ca010827cb"
+    },
+    {
+      "projectID": 1072905,
+      "fileID": 7738312,
+      "name": "jupiter-2.3.7-1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "569fb484ea5c8e8d690945ad4cd132131a719751"
+    },
+    {
+      "projectID": 289412,
+      "fileID": 8885017,
+      "name": "ftb-quests-neoforge-2101.1.36.jar",
+      "kind": "mod",
+      "sha1": "b2ede29b98a3022c22065fbe9b1761e385a28683"
+    },
+    {
+      "projectID": 361276,
+      "fileID": 8968561,
+      "name": "lootr-neoforge-1.21.1-1.11.38.127.jar",
+      "kind": "mod",
+      "sha1": "7a305b581abd90e1a8b7c1bb5eb4511d2653aa58"
+    },
+    {
+      "projectID": 263420,
+      "fileID": 9067173,
+      "name": "xaerominimap-neoforge-1.21.1-26.6.0.jar",
+      "kind": "mod",
+      "sha1": "551e8e2aa3498b506cc949a74606cdc0380e5e00"
+    },
+    {
+      "projectID": 228525,
+      "fileID": 7606240,
+      "name": "bookshelf-neoforge-1.21.1-21.1.81.jar",
+      "kind": "mod",
+      "sha1": "efc4cda6da4dd879f24d057ed0a6413764c9ba40"
+    },
+    {
+      "projectID": 1218690,
+      "fileID": 8083843,
+      "name": "echoes_of_the_end__structures NeoForge Fabric 1.21.1 -12.00.13.jar",
+      "kind": "mod",
+      "sha1": "b301050f30a92caa148448e27158e105e3af3039"
+    },
+    {
+      "projectID": 591388,
+      "fileID": 5962249,
+      "name": "Incendium_1.21.x_v5.4.4.jar",
+      "kind": "mod",
+      "sha1": "40da6da25ec45c4d88447733255e4281b6f22fef"
+    },
+    {
+      "projectID": 1088877,
+      "fileID": 8130121,
+      "name": "FarmersStructures-1.0.6-1.21.1_neoforge.jar",
+      "kind": "mod",
+      "sha1": "94262398153d7ca5dc9ffb93e49acdbad85af223"
+    },
+    {
+      "projectID": 456956,
+      "fileID": 5813117,
+      "name": "chipped-neoforge-1.21.1-4.0.2.jar",
+      "kind": "mod",
+      "sha1": "6f5395f58139802edfde7cb9170279f92f291971"
+    },
+    {
+      "projectID": 1348970,
+      "fileID": 7141559,
+      "name": "cataclysmfortresses-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "2ed4b70cb80c47fd8b844711fa43abd3ffd14bcf"
+    },
+    {
+      "projectID": 1196449,
+      "fileID": 6882233,
+      "name": "reliquified_ars_nouveau-1.21.1-0.6.1.jar",
+      "kind": "mod",
+      "sha1": "882aba237860441a7ad2943775ffa3cc4d6324a9"
+    },
+    {
+      "projectID": 1111930,
+      "fileID": 5808396,
+      "name": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+      "kind": "mod",
+      "sha1": "706092299886721473b0ef7d5e4f7aa2a073c8de"
+    },
+    {
+      "projectID": 936015,
+      "fileID": 8944659,
+      "name": "lithostitched-1.8.0-neoforge-21.1.jar",
+      "kind": "mod",
+      "sha1": "fe7eb612a0fa0c41ce94d914162d298755bb25a3"
+    },
+    {
+      "projectID": 401648,
+      "fileID": 5873258,
+      "name": "BetterF3-11.0.3-NeoForge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "8fa17df26d3650416bc124be7a264bc1566a3b26"
+    },
+    {
+      "projectID": 605375,
+      "fileID": 8232359,
+      "name": "idas-1.13.7+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "154f275823f5f949ed492ac6ce078a80fc3c759a"
+    },
+    {
+      "projectID": 1568170,
+      "fileID": 8213402,
+      "name": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+      "kind": "mod",
+      "sha1": "5f39b42da116986d36768e9a47c54986f5317fdc"
+    },
+    {
+      "projectID": 627557,
+      "fileID": 8884654,
+      "name": "ComplementaryReimagined_r5.9.3.zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "838139b54cddb56b2e83cd260d8efd960ac536d6"
+    },
+    {
+      "projectID": 686911,
+      "fileID": 8875640,
+      "name": "ImmediatelyFast-NeoForge-1.6.14+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "fee59af2f39c66d09c4c09f441c799e76af70f97"
+    },
+    {
+      "projectID": 1689768,
+      "fileID": 9048666,
+      "name": "mezz_config-1.21.1-neoforge-0.6.8-standalone.jar",
+      "kind": "mod",
+      "sha1": "d99ed592d8ab7105c00444047be7d8346d694ba3"
+    },
+    {
+      "projectID": 871755,
+      "fileID": 8957000,
+      "name": "exposure-neoforge-1.21.1-1.9.19.jar",
+      "kind": "mod",
+      "sha1": "181d328a0328523fa99dd310937c40d917e91029"
+    },
+    {
+      "projectID": 915902,
+      "fileID": 8884680,
+      "name": "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar",
+      "kind": "mod",
+      "sha1": "2b3f92878d6867fa0199937da25ba882b9db7902"
+    },
+    {
+      "projectID": 1015096,
+      "fileID": 5812193,
+      "name": "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar",
+      "kind": "mod",
+      "sha1": "6a14e1d8201f068ca87ef8333e471c5378955906"
+    },
+    {
+      "projectID": 325492,
+      "fileID": 5553811,
+      "name": "light-overlay-12.0.0-neoforge.jar",
+      "kind": "mod",
+      "sha1": "f15a3b88c926d2dc9d06c2b876cd89287791773c"
+    },
+    {
+      "projectID": 386134,
+      "fileID": 8231400,
+      "name": "ftb-ultimine-neoforge-2101.1.15.jar",
+      "kind": "mod",
+      "sha1": "c96a7cc0b52bf919660ea61c1536cebd9d5773b3"
+    },
+    {
+      "projectID": 60089,
+      "fileID": 5637846,
+      "name": "MouseTweaks-neoforge-mc1.21-2.26.1.jar",
+      "kind": "mod",
+      "sha1": "6dae57f4f50f7808d2ed9a18f6cd1c0d4640c6bc"
+    },
+    {
+      "projectID": 1010066,
+      "fileID": 8837992,
+      "name": "Create-Structures-Arise-1.21.1-NeoForge-176.49.49.jar",
+      "kind": "mod",
+      "sha1": "05d47e5f723456ebe2058f39dd6baab1f9516f87"
+    },
+    {
+      "projectID": 915324,
+      "fileID": 8897484,
+      "name": "formationsoverworld-1.0.5c-mc1.21+.jar",
+      "kind": "mod",
+      "sha1": "717033f8239062de6eeac77d9664258fc6c657bc"
+    },
+    {
+      "projectID": 362479,
+      "fileID": 8903075,
+      "name": "the_bumblezone-7.16.1+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "b374036e9f4e0f2d824a6b3b33ccf9eac54ced52"
+    },
+    {
+      "projectID": 1575033,
+      "fileID": 8639119,
+      "name": "pasterdream-0.9.6.jar",
+      "kind": "mod",
+      "sha1": "d5d95c8a049d868a844132ac1e47261eff0067f8"
+    },
+    {
+      "projectID": 1190728,
+      "fileID": 7179736,
+      "name": "lukis-ancient-cities-v1.2.jar",
+      "kind": "mod",
+      "sha1": "2c8c3ae40b48a9a762e1cc51fa6f87e9642d5e6e"
+    },
+    {
+      "projectID": 1238567,
+      "fileID": 9074505,
+      "name": "sophisticatedbackpackscreateintegration-1.21.1-0.2.2.188.jar",
+      "kind": "mod",
+      "sha1": "f44daf63773198f1cf6f46ca559d516b9a4dc322"
+    },
+    {
+      "projectID": 345854,
+      "fileID": 9032258,
+      "name": "villagernames-1.21.1-8.7.jar",
+      "kind": "mod",
+      "sha1": "05c3e40c3e98defa174a229d6e42ed4aa75f6789"
+    },
+    {
+      "projectID": 1080592,
+      "fileID": 8931080,
+      "name": "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+      "kind": "mod",
+      "sha1": "5b9235c764787242085de386aaeb02372b1ab03c"
+    },
+    {
+      "projectID": 1091632,
+      "fileID": 6561660,
+      "name": "illagerwarship-1.0.1-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "538db7de4264f6d07ca2a5e7a947777ad8216225"
+    },
+    {
+      "projectID": 1182393,
+      "fileID": 8390081,
+      "name": "cosycritters-0.3.3+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "845665cf417af0c8a10714c1691c5ba5c86f99d6"
+    },
+    {
+      "projectID": 243707,
+      "fileID": 8842741,
+      "name": "tombstone-neoforge-1.21.1-9.5.6.jar",
+      "kind": "mod",
+      "sha1": "d830d16caa20b0d23a44ed6b1d339bc22afc2460"
+    },
+    {
+      "projectID": 1490601,
+      "fileID": 7853647,
+      "name": "shadowdrop-1.1.1-1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "e5d1f930a414468c09ad2e278403f3c6b98f0197"
+    },
+    {
+      "projectID": 531761,
+      "fileID": 8969738,
+      "name": "balm-neoforge-1.21.1-21.0.66.jar",
+      "kind": "mod",
+      "sha1": "dd3606a349f4a3c8fb5bd0ab22905675c02b0d74"
+    },
+    {
+      "projectID": 896746,
+      "fileID": 8825641,
+      "name": "amendments-1.21-2.1.10-neoforge.jar",
+      "kind": "mod",
+      "sha1": "d0cae2882177b7ad285021b48c128ddcc7022464"
+    },
+    {
+      "projectID": 1370532,
+      "fileID": 8122664,
+      "name": "FantasticWings-v21.1.2-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "0587cee8edd1eb146f125b100e6c878bf7dabf5f"
+    },
+    {
+      "projectID": 890755,
+      "fileID": 7768445,
+      "name": "jearchaeology-1.21.1-1.2.0.jar",
+      "kind": "mod",
+      "sha1": "385e4937144b20c6cbf103945a73066f8dc1bc74"
+    },
+    {
+      "projectID": 889079,
+      "fileID": 8726480,
+      "name": "forgified-fabric-api-0.116.15+2.3.5+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "87b28db4ef88268fbbaea2c0ca7e3dfcc27961a8"
+    },
+    {
+      "projectID": 549225,
+      "fileID": 7530361,
+      "name": "framework-neoforge-1.21.1-0.13.11.jar",
+      "kind": "mod",
+      "sha1": "e46eb138fbb13a12f37154fb4ec407d64b326475"
+    },
+    {
+      "projectID": 379849,
+      "fileID": 7862546,
+      "name": "The_Undergarden-1.21.1-0.9.6.jar",
+      "kind": "mod",
+      "sha1": "75f1753eefa0b7b8e3afd7377deaf9fe71392476"
+    },
+    {
+      "projectID": 908741,
+      "fileID": 6118392,
+      "name": "embeddium-1.0.15+mc1.21.1.jar",
+      "kind": "mod",
+      "sha1": "56063839172a000d079272794bad366f2ad4cbbd"
+    },
+    {
+      "projectID": 834427,
+      "fileID": 9063977,
+      "name": "hybrid_aquatic-neoforge-1.21.1-1.7.4.jar",
+      "kind": "mod",
+      "sha1": "9feffbffb1ce1a249b2002b5480ab9af56922aa6"
+    },
+    {
+      "projectID": 319351,
+      "fileID": 6740123,
+      "name": "SkeletonAIFix-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "1f4695061a2134a6361dcab03ec76c7a0a6428e2"
+    },
+    {
+      "projectID": 1040210,
+      "fileID": 8931330,
+      "name": "MoogsSoaringStructures-universal-1.21-2.2.0.jar",
+      "kind": "mod",
+      "sha1": "1284c673b46a50b0557c2c018f677323484665f6"
+    },
+    {
+      "projectID": 693313,
+      "fileID": 7773534,
+      "name": "Corgilib-NeoForge-1.21.1-5.0.0.9.jar",
+      "kind": "mod",
+      "sha1": "6699f876f9e10f936910055f7fe1a283d8bb9e0f"
+    },
+    {
+      "projectID": 545467,
+      "fileID": 5647988,
+      "name": "SkyVillages-1.0.6-1.21.x-neoforge-release.jar",
+      "kind": "mod",
+      "sha1": "645eb49d4019e5550afd4055f380c26edd126611"
+    },
+    {
+      "projectID": 1003666,
+      "fileID": 7456302,
+      "name": "lukis-grand-capitals-1.1.3.jar",
+      "kind": "mod",
+      "sha1": "a07986ac59268f1343737b81acd24ad34e5371ca"
+    },
+    {
+      "projectID": 1272075,
+      "fileID": 8914201,
+      "name": "whaleborne-1.21.1-1.2.5.jar",
+      "kind": "mod",
+      "sha1": "252eabb4410a58dd321bdbd1b5e412e5c09b1492"
+    },
+    {
+      "projectID": 570073,
+      "fileID": 5973188,
+      "name": "resourcefullib-neoforge-1.21-3.0.12.jar",
+      "kind": "mod",
+      "sha1": "24389c8e48ff0e8594e4686b750c494c66a5f8df"
+    },
+    {
+      "projectID": 455585,
+      "fileID": 7919192,
+      "name": "kambrik-neoforge-8.0.0-beta.2.jar",
+      "kind": "mod",
+      "sha1": "9e41688287925e7a65375d96f32eefca7ab2a821"
+    },
+    {
+      "projectID": 256717,
+      "fileID": 5623731,
+      "name": "Clumps-neoforge-1.21.1-19.0.0.1.jar",
+      "kind": "mod",
+      "sha1": "fa2576297c7bd12b28aa7070e8141792bd66da4c"
+    },
+    {
+      "projectID": 969423,
+      "fileID": 5731913,
+      "name": "CutThrough-v21.1.0-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "550f272c140566f0961c1bb3fdfb1a6272be30dd"
+    },
+    {
+      "projectID": 1046916,
+      "fileID": 6342780,
+      "name": "traveloptics-4.4.0.1-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "3808493ce45cdfeb6408e85578adecf13df698e8"
+    },
+    {
+      "projectID": 1197859,
+      "fileID": 6539516,
+      "name": "ftboceanmobs-21.1.4.jar",
+      "kind": "mod",
+      "sha1": "a37f05230275fb49d6d614d74cb6c98c22995c45"
+    },
+    {
+      "projectID": 520110,
+      "fileID": 6375480,
+      "name": "Iceberg-1.21.1-neoforge-1.3.0.jar",
+      "kind": "mod",
+      "sha1": "61609d2055772466d3a0adb61ed74befead8cd3d"
+    },
+    {
+      "projectID": 1571005,
+      "fileID": 8655331,
+      "name": "cultofazazelneoforge-1.1.4.12.jar",
+      "kind": "mod",
+      "sha1": "fae73bb61db8d7b0f3dc5d7d446db8344679ac30"
+    },
+    {
+      "projectID": 645559,
+      "fileID": 9110961,
+      "name": "dungeon_difficulty-neoforge-3.9.2+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "497d435a6be412defe8aabaf391dbfd3e98d7a87"
+    },
+    {
+      "projectID": 1091339,
+      "fileID": 8943912,
+      "name": "alltheleaks-1.1.13+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "ea11d23e0f8c48544a269dc7c56f6593cb1cafe2"
+    },
+    {
+      "projectID": 1281310,
+      "fileID": 9020151,
+      "name": "jauml-neoforge-1.21.1-2.3.1.jar",
+      "kind": "mod",
+      "sha1": "0d32e5c186b5700ebe78e15fdd951c645397833f"
+    },
+    {
+      "projectID": 363703,
+      "fileID": 6427515,
+      "name": "goblintraders-neoforge-1.21.1-1.11.2.jar",
+      "kind": "mod",
+      "sha1": "4507faefb977321b598daa3fb35d7e1a9a03eb80"
+    },
+    {
+      "projectID": 412082,
+      "fileID": 8852720,
+      "name": "supplementaries-1.21.1-3.9.9-neoforge.jar",
+      "kind": "mod",
+      "sha1": "06ed05381a5653d90398dc6ebf3ad1154add6374"
+    },
+    {
+      "projectID": 360438,
+      "fileID": 8330365,
+      "name": "lithium-neoforge-0.15.4+mc1.21.1.jar",
+      "kind": "mod",
+      "sha1": "97212e45c963730bbfc7c44780df99317814c21b"
+    },
+    {
+      "projectID": 227639,
+      "fileID": 7797302,
+      "name": "twilightforest-1.21.1-4.8.3345-universal.jar",
+      "kind": "mod",
+      "sha1": "9cfd4154928433e2f1f6cfc3deb48c284debb580"
+    },
+    {
+      "projectID": 380413,
+      "fileID": 6021451,
+      "name": "\u00a7eExtended_Illumina_1.21x.zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "315b269e59023f5211ff6acd0a6461bb24010a34"
+    },
+    {
+      "projectID": 1299492,
+      "fileID": 9073632,
+      "name": "aces_spell_utils-1.2.7.3-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "0139c3d061ddaca95d3f793b77be9a97f352ea67"
+    },
+    {
+      "projectID": 404468,
+      "fileID": 8724782,
+      "name": "ftb-teams-neoforge-2101.1.11.jar",
+      "kind": "mod",
+      "sha1": "62b65f752d0326edd13244e58d5f2aec035da4e9"
+    },
+    {
+      "projectID": 856996,
+      "fileID": 8241767,
+      "name": "cristellib-neoforge-1.21.1-3.1.7.jar",
+      "kind": "mod",
+      "sha1": "d250804b7ecea365bc736ec36ec6fc3f933917f1"
+    },
+    {
+      "projectID": 419699,
+      "fileID": 8492726,
+      "name": "architectury-13.0.11-neoforge.jar",
+      "kind": "mod",
+      "sha1": "008656a0702801174b8ec245ed7aad1921d6e9f1"
+    },
+    {
+      "projectID": 445274,
+      "fileID": 7586568,
+      "name": "relics-1.21.1-0.10.7.8.jar",
+      "kind": "mod",
+      "sha1": "7f7fd59273ac5ef6511a811518bc9af01705a528"
+    },
+    {
+      "projectID": 1605714,
+      "fileID": 8703116,
+      "name": "borderlesswindow-1.6.0.jar",
+      "kind": "mod",
+      "sha1": "587f99f925233b88551d9c6189b5382dad990162"
+    },
+    {
+      "projectID": 255308,
+      "fileID": 7043502,
+      "name": "aether-1.21.1-1.5.10-neoforge.jar",
+      "kind": "mod",
+      "sha1": "5b5592989c6d2aabf80a9f100e18c258813db497"
+    },
+    {
+      "projectID": 535489,
+      "fileID": 7032247,
+      "name": "sound-physics-remastered-neoforge-1.21.1-1.5.1.jar",
+      "kind": "mod",
+      "sha1": "31cf754f9e5f62d1ca257f297e5dce394024696c"
+    },
+    {
+      "projectID": 859365,
+      "fileID": 7370269,
+      "name": "totw_modded-neoforge-1.21-1.0.9.jar",
+      "kind": "mod",
+      "sha1": "c7b03934cce6eb7a8253ee0a8c416f137710f6ee"
+    },
+    {
+      "projectID": 1023259,
+      "fileID": 6961457,
+      "name": "prickle-neoforge-1.21.1-21.1.11.jar",
+      "kind": "mod",
+      "sha1": "5174059ecf97340a0de5ef211b938de26c4eaa36"
+    },
+    {
+      "projectID": 532610,
+      "fileID": 6785734,
+      "name": "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar",
+      "kind": "mod",
+      "sha1": "48dda11a6710591cf162bdbedf982ea21dd1f2ed"
+    },
+    {
+      "projectID": 895603,
+      "fileID": 5924310,
+      "name": "ArmorTrimItemFix-neoforge-1.21.1-1.2.0.jar",
+      "kind": "mod",
+      "sha1": "1ff65aafa4c12f4970c4d2e922b65c027ff593a0"
+    },
+    {
+      "projectID": 348521,
+      "fileID": 5729127,
+      "name": "cloth-config-15.0.140-neoforge.jar",
+      "kind": "mod",
+      "sha1": "c3e5733ba4503b102589a026000fd5ce0212f6f2"
+    },
+    {
+      "projectID": 1141465,
+      "fileID": 7053645,
+      "name": "SkyArena-1.3.6-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "e12dedb73aa62e9036a74449ccc6fc636bc0b751"
+    },
+    {
+      "projectID": 1531135,
+      "fileID": 8111479,
+      "name": "delightlib-26.05.18-1.21-neoforge.jar",
+      "kind": "mod",
+      "sha1": "67ee97c66767ae6cc15b0ad3867abfdbfa203ca4"
+    },
+    {
+      "projectID": 639842,
+      "fileID": 8430183,
+      "name": "bettercombat-neoforge-2.4.0+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "bacbc8c86671663e9998b141c5732250c1f4d4fb"
+    },
+    {
+      "projectID": 955399,
+      "fileID": 8109792,
+      "name": "GlitchCore-neoforge-1.21.1-2.1.0.2.jar",
+      "kind": "mod",
+      "sha1": "a31c3f36330f19aa538add3d727782a62c9c30ad"
+    },
+    {
+      "projectID": 1015146,
+      "fileID": 5812546,
+      "name": "YungsExtras-1.21.1-NeoForge-5.1.1.jar",
+      "kind": "mod",
+      "sha1": "62833733aaf407f36bdacf648ed4b2ef9940662b"
+    },
+    {
+      "projectID": 858542,
+      "fileID": 5831692,
+      "name": "Searchables-neoforge-1.21.1-1.0.2.jar",
+      "kind": "mod",
+      "sha1": "5b8a0b43a474c066371b2e16f9bfb88622552a74"
+    },
+    {
+      "projectID": 1668579,
+      "fileID": 9084406,
+      "name": "ancient_remnants-1.5.2+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "febbd4abcd8dc099f105802f6edb5bbaef0e79d6"
+    },
+    {
+      "projectID": 627986,
+      "fileID": 9004373,
+      "name": "naturalist-2.0.5-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "ea9ebf082eb978dcf583255e8fca1004a8114ab6"
+    },
+    {
+      "projectID": 883374,
+      "fileID": 9063597,
+      "name": "hapi-neoforge-1.21.1-1.1.3.jar",
+      "kind": "mod",
+      "sha1": "18a1da3fba0b84ab6a17c74081feb2dd4aff2475"
+    },
+    {
+      "projectID": 661376,
+      "fileID": 8161672,
+      "name": "integrated_villages-1.3.3+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "4ba7360abf671b1f0f40c43c590977da2048490e"
+    },
+    {
+      "projectID": 361579,
+      "fileID": 6225208,
+      "name": "spark-1.10.124-neoforge.jar",
+      "kind": "mod",
+      "sha1": "9430cc2ab64ff89d698be593769fb9f9ee4efae6"
+    },
+    {
+      "projectID": 698309,
+      "fileID": 8082824,
+      "name": "Explorify v1.6.5.mod.jar",
+      "kind": "mod",
+      "sha1": "5fb28be29200a41b034e423d87823eb19ad651cd"
+    },
+    {
+      "projectID": 283644,
+      "fileID": 8463693,
+      "name": "Placebo-1.21.1-9.9.2.jar",
+      "kind": "mod",
+      "sha1": "d44335094cf2db64998cb3ee31e58d8c01e80b4a"
+    },
+    {
+      "projectID": 1101111,
+      "fileID": 8365016,
+      "name": "irons_jewelry-1.21.1-2.0.2.jar",
+      "kind": "mod",
+      "sha1": "2f8d934d04111037dcf3fe7b04c96aec892da744"
+    },
+    {
+      "projectID": 1422283,
+      "fileID": 8608827,
+      "name": "bclib-21.0.26.jar",
+      "kind": "mod",
+      "sha1": "06cc971fd149d7dae65c75792798b98be7439141"
+    },
+    {
+      "projectID": 331936,
+      "fileID": 8458935,
+      "name": "citadel-2.7.1-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "9d7873f74b418f4f83adf2ae41af75d2e8217cd6"
+    },
+    {
+      "projectID": 378609,
+      "fileID": 8769956,
+      "name": "toms_storage-1.21-2.4.2.jar",
+      "kind": "mod",
+      "sha1": "592af3bc4768c804c4929af16961ca2a1a916942"
+    },
+    {
+      "projectID": 582327,
+      "fileID": 6296628,
+      "name": "smoothchunk-1.21-4.1.jar",
+      "kind": "mod",
+      "sha1": "f54d5d352e15560240f151a7d054096a33a58f4a"
+    },
+    {
+      "projectID": 1492763,
+      "fileID": 8973642,
+      "name": "irons_lib-1.21.1-2.2.0.jar",
+      "kind": "mod",
+      "sha1": "33ca1a58dc0b384a6de26171f34b3bf608aaeeb2"
+    },
+    {
+      "projectID": 853794,
+      "fileID": 5768823,
+      "name": "dungeons-and-taverns-v4.4.4 [NeoForge].jar",
+      "kind": "mod",
+      "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3"
+    },
+    {
+      "projectID": 1613387,
+      "fileID": 8890602,
+      "name": "alexsmobs-1.22.9.jar",
+      "kind": "mod",
+      "sha1": "b548537a20362d8849c4a510082af37dd0cd0bde"
+    },
+    {
+      "projectID": 958094,
+      "fileID": 9103491,
+      "name": "polytone-1.21-5.0.3-neoforge.jar",
+      "kind": "mod",
+      "sha1": "d9333d78e587e16dc0b822f194e45f347c3b39ed"
+    },
+    {
+      "projectID": 1302224,
+      "fileID": 8982155,
+      "name": "Custom Nether Portals - Neoforge - MC 1.21.1- 3.0.0.jar",
+      "kind": "mod",
+      "sha1": "1ee28b7d579399db176f87a52e0e42243a8dfa06"
+    },
+    {
+      "projectID": 891324,
+      "fileID": 6492670,
+      "name": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "48bea606f6e3f10e2100349de2c6c65c76c20786"
+    },
+    {
+      "projectID": 388172,
+      "fileID": 8893490,
+      "name": "geckolib-neoforge-1.21.1-4.9.3.jar",
+      "kind": "mod",
+      "sha1": "5cfe835472a5c5457ae9ac192d9d7b317454d5ac"
+    },
+    {
+      "projectID": 499980,
+      "fileID": 9066398,
+      "name": "moonlight-1.21.1-3.7.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "19aeef889ec098c3e852183f303de84f185e09f2"
+    },
+    {
+      "projectID": 783522,
+      "fileID": 7078283,
+      "name": "Structory_Towers_1.21.x_v1.0.14.jar",
+      "kind": "mod",
+      "sha1": "84873f6aef39fa8bea7416d74ac5e13830859674"
+    },
+    {
+      "projectID": 309927,
+      "fileID": 6529130,
+      "name": "curios-neoforge-9.5.1+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "418fcd42e3a7844c9bdc71c9b6401fdb3894e0c4"
+    },
+    {
+      "projectID": 1271749,
+      "fileID": 7844741,
+      "name": "fdlib-1.0.9-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "03a171d170b22a04e67d2cc7894ddddd8489a295"
+    },
+    {
+      "projectID": 1015149,
+      "fileID": 5812553,
+      "name": "YungsBridges-1.21.1-NeoForge-5.1.1.jar",
+      "kind": "mod",
+      "sha1": "18099c2d54acd16bb8ab90a66f40fa16496d065e"
+    },
+    {
+      "projectID": 949158,
+      "fileID": 6344382,
+      "name": "create_easy_structures-0.2a-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "5878bdf8facd954cce7da3a55ab1d5274fe4ef6d"
+    },
+    {
+      "projectID": 636540,
+      "fileID": 8396883,
+      "name": "Structory_26.2_v1.3.7.jar",
+      "kind": "mod",
+      "sha1": "8a9a1a1b3f74398310420b6fbe2c26ef142bed42"
+    },
+    {
+      "projectID": 659110,
+      "fileID": 8419667,
+      "name": "regions-unexplored-0.6.2-neoforge-21.1.jar",
+      "kind": "mod",
+      "sha1": "122586c147f0aa1efdc655792b6ef24aebbbba84"
+    },
+    {
+      "projectID": 1717003,
+      "fileID": 9108729,
+      "name": "bettershipwrecks-1.0.3+neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "4917ec8e2baddb8069325bc4d1b92d2dad65bece"
+    },
+    {
+      "projectID": 488090,
+      "fileID": 7318664,
+      "name": "midnightlib-neoforge-1.9.2+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "5a8b19663e5c042cc2755f671d04b789a8b6f9df"
+    },
+    {
+      "projectID": 240633,
+      "fileID": 5979614,
+      "name": "inventorysorter-1.21-24.0.18.jar",
+      "kind": "mod",
+      "sha1": "fe983c73e1264f9146f39e4b6ea3bf9ae43e16a5"
+    },
+    {
+      "projectID": 1015155,
+      "fileID": 6294123,
+      "name": "TravelersTitles-1.21.1-NeoForge-5.1.3.jar",
+      "kind": "mod",
+      "sha1": "166cba4d367c6dd103d1d5dcab7a31174bec799e"
+    },
+    {
+      "projectID": 1299875,
+      "fileID": 8327936,
+      "name": "strongerfireboss-2.0.0.jar",
+      "kind": "mod",
+      "sha1": "76fdd9344ba653afe264ad814590074569bfad39"
+    },
+    {
+      "projectID": 417645,
+      "fileID": 7966681,
+      "name": "JustEnoughProfessions-neoforge-1.21.1-4.0.5.jar",
+      "kind": "mod",
+      "sha1": "439ea1baa5e3065e36e0e57422f22403918bb59f"
+    },
+    {
+      "projectID": 220318,
+      "fileID": 8288121,
+      "name": "BiomesOPlenty-neoforge-1.21.1-21.1.0.14.jar",
+      "kind": "mod",
+      "sha1": "6a12e1a249d074fb18f07d1f141b80ca2885e2be"
+    },
+    {
+      "projectID": 276951,
+      "fileID": 7515858,
+      "name": "comforts-neoforge-9.0.5+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "21d6bee3821d62fe3356c51fb1d697871a3087ff"
+    },
+    {
+      "projectID": 1034045,
+      "fileID": 6445160,
+      "name": "antiquetradingship-1.4.0-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "7eb7f2255a37d43788103a00f5076d7bc20423c9"
+    },
+    {
+      "projectID": 623764,
+      "fileID": 5988164,
+      "name": "jamlib-neoforge-1.2.2-build.2+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "eca7711201b0b8dedf05b24443c82029c6261bcf"
+    },
+    {
+      "projectID": 1512955,
+      "fileID": 8174511,
+      "name": "trmt-0.5.1-1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "3d2a0b7c28390a8ebe590945aea9fa1208d88c36"
+    },
+    {
+      "projectID": 416935,
+      "fileID": 6296775,
+      "name": "valhelsia_core-neoforge-1.21.1-1.1.5.jar",
+      "kind": "mod",
+      "sha1": "e7498e89bd7347c6d0f4411f55bd312490dfe814"
+    },
+    {
+      "projectID": 848032,
+      "fileID": 6010596,
+      "name": "transmog-neoforge-1.6.0+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "fb37ae0a35e8bb9340e61007275121f02cf7a8bc"
+    },
+    {
+      "projectID": 1044992,
+      "fileID": 6962784,
+      "name": "natures_spirit-2.2.5-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "153679dc2dd4601b40beed834799ba1d7c05b08a"
+    },
+    {
+      "projectID": 852662,
+      "fileID": 5770623,
+      "name": "OverflowingBars-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "a9dea4b9ef893fc955512ff2dee75c9c82e09a52"
+    },
+    {
+      "projectID": 233071,
+      "fileID": 8697050,
+      "name": "craftingtweaks-neoforge-1.21.1-21.1.11.jar",
+      "kind": "mod",
+      "sha1": "b6252039445978a742f439fc398f2a198b86bd4e"
+    },
+    {
+      "projectID": 841890,
+      "fileID": 8061947,
+      "name": "athena-neoforge-1.21.1-4.0.6.jar",
+      "kind": "mod",
+      "sha1": "4bcbdf388bd5e387beca7c627224aac33584b55b"
+    },
+    {
+      "projectID": 1321476,
+      "fileID": 8493563,
+      "name": "Bushy pink petals, wildflowers  leaf litter.zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "a287f4205901ba93ed3b847e7332431df0872367"
+    },
+    {
+      "projectID": 1340230,
+      "fileID": 6958326,
+      "name": "wda_questline-1.21.1-1.0.0.jar",
+      "kind": "mod",
+      "sha1": "608bdf114da0eb5c64380bfa09dcbaf4d79ce2a2"
+    },
+    {
+      "projectID": 532286,
+      "fileID": 8906178,
+      "name": "jeed-1.21-2.3.4-neoforge.jar",
+      "kind": "mod",
+      "sha1": "48e3480220811b68a9c8e1bd2d3d0bad82f444ba"
+    },
+    {
+      "projectID": 495476,
+      "fileID": 9007719,
+      "name": "puzzleslib-v21.1.62-mc1.21.1+neoforge.jar",
+      "kind": "mod",
+      "sha1": "0d1675576fe17acc1f350a5505177ae08c17299b"
+    },
+    {
+      "projectID": 1269280,
+      "fileID": 8685815,
+      "name": "morerelics-1.7.7-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "ba0c920bc7712d1ff85012327b26e1a808c648f6"
+    },
+    {
+      "projectID": 1070751,
+      "fileID": 9064021,
+      "name": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar",
+      "kind": "mod",
+      "sha1": "09e5372e2d03fd68d5e9403ed7238d75efacaf52"
+    },
+    {
+      "projectID": 569737,
+      "fileID": 6058135,
+      "name": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "9f7d66f2cd75bef6692f5a433e7606d0d77251fc"
+    },
+    {
+      "projectID": 550579,
+      "fileID": 8312220,
+      "name": "servercore-neoforge-1.5.19+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "62ce692654e09271b5c55cbb3a1ef7606d067132"
+    },
+    {
+      "projectID": 1219053,
+      "fileID": 8662697,
+      "name": "particular-1.21.1-NeoForge-1.5.7.jar",
+      "kind": "mod",
+      "sha1": "d6d33e8233481ad8fc6f8c351f52783ed431a800"
+    },
+    {
+      "projectID": 659887,
+      "fileID": 8746001,
+      "name": "simplyswords-neoforge-1.70.2-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "05b074ff774467f1fe9fb5592151b7845c321cbc"
+    },
+    {
+      "projectID": 1271707,
+      "fileID": 8373639,
+      "name": "fdbosses-3.2-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "e42079e55eb25ba1fc0b16ce86c627b7a3d36fdb"
+    },
+    {
+      "projectID": 1337167,
+      "fileID": 9047179,
+      "name": "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar",
+      "kind": "mod",
+      "sha1": "c379b8d5dc1a4b1e8987da1052d6b4de81354d72"
+    },
+    {
+      "projectID": 1210171,
+      "fileID": 6963018,
+      "name": "FastItemFrames-v21.1.6-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "76bf4f0ae0117c86e0d5fda598d459537576ed2e"
+    },
+    {
+      "projectID": 1131668,
+      "fileID": 9075472,
+      "name": "arsdelight-2.2.5.jar",
+      "kind": "mod",
+      "sha1": "f4915ccd62442e308b2c0879c3c4ce35b9c59658"
+    },
+    {
+      "projectID": 398521,
+      "fileID": 8765184,
+      "name": "FarmersDelight-1.21.1-1.3.4.jar",
+      "kind": "mod",
+      "sha1": "27675ddfcb8cc37e6ea1ab6c15051c7949d94657"
+    },
+    {
+      "projectID": 1164949,
+      "fileID": 7808552,
+      "name": "integrated_cataclysm-1.0.6+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "d9490abb8c6c66c61eabd836ffb016d385fd2b75"
+    },
+    {
+      "projectID": 961988,
+      "fileID": 6179576,
+      "name": "aquaculturedelight-1.2.0-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "111393c07a98f29cab1de0d91965cc1bc6d9d73f"
+    },
+    {
+      "projectID": 1391021,
+      "fileID": 9066975,
+      "name": "enigmaticlegacyplus-1.21.1-1.1.2.jar",
+      "kind": "mod",
+      "sha1": "6794e1e04f65e07839989360f508c2cb66097dc7"
+    },
+    {
+      "projectID": 351264,
+      "fileID": 8335665,
+      "name": "kotlinforforge-5.12.0-all.jar",
+      "kind": "mod",
+      "sha1": "a2032c921e93a0ccb0db5d742167e3139c2de01b"
+    },
+    {
+      "projectID": 401229,
+      "fileID": 7782196,
+      "name": "FlightRings-neoforge-2.0.0.jar",
+      "kind": "mod",
+      "sha1": "79d7ab716293e61ff0456974bd944916fd7c6b62"
+    },
+    {
+      "projectID": 368098,
+      "fileID": 7878548,
+      "name": "mysterious_mountain_lib-1.2.15-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "8cede0ac47ae320e5efff101305d4c8e298c7120"
+    },
+    {
+      "projectID": 314906,
+      "fileID": 8791113,
+      "name": "ftb-chunks-neoforge-2101.1.22.jar",
+      "kind": "mod",
+      "sha1": "a53f1bb7965c6954a348d4f321f03d3971ad503f"
+    },
+    {
+      "projectID": 452834,
+      "fileID": 7508749,
+      "name": "rightclickharvest-neoforge-4.6.1+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "473b960c0cae751b7752a43df4756010e30988fa"
+    },
+    {
+      "projectID": 1587709,
+      "fileID": 8960804,
+      "name": "IMM v1.3.2-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "9057a29a89eb1ed2ec81309e6266dc63a7ce9b8c"
+    },
+    {
+      "projectID": 987388,
+      "fileID": 6553334,
+      "name": "benssharks-1.2.6-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "91090438a3fa0958e25d7bc3056987f9f04a2a5c"
+    },
+    {
+      "projectID": 306770,
+      "fileID": 7730942,
+      "name": "Patchouli-1.21.1-93-NEOFORGE.jar",
+      "kind": "mod",
+      "sha1": "5413bb9b8fc35ebe46b06b48bf9afafbd8471140"
+    },
+    {
+      "projectID": 309858,
+      "fileID": 6875895,
+      "name": "forbidden_arcanus-2.6.1.jar",
+      "kind": "mod",
+      "sha1": "1de105be68b88de87a5e6749f320c790d550c120"
+    },
+    {
+      "projectID": 1713723,
+      "fileID": 8988949,
+      "name": "betterbastions-1.0.0+neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "4b9fc7c562e246b59281da6560b3c901dc15918c"
+    },
+    {
+      "projectID": 852465,
+      "fileID": 7843283,
+      "name": "deep_aether-1.21.1-1.1.5.1.jar",
+      "kind": "mod",
+      "sha1": "2cffdb08d7cb068186cf0fe766fd937425889af1"
+    },
+    {
+      "projectID": 1216244,
+      "fileID": 8754366,
+      "name": "floating_islands-1.5.3-1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "bfb9afd9bf774fe4274e3bf880063837e35c8fb8"
+    },
+    {
+      "projectID": 1015127,
+      "fileID": 6300968,
+      "name": "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar",
+      "kind": "mod",
+      "sha1": "832f2c17425debe74a9f267f4136f1a0f0221d19"
+    },
+    {
+      "projectID": 1015100,
+      "fileID": 8894736,
+      "name": "YungsApi-1.21.1-NeoForge-5.1.9.jar",
+      "kind": "mod",
+      "sha1": "2c4b740c8ad27bbcb2a21b85b64f011b809aed91"
+    },
+    {
+      "projectID": 940057,
+      "fileID": 6054947,
+      "name": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar",
+      "kind": "mod",
+      "sha1": "2016eed89eac0eb0510d2190c3b0b80bf4346191"
+    },
+    {
+      "projectID": 1015115,
+      "fileID": 5924487,
+      "name": "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar",
+      "kind": "mod",
+      "sha1": "fba629defdb92ad99ec4f411895afb6e19555a18"
+    },
+    {
+      "projectID": 1202066,
+      "fileID": 8952784,
+      "name": "questlog-neoforge-1.21.1-3.4.1.jar",
+      "kind": "mod",
+      "sha1": "698b51460f52d951809679135725c03d30dc2864"
+    },
+    {
+      "projectID": 450659,
+      "fileID": 5937999,
+      "name": "smallships-neoforge-1.21.1-2.0.0-b2.1.jar",
+      "kind": "mod",
+      "sha1": "aa586dc4339d49db1c988497415d197195849fb9"
+    },
+    {
+      "projectID": 404465,
+      "fileID": 9008089,
+      "name": "ftb-library-neoforge-2101.1.37.jar",
+      "kind": "mod",
+      "sha1": "b6e503587afcd678ec257e4abdc6362ff18c2fef"
+    },
+    {
+      "projectID": 326652,
+      "fileID": 8889050,
+      "name": "cupboard-1.21.1-4.2.jar",
+      "kind": "mod",
+      "sha1": "6c2d786a161f49470dad92b2edaefdac38a1e79b"
+    },
+    {
+      "projectID": 1232116,
+      "fileID": 6882649,
+      "name": "reliquified_lenders_cataclysm-1.21.1-0.1.1.jar",
+      "kind": "mod",
+      "sha1": "be89d697455f04a1531ed81b45bcc038354430c8"
+    },
+    {
+      "projectID": 1704376,
+      "fileID": 8940259,
+      "name": "NightLib-Neoforge-1.21.1-1.3.0.jar",
+      "kind": "mod",
+      "sha1": "e991d4c9301f23c7e26305fbcafa7199bd646629"
+    },
+    {
+      "projectID": 1421534,
+      "fileID": 7421845,
+      "name": "keybindoverrides-2.0.0.jar",
+      "kind": "mod",
+      "sha1": "3cfe63e64f216eee7756a47fae8fc44c178a50c2"
+    },
+    {
+      "projectID": 243121,
+      "fileID": 9074160,
+      "name": "Quark-4.1-487.jar",
+      "kind": "mod",
+      "sha1": "d421f58ef6d31dc456c25890a5770b2609917d09"
+    },
+    {
+      "projectID": 1422284,
+      "fileID": 9061800,
+      "name": "worldweaver-21.0.26.jar",
+      "kind": "mod",
+      "sha1": "ebdcc285d6aa4aef53f0926fc40930838f7f3e0f"
+    },
+    {
+      "projectID": 852670,
+      "fileID": 7021571,
+      "name": "MobLassos-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "564fabd8875c25eaa7b91c79bfa647ca7757d6f9"
+    },
+    {
+      "projectID": 714059,
+      "fileID": 6467772,
+      "name": "resourcefulconfig-neoforge-1.21-3.0.11.jar",
+      "kind": "mod",
+      "sha1": "6bf2b6ea9c071c00a2abcdc552667fb6f7d21031"
+    },
+    {
+      "projectID": 618790,
+      "fileID": 7033510,
+      "name": "minecells-2.0.3.jar",
+      "kind": "mod",
+      "sha1": "477abdf23a4717c6c0cd314d006d3c4d23e5b11f"
+    },
+    {
+      "projectID": 475117,
+      "fileID": 7527945,
+      "name": "FastSuite-1.21.1-6.0.7.jar",
+      "kind": "mod",
+      "sha1": "664e62684311f727f1fac18f0de28e5317874b7e"
+    },
+    {
+      "projectID": 841262,
+      "fileID": 7939973,
+      "name": "oceansdelight-neoforge-1.0.4-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "2246edd8fc1bbf60422f5099854c1de0b2a439c9"
+    },
+    {
+      "projectID": 979809,
+      "fileID": 9101011,
+      "name": "aaa_particles-neoforge-1.21.1-2.3.3.jar",
+      "kind": "mod",
+      "sha1": "3e66c196fe9d9e60718235bb1472b5f760cf7313"
+    },
+    {
+      "projectID": 318449,
+      "fileID": 5845879,
+      "name": "cardinal-components-api-6.1.2.jar",
+      "kind": "mod",
+      "sha1": "bf272e2aa6e9e8a98e8e7a7ed8cc585fc18c59eb"
+    },
+    {
+      "projectID": 1581408,
+      "fileID": 9060294,
+      "name": "StreamsReflowing-1.21.1-neoforge-2.14.4.jar",
+      "kind": "mod",
+      "sha1": "9ab9da4ac9808b36dfd8dfbd220f1e0ce210d891"
+    },
+    {
+      "projectID": 1690092,
+      "fileID": 8995436,
+      "name": "integrated_patches v1.2.0-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "b03b55f5532f992b2448810f1c23c1a45926a322"
+    },
+    {
+      "projectID": 225738,
+      "fileID": 8903254,
+      "name": "dummmmmmy-1.21-2.1.2-neoforge.jar",
+      "kind": "mod",
+      "sha1": "87fb529cbb220a33fedf45a4a6f2269b8e00fffe"
+    },
+    {
+      "projectID": 312353,
+      "fileID": 8791899,
+      "name": "artifacts-neoforge-13.2.5.jar",
+      "kind": "mod",
+      "sha1": "fb6cd3be2d034dde369ffd7558c95c6daa44189e"
+    },
+    {
+      "projectID": 448233,
+      "fileID": 9100286,
+      "name": "entityculling-neoforge-1.11.3-mc1.21.1.jar",
+      "kind": "mod",
+      "sha1": "f122f84f329793675b2625d51b77f990d7de3579"
+    },
+    {
+      "projectID": 955605,
+      "fileID": 6483943,
+      "name": "CerbonsAPI-NeoForge-1.21-1.3.0.jar",
+      "kind": "mod",
+      "sha1": "3f0d3eed4633d9ef3a713de4b39ee4e683aa9389"
+    },
+    {
+      "projectID": 315811,
+      "fileID": 6530833,
+      "name": "shulkerboxtooltip-neoforge-5.1.6+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "e28f49094665d41e329be4e2b1c9308bd30acf7a"
+    },
+    {
+      "projectID": 1001614,
+      "fileID": 8345326,
+      "name": "lionfishapi-3.1.jar",
+      "kind": "mod",
+      "sha1": "353ca00ed118eb67cf11085abbbd699884722326"
+    },
+    {
+      "projectID": 1010827,
+      "fileID": 8587525,
+      "name": "uranus-2.4.1-bugfix-1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "ccdb021d6eb0f0699a7113c814d3886eac458874"
+    },
+    {
+      "projectID": 583345,
+      "fileID": 9056575,
+      "name": "JadeAddons-1.21.1-NeoForge-6.1.2.jar",
+      "kind": "mod",
+      "sha1": "479b327078f8f0091e2413675d1236c931f68cf4"
+    },
+    {
+      "projectID": 250419,
+      "fileID": 8693034,
+      "name": "enchdesc-neoforge-1.21.1-21.1.11.jar",
+      "kind": "mod",
+      "sha1": "4d453df785ac21e0e7389cba949f4fa460c3e267"
+    },
+    {
+      "projectID": 1222140,
+      "fileID": 8937656,
+      "name": "cookscollection-0.6.1.jar",
+      "kind": "mod",
+      "sha1": "46a4ec47cdb021ee2ecf9fdb5f54f7a6b6dc15dd"
+    },
+    {
+      "projectID": 1232975,
+      "fileID": 8122033,
+      "name": "create_rustic_structures-1.0.1-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "f8f8dea6a23f697c3f27196627bdf77d9147b8e4"
+    },
+    {
+      "projectID": 890127,
+      "fileID": 8654089,
+      "name": "connector-2.0.0-beta.17+1.21.1-full.jar",
+      "kind": "mod",
+      "sha1": "ba08b534af7982d0bd25a25b45cb654c09ffec8f"
+    },
+    {
+      "projectID": 1199355,
+      "fileID": 8555615,
+      "name": "nightlights-neoforge-1.21.1-1.4.0.jar",
+      "kind": "mod",
+      "sha1": "eddc3886fc5912228f0ba3f7e0579a1bca01faae"
+    },
+    {
+      "projectID": 1063296,
+      "fileID": 7547171,
+      "name": "enhancedbossbars-1.0.0.jar",
+      "kind": "mod",
+      "sha1": "812fa35e45f015661e8348c96d2ccc360723583b"
+    },
+    {
+      "projectID": 854786,
+      "fileID": 6461536,
+      "name": "biggerbetterendcities-1.21.1-1.0.0.jar",
+      "kind": "mod",
+      "sha1": "c2b43be043ea8a75cbe9a923e22000ad60bed3c5"
+    },
+    {
+      "projectID": 309516,
+      "fileID": 7919197,
+      "name": "bountiful-neoforge-8.0.0-beta.2.jar",
+      "kind": "mod",
+      "sha1": "8c1786d2850bd15c3a2dd0f50fccfda09125faa5"
+    },
+    {
+      "projectID": 401955,
+      "fileID": 9052154,
+      "name": "ars_nouveau-1.21.1-5.13.3.jar",
+      "kind": "mod",
+      "sha1": "541b3286d187deeb9a1297a509d0d3539d8af0f6"
+    },
+    {
+      "projectID": 1040076,
+      "fileID": 8929517,
+      "name": "iceandfire-2.1.3.jar",
+      "kind": "mod",
+      "sha1": "71923d0aebd7bdb11b1ef65d9017152ff2b80d2e"
+    },
+    {
+      "projectID": 1613404,
+      "fileID": 8891461,
+      "name": "alexscaves-2.0.3.jar",
+      "kind": "mod",
+      "sha1": "b839a87557493bf617048e70925f2542c90595a4"
+    },
+    {
+      "projectID": 60028,
+      "fileID": 7901588,
+      "name": "Aquaculture-1.21.1-2.7.21.jar",
+      "kind": "mod",
+      "sha1": "93c2043c6a5cfbfbfba93321d044bc61d8a6547b"
+    },
+    {
+      "projectID": 574622,
+      "fileID": 8876969,
+      "name": "culturaldelights-1.21.1-0.18.1.jar",
+      "kind": "mod",
+      "sha1": "0be069977520f620e9ff771399430e79b51c3640"
+    },
+    {
+      "projectID": 967466,
+      "fileID": 8902210,
+      "name": "MoogsNetherStructures-universal-1.21-3.1.1.jar",
+      "kind": "mod",
+      "sha1": "78845cb7bccaa7812bacce4efdd5481b81b8c347"
+    },
+    {
+      "projectID": 536254,
+      "fileID": 8931374,
+      "name": "aquamirae-neoforge-1.21.1-7.2.10.jar",
+      "kind": "mod",
+      "sha1": "28d18d2da303d50738e080b8a67b60358f6511b9"
+    },
+    {
+      "projectID": 1460499,
+      "fileID": 8955160,
+      "name": "eternal_starlight_delight-neoforge-1.4.0.jar",
+      "kind": "mod",
+      "sha1": "688fbb6cf25ed95d98fcc0cb187440d2a0fd9b05"
+    },
+    {
+      "projectID": 407206,
+      "fileID": 7057837,
+      "name": "chat_heads-0.14.0-neoforge-1.21.jar",
+      "kind": "mod",
+      "sha1": "6f352094376a97f3ab29b7f2c5ff70bba000ebb3"
+    },
+    {
+      "projectID": 272515,
+      "fileID": 5850587,
+      "name": "BetterAdvancements-NeoForge-1.21.1-0.4.3.21.jar",
+      "kind": "mod",
+      "sha1": "870521cfaa1a4cb6c830e2409e8b9e4cf179aff2"
+    },
+    {
+      "projectID": 1413643,
+      "fileID": 7384220,
+      "name": "denseflower-1.0.0.jar",
+      "kind": "mod",
+      "sha1": "79dab35beb45bd1378d078ae913890bf87142710"
+    },
+    {
+      "projectID": 1145462,
+      "fileID": 6880789,
+      "name": "atlas_api-1.21.1-1.2.0.jar",
+      "kind": "mod",
+      "sha1": "79487e97bd6dbbd6cfbdbcd4fbf1a7ac34fb8998"
+    },
+    {
+      "projectID": 1252482,
+      "fileID": 6751611,
+      "name": "EternalNether-v21.1.3-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "3460532417842063306c5a12428b3c877e18d073"
+    },
+    {
+      "projectID": 977515,
+      "fileID": 8123964,
+      "name": "moredelight-26.05.20a-1.21-neoforge.jar",
+      "kind": "mod",
+      "sha1": "53ba48fc2dc3d96f0bc24cc0f85586ff8d740942"
+    },
+    {
+      "projectID": 551586,
+      "fileID": 8931182,
+      "name": "L_Ender's Cataclysm 1.21.1-3.33.jar",
+      "kind": "mod",
+      "sha1": "f0310277167c82fd16a5c2bab220b5c5c262f133"
+    },
+    {
+      "projectID": 324717,
+      "fileID": 8591319,
+      "name": "Jade-1.21.1-NeoForge-15.10.6.jar",
+      "kind": "mod",
+      "sha1": "88ee316e68900080b017f60c12162e2731924cf8"
+    },
+    {
+      "projectID": 1644371,
+      "fileID": 8614631,
+      "name": "ftb-solo-quests-1.21.1-neoforge-1.1.2.jar",
+      "kind": "mod",
+      "sha1": "939b88969008a8897018380ea47770443ff61b91"
+    },
+    {
+      "projectID": 1686754,
+      "fileID": 9031486,
+      "name": "Sinew-1.21.1-1.2.14.jar",
+      "kind": "mod",
+      "sha1": "34a4de3a8379a521af589e40fe226b71a8b84ec0"
+    },
+    {
+      "projectID": 1617531,
+      "fileID": 8740321,
+      "name": "cavedust-3.3.0+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "22e94e1eb4c07eac51aedf2bbd93f9645d975d18"
+    },
+    {
+      "projectID": 852665,
+      "fileID": 7232511,
+      "name": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "c9981cf323d5e0fd49387ad20dafec1f58b2c88d"
+    },
+    {
+      "projectID": 1321830,
+      "fileID": 8507645,
+      "name": "mapdistancefix-neoforge-1.1.2+mc1.21-1.21.11.jar",
+      "kind": "mod",
+      "sha1": "1453b31d1bcb8f7ce0e89ef79ac4949f8c4bf055"
+    },
+    {
+      "projectID": 870076,
+      "fileID": 9001238,
+      "name": "Resourcify (1.21.1-neoforge)-1.8.7.jar",
+      "kind": "mod",
+      "sha1": "b21851bb62eeb69e961b5cd8e7006d1ab85f0d2b"
+    },
+    {
+      "projectID": 1226755,
+      "fileID": 8503147,
+      "name": "sophisticatedstoragecreateintegration-1.21.1-0.1.21.209.jar",
+      "kind": "mod",
+      "sha1": "d8f72f22459750496008a7c2a39dc865152d075c"
+    },
+    {
+      "projectID": 1214728,
+      "fileID": 9039106,
+      "name": "easy_npc_config_ui-neoforge-1.21.1-7.14.0.jar",
+      "kind": "mod",
+      "sha1": "bbd73773506ddbc15b39266be2c1fbabda9ef962"
+    },
+    {
+      "projectID": 250398,
+      "fileID": 6368976,
+      "name": "Controlling-neoforge-1.21.1-19.0.5.jar",
+      "kind": "mod",
+      "sha1": "8a34424fc1428778be2fdbfa4da67b21b70bcbfe"
+    },
+    {
+      "projectID": 835687,
+      "fileID": 9099893,
+      "name": "betterarcheology-neoforge-1.21.1-1.3.9.jar",
+      "kind": "mod",
+      "sha1": "c73d47ae658764ddd9977f509a317414d5faa1fa"
+    },
+    {
+      "projectID": 843344,
+      "fileID": 7917189,
+      "name": "DustyDecorations_1.21.1Neoforge_V1.13.jar",
+      "kind": "mod",
+      "sha1": "5498e94d078d40172db39c423c84ea84d3cb8884"
+    },
+    {
+      "projectID": 852512,
+      "fileID": 8435635,
+      "name": "biolith-neoforge-3.0.14.jar",
+      "kind": "mod",
+      "sha1": "8b041bce1cd0c5f5223c285784a3e8498273d6ea"
+    },
+    {
+      "projectID": 1474300,
+      "fileID": 8387448,
+      "name": "softimprints-neoforge-1.21.1-2.8.0.jar",
+      "kind": "mod",
+      "sha1": "6f53ea381c6dd55a30e70bf147cb665f4e73a24b"
+    },
+    {
+      "projectID": 693961,
+      "fileID": 6743822,
+      "name": "screenshot_viewer-1.3.4-neoforge-mc1.21.1.jar",
+      "kind": "mod",
+      "sha1": "55eb706279d561d33c7709cfc2517a8388fb73e7"
+    },
+    {
+      "projectID": 422301,
+      "fileID": 9074419,
+      "name": "sophisticatedbackpacks-1.21.1-3.26.8.2189.jar",
+      "kind": "mod",
+      "sha1": "046f95d4fe6582a600bf61f248cc04402b2a35d4"
+    },
+    {
+      "projectID": 1422273,
+      "fileID": 7469725,
+      "name": "wunderlib-21.0.10.jar",
+      "kind": "mod",
+      "sha1": "330ab9d6d8d92a9337e97ef22e64f83fe2d4bf2a"
+    },
+    {
+      "projectID": 918638,
+      "fileID": 8987438,
+      "name": "meed-1.21.1-8.3.0.jar",
+      "kind": "mod",
+      "sha1": "d8e4433f81359c17ae29950ae9ba8f91960461a4"
+    },
+    {
+      "projectID": 815548,
+      "fileID": 7802495,
+      "name": "integrated_stronghold-1.1.4+1.21.1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "9c425610a04f04d81ce9491e886c6df3fc4feac8"
+    },
+    {
+      "projectID": 1422294,
+      "fileID": 8896285,
+      "name": "BetterEnd-21.0.35.jar",
+      "kind": "mod",
+      "sha1": "54663bd8027873ece43744495fc46456ffa0178a"
+    },
+    {
+      "projectID": 297680,
+      "fileID": 6584803,
+      "name": "AdditionalStructures-1.21-(v.6.3.2-NEO).jar",
+      "kind": "mod",
+      "sha1": "8aded0dfac2208ade2b5d5c8a63b64d9cc19f833"
+    },
+    {
+      "projectID": 1620396,
+      "fileID": 8983496,
+      "name": "archaion-1.21.1-1.4.4.jar",
+      "kind": "mod",
+      "sha1": "157513c36b59ebb275fc8176fc7ace4d118c5d75"
+    },
+    {
+      "projectID": 531730,
+      "fileID": 8048795,
+      "name": "\u00a7eTorches\u00a78-\u00a7eReimagined\u00a70_\u00a78[v1.8]\u00a70.zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "06032557b84a41a28e3473f483b34cb6737002b0"
+    },
+    {
+      "projectID": 1051360,
+      "fileID": 9041312,
+      "name": "Opposing-Force-1.21.1-3.0.0-beta6.jar",
+      "kind": "mod",
+      "sha1": "a01fcf2b83eb617518f25d8e9557495f7b8367cf"
+    },
+    {
+      "projectID": 252848,
+      "fileID": 7892954,
+      "name": "NaturesCompass-1.21.1-3.4.0-neoforge.jar",
+      "kind": "mod",
+      "sha1": "e19721873bebc4dbc1674bb101af39d0ea406b95"
+    },
+    {
+      "projectID": 986583,
+      "fileID": 8469405,
+      "name": "ApothicSpawners-1.21.1-1.4.0.jar",
+      "kind": "mod",
+      "sha1": "b3be29751daea738e691db8949cce079e5aae3be"
+    },
+    {
+      "projectID": 429235,
+      "fileID": 7524151,
+      "name": "ferritecore-7.0.3-neoforge.jar",
+      "kind": "mod",
+      "sha1": "9563692efb708b6b568df27a01ec52f6311928ef"
+    },
+    {
+      "projectID": 892382,
+      "fileID": 8902211,
+      "name": "MoogsEndStructures-universal-1.21-2.1.1.jar",
+      "kind": "mod",
+      "sha1": "ef5f57f0e5d06a2f8bec5c073e01ddb061ad477a"
+    },
+    {
+      "projectID": 986982,
+      "fileID": 6105085,
+      "name": "apothiccombat-1.2.1.jar",
+      "kind": "mod",
+      "sha1": "01c58c5fa571179832b53fd121b9f32b36880c44"
+    },
+    {
+      "projectID": 351441,
+      "fileID": 6409785,
+      "name": "PickUpNotifier-v21.1.1-1.21.1-NeoForge.jar",
+      "kind": "mod",
+      "sha1": "90d3fe207c95a3a5d849ebf8d70ffa885694e30f"
+    },
+    {
+      "projectID": 658587,
+      "fileID": 7389814,
+      "name": "player-animation-lib-forge-2.0.4+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "05be8ddcc78532b9a5520c718edc6c971cd0057c"
+    },
+    {
+      "projectID": 232131,
+      "fileID": 8498229,
+      "name": "defaultoptions-neoforge-1.21.1-21.1.8.jar",
+      "kind": "mod",
+      "sha1": "d682687ec41236092c5206a21e2ed34bdb7f6b79"
+    },
+    {
+      "projectID": 1653878,
+      "fileID": 8655579,
+      "name": "arssophisticatedstoragecompat-0.3.0.jar",
+      "kind": "mod",
+      "sha1": "1a5b5e262b577a0ffa015060bdfe610c0bc7ba01"
+    },
+    {
+      "projectID": 1479383,
+      "fileID": 7789216,
+      "name": "large_meals-1.21.1-1.0.1.jar",
+      "kind": "mod",
+      "sha1": "3a3e47847e25bcca31990910d44ea72ab1bda7c5"
+    },
+    {
+      "projectID": 855414,
+      "fileID": 8680204,
+      "name": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "kind": "mod",
+      "sha1": "017fd8140c477f9ae602cf95594f1c23bef1d6e3"
+    },
+    {
+      "projectID": 250498,
+      "fileID": 7760267,
+      "name": "mowziesmobs-1.21.1-1.8.2.jar",
+      "kind": "mod",
+      "sha1": "d64475cd77444b056ece6472c79d40293dc63c6c"
+    },
+    {
+      "projectID": 538214,
+      "fileID": 6330030,
+      "name": "handcrafted-neoforge-1.21.1-4.0.3.jar",
+      "kind": "mod",
+      "sha1": "8ecd27f1d66f9b742cfae3c8ffa773765f574b52"
+    },
+    {
+      "projectID": 1653477,
+      "fileID": 8653384,
+      "name": "arssophisticatedcompat-0.3.0.jar",
+      "kind": "mod",
+      "sha1": "7cc6c1e1d92d109230f68b6a63dc4bfb13c245a6"
+    },
+    {
+      "projectID": 1105855,
+      "fileID": 9036237,
+      "name": "knightlib-neoforge-1.21.1-2.0.4.jar",
+      "kind": "mod",
+      "sha1": "46df8f51c765f3b34aebc7317092a89dee6218ca"
+    },
+    {
+      "projectID": 328085,
+      "fileID": 7963363,
+      "name": "create-1.21.1-6.0.10.jar",
+      "kind": "mod",
+      "sha1": "0e97e49837bed766e6f28a4c95b04885d6acc353"
+    },
+    {
+      "projectID": 1155936,
+      "fileID": 7208601,
+      "name": "Waves-1.21.x-1.6.1.jar",
+      "kind": "mod",
+      "sha1": "7561be446cbcf2b9676c7f5947726a71050063a7"
+    },
+    {
+      "projectID": 637808,
+      "fileID": 8309583,
+      "name": "BrewinAndChewin-neoforge-4.5.0+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "bc86c776779b16dec386f4b667ff46d9e2ecb88d"
+    },
+    {
+      "projectID": 962544,
+      "fileID": 9062891,
+      "name": "Oh-The-Trees-Youll-Grow-neoforge-1.21.1-5.3.4.jar",
+      "kind": "mod",
+      "sha1": "4e7810b12c2796226deb95ea279fb766f034fd29"
+    },
+    {
+      "projectID": 308989,
+      "fileID": 5694215,
+      "name": "caelus-neoforge-7.0.1+1.21.1.jar",
+      "kind": "mod",
+      "sha1": "e4c2e1af4e3082d68f7df75f7c8ce30116d71515"
+    },
+    {
+      "projectID": 324973,
+      "fileID": 7887320,
+      "name": "DungeonCrawl-NeoForge-1.21-2.3.17.jar",
+      "kind": "mod",
+      "sha1": "3abb84c4fcf1229fced0cc5e88fa6e9baa0aa4a7"
+    },
+    {
+      "projectID": 1461322,
+      "fileID": 8518516,
+      "name": "meteor_shower-0.0.5.jar",
+      "kind": "mod",
+      "sha1": "f7d6c47675d51bdac07b291a6f4f69bc0cdac2b3"
+    },
+    {
+      "projectID": 245755,
+      "fileID": 8969751,
+      "name": "waystones-neoforge-1.21.1-21.1.46.jar",
+      "kind": "mod",
+      "sha1": "75718161662d9ec957ba22e10e497788ec1687ba"
+    },
+    {
+      "projectID": 416089,
+      "fileID": 8601207,
+      "name": "voicechat-neoforge-1.21.1-2.6.22.jar",
+      "kind": "mod",
+      "sha1": "3b2001d8df61fe6dc03dcd5f5cd4a8f49821feb0"
+    },
+    {
+      "projectID": 915115,
+      "fileID": 6789388,
+      "name": "formations-1.0.4-neoforge-mc1.21.jar",
+      "kind": "mod",
+      "sha1": "3845f96c9304f6956688f7a35205e9354bf411b0"
+    },
+    {
+      "projectID": 1106612,
+      "fileID": 8549320,
+      "name": "rusticdelight-neoforge-1.21-1.7.1.jar",
+      "kind": "mod",
+      "sha1": "697df889af0cec1823cf5330fca62bf7f6e5037f"
+    },
+    {
+      "projectID": 1015157,
+      "fileID": 6485740,
+      "name": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+      "kind": "mod",
+      "sha1": "7140974a26a2cd79cdc7b85ab4e834916eacc7f1"
+    },
+    {
+      "projectID": 237307,
+      "fileID": 5610814,
+      "name": "cosmeticarmorreworked-1.21.1-v1-neoforge.jar",
+      "kind": "mod",
+      "sha1": "5f1e699cd0888b857ec63f01adaeb3571848bfea"
+    },
+    {
+      "projectID": 580689,
+      "fileID": 6640970,
+      "name": "lootintegrations-1.21.1-4.7.jar",
+      "kind": "mod",
+      "sha1": "ba601fe630f444d974838bfd80a185a0e3e0309c"
+    },
+    {
+      "projectID": 1729925,
+      "fileID": 9079300,
+      "name": "Ambient-Odyssey-TO-Magic-Registry-Fix-1.0.0.jar",
+      "kind": "mod",
+      "sha1": "3e7135d7d494d61f1b127a89df6cb363840b3c74"
+    },
+    {
+      "projectID": 656977,
+      "fileID": 8970306,
+      "name": "MoogsVoyagerStructures-universal-1.21-5.1.3.jar",
+      "kind": "mod",
+      "sha1": "6759fa57891f731e54f865c13ffa0601a829b76a"
+    },
+    {
+      "projectID": 1327133,
+      "fileID": 6889560,
+      "name": "explore_ruins_aether-1.0.0-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "c4de6d0104090df656634afc03f3b1b05c6b33e1"
+    },
+    {
+      "projectID": 1228716,
+      "fileID": 6410823,
+      "name": "underwater_village-1.0.2-neoforge-1.21.1.jar",
+      "kind": "mod",
+      "sha1": "0adcea413b73bad85a5dbb7f18e80576378817e2"
+    },
+    {
+      "projectID": 1690239,
+      "fileID": 8936929,
+      "name": "Os' Colorful Grasses (Mix).zip",
+      "kind": "resource_or_shader_pack",
+      "sha1": "97979906a9ff90f4939e00fc26f219ec125a4c63"
+    },
+    {
+      "projectID": 817423,
+      "fileID": 9023461,
+      "name": "azurelib-neo-1.21.1-3.1.14.jar",
+      "kind": "mod",
+      "sha1": "7393be3604ad870c89f47e3ef765fd3d5d7a0530"
+    },
+    {
+      "projectID": 817709,
+      "fileID": 8943419,
+      "name": "integrated_api-neoforge-1.21.1-1.9.0.jar",
+      "kind": "mod",
+      "sha1": "b092c3f2f5368ca04215491a264cc840f8ad889a"
+    },
+    {
+      "projectID": 1308987,
+      "fileID": 9039094,
+      "name": "easy_npc-neoforge-1.21.1-7.14.0.jar",
+      "kind": "mod",
+      "sha1": "903b8429e9f9b601a3cbe8df877b3b7eadcba33f"
+    },
+    {
+      "projectID": 1475755,
+      "fileID": 8715141,
+      "name": "SimplyTooltips-neoforge-0.1.5.jar",
+      "kind": "mod",
+      "sha1": "6227453d5b628b1009d6ec516a0da5b588849744"
+    },
+    {
+      "projectID": 1499605,
+      "fileID": 8313373,
+      "name": "atmosfera-1.21.1-NeoForge-1.0.2.jar",
+      "kind": "mod",
+      "sha1": "e0da80488ece4df2061f7c66ab9e8a3a2f6cf319"
+    },
+    {
+      "projectID": 469915,
+      "fileID": 8026658,
+      "name": "TansHugeTrees-1.8.0-NeoForge-1.21.1-BETA.jar",
+      "kind": "mod",
+      "sha1": "ebdc59623b4cf6020ef01f84e76f743a906f7e7d"
+    },
+    {
+      "projectID": 1385782,
+      "fileID": 7227735,
+      "name": "lukis-woodland-mansions-v1.0-1.21-1.21.4.jar",
+      "kind": "mod",
+      "sha1": "10b592fd66a2d347448e9a0e0df48df6f6a1a209"
+    },
+    {
+      "projectID": 238222,
+      "fileID": 9068136,
+      "name": "jei-1.21.1-neoforge-19.57.0.451.jar",
+      "kind": "mod",
+      "sha1": "d639d83bf108b258e722a53f40a41a69e83f8ca6"
+    },
+    {
+      "projectID": 714177,
+      "fileID": 8332463,
+      "name": "deeper-oceans-2.0.1-neoforge-21.1.jar",
+      "kind": "mod",
+      "sha1": "85d90c1e9155d3de8c6b0e6e84c003d4f2ff1ba1"
+    },
+    {
+      "projectID": 1672331,
+      "fileID": 8867800,
+      "name": "celestisynth-1.21.1-1.3.9.jar",
+      "kind": "mod",
+      "sha1": "f34c317e9394314446813f9c9d46f16e9c0ba745",
+      "sha256": "03225d0ac3789f8cd1df90df1793f080ab36c4c1143a4f15b622f88bb41bd9de"
+    }
+  ],
+  "candidate_sha256": "a189b392296f6d368a194e107f7da4fd454aa3b490000fd3ab6ede8f3ee15016",
+  "bundled_hashes": {
+    "ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar": "434040e5459bd552939fd7f966091421d00a058e0be736bb8f76a435257e7995",
+    "ao-affix-trims-0.1.1-experimental.jar": "d6ec53ccb5ff271c9aac41d51e87374d0f090640979c1d8e3f670aff6a35d37c",
+    "ao-apotheotic-port-prototype-0.4.8-prototype.jar": "5baeb9321dcabdad2664f159a089e6e7265f7b14072ccf1bb5cdf3ffec1df6e4",
+    "ao-enigmatic-betterinventory-0.1.0.jar": "e0672a3416ce77e4e995489891533f051d7b080beedd53a540fc95dbd4a8d1f2",
+    "ao-questlog-betterinventory-0.1.6.jar": "b1fc9f30b49140acb16284b8b12c89e05e40302e5b856d40de2629e918c5ef2e",
+    "ao-wet-sand-prototype-0.0.1-source-prototype.jar": "fc7e84d341339f5ad88d9485ab6316b86edacfc9c1e9caccef2c562d0f3a5b49",
+    "ao-worldgen-safety-0.1.4-experimental.jar": "4cd9ee8317b98417b47eca425f644d5e8cac401f98b6e1ae4032339461f10a17"
+  },
+  "original_quest_manual_worldgen_and_other_payload_preserved": true,
+  "saves_accounts_logs_test_probes_included": false,
+  "curseforge_ui_import_tested": false,
+  "celestisynth_runtime_tested": false,
+  "full_acceptance_complete": false
+}

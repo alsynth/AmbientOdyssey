@@ -1,0 +1,13 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "ice_arena": {
+    "salt": 985976643,
+    "separation": 32,
+    "spacing": 49
+  },
+  "sky_arena": {
+    "salt": 1644986321,
+    "separation": 32,
+    "spacing": 49
+  }
+}
