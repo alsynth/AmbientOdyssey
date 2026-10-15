@@ -1,10 +1,10 @@
 ["Boss Health"]
 	#Max Health : 1024
-	"Sandworm Health" = 200.0
-	"Yeti Health" = 250.0
-	"Dragon Health" = 250.0
-	"Knight Health" = 280.0
-	"Kraken Health" = 500.0
+	"Sandworm Health" = 1024.0
+	"Yeti Health" = 1024.0
+	"Dragon Health" = 1024.0
+	"Knight Health" = 1024.0
+	"Kraken Health" = 1024.0
 
 ["Boss Armor"]
 	#Max Armor : 30
@@ -16,11 +16,11 @@
 
 ["Base Boss Damages"]
 	#Not all damages sources depends on this variable !
-	"Sandworm Damage" = 10.0
-	"Yeti Damage" = 18.0
-	"Dragon Damage" = 15.0
-	"Knight Damage" = 13.0
-	"Kraken Damage" = 10.0
+	"Sandworm Damage" = 100.0
+	"Yeti Damage" = 180.0
+	"Dragon Damage" = 150.0
+	"Knight Damage" = 130.0
+	"Kraken Damage" = 100.0
 
 ["Gameplay Changes"]
 	"Can players use the Roll ability" = true

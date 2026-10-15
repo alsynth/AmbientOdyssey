@@ -1,0 +1,24 @@
+structure_id,owner_decision,owner_selected_tier,catalogue_tier_at_review,implementation_status,notes
+adventuredungeons:bygonedungeon,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+adventuredungeons:coldlair,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+adventuredungeons:murkydungeon,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+adventuredungeons:trialrooms,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+adventuredungeons:underground_camp,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeoncrawl:dungeon,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:bandit_village,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:bandit_towers,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:ceryneian_hind,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:coliseum,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:illager_fort,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:infested_temple,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:keep_kayra,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:mechanical_nest,KEEP,,5,PLAN_ONLY_NOT_ACTIVATED,Keep structure T5; boss-focused exception; no blanket DD
+dungeons_arise:mining_complex,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:mining_system,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:monastery,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:mushroom_mines,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:plague_asylum,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:scorched_mines,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:abandoned_temple,CHANGE,4,2,PLAN_ONLY_NOT_ACTIVATED,Owner changed tier
+dungeons_arise:foundry,CHANGE,6,5,PLAN_ONLY_NOT_ACTIVATED,Owner changed tier
+dungeons_arise:kisegi_sanctuary,CHANGE,4,3,PLAN_ONLY_NOT_ACTIVATED,Owner changed tier

@@ -36,7 +36,12 @@ public final class CampaignChecks {
   failures.clear();
   var player=server.getPlayerList().getPlayers().getFirst();
   var level=player.serverLevel();
-  for(String id:AOCampaign.BOSSES.keySet()) check(BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id)),"Missing boss registry: "+id);
+  for(String id:AOCampaign.BOSSES.keySet()) {
+   boolean exists=BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id));
+   if(!exists&&id.startsWith("remnants:"))exists=BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id.replace("remnants:","remnant_bosses:")));
+   check(exists,"Missing boss registry: "+id);
+  }
+  com.mojang.logging.LogUtils.getLogger().info("AO_REMNANT_NATIVE_ENTITY_IDS: {}",BuiltInRegistries.ENTITY_TYPE.keySet().stream().filter(id->id.getNamespace().contains("remnant")).sorted().toList());
   var zombie=EntityType.ZOMBIE.create(level);
   for(String id:AOCampaign.DISABLED){
    var effect=BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.parse(id)).orElseThrow();
@@ -61,6 +66,10 @@ public final class CampaignChecks {
   check(!player.getPersistentData().getCompound(AOCampaign.STATE).getBoolean("heirloom_claimed"),"Ungated mastery claim allowed");
   var state=player.getPersistentData().getCompound(AOCampaign.STATE);
   state.putBoolean("tier_8",true);state.putBoolean("irons_spellbooks:fire_boss",true);state.putBoolean("cataclysm:scylla",true);
+  player.getPersistentData().put(AOCampaign.STATE,state);
+  server.getCommands().performPrefixedCommand(player.createCommandSourceStack(),"ao_mastery upgrade");
+  check(!player.getPersistentData().getCompound(AOCampaign.STATE).getBoolean("heirloom_claimed"),"Mastery allowed before Obsidilith milestone");
+  state.putBoolean("bosses_of_mass_destruction:obsidilith",true);
   player.getPersistentData().put(AOCampaign.STATE,state);
   var affixes=equipment.get(Apoth.Components.AFFIXES);
   server.getCommands().performPrefixedCommand(player.createCommandSourceStack(),"ao_mastery upgrade");

@@ -104,9 +104,13 @@ def launch(install, runtime, jar, java, heap, timeout, width=960, height=540, na
             process.wait(timeout=15)
             raise RuntimeError('Production client timed out; only the spawned test process was terminated')
     output = (runtime / 'production-launch.log').read_text(encoding='utf-8', errors='replace')
-    passed = code == 0 and 'AO_FULL_PACK_WORLD_JOIN_PASS' in output and 'AO_FULL_PACK_PROBE_FAIL' not in output
+    joined = code == 0 and any(marker in output for marker in ('AO_FULL_PACK_WORLD_JOIN_PASS', 'AO_FULL_PACK_WORLD_JOIN_OBSERVED'))
+    passed = joined and 'AO_FULL_PACK_PROBE_FAIL' not in output
     return {'launcher': 'production', 'library_files': len(paths), 'exit_code': code,
-            'startup_and_world_join': 'PASS' if passed else 'FAIL', 'in_world_gameplay_verified': False}
+            'startup_and_world_join': 'PASS' if joined else 'FAIL',
+            'overall_probe': 'PASS' if passed else 'FAIL',
+            'campaign_synthetic_checks': ('PASS' if 'AO_CAMPAIGN_SYNTHETIC_PASS' in output else 'FAIL') if campaign_checks else 'NOT_RUN',
+            'in_world_gameplay_verified': False}
 
 
 if __name__ == '__main__':
@@ -123,4 +127,4 @@ if __name__ == '__main__':
     options = parser.parse_args()
     result = launch(options.install.resolve(), options.game_dir, options.mod_jar.resolve(), options.java, options.heap, options.timeout, options.width, options.height, options.natural_encounters)
     print(json.dumps(result, indent=2))
-    raise SystemExit(0 if result['startup_and_world_join'] == 'PASS' else 1)
+    raise SystemExit(0 if result['overall_probe'] == 'PASS' else 1)

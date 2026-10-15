@@ -1820,34 +1820,6 @@
       }
     },
     {
-      "path": "cristellib/skyarena/structure_placement_config.json5",
-      "note": "Overworld sky arenas",
-      "sets": {
-        "ice_arena": {
-          "before": {
-            "spacing": 75,
-            "separation": 50
-          },
-          "after": {
-            "spacing": 49,
-            "separation": 32
-          },
-          "attempt_density_ratio": 2.343
-        },
-        "sky_arena": {
-          "before": {
-            "spacing": 75,
-            "separation": 50
-          },
-          "after": {
-            "spacing": 49,
-            "separation": 32
-          },
-          "attempt_density_ratio": 2.343
-        }
-      }
-    },
-    {
       "path": "cristellib/totw_modded/structure_placement_config.json5",
       "note": "Overworld towers only; End and other dimensions unchanged",
       "sets": {

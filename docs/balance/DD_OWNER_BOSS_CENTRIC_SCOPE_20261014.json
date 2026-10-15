@@ -1,0 +1,41 @@
+{
+  "scope": "OWNER_APPROVED_DD_POLICY_RESEARCH_ONLY",
+  "date": "2026-10-14",
+  "rules": [
+    {
+      "structure_id": "dungeons_arise:mechanical_nest",
+      "provisional_structure_tier": 5,
+      "encounter_importance": "BOSS_PRIMARY",
+      "owner_decision": "Mechanical Nest's only balancing-critical encounter is the boss; incidental ordinary mobs should not drive difficulty work.",
+      "boss_specific_tuning": "RESEARCH_NATIVE_OR_COMPAT_PROVIDER_IDENTITY_FIRST",
+      "generic_dungeon_difficulty_zone": "EXISTS_ONLY_IN_UNDEPLOYED_DRAFT__REVIEW_AND_AVOID_SPAWNER_WIDE_SCALING_BEFORE_ROLLOUT",
+      "ordinary_spawner_mob_balancing_priority": "DEPRIORITIZED",
+      "native_mounted_encounters": "PRESERVE_UNALTERED",
+      "boss_entity_id": "UNVERIFIED",
+      "boss_spawn_mechanism": "UNVERIFIED",
+      "boss_native_vs_compat_source": "UNVERIFIED",
+      "existing_pr56_candidate_gameplay_modified": false,
+      "executable_approval_for_live_scaling": false,
+      "tests_needed": "Confirm actual boss and source mod in disposable exact AO profile, test native boss HP/damage mechanics and Apotheosis invader overlap, leave incidental mobs otherwise alone"
+    },
+    {
+      "structure_id": "dungeons_arise:foundry",
+      "provisional_structure_tier": 5,
+      "encounter_importance": "DUNGEON_COMBAT_REVIEW",
+      "generic_dungeon_difficulty_zone": "EXISTS_ONLY_IN_UNDEPLOYED_DRAFT",
+      "boss_specific_tuning": "NO_BOSS_IDENTITY_ASSUMED",
+      "native_jigsaw_missing_reference": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+      "follow_up": "Investigate native missing jigsaw pool against exact JAR and final AO Paxi; do not deploy a guessed resource rename",
+      "executable_approval_for_live_scaling": false
+    }
+  ],
+  "prohibitions": [
+    "No global creeper/ravager/phantom DD expansion because of Mechanical Nest",
+    "No dedicated Quark or Alex's Mobs incidental scaling",
+    "No boss DD rules without positive identified entity mechanics",
+    "No live worldgen or existing Paxi change",
+    "No merge of PR56 research branch"
+  ],
+  "natural_generation_verified": false,
+  "boss_spawn_verified": false
+}

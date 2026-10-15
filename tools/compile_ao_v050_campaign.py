@@ -16,13 +16,13 @@ NOTES = {
  0: 'Keep a safe place to sleep, a return route and enough food for an unexpected delay. Your first expedition can stay close to home.',
  1: 'Choose a landmark that interests you and leave a waypoint before going underground. A sensible route home matters more than travelling far.',
  2: 'A complete defensive kit and two useful combat supports are a better foundation than one impressive weapon. Test your recovery before entering a dungeon.',
- 3: 'Explore a style that suits you: shield and steel, a mobile bow, or spells with reliable recovery. Sky and Ice Arenas are optional places, not assumed boss kills.',
+ 3: 'Explore a style that suits you: shield and steel, a mobile bow, or spells with reliable recovery. Demi\'s Sky and Ice Arenas have been removed from this test version.',
  4: 'The Nether, a Trial Chamber or a Mine Cells expedition can be your next challenge. Leave early Mine Cells loot as you find it; prepare a safe retreat.',
  5: 'The Night Lich and Void Blossom offer alternative Overworld milestones. A Bastion is a Tier 5 structure; a Nether Fortress is Tier 4.',
  6: 'The Dead King is the primary experimental Pinnacle route. Kobolediator is a provisional alternate whose combat equivalence still needs testing. Winning grants access without changing your active difficulty.',
- 7: 'Choose one legendary threat and learn its telegraphs. Maledictus is at Frosted Prison, Leviathan at Sunken City and Scylla at Acropolis. A party is optional.',
+ 7: 'Choose one legendary threat and learn its telegraphs. Ancient Remnant and Ender Guardian are Tier 7; Maledictus and Leviathan are Tier 8, Scylla is Tier 9. A party is optional.',
  8: 'The Last of Deepslate is the first verified registry route for this experimental mastery milestone. Other Tier 8 encounters remain in the field dossiers until their triggers are confirmed.',
- 9: 'Tyros and Scylla are optional superboss challenges. After a Tier 8 milestone and both victories, hold one affixed equipment item below Heirloom and use /ao_mastery upgrade. This changes the held item once; it does not give a second item.'}
+ 9: 'Tyros, Scylla and Obsidilith are optional superboss challenges. After a Tier 8 milestone and all three victories, hold one affixed equipment item below Heirloom and use /ao_mastery upgrade. This changes the held item once; it does not give a second item. Chesed, Malkuth and Geburah are exempt Tier 5 bosses.'}
 
 def write(path, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -46,6 +46,9 @@ def compile_campaign():
                  8:'ao_v050_breaking_point_05',9:'ao_v050_beyond_known_04'}
     for row in rows:
         tier, seq = int(row['ao_tier']), int(row['sequence'])
+        if (tier,seq) == (9,3):
+            row['quest_beat'] = 'Defeat Obsidilith in the End'
+            row['validation_status'] = 'OWNER_SELECTED_T9_20261014; native kill milestone, combat acceptance pending'
         chapter, icon = CHAPTERS[row['chapter']]
         slug = 'ao_v050_' + row['design_seed_id'].removeprefix('design_')
         assert slug not in original
@@ -60,7 +63,7 @@ def compile_campaign():
             status = 'NATIVE_ITEM_OBJECTIVE'
         milestone_rules = {(5,7):'tier_5', (6,5):'tier_6', (6,6):'artifact_reward', (6,7):'tier_6',
                            (7,5):'tier_7', (7,6):'heirloom_reward', (8,4):'tier_8', (8,5):'esoteric_reward',
-                           (9,1):'tyros', (9,2):'scylla', (9,4):'heirloom_upgrade'}
+                           (9,1):'tyros', (9,2):'scylla', (9,3):'obsidilith', (9,4):'heirloom_upgrade'}
         if (tier,seq) in milestone_rules:
             obj = advancement(milestone_rules[tier,seq]); status = 'SERVER_BOSS_OR_TRANSACTION_MILESTONE'
         if (tier,seq) == (4,2):
@@ -70,7 +73,7 @@ def compile_campaign():
             obj = {'type':'questlog:or','name':'Enter a Trial Chamber or Nether Fortress', 'objectives':[
                 {'type':'questlog:visit_structure','structure':s,'required_amount':1} for s in ('minecraft:trial_chambers','minecraft:fortress')]}
             status = 'NATIVE_STRUCTURE_OBJECTIVE'
-        reserved = (tier,seq) == (9,3)
+        reserved = False
         if reserved:
             obj = {'type':'questlog:unobtainable','name':'Reserved: third End superboss remains unselected'}
             status = 'RESERVED_UNASSIGNED';
@@ -97,7 +100,7 @@ def compile_campaign():
         if slug.startswith('v050_'):
             write(OVERLAY/'config/questlog/chapters'/(slug+'.json'),
                   {'name':name, 'translatable':False,'icon':{'item':icon},'order':order,'default_chapter':False,'hidden':False})
-    for name in ['tier_5','tier_6','tier_7','tier_8','tier_9','tyros','scylla','heirloom_upgrade','artifact_reward','heirloom_reward','esoteric_reward']:
+    for name in ['tier_5','tier_6','tier_7','tier_8','tier_9','tyros','scylla','obsidilith','heirloom_upgrade','artifact_reward','heirloom_reward','esoteric_reward']:
         write(ROOT/'addons/ao-campaign/src/main/resources/data/ao_campaign/advancement/milestones'/(name+'.json'),
               {'criteria':{'completed':{'trigger':'minecraft:impossible'}}})
     out = ROOT/'docs/questing/V050_IMPLEMENTED_QUEST_MAPPING.csv'
@@ -105,6 +108,6 @@ def compile_campaign():
         writer = csv.DictWriter(f,fieldnames=list(mapping[0]));writer.writeheader();writer.writerows(mapping)
     print(json.dumps({'design_beats':len(rows),'new_quests':len(mapping),'original_quests_preserved':52,
                       'read_acknowledgements':sum(r['implemented_objective']=='READ_ACKNOWLEDGEMENT_ONLY' for r in mapping),
-                      'reserved_unassigned':1,'runtime_tested':False}))
+                      'reserved_unassigned':0,'runtime_tested':False}))
 
 if __name__ == '__main__': compile_campaign()

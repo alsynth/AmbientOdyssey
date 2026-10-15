@@ -1,0 +1,1377 @@
+{
+  "AO_Paxi_pack_count": 14,
+  "curated_count": 42,
+  "no_current_modpack_gameplay_changes": true,
+  "providers": {
+    "dungeons_arise": {
+      "jar_sha1": "c651339154da7b9e9cf47a80fdef22c4d59cad5c",
+      "mod": "dungeons_arise",
+      "native_biome_tag_count": 52,
+      "native_set_count": 2,
+      "native_structure_count": 53,
+      "pin": {
+        "file": "DungeonsArise-1.21.1-2.1.68-release.jar",
+        "fileID": 7150870,
+        "project": 442508,
+        "sha1": "c651339154da7b9e9cf47a80fdef22c4d59cad5c",
+        "targets": [
+          "dungeons_arise:bandit_towers",
+          "dungeons_arise:bandit_village",
+          "dungeons_arise:ceryneian_hind",
+          "dungeons_arise:scorched_mines",
+          "dungeons_arise:shiraz_palace"
+        ]
+      },
+      "targets": {
+        "dungeons_arise:bandit_towers": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:is_badlands",
+            "minecraft:is_badlands"
+          ],
+          "native_structure_definition": {
+            "adapt_noise": false,
+            "biomes": "#dungeons_arise:has_structure/bandit_towers_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 100,
+            "size": 7,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 135
+            },
+            "start_pool": "dungeons_arise:bandit/bandit_towers/bandit_towers_start",
+            "step": "surface_structures",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          },
+          "native_structure_file": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [
+                {
+                  "json": {
+                    "placement": {
+                      "frequency": 0.7105263157894737,
+                      "salt": 88371663,
+                      "separation": 45,
+                      "spacing": 50,
+                      "type": "minecraft:random_spread"
+                    },
+                    "structures": [
+                      {
+                        "structure": "dungeons_arise:heavenly_rider",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_conqueror",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:aviary",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_challenger",
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  "pack": "ao_structure_density"
+                }
+              ],
+              "native_placement": {
+                "salt": 88371663,
+                "separation": 45,
+                "spacing": 50,
+                "type": "minecraft:random_spread"
+              },
+              "set_id": "dungeons_arise:major_structures"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:is_badlands": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "dungeons_arise:collections/other_badlands": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#c:is_badlands"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "dungeons_arise:has_structure/bandit_towers_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#minecraft:is_badlands",
+                    "#dungeons_arise:collections/other_badlands"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "minecraft:is_badlands": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        },
+        "dungeons_arise:bandit_village": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:is_badlands",
+            "minecraft:is_badlands"
+          ],
+          "native_structure_definition": {
+            "adapt_noise": true,
+            "biomes": "#dungeons_arise:has_structure/bandit_village_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 114,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 7,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "dungeons_arise:bandit/bandit_village/bandit_village_start",
+            "step": "surface_structures",
+            "terrain_adaptation": "beard_thin",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          },
+          "native_structure_file": "data/dungeons_arise/worldgen/structure/bandit_village.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [
+                {
+                  "json": {
+                    "placement": {
+                      "frequency": 0.7105263157894737,
+                      "salt": 88371663,
+                      "separation": 45,
+                      "spacing": 50,
+                      "type": "minecraft:random_spread"
+                    },
+                    "structures": [
+                      {
+                        "structure": "dungeons_arise:heavenly_rider",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_conqueror",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:aviary",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_challenger",
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  "pack": "ao_structure_density"
+                }
+              ],
+              "native_placement": {
+                "salt": 88371663,
+                "separation": 45,
+                "spacing": 50,
+                "type": "minecraft:random_spread"
+              },
+              "set_id": "dungeons_arise:major_structures"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:is_badlands": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "dungeons_arise:collections/other_badlands": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#c:is_badlands"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "dungeons_arise:has_structure/bandit_village_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#minecraft:is_badlands",
+                    "#dungeons_arise:collections/other_badlands"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "minecraft:is_badlands": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        },
+        "dungeons_arise:ceryneian_hind": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "minecraft:desert"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:is_desert",
+            "forge:is_desert",
+            "minecraft:has_structure/desert_pyramid"
+          ],
+          "native_structure_definition": {
+            "adapt_noise": false,
+            "biomes": "#dungeons_arise:has_structure/ceryneian_hind_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 114,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 7,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": -16
+            },
+            "start_pool": "dungeons_arise:desertic/ceryneian_hind/ceryneian_hind_start",
+            "step": "surface_structures",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          },
+          "native_structure_file": "data/dungeons_arise/worldgen/structure/ceryneian_hind.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [
+                {
+                  "json": {
+                    "placement": {
+                      "frequency": 0.7105263157894737,
+                      "salt": 88371663,
+                      "separation": 45,
+                      "spacing": 50,
+                      "type": "minecraft:random_spread"
+                    },
+                    "structures": [
+                      {
+                        "structure": "dungeons_arise:heavenly_rider",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_conqueror",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:aviary",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_challenger",
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  "pack": "ao_structure_density"
+                }
+              ],
+              "native_placement": {
+                "salt": 88371663,
+                "separation": 45,
+                "spacing": 50,
+                "type": "minecraft:random_spread"
+              },
+              "set_id": "dungeons_arise:major_structures"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "dungeons_arise:collections/other_deserts": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#forge:is_desert",
+                    "#c:is_desert"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "dungeons_arise:has_structure/ceryneian_hind_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "#minecraft:has_structure/desert_pyramid",
+                    "#dungeons_arise:collections/other_deserts"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "forge:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "minecraft:has_structure/desert_pyramid": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        },
+        "dungeons_arise:scorched_mines": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "minecraft:desert"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:is_desert",
+            "forge:is_desert",
+            "minecraft:has_structure/desert_pyramid"
+          ],
+          "native_structure_definition": {
+            "adapt_noise": false,
+            "biomes": "#dungeons_arise:has_structure/scorched_mines_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 114,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 7,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": -14
+            },
+            "start_pool": "dungeons_arise:underworld/scorched_mines/scorched_mines_start",
+            "step": "surface_structures",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          },
+          "native_structure_file": "data/dungeons_arise/worldgen/structure/scorched_mines.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [
+                {
+                  "json": {
+                    "placement": {
+                      "frequency": 0.7105263157894737,
+                      "salt": 88371663,
+                      "separation": 45,
+                      "spacing": 50,
+                      "type": "minecraft:random_spread"
+                    },
+                    "structures": [
+                      {
+                        "structure": "dungeons_arise:heavenly_rider",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_conqueror",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:aviary",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_challenger",
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  "pack": "ao_structure_density"
+                }
+              ],
+              "native_placement": {
+                "salt": 88371663,
+                "separation": 45,
+                "spacing": 50,
+                "type": "minecraft:random_spread"
+              },
+              "set_id": "dungeons_arise:major_structures"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "dungeons_arise:collections/other_deserts": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#forge:is_desert",
+                    "#c:is_desert"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "dungeons_arise:has_structure/scorched_mines_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "#minecraft:has_structure/desert_pyramid",
+                    "#dungeons_arise:collections/other_deserts"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "forge:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "minecraft:has_structure/desert_pyramid": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        },
+        "dungeons_arise:shiraz_palace": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "minecraft:desert"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:is_desert",
+            "forge:is_desert",
+            "minecraft:has_structure/desert_pyramid"
+          ],
+          "native_structure_definition": {
+            "adapt_noise": false,
+            "biomes": "#dungeons_arise:has_structure/shiraz_palace_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 114,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 7,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 16
+            },
+            "start_pool": "dungeons_arise:desertic/shiraz_palace/shiraz_palace_start",
+            "step": "surface_structures",
+            "type": "minecraft:jigsaw",
+            "use_expansion_hack": false
+          },
+          "native_structure_file": "data/dungeons_arise/worldgen/structure/shiraz_palace.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [
+                {
+                  "json": {
+                    "placement": {
+                      "frequency": 0.7105263157894737,
+                      "salt": 88371663,
+                      "separation": 45,
+                      "spacing": 50,
+                      "type": "minecraft:random_spread"
+                    },
+                    "structures": [
+                      {
+                        "structure": "dungeons_arise:heavenly_rider",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_conqueror",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:aviary",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "dungeons_arise:heavenly_challenger",
+                        "weight": 1
+                      }
+                    ]
+                  },
+                  "pack": "ao_structure_density"
+                }
+              ],
+              "native_placement": {
+                "salt": 88371663,
+                "separation": 45,
+                "spacing": 50,
+                "type": "minecraft:random_spread"
+              },
+              "set_id": "dungeons_arise:major_structures"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "dungeons_arise:collections/other_deserts": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#forge:is_desert",
+                    "#c:is_desert"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "dungeons_arise:has_structure/shiraz_palace_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "#minecraft:has_structure/desert_pyramid",
+                    "#dungeons_arise:collections/other_deserts"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "forge:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "minecraft:has_structure/desert_pyramid": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        }
+      }
+    },
+    "friendsandfoes": {
+      "jar_sha1": "3967c4e91662e3997318329b13af19816968b56a",
+      "mod": "friendsandfoes",
+      "native_biome_tag_count": 20,
+      "native_set_count": 4,
+      "native_structure_count": 4,
+      "pin": {
+        "file": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+        "fileID": 8589256,
+        "project": 602059,
+        "sha1": "3967c4e91662e3997318329b13af19816968b56a",
+        "targets": [
+          "friendsandfoes:citadel"
+        ]
+      },
+      "targets": {
+        "friendsandfoes:citadel": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:in_nether",
+            "minecraft:is_nether"
+          ],
+          "native_structure_definition": {
+            "biomes": "#friendsandfoes:has_structure/citadel",
+            "max_distance_from_center": 64,
+            "size": 10,
+            "spawn_overrides": {
+              "monster": {
+                "bounding_box": "piece",
+                "spawns": [
+                  {
+                    "maxCount": 2,
+                    "minCount": 1,
+                    "type": "minecraft:blaze",
+                    "weight": 1
+                  }
+                ]
+              }
+            },
+            "start_height": {
+              "max_inclusive": {
+                "absolute": 54
+              },
+              "min_inclusive": {
+                "absolute": 34
+              },
+              "type": "minecraft:uniform"
+            },
+            "start_pool": "friendsandfoes:citadel/base_plate",
+            "step": "strongholds",
+            "terrain_adaptation": "none",
+            "type": "friendsandfoes:citadel_structure",
+            "use_expansion_hack": false
+          },
+          "native_structure_file": "data/friendsandfoes/worldgen/structure/citadel.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [],
+              "native_placement": {
+                "exclusion_zone": {
+                  "chunk_count": 8,
+                  "other_set": "minecraft:nether_complexes"
+                },
+                "salt": 878514152,
+                "separation": 8,
+                "spacing": 16,
+                "type": "minecraft:random_spread"
+              },
+              "set_id": "friendsandfoes:citadel"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:in_nether": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "friendsandfoes:has_structure/citadel": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#minecraft:is_nether",
+                    "#c:in_nether"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "minecraft:is_nether": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        }
+      }
+    },
+    "idas": {
+      "jar_sha1": "154f275823f5f949ed492ac6ce078a80fc3c759a",
+      "mod": "idas",
+      "native_biome_tag_count": 103,
+      "native_set_count": 16,
+      "native_structure_count": 93,
+      "pin": {
+        "file": "idas-1.13.7+1.21.1-neoforge.jar",
+        "fileID": 8232359,
+        "project": 605375,
+        "sha1": "154f275823f5f949ed492ac6ce078a80fc3c759a",
+        "targets": [
+          "idas:desert_pyramid",
+          "idas:desert_ruins",
+          "idas:labyrinth",
+          "idas:necromancers_spire"
+        ]
+      },
+      "targets": {
+        "idas:desert_pyramid": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "biomesoplenty:lush_desert",
+            "minecraft:desert",
+            "projectvibrantjourneys:desert_shrubland",
+            "projectvibrantjourneys:verdant_sands",
+            "terralith:lush_desert"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:desert",
+            "forge:is_desert"
+          ],
+          "native_structure_definition": {
+            "allowed_terrain_height_range": 12,
+            "allowed_y_range_from_start": 200,
+            "biomes": "#idas:has_structure/desert_biomes",
+            "enhanced_terrain_adaptation": {
+              "type": "integrated_api:none"
+            },
+            "liquid_settings": "ignore_waterlogging",
+            "max_distance_from_center": 250,
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "rotation_fixed": true,
+            "size": 28,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "idas:desert_pyramid/desert_pyramid_entrance1",
+            "step": "surface_structures",
+            "terrain_height_radius_check": 1,
+            "type": "integrated_api:generic_structure",
+            "valid_biome_radius_check": 1
+          },
+          "native_structure_file": "data/idas/worldgen/structure/desert_pyramid.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [],
+              "native_placement": {
+                "salt": 169480678,
+                "separation": 20,
+                "spacing": 45,
+                "super_exclusion_zone": {
+                  "chunk_count": 2,
+                  "other_set": "#idas:rare_avoid"
+                },
+                "type": "integrated_api:advanced_random_spread"
+              },
+              "set_id": "idas:idas_rare"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "forge:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "idas:collections/idasdeserts": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "terralith:lush_desert",
+                    "biomesoplenty:lush_desert",
+                    "projectvibrantjourneys:desert_shrubland",
+                    "projectvibrantjourneys:verdant_sands",
+                    "#forge:is_desert",
+                    "#c:desert"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "idas:has_structure/desert_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "#idas:collections/idasdeserts"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            }
+          }
+        },
+        "idas:desert_ruins": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "biomesoplenty:lush_desert",
+            "minecraft:desert",
+            "projectvibrantjourneys:desert_shrubland",
+            "projectvibrantjourneys:verdant_sands",
+            "terralith:lush_desert"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:desert",
+            "forge:is_desert"
+          ],
+          "native_structure_definition": {
+            "allowed_terrain_height_range": 10,
+            "biomes": "#idas:has_structure/desert_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 3,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "idas:desert_ruins/desert_ruins",
+            "step": "surface_structures",
+            "terrain_adaptation": "beard_thin",
+            "terrain_height_radius_check": 1,
+            "type": "integrated_api:generic_structure",
+            "valid_biome_radius_check": 1
+          },
+          "native_structure_file": "data/idas/worldgen/structure/desert_ruins.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [
+                {
+                  "json": {
+                    "placement": {
+                      "frequency": 0.4537037037037037,
+                      "salt": 169480670,
+                      "separation": 8,
+                      "spacing": 15,
+                      "super_exclusion_zone": {
+                        "chunk_count": 2,
+                        "other_set": "#idas:common_avoid"
+                      },
+                      "type": "integrated_api:advanced_random_spread"
+                    },
+                    "structures": [
+                      {
+                        "structure": "idas:castle",
+                        "weight": 7
+                      },
+                      {
+                        "structure": "idas:enchantingtower",
+                        "weight": 4
+                      },
+                      {
+                        "structure": "idas:wizard_tower",
+                        "weight": 4
+                      },
+                      {
+                        "structure": "idas:redhorn_guild",
+                        "weight": 3
+                      },
+                      {
+                        "structure": "idas:dig_site/dig_site",
+                        "weight": 5
+                      },
+                      {
+                        "structure": "idas:dig_site/dig_site_desert",
+                        "weight": 5
+                      },
+                      {
+                        "structure": "idas:witches_treestump",
+                        "weight": 3
+                      },
+                      {
+                        "structure": "idas:haunted_manor",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "idas:winter_wagon",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "idas:apothecary_abode",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "idas:treetop_tavern",
+                        "weight": 1
+                      },
+                      {
+                        "structure": "idas:desert_ruins",
+                        "weight": 2
+                      },
+                      {
+                        "structure": "idas:ruined_church",
+                        "weight": 3
+                      },
+                      {
+                        "structure": "idas:ruined_fort",
+                        "weight": 3
+                      },
+                      {
+                        "structure": "idas:ruined_well",
+                        "weight": 3
+                      },
+                      {
+                        "structure": "idas:the_log",
+                        "weight": 3
+                      }
+                    ]
+                  },
+                  "pack": "ao_structure_density"
+                }
+              ],
+              "native_placement": {
+                "salt": 169480670,
+                "separation": 12,
+                "spacing": 21,
+                "super_exclusion_zone": {
+                  "chunk_count": 2,
+                  "other_set": "#idas:common_avoid"
+                },
+                "type": "integrated_api:advanced_random_spread"
+              },
+              "set_id": "idas:idas_common"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "forge:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "idas:collections/idasdeserts": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "terralith:lush_desert",
+                    "biomesoplenty:lush_desert",
+                    "projectvibrantjourneys:desert_shrubland",
+                    "projectvibrantjourneys:verdant_sands",
+                    "#forge:is_desert",
+                    "#c:desert"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "idas:has_structure/desert_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "#idas:collections/idasdeserts"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            }
+          }
+        },
+        "idas:labyrinth": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "biomesoplenty:lush_desert",
+            "minecraft:desert",
+            "projectvibrantjourneys:desert_shrubland",
+            "projectvibrantjourneys:verdant_sands",
+            "terralith:lush_desert"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:desert",
+            "forge:is_desert"
+          ],
+          "native_structure_definition": {
+            "allowed_terrain_height_range": 10,
+            "biomes": "#idas:has_structure/desert_biomes",
+            "change_pool_mods": "iceandfire",
+            "enhanced_terrain_adaptation": {
+              "type": "integrated_api:none"
+            },
+            "liquid_settings": "ignore_waterlogging",
+            "new_pool": "idas:labyrinth/if_labyrinth_entrance",
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "rotation_fixed": true,
+            "size": 5,
+            "spawn_overrides": {},
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "idas:labyrinth/labyrinth_entrance",
+            "step": "surface_structures",
+            "terrain_height_radius_check": 1,
+            "type": "integrated_api:mod_adaptive_structure",
+            "valid_biome_radius_check": 1
+          },
+          "native_structure_file": "data/idas/worldgen/structure/labyrinth.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [],
+              "native_placement": {
+                "salt": 169480678,
+                "separation": 20,
+                "spacing": 45,
+                "super_exclusion_zone": {
+                  "chunk_count": 2,
+                  "other_set": "#idas:rare_avoid"
+                },
+                "type": "integrated_api:advanced_random_spread"
+              },
+              "set_id": "idas:idas_rare"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "forge:is_desert": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "idas:collections/idasdeserts": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "terralith:lush_desert",
+                    "biomesoplenty:lush_desert",
+                    "projectvibrantjourneys:desert_shrubland",
+                    "projectvibrantjourneys:verdant_sands",
+                    "#forge:is_desert",
+                    "#c:desert"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "idas:has_structure/desert_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "minecraft:desert",
+                    "#idas:collections/idasdeserts"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            }
+          }
+        },
+        "idas:necromancers_spire": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [
+            "betternether:bone_reef",
+            "betternether:crimson_glowing_woods",
+            "betternether:crimson_pinewood",
+            "betternether:flooded_deltas",
+            "betternether:gravel_desert",
+            "betternether:magma_land",
+            "betternether:nether_grasslands",
+            "betternether:nether_jungle",
+            "betternether:nether_mushroom_forest",
+            "betternether:nether_mushroom_forest_edge",
+            "betternether:nether_swampland",
+            "betternether:nether_swampland_terraces",
+            "betternether:old_fungiwoods",
+            "betternether:old_swampland",
+            "betternether:old_warped_woods",
+            "betternether:poor_nether_grasslands",
+            "betternether:soul_plain",
+            "betternether:sulfuric_bone_reef",
+            "betternether:upside_down_forest",
+            "betternether:upside_down_forest_cleared",
+            "betternether:wart_forest",
+            "betternether:wart_forest_edge"
+          ],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:in_nether",
+            "c:nether",
+            "forge:is_nether",
+            "minecraft:is_nether"
+          ],
+          "native_structure_definition": {
+            "biomes": "#idas:has_structure/necromancers_spire_biomes",
+            "liquid_settings": "ignore_waterlogging",
+            "size": 4,
+            "spawn_overrides": {
+              "monster": {
+                "bounding_box": "piece",
+                "spawns": [
+                  {
+                    "maxCount": 1,
+                    "minCount": 1,
+                    "type": "quark:wraith",
+                    "weight": 10
+                  }
+                ]
+              }
+            },
+            "start_height": {
+              "absolute": 31
+            },
+            "start_pool": "idas:necromancers_spire/necromancers_spire1",
+            "step": "surface_structures",
+            "terrain_adaptation": "none",
+            "type": "integrated_api:over_lava_nether_structure"
+          },
+          "native_structure_file": "data/idas/worldgen/structure/necromancers_spire.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [],
+              "native_placement": {
+                "salt": 169481692,
+                "separation": 20,
+                "spacing": 35,
+                "super_exclusion_zone": {
+                  "chunk_count": 2,
+                  "other_set": "#idas:nether_avoid"
+                },
+                "type": "integrated_api:advanced_random_spread"
+              },
+              "set_id": "idas:idas_nether"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:in_nether": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "c:nether": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "forge:is_nether": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "idas:collections/idasnether": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#minecraft:is_nether",
+                    "#forge:is_nether",
+                    "#c:nether",
+                    "#c:in_nether",
+                    "betternether:bone_reef",
+                    "betternether:crimson_glowing_woods",
+                    "betternether:crimson_pinewood",
+                    "betternether:flooded_deltas",
+                    "betternether:gravel_desert",
+                    "betternether:magma_land",
+                    "betternether:nether_grasslands",
+                    "betternether:nether_jungle",
+                    "betternether:nether_mushroom_forest",
+                    "betternether:nether_mushroom_forest_edge",
+                    "betternether:nether_swampland",
+                    "betternether:nether_swampland_terraces",
+                    "betternether:old_fungiwoods",
+                    "betternether:old_swampland",
+                    "betternether:old_warped_woods",
+                    "betternether:poor_nether_grasslands",
+                    "betternether:soul_plain",
+                    "betternether:sulfuric_bone_reef",
+                    "betternether:upside_down_forest",
+                    "betternether:upside_down_forest_cleared",
+                    "betternether:wart_forest",
+                    "betternether:wart_forest_edge"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "idas:has_structure/necromancers_spire_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#idas:collections/idasnether"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            },
+            "minecraft:is_nether": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            }
+          }
+        }
+      }
+    },
+    "mtr": {
+      "jar_sha1": "d4078318221c74265156f470b1ac321f14069b34",
+      "mod": "mtr",
+      "native_biome_tag_count": 24,
+      "native_set_count": 6,
+      "native_structure_count": 11,
+      "pin": {
+        "file": "MoogsTemplesReimagined-universal-1.21-2.0.4.jar",
+        "fileID": 8902209,
+        "project": 1339737,
+        "sha1": "d4078318221c74265156f470b1ac321f14069b34",
+        "targets": [
+          "mtr:badlands_temple"
+        ]
+      },
+      "targets": {
+        "mtr:badlands_temple": {
+          "AO_Paxi_same_structure_resource": [],
+          "all_source_possible_direct_biome_ids": [],
+          "curated_direct_biome_overlap": [],
+          "missing_or_external_tag_definitions": [
+            "c:is_badlands",
+            "minecraft:is_badlands"
+          ],
+          "native_structure_definition": {
+            "allowed_terrain_height_range": 4,
+            "biomes": "#mtr:has_structure/badlands_biomes",
+            "cannot_spawn_in_liquid": true,
+            "liquid_settings": "ignore_waterlogging",
+            "project_start_to_heightmap": "WORLD_SURFACE_WG",
+            "size": 3,
+            "spawn_overrides": {
+              "monster": {
+                "bounding_box": "piece",
+                "spawns": [
+                  {
+                    "maxCount": 16,
+                    "minCount": 10,
+                    "type": "minecraft:skeleton",
+                    "weight": 10
+                  },
+                  {
+                    "maxCount": 5,
+                    "minCount": 2,
+                    "type": "minecraft:husk",
+                    "weight": 10
+                  }
+                ]
+              }
+            },
+            "start_height": {
+              "absolute": 0
+            },
+            "start_pool": "mtr:badlands_temple/start_pool",
+            "step": "surface_structures",
+            "terrain_adaptation": "beard_thin",
+            "terrain_height_radius_check": 1,
+            "type": "moogs_structures:moogs_structures_generic_jigsaw_structure"
+          },
+          "native_structure_file": "data/mtr/worldgen/structure/badlands_temple.json",
+          "native_structure_set_memberships": [
+            {
+              "AO_Paxi_structure_set_candidates": [],
+              "native_placement": {
+                "salt": 8859687364,
+                "separation": 8,
+                "spacing": 32,
+                "type": "moogs_structures:advanced_random_spread"
+              },
+              "set_id": "mtr:badlands_temple"
+            }
+          ],
+          "runtime_biome_tag_closure_proven": false,
+          "runtime_generation_verified": false,
+          "source_selector_tags": {
+            "c:is_badlands": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "minecraft:is_badlands": {
+              "contributing_sources": [],
+              "native_present": false,
+              "paxi_sources": []
+            },
+            "mtr:has_structure/badlands_biomes": {
+              "contributing_sources": [
+                {
+                  "replace": false,
+                  "source": "pinned_native_jar",
+                  "values": [
+                    "#minecraft:is_badlands",
+                    "#c:is_badlands"
+                  ]
+                }
+              ],
+              "native_present": true,
+              "paxi_sources": []
+            }
+          }
+        }
+      }
+    }
+  },
+  "scope": "SHA1_VERIFIED_PR50_JAR_PLUS_REPO_AO_PAXI_SOURCES_NOT_FULL_GAME_REGISTRY",
+  "source_provenance": {
+    "github_actions_run_id": 38609174443,
+    "github_actions_job_id": 116007790866,
+    "head_sha": "687fe02fbc1509eb7b2a85b06e7e7d01718214c0",
+    "source": "PR50_SHA1_PINNED_NATIVE_JARS_AND_CURRENT_BRANCH_AO_PAXI_JSON",
+    "runtime_unverified": true
+  }
+}

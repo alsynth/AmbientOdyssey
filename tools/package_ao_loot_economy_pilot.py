@@ -13,7 +13,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE_SHA256 = "dd72daac0fef6c42f758728abc9b003d680b791ccfe174975ec4424cf1ad3d9f"
-STARTER_NAME = "ao-starter-chest-0.1.0-experimental.jar"
+STARTER_NAME = "ao-starter-chest-0.2.0-experimental.jar"
 RECIPE_ROOT = "overrides/config/paxi/datapacks/ao_flight_balance/data/flight_rings/recipe/"
 GOBLIN_ROOT = "overrides/config/paxi/datapacks/ao_goblin_trades/"
 MOD_ROOT = "overrides/mods/"
@@ -47,10 +47,11 @@ def build(base_zip, addon_jar, output_zip, expected_sha=BASE_SHA256):
     if addon_toml is None or 'modId="ao_starter_chest"' not in addon_toml[1].decode():
         raise ValueError("Not an AO starter chest JAR")
     needed = [
-        "data/minecraft/loot_table/chests/spawn_bonus_chest.json",
         "data/ao_starter_chest/loot_modifiers/starter_affix.json",
         "data/neoforge/loot_modifiers/global_loot_modifiers.json",
     ]
+    if "data/minecraft/loot_table/chests/spawn_bonus_chest.json" in addon_members:
+        raise ValueError("Bonus contents must be additive; replacement table is forbidden")
     for name in needed:
         if name not in addon_members:
             raise ValueError("Missing starter addon resource " + name)

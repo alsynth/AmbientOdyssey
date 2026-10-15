@@ -1,0 +1,15 @@
+structure_id,family,candidate_scope,existing_static_or_registry_evidence,next_verification,working_tier,DD_rule,natural_generation
+ctov:pillager_outpost_mesa,CTOV outpost,PILLAGER_OUTPOST,NO_LINKED_STRUCTURE_SET,Check Paxi override and actual configured structure set,UNRANKED,NOT_CREATED,NOT_VERIFIED
+fdbosses:geburah_arena,boss arena,BOSS_NATIVE,CLIENT_REGISTERED_YES,Verify boss spawning independently of DD and natural placement,UNRANKED,NOT_CREATED,NOT_VERIFIED
+formationsoverworld:small_temple,formation,POTENTIAL_COMBAT,NO_LINKED_NBT,Inspect templates and native registration,UNRANKED,NOT_CREATED,NOT_VERIFIED
+formationsoverworld:tower_remnant,formation,POTENTIAL_COMBAT,NO_LINKED_NBT,Inspect templates and native registration,UNRANKED,NOT_CREATED,NOT_VERIFIED
+graveyard:small_desert_graveyard,graveyard,UNCERTAIN_SMALL,NO_LINKED_NBT,Check active hostile spawning; if low-looking with spawner leave UNRANKED for owner,UNRANKED,NOT_CREATED,NOT_VERIFIED
+graveyard:small_graveyard,graveyard,UNCERTAIN_SMALL,NO_LINKED_NBT,Check active hostile spawning; if low-looking with spawner leave UNRANKED for owner,UNRANKED,NOT_CREATED,NOT_VERIFIED
+mowziesmobs:monastery,Mowzie monastery,BOSS_NATIVE,NAME_CORRELATED_NBT_ONLY,Check actual boss spawner registration and template reachability,UNRANKED,NOT_CREATED,NOT_VERIFIED
+mtr:stronghold,Moogs temples,POTENTIAL_COMBAT,NO_LINKED_NBT,Check active structure definition and encounter mechanisms,UNRANKED,NOT_CREATED,NOT_VERIFIED
+skyarena:ice_arena,SkyArena,BOSS_NATIVE,CLIENT_REGISTERED_YES,Verify natural placement and mob waves before DD,UNRANKED,NOT_CREATED,NOT_VERIFIED
+skyarena:sky_arena,SkyArena,BOSS_NATIVE,CLIENT_REGISTERED_YES,Verify natural placement and mob waves before DD,UNRANKED,NOT_CREATED,NOT_VERIFIED
+structory:firetower,Structory,POTENTIAL_COMBAT,NO_LINKED_NBT,Verify hostile NPC or ordinary spawner vs decoration,UNRANKED,NOT_CREATED,NOT_VERIFIED
+structory:graveyard,Structory,UNCERTAIN_SMALL,NO_LINKED_NBT,Verify encounter; low-looking positive spawner must be owner-held,UNRANKED,NOT_CREATED,NOT_VERIFIED
+nova_structures:nether_port,Dungeons Taverns,SOURCE_NBT_POSITIVE,ONE_RAW_SPAWNER_BLOCK,Inspect hostile mob ID; source NBT does not establish active encounter,UNRANKED,NOT_CREATED,NOT_VERIFIED
+idas:pillager_camp,IDAS,SOURCE_NBT_POSITIVE,FOUR_RAW_SPAWNER_BLOCKS,Inspect actual mobs and placement; candidate combat review not automatically Tier2,UNRANKED,NOT_CREATED,NOT_VERIFIED
