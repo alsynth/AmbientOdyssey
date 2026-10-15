@@ -80,7 +80,8 @@ def main():
         compact={'table':r['table'],'selected_pool_index':r['selected_pool_index'],
                  'native_source_sha256':r['source_sha256'],
                  'all_pools':[{'index':pool['index'],'rolls':pool['native_rolls'],
-                         'entries':[{'item':x['id'],'weight':x['weight'],'type':x['type']} for x in pool['entries']]}
+                         'entries':[{'item':x['id'],'weight':x['weight'],'type':x['type'],
+                                     'functions':x['functions'],'conditions':x['conditions']} for x in pool['entries']]}
                          for pool in r['all_pools']]}
         print(json.dumps(compact,separators=(',',':')))
     print('AO_LAST_THREE_NATIVE_SUMMARY_END')
