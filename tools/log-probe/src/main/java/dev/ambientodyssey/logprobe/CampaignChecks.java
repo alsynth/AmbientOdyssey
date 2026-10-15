@@ -1,8 +1,8 @@
 package dev.ambientodyssey.logprobe;
 
 import dev.ambientodyssey.campaign.AOCampaign;
-import dev.ambientodyssey.campaign.BossGems;
-import dev.ambientodyssey.campaign.RageGloveGate;
+import dev.ambientodyssey.campaign.BossRewards;
+import dev.ambientodyssey.campaign.GrandTreasure;
 import dev.ambientodyssey.augmentingsigils.SigilCosts;
 import dev.shadowsoffire.apotheosis.Apoth;
 import dev.shadowsoffire.apotheosis.affix.ItemAffixes;
@@ -36,7 +36,12 @@ public final class CampaignChecks {
   failures.clear();
   var player=server.getPlayerList().getPlayers().getFirst();
   var level=player.serverLevel();
-  for(String id:AOCampaign.BOSSES.keySet()) check(BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id)),"Missing boss registry: "+id);
+  for(String id:AOCampaign.BOSSES.keySet()) {
+   boolean exists=BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id));
+   if(!exists&&id.startsWith("remnants:"))exists=BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse(id.replace("remnants:","remnant_bosses:")));
+   check(exists,"Missing boss registry: "+id);
+  }
+  com.mojang.logging.LogUtils.getLogger().info("AO_REMNANT_NATIVE_ENTITY_IDS: {}",BuiltInRegistries.ENTITY_TYPE.keySet().stream().filter(id->id.getNamespace().contains("remnant")).sorted().toList());
   var zombie=EntityType.ZOMBIE.create(level);
   for(String id:AOCampaign.DISABLED){
    var effect=BuiltInRegistries.MOB_EFFECT.getHolder(ResourceLocation.parse(id)).orElseThrow();
@@ -44,14 +49,42 @@ public final class CampaignChecks {
   }
   check(zombie.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,100)),"Unrelated vanilla effect blocked");
   check(SigilCosts.fromId(ResourceLocation.parse("ao_apotheotic_port:ancient"),1,false)==6,"r19 Ancient alias failed");
-  for(String grade:new String[]{"artifact","heirloom","esoteric"}){
-   var gem=BossGems.create(player,grade);check(!gem.isEmpty(),"Missing native "+grade+" gem reward");
+  // Native gems remain authoritative: never exercise the obsolete custom gem-grant path.
+  var regalia=BossRewards.regaliaIds();var uniques=BossRewards.uniqueIds();
+  check(regalia.size()==BossRewards.POLICY.getAsJsonArray("regalia").size(),"A required curated Regalia item is not registered");
+  var optional=BossRewards.POLICY.getAsJsonArray("unique_weapons_optional");
+  for(var id:BossRewards.POLICY.getAsJsonArray("unique_weapons"))
+   if(!optional.contains(id))check(uniques.contains(ResourceLocation.parse(id.getAsString())),"Required native unique absent: "+id);
+  check(!uniques.isEmpty(),"No native unique weapon available");
+  var samples=new com.google.gson.JsonObject();
+  for(int tier:new int[]{4,5,6,7,8,9}){
+   var counts=new java.util.TreeMap<String,Integer>();
+   for(int i=0;i<100;i++){
+    var bonus=BossRewards.createBonus(player,tier,player.getRandom());
+    check(bonus.size()>=3,"Missing guaranteed boss bonus at tier "+tier);
+    if(bonus.size()<3)continue;
+    check(!bonus.getFirst().getOrDefault(Apoth.Components.AFFIXES,ItemAffixes.EMPTY).isEmpty(),"Guaranteed reward is not affixed");
+    check(regalia.contains(BuiltInRegistries.ITEM.getKey(bonus.get(1).getItem())),"Reward outside curated Regalia");
+    check(uniques.contains(BuiltInRegistries.ITEM.getKey(bonus.get(2).getItem())),"Ordinary/non-unique weapon rewarded");
+    for(int n=3;n<bonus.size();n++){
+     var stack=bonus.get(n);check(!stack.getOrDefault(Apoth.Components.AFFIXES,ItemAffixes.EMPTY).isEmpty(),"Extra rarity reward has no affixes");
+     var rarityId=RarityRegistry.INSTANCE.getKey(stack.get(Apoth.Components.RARITY).get()).toString();
+     counts.merge(rarityId,1,Integer::sum);
+    }
+    if(tier==4||tier==5||tier==9)check(bonus.size()==3,"Unapproved rare extra at tier "+tier);
+   }
+   samples.add(Integer.toString(tier),new com.google.gson.Gson().toJsonTree(counts));
   }
-  var modifier=new RageGloveGate(new LootItemCondition[0]);
+  var observations=new com.google.gson.JsonObject();observations.add("extra_rarity_counts_per_100",samples);
+  observations.add("registered_regalia",new com.google.gson.Gson().toJsonTree(regalia.stream().map(Object::toString).toList()));
+  observations.add("registered_uniques",new com.google.gson.Gson().toJsonTree(uniques.stream().map(Object::toString).toList()));
+  observations.addProperty("scope","Native factory fixtures only; no natural kill, party credit or Lootr certification");
+  try{java.nio.file.Files.writeString(java.nio.file.Path.of("BOSS_REWARD_NATIVE_OBSERVATIONS.json"),new com.google.gson.GsonBuilder().setPrettyPrinting().create().toJson(observations));}catch(java.io.IOException e){throw new IllegalStateException(e);}
+  var modifier=new GrandTreasure(new LootItemCondition[0]);
   var params=new LootParams.Builder(level).withParameter(LootContextParams.ORIGIN,Vec3.ZERO).create(LootContextParamSets.CHEST);
   var ctx=new LootContext.Builder(params).create(Optional.empty());ctx.setQueriedLootTableId(ResourceLocation.parse("minecraft:chests/nether_bridge"));
-  var loot=new ObjectArrayList<ItemStack>();loot.add(new ItemStack(BuiltInRegistries.ITEM.get(RageGloveGate.GLOVE)));loot.add(new ItemStack(Items.DIAMOND,3));
-  modifier.apply(loot,ctx);check(loot.size()==1&&loot.getFirst().is(Items.DIAMOND)&&loot.getFirst().getCount()==3,"Rage filter touched unrelated loot");
+  var loot=new ObjectArrayList<ItemStack>();var diamond=new ItemStack(Items.DIAMOND,3);loot.add(diamond);
+  modifier.apply(loot,ctx);check(loot.size()==1&&loot.getFirst()==diamond&&diamond.getCount()==3,"Grand modifier changed unrelated native loot");
   var rarity=RarityRegistry.INSTANCE.getValue(ResourceLocation.parse("apotheosis:mythic"));
   var equipment=LootController.createLootItem(new ItemStack(Items.DIAMOND_SWORD),rarity,
     GenContext.standalone(player.getRandom(),WorldTier.PINNACLE,0,level,player.blockPosition()));
@@ -61,6 +94,10 @@ public final class CampaignChecks {
   check(!player.getPersistentData().getCompound(AOCampaign.STATE).getBoolean("heirloom_claimed"),"Ungated mastery claim allowed");
   var state=player.getPersistentData().getCompound(AOCampaign.STATE);
   state.putBoolean("tier_8",true);state.putBoolean("irons_spellbooks:fire_boss",true);state.putBoolean("cataclysm:scylla",true);
+  player.getPersistentData().put(AOCampaign.STATE,state);
+  server.getCommands().performPrefixedCommand(player.createCommandSourceStack(),"ao_mastery upgrade");
+  check(!player.getPersistentData().getCompound(AOCampaign.STATE).getBoolean("heirloom_claimed"),"Mastery allowed before Obsidilith milestone");
+  state.putBoolean("bosses_of_mass_destruction:obsidilith",true);
   player.getPersistentData().put(AOCampaign.STATE,state);
   var affixes=equipment.get(Apoth.Components.AFFIXES);
   server.getCommands().performPrefixedCommand(player.createCommandSourceStack(),"ao_mastery upgrade");
@@ -79,6 +116,6 @@ public final class CampaignChecks {
    check(all.size()==153,"Native Questlog loaded "+all.size()+" rather than 153 quests");
   }catch(ReflectiveOperationException e){throw new IllegalStateException("Questlog native parse check failed",e);}
   if(!failures.isEmpty())throw new IllegalStateException(String.join("; ",failures));
-  com.mojang.logging.LogUtils.getLogger().info("AO_CAMPAIGN_SYNTHETIC_PASS: boss/effect registries, native gem grades, r19 Sigil alias, loot filter, guarded held-item preservation/one-claim and 153 native quests");
+  com.mojang.logging.LogUtils.getLogger().info("AO_CAMPAIGN_SYNTHETIC_PASS: boss/effect registries, 600 native boss reward factory samples, unique-only policy, r19 Sigil alias, Grand negative control, guarded held-item preservation/one-claim and 153 native quests");
  }
 }

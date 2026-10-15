@@ -17,7 +17,8 @@
     "subtle-effects-end-remastered-compat": 1657433,
     "equipment-compare": 502561,
     "legendary-tooltips": 532127,
-    "prism-exclusive-tooltip-dependency": 638111
+    "prism-exclusive-tooltip-dependency": 638111,
+    "demis-sky-arena": 1141465
   },
   "additions": {
     "biolith": {
@@ -2419,8 +2420,6 @@
       "cristellib/repurposed_structures/structure_toggle_config.json5",
       "cristellib/sky_whale_ship/structure_placement_config.json5",
       "cristellib/sky_whale_ship/structure_toggle_config.json5",
-      "cristellib/skyarena/structure_placement_config.json5",
-      "cristellib/skyarena/structure_toggle_config.json5",
       "cristellib/skyvillages/structure_placement_config.json5",
       "cristellib/skyvillages/structure_toggle_config.json5",
       "cristellib/structory/structure_placement_config.json5",
@@ -2588,8 +2587,6 @@
       "simplyswords/weapon_attributes.toml",
       "simplytooltips/config.toml",
       "sinew-common.toml",
-      "sky_arena.json",
-      "skyarena-common.toml",
       "softimprints/softimprints-client.toml",
       "sophisticatedbackpacks-common.toml",
       "sophisticatedbackpacks-server.toml",

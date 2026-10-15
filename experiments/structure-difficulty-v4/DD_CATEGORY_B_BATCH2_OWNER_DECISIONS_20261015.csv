@@ -1,0 +1,19 @@
+structure_id,owner_decision,owner_selected_tier,catalogue_tier_at_review,implementation_status,notes
+dungeons_arise:thornborn_towers,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:typhon,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise:undead_pirate_ship,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise_seven_seas:pirate_junk,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise_seven_seas:small_yacht,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise_seven_seas:unicorn_galleon,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise_seven_seas:victory_frigate,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+graveyard:crypt,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+graveyard:lich_prison,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+idas:frozen_crypt,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+idas:labyrinth,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+nova_structures:creeping_crypt,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+nova_structures:undead_crypt,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+philipsruins:ancient_dungeon,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+philipsruins:ancient_crypt,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+philipsruins:lost_soul_dungeon,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+underwater_village:dungeon,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner kept catalogue tier
+dungeons_arise_seven_seas:corsair_corvette,CHANGE,4,2,PLAN_ONLY_NOT_ACTIVATED,Owner changed tier

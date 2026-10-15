@@ -36,7 +36,6 @@ def check():
         make_zip(base,members)
         bundled = {"META-INF/neoforge.mods.toml": b'[[mods]]\nmodId="ao_starter_chest"\n'}
         for p in [
-            "data/minecraft/loot_table/chests/spawn_bonus_chest.json",
             "data/ao_starter_chest/loot_modifiers/starter_affix.json",
             "data/neoforge/loot_modifiers/global_loot_modifiers.json"
         ]:

@@ -1,0 +1,498 @@
+structure_id,category,source_dimension_group,source_tier,selected_structure_tier,decision,implementation_gate,notes
+adventuredungeons:bygonedungeon,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+adventuredungeons:coldlair,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+adventuredungeons:murkydungeon,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+adventuredungeons:trialrooms,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,4,4,KEEP,KNOWN_OVERWORLD_EXISTING,
+adventuredungeons:underground_camp,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+aether:bronze_dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+aether:gold_dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,4,4,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+aether:silver_dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+aether_villages:olympic_citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+alexscaves:abyssal_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:acid_pit,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:cake_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:ferrocave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:forlorn_bridge,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:forlorn_canyon,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:licowitch_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,4,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:ocean_trench,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:underground_cabin,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+alexscaves:volcano,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+apotheosis:tower_leaf,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+apotheosis:tower_main,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+apotheosis:tower_sand,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+apotheosis:tower_spruce,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ars_nouveau:guardian_wilden_den,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ars_nouveau:hunter_wilden_den,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ars_nouveau:stalker_wilden_den,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+betterend:eternal_portal,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+betterfortresses:fortress,B. Dungeons & enclosed combat (68),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+bettermineshafts:mineshaft_acacia,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_desert,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_dripstone,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_ice,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_jungle,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_lush,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_mesa,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_mushroom,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_oak,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_overgrown,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_red_desert,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_spruce,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bettermineshafts:mineshaft_spruce_snowy,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+betterwitchhuts:witch_circle,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,2,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+betterwitchhuts:witch_hut,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,2,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+biomeswevegone:aspen_manor_1,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,3,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+biomeswevegone:aspen_manor_2,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,3,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+biomeswevegone:bog_trial,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+block_factorys_bosses:dragon_tower,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,8,8,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+block_factorys_bosses:kraken_ship,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,8,8,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+block_factorys_bosses:sandworm_nest,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,8,8,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+block_factorys_bosses:underworld_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,8,8,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+block_factorys_bosses:yeti_hideout,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,8,8,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+bosses_of_mass_destruction:gauntlet_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bosses_of_mass_destruction:lich_tower,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+bosses_of_mass_destruction:obsidilith_arena,A. Boss arenas & strongholds (46),END / OTHER DIMENSION,6,9,REVIEW_LATER,REVIEW_LATER,Tier7+ DD type and entity matching not implemented
+bosses_of_mass_destruction:void_blossom,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:abandoned_spire,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:abandoned_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:abandoned_village,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,2,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+cataclysm:acropolis,A. Boss arenas & strongholds (46),END / OTHER DIMENSION,7,9,REVIEW_LATER,REVIEW_LATER,Owner T9 supersedes experimental T6; currently End dimension; hold
+cataclysm:amethyst_nest,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:ancient_factory,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:burning_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,REVIEW_LATER,REVIEW_LATER,Tier7+ DD type and entity matching not implemented
+cataclysm:cursed_pyramid,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,7,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:desert_occupied_village,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,4,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+cataclysm:desert_site,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:desert_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:frosted_prison,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,7,7,UNREVIEWED,KNOWN_OVERWORLD_EXISTING,Tier7+ DD type and entity matching not implemented
+cataclysm:kobolediator_shrine,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+cataclysm:ruined_citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+cataclysm:soul_black_smith,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,7,7,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+cataclysm:sunken_city,F. Settlements & buildings (16),OVERWORLD CURRENT,9,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+ctov:large/village_mesa_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:large/village_plains_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:large/village_swamp_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:large/village_taiga_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:large/village_underground,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:medium/village_mesa_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:medium/village_plains_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:medium/village_swamp_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:medium/village_taiga_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:medium/village_underground,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_badlands,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_beach,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_dark_forest,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_desert,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_jungle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_mesa,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_mountain,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_plains,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_savanna,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_snowy,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_swamp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:pillager_outpost_taiga,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:small/village_mesa_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:small/village_plains_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:small/village_swamp_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:small/village_taiga_fortified,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+ctov:small/village_underground,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeoncrawl:dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:abandoned_temple,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,4,CHANGE,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+dungeons_arise:aviary,B. Dungeons & enclosed combat (68),END / OTHER DIMENSION,6,6,UNREVIEWED,REVIEW_LATER,
+dungeons_arise:bandit_towers,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,2,2,KEEP,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:bandit_village,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+dungeons_arise:ceryneian_hind,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:coliseum,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:foundry,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,5,6,CHANGE,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:heavenly_challenger,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,6,6,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:heavenly_conqueror,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,6,6,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:heavenly_rider,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,6,6,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:illager_corsair,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:illager_fort,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:illager_galley,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:illager_windmill,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:infested_temple,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:keep_kayra,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,6,6,KEEP,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:kisegi_sanctuary,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,4,CHANGE,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+dungeons_arise:mechanical_nest,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,5,5,KEEP,BOSS_ONLY_EXCEPTION,Do not reintroduce blanket DD mob scaling
+dungeons_arise:mining_complex,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+dungeons_arise:mining_system,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:monastery,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:mushroom_mines,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:plague_asylum,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:scorched_mines,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:shiraz_palace,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,5,6,CHANGE,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:thornborn_towers,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+dungeons_arise:typhon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise:undead_pirate_ship,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise_seven_seas:corsair_corvette,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,4,CHANGE,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+dungeons_arise_seven_seas:pirate_junk,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise_seven_seas:small_yacht,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise_seven_seas:unicorn_galleon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+dungeons_arise_seven_seas:victory_frigate,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+echoes_of_the_end__structures_:crying_obsidian_tower,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+echoes_of_the_end__structures_:end_camp,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,2,3,CATEGORY_DEFAULT,REVIEW_LATER,
+echoes_of_the_end__structures_:end_dungeon_tower,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+echoes_of_the_end__structures_:end_enchanted_temple,D. Temples & ruins (49),END / OTHER DIMENSION,3,2,CATEGORY_DEFAULT,REVIEW_LATER,
+echoes_of_the_end__structures_:end_shulker_tower,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+echoes_of_the_end__structures_:end_temple,D. Temples & ruins (49),END / OTHER DIMENSION,3,2,CATEGORY_DEFAULT,REVIEW_LATER,
+echoes_of_the_end__structures_:end_warship,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+eternal_starlight:cursed_garden,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+eternal_starlight:golem_forge,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+eternal_starlight:stranghoul_den,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+explore_ruins_aether:small_hellfire_dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+explore_ruins_aether:valkyrie_library,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+explore_ruins_aether:valkyrie_ship,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+farmers_structures:afterdark_farms,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+farmers_structures:deeper_farms,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+farmers_structures:flesh_farms,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+farmers_structures:undergardens,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+farmers_structures:undergardens_sea,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+fdbosses:chesed_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+fdbosses:geburah_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+fdbosses:malkuth_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+floating_islands:cemetery_island,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+floating_islands:pillager_camp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+floating_islands:shrine,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+floating_islands:spider_ruin,D. Temples & ruins (49),OVERWORLD CURRENT,2,2,CATEGORY_DEFAULT,KNOWN_OVERWORLD_EXISTING,
+floating_islands:steampunk_island,G. Other / manual classification (125),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+floating_islands:tower_island,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+floating_islands:witch_island,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:copper_spire,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:graveyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:ice_castle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:ice_spire,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:large_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:mesoamerican_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:small_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:stone_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:tower_remnant,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+formationsoverworld:witch_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+friendsandfoes:citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+friendsandfoes:iceologer_cabin,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+friendsandfoes:illusioner_shack,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+friendsandfoes:illusioner_training_grounds,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+graveyard:altar,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+graveyard:crypt,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+graveyard:haunted_house,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,3,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+graveyard:large_graveyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+graveyard:lich_prison,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+graveyard:ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:cyclops_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:fire_dragon_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:fire_dragon_roost,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:gorgon_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:graveyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:hydra_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:ice_dragon_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:ice_dragon_roost,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:lightning_dragon_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:lightning_dragon_roost,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+iceandfire:mausoleum,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,4,CHANGE,IMPLEMENTED_R4_NATIVE_REGISTRY_OVERWORLD_BIOMES,"R4 experimental source implemented after actual registry and normal Overworld biome checks; natural placement, spawners and combat acceptance pending. See docs/handoffs/dd-native-batch-r4-20261015/rollout.json"
+iceandfire:pixie_village,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,2,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+iceandfire:siren_island,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:ancient_mines,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:ancient_portal/nether_ancient_portal,G. Other / manual classification (125),NETHER HOLD,2,2,REVIEW_LATER,REVIEW_LATER,
+idas:animal_den/forest_den,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:animal_den/foxhound_den,G. Other / manual classification (125),NETHER HOLD,2,2,REVIEW_LATER,REVIEW_LATER,
+idas:animal_den/polar_bear_den,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:ars_nouveau/archmages_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:castle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:desert_pyramid,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:desert_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:enchantingtower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:frozen_crypt,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:haunted_manor,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,3,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+idas:iceandfire/dread_citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,7,CHANGE,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+idas:iceandfire/sirens_cove,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:labyrinth,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:necromancers_spire,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:nether_pump_camp,"C. Towers, forts & camps (152)",NETHER HOLD,2,3,CATEGORY_DEFAULT,REVIEW_LATER,
+idas:nexus,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:pillager_camp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:pillager_fortress,B. Dungeons & enclosed combat (68),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+idas:redhorn_guild,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:ruined_church,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:ruined_fort,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:ruins_of_the_deep,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:sunken_ship/sunken_ship,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:sunken_ship/sunken_ship_coral,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:sunken_ship/sunken_ship_ruins,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:tinkers_citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,3,CHANGE,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:underground_camp/underground_camp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:underground_camp/underground_camp_deep,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:windswept_shrine,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:witches_treestump,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+idas:wizard_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+illagerwarship:warship,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+incendium:abandoned_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+incendium:forbidden_castle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,4,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+incendium:infernal_altar,G. Other / manual classification (125),NETHER HOLD,4,4,REVIEW_LATER,REVIEW_LATER,
+incendium:nether_reactor,G. Other / manual classification (125),NETHER HOLD,4,4,REVIEW_LATER,REVIEW_LATER,
+incendium:piglin_village,F. Settlements & buildings (16),NETHER HOLD,2,1,CATEGORY_DEFAULT,REVIEW_LATER,
+incendium:pipeline,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+incendium:ruined_lab,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+incendium:sanctum,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+integrated_stronghold:stronghold,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+integrated_villages:pirate_village,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+irons_spellbooks:ancient_battleground,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+irons_spellbooks:catacombs,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,4,4,UNREVIEWED,KNOWN_OVERWORLD_EXISTING,
+irons_spellbooks:citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+irons_spellbooks:evoker_fort,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+irons_spellbooks:ice_spider_den,G. Other / manual classification (125),OVERWORLD CURRENT,2,2,KEEP,KNOWN_OVERWORLD_EXISTING,
+irons_spellbooks:impaled_icebreaker,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+irons_spellbooks:mountain_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+irons_spellbooks:pyromancer_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mes:astral_hideaway,G. Other / manual classification (125),END / OTHER DIMENSION,2,2,REVIEW_LATER,REVIEW_LATER,
+mes:astral_meteorite,G. Other / manual classification (125),END / OTHER DIMENSION,2,2,REVIEW_LATER,REVIEW_LATER,
+mes:ender_spire,G. Other / manual classification (125),END / OTHER DIMENSION,3,3,REVIEW_LATER,REVIEW_LATER,
+mes:enderkeep_courtyard,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:enderwatch_tower,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:manuscript_shrine,A. Boss arenas & strongholds (46),END / OTHER DIMENSION,2,2,UNREVIEWED,REVIEW_LATER,
+mes:mega_ship,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_basic,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_crashed,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_crashed_2,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_crashed_deepslate,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_deepslate,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_deepslate_2,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:mega_ship_deepslate_3,"C. Towers, forts & camps (152)",END / OTHER DIMENSION,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:monolith,G. Other / manual classification (125),END / OTHER DIMENSION,2,2,REVIEW_LATER,REVIEW_LATER,
+mes:phantom_citadel,A. Boss arenas & strongholds (46),END / OTHER DIMENSION,4,4,UNREVIEWED,REVIEW_LATER,
+mes:ruined_pillar,D. Temples & ruins (49),END / OTHER DIMENSION,2,2,CATEGORY_DEFAULT,REVIEW_LATER,
+mes:starlight_voyager,G. Other / manual classification (125),END / OTHER DIMENSION,4,4,REVIEW_LATER,REVIEW_LATER,
+minecraft:ancient_city,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,6,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+minecraft:pillager_outpost,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+minecraft:swamp_hut,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mns:copper_tower,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mns:crimson_forge,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mns:dragon_arena,A. Boss arenas & strongholds (46),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+mns:grave_yard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mns:large_arena,A. Boss arenas & strongholds (46),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+mns:large_nether_brick,G. Other / manual classification (125),NETHER HOLD,2,2,REVIEW_LATER,REVIEW_LATER,
+mns:mega_fortress,B. Dungeons & enclosed combat (68),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+mns:nether_tower,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+mns:shrine,A. Boss arenas & strongholds (46),NETHER HOLD,2,2,UNREVIEWED,REVIEW_LATER,
+mns:small_arena,A. Boss arenas & strongholds (46),NETHER HOLD,2,2,UNREVIEWED,REVIEW_LATER,
+mns:smoking_shrine,A. Boss arenas & strongholds (46),NETHER HOLD,2,2,UNREVIEWED,REVIEW_LATER,
+mns:train,G. Other / manual classification (125),NETHER HOLD,2,2,REVIEW_LATER,REVIEW_LATER,
+mns:warped_dome,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mowziesmobs:frostmaw_spawn,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mowziesmobs:monastery,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,6,6,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mowziesmobs:umvuthana_grove,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mowziesmobs:wrought_chamber,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:castle_ruin,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:castle_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:desert_pyramid,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:large_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:small_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mss:volcano,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mtr:badlands_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mtr:desert_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mtr:jungle_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mtr:nether_temple,D. Temples & ruins (49),NETHER HOLD,3,2,CATEGORY_DEFAULT,REVIEW_LATER,
+mtr:ocean_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mtr:stronghold,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:castle_ruins,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:cathedral,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:diorite_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:floating_islands,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:gallows,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:jungle_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:large_floating_island,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:large_warped_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:nether_devil,G. Other / manual classification (125),NETHER HOLD,3,3,REVIEW_LATER,REVIEW_LATER,
+mvs:ocean_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:red_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+mvs:small_pillager_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:badlands_miner_outpost,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:bunker,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:creeping_crypt,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:deepslate_camp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:desert_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:end_castle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,5,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:end_lighthouse,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,3,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+nova_structures:end_ship,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_birch,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_cherry,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_dark_oak,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_forest,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_jungle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_mangrove,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_savanna,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_swamp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:firewatch_tower_taiga,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:illager_camp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:illager_hideout,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:illager_manor,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,4,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+nova_structures:jungle_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:lone_citadel,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:mangrove_witch_hut,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,2,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+nova_structures:nether_keep,"C. Towers, forts & camps (152)",NETHER HOLD,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:nether_port,G. Other / manual classification (125),NETHER HOLD,2,2,REVIEW_LATER,REVIEW_LATER,
+nova_structures:nether_skeleton_tower_crimson,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:nether_skeleton_tower_soul,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:nether_skeleton_tower_warped,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:nether_skeleton_tower_waste,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:piglin_camp,"C. Towers, forts & camps (152)",NETHER HOLD,2,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:piglin_donjon,"C. Towers, forts & camps (152)",NETHER HOLD,4,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:piglin_outstation,G. Other / manual classification (125),NETHER HOLD,2,2,REVIEW_LATER,REVIEW_LATER,
+nova_structures:remnant_big_remnant,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:remnant_big_remnant_2,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:remnant_big_remnant_3,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:remnant_birch_graveyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:remnant_graveyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:remnant_taiga_castle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:remnant_zombie_horse_ranch,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:ruin_town,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:shrine_combat_tier_2,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:shrine_combat_tier_3,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:shrine_combat_tier_4,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:shrine_combat_tier_5,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:shrine_tower,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:skeleton_camp_crimson,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:skeleton_camp_soul,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:skeleton_camp_warped,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:skeleton_camp_waste,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+nova_structures:stray_fort,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:toxic_lair,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:trident_trial_monument,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:undead_crypt,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+nova_structures:witch_villa,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+pasterdream:aaroncos_arena_portal,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,3,3,DEFER,REVIEW_LATER,
+pasterdream:aaroncos_arena_portals,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,REVIEW_LATER,
+pasterdream:desert_fortress_0,B. Dungeons & enclosed combat (68),NETHER HOLD,3,3,UNREVIEWED,REVIEW_LATER,
+pasterdream:dream_church_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_10,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_3,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_4,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_5,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_6,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_7,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_8,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dream_church_9,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dyedream_floating_temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:dyedream_laboratory_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dyedream_tower_0,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:dyedream_tower_1,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:dyedream_worldtree_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:dyedream_worldtree_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:garden_decryption_0,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,REVIEW_LATER,
+pasterdream:garden_decryption_1,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,REVIEW_LATER,
+pasterdream:garden_decryption_2,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,REVIEW_LATER,
+pasterdream:hakurei_reimu,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,5,5,REVIEW_LATER,REVIEW_LATER,
+pasterdream:lifecrystal_cave_0,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:lost_sword_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:lost_windknight_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:meltdream_liquid_well_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:meltdream_liquid_well_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_chain_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_chain_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_chain_2,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_chain_3,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_chain_4,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,4,4,UNREVIEWED,REVIEW_LATER,
+pasterdream:shadow_foundry_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_foundry_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_foundry_2,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_fungus_nest_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_fungus_nest_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_fungus_nest_2,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_hand_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,5,5,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_shelter_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_shelter_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:shadow_underground_workroom_0,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:shadow_underground_workroom_1,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,REVIEW_LATER,
+pasterdream:struct_dyedream_crack_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:struct_dyedream_crack_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:warped_relic_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:wind_infested_stone_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:wind_infested_stone_1,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,REVIEW_LATER,REVIEW_LATER,
+pasterdream:wind_island_0,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,REVIEW_LATER,REVIEW_LATER,
+philipsruins:ancient_crypt,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,3,3,KEEP,KNOWN_OVERWORLD_EXISTING,
+philipsruins:ancient_dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+philipsruins:ancient_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+philipsruins:ancient_towers,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+philipsruins:level_three_ruins,D. Temples & ruins (49),OVERWORLD CURRENT,3,2,CATEGORY_DEFAULT,KNOWN_OVERWORLD_EXISTING,
+philipsruins:level_two_ruins,D. Temples & ruins (49),OVERWORLD CURRENT,2,2,CATEGORY_DEFAULT,KNOWN_OVERWORLD_EXISTING,
+philipsruins:level_two_ruins_pool,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+philipsruins:lost_soul_city,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+philipsruins:lost_soul_dungeon,B. Dungeons & enclosed combat (68),OVERWORLD CURRENT,4,4,KEEP,KNOWN_OVERWORLD_EXISTING,
+philipsruins:ocean_fortress,B. Dungeons & enclosed combat (68),NETHER HOLD,3,3,UNREVIEWED,REVIEW_LATER,
+philipsruins:ocean_ruins,D. Temples & ruins (49),OVERWORLD CURRENT,2,2,CATEGORY_DEFAULT,KNOWN_OVERWORLD_EXISTING,
+philipsruins:rare_ruin,D. Temples & ruins (49),OVERWORLD CURRENT,2,2,CATEGORY_DEFAULT,KNOWN_OVERWORLD_EXISTING,
+philipsruins:underground_structures,D. Temples & ruins (49),OVERWORLD CURRENT,2,2,CATEGORY_DEFAULT,KNOWN_OVERWORLD_EXISTING,
+sky_whale_ship:whalearena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,4,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+sky_whale_ship:whaleship,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,4,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+skyarena:ice_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+skyarena:sky_arena,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,7,7,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified Tier7+ DD type and entity matching not implemented
+structory:firetower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+structory:graveyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+structory:jungle_ruin,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+structory:northern_ruin,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+structory:old_manor,F. Settlements & buildings (16),DIMENSION NEEDS VERIFICATION,3,1,CATEGORY_DEFAULT,EXCLUDED_T0_T1,
+structory:swamp_ruin,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+structory:taiga_ruin_underground,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_classic,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_iberian,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_mediterranean,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_nilotic,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_oriental,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_rustic,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_swedish,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/pillager_outpost_tudor,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:exclusives/village_piglin,"C. Towers, forts & camps (152)",NETHER HOLD,3,3,CATEGORY_DEFAULT,REVIEW_LATER,
+towns_and_towers:mimic_desert,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_badlands,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_beach,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_birch_forest,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_desert,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_flower_forest,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_forest,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_grove,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_jungle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_meadow,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_mushroom_fields,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_ocean,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_old_growth_taiga,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_savanna,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_savanna_plateau,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_snowy_beach,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_snowy_plains,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_snowy_slopes,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_snowy_taiga,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_sparse_jungle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_sunflower_plains,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_swamp,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_taiga,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+towns_and_towers:pillager_outpost_wooded_badlands,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,2,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:dungeon,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:shrine,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:temple,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:temple_broken,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:temple_ruins,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,2,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+underwater_village:tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+betteroceanmonuments:ocean_monument,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+eternalnether:catacomb,B. Dungeons & enclosed combat (68),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+eternalnether:citadel,A. Boss arenas & strongholds (46),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+eternalnether:piglin_manor,F. Settlements & buildings (16),NETHER HOLD,3,1,CATEGORY_DEFAULT,REVIEW_LATER,
+minecraft:bastion_remnant,B. Dungeons & enclosed combat (68),NETHER HOLD,5,5,UNREVIEWED,REVIEW_LATER,
+minecraft:end_city,E. Caves & underground (41),END / OTHER DIMENSION,5,2,CATEGORY_DEFAULT,REVIEW_LATER,
+minecraft:fortress,B. Dungeons & enclosed combat (68),NETHER HOLD,4,4,UNREVIEWED,REVIEW_LATER,
+minecraft:mansion,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+minecraft:monument,D. Temples & ruins (49),DIMENSION NEEDS VERIFICATION,3,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+minecraft:stronghold,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+minecraft:trial_chambers,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,4,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:aurora_palace,A. Boss arenas & strongholds (46),DIMENSION NEEDS VERIFICATION,4,4,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:dark_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,4,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:final_castle,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,5,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:hedge_maze,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,3,3,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:hydra_lair,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:knight_stronghold,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,4,4,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:labyrinth,B. Dungeons & enclosed combat (68),DIMENSION NEEDS VERIFICATION,3,3,UNREVIEWED,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:lich_tower,"C. Towers, forts & camps (152)",DIMENSION NEEDS VERIFICATION,3,3,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:naga_courtyard,G. Other / manual classification (125),DIMENSION NEEDS VERIFICATION,2,2,KEEP,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified
+twilightforest:troll_cave,E. Caves & underground (41),DIMENSION NEEDS VERIFICATION,5,2,CATEGORY_DEFAULT,DIMENSION_AND_REGISTRY_CHECK,Do not activate until final effective structure dimension and ID verified

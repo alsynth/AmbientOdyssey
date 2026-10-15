@@ -1,0 +1,314 @@
+{
+  "enabled_datapacks": [
+    "create:dynamic_data",
+    "mod/the_bumblezone:datapacks/jeed_effects_compat",
+    "vanilla",
+    "mod/echoes_of_the_end__structures_",
+    "mod/explorify",
+    "mod_data",
+    "generated/fragmentum_layer",
+    "fabric",
+    "mod/yungsapi:locate_replacer",
+    "supplementaries:generated_pack",
+    "ambient_odyssey",
+    "ao_biome_replacement",
+    "ao_campaign_gates",
+    "ao_compatibility",
+    "ao_content_overrides",
+    "ao_dnt_trek_curation",
+    "ao_dragon_caves",
+    "ao_flight_balance",
+    "ao_goblin_trades",
+    "ao_idas_create_item_compat",
+    "ao_lukis_mansion_native_pool",
+    "ao_server_rules",
+    "ao_starter_apotheosis_exemptions",
+    "ao_structure_density",
+    "ao_structure_repairs",
+    "ao_technical_fixes",
+    "ao_v041_runtime_fixes",
+    "ao_v041_trek_create_rarity_test",
+    "ao_world_tier_balance",
+    "ao_worldgen_final_fixes",
+    "mod/natures_spirit:resourcepacks/modified_badlands",
+    "mod/natures_spirit:resourcepacks/modified_birch_forest",
+    "mod/natures_spirit:resourcepacks/modified_dark_forest",
+    "mod/natures_spirit:resourcepacks/modified_desert",
+    "mod/natures_spirit:resourcepacks/modified_flower_forest",
+    "mod/natures_spirit:resourcepacks/modified_jungle",
+    "mod/natures_spirit:resourcepacks/modified_mountain_biomes",
+    "mod/natures_spirit:resourcepacks/modified_savannas",
+    "mod/natures_spirit:resourcepacks/modified_swamp",
+    "mod/natures_spirit:resourcepacks/modified_windswept_hills",
+    "cristellib:runtime_pack",
+    "t_and_t:resources/t_and_t_waystones_patch",
+    "builtin/compat_recipes/aether_lost_content_not_compat",
+    "amendments:generated_server_pack",
+    "quark_ct_variant_bookshelves",
+    "quark_ct_framed_glass",
+    "quark_ct_variant_ladders",
+    "quark_ct_crabs",
+    "quark_ct_variant_chests",
+    "quark_vdo_nether_wart_sack",
+    "quark_vdo_variant_bookshelves",
+    "quark_vdo_better_stone_tools",
+    "quark_vdo_variant_ladders",
+    "quark_vdo_variant_chests"
+  ],
+  "dd_registry_checks": [
+    {
+      "id": "adventuredungeons:bygonedungeon",
+      "registered": true,
+      "effective_resource_pack": "mod/adventuredungeons"
+    },
+    {
+      "id": "adventuredungeons:coldlair",
+      "registered": true,
+      "effective_resource_pack": "mod/adventuredungeons"
+    },
+    {
+      "id": "adventuredungeons:murkydungeon",
+      "registered": true,
+      "effective_resource_pack": "mod/adventuredungeons"
+    },
+    {
+      "id": "adventuredungeons:trialrooms",
+      "registered": true,
+      "effective_resource_pack": "mod/adventuredungeons"
+    },
+    {
+      "id": "dungeons_arise:bandit_towers",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "dungeons_arise:foundry",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "dungeons_arise:illager_fort",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "dungeons_arise:infested_temple",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "dungeons_arise:keep_kayra",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "dungeons_arise:plague_asylum",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "dungeons_arise:thornborn_towers",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeons_arise"
+    },
+    {
+      "id": "floating_islands:spider_ruin",
+      "registered": true,
+      "effective_resource_pack": "mod/floating_islands"
+    },
+    {
+      "id": "floating_islands:steampunk_island",
+      "registered": true,
+      "effective_resource_pack": "mod/floating_islands"
+    },
+    {
+      "id": "irons_spellbooks:catacombs",
+      "registered": true,
+      "effective_resource_pack": "mod/irons_spellbooks"
+    },
+    {
+      "id": "irons_spellbooks:ice_spider_den",
+      "registered": true,
+      "effective_resource_pack": "mod/irons_spellbooks"
+    },
+    {
+      "id": "philipsruins:ancient_crypt",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "philipsruins:level_three_ruins",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "philipsruins:level_two_ruins",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "philipsruins:lost_soul_dungeon",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "philipsruins:ocean_ruins",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "philipsruins:rare_ruin",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "philipsruins:underground_structures",
+      "registered": true,
+      "effective_resource_pack": "mod/philipsruins"
+    },
+    {
+      "id": "dungeoncrawl:dungeon",
+      "registered": true,
+      "effective_resource_pack": "mod/dungeoncrawl"
+    }
+  ],
+  "created_boss_attributes": [
+    {
+      "id": "irons_spellbooks:dead_king",
+      "registered": true,
+      "created_max_hp": 500.0,
+      "created_attack": 10.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 60.0
+    },
+    {
+      "id": "cataclysm:kobolediator",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 70.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 70.0
+    },
+    {
+      "id": "cataclysm:ignited_revenant",
+      "registered": true,
+      "created_max_hp": 800.0,
+      "created_attack": 30.0,
+      "finalized_max_hp": 800.0,
+      "finalized_attack": 30.0
+    },
+    {
+      "id": "cataclysm:ender_guardian",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 96.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 96.0
+    },
+    {
+      "id": "cataclysm:ignis",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 140.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 140.0
+    },
+    {
+      "id": "cataclysm:the_leviathan",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 150.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 150.0
+    },
+    {
+      "id": "cataclysm:maledictus",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 130.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 130.0
+    },
+    {
+      "id": "cataclysm:scylla",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 180.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 180.0
+    },
+    {
+      "id": "bosses_of_mass_destruction:lich",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 9.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 9.0
+    },
+    {
+      "id": "bosses_of_mass_destruction:void_blossom",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 48.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 48.0
+    },
+    {
+      "id": "bosses_of_mass_destruction:gauntlet",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 64.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 64.0
+    },
+    {
+      "id": "bosses_of_mass_destruction:obsidilith",
+      "registered": true,
+      "created_max_hp": 1024.0,
+      "created_attack": 160.0,
+      "finalized_max_hp": 1024.0,
+      "finalized_attack": 160.0
+    },
+    {
+      "id": "aquamirae:captain_cornelia",
+      "registered": true,
+      "created_max_hp": 20.0,
+      "created_attack": 2.0,
+      "finalized_max_hp": 300.0,
+      "finalized_attack": 1.0
+    },
+    {
+      "id": "fdbosses:chesed",
+      "registered": true,
+      "created_max_hp": 10.0,
+      "finalized_max_hp": 10.0
+    },
+    {
+      "id": "fdbosses:malkuth",
+      "registered": true,
+      "created_max_hp": 20.0,
+      "finalized_max_hp": 20.0
+    },
+    {
+      "id": "fdbosses:geburah",
+      "registered": true,
+      "created_max_hp": 20.0
+    }
+  ],
+  "native_bonus_table_samples": {
+    "rolls": 600,
+    "stone_counts": {
+      "enigmaticlegacyplus:angel_blessing": 117,
+      "enigmaticlegacyplus:blazing_core": 115,
+      "enigmaticlegacyplus:golem_heart": 147,
+      "enigmaticlegacyplus:lost_engine": 100,
+      "enigmaticlegacyplus:ocean_stone": 121
+    },
+    "rarity_counts": {
+      "common": 345,
+      "rare": 78,
+      "uncommon": 177
+    }
+  },
+  "scope": "Engine creation observations only; not spawned/finalized fights, respawn, ability damage, natural worldgen or multiplayer"
+}

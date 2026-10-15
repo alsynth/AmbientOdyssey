@@ -1,0 +1,506 @@
+[
+  {
+    "number": 63,
+    "title": "Draft: integrated R2 private import and verification",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/master-integration-20261015",
+    "sha": "a2c14e6182f158c78af7727827d55d946f787cb7",
+    "updated_at": "2026-10-15T06:20:29Z"
+  },
+  {
+    "number": 62,
+    "title": "Draft: stronger Tier 2\u20136 Dungeon Difficulty pilot (27 scoped zones)",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/dd-v4-stronger-pilot-20261014",
+    "sha": "ef49c437141078f6b255a466d0d3e7c3808f057f",
+    "updated_at": "2026-10-14T23:10:33Z"
+  },
+  {
+    "number": 59,
+    "title": "Draft: pregen Brutal Bosses 70% / 30 blocks, HP \u00d74 and damage \u00d73",
+    "state": "open",
+    "draft": true,
+    "head": "fix/brutalbosses-pregen-70-30-3x-20261014",
+    "sha": "1f80323adce947d4d1b06ca8c3fdd0e463af9b8b",
+    "updated_at": "2026-10-14T20:31:05Z"
+  },
+  {
+    "number": 61,
+    "title": "Draft: 14 Oct pregen, boss, loot and Brutal Bosses session handoff",
+    "state": "open",
+    "draft": true,
+    "head": "handoff/pregen-boss-loot-context-20261014",
+    "sha": "04a7e33f70f4d09ef961c999f9df79e95a035695",
+    "updated_at": "2026-10-14T20:30:22Z"
+  },
+  {
+    "number": 60,
+    "title": "Draft: pregen boss/arena roster gate and missing boss mod detection",
+    "state": "open",
+    "draft": true,
+    "head": "research/pregen-boss-roster-freeze-gate-20261014",
+    "sha": "6a57a5fead92bc3badc060619053b31a2a0e82d0",
+    "updated_at": "2026-10-14T20:23:02Z"
+  },
+  {
+    "number": 56,
+    "title": "Research: AO 100% known-ID structure tier first pass \u2014 verification pending",
+    "state": "open",
+    "draft": true,
+    "head": "research/dd-native-structure-scope-20261014",
+    "sha": "f573075caac3e4637a337a4f4cecdf646d955daf",
+    "updated_at": "2026-10-14T19:40:21Z"
+  },
+  {
+    "number": 51,
+    "title": "Draft: targeted loot economy \u2014 starter chest, Goblin Tuned trades, Flight Rings",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/loot-economy-first-pass-20261013",
+    "sha": "2ce8566c4c9888272d8f456d8bdccb8b69df08f4",
+    "updated_at": "2026-10-14T12:24:13Z"
+  },
+  {
+    "number": 57,
+    "title": "Draft: full PR54 import with campaign, stun/flash and boss-loot prototypes",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/full-pack-through-pr54-20261014",
+    "sha": "42bf8d691ca00b14562724ab8e0fa205b3e24c35",
+    "updated_at": "2026-10-14T10:58:12Z"
+  },
+  {
+    "number": 54,
+    "title": "Draft: rarity-priced Sigils for Apotheosis Augmenting Table",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/apotheosis-augmenting-sigil-costs-20261014",
+    "sha": "03586c13477cdaa988660e25b5ad3962d1a5cfce",
+    "updated_at": "2026-10-14T01:11:09Z"
+  },
+  {
+    "number": 53,
+    "title": "Draft: rebalance Apotheosis World Tier rarity without changing dungeon loot or invaders",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/apotheosis-world-tier-rarity-20261014",
+    "sha": "c742274905af10b72027bf0f3029b097e7248ff9",
+    "updated_at": "2026-10-14T00:42:08Z"
+  },
+  {
+    "number": 52,
+    "title": "Draft: comprehensive recent change ledger and Work-mode full import handoff",
+    "state": "open",
+    "draft": true,
+    "head": "handoff/full-import-change-ledger-20261014",
+    "sha": "875110d9a2ab40844142dc6b56f5ee9134b50379",
+    "updated_at": "2026-10-14T00:15:09Z"
+  },
+  {
+    "number": 44,
+    "title": "Draft: AO v0.5 RPG boss, loot, gear and campaign design package",
+    "state": "open",
+    "draft": true,
+    "head": "research/rpg-boss-loot-campaign-design-20261013",
+    "sha": "6b2749c115bda60a0301c27c1ea85a0ce0b9baa9",
+    "updated_at": "2026-10-13T20:23:24Z"
+  },
+  {
+    "number": 50,
+    "title": "PR45 follow-up: full Celestisynth import, client acceptance evidence and Eternal Nether audit",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/pr45-runtime-rpg-acceptance-20261013",
+    "sha": "1cebd86eefe71dd365a991909962e5aed26b7c1c",
+    "updated_at": "2026-10-13T20:03:25Z"
+  },
+  {
+    "number": 49,
+    "title": "Draft: Regalia combat-first rankings and Pasterdream/Aquamirae source audit",
+    "state": "open",
+    "draft": true,
+    "head": "research/regalia-combat-ranking-20261013",
+    "sha": "af4672d9f6e78d07eb8bde48085459528564bcff",
+    "updated_at": "2026-10-13T17:39:19Z"
+  },
+  {
+    "number": 48,
+    "title": "Draft: expand Regalia to 419 candidates across 12 mods plus 15 jewelry patterns",
+    "state": "open",
+    "draft": true,
+    "head": "research/regalia-catalogue-completion-wave2-20261013",
+    "sha": "943f0351ecbf0872a519997b20e2f5a10d715b8c",
+    "updated_at": "2026-10-13T17:17:18Z"
+  },
+  {
+    "number": 47,
+    "title": "Draft: expand Regalia item catalogue beyond Relics and Artifacts",
+    "state": "open",
+    "draft": true,
+    "head": "research/regalia-catalogue-expansion-20261013",
+    "sha": "1869b240a10fae5eeab208176b27166c32e02bc7",
+    "updated_at": "2026-10-13T16:56:43Z"
+  },
+  {
+    "number": 46,
+    "title": "Handoff: coordinate Work mode and Claude after Structure Difficulty PR #45",
+    "state": "open",
+    "draft": true,
+    "head": "research/v050-pr45-integration-handoffs-20261013",
+    "sha": "5eb613ea1222116e8f8b583df682e633c603c529",
+    "updated_at": "2026-10-13T16:10:48Z"
+  },
+  {
+    "number": 45,
+    "title": "Audit current structures and add a reversible 28-structure difficulty pilot",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/structure-difficulty-v3-20261013",
+    "sha": "43034ccba85194b5ede1d8a9f5ebc95d3645f72f",
+    "updated_at": "2026-10-13T16:00:47Z"
+  },
+  {
+    "number": 42,
+    "title": "v049 experimental particle and wildlife tuning with rollback kit",
+    "state": "open",
+    "draft": true,
+    "head": "performance/v049-visual-ecology-20261013",
+    "sha": "b387dc009fa21a6ef6602cd31ed710c68059d5ec",
+    "updated_at": "2026-10-12T23:23:22Z"
+  },
+  {
+    "number": 41,
+    "title": "v049 client performance presets, culling and tooltip cleanup",
+    "state": "open",
+    "draft": true,
+    "head": "performance/v049-client-overhaul-20261012",
+    "sha": "19f399f5c1bb8657ced90e6623439c1f37aef974",
+    "updated_at": "2026-10-12T21:16:32Z"
+  },
+  {
+    "number": 40,
+    "title": "Prepare hardware-targeted performance overhaul on the r19 baseline",
+    "state": "open",
+    "draft": true,
+    "head": "performance/v049-overhaul-prep-20261012",
+    "sha": "80d1a32b7c39a88fa18760e0fed5ca71d4a15e7d",
+    "updated_at": "2026-10-12T20:35:14Z"
+  },
+  {
+    "number": 39,
+    "title": "Integrate r19 Apotheotic candidate into the latest full-pack diagnostic import",
+    "state": "open",
+    "draft": true,
+    "head": "content/v0484-r19-full-pack-20261012",
+    "sha": "92575dffe2ae7319c5f8abfc7fc0132dc0327719",
+    "updated_at": "2026-10-12T20:16:13Z"
+  },
+  {
+    "number": 38,
+    "title": "Add ring access, reposition Questlog and remove Subtle Effects",
+    "state": "open",
+    "draft": true,
+    "head": "fix/v0483-ring-inventory-no-subtle-effects-20261012",
+    "sha": "287e52455108b9e1678694c6b453ae4ea422a0a3",
+    "updated_at": "2026-10-12T19:18:42Z"
+  },
+  {
+    "number": 37,
+    "title": "Integrate r8 prototype into the full manual-test pack",
+    "state": "open",
+    "draft": true,
+    "head": "content/v0482-r8-full-pack-20261012",
+    "sha": "b106dd9350981df8b78c6d1d8c934b6e4c91bfec",
+    "updated_at": "2026-10-12T18:04:39Z"
+  },
+  {
+    "number": 36,
+    "title": "Fix tooltip rendering and skip BetterEnd welcome",
+    "state": "open",
+    "draft": true,
+    "head": "fix/v048-tooltip-startup-ui-20261012",
+    "sha": "7cb66aac39a47ecf6c51a625bdef064b2c6f5bb9",
+    "updated_at": "2026-10-12T17:48:45Z"
+  },
+  {
+    "number": 35,
+    "title": "Consolidate full v048 gem test pack with Whaleborne",
+    "state": "open",
+    "draft": true,
+    "head": "content/v048-consolidated-whaleborne-test-20261012",
+    "sha": "ff92215dc8ffe74a394c028681bdb87e6ee9fd80",
+    "updated_at": "2026-10-12T15:42:55Z"
+  },
+  {
+    "number": 34,
+    "title": "Fix random trims on affixed armor and Questlog button placement",
+    "state": "open",
+    "draft": true,
+    "head": "fix/affix-trims-questlog-placement-20261012",
+    "sha": "b85594b5f5aca4f5ed49df18455da77449879fc5",
+    "updated_at": "2026-10-12T13:06:05Z"
+  },
+  {
+    "number": 33,
+    "title": "v0.4.3 private test: remove Hominid, reposition Questlog, fix Subtle Effects \u00d7 End Remastered",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v043-hominid-free-questlog-stability-20261011",
+    "sha": "787002bd29faf802ee6e0d5b5d0258648559bd80",
+    "updated_at": "2026-10-11T19:29:00Z"
+  },
+  {
+    "number": 32,
+    "title": "v0.4.2: restore Enigmatic spellstone + correct Dungeon Difficulty path, broaden mobs and retry early zone scaling",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v042-spellstone-dungeon-difficulty-combined-20261011",
+    "sha": "a1878163e8a82482509d104d6cc8b5176b800737",
+    "updated_at": "2026-10-11T15:47:58Z"
+  },
+  {
+    "number": 31,
+    "title": "v0.4.2: restore 15 real Mine Cells recipes, repair Dungeon Crawl spawner NBT and air trade, move Questlog Q",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v042-recipes-nbt-spawner-ui-repair-20261011",
+    "sha": "603ed801688db3987d1938d98aa1909455a39cfe",
+    "updated_at": "2026-10-11T14:48:06Z"
+  },
+  {
+    "number": 30,
+    "title": "v0.4.2: 330-mod consolidated many-fix private ZIP (Curios, quest, Hominid, TREK, six-dungeon balance)",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v042-consolidated-manyfix-test-20261011",
+    "sha": "fe7815fbe27f55efc005d8659e080ec7fde26c49",
+    "updated_at": "2026-10-11T14:12:31Z"
+  },
+  {
+    "number": 28,
+    "title": "Audit prior Ambient Odyssey decisions, repair stale active-state docs, and guard missed runtime errors",
+    "state": "open",
+    "draft": true,
+    "head": "research/v042-history-regression-reconciliation-20261011",
+    "sha": "a5803e5e1cfb56c9b4efdc1948dc4e7f063e5bdf",
+    "updated_at": "2026-10-11T13:52:15Z"
+  },
+  {
+    "number": 29,
+    "title": "v0.4.1: private Curios amulet slot compatibility test (preserve existing mods' slot sizes)",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v042-curios-amulet-slot-private-20261011",
+    "sha": "8a481f0266aea2f5e0b2598dbf36e886d52a4e25",
+    "updated_at": "2026-10-11T13:51:16Z"
+  },
+  {
+    "number": 27,
+    "title": "Prototype: preserve Hominid Juggernaut/Bellman conversions without removed-zombie or off-thread entity insertion",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v042-hominid-spawn-lifecycle-preflight-20261011",
+    "sha": "34f644aeb11b8e1dae0b39af2a29898100ef7b15",
+    "updated_at": "2026-10-11T13:29:19Z"
+  },
+  {
+    "number": 26,
+    "title": "v0.4.1: consolidate approved TREK/Create density with no-auto-completion Field Manual hotfix",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v042-quest-log-error-stabilization-20261011",
+    "sha": "93d42ee22fed3fcc655ef94aa6c16d1de0cd3646",
+    "updated_at": "2026-10-11T13:22:30Z"
+  },
+  {
+    "number": 25,
+    "title": "v0.4.1: source-pinned Trek \u2191 / nonfarming Create \u2193 + sanitized four-Spark performance audit",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v041-spark-structure-density-audit-20261011",
+    "sha": "c38b74dbc829cacd41a6e1f54b96e420c64194cd",
+    "updated_at": "2026-10-11T12:40:55Z"
+  },
+  {
+    "number": 24,
+    "title": "v0.4.1: prevent Field Manual auto-completion; queue Questlog inventory GUI retest",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v041-manual-completion-quest-ui-followup-20261011",
+    "sha": "70f10d380ca6797d8968d6e65f675979e1155de4",
+    "updated_at": "2026-10-11T12:05:55Z"
+  },
+  {
+    "number": 23,
+    "title": "v0.4.1: parallel performance benchmark kit, privacy-safe profiling and patch gates",
+    "state": "open",
+    "draft": true,
+    "head": "performance/v041-parallel-benchmark-prep-20261011",
+    "sha": "1ed5ab6c3c48afacbeeb25a495815bc6dd671db2",
+    "updated_at": "2026-10-11T11:50:21Z"
+  },
+  {
+    "number": 22,
+    "title": "v0.4.1 engineering: pinned IDAS native item repair, spawner bytecode audit, Spark A/B",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v041-engineering-repairs-20261011",
+    "sha": "f16ab26d67c44f7c27e6e2fc09bb97a43f957483",
+    "updated_at": "2026-10-11T03:25:04Z"
+  },
+  {
+    "number": 21,
+    "title": "v0.4.1: broaden invalid-item NBT attribution and expose Test6 index coverage gaps",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v041-invalid-item-source-coverage-20261011",
+    "sha": "e2d814d2f3527a31324534c3dce2c8fbf4f05f6b",
+    "updated_at": "2026-10-11T02:43:54Z"
+  },
+  {
+    "number": 20,
+    "title": "Experimental v0.4.1: replace Repurposed Structures with Trek, curate DnT clutter",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/v0.4h-trek-structures-20261010",
+    "sha": "6b287241fa7116a0e83c24641e7f74c257246f02",
+    "updated_at": "2026-10-10T21:02:38Z"
+  },
+  {
+    "number": 19,
+    "title": "Prepare Cloudflare Workers Quest Atlas API for existing Ambient Odyssey site",
+    "state": "open",
+    "draft": true,
+    "head": "experimental/cloudflare-quest-atlas-integration-20261010",
+    "sha": "8303060c6ce2d7958aae0cf09cdfa1d948c17174",
+    "updated_at": "2026-10-10T20:28:26Z"
+  },
+  {
+    "number": 18,
+    "title": "Add Ambient Odyssey Roadmap + source-generated Quest Atlas website (Q1)",
+    "state": "closed",
+    "draft": true,
+    "head": "experimental/quest-atlas-website-q1-20261010",
+    "sha": "48444e75e510363b155320a387fe97d7c40aaca9",
+    "updated_at": "2026-10-10T20:22:57Z"
+  },
+  {
+    "number": 17,
+    "title": "Repository cleanup: current docs, quest admin guide, archived legacy Actions",
+    "state": "closed",
+    "draft": false,
+    "head": "maintenance/repo-organization-20261010",
+    "sha": "2d24e65653856d9da1067e77e61cc6bcb518e16a",
+    "updated_at": "2026-10-10T20:03:51Z"
+  },
+  {
+    "number": 15,
+    "title": "0.4g draft: 5 curated exploration systems, 314 CF refs, 166-candidate deferred register",
+    "state": "open",
+    "draft": true,
+    "head": "content/0.4.0d-content-first-expansion",
+    "sha": "797b55420015c5c4211f8f54871eab753ed0a546",
+    "updated_at": "2026-10-10T17:04:28Z"
+  },
+  {
+    "number": 16,
+    "title": "0.4e expansion: 16 NeoForge mods + Prism; immersive photography and audited QoL",
+    "state": "open",
+    "draft": true,
+    "head": "content/0.4.0e-audit-first-wide-expansion",
+    "sha": "63dc9e4cb4f3d235b9bc86f09bb635c1401b0c78",
+    "updated_at": "2026-10-10T16:16:54Z"
+  },
+  {
+    "number": 14,
+    "title": "0.4.0-c0: user-tested content wave feedback \u2014 server gamerules, quiet water/rain, ecology trim and archaeology planning",
+    "state": "open",
+    "draft": true,
+    "head": "content/0.4.0c-feedback-ecology-rules",
+    "sha": "a7602b6728de1e422d8f68565e2a13c7574d4019",
+    "updated_at": "2026-10-10T15:00:34Z"
+  },
+  {
+    "number": 13,
+    "title": "0.4.0-b1: large combined living-world content and ambience wave (15 mods + 5 resource packs)",
+    "state": "open",
+    "draft": true,
+    "head": "content/0.4.0b-large-content-wave",
+    "sha": "81ed6e8b5f830ea14aff07e322e789873aaf7514",
+    "updated_at": "2026-10-10T13:53:17Z"
+  },
+  {
+    "number": 12,
+    "title": "0.4.0-a0 private trial: Controlling + FTB XMod Compat, Test8.10 worldgen untouched",
+    "state": "open",
+    "draft": true,
+    "head": "content/0.4.0a-qol-quest-trial",
+    "sha": "d389c5b1457b557cfd555c5ebb808e0d447f632a",
+    "updated_at": "2026-10-10T13:31:27Z"
+  },
+  {
+    "number": 11,
+    "title": "Ambient Odyssey 0.4.x: integrate nine-theme audit, installed-mod compatibility and staged content roadmap",
+    "state": "open",
+    "draft": true,
+    "head": "content/expansion-round2-compat-preflight",
+    "sha": "c51ad83003b48625b959562827623de0ce6ed4d8",
+    "updated_at": "2026-10-10T13:24:52Z"
+  },
+  {
+    "number": 10,
+    "title": "Test8.10 worldgen: repair T&T Swiss/lighthouse, Graveyard crypt, RS city depth and compiler-safe tags",
+    "state": "open",
+    "draft": true,
+    "head": "worldgen/test8.10-all-documented-pools",
+    "sha": "2d3730cfcd27356d1f2a4438938eb6e73ab1b1d0",
+    "updated_at": "2026-10-10T12:33:18Z"
+  },
+  {
+    "number": 9,
+    "title": "Test8.9: restore native lighthouse master pool, mitigate RS city top and diagnose remaining worldgen blockers",
+    "state": "open",
+    "draft": true,
+    "head": "worldgen/test8.9-source-triage",
+    "sha": "a43c0ea95aeb33666d87a887643abfca954df314",
+    "updated_at": "2026-10-10T05:16:36Z"
+  },
+  {
+    "number": 8,
+    "title": "Test8.8: resolve 214 logged jigsaw warnings via SHA-locked 273 native terminal fixes + Farmer angler alias",
+    "state": "open",
+    "draft": true,
+    "head": "worldgen/test8.8-complete-pool-repair",
+    "sha": "2e47ae7952b485079d4e6d9dc9dc686927eaae70",
+    "updated_at": "2026-10-10T05:00:23Z"
+  },
+  {
+    "number": 7,
+    "title": "Test8.6: fix source-verified Archaion, Farmers cook pools and Create Easy missing branch",
+    "state": "open",
+    "draft": true,
+    "head": "worldgen/test8.6-generation-repairs",
+    "sha": "8d92d3b5b85f946db0030ca02f78d405ef3ccd7d",
+    "updated_at": "2026-10-10T04:38:31Z"
+  },
+  {
+    "number": 6,
+    "title": "Test8.5 private pack: automatic Better Bastions, NeoReefRedux, Luki Mansions",
+    "state": "open",
+    "draft": true,
+    "head": "worldgen/test8.5-mod-roster",
+    "sha": "17c945e62631eb8535e916547fb1220ca5b65f52",
+    "updated_at": "2026-10-10T03:49:46Z"
+  },
+  {
+    "number": 5,
+    "title": "Worldgen Test8.4: prairie, rare peaks, dragon caves, Archaion broken rooms",
+    "state": "open",
+    "draft": true,
+    "head": "worldgen/test8.4-prefreeze",
+    "sha": "5b605bb98ca030c01950116bfe0b3008aa9373b5",
+    "updated_at": "2026-10-10T03:08:19Z"
+  }
+]

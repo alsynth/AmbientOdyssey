@@ -1,0 +1,72 @@
+name: AO R4 to R5 Grand Delta Preflight
+on:
+  push:
+    branches:
+      - experimental/master-integration-r3-reconciled-20261015
+    paths:
+      - tools/preview_r5_grand_from_r4.py
+      - tests/test_preview_r5_grand_from_r4.py
+      - tools/patch_r5_grand_from_r4.py
+      - tests/test_patch_r5_grand_from_r4.py
+      - tools/package_r5_grand_from_r4.py
+      - tests/test_package_r5_grand_from_r4.py
+      - docs/handoffs/r5-grand-from-r4-20261015/REVIEW_ONLY_FIVE_POOL_DIFF.json
+      - addons/ao-campaign/src/main/resources/ao_loot_policy.json
+      - .github/workflows/ao-r4-r5-grand-delta.yml
+  pull_request:
+    paths:
+      - tools/preview_r5_grand_from_r4.py
+      - tests/test_preview_r5_grand_from_r4.py
+      - tools/patch_r5_grand_from_r4.py
+      - tests/test_patch_r5_grand_from_r4.py
+      - tools/package_r5_grand_from_r4.py
+      - tests/test_package_r5_grand_from_r4.py
+      - docs/handoffs/r5-grand-from-r4-20261015/REVIEW_ONLY_FIVE_POOL_DIFF.json
+      - addons/ao-campaign/src/main/resources/ao_loot_policy.json
+      - .github/workflows/ao-r4-r5-grand-delta.yml
+  workflow_dispatch:
+
+jobs:
+  guarded-r4-delta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Confirm exact R4 baseline and five proposed pool changes
+        run: python -m unittest -v tests/test_preview_r5_grand_from_r4.py tests/test_patch_r5_grand_from_r4.py tests/test_package_r5_grand_from_r4.py
+      - name: Compile-check preview, JAR patcher, and regression tests
+        run: python -m py_compile tools/preview_r5_grand_from_r4.py tools/patch_r5_grand_from_r4.py tools/package_r5_grand_from_r4.py tests/test_preview_r5_grand_from_r4.py tests/test_patch_r5_grand_from_r4.py tests/test_package_r5_grand_from_r4.py
+      - name: Produce isolated review-only preview and inspect receipt
+        run: |
+          python tools/preview_r5_grand_from_r4.py --out build/r5-grand/ao_loot_policy.REVIEW_ONLY.json
+          python - <<'PY'
+          import json
+          p='build/r5-grand/ao_loot_policy.REVIEW_ONLY.json'
+          j=json.load(open(p))
+          assert j['status']=='REVIEW_ONLY_NOT_A_COMPILED_RELEASE'
+          assert len(j['changed_pools'])==5 and len(j['policy']['grand_treasure'])==14
+          assert all(not x['gameplay_accepted'] for x in j['changed_pools'])
+          print('PASS: no runtime/gameplay approval, exactly five review-only R4 Grand pool choices')
+          PY
+      - name: Create denied-by-default five-chest review template
+        run: |
+          python tools/patch_r5_grand_from_r4.py --mode draft \
+            --preview build/r5-grand/ao_loot_policy.REVIEW_ONLY.json \
+            --out build/r5-grand/R5_GRAND_FIVE_DECISIONS_DRAFT_NOT_APPROVED.json
+          python - <<'PY'
+          import json
+          j=json.load(open('build/r5-grand/R5_GRAND_FIVE_DECISIONS_DRAFT_NOT_APPROVED.json'))
+          assert j['status']=='DRAFT_NOT_APPROVED'
+          assert len(j['decisions'])==5 and all(not r['approved_for_experimental_test_only'] for r in j['decisions'])
+          print('PASS: all five experimental approval fields are denied by default')
+          PY
+      - name: Upload ONLY review preview; never a client-import ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: ao-r4-r5-grand-pool-review-only
+          path: build/r5-grand/*.json
+          retention-days: 30
+          if-no-files-found: error

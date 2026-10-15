@@ -1,0 +1,60 @@
+{
+  "status": "STATIC VERIFIED",
+  "counts": {
+    "json": 1022,
+    "json5": 188,
+    "toml": 288
+  },
+  "errors": [],
+  "warnings": [
+    "Paxi winner precedence requires engine observations; collisions are not automatically errors"
+  ],
+  "custom_jars": {
+    "overrides/mods/ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar": "434040e5459bd552939fd7f966091421d00a058e0be736bb8f76a435257e7995",
+    "overrides/mods/ao-affix-trims-0.1.1-experimental.jar": "d6ec53ccb5ff271c9aac41d51e87374d0f090640979c1d8e3f670aff6a35d37c",
+    "overrides/mods/ao-apotheotic-port-prototype-0.4.8-prototype.jar": "5baeb9321dcabdad2664f159a089e6e7265f7b14072ccf1bb5cdf3ffec1df6e4",
+    "overrides/mods/ao-augmenting-sigils-0.1.1-experimental.jar": "6ca8b0536339b41755598ba390b3c27f277e61afd93ba73f14f5c730028ead3c",
+    "overrides/mods/ao-campaign-0.2.0-experimental.jar": "0ad0e5c662344513f91d50c25e2d03696d43fd6031416ea65b91f66f2d103540",
+    "overrides/mods/ao-enigmatic-betterinventory-0.1.0.jar": "e0672a3416ce77e4e995489891533f051d7b080beedd53a540fc95dbd4a8d1f2",
+    "overrides/mods/ao-questlog-betterinventory-0.1.6.jar": "b1fc9f30b49140acb16284b8b12c89e05e40302e5b856d40de2629e918c5ef2e",
+    "overrides/mods/ao-starter-chest-0.2.0-experimental.jar": "dbf90f86b3043bab3cc17fa72157f94cc45e3890f2b8905cea992caf13a6a85d",
+    "overrides/mods/ao-wet-sand-prototype-0.0.1-source-prototype.jar": "fc7e84d341339f5ad88d9485ab6316b86edacfc9c1e9caccef2c562d0f3a5b49",
+    "overrides/mods/ao-worldgen-safety-0.1.4-experimental.jar": "4cd9ee8317b98417b47eca425f644d5e8cac401f98b6e1ae4032339461f10a17"
+  },
+  "paxi_resource_collisions": {
+    "traveloptics/tags/entity_type/element_fire.json": [
+      "overrides/config/paxi/datapacks/ao_structure_repairs/data/traveloptics/tags/entity_type/element_fire.json",
+      "overrides/config/paxi/datapacks/ao_technical_fixes/data/traveloptics/tags/entity_type/element_fire.json"
+    ]
+  },
+  "shader_preprocessor_sources_not_json_linted": [
+    "overrides/shaderpacks/AO Balanced/shaders/pack.json",
+    "overrides/shaderpacks/AO Balanced/shaders/ph_lights.json",
+    "overrides/shaderpacks/AO Balanced/shaders/program/voxy.json",
+    "overrides/shaderpacks/AO Balanced/shaders/world-1/voxy.json",
+    "overrides/shaderpacks/AO Balanced/shaders/world0/voxy.json",
+    "overrides/shaderpacks/AO Balanced/shaders/world1/voxy.json",
+    "overrides/shaderpacks/AO Performance/shaders/pack.json",
+    "overrides/shaderpacks/AO Performance/shaders/ph_lights.json",
+    "overrides/shaderpacks/AO Performance/shaders/program/voxy.json",
+    "overrides/shaderpacks/AO Performance/shaders/world-1/voxy.json",
+    "overrides/shaderpacks/AO Performance/shaders/world0/voxy.json",
+    "overrides/shaderpacks/AO Performance/shaders/world1/voxy.json",
+    "overrides/shaderpacks/AO Quality/shaders/pack.json",
+    "overrides/shaderpacks/AO Quality/shaders/ph_lights.json",
+    "overrides/shaderpacks/AO Quality/shaders/program/voxy.json",
+    "overrides/shaderpacks/AO Quality/shaders/world-1/voxy.json",
+    "overrides/shaderpacks/AO Quality/shaders/world0/voxy.json",
+    "overrides/shaderpacks/AO Quality/shaders/world1/voxy.json",
+    "overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/shaders/pack.json",
+    "overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/shaders/ph_lights.json",
+    "overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/shaders/program/voxy.json",
+    "overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/shaders/world-1/voxy.json",
+    "overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/shaders/world0/voxy.json",
+    "overrides/shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5/shaders/world1/voxy.json"
+  ],
+  "cf_references": 337,
+  "dd_zones": 23,
+  "quest_files": 153,
+  "minecraft_runtime_tested_by_this_validator": false
+}

@@ -1,0 +1,745 @@
+{
+  "evidence_package_sha256": "5debe094c047162f0b30f2dd76e2ab85201310c480b64333eca89a4f4376ac99",
+  "source_config_before_sha256": "9df872a28409f245daa454bb847b10791bc881f76ea85cf6a063a72bfbfa1e4e",
+  "source_config_after_sha256": "65512c5e3279973a007ce49f152df754fa09653b908dbcff0251411a716e1cf3",
+  "applied": true,
+  "baseline_zone_count": 23,
+  "effective_zone_count": 30,
+  "added": [
+    {
+      "structure_id": "dungeons_arise:abandoned_temple",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:abandoned_temple",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:abandoned_temple",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomeswevegone:crag_gardens",
+            "biomeswevegone:maple_taiga",
+            "biomeswevegone:redwood_thicket",
+            "minecraft:cherry_grove",
+            "minecraft:frozen_peaks",
+            "minecraft:jagged_peaks",
+            "minecraft:meadow",
+            "minecraft:old_growth_pine_taiga",
+            "minecraft:old_growth_spruce_taiga",
+            "minecraft:snowy_slopes",
+            "minecraft:snowy_taiga",
+            "minecraft:stony_peaks",
+            "minecraft:taiga",
+            "minecraft:windswept_forest",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_hills",
+            "natures_spirit:alpine_clearings",
+            "natures_spirit:floral_ridges",
+            "natures_spirit:windswept_sugi_forest"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:kisegi_sanctuary",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:kisegi_sanctuary",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:kisegi_sanctuary",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomesoplenty:dryland",
+            "biomesoplenty:pumpkin_patch",
+            "biomeswevegone:baobab_savanna",
+            "biomeswevegone:crag_gardens",
+            "biomeswevegone:prairie",
+            "biomeswevegone:sakura_grove",
+            "minecraft:cherry_grove",
+            "minecraft:flower_forest",
+            "minecraft:meadow",
+            "minecraft:plains",
+            "minecraft:sunflower_plains",
+            "minecraft:windswept_forest",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_hills",
+            "natures_spirit:alpine_clearings",
+            "natures_spirit:floral_ridges",
+            "natures_spirit:windswept_sugi_forest",
+            "regions_unexplored:flower_fields",
+            "regions_unexplored:grassland",
+            "regions_unexplored:orchard"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise_seven_seas:corsair_corvette",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise_seven_seas:corsair_corvette",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise_seven_seas:corsair_corvette",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise_seven_seas",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "minecraft:cold_ocean",
+            "minecraft:deep_cold_ocean",
+            "minecraft:deep_frozen_ocean",
+            "minecraft:deep_lukewarm_ocean",
+            "minecraft:deep_ocean",
+            "minecraft:frozen_ocean",
+            "minecraft:lukewarm_ocean",
+            "minecraft:ocean",
+            "minecraft:warm_ocean"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "iceandfire:mausoleum",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "iceandfire:mausoleum",
+        "category": "G. Other / manual classification (125)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "iceandfire:mausoleum",
+        "category": "G. Other / manual classification (125)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/iceandfire",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomeswevegone:maple_taiga",
+            "biomeswevegone:skyris_vale",
+            "biomeswevegone:weeping_witch_forest",
+            "biomeswevegone:zelkova_forest",
+            "minecraft:frozen_peaks",
+            "minecraft:grove",
+            "minecraft:ice_spikes",
+            "minecraft:jagged_peaks",
+            "minecraft:snowy_beach",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_slopes",
+            "minecraft:snowy_taiga"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "adventuredungeons:underground_camp",
+      "selected_tier": 2,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "adventuredungeons:underground_camp",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "adventuredungeons:underground_camp",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/adventuredungeons",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "minecraft:plains",
+            "regions_unexplored:flower_fields",
+            "regions_unexplored:grassland"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:bandit_village",
+      "selected_tier": 2,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:bandit_village",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:bandit_village",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "minecraft:badlands",
+            "minecraft:eroded_badlands",
+            "minecraft:wooded_badlands"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:mining_complex",
+      "selected_tier": 3,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:mining_complex",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "3",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:mining_complex",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "3",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomesoplenty:pumpkin_patch",
+            "biomeswevegone:crag_gardens",
+            "biomeswevegone:ebony_woods",
+            "biomeswevegone:maple_taiga",
+            "biomeswevegone:prairie",
+            "biomeswevegone:redwood_thicket",
+            "biomeswevegone:sakura_grove",
+            "biomeswevegone:skyris_vale",
+            "biomeswevegone:tropical_rainforest",
+            "biomeswevegone:weeping_witch_forest",
+            "biomeswevegone:zelkova_forest",
+            "minecraft:bamboo_jungle",
+            "minecraft:birch_forest",
+            "minecraft:dark_forest",
+            "minecraft:desert",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:grove",
+            "minecraft:jungle",
+            "minecraft:old_growth_birch_forest",
+            "minecraft:old_growth_pine_taiga",
+            "minecraft:old_growth_spruce_taiga",
+            "minecraft:plains",
+            "minecraft:savanna",
+            "minecraft:savanna_plateau",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_taiga",
+            "minecraft:sparse_jungle",
+            "minecraft:sunflower_plains",
+            "minecraft:taiga",
+            "minecraft:windswept_savanna",
+            "natures_spirit:alpine_clearings",
+            "natures_spirit:floral_ridges",
+            "natures_spirit:windswept_sugi_forest",
+            "regions_unexplored:flower_fields",
+            "regions_unexplored:grassland",
+            "regions_unexplored:maple_forest",
+            "regions_unexplored:orchard"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    }
+  ],
+  "review": [
+    {
+      "structure_id": "dungeons_arise:abandoned_temple",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:abandoned_temple",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:abandoned_temple",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomeswevegone:crag_gardens",
+            "biomeswevegone:maple_taiga",
+            "biomeswevegone:redwood_thicket",
+            "minecraft:cherry_grove",
+            "minecraft:frozen_peaks",
+            "minecraft:jagged_peaks",
+            "minecraft:meadow",
+            "minecraft:old_growth_pine_taiga",
+            "minecraft:old_growth_spruce_taiga",
+            "minecraft:snowy_slopes",
+            "minecraft:snowy_taiga",
+            "minecraft:stony_peaks",
+            "minecraft:taiga",
+            "minecraft:windswept_forest",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_hills",
+            "natures_spirit:alpine_clearings",
+            "natures_spirit:floral_ridges",
+            "natures_spirit:windswept_sugi_forest"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:kisegi_sanctuary",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:kisegi_sanctuary",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:kisegi_sanctuary",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomesoplenty:dryland",
+            "biomesoplenty:pumpkin_patch",
+            "biomeswevegone:baobab_savanna",
+            "biomeswevegone:crag_gardens",
+            "biomeswevegone:prairie",
+            "biomeswevegone:sakura_grove",
+            "minecraft:cherry_grove",
+            "minecraft:flower_forest",
+            "minecraft:meadow",
+            "minecraft:plains",
+            "minecraft:sunflower_plains",
+            "minecraft:windswept_forest",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_hills",
+            "natures_spirit:alpine_clearings",
+            "natures_spirit:floral_ridges",
+            "natures_spirit:windswept_sugi_forest",
+            "regions_unexplored:flower_fields",
+            "regions_unexplored:grassland",
+            "regions_unexplored:orchard"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise_seven_seas:corsair_corvette",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise_seven_seas:corsair_corvette",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise_seven_seas:corsair_corvette",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise_seven_seas",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "minecraft:cold_ocean",
+            "minecraft:deep_cold_ocean",
+            "minecraft:deep_frozen_ocean",
+            "minecraft:deep_lukewarm_ocean",
+            "minecraft:deep_ocean",
+            "minecraft:frozen_ocean",
+            "minecraft:lukewarm_ocean",
+            "minecraft:ocean",
+            "minecraft:warm_ocean"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "iceandfire:mausoleum",
+      "selected_tier": 4,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "iceandfire:mausoleum",
+        "category": "G. Other / manual classification (125)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "iceandfire:mausoleum",
+        "category": "G. Other / manual classification (125)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "4",
+        "decision": "CHANGE",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/iceandfire",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomeswevegone:maple_taiga",
+            "biomeswevegone:skyris_vale",
+            "biomeswevegone:weeping_witch_forest",
+            "biomeswevegone:zelkova_forest",
+            "minecraft:frozen_peaks",
+            "minecraft:grove",
+            "minecraft:ice_spikes",
+            "minecraft:jagged_peaks",
+            "minecraft:snowy_beach",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_slopes",
+            "minecraft:snowy_taiga"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "adventuredungeons:underground_camp",
+      "selected_tier": 2,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "adventuredungeons:underground_camp",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "adventuredungeons:underground_camp",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/adventuredungeons",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "minecraft:plains",
+            "regions_unexplored:flower_fields",
+            "regions_unexplored:grassland"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:bandit_village",
+      "selected_tier": 2,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:bandit_village",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:bandit_village",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "minecraft:badlands",
+            "minecraft:eroded_badlands",
+            "minecraft:wooded_badlands"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:mining_system",
+      "selected_tier": 2,
+      "status": "HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:mining_system",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:mining_system",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "2",
+        "selected_structure_tier": "2",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    },
+    {
+      "structure_id": "dungeons_arise:mining_complex",
+      "selected_tier": 3,
+      "status": "NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE",
+      "owner_plan_row": {
+        "structure_id": "dungeons_arise:mining_complex",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "3",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified"
+      },
+      "native_evidence": {
+        "structure_id": "dungeons_arise:mining_complex",
+        "category": "B. Dungeons & enclosed combat (68)",
+        "source_dimension_group": "DIMENSION NEEDS VERIFICATION",
+        "source_tier": "3",
+        "selected_structure_tier": "3",
+        "decision": "KEEP",
+        "implementation_gate": "DIMENSION_AND_REGISTRY_CHECK",
+        "notes": "Do not activate until final effective structure dimension and ID verified",
+        "registered": true,
+        "effective_resource_pack": "mod/dungeons_arise",
+        "normal_preset_biome_overlap": {
+          "minecraft:overworld": [
+            "biomesoplenty:pumpkin_patch",
+            "biomeswevegone:crag_gardens",
+            "biomeswevegone:ebony_woods",
+            "biomeswevegone:maple_taiga",
+            "biomeswevegone:prairie",
+            "biomeswevegone:redwood_thicket",
+            "biomeswevegone:sakura_grove",
+            "biomeswevegone:skyris_vale",
+            "biomeswevegone:tropical_rainforest",
+            "biomeswevegone:weeping_witch_forest",
+            "biomeswevegone:zelkova_forest",
+            "minecraft:bamboo_jungle",
+            "minecraft:birch_forest",
+            "minecraft:dark_forest",
+            "minecraft:desert",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:grove",
+            "minecraft:jungle",
+            "minecraft:old_growth_birch_forest",
+            "minecraft:old_growth_pine_taiga",
+            "minecraft:old_growth_spruce_taiga",
+            "minecraft:plains",
+            "minecraft:savanna",
+            "minecraft:savanna_plateau",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_taiga",
+            "minecraft:sparse_jungle",
+            "minecraft:sunflower_plains",
+            "minecraft:taiga",
+            "minecraft:windswept_savanna",
+            "natures_spirit:alpine_clearings",
+            "natures_spirit:floral_ridges",
+            "natures_spirit:windswept_sugi_forest",
+            "regions_unexplored:flower_fields",
+            "regions_unexplored:grassland",
+            "regions_unexplored:maple_forest",
+            "regions_unexplored:orchard"
+          ],
+          "minecraft:the_nether": [],
+          "minecraft:the_end": []
+        }
+      },
+      "natural_generation_tested": false,
+      "combat_tested": false
+    }
+  ],
+  "scope": "Real registered IDs + normal preset biome eligibility; natural generation, mob spawners, gameplay and multiplayer NOT TESTED"
+}

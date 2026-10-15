@@ -1,4 +1,6 @@
 # Ambient Odyssey — Work Mode master integration handoff
+
+> **HISTORICAL OCT15 HANDOFF — SUPERSEDED FOR CURRENT SOURCE STATUS.** Read [the later canonical Claude master handoff](CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md) for PR64/R4 and post-R4 R5 tooling. This document retains the 20-draft audit and owner background, but several 'not integrated' and release descriptions predate R3 RECONCILED/R4; final owner decision addenda supersede older draft positions.
 **15 October 2026 | Minecraft 1.21.1 NeoForge 21.1.252 | owner-authorized audit and implementation planning; not a claim of live deployment**
 
 ## Executive instruction

@@ -1,0 +1,137 @@
+{
+  "source_verification": {
+    "minecraft": "1.21.1",
+    "mod": "When Dungeons Arise NeoForge",
+    "pinned_version": "2.1.68",
+    "jar_sha1": "c651339154da7b9e9cf47a80fdef22c4d59cad5c",
+    "exact_action_run": 38623739921,
+    "source_validation": "SUCCESS__SHA1_PINNED_JAR_DATA_JSON_NBT_ONLY",
+    "not_a_runtime_test": true
+  },
+  "owner_intent": {
+    "mechanical_nest": "BOSS_CENTRIC__ORDINARY_MINIONS_LOW_BALANCING_PRIORITY",
+    "dungeon_tier_provisional": 5,
+    "current_53_zone_DD_candidate": "EXISTS_RESEARCH_ONLY__REQUIRES_REVIEW_BEFORE_LIVE_DEPLOY",
+    "no_expanded_scaling_for_quark_or_alexsmobs": true,
+    "native_mounted_mob_variants": "PRESERVE_UNCHANGED"
+  },
+  "mechanical_nest": {
+    "source_templates_NBT_scanned": 160,
+    "native_spawner_blocks_in_source_files": 12,
+    "native_explicit_custom_name_spawner_payloads_found": 3,
+    "unique_explicit_custom_name_entities": [
+      {
+        "id": "minecraft:zombie",
+        "name": "Gearling",
+        "source_health": 6,
+        "is_baby": true,
+        "source": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_spawner_2.nbt",
+        "status": "SMALL_CUSTOM_NAMED_MINION__NOT_IDENTIFIED_BOSS"
+      }
+    ],
+    "boss_entity_id": "UNKNOWN",
+    "native_boss_found_by_source_scan": false,
+    "caution": "No specifically identifiable boss was found in inspected native NBT names. A boss may be injected by AO, another mod, later worldgen/data processes or player encounter logic. Do not conclude boss absent.",
+    "native_resource_reference_gaps": [
+      {
+        "ref": "dungeons_arise:mechanical_nest/mechanical_nest_spawner_6",
+        "source": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_spawners.json",
+        "expected": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_spawner_6.nbt",
+        "resolution": "NOT_PRESENT_IN_PINNED_JAR__NO_AUTOFIX",
+        "existing_checked_in_Paxi_NBT_alias_found": false,
+        "native_reference_runtime_effect_unknown": true
+      },
+      {
+        "ref": "dungeons_arise:mechanical_nest/mechanical_nest_bridge_terminator_6_",
+        "source": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_terminators.json",
+        "expected": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_bridge_terminator_6_.nbt",
+        "observed_similar": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_bridge_terminator_6.nbt",
+        "resolution": "SOURCE_NAME_MISMATCH_SUSPECTED__DO_NOT_RENAME_WITHOUT_ACCEPTANCE",
+        "existing_checked_in_Paxi_NBT_alias_found": false,
+        "native_reference_runtime_effect_unknown": true
+      },
+      {
+        "ref": "dungeons_arise:mechanical_nest/mechanical_nest_decoration",
+        "source": "data/dungeons_arise/structure/mechanical_nest/mechanical_nest_towers_1.nbt",
+        "expected": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decoration.json",
+        "observed_similar": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decorations.json",
+        "resolution": "SOURCE_POOL_SINGULAR_PLURAL_MISMATCH_SUSPECTED__NO_AUTOFIX",
+        "checked_in_AO_Paxi_alias_present": true,
+        "alias_datapack": "ao_structure_repairs",
+        "alias_path": "data/dungeons_arise/worldgen/template_pool/mechanical_nest/mechanical_nest_decoration.json",
+        "runtime_alias_activation_verified": false,
+        "correction": "MISSING_FROM_ORIGINAL_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE",
+        "AO_Paxi_alias_native_templates_resolved": 21,
+        "AO_Paxi_alias_missing_NBT_targets": [],
+        "AO_Paxi_alias_static_status": "VALID__21_NATIVE_NBT_TARGETS_RESOLVED"
+      }
+    ]
+  },
+  "foundry": {
+    "source_templates_NBT_scanned": 47,
+    "native_spawner_blocks_in_source_files": 8,
+    "named_native_spawner_entity_types": [
+      {
+        "id": "minecraft:blaze",
+        "name": "Foundry Guardian",
+        "source_health": 55,
+        "source": "data/dungeons_arise/structure/foundry/foundry_blaze_0.nbt",
+        "status": "NAMED_MODIFIED_HOSTILE__NOT_PROOF_UNIQUE_BOSS"
+      },
+      {
+        "id": "minecraft:piglin_brute",
+        "name": "Debris Miner",
+        "source_health": 50,
+        "source": "data/dungeons_arise/structure/foundry/foundry_piglin_0.nbt",
+        "status": "NAMED_MODIFIED_HOSTILE__NOT_PROOF_UNIQUE_BOSS"
+      },
+      {
+        "id": "minecraft:wither_skeleton",
+        "name": "Forge Sentry",
+        "source_health": 55,
+        "source": "data/dungeons_arise/structure/foundry/foundry_wither_skeleton_0.nbt",
+        "status": "NAMED_MODIFIED_HOSTILE__NOT_PROOF_UNIQUE_BOSS"
+      },
+      {
+        "id": "minecraft:wither_skeleton",
+        "name": "Forge Sentry",
+        "source_health": 80,
+        "source": "data/dungeons_arise/structure/foundry/foundry_wither_skeleton_2.nbt",
+        "status": "NAMED_MODIFIED_HOSTILE__NOT_PROOF_UNIQUE_BOSS"
+      }
+    ],
+    "unresolved_jigsaw_pool_reference": {
+      "ref": "dungeons_arise:underworld/foundry/foundry_corridor_gears",
+      "source": "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_2.nbt",
+      "expected_native": "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridor_gears.json",
+      "verified_in_pinned_jar": false,
+      "repo_profile_winner_verified": false,
+      "natural_generation_consequence_verified": false,
+      "change_authorized": false,
+      "checked_in_AO_Paxi_alias_present": true,
+      "alias_datapack": "ao_structure_repairs",
+      "alias_path": "data/dungeons_arise/worldgen/template_pool/underworld/foundry/foundry_corridor_gears.json",
+      "runtime_alias_activation_verified": false,
+      "correction": "MISSING_FROM_PINNED_NATIVE_JAR_BUT_SOURCE_ALIAS_ALREADY_EXISTS_IN_AO_PAXI__DO_NOT_ADD_DUPLICATE",
+      "AO_Paxi_alias_native_templates_resolved": 2,
+      "AO_Paxi_alias_missing_NBT_targets": [],
+      "AO_Paxi_alias_static_status": "VALID__2_NATIVE_NBT_TARGETS_RESOLVED"
+    }
+  },
+  "conclusions": [
+    "CORRECTION: The native JAR lacks Foundry corridor-gears and Mechanical Nest singular-decoration pools, but both aliases were already implemented in AO's checked-in ao_structure_repairs Paxi datapack. Do not report them as unaddressed AO source files, and do not create duplicate packs.",
+    "Mechanical Nest scaling research should target its boss and explicitly NOT spend time balancing every normal mob or mounted oddity.",
+    "Identify the actual Mechanical Nest boss and origin before adding any boss-specific DD/native changes.",
+    "Foundry has named and NBT-modified vanilla spawner enemies whose native stats may compound generic DD and Apotheosis. Test a controlled spawned instance before changing multipliers.",
+    "Jigsaw missing names are real gaps in the pinned native JAR but may be supplied by a different datapack or unreachable alternatives; do not guess fixes.",
+    "No live AO config, Paxi, boss, DD, mob, loot, structure pool or world modified."
+  ],
+  "native_boss_runtime_tested": false,
+  "live_dd_deployment_authorized": false,
+  "source_validation": {
+    "pinned_native_sha1_checked": true,
+    "ci_run_id": 38625332730,
+    "ci_outcome": "SEVEN_JOBS_PASSED",
+    "AO_repo_Paxi_alias_source_validation": "PASSED_SOURCE_ONLY__NOT_RUNTIME_WINNER"
+  }
+}

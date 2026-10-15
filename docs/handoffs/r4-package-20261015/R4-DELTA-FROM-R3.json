@@ -1,0 +1,12 @@
+{
+  "basis_sha256": "5debe094c047162f0b30f2dd76e2ab85201310c480b64333eca89a4f4376ac99",
+  "r4_sha256": "31b037a710320c840bcede26003f46a7219fb1e14e14674d35efcf4e086e6c6d",
+  "changed_members": [
+    "manifest.json",
+    "overrides/AO_TEST_NOTES/MASTER_INTEGRATION.txt",
+    "overrides/config/dungeon_difficulty/difficulty_v2.json"
+  ],
+  "custom_jars_byte_identical_to_r3": true,
+  "official_mod_pins_unchanged": true,
+  "runtime_status": "See separate exact R4 native report; not inferred from this delta check"
+}

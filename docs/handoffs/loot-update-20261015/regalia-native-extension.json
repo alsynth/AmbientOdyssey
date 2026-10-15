@@ -1,0 +1,36 @@
+{
+  "jar": "eternalstarlight-0.9.1+1.21.1+neoforge.jar",
+  "jar_sha256": "e77369ad1a779036b243ef0f7b24776640a3ff84968e6f3be1931bc953e92b09",
+  "scope": "Four reviewed C0/C1 catalogue entries; no blanket item-family approval",
+  "runtime_verified": false,
+  "items": [
+    {
+      "item": "eternal_starlight:dagger_of_hunger",
+      "native_recipe": "data/eternal_starlight/recipe/dagger_of_hunger.json",
+      "recipe_sha256": "72e341324a14d26b9803696580272e99fb09e3b47b9b883a4998fc0a16f3b9d1",
+      "direct_native_boss_tables": [],
+      "status": "SOURCE_VERIFIED_CRAFTABLE; RUNTIME_REGISTRY_PENDING"
+    },
+    {
+      "item": "eternal_starlight:chain_of_souls",
+      "native_recipe": "data/eternal_starlight/recipe/chain_of_souls.json",
+      "recipe_sha256": "9694ab39fb9cf5ca121735ad8a3149f093055cc034728fc64d6fb7a453b30bee",
+      "direct_native_boss_tables": [],
+      "status": "SOURCE_VERIFIED_CRAFTABLE; RUNTIME_REGISTRY_PENDING"
+    },
+    {
+      "item": "eternal_starlight:soulit_spectator",
+      "native_recipe": "data/eternal_starlight/recipe/shapeless/soulit_spectator.json",
+      "recipe_sha256": "2abef011643cf01befe983fe4e8ef995dfff4dd3534ab43a910ea9262998bd33",
+      "direct_native_boss_tables": [],
+      "status": "SOURCE_VERIFIED_CRAFTABLE; RUNTIME_REGISTRY_PENDING"
+    },
+    {
+      "item": "eternal_starlight:etheric_eye",
+      "native_recipe": "data/eternal_starlight/recipe/etheric_eye.json",
+      "recipe_sha256": "e7094ea5d878500011818771d7bd4c4c8ba4492c22049346188d914b1bba7482",
+      "direct_native_boss_tables": [],
+      "status": "SOURCE_VERIFIED_CRAFTABLE; RUNTIME_REGISTRY_PENDING"
+    }
+  ]
+}

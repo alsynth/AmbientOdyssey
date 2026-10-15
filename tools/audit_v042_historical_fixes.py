@@ -50,8 +50,8 @@ def report(root=ROOT):
         "Original WDA tasks and rewards preserved; runtime progression not confirmed")
     p=root/"release_030/overrides/config/questlog"
     quests=list((p/"quests").glob("*.json"));chapters=list((p/"chapters").glob("*.json"))
-    add("Q1 Questlog count","release_030/overrides/config/questlog",len(quests)==50 and len(chapters)==13,
-        "50 quests, 13 chapters; major Q2 chapters remain unimplemented")
+    add("Q1 Questlog count","release_030/overrides/config/questlog",len(quests)==52 and len(chapters)==13,
+        "Current approved base: 52 quests, 13 chapters; experimental campaign is a separate overlay")
     p="release_030/overrides/config/curios-common.toml"
     add("Curios conservative common config",p, bool(re.search(r"(?m)^slots = \[\]\s*$",get(p))),
         "Do not override other mod accessory slots through global TOML")
@@ -62,9 +62,12 @@ def report(root=ROOT):
     p="release_030/overrides/config/spark/config.json"
     add("Spark available",p,"backgroundProfiler" in get(p),
         "Logger/profiler unchanged; no claimed optimization")
-    p="addons/ao-worldgen-safety/build.gradle"
-    add("separate Hominid candidate",p,"version = '0.1.3-experimental'" in get(p),
-        "Experimental only, gameplay not tested")
+    p="addons/ao-worldgen-safety/src/main/resources/META-INF/neoforge.mods.toml"
+    native_metadata=get(p)
+    hominid_java=list((root/'addons/ao-worldgen-safety/src/main/java').rglob('*Hominid*.java'))
+    add("separate Hominid candidate",p,not hominid_java and not re.search(r'modId\s*=\s*[\"\']hominid[\"\']',native_metadata),
+        "Owner superseded the Hominid candidate; replacement mixin and required dependency must remain absent",
+        category="intentionally_excluded")
     p="tools/generate_v041_trek_create_rarity.py";v=get(p)
     add("approved structure rarity",p,all(x in v for x in
         ('"common":(24,21)','"medium":(30,26)','"rare":(48,44)','CREATE_RATIO=1.30','assert total==43')),

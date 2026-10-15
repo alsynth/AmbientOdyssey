@@ -120,7 +120,7 @@
     "spawnChance": 0.03333333333333333
   },
   "hydra": {
-    "maxHealth": 250
+    "maxHealth": 1024
   },
   "hippocampus": {
     "spawnChance": 0.025,

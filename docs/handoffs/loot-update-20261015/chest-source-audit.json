@@ -1,0 +1,1295 @@
+[
+  {
+    "structure": "adventuredungeons:bygonedungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/bygone_chest_default1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/bygonedungeon/behind/bygone_behindroom_left_storage1.nbt",
+      "data/adventuredungeons/structure/bygonedungeon/loot/bygone_chest_default1.nbt",
+      "data/adventuredungeons/structure/bygonedungeon/rooms/bygone_rooms_living1.nbt",
+      "data/adventuredungeons/structure/bygonedungeon/rooms/bygone_rooms_living2.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/bygonedungeon.json",
+    "structure_sha256": "1413e1e22f324640bbe113583cbc1ef5bb1724162008667256b779cf9d1ca9c4",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/bygone_chest_default1.json",
+    "source_sha256": "2c591dae85c20b439ef8b8f043d102bcf58bf6e50d114e55d456edc88b97243f",
+    "pool_count": 3
+  },
+  {
+    "structure": "adventuredungeons:bygonedungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "minecraft:chests/simple_dungeon",
+    "template_evidence": [
+      "data/adventuredungeons/structure/bygonedungeon/loot/bygone_chest_monster_room.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/bygonedungeon.json",
+    "structure_sha256": "1413e1e22f324640bbe113583cbc1ef5bb1724162008667256b779cf9d1ca9c4",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_barrel_filler1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_librarylevel_connector_corridors1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_waterlevel_connector1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_barrel_filler1.json",
+    "source_sha256": "19daad98fe5343be621f2ffce4cce287c9af01d9211e7495b7cd94011a5f8e2c",
+    "pool_count": 1
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_chest_default1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_waterlevel_connector_canal1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_waterlevel_up1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_chest_default1.json",
+    "source_sha256": "a61f6142c5bee3354aaeee8a3f0a04230daa5376d343c5e317e05fbc2e21ce15",
+    "pool_count": 3
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_chest_helpful1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_thronelevel_aquaductsecond1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_thronelevel_livingcorridor1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_thronelevel_livingroom1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_chest_helpful1.json",
+    "source_sha256": "18caf9a360cd5167f164018513e514a060979f60c34bd7a531720f53739bea46",
+    "pool_count": 3
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_chest_library_default1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_librarylevel_library1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_librarylevel_roundlibrary1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_chest_library_default1.json",
+    "source_sha256": "68ba1fc85a9ca2efd39761c7054fae00d87b934f40abee0ee377b1c64a5f0f4a",
+    "pool_count": 2
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_chest_map1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_librarylevel_map1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_chest_map1.json",
+    "source_sha256": "64ece92e965af68f5928ba39cefb8e3b7aba02d1f10e4f1edf1aaf2418c91932",
+    "pool_count": 2
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_chest_miner1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_randomlevel_anvil1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_randomlevel_corridor_to_anvil1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_chest_miner1.json",
+    "source_sha256": "52052b82946a158612c0f4b41f57aa483dc530ce413ba90833f848d246dc043e",
+    "pool_count": 2
+  },
+  {
+    "structure": "adventuredungeons:coldlair",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/coldlair/coldlair_chest_rare1",
+    "template_evidence": [
+      "data/adventuredungeons/structure/coldlair/center/coldlair_main1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_thronelevel_throne1.nbt",
+      "data/adventuredungeons/structure/coldlair/rooms/coldlair_waterlevel_connector1.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/coldlair.json",
+    "structure_sha256": "bfcd8fd44436846f97a8fcf82672dbd9b65a9179426560d0aca9cf70eb3284c7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/coldlair/coldlair_chest_rare1.json",
+    "source_sha256": "971a14ad74a9e04e368c750b3e66ab9c42ff48841282d194d5beb0a4cafb4cc5",
+    "pool_count": 3
+  },
+  {
+    "structure": "adventuredungeons:murkydungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/murkydungeon/murky_chest_brick",
+    "template_evidence": [
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room3.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/murkydungeon.json",
+    "structure_sha256": "b1bdef09ae3d5c0c63a93a4baa48c6fb5893a8f5f5f8418bffb92e9ebea62688",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "adventuredungeons:murkydungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/murkydungeon/murky_chest_bricks",
+    "template_evidence": [
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room2.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/murkydungeon.json",
+    "structure_sha256": "b1bdef09ae3d5c0c63a93a4baa48c6fb5893a8f5f5f8418bffb92e9ebea62688",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/murkydungeon/murky_chest_bricks.json",
+    "source_sha256": "84caf3606b6a4abe44620ac081e53599acac47b15aaac4382aaec6a88c487694",
+    "pool_count": 2
+  },
+  {
+    "structure": "adventuredungeons:murkydungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/murkydungeon/murky_chest_loot",
+    "template_evidence": [
+      "data/adventuredungeons/structure/murkydungeon/center/murky_center1.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room1.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room2.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room4.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room5.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room_filler2.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room_filler3.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room_filler4.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room_filler5.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/murkydungeon.json",
+    "structure_sha256": "b1bdef09ae3d5c0c63a93a4baa48c6fb5893a8f5f5f8418bffb92e9ebea62688",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/murkydungeon/murky_chest_loot.json",
+    "source_sha256": "d02c46ae7dd907ad89042ce83c13e4272f7c0e6a2816aaf40b5e710fdc334597",
+    "pool_count": 2
+  },
+  {
+    "structure": "adventuredungeons:murkydungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/murkydungeon/murky_chest_reward",
+    "template_evidence": [
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room2.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room3.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/murkydungeon.json",
+    "structure_sha256": "b1bdef09ae3d5c0c63a93a4baa48c6fb5893a8f5f5f8418bffb92e9ebea62688",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/murkydungeon/murky_chest_reward.json",
+    "source_sha256": "6cd05c740754614cb9d74eaf7128aa3b59e2c516496da432ea157b915ca9c212",
+    "pool_count": 4,
+    "selected_pool": 0
+  },
+  {
+    "structure": "adventuredungeons:murkydungeon",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "adventuredungeons:chests/murkydungeon/murky_chest_tomb",
+    "template_evidence": [
+      "data/adventuredungeons/structure/murkydungeon/center/murky_center1.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room1.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room2.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room4.nbt",
+      "data/adventuredungeons/structure/murkydungeon/rooms/murky_room5.nbt"
+    ],
+    "structure_resource": "data/adventuredungeons/worldgen/structure/murkydungeon.json",
+    "structure_sha256": "b1bdef09ae3d5c0c63a93a4baa48c6fb5893a8f5f5f8418bffb92e9ebea62688",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "adventuredungeons-neoforge-1.21-1.3.1.jar",
+    "resource": "data/adventuredungeons/loot_table/chests/murkydungeon/murky_chest_tomb.json",
+    "source_sha256": "ad4d8a100f2529028166b52b6234e1bd408d4c32be3efd12bc11e7749df78b1a",
+    "pool_count": 2
+  },
+  {
+    "structure": "dungeons_arise:bandit_towers",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/bandit_towers/bandit_towers_gardens",
+    "template_evidence": [
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_2.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_small_room_2.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+    "structure_sha256": "2a136522850f7387d0309a5237fa8c0374ab0a39aca8506b7a8a0111d0f4d81e",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_gardens.json",
+    "source_sha256": "c44fe8ac04216e32903839b8c148a6cf145d6d11c6b5f0fac4f1d9373ceb3f5c",
+    "pool_count": 3
+  },
+  {
+    "structure": "dungeons_arise:bandit_towers",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/bandit_towers/bandit_towers_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_0.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_1.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_2.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_3_bridge.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_5.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_0.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_1.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_2.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_3.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_4.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_roof_terminator_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+    "structure_sha256": "2a136522850f7387d0309a5237fa8c0374ab0a39aca8506b7a8a0111d0f4d81e",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_normal.json",
+    "source_sha256": "3b7ed373ae093b908ce8a77bebdabd9f42c4c637e945cb960348a20cd381153a",
+    "pool_count": 4
+  },
+  {
+    "structure": "dungeons_arise:bandit_towers",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/bandit_towers/bandit_towers_supply",
+    "template_evidence": [
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_0.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_1.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_2.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_3.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+    "structure_sha256": "2a136522850f7387d0309a5237fa8c0374ab0a39aca8506b7a8a0111d0f4d81e",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_supply.json",
+    "source_sha256": "853084590181f09799c1195d5d93238ae765140e48c0d9a115d5af89f3d9f66e",
+    "pool_count": 3
+  },
+  {
+    "structure": "dungeons_arise:bandit_towers",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/bandit_towers/bandit_towers_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_1.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_2.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_5.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_1.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_2.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_roof_terminator_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+    "structure_sha256": "2a136522850f7387d0309a5237fa8c0374ab0a39aca8506b7a8a0111d0f4d81e",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_treasure.json",
+    "source_sha256": "061917b23ea2e8b96959ba9bce47862fcd056814e3e2ee02b8f10ac336b6d631",
+    "pool_count": 5
+  },
+  {
+    "structure": "dungeons_arise:bandit_towers",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/desert_city_big",
+    "template_evidence": [
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+    "structure_sha256": "2a136522850f7387d0309a5237fa8c0374ab0a39aca8506b7a8a0111d0f4d81e",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "dungeons_arise:bandit_towers",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/desert_city_medium",
+    "template_evidence": [
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_crossing_1.nbt",
+      "data/dungeons_arise/structure/bandit_towers/bandit_towers_part_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/bandit_towers.json",
+    "structure_sha256": "2a136522850f7387d0309a5237fa8c0374ab0a39aca8506b7a8a0111d0f4d81e",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "dungeons_arise:foundry",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/foundry/foundry_chains",
+    "template_evidence": [
+      "data/dungeons_arise/structure/foundry/foundry_corridor_chain_6_chest.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/foundry.json",
+    "structure_sha256": "5bb459b61acc5c06ffdd33f0d27bb12e574016fe65d7445d4a10bc0d36fd3a9a",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/foundry/foundry_chains.json",
+    "source_sha256": "2caeba94ae14ab34c4df833dadd8bc49f929a1120891d399a288027483332269",
+    "pool_count": 2
+  },
+  {
+    "structure": "dungeons_arise:foundry",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/foundry/foundry_lava_pit",
+    "template_evidence": [
+      "data/dungeons_arise/structure/foundry/foundry_corridor_lava_pit_0.nbt",
+      "data/dungeons_arise/structure/foundry/foundry_corridor_pedestal_2.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/foundry.json",
+    "structure_sha256": "5bb459b61acc5c06ffdd33f0d27bb12e574016fe65d7445d4a10bc0d36fd3a9a",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/foundry/foundry_lava_pit.json",
+    "source_sha256": "7ec846865ef92c94d9cb594c9101bc72a693ea17b9610fd3994413324add98b6",
+    "pool_count": 2
+  },
+  {
+    "structure": "dungeons_arise:foundry",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/foundry/foundry_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/foundry/foundry_corridor_0.nbt",
+      "data/dungeons_arise/structure/foundry/foundry_corridor_3_passages.nbt",
+      "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_0.nbt",
+      "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_1.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/foundry.json",
+    "structure_sha256": "5bb459b61acc5c06ffdd33f0d27bb12e574016fe65d7445d4a10bc0d36fd3a9a",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/foundry/foundry_normal.json",
+    "source_sha256": "6b56dc9a93aff660095a0a5969a1786893c1470e26a22659abc41ca4259dcd41",
+    "pool_count": 2
+  },
+  {
+    "structure": "dungeons_arise:foundry",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/foundry/foundry_passage_exterior",
+    "template_evidence": [
+      "data/dungeons_arise/structure/foundry/foundry_passage_3_exterior_spawner.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/foundry.json",
+    "structure_sha256": "5bb459b61acc5c06ffdd33f0d27bb12e574016fe65d7445d4a10bc0d36fd3a9a",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/foundry/foundry_passage_exterior.json",
+    "source_sha256": "634b4980d904f57860efe055f1913969c5007330e0a42978892b4640e4af6ae0",
+    "pool_count": 3
+  },
+  {
+    "structure": "dungeons_arise:foundry",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/foundry/foundry_passage_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/foundry/foundry_passage_0_stairway.nbt",
+      "data/dungeons_arise/structure/foundry/foundry_passage_5_straight_debris.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/foundry.json",
+    "structure_sha256": "5bb459b61acc5c06ffdd33f0d27bb12e574016fe65d7445d4a10bc0d36fd3a9a",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/foundry/foundry_passage_normal.json",
+    "source_sha256": "b31417a1dba78b05bb18d971599572e672e3a9e7e144795e6a3b816dc891eab0",
+    "pool_count": 2
+  },
+  {
+    "structure": "dungeons_arise:foundry",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/foundry/foundry_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_2.nbt",
+      "data/dungeons_arise/structure/foundry/foundry_corridor_crossing_3.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/foundry.json",
+    "structure_sha256": "5bb459b61acc5c06ffdd33f0d27bb12e574016fe65d7445d4a10bc0d36fd3a9a",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/foundry/foundry_treasure.json",
+    "source_sha256": "c5e2bcd4082cc85ba769873fdc9cfed215301c697902c5c46cd780de3411542d",
+    "pool_count": 2
+  },
+  {
+    "structure": "dungeons_arise:illager_fort",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/illager_fort/illager_fort_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/illager_fort/illager_fort_part_0.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_part_1.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_part_4.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_0.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_3.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_6.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/illager_fort.json",
+    "structure_sha256": "8ce2db9efc7f582322d360ff2ab67051ab808e0a94b1dbb70d7c895a73b20b60",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/illager_fort/illager_fort_normal.json",
+    "source_sha256": "2dcbd666df7266651bea82dd92c2d1746b8730844a3b9c737e367c1080f614e7",
+    "pool_count": 4,
+    "selected_pool": 2
+  },
+  {
+    "structure": "dungeons_arise:illager_fort",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/illager_fort/illager_fort_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/illager_fort/illager_fort_part_0.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_part_4.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_0.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_2.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_4.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_5.nbt",
+      "data/dungeons_arise/structure/illager_fort/illager_fort_room_8.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/illager_fort.json",
+    "structure_sha256": "8ce2db9efc7f582322d360ff2ab67051ab808e0a94b1dbb70d7c895a73b20b60",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/illager_fort/illager_fort_treasure.json",
+    "source_sha256": "789e82b5872bd41478470b477b87d020aa0edae80f437f965022eaf971d2e8a9",
+    "pool_count": 4
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_bookshelf",
+    "template_evidence": [
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_7.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+    "structure_sha256": "2cbb59dcd6cbc31d28c31fe41869de4831ed7bb9536bd626e814b8a61f1ff961",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_bookshelf.json",
+    "source_sha256": "e1bc8bd2502f146f3e12de5eb079d33c35893d35ba8227e5688703eec16e1965",
+    "pool_count": 1
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_forge",
+    "template_evidence": [
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_5.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+    "structure_sha256": "2cbb59dcd6cbc31d28c31fe41869de4831ed7bb9536bd626e814b8a61f1ff961",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_forge.json",
+    "source_sha256": "e1bc8bd2502f146f3e12de5eb079d33c35893d35ba8227e5688703eec16e1965",
+    "pool_count": 1
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_garden",
+    "template_evidence": [
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_0.nbt",
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_1.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+    "structure_sha256": "2cbb59dcd6cbc31d28c31fe41869de4831ed7bb9536bd626e814b8a61f1ff961",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_garden.json",
+    "source_sha256": "e1bc8bd2502f146f3e12de5eb079d33c35893d35ba8227e5688703eec16e1965",
+    "pool_count": 1
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/infested_temple/infested_temple_level_0.nbt",
+      "data/dungeons_arise/structure/infested_temple/infested_temple_level_1.nbt",
+      "data/dungeons_arise/structure/infested_temple/infested_temple_level_2.nbt",
+      "data/dungeons_arise/structure/infested_temple/infested_temple_level_3.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+    "structure_sha256": "2cbb59dcd6cbc31d28c31fe41869de4831ed7bb9536bd626e814b8a61f1ff961",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_normal.json",
+    "source_sha256": "6699101578f04a070d14efa3f101e926409ebaaebf02bccc8b4d73062c2b4c99",
+    "pool_count": 4,
+    "selected_pool": 3
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_supply",
+    "template_evidence": [
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_6.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+    "structure_sha256": "2cbb59dcd6cbc31d28c31fe41869de4831ed7bb9536bd626e814b8a61f1ff961",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_supply.json",
+    "source_sha256": "29d63774fb44ce954e1a3c1e2828f2e76d5e7519b2004feb0ead3bd298266633",
+    "pool_count": 5,
+    "selected_pool": 3
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_table",
+    "template_evidence": [
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_2.nbt",
+      "data/dungeons_arise/structure/infested_temple/infested_temple_room_8.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/infested_temple.json",
+    "structure_sha256": "2cbb59dcd6cbc31d28c31fe41869de4831ed7bb9536bd626e814b8a61f1ff961",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_table.json",
+    "source_sha256": "e1bc8bd2502f146f3e12de5eb079d33c35893d35ba8227e5688703eec16e1965",
+    "pool_count": 1
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/keep_kayra/keep_kayra_main_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/keep_kayra.json",
+    "structure_sha256": "f8ef5fd0303bf4384ccc82726425925361bc3e5c35c57f7154a4145f6f64df36",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_garden_normal.json",
+    "source_sha256": "af672f1b32305ba02219fa5abcf3cb6ad90e147fb47619bda3dd1bcf1d745273",
+    "pool_count": 4,
+    "selected_pool": 1
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/keep_kayra/keep_kayra_main_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/keep_kayra.json",
+    "structure_sha256": "f8ef5fd0303bf4384ccc82726425925361bc3e5c35c57f7154a4145f6f64df36",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_garden_treasure.json",
+    "source_sha256": "f4624f8d117f774727f0c1fcf7f53333f136ee7241b7ff018203682d3c405d92",
+    "pool_count": 5
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/keep_kayra/keep_kayra_main_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/keep_kayra.json",
+    "structure_sha256": "f8ef5fd0303bf4384ccc82726425925361bc3e5c35c57f7154a4145f6f64df36",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_normal.json",
+    "source_sha256": "6f23a88a6edc15714ddd72af67e01a15d9f78d79555eaee8232dd4524db3c810",
+    "pool_count": 4,
+    "selected_pool": 2
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/keep_kayra/keep_kayra_main_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/keep_kayra.json",
+    "structure_sha256": "f8ef5fd0303bf4384ccc82726425925361bc3e5c35c57f7154a4145f6f64df36",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json",
+    "source_sha256": "ee7e398314939c84c644fdbc7825999e314fdfff308aacdf86a94a2c9a00084f",
+    "pool_count": 5,
+    "selected_pool": 2
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/keep_kayra/keep_kayra_main_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/keep_kayra.json",
+    "structure_sha256": "f8ef5fd0303bf4384ccc82726425925361bc3e5c35c57f7154a4145f6f64df36",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_normal.json",
+    "source_sha256": "cec108255d2290d187077b9582499e055b45132c806b6ee14421b744fda6c200",
+    "pool_count": 3,
+    "selected_pool": 1
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/keep_kayra/keep_kayra_main_0.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/keep_kayra.json",
+    "structure_sha256": "f8ef5fd0303bf4384ccc82726425925361bc3e5c35c57f7154a4145f6f64df36",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_treasure.json",
+    "source_sha256": "8bf79cee247e91c1972ac124455f0bbc04f0b0122ddd7711aecdf3ad8684a0be",
+    "pool_count": 4,
+    "selected_pool": 2
+  },
+  {
+    "structure": "dungeons_arise:plague_asylum",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/plague_asylum/plague_asylum_cells",
+    "template_evidence": [
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_normal_0.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_normal_1.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_normal_3.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_normal_4.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_normal_5.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_normal_6.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_cell_security_3.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/plague_asylum.json",
+    "structure_sha256": "2d369d5c928f1443ca51dfb8508629faf4a9a9bbae7b03b97b1c8a058c4cc698",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_cells.json",
+    "source_sha256": "bd0a6724f1062ef659297c081674e9c242b714b2732ce0eca853fe9d884c281b",
+    "pool_count": 3
+  },
+  {
+    "structure": "dungeons_arise:plague_asylum",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/plague_asylum/plague_asylum_normal",
+    "template_evidence": [
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_room_1_double.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_room_5_brews.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/plague_asylum.json",
+    "structure_sha256": "2d369d5c928f1443ca51dfb8508629faf4a9a9bbae7b03b97b1c8a058c4cc698",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_normal.json",
+    "source_sha256": "665a968411e0e9125b3e0bdb7ec53a5430c0055846a6045aab0caef22e33fd99",
+    "pool_count": 3
+  },
+  {
+    "structure": "dungeons_arise:plague_asylum",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/plague_asylum/plague_asylum_storage",
+    "template_evidence": [
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_room_0.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_room_6_water.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/plague_asylum.json",
+    "structure_sha256": "2d369d5c928f1443ca51dfb8508629faf4a9a9bbae7b03b97b1c8a058c4cc698",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_storage.json",
+    "source_sha256": "8c6fbcf164062e63781241713cbeb0f6992cdee6a85425e29fafffe5ce5a9d89",
+    "pool_count": 3
+  },
+  {
+    "structure": "dungeons_arise:plague_asylum",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/plague_asylum/plague_asylum_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_corridor_4_crossing_pit.nbt",
+      "data/dungeons_arise/structure/plague_asylum/plague_asylum_room_6_water.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/plague_asylum.json",
+    "structure_sha256": "2d369d5c928f1443ca51dfb8508629faf4a9a9bbae7b03b97b1c8a058c4cc698",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_treasure.json",
+    "source_sha256": "07e4ccdb676042343eb43468876b8435374da8da8ff23106faa92a46386d51d1",
+    "pool_count": 4
+  },
+  {
+    "structure": "dungeons_arise:thornborn_towers",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms",
+    "template_evidence": [
+      "data/dungeons_arise/structure/thornborn_towers/thornborn_towers_room_1.nbt",
+      "data/dungeons_arise/structure/thornborn_towers/thornborn_towers_room_5.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/thornborn_towers.json",
+    "structure_sha256": "cbdabb600738bc5d589da8e0e19a73c792b5fc54c9472e3e2caae998bb708089",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_rooms.json",
+    "source_sha256": "74f18e9627ece32d2f5bbf7eafe67f05e0974f44e8928948aaa03d28a05bb50b",
+    "pool_count": 4,
+    "selected_pool": 3
+  },
+  {
+    "structure": "dungeons_arise:thornborn_towers",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms",
+    "template_evidence": [
+      "data/dungeons_arise/structure/thornborn_towers/thornborn_towers_hanging_medium_1.nbt",
+      "data/dungeons_arise/structure/thornborn_towers/thornborn_towers_hanging_small_1.nbt",
+      "data/dungeons_arise/structure/thornborn_towers/thornborn_towers_hanging_small_2.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/thornborn_towers.json",
+    "structure_sha256": "cbdabb600738bc5d589da8e0e19a73c792b5fc54c9472e3e2caae998bb708089",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_top_rooms.json",
+    "source_sha256": "b200edf79a4f6c641001a054b6c073c037fd7a5c40adb7f83a2774d55fafdb93",
+    "pool_count": 4,
+    "selected_pool": 3
+  },
+  {
+    "structure": "dungeons_arise:thornborn_towers",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure",
+    "template_evidence": [
+      "data/dungeons_arise/structure/thornborn_towers/thornborn_towers_hanging_big_top.nbt"
+    ],
+    "structure_resource": "data/dungeons_arise/worldgen/structure/thornborn_towers.json",
+    "structure_sha256": "cbdabb600738bc5d589da8e0e19a73c792b5fc54c9472e3e2caae998bb708089",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "DungeonsArise-1.21.1-2.1.68-release.jar",
+    "resource": "data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_top_treasure.json",
+    "source_sha256": "9b34276cff46aac16a3ce475b2a849804747e34b39dc3d1270e661a5bc337a6f",
+    "pool_count": 6,
+    "selected_pool": 4
+  },
+  {
+    "structure": "floating_islands:spider_ruin",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "minecraft:chests/simple_dungeon",
+    "template_evidence": [
+      "data/floating_islands/structure/vex_ruin.nbt"
+    ],
+    "structure_resource": "data/floating_islands/worldgen/structure/spider_ruin.json",
+    "structure_sha256": "805bc76fb56b4f4928f48570e873f838a69fe8dd6178646c639dc97ebbf798ec",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "floating_islands:steampunk_island",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "minecraft:chests/jungle_temple_dispenser",
+    "template_evidence": [
+      "data/floating_islands/structure/steampunk_island.nbt"
+    ],
+    "structure_resource": "data/floating_islands/worldgen/structure/steampunk_island.json",
+    "structure_sha256": "b01b38ee361d7521940269c23f6fde0fb4d6884d1766f4379ca609f39b897de4",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "floating_islands:steampunk_island",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "minecraft:chests/shipwreck_supply",
+    "template_evidence": [
+      "data/floating_islands/structure/steampunk_island.nbt"
+    ],
+    "structure_resource": "data/floating_islands/worldgen/structure/steampunk_island.json",
+    "structure_sha256": "b01b38ee361d7521940269c23f6fde0fb4d6884d1766f4379ca609f39b897de4",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "floating_islands:steampunk_island",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "minecraft:chests/simple_dungeon",
+    "template_evidence": [
+      "data/floating_islands/structure/steampunk_island.nbt"
+    ],
+    "structure_resource": "data/floating_islands/worldgen/structure/steampunk_island.json",
+    "structure_sha256": "b01b38ee361d7521940269c23f6fde0fb4d6884d1766f4379ca609f39b897de4",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/bookshelf_loot",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/trap_pitfall.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/bookshelf_loot.json",
+    "source_sha256": "84b936edd95f3d01023102f37d5e1da4b0feaf854b02ebb8aa010ea9a11a55d8",
+    "pool_count": 3
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/catacombs/coffin_loot",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/crypt_1.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/dormitories_2.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/large_crypt_1.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/trap_jail.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/catacombs/coffin_loot.json",
+    "source_sha256": "10377f1be91fc4cf627d94039bd05becace10fc1e291369bb200a544d5123cf6",
+    "pool_count": 5
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/catacombs/hidden_trough_treasure",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/ravager_prison.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/catacombs/hidden_trough_treasure.json",
+    "source_sha256": "23372ec81c93bf5b3aad0046362efa0fc44fac17a6f167d2bad1540fd0aa6ce8",
+    "pool_count": 4,
+    "selected_pool": 3
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/catacombs/wall_loot",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/catacombs_origin.nbt",
+      "data/irons_spellbooks/structure/catacombs/hallway/hallway_straight_2.nbt",
+      "data/irons_spellbooks/structure/catacombs/hallway/hallway_tee_1.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/balcony.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/crypt_2.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/dropdown_hallway.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/large_crypt_1.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/small_spawner_1.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/small_storage_2.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/wall_crypt.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/catacombs/wall_loot.json",
+    "source_sha256": "308b8f79db302c3ebcfad4f719e5d3a7e11581518294ed734e40c3d29187c0fb",
+    "pool_count": 6
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/component_storage",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/study_platform.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/component_storage.json",
+    "source_sha256": "326e3d55734fd594310ace770e9d20b9bbbe8da76581a575bff037e42ba52be4",
+    "pool_count": 1
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/filler_storage_loot",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/dormitories_2.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/ravager_prison.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/filler_storage_loot.json",
+    "source_sha256": "7ed89e278061ab3e60cdccfc89c2bf435b50cc4e3154fa15862512274441a697",
+    "pool_count": 4
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/generic_magic_treasure",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/catacombs_origin.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/crypt_2.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/ravager_prison.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/stair_split.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "CANDIDATE_SOURCE_VERIFIED",
+    "reason": "Reachable native chest; single valuable basic native pool; no trophy/recursive entries",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/generic_magic_treasure.json",
+    "source_sha256": "f3f8c9464ed17b92e8edf0bcef633c6f527637b33be07231b09e00a51e33b776",
+    "pool_count": 8,
+    "selected_pool": 6
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/magic_bookshelf_loot",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/dormitories_1.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/magic_bookshelf_loot.json",
+    "source_sha256": "9d247ce186273d92805dd9f7842336ca8a63c7adc4cad8f8bc51571b14b02d3e",
+    "pool_count": 6
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/wheat",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/catacombs/room/ravager_prison.nbt",
+      "data/irons_spellbooks/structure/catacombs/room/small_storage_3.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/catacombs.json",
+    "structure_sha256": "661018e1952231ca21ddfe16a7fdf3454fc6fd5bd0c87c75c93bea0ce4924bb1",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/wheat.json",
+    "source_sha256": "196dfdd890fccad1b74afe2b2adf35d366186baa0dcdb304a9990c7e475869e8",
+    "pool_count": 2
+  },
+  {
+    "structure": "irons_spellbooks:ice_spider_den",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/generic_magic_treasure",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/ice_spider_den/dungeon/room_secret_cave_chest.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/ice_spider_den.json",
+    "structure_sha256": "6fd5fb067c56d4e1df42ce4435424dad56c21b1516bbb007e9bbbf2e9a519e2b",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/generic_magic_treasure.json",
+    "source_sha256": "f3f8c9464ed17b92e8edf0bcef633c6f527637b33be07231b09e00a51e33b776",
+    "pool_count": 8
+  },
+  {
+    "structure": "irons_spellbooks:ice_spider_den",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/ice_spider_den/basement",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/ice_spider_den/basement.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/ice_spider_den.json",
+    "structure_sha256": "6fd5fb067c56d4e1df42ce4435424dad56c21b1516bbb007e9bbbf2e9a519e2b",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/ice_spider_den/basement.json",
+    "source_sha256": "5915e23d8b59a7466141db41f4874246d5f50782baaca10371573d5b5db9a58a",
+    "pool_count": 6
+  },
+  {
+    "structure": "irons_spellbooks:ice_spider_den",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/ice_spider_den/dungeon",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/ice_spider_den/dungeon/room_cell.nbt",
+      "data/irons_spellbooks/structure/ice_spider_den/dungeon/room_chest_snow.nbt",
+      "data/irons_spellbooks/structure/ice_spider_den/dungeon/room_storage_1.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/ice_spider_den.json",
+    "structure_sha256": "6fd5fb067c56d4e1df42ce4435424dad56c21b1516bbb007e9bbbf2e9a519e2b",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/ice_spider_den/dungeon.json",
+    "source_sha256": "c27a0770f6a5a0e025e595749cf4fa0efe37bab27d173a63fcc0aac7708d1ece",
+    "pool_count": 7
+  },
+  {
+    "structure": "irons_spellbooks:ice_spider_den",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "irons_spellbooks:chests/ice_spider_den/tower",
+    "template_evidence": [
+      "data/irons_spellbooks/structure/ice_spider_den/fort.nbt"
+    ],
+    "structure_resource": "data/irons_spellbooks/worldgen/structure/ice_spider_den.json",
+    "structure_sha256": "6fd5fb067c56d4e1df42ce4435424dad56c21b1516bbb007e9bbbf2e9a519e2b",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "irons_spellbooks-1.21.1-3.16.3.jar",
+    "resource": "data/irons_spellbooks/loot_table/chests/ice_spider_den/tower.json",
+    "source_sha256": "85e88c8ba13ed521811c0a1240e73b4cd2d32c3db173ee0fb2627dd0fb7d9aed",
+    "pool_count": 5
+  },
+  {
+    "structure": "philipsruins:ancient_crypt",
+    "tier": 3,
+    "dimension": "minecraft:overworld",
+    "table": "philipsruins:chest/level_three_ruins_loot",
+    "template_evidence": [
+      "data/philipsruins/structure/crypt_room2.nbt",
+      "data/philipsruins/structure/crypt_room5.nbt",
+      "data/philipsruins/structure/crypt_room8.nbt"
+    ],
+    "structure_resource": "data/philipsruins/worldgen/structure/ancient_crypt.json",
+    "structure_sha256": "d47c03aabfd915e4b8750ff8a67bd0541d9ab5251748214458bf3c0a41ee95a7",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+    "resource": "data/philipsruins/loot_table/chest/level_three_ruins_loot.json",
+    "source_sha256": "664f4fd4814c459d8adc09bd352a96a0ed14bb0329e15dd67b87d30f18654eac",
+    "pool_count": 3
+  },
+  {
+    "structure": "philipsruins:level_three_ruins",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "philipsruins:chest/level_three_ruins_loot",
+    "template_evidence": [
+      "data/philipsruins/structure/data_pack/level_ruin_three11.nbt",
+      "data/philipsruins/structure/level_ruin_three10.nbt",
+      "data/philipsruins/structure/level_ruin_three5.nbt",
+      "data/philipsruins/structure/level_ruin_three6.nbt",
+      "data/philipsruins/structure/level_ruin_three7.nbt",
+      "data/philipsruins/structure/level_ruin_three8.nbt",
+      "data/philipsruins/structure/level_ruin_three9.nbt",
+      "data/philipsruins/structure/level_three_ruins1.nbt",
+      "data/philipsruins/structure/level_three_ruins2.nbt",
+      "data/philipsruins/structure/level_three_ruins3.nbt",
+      "data/philipsruins/structure/level_three_ruins4.nbt"
+    ],
+    "structure_resource": "data/philipsruins/worldgen/structure/level_three_ruins.json",
+    "structure_sha256": "dea12d9a65339891f1f2ad2016c255eae4752a86a83d8c70cbf6e79c40db255c",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+    "resource": "data/philipsruins/loot_table/chest/level_three_ruins_loot.json",
+    "source_sha256": "664f4fd4814c459d8adc09bd352a96a0ed14bb0329e15dd67b87d30f18654eac",
+    "pool_count": 3
+  },
+  {
+    "structure": "philipsruins:level_two_ruins",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "philipsruins:chest/bone_dungeon_loot",
+    "template_evidence": [
+      "data/philipsruins/structure/level_two_ruins6.nbt"
+    ],
+    "structure_resource": "data/philipsruins/worldgen/structure/level_two_ruins.json",
+    "structure_sha256": "9b4cef90d60f49ada798247b2f6268b12f8df7a840d33a9e5ba1d29898ba359d",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected"
+  },
+  {
+    "structure": "philipsruins:level_two_ruins",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "philipsruins:chest/ruin_loot",
+    "template_evidence": [
+      "data/philipsruins/structure/level_two_ruins1.nbt",
+      "data/philipsruins/structure/level_two_ruins3.nbt",
+      "data/philipsruins/structure/level_two_ruins4.nbt",
+      "data/philipsruins/structure/ruin12.nbt",
+      "data/philipsruins/structure/ruin6.nbt",
+      "data/philipsruins/structure/ruin8.nbt",
+      "data/philipsruins/structure/ruin9.nbt",
+      "data/philipsruins/structure/ruin_tower.nbt",
+      "data/philipsruins/structure/small_ruin3.nbt"
+    ],
+    "structure_resource": "data/philipsruins/worldgen/structure/level_two_ruins.json",
+    "structure_sha256": "9b4cef90d60f49ada798247b2f6268b12f8df7a840d33a9e5ba1d29898ba359d",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+    "resource": "data/philipsruins/loot_table/chest/ruin_loot.json",
+    "source_sha256": "e1bd56924afcad0f1599fd6ba71d0852d121edebfcb1e70dd9233aeea28ebe98",
+    "pool_count": 3
+  },
+  {
+    "structure": "philipsruins:level_two_ruins",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "philipsruins:chest/ruin_loot_value",
+    "template_evidence": [
+      "data/philipsruins/structure/ruin11.nbt",
+      "data/philipsruins/structure/ruin12.nbt"
+    ],
+    "structure_resource": "data/philipsruins/worldgen/structure/level_two_ruins.json",
+    "structure_sha256": "9b4cef90d60f49ada798247b2f6268b12f8df7a840d33a9e5ba1d29898ba359d",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+    "resource": "data/philipsruins/loot_table/chest/ruin_loot_value.json",
+    "source_sha256": "9d7505e393c38500197a538278bdad86cba7464671bfe3e16724dc988a0a8547",
+    "pool_count": 3
+  },
+  {
+    "structure": "philipsruins:ocean_ruins",
+    "tier": 2,
+    "dimension": "minecraft:overworld",
+    "table": "philipsruins:chest/ocean_ruins_loot",
+    "template_evidence": [
+      "data/philipsruins/structure/ocean_ruin10.nbt",
+      "data/philipsruins/structure/ocean_ruin2.nbt",
+      "data/philipsruins/structure/ocean_ruin3.nbt",
+      "data/philipsruins/structure/ocean_ruin4.nbt",
+      "data/philipsruins/structure/ocean_ruin5.nbt",
+      "data/philipsruins/structure/ocean_ruin6.nbt",
+      "data/philipsruins/structure/ocean_ruin8.nbt",
+      "data/philipsruins/structure/ruin_guardian_statue.nbt"
+    ],
+    "structure_resource": "data/philipsruins/worldgen/structure/ocean_ruins.json",
+    "structure_sha256": "e1979946fbbb18e14e80e7e3635ebb0fda060c951dbc151b0a31811695431b04",
+    "status": "BLOCKED",
+    "reason": "No suitable verified native pool selected",
+    "provider": "Philips-Ruins1.21.1-2.0-NeoForge.jar",
+    "resource": "data/philipsruins/loot_table/chest/ocean_ruins_loot.json",
+    "source_sha256": "9e777f73be66b844c833e2d7b698e6be406bb1342e974240dd8ab075700322b0",
+    "pool_count": 3
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "launcher": "production",
+  "library_files": 107,
+  "exit_code": 0,
+  "startup_and_world_join": "PASS",
+  "overall_probe": "PASS",
+  "campaign_synthetic_checks": "PASS",
+  "in_world_gameplay_verified": false
+}

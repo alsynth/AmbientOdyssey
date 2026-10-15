@@ -1,0 +1,13 @@
+.........................................................................................................
+PASS profiler-only A/B variant, no other overrides or mods changed
+----------------------------------------------------------------------
+Ran 105 tests in 0.773s
+
+OK
+OUTPUT C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\tmp89idagmk\b.zip fca71679b5d9740a98e835e87f34efca6fefb98133fd2721dbdb5583b19d6af7
+PASS profiler-only A/B variant, no other overrides or mods changed
+PASS v0.4.2 final: 329 -> 330 locked refs, exact 1 DD pin + exact 1 dungeon config, 3 compiled addons and all user-approved preexisting overrides byte-identical
+NOT RUNTIME TESTED, developer private CurseForge import only
+OUTPUT C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\tmp9g7pgdsc\330.zip sha256 381079b64924079b6b391364355780702177dbfaad0406bbb9cdf54e5664df41
+PASS v0.4.2 final: 329 -> 330 locked refs, exact 1 DD pin + exact 1 dungeon config, 3 compiled addons and all user-approved preexisting overrides byte-identical
+NOT RUNTIME TESTED, developer private CurseForge import only

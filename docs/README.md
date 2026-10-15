@@ -1,6 +1,6 @@
 # Ambient Odyssey documentation index
 
-Start with [Current State](status/CURRENT_STATE.md) and [Repository Map](maintainers/REPO_MAP.md).
+**Latest integration (15 October 2026):** Start with the [**canonical Claude master handoff — R4 packaged / R5 Grand preparation**](handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md), then [implementation progress](status/IMPLEMENTATION_PROGRESS.md) and the [Repository Map](maintainers/REPO_MAP.md). Older v0.4/PR57 entries below are retained as historical references, not the newest import.
 
 | Area | Current entry point | What it contains |
 | --- | --- | --- |

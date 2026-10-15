@@ -1,0 +1,126 @@
+structure_id,owner_decision,owner_selected_tier,catalogue_tier_at_review,implementation_status,notes
+floating_islands:steampunk_island,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+irons_spellbooks:ice_spider_den,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+ars_nouveau:guardian_wilden_den,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+ars_nouveau:hunter_wilden_den,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+ars_nouveau:stalker_wilden_den,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+betterend:eternal_portal,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+biomeswevegone:bog_trial,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+cataclysm:abandoned_spire,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+cataclysm:amethyst_nest,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+cataclysm:ancient_factory,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+cataclysm:desert_site,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+cataclysm:soul_black_smith,KEEP,,7,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+eternal_starlight:cursed_garden,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+eternal_starlight:golem_forge,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+eternal_starlight:stranghoul_den,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+farmers_structures:afterdark_farms,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+farmers_structures:flesh_farms,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+farmers_structures:undergardens,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+farmers_structures:undergardens_sea,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+floating_islands:cemetery_island,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+floating_islands:witch_island,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+formationsoverworld:copper_spire,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+formationsoverworld:graveyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+formationsoverworld:ice_spire,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+friendsandfoes:iceologer_cabin,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+friendsandfoes:illusioner_shack,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+friendsandfoes:illusioner_training_grounds,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+graveyard:altar,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+graveyard:large_graveyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+iceandfire:fire_dragon_roost,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+iceandfire:graveyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+iceandfire:ice_dragon_roost,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+iceandfire:lightning_dragon_roost,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+iceandfire:mausoleum,CHANGE,4,3,PLAN_ONLY_NOT_ACTIVATED,Ice and Fire Mausoleum changed to Tier 4
+iceandfire:siren_island,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:animal_den/forest_den,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:animal_den/polar_bear_den,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:iceandfire/sirens_cove,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:necromancers_spire,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:nexus,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:redhorn_guild,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+idas:witches_treestump,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+incendium:pipeline,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+incendium:sanctum,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+integrated_stronghold:stronghold,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+irons_spellbooks:ancient_battleground,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+irons_spellbooks:impaled_icebreaker,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mns:crimson_forge,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mns:grave_yard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mns:warped_dome,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mowziesmobs:frostmaw_spawn,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mowziesmobs:monastery,KEEP,,6,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mowziesmobs:umvuthana_grove,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mowziesmobs:wrought_chamber,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mss:volcano,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mtr:stronghold,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mvs:cathedral,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mvs:floating_islands,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mvs:gallows,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mvs:large_floating_island,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:bunker,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:illager_hideout,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:remnant_big_remnant,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:remnant_big_remnant_2,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:remnant_big_remnant_3,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:remnant_birch_graveyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:remnant_graveyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:remnant_zombie_horse_ranch,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:toxic_lair,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+nova_structures:witch_villa,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+pasterdream:dream_church_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_10,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_3,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_4,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_5,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_6,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_7,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_8,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dream_church_9,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dyedream_laboratory_0,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dyedream_worldtree_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:dyedream_worldtree_1,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:hakurei_reimu,REVIEW_LATER,,5,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:lost_sword_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:meltdream_liquid_well_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:meltdream_liquid_well_1,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_chain_0,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_chain_1,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_chain_2,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_chain_3,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_chain_4,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_foundry_0,REVIEW_LATER,,4,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_foundry_1,REVIEW_LATER,,4,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_foundry_2,REVIEW_LATER,,4,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_fungus_nest_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_fungus_nest_1,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_fungus_nest_2,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_hand_0,REVIEW_LATER,,5,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_shelter_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:shadow_shelter_1,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:struct_dyedream_crack_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:struct_dyedream_crack_1,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:warped_relic_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:wind_infested_stone_0,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:wind_infested_stone_1,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+pasterdream:wind_island_0,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Pasterdream family deferred by owner
+structory:graveyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+twilightforest:hedge_maze,KEEP,,3,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+twilightforest:hydra_lair,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+twilightforest:knight_stronghold,KEEP,,4,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+twilightforest:naga_courtyard,KEEP,,2,PLAN_ONLY_NOT_ACTIVATED,Owner accepts provisional tier; exact dimension must be verified before activation
+mes:astral_hideaway,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mes:astral_meteorite,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mes:ender_spire,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mes:monolith,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mes:starlight_voyager,REVIEW_LATER,,4,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+idas:ancient_portal/nether_ancient_portal,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+idas:animal_den/foxhound_den,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+incendium:infernal_altar,REVIEW_LATER,,4,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+incendium:nether_reactor,REVIEW_LATER,,4,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mns:large_nether_brick,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mns:train,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+mvs:nether_devil,REVIEW_LATER,,3,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+nova_structures:nether_port,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy
+nova_structures:piglin_outstation,REVIEW_LATER,,2,PLAN_ONLY_NOT_ACTIVATED,Non-Overworld candidate deferred per owner policy

@@ -1,0 +1,9 @@
+site,first_pass_tier,entity_id,source_entity_origin,raw_block_count,regex_match,attitude_checked,native_placement_tested,result,note
+idas:pillager_camp,3,minecraft:pillager,LINKED_NBT_TEMPLATE_ID,4,YES,NO,NO,REGEX_ONLY_NOT_DEPLOYABLE,"Partial source-NBT spawner evidence; actual pool reachability, hostile attitude, and elite stacking unverified"
+nova_structures:nether_port,2,minecraft:blaze,LINKED_NBT_TEMPLATE_ID,1,YES,NO,NO,REGEX_ONLY_NOT_DEPLOYABLE,"Partial source-NBT spawner evidence; actual pool reachability, hostile attitude, and elite stacking unverified"
+eternalnether:catacomb,4,minecraft:magma_cube,WORLDGEN_SPAWN_OVERRIDE,,NO,NO,NO,NOT_IN_EXISTING_T2_T6_DD_REGEX,Static registered source graph only; no natural-generation proof
+eternalnether:catacomb,4,minecraft:wither_skeleton,NBT_TEMPLATE_SPAWNER_ID,1,YES,NO,NO,REGEX_MATCH_ONLY_NOT_RUNTIME,Static registered source graph only; no natural-generation proof
+eternalnether:citadel,4,minecraft:enderman,WORLDGEN_SPAWN_OVERRIDE,,NO,NO,NO,NOT_IN_EXISTING_T2_T6_DD_REGEX,Static registered source graph only; no natural-generation proof
+eternalnether:citadel,4,eternalnether:warped_enderman,WORLDGEN_SPAWN_OVERRIDE,,NO,NO,NO,NOT_IN_EXISTING_T2_T6_DD_REGEX,Modded entity namespace excluded by exact minecraft-only regex; native effects may need distinct handling
+eternalnether:piglin_manor,3,minecraft:piglin,WORLDGEN_SPAWN_OVERRIDE,,NO,NO,NO,NOT_IN_EXISTING_T2_T6_DD_REGEX,Static registered source graph only; no natural-generation proof
+eternalnether:piglin_manor,3,eternalnether:piglin_hunter,WORLDGEN_SPAWN_OVERRIDE,,NO,NO,NO,NOT_IN_EXISTING_T2_T6_DD_REGEX,Modded entity namespace excluded by exact minecraft-only regex; native effects may need distinct handling

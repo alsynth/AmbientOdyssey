@@ -16,29 +16,15 @@ RINGS = ROOT / "release_030/overrides/config/paxi/datapacks/ao_flight_balance/da
 TABLE = ADDON / "data/minecraft/loot_table/chests/spawn_bonus_chest.json"
 
 def check():
-    t = json.loads(TABLE.read_text())
-    assert t["type"] == "minecraft:chest" and len(t["pools"]) == 3
-    stones = t["pools"][0]["entries"]
-    assert len(stones) == 5 and all(e["type"] == "minecraft:item" for e in stones)
-    assert {e["name"] for e in stones} == {
-        "enigmaticlegacyplus:blazing_core",
-        "enigmaticlegacyplus:golem_heart",
-        "enigmaticlegacyplus:ocean_stone",
-        "enigmaticlegacyplus:angel_blessing",
-        "enigmaticlegacyplus:lost_engine",
-    }
-    assert all(e.get("weight", 1) == 1 for e in stones)
-    torch = t["pools"][1]["entries"]
-    assert len(torch) == 1 and torch[0]["name"] == "minecraft:torch"
-    assert torch[0]["functions"][0]["count"]["min"] == 32
-    assert torch[0]["functions"][0]["count"]["max"] == 48
-    meat = t["pools"][2]["entries"]
-    assert {e["name"] for e in meat} == {
-        "minecraft:cooked_beef", "minecraft:cooked_porkchop",
-        "minecraft:cooked_chicken", "minecraft:cooked_mutton",
-    }
-    assert all(e["functions"][0]["count"]["min"] == 16
-               and e["functions"][0]["count"]["max"] == 48 for e in meat)
+    # The vanilla loot table MUST remain untouched; bonus contents are appended in code.
+    assert not TABLE.exists(), "Starter addon must never replace vanilla Bonus Chest loot!"
+    java = (ROOT / "addons/ao-starter-chest/src/main/java/dev/ambientodyssey/starterchest/StarterAffixModifier.java").read_text()
+    assert 'loot.add(new ItemStack(spellstone))' in java
+    assert 'loot.add(new ItemStack(Items.TORCH, 32 + ctx.getRandom().nextInt(17)))' in java
+    assert '16 + ctx.getRandom().nextInt(33)' in java
+    assert 'loot.add(affixed)' in java
+    for id in ('blazing_core', 'golem_heart', 'ocean_stone', 'angel_blessing', 'lost_engine'):
+        assert 'enigmaticlegacyplus:' + id in java
     m = json.loads((ADDON / "data/neoforge/loot_modifiers/global_loot_modifiers.json").read_text())
     assert m["replace"] is False and "ao_starter_chest:starter_affix" in m["entries"]
     assert json.loads((ADDON / "data/ao_starter_chest/loot_modifiers/starter_affix.json").read_text())["type"] == "ao_starter_chest:starter_affix"
@@ -90,7 +76,7 @@ def check():
         assert "minecraft:max_damage" in offer["offer_item"]["components"]
     assert json.loads((native_override.parents[4] / "pack.mcmeta").read_text())["pack"]["pack_format"] == 48
 
-    print("AO loot source checks passed: ring recipes, three starter pools, affix modifier definition and synthetic and pinned-native Goblin trade transform.")
+    print("AO loot source checks passed: ring recipes, vanilla Bonus Chest preservation, additive starter rewards, affix modifier definition and synthetic and pinned-native Goblin trade transform.")
     print("NOT TESTED: live native Goblin JAR output, compilation, real Apotheosis affix rolls, Lootr / Minecraft runtime.")
 
 if __name__ == "__main__":
