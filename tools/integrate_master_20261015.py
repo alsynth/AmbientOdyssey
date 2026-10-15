@@ -11,6 +11,9 @@ def original(rel):
     return subprocess.check_output(['git','show',BASE+':release_030/overrides/'+rel],cwd=ROOT)
 
 def build():
+    rollout=ROOT/'docs/handoffs/dd-native-batch-r4-20261015/rollout.json'
+    if rollout.exists() and json.loads(rollout.read_text()).get('applied'):
+        raise ValueError('This historical R1 generator would overwrite the native-evidenced DD expansion. Package current source with tools/package_master_integration.py instead.')
     ledger=[]
     def record(rel,key,before,after,tier,reason,target=None):
         ledger.append(dict(path=rel,key=key,before=before,after=after,boss_category=tier,

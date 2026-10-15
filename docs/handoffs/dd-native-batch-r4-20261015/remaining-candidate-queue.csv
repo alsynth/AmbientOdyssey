@@ -1,0 +1,113 @@
+structure_id,owner_tier,status,native_registered,normal_overworld_biome_count,natural_generation_tested
+adventuredungeons:underground_camp,2,IMPLEMENTED_SCOPED_ZONE,True,3,False
+ars_nouveau:guardian_wilden_den,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,7,False
+ars_nouveau:hunter_wilden_den,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,17,False
+ars_nouveau:stalker_wilden_den,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,17,False
+betterend:eternal_portal,2,HOLD_AMBIGUOUS_NORMAL_DIMENSION,True,22,False
+biomeswevegone:bog_trial,3,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+bosses_of_mass_destruction:gauntlet_arena,6,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+bosses_of_mass_destruction:lich_tower,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+bosses_of_mass_destruction:void_blossom,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,68,False
+cataclysm:abandoned_spire,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+cataclysm:amethyst_nest,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+cataclysm:ancient_factory,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,4,False
+cataclysm:desert_site,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+cataclysm:kobolediator_shrine,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+dungeoncrawl:dungeon,3,IMPLEMENTED_SCOPED_ZONE,True,56,False
+dungeons_arise:abandoned_temple,4,IMPLEMENTED_SCOPED_ZONE,True,19,False
+dungeons_arise:bandit_village,2,IMPLEMENTED_SCOPED_ZONE,True,3,False
+dungeons_arise:ceryneian_hind,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+dungeons_arise:coliseum,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,13,False
+dungeons_arise:kisegi_sanctuary,4,IMPLEMENTED_SCOPED_ZONE,True,20,False
+dungeons_arise:mining_complex,3,IMPLEMENTED_SCOPED_ZONE,True,38,False
+dungeons_arise:mining_system,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+dungeons_arise:monastery,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,20,False
+dungeons_arise:mushroom_mines,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,17,False
+dungeons_arise:scorched_mines,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+dungeons_arise:shiraz_palace,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+dungeons_arise:typhon,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+dungeons_arise:undead_pirate_ship,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+dungeons_arise_seven_seas:corsair_corvette,4,IMPLEMENTED_SCOPED_ZONE,True,9,False
+dungeons_arise_seven_seas:pirate_junk,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+dungeons_arise_seven_seas:small_yacht,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+dungeons_arise_seven_seas:unicorn_galleon,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+dungeons_arise_seven_seas:victory_frigate,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+farmers_structures:afterdark_farms,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+farmers_structures:flesh_farms,3,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+farmers_structures:undergardens,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+farmers_structures:undergardens_sea,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+floating_islands:cemetery_island,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,40,False
+floating_islands:shrine,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,38,False
+floating_islands:witch_island,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,40,False
+formationsoverworld:copper_spire,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,33,False
+formationsoverworld:graveyard,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,23,False
+formationsoverworld:ice_spire,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,3,False
+friendsandfoes:iceologer_cabin,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,4,False
+friendsandfoes:illusioner_shack,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,7,False
+friendsandfoes:illusioner_training_grounds,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,7,False
+graveyard:altar,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+graveyard:crypt,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,4,False
+graveyard:large_graveyard,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,17,False
+graveyard:lich_prison,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,5,False
+iceandfire:fire_dragon_roost,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,24,False
+iceandfire:graveyard,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,42,False
+iceandfire:ice_dragon_roost,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,18,False
+iceandfire:lightning_dragon_roost,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,15,False
+iceandfire:mausoleum,4,IMPLEMENTED_SCOPED_ZONE,True,12,False
+iceandfire:siren_island,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+idas:animal_den/forest_den,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,17,False
+idas:animal_den/polar_bear_den,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,6,False
+idas:frozen_crypt,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,3,False
+idas:iceandfire/sirens_cove,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,9,False
+idas:labyrinth,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+idas:necromancers_spire,4,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+idas:nexus,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,58,False
+idas:redhorn_guild,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,13,False
+idas:tinkers_citadel,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,20,False
+idas:windswept_shrine,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,19,False
+idas:witches_treestump,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,11,False
+incendium:pipeline,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+incendium:sanctum,4,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+integrated_stronghold:stronghold,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,56,False
+irons_spellbooks:ancient_battleground,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+irons_spellbooks:citadel,4,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+irons_spellbooks:impaled_icebreaker,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,4,False
+mns:crimson_forge,3,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+mns:grave_yard,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+mns:warped_dome,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+mowziesmobs:frostmaw_spawn,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+mowziesmobs:monastery,6,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,6,False
+mowziesmobs:umvuthana_grove,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,4,False
+mowziesmobs:wrought_chamber,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,12,False
+mss:arena,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+mss:volcano,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+mtr:stronghold,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,38,False
+mvs:cathedral,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+mvs:floating_islands,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+mvs:gallows,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+mvs:large_floating_island,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+nova_structures:bunker,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,55,False
+nova_structures:creeping_crypt,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+nova_structures:illager_hideout,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,51,False
+nova_structures:lone_citadel,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+nova_structures:remnant_big_remnant,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+nova_structures:remnant_big_remnant_2,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+nova_structures:remnant_big_remnant_3,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+nova_structures:remnant_birch_graveyard,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+nova_structures:remnant_graveyard,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+nova_structures:remnant_zombie_horse_ranch,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+nova_structures:shrine_combat_tier_2,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,55,False
+nova_structures:shrine_combat_tier_3,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,55,False
+nova_structures:shrine_combat_tier_4,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,55,False
+nova_structures:shrine_combat_tier_5,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,55,False
+nova_structures:shrine_tower,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,55,False
+nova_structures:toxic_lair,4,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+nova_structures:undead_crypt,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,27,False
+nova_structures:witch_villa,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,2,False
+philipsruins:ancient_dungeon,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,75,False
+structory:graveyard,2,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,21,False
+underwater_village:dungeon,3,NEXT_BATCH_SOURCE_ROUTE_REVIEW; NOT_ACTIVATED,True,1,False
+twilightforest:hedge_maze,3,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+twilightforest:hydra_lair,4,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+twilightforest:knight_stronghold,4,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
+twilightforest:naga_courtyard,2,HOLD_NO_NORMAL_OVERWORLD_BIOME_MATCH,True,0,False
