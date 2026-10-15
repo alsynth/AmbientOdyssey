@@ -1,1 +1,19 @@
-{"neoforge:conditions":[{"type":"neoforge:false"}]}
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "minecells:corpse"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecells:rotting_corpse"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

@@ -1,1 +1,24 @@
-{"neoforge:conditions":[{"type":"neoforge:false"}]}
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecells:sewage",
+      "type": "neoforge:single"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecells:sewage_bucket"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

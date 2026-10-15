@@ -1,0 +1,23 @@
+{
+  "purpose": "Override files that a mod (or the loader) rewrites when the game loads. Their bytes in a built import are captured from a game-run profile (PR50 base, carried unchanged into R4), so they differ from release_030/overrides without any intended content change. Source-vs-package parity checks ignore these paths; do not hand-sync them.",
+  "evidence": "Classified 15 Oct 2026 against R4 ZIP SHA256 31b037a710320c840bcede26003f46a7219fb1e14e14674d35efcf4e086e6c6d and PR50 base SHA256 dd72daac0fef6c42f758728abc9b003d680b791ccfe174975ec4424cf1ad3d9f. In every case R4 bytes == PR50 base bytes. 'jar_string' = the config file name occurs in the named mod's classes in the installed (R4-pinned) JAR; 'inferred' = name is built at runtime, writer taken from the config namespace.",
+  "files": [
+    {"path": "config/amendments-common.toml", "writer": "Amendments", "evidence": "inferred", "change": "50 default keys added; no source value changed"},
+    {"path": "config/apotheosis/name_generation.cfg", "writer": "Apotheosis-1.21.1-8.9.0.jar", "evidence": "jar_string", "change": "formatting only; parsed values identical"},
+    {"path": "config/biomeswevegone/world_generation.json", "writer": "Oh-The-Biomes-Weve-Gone-NeoForge-2.6.2.jar", "evidence": "inferred", "change": "formatting only; parsed values identical"},
+    {"path": "config/bountiful/errors.log", "writer": "bountiful-neoforge-8.0.0-beta.2.jar", "evidence": "jar_string", "change": "runtime log file"},
+    {"path": "config/euphoria_patcher/settings.toml", "writer": "EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar", "evidence": "jar_string", "change": "line endings only"},
+    {"path": "config/fml.toml", "writer": "NeoForge FML loader", "evidence": "inferred", "change": "TOML table formatting only; parsed values identical"},
+    {"path": "config/jade/plugins.json", "writer": "Jade-1.21.1-NeoForge-15.10.6.jar", "evidence": "jar_string", "change": "plugin list regenerated for installed mods (adds exposure/ftbquests, drops uninstalled modern_companions)"},
+    {"path": "config/jade/sort-order.json", "writer": "Jade-1.21.1-NeoForge-15.10.6.jar", "evidence": "jar_string", "change": "entries added for installed mods"},
+    {"path": "config/moogs_structures.json", "writer": "MoogsStructureLib-neoforge-1.21.1-3.4.2.jar", "evidence": "jar_string", "change": "MslConfig.loadAndSync rewrites with Gson pretty printing: keys re-sorted, integers become doubles; parsed values identical"},
+    {"path": "config/mutantmonsters-common.toml", "writer": "MutantMonsters-v21.1.1-1.21.1-NeoForge.jar", "evidence": "jar_string", "change": "formatting only; parsed values identical"},
+    {"path": "config/natures_spirit-common.toml", "writer": "natures_spirit-2.2.5-1.21.1.jar", "evidence": "jar_string", "change": "20 default keys added; no source value changed"},
+    {"path": "config/oculus.properties", "writer": "neoculus-mc1.21.1-1.8.7.jar", "evidence": "jar_string", "change": "4 default keys added; no source value changed"},
+    {"path": "config/questlog-client.toml", "writer": "questlog-neoforge-1.21.1-3.4.1.jar", "evidence": "jar_string", "change": "21 default keys added; no source value changed"},
+    {"path": "config/regions_unexplored/common.json", "writer": "regions-unexplored-0.6.2-neoforge-21.1.jar", "evidence": "jar_string", "change": "comments re-added; parsed values identical"},
+    {"path": "config/terrablender.toml", "writer": "TerraBlender-neoforge-1.21.1-4.1.0.8.jar", "evidence": "jar_string", "change": "line endings only"},
+    {"path": "config/trmt.json", "writer": "trmt-0.5.1-1.21.1-neoforge.jar", "evidence": "jar_string", "change": "formatting only; parsed values identical"},
+    {"path": "shaderpacks/AO Balanced.txt", "writer": "neoculus-mc1.21.1-1.8.7.jar + EuphoriaPatcher-1.10.5-r5.9.3-neoforge.jar", "evidence": "jar_string", "change": "Iris drops 10 keys whose values equal the shader defaults; Euphoria Patcher adds 2 header keys; effective settings identical"}
+  ]
+}
