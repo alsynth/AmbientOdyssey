@@ -66,7 +66,7 @@ class R3ResourceOnlyPatch(unittest.TestCase):
 
     def test_reject_untested_policy_instead_of_staged_receipt(self):
         self.receipt['status']='DRAFT_NOT_APPROVED'
-        with self.assertRaisesRegex(ValueError,'staging receipt'):
+        with self.assertRaisesRegex(ValueError,'Staging receipt'):
             p.patch_jar(self.j,self.policy,self.receipt)
 
     def test_reject_bad_policy_hash(self):
