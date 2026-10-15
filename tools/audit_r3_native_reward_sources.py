@@ -140,8 +140,12 @@ def regalia_check(mods,index,mod_sources):
         hard_native_only=ns in {'enigmaticlegacy','enigmaticlegacyplus'}
         is_paster=ns in {'pasterdream','neopasterdream'}
         family=(r.get('item_family') or '').lower()
-        accessory_terms=('amulet','charm','cloak','accessory','curios','ring','head','tiara','necklace','talisman','bracelet')
-        accessory=is_paster and any(t in family or t in item.lower() for t in accessory_terms)
+        accessory_terms=('amulet','charm','cloak','accessory','curios','ring','headwear','tiara','necklace','talisman','bracelet')
+        confirmed_paster_accessories={'pasterdream:turnback_cloak','pasterdream:ceciliacare_charm',
+            'pasterdream:evasion_cloak','pasterdream:counter_ring','pasterdream:ghost_face_head','pasterdream:qym_head'}
+        # An ID containing "ring" or "head" need not be an accessory (e.g. a
+        # weapon). Do not infer accessory classification from arbitrary substrings.
+        accessory=is_paster and (any(t in family for t in accessory_terms) or ident in confirmed_paster_accessories)
         hard_native_only |= accessory or ident=='cataclysm:cursium_chestplate'
         if ns=='simplyswords':
             disposition='SEPARATE_UNIQUE_WEAPON_REWARD'
