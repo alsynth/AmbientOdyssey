@@ -83,3 +83,18 @@ Do not lock probabilities without user approval or conflate Apotheosis item rari
 - **T8 Heirloom: 8%** additional rare affixed-item roll (restores the earlier proposed T8 8%; supersedes the mistaken T8 5% confirmation).
 - **T8 Esoteric: 5%** additional rare affixed-item roll remains owner-approved.
 - Other rates, including T8 Ancient 30% and Artifact 15%, remain proposals rather than approvals. T9 remains deferred. Keep rare bonus independent of the guaranteed affixed item; this is a design record, not implemented loot.
+
+## Owner response — rare affix rates and native gem economy (15 Oct 2026)
+
+Owner responded **'sounds good'** to the displayed default Ancient/Artifact bonus-affix rates; record as the working approved values, pending actual integration/runtime testing:
+
+| Boss tier | Ancient extra affixed item | Artifact extra affixed item | Heirloom extra affixed item | Esoteric extra affixed item |
+|---|---:|---:|---:|---:|
+| T6 | 20% | 2% | — | — |
+| T7 | 25% | 8% | 5% | — |
+| T8 | 30% | 15% | 8% | 5% |
+| T9 | deferred | deferred | deferred | deferred |
+
+These are additional boss-drop chances, independent of the already approved guaranteed affix equipment, guaranteed Regalia (subject to exclusions), guaranteed full-pool Simply Swords sword and unmodified native loot. No production implementation or gameplay testing is implied. Evaluate independent rolls and economy over repeated kills before live shipping.
+
+**Gems: preserve Apotheosis native drops and crafting.** Owner confirmed gems have their own Apotheosis drops and apex-tier gems can be crafted. Do **not** create bespoke AO gem drop tables, artificial boss gem gates or new gemstone reward chances. Keep existing gem source and apex-tier recipes unchanged; verify effective port/version behavior before release rather than assume the previous rare-gem loot design is still requested. High-grade affixed *items* in the table above are not gem grades.
