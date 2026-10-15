@@ -2,7 +2,7 @@
 
 **Canonical next-agent overview:** [Claude master handoff](../handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md). This file remains the batch implementation ledger, while the handoff reconciles R4 release, post-R4 R5 prep, owner overrides and stale historical docs.
 
-This is the current working ledger for `experimental/master-integration-r3-reconciled-20261015` / draft PR64. Stable/main is unchanged. Each completed batch must update this file and its evidence in GitHub; a source implementation is not automatically packaged or runtime accepted.
+This is the current working ledger for `experimental/master-integration-r3-reconciled-20261015` / draft PR64. Stable/main is unchanged. Each completed batch must add one receipt file under [`entries/`](entries/README.md) (`YYYY-MM-DD-<slug>.md`) and its evidence in GitHub, instead of appending here, so parallel branches don't conflict; a source implementation is not automatically packaged or runtime accepted.
 
 ## Previous published package (retained rollback/test baseline)
 
@@ -57,6 +57,6 @@ R4-based, fail-closed tools now committed to PR #64: `tools/preview_r5_grand_fro
 
 **Synthetic CI:** [30/30 tests PASS](https://github.com/alsynth/AmbientOdyssey/actions/runs/38753512071), including blocked unsafe approvals, invalid R4 source hashes and unchanged original content. CI generated review-only candidate JSON and five DENIED-by-default review forms; they are NOT Minecraft runtime certification. Actual 338-JAR local installed-profile audit and Paxi winner, owner per-pool category approval and two-player Lootr acceptance are still required; only then should Claude produce a *separate* R5 private test import and record its real SHA256. Complete [Claude execution instructions](../handoffs/r5-grand-from-r4-20261015/CLAUDE_R4_TO_R5_LOCAL_EXECUTION.md). Do not confuse the older PR #63/R2-based R3 staging files with this R4-based work.
 
-## Current-state reconciliation (15 October 2026)
+## Batch receipts after R5 prep
 
-Local 338-JAR profile is pre-R4 (v0.4.9.1); R4 ZIP hash verified; one packaged conflict found (ao_campaign_gates Pinnacle override). Report: [R4_CURRENT_STATE_RECONCILIATION_20261015.md](R4_CURRENT_STATE_RECONCILIATION_20261015.md). Read-only; no gameplay files changed.
+See [`entries/`](entries/README.md). One file per batch or branch; this ledger is not appended to any more.
