@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 AUDIT=ROOT/'docs/handoffs/loot-update-20261015/chest-source-audit.json'
-GRAND=ROOT/'docs/handoffs/loot-update-20261015/grand-treasure-candidates.json'
+GRAND=ROOT/'docs/handoffs/loot-update-20261015/grand-treasure-r2-historical.json'
 ALTERNATIVES=ROOT/'docs/handoffs/loot-update-20261015/R3_SAME_TABLE_GRAND_ALTERNATIVES_UNAPPROVED.json'
 
 def table_resource(table):
@@ -48,5 +48,12 @@ class GrandChestCategoryPolicy(unittest.TestCase):
     def test_r2_current_mapping_is_not_misreported_as_r3_approved(self):
         current=json.loads(GRAND.read_text())
         self.assertEqual(sum(r['source_resource'] != table_resource(r['table']) for r in current),8)
+
+    def test_reconciled_policy_uses_each_chests_own_native_category(self):
+        active=json.loads((ROOT/'docs/handoffs/loot-update-20261015/grand-treasure-candidates.json').read_text())
+        self.assertEqual(len(active),14)
+        for row in active:
+            self.assertEqual(row['source_resource'],table_resource(row['table']))
+            self.assertEqual(row['chance'],0.05)
 
 if __name__=='__main__':unittest.main()

@@ -29,7 +29,7 @@ def validate(path):
                             glm=json.loads(j.read('data/neoforge/loot_modifiers/global_loot_modifiers.json'));assert glm['entries']==['ao_campaign:grand_treasure'] and not glm.get('replace')
                             assert not any('rage_glove' in e for e in glm['entries'])
                             for need in ('dev/ambientodyssey/campaign/BossRewards.class','dev/ambientodyssey/campaign/GrandTreasure.class','ao_loot_policy.json'):assert need in j.namelist(),need
-                            assert 'ao-campaign-0.3.1-experimental' in n,n
+                            assert 'ao-campaign-0.3.2-experimental' in n,n
                             pol=json.loads(j.read('ao_loot_policy.json'));assert pol['regalia'] and len(pol['unique_weapons'])>=50 and pol['grand_treasure']
                         if 'ao-starter-chest-' in n:assert 'data/minecraft/loot_table/chests/spawn_bonus_chest.json' not in j.namelist()
             except Exception as exc:errors.append({'path':n,'error':str(exc)})
