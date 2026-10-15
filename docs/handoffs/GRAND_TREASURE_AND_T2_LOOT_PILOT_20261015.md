@@ -40,3 +40,19 @@ Attach **one supplemental bonus roll** to individually verified eligible structu
 - Should Grand Treasure be a bonus **bundle** or exactly one special item? Proposed default: one compact themed bundle (1 focal reward + a few minor materials) to justify the rare proc.
 - Should higher tiers retain 5% or scale upward? Owner explicitly approved **5% from T3**, but has not said to raise it later. Default keep 5% at all T3+ until changed.
 - Are T7+ structure chest additions even in scope? DD currently only T2–T6 Overworld; leave T7+ individual boss arenas separate.
+
+## OWNER-APPROVED GRAND TREASURE DEFINITION — 15 OCTOBER 2026 (supersedes proposed custom bundle)
+
+**For each eligible Tier 3+ dungeon chest, independently roll a 5% chance for one additional draw from THAT STRUCTURE'S EXISTING BEST NATIVE LOOT POOL.** This extra roll adds to, and never replaces, the chest's original native contents. Preserve original unique/thematic item handling and **existing Apotheosis chest affix probabilities**. Do not introduce a custom Grand Treasure item catalogue, fabricated modded item IDs, new rarity weights, or a generic diamonds-and-books bundle.
+
+**Engineering specification:**
+1. Source-verify the individual structure's actual registered loot table references, rewards and data pack precedence. Identify its highest-value existing appropriate reward source (e.g. native treasure/boss-chest loot table) with auditable selection criteria. If there is no verifiable high-value pool, mark the chest NOT READY for a bonus rather than inventing a fallback or implicitly using another structure's pool. Do not choose based just on chest name.
+2. Execute the additional reward as **one roll from the selected native pool**, not a second complete generation of that table when that table has multiple pools, guaranteed boss items, fixed trophies or progression gates. Verify the underlying native table's weights and conditions. Where implementation cannot safely target a single suitable draw, use a narrow validated native loot entry subset with preserved relative native weights, or flag as blocked for source review—no uncontrolled table-wide regeneration.
+3. Each eligible chest's 5% chance is independent and occurs once per player's individualized Lootr loot generation, if the exact installed Lootr hook allows it. Never reroll upon relog/reopen; enforce exactly one execution per eligible loot generation and guard recursive/global-modifier reentry.
+4. Never trigger on arbitrary common shared `minecraft:chests/simple_dungeon` consumers outside mapped structures, decorative barrels, villages, optional starting Bonus Chest, vanilla spawner farms or fixed per-boss quest/trophy rewards. Keep early Mine Cells native loot unchanged.
+5. Avoid special boss-only items copied into non-boss dungeons unless those drops already appear in the chosen structure's own eligible native treasure pool; respect first-clear-only and unique per-world drop semantics. Preserve dimensions and native access predicates.
+6. Do not assume this can be accomplished with JSON-only modifications: investigate viable scoped loot-context interception / loot modifier or addon against installed NeoForge 1.21.1 and Lootr. Implement only when the exact source table and scoped context are verified; test two players and repeated opens.
+
+**T2 Scrap/Treasure buff is separate** from Grand Treasure: modestly enhance appropriate EXISTING native low-/mid-value sources and treasure-roll frequency starting T2 without rewriting entire structures, changing Apotheosis generation, or creating global inflation. Produce source-grounded per-structure before/after targets; exact increase remains unapproved until measured.
+
+**No code, loot tables or live pack changed by this design note.**
