@@ -1,5 +1,7 @@
 # Ambient Odyssey — Current state
 
+**15 October integration continuation:** use [Implementation progress](IMPLEMENTATION_PROGRESS.md) for the current source/package/test/blocker ledger on draft PR64. Historical entries below describe earlier baselines, not the active integration status.
+
 ## 14 October — full PR54 campaign experiment
 
 Isolated branch experimental/full-pack-through-pr54-20261014. Full test ZIP uploaded before combined tests: 338 CF references, 10 custom JARs / expected 341 physical mods; 153 journal entries / 20 chapters, preserved 32 manual pages. Broad deferred-design request is partly implemented. See [scope and evidence](../testing/FULL_PR54_CAMPAIGN_20261014.md). Do not call it complete or runtime accepted.

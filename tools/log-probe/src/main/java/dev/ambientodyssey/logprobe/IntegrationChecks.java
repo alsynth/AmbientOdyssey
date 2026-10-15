@@ -13,6 +13,30 @@ final class IntegrationChecks {
  static void run(MinecraftServer server) throws Exception {
   var report=new JsonObject();var zones=new JsonArray();var bosses=new JsonArray();
   var structures=server.registryAccess().registryOrThrow(Registries.STRUCTURE);
+  var candidatePath=Path.of("AO_TEST_NOTES/DD_EXPANSION_CANDIDATES.json");
+  if(Files.exists(candidatePath)){
+   var candidates=new JsonArray();
+   var normal=server.registryAccess().registryOrThrow(Registries.WORLD_PRESET)
+      .getHolderOrThrow(net.minecraft.world.level.levelgen.presets.WorldPresets.NORMAL).value().createWorldDimensions();
+   for(var entry:JsonParser.parseString(Files.readString(candidatePath)).getAsJsonArray()){
+    var row=entry.getAsJsonObject().deepCopy();var key=ResourceLocation.parse(row.get("structure_id").getAsString());
+    var structure=structures.get(key);row.addProperty("registered",structure!=null);
+    var dimensions=new JsonObject();
+    if(structure!=null){
+     for(var d:normal.dimensions().entrySet()){
+      var biomes=d.getValue().generator().getBiomeSource().possibleBiomes();
+      var overlap=structure.biomes().stream().filter(biomes::contains).map(b->b.unwrapKey().orElseThrow().location().toString()).sorted().toList();
+      dimensions.add(d.getKey().location().toString(),new Gson().toJsonTree(overlap));
+     }
+     var resource=ResourceLocation.fromNamespaceAndPath(key.getNamespace(),"worldgen/structure/"+key.getPath()+".json");
+     row.addProperty("effective_resource_pack",server.getResourceManager().getResource(resource).map(r->r.sourcePackId()).orElse("registry/code source"));
+    }
+    row.add("normal_preset_biome_overlap",dimensions);candidates.add(row);
+   }
+   var evidence=new JsonObject();evidence.add("candidates",candidates);
+   evidence.addProperty("scope","Actual registered structures and normal preset biome overlap; NOT proof of natural generation or unique dimension placement");
+   Files.writeString(Path.of("DD_EXPANSION_REGISTRY_OBSERVATIONS.json"),new GsonBuilder().setPrettyPrinting().create().toJson(evidence));
+  }
   var config=JsonParser.parseString(Files.readString(Path.of("config/dungeon_difficulty/difficulty_v2.json"))).getAsJsonObject();
   for(var d:config.getAsJsonArray("dimensions"))for(var z:d.getAsJsonObject().getAsJsonArray("zones")){
    String id=z.getAsJsonObject().getAsJsonObject("zone_matches").get("structure").getAsString();
