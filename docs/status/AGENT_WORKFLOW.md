@@ -1,5 +1,7 @@
 # Developer/agent workflow — current
 
+> **SUPERSEDED OPERATING ENTRY POINT (15 Oct 2026):** Read the [current canonical Claude master handoff](../handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md) FIRST, then [PR64 implementation progress](IMPLEMENTATION_PROGRESS.md). The instructions below still refer to old 10–14 Oct source packages (331 refs / 50 quests / r19); they are HISTORICAL, not today's R4 build workflow. Correct base: PR64 with exact R4 released SHA, not v0.4h or PR63 R2.
+
 **This is the operational checklist for the next work session.** Earlier accumulated handoffs are archived at [AGENT_WORKFLOW_full_2026-10-10](../archive/history/AGENT_WORKFLOW_full_2026-10-10.md).
 
 1. **Orient:** Read [current state](CURRENT_STATE.md), [repository map](../maintainers/REPO_MAP.md), and [TODO](../../TODO.md). Avoid treating archived Test6 handoff docs as the latest constraints.
