@@ -109,7 +109,7 @@ class ReviewedR3Grand(unittest.TestCase):
         candidate=dict(self.candidates[0]);candidate['table']='dungeons_arise:chests/keep_kayra/bonus'
         candidate['source_resource']=stage_r3.table_resource(candidate['table'])
         idx=stage_r3.mappings(self.candidates+[candidate])
-        with self.assertRaisesRegex(ValueError,'Native-JAR audit'):
+        with self.assertRaisesRegex(ValueError,'Audit chest count'):
             stage_r3.stage(idx,self.cbytes,self.audit,self.abytes,self.approve(),self.base)
 
     def test_reject_composite_native_pool(self):
