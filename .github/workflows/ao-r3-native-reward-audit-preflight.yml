@@ -1,0 +1,48 @@
+name: AO R3 Native Reward Source Preflight
+on:
+  push:
+    branches:
+      - experimental/master-integration-20261015
+    paths:
+      - tools/audit_r3_native_reward_sources.py
+      - tests/test_audit_r3_native_reward_sources.py
+      - tools/audit_additive_loot_sources.py
+      - tests/test_grand_treasure_chest_category_policy.py
+      - tools/prepare_r3_grand_chest_policy.py
+      - tests/test_prepare_r3_grand_chest_policy.py
+      - tools/stage_r3_grand_policy.py
+      - tests/test_stage_r3_grand_policy.py
+      - tools/patch_r3_grand_campaign_jar.py
+      - tests/test_patch_r3_grand_campaign_jar.py
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_REVIEW_LEDGER.json
+      - .github/workflows/ao-r3-native-reward-audit-preflight.yml
+  pull_request:
+    paths:
+      - tools/audit_r3_native_reward_sources.py
+      - tests/test_audit_r3_native_reward_sources.py
+      - tools/audit_additive_loot_sources.py
+      - tests/test_grand_treasure_chest_category_policy.py
+      - tools/prepare_r3_grand_chest_policy.py
+      - tests/test_prepare_r3_grand_chest_policy.py
+      - tools/stage_r3_grand_policy.py
+      - tests/test_stage_r3_grand_policy.py
+      - tools/patch_r3_grand_campaign_jar.py
+      - tests/test_patch_r3_grand_campaign_jar.py
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_REVIEW_LEDGER.json
+  workflow_dispatch:
+
+jobs:
+  source-audit-static-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check syntax
+        run: python -m py_compile tools/audit_r3_native_reward_sources.py tests/test_audit_r3_native_reward_sources.py tools/audit_additive_loot_sources.py tests/test_grand_treasure_chest_category_policy.py tools/prepare_r3_grand_chest_policy.py tests/test_prepare_r3_grand_chest_policy.py tools/stage_r3_grand_policy.py tests/test_stage_r3_grand_policy.py tools/patch_r3_grand_campaign_jar.py tests/test_patch_r3_grand_campaign_jar.py
+      - name: Run synthetic local-JAR source audits
+        run: python -m unittest -v tests/test_audit_r3_native_reward_sources.py tests/test_grand_treasure_chest_category_policy.py tests/test_prepare_r3_grand_chest_policy.py tests/test_stage_r3_grand_policy.py tests/test_patch_r3_grand_campaign_jar.py

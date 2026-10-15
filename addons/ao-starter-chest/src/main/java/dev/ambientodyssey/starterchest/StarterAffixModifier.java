@@ -12,6 +12,7 @@ import dev.shadowsoffire.apotheosis.tiers.GenContext;
 import dev.shadowsoffire.apotheosis.tiers.WorldTier;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -36,6 +37,15 @@ public final class StarterAffixModifier extends LootModifier {
     private static final Item[] BASE_ITEMS = {
             Items.IRON_SWORD, Items.IRON_PICKAXE, Items.IRON_CHESTPLATE,
             Items.IRON_HELMET, Items.IRON_BOOTS, Items.BOW, Items.SHIELD
+    };
+
+    private static final String[] SPELLSTONES = {
+            "enigmaticlegacyplus:blazing_core", "enigmaticlegacyplus:golem_heart",
+            "enigmaticlegacyplus:ocean_stone", "enigmaticlegacyplus:angel_blessing",
+            "enigmaticlegacyplus:lost_engine"
+    };
+    private static final Item[] COOKED_MEATS = {
+            Items.COOKED_BEEF, Items.COOKED_PORKCHOP, Items.COOKED_CHICKEN, Items.COOKED_MUTTON
     };
 
     public StarterAffixModifier(LootItemCondition[] conditions) {
@@ -83,6 +93,18 @@ public final class StarterAffixModifier extends LootModifier {
         loot.removeIf(stack -> !stack.getOrDefault(Apoth.Components.AFFIXES, ItemAffixes.EMPTY).isEmpty());
         affixed.set(Apoth.Components.FROM_CHEST, true);
         loot.add(affixed);
+        // Crucial: append our extras to the already-generated vanilla Bonus Chest loot.
+        // This module must NOT override minecraft:chests/spawn_bonus_chest.
+        ResourceLocation spellstoneId = ResourceLocation.parse(
+                SPELLSTONES[ctx.getRandom().nextInt(SPELLSTONES.length)]);
+        Item spellstone = BuiltInRegistries.ITEM.get(spellstoneId);
+        if (spellstone != null && spellstone != Items.AIR) {
+            loot.add(new ItemStack(spellstone));
+        }
+        loot.add(new ItemStack(Items.TORCH, 32 + ctx.getRandom().nextInt(17)));
+        loot.add(new ItemStack(
+                COOKED_MEATS[ctx.getRandom().nextInt(COOKED_MEATS.length)],
+                16 + ctx.getRandom().nextInt(33)));
         return loot;
     }
 }

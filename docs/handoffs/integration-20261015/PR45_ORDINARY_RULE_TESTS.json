@@ -1,0 +1,206 @@
+{
+  "scope": "ACTUAL MINECRAFT ENTITY SPAWN EVENTS IN SYNTHETIC STRUCTURE BOUNDING BOXES; not natural generation or combat",
+  "cases": [
+    {
+      "case": "ordinary_t2",
+      "structure": "dungeons_arise:bandit_towers",
+      "tier": 2,
+      "before": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "expected_attributes": {
+        "max_health": 40.0,
+        "attack_damage": 4.199999999999999,
+        "armor": 5.0,
+        "current_health": 20.0
+      },
+      "after_50_ticks": {
+        "max_health": 40.0,
+        "attack_damage": 4.200000017881393,
+        "armor": 5.0,
+        "current_health": 40.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "ordinary_t3",
+      "structure": "adventuredungeons:bygonedungeon",
+      "tier": 3,
+      "before": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "expected_attributes": {
+        "max_health": 50.0,
+        "attack_damage": 4.800000000000001,
+        "armor": 7.0,
+        "current_health": 20.0
+      },
+      "after_50_ticks": {
+        "max_health": 50.0,
+        "attack_damage": 4.800000071525574,
+        "armor": 7.0,
+        "current_health": 50.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "ordinary_t4",
+      "structure": "adventuredungeons:trialrooms",
+      "tier": 4,
+      "before": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "expected_attributes": {
+        "max_health": 60.0,
+        "attack_damage": 5.4,
+        "armor": 10.0,
+        "current_health": 20.0
+      },
+      "after_50_ticks": {
+        "max_health": 60.0,
+        "attack_damage": 5.400000035762787,
+        "armor": 10.0,
+        "current_health": 60.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "ordinary_t6",
+      "structure": "dungeons_arise:foundry",
+      "tier": 6,
+      "before": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "expected_attributes": {
+        "max_health": 80.0,
+        "attack_damage": 9.0,
+        "armor": 17.0,
+        "current_health": 20.0
+      },
+      "after_50_ticks": {
+        "max_health": 80.0,
+        "attack_damage": 9.0,
+        "armor": 17.0,
+        "current_health": 80.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "passive_in_t6",
+      "structure": "dungeons_arise:foundry",
+      "tier": 6,
+      "before": {
+        "max_health": 10.0,
+        "armor": 0.0,
+        "current_health": 10.0
+      },
+      "expected_attributes": {
+        "max_health": 10.0,
+        "armor": 0.0,
+        "current_health": 10.0
+      },
+      "after_50_ticks": {
+        "max_health": 10.0,
+        "armor": 0.0,
+        "current_health": 10.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "named_wither_type_in_t6",
+      "structure": "dungeons_arise:foundry",
+      "tier": 6,
+      "before": {
+        "max_health": 300.0,
+        "attack_damage": 2.0,
+        "armor": 4.0,
+        "current_health": 300.0
+      },
+      "expected_attributes": {
+        "max_health": 300.0,
+        "attack_damage": 2.0,
+        "armor": 4.0,
+        "current_health": 300.0
+      },
+      "after_50_ticks": {
+        "max_health": 300.0,
+        "attack_damage": 2.0,
+        "armor": 4.0,
+        "current_health": 300.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "ordinary_outside",
+      "structure": "none",
+      "tier": -1,
+      "before": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "expected_attributes": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "after_50_ticks": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    },
+    {
+      "case": "ordinary_t7_site",
+      "structure": "cataclysm:frosted_prison",
+      "tier": 7,
+      "before": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "expected_attributes": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "after_50_ticks": {
+        "max_health": 20.0,
+        "attack_damage": 3.0,
+        "armor": 2.0,
+        "current_health": 20.0
+      },
+      "entity_removed": false,
+      "status": "CLIENT_RUNTIME_PASS_SYNTHETIC_RULE"
+    }
+  ],
+  "all_pass": true,
+  "elite_stacking_tested": false,
+  "natural_structures_tested": false,
+  "combat_tested": false
+}

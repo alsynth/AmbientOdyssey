@@ -1,0 +1,236 @@
+[
+  {
+    "path": "config/apotheosis/apotheosis.cfg",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/apotheosis/apothic_attributes.cfg",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/apothic_spawners.cfg",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/block_factorys_bosses-server.toml",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/bosses_of_mass_destruction.json5",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/bosses_rise_config.toml",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/brutalbosses.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/cataclysm-common.toml",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/cataclysm_spellbooks-server.toml",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/dungeon_difficulty/client_settings.json",
+    "hash_verified": true,
+    "repository_original_present": false,
+    "matches_repository_original": false
+  },
+  {
+    "path": "config/dungeon_difficulty/difficulty_v2.json",
+    "hash_verified": true,
+    "repository_original_present": false,
+    "matches_repository_original": false
+  },
+  {
+    "path": "config/dungeon_difficulty/registry.json",
+    "hash_verified": true,
+    "repository_original_present": false,
+    "matches_repository_original": false
+  },
+  {
+    "path": "config/dungeon_difficulty/structure_naming.json",
+    "hash_verified": true,
+    "repository_original_present": false,
+    "matches_repository_original": false
+  },
+  {
+    "path": "config/eternal_starlight.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/fdbosses/bosses.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/iceandfire/iaf-common.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/irons_spellbooks-server.toml",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/balance/rat_stats.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/balance/skeleton_archer_stats.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/balance/skeleton_melee_stats.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/balance/skeleton_minion_stats.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/balance/wraith_stats.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/hollow_sovereign.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/hollow_sovereign_summon.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/kotsukage.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/kotsukage_summon.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/ossukage.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/ossukage_summon.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/umbrakar.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/bosses/umbrakar_summon.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/client/presentation.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/items/ossukage_sword.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/main.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/monsters/dirge_lantern.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/monsters/grave_skitter.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/monsters/sickleghast.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/spawning/rat_spawns.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/remnant/spawning/wraith_spawns.json",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  },
+  {
+    "path": "config/strongerfireboss-common.toml",
+    "hash_verified": true,
+    "repository_original_present": true,
+    "matches_repository_original": true
+  }
+]

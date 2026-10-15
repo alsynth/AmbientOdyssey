@@ -1,0 +1,43 @@
+{
+  "status": "SOURCE_GROUNDED_CHEST_CATEGORY_SUGGESTIONS_NOT_RUNTIME_APPROVED",
+  "version": "20261015-R3",
+  "source": "docs/handoffs/loot-update-20261015/KEEP_KAYRA_PINNED_SOURCE_POOL_EVIDENCE_20261015.json",
+  "jar_sha256": "7eee1eca7e3b2c6c1bede055934f391ae2e8349ffe33e106f451176d2cfcf0e4",
+  "candidate_pool_revisions": [
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
+      "native_source": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json",
+      "native_source_sha256": "ee7e398314939c84c644fdbc7825999e314fdfff308aacdf86a94a2c9a00084f",
+      "pool_index": 1,
+      "reason": "Equipment-and-enchanted-book native treasure pool; rare Netherite Helmet, not the common gold/emerald/diamond pool.",
+      "source_verified": true,
+      "approval_status": "REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST",
+      "native_entry_types": [
+        "minecraft:item"
+      ],
+      "native_entry_weight_total": 106
+    },
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
+      "native_source": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_treasure.json",
+      "native_source_sha256": "8bf79cee247e91c1972ac124455f0bbc04f0b0122ddd7711aecdf3ad8684a0be",
+      "pool_index": 1,
+      "reason": "Equipment-and-enchanted-book native treasure pool; rare Netherite Boots, not the common gold/emerald/diamond pool.",
+      "source_verified": true,
+      "approval_status": "REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST",
+      "native_entry_types": [
+        "minecraft:item"
+      ],
+      "native_entry_weight_total": 114
+    }
+  ],
+  "held_scope_expansion": {
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure",
+    "source_sha256": "f4624f8d117f774727f0c1fcf7f53333f136ee7241b7ff018203682d3c405d92",
+    "suggested_pool_index": 2,
+    "notes": "Garden treasure chest was excluded from historical 14 Grand contexts; it has a distinct enchanted-golden-apple native pool. New trigger would widen rollout from 14 to 15 and therefore needs separate scope/owner review; no automatic addition."
+  },
+  "all_other_mappings": "Retain source-audit own-table candidates; pending installed JAR effective precedence and manual review."
+}

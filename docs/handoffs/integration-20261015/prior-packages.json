@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Ambient-Odyssey-FULL-PR54-CAMPAIGN-EXPERIMENTAL-R2.zip",
+    "sha256": "8cfb456033f4b79d27862750a15f0a109379088cd0ca4f5a0d7ba511e1930b3a",
+    "size": 154480384,
+    "live_installed": "UNKNOWN"
+  },
+  {
+    "name": "Ambient-Odyssey-FULL-PR54-CAMPAIGN-EXPERIMENTAL-R3.zip",
+    "sha256": "2586610ff1a8350f1aa8a268a8a21265017b68f4b40bab9c1697d3acc5523011",
+    "size": 154480502,
+    "live_installed": "UNKNOWN"
+  },
+  {
+    "name": "Ambient-Odyssey-FULL-PR54-CAMPAIGN-EXPERIMENTAL-R4.zip",
+    "sha256": "cd0920fc238c873107962ca27461c8a0919c24018f92559dbdbdf2be13691e65",
+    "size": 154480799,
+    "live_installed": "UNKNOWN"
+  },
+  {
+    "name": "Ambient-Odyssey-FULL-PR54-CAMPAIGN-EXPERIMENTAL.zip",
+    "sha256": "420527903f636c4b0b2f51afbfa94b975fb4bab2a46acb2ecc1df5133c1f0211",
+    "size": 154480313,
+    "live_installed": "UNKNOWN"
+  },
+  {
+    "name": "Ambient-Odyssey-FULL-PR54-EXPERIMENTAL.zip",
+    "sha256": "3a302239b293226465f0abb2014ebcf0ed3cf5347c3b270bc2452740d325576c",
+    "size": 154397403,
+    "live_installed": "UNKNOWN"
+  }
+]

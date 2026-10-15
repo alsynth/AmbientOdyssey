@@ -1,0 +1,484 @@
+{
+  "status": "REAL_PINNED_MOD_JAR_SOURCE_VERIFIED_NOT_RUNTIME_ACCEPTED",
+  "date": "2026-10-15",
+  "source_mod": "DungeonsArise-1.21.1-2.1.68-release.jar",
+  "modrinth_version": "XIRJSFQ0",
+  "verified_mod_jar_sha256": "7eee1eca7e3b2c6c1bede055934f391ae2e8349ffe33e106f451176d2cfcf0e4",
+  "source_workflow_run": "https://github.com/alsynth/AmbientOdyssey/actions/runs/38742993105",
+  "verified_r3_contexts": 11,
+  "selected_pool_inspection": [
+    {
+      "table": "dungeons_arise:chests/illager_fort/illager_fort_normal",
+      "pool": 2,
+      "rolls": 1,
+      "entries": [
+        {
+          "id": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 2,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 2,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/infested_temple/infested_temple_room_normal",
+      "pool": 3,
+      "rolls": 1,
+      "entries": [
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 1,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 3,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 2,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/infested_temple/infested_temple_room_supply",
+      "pool": 3,
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 1,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 3,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 2,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 5
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal",
+      "pool": 1,
+      "rolls": 3,
+      "entries": [
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 12,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 12,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:diamond",
+          "weight": 15,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal",
+      "pool": 2,
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 25,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 25,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:diamond",
+          "weight": 20,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 12,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
+      "pool": 1,
+      "rolls": 1,
+      "entries": [
+        {
+          "id": "minecraft:book",
+          "weight": 40,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:bow",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_sword",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:netherite_helmet",
+          "weight": 2,
+          "functions": []
+        },
+        {
+          "id": "minecraft:ender_pearl",
+          "weight": 15,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 5
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_normal",
+      "pool": 1,
+      "rolls": {
+        "min": 2,
+        "max": 3
+      },
+      "entries": [
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 24,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 32,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:diamond",
+          "weight": 12,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 3
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
+      "pool": 1,
+      "rolls": 1,
+      "entries": [
+        {
+          "id": "minecraft:book",
+          "weight": 40,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:crossbow",
+          "weight": 1,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:bow",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_sword",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_helmet",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_chestplate",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_leggings",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:diamond_boots",
+          "weight": 8,
+          "functions": [
+            "minecraft:enchant_with_levels"
+          ]
+        },
+        {
+          "id": "minecraft:netherite_boots",
+          "weight": 2,
+          "functions": []
+        },
+        {
+          "id": "minecraft:blaze_powder",
+          "weight": 8,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:ender_pearl",
+          "weight": 15,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms",
+      "pool": 3,
+      "rolls": 2,
+      "entries": [
+        {
+          "id": "minecraft:diamond",
+          "weight": 1,
+          "functions": []
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 3,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 5,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 2,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms",
+      "pool": 3,
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "id": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 3,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 2,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 4
+    },
+    {
+      "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure",
+      "pool": 4,
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "id": "minecraft:iron_ingot",
+          "weight": 5,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:diamond",
+          "weight": 5,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:emerald",
+          "weight": 3,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        },
+        {
+          "id": "minecraft:gold_ingot",
+          "weight": 5,
+          "functions": [
+            "minecraft:set_count"
+          ]
+        }
+      ],
+      "all_pools": 6
+    }
+  ],
+  "limitations": [
+    "Matching source-table hashes proves correct original mod JAR for cited tables, not profile datapack winner or Lootr correct behavior",
+    "This is source evidence only; each category requires approval and actual bonus append tests",
+    "The remaining three current 14-context mappings belong to Adventuredungeons (1) and Iron's Spellbooks (2), not audited here"
+  ]
+}

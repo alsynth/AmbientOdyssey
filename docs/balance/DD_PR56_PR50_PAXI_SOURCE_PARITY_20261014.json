@@ -1,0 +1,264 @@
+{
+  "active_modpack_changed": false,
+  "comparison": {
+    "missing_datapack_directories": [],
+    "new_datapack_directories": [],
+    "target_resource_differences": []
+  },
+  "current": {
+    "all_data_files_scanned": 484,
+    "all_datapack_mcmeta": {
+      "ambient_odyssey": {
+        "pack": {
+          "description": "Ambient Odyssey 0.3.0 BWG milling extensions",
+          "pack_format": 48
+        }
+      },
+      "ao_biome_replacement": {
+        "pack": {
+          "description": "Ambient Odyssey 0.3.1 curated Overworld fallback pools",
+          "pack_format": 48
+        }
+      },
+      "ao_compatibility": {
+        "pack": {
+          "description": "Ambient Odyssey: biome eligibility and Curios compatibility",
+          "pack_format": 48
+        }
+      },
+      "ao_content_overrides": {
+        "pack": {
+          "description": "Ambient Odyssey: disabled seal fishing rewards",
+          "pack_format": 48
+        }
+      },
+      "ao_dnt_trek_curation": {
+        "pack": {
+          "description": "Ambient Odyssey: trim Dungeons & Taverns settlement/ruin clutter for Trek without altering native big, Nether or End structures",
+          "pack_format": 48
+        }
+      },
+      "ao_dragon_caves": {
+        "pack": {
+          "description": "Ambient Odyssey: overworld underground dragon cave biome coverage only, no roost changes",
+          "pack_format": 48
+        }
+      },
+      "ao_flight_balance": {
+        "pack": {
+          "description": "Ambient Odyssey: midgame Flight Rings progression recipes",
+          "pack_format": 48
+        }
+      },
+      "ao_lukis_mansion_native_pool": {
+        "pack": {
+          "description": "AO repair: missing native Luki Woodland Mansion bottom-back-left jigsaw pool",
+          "pack_format": 48
+        }
+      },
+      "ao_server_rules": {
+        "pack": {
+          "description": "Ambient Odyssey server rules: 30% sleep, no fire spread and no mob griefing",
+          "pack_format": 48
+        }
+      },
+      "ao_structure_density": {
+        "pack": {
+          "description": "Ambient Odyssey: Structure Test 5 independent placement and safeguards",
+          "pack_format": 48
+        }
+      },
+      "ao_structure_repairs": {
+        "pack": {
+          "description": "Ambient Odyssey: verified native template-pool repairs",
+          "pack_format": 48
+        }
+      },
+      "ao_technical_fixes": {
+        "pack": {
+          "description": "AO v0.4 exact-source JSON and mushroom tag repairs",
+          "pack_format": 48
+        }
+      },
+      "ao_v041_runtime_fixes": {
+        "pack": {
+          "description": "AO 0.4.1 exact broken-recipe guards (19)",
+          "pack_format": 48
+        }
+      },
+      "ao_worldgen_final_fixes": {
+        "pack": {
+          "description": "Ambient Odyssey: final 1.21.1 worldgen compatibility repairs",
+          "pack_format": 48
+        }
+      }
+    },
+    "archive_packs": [],
+    "broken_json": [],
+    "datapack_directories": [
+      "ambient_odyssey",
+      "ao_biome_replacement",
+      "ao_compatibility",
+      "ao_content_overrides",
+      "ao_dnt_trek_curation",
+      "ao_dragon_caves",
+      "ao_flight_balance",
+      "ao_lukis_mansion_native_pool",
+      "ao_server_rules",
+      "ao_structure_density",
+      "ao_structure_repairs",
+      "ao_technical_fixes",
+      "ao_v041_runtime_fixes",
+      "ao_worldgen_final_fixes"
+    ],
+    "intentional_dnt_exclusions": [
+      {
+        "id": "nova_structures:village_jungle",
+        "selector": "#ambient_odyssey:dnt_trek_disabled",
+        "sha256": "54352ba88dcd7177cc37101901370bba9755259a715f4a8646b813e5630605b1"
+      },
+      {
+        "id": "nova_structures:remnant_birch_graveyard",
+        "selector": "#ambient_odyssey:dnt_trek_disabled",
+        "sha256": "61549e27387768356a63b300bd4dfbe2a62957e73a0d731db39c1ad49e80f6e9"
+      }
+    ],
+    "root_label": "release_030/overrides/config/paxi/datapacks",
+    "target_resources": {}
+  },
+  "detected_gates": [],
+  "live_generation_runtime_tested": false,
+  "live_resource_winner_runtime_tested": false,
+  "missing_expected_curation_files": [],
+  "pr50_reference": {
+    "all_data_files_scanned": 484,
+    "all_datapack_mcmeta": {
+      "ambient_odyssey": {
+        "pack": {
+          "description": "Ambient Odyssey 0.3.0 BWG milling extensions",
+          "pack_format": 48
+        }
+      },
+      "ao_biome_replacement": {
+        "pack": {
+          "description": "Ambient Odyssey 0.3.1 curated Overworld fallback pools",
+          "pack_format": 48
+        }
+      },
+      "ao_compatibility": {
+        "pack": {
+          "description": "Ambient Odyssey: biome eligibility and Curios compatibility",
+          "pack_format": 48
+        }
+      },
+      "ao_content_overrides": {
+        "pack": {
+          "description": "Ambient Odyssey: disabled seal fishing rewards",
+          "pack_format": 48
+        }
+      },
+      "ao_dnt_trek_curation": {
+        "pack": {
+          "description": "Ambient Odyssey: trim Dungeons & Taverns settlement/ruin clutter for Trek without altering native big, Nether or End structures",
+          "pack_format": 48
+        }
+      },
+      "ao_dragon_caves": {
+        "pack": {
+          "description": "Ambient Odyssey: overworld underground dragon cave biome coverage only, no roost changes",
+          "pack_format": 48
+        }
+      },
+      "ao_flight_balance": {
+        "pack": {
+          "description": "Ambient Odyssey: midgame Flight Rings progression recipes",
+          "pack_format": 48
+        }
+      },
+      "ao_lukis_mansion_native_pool": {
+        "pack": {
+          "description": "AO repair: missing native Luki Woodland Mansion bottom-back-left jigsaw pool",
+          "pack_format": 48
+        }
+      },
+      "ao_server_rules": {
+        "pack": {
+          "description": "Ambient Odyssey server rules: 30% sleep, no fire spread and no mob griefing",
+          "pack_format": 48
+        }
+      },
+      "ao_structure_density": {
+        "pack": {
+          "description": "Ambient Odyssey: Structure Test 5 independent placement and safeguards",
+          "pack_format": 48
+        }
+      },
+      "ao_structure_repairs": {
+        "pack": {
+          "description": "Ambient Odyssey: verified native template-pool repairs",
+          "pack_format": 48
+        }
+      },
+      "ao_technical_fixes": {
+        "pack": {
+          "description": "AO v0.4 exact-source JSON and mushroom tag repairs",
+          "pack_format": 48
+        }
+      },
+      "ao_v041_runtime_fixes": {
+        "pack": {
+          "description": "AO 0.4.1 exact broken-recipe guards (19)",
+          "pack_format": 48
+        }
+      },
+      "ao_worldgen_final_fixes": {
+        "pack": {
+          "description": "Ambient Odyssey: final 1.21.1 worldgen compatibility repairs",
+          "pack_format": 48
+        }
+      }
+    },
+    "archive_packs": [],
+    "broken_json": [],
+    "datapack_directories": [
+      "ambient_odyssey",
+      "ao_biome_replacement",
+      "ao_compatibility",
+      "ao_content_overrides",
+      "ao_dnt_trek_curation",
+      "ao_dragon_caves",
+      "ao_flight_balance",
+      "ao_lukis_mansion_native_pool",
+      "ao_server_rules",
+      "ao_structure_density",
+      "ao_structure_repairs",
+      "ao_technical_fixes",
+      "ao_v041_runtime_fixes",
+      "ao_worldgen_final_fixes"
+    ],
+    "intentional_dnt_exclusions": [
+      {
+        "id": "nova_structures:village_jungle",
+        "selector": "#ambient_odyssey:dnt_trek_disabled",
+        "sha256": "54352ba88dcd7177cc37101901370bba9755259a715f4a8646b813e5630605b1"
+      },
+      {
+        "id": "nova_structures:remnant_birch_graveyard",
+        "selector": "#ambient_odyssey:dnt_trek_disabled",
+        "sha256": "61549e27387768356a63b300bd4dfbe2a62957e73a0d731db39c1ad49e80f6e9"
+      }
+    ],
+    "root_label": "/tmp/pr56-pr50-source/release_030/overrides/config/paxi/datapacks",
+    "target_resources": {}
+  },
+  "scope": "REPOSITORY_SOURCE_ONLY__NOT_MATERIALIZED_FULL_IMPORT_OR_LIVE_PAXI",
+  "source_changes_safe_to_apply": true,
+  "source_pr50_branch_compared": true,
+  "github_actions": {
+    "source_run_id": 38603399441,
+    "source_job_id": 115988027934,
+    "repo_head_commit": "6e9691276b69fb03a9e8361e5ee9aa10134ffe59",
+    "source_ref": "experimental/pr45-runtime-rpg-acceptance-20261013",
+    "audit_type": "REPO_TREE_SNAPSHOT_NOT_FULL_IMPORT_RUNTIMESTATE"
+  }
+}

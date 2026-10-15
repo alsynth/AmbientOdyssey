@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 group = 'dev.ambientodyssey.starterchest'
-version = '0.1.0-experimental'
+version = '0.2.0-experimental'
 base { archivesName = 'ao-starter-chest' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 repositories {
@@ -16,8 +16,12 @@ dependencies {
     implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }
     implementation('dev.shadowsoffire:ApothicAttributes:1.21.1-2.11.0') { transitive = false }
     runtimeOnly('vazkii.patchouli:Patchouli:1.21.1-93-NEOFORGE') { transitive = false }
-    runtimeOnly('top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1') { transitive = false }
-    runtimeOnly('com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1') { transitive = false }
+    if (project.hasProperty('aoRuntimeMods')) {
+        runtimeOnly fileTree(dir: project.property('aoRuntimeMods'), include: ['curios-neoforge-*.jar', 'caelus-neoforge-*.jar'])
+    } else {
+        runtimeOnly('top.theillusivec4.curios:curios-neoforge:9.5.1+1.21.1') { transitive = false }
+        runtimeOnly('com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1') { transitive = false }
+    }
 }
 neoForge {
     version = '21.1.252'

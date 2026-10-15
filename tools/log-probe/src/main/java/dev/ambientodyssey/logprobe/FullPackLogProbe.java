@@ -39,12 +39,20 @@ public final class FullPackLogProbe {
    var type=Class.forName("dev.shadowsoffire.apotheosis.socket.gem.GemRegistry");
    var registry=type.getField("INSTANCE").get(null);
    var values=(java.util.Collection<?>)type.getMethod("getValues").invoke(registry);
+   LOG.info("AO_FULL_PACK_WORLD_JOIN_OBSERVED: disposable integrated player/world ready; {} native gems",values.size());
    if(Boolean.getBoolean("ao.fullpack.campaignChecks")) {
     Class.forName("dev.shadowsoffire.apotheosis.affix.augmenting.AugmentingScreen$FatTexButton");
-    mc.getSingleplayerServer().submit(() -> CampaignChecks.run(mc.getSingleplayerServer())).get();
+    mc.getSingleplayerServer().submit(() -> {
+     CampaignChecks.run(mc.getSingleplayerServer());
+     try { IntegrationChecks.run(mc.getSingleplayerServer()); } catch(Exception e) { throw new IllegalStateException(e); }
+    }).get();
    }
-   LOG.info("AO_FULL_PACK_WORLD_JOIN_PASS: player joined disposable flat integrated world; {} native gems loaded; content errors remain diagnostic, no gameplay certification",values.size());
-   mc.stop();
+   var config=com.google.gson.JsonParser.parseString(java.nio.file.Files.readString(java.nio.file.Path.of("config/dungeon_difficulty/difficulty_v2.json"))).getAsJsonObject();
+   mc.getSingleplayerServer().submit(() -> {
+    try { OrdinaryRuleProbe.start(mc.getSingleplayerServer(),config,() -> mc.execute(() -> {
+     LOG.info("AO_FULL_PACK_WORLD_JOIN_PASS: integrated world and synthetic DD fixtures completed; no natural combat or multiplayer certification");mc.stop();
+    })); } catch(Exception e) { LOG.error("AO_FULL_PACK_PROBE_FAIL",e);mc.execute(mc::stop); }
+   }).get();
   }catch(Exception|LinkageError e){finished=true;LOG.error("AO_FULL_PACK_PROBE_FAIL",e);mc.stop();}
  }
 }

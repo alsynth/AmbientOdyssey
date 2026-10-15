@@ -1,0 +1,10 @@
+["Gameplay Changes"]
+# Ambient Odyssey uses Better Combat as its single combat framework.
+# Bosses'Rise encounters themselves remain unchanged; only its extra player
+# dodge/roll ability is disabled.
+"Roll ability" = false
+"Need item to Roll" = false
+
+# Use compact/vanilla-style boss bars so Jade and other HUD information do not
+# collide with Bosses'Rise's very large advanced bars.
+"Advanced Bossbar" = false

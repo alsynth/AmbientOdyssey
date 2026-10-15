@@ -1,0 +1,63 @@
+#=== Stronger Fire Boss Config / 原初受火者增强配置 ===
+[stronger_fire_boss]
+	#灵魂状态下更低的伤害上限。默认: true
+	#Enable stricter damage limiter in soul mode. Default: true
+	enableSoulDamageLimiter = true
+	#灵魂状态下伤害上限百分比。默认: 0.01
+	#Soul mode damage cap percent. Default: 0.01
+	# Default: 0.01
+	# Range: 0.0 ~ 1.0
+	soulDamageLimitPercent = 0.01
+	#灵魂状态下溢出伤害衰减系数。默认: 0.3
+	#Soul mode overflow multiplier. Default: 0.3
+	# Default: 0.3
+	# Range: 0.0 ~ 1.0
+	soulOverflowMultiplier = 0.3
+	#灵魂状态下负面药水效果持续时间减半。默认: true
+	#Halve negative potion effect duration in soul mode. Default: true
+	enableSoulEffectHalving = true
+	#灵魂状态下受伤后获得短暂无敌。默认: false
+	#Gain invulnerability after hit in soul mode. Default: false
+	enableSoulInvulnerability = false
+	#灵魂状态下受伤后无敌持续时间（刻）。默认: 20
+	#Invulnerability ticks after hit in soul mode. Default: 20
+	# Default: 20
+	# Range: 0 ~ 200
+	soulInvulnerabilityTicks = 20
+	#灵魂状态下每秒恢复生命值。默认: false
+	#Enable HP regen in soul mode. Default: false
+	enableSoulRegen = false
+	#灵魂状态下每秒恢复的生命值。默认: 1.0
+	#HP regen per second in soul mode. Default: 1.0
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	soulRegenAmount = 1.0
+	#灵魂状态下额外护甲韧性加成。默认: false
+	#Enable soul mode armor toughness bonus. Default: false
+	enableSoulArmorToughness = false
+	#灵魂状态下额外护甲韧性值。默认: 5.0
+	#Soul mode armor toughness bonus. Default: 5.0
+	# Default: 5.0
+	# Range: 0.0 ~ 1000.0
+	soulArmorToughness = 5.0
+	#为原初受火者的武器添加锋利V附魔。默认: true
+	#Add Sharpness V to held weapon. Default: true
+	enableSharpnessWeapon = true
+	#原初受火者飞剑技能施加破甲效果。默认: true
+	#Apply Rend effect on FireBoss dagger attacks. Default: true
+	enableDaggerRend = true
+	#破甲效果持续时间（刻）。默认: 600
+	#Rend effect duration in ticks. Default: 600
+	# Default: 600
+	# Range: 0 ~ 72000
+	daggerRendDuration = 600
+	#破甲效果最大等级。默认: 9
+	#Max Rend amplifier level. Default: 9
+	# Default: 9
+	# Range: 0 ~ 20
+	daggerRendMaxLevel = 9
+	#炽焰飞剑卷轴掉落概率(暂时无效)。默认: 0.5
+	#Blazing Flame Sword scroll drop chance. Default: 0.5
+	# Default: 0.5
+	# Range: 0.0 ~ 1.0
+	blazingFlameSwordScrollDropChance = 0.5

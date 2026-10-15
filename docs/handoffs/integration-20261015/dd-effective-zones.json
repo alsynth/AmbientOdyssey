@@ -1,0 +1,240 @@
+{
+  "status": "SOURCE IMPLEMENTED; REGISTRY/PRECEDENCE RUNTIME CHECK PENDING",
+  "zones": [
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "adventuredungeons:bygonedungeon"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "adventuredungeons:coldlair"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "adventuredungeons:murkydungeon"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "adventuredungeons:trialrooms"
+      },
+      "difficulty": {
+        "name": "ao_tier_4",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:bandit_towers"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:foundry"
+      },
+      "difficulty": {
+        "name": "ao_tier_6",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:illager_fort"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:infested_temple"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:keep_kayra"
+      },
+      "difficulty": {
+        "name": "ao_tier_6",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:plague_asylum"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeons_arise:thornborn_towers"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "floating_islands:spider_ruin"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "floating_islands:steampunk_island"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "irons_spellbooks:catacombs"
+      },
+      "difficulty": {
+        "name": "ao_tier_4",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "irons_spellbooks:ice_spider_den"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:ancient_crypt"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:level_three_ruins"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:level_two_ruins"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:lost_soul_dungeon"
+      },
+      "difficulty": {
+        "name": "ao_tier_4",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:ocean_ruins"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:rare_ruin"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "philipsruins:underground_structures"
+      },
+      "difficulty": {
+        "name": "ao_tier_2",
+        "level": 1
+      }
+    },
+    {
+      "zone_matches": {
+        "biome": null,
+        "structure": "dungeoncrawl:dungeon"
+      },
+      "difficulty": {
+        "name": "ao_tier_3",
+        "level": 1
+      }
+    }
+  ],
+  "held_arena_tiers": [
+    "cataclysm:frosted_prison",
+    "cataclysm:sunken_city"
+  ],
+  "other_497_candidates": "REVIEW LATER until exact dimension, effective provider and tier proven"
+}

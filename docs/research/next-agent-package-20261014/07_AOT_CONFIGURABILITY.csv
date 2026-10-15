@@ -1,0 +1,56 @@
+boss,hp_attribute,damage_attribute,config_keys,category,meaning
+twilightforest:naga,WORKS,SCALES,0,A,damage editable via the attribute route
+twilightforest:lich,WORKS,WORKS,0,A,damage editable via the attribute route
+twilightforest:minoshroom,WORKS,WORKS,0,A,damage editable via the attribute route
+twilightforest:hydra,CAPPED,FIXED,0,C,attribute damage did not move and NO config keys: damage cannot be configured by any known route
+twilightforest:knight_phantom,WORKS,WORKS,0,A,damage editable via the attribute route
+twilightforest:ur_ghast,WORKS,FIXED,0,C,attribute damage did not move and NO config keys: damage cannot be configured by any known route
+twilightforest:snow_queen,WORKS,WORKS,0,A,damage editable via the attribute route
+twilightforest:alpha_yeti,WORKS,PARTIAL,0,F,attribute damage only partly moved and NO config keys: partly configurable (attribute route only)
+aether:slider,CAPPED,FIXED,0,C,attribute damage did not move and NO config keys: damage cannot be configured by any known route
+deep_aether:eots_controller,WORKS,FIXED,0,C,attribute damage did not move and NO config keys: damage cannot be configured by any known route
+undergarden:forgotten_guardian,WORKS,WORKS,0,A,damage editable via the attribute route
+alexscaves:luxtructosaurus,CAPPED,WORKS,0,A,damage editable via the attribute route
+alexscaves:tremorzilla,CAPPED,PARTIAL,0,F,attribute damage only partly moved and NO config keys: partly configurable (attribute route only)
+alexscaves:atlatitan,CAPPED,WORKS,0,A,damage editable via the attribute route
+alexscaves:hullbreaker,CAPPED,WORKS,0,A,damage editable via the attribute route
+alexscaves:forsaken,WORKS,SCALES,0,A,damage editable via the attribute route
+aquamirae:captain_cornelia,CAPPED,SCALES,,A,damage editable via the attribute route
+graveyard:lich,CAPPED,FIXED,1,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+graveyard:nightmare,WORKS,WORKS,0,A,damage editable via the attribute route
+ars_nouveau:wilden_boss,CAPPED,SCALES,,A,damage editable via the attribute route
+netherman:azazel,UNTESTED,UNTESTED,,D,damage not testable by command / no data
+cataclysm:ignis,CAPPED,FIXED,3,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+cataclysm:scylla,CAPPED,WORKS,11,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+cataclysm:netherite_monstrosity,CAPPED,PARTIAL,6,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+cataclysm:ender_guardian,CAPPED,PARTIAL,10,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+cataclysm:the_leviathan,CAPPED,FIXED,13,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+cataclysm:maledictus,CAPPED,WORKS,10,A,damage editable via the attribute route
+cataclysm_spellbooks:ancient_ancient_remnant,CAPPED,WORKS,,A,damage editable via the attribute route
+archaion:last_of_deepslate,CAPPED,SCALES,,A,damage editable via the attribute route
+fdbosses:chesed,WORKS,FIXED,15,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+fdbosses:malkuth,FAILS,FIXED,14,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+fdbosses:geburah,WORKS,PARTIAL,8,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+mowziesmobs:frostmaw,WORKS,SCALES,3,A,damage editable via the attribute route
+mowziesmobs:ferrous_wroughtnaut,WORKS,WORKS,3,A,damage editable via the attribute route
+mowziesmobs:umvuthi,WORKS,PARTIAL,3,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+bosses_of_mass_destruction:lich,CAPPED,PARTIAL,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+bosses_of_mass_destruction:obsidilith,CAPPED,WORKS,3,A,damage editable via the attribute route
+bosses_of_mass_destruction:gauntlet,WORKS,MANUAL,2,D,damage not testable by command / no data
+bosses_of_mass_destruction:void_blossom,CAPPED,WORKS,2,A,damage editable via the attribute route
+block_factorys_bosses:kraken,CAPPED,FIXED,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+block_factorys_bosses:sandworm,WORKS,PARTIAL,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+block_factorys_bosses:infernal_dragon,WORKS,FIXED,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+block_factorys_bosses:underworld_knight,WORKS,WORKS,2,A,damage editable via the attribute route
+irons_spellbooks:dead_king,CAPPED,PARTIAL,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+irons_spellbooks:fire_boss,CAPPED,SCALES,0,A,damage editable via the attribute route
+irons_spellbooks:citadel_keeper,WORKS,WORKS,2,A,damage editable via the attribute route
+remnants:hollow_sovereign,CAPPED,SCALES,7,A,damage editable via the attribute route
+remnants:umbrakar,CAPPED,FIXED,9,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+remnants:kotsukage,CAPPED,PARTIAL,9,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+remnants:ossukage,CAPPED,FIXED,7,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+iceandfire:fire_dragon,CAPPED,WORKS,7,A,damage editable via the attribute route
+iceandfire:ice_dragon,CAPPED,WORKS,7,A,damage editable via the attribute route
+iceandfire:lightning_dragon,CAPPED,WORKS,7,A,damage editable via the attribute route
+eternal_starlight:permafrost,WORKS,PARTIAL,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)
+eternal_starlight:lunar_monstrosity,WORKS,FIXED,2,B,attribute damage failed/partial; mod HAS config keys (config route untested)

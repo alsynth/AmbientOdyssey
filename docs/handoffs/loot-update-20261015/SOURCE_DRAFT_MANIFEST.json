@@ -1,0 +1,27 @@
+{
+  "purpose": "Claude must finish and compile all decided drafts, assemble full private import; new runtime tests will run later in Codex",
+  "source_branch": "experimental/master-integration-20261015",
+  "upstream_decisions": "455a7cc1e6593df93b37d0ce2cb5275830d90a68",
+  "new_source_compiled": false,
+  "new_source_runtime_tested": false,
+  "new_zip_built": false,
+  "owner_weapon_override": "Only weapons that count as unique weapons; supersedes full ordinary sword/weapon pool",
+  "policy_compiler_known_error": "TypeError: unhashable type: dict from optional native unique tag objects; policy resource not generated",
+  "candidate_chest_contexts": 70,
+  "grand_candidate_contexts": 14,
+  "native_unique_tag_records": 58,
+  "files": {
+    "addons/ao-campaign/src/main/java/dev/ambientodyssey/campaign/BossRewards.java": "706caf5e772f6b334a8c483eaae59cf3b4cd59e01a649421783602906c4a41e5",
+    "addons/ao-campaign/src/main/java/dev/ambientodyssey/campaign/GrandTreasure.java": "5b28fd6b494b27504f95b354b70f911f9e0a5c8aff1790fee7a517e096d7056b",
+    "addons/ao-campaign/src/main/java/dev/ambientodyssey/campaign/AOCampaign.java": "4ad3982a6263789299663344bbd6aeaeb3e85aa5dabf99706471949b5f00cadc",
+    "addons/ao-campaign/build.gradle": "9aef2e4f070956c7cd3a815eefd95a0c4a5f9e47db1dda8f75628ca37230ccf2",
+    "addons/ao-campaign/src/main/resources/META-INF/neoforge.mods.toml": "a09e9ca63be7e777227a79d6f6bf316c60875f76a4e64b1b20739c0e52ce8fed",
+    "addons/ao-campaign/src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json": "e0d2fafc7a2553455dbd07d84f35c1dc2889ea353dbabfcdd61646d7c61a66c3",
+    "addons/ao-campaign/src/main/resources/data/ao_campaign/loot_modifiers/grand_treasure.json": "2f6e18c682f03a5eb61c013d3f5c8477cbe4134a8611a3d6fa13bd4b72f5671f",
+    "tools/audit_additive_loot_sources.py": "5cd207794b85dfca8bb6eaf1ef85fde47e05f408d1af30ebe11747425617d323",
+    "tools/compile_additive_loot_policy.py": "2d1140d144ef2aff9057225c255daebe32d538ecc245bebc23ec7052a9d8ab7e",
+    "tools/validate_ao_starter_apotheosis_exemptions.py": "dcefacc63081b3b2968b30d642b4e4ff6dd118a961f7170ef82f5fd99080a3dd"
+  },
+  "deleted_native_gem_exemption": "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/data/apotheosis/loot_modifiers/gem_loot_injection.json",
+  "handoff": "docs/handoffs/CLAUDE_COMPLETE_IMPORT_ZIP_HANDOFF_20261015.md"
+}

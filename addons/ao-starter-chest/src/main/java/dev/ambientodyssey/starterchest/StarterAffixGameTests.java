@@ -55,7 +55,7 @@ public final class StarterAffixGameTests {
                     + " rarities=" + RarityRegistry.getSortedRarities().stream()
                           .map(r -> RarityRegistry.INSTANCE.getKey(r).toString()).toList()
                     + " items=" + items);
-            h.assertTrue(items.size() == 2 && items.get(0).is(Items.TORCH) && items.get(0).getCount() == 40,
+            h.assertTrue(items.size() >= 4 && items.get(0).is(Items.TORCH) && items.get(0).getCount() == 40,
                     "Normal starter supplies were replaced or damaged");
             ItemStack reward = items.get(1);
             var rarity = reward.get(Apoth.Components.RARITY);

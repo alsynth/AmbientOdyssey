@@ -5,7 +5,7 @@ plugins {
 version='1.0-test-only'
 repositories { maven { url = 'https://maven.shadowsoffire.dev/releases' } }
 dependencies {
- compileOnly files('../../addons/ao-campaign/build/libs/ao-campaign-0.1.1-experimental.jar')
+ compileOnly files('../../addons/ao-campaign/build/libs/ao-campaign-0.3.0-experimental.jar')
  compileOnly files('../../addons/ao-augmenting-sigils/build/libs/ao-augmenting-sigils-0.1.1-experimental.jar')
  implementation('dev.shadowsoffire:Apotheosis:1.21.1-8.9.0') { transitive = false }
  implementation('dev.shadowsoffire:Placebo:1.21.1-9.9.2') { transitive = false }

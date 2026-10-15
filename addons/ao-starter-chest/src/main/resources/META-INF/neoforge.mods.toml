@@ -3,7 +3,7 @@ loaderVersion="[4,)"
 license="MIT"
 [[mods]]
 modId="ao_starter_chest"
-version="0.1.0-experimental"
+version="0.2.0-experimental"
 displayName="Ambient Odyssey - Starter Chest"
 description='''Curated starter Bonus Chest and genuine Apotheosis starter equipment. Experimental, runtime tests required.'''
 [[dependencies.ao_starter_chest]]

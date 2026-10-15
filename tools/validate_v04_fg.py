@@ -83,10 +83,12 @@ for slug,e in lock['additions'].items():
  refs[pid]=fid
 if lock.get('default_integrated_patches'):
  e=lock['optional_integrated_patches'];refs[e['projectId']]=e['id']
-assert len(refs)==330,len(refs)
+sky_removed=lock['remove_projects'].get('demis-sky-arena')==1141465
+assert len(refs)==330-int(sky_removed),len(refs)
+if sky_removed: assert 1141465 not in refs
 for pid,fid,_ in EXPECTED.values(): assert refs[pid]==fid
 for pid in (618790,890127,889079,532610,520110,623764,841890,1005914,1123977,60028):
  assert pid in refs,('missing prior required project',pid)
 assert {1023913,1657433}.isdisjoint(refs), 'Subtle Effects and its exclusive compatibility patch were removed after user crash testing'
 assert lock['terminal_jigsaw_repair']['expected_overrides']==273
-print('PASS: 330 source refs including exact 12 f/g pins; pinned Mine Cells stack, libraries and 273 native repairs retained; Subtle Effects removed. Static only.')
+print(f'PASS: {len(refs)} legacy source refs including exact 12 f/g pins; pinned Mine Cells stack, libraries and 273 native repairs retained; approved removals retained. This is not the 337-ref full-import roster. Static only.')

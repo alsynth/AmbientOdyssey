@@ -1,0 +1,460 @@
+{
+  "status": "THREE_PINNED_MOD_JAR_SOURCE_TABLE_HASHES_MATCHED_PRIOR_AO_AUDIT_STATIC_ONLY",
+  "github_actions_run": "https://github.com/alsynth/AmbientOdyssey/actions/runs/38743939174",
+  "source_versions": [
+    {
+      "mod": "Adventure Dungeons",
+      "version": "1.3.1",
+      "modrinth_version_id": "BOyaLHWk"
+    },
+    {
+      "mod": "Iron's Spellbooks",
+      "version": "3.16.3",
+      "modrinth_version_id": "slKLosTb"
+    }
+  ],
+  "verified_contexts": 3,
+  "selected_and_other_native_pools": [
+    {
+      "table": "adventuredungeons:chests/murkydungeon/murky_chest_reward",
+      "selected_pool_index": 0,
+      "native_source_sha256": "6cd05c740754614cb9d74eaf7128aa3b59e2c516496da432ea157b915ca9c212",
+      "all_pools": [
+        {
+          "index": 0,
+          "rolls": {
+            "min": 8,
+            "max": 11
+          },
+          "entries": [
+            {
+              "item": "minecraft:iron_ingot",
+              "weight": 8,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:gold_ingot",
+              "weight": 6,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:diamond",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:emerald",
+              "weight": 3,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "minecraft:ender_pearl",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "minecraft:wild_armor_trim_smithing_template",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:sentry_armor_trim_smithing_template",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:music_disc_11",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:music_disc_otherside",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "minecraft:book",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ],
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "table": "irons_spellbooks:chests/catacombs/hidden_trough_treasure",
+      "selected_pool_index": 3,
+      "native_source_sha256": "23372ec81c93bf5b3aad0046362efa0fc44fac17a6f167d2bad1540fd0aa6ce8",
+      "all_pools": [
+        {
+          "index": 0,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "irons_spellbooks:rotten_spell_book",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "irons_spellbooks:scroll",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "irons_spellbooks:blank_rune",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "rolls": 12,
+          "entries": [
+            {
+              "item": "minecraft:wheat",
+              "weight": 5,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:hay_block",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "rolls": 3,
+          "entries": [
+            {
+              "item": "minecraft:emerald",
+              "weight": 5,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:diamond",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "table": "irons_spellbooks:chests/generic_magic_treasure",
+      "selected_pool_index": 6,
+      "native_source_sha256": "f3f8c9464ed17b92e8edf0bcef633c6f527637b33be07231b09e00a51e33b776",
+      "all_pools": [
+        {
+          "index": 0,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "irons_spellbooks:arcane_essence",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "rolls": {
+            "min": 1,
+            "max": 2
+          },
+          "entries": [
+            {
+              "item": "irons_spellbooks:scroll",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell"
+              ],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "irons_spellbooks:blank_rune",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": [
+                "minecraft:random_chance"
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "rolls": {
+            "min": 1,
+            "max": 2
+          },
+          "entries": [
+            {
+              "item": null,
+              "weight": 1,
+              "type": "minecraft:loot_table",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": null,
+              "weight": 1,
+              "type": "minecraft:loot_table",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "rolls": {
+            "min": 1,
+            "max": 4
+          },
+          "entries": [
+            {
+              "item": null,
+              "weight": 1,
+              "type": "minecraft:loot_table",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "rolls": 6,
+          "entries": [
+            {
+              "item": "minecraft:diamond",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:copper_ingot",
+              "weight": 8,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:gold_ingot",
+              "weight": 5,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:emerald",
+              "weight": 3,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_ingot",
+              "weight": 12,
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "rolls": 1,
+          "entries": [
+            {
+              "item": "minecraft:diamond_sword",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell",
+                "minecraft:enchant_with_levels"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_sword",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell",
+                "minecraft:enchant_with_levels"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_sword",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell"
+              ],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_helmet",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_chestplate",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_leggings",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:iron_boots",
+              "weight": 2,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:diamond_helmet",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:diamond_chestplate",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:diamond_leggings",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            },
+            {
+              "item": "minecraft:diamond_boots",
+              "weight": 1,
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "These are original native table IDs, entry IDs and relative weights; they do not represent approved Grand Treasure bonus pool selections",
+    "Selected pool indices shown are inherited from R3 review-only mapping, not final owner-approved selections",
+    "No Paxi datapack runtime winner, Lootr multiplayer, original native probability or live game behavior was established here"
+  ],
+  "verified_download_jar_sha256": {
+    "adventuredungeons": "a5ae9687c37ab5a383d1b3a5a6f46a0b8bdeb3aca643745323c3b78c6ca6c347",
+    "irons_spellbooks": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+  }
+}

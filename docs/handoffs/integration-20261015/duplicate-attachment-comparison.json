@@ -1,0 +1,32 @@
+[
+  {
+    "name": "17_BOSS_BALANCE_LEDGER_T6_T9.csv",
+    "standalone_sha256": "0c64a8478cd73db828816d772d65d1d86496be3b0096a908f198ae9356608b85",
+    "packaged_sha256": "0c64a8478cd73db828816d772d65d1d86496be3b0096a908f198ae9356608b85",
+    "byte_identical": true
+  },
+  {
+    "name": "18_PROGRESSION_CONSISTENCY_REPORT.md",
+    "standalone_sha256": "4e0931632cfd48813d760e1266f101935875723905d7287fcad2b5f083dd3c4b",
+    "packaged_sha256": "4e0931632cfd48813d760e1266f101935875723905d7287fcad2b5f083dd3c4b",
+    "byte_identical": true
+  },
+  {
+    "name": "19_COMPATIBILITY_EVIDENCE.md",
+    "standalone_sha256": "57e4408a780a69e522a485d5b131dec80411f53779d2fc4ab0d0b2a419c69bdb",
+    "packaged_sha256": "57e4408a780a69e522a485d5b131dec80411f53779d2fc4ab0d0b2a419c69bdb",
+    "byte_identical": true
+  },
+  {
+    "name": "20_TEST_BUILD_AND_ROLLBACK.md",
+    "standalone_sha256": "d29fe2607e43f062ba947fd1bdf1466ac2f848666f16f8ca0d38a109769a32bd",
+    "packaged_sha256": "d29fe2607e43f062ba947fd1bdf1466ac2f848666f16f8ca0d38a109769a32bd",
+    "byte_identical": true
+  },
+  {
+    "name": "21_REMAINING_BLOCKERS_AND_OWNER_DECISIONS.md",
+    "standalone_sha256": "a171473ce75fe9e452bc8b1cf918c5aafd8b6f6720b0c1c275db08e8f6e2b083",
+    "packaged_sha256": "a171473ce75fe9e452bc8b1cf918c5aafd8b6f6720b0c1c275db08e8f6e2b083",
+    "byte_identical": true
+  }
+]

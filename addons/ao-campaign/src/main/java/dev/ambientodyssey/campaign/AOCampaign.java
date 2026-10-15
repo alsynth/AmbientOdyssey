@@ -34,17 +34,19 @@ public final class AOCampaign {
     public static final Map<String, Integer> BOSSES = Map.ofEntries(
         Map.entry("bosses_of_mass_destruction:lich", 5), Map.entry("bosses_of_mass_destruction:void_blossom", 5),
         Map.entry("irons_spellbooks:dead_king", 6), Map.entry("cataclysm:kobolediator", 6),
-        Map.entry("cataclysm:netherite_monstrosity", 7), Map.entry("cataclysm:ignis", 7),
-        Map.entry("cataclysm:the_leviathan", 7), Map.entry("cataclysm:maledictus", 7),
+        Map.entry("cataclysm:netherite_monstrosity", 7), Map.entry("cataclysm:ignis", 8),
+        Map.entry("cataclysm:the_leviathan", 8), Map.entry("cataclysm:maledictus", 8),
         Map.entry("cataclysm:ender_guardian", 7), Map.entry("cataclysm:ancient_remnant", 7),
-        Map.entry("fdbosses:chesed", 7), Map.entry("fdbosses:malkuth", 7),
-        Map.entry("remnant_bosses:ossukage", 7), Map.entry("remnant_bosses:kotsukage", 7),
-        Map.entry("remnant_bosses:umbrakar", 8),
+        Map.entry("fdbosses:chesed", 5), Map.entry("fdbosses:malkuth", 5), Map.entry("fdbosses:geburah", 5),
+        Map.entry("aquamirae:captain_cornelia", 6),
+        Map.entry("remnants:ossukage", 7), Map.entry("remnants:kotsukage", 7),
+        Map.entry("remnants:umbrakar", 8),
         Map.entry("archaion:last_of_deepslate", 8),
+        Map.entry("bosses_of_mass_destruction:obsidilith", 9),
         Map.entry("irons_spellbooks:fire_boss", 9), Map.entry("cataclysm:scylla", 9));
     private static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT =
         DeferredRegister.create(NeoForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, "ao_campaign");
-    static { LOOT.register("rage_glove_gate", () -> RageGloveGate.CODEC); }
+    static { LOOT.register("rage_glove_gate", () -> RageGloveGate.CODEC); LOOT.register("grand_treasure", () -> GrandTreasure.CODEC); }
 
     public AOCampaign(IEventBus bus) {
         LOOT.register(bus);
@@ -52,6 +54,7 @@ public final class AOCampaign {
         NeoForge.EVENT_BUS.addListener(this::death);
         NeoForge.EVENT_BUS.addListener(this::onClone);
         NeoForge.EVENT_BUS.addListener(this::commands);
+        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, new BossRewards()::drops);
     }
     private void effect(MobEffectEvent.Applicable event) {
         var id = BuiltInRegistries.MOB_EFFECT.getKey(event.getEffectInstance().getEffect().value());
@@ -64,7 +67,11 @@ public final class AOCampaign {
     private void death(LivingDeathEvent event) {
         if (event.getEntity().level().isClientSide() || !(event.getSource().getEntity() instanceof ServerPlayer player)) return;
         String id = BuiltInRegistries.ENTITY_TYPE.getKey(event.getEntity().getType()).toString();
+        if (id.equals("bosses_of_mass_destruction:obsidilith") && !event.getEntity().level().dimension().equals(net.minecraft.world.level.Level.END)) return;
         Integer tier = BOSSES.get(id);
+        // The archive contains both legacy holder and platform-specific namespaces.
+        // Accept only these three audited Remnant paths in either native namespace.
+        if (tier == null && id.startsWith("remnant_bosses:")) tier = BOSSES.get("remnants:" + id.substring(id.indexOf(':') + 1));
         if (tier == null) return;
         var state = player.getPersistentData().getCompound(STATE);
         if (!state.getBoolean(id)) {
@@ -72,25 +79,10 @@ public final class AOCampaign {
             state.putBoolean("tier_" + tier, true);
             player.getPersistentData().put(STATE, state);
             grant(player, "ao_campaign:milestones/tier_" + tier);
-            if (tier == 6) {
-                // Grant access, never force the player's active difficulty higher.
-                var advancement = player.server.getAdvancements().get(WorldTier.PINNACLE.getUnlockAdvancement());
-                if (advancement != null) for (String criterion : player.getAdvancements().getOrStartProgress(advancement).getRemainingCriteria())
-                    player.getAdvancements().award(advancement, criterion);
-            }
-            String grade = tier == 6 ? "artifact" : tier == 7 ? "heirloom" : tier == 8 ? "esoteric" : null;
-            // One gem per player per grade milestone, not one for every farmed kill.
-            if (grade != null && !state.getBoolean(grade + "_reward")) {
-                ItemStack gem = BossGems.create(player, grade);
-                if (!gem.isEmpty()) {
-                    if (!player.addItem(gem)) player.drop(gem, false);
-                    state.putBoolean(grade + "_reward", true);
-                    player.getPersistentData().put(STATE, state);
-                    grant(player, "ao_campaign:milestones/" + grade + "_reward");
-                } else player.sendSystemMessage(Component.literal("The " + grade + " reward could not resolve. It remains unclaimed."));
-            }
+            // Latest owner decision: native gem drops/crafting and native World Tier unlocks remain authoritative.
             if (id.equals("irons_spellbooks:fire_boss")) grant(player, "ao_campaign:milestones/tyros");
             if (id.equals("cataclysm:scylla")) grant(player, "ao_campaign:milestones/scylla");
+            if (id.equals("bosses_of_mass_destruction:obsidilith")) grant(player, "ao_campaign:milestones/obsidilith");
             player.sendSystemMessage(Component.literal("Journal milestone recorded: Tier " + tier + "."));
         }
     }
@@ -104,8 +96,8 @@ public final class AOCampaign {
             var player = ctx.getSource().getPlayerOrException();
             var state = player.getPersistentData().getCompound(STATE);
             ItemStack held = player.getMainHandItem();
-            if (!state.getBoolean("tier_8") || !state.getBoolean("irons_spellbooks:fire_boss") || !state.getBoolean("cataclysm:scylla")) {
-                ctx.getSource().sendFailure(Component.literal("Defeat a Tier 8 encounter, Tyros and Scylla first.")); return 0;
+            if (!state.getBoolean("tier_8") || !state.getBoolean("irons_spellbooks:fire_boss") || !state.getBoolean("cataclysm:scylla") || !state.getBoolean("bosses_of_mass_destruction:obsidilith")) {
+                ctx.getSource().sendFailure(Component.literal("Defeat a Tier 8 encounter, Tyros, Scylla and Obsidilith first.")); return 0;
             }
             if (state.getBoolean("heirloom_claimed")) { ctx.getSource().sendFailure(Component.literal("Your mastery upgrade has already been used.")); return 0; }
             var target = RarityRegistry.INSTANCE.getValue(ResourceLocation.parse("ao_apotheotic_port:heirloom"));
