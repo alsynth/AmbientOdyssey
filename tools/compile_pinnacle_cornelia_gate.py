@@ -36,6 +36,11 @@ NATIVE_DRAGON = '''        "kill_ender_dragon": {
 CORNELIA_KILL = NATIVE_DRAGON.replace('"kill_ender_dragon"', '"kill_captain_cornelia"').replace('"minecraft:ender_dragon"', '"%s"' % CORNELIA)
 
 
+def lf(data):
+    """Ignore checkout line endings (autocrlf) when comparing committed output."""
+    return data.replace(b'\r\n', b'\n')
+
+
 def native_bytes(jar):
     if hashlib.sha256(Path(jar).read_bytes()).hexdigest() != APOTHEOSIS_SHA256:
         raise ValueError('Not the R4-pinned Apotheosis 8.9.0 JAR')
@@ -65,7 +70,7 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--apotheosis-jar', required=True); ap.add_argument('--check', action='store_true')
     a = ap.parse_args(); files = build(native_bytes(a.apotheosis_jar))
     if a.check:
-        stale = [str(p.relative_to(ROOT)) for p, b in files.items() if not p.is_file() or p.read_bytes() != b]
+        stale = [str(p.relative_to(ROOT)) for p, b in files.items() if not p.is_file() or lf(p.read_bytes()) != b]
         print('PASS' if not stale else 'STALE ' + ', '.join(stale)); sys.exit(1 if stale else 0)
     for p, b in files.items(): p.parent.mkdir(parents=True, exist_ok=True); p.write_bytes(b)
     print('wrote', len(files), 'files')

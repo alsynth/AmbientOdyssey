@@ -89,7 +89,7 @@ class PinnacleCorneliaGate(unittest.TestCase):
     def test_generator_output_is_current(self):
         jar = MODS / 'Apotheosis-1.21.1-8.9.0.jar'
         if not jar.is_file(): self.skipTest('Apotheosis JAR not available')
-        for p, b in gen.build(gen.native_bytes(jar)).items(): self.assertEqual(p.read_bytes(), b, p)
+        for p, b in gen.build(gen.native_bytes(jar)).items(): self.assertEqual(gen.lf(p.read_bytes()), b, p)
 
 
 if __name__ == '__main__':
