@@ -82,7 +82,7 @@ public final class BossRewards {
  }
  public void drops(LivingDropsEvent event){
   var boss=event.getEntity();if(boss.level().isClientSide())return;
-  var player=event.getSource().getEntity() instanceof ServerPlayer p?p:boss.getLastHurtByPlayer() instanceof ServerPlayer p?p:null;
+  var player=event.getSource().getEntity() instanceof ServerPlayer p?p:boss.getKillCredit() instanceof ServerPlayer p?p:null;
   if(player==null||player.level()!=boss.level())return;
   String id=BuiltInRegistries.ENTITY_TYPE.getKey(boss.getType()).toString();var tier=tier(id);if(tier==null)return;
   long tick=boss.level().getGameTime();if(Objects.equals(HANDLED.get(boss),tick))return;HANDLED.put(boss,tick);
