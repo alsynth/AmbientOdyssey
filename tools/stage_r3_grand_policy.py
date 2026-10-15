@@ -102,6 +102,8 @@ def stage(candidates,candidate_bytes,audit,audit_bytes,decisions,base):
     reviewed=audit_index(candidates,candidate_bytes,audit)
     if decisions.get('format')!=DRAFT_FORMAT:
         raise ValueError('Unknown approval format')
+    if decisions.get('status')!='REVIEWED_FOR_EXPERIMENTAL_BUILD':
+        raise ValueError('Approval document must be explicitly marked REVIEWED_FOR_EXPERIMENTAL_BUILD')
     if decisions.get('candidate_sha256')!=sha(candidate_bytes):
         raise ValueError('Review references a different candidate SHA')
     if decisions.get('audit_sha256')!=sha(audit_bytes):
