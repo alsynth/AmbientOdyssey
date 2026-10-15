@@ -1,3 +1,6 @@
+# Default: normalize text to LF; binaries auto-detected. Specific rules below override this.
+* text=auto eol=lf
+
 # Required custom worldgen asset. GitHub advises LFS for large binaries.
 # Install Git LFS *before* git add/commit.
 

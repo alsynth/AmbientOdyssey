@@ -31,3 +31,16 @@ build/
 
 # Third-party mod binaries are never tracked; reference them by CurseForge project/file ID.
 *.jar
+# Exception: the 10 AO custom bundled JARs documented in the R4 receipt
+# (docs/handoffs/r4-package-20261015/package-receipt.json, custom_jars). These are
+# un-ignored so they CAN be tracked deliberately; nothing third-party is excepted.
+!ambientodyssey-streams-minecells-compat-0.1.0-experimental.jar
+!ao-affix-trims-0.1.1-experimental.jar
+!ao-apotheotic-port-prototype-0.4.8-prototype.jar
+!ao-augmenting-sigils-0.1.1-experimental.jar
+!ao-campaign-0.3.2-experimental.jar
+!ao-enigmatic-betterinventory-0.1.0.jar
+!ao-questlog-betterinventory-0.1.6.jar
+!ao-starter-chest-0.2.0-experimental.jar
+!ao-wet-sand-prototype-0.0.1-source-prototype.jar
+!ao-worldgen-safety-0.1.4-experimental.jar
