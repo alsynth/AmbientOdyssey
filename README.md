@@ -8,13 +8,13 @@
 
 | Need | Go to |
 | --- | --- |
-| **Current state, last successful packages, blocking issues** | [Current project status](docs/status/CURRENT_STATE.md) |
-| **What to develop or test next** | [TODO](TODO.md) · [Development handoff](docs/status/AGENT_WORKFLOW.md) |
+| **Current status and recent decisions (Claude handoff)** | [**Canonical master handoff — R4/R5**](docs/handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md) · [current implementation ledger](docs/status/IMPLEMENTATION_PROGRESS.md) |
+| **What Claude should build/test next** | [Canonical implementation sequence](docs/handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md#7-do-next-execution-sequence--optimized-for-claude-code-with-the-full-local-modpack) · [legacy TODO](TODO.md) |
 | **Find everything in the repo** | [Repository map](docs/maintainers/REPO_MAP.md) · [Documentation index](docs/README.md) |
 | **Browse the adventure quests** | [Q1 quest index](docs/questing/QUESTLOG_Q1_INSTALLED_INDEX.json) · [Q1 guide](docs/questing/QUESTLOG_Q1_IMPLEMENTATION.md) |
 | **Edit Questlog as admin** | [Questlog admin guide](docs/questing/QUESTLOG_ADMIN_GUIDE.md) |
 | **Find the in-game Field Manual** | [32-page FTB index](docs/questing/FTB_MANUAL_IMPLEMENTED_INDEX.json) |
-| **Import latest experimental ZIP** | [Verified build artifact](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259/artifacts/11680318532) (download outer artifact, **import an inner** CurseForge ZIP) |
+| **Import latest full experimental ZIP** | [**R4 PRIVATE draft release**](https://github.com/alsynth/AmbientOdyssey/releases/tag/untagged-3d9c2fc62334621d6b59) — import Ambient-Odyssey-MASTER-INTEGRATION-R4-PRIVATE-20261015.zip, **not** its rollback archive; R5 remains preparation only |
 | **Test installed mods/client/server** | [Test checklist](docs/questing/QUESTLOG_Q1_RUNTIME_TESTS.md) · [Profile preflight](docs/testing/V04H_TEST_SESSION_FIELD_SHEET.md) |
 
 ## Source layout
