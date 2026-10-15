@@ -1,0 +1,101 @@
+{
+  "status": "THREE_THEMATIC_NATIVE_POOL_PROPOSALS_SOURCE_VERIFIED_NOT_RUNTIME_APPROVED",
+  "date": "2026-10-15",
+  "verification_run": "https://github.com/alsynth/AmbientOdyssey/actions/runs/38743939174",
+  "source": "docs/handoffs/loot-update-20261015/R3_LAST_THREE_PINNED_NATIVE_SOURCE_VERIFICATION_20261015.json",
+  "candidate_pool_revisions": [
+    {
+      "structure": "adventuredungeons:murkydungeon",
+      "table": "adventuredungeons:chests/murkydungeon/murky_chest_reward",
+      "native_source": "data/adventuredungeons/loot_table/chests/murkydungeon/murky_chest_reward.json",
+      "native_source_sha256": "6cd05c740754614cb9d74eaf7128aa3b59e2c516496da432ea157b915ca9c212",
+      "pool_index": 2,
+      "reason": "Native reward pool of armor trim templates and music discs, instead of generic material rolls. Does not duplicate boss trophies.",
+      "original_selected_pool_index": 0,
+      "items_with_relative_weights": [
+        {
+          "item": "minecraft:wild_armor_trim_smithing_template",
+          "weight": 2,
+          "type": "minecraft:item",
+          "functions": [],
+          "conditions": []
+        },
+        {
+          "item": "minecraft:sentry_armor_trim_smithing_template",
+          "weight": 1,
+          "type": "minecraft:item",
+          "functions": [],
+          "conditions": []
+        },
+        {
+          "item": "minecraft:music_disc_11",
+          "weight": 1,
+          "type": "minecraft:item",
+          "functions": [],
+          "conditions": []
+        },
+        {
+          "item": "minecraft:music_disc_otherside",
+          "weight": 2,
+          "type": "minecraft:item",
+          "functions": [],
+          "conditions": []
+        }
+      ],
+      "source_verified": true,
+      "approval_status": "REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST"
+    },
+    {
+      "structure": "irons_spellbooks:catacombs",
+      "table": "irons_spellbooks:chests/catacombs/hidden_trough_treasure",
+      "native_source": "data/irons_spellbooks/loot_table/chests/catacombs/hidden_trough_treasure.json",
+      "native_source_sha256": "23372ec81c93bf5b3aad0046362efa0fc44fac17a6f167d2bad1540fd0aa6ce8",
+      "pool_index": 1,
+      "reason": "Native magical scroll or blank rune pool; scroll retains irons_spellbooks:randomize_spell, instead of only emeralds/diamonds.",
+      "original_selected_pool_index": 3,
+      "items_with_relative_weights": [
+        {
+          "item": "irons_spellbooks:scroll",
+          "weight": 2,
+          "type": "minecraft:item",
+          "functions": [
+            "irons_spellbooks:randomize_spell"
+          ],
+          "conditions": []
+        },
+        {
+          "item": "irons_spellbooks:blank_rune",
+          "weight": 1,
+          "type": "minecraft:item",
+          "functions": [],
+          "conditions": []
+        }
+      ],
+      "source_verified": true,
+      "approval_status": "REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST"
+    },
+    {
+      "structure": "irons_spellbooks:catacombs",
+      "table": "irons_spellbooks:chests/generic_magic_treasure",
+      "native_source": "data/irons_spellbooks/loot_table/chests/generic_magic_treasure.json",
+      "native_source_sha256": "f3f8c9464ed17b92e8edf0bcef633c6f527637b33be07231b09e00a51e33b776",
+      "pool_index": 1,
+      "reason": "Native spell-scroll pool with irons_spellbooks:randomize_spell, instead of common metals; other nested loot_table pools remain excluded.",
+      "original_selected_pool_index": 6,
+      "items_with_relative_weights": [
+        {
+          "item": "irons_spellbooks:scroll",
+          "weight": 1,
+          "type": "minecraft:item",
+          "functions": [
+            "irons_spellbooks:randomize_spell"
+          ],
+          "conditions": []
+        }
+      ],
+      "source_verified": true,
+      "approval_status": "REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST"
+    }
+  ],
+  "scope": "Same 14 contexts and 5% additive per chest; recommendations only, not compiled or shipped"
+}
