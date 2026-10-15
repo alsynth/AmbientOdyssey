@@ -40,6 +40,14 @@ class MasterIntegration(unittest.TestCase):
    n=int(t['name'].split('_')[-1])
    if n>=2:self.assertEqual([a['value'] for a in t['entities'][0]['attributes']],expected[n])
   zones=[z for w in d['dimensions'] for z in w['zones']]
-  self.assertEqual(len(zones),23)
+  baseline=json.loads((ROOT/'docs/handoffs/integration-20261015/dd-effective-zones.json').read_text())['zones']
+  expected={z['zone_matches']['structure']:z['difficulty']['name'] for z in baseline}
+  rollout=ROOT/'docs/handoffs/dd-native-batch-r4-20261015/rollout.json'
+  if rollout.exists():
+   for row in json.loads(rollout.read_text())['added']:
+    self.assertEqual(row['status'],'NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE')
+    expected[row['structure_id']]='ao_tier_'+str(row['selected_tier'])
+  self.assertEqual({z['zone_matches']['structure']:z['difficulty']['name'] for z in zones},expected)
+  self.assertEqual(len(zones),len(expected))
   self.assertFalse(any(z['zone_matches']['structure'] in {'cataclysm:frosted_prison','cataclysm:sunken_city','dungeons_arise:mechanical_nest'} for z in zones))
 if __name__=='__main__':unittest.main()

@@ -39,7 +39,16 @@ def validate(path):
         solo=tomllib.loads(z.read('overrides/defaultconfigs/ftb_solo_quests-server.toml').decode())
         assert solo['teamSyncEnabled'] is False,'FTB Solo Quests must not enable optional team sync'
         dd=json.loads(z.read('overrides/config/dungeon_difficulty/difficulty_v2.json'))
-        zones=[v for d in dd['dimensions'] for v in d['zones']];assert len(zones)==23
+        zones=[v for d in dd['dimensions'] for v in d['zones']]
+        expected={z['zone_matches']['structure']:z['difficulty']['name'] for z in json.loads((ROOT/'docs/handoffs/integration-20261015/dd-effective-zones.json').read_text())['zones']}
+        rollout_path=ROOT/'docs/handoffs/dd-native-batch-r4-20261015/rollout.json'
+        if rollout_path.exists():
+            rollout=json.loads(rollout_path.read_text());assert rollout['applied']
+            for row in rollout['added']:
+                assert row['status']=='NATIVE_REGISTRY_AND_OVERWORLD_BIOME_ELIGIBLE'
+                expected[row['structure_id']]='ao_tier_'+str(row['selected_tier'])
+        assert {z['zone_matches']['structure']:z['difficulty']['name'] for z in zones}==expected
+        assert len(zones)==len(expected),'Duplicate DD structure zones'
         assert all(v['difficulty']['name'] not in {'ao_tier_0','ao_tier_1'} for v in zones)
         assert all('mechanical_nest' not in v['zone_matches']['structure'] for v in zones)
         brutal=json5.loads(z.read('overrides/config/brutalbosses.json').decode())
@@ -56,7 +65,7 @@ def validate(path):
         collisions={k:v for k,v in resources.items() if len(v)>1}
         warnings.append('Paxi winner precedence requires engine observations; collisions are not automatically errors')
     return {'status':'STATIC VERIFIED' if not errors else 'STATIC CHECKS FAILED','counts':counts,'errors':errors,'warnings':warnings,
-      'custom_jars':jars,'paxi_resource_collisions':collisions,'shader_preprocessor_sources_not_json_linted':shader_sources,'cf_references':337,'dd_zones':23,'quest_files':153,
+      'custom_jars':jars,'paxi_resource_collisions':collisions,'shader_preprocessor_sources_not_json_linted':shader_sources,'cf_references':337,'dd_zones':len(zones),'quest_files':153,
       'minecraft_runtime_tested_by_this_validator':False}
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('zip',type=Path);p.add_argument('--report',type=Path,required=True);a=p.parse_args();r=validate(a.zip)

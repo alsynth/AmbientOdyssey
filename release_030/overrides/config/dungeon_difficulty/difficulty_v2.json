@@ -512,6 +512,76 @@
             "name": "ao_tier_3",
             "level": 1
           }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "dungeons_arise:abandoned_temple"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "dungeons_arise:kisegi_sanctuary"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "dungeons_arise_seven_seas:corsair_corvette"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "iceandfire:mausoleum"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "adventuredungeons:underground_camp"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "dungeons_arise:bandit_village"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "biome": null,
+            "structure": "dungeons_arise:mining_complex"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
         }
       ],
       "zone_specifiers": [],

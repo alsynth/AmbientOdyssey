@@ -59,6 +59,27 @@ final class OrdinaryRuleProbe {
     }
     level.addFreshEntity(mob);cases.add(new Case("ordinary_t"+tier,entry.getValue(),tier,mob,before,expected));
    }
+   // Exercise every additional scoped site, not only one representative per tier.
+   int extra=0;
+   for(var d:config.getAsJsonArray("dimensions")){
+    var dimension=d.getAsJsonObject();if(!dimension.getAsJsonObject("world_matches").get("dimension").getAsString().equals("minecraft:overworld"))continue;
+    for(var z:dimension.getAsJsonArray("zones")){
+     var zone=z.getAsJsonObject();String sid=zone.getAsJsonObject("zone_matches").get("structure").getAsString();
+     if(selected.containsValue(sid))continue;
+     int tier=Integer.parseInt(zone.getAsJsonObject("difficulty").get("name").getAsString().replace("ao_tier_",""));
+     var pos=new BlockPos((20+extra++)*16,80,0);index(level,sid,pos);
+     Mob mob=EntityType.ZOMBIE.create(level);mob.setNoAi(true);mob.setInvulnerable(true);mob.setPersistenceRequired();mob.moveTo(pos.getX()+.5,80,.5,0,0);
+     var before=attributes(mob);var expected=before.deepCopy();
+     for(var type:config.getAsJsonArray("difficulty_types")){
+      var t=type.getAsJsonObject();if(!t.get("name").getAsString().equals("ao_tier_"+tier))continue;
+      for(var a:t.getAsJsonArray("entities").get(0).getAsJsonObject().getAsJsonArray("attributes")){
+       var attr=a.getAsJsonObject();String key=switch(attr.get("attribute").getAsString()){case "minecraft:generic.max_health"->"max_health";case "minecraft:generic.attack_damage"->"attack_damage";default->"armor";};
+       double value=attr.get("value").getAsDouble();expected.addProperty(key,attr.get("operation").getAsString().equals("ADDITION")?before.get(key).getAsDouble()+value:before.get(key).getAsDouble()*(1+value));
+      }
+     }
+     level.addFreshEntity(mob);cases.add(new Case("ordinary_zone_"+sid,sid,tier,mob,before,expected));
+    }
+   }
    if(selected.containsKey(6)) {
     for(var type:List.of(EntityType.PIG,EntityType.WITHER)) {
      var excluded=(Mob)type.create(level);excluded.setNoAi(true);excluded.setInvulnerable(true);excluded.setPersistenceRequired();excluded.moveTo(96.5,80,.5,0,0);var before=attributes(excluded);

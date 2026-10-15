@@ -14,10 +14,10 @@ Implemented and packaged: scoped23-zone DD baseline;51 native boss field edits w
 
 | Work | Source | Package | Verification |
 |---|---|---|---|
-| Update obsolete test probe to current boss/Grand policy | Implemented; test-only code | Never ship probe JAR | Build PASS; native run in progress |
-| Native boss rewards and required item/unique registries |600 synthetic reward-factory samples prepared | Production R3 unchanged | Native run in progress; no natural-kill/party claim |
-| DD candidate dimension evidence | Query actual structure registry and normal-preset biome overlap | No additional zones activated yet | Native run in progress; biome eligibility is not natural-generation proof |
-| Next source-backed DD zone batch | Pending evidence review | Not packaged | Must preserve owner tiers and exclusions |
+| Update obsolete test probe to current boss/Grand policy | Implemented; test-only code | Never ship probe JAR | Build PASS; exact R3 engine run PASS (exit0) |
+| Native boss rewards and required item/unique registries |600 synthetic reward-factory samples prepared | Production R3 unchanged | Native factory PASS:600 samples,13 Regalia,57 native uniques; no natural-kill/party claim |
+| DD candidate dimension evidence | Query actual structure registry and normal-preset biome overlap | Seven zones implemented in source; R4 packaging pending | 112 candidate observations collected from actual registries; biome eligibility is not natural-generation proof |
+| Next source-backed DD zone batch | Seven added: Abandoned TempleT4, KisegiT4, Corsair CorvetteT4, MausoleumT4, Underground CampT2, Bandit VillageT2, Mining ComplexT3 | R4 packaging pending | Registry and normal Overworld biome checks PASS; Mining System held (zero normal Overworld biome matches) |
 
 ## Still incomplete
 
@@ -33,3 +33,7 @@ Implemented and packaged: scoped23-zone DD baseline;51 native boss field edits w
 ## Rollback and evidence rules
 
 Keep previous ZIPs and rollback receipts immutable. Use new disposable profiles/worlds only. No active client/server installation or owner acceptance is inferred from a draft. New generation-affecting changes require a new package and updated rollback inventory. Record exact source/package hashes, test commands/results and blockers for every completed batch.
+
+## Current batch evidence
+
+[Native evidence and rollout](../handoffs/dd-native-batch-r4-20261015/rollout.json). Production R3 engine startup/world join/save exit0 and600 boss reward factory fixtures PASS; these are not natural fights or multiplayer. The new source DD total is30, retaining the23-zone baseline and unchanged attribute budgets/matchers. R4 must pass archive checks and a fresh engine run before receiving its own runtime label.105 Python tests pass. The updated test-only probe will exercise every scoped DD site plus exclusion controls; it is never shipped.

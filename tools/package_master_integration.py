@@ -40,8 +40,8 @@ def build(base,output):
     for rel in paths:payload['overrides/'+rel]=(ROOT/'release_030/overrides'/rel).read_bytes()
     for rel in json.loads((report_root/'removed-source-paths.json').read_text()):payload.pop('overrides/'+rel,None)
     manifest=json.loads(payload['manifest.json']);manifest['files'],removed=omit_demis_sky_arena(manifest['files']);assert removed==1
-    manifest['name']='Ambient Odyssey - Master Integration R3 RECONCILED PRIVATE UNTESTED'
-    manifest['version']='0.5.3-master-integration-r3-reconciled-20261015'
+    manifest['name']='Ambient Odyssey - Master Integration R4 DD EXPANSION PRIVATE TEST'
+    manifest['version']='0.5.4-master-integration-r4-20261015'
     payload['manifest.json']=(json.dumps(manifest,indent=2)+'\n').encode()
     # Correct the runtime inventory as well as the importer manifest.
     name='overrides/AO_TEST_NOTES/FULL_IMPORT_INPUTS.json'
@@ -53,7 +53,7 @@ def build(base,output):
         payload.pop(name,None)
     notes=('PRIVATE TEST ONLY. New CurseForge profile, Minecraft 1.21.1 / NeoForge 21.1.252.\n'
       '337 CurseForge references, 10 custom JARs, expected 340 physical mod JARs.\n'
-      '23 scoped DD zones; exact 497-row expansion remains gated. Brutal Bosses 70/30/x4 HP/x3 damage.\n'
+      '30 scoped DD zones; exact 497-row expansion remains gated. Brutal Bosses 70/30/x4 HP/x3 damage.\n'
       '51 native boss config fields changed; HP cap accepted, scripted abilities not promised scaled.\n'
       'T5 Chesed/Malkuth/Geburah exempt; Dead King/Cornelia T6 category and T7 combat targets.\n'
       'Cornelia combat has no verified native config and remains BLOCKED, no competing scaler.\n'
@@ -66,6 +66,7 @@ def build(base,output):
       'This ZIP is not a worldgen freeze or live install. See supplied verification and test guide.\n')
     notes += 'R3: restore FTB Solo Quests teamSyncEnabled=false new-world server default; 4 source-verified crafted Eternal Starlight Regalia added.\n'
     notes += 'R3 reconciled: Grand Treasure now uses category-appropriate verified same-table native pools; 5% append-only chance retained.\n'
+    notes += 'R4: seven owner-selected DD sites added after native registry/normal-preset biome checks; Mining System held. Natural encounters and multiplayer remain untested.\n'
     notes += 'Coverage limits: 32 mapped boss IDs and 13 curated Regalia IDs; broader approved integration remains incomplete.\n'
     payload['overrides/AO_TEST_NOTES/MASTER_INTEGRATION.txt']=notes.encode()
     payload['overrides/AO_TEST_NOTES/NATIVE_BALANCE_LEDGER.json']=(report_root/'native-balance-ledger.json').read_bytes()
