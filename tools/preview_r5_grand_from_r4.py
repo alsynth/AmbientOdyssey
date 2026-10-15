@@ -94,7 +94,12 @@ def main():
         raise ValueError('Preview path must be under project build/')
     base_bytes=args.base.read_bytes()
     proposals_bytes=args.proposals.read_bytes()
-    proposed,changes=transform(json.loads(base_bytes),json.loads(proposals_bytes))
+    proposals=json.loads(proposals_bytes)
+    # Pin the exact R4 campaign source file, not merely its 13/58 roster sizes.
+    blob=hashlib.sha1(b'blob '+str(len(base_bytes)).encode()+b'\x00'+base_bytes).hexdigest()
+    if proposals.get('source_policy_git_blob_sha1')!=blob:
+        raise ValueError('R4 campaign policy bytes differ from the exact pinned GitHub blob; re-review changes')
+    proposed,changes=transform(json.loads(base_bytes),proposals)
     result={'status':'REVIEW_ONLY_NOT_A_COMPILED_RELEASE',
             'r4_source_policy_sha256':hashlib.sha256(base_bytes).hexdigest(),
             'proposal_sha256':hashlib.sha256(proposals_bytes).hexdigest(),
