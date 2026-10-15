@@ -81,11 +81,15 @@ def main():
       score,index=max(candidates);r.update(status='CANDIDATE_SOURCE_VERIFIED',reason='Reachable native chest; single valuable basic native pool; no trophy/recursive entries',selected_pool=index)
       mappings.append({'structure':sid,'tier':tier,'table':table,'source_resource':tr,'source_sha256':sha(raw),'pool_index':index,'chance':0.05,'selection_score':score})
     rows.append(r)
- # Each structure uses its best VERIFIED general treasure pool, shared by its eligible chest contexts.
- for sid in {m['structure'] for m in mappings}:
-  candidates=[m for m in mappings if m['structure']==sid];best=max(candidates,key=lambda m:m['selection_score'])
-  for m in candidates:
-   for key in ['source_resource','source_sha256','pool_index','selection_score']:m[key]=best[key]
+ # OWNER CORRECTION (15 Oct 2026): category-appropriate loot per chest.
+ # Preserve the selected pool from EACH triggering native chest table.
+ # The old global per-structure winner rewrote library/treasure rewards to
+ # e.g. Keep Kayra garden-normal's pool. Do not borrow a sibling chest's
+ # native pool based solely on the generic vanilla-item score.
+ # Cross-table choices, if justified by source evidence, must be reviewed
+ # explicitly and must not be synthesized automatically by this compiler.
+ # These candidates are preliminary: installed-JAR hashes, pool semantics,
+ # native functions, Lootr and datapack precedence remain to be verified.
  (OUT/'chest-source-audit.json').write_text(json.dumps(rows,indent=2)+'\n')
  (OUT/'grand-treasure-candidates.json').write_text(json.dumps(mappings,indent=2)+'\n')
  ss=next(MODS.glob('simplyswords*'));z=zipfile.ZipFile(ss);tag=json.loads(z.read('data/simplyswords/tags/item/uniques.json'))
