@@ -1,0 +1,30 @@
+name: AO R3 Overlay Packager Preflight
+on:
+  push:
+    branches:
+      - experimental/master-integration-20261015
+    paths:
+      - tools/package_r3_from_r2.py
+      - tools/draft_r3_change_plan.py
+      - tests/test_package_r3_from_r2.py
+      - .github/workflows/ao-r3-overlay-preflight.yml
+  pull_request:
+    paths:
+      - tools/package_r3_from_r2.py
+      - tools/draft_r3_change_plan.py
+      - tests/test_package_r3_from_r2.py
+  workflow_dispatch:
+
+jobs:
+  synthetic-packager-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Syntax checks
+        run: python -m py_compile tools/package_r3_from_r2.py tools/draft_r3_change_plan.py tests/test_package_r3_from_r2.py
+      - name: Synthetic R2-to-R3 verification
+        run: python -m unittest -v tests/test_package_r3_from_r2.py
