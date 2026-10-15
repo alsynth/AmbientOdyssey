@@ -1,0 +1,211 @@
+{
+  "status": "STATIC_INSTALLED_JAR_EVIDENCE_ONLY_NOT_RUNTIME_ACCEPTED",
+  "profile": "local pre-R4 v0.4.9.1 profile, 338 JARs",
+  "preview_sha256": "7650e9cd84d15b42f55f494adffa632c40f3cc0135d99a213bb554f9c882d634",
+  "audit_sha256": "f85dd50c5bf15509344d8f312629f2b3a270cec20b2745d0eac8a7b1cae6e4a8",
+  "summary": {
+    "installed_jar_count": 338,
+    "grand_context_count": 14,
+    "grand_direct_contexts": 14,
+    "grand_cross_table_contexts": 0,
+    "grand_blocked_contexts": 0
+  },
+  "contexts": [
+    {
+      "structure": "adventuredungeons:murkydungeon",
+      "tier": 3,
+      "trigger_table": "adventuredungeons:chests/murkydungeon/murky_chest_reward",
+      "source_jar_candidates": [
+        "adventuredungeons-neoforge-1.21-1.3.1.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 2,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": true
+    },
+    {
+      "structure": "dungeons_arise:illager_fort",
+      "tier": 3,
+      "trigger_table": "dungeons_arise:chests/illager_fort/illager_fort_normal",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 2,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:infested_temple",
+      "tier": 3,
+      "trigger_table": "dungeons_arise:chests/infested_temple/infested_temple_room_normal",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 3,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:infested_temple",
+      "tier": 3,
+      "trigger_table": "dungeons_arise:chests/infested_temple/infested_temple_room_supply",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 3,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "tier": 6,
+      "trigger_table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 1,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "tier": 6,
+      "trigger_table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 2,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "tier": 6,
+      "trigger_table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 1,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": true
+    },
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "tier": 6,
+      "trigger_table": "dungeons_arise:chests/keep_kayra/keep_kayra_normal",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 1,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:keep_kayra",
+      "tier": 6,
+      "trigger_table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 1,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": true
+    },
+    {
+      "structure": "dungeons_arise:thornborn_towers",
+      "tier": 3,
+      "trigger_table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 3,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:thornborn_towers",
+      "tier": 3,
+      "trigger_table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 3,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "dungeons_arise:thornborn_towers",
+      "tier": 3,
+      "trigger_table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure",
+      "source_jar_candidates": [
+        "DungeonsArise-1.21.1-2.1.68-release.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 4,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": false
+    },
+    {
+      "structure": "irons_spellbooks:catacombs",
+      "tier": 4,
+      "trigger_table": "irons_spellbooks:chests/catacombs/hidden_trough_treasure",
+      "source_jar_candidates": [
+        "irons_spellbooks-1.21.1-3.16.3.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 1,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": true
+    },
+    {
+      "structure": "irons_spellbooks:catacombs",
+      "tier": 4,
+      "trigger_table": "irons_spellbooks:chests/generic_magic_treasure",
+      "source_jar_candidates": [
+        "irons_spellbooks-1.21.1-3.16.3.jar"
+      ],
+      "actual_source_sha256_matches": true,
+      "pool_index": 1,
+      "potential_paxi_overrides": [],
+      "static_status": "SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED",
+      "blockers": [],
+      "r5_changed": true
+    }
+  ]
+}
