@@ -1,5 +1,7 @@
 # Implementation progress — 15 October 2026
 
+**Canonical next-agent overview:** [Claude master handoff](../handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md). This file remains the batch implementation ledger, while the handoff reconciles R4 release, post-R4 R5 prep, owner overrides and stale historical docs.
+
 This is the current working ledger for `experimental/master-integration-r3-reconciled-20261015` / draft PR64. Stable/main is unchanged. Each completed batch must update this file and its evidence in GitHub; a source implementation is not automatically packaged or runtime accepted.
 
 ## Previous published package (retained rollback/test baseline)
