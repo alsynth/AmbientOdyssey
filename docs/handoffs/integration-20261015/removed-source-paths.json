@@ -2,7 +2,5 @@
   "config/sky_arena.json",
   "config/skyarena-common.toml",
   "config/cristellib/skyarena/structure_placement_config.json5",
-  "config/cristellib/skyarena/structure_toggle_config.json5",
-  "config/paxi/datapacks/ao_campaign_gates/pack.mcmeta",
-  "config/paxi/datapacks/ao_campaign_gates/data/apotheosis/advancement/progression/pinnacle.json"
+  "config/cristellib/skyarena/structure_toggle_config.json5"
 ]

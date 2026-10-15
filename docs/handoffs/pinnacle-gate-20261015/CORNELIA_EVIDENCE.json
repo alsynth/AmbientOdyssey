@@ -1,0 +1,15 @@
+{
+  "entity_id": "aquamirae:captain_cornelia",
+  "jar": "aquamirae-neoforge-1.21.1-7.2.10.jar",
+  "jar_sha256": "d6269491f864074e5dabb31340aac0e00eef40b121f4342a06f39e17d84a8710",
+  "mod_id": "aquamirae",
+  "registry_class": "dev/obscuria/aquamirae/registry/AquamiraeEntityTypes.class",
+  "registry_literal_present": true,
+  "supporting_resources": [
+    "data/aquamirae/loot_table/entities/captain_cornelia.json",
+    "assets/aquamirae/models/item/captain_cornelia_spawn_egg.json"
+  ],
+  "lang_name": "Ghost of Captain Cornelia",
+  "r4_pin": "aquamirae-neoforge-1.21.1-7.2.10.jar is one of the 337 R4 CurseForge pins; installed SHA-1 equals the CurseForge file hash",
+  "summon": "Shell Horn (aquamirae:shell_horn); config shell_horn_usage_mode=ICE_MAZE, cooldown 5, search radius 12 (R4 config/obscuria/aquamirae-common.toml)"
+}

@@ -1,10 +1,11 @@
 """Regression gate: no shipped datapack may lock an advancement behind minecraft:impossible
 unless code grants it on purpose.
 
-Owner decision (canonical handoff section 5, item 11; 15 Oct 2026): native Apotheosis World Tier
-unlocks stay authoritative. R4 still shipped ao_campaign_gates, which replaced the native
-apotheosis:progression/pinnacle criteria with minecraft:impossible after campaign code stopped
-granting it, leaving Pinnacle unobtainable except via operator /advancement grant.
+R4 shipped ao_campaign_gates, which replaced the native apotheosis:progression/pinnacle criteria
+with minecraft:impossible after campaign code stopped granting it, leaving Pinnacle unobtainable
+except via operator /advancement grant. Latest owner decision (15 Oct 2026): Pinnacle = native five
+epic gear criteria + a Captain Cornelia kill; ao_campaign_gates now carries exactly that override
+(tests/test_pinnacle_cornelia_gate.py). No other native progression file may be overridden.
 """
 import json, re, unittest
 from pathlib import Path
@@ -15,6 +16,8 @@ CAMPAIGN_SRC = ROOT / 'addons/ao-campaign/src/main/java/dev/ambientodyssey/campa
 SOURCE_ROOTS = [ROOT / 'release_030/overrides', ROOT / 'release_030/experimental_overlays', ROOT / 'addons']
 GATE_FILES = ['config/paxi/datapacks/ao_campaign_gates/pack.mcmeta',
               'config/paxi/datapacks/ao_campaign_gates/data/apotheosis/advancement/progression/pinnacle.json']
+APPROVED_OVERRIDE = ('release_030/experimental_overlays/v050/overrides/'
+                     'config/paxi/datapacks/ao_campaign_gates/data/apotheosis/advancement/progression/pinnacle.json')
 
 
 def advancement_files():
@@ -46,10 +49,10 @@ def impossible_criteria(data):
 
 
 class NoImpossibleTierGates(unittest.TestCase):
-    def test_no_override_of_native_apotheosis_progression(self):
-        overrides = [p for p in advancement_files()
+    def test_only_the_approved_pinnacle_override_exists(self):
+        overrides = [p.relative_to(ROOT).as_posix() for p in advancement_files()
                      if advancement_id(p).startswith('apotheosis:progression/')]
-        self.assertEqual(overrides, [], 'Native World Tier unlock advancements must not be overridden')
+        self.assertEqual(overrides, [APPROVED_OVERRIDE], 'Only the owner-approved Pinnacle override may exist')
 
     def test_impossible_only_where_code_grants(self):
         granted = code_granted_ids()
@@ -72,12 +75,12 @@ class NoImpossibleTierGates(unittest.TestCase):
         self.assertNotIn('getUnlockAdvancement', text)
         self.assertNotIn('progression/pinnacle', text)
 
-    def test_gate_pack_removed_and_recorded(self):
+    def test_gate_pack_ships_and_is_not_stripped(self):
         for rel in GATE_FILES:
-            self.assertFalse((ROOT / 'release_030/experimental_overlays/v050/overrides' / rel).exists(), rel)
+            self.assertTrue((ROOT / 'release_030/experimental_overlays/v050/overrides' / rel).is_file(), rel)
         removed = json.loads((ROOT / 'docs/handoffs/integration-20261015/removed-source-paths.json').read_text())
         for rel in GATE_FILES:
-            self.assertIn(rel, removed)
+            self.assertNotIn(rel, removed)  # the packager would otherwise pop the new override
 
 
 if __name__ == '__main__':

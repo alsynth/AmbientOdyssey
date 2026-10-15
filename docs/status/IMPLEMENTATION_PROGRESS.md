@@ -65,3 +65,8 @@ Local 338-JAR profile is pre-R4 (v0.4.9.1); R4 ZIP hash verified; one packaged c
 
 - **Finding (static, from R4 bytes):** R4's `ao_campaign_gates` Paxi pack replaced native `apotheosis:progression/pinnacle` with `minecraft:impossible`; no code grants it (grant removed in `01c2c58`), so Pinnacle is unobtainable except by operator command. Proof: [PINNACLE_GATE_PROOF.md](../handoffs/pinnacle-gate-20261015/PINNACLE_GATE_PROOF.md).
 - **Source:** gate pack deleted from the v050 overlay and listed in `removed-source-paths.json`. **Static test:** `tests/test_no_impossible_tier_gates.py` 5/5 PASS. **Engine / multiplayer:** not tested. **Packaged:** no (R4 still contains the gate).
+
+## Pinnacle = epic gear + Captain Cornelia (15 October 2026, branch feature/pinnacle-cornelia)
+
+- **Source:** owner decision replaces the gate deletion. A generated `ao_campaign_gates` override keeps the native five epic gear criteria byte-for-byte and swaps only the dragon kill for `aquamirae:captain_cornelia` (`player_killed_entity`). Adds a lang pack; no `minecraft:impossible`. Details: [PINNACLE_GATE_PROOF.md](../handoffs/pinnacle-gate-20261015/PINNACLE_GATE_PROOF.md#cornelia-pinnacle-requirement-15-oct-2026).
+- **Static test:** `test_pinnacle_cornelia_gate.py` 8/8 and `test_no_impossible_tier_gates.py` 5/5 PASS. Packager dry run differs from R4 only in the 4 intended files. **Engine / multiplayer:** not tested. Only the killer gets credit; assist fix proposed, not applied. Ice Maze biome generation under FTF unverified.
