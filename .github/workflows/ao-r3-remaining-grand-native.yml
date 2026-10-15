@@ -1,0 +1,43 @@
+name: AO R3 Remaining Native Grand Pool Sources
+on:
+  pull_request:
+    paths:
+      - tools/verify_r3_remaining_native_sources.py
+      - .github/workflows/ao-r3-remaining-grand-native.yml
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json
+  workflow_dispatch:
+
+jobs:
+  pinned-native-source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download exact version-pinned NeoForge JAR resources
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/native-upstream build/native-evidence
+          curl --fail --show-error --location --retry 3 --connect-timeout 20 --max-time 180 \
+            'https://cdn.modrinth.com/data/ADHjiwby/versions/BOyaLHWk/adventuredungeons-neoforge-1.21-1.3.1.jar' \
+            --output build/native-upstream/adventuredungeons-neoforge-1.21-1.3.1.jar
+          curl --fail --show-error --location --retry 3 --connect-timeout 20 --max-time 180 \
+            'https://cdn.modrinth.com/data/s4OWxYQQ/versions/slKLosTb/irons_spellbooks-1.21.1-3.16.3.jar' \
+            --output build/native-upstream/irons_spellbooks-1.21.1-3.16.3.jar
+          sha256sum build/native-upstream/*.jar
+      - name: Verify exact native loot resources and all candidate pools
+        run: |
+          python tools/verify_r3_remaining_native_sources.py \
+            --adventure-jar build/native-upstream/adventuredungeons-neoforge-1.21-1.3.1.jar \
+            --irons-jar build/native-upstream/irons_spellbooks-1.21.1-3.16.3.jar \
+            --out build/native-evidence/THREE_REMAINING_R3_NATIVE_POOLS.json
+      - name: Upload extracted metadata, NOT original mod JARs
+        uses: actions/upload-artifact@v4
+        with:
+          name: ao-r3-remaining-grand-native-source-evidence
+          path: build/native-evidence/*.json
+          if-no-files-found: error
+          retention-days: 30
