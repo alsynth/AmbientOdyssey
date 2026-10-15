@@ -113,7 +113,7 @@ def grand_check(rows,mods,index,paxi=None):
                 blockers.append('INVALID_SOURCE_TABLE_OR_POOL: '+str(exc)[:100])
         cross=source!=trigger
         if cross:
-            blockers.append('CROSS_TABLE_BEST_POOL_SELECTION_NOT_APPROVED')
+            blockers.append('CROSS_TABLE_SOURCE_CHOICE_NEEDS_INDEPENDENT_REVIEW')
         if not r.get('tier',0)>=3 or r.get('chance')!=0.05:
             blockers.append('OWNER_TIER_OR_PROBABILITY_MISMATCH')
         checked.append({
