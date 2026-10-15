@@ -59,7 +59,7 @@
     "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
     "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json",
     "source_sha256": "ee7e398314939c84c644fdbc7825999e314fdfff308aacdf86a94a2c9a00084f",
-    "pool_index": 2,
+    "pool_index": 1,
     "chance": 0.05
   },
   {
@@ -77,7 +77,7 @@
     "table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
     "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_treasure.json",
     "source_sha256": "8bf79cee247e91c1972ac124455f0bbc04f0b0122ddd7711aecdf3ad8684a0be",
-    "pool_index": 2,
+    "pool_index": 1,
     "chance": 0.05
   },
   {
