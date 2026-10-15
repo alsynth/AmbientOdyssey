@@ -7,6 +7,11 @@ on:
       - tools/verify_keep_kayra_native_loot.py
       - .github/workflows/ao-r3-keep-kayra-native-loot.yml
       - docs/handoffs/loot-update-20261015/chest-source-audit.json
+  pull_request:
+    paths:
+      - tools/verify_keep_kayra_native_loot.py
+      - .github/workflows/ao-r3-keep-kayra-native-loot.yml
+      - docs/handoffs/loot-update-20261015/chest-source-audit.json
   workflow_dispatch:
 
 jobs:
