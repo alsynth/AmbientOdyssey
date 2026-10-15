@@ -1,8 +1,10 @@
-## v0.4 experimental Mine Cells candidate — 10 October 2026
+> **15 OCT 2026 CURRENT HANDOFF OVERRIDE:** [Canonical Claude master handoff](docs/handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md) + [PR64 implementation ledger](docs/status/IMPLEMENTATION_PROGRESS.md) are authoritative for the current R4 baseline. This large TODO file is a **historical multi-version archive**: its several 'current candidate' labels (318/331/338 refs), completed checkboxes and deferred lists were written for DIFFERENT versions and must not be mistaken for the latest R4 packaged state. Preserve history; reconcile tasks against exact R4 archive/owner decisions before implementation.
+
+## v0.4 experimental Mine Cells candidate â€” 10 October 2026
 
 **Current candidate:** `experimental/v0.4-complete-20261010`, source lock `0.4.0-experimental-minecells`, **318 CF references**. Supersedes older contradictory current-status paragraphs below; those are retained as historical evidence. User explicitly authorized continuing broad expansion and fixes before worldgen freeze. `structure/test6`, the existing content branches and `main` remain untouched.
 
-Merged latest active source, all 0.4a–e content/worldgen repair waves and Mine Cells preflight. Added exact Mine Cells/Connector/FFAPI pins with existing NeoForge owo, required Iceberg/JamLib, narrow bridge validation, source-backed Traveloptics JSON/Fungi tag repairs and new-profile 12/6 distance defaults. **Actual isolated four-mod dedicated-server smoke PASS:** fresh world, all five Mine Cells dimensions force-loaded, save, stop, restart and stop. **Full AO v0.4 client/server, portal/boss/player tests NOT TESTED.** Dependency binary gaps explicitly recorded; no stable release promotion.
+Merged latest active source, all 0.4aâ€“e content/worldgen repair waves and Mine Cells preflight. Added exact Mine Cells/Connector/FFAPI pins with existing NeoForge owo, required Iceberg/JamLib, narrow bridge validation, source-backed Traveloptics JSON/Fungi tag repairs and new-profile 12/6 distance defaults. **Actual isolated four-mod dedicated-server smoke PASS:** fresh world, all five Mine Cells dimensions force-loaded, save, stop, restart and stop. **Full AO v0.4 client/server, portal/boss/player tests NOT TESTED.** Dependency binary gaps explicitly recorded; no stable release promotion.
 
 Read [changelog](V04_CHANGELOG.md), [test results and known issues](V04_TEST_RESULTS.md), [grouped checklist](V04_TESTING_CHECKLIST.md) and `docs/testing/v04-evidence/`. Build with `python build_release_030.py --private-modrinth --output build/Ambient-Odyssey-v0.4-Experimental-MineCells-PRIVATE.zip`; validate with `python tools/validate_v04_release.py <zip> --private`. Reference-only export omits NeoReefRedux. No automatic claim of public distribution approval.
 
@@ -13,22 +15,22 @@ Read [changelog](V04_CHANGELOG.md), [test results and known issues](V04_TEST_RES
 
 - [x] Source-stage additional 1.21.1 NeoForge Exposure camera/film photography and Fadeless, two low-worldgen-impact candidates. Validate camera viewfinder, photo persistence, shader render path and FTB UI transitions in grouped gameplay test.
 - [x] Found that Comforts was already installed in the baseline; do not double-add or change its file pin. Rebuilt CI workflow from last successful 308-ref version to prevent numeric-ID corruption.
-## 10 October — experimental 0.4e audit-based large batch
+## 10 October â€” experimental 0.4e audit-based large batch
 - [x] Source-stage 16 official native NeoForge 1.21.1 candidate additions from the earlier user mod/resourcepack and QoL audits, with a small RPG gear readability comparator: BetterF3, Pick Up Notifier, Cave Dust, Light Overlay, Inventory Sorter, Subtle Effects, Traveler's Titles, Legendary Tooltips, Map Distance Fix, Equipment Compare, RightClickHarvest.
 - [ ] Validate 0.4e shared libraries, exact source files, deterministic importer and runtime; stop if baseline project collision or true missing required library. Current pack 0.4d contains 296 pins, 0.4e target 311.
 - [ ] Check overlapping crop harvesting, tooltip/inventory and HUD visuals, cave particle spam and initial worldgen cold lag in **one large playtest**, not a separate test per mod.
 - [ ] Continue comparing Cisco, RAD3, Prodigium, Prominence and Craft to Exile; avoid transplanting version-locked custom systems, quest progress and additional duplicate bosses without a stable port.
 - [ ] Defer all FTB Quest/Questlog authoring, balance, worldgen optimization and optional MCA/bridges per user phase priorities.
-## 10 October — consolidate prior mod/resource-pack lists + rare mutants
+## 10 October â€” consolidate prior mod/resource-pack lists + rare mutants
 - [x] Recover the 19-item user visual/fauna/resources nomination list and two large QoL/rendering candidate lists; cross-link nine theme, structures, discovery, and wildlife audits in [master intake](docs/audits/CONTENT_EXPANSION_MASTER_INTAKE_2026-10-10.md). Favor these earlier requests over new random proposed mod batches.
 - [x] User specifically accepts Mutant Monsters **as rare elite encounters**. Native 1.21.1 source fields, config path and value verified: four `mutant_*_spawn_weight = 0.01`, vs 0.05 default, with explicit min-weight 1 rounding caveat.
 - [ ] Verify 0.4d source/ZIP and full multiplayer rarity in a later substantial playtest. No fixed per-hour spawn guarantee, especially for Endermen due integer weight floor.
 - [ ] Independently review the remaining six staged 0.4d mods against the recovered master user audit BEFORE treating them as final approvals.
 
-## 10 October — New binding release order (content-first; about five days to planned server launch)
-- [x] Record user-directed phases: **content expansion → content bug/UX fixes (including Controlling keybind overhaul) → worldgen/performance/optimization → balance → archaeology + FTB Quests + Questlog LAST → optional MCA Reborn/bridges**.
+## 10 October â€” New binding release order (content-first; about five days to planned server launch)
+- [x] Record user-directed phases: **content expansion â†’ content bug/UX fixes (including Controlling keybind overhaul) â†’ worldgen/performance/optimization â†’ balance â†’ archaeology + FTB Quests + Questlog LAST â†’ optional MCA Reborn/bridges**.
 - [ ] Candidate 0.4d: validate and build **seven native NeoForge 1.21.1 content/compat additions plus source-verified Athena library**: Mutant Monsters, Illager Invasion, Chipped, Handcrafted, Dusty Decorations, Night Lights and Apothic Combat; explicitly confirm Puzzles Lib/Resourceful Lib/Athena/GeckoLib dependencies. Do not call a new mod playable from metadata/CI alone.
-- [ ] Keep adding substantive nonredundant content until roster is satisfactory; do not micro-test every 1–2 additions. Stop for fatal startup/data-loss/loader conflicts only.
+- [ ] Keep adding substantive nonredundant content until roster is satisfactory; do not micro-test every 1â€“2 additions. Stop for fatal startup/data-loss/loader conflicts only.
 - [ ] Carry nonblocking audio, canopy ambience, duplicate wildlife, POI, server tick stalls, gamerule side effects and keybind conflicts in later compatibility/performance backlogs rather than altering accepted terrain immediately.
 - [ ] Only after all content and quests phases are done: evaluate optional MCA Reborn and more bridges; leave MineColonies, Galosphere, Big Globe parked.
 - [ ] Before any public server launch: full effective manifest/dependencies, real Minecraft start/save/reload, new-world and dedicated-server verification, final seed/worldgen lock, backups and bounded pregeneration. 15 October is a *target*, not automatic signoff.
@@ -37,9 +39,9 @@ Read [changelog](V04_CHANGELOG.md), [test results and known issues](V04_TEST_RES
 # AMBIENT ODYSSEY
 > **RUNTIME GATE PASSED, 10 Oct: Test8.2** loaded the client, entered a new integrated world and shut down/saved with no fatal Minecraft crash. The previous My Picture Frame/TwelveMonkeys module collision is no longer present. **Not all content validated:** 2952 FTF chunks, **7.14 generated chunks/sec**, five integrated server stalls (up to 18.932 s); invalid Flight Rings smelt recipe definitions, invalid Additional Structures `minecraft:pale_garden` biome tag, 25 shared structure salts (not all actual collisions), old `byg:` item errors. **Test8.3 source + optional private ZIP** stage two Flight Ring salvage recipe codec fixes and split a *confirmed Create Arise/Easy Structures windmill identical salt* while retaining Arise's 90/10 grid; 265 CF refs unchanged. Source/ZIP static preflight pass, Test8.3 Minecraft runtime pending. **All remaining biome/ocean/bridge/Nether/End gameplay quality tests and solo quests multiplayer still open.** Full evidence: [Test8.2 runtime and last worldgen audit](docs/testing/TEST8_2_RUNTIME_AND_LAST_WORLDGEN_AUDIT_2026-10-10.md). Existing Test8.2 working game/save must not be overwritten for testing.
 
-> **LATEST 0.3.8 TEST8.2 — CRASH FIX BEFORE WORLDGEN (10 Oct).** User's Test8.1 failed before main menu due to Java module duplicate package between `mpf` (My Picture Frame) and `com.twelvemonkeys.common.image`, not a confirmed Iron's Jewelry bug. Source removes My Picture Frame (CF 1582023), pins HAPI `883374:9063597`, Atlas API `1145462:6880789`, Flight Rings `401229:7782196` and required MidnightLib `488090:7318664`, bringing import to **265** CF refs. Paxi overrides **both Flight Rings recipes** with Nether-era and boss-gated ingredients. **PRIVATE** ZIP additionally bundles user-uploaded Better Bastions and NeoReefRedux JARs and ORIGINAL Ambient Odyssey icon in overrides. **Not yet game-launched or CurseForge-public-approved.** Full test handoff: [Test8.2 report](docs/testing/TEST8_2_CRASH_FIX_FLIGHT_ICON_AND_PACKAGING_2026-10-10.md). Other Test8.1 worldgen changes remain preserved. 
+> **LATEST 0.3.8 TEST8.2 â€” CRASH FIX BEFORE WORLDGEN (10 Oct).** User's Test8.1 failed before main menu due to Java module duplicate package between `mpf` (My Picture Frame) and `com.twelvemonkeys.common.image`, not a confirmed Iron's Jewelry bug. Source removes My Picture Frame (CF 1582023), pins HAPI `883374:9063597`, Atlas API `1145462:6880789`, Flight Rings `401229:7782196` and required MidnightLib `488090:7318664`, bringing import to **265** CF refs. Paxi overrides **both Flight Rings recipes** with Nether-era and boss-gated ingredients. **PRIVATE** ZIP additionally bundles user-uploaded Better Bastions and NeoReefRedux JARs and ORIGINAL Ambient Odyssey icon in overrides. **Not yet game-launched or CurseForge-public-approved.** Full test handoff: [Test8.2 report](docs/testing/TEST8_2_CRASH_FIX_FLIGHT_ICON_AND_PACKAGING_2026-10-10.md). Other Test8.1 worldgen changes remain preserved. 
 
-> **LATEST Test 8.1 (10 October):** Replaces Test 8 preview, with **no new CurseForge project pins** (still 262). Dragon skeleton chance 0.003333→0.0015; Paxi `ao_dragon_caves` data overrides widen **underground fire/lightning dragon caves** to all Overworld biomes while allowing **ice caves** only in cold/snowy Overworld biomes, leaving surface roost tags unchanged; Create Rustic barn, windmill, smithy and well grid opportunities reduced to limit structure overlaps. [Test8 checklist](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md) now includes explicit dragon and Rustic checks. Still manually install the **user-uploaded Better Bastions** and **NeoReefRedux** JARs. [Pre-End/midgame flight audit](docs/testing/MIDGAME_FLIGHT_OPTIONS_2026-10-10.md) compares existing Angel Wings, Ars Glide, Hippogryphs, flight rings, Create anchors and craftable Elytra. No flight mods installed yet; worldgen freeze NOT accepted.
+> **LATEST Test 8.1 (10 October):** Replaces Test 8 preview, with **no new CurseForge project pins** (still 262). Dragon skeleton chance 0.003333â†’0.0015; Paxi `ao_dragon_caves` data overrides widen **underground fire/lightning dragon caves** to all Overworld biomes while allowing **ice caves** only in cold/snowy Overworld biomes, leaving surface roost tags unchanged; Create Rustic barn, windmill, smithy and well grid opportunities reduced to limit structure overlaps. [Test8 checklist](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md) now includes explicit dragon and Rustic checks. Still manually install the **user-uploaded Better Bastions** and **NeoReefRedux** JARs. [Pre-End/midgame flight audit](docs/testing/MIDGAME_FLIGHT_OPTIONS_2026-10-10.md) compares existing Angel Wings, Ars Glide, Hippogryphs, flight rings, Create anchors and craftable Elytra. No flight mods installed yet; worldgen freeze NOT accepted.
 
 > **ACTIVE 0.3.8 COMBINED TEST, 10 Oct:** The source lock now stages **11 new CurseForge projects** (including 10 ocean/dependency additions and FTB Solo Quests), total **262** including Solas and Complementary shader file references from 0.3.7. Curated BWG/BOP biomes, Prairie distribution, independent WDA/IDAS rare lighthouse grids, rarer Eternal Starlight/Dragon Tower and BWG Dacite Shore are staged. Separate **test ZIP** has static CRC/manifest pass, not runtime verified. **Two manual mods not in ZIP**: Better Bastions exact NeoForge 1.21.1 file and NeoReefRedux Modrinth port. Read **[one-pass combined test checklist](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md)** before any single-player or server test. Worldgen is NOT frozen, bridge/Streams Reflowing physical placement remains unresolved. The previously frozen Test5 history below is not the live status.
 
@@ -47,20 +49,20 @@ Read [changelog](V04_CHANGELOG.md), [test results and known issues](V04_TEST_RES
 
 > **Latest Test 6 runtime result (9 Oct 2026):** Source/build is statically verified but the first clean CurseForge client startup **FAILED**: NeoForge 21.1.252 rejected `Structory_Towers_26.2_v1.0.17.jar` with `InvalidModFileException: Missing ModLoader`. Awaiting live test of official v1.0.14 fallback `783522:7078283` before changing locked manifest or regenerating Test 6 ZIP. See `docs/testing/TEST6_RUNTIME_FINDINGS_2026-10-09.md` and `docs/status/CURRENT_STATE.md`. The original checkboxes and Black Spiral exclusion below are historical and superseded by more recent approved decisions.
 
-# Master Development TODO — 0.3.x → 0.4.0
+# Master Development TODO â€” 0.3.x â†’ 0.4.0
 
 **Created:** 9 October 2026  
 **Preserved baseline:** original v0.3.1 Structure Test 5  
 **Current static candidate:** v0.3.1 Structure Test 5 audit1  
 **Minecraft:** 1.21.1  
 **Loader:** NeoForge 21.1.252  
-**Target:** 5–7-player exploration-first RPG modpack  
+**Target:** 5â€“7-player exploration-first RPG modpack  
 **Recommended client RAM:** 10 GB (10,240 MiB; launcher manifest recommendation, adjust to machine)  
 **Planning status:** Living master document
 
 ---
 
-## 9 October 2026 continuation — current verified state
+## 9 October 2026 continuation â€” current verified state
 
 - [x] Reproduce the untouched original Test 5 import exactly and pass its 76 gates; preserve original source/import archives and report evidence as rollback.
 - [x] Complete the available binary audit and source repairs described in `STRUCTURE_TEST5_CHANGELOG.md`. Expanded evidence is 177 + 19 = 196 binaries; 26 complete unique binaries were directly inspected this continuation.
@@ -74,26 +76,26 @@ The user's latest instruction explicitly allows completion of static work before
 
 This master supersedes older install preferences. The 6 October 166-candidate registry is screened for future worldgen risk, not an install list. The original 8 October TODO is retained under `evidence/baseline-test5/TODO.md`; its unique later-stage controls/QoL/boss/performance tasks remain in the master backlog. The original supplied master is retained under `evidence/handoffs/master-todo-source-2026-10-09.md`.
 
-## 10 October 2026 — User's Test8.10 real-game acceptance and server pregeneration decision (after source fixes)
+## 10 October 2026 â€” User's Test8.10 real-game acceptance and server pregeneration decision (after source fixes)
 
 - [x] **ACTUAL TEST8.10 RUNTIME:** User reports playable world and no visibly broken structures; Java 21 / NeoForge 21.1.252 1.10 world started, joined, saved/shut down normally. FTF generated **4,418 chunks at 6.76/s**, **178.84 ms thread time per chunk**, **11.0% parallel efficiency**. **9** server lag warnings (worst **19.708 seconds**). Confirmed SR height fallback warning: **Streams Reflowing could not access ReTerraForged terrain at stream preparation, used slow height mode; fast terrain mode OFF**. Investigate later; do not disable terrain mod or broadly alter configs now. [Complete evidence and player feedback](docs/testing/TEST8_10_LIVE_FEEDBACK_PREGENTIPS_2026-10-10.md).
 - [ ] **LATER, not immediate:** large YUNG's Bridges still very rare/not encountered. Author says TerraForged narrow/steep river banks restrict valid bridge candidates. Config spawn rate influences *attempts*, not whether any bridge geometry fits. User prefers to **park large bridge tuning for a much later isolated geometry/river audit**, no immediate terrain, frequency or bridge tweaks.
 - [ ] **ONE MORE FUTURE SOURCE NOTE:** actual 1.10 log has **2** `revampedvillages:outpost/points` and **6** repeated `minecraft:minecraft_empty` missing-pool refs (two positions repeatedly); older invalid `minecraft:`/cook/angler refs **not observed**. Do not invent generic `minecraft_empty` aliases. Also **166** invalid `minecraft:air` item stacks and **105** `forge:entity_gravity` warnings; no POI mismatch or Dungeon Crawl spawner error observed on this route. Defer content source attribution.
-- [ ] **AGREED SERVER LAUNCH PLAN — PREGENERATE EXISTING CHUNKS:** after final content/worldgen/biome roster and selected seed are locked, use a suitable **1.21.1 NeoForge-compatible pregenerator** in staged/offline batches for the approved playable Overworld radius (and chosen major dimensions), before the 5–7-player server opens. Back up and monitor TPS/memory/storage; do not confuse **pregeneration** with `/forceload`, FTB Chunks forced loading or client DH/Voxy LODs. A pregenerated region costs far less *new* terrain generation during play but doesn't remove all sources of lag; beyond-boundary exploration generates new chunks. **No pregenerator installed/approved or radius decided yet**.
-- [ ] **QUESTLOG TIPS & TRICKS — AUTHOR IN CONTENT WAVE:** include a beginner-friendly tip explaining that server admins pregenerated the main exploration area, why exploration inside the prepared region is smoother, what to expect beyond it, and why players don't need to run a chunk loader. Optional admin tip: pregeneration creates saved chunks; force-loading leaves them actively ticked and may hurt performance. These belong in **Questlog**, not existing placeholder FTB Quests, until the new guide is authored. Full suggested wording is in [Test8.10 live findings](docs/testing/TEST8_10_LIVE_FEEDBACK_PREGENTIPS_2026-10-10.md).
+- [ ] **AGREED SERVER LAUNCH PLAN â€” PREGENERATE EXISTING CHUNKS:** after final content/worldgen/biome roster and selected seed are locked, use a suitable **1.21.1 NeoForge-compatible pregenerator** in staged/offline batches for the approved playable Overworld radius (and chosen major dimensions), before the 5â€“7-player server opens. Back up and monitor TPS/memory/storage; do not confuse **pregeneration** with `/forceload`, FTB Chunks forced loading or client DH/Voxy LODs. A pregenerated region costs far less *new* terrain generation during play but doesn't remove all sources of lag; beyond-boundary exploration generates new chunks. **No pregenerator installed/approved or radius decided yet**.
+- [ ] **QUESTLOG TIPS & TRICKS â€” AUTHOR IN CONTENT WAVE:** include a beginner-friendly tip explaining that server admins pregenerated the main exploration area, why exploration inside the prepared region is smoother, what to expect beyond it, and why players don't need to run a chunk loader. Optional admin tip: pregeneration creates saved chunks; force-loading leaves them actively ticked and may hurt performance. These belong in **Questlog**, not existing placeholder FTB Quests, until the new guide is authored. Full suggested wording is in [Test8.10 live findings](docs/testing/TEST8_10_LIVE_FEEDBACK_PREGENTIPS_2026-10-10.md).
 
-## 10 October 2026 — Test8.10 source-based worldgen repair closure / remaining engine gates
+## 10 October 2026 â€” Test8.10 source-based worldgen repair closure / remaining engine gates
 
 - [x] **Native missing-pool warnings fixed at source:** previous 273 invalid terminal jigsaws in four mods + Farmer cook/angler, T&T beach lighthouse missing master pool using native NBT, Graveyard walled graveyard small crypt misfiled native source JSON, T&T Swiss meadow village absent villagers pool using conservative vanilla template equivalents.
-- [x] **Repurposed Structures city top mitigation:** pinned original `fat_tower_top` assets and compatible jigsaws exist, city generator `size` 5→7 only. **Not a runtime guarantee** that the occasional missing required top cannot recur.
+- [x] **Repurposed Structures city top mitigation:** pinned original `fat_tower_top` assets and compatible jigsaws exist, city generator `size` 5â†’7 only. **Not a runtime guarantee** that the occasional missing required top cannot recur.
 - [x] **Traveloptics required legacy item tag:** `forge:tools` source bridge stored in canonical `release_030/structure-compatibility.json` so `compile_compatibility_031.py` generates it. Independent ZIP validator confirmed packed `forge:tools`; does not address the malformed `element_fire` mod-native JSON.
 - [x] **CI source/packaging verification:** `Test8.10` 267 CF refs, original three required mods, NeoReef checksum, all 273 pinned native NBTs, two bit-identical ZIPs (70,810,381 bytes SHA256 `0bfec2560337369fed08fc70329e00f337ee6281a8676a0e4e2ccb9f6751d71f`). [CI run](https://github.com/alsynth/AmbientOdyssey/actions/runs/38027173155) and [source handoff](docs/testing/TEST8_10_WORLDGEN_FINAL_SOURCE_AUDIT_2026-10-10.md). Keep successful actual Test8.6 world as runtime rollback; **no Test8.10 Minecraft launch or new chunk visual test has happened**.
 - [ ] **Engine-level Dungeon Crawl spawner:** author `Spawner.java` puts block and immediately tries block entity in generation, three errors in Test8.3. Fix would require tested Java patch/update; `custom_spawners=false` is not a fix. Never mask errors by deleting spawners or disabling mod by default.
 - [ ] **Unattributed POI/block-entity warnings:** nine duplicate POI registrations Test8.6 and generic WorldGenRegion early BE logs. Need ownership/seed trace before world data edits; no speculative POI deletion.
 - [ ] **Loot/other data errors:** unresolved invalid registered items `redeco:hammer`, `traveloptics:blood_echo`, `meadow:alpine_salt`, `create:crushed_iron_ore` and `minecraft:air`; no indexed source JSON tables reference named invalid custom IDs. Do not arbitrarily replace game loot. Native NBT provenance CI [#38026555895](https://github.com/alsynth/AmbientOdyssey/actions/runs/38026555895) initiated. Traveloptics `element_fire` malformed mod JSON requires source/engine fix, not a generic item tag.
-- [ ] **Real-world acceptance:** later incidental gameplay checks for actual dungeon room correctness, rare large YUNG Bridges, deep ocean/Nether/End natural structures, Dragon caves near Y−200, dedicated server placement/chunk pregeneration. These are impossible to guarantee from JSON/NBT alone. User did **not** request another dedicated test now. **Performance tuning remains deferred** until worldgen is deemed acceptable.
+- [ ] **Real-world acceptance:** later incidental gameplay checks for actual dungeon room correctness, rare large YUNG Bridges, deep ocean/Nether/End natural structures, Dragon caves near Yâˆ’200, dedicated server placement/chunk pregeneration. These are impossible to guarantee from JSON/NBT alone. User did **not** request another dedicated test now. **Performance tuning remains deferred** until worldgen is deemed acceptable.
 
-## 10 October 2026 — Test8.4 experimental worldgen candidate (do not merge to stable)
+## 10 October 2026 â€” Test8.4 experimental worldgen candidate (do not merge to stable)
 
 - [x] On isolated `worldgen/test8.4-prefreeze`, apply the user-approved, scoped Prairie reduction and climate fallback changes in canonical `release_030/biome-pools.json`, and update generated Biolith placement; preserve other biomes.
 - [x] On same isolated branch, stage mountain-only FreeTerraForged relief/variety (1.35, 0.9) and three Ice & Fire cave probabilities (0.72); preserve overall relief, dragon roosts, structure density and streams.
@@ -106,7 +108,7 @@ This master supersedes older install preferences. The 6 October 166-candidate re
 - [ ] TEST: medium/large YUNG bridges under FTF/Streams banks; deep-water/ocean/coastal structures; Nether/End, dedicated-server worldgen. Keep surface/general structure densities unchanged.
 - [ ] DEFER: performance/FPS optimizations until worldgen criteria are accepted; continue collecting logs but don't change renderer/worldgen in same A/B wave.
 
-# PART I — Project rules and current state
+# PART I â€” Project rules and current state
 
 ## 1. Purpose of the 0.3.x phase
 
@@ -133,10 +135,10 @@ Every task should eventually have one of these states:
 
 - `[x]` Completed and verified at its stated level.
 - `[ ]` Pending.
-- `BLOCKED` — Cannot proceed without another prerequisite.
-- `TEST` — Implemented, awaiting actual gameplay validation.
-- `DECISION` — Requires an explicit user choice.
-- `DEFERRED` — Intentionally outside the current development phase.
+- `BLOCKED` â€” Cannot proceed without another prerequisite.
+- `TEST` â€” Implemented, awaiting actual gameplay validation.
+- `DECISION` â€” Requires an explicit user choice.
+- `DEFERRED` â€” Intentionally outside the current development phase.
 
 Do not mark a change completed merely because a configuration file has been edited.
 
@@ -190,14 +192,14 @@ All 19 newly recovered JARs have completed the expanded scoped binary audit. The
 
 ---
 
-# PART II — Non-negotiable project decisions
+# PART II â€” Non-negotiable project decisions
 
 These decisions are already established and should not be reopened casually.
 
 ## 4. Core modpack identity
 
 - [x] Ambient Odyssey remains exploration-first with RPG, combat and boss progression.
-- [x] Multiplayer is designed for approximately 5–7 players.
+- [x] Multiplayer is designed for approximately 5â€“7 players.
 - [x] Primary distribution is CurseForge.
 - [x] Target Minecraft 1.21.1, using NeoForge.
 - [x] Preserve the established extensive mod roster, rather than reducing the pack to a lightweight vanilla+ experience.
@@ -271,7 +273,7 @@ These eight mods are **approved additions, explicitly not installed in audit1; e
 
 ---
 
-# PART III — Development sequencing
+# PART III â€” Development sequencing
 
 ## 8. Recommended work order
 
@@ -295,7 +297,7 @@ Do not proceed directly to large-scale terrain tuning while the basic structure 
 
 ---
 
-# PART IV — W0: Baseline preservation and reproducibility
+# PART IV â€” W0: Baseline preservation and reproducibility
 
 ## 9. Source and build hygiene
 
@@ -341,7 +343,7 @@ A fresh source extraction can rebuild the untouched Test 5 archive, and its stat
 
 ---
 
-# PART V — W1: Initial in-game verification
+# PART V â€” W1: Initial in-game verification
 
 ## 10. Test profile preparation
 
@@ -405,7 +407,7 @@ Test 5 launches, creates and reloads a world, and does not show a newly introduc
 
 ---
 
-# PART VI — W2: Complete installed-mod and structure audit
+# PART VI â€” W2: Complete installed-mod and structure audit
 
 ## 12. Recover missing JAR coverage
 
@@ -524,7 +526,7 @@ The important worldgen providers have a documented effective registry and placem
 
 ---
 
-# PART VII — W3: Eight approved structure mods
+# PART VII â€” W3: Eight approved structure mods
 
 ## 15. Acquisition and dependency checks
 
@@ -650,7 +652,7 @@ All eight approved mods are installed in the test build with verified dependenci
 
 ---
 
-# PART VIII — W4: Structure generation and distribution
+# PART VIII â€” W4: Structure generation and distribution
 
 This is one of the largest priorities of 0.3.x.
 
@@ -846,7 +848,7 @@ A repeatable world survey demonstrates improved variety and representation in mo
 
 ---
 
-# PART IX — W5: Terrain, biomes and landscape composition
+# PART IX â€” W5: Terrain, biomes and landscape composition
 
 ## 25. Curated biome verification
 
@@ -948,11 +950,11 @@ A repeatable world survey demonstrates improved variety and representation in mo
 
 ### W5 terrain acceptance
 
-The world contains noticeably better diversity, fewer repetitive regions, improved climate transitions, larger appealing mountains, appropriate coastlines and the intended biome roster—without destabilizing structures or generation performance.
+The world contains noticeably better diversity, fewer repetitive regions, improved climate transitions, larger appealing mountains, appropriate coastlines and the intended biome rosterâ€”without destabilizing structures or generation performance.
 
 ---
 
-# PART X — Vegetation and environmental systems
+# PART X â€” Vegetation and environmental systems
 
 ## 31. Tan's Huge Trees
 
@@ -1010,7 +1012,7 @@ The existing staged plan is a starting point, not an applied change.
 
 ---
 
-# PART XI — W6: Caves, oceans, Nether, End and dimensions
+# PART XI â€” W6: Caves, oceans, Nether, End and dimensions
 
 ## 34. Cave systems
 
@@ -1048,14 +1050,14 @@ The existing staged plan is a starting point, not an applied change.
 - [ ] Record explicit *install/reject/park* decisions, two seeded worldgen runs, performance and oceans/coasts approval before calling the worldgen roster frozen.
 - [ ] Keep significant ocean expansion separate if it threatens 0.3.x stability.
 
-- [ ] **Combined Test 8 mandatory full checklist:** [TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md) — all new aquatic mods + dependency checks, new land biomes, coastlines, lighthouses, boss towers, bridges, Nether bastions, quest-team separation, shaders, server performance
+- [ ] **Combined Test 8 mandatory full checklist:** [TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md](docs/testing/TEST8_COMBINED_WORLDGEN_ONE_PASS_CHECKLIST.md) â€” all new aquatic mods + dependency checks, new land biomes, coastlines, lighthouses, boss towers, bridges, Nether bastions, quest-team separation, shaders, server performance
 - [ ] **Manual Better Bastions**: add exact NeoForge 1.21.1 JAR from official CurseForge project `1713723`; not yet in import manifest because exact CF file ID is unresolved. Test with Incendium, Black Spiral and Nether fortresses in fresh chunks
 - [ ] **Manual NeoReefRedux**: add native NeoForge 1.21.1 Modrinth release; no confirmed CurseForge ID. Test coral terrain and Hybrid Aquatic overlaps
 - [ ] Ocean loot progression: FTB Ocean Mobs offers NO default loot; write custom datapack loot tables and tune spawn/boss balance after basic registration test
 - [ ] Native and custom bridges with Streams Reflowing: test generation next to both river types; fix physical height/terrain mismatch rather than doubling frequency without evidence
 - [ ] Compare fresh-seed cliffs and beaches after BWG Dacite Shore replaces `minecraft:stony_shore`; watch sea structures / waterline seams
 
-- [ ] **Dragon skeleton corpses:** sample surface chance after 0.0033333→0.0015 reduction on 2 fresh seeds; leave skeletons enabled
+- [ ] **Dragon skeleton corpses:** sample surface chance after 0.0033333â†’0.0015 reduction on 2 fresh seeds; leave skeletons enabled
 - [ ] **Underground cave biome testing:** verify fire and lightning caves in formerly unavailable Overworld biomes, ice caves only in cold/snowy. Surface Ice & Fire roost tags must remain native; inspect structure/worldgen logs and physical lair placement
 - [ ] **Create Rustic spacing:** test barn 36/24, windmill 32/20, smithy 28/18, well 20/12 against other structure mods and villages. Lower frequency cannot guarantee no intersections
 - [ ] **Midgame flight selection** (after this test): review [flight shortlist](docs/testing/MIDGAME_FLIGHT_OPTIONS_2026-10-10.md) and choose limited-flight ring, craftable Elytra, Create Flight Anchor or existing spell/mount progression without wrecking exploration balance
@@ -1136,7 +1138,7 @@ Do not assume that candidate dimensions such as Mine Cells or Blue Skies are alr
 
 ---
 
-# PART XII — W7: Technical compatibility and cleanup
+# PART XII â€” W7: Technical compatibility and cleanup
 
 ## 39. Recipes and item registries
 
@@ -1258,7 +1260,7 @@ This is not the final 0.6.x questbook overhaul.
 - [ ] **REQUIRED: Individual quest completion for every player, even when members share an FTB Teams party.** Player A completing a task must NOT complete it for player B. Preserve FTB Chunks shared claims/party collaboration. Test with two real players on a dedicated server.
 - [ ] Do not mistake `default_reward_team:false` in `config/ftbquests/quests/data.snbt` for private progress: it only controls team reward distribution; vanilla FTB Quests shares progress in teams. No proven built-in switch.
 - [ ] Evaluate **Solo Quests 1.1.2** (NeoForge 1.21.1, CurseForge `1644371:8614631`): separate progress for party members, `teamSyncEnabled=false` prevents voluntary resync, **but author reports it does not work in integrated/LAN worlds**. Test API compatibility with FTB Quests 2101.1.36 and backup world quest data before any migration. Do not install to the current public build before dedicated-server acceptance.
-- [ ] Alternative if per-quest mixed shared/solo progression is wanted: research NoreQuests + NoreTeams, **not** a trivial setting—it replaces/hides FTB Teams controls and may alter FTB Chunks workflows.
+- [ ] Alternative if per-quest mixed shared/solo progression is wanted: research NoreQuests + NoreTeams, **not** a trivial settingâ€”it replaces/hides FTB Teams controls and may alter FTB Chunks workflows.
 - [ ] Check group/team quest synchronization under the final chosen individual-progress implementation.
 - [ ] Check rewards that grant invalid items.
 - [ ] Check WDA questline integration.
@@ -1270,7 +1272,7 @@ This is not the final 0.6.x questbook overhaul.
 
 ---
 
-# PART XIII — W8: Performance, stability and server readiness
+# PART XIII â€” W8: Performance, stability and server readiness
 
 ## 46. Establish a proper benchmark baseline
 
@@ -1414,7 +1416,7 @@ Current intended foundation includes ModernFix, FerriteCore, Embeddium, Immediat
 - [ ] Check server startup after pregen.
 - [ ] Test one player exploring new terrain.
 - [ ] Test two players exploring separate directions.
-- [ ] Test 5–7 players spread across different regions.
+- [ ] Test 5â€“7 players spread across different regions.
 - [ ] Test multiple dimension exploration.
 - [ ] Test combat while other players are generating terrain.
 - [ ] Check TPS and chunk delivery.
@@ -1430,7 +1432,7 @@ The pack demonstrates repeatable, acceptable performance and stability on repres
 
 ---
 
-# PART XIV — W9: Quality assurance and release preparation
+# PART XIV â€” W9: Quality assurance and release preparation
 
 ## 54. Mandatory final regression
 
@@ -1517,7 +1519,7 @@ Before closing 0.3.x, evaluate the following subjectively but with recorded exam
 
 ---
 
-# PART XV — Failure-response playbook
+# PART XV â€” Failure-response playbook
 
 ## 57. If the game crashes during startup
 
@@ -1612,7 +1614,7 @@ Before closing 0.3.x, evaluate the following subjectively but with recorded exam
 
 ---
 
-# PART XVI — Test matrix and evidence standards
+# PART XVI â€” Test matrix and evidence standards
 
 ## 64. Test types
 
@@ -1673,7 +1675,7 @@ For each significant issue or fix, record:
 
 ---
 
-# PART XVII — Dependency map
+# PART XVII â€” Dependency map
 
 ## 67. Work that can happen in parallel
 
@@ -1704,7 +1706,7 @@ If later worldgen changes affect previously tested structure placement, repeat t
 
 ---
 
-# PART XVIII — Exit gate: 0.3.x → 0.4.0
+# PART XVIII â€” Exit gate: 0.3.x â†’ 0.4.0
 
 ## 68. Mandatory conditions
 
@@ -1767,7 +1769,7 @@ If later worldgen changes affect previously tested structure placement, repeat t
 
 ---
 
-## 10 October 2026 — User's actual 0.4.0-b1 feedback → 0.4c combined refinements
+## 10 October 2026 â€” User's actual 0.4.0-b1 feedback â†’ 0.4c combined refinements
 
 - [x] **Player outcome:** Test categories 1/2/3 worked; Controlling works perfectly. Performance user-estimated ~**50 FPS shader render 12/simulation 12**, **40 FPS during rain**, not materially worse than Test8.10. [Actual 21,271-line log analysis](docs/testing/CONTENT_040C_USER_FEEDBACK_AND_GAME_RULES_2026-10-10.md): **6,116** new FTF chunks, **18** server overload warnings max **18.6s**, 9 POI mismatch errors; **zero** starting-jigsaw/missing-pool/required-structure failures and clean shutdown. Repeated SR ReTerraForged slow height sampling fallback remains future optimization target. No claim of controlled benchmark.
 - [x] **0.4c source changes staged:** Drop **Galosphere** (user says unneeded), keep **Better Archeology**. Full global Paxi 1.21.1 **datapack load-function gamerules**: `playersSleepingPercentage 30`, `doFireTick false`, `mobGriefing false`. With 6 players, 2 asleep suffice. Warning: villagers cannot farm with `mobGriefing false`, not all mod explosives obey vanilla game rules. Worldgen and older Test8.10 native repair datapacks preserved. Final CF references **288**, not 289.
@@ -1777,40 +1779,40 @@ If later worldgen changes affect previously tested structure placement, repeat t
 - [ ] **Archaeology requires excellent author-made optional gameplay:** specialized 3-tier archaeologist quests (real site discovery, distinct rare finds, multi-region reconstruction), **surprisingly high one-off rewards** balanced with actual rarity, personal/co-op claim once. Verify Better Archeology item/loot IDs and FTB Quests/Solo task format before authoring runnable quest SNBT. No boring 50 shards or infinitely repeatable endgame gear.
 - [ ] **Keybind overhaul**: Controlling works and exposes too many collisions. Create one consistent control profile across vanilla/JEI/map/questbook/combat/magic/Create and support unbound low-use keys using **real runtime key IDs**, not guessed names. `latest.log` does not contain actual key assignments; need Controlling conflict export/screenshot or live `options.txt` before pushing overrides. Preserve users' own controls.
 - [x] **Content decisions:** MineColonies **NO**; MCA Reborn **DEFER** for potential later discussion, not added; Galosphere **REMOVE** from next branch, Better Archeology **KEEP** conditional upon custom high-reward quests.
-- [ ] **Next one big test** after source CI: confirm the Paxi gamerules apply in *new and restarted* worlds, no fire spreads, creepers don't damage blocks, two of six can sleep (multiplayer), sound volume in forest/rain/coast, archaeology and passive ecology with 5–7 online. **No individual tiny tests.** DefaultOptions audio is default not forced on an existing manually configured profile.
-- [x] **CI 0.4c — PASSED**: [GitHub Actions run 38061358812](https://github.com/alsynth/AmbientOdyssey/actions/runs/38061358812) verified 288-file pins, absence of Galosphere, Paxi gamerules, old 273 NBT fixes, audio/Pest configuration and two bit-identical full ZIPs. Exact private importer **70,816,743 bytes**, SHA256 `d56db4003161a9f6f93f0ac29f694f5b3a434ec370f6da10faddb22ba0b252d1`. **Not Minecraft runtime-tested; no extra micro-test requested.**
+- [ ] **Next one big test** after source CI: confirm the Paxi gamerules apply in *new and restarted* worlds, no fire spreads, creepers don't damage blocks, two of six can sleep (multiplayer), sound volume in forest/rain/coast, archaeology and passive ecology with 5â€“7 online. **No individual tiny tests.** DefaultOptions audio is default not forced on an existing manually configured profile.
+- [x] **CI 0.4c â€” PASSED**: [GitHub Actions run 38061358812](https://github.com/alsynth/AmbientOdyssey/actions/runs/38061358812) verified 288-file pins, absence of Galosphere, Paxi gamerules, old 273 NBT fixes, audio/Pest configuration and two bit-identical full ZIPs. Exact private importer **70,816,743 bytes**, SHA256 `d56db4003161a9f6f93f0ac29f694f5b3a434ec370f6da10faddb22ba0b252d1`. **Not Minecraft runtime-tested; no extra micro-test requested.**
 
-## 10 October 2026 — CHANGE OF DEVELOPMENT POLICY: large content patches, fewer user tests
+## 10 October 2026 â€” CHANGE OF DEVELOPMENT POLICY: large content patches, fewer user tests
 
-- [x] **User explicitly rejects tiny incremental Minecraft tests.** Prefer **one large, internally compatible 0.4.x patch** over separate 2–3-mod test ZIPs; include the known compatible content/visual additions. Split a candidate out **only** for an identified MC/loader/dependency incompatibility, competing gameplay/renderer/audio/season engine, or because it would prevent meaningful fault isolation. Static CI/source validation should still run on intermediate commits; the expensive **human game playtest occurs once per major batch**, with targeted A/B or rollback only if a real defect emerges.
+- [x] **User explicitly rejects tiny incremental Minecraft tests.** Prefer **one large, internally compatible 0.4.x patch** over separate 2â€“3-mod test ZIPs; include the known compatible content/visual additions. Split a candidate out **only** for an identified MC/loader/dependency incompatibility, competing gameplay/renderer/audio/season engine, or because it would prevent meaningful fault isolation. Static CI/source validation should still run on intermediate commits; the expensive **human game playtest occurs once per major batch**, with targeted A/B or rollback only if a real defect emerges.
 - [x] **0.4.0-b1 LIVING-WORLD COMBINED wave**: inherited 0.4.0-a Controlling+FTB XMod Compat, plus **15 additional native NeoForge/dependency mods and 5 official platform-delivered resource packs**, for **289 CurseForge references** (original Test8.10 267 + 22 new including two earlier). Full list, dependencies, exclusions and *single consolidated test path*: [CONTENT_040B_COMBINED_WAVE_2026-10-10.md](docs/testing/CONTENT_040B_COMBINED_WAVE_2026-10-10.md).
 - [x] **CI:** [Actions 38057013025](https://github.com/alsynth/AmbientOdyssey/actions/runs/38057013025) PASSED, including original 28/31 source checks and 273 native terminal NBTs, 15 new mods + 5 pack file refs, 289 manifest files, NeoReef checksum, full CRC and two **bit-identical** builds. Exact private importer **70,814,589 bytes**, SHA256 `c25a677bfba4dddc6d122232f998244d2b94bd4a66a7024f1796f7a76884b08f`. **Not launched in Minecraft yet**. CurseForge pack-category folder routing and activation must be checked in the app.
-- [ ] **Next ONE combined game acceptance** (not one per mod): new CurseForge client import → full launch → two settlement systems / Guard Villagers / villager names / Easy NPC UI → natural Galosphere & Better Archaeology cave/ruin → Naturalist+Cosy/Atmosfera visuals → Polytone/Rainbow grasses/petals and lantern/torch pack order → Controlling/JEI/FTB Quest → sample TPS/FPS/multiplayer. Send one `latest.log` after a substantial session. **User controls whether/when this test runs.**
+- [ ] **Next ONE combined game acceptance** (not one per mod): new CurseForge client import â†’ full launch â†’ two settlement systems / Guard Villagers / villager names / Easy NPC UI â†’ natural Galosphere & Better Archaeology cave/ruin â†’ Naturalist+Cosy/Atmosfera visuals â†’ Polytone/Rainbow grasses/petals and lantern/torch pack order â†’ Controlling/JEI/FTB Quest â†’ sample TPS/FPS/multiplayer. Send one `latest.log` after a substantial session. **User controls whether/when this test runs.**
 - [ ] **After pass:** make content NPC stories, archaeology rumors, Lootr journal triggers, wildlife field notes and ocean expedition quests in another **full substantive integrated batch**, not tiny isolated test builds. Save user Test8.10 working worldgen as rollback; dedicate permanent server world **only after** final features, biomes and seed are locked, then pregenerate chunks and put correct guidance in Questlog Tips & Tricks.
 
-## 10 October 2026 — 0.4.x nine-theme content expansion planning handoff (NO mods installed)
+## 10 October 2026 â€” 0.4.x nine-theme content expansion planning handoff (NO mods installed)
 
 - [x] **Authoritative nine-theme audit recovered:** [CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md](https://github.com/alsynth/AmbientOdyssey/blob/structure/test6/docs/audits/CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md). Ranks **Life & Settlements (5/5)** and **Structures & Discoveries (5/5)** highest; Underground and Wildlife (4/5) next; Ocean and QoL (3/5); Ambience and Dimensions (2/5); Food/Professions (1/5). It recommends an *earlier QoL convenience mini-wave* for practical usability and strongly prefers interaction/story/ecology over another generic structure roster.
-- [x] **Nine-theme candidate decisions + compatibility second pass:** [full 0.4.x plan](docs/audits/CONTENT_EXPANSION_0_4_IMPLEMENTATION_PLAN_2026-10-10.md) and [installed-mod risk map](docs/audits/CONTENT_EXPANSION_ROUND2_INSTALLED_MOD_COMPAT_PREFLIGHT_2026-10-10.md). Covers every proposed mod with PROTOTYPE/CONDITIONAL/HOLD and exact conflicts, dependencies, worldgen gates, Questlog-vs-FTB Quests architecture and 5–7-player acceptance.
+- [x] **Nine-theme candidate decisions + compatibility second pass:** [full 0.4.x plan](docs/audits/CONTENT_EXPANSION_0_4_IMPLEMENTATION_PLAN_2026-10-10.md) and [installed-mod risk map](docs/audits/CONTENT_EXPANSION_ROUND2_INSTALLED_MOD_COMPAT_PREFLIGHT_2026-10-10.md). Covers every proposed mod with PROTOTYPE/CONDITIONAL/HOLD and exact conflicts, dependencies, worldgen gates, Questlog-vs-FTB Quests architecture and 5â€“7-player acceptance.
 - [ ] **0.4.0-a QoL / quest integration:** Audit/install only after selection: Controlling (Searchables already present), FTB XMod Compat (FTB Quests+JEI integration absent), optional Villager Names **requires Collective**. Verify keybind overlays, JEI quest recipes and player-specific state before additional content.
-- [ ] **0.4.0-b Living settlements:** Isolated Guard Villagers 2.4.12 AI/POI/raid trial in CTOV/T&T/Integrated/Luki villages, then Easy NPC **modular Core+Config UI** with three handcrafted NPC dialogue/quest samples and 2-player/5–7-player progression checks. No mass village NPC simulator.
+- [ ] **0.4.0-b Living settlements:** Isolated Guard Villagers 2.4.12 AI/POI/raid trial in CTOV/T&T/Integrated/Luki villages, then Easy NPC **modular Core+Config UI** with three handcrafted NPC dialogue/quest samples and 2-player/5â€“7-player progression checks. No mass village NPC simulator.
 - [ ] **0.4.0-c Archaeology/caves:** **A/B Galosphere vs Better Archeology** on separate copies of Test8.10 (existing Archaeology Ruins/JEArchaeology + Alex's Caves + Biolith/FTF compatibility); include optional existing-structure chart/dossier. Choose one initially, both only on clear nonduplicate value.
 - [ ] **0.4.0-d Wildlife:** Audit already installed Alex's Mobs, Hybrid Aquatic, Friends & Foes, Hominid etc. biome/tag/spawncap visibility **before** conditional Naturalist **2.0.5** trial. Limit passive-mob AI and promote ethical discovery/sighting tasks.
-- [ ] **0.4.0-e Oceans/professions:** Add quest-driven diving→wreck→reef→deep-loot→return experience and optional field ration/angler/herbalist goals with existing content. No automatic new ocean mobs, full food system or realm.
+- [ ] **0.4.0-e Oceans/professions:** Add quest-driven divingâ†’wreckâ†’reefâ†’deep-lootâ†’return experience and optional field ration/angler/herbalist goals with existing content. No automatic new ocean mobs, full food system or realm.
 - [ ] **0.4.0-f Sensory/GUI polish:** AmbientSounds single-mod audio A/B; separate Serene Seasons/climate/crop test, Dusty Decorations only with migration plan, GUI/Questlog button and Bonus Chest edits later. Do not stack renderer-heavy addons in one test.
-- [ ] **0.4.0-rc acceptance & multiplayer world lock:** complete 15–30 min *named town→curated archaeologist→real cave/ruin→personal Lootr reward→return* vertical slice with independent co-op rewards and a 5–7-player server stability test. **Lock mod roster, terrain/structures, seed and biome map BEFORE chunk pregeneration;** then test performance (including Streams Reflowing slow height fallback) and publish Questlog Tips & Tricks explaining pregeneration ≠ force loading.
+- [ ] **0.4.0-rc acceptance & multiplayer world lock:** complete 15â€“30 min *named townâ†’curated archaeologistâ†’real cave/ruinâ†’personal Lootr rewardâ†’return* vertical slice with independent co-op rewards and a 5â€“7-player server stability test. **Lock mod roster, terrain/structures, seed and biome map BEFORE chunk pregeneration;** then test performance (including Streams Reflowing slow height fallback) and publish Questlog Tips & Tricks explaining pregeneration â‰  force loading.
 - [ ] **Source discrepancy for later explicit decision:** Test8.10 lock **still installs YUNG's Better Mineshafts** while source audit prose calls it previously excluded. Do not remove from tested baseline without user decision.
 - [ ] **No candidate approved/installed by this planning pass.** Keep SHA-pinned Test8.10 as rollback; no changes to release lock, manifest, binaries or tested worldgen.
 
-# PART XIX — 0.4.x preview (not required before entering 0.4.0)
+# PART XIX â€” 0.4.x preview (not required before entering 0.4.0)
 
 Once the foundation passes:
 
-**Nine-theme expansion gap audit — 10 Oct 2026:** [source-backed theme rankings and mod shortlist](docs/audits/CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md). **RESEARCH ONLY, not permission to install**. Key content gaps: **(1) inhabited functional settlements, (2) archaeology/puzzles/interactive discoveries, (3) unique cave ecosystems, (4) biome-matched living fauna**; ocean and dimensions already rich, QoL offers fast high-value fixes.
+**Nine-theme expansion gap audit â€” 10 Oct 2026:** [source-backed theme rankings and mod shortlist](docs/audits/CONTENT_EXPANSION_NINE_THEME_PRIORITIES_2026-10-10.md). **RESEARCH ONLY, not permission to install**. Key content gaps: **(1) inhabited functional settlements, (2) archaeology/puzzles/interactive discoveries, (3) unique cave ecosystems, (4) biome-matched living fauna**; ocean and dimensions already rich, QoL offers fast high-value fixes.
 - [ ] **First quick utility candidate:** Controlling **19.0.5** NeoForge 1.21.1 (search keybinds/conflicts), verify Searchables dependency and current DefaultOptions/backpack/JEI interactions; optionally Villager Names 1.21.1 server-side. Do not install until post-worldgen approval.
 - [ ] **Settlements shortlist:** Guard Villagers **2.4.12** NeoForge 1.21.1 (test guards in CTOV/Towns and Towers/Grand Capitals, movement AI and hostile mod interaction); Easy NPC **7.14.0 bundle** 1.21.1 (test 3 hand-authored NPC dialogs + actual Questlog trigger bridge). MCA Reborn 7.7.36 and MineColonies 1.1.1403 **park** due broad simulation/AI and potential focus creep.
 - [ ] **Cave and discovery shortlist:** Galosphere 1.21.1 NeoForge (biomes + crystal/lichen/pink salt, archaeology, mole miniquests and Echo Altar); Better Archeology **1.3.9** NeoForge 1.21.1 (brushables/artifacts/structures). **Trial one archaeology provider first**; compare against existing Archaion, Archaeology Ruins, Alex's Caves, FTF cave selectors and overfull surface structure mix.
-- [ ] **Naturalism shortlist:** Naturalist **2.0.3** NeoForge 1.21.1, selective species/spawn tags and mob caps for BWG/BOP/RU; adjust existing Alex's Mobs, Hominid and Hybrid Aquatic first. Keep **flies disabled**, harmless bees/butterflies, test TPS/pathfinding with 5–7 players.
+- [ ] **Naturalism shortlist:** Naturalist **2.0.3** NeoForge 1.21.1, selective species/spawn tags and mob caps for BWG/BOP/RU; adjust existing Alex's Mobs, Hominid and Hybrid Aquatic first. Keep **flies disabled**, harmless bees/butterflies, test TPS/pathfinding with 5â€“7 players.
 - [ ] **Ocean design:** finish current Aquamirae/Hybrid Aquatic/Deeper Oceans/NeoReefRedux trials, loot tables for FTB Ocean Mobs and underwater equipment loop; **Beyond the Ocean** remains later user-approved audit, not current addition. No automatic Tide 2/Sea Myths/Upgrade Aquatic.
 - [ ] **Atmosphere shortlist:** Serene Seasons **10.1.0.3** (NeoForge 1.21.1 beta, config/biome foliage and crop penalties), AmbientSounds **6.3.10** 1.21.1 NeoForge (check overlap and voice-chat fatigue), Dusty Decorations **2.2.0** 1.21.1 NeoForge (**2.x world-block rewrite hazard**), Night Lights **1.4.0** optional. Avoid multiple new heavy cosmetic stacks.
 - [ ] **Dimensions & lifestyle:** finish existing Aether, Twilight, Starlight, Undergarden, PasterDream and Bumblezone quest contents; don't auto-add unverified Blue Skies or deferred Mine Cells/Connector; use existing Farmer's Delight/Create/fishing in optional small quests and FTB technical handbook.
@@ -1834,12 +1836,12 @@ Once the foundation passes:
 ### Quality of life
 
 **Confirmed 10 Oct discovery feature approval:** Every feature proposed in the prior exploration discussion is approved for the **future design backlog**, including title overlays, silent personal journal, segmented percentages, found-versus-cleared state, explorer ranks, rare discoveries, expedition history, optional screenshots, private/team records, bookmarks, safety and preparedness tools, family/dimension collections, and atlas integration. Exact mod installs, datapacks, and UI choices are NOT automatically approved. [Full inventory and new brainstorming candidates](docs/audits/EXPLORATION_DISCOVERY_SYSTEM_PROPOSAL_2026-10-10.md).
-- [ ] **Approved exploration concept selection (10 Oct):** Keep **#1–7 and #12** — Explorer's Guild/contracts; navigational rumor/treasure clues; curated Natural Wonders; Discovered → Conquered → Mastered; Biome Field Guide; Dungeon Danger Reconnaissance linked to Gear Atlas; Regional Exploration Collections; optional privacy-conscious Personal Atlas Export. These are approved design goals, not authorized mod installs.
+- [ ] **Approved exploration concept selection (10 Oct):** Keep **#1â€“7 and #12** â€” Explorer's Guild/contracts; navigational rumor/treasure clues; curated Natural Wonders; Discovered â†’ Conquered â†’ Mastered; Biome Field Guide; Dungeon Danger Reconnaissance linked to Gear Atlas; Regional Exploration Collections; optional privacy-conscious Personal Atlas Export. These are approved design goals, not authorized mod installs.
 - [ ] **Explicitly excluded exploration concepts:** **#8 museum/trophy cabinet**, **#9 Lost Expedition Stories/linked narrative quests**, **#10 Party Expedition Planner**, **#11 World-First Discovery Records/hall of fame**. Do not silently re-add these. Personal exploration history, concise location lore, navigational clues, and optional solo/party comparison remain in scope. [Decision record](docs/audits/EXPLORATION_DISCOVERY_SYSTEM_PROPOSAL_2026-10-10.md).
 - [ ] **Other conditional exploration-aid research:** Existing Nature's Compass is already pinned; decide separately on limited Explorer's Compass and discovered-location return markers, expedition condition reports and privacy-safe persistence, without implying automatic adoption.
 - [ ] **Structure locator balancing:** Nature's Compass already installed (252848:7892954) to locate biomes. Explorer's Compass NeoForge 1.21.1 (491794:7892943) is only a candidate; gate/blacklist rare bosses if trialed to preserve exploration.
 
-**10 Oct exploration discovery/QoL concept — audit only:** [Exploration title and journal system design](docs/audits/EXPLORATION_DISCOVERY_SYSTEM_PROPOSAL_2026-10-10.md). Do not install into Test8.3 or alter the current frozen-by-process Test8.2 working profile.
+**10 Oct exploration discovery/QoL concept â€” audit only:** [Exploration title and journal system design](docs/audits/EXPLORATION_DISCOVERY_SYSTEM_PROPOSAL_2026-10-10.md). Do not install into Test8.3 or alter the current frozen-by-process Test8.2 working profile.
 - [ ] **Discovery titles:** research Traveler's Titles native NeoForge 1.21.1 for biomes/dimensions; audit exact 1.21.1 NeoForge First Steps structure-title file and multiplayer reliability; tune high-level structure vs biome title precedence, border debouncing, sounds, accessibility and disabling repeat toasts.
 - [ ] **Player exploration checklist:** prototype FTB Quests 1.21.1 built-in **Visit Biome** and **Find Structure** tasks (two vanilla + two modded) and verify per-player data with FTB Solo Quests in a two-player test. Separate biome type visits, major structure type discovery and dungeon clear completion; record dimension.
 - [ ] **Tracking engine decision:** compare mature built-in FTB Quests progress, silent `minecraft:location` advancements from an AO registry-generated datapack, and **Explorer's Journals** 1.0.0 NeoForge prototype (new/low adoption). Prefer native components if complete; no bespoke Java mod until limitations are proven.
@@ -1852,7 +1854,7 @@ Once the foundation passes:
 - [ ] **Convenience/UI shortlist:** AmbientSounds, BetterF3, Fadeless, Lanterns Belong on Walls, Smooth Swapping, Controlling, Better Statistics Screen, RightClick Harvest, Status Effect Bar, Cut Through, Light Overlay, Screenshot Viewer, Paginated Advancements, Reach Around, Map Distance Fix
 - [ ] **World visuals and agriculture:** Dynamic Lights (not merely `lambdynlights_api`), Simple Fog Control, Visual Snowy Leaves, Crops Love Rain; measure weather/crop/spawn changes and integrated-server tick costs
 - [ ] **NEW 10 Oct QoL candidate batch (research only, no install):** Armor GUI [exact mod identity TBD]; Cave Dust / Cave Dust Rethinking; Subtle Effects; Continuity for connected glass [Embeddium/NeOculus A/B]; Pick Up Notifier; Better Advancements; Allmobheads / likely All The Heads. Detailed candidate identities, 1.21.1 references and overlap gates: [QoL/visual audit](docs/audits/QOL_VISUAL_RENDERING_BACKLOG_2026-10-10.md).
-- [ ] **Questlog inventory quest button — later GUI polishing (user note 10 Oct):** Questlog's small quest button in the inventory can reportedly be customized by **resource-pack texture** and **position/location**. Preserve the feature for AO custom inventory design: verify the exact installed Questlog mod/asset IDs, move/anchor setting, icon artwork, GUI-scale and clickable hitbox behavior; coordinate with Better Inventory and Backpacks, FTB Quests, JEI and Curios; ensure the button still opens quests. This is a **deferred GUI enhancement**, not a current worldgen patch.
+- [ ] **Questlog inventory quest button â€” later GUI polishing (user note 10 Oct):** Questlog's small quest button in the inventory can reportedly be customized by **resource-pack texture** and **position/location**. Preserve the feature for AO custom inventory design: verify the exact installed Questlog mod/asset IDs, move/anchor setting, icon artwork, GUI-scale and clickable hitbox behavior; coordinate with Better Inventory and Backpacks, FTB Quests, JEI and Curios; ensure the button still opens quests. This is a **deferred GUI enhancement**, not a current worldgen patch.
 - [x] **Easy Anvils excluded by user (10 Oct):** Do not add or schedule more compatibility testing; preserve existing anvil behavior.
 - [ ] **Optional Bonus Chest loot review (world-creation toggle):** Consider an AO explorer-starter loot table override at `data/minecraft/loot_table/chests/spawn_bonus_chest.json`, retaining Minecraft's **Bonus Chest ON/OFF** behavior. Modest varied food/basic tools/torches/wood, optional tiny common modded supplies, **no** rare loot, progression skips or free flight. Verify item IDs, balance, loot table priority, several fresh seeds, multiplayer one-chest-per-world behavior, and OFF = no chest. Do **not** install in current Test8.6 generation build; see [QoL audit](docs/audits/QOL_VISUAL_RENDERING_BACKLOG_2026-10-10.md).
 - [ ] **Advancement UI choice:** compare Better Advancements against already-listed Paginated Advancements. Pick at most one vanilla advancement screen overhaul and separately verify FTB Quests.
@@ -1873,8 +1875,8 @@ Once the foundation passes:
 - Container and backpack integration.
 - Accessible tooltips and interaction feedback.
 
-**Quest writing pass v0.2 — 10 Oct 2026, DRAFTS ONLY:** [Quest project index](docs/questing/README.md) now includes **50 original journal quest drafts** ([human-readable](docs/questing/WRITTEN_QUEST_DRAFTS_V0_2.md) / [versioned JSON](docs/questing/WRITTEN_QUEST_DRAFTS_V0_2.json)), **14 written FTB educational articles** ([draft pages](docs/questing/FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md)), [version-pinned PasterDream/Enigmatic content leads](docs/questing/VERSION_PINNED_CONTENT_LEADS_2026-10-10.md), and the [post-expansion quest reconciliation process](docs/questing/POST_EXPANSION_RECONCILIATION_PROTOCOL.md). All written records are **draft_copy**, not implemented quest JSON or FTB SNBT. No install/release changes.
-- [x] Original prose drafted for main Tier 0–2 introduction and selected optional branches, with consistent seed IDs, player hints and separated technical trigger concerns.
+**Quest writing pass v0.2 â€” 10 Oct 2026, DRAFTS ONLY:** [Quest project index](docs/questing/README.md) now includes **50 original journal quest drafts** ([human-readable](docs/questing/WRITTEN_QUEST_DRAFTS_V0_2.md) / [versioned JSON](docs/questing/WRITTEN_QUEST_DRAFTS_V0_2.json)), **14 written FTB educational articles** ([draft pages](docs/questing/FTB_FIELD_MANUAL_DRAFT_PAGES_V0_2.md)), [version-pinned PasterDream/Enigmatic content leads](docs/questing/VERSION_PINNED_CONTENT_LEADS_2026-10-10.md), and the [post-expansion quest reconciliation process](docs/questing/POST_EXPANSION_RECONCILIATION_PROTOCOL.md). All written records are **draft_copy**, not implemented quest JSON or FTB SNBT. No install/release changes.
+- [x] Original prose drafted for main Tier 0â€“2 introduction and selected optional branches, with consistent seed IDs, player hints and separated technical trigger concerns.
 - [x] Written 14 optional FTB Field Manual articles for complex mod systems and newcomers, pending screenshots, keybind/recipe verification and GUI design.
 - [x] Research version-specific NeoPasterDream **0.9.6** puzzles, Cold Domain and Aaroncos and Enigmatic Legacy Plus **1.1.2** items/advancements; do not assume all features on evolving project pages are reachable in pinned builds.
 - [x] Establish repeatable content-reconciliation protocol for final modpack content expansion: exact mod/registry diff, reachability, status gates, ID migration, unclaimed/claimed rewards and performance.
@@ -1883,7 +1885,7 @@ Once the foundation passes:
 
 - [ ] **Euphoria Patches + DH/Voxy candidate (10 Oct):** test native NeoForge Euphoria Patcher **1.10.5 for Complementary Reimagined r5.9.3** (shader pack already pinned in AO) on **separate** DH-vs-Voxy renderer profiles. Native official CF project `915902`; no installation now. DH renderer path may support Euphoria, Voxy compatibility is **fork-specific / unproven**; do **not** concurrently install DH + Voxy, do **not** assume Embeddium + NeOculus supports Iris/Sodium-only features. Test client FPS/frametime, visuals in modded End/oceans/biomes, shader compile, 1% lows and VRAM. See [QoL visual audit](docs/audits/QOL_VISUAL_RENDERING_BACKLOG_2026-10-10.md).
 
-**Quest content depth audit v0.3 — 10 Oct:** Thorough 3-pass mod/depth/implementation audit recorded at [full report](docs/questing/QUEST_DEPTH_REVIEW_REPORT_2026-10-10.md), [all 265 mod/source record decisions](docs/questing/MOD_DEPTH_REAUDIT_2026-10-10.csv), and [250 additional feature-level candidates](docs/questing/QUEST_DEPTH_SUPPLEMENT_V0_3.csv). Updated [original quest coverage classifications](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) and [latest optional-campaign depth budgets](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md). Original 474 seed records and 50 written narrative drafts deliberately stable; do not represent 474+250 as 724 verified/working quests.
+**Quest content depth audit v0.3 â€” 10 Oct:** Thorough 3-pass mod/depth/implementation audit recorded at [full report](docs/questing/QUEST_DEPTH_REVIEW_REPORT_2026-10-10.md), [all 265 mod/source record decisions](docs/questing/MOD_DEPTH_REAUDIT_2026-10-10.csv), and [250 additional feature-level candidates](docs/questing/QUEST_DEPTH_SUPPLEMENT_V0_3.csv). Updated [original quest coverage classifications](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) and [latest optional-campaign depth budgets](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md). Original 474 seed records and 50 written narrative drafts deliberately stable; do not represent 474+250 as 724 verified/working quests.
 - [x] **Roster pass:** 15 major, 37 substantial, 68 cameos, 21 FTB educational, 12 Explorer Journal, 24 integrations, 88 non-quest entries (provisional 265 source records); demote 12 false-standalone oversized quest classifications (TO registry patch, Dummy, Enchantment Descriptions, Mob Lassos, CTOV/Witch Huts etc).
 - [x] **Depth pass:** audit deep content overlooked in Bumblezone, PasterDream 0.9.6, Eternal Starlight, Twilight Forest, Alex's Caves, Deeper & Darker, Ars, Forbidden & Arcanus, Iron's, Cataclysm, Ice and Fire, End Remastered 6.3.0, Relics/Apotheosis and Opposing Force beta6. Add 250 candidates; no final objective IDs asserted.
 - [x] **Gameplay feasibility pass:** retain optional routes, 12-of-16 End Remastered eye requirement subject to AO config, nonhostile Bee Queen trade not boss kill, multiplayer Opposing Force worldwide mob-gate consequences, Curios gear slot constraints, prevent unbounded Questlog structure polling and duplicate FTB completion rewards.
@@ -1897,31 +1899,31 @@ Once the foundation passes:
 - [ ] On final content expansion, **capture fresh-installed and upgraded existing profile keybinds**, resolve conflicts (spell wheel, backpack, Origin abilities, Questlog, minimap/FTB, accessories, voice); re-verify all shown keys and add in-game screenshot examples.
 - [ ] Test GUI at multiple UI scales and ensure help links are accessible before a player completes any gameplay quests.
 
-### Bonus Chest starting loot — Lootr per-player policy (10 Oct 2026)
+### Bonus Chest starting loot â€” Lootr per-player policy (10 Oct 2026)
 
 **User decision:** Valuable loot in Minecraft's **optional world-creation Bonus Chest** is welcome, since the intended AO setup uses **Lootr personal loot**; drop the earlier first-player-wins/shared-chest objection and the resulting overly restrictive starter-only loot limits. [Starting Bonus Chest policy and technical QA](docs/audits/STARTING_BONUS_CHEST_LOOT_POLICY_2026-10-10.md). **No chest loot table or test release modified.**
 
 - [x] Clarify design: meaningful helpful starter items, modded expedition supplies and occasional exciting rare loot may be considered; no blanket prohibition on rare accessories or spellbooks solely due to shared-chest scarcity.
 - [ ] **Verify the actual vanilla Bonus Chest is Lootr converted** in a newly created AO 1.21.1 world: Bonus Chest ON, two distinct survival non-operator players open the *same* chest and collect independently, late join/restart, dedicated-server spawn protection.
-- [ ] Once conversion confirmed, balance `minecraft:chests/spawn_bonus_chest` against ~5–7 independent rolls, early Questlog rewards, first dungeon power and AO's gear tiers; decide fixed starter essentials versus valuable randomized bonus pools.
+- [ ] Once conversion confirmed, balance `minecraft:chests/spawn_bonus_chest` against ~5â€“7 independent rolls, early Questlog rewards, first dungeon power and AO's gear tiers; decide fixed starter essentials versus valuable randomized bonus pools.
 - [ ] If vanilla Bonus Chest auto-conversion fails, determine fix or consider manually installed Lootr custom spawn container (`/lootr custom`) as a **distinct** option, not a claim that the world-generation Bonus Chest already works.
 - [ ] Keep Bonus Chest optional; no Questlog mainline quest may require owning an item obtainable only from it.
 
-### Quest content mapping and authoring — Phase 1 (10 Oct 2026)
+### Quest content mapping and authoring â€” Phase 1 (10 Oct 2026)
 
-**Source-authored planning work completed (not executable quests):** [Questing project index](docs/questing/README.md) · [full provisional mod coverage matrix](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) · [474 specific proposed content beats](docs/questing/QUEST_CONTENT_SEEDS.csv) · [Questlog/FTB chapter architecture](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md) · [source/inventory gaps](docs/questing/INVENTORY_METHOD_AND_GAPS.md) · [authoring and QA protocol](docs/questing/QUEST_AUTHORING_VALIDATION_PLAN.md).
+**Source-authored planning work completed (not executable quests):** [Questing project index](docs/questing/README.md) Â· [full provisional mod coverage matrix](docs/questing/MOD_QUEST_COVERAGE_MATRIX.csv) Â· [474 specific proposed content beats](docs/questing/QUEST_CONTENT_SEEDS.csv) Â· [Questlog/FTB chapter architecture](docs/questing/QUEST_CAMPAIGN_ARCHITECTURE.md) Â· [source/inventory gaps](docs/questing/INVENTORY_METHOD_AND_GAPS.md) Â· [authoring and QA protocol](docs/questing/QUEST_AUTHORING_VALIDATION_PLAN.md).
 
 - [x] **First breadth pass:** triage **265 provisional named mod/source entries** from 196 audited historical JARs, 41 uninspected historic client-log JAR names and 51 current source additions/repins. Distinguish content campaigns from biome journal entries, side quests, FTB education and technical libraries. *These 265 rows do NOT represent verified 1:1 current installed mods.*
-- [x] **Quest seed authoring map:** draft 474 concrete quest beats across 46 potential chapters (430 gameplay and 44 education), tier 0–8 backbone, substantial optional magic/realm/boss routes, structure anthology, player beginner tutorial and FTB manual references; no Questlog JSON or actual tasks yet.
+- [x] **Quest seed authoring map:** draft 474 concrete quest beats across 46 potential chapters (430 gameplay and 44 education), tier 0â€“8 backbone, substantial optional magic/realm/boss routes, structure anthology, player beginner tutorial and FTB manual references; no Questlog JSON or actual tasks yet.
 - [x] **Special design requirements:** NeoPasterDream 0.9.6 receives its own sizeable optional dream arc, but exact access to its multiple realms/Cold Domain and Aaroncos must be verified; Enigmatic Legacy Plus 1.1.2 has two independent **standard vs fully voluntary cursed** routes; Curse never gates main campaign. Create and food addons receive compact cameos/FTB tech references.
 - [ ] **Mandatory inventory reconciliation:** get exact latest Test8.3 loaded client JAR list, CurseForge project/file lock and registries, merge/remove stale historical aliases, validate each matrix row and unclassified unknown; currently `main` base manifest is 221 nameless project IDs, while Test8.2 lock is different.
 - [ ] **Verify actual mod content per source:** 1.21.1 registry entities, structures, biomes, item IDs, recipes, bosses, achievements, completion state. Prioritize PasterDream (0.9.6 vs current description), Enigmatic cursed/non-cursed routes, Twilight/Aether/Starlight/Undergarden and current boss roster.
-- [ ] **Engine & pilot install on a copied profile only:** test Questlog 3.4.1 alongside FTB Quests (latter only Field Manual) using 3–5 quests; check dedicated server two-player saves, interface overlap, rewarded items and no duplicate completions. Baseline Test8.2/Test8.3 remains unmodified.
+- [ ] **Engine & pilot install on a copied profile only:** test Questlog 3.4.1 alongside FTB Quests (latter only Field Manual) using 3â€“5 quests; check dedicated server two-player saves, interface overlap, rewarded items and no duplicate completions. Baseline Test8.2/Test8.3 remains unmodified.
 - [ ] **Build validated generator:** convert verified registry+seed data to `config/questlog/quests` and `chapters` plus **educational-only FTB SNBT**, with item/structure/biome validity checks, dependency graph checks, reward caps, per-player unlocks, branch alternatives and UI localization. Never claim 474 configured/tested quests until these actually exist.
-- [ ] **First production wave after approval:** 12–15 beginner quests and FTB keybind/JEI/gear reference, first Tier 0–2 exploration/gear path and an optional Frozen Seas or Alex's Caves pilot.
-- [ ] **Scale validation:** batch larger chapters, especially any map-like biome/structure polling, and benchmark 5–7 players. Limit initially visible quests; avoid 1000 simultaneous checkers and first-spawn notifications.
+- [ ] **First production wave after approval:** 12â€“15 beginner quests and FTB keybind/JEI/gear reference, first Tier 0â€“2 exploration/gear path and an optional Frozen Seas or Alex's Caves pilot.
+- [ ] **Scale validation:** batch larger chapters, especially any map-like biome/structure polling, and benchmark 5â€“7 players. Limit initially visible quests; avoid 1000 simultaneous checkers and first-spawn notifications.
  
-### Questlog vs FTB Quests — research queue (10 Oct 2026)
+### Questlog vs FTB Quests â€” research queue (10 Oct 2026)
 
 **Comparison audit only:** [Questlog 3.4.1 vs FTB Quests detailed evaluation](docs/audits/QUESTLOG_VS_FTB_QUESTS_EVALUATION_2026-10-10.md). Questlog official NeoForge 1.21.1 file **`1202066:8952784`** has Oblivion-style journal UI, editable config JSON, per-player persistent quests, structure/biome/dimension tasks, triggered chapters, boss/Origin quests, choice/random rewards, and rich notifications. **No installation approved and no migration undertaken.**
 
@@ -1933,17 +1935,17 @@ Once the foundation passes:
 - [ ] **Server scale profiling:** official code polls active `visit_biome` / `visit_structure` per player ~every 20 ticks; compare 10/50/200 unfinished location objectives and 5 players before using it to replace a very large FTB Questbook. **Risk identified via source, no performance measurement.**
 - [ ] **Data ownership:** modern Questlog 2.0+ is `config/questlog/quests` and `chapters` JSON (older README still claims datapack), with **no FTB SNBT auto-import**. Keep the existing FTB quest files, quest progress and reward balance until explicit replacement decision. No duplicate player rewards between two logbooks.
  
-### RPG character identity and private-MMORPG layer — new design research (10 Oct)
+### RPG character identity and private-MMORPG layer â€” new design research (10 Oct)
 
-**Research proposal, not a production selection:** [RPG Character Identity & Private MMO Audit](docs/audits/RPG_CHARACTER_IDENTITY_PRIVATE_MMO_PROPOSAL_2026-10-10.md). User wants **Origins that matter mechanically**, with passives, meaningful tradeoffs, suitable addon/config control and immersive character progression for 5–7 players; **no player guild infrastructure or scheduled world events**.
+**Research proposal, not a production selection:** [RPG Character Identity & Private MMO Audit](docs/audits/RPG_CHARACTER_IDENTITY_PRIVATE_MMO_PROPOSAL_2026-10-10.md). User wants **Origins that matter mechanically**, with passives, meaningful tradeoffs, suitable addon/config control and immersive character progression for 5â€“7 players; **no player guild infrastructure or scheduled world events**.
 
 - [ ] **Origins backend audit:** inspect *actual* installed 1.21.1 Origins JAR/backend, then A/B **NeoOrigins CyberDay** vs any retained **Origins (NeoForge) IAFEnvoy**. Their addons and datapack formats are not automatically interchangeable. Do not pin two engines. Test exact versions, load/reload, dedicated server, Curios and player save.
-- [ ] **Curate 8–12 meaningful Origin identities**, balancing signature passive, situational exploration advantage, optional ability and a nonpunitive drawback; ban unlimited flight/teleport, stage bypass and permanent damage immunity. Provide Human/flexible and early respec. Origins must not bypass **AO Tier 2 enchanted diamond + two A-grade combat supports**.
+- [ ] **Curate 8â€“12 meaningful Origin identities**, balancing signature passive, situational exploration advantage, optional ability and a nonpunitive drawback; ban unlimited flight/teleport, stage bypass and permanent damage immunity. Provide Human/flexible and early respec. Origins must not bypass **AO Tier 2 enchanted diamond + two A-grade combat supports**.
 - [ ] **Origins addon shortlist research only:** NeoOrigins 1495375; Origins Fantasy for NeoOrigins 1587502; Origins Classes Extended 1602395; ISS Classes for NeoOrigins 1622039; Backgrounds 1578568; More Backgrounds 1578580. Evaluate import/override rather than adding all default races/classes. Ensure the similarly named IAFEnvoy-backed addon project is not confused with NeoOrigins version.
-- [ ] **Character role without locks:** independent Origin (race), Discipline (playstyle), Background (minor profession), Gear (main power), optional bounded Mastery. Evaluate 4–6 combat disciplines and hybrid role viability with Iron's Spellbooks, Ars, Apotheosis, Relics, More Relics, Iron's Jewelry, Simply Swords/More and existing gear atlas.
+- [ ] **Character role without locks:** independent Origin (race), Discipline (playstyle), Background (minor profession), Gear (main power), optional bounded Mastery. Evaluate 4â€“6 combat disciplines and hybrid role viability with Iron's Spellbooks, Ars, Apotheosis, Relics, More Relics, Iron's Jewelry, Simply Swords/More and existing gear atlas.
 - [ ] **Progression systems A/B:** test PlayerEx: DC 1.21.1 NeoForge as a *capped* optional attribute prototype; assess stat inflation and dependencies. Skill Tree (RPG Series) entails a much larger RPG Series dependency suite; no automatic addition. Avoid overlapping early-stage all-in-one MMO overhauls.
 - [ ] **Other personal MMORPG systems:** clean character sheet, origin/ability info, class milestones, noncombat expertise, boss dossier and gear-readiness UI, dungeon difficulty alerts, readable boss phases, per-player first clear and achievement records, controlled respec, optional equipment-specific trials and wiki loadout sharing; skip mandated guilds/world events and previously rejected world-first records or scripted lost-expedition stories.
-- [ ] **Five-player fairness and combat stacking tests:** compare varied Origins on comparable gear and throughout Tier 2→8; no role mandatory, audit passives vs gems/attributes/spells/Curios and boss mechanics, ensure persistence/rollback.
+- [ ] **Five-player fairness and combat stacking tests:** compare varied Origins on comparable gear and throughout Tier 2â†’8; no role mandatory, audit passives vs gems/attributes/spells/Curios and boss mechanics, ensure persistence/rollback.
 
 ### Later phases still separate
 
@@ -1957,7 +1959,7 @@ Once the foundation passes:
 
 ---
 
-# PART XX — Operating procedure for future ChatGPT sessions
+# PART XX â€” Operating procedure for future ChatGPT sessions
 
 ## 69. Before starting work
 
@@ -2015,7 +2017,7 @@ Once the foundation passes:
 
 ---
 
-# PART XXI — Immediate next-session action plan
+# PART XXI â€” Immediate next-session action plan
 
 Current completed work supersedes the original next-session sequence below: W0 reproduction, the available W2 JAR audit, expanded catalogues, Farmers candidate settings and verified compatibility repairs are complete at the static level. Next, supply/audit the 41 missing existing binaries and eight staged additions, resolve placement/resource priority, then perform fresh-world acceptance before larger terrain/content changes. Static work may continue while runtime acceptance is pending.
 
@@ -2043,12 +2045,12 @@ Original broad sequence (retain later stages and apply the current statuses abov
 
 Ambient Odyssey should feel **abundant, distinctive and rewarding to explore**, not merely overloaded with structures or mods.
 
-The objective is a coherent world where exploration continually reveals interesting biomes, buildings, enemies, rewards and opportunities—while preserving strong performance, logical progression and enough stability for a long-running multiplayer server.
+The objective is a coherent world where exploration continually reveals interesting biomes, buildings, enemies, rewards and opportunitiesâ€”while preserving strong performance, logical progression and enough stability for a long-running multiplayer server.
 
 **This document is the master planning reference for the remaining 0.3.x development work and the transition into 0.4.0.**
 
 
-## Session progress — 9 October 2026, Test 5 audit1
+## Session progress â€” 9 October 2026, Test 5 audit1
 
 Wave: W0 reproducibility, available W2 audit, W4 source repairs and independent W7 resource cleanup. No new mod projects were installed; the 237 locked project/file pairs are preserved. Born in Chaos remains excluded from the export.
 
@@ -2059,7 +2061,7 @@ Passed: original 76 gates; continuation source/export gates; strict generated JS
 Problems still open: 41 unavailable existing binaries, eight unavailable approved additions, authoritative base-game tags, 70 native resource collisions, live Cristel/Paxi priority, IDAS absent templates, Cook/blank jigsaws, developer-test models, successful natural density and performance. Rollback: original Test 5 archives and hashes in baseline reproduction evidence.
 
 
-### 2026-10-10 — v0.4h launch readiness (331 CurseForge refs)
+### 2026-10-10 â€” v0.4h launch readiness (331 CurseForge refs)
 
 - [x] Integrate native Questlog 3.4.1 on disposable experiment, keep FTB Quests and no authored campaigns.
 - [x] Verify exact 331-ref PRIVATE and reference-only packages, deterministic repeat and 273 NBT source repairs (CI `38075828894`); do not call Minecraft gameplay-tested.
@@ -2067,19 +2069,19 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] On installed CurseForge profile, inspect all 331 downloaded binaries and close historical 23 exact binary/metadata audit gaps; flag CurseForge access failures separately from actual missing dependencies.
 - [ ] Source-backed dedicated server sidedness review, real full 331-ref startup/join/restart/portals/FTB Solo Quests; NO automatic blind copying from client mods.
 - [ ] GUI-scale 2/3 screenshots and live click test for Questlog screen-anchored inventory button, Curios/Accessories/JEI/FTB Quests collisions; revise provisional x/y only after observed result.
-- [ ] Validate 5–7-player worldgen/performance after final roster; no permanent server world yet.
+- [ ] Validate 5â€“7-player worldgen/performance after final roster; no permanent server world yet.
 
-### v0.4h first-playtest kit — 10 October 2026
+### v0.4h first-playtest kit â€” 10 October 2026
 
 - [x] Preserve successful 331-ref full modpack ZIP; no pin/renderer/worldgen configuration change during support-kit work.
 - [x] Package read-only profile snapshot with whitelisted video/audio settings, startup signature counts, installed metadata and optional independent server comparison. No raw logs/screenshots copied; documented privacy limitations.
 - [x] Create staged in-game evidence matrix for startup, JEI/Questlog/Curios inventory, portals, worldgen and multiplayer, all cells initially NOT TESTED.
 - [x] Unit test on fake profiles and build a reproducible standalone 9-file, 22,001-byte kit (GitHub Actions run `38078378067`, 11 tests passed, SHA256 `3a6cb9b360a57f54a8f6b88e51f9d2d6251216782a7d39931c6123aa049266e5`).
 - [ ] Import the separate full 331-ref PRIVATE CurseForge ZIP, then run kit against actually downloaded JARs and classify unresolved 23 native audit gaps.
-- [ ] Capture Questlog inventory icon/screenshots, test Mine Cells, Dimensional Dungeons and true dedicated server behavior; inspect FTF terrain, 5–7 player load and audio only after the first client starts.
+- [ ] Capture Questlog inventory icon/screenshots, test Mine Cells, Dimensional Dungeons and true dedicated server behavior; inspect FTF terrain, 5â€“7 player load and audio only after the first client starts.
 
 
-### Q1 Questlog installed-content pilot — 2026-10-10
+### Q1 Questlog installed-content pilot â€” 2026-10-10
 
 - [x] Convert 42 selected narrative drafts into installable Questlog 3.4.1 JSON definitions (not just chapter ideas), with 13 chapters and stable quest IDs.
 - [x] Write eight additional original exploration/archaeology quest definitions with source-backed vanilla objectives; keep cursed Enigmatic route opt-in and avoid unverified modded registry IDs.
@@ -2091,7 +2093,7 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Expand the FTB Field Manual from existing drafts into actual localized in-game reference pages, without double-claiming Questlog rewards.
 
 
-### 2026-10-10 — Questbook Q1 + installed FTB Field Manual pilot
+### 2026-10-10 â€” Questbook Q1 + installed FTB Field Manual pilot
 
 - [x] Convert source-authored 14 educational topics, existing 65-tip guidance and controls cheatsheet into **32 localized, reward-free, task-free in-game FTB reference pages**, arranged as three new chapters. Preserve WDA's original chapter and loot/reward semantics.
 - [x] Validate all 32 pages/3 chapter IDs, unique 16-hex FTB IDs, localization and source-backed SNBT nesting with deterministic private/reference-only ZIPs. Correct outdated 'Questlog future/not installed' copy.
@@ -2101,7 +2103,7 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 - [ ] Confirm Curios/JEI/Questlog icon overlap, modded crafting details and keyboard shortcuts using actual player screenshots/logs; do not advertise final default bindings without test evidence.
 - [ ] For the next **real adventure quest wave**, audit exact 1.21.1 registry IDs/advancement triggers for Mine Cells, Twilight Forest, Aether and dimension bosses before building mandatory kill/visit objectives. Preserve old quest IDs.
 
-## 12 October � armor trims and Questlog placement
+## 12 October — armor trims and Questlog placement
 
 - [x] Apply trims after native Apotheosis affix generation; support older chest/drop loot. Eight native tests pass.
 - [x] Correct Q anchor from the actual installed Better Inventory gear geometry. Native client rendering and click/return pass at scales 2/3/4.
@@ -2166,7 +2168,7 @@ Problems still open: 41 unavailable existing binaries, eight unavailable approve
 
 - [x] Preserve PR41 presets/culling/Streams; audit inherited exact mod metadata and supported visual/spawn configs.
 - [x] Experimental leaf/dust tuning and four overlapping Alex species weights, with byte-exact config rollback.
-- [ ] Representative scene A/B, raw frame capture duration, native visual/UI/dimension and5�7-player server checks.
+- [ ] Representative scene A/B, raw frame capture duration, native visual/UI/dimension and5–7-player server checks.
 - [ ] Exact Naturalist per-species rule audit before remaining pest/ocean cleanup.
 - [ ] Obtain reviewed Claude Tan shutdown fix/hash and run shutdown/restart gate.
 - [ ] Build full experimental import only from exact PR41 archive; no performance gain certified. See docs/performance/V049_VISUAL_ECOLOGY_20261013.md.
