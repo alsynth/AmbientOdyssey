@@ -97,8 +97,9 @@ def patch_jar(jar_bytes,policy_bytes,stage_receipt):
         'unmodified_jar_member_count':len(prior)-1,
         'original_grand_contexts':len(old_rows),
         'r3_grand_contexts':len(new_rows),
-        'changed_grand_source_contexts':sum(next(v for v in old_rows if
-            (v['structure'],v['table'])==(r['structure'],r['table']))!=r for r in new_rows),
+        'changed_grand_source_contexts':sum(any(
+            next(v for v in old_rows if (v['structure'],v['table'])==(r['structure'],r['table']))[field]!=r[field]
+            for field in ('source_resource','source_sha256','pool_index')) for r in new_rows),
         'all_compiled_classes_byte_identical':True,
         'minecraft_runtime_tested':False,
         'lootr_multiplayer_tested':False,
@@ -122,14 +123,18 @@ def main():
     p.add_argument('--r2',type=Path,required=True)
     p.add_argument('--policy',type=Path,required=True)
     p.add_argument('--staging-receipt',type=Path,required=True)
+    p.add_argument('--report',type=Path,required=True,
+                   help='Receipt JSON outside overrides/, e.g. build/r3-reports/campaign-policy-patch.json')
     p.add_argument('--out',type=Path,required=True,
                    help='New file in build/r3-overlay/overrides/mods/ao-campaign-0.3.0-experimental.jar')
     args=p.parse_args()
-    report=Path(str(args.out)+'.report.json')
+    report=args.report
     if args.out.exists() or report.exists():
         raise ValueError('Refusing to overwrite JAR or receipt')
-    if not args.out.resolve().is_relative_to((ROOT/'build').resolve()):
-        raise ValueError('Output must be inside project build/')
+    if not args.out.resolve().is_relative_to((ROOT/'build').resolve()) or not report.resolve().is_relative_to((ROOT/'build').resolve()):
+        raise ValueError('Both output and report must be inside project build/')
+    if 'overrides' in report.resolve().parts or report.resolve()==args.out.resolve():
+        raise ValueError('Receipt cannot be inside the import overrides tree or overwrite the JAR')
     name,binary=extract_r2_campaign(args.r2)
     if args.out.name!=Path(name).name:
         raise ValueError('Preserve R2 addon filename so R3 replaces it, not duplicates it')
@@ -139,6 +144,7 @@ def main():
     receipt['r2_zip_sha256']=R2_SHA
     receipt['addon_path_in_import']=name
     args.out.parent.mkdir(parents=True,exist_ok=True)
+    report.parent.mkdir(parents=True,exist_ok=True)
     args.out.write_bytes(patched)
     report.write_text(json.dumps(receipt,indent=2)+'\n',encoding='utf-8')
     print('R3 campaign addon policy-only patch prepared; bytecode unchanged; runtime not tested: '+str(args.out))
