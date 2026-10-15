@@ -5,6 +5,12 @@ Only changes:
   1. original R4 campaign JAR replaced with the hash-verified, five-pool
      human-reviewed R5 experimental resource-only campaign variant
   2. importer manifest version/name updated to PRIVATE EXPERIMENTAL R5
+  3. R4's ao_campaign_gates Pinnacle gate (minecraft:impossible) replaced by
+     the committed source gate: native five epic gear + a Captain Cornelia kill
+     (owner decision 15 Oct 2026), plus its lang resource pack
+Gate safeguard: the build refuses any loose advancement JSON in the output
+that still uses minecraft:impossible outside the code-granted ao_campaign
+namespace, and any gate file that differs from the committed source.
 All other ZIP members, 337 official CurseForge references, and nine custom
 JARs must remain unmodified. Does NOT claim Minecraft/Lootr runtime acceptance.
 
@@ -21,8 +27,50 @@ from pathlib import Path
 R4_SHA="31b037a710320c840bcede26003f46a7219fb1e14e14674d35efcf4e086e6c6d"
 CAMPAIGN_SHA="802461a621d5d20b7aaaa50dacc69035af517a1a73b7bae39fd771234d2a39b7"
 CAMPAIGN_PATH="overrides/mods/ao-campaign-0.3.2-experimental.jar"
+ROOT=Path(__file__).resolve().parents[1]
+# Committed owner-approved gate (tools/compile_pinnacle_cornelia_gate.py output).
+GATE_SOURCE_ROOT=ROOT/'release_030/experimental_overlays/v050/overrides'
+GATE_FILES=(
+    'config/paxi/datapacks/ao_campaign_gates/pack.mcmeta',
+    'config/paxi/datapacks/ao_campaign_gates/data/apotheosis/advancement/progression/pinnacle.json',
+    'config/paxi/resourcepacks/ao_campaign_gates_lang/pack.mcmeta',
+    'config/paxi/resourcepacks/ao_campaign_gates_lang/assets/apotheosis/lang/en_us.json',
+)
+PINNACLE_MEMBER='overrides/'+GATE_FILES[1]
+CORNELIA='aquamirae:captain_cornelia'
+# Campaign milestones use minecraft:impossible on purpose: the campaign JAR grants them in code.
+CODE_GRANTED_NAMESPACES={'ao_campaign'}
 
 def sha(b):return hashlib.sha256(b).hexdigest()
+
+def advancement_id(name):
+    parts=name.split('/')
+    if not name.endswith('.json') or 'data' not in parts:return None
+    i=len(parts)-1-parts[::-1].index('data')
+    if len(parts)<i+4 or parts[i+2]!='advancement':return None
+    return parts[i+1]+':'+'/'.join(parts[i+3:])[:-len('.json')]
+
+def impossible_gates(files):
+    """Loose advancement JSONs that can never be earned: minecraft:impossible outside code grants."""
+    bad=[]
+    for name,data in sorted(files.items()):
+        adv=advancement_id(name)
+        if adv is None or adv.split(':')[0] in CODE_GRANTED_NAMESPACES:continue
+        try:criteria=json.loads(data.decode('utf-8-sig')).get('criteria',{})
+        except (UnicodeDecodeError,json.JSONDecodeError,AttributeError):
+            raise ValueError('Unreadable advancement JSON: '+name)
+        if any(isinstance(c,dict) and c.get('trigger')=='minecraft:impossible' for c in criteria.values()):
+            bad.append(name)
+    return bad
+
+def load_gate(gate_root):
+    gate={'overrides/'+rel:(Path(gate_root)/rel).read_bytes() for rel in GATE_FILES}
+    criteria=json.loads(gate[PINNACLE_MEMBER]).get('criteria',{})
+    if (impossible_gates(gate) or 'kill_ender_dragon' in criteria
+        or not any(c.get('trigger')=='minecraft:player_killed_entity' and CORNELIA in json.dumps(c)
+                   for c in criteria.values())):
+        raise ValueError('Source Pinnacle gate is not the approved epic gear + Captain Cornelia gate')
+    return gate
 
 def read_members(path):
     with zipfile.ZipFile(path) as z:
@@ -44,7 +92,8 @@ def write_zip(path,files):
             z.writestr(info,data)
 
 def build(r4_path,addon_path,patch_receipt_path,out,*,expected_base=R4_SHA,
-          expected_campaign=CAMPAIGN_SHA,expected_pins=337,expected_jar_count=10):
+          expected_campaign=CAMPAIGN_SHA,expected_pins=337,expected_jar_count=10,
+          gate_root=GATE_SOURCE_ROOT):
     r4_path,addon_path,patch_receipt_path,out=map(Path,(r4_path,addon_path,patch_receipt_path,out))
     rollback=out.with_name(out.stem+'-Rollback.zip')
     report=Path(str(out)+'.report.json')
@@ -77,30 +126,37 @@ def build(r4_path,addon_path,patch_receipt_path,out,*,expected_base=R4_SHA,
         raise ValueError('Patched campaign JAR hash differs from reviewed receipt')
     if patched==original[CAMPAIGN_PATH]:
         raise ValueError('No-op addon replacement')
+    gate=load_gate(gate_root)
     new=dict(original)
     new[CAMPAIGN_PATH]=patched
+    new.update(gate)
     updated=dict(manifest)
     updated['name']='Ambient Odyssey - R5 Grand Treasure PRIVATE EXPERIMENTAL TEST'
     updated['version']='0.5.5-master-integration-r5-grand-experimental'
     if updated['files']!=pins:raise ValueError('Official mod reference roster changed')
     new['manifest.json']=(json.dumps(updated,indent=2,ensure_ascii=False)+'\n').encode()
     changed_members=[n for n in new if original.get(n)!=new[n]]
-    if set(changed_members)!={'manifest.json',CAMPAIGN_PATH}:
-        raise ValueError('Unexpected R4 import changes beyond campaign addon and manifest')
+    required={'manifest.json',CAMPAIGN_PATH}
+    if not required<=set(changed_members)<=required|set(gate):
+        raise ValueError('Unexpected R4 import changes beyond campaign addon, manifest and Pinnacle gate')
+    unreachable=impossible_gates(new)
+    if unreachable:
+        raise ValueError('Gate safeguard: minecraft:impossible advancement without a code grant: '+', '.join(unreachable))
+    added_members=sorted(n for n in changed_members if n not in original)
     if {n for n in new if n.startswith('overrides/mods/') and n.endswith('.jar')}!=jars:
         raise ValueError('Addon filename roster drift')
     if any(original[n]!=new[n] for n in new if n not in changed_members):
         raise ValueError('Unrelated original R4 data modified')
-    rollback_entries={
-        'manifest.json':original['manifest.json'],
-        CAMPAIGN_PATH:original[CAMPAIGN_PATH],
+    rollback_entries={n:original[n] for n in changed_members if n in original}
+    rollback_entries.update({
         'ROLLBACK-RECEIPT.json':(json.dumps({
             'warning':'This is an incremental file receipt, NOT a standalone CurseForge import or world rollback.',
             'base_r4_sha256':expected_base,
             'restore_original_profile':'Reimport exact immutable R4 into a NEW profile; never overwrite existing world or mix generated chunks.',
-            'changed_members':sorted(changed_members)
+            'changed_members':sorted(changed_members),
+            'added_members_delete_on_rollback':added_members
         },indent=2)+'\n').encode()
-    }
+    })
     out.parent.mkdir(parents=True,exist_ok=True)
     try:
         write_zip(out,new)
@@ -118,6 +174,8 @@ def build(r4_path,addon_path,patch_receipt_path,out,*,expected_base=R4_SHA,
             'custom_addon_jar_count':len(jars),
             'changed_members':sorted(changed_members),
             'grand_five_pool_indices_only':changed,
+            'pinnacle_gate':'native five epic gear + aquamirae:captain_cornelia kill (committed source gate)',
+            'pinnacle_engine_tested':False,
             'minecraft_runtime_tested':False,
             'lootr_two_player_tested':False,
             'native_loot_preservation_runtime_tested':False,

@@ -64,7 +64,7 @@ The output is a NEW JAR file. It retains every compiled Java class, all original
 
     python tools/package_r5_grand_from_r4.py --r4 "<PATH TO EXACT R4 ZIP>" --addon build/r5-overlay/overrides/mods/ao-campaign-0.3.2-experimental.jar --patch-receipt build/r5-reports/grand-campaign-patch.json --output build/Ambient-Odyssey-MASTER-INTEGRATION-R5-GRAND-PRIVATE-EXPERIMENTAL.zip
 
-This produces the full R5 test import, a separate increment-only Rollback.zip (NOT a standalone import) and a .report.json receipt. R4 remains immutable. R5 may differ only in campaign JAR + CurseForge import manifest; all 337 refs, 10 addon filenames, 30 DD zones, configuration bytes, quest files and unrelated mod JARs must stay identical.
+This produces the full R5 test import, a separate increment-only Rollback.zip (NOT a standalone import) and a .report.json receipt. R4 remains immutable. R5 may differ only in campaign JAR + CurseForge import manifest + the Pinnacle gate files (see the gate safeguard note below); all 337 refs, 10 addon filenames, 30 DD zones, configuration bytes, quest files and unrelated mod JARs must stay identical.
 
 Never upload or publish R5 as gameplay-accepted solely on static checks. The review forms and stage/packager synthetic tests are CI gated; see the workflow AO R4 to R5 Grand Delta Preflight.
 
@@ -75,3 +75,11 @@ Run an isolated fresh-profile R5 import and disposable dedicated multiplayer ser
 - FINISHED: review-only five-delta file; R4-based SHA-gated preview; manual-source-review form; R4 0.3.2 addon JSON-only binary patcher; R4->R5 full import and rollback builder; **30 synthetic CI tests PASS** in https://github.com/alsynth/AmbientOdyssey/actions/runs/38753512071.
 - NOT DONE: read Claude's newly uploaded full 338-JAR profile from this GitHub Actions run; manual source/category approval; produce a real R5 JAR/ZIP; dedicated two-player Lootr tests, natural encounters or production acceptance.
 - Do NOT merge/rerun the PR #63 R2-based compiler or overwrite PR #64 release artifacts. R2/R3 prep code and R4 have different packaged campaign versions.
+
+## Gate safeguard (15 October 2026, branch feature/r5-gate-safeguard)
+
+R4 ships `ao_campaign_gates` with a `minecraft:impossible` Pinnacle, so copying R4 unchanged would ship an unobtainable Pinnacle. `package_r5_grand_from_r4.py` now:
+- replaces R4's gate with the committed source gate (native five epic gear + a Captain Cornelia kill, owner decision 15 Oct) and adds its lang resource pack;
+- refuses to build if any loose advancement JSON in the output uses `minecraft:impossible` outside the code-granted `ao_campaign` namespace, or if the source gate isn't the Cornelia gate;
+- records R4's original gate files in the Rollback ZIP and lists the added files to delete on rollback.
+Static only: synthetic tests PASS, and the scan flags the R4-equivalent rebuild and passes the Cornelia dry run. Not engine-tested.

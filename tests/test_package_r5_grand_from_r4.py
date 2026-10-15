@@ -13,6 +13,8 @@ packer=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(packer)
 
 def h(x):return hashlib.sha256(x).hexdigest()
+IMPOSSIBLE=b'{"criteria":{"locked":{"trigger":"minecraft:impossible"}}}'
+GATE_MEMBERS=sorted('overrides/'+r for r in packer.GATE_FILES)
 
 class R5ImportFromR4(unittest.TestCase):
     def setUp(self):
@@ -30,6 +32,10 @@ class R5ImportFromR4(unittest.TestCase):
             packer.CAMPAIGN_PATH:self.original,
             'overrides/config/brutalbosses.json':b'{"healthMultiplier":4}',
             'overrides/config/dungeon_difficulty/difficulty_v2.json':b'{"zones":30}',
+            # R4 shipped this unobtainable gate; R5 must replace it.
+            packer.PINNACLE_MEMBER:IMPOSSIBLE,
+            'overrides/config/paxi/datapacks/ao_campaign_gates/pack.mcmeta':b'{"pack":{"pack_format":48}}',
+            'overrides/config/paxi/datapacks/ao_campaign/data/ao_campaign/advancement/milestones/tier_5.json':IMPOSSIBLE,
         })
         self.inputs={
             'status':'R5_GRAND_RESOURCE_ONLY_EXPERIMENTAL_JAR_NOT_RUNTIME_TESTED',
@@ -52,7 +58,7 @@ class R5ImportFromR4(unittest.TestCase):
         r=self.build()
         self.assertEqual(r['cf_references'],2)
         self.assertEqual(r['custom_addon_jar_count'],1)
-        self.assertEqual(r['changed_members'],['manifest.json',packer.CAMPAIGN_PATH])
+        self.assertEqual(r['changed_members'],sorted(['manifest.json',packer.CAMPAIGN_PATH,*GATE_MEMBERS]))
         self.assertFalse(r['minecraft_runtime_tested'])
         old=packer.read_members(self.base)
         new=packer.read_members(self.out)
@@ -63,6 +69,44 @@ class R5ImportFromR4(unittest.TestCase):
         self.assertEqual(new[packer.CAMPAIGN_PATH],self.newjar.read_bytes())
         self.assertEqual(packer.read_members(self.root/'R5-Rollback.zip')[packer.CAMPAIGN_PATH],self.original)
         self.assertTrue((self.root/'R5.zip.report.json').exists())
+        for m in GATE_MEMBERS:
+            self.assertEqual(new[m],(packer.GATE_SOURCE_ROOT/m[len('overrides/'):]).read_bytes())
+        rollback=packer.read_members(self.root/'R5-Rollback.zip')
+        self.assertEqual(rollback[packer.PINNACLE_MEMBER],IMPOSSIBLE)
+        added=json.loads(rollback['ROLLBACK-RECEIPT.json'])['added_members_delete_on_rollback']
+        self.assertEqual(added,sorted(m for m in GATE_MEMBERS if 'resourcepacks' in m))
+
+    def test_r4_impossible_pinnacle_never_ships(self):
+        self.build()
+        new=packer.read_members(self.out)
+        self.assertEqual(packer.impossible_gates(new),[])
+        self.assertIn(packer.CORNELIA,new[packer.PINNACLE_MEMBER].decode())
+
+    def test_code_granted_campaign_milestones_are_allowed(self):
+        self.build()
+        name='overrides/config/paxi/datapacks/ao_campaign/data/ao_campaign/advancement/milestones/tier_5.json'
+        self.assertEqual(packer.read_members(self.out)[name],IMPOSSIBLE)
+
+    def rebase_with(self,name,data):
+        members=packer.read_members(self.base);members[name]=data
+        self.base.unlink();packer.write_zip(self.base,members)
+        d=dict(self.inputs);d['basis_release_sha256']=h(self.base.read_bytes())
+        self.receipt.write_text(json.dumps(d))
+
+    def test_reject_other_impossible_gate_in_r4(self):
+        self.rebase_with('overrides/config/paxi/datapacks/x/data/apotheosis/advancement/progression/ancient.json',IMPOSSIBLE)
+        with self.assertRaisesRegex(ValueError,'Gate safeguard'):self.build()
+        self.assertFalse(self.out.exists())
+
+    def test_reject_unapproved_source_gate(self):
+        gate=self.root/'gate'
+        for rel in packer.GATE_FILES:
+            (gate/rel).parent.mkdir(parents=True,exist_ok=True)
+            (gate/rel).write_bytes((packer.GATE_SOURCE_ROOT/rel).read_bytes())
+        (gate/packer.GATE_FILES[1]).write_bytes(IMPOSSIBLE)
+        with self.assertRaisesRegex(ValueError,'approved epic gear'):
+            packer.build(self.base,self.newjar,self.receipt,self.out,expected_base=h(self.base.read_bytes()),
+                expected_campaign=h(self.original),expected_pins=2,expected_jar_count=1,gate_root=gate)
 
     def test_reject_existing_output(self):
         self.out.write_bytes(b'exists')
