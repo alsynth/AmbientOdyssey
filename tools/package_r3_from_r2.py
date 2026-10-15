@@ -33,7 +33,7 @@ def read_archive(path):
             raise ValueError('Archive CRC, duplicate member, or unsafe archive path')
         return {n:z.read(n) for n in names if not n.endswith('/')}
 
-def addon_ids(data):
+def addon_ids(data, *, inspect_loot=True):
     with zipfile.ZipFile(io.BytesIO(data)) as jar:
         if jar.testzip() is not None:
             raise ValueError('Corrupt nested JAR')
@@ -48,9 +48,9 @@ def addon_ids(data):
             if modid:ids.add(modid)
         for name in paths:
             match=re.fullmatch(r'data/([^/]+)/loot_tables?/.*',name)
-            if match and match.group(1) not in ids:
+            if inspect_loot and match and match.group(1) not in ids:
                 raise ValueError('Custom addon JAR shadows a foreign/native loot table: '+name)
-            if name == 'data/neoforge/loot_modifiers/global_loot_modifiers.json':
+            if inspect_loot and name == 'data/neoforge/loot_modifiers/global_loot_modifiers.json':
                 j=json.loads(jar.read(name))
                 if j.get('replace') is not False or len(j.get('entries',[]))!=len(set(j.get('entries',[]))):
                     raise ValueError('Custom addon loot modifier list must explicitly append and contain no duplicate entries')
@@ -137,7 +137,7 @@ def build(base, overlay, plan_file, output, *, expected_base_sha=R2_SHA, expecte
     for name,data in changed.items():
         if name.startswith('overrides/mods/') and name.endswith('.jar'):
             jars[name]=sha(data)
-            for modid in addon_ids(data):
+            for modid in addon_ids(data, inspect_loot=(name in names)):
                 if modid in modids:
                     raise ValueError('Duplicate bundled addon mod ID '+modid+' in '+name+' and '+modids[modid])
                 modids[modid]=name
