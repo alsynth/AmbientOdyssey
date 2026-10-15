@@ -183,10 +183,12 @@ def regalia_check(mods,index,mod_sources):
         })
     return found
 
-def audit(mods,paxi=None):
+def audit(mods,paxi=None,candidates=CANDIDATES):
     if not mods.is_dir():raise ValueError(f'Installed mods directory does not exist: {mods}')
     index,mod_sources=load_jar_index(mods)
-    rows=json.loads(CANDIDATES.read_text(encoding='utf-8'))
+    rows=json.loads(Path(candidates).read_text(encoding='utf-8'))
+    if not isinstance(rows,list) or not rows:
+        raise ValueError('Candidate JSON must be a nonempty list of native Grand Treasure chest contexts')
     grand=grand_check(rows,mods,index,paxi)
     regalia=regalia_check(mods,index,mod_sources)
     return {
@@ -215,8 +217,12 @@ def main():
     p.add_argument('--mods',required=True,type=Path,help='Actual installed profile mods/ directory')
     p.add_argument('--paxi',type=Path,help='Optional active profile config/paxi/datapacks')
     p.add_argument('--out',required=True,type=Path)
+    p.add_argument('--candidates',type=Path,default=CANDIDATES,
+                   help='Candidate JSON to audit (default: historical R2 list; use R3 preview to audit new mapping)')
     args=p.parse_args()
-    result=audit(args.mods,args.paxi)
+    result=audit(args.mods,args.paxi,args.candidates)
+    result['candidate_input_file']=str(args.candidates)
+    result['candidate_input_sha256']=digest(args.candidates.read_bytes())
     if args.out.exists():raise ValueError('Refusing to overwrite existing audit output: '+str(args.out))
     args.out.parent.mkdir(parents=True,exist_ok=True)
     args.out.write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')

@@ -1,0 +1,128 @@
+[
+  {
+    "structure": "adventuredungeons:murkydungeon",
+    "tier": 3,
+    "table": "adventuredungeons:chests/murkydungeon/murky_chest_reward",
+    "source_resource": "data/adventuredungeons/loot_table/chests/murkydungeon/murky_chest_reward.json",
+    "source_sha256": "6cd05c740754614cb9d74eaf7128aa3b59e2c516496da432ea157b915ca9c212",
+    "pool_index": 0,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:illager_fort",
+    "tier": 3,
+    "table": "dungeons_arise:chests/illager_fort/illager_fort_normal",
+    "source_resource": "data/dungeons_arise/loot_table/chests/illager_fort/illager_fort_normal.json",
+    "source_sha256": "2dcbd666df7266651bea82dd92c2d1746b8730844a3b9c737e367c1080f614e7",
+    "pool_index": 2,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_normal",
+    "source_resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_normal.json",
+    "source_sha256": "6699101578f04a070d14efa3f101e926409ebaaebf02bccc8b4d73062c2b4c99",
+    "pool_index": 3,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:infested_temple",
+    "tier": 3,
+    "table": "dungeons_arise:chests/infested_temple/infested_temple_room_supply",
+    "source_resource": "data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_supply.json",
+    "source_sha256": "29d63774fb44ce954e1a3c1e2828f2e76d5e7519b2004feb0ead3bd298266633",
+    "pool_index": 3,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal",
+    "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_garden_normal.json",
+    "source_sha256": "af672f1b32305ba02219fa5abcf3cb6ad90e147fb47619bda3dd1bcf1d745273",
+    "pool_index": 1,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal",
+    "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_normal.json",
+    "source_sha256": "6f23a88a6edc15714ddd72af67e01a15d9f78d79555eaee8232dd4524db3c810",
+    "pool_index": 2,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
+    "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json",
+    "source_sha256": "ee7e398314939c84c644fdbc7825999e314fdfff308aacdf86a94a2c9a00084f",
+    "pool_index": 2,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_normal",
+    "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_normal.json",
+    "source_sha256": "cec108255d2290d187077b9582499e055b45132c806b6ee14421b744fda6c200",
+    "pool_index": 1,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:keep_kayra",
+    "tier": 6,
+    "table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
+    "source_resource": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_treasure.json",
+    "source_sha256": "8bf79cee247e91c1972ac124455f0bbc04f0b0122ddd7711aecdf3ad8684a0be",
+    "pool_index": 2,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:thornborn_towers",
+    "tier": 3,
+    "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms",
+    "source_resource": "data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_rooms.json",
+    "source_sha256": "74f18e9627ece32d2f5bbf7eafe67f05e0974f44e8928948aaa03d28a05bb50b",
+    "pool_index": 3,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:thornborn_towers",
+    "tier": 3,
+    "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms",
+    "source_resource": "data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_top_rooms.json",
+    "source_sha256": "b200edf79a4f6c641001a054b6c073c037fd7a5c40adb7f83a2774d55fafdb93",
+    "pool_index": 3,
+    "chance": 0.05
+  },
+  {
+    "structure": "dungeons_arise:thornborn_towers",
+    "tier": 3,
+    "table": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_treasure",
+    "source_resource": "data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_top_treasure.json",
+    "source_sha256": "9b34276cff46aac16a3ce475b2a849804747e34b39dc3d1270e661a5bc337a6f",
+    "pool_index": 4,
+    "chance": 0.05
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "table": "irons_spellbooks:chests/catacombs/hidden_trough_treasure",
+    "source_resource": "data/irons_spellbooks/loot_table/chests/catacombs/hidden_trough_treasure.json",
+    "source_sha256": "23372ec81c93bf5b3aad0046362efa0fc44fac17a6f167d2bad1540fd0aa6ce8",
+    "pool_index": 3,
+    "chance": 0.05
+  },
+  {
+    "structure": "irons_spellbooks:catacombs",
+    "tier": 4,
+    "table": "irons_spellbooks:chests/generic_magic_treasure",
+    "source_resource": "data/irons_spellbooks/loot_table/chests/generic_magic_treasure.json",
+    "source_sha256": "f3f8c9464ed17b92e8edf0bcef633c6f527637b33be07231b09e00a51e33b776",
+    "pool_index": 6,
+    "chance": 0.05
+  }
+]
