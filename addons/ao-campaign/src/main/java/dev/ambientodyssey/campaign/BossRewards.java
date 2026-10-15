@@ -45,6 +45,28 @@ public final class BossRewards {
   }
   return ids;
  }
+ public static final JsonObject SWORD_POOL=loadSwordPool();
+ private static JsonObject loadSwordPool(){
+  try(var in=BossRewards.class.getResourceAsStream("/ao_sword_pool.json")){
+   if(in==null)throw new IllegalStateException("Missing Simply Swords sword pool");
+   return JsonParser.parseReader(new InputStreamReader(in,StandardCharsets.UTF_8)).getAsJsonObject();
+  }catch(java.io.IOException e){throw new IllegalStateException(e);}
+ }
+ /** Owner decision 15 Oct: full installed Simply Swords sword pool, separate from Regalia and affixed gear. */
+ public static List<ResourceLocation> swordPoolIds(){
+  var ids=new ArrayList<ResourceLocation>();
+  var swords=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ITEM,ResourceLocation.parse("simplyswords:swords"));
+  var common=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ITEM,ResourceLocation.parse("c:swords"));
+  for(var v:SWORD_POOL.getAsJsonArray("ids")){
+   var id=ResourceLocation.parse(v.getAsString());
+   boolean ok=id.getNamespace().equals("simplyswords")&&BuiltInRegistries.ITEM.containsKey(id)
+     &&BuiltInRegistries.ITEM.getHolder(id).map(h->h.is(swords)||h.is(common)).orElse(false);
+   if(ok)ids.add(id);
+   else warnOnce("sword:"+id,"AO_SWORD_SKIPPED: {} is absent or not tagged as a Simply Swords sword",id);
+  }
+  return ids;
+ }
+ /** Historical R4 unique-only list; kept for the test probe, no longer used for boss rewards. */
  public static List<ResourceLocation> uniqueIds(){
   var ids=new ArrayList<ResourceLocation>();
   var tag=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ITEM,ResourceLocation.parse("simplyswords:uniques"));
@@ -71,8 +93,8 @@ public final class BossRewards {
   var item=affix(nativeContext,LootRarity.random(nativeContext));if(!item.isEmpty())result.add(item);
   var regalia=regaliaIds();if(!regalia.isEmpty())result.add(new ItemStack(BuiltInRegistries.ITEM.get(regalia.get(random.nextInt(regalia.size())))));
   else LOG.error("AO_BOSS_BONUS_BLOCKED: no validated Regalia IDs");
-  var weapons=uniqueIds();if(!weapons.isEmpty())result.add(new ItemStack(BuiltInRegistries.ITEM.get(weapons.get(random.nextInt(weapons.size())))));
-  else LOG.error("AO_BOSS_BONUS_BLOCKED: no validated Simply Swords unique IDs");
+  var swords=swordPoolIds();if(!swords.isEmpty())result.add(new ItemStack(BuiltInRegistries.ITEM.get(swords.get(random.nextInt(swords.size())))));
+  else LOG.error("AO_BOSS_BONUS_BLOCKED: no validated Simply Swords sword IDs");
   var rates=POLICY.getAsJsonObject("rare_affix_rates").getAsJsonObject(Integer.toString(tier));
   if(rates!=null)for(var entry:rates.entrySet())if(random.nextDouble()<entry.getValue().getAsDouble()){
    var rarity=RarityRegistry.INSTANCE.getValue(ResourceLocation.parse("ao_apotheotic_port:"+entry.getKey()));

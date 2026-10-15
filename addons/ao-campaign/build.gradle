@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 group = 'dev.ambientodyssey.campaign'
-version = '0.3.2-experimental'
+version = '0.3.3-experimental'
 base { archivesName = 'ao-campaign' }
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 repositories { maven { url = 'https://maven.shadowsoffire.dev/releases' } }

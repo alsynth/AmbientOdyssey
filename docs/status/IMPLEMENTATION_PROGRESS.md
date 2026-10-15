@@ -60,3 +60,8 @@ R4-based, fail-closed tools now committed to PR #64: `tools/preview_r5_grand_fro
 ## Current-state reconciliation (15 October 2026)
 
 Local 338-JAR profile is pre-R4 (v0.4.9.1); R4 ZIP hash verified; one packaged conflict found (ao_campaign_gates Pinnacle override). Report: [R4_CURRENT_STATE_RECONCILIATION_20261015.md](R4_CURRENT_STATE_RECONCILIATION_20261015.md). Read-only; no gameplay files changed.
+
+## Simply Swords full sword pool (15 October 2026, branch feature/simply-swords-full-pool)
+
+- **Source:** boss reward draws one uniform random sword from 133 verified Simply Swords swords (`ao_sword_pool.json`, `BossRewards.swordPoolIds()`), separate from the affixed item and Regalia. `ao_loot_policy.json` unchanged (R5 toolchain pin). Campaign version 0.3.3-experimental. Nothing excluded; 53 owner-review candidates listed in [SIMPLYSWORDS_FULL_POOL.md](../handoffs/simplyswords-full-pool-20261015/SIMPLYSWORDS_FULL_POOL.md).
+- **Static test:** `tests/test_simplyswords_full_pool.py` 7/7 PASS; `javac --release 21` against R4-pinned NeoForge/Minecraft/Apotheosis JARs exit 0. **Packaged:** no. **Engine / multiplayer:** not tested.
