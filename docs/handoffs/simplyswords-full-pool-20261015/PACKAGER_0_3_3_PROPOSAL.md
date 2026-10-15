@@ -1,5 +1,7 @@
 # Proposal: package campaign 0.3.3 (15 October 2026)
 
+**Status (15 Oct owner correction):** the R5/R6 split is a **proposal only**, not chosen. Boss assignment and R5 vs R6 placement for the swords are unresolved.
+
 **Result:** proposal only, no tool changed. Campaign 0.3.3 (Simply Swords full pool, `2067e4a`) can't be packaged today: five tools hard-code 0.3.2. Recommended: keep R5 as the 0.3.2 Grand-only patch, then ship 0.3.3 in a separate full build (R6). This follows handoff rule 10.3 ("never mix R5 with the Simply Swords rewrite").
 
 ## Where 0.3.2 is hard-coded

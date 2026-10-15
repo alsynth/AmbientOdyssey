@@ -1,6 +1,8 @@
 # How the 17 non-lootable Simply Swords uniques are obtained (15 October 2026)
 
-**Result:** none of the 17 has a recipe or loot table. All are progression forms. Six are **legacy IDs** that the mod converts, in a player's slots, back into the base weapon with its awakening level preset. Dropping any of the 17 directly from a boss **skips the mod's own progression**. All 17 are in the current 133-ID pool (`2067e4a`); nothing was changed or excluded. You decide.
+**Result:** none of the 17 has a recipe or loot table. All are progression forms. Six are **legacy IDs** that the mod converts, in a player's slots, back into the base weapon with its awakening level preset. Dropping any of the 17 directly from a boss **skips the mod's own progression**. All 17 are in the current 133-ID pool (`2067e4a`); nothing was changed or excluded.
+
+**Owner decision (15 Oct, supersedes the options below):** keep all 17. Don't exclude any for being a legacy ID. Don't add them to Grand pools or boss-drop tables. Boss assignment and R5 vs R6 placement are still open. Audit: [UNIQUE_17_ALIAS_AUDIT.md](UNIQUE_17_ALIAS_AUDIT.md).
 
 **Status:** static only (JAR data + `javap` bytecode constants). Not engine-tested. Levels and routes are read from bytecode constants, not observed in game.
 
@@ -43,12 +45,8 @@ Notes:
 - In `AwakeningFormRegistry`, the stormscale and watcher families have an awakening-4 stage. The four spectral families register their stages with level constant 0, so their exact unlock gate isn't proven statically.
 - The in-game hints for rows 13–17 come from the mod's own lang text, for example "Try keeping this in your inventory while exploring the deepest, darkest depths of the Overworld."
 
-## Options for you
-1. **Keep all 17** (current `2067e4a`). Simple and matches "nothing excluded", but boss drops can hand out end-game forms and skip the mod's progression.
-2. **Exclude the 6 legacy IDs only** (rows 1–6). They become base weapons with preset awakening anyway, so this removes duplicates of base items already in the pool. Pool 133 → 127.
-3. **Exclude all 17** and keep only base forms. Pool 133 → 116. Progression stays with the mod.
-
-Recommendation: option 2 now. Then decide rows 7–17 together with the 53-candidate review in `SIMPLYSWORDS_FULL_POOL.md`.
+## Options (superseded)
+The earlier options and the recommendation to drop the 6 legacy IDs are **withdrawn**. The owner keeps all 17. Nothing had been applied.
 
 ## Not tested
 - Whether `convertStack` also runs on items delivered by AO's boss-reward code (it runs on player slots, so delivery to the inventory should trigger it).
