@@ -43,7 +43,7 @@ class NativeRewardEvidence(unittest.TestCase):
     def test_cross_table_is_blocked_pending_owner_review(self):
         index,_=audit.load_jar_index(self.mods)
         r=audit.grand_check([self.row('testmod:chests/ordinary')],self.mods,index)[0]
-        self.assertIn('CROSS_TABLE_BEST_POOL_SELECTION_NOT_APPROVED',r['blockers'])
+        self.assertIn('CROSS_TABLE_SOURCE_CHOICE_NEEDS_INDEPENDENT_REVIEW',r['blockers'])
         self.assertEqual(r['static_status'],'BLOCKED')
 
     def test_changed_source_hash_is_blocked(self):
