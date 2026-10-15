@@ -37,6 +37,18 @@ class PerChestGrandCandidates(unittest.TestCase):
         self.assertEqual(row['pool_index'],2)
         self.assertEqual(row['tier'],6)
 
+    def test_committed_review_only_preview_matches_generated_candidate(self):
+        expected,_=tool.produce(self.source,self.r2)
+        actual=json.loads((ROOT/'docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json').read_text())
+        self.assertEqual(actual,expected)
+
+    def test_committed_review_ledger_does_not_mark_source_approved(self):
+        _,expected=tool.produce(self.source,self.r2)
+        ledger=json.loads((ROOT/'docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_REVIEW_LEDGER.json').read_text())
+        self.assertEqual(ledger['status'],'R3_CANDIDATES_ONLY_NOT_APPROVED_OR_COMPILED')
+        self.assertEqual(ledger['candidates'],expected)
+        self.assertTrue(all(e['best_pool_category_approval']=='NEEDS_MANUAL_REVIEW' for e in ledger['candidates']))
+
     def test_invalid_source_missing_prevents_candidate(self):
         with self.assertRaisesRegex(ValueError,'No audited original native candidate'):
             tool.produce([],self.r2)
