@@ -27,3 +27,7 @@ Status: design decision, NOT deployed. This note supersedes any earlier proposal
 4. Produce curated Regalia tier pools with an explicit owner review; don't auto-assign unclassified catalogue entries.
 5. Test repeat kills, multiplayer, first-clear rewards, two real affix/Regalia guarantees, world-tier access and exploit prevention.
 6. Keep exact before/after loot diffs, parse/runtime checks and rollback; do not claim a live change without installing it.
+
+## Final Grand Treasure roll semantics (owner confirmation)
+
+**Starting with Tier 3: independently roll a 5% Grand Treasure bonus chance for each eligible dungeon chest**, not a 5% chance per dungeon. Keep the chest's native loot table and add the reward selectively; do not replace base content. An eligible chest is a verified dungeon loot container, not every barrel, storage prop, ordinary village chest, or generic shared table used outside that dungeon. Use Lootr's per-player chest instancing properly; validate whether the roll is per player's instanced loot or world-wide, and ensure no duplicate injection on reopen. Higher-tier odds remain unspecified until the owner approves them. The prior T3 0%-Grand archetype proposal is superseded by this explicit per-chest 5% chance.
