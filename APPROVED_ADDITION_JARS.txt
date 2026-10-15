@@ -4,7 +4,7 @@ SHA-256 values are in approved-structure-additions.json; structure content and d
 
 YungsExtras-1.21.1-NeoForge-5.1.1.jar
 YungsBridges-1.21.1-NeoForge-5.1.1.jar
-Structory_Towers_26.2_v1.0.17.jar
+Structory_Towers_1.21.x_v1.0.14.jar   (v1.0.17 crashed on startup: NeoForge "Missing ModLoader", 9 Oct 2026)
 archaion-1.21.1-1.4.4.jar
 Explorify v1.6.5.mod.jar
 AdditionalStructures-1.21-(v.6.3.2-NEO).jar

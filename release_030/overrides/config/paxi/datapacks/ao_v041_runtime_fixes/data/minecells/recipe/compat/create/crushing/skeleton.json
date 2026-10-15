@@ -1,1 +1,26 @@
-{"neoforge:conditions":[{"type":"neoforge:false"}]}
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecells:skeleton"
+    }
+  ],
+  "results": [
+    {
+      "count": 5,
+      "id": "minecraft:bone"
+    },
+    {
+      "count": 6,
+      "chance": 0.25,
+      "id": "minecraft:bone_meal"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "processing_time": 50
+}

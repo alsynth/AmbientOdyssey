@@ -1,1 +1,20 @@
-{"neoforge:conditions":[{"type":"neoforge:false"}]}
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "minecells:putrid_log"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecells:stripped_putrid_log"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "processing_time": 50
+}
