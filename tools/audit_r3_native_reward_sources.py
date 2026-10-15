@@ -50,12 +50,12 @@ def load_jar_index(mods):
 def local_overlays(root,resources):
     if root is None:return {}
     mapping=defaultdict(list)
-    for p in root.glob('*/data/**/*'):
-        if p.is_file():
-            rel=p.as_posix().split('/data/',1)[1]
-            key='data/'+rel
-            if key in resources:
-                mapping[key].append(str(p))
+    for data_dir in root.glob('*/data'):
+        for p in data_dir.rglob('*'):
+            if p.is_file():
+                key='data/'+p.relative_to(data_dir).as_posix()
+                if key in resources:
+                    mapping[key].append(str(p))
     return dict(mapping)
 
 def grand_check(rows,mods,index,paxi=None):
