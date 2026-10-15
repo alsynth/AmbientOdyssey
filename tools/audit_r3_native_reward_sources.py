@@ -205,6 +205,8 @@ def regalia_check(mods,index,mod_sources):
 
 def audit(mods,paxi=None,candidates=CANDIDATES):
     if not mods.is_dir():raise ValueError(f'Installed mods directory does not exist: {mods}')
+    if paxi is not None and not paxi.is_dir():
+        raise ValueError(f'Provided Paxi datapacks directory does not exist; cannot silently claim no overrides: {paxi}')
     index,mod_sources=load_jar_index(mods)
     rows=json.loads(Path(candidates).read_text(encoding='utf-8'))
     if not isinstance(rows,list) or not rows:
