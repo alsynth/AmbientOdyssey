@@ -76,3 +76,17 @@ These overrides apply **only to the new guaranteed boss Regalia bonus pool**; ex
 | The Infinitum | **T6–T7** |
 
 Native only means excluded from the additive generic boss Regalia roll, not removed from its native drops/crafting. T2–T5 means eligible in the broad early pool even where original power assessment flagged C4. T6–T7 for The Infinitum is a new boss reward band, with native acquisition intact.
+
+## Binding owner update — all Enigmatic items native-only; C3 batch approval (15 Oct 2026)
+
+**All items from Enigmatic Legacy and Enigmatic Legacy Plus are NATIVE ONLY**: exclude the entire mod families from AO's new guaranteed boss Regalia bonus loot pool, across all boss tiers, regardless of existing C-risk rank, craftability or prior item-specific allowances. Preserve every Enigmatic native crafting recipe, native drop, chest source and acquisition path exactly as the installed mods define them. **This overrides the previous plan to downweight craftable Enigmatic items in our new boss pool**: no such weights are needed because none of the Enigmatic items are eligible. In particular, **The Infinitum is now native-only, overriding prior T6–T7**. Other Enigmatic C3 examples (Testament of Contempt, Majestic Elytra, Arrogance of Chaos, Revival Leaves, Non-Euclidean Cube, Ring of Quenching, Heart of the Golem, Emblem of Bloodstained Valor, The Twist) are native-only despite previous suggested bands. The starter Bonus Chest's separately approved Spellstone reward is a distinct onboarding feature; do not silently remove it based on this generic boss-Regalia exclusion.
+
+**Owner accepted the remaining non-Enigmatic items from the first C3 proposal at provisional tier bands** (new additive boss reward pool only; subject to source/JAR ID validation, not yet implemented):
+
+| Item | Mod | Owner-approved provisional boss reward band |
+|---|---|---|
+| Evasion Cloak | NeoPasterDream | T2–T5 |
+| Ghost Face Head | NeoPasterDream | T2–T5 |
+| Counter Ring | NeoPasterDream | T2–T5 |
+
+Earlier C4 non-Enigmatic decisions remain: Qym Head native-only; Tempest Trident, Cecilia's Blessing, Turnback Cloak, Abyssal Tiara T2–T5; Cursium Chestplate native-only. Do not treat a C3 or C4 rank as minimum tier when the owner explicitly approved broader access.
