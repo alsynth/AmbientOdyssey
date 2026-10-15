@@ -1,6 +1,6 @@
 {
   "status": "THREE_PINNED_MOD_JAR_SOURCE_TABLE_HASHES_MATCHED_PRIOR_AO_AUDIT_STATIC_ONLY",
-  "github_actions_run": "https://github.com/alsynth/AmbientOdyssey/actions/runs/38743667218",
+  "github_actions_run": "https://github.com/alsynth/AmbientOdyssey/actions/runs/38743939174",
   "source_versions": [
     {
       "mod": "Adventure Dungeons",
@@ -30,22 +30,30 @@
             {
               "item": "minecraft:iron_ingot",
               "weight": 8,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:gold_ingot",
               "weight": 6,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:diamond",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:emerald",
               "weight": 3,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -56,7 +64,9 @@
             {
               "item": "minecraft:ender_pearl",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -67,22 +77,30 @@
             {
               "item": "minecraft:wild_armor_trim_smithing_template",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:sentry_armor_trim_smithing_template",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:music_disc_11",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:music_disc_otherside",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -93,7 +111,11 @@
             {
               "item": "minecraft:book",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ],
+              "conditions": []
             }
           ]
         }
@@ -111,7 +133,9 @@
             {
               "item": "irons_spellbooks:rotten_spell_book",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -122,12 +146,18 @@
             {
               "item": "irons_spellbooks:scroll",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell"
+              ],
+              "conditions": []
             },
             {
               "item": "irons_spellbooks:blank_rune",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -138,12 +168,18 @@
             {
               "item": "minecraft:wheat",
               "weight": 5,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:hay_block",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -154,12 +190,18 @@
             {
               "item": "minecraft:emerald",
               "weight": 5,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:diamond",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         }
@@ -177,7 +219,11 @@
             {
               "item": "irons_spellbooks:arcane_essence",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             }
           ]
         },
@@ -191,7 +237,11 @@
             {
               "item": "irons_spellbooks:scroll",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell"
+              ],
+              "conditions": []
             }
           ]
         },
@@ -202,7 +252,11 @@
             {
               "item": "irons_spellbooks:blank_rune",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": [
+                "minecraft:random_chance"
+              ]
             }
           ]
         },
@@ -216,7 +270,11 @@
             {
               "item": null,
               "weight": 1,
-              "type": "minecraft:loot_table"
+              "type": "minecraft:loot_table",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             }
           ]
         },
@@ -227,7 +285,9 @@
             {
               "item": null,
               "weight": 1,
-              "type": "minecraft:loot_table"
+              "type": "minecraft:loot_table",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -241,7 +301,9 @@
             {
               "item": null,
               "weight": 1,
-              "type": "minecraft:loot_table"
+              "type": "minecraft:loot_table",
+              "functions": [],
+              "conditions": []
             }
           ]
         },
@@ -252,27 +314,43 @@
             {
               "item": "minecraft:diamond",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:copper_ingot",
               "weight": 8,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:gold_ingot",
               "weight": 5,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:emerald",
               "weight": 3,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_ingot",
               "weight": 12,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "minecraft:set_count"
+              ],
+              "conditions": []
             }
           ]
         },
@@ -283,57 +361,87 @@
             {
               "item": "minecraft:diamond_sword",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell",
+                "minecraft:enchant_with_levels"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_sword",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell",
+                "minecraft:enchant_with_levels"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_sword",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [
+                "irons_spellbooks:randomize_spell"
+              ],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_helmet",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_chestplate",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_leggings",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:iron_boots",
               "weight": 2,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:diamond_helmet",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:diamond_chestplate",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:diamond_leggings",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             },
             {
               "item": "minecraft:diamond_boots",
               "weight": 1,
-              "type": "minecraft:item"
+              "type": "minecraft:item",
+              "functions": [],
+              "conditions": []
             }
           ]
         }
@@ -344,5 +452,9 @@
     "These are original native table IDs, entry IDs and relative weights; they do not represent approved Grand Treasure bonus pool selections",
     "Selected pool indices shown are inherited from R3 review-only mapping, not final owner-approved selections",
     "No Paxi datapack runtime winner, Lootr multiplayer, original native probability or live game behavior was established here"
-  ]
+  ],
+  "verified_download_jar_sha256": {
+    "adventuredungeons": "a5ae9687c37ab5a383d1b3a5a6f46a0b8bdeb3aca643745323c3b78c6ca6c347",
+    "irons_spellbooks": "55a290db9b966e0c5d2f5c051d50775f3db6375cdb52730c4da528bcf5d5daa0"
+  }
 }
