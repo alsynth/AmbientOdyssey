@@ -1,0 +1,1036 @@
+{
+  "status": "PINNED_PUBLISHED_JAR_SOURCE_HASHES_MATCH_PREVIOUS_AO_AUDIT_NOT_RUNTIME_ACCEPTED",
+  "mod_file": "DungeonsArise-1.21.1-2.1.68-release.jar",
+  "mod_jar_sha256": "7eee1eca7e3b2c6c1bede055934f391ae2e8349ffe33e106f451176d2cfcf0e4",
+  "verified_tables": 6,
+  "github_actions_run": "https://github.com/alsynth/AmbientOdyssey/actions/runs/38742050204",
+  "source_download": "https://modrinth.com/mod/when-dungeons-arise/version/XIRJSFQ0",
+  "verification": "all source JSON SHA256 matched previous AO chest-source-audit.json",
+  "review": [
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal",
+      "sha256": "af672f1b32305ba02219fa5abcf3cb6ad90e147fb47619bda3dd1bcf1d745273",
+      "prior_candidate_index": 1,
+      "pools": [
+        {
+          "index": 0,
+          "native_rolls": 1,
+          "entry_weights_total": 104,
+          "items": [
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 40,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:crossbow",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:bow",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_sword",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_helmet",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_chestplate",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_leggings",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_boots",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:ender_pearl",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 1,
+          "native_rolls": 3,
+          "entry_weights_total": 39,
+          "items": [
+            {
+              "id": "minecraft:gold_ingot",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:emerald",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:diamond",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": true
+        },
+        {
+          "index": 2,
+          "native_rolls": 2,
+          "entry_weights_total": 3,
+          "items": [
+            {
+              "id": "minecraft:glass_bottle",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:soul_lantern",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:glow_lichen",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 3,
+          "native_rolls": 1,
+          "entry_weights_total": 1,
+          "items": [
+            {
+              "id": "minecraft:azalea_leaves",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        }
+      ]
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_treasure",
+      "sha256": "f4624f8d117f774727f0c1fcf7f53333f136ee7241b7ff018203682d3c405d92",
+      "prior_candidate_index": null,
+      "pools": [
+        {
+          "index": 0,
+          "native_rolls": 1,
+          "entry_weights_total": 45,
+          "items": [
+            {
+              "id": null,
+              "type": "minecraft:empty",
+              "weight": 40,
+              "functions": []
+            },
+            {
+              "id": "minecraft:map",
+              "type": "minecraft:item",
+              "weight": 5,
+              "functions": [
+                "minecraft:exploration_map"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 1,
+          "native_rolls": 1,
+          "entry_weights_total": 226,
+          "items": [
+            {
+              "id": "minecraft:netherite_leggings",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": []
+            },
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 100,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_sword",
+              "type": "minecraft:item",
+              "weight": 20,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_helmet",
+              "type": "minecraft:item",
+              "weight": 20,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_chestplate",
+              "type": "minecraft:item",
+              "weight": 20,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_leggings",
+              "type": "minecraft:item",
+              "weight": 20,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_boots",
+              "type": "minecraft:item",
+              "weight": 20,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:ender_pearl",
+              "type": "minecraft:item",
+              "weight": 25,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 2,
+          "native_rolls": 4,
+          "entry_weights_total": 52,
+          "items": [
+            {
+              "id": "minecraft:enchanted_golden_apple",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:golden_apple",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:gold_ingot",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:emerald",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:diamond",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 3,
+          "native_rolls": 2,
+          "entry_weights_total": 3,
+          "items": [
+            {
+              "id": "minecraft:glass_bottle",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:soul_lantern",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:glow_lichen",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 4,
+          "native_rolls": 1,
+          "entry_weights_total": 1,
+          "items": [
+            {
+              "id": "minecraft:azalea_leaves",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        }
+      ]
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_normal",
+      "sha256": "6f23a88a6edc15714ddd72af67e01a15d9f78d79555eaee8232dd4524db3c810",
+      "prior_candidate_index": 2,
+      "pools": [
+        {
+          "index": 0,
+          "native_rolls": 1,
+          "entry_weights_total": 1,
+          "items": [
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 1,
+          "native_rolls": 1,
+          "entry_weights_total": 2,
+          "items": [
+            {
+              "id": "minecraft:experience_bottle",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 2,
+          "native_rolls": {
+            "min": 2,
+            "max": 3
+          },
+          "entry_weights_total": 82,
+          "items": [
+            {
+              "id": "minecraft:iron_ingot",
+              "type": "minecraft:item",
+              "weight": 25,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:gold_ingot",
+              "type": "minecraft:item",
+              "weight": 25,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:diamond",
+              "type": "minecraft:item",
+              "weight": 20,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:emerald",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": true
+        },
+        {
+          "index": 3,
+          "native_rolls": 2,
+          "entry_weights_total": 2,
+          "items": [
+            {
+              "id": "minecraft:paper",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:feather",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        }
+      ]
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
+      "sha256": "ee7e398314939c84c644fdbc7825999e314fdfff308aacdf86a94a2c9a00084f",
+      "prior_candidate_index": 2,
+      "pools": [
+        {
+          "index": 0,
+          "native_rolls": 1,
+          "entry_weights_total": 45,
+          "items": [
+            {
+              "id": null,
+              "type": "minecraft:empty",
+              "weight": 40,
+              "functions": []
+            },
+            {
+              "id": "minecraft:map",
+              "type": "minecraft:item",
+              "weight": 5,
+              "functions": [
+                "minecraft:exploration_map"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 1,
+          "native_rolls": 1,
+          "entry_weights_total": 106,
+          "items": [
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 40,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:crossbow",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:bow",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_sword",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_helmet",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_chestplate",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_leggings",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_boots",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:netherite_helmet",
+              "type": "minecraft:item",
+              "weight": 2,
+              "functions": []
+            },
+            {
+              "id": "minecraft:ender_pearl",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 2,
+          "native_rolls": 3,
+          "entry_weights_total": 39,
+          "items": [
+            {
+              "id": "minecraft:gold_ingot",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:emerald",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:diamond",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": true
+        },
+        {
+          "index": 3,
+          "native_rolls": 2,
+          "entry_weights_total": 2,
+          "items": [
+            {
+              "id": "minecraft:paper",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:glass_bottle",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 4,
+          "native_rolls": 1,
+          "entry_weights_total": 1,
+          "items": [
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        }
+      ]
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_normal",
+      "sha256": "cec108255d2290d187077b9582499e055b45132c806b6ee14421b744fda6c200",
+      "prior_candidate_index": 1,
+      "pools": [
+        {
+          "index": 0,
+          "native_rolls": {
+            "min": 1,
+            "max": 2
+          },
+          "entry_weights_total": 76,
+          "items": [
+            {
+              "id": "minecraft:crossbow",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:bow",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:iron_sword",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:iron_helmet",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:iron_chestplate",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:iron_leggings",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:iron_boots",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_helmet",
+              "type": "minecraft:item",
+              "weight": 2,
+              "functions": []
+            },
+            {
+              "id": "minecraft:diamond_boots",
+              "type": "minecraft:item",
+              "weight": 2,
+              "functions": []
+            },
+            {
+              "id": "minecraft:blaze_powder",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:ender_pearl",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 1,
+          "native_rolls": {
+            "min": 2,
+            "max": 3
+          },
+          "entry_weights_total": 68,
+          "items": [
+            {
+              "id": "minecraft:iron_ingot",
+              "type": "minecraft:item",
+              "weight": 24,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:gold_ingot",
+              "type": "minecraft:item",
+              "weight": 32,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:diamond",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": true
+        },
+        {
+          "index": 2,
+          "native_rolls": 2,
+          "entry_weights_total": 3,
+          "items": [
+            {
+              "id": "minecraft:slime_ball",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:azalea_leaves",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:blue_orchid",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        }
+      ]
+    },
+    {
+      "table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
+      "sha256": "8bf79cee247e91c1972ac124455f0bbc04f0b0122ddd7711aecdf3ad8684a0be",
+      "prior_candidate_index": 2,
+      "pools": [
+        {
+          "index": 0,
+          "native_rolls": 1,
+          "entry_weights_total": 45,
+          "items": [
+            {
+              "id": null,
+              "type": "minecraft:empty",
+              "weight": 40,
+              "functions": []
+            },
+            {
+              "id": "minecraft:map",
+              "type": "minecraft:item",
+              "weight": 5,
+              "functions": [
+                "minecraft:exploration_map"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 1,
+          "native_rolls": 1,
+          "entry_weights_total": 114,
+          "items": [
+            {
+              "id": "minecraft:book",
+              "type": "minecraft:item",
+              "weight": 40,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:crossbow",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:bow",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_sword",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_helmet",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_chestplate",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_leggings",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:diamond_boots",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:enchant_with_levels"
+              ]
+            },
+            {
+              "id": "minecraft:netherite_boots",
+              "type": "minecraft:item",
+              "weight": 2,
+              "functions": []
+            },
+            {
+              "id": "minecraft:blaze_powder",
+              "type": "minecraft:item",
+              "weight": 8,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:ender_pearl",
+              "type": "minecraft:item",
+              "weight": 15,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        },
+        {
+          "index": 2,
+          "native_rolls": 3,
+          "entry_weights_total": 36,
+          "items": [
+            {
+              "id": "minecraft:gold_ingot",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:emerald",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:diamond",
+              "type": "minecraft:item",
+              "weight": 12,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": true
+        },
+        {
+          "index": 3,
+          "native_rolls": 2,
+          "entry_weights_total": 3,
+          "items": [
+            {
+              "id": "minecraft:slime_ball",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:azalea_leaves",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            },
+            {
+              "id": "minecraft:blue_orchid",
+              "type": "minecraft:item",
+              "weight": 1,
+              "functions": [
+                "minecraft:set_count"
+              ]
+            }
+          ],
+          "candidate_previous_index": false
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No runtime effective Paxi/CurseForge profile resource precedence proven",
+    "Actual modded chest placement and Lootr per-player once-only behavior not proven",
+    "Pool contents from source tables, not extra reward approval",
+    "Native original loot will not be replaced by this audit"
+  ]
+}
