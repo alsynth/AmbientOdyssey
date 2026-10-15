@@ -1,28 +1,134 @@
 {
-  "parent": "apotheosis:progression/summit",
-  "criteria": {
-    "strong_t6": {
-      "trigger": "minecraft:impossible"
-    }
-  },
-  "display": {
-    "background": "apotheosis:textures/advancements/bg/apoth.png",
-    "description": {
-      "text": "Defeat the Dead King or the experimental alternate Kobolediator to unlock Pinnacle."
+    "parent": "apotheosis:progression/summit",
+    "criteria": {
+        "epic_chest": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "chest"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "epic_feet": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "feet"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "epic_hand": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "hand"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "epic_helm": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "head"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "epic_legs": {
+            "conditions": {
+                "items": {
+                    "predicates": {
+                        "apotheosis:item_with_rarity": {
+                            "rarities": [
+                                "apotheosis:epic",
+                                "apotheosis:mythic"
+                            ]
+                        }
+                    }
+                },
+                "slots": "legs"
+            },
+            "trigger": "apotheosis:equipped_item"
+        },
+        "kill_captain_cornelia": {
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "aquamirae:captain_cornelia"
+                        }
+                    }
+                ]
+            },
+            "trigger": "minecraft:player_killed_entity"
+        }
     },
-    "frame": "challenge",
-    "icon": {
-      "count": 1,
-      "id": "minecraft:end_crystal"
+    "display": {
+        "background": "apotheosis:textures/advancements/bg/apoth.png",
+        "description": {
+            "translate": "advancements.apotheosis.progression.pinnacle.desc"
+        },
+        "frame": "challenge",
+        "icon": {
+            "count": 1,
+            "id": "minecraft:end_crystal"
+        },
+        "title": {
+            "translate": "advancements.apotheosis.progression.pinnacle.title"
+        }
     },
-    "title": {
-      "translate": "advancements.apotheosis.progression.pinnacle.title"
-    }
-  },
-  "requirements": [
-    [
-      "strong_t6"
-    ]
-  ],
-  "sends_telemetry_event": true
+    "requirements": [
+        [
+            "epic_helm"
+        ],
+        [
+            "epic_chest"
+        ],
+        [
+            "epic_legs"
+        ],
+        [
+            "epic_feet"
+        ],
+        [
+            "epic_hand"
+        ],
+        [
+            "kill_captain_cornelia"
+        ]
+    ],
+    "sends_telemetry_event": true
 }
