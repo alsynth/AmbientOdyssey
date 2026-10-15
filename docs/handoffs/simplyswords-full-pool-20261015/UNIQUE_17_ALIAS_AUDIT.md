@@ -42,3 +42,6 @@ Totals: **6 obsolete aliases**, all of which duplicate a pool base item. **0 inc
 
 ## Open point for you
 These 17 were already in R4's boss unique roll: all 17 are in the shipped R4 campaign `ao_loot_policy.json` `unique_weapons` (58 entries; verified from the restored R4 ZIP). `2067e4a` keeps them in the full boss sword pool. Your instruction "do not add them to boss-drop tables" might mean that existing inclusion is fine, or that they should come out of the boss roll. **I haven't changed anything.** Please say which.
+
+## Owner decision (15 Oct, second round)
+The 17 stay in the boss roll exactly as R4 has them (all 17 are in R4's 58-entry `unique_weapons`). No removals, no new boss assignments for them, nothing added to Grand pools. No code change.
