@@ -20,7 +20,7 @@ PASS: clean compilation/build of starter 0.2.0, Sigils 0.1.1 and campaign 0.3.2 
 PASS: actual import CRC, unique archive members, 10 custom-JAR integrity, current campaign classes/policy/modifier list, 337 unique pins, SkyArena exclusion, 23 DD zones, 153 quest files, exact native config/defaultconfig pairing.
 PASS: 1021 JSON, 188 JSON5 and 289 TOML files. 24 shader preprocessor sources with JSON filenames excluded from plain JSON lint.
 PASS: two exact Bonus Chest affix-only exemptions and seven approved World Tier rarity weight edits; native gem injector untouched.
-Python suite: 98 tests, all PASS after updating obsolete historical source expectations to the approved 52-quest base and intentional Hominid exclusion.
+Python suite: 99 tests, all PASS after updating obsolete historical source expectations to the approved 52-quest base and intentional Hominid exclusion.
 Dependency metadata: 340 production JARs, no direct issues/duplicate top-level mod IDs. Some embedded/bridge dependencies and metadata coverage remain warnings. No dedicated-server compatibility claim.
 NOT RUN: R3 Minecraft launch, natural generation/fights, loot statistics, two-player Lootr, dedicated server, save/restart, ability scaling, shaders/performance. Older R1 runtime evidence does not validate this R3 package.
 
@@ -46,4 +46,6 @@ R3 audit additions: restored new-world FTB Solo Quests teamSyncEnabled=false; ad
 
 Latest integrated owner correction: all14 Grand mappings now take one selected valuable native pool from their own triggering chest table; the former8 cross-table choices are gone. Installed-source hashes and selected pool types pass, and no mapped Paxi table override was found. Preserve the5% independent chance, native contents/weights/functions, and test real Lootr behavior. See R3-RECONCILED-DRAFT-AND-PLAN-AUDIT.md, R3-RECONCILED-NATIVE-SOURCE-AUDIT.json and R3-RECONCILED-PLAN-COVERAGE.json.
 
-Additional concurrent source-only updates through4b21f0c were merged after archive creation: review-only candidate generator/ledgers, configurable native audit input and6 new synthetic tests. The new preview tool now reads the preserved historical R2 mapping, so it cannot mislabel active R3 mappings as R2. These tools/docs do not alter the packaged runtime payload; final suite98/98 PASS. Package gameplay source7ea67e7 remains the receipt basis.
+Additional concurrent source-only updates through4b21f0c were merged after archive creation: review-only candidate generator/ledgers, configurable native audit input and6 new synthetic tests. The new preview tool now reads the preserved historical R2 mapping, so it cannot mislabel active R3 mappings as R2. These tools/docs do not alter the packaged runtime payload; final suite99/99 PASS. Package gameplay source7ea67e7 remains the receipt basis.
+
+Final review-only commit d49d7bc merged;99/99 Python tests PASS. Shared branch kept intact; reconciled build saved on experimental/master-integration-r3-reconciled-20261015 to avoid concurrent upload races.
