@@ -5,11 +5,15 @@ on:
       - experimental/master-integration-20261015
     paths:
       - tools/verify_keep_kayra_native_loot.py
+      - tools/verify_r3_dungeons_arise_sources.py
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json
       - .github/workflows/ao-r3-keep-kayra-native-loot.yml
       - docs/handoffs/loot-update-20261015/chest-source-audit.json
   pull_request:
     paths:
       - tools/verify_keep_kayra_native_loot.py
+      - tools/verify_r3_dungeons_arise_sources.py
+      - docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json
       - .github/workflows/ao-r3-keep-kayra-native-loot.yml
       - docs/handoffs/loot-update-20261015/chest-source-audit.json
   workflow_dispatch:
@@ -38,10 +42,15 @@ jobs:
           python tools/verify_keep_kayra_native_loot.py \
             --jar build/native-upstream/DungeonsArise-1.21.1-2.1.68-release.jar \
             --out build/native-evidence/KEEP_KAYRA_PINNED_NATIVE_POOLS.json
+      - name: Verify all 11 owner-scoped Dungeons Arise R3 Grand candidates
+        run: |
+          python tools/verify_r3_dungeons_arise_sources.py \
+            --jar build/native-upstream/DungeonsArise-1.21.1-2.1.68-release.jar \
+            --out build/native-evidence/R3_DUNGEONS_ARISE_ELEVEN_PINNED_NATIVE_POOLS.json
       - name: Upload ONLY extracted source metadata (not licensed JAR)
         uses: actions/upload-artifact@v4
         with:
           name: ao-r3-keep-kayra-native-source-evidence
-          path: build/native-evidence/KEEP_KAYRA_PINNED_NATIVE_POOLS.json
+          path: build/native-evidence/*.json
           if-no-files-found: error
           retention-days: 30
