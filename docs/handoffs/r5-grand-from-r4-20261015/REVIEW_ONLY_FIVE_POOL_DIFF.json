@@ -111,5 +111,7 @@
     "Dedicated-server two-player Lootr, per-player roll and restart persistence",
     "Exact R4 import JAR resource-only provenance/manifest and no changes to native loot",
     "No speculative changes to T2 Scrap/Treasure, other Grand contexts or other rewards"
-  ]
+  ],
+  "source_policy_git_blob_sha1": "a16b905e449bda655402d6f11180bd36f00933a6",
+  "source_policy_file": "addons/ao-campaign/src/main/resources/ao_loot_policy.json"
 }
