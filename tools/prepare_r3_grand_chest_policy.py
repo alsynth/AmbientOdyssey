@@ -19,7 +19,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT = ROOT / 'docs/handoffs/loot-update-20261015/chest-source-audit.json'
-R2 = ROOT / 'docs/handoffs/loot-update-20261015/grand-treasure-candidates.json'
+R2 = ROOT / 'docs/handoffs/loot-update-20261015/grand-treasure-r2-historical.json'
 HASH = re.compile(r'^[0-9a-f]{64}$')
 
 def table_resource(table: str) -> str:

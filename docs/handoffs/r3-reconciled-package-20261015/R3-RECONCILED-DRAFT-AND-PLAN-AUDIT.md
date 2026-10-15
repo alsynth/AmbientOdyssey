@@ -83,8 +83,10 @@ The corrected ZIP is a complete import of the current implemented experimental v
 Source commit: 7ea67e72ba3bea0877cc1910f29335a0d82f5603.
 Full ZIP SHA256: 5debe094c047162f0b30f2dd76e2ab85201310c480b64333eca89a4f4376ac99.
 Rollback SHA256: 8b0793cd71d53099477b7cbdfd35d0f0cfe51dd62a6e8b56b32c75c6120e1d51.
-Campaign 0.3.2 clean build PASS. All 92 Python tests PASS, including newly merged regression suites. Actual R3 static validator PASS: 1021 JSON,188 JSON5,289 TOML; 337 references,10 custom JARs,23 DD zones,153 quest files. R3 runtime: NOT TESTED.
+Campaign 0.3.2 clean build PASS. All 98 Python tests PASS, including newly merged regression suites. Actual R3 static validator PASS: 1021 JSON,188 JSON5,289 TOML; 337 references,10 custom JARs,23 DD zones,153 quest files. R3 runtime: NOT TESTED.
 
 ## Final concurrent-update reconciliation
 
 Latest owner policy supersedes structure-wide best-score borrowing: select fitting valuable native pools by chest category, preferring each triggering table. R3 RECONCILED applies that approved approach with installed-source evidence. Historical R2 mappings are preserved separately; no fabricated reward catalogue or native table replacement was introduced. The alternative R2-to-R3 overlay builder and authenticated downloader were merged as tools, not mistaken for gameplay. Packaging used the existing exact-PR50 reconstruction chain and complete member-hash rollback. Earlier local preliminary R3 files are retained but superseded by Ambient-Odyssey-MASTER-INTEGRATION-R3-RECONCILED-PRIVATE-20261015.zip.
+
+Additional concurrent source-only updates through4b21f0c were merged after archive creation: review-only candidate generator/ledgers, configurable native audit input and6 new synthetic tests. The new preview tool now reads the preserved historical R2 mapping, so it cannot mislabel active R3 mappings as R2. These tools/docs do not alter the packaged runtime payload; final suite98/98 PASS. Package gameplay source7ea67e7 remains the receipt basis.

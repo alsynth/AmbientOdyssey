@@ -1,15 +1,15 @@
 C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\AmbientOdyssey\tools\audit_r3_native_reward_sources.py:8: SyntaxWarning: invalid escape sequence '\.'
   python tools/audit_r3_native_reward_sources.py --mods "C:\...\Minecraft\Instances\Ambient Odyssey\mods" --out build/r3-rewards-native-audit.json
-............................................................................................
+..................................................................................................
 ----------------------------------------------------------------------
-Ran 92 tests in 0.873s
+Ran 98 tests in 0.457s
 
 OK
 PASS profiler-only A/B variant, no other overrides or mods changed
-OUTPUT C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\tmpn9l66jqh\b.zip ee325ec12726fa715db6954966cbe90f2f73e7f72986566195a734a3c5b74f31
+OUTPUT C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\tmp2evttwmd\b.zip 1e9b145437f292054cdb3bfb454589585a6a9f778b6072c8876dc3985a55f109
 PASS profiler-only A/B variant, no other overrides or mods changed
 PASS v0.4.2 final: 329 -> 330 locked refs, exact 1 DD pin + exact 1 dungeon config, 3 compiled addons and all user-approved preexisting overrides byte-identical
 NOT RUNTIME TESTED, developer private CurseForge import only
-OUTPUT C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\tmpgr_qsf9d\330.zip sha256 3b85431723fa632db1f42c1e67a85ca55aebb97c6c687f858746caf398b4f848
+OUTPUT C:\Users\headq\Documents\Codex\2026-10-15\continue-development-of-ambient-odyssey-using\work\tmpvm5bku0c\330.zip sha256 a02966b3c1382a6342c161bcf84d50b71bc5b3b7fc681279c53ee68c7d01be55
 PASS v0.4.2 final: 329 -> 330 locked refs, exact 1 DD pin + exact 1 dungeon config, 3 compiled addons and all user-approved preexisting overrides byte-identical
 NOT RUNTIME TESTED, developer private CurseForge import only
