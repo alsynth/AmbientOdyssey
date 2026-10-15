@@ -111,9 +111,9 @@ and remove the two added lines from `removed-source-paths.json`. R4 ZIP itself i
 
 ### 5. Multiplayer (analysis, not tested)
 - Vanilla `LivingEntity.die` fires `player_killed_entity` only for the entity's kill credit (`getKillCredit()`: the last player who damaged it, within the recent-damage window).
-- **Assists and shared kills get nothing.** A player who doesn't land the killing blow doesn't get the criterion. The native dragon criterion had the same rule.
+- **Assists and shared kills get nothing.** Credit goes to the last player who damaged her within 100 ticks (5 s), not strictly the final blow. The native dragon criterion had the same rule.
 - **Compounding factor:** each horn is used up and each ship has one horn. So 5-7 players each need their own Cornelia kill, which means 5-7 horns from 5-7 pirate ships.
-- **Proposed fix (not applied):**
+- **Withdrawn (owner rule 15 Oct: credit only to the player credited with the kill; no proximity or party credit).** Never applied. Deterministic credit policy: `docs/handoffs/r5-corrections-20261015/CORNELIA_KILL_CREDIT_POLICY.md` (branch `status/r5-corrections-20261015`). Original proposal, kept for history:
   - In the campaign addon, track players who damaged Cornelia (e.g. `LivingIncomingDamageEvent`, with a minimum damage share and same dimension/range).
   - On her death, award only the Pinnacle criterion: `player.getAdvancements().award(pinnacle, "kill_captain_cornelia")` for each contributor.
   - The five gear criteria stay required per player. No `minecraft:impossible` is needed.
@@ -141,6 +141,6 @@ and remove the two added lines from `removed-source-paths.json`. R4 ZIP itself i
   - Summon and kill Cornelia, then confirm the criterion and the Pinnacle unlock.
   - Check whether a failed summon uses the horn.
   - Check the lang text shows.
-- **Multiplayer:** two-player fight, to confirm only the killer gets credit, then decide on the assist fix.
+- **Multiplayer:** two-player fight, to confirm only the credited killer gets the criterion.
 - **R5 toolchain:** it copies R4's impossible gate unchanged. To carry this override, `package_r5_grand_from_r4.py` must be allowed to replace these 2 files and add the 2 lang files. Needs your OK. Not changed.
 - **Pregen/world border:** confirm the horn supply covers 5-7 players.
