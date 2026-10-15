@@ -39,6 +39,11 @@ class NativeRewardEvidence(unittest.TestCase):
         self.assertEqual(r['static_status'],'SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED')
         self.assertTrue(r['actual_source_sha256_matches'])
         self.assertTrue(r['same_table'])
+        native=r['native_all_pools_for_human_comparison']
+        self.assertEqual(len(native),1)
+        self.assertEqual(native[0]['native_rolls'],1)
+        self.assertEqual(native[0]['entries'][0]['name'],'minecraft:diamond')
+        self.assertEqual(native[0]['entries'][0]['weight'],2)
 
     def test_cross_table_is_blocked_pending_owner_review(self):
         index,_=audit.load_jar_index(self.mods)

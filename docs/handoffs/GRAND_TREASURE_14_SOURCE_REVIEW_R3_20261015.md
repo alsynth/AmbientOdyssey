@@ -52,8 +52,33 @@ Until those artifacts are audited, **do not claim all 14 are verified or expand 
 The owner agrees to replace the old **structure-wide highest-scoring source pool** selection. **Choose a fitting and valuable existing native loot pool by chest category**, strongly preferring the triggering chest table's own selected valuable pool where it is appropriate. A cross-table source in the same dungeon remains possible *only with explicit supporting evidence* of superior category fit. Keep Kayra library treasure must not borrow garden-normal merely because the algorithm assigned more points to a few vanilla items. Preserve native contents; one bonus draw at 5%; retain unrelated native mod loot, Apotheosis affixes/gems, and Lootr independence. **This is an R3 owner decision; the currently compiled R2 JAR/policy is unchanged.**
 
 The source audit already contains alternative selected pools for the eight borrowed-table mappings, documented in `docs/handoffs/loot-update-20261015/R3_SAME_TABLE_GRAND_ALTERNATIVES_UNAPPROVED.json`. The **approach** is approved, not these exact indices or contents: verify item weights/functions/conditions, SHA256, Paxi effective precedence and that each extra roll comes from the verified suitable native pool before changing the R3 runtime policy.
+
+## R3 implementation preparation: reproducible 14-context preview (15 Oct 2026)
+
+A **non-runtime R3 preview** is now committed:
+- `docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json` — 14 trigger→own-native-table candidates, retaining each source's audited pool index/hash; unlike R2's policy, **none borrows a sibling chest's pool automatically**.
+- `docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_REVIEW_LEDGER.json` — one hold/review row per candidate, recording whether the old R2 source changed. Eight of fourteen changed. All fourteen remain **NEEDS_INSTALLED_JAR_REVALIDATION / NEEDS_MANUAL_REVIEW**.
+- `tools/prepare_r3_grand_chest_policy.py` — reproducible preview generator from historical NBT + native chest audit. This is intentionally **not** wired to `tools/compile_additive_loot_policy.py` or the currently packaged campaign JAR, because exact source checks and per-category choices have not been finished.
+
+To reproduce a fresh untracked preview without touching the live source policy:
+
+```powershell
+python tools/prepare_r3_grand_chest_policy.py --out build/r3-grand-candidates.json --review build/r3-grand-candidate-review.json
+```
+
+To check the actual installed native JARs against those proposed bonus sources:
+
+```powershell
+python tools/audit_r3_native_reward_sources.py --mods "C:\Path\To\AO-Profile\mods" --paxi "C:\Path\To\AO-Profile\config\paxi\datapacks" --candidates docs/handoffs/loot-update-20261015/R3_PER_CHEST_GRAND_CANDIDATES_REVIEW_ONLY.json --out build/r3-grand-native-source-check.json
+```
+
+The improved native JAR auditor now records **ALL native pools for each candidate table**, including individual item IDs, relative weights, original roll counts, conditions, function definitions and nested/composite-entry flags. The intent is a real comparison of library treasure versus garden normal, **not** blindly taking a maximum score. Output is static JAR evidence, not a verified item-registry/runtime-loot declaration.
+
+**Promotion gate:** Human review each selected category's relative reward pool; verify hash, effective datapack order and that no unique/gated rewards can be duplicated; run Lootr two-player and unchanged-native-loot tests; only then opt in to that specific R3 candidate by regenerating the campaign policy and recompiling `ao-campaign`. Leave failed cases disabled/held instead of shipping heuristic guesses. Keep all original R2 mappings/archives unchanged.
+
 ## Implemented continuation — 15 October 2026
 
 The concurrent integration-branch updates through `35ec28f` and handoff update `2605284` were merged locally. The installed-source generator was rerun after removing structure-wide winner reassignment. All 14 resulting candidates now use their own triggering native chest table; the eight former borrowed-table choices were replaced. The installed JAR audit reports 14/14 hash-checked direct-table contexts, zero cross-table contexts, zero static blockers and no matching Paxi overrides. Original pool entries/weights/functions remain native; the bonus still takes one draw at 5%. Native table resources themselves are not replaced. The historical R2 mappings are preserved in `grand-treasure-r2-historical.json` and R2 release remains immutable.
 
 These mappings are compiled into campaign 0.3.2 in the R3 RECONCILED import, together with 13 curated Regalia and restored Solo Quests new-world default. Prior statements above that the runtime policy has not been rebuilt describe historical R2, not this reconciled candidate. Exact native evidence: accompanying `R3-RECONCILED-NATIVE-SOURCE-AUDIT.json`; native Lootr/registry/loot incidence and player gameplay acceptance remain NOT TESTED. The score still selects a conservative valuable simple pool within each chest's own table; this does not establish that every native reward type is covered or owner-accepted.
+
