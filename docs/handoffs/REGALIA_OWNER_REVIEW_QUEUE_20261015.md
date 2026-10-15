@@ -60,3 +60,19 @@ These are **not automatically banned or late-tier**. Decide case-by-case between
 3. After source audit, show **only genuinely uncertain** entries to owner; allocate remainder to broad low-tier pool, with targeted exclusions.
 
 No complete Enigmatic recipe extraction or runtime item tests have occurred in this writing session; explicit craftability claims remain unverified.
+
+## Binding owner decisions — first C4 batch (15 October 2026)
+
+These overrides apply **only to the new guaranteed boss Regalia bonus pool**; existing native crafting, loot and acquisition stay unchanged. Do not implement in executable loot tables until integration approval. Earlier catalogue C4 flags are risk-review labels, **not** minimum allowed tiers.
+
+| Item | Approved new boss bonus reward eligibility |
+|---|---|
+| Qym Head | **Native only** |
+| Tempest Trident | **T2–T5** |
+| Cecilia's Blessing | **T2–T5** |
+| Turnback Cloak | **T2–T5** |
+| Abyssal Tiara | **T2–T5** |
+| Cursium Chestplate | **Native only** |
+| The Infinitum | **T6–T7** |
+
+Native only means excluded from the additive generic boss Regalia roll, not removed from its native drops/crafting. T2–T5 means eligible in the broad early pool even where original power assessment flagged C4. T6–T7 for The Infinitum is a new boss reward band, with native acquisition intact.
