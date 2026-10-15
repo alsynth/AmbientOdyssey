@@ -30,3 +30,7 @@
 ## 12 October 2026 — reporting preference
 
 Added the user's durable short, simple reporting preference to root AGENTS.md and Agent Workflow. Documentation only; gameplay/build inputs unchanged. Latest inspected development heads are v0.4.6 gem verification (`e98fd41`) and v0.4.7 pregeneration planning (`3f8171c`); these remain separate from main's rollback baseline. Verified documentation preservation and GitHub readback; gameplay tests do not apply to this instruction-only change.
+
+## 15 October 2026 — repository hygiene: untrack third-party JARs
+
+Branch `hygiene/untrack-jars`: removed 333 tracked third-party mod JARs from the index (files stay on disk; history unchanged) and added `*.jar` to `.gitignore`. Only the 10 AO custom JARs listed in the R4 receipt (`docs/handoffs/r4-package-20261015/package-receipt.json` on the R4 branches) are un-ignored. `.gitattributes` now defaults text to LF; existing byte-exact overrides/CSV rules unchanged. Repository hygiene only; no gameplay, manifest or build input changes. Not runtime tested (not applicable).
