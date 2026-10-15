@@ -2,7 +2,7 @@
 
 **Exploration-first Minecraft 1.21.1 / NeoForge 21.1.252 RPG modpack**, built for 5–7 friends. This repository is the **editable development source**, not a pretested multiplayer release.
 
-> **Active development handoff:** v0.4h Q1 + FTB Field Manual · **331 pinned CurseForge mod projects** · **50 Questlog adventure quests in 13 chapters** · **32 educational FTB pages in 3 chapters**. The latest content/packaging run [38080830259](https://github.com/alsynth/AmbientOdyssey/actions/runs/38080830259) passed static checks; full Minecraft client, worldgen gameplay, Questlog interface and multiplayer remain **NOT TESTED**. The source of those built ZIPs is commit `9a5db8ea0ac16b8b55a6929e6819e6b8479178a0` on `experimental/v0.4h-q1-ftb-field-manual-20261010`.
+> **Latest integration (15 Oct 2026):** R4 PRIVATE experimental import (337 CurseForge references, 10 bundled custom JARs, 30 scoped Dungeon Difficulty zones, 153 Questlog quests, campaign 0.3.2) on draft PR #64. Static and controlled native-engine checks passed; dedicated multiplayer, Lootr, natural boss fights/worldgen and owner acceptance remain open. Newer PR64 R5 Grand work is review/test tooling **not a released R5 ZIP**. **[START HERE — canonical Claude master handoff](docs/handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md)** and [current implementation ledger](docs/status/IMPLEMENTATION_PROGRESS.md). The older v0.4h/Q1 and 331-ref pages are historical evidence, not the latest import.
 
 ## Start here
 
