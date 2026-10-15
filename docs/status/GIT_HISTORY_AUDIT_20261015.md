@@ -28,4 +28,4 @@
 2. **Rewrite `main`:** drop the profile folder's `mods/` (and optionally the pack ZIPs) from `7177883` with `git filter-repo`, then force-push `main` and `hygiene/untrack-jars`. Only those two branches change; PR64 and the others are unaffected. GitHub may keep the old objects until support purges them, and every existing clone must re-clone or hard-reset.
 3. **Option 2 + move the profile copy out:** also remove the whole `... TEST (1)/` folder from tracking. First check that nothing in its 17 configs is needed elsewhere.
 
-Recommendation: option 2, done together with merging PR #65, because only two branches contain the commit. It needs your explicit OK for the force-push.
+**Owner decision (15 Oct):** no force-push, no history filtering against `main`, nothing destructive. Options 2 and 3 are **not pursued**; this audit is read-only information. The earlier recommendation of option 2 is withdrawn (nothing was ever rewritten).
