@@ -34,8 +34,20 @@ class PerChestGrandCandidates(unittest.TestCase):
         row=next(r for r in candidate if r['table'].endswith('/keep_kayra_library_treasure'))
         self.assertEqual(row['source_resource'],
                          'data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json')
-        self.assertEqual(row['pool_index'],2)
+        self.assertEqual(row['pool_index'],1)
         self.assertEqual(row['tier'],6)
+
+    def test_source_verified_treasure_categories_and_garden_hold(self):
+        candidate,review=tool.produce(self.source,self.r2)
+        picked={r['table'].split('/')[-1]:r for r in candidate
+                if r['structure']=='dungeons_arise:keep_kayra'}
+        self.assertEqual(picked['keep_kayra_library_treasure']['pool_index'],1)
+        self.assertEqual(picked['keep_kayra_treasure']['pool_index'],1)
+        self.assertEqual(picked['keep_kayra_garden_normal']['pool_index'],1)
+        self.assertNotIn('keep_kayra_garden_treasure',picked)
+        grounded=[r for r in review if r['pool_selection_basis']=='PINNED_NATIVE_JAR_CATEGORY_TREASURE_CANDIDATE']
+        self.assertEqual(len(grounded),2)
+        self.assertTrue(all(r['best_pool_category_approval']=='NEEDS_MANUAL_REVIEW' for r in grounded))
 
     def test_committed_review_only_preview_matches_generated_candidate(self):
         expected,_=tool.produce(self.source,self.r2)
