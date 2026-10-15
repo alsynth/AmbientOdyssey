@@ -64,6 +64,10 @@ class NativeRewardEvidence(unittest.TestCase):
         r=audit.grand_check([self.row()],self.mods,index,self.base/'config/paxi/datapacks')[0]
         self.assertIn('PAXI_TABLE_OVERRIDE_PRECEDENCE_REQUIRES_RUNTIME_CONFIRMATION',r['blockers'])
 
+    def test_missing_paxi_directory_is_a_hard_error(self):
+        with self.assertRaisesRegex(ValueError,'Paxi datapacks directory does not exist'):
+            audit.audit(self.mods,self.base/'config/paxi/datapacks/MISSING')
+
     def test_catalogue_no_auto_approval_and_native_exclusions(self):
         index,modids=audit.load_jar_index(self.mods)
         rows=audit.regalia_check(self.mods,index,modids)
