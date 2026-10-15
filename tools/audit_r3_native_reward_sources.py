@@ -60,6 +60,24 @@ def local_overlays(root,resources):
                     mapping[key].append(str(p))
     return dict(mapping)
 
+def summarize_native_pool(pool,index):
+    # Preserve actual native entry weights and function IDs for human review;
+    # numerical score heuristics do not establish the best room-specific pool.
+    return {
+        'pool_index':index,
+        'native_rolls':pool.get('rolls'),
+        'native_bonus_rolls':pool.get('bonus_rolls'),
+        'pool_conditions':pool.get('conditions',[]),
+        'pool_functions':pool.get('functions',[]),
+        'entries':[{
+            'type':e.get('type'),'name':e.get('name'),
+            'weight':e.get('weight',1),'quality':e.get('quality',0),
+            'functions':e.get('functions',[]),
+            'conditions':e.get('conditions',[]),
+            'has_children':bool(e.get('children')),
+        } for e in pool.get('entries',[])],
+    }
+
 def grand_check(rows,mods,index,paxi=None):
     required=set()
     for r in rows:
@@ -82,7 +100,7 @@ def grand_check(rows,mods,index,paxi=None):
             blockers.append('SOURCE_MISSING_OR_AMBIGUOUS_JARS')
         if overlays.get(source) or overlays.get(trigger):
             blockers.append('PAXI_TABLE_OVERRIDE_PRECEDENCE_REQUIRES_RUNTIME_CONFIRMATION')
-        pool=None;hash_valid=False;properties={}
+        pool=None;hash_valid=False;properties={};all_pool_summaries=[]
         if len(owner_files)==1:
             with zipfile.ZipFile(mods/owner_files[0]) as z:
                 data=z.read(source)
@@ -90,6 +108,7 @@ def grand_check(rows,mods,index,paxi=None):
             if not hash_valid:blockers.append('SOURCE_SHA256_CHANGED')
             try:
                 obj=json.loads(data)
+                all_pool_summaries=[summarize_native_pool(p,j) for j,p in enumerate(obj['pools'])]
                 i=r['pool_index']
                 if not isinstance(i,int) or i<0 or i>=len(obj['pools']):
                     blockers.append('POOL_INDEX_OUT_OF_RANGE')
@@ -124,6 +143,7 @@ def grand_check(rows,mods,index,paxi=None):
             'trigger_jar_candidates':resource_owners.get(trigger,[]),
             'expected_source_sha256':r['source_sha256'],'actual_source_sha256_matches':hash_valid,
             'pool_index':r['pool_index'],'source_pool_details':properties,
+            'native_all_pools_for_human_comparison':all_pool_summaries,
             'potential_paxi_overrides':sorted(set(overlays.get(trigger,[])+overlays.get(source,[]))),
             'static_status':'BLOCKED' if blockers else 'SOURCE_STATIC_VERIFIED_NOT_RUNTIME_APPROVED',
             'blockers':blockers,
