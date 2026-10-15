@@ -11,7 +11,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 OVERRIDE=ROOT/"release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions"
-NAMES=("affix_conversion","affix_loot_injection","gem_loot_injection")
+NAMES=("affix_conversion","affix_loot_injection")
 BONUS={"chance":0.0,"pattern":{"domain":"minecraft","path_regex":"chests/spawn_bonus_chest"}}
 
 def validate(jar):
@@ -26,7 +26,8 @@ def validate(jar):
                 raise ValueError(f"Changed native modifier type/conditions: {name}")
             if staged["entries"]!=[BONUS,*native["entries"]]:
                 raise ValueError(f"Changed native non-Bonus loot entries for {name}; reject release")
-    print("PASS: all 3 native Apotheosis 8.9.0 modifiers differ ONLY by zero-chance Bonus Chest first-match override")
+    assert not (OVERRIDE/'data/apotheosis/loot_modifiers/gem_loot_injection.json').exists(), 'Native gems must remain untouched'
+    print("PASS: 2 exact Bonus Chest affix-only exemptions; no native gem modifier override")
 
 def main():
     ap=argparse.ArgumentParser()

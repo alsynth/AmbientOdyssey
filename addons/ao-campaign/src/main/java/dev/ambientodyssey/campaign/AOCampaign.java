@@ -46,7 +46,7 @@ public final class AOCampaign {
         Map.entry("irons_spellbooks:fire_boss", 9), Map.entry("cataclysm:scylla", 9));
     private static final DeferredRegister<MapCodec<? extends IGlobalLootModifier>> LOOT =
         DeferredRegister.create(NeoForgeRegistries.Keys.GLOBAL_LOOT_MODIFIER_SERIALIZERS, "ao_campaign");
-    static { LOOT.register("rage_glove_gate", () -> RageGloveGate.CODEC); }
+    static { LOOT.register("rage_glove_gate", () -> RageGloveGate.CODEC); LOOT.register("grand_treasure", () -> GrandTreasure.CODEC); }
 
     public AOCampaign(IEventBus bus) {
         LOOT.register(bus);
@@ -54,6 +54,7 @@ public final class AOCampaign {
         NeoForge.EVENT_BUS.addListener(this::death);
         NeoForge.EVENT_BUS.addListener(this::onClone);
         NeoForge.EVENT_BUS.addListener(this::commands);
+        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, new BossRewards()::drops);
     }
     private void effect(MobEffectEvent.Applicable event) {
         var id = BuiltInRegistries.MOB_EFFECT.getKey(event.getEffectInstance().getEffect().value());
@@ -78,23 +79,7 @@ public final class AOCampaign {
             state.putBoolean("tier_" + tier, true);
             player.getPersistentData().put(STATE, state);
             grant(player, "ao_campaign:milestones/tier_" + tier);
-            if (tier == 6) {
-                // Grant access, never force the player's active difficulty higher.
-                var advancement = player.server.getAdvancements().get(WorldTier.PINNACLE.getUnlockAdvancement());
-                if (advancement != null) for (String criterion : player.getAdvancements().getOrStartProgress(advancement).getRemainingCriteria())
-                    player.getAdvancements().award(advancement, criterion);
-            }
-            String grade = tier == 6 ? "artifact" : tier == 7 ? "heirloom" : tier == 8 ? "esoteric" : null;
-            // One gem per player per grade milestone, not one for every farmed kill.
-            if (grade != null && !state.getBoolean(grade + "_reward")) {
-                ItemStack gem = BossGems.create(player, grade);
-                if (!gem.isEmpty()) {
-                    if (!player.addItem(gem)) player.drop(gem, false);
-                    state.putBoolean(grade + "_reward", true);
-                    player.getPersistentData().put(STATE, state);
-                    grant(player, "ao_campaign:milestones/" + grade + "_reward");
-                } else player.sendSystemMessage(Component.literal("The " + grade + " reward could not resolve. It remains unclaimed."));
-            }
+            // Latest owner decision: native gem drops/crafting and native World Tier unlocks remain authoritative.
             if (id.equals("irons_spellbooks:fire_boss")) grant(player, "ao_campaign:milestones/tyros");
             if (id.equals("cataclysm:scylla")) grant(player, "ao_campaign:milestones/scylla");
             if (id.equals("bosses_of_mass_destruction:obsidilith")) grant(player, "ao_campaign:milestones/obsidilith");
