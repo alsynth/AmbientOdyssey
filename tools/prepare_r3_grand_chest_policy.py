@@ -20,7 +20,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT = ROOT / 'docs/handoffs/loot-update-20261015/chest-source-audit.json'
 R2 = ROOT / 'docs/handoffs/loot-update-20261015/grand-treasure-candidates.json'
-HASH = re.compile(r'^[0-9a-f]{64}
+HASH = re.compile(r'^[0-9a-f]{64}$')
+KAYRA_EVIDENCE = ROOT/'docs/handoffs/loot-update-20261015/KEEP_KAYRA_PINNED_SOURCE_POOL_EVIDENCE_20261015.json'
+CATEGORY_CHOICES = ROOT/'docs/handoffs/loot-update-20261015/R3_KEEP_KAYRA_SOURCE_GROUNDED_CATEGORY_CHOICES.json'
 
 def table_resource(table: str) -> str:
     namespace, path = table.split(':', 1)
