@@ -1,0 +1,42 @@
+name: AO R3 Keep Kayra Pinned Native Loot Audit
+on:
+  push:
+    branches:
+      - experimental/master-integration-20261015
+    paths:
+      - tools/verify_keep_kayra_native_loot.py
+      - .github/workflows/ao-r3-keep-kayra-native-loot.yml
+      - docs/handoffs/loot-update-20261015/chest-source-audit.json
+  workflow_dispatch:
+
+jobs:
+  read-only-native-loot-inspection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Download EXACT published NeoForge 2.1.68 JAR, no execution
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p build/native-upstream build/native-evidence
+          curl --fail --show-error --location --retry 3 --connect-timeout 20 --max-time 180 \
+            'https://cdn.modrinth.com/data/8DfbfASn/versions/XIRJSFQ0/DungeonsArise-1.21.1-2.1.68-release.jar' \
+            --output build/native-upstream/DungeonsArise-1.21.1-2.1.68-release.jar
+          test -s build/native-upstream/DungeonsArise-1.21.1-2.1.68-release.jar
+          sha256sum build/native-upstream/DungeonsArise-1.21.1-2.1.68-release.jar
+      - name: Verify native pool hashes and inspect real Keep Kayra tables
+        run: |
+          python tools/verify_keep_kayra_native_loot.py \
+            --jar build/native-upstream/DungeonsArise-1.21.1-2.1.68-release.jar \
+            --out build/native-evidence/KEEP_KAYRA_PINNED_NATIVE_POOLS.json
+      - name: Upload ONLY extracted source metadata (not licensed JAR)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ao-r3-keep-kayra-native-source-evidence
+          path: build/native-evidence/KEEP_KAYRA_PINNED_NATIVE_POOLS.json
+          if-no-files-found: error
+          retention-days: 30
