@@ -64,6 +64,8 @@ class NativeRewardEvidence(unittest.TestCase):
         rows=audit.regalia_check(self.mods,index,modids)
         self.assertGreater(len(rows),100)
         self.assertTrue(all(r['registered_item_verified'] is False for r in rows))
+        self.assertTrue(any(r['currently_in_r2_reward_pool'] for r in rows))
+        self.assertTrue(any(r['known_combat_risk_band'].startswith('C?') for r in rows))
         self.assertTrue(any(r['owner_disposition']=='NATIVE_ONLY_NO_NEW_REGALIA_REWARD' for r in rows
                             if r['id'].startswith('enigmaticlegacyplus:')))
         self.assertTrue(all(r['owner_disposition']!='ELIGIBILITY_APPROVED' for r in rows))
