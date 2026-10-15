@@ -84,7 +84,7 @@ class ReviewedR3Grand(unittest.TestCase):
         for row in self.review['decisions']:
             self.assertFalse(row['approved_for_experimental_build'])
             self.assertFalse(row['reviewed_category_fit'])
-        with self.assertRaisesRegex(ValueError,'Manual source/category approval incomplete'):
+        with self.assertRaisesRegex(ValueError,'explicitly marked REVIEWED_FOR_EXPERIMENTAL_BUILD'):
             self.stage(self.review)
 
     def test_reject_unverified_native_jar_hash(self):
