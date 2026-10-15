@@ -8,6 +8,8 @@ on:
       - tests/test_preview_r5_grand_from_r4.py
       - tools/patch_r5_grand_from_r4.py
       - tests/test_patch_r5_grand_from_r4.py
+      - tools/package_r5_grand_from_r4.py
+      - tests/test_package_r5_grand_from_r4.py
       - docs/handoffs/r5-grand-from-r4-20261015/REVIEW_ONLY_FIVE_POOL_DIFF.json
       - addons/ao-campaign/src/main/resources/ao_loot_policy.json
       - .github/workflows/ao-r4-r5-grand-delta.yml
@@ -17,6 +19,8 @@ on:
       - tests/test_preview_r5_grand_from_r4.py
       - tools/patch_r5_grand_from_r4.py
       - tests/test_patch_r5_grand_from_r4.py
+      - tools/package_r5_grand_from_r4.py
+      - tests/test_package_r5_grand_from_r4.py
       - docs/handoffs/r5-grand-from-r4-20261015/REVIEW_ONLY_FIVE_POOL_DIFF.json
       - addons/ao-campaign/src/main/resources/ao_loot_policy.json
       - .github/workflows/ao-r4-r5-grand-delta.yml
@@ -32,9 +36,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Confirm exact R4 baseline and five proposed pool changes
-        run: python -m unittest -v tests/test_preview_r5_grand_from_r4.py tests/test_patch_r5_grand_from_r4.py
+        run: python -m unittest -v tests/test_preview_r5_grand_from_r4.py tests/test_patch_r5_grand_from_r4.py tests/test_package_r5_grand_from_r4.py
       - name: Compile-check preview, JAR patcher, and regression tests
-        run: python -m py_compile tools/preview_r5_grand_from_r4.py tools/patch_r5_grand_from_r4.py tests/test_preview_r5_grand_from_r4.py tests/test_patch_r5_grand_from_r4.py
+        run: python -m py_compile tools/preview_r5_grand_from_r4.py tools/patch_r5_grand_from_r4.py tools/package_r5_grand_from_r4.py tests/test_preview_r5_grand_from_r4.py tests/test_patch_r5_grand_from_r4.py tests/test_package_r5_grand_from_r4.py
       - name: Produce isolated review-only preview and inspect receipt
         run: |
           python tools/preview_r5_grand_from_r4.py --out build/r5-grand/ao_loot_policy.REVIEW_ONLY.json
