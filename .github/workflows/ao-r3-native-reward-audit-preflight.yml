@@ -6,11 +6,15 @@ on:
     paths:
       - tools/audit_r3_native_reward_sources.py
       - tests/test_audit_r3_native_reward_sources.py
+      - tools/audit_additive_loot_sources.py
+      - tests/test_grand_treasure_chest_category_policy.py
       - .github/workflows/ao-r3-native-reward-audit-preflight.yml
   pull_request:
     paths:
       - tools/audit_r3_native_reward_sources.py
       - tests/test_audit_r3_native_reward_sources.py
+      - tools/audit_additive_loot_sources.py
+      - tests/test_grand_treasure_chest_category_policy.py
   workflow_dispatch:
 
 jobs:
@@ -23,6 +27,6 @@ jobs:
         with:
           python-version: '3.11'
       - name: Check syntax
-        run: python -m py_compile tools/audit_r3_native_reward_sources.py tests/test_audit_r3_native_reward_sources.py
+        run: python -m py_compile tools/audit_r3_native_reward_sources.py tests/test_audit_r3_native_reward_sources.py tools/audit_additive_loot_sources.py tests/test_grand_treasure_chest_category_policy.py
       - name: Run synthetic local-JAR source audits
-        run: python -m unittest -v tests/test_audit_r3_native_reward_sources.py
+        run: python -m unittest -v tests/test_audit_r3_native_reward_sources.py tests/test_grand_treasure_chest_category_policy.py
