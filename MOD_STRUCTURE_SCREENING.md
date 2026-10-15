@@ -44,7 +44,7 @@ YUNG's Better End Island changes End generation through EndDragonFight/spike/gat
 |---|---|---|
 | YUNG's Extras | 1015146 / 5812546 | `YungsExtras-1.21.1-NeoForge-5.1.1.jar` |
 | YUNG's Bridges | 1015149 / 5812553 | `YungsBridges-1.21.1-NeoForge-5.1.1.jar` |
-| Structory: Towers | 783522 / 8396885 | `Structory_Towers_26.2_v1.0.17.jar` |
+| Structory: Towers | 783522 / 7078283 | `Structory_Towers_1.21.x_v1.0.14.jar` (v1.0.17 / 8396885 crashed on startup: NeoForge "Missing ModLoader") |
 | Archaion | 1620396 / 8983496 | `archaion-1.21.1-1.4.4.jar` |
 | Explorify | 698309 / 8082824 | `Explorify v1.6.5.mod.jar` |
 | Additional Structures | 297680 / 6584803 | `AdditionalStructures-1.21-(v.6.3.2-NEO).jar` |

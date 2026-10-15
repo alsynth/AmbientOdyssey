@@ -52,15 +52,16 @@
       "enabled": true,
       "binary_audited": false,
       "dependencies_verified": false,
-      "status": "USER_RUNTIME_LOADED_BINARY_SHA_PENDING",
-      "special_requirement": "v1.0.17 rejected by NeoForge; user replaced with v1.0.14 and entered Overworld/Nether/End. Exact replacement JAR hash and complete clean-install QA pending.",
-      "sha256_scope": "Only historic invalid v1.0.17 file was binary audited; replacement hash not verified",
+      "status": "USER_RUNTIME_LOADED",
+      "special_requirement": "v1.0.17 (CF 8396885) crashed on startup: NeoForge 21.1.252 InvalidModFileException Missing ModLoader (9 Oct 2026); replaced by v1.0.14. User entered Overworld/Nether/End on v1.0.14. Structure content/dependency audit and clean-install QA pending.",
+      "sha256_scope": "CurseForge original v1.0.14: installed SHA-1 equals CurseForge hash and bytes equal CDN download (15 Oct 2026)",
       "historic_invalid_file": {
         "fileID": 8396885,
         "filename": "Structory_Towers_26.2_v1.0.17.jar",
         "sha256": "226d8cb187e0d4fb75571db017c0abb26176aec16586c337a1b5620f3805a372",
         "runtime_failure": "NeoForge 21.1.252 Missing ModLoader — 9 Oct 2026"
-      }
+      },
+      "sha256": "4f301ec8c865428ef2e332a76c14cfbf7f78e1a39f4a6032c0dae79c660fcc1f"
     },
     {
       "name": "Archaion",
