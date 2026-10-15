@@ -39,7 +39,7 @@ def build(base,output):
     for rel in paths:payload['overrides/'+rel]=(ROOT/'release_030/overrides'/rel).read_bytes()
     for rel in json.loads((report_root/'removed-source-paths.json').read_text()):payload.pop('overrides/'+rel,None)
     manifest=json.loads(payload['manifest.json']);manifest['files'],removed=omit_demis_sky_arena(manifest['files']);assert removed==1
-    manifest['name']='Ambient Odyssey - Master Integration R2 ALL-DECIDED PRIVATE UNTESTED'
+    manifest['name']='Ambient Odyssey - Master Integration R2 PRIVATE UNTESTED'
     manifest['version']='0.5.2-master-integration-r2-20261015'
     payload['manifest.json']=(json.dumps(manifest,indent=2)+'\n').encode()
     # Correct the runtime inventory as well as the importer manifest.
@@ -58,11 +58,12 @@ def build(base,output):
       'Cornelia combat has no verified native config and remains BLOCKED, no competing scaler.\n'
       'Rage Glove experimental gate disabled; native acquisition retained pending owner selection.\n'
       'R2 (UNTESTED): campaign 0.3.0 adds per-kill T2-T9 boss bonuses (1 affixed item, 1 Regalia, 1 Simply Swords unique) plus T6-T8 rare extras.\n'
-      'R2 (UNTESTED): Grand Treasure 5% single native-pool append on 14 audited T3+ chest contexts. T2 Scrap/Treasure boost NOT included (amounts unapproved).\n'
+      'R2 (UNTESTED): Grand Treasure 5% single native-pool append on 14 source-derived T3+ chest candidates; best-pool review pending. T2 Scrap/Treasure boost NOT included (amounts unapproved).\n'
       'R2: native Apotheosis gems/crafting restored; bespoke gem grants, Pinnacle auto-unlock and Bonus Chest gem suppression removed.\n'
       'Preserves PR51 starter, trade and ring integrations, Sigils and world-tier rarity candidate.\n'
       'Mastery retains campaign gates; natural fights, Lootr two-player rolls and pregen remain manual.\n'
       'This ZIP is not a worldgen freeze or live install. See supplied verification and test guide.\n')
+    notes += 'Coverage limits: 32 mapped boss IDs and 9 curated Regalia IDs; broader approved integration remains incomplete.\n'
     payload['overrides/AO_TEST_NOTES/MASTER_INTEGRATION.txt']=notes.encode()
     payload['overrides/AO_TEST_NOTES/NATIVE_BALANCE_LEDGER.json']=(report_root/'native-balance-ledger.json').read_bytes()
     # Package rollback is byte-exact for every replaced/removed payload, never a full-version overwrite.

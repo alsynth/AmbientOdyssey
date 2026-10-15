@@ -18,4 +18,4 @@ run(sys.executable,'-m','unittest','discover','tests')
 sys.path.insert(0,str(ROOT/'tools'))
 import package_master_integration as pm
 pm.build(a.base,a.out)
-run(sys.executable,'tools/validate_master_integration.py',a.out)
+run(sys.executable,'tools/validate_master_integration.py',a.out,'--report',a.out+'.static.json')
