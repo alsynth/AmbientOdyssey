@@ -88,8 +88,7 @@ def build(base_zip, addon_jar, output_zip, expected_sha=BASE_SHA256):
     exemptions = ROOT / "release_030/overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions"
     exemptions_root = "overrides/config/paxi/datapacks/ao_starter_apotheosis_exemptions/"
     for subpath in ("pack.mcmeta", "data/apotheosis/loot_modifiers/affix_conversion.json",
-                    "data/apotheosis/loot_modifiers/affix_loot_injection.json",
-                    "data/apotheosis/loot_modifiers/gem_loot_injection.json"):
+                    "data/apotheosis/loot_modifiers/affix_loot_injection.json"):
         data = (exemptions / subpath).read_bytes()
         parsed = json.loads(data)
         if subpath != "pack.mcmeta":

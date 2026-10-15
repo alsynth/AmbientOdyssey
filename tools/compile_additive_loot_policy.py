@@ -11,8 +11,16 @@ def compile_policy():
   if r['entity_id'].startswith(('iceandfire:fire_dragon','iceandfire:ice_dragon','iceandfire:lightning_dragon','eternal_starlight:')):continue
   bosses[r['entity_id']]=r['current_category_tier']
  bosses.update({'bosses_of_mass_destruction:lich':5,'bosses_of_mass_destruction:void_blossom':5,'bosses_of_mass_destruction:gauntlet':5,'twilightforest:hydra':4})
- unique=json.loads((DOC/'simplyswords-native-uniques.json').read_text())['values']
- data={'bosses':bosses,'regalia':regalia,'unique_weapons':sorted(set(unique)),
+ raw=json.loads((DOC/'simplyswords-native-uniques.json').read_text())['values']
+ # Tag records may be plain strings or {"id":..., "required":bool}. Preserve optional semantics.
+ unique=[];optional=[]
+ for e in raw:
+  if isinstance(e,str):unique.append(e)
+  elif isinstance(e,dict) and 'id' in e:
+   unique.append(e['id'])
+   if e.get('required',True) is False:optional.append(e['id'])
+  else:raise ValueError('Unrecognised unique tag record: %r'%(e,))
+ data={'bosses':bosses,'regalia':regalia,'unique_weapons':sorted(set(unique)),'unique_weapons_optional':sorted(set(optional)),
    'rare_affix_rates':{'6':{'ancient':.20,'artifact':.02},'7':{'ancient':.25,'artifact':.08,'heirloom':.05},'8':{'ancient':.30,'artifact':.15,'heirloom':.08,'esoteric':.05}},
    'grand_treasure':json.loads((DOC/'grand-treasure-candidates.json').read_text()),
    'native_gems':'UNCHANGED; no AO gem rewards or World Tier unlock overrides',

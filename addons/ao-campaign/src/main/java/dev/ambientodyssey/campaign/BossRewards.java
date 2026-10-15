@@ -27,13 +27,21 @@ public final class BossRewards {
    return JsonParser.parseReader(new InputStreamReader(in,StandardCharsets.UTF_8)).getAsJsonObject();
   }catch(java.io.IOException e){throw new IllegalStateException(e);}
  }
- public static Integer tier(String id){var v=POLICY.getAsJsonObject("bosses").get(id);return v==null?null:v.getAsInt();}
+ public static Integer tier(String id){
+  var bosses=POLICY.getAsJsonObject("bosses");var v=bosses.get(id);
+  // Remnant bosses exist under legacy holder and platform namespaces; accept both, as AOCampaign does.
+  if(v==null&&id.startsWith("remnant_bosses:"))v=bosses.get("remnants:"+id.substring(id.indexOf(':')+1));
+  return v==null?null:v.getAsInt();
+ }
+ private static final Set<String> WARNED=new HashSet<>();
+ private static void warnOnce(String key,String message,Object... args){if(WARNED.add(key))LOG.warn(message,args);}
  public static List<ResourceLocation> regaliaIds(){
   var ids=new ArrayList<ResourceLocation>();
   for(var v:POLICY.getAsJsonArray("regalia")){
    var id=ResourceLocation.parse(v.getAsString());
    if(Set.of("enigmaticlegacy","enigmaticlegacyplus","pasterdream","neopasterdream","simplyswords").contains(id.getNamespace()))continue;
    if(BuiltInRegistries.ITEM.containsKey(id)&&BuiltInRegistries.ITEM.get(id)!=Items.AIR)ids.add(id);
+   else warnOnce("regalia:"+id,"AO_REGALIA_SKIPPED: {} is not a registered item",id);
   }
   return ids;
  }
@@ -42,7 +50,9 @@ public final class BossRewards {
   var tag=net.minecraft.tags.TagKey.create(net.minecraft.core.registries.Registries.ITEM,ResourceLocation.parse("simplyswords:uniques"));
   for(var v:POLICY.getAsJsonArray("unique_weapons")){
    var id=ResourceLocation.parse(v.getAsString());
-   if(id.getNamespace().equals("simplyswords")&&BuiltInRegistries.ITEM.containsKey(id)&&BuiltInRegistries.ITEM.getHolder(id).map(h->h.is(tag)).orElse(false))ids.add(id);
+   boolean ok=id.getNamespace().equals("simplyswords")&&BuiltInRegistries.ITEM.containsKey(id)&&BuiltInRegistries.ITEM.getHolder(id).map(h->h.is(tag)).orElse(false);
+   if(ok)ids.add(id);
+   else warnOnce("unique:"+id,"AO_UNIQUE_SKIPPED: {} is absent or not in simplyswords:uniques (optional={})",id,POLICY.getAsJsonArray("unique_weapons_optional").contains(v));
   }
   return ids;
  }

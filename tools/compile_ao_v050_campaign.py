@@ -19,7 +19,7 @@ NOTES = {
  3: 'Explore a style that suits you: shield and steel, a mobile bow, or spells with reliable recovery. Demi\'s Sky and Ice Arenas have been removed from this test version.',
  4: 'The Nether, a Trial Chamber or a Mine Cells expedition can be your next challenge. Leave early Mine Cells loot as you find it; prepare a safe retreat.',
  5: 'The Night Lich and Void Blossom offer alternative Overworld milestones. A Bastion is a Tier 5 structure; a Nether Fortress is Tier 4.',
- 6: 'The Dead King is the primary experimental Pinnacle route. Kobolediator is a provisional alternate whose combat equivalence still needs testing. Winning grants access without changing your active difficulty.',
+ 6: 'The Dead King and Kobolediator are Tier 6 journal milestones. Defeating one records progress in this journal only; native Apotheosis World Tier advancement, gem drops and gem crafting are unchanged and remain authoritative.',
  7: 'Choose one legendary threat and learn its telegraphs. Ancient Remnant and Ender Guardian are Tier 7; Maledictus and Leviathan are Tier 8, Scylla is Tier 9. A party is optional.',
  8: 'The Last of Deepslate is the first verified registry route for this experimental mastery milestone. Other Tier 8 encounters remain in the field dossiers until their triggers are confirmed.',
  9: 'Tyros, Scylla and Obsidilith are optional superboss challenges. After a Tier 8 milestone and all three victories, hold one affixed equipment item below Heirloom and use /ao_mastery upgrade. This changes the held item once; it does not give a second item. Chesed, Malkuth and Geburah are exempt Tier 5 bosses.'}
@@ -46,6 +46,14 @@ def compile_campaign():
                  8:'ao_v050_breaking_point_05',9:'ao_v050_beyond_known_04'}
     for row in rows:
         tier, seq = int(row['ao_tier']), int(row['sequence'])
+        # Native gems are authoritative (owner decision 15 Oct 2026): AO grants no bespoke gem rewards.
+        # These stable-ID entries stay as honest reading notes instead of unreachable gem-claim objectives.
+        native_gem_notes = {(6,6):'Review native Apotheosis gem drops and crafting (see JEI)',
+                            (7,6):'Review native gem upgrade crafting toward higher grades',
+                            (8,5):'Review native apex-tier gem crafting'}
+        if (tier,seq) in native_gem_notes:
+            row['quest_beat'] = native_gem_notes[tier,seq]
+            row['validation_status'] = 'NATIVE_GEM_INFO_ONLY_20261015; bespoke gem reward removed'
         if (tier,seq) == (9,3):
             row['quest_beat'] = 'Defeat Obsidilith in the End'
             row['validation_status'] = 'OWNER_SELECTED_T9_20261014; native kill milestone, combat acceptance pending'
@@ -61,8 +69,8 @@ def compile_campaign():
             item, amount = item_rules[tier,seq]
             obj = {'type':'questlog:item_obtain', 'item':item, 'required_amount':amount, 'name':'Carry ' + str(amount) + ' ' + item.split(':')[1].replace('_',' ')}
             status = 'NATIVE_ITEM_OBJECTIVE'
-        milestone_rules = {(5,7):'tier_5', (6,5):'tier_6', (6,6):'artifact_reward', (6,7):'tier_6',
-                           (7,5):'tier_7', (7,6):'heirloom_reward', (8,4):'tier_8', (8,5):'esoteric_reward',
+        milestone_rules = {(5,7):'tier_5', (6,5):'tier_6', (6,7):'tier_6',
+                           (7,5):'tier_7', (8,4):'tier_8',
                            (9,1):'tyros', (9,2):'scylla', (9,3):'obsidilith', (9,4):'heirloom_upgrade'}
         if (tier,seq) in milestone_rules:
             obj = advancement(milestone_rules[tier,seq]); status = 'SERVER_BOSS_OR_TRANSACTION_MILESTONE'
@@ -100,9 +108,12 @@ def compile_campaign():
         if slug.startswith('v050_'):
             write(OVERLAY/'config/questlog/chapters'/(slug+'.json'),
                   {'name':name, 'translatable':False,'icon':{'item':icon},'order':order,'default_chapter':False,'hidden':False})
-    for name in ['tier_5','tier_6','tier_7','tier_8','tier_9','tyros','scylla','obsidilith','heirloom_upgrade','artifact_reward','heirloom_reward','esoteric_reward']:
+    for name in ['tier_5','tier_6','tier_7','tier_8','tier_9','tyros','scylla','obsidilith','heirloom_upgrade']:
         write(ROOT/'addons/ao-campaign/src/main/resources/data/ao_campaign/advancement/milestones'/(name+'.json'),
               {'criteria':{'completed':{'trigger':'minecraft:impossible'}}})
+    stale = ROOT/'addons/ao-campaign/src/main/resources/data/ao_campaign/advancement/milestones'
+    for name in ('artifact_reward','heirloom_reward','esoteric_reward'):
+        (stale/(name+'.json')).unlink(missing_ok=True)
     out = ROOT/'docs/questing/V050_IMPLEMENTED_QUEST_MAPPING.csv'
     with out.open('w',encoding='utf-8',newline='') as f:
         writer = csv.DictWriter(f,fieldnames=list(mapping[0]));writer.writeheader();writer.writerows(mapping)

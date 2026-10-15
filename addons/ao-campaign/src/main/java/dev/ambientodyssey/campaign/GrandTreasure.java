@@ -24,6 +24,7 @@ public final class GrandTreasure extends LootModifier {
  private final Set<LootContext> handled=Collections.newSetFromMap(new WeakHashMap<>());
  private final Map<String,LootTable> cache=new HashMap<>();
  private final Set<String> rejected=new HashSet<>();
+ private Object lastManager;
  public GrandTreasure(LootItemCondition[] conditions){super(conditions);}
  public MapCodec<? extends IGlobalLootModifier> codec(){return CODEC;}
  public JsonObject matching(LootContext ctx){
@@ -38,11 +39,14 @@ public final class GrandTreasure extends LootModifier {
   }
   return null;
  }
- private LootTable nativeSinglePool(LootContext ctx,JsonObject row){
+ private synchronized LootTable nativeSinglePool(LootContext ctx,JsonObject row){
   String source=row.get("source_resource").getAsString();String key=source+"#"+row.get("pool_index").getAsInt();
+  // A resource reload creates a new resource manager: drop every cached table AND every rejection so a
+  // corrected/rolled-back resource can be retried instead of staying permanently rejected.
+  Object manager=ctx.getLevel().getServer().getResourceManager();
+  if(manager!=lastManager){cache.clear();rejected.clear();lastManager=manager;}
+  String cached=key;
   if(rejected.contains(key))return null;
-  // A resource reload changes the resource manager; cache per server resource identity.
-  String cached=System.identityHashCode(ctx.getLevel().getServer().getResourceManager())+":"+key;
   if(cache.containsKey(cached))return cache.get(cached);
   try{
    String[] path=source.substring(5).split("/",2);var resource=ResourceLocation.fromNamespaceAndPath(path[0],path[1]);
