@@ -46,7 +46,11 @@ class PerChestGrandCandidates(unittest.TestCase):
         self.assertEqual(picked['keep_kayra_garden_normal']['pool_index'],1)
         self.assertNotIn('keep_kayra_garden_treasure',picked)
         grounded=[r for r in review if r['pool_selection_basis']=='PINNED_NATIVE_JAR_CATEGORY_TREASURE_CANDIDATE']
-        self.assertEqual(len(grounded),2)
+        self.assertEqual(len(grounded),5)
+        by_table={r['table']:r for r in candidate}
+        self.assertEqual(by_table['adventuredungeons:chests/murkydungeon/murky_chest_reward']['pool_index'],2)
+        self.assertEqual(by_table['irons_spellbooks:chests/catacombs/hidden_trough_treasure']['pool_index'],1)
+        self.assertEqual(by_table['irons_spellbooks:chests/generic_magic_treasure']['pool_index'],1)
         self.assertTrue(all(r['best_pool_category_approval']=='NEEDS_MANUAL_REVIEW' for r in grounded))
 
     def test_committed_review_only_preview_matches_generated_candidate(self):
