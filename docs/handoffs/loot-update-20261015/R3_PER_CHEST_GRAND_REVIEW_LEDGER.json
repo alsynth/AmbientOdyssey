@@ -18,7 +18,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:illager_fort",
@@ -33,7 +35,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:infested_temple",
@@ -48,7 +52,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:infested_temple",
@@ -63,7 +69,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:keep_kayra",
@@ -78,7 +86,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:keep_kayra",
@@ -93,14 +103,16 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:keep_kayra",
       "chest_table": "dungeons_arise:chests/keep_kayra/keep_kayra_library_treasure",
       "chest_category": "keep_kayra_library_treasure",
       "native_source": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json",
-      "native_pool_index": 2,
+      "native_pool_index": 1,
       "native_table_source_hash": "ee7e398314939c84c644fdbc7825999e314fdfff308aacdf86a94a2c9a00084f",
       "native_provider_from_prior_audit": "DungeonsArise-1.21.1-2.1.68-release.jar",
       "replaces_structure_wide_borrowing": true,
@@ -108,7 +120,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PINNED_NATIVE_JAR_CATEGORY_TREASURE_CANDIDATE",
+      "category_selection_reason": "Equipment-and-enchanted-book native treasure pool; rare Netherite Helmet, not the common gold/emerald/diamond pool."
     },
     {
       "structure": "dungeons_arise:keep_kayra",
@@ -123,14 +137,16 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:keep_kayra",
       "chest_table": "dungeons_arise:chests/keep_kayra/keep_kayra_treasure",
       "chest_category": "keep_kayra_treasure",
       "native_source": "data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_treasure.json",
-      "native_pool_index": 2,
+      "native_pool_index": 1,
       "native_table_source_hash": "8bf79cee247e91c1972ac124455f0bbc04f0b0122ddd7711aecdf3ad8684a0be",
       "native_provider_from_prior_audit": "DungeonsArise-1.21.1-2.1.68-release.jar",
       "replaces_structure_wide_borrowing": true,
@@ -138,7 +154,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PINNED_NATIVE_JAR_CATEGORY_TREASURE_CANDIDATE",
+      "category_selection_reason": "Equipment-and-enchanted-book native treasure pool; rare Netherite Boots, not the common gold/emerald/diamond pool."
     },
     {
       "structure": "dungeons_arise:thornborn_towers",
@@ -153,7 +171,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:thornborn_towers",
@@ -168,7 +188,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "dungeons_arise:thornborn_towers",
@@ -183,7 +205,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "irons_spellbooks:catacombs",
@@ -198,7 +222,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     },
     {
       "structure": "irons_spellbooks:catacombs",
@@ -213,7 +239,9 @@
       "source_approval": "NEEDS_INSTALLED_JAR_REVALIDATION",
       "best_pool_category_approval": "NEEDS_MANUAL_REVIEW",
       "lootr_multiplayer_approval": "NOT_RUN",
-      "bonus_is_additive": "NEEDS_RUNTIME_PROOF"
+      "bonus_is_additive": "NEEDS_RUNTIME_PROOF",
+      "pool_selection_basis": "PREVIOUS_GENERIC_RESOURCE_SCORE_NOT_YET_APPROVED",
+      "category_selection_reason": "Same-table generic-value candidate; manual category-fit review required"
     }
   ],
   "not_proof": [
