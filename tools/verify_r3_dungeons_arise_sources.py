@@ -71,7 +71,10 @@ def main():
         compact={'table':c['table'],'pool':selected['index'],
                  'rolls':selected['native_rolls'],
                  'entries':[{'id':e['id'],'weight':e['weight'],'functions':e['functions']} for e in selected['entries']],
-                 'all_pools':len(c['all_native_pools'])}
+                 'all_pools':[
+                    {'index':p['index'],'rolls':p['native_rolls'],
+                     'entries':[{'id':e['id'],'weight':e['weight'],'type':e['type']} for e in p['entries']]}
+                    for p in c['all_native_pools']]}
         print(json.dumps(compact,separators=(',',':')))
     print('AO_R3_WDA_SUMMARY_END')
     print('Verified native Dungeons Arise chest contexts:',result['count'])
