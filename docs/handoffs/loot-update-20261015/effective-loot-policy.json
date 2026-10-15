@@ -42,7 +42,11 @@
     "artifacts:night_vision_goggles",
     "artifacts:scarf_of_invisibility",
     "artifacts:universal_attractor",
-    "artifacts:vampiric_glove"
+    "artifacts:vampiric_glove",
+    "eternal_starlight:chain_of_souls",
+    "eternal_starlight:dagger_of_hunger",
+    "eternal_starlight:etheric_eye",
+    "eternal_starlight:soulit_spectator"
   ],
   "unique_weapons": [
     "simplyswords:arcanethyst",

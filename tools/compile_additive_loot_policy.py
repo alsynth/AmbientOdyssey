@@ -6,6 +6,10 @@ def compile_policy():
  rows=list(csv.DictReader((ROOT/'docs/balance/REGALIA_COMBAT_PRIORITY_RANKING_20261013.csv').open(encoding='utf-8-sig')))
  # Reviewed low/moderate utility Artifacts plus two explicitly approved Aquamirae C4 exceptions.
  regalia=sorted({r['item_registry_candidate'] for r in rows if r['combat_risk_band'][:2] in {'C0','C1','C2'} and r['item_registry_candidate'].startswith('artifacts:')}|{'aquamirae:abyssal_tiara','aquamirae:tempest_trident'})
+ # Owner allows suitable Eternal Starlight items without arbitrary extra gating.
+ # Only the separately authenticated, reviewed crafting outputs enter here.
+ extension=json.loads((DOC/'regalia-native-extension.json').read_text(encoding='utf-8'))
+ regalia=sorted(set(regalia)|{r['item'] for r in extension['items']})
  bosses={}
  for r in json.loads((ROOT/'docs/handoffs/integration-20261015/boss-reconciliation.json').read_text()):
   if r['entity_id'].startswith(('iceandfire:fire_dragon','iceandfire:ice_dragon','iceandfire:lightning_dragon','eternal_starlight:')):continue

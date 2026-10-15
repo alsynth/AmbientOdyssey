@@ -29,13 +29,15 @@ def validate(path):
                             glm=json.loads(j.read('data/neoforge/loot_modifiers/global_loot_modifiers.json'));assert glm['entries']==['ao_campaign:grand_treasure'] and not glm.get('replace')
                             assert not any('rage_glove' in e for e in glm['entries'])
                             for need in ('dev/ambientodyssey/campaign/BossRewards.class','dev/ambientodyssey/campaign/GrandTreasure.class','ao_loot_policy.json'):assert need in j.namelist(),need
-                            assert 'ao-campaign-0.3.0-experimental' in n,n
+                            assert 'ao-campaign-0.3.1-experimental' in n,n
                             pol=json.loads(j.read('ao_loot_policy.json'));assert pol['regalia'] and len(pol['unique_weapons'])>=50 and pol['grand_treasure']
                         if 'ao-starter-chest-' in n:assert 'data/minecraft/loot_table/chests/spawn_bonus_chest.json' not in j.namelist()
             except Exception as exc:errors.append({'path':n,'error':str(exc)})
         assert len(jars)==10 and not any('probe' in n for n in jars)
         assert not any(n.endswith('gem_loot_injection.json') and 'ao_starter_apotheosis_exemptions' in n for n in names),'gem suppression must be gone'
         assert sum('ao-campaign-' in n for n in jars)==1
+        solo=tomllib.loads(z.read('overrides/defaultconfigs/ftb_solo_quests-server.toml').decode())
+        assert solo['teamSyncEnabled'] is False,'FTB Solo Quests must not enable optional team sync'
         dd=json.loads(z.read('overrides/config/dungeon_difficulty/difficulty_v2.json'))
         zones=[v for d in dd['dimensions'] for v in d['zones']];assert len(zones)==23
         assert all(v['difficulty']['name'] not in {'ao_tier_0','ao_tier_1'} for v in zones)
