@@ -23,6 +23,8 @@ R2 = ROOT / 'docs/handoffs/loot-update-20261015/grand-treasure-candidates.json'
 HASH = re.compile(r'^[0-9a-f]{64}$')
 KAYRA_EVIDENCE = ROOT/'docs/handoffs/loot-update-20261015/KEEP_KAYRA_PINNED_SOURCE_POOL_EVIDENCE_20261015.json'
 CATEGORY_CHOICES = ROOT/'docs/handoffs/loot-update-20261015/R3_KEEP_KAYRA_SOURCE_GROUNDED_CATEGORY_CHOICES.json'
+OTHER_EVIDENCE = ROOT/'docs/handoffs/loot-update-20261015/R3_LAST_THREE_PINNED_NATIVE_SOURCE_VERIFICATION_20261015.json'
+OTHER_CHOICES = ROOT/'docs/handoffs/loot-update-20261015/R3_LAST_THREE_NATIVE_CATEGORY_POOL_PROPOSALS_20261015.json'
 
 def table_resource(table: str) -> str:
     namespace, path = table.split(':', 1)
@@ -35,19 +37,34 @@ def produce(source_audit, r2_mappings):
         or choices.get('jar_sha256')!=evidence.get('mod_jar_sha256')
         or choices.get('status')!='SOURCE_GROUNDED_CHEST_CATEGORY_SUGGESTIONS_NOT_RUNTIME_APPROVED'):
         raise ValueError('Pinned upstream native evidence cannot establish the category proposal')
+    other_evidence=json.loads(OTHER_EVIDENCE.read_text(encoding='utf-8'))
+    other_choices=json.loads(OTHER_CHOICES.read_text(encoding='utf-8'))
+    if (other_evidence.get('status')!='THREE_PINNED_MOD_JAR_SOURCE_TABLE_HASHES_MATCHED_PRIOR_AO_AUDIT_STATIC_ONLY'
+        or other_choices.get('status')!='THREE_THEMATIC_NATIVE_POOL_PROPOSALS_SOURCE_VERIFIED_NOT_RUNTIME_APPROVED'
+        or other_choices.get('source')!='docs/handoffs/loot-update-20261015/R3_LAST_THREE_PINNED_NATIVE_SOURCE_VERIFICATION_20261015.json'):
+        raise ValueError('Missing genuine upstream source evidence for final-three category choices')
     pool_tables={v['table']:v for v in evidence['review']}
+    other_tables={v['table']:v for v in other_evidence['selected_and_other_native_pools']}
     reviewed_choices={}
-    for c in choices['candidate_pool_revisions']:
+    for c in choices['candidate_pool_revisions']+other_choices['candidate_pool_revisions']:
         k=(c['structure'],c['table'])
-        if k in reviewed_choices:raise ValueError('Duplicate approved-source proposal for '+str(k))
-        if c.get('approval_status')!='REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST':
-            raise ValueError('Proposed pool mistakenly marked runtime approved: '+str(k))
-        table=pool_tables.get(c['table'])
-        if not table or table['sha256']!=c['native_source_sha256'] or c['native_source']!=table_resource(c['table']):
-            raise ValueError('Proposed pool disagrees with source-verified native table: '+str(k))
-        pool=next((v for v in table['pools'] if v['index']==c['pool_index']),None)
-        if not pool or not pool['items'] or any(v['type'] not in ('minecraft:item','minecraft:empty') for v in pool['items']):
-            raise ValueError('Unsafe/nonexistent native category pool in published mod JAR: '+str(k))
+        if k in reviewed_choices:raise ValueError('Duplicate source-grounded category pool suggestion for '+str(k))
+        if c.get('approval_status')!='REVIEW_ONLY_NEEDS_EFFECTIVE_DATAPACK_AND_LOOTR_TEST' or c.get('source_verified') is not True:
+            raise ValueError('Source-grounded pool incorrectly marked gameplay approved or not source verified: '+str(k))
+        if c['native_source']!=table_resource(c['table']):
+            raise ValueError('Native pool proposal is not from its own chest table: '+str(k))
+        if c['table'] in pool_tables:
+            table=pool_tables[c['table']]
+            source_hash=table['sha256']
+            selected=next((v for v in table['pools'] if v['index']==c['pool_index']),None)
+            entries=selected['items'] if selected is not None else []
+        else:
+            table=other_tables.get(c['table'])
+            source_hash=table['native_source_sha256'] if table else None
+            selected=next((v for v in table['all_pools'] if v['index']==c['pool_index']),None) if table else None
+            entries=selected['entries'] if selected is not None else []
+        if source_hash!=c['native_source_sha256'] or not entries or any(v['type'] not in ('minecraft:item','minecraft:empty') for v in entries):
+            raise ValueError('Missing or unsafe genuine native chest category pool evidence: '+str(k))
         reviewed_choices[k]=c
     indexed = {}
     for row in source_audit:
