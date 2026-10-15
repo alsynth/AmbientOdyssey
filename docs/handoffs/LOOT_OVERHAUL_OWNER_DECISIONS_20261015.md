@@ -68,3 +68,11 @@ Leave generic chest Apotheosis affix rarity/odds and native special boss drops a
 2) native thematic boss unique drops (unmodified);
 3) **additional chance-based** high-grade affix/gem/material drops, respecting user-approved T6 Artifact very rare / Ancient okayish; T7 Heirloom very rare and Artifact/Ancient low; T8 Esoteric rare, Heirloom/Artifact small chances; T9 special prestige, not an invented grade.
 Do not lock probabilities without user approval or conflate Apotheosis item rarity with gem grade. Ensure repeatable bosses and 5–7 player multiplayer cannot trivially flood the economy; preserve loot ownership and native Bosses mechanics.
+
+## Owner-approved T8 rare extra affix reward rates — 15 October 2026
+
+- **Tier 8 Heirloom: 5% chance** for an additional affixed item.
+- **Tier 8 Esoteric: 5% chance** for an additional affixed item.
+- These supersede previously proposed T8 Heirloom 8% and Esoteric 2%. Apply to bonus rarity rolls **separate from the guaranteed affixed item**, subject to exact loot API and compatibility validation; no production implementation yet.
+- T8 Ancient 30% and Artifact 15%, and other tier rates mentioned in the conversation were **proposals**, not expressly approved by this latest owner response. Leave those open for review rather than silently freezing them.
+- **Tier 9 loot design deferred**, no new odds or special reward commitments now.
