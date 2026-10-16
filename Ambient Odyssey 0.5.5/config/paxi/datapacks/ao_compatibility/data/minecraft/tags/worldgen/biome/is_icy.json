@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:auroral_garden",
+    "biomeswevegone:shattered_glacier",
+    "regions_unexplored:icy_heights",
+    "regions_unexplored:spires"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "#idas:common_avoid",
+    "idas:idas_common"
+  ]
+}

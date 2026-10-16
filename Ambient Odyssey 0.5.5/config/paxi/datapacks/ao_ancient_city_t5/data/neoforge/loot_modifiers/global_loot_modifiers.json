@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "entries": [
+    "ao_ancient_city:main_t5",
+    "ao_ancient_city:main_grand",
+    "ao_ancient_city:main_silence",
+    "ao_ancient_city:freezer_t5",
+    "ao_ancient_city:freezer_grand",
+    "ao_ancient_city:freezer_traveloptics",
+    "ao_ancient_city:special_t5",
+    "ao_ancient_city:special_grand_cache",
+    "ao_ancient_city:special_silence",
+    "ao_ancient_city:barrel_t5",
+    "ao_ancient_city:pot_t5",
+    "ao_ancient_city:barrel_irons_spellbooks",
+    "ao_ancient_city:barrel_celestisynth",
+    "ao_ancient_city:barrel_irons_jewelry_gems",
+    "ao_ancient_city:barrel_irons_jewelry_patterns",
+    "ao_ancient_city:pot_irons_spellbooks",
+    "ao_ancient_city:pot_celestisynth",
+    "ao_ancient_city:pot_irons_jewelry_gems",
+    "ao_ancient_city:pot_irons_jewelry_patterns"
+  ]
+}

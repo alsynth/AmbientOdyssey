@@ -1,0 +1,28 @@
+{
+  "title": "A Roof Among Strangers",
+  "description": "Settlements are places to rest, trade and gather information. They are also worth returning to when a future adventure takes you through familiar country.\n\nThis is a planning page, not automated proof of a village visit.\n\nField note: A naturally generated village is one option; your own protected shelter should also satisfy the spirit of this milestone.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 11,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Choose a safe home base or a friendly settlement"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

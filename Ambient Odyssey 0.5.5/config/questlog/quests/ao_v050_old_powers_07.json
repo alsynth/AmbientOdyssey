@@ -1,0 +1,30 @@
+{
+  "title": "Defeat qualifying T5 boss or encounter",
+  "description": "The Night Lich and Void Blossom offer alternative Overworld milestones. A Bastion is a Tier 5 structure; a Nether Fortress is Tier 4.\n\nDefeat qualifying T5 boss or encounter.",
+  "chapter": "questlog:v050_old_powers",
+  "sort_order": 107,
+  "icon": {
+    "item": "minecraft:diamond_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:advancement",
+      "advancement": "ao_campaign:milestones/tier_5",
+      "required_amount": 1,
+      "name": "Complete the tier 5 milestone"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_old_powers_01"
+    }
+  ]
+}

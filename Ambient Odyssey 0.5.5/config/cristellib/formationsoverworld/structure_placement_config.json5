@@ -1,0 +1,18 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "rafts": {
+    "salt": 995602250,
+    "separation": 15,
+    "spacing": 25
+  },
+  "rare": {
+    "salt": 1024917310,
+    "separation": 22,
+    "spacing": 30
+  },
+  "uncommon": {
+    "salt": 650800552,
+    "separation": 6,
+    "spacing": 12
+  }
+}

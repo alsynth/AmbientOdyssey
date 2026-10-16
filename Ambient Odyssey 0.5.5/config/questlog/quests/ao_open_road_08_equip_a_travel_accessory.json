@@ -1,0 +1,49 @@
+{
+  "title": "A Small Advantage",
+  "description": "The first helpful charm or artifact will teach you something about your build. Look for effects you can actually notice while exploring.\n\nField note: Check whether the item needs equipping, charging or activating; picking one up may not reveal its function.",
+  "chapter": "questlog:open_road",
+  "sort_order": 8,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Carry a navigational or scouting tool",
+      "objectives": [
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:compass",
+          "required_amount": 1,
+          "name": "Carry 1 × compass"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:spyglass",
+          "required_amount": 1,
+          "name": "Carry 1 × spyglass"
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:bread",
+      "count": 4,
+      "auto_claim": false
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

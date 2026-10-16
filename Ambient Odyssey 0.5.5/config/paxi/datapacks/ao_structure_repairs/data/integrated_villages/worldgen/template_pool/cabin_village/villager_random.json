@@ -1,0 +1,40 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:empty_pool_element",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/mobs/cabin_village_villager",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 3
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/mobs/cabin_village_villager_baby",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/mobs/cabin_village_villager_nitwit",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty",
+  "name": "integrated_villages:cabin_village/villager_random"
+}

@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:pumpkin_patch",
+    "biomeswevegone:prairie",
+    "biomeswevegone:sakura_grove",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:grassland",
+    "regions_unexplored:orchard",
+    "regions_unexplored:rocky_meadow"
+  ]
+}

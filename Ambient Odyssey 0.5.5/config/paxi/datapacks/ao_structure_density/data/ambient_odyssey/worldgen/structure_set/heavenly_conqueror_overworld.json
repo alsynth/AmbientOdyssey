@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ambient_odyssey:heavenly_conqueror_overworld",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 84,
+    "separation": 40,
+    "salt": 1984010511
+  }
+}

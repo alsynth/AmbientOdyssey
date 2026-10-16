@@ -1,0 +1,33 @@
+#Keybind Overrides Configuration
+#
+#This mod allows modpack creators to set default keybinds that will be
+#applied on the first launch of the modpack.
+#
+#How to use:
+#1. Set applyOverrides to true
+#2. Add your keybind overrides to the keybindOverrides list
+#3. Launch the game - keybinds will be applied and applyOverrides will be set to false
+#
+#The keybinds will only be overridden once (when applyOverrides is true).
+#Players can change their keybinds afterwards without them being reset.
+[general]
+	#
+	#Set this to true to apply keybind overrides on the next game launch.
+	#After the overrides are applied, this will automatically be set to false.
+	#Default: true (so first modpack launch applies the overrides)
+	applyOverrides = false
+	#
+	#List of keybind overrides in the format "key_name:key_value"
+	#
+	#The key_name is the full key identifier as it appears in options.txt
+	#The key_value is the input binding (also from options.txt format)
+	#
+	#Examples:
+	#  "key_key.jump:key.keyboard.space" - Sets jump to spacebar
+	#  "key_key.inventory:key.keyboard.e" - Sets inventory to E
+	#  "key_key.smoothCamera:key.keyboard.unknown" - Unbinds smooth camera
+	#  "key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT" - With modifier
+	#
+	#To find the correct key names, check your options.txt file in .minecraft
+	#All lines starting with "key_" are keybindings
+	keybindOverrides = ["key_key.ftbchunks.map:key.keyboard.unknown", "key_key.mute_microphone:key.keyboard.j", "key_accessories.key.open_accessories_screen:key.keyboard.o"]

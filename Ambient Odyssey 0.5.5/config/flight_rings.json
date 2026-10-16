@@ -1,0 +1,10 @@
+{
+  "basicRingDurability": 640,
+  "basicFlightPenalty": "HUNGER",
+  "basicHungerPenalty": 0.5,
+  "basicExperiencePenalty": 0.5,
+  "advancedRingDurability": 0,
+  "advancedFlightPenalty": "XP",
+  "advancedHungerPenalty": 0.06,
+  "advancedExperiencePenalty": 0.2
+}

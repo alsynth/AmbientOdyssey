@@ -1,0 +1,27 @@
+[gameplay]
+	#Stop wear from making a tool worse than your bare hand.
+	#Durability mods subtract a flat amount of mining speed once a tool passes a wear
+	#threshold. That amount is the same for every tier, so it barely touches iron but
+	#halves wood - a half-worn wooden axe ends up slower than punching the block. With
+	#this on, a worn (not broken) tool never drops below the midpoint between its speed at
+	#full durability and bare-hand speed. Wear still costs up to half the tool's advantage.
+	#Broken tools are not affected - that penalty is left as the durability mod intends.
+	wornToolFloor = true
+
+[tabs]
+	#Tabs need a backpack: the page tabs come with backpack levels 2 to 5, and the 5x9 extra
+	#area and the three ability-upgrade slots with level 1.
+	#Turn this off to have all of it without any backpack: every tab, the extra area and the
+	#upgrade slots are unlocked for everyone from the start, and what they hold is kept on the
+	#player instead of inside a backpack item. Backpacks still work as placeable storage.
+	#Changing this moves each player's stored items across the next time they are online -
+	#out of the backpack they have equipped when it is turned off, back into one when it is
+	#turned on again. Nothing is deleted either way.
+	requireBackpack = true
+	#Switching tabs swaps the 27 main inventory slots along with the 5x9 extra area, so every
+	#tab is a whole second inventory.
+	#Turn this off to keep the main inventory the same on every tab: tabs then only page the
+	#extra area. Whatever a tab was still holding in its own main slots moves into that tab's
+	#extra area, or the default tab's, or the inventory. Nothing is dropped: what has no
+	#room yet is kept, and follows as soon as there is some.
+	swapMainInventory = true

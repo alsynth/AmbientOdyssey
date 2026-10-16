@@ -1,0 +1,28 @@
+{
+  "title": "Return safely from an expedition",
+  "description": "Choose a landmark that interests you and leave a waypoint before going underground. A sensible route home matters more than travelling far.\n\nReturn safely from an expedition.\n\nThis entry records that you read the advice. It does not detect a fight, gear quality, a completed expedition or a claimed reward.",
+  "chapter": "questlog:open_road",
+  "sort_order": 107,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read and acknowledge this expedition note"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_open_road_01"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "The Warden",
+  "description": "Defeat the Warden yourself. Only the player who lands the killing blow gets credit. Your first Warden kill grants a Grand Treasure item and a Regalia piece, once. Defeating the Warden is also needed for the Summit world tier.",
+  "chapter": "questlog:v050_old_powers",
+  "sort_order": 115,
+  "icon": {
+    "item": "minecraft:sculk_shrieker"
+  },
+  "objectives": [
+    {
+      "type": "questlog:advancement",
+      "advancement": "ao_ancient_city:warden_first_kill",
+      "required_amount": 1,
+      "name": "Defeat the Warden"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": true,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_old_powers_14"
+    }
+  ]
+}

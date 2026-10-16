@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 8,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 1984020011,
+    "separation": 12,
+    "spacing": 25,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "farmers_structures:fishs_stew",
+      "weight": 1
+    }
+  ]
+}

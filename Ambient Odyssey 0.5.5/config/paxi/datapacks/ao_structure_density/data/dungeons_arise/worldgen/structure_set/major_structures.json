@@ -1,0 +1,27 @@
+{
+  "placement": {
+    "salt": 88371663,
+    "separation": 45,
+    "spacing": 50,
+    "type": "minecraft:random_spread",
+    "frequency": 0.7105263157894737
+  },
+  "structures": [
+    {
+      "structure": "dungeons_arise:heavenly_rider",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:heavenly_conqueror",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:aviary",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:heavenly_challenger",
+      "weight": 1
+    }
+  ]
+}

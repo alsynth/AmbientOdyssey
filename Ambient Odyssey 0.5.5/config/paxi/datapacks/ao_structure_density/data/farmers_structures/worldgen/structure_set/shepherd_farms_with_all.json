@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 8,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 1984020015,
+    "separation": 85,
+    "spacing": 99,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "farmers_structures:shepherd_farms",
+      "weight": 1
+    }
+  ]
+}

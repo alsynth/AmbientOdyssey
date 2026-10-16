@@ -1,0 +1,28 @@
+{
+  "title": "Eyes from Many Roads",
+  "description": "Reaching the End should feel like the result of several adventures, not a single uninteresting shopping list. The paths to an Eye are meant to differ.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: Collect eligible eyes through different optional journeys. Do not assume every named eye is mandatory.",
+  "chapter": "questlog:end_eyes",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:ender_eye"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the optional campaign introduction"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

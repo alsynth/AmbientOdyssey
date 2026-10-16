@@ -1,0 +1,10 @@
+{
+  "name": "Dreamseeker's Notes",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "order": 7,
+  "default_chapter": false,
+  "hidden": false
+}

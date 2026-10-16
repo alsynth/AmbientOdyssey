@@ -1,0 +1,69 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn1",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn2",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn3",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn4",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn5",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn6",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "integrated_villages:cabin_village/house/cabin_village_fisherman_lecturn7",
+        "processors": "integrated_villages:cabin_village_processor",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "name": "integrated_villages:cabin_village/house/fisherman_lecturn"
+}

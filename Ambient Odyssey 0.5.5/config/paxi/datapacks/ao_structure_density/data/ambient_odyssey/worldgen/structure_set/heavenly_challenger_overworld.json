@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ambient_odyssey:heavenly_challenger_overworld",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 72,
+    "separation": 32,
+    "salt": 1984010510
+  }
+}

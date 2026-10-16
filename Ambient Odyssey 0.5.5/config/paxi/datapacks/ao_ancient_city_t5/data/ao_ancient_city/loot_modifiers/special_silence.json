@@ -1,0 +1,14 @@
+{
+  "type": "irons_spellbooks:append_loot",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/ancient_city_special_cache"
+    },
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.110392
+    }
+  ],
+  "key": "ao_ancient_city:extras/silence_trim"
+}

@@ -1,0 +1,36 @@
+{
+  "title": "Where Rivers Lead",
+  "description": "The road is not always made of stone. A simple boat can carry you past marshes, cliffs and long stretches of unfamiliar coast.\n\nBuild or find a boat. The journal records the preparation, not the distance travelled.",
+  "chapter": "questlog:trail_notes",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:oak_boat"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:oak_boat",
+      "required_amount": 1,
+      "name": "Carry 1 × oak boat"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:bread",
+      "count": 4,
+      "auto_claim": false
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

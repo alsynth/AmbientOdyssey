@@ -1,0 +1,28 @@
+{
+  "title": "Hidden Strength",
+  "description": "Combat accessories turn ordinary equipment into a build. Some reward aggressive attacks, some save you from mistakes, and others help you move.\n\nField note: An item belongs in A grade because it meaningfully helps in combat, not because its rarity looks impressive.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 4,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the principles of reliable combat support"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

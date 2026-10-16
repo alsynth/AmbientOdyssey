@@ -1,0 +1,28 @@
+{
+  "title": "The Warning on the Ring",
+  "description": "Some bargains are not meant to be undone. The Seven Curses route is available to those who deliberately want a harsher game, not a rite of passage for every adventurer.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: Nothing in the main campaign requires this ring. Choosing not to wear it will not close other quests.",
+  "chapter": "questlog:enigmatic_cursed",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the warning; no curse is activated by this quest"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

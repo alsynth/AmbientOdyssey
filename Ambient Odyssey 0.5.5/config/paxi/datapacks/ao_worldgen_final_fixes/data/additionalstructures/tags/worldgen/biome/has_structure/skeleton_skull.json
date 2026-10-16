@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "#c:is_badlands",
+    "#c:is_wasteland",
+    {
+      "id": "minecraft:pale_garden",
+      "required": false
+    }
+  ]
+}

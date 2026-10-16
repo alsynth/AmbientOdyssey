@@ -1,0 +1,42 @@
+[inventory]
+	#Open Minecraft's own inventory screen instead of this mod's one.
+	#The small button under the player view (same spot on either screen) flips this,
+	#so there is rarely a reason to edit it here.
+	useVanillaInventory = false
+	#Mark crafting cells your current crafting upgrade has not unlocked with an x,
+	#so it is obvious they are disabled. Turn off for a plain faint dim instead.
+	strongLockedSlots = true
+	#Bookkeeping, not a preference. Slate Building holds Left Alt for its block wheel, so
+	#with it installed the offhand carousel defaults to Right Alt, and a carousel key still
+	#on Left Alt from before is moved to Right Alt once. This records that the one-time
+	#move has happened, so a key you set back to Left Alt yourself stays there.
+	offhandKeyMigrated = false
+	#Bookkeeping, not a preference. 1.2.0 shipped the 'Open the vanilla inventory' key unbound;
+	#since 1.2.1 it defaults to Shift + E, and a key still unbound from 1.2.0 is bound to that
+	#once. This records that the one-time move has happened, so a key you unbind yourself
+	#stays unbound.
+	vanillaKeyDefaulted = true
+
+[zoom]
+	#Show the hovered item enlarged in a frame to the right of the inventory.
+	#It only appears when the window is wide enough for it - and for a recipe viewer's
+	#item list beside it, if one is installed. Turn off to never show it.
+	enabled = true
+	#How large the item in that frame is drawn.
+	# Default: 5.0
+	# Range: 2.0 ~ 8.0
+	scale = 5.0
+
+[hud]
+	#Show the auto-selected tool in your first-person hand while it is being used.
+	showToolInHand = true
+	#How long (in ticks, 20 = 1 second) the auto-used tool keeps showing in the HUD slot
+	#after you stop using it, before the slot falls back to your held item.
+	# Default: 20
+	# Range: 0 ~ 200
+	toolLingerTicks = 20
+
+[backpack]
+	#Draw your highest equipped backpack on your back, in third person and on other players.
+	#Turn off if another mod already draws a pack there, or you would rather not see one.
+	showWornBackpack = true

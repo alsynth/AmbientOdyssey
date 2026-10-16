@@ -1,0 +1,40 @@
+{
+  "title": "The Patient Hand",
+  "description": "A brush opens a different kind of treasure hunt. Unlike breaking blocks, careful excavation can preserve traces of older journeys.\n\nMake a brush, then investigate suspicious sand or gravel wherever you naturally encounter them. The quest verifies preparation only.",
+  "chapter": "questlog:archaeology",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:brush"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:brush",
+      "required_amount": 1,
+      "name": "Carry 1 × brush"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:torch",
+      "count": 8,
+      "auto_claim": false
+    },
+    {
+      "type": "questlog:experience",
+      "experience": 40
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

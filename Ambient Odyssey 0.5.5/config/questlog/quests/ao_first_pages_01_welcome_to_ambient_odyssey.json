@@ -1,0 +1,22 @@
+{
+  "title": "A New Page",
+  "description": "This world is considerably larger than it first appears. You do not need to learn everything today; you only need a reason to take the next step.\n\nField note: Your discoveries and encounters will open more journeys. The detailed Field Manual is separate.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the first page of your journal"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false
+}

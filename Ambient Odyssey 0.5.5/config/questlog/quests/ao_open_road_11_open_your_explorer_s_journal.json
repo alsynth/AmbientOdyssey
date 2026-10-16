@@ -1,0 +1,28 @@
+{
+  "title": "The Explorer's Record",
+  "description": "A world this large deserves a record. You should be able to see what you have discovered without remembering every biome name yourself.\n\nField note: The checklist records visits; finding a dungeon does not mean its boss has been defeated.",
+  "chapter": "questlog:open_road",
+  "sort_order": 11,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Learn how to keep an explorer's journal"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

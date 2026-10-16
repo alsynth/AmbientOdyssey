@@ -1,0 +1,10 @@
+{
+  "name": "Rumours of the Wild",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:spyglass"
+  },
+  "order": 3,
+  "default_chapter": false,
+  "hidden": false
+}

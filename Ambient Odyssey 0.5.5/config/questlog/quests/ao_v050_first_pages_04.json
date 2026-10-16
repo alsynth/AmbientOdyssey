@@ -1,0 +1,30 @@
+{
+  "title": "Prepare food for the first expedition",
+  "description": "Keep a safe place to sleep, a return route and enough food for an unexpected delay. Your first expedition can stay close to home.\n\nPrepare food for the first expedition.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 104,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:cooked_beef",
+      "required_amount": 8,
+      "name": "Carry 8 cooked beef"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_first_pages_01"
+    }
+  ]
+}

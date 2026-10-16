@@ -1,0 +1,10 @@
+{
+  "name": "The First Pages",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "order": 0,
+  "default_chapter": true,
+  "hidden": false
+}

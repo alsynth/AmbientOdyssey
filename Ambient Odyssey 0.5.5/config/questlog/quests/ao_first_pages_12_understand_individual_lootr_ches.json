@@ -1,0 +1,28 @@
+{
+  "title": "A Chest for Every Explorer",
+  "description": "In a multiplayer dungeon, one player's discovery should not necessarily empty the rewards for everyone else. Some containers are personal; others are shared.\n\nField note: Ask before taking the last shared item. Individual loot containers may look different from ordinary chests.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 12,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Learn the difference between personal and shared loot"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

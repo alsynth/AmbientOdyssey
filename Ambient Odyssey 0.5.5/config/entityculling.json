@@ -1,0 +1,7 @@
+{
+  "configVersion": 9,
+  "safeMode": true,
+  "tickCulling": false,
+  "tracingDistance": 128,
+  "solidLeaves": false
+}

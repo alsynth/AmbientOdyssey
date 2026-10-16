@@ -1,0 +1,47 @@
+{
+  "title": "An Edge Worth Carrying",
+  "description": "There is no perfect weapon for every threat. A sturdy blade, a spear or a ranged choice can each be useful depending on what you're facing.\n\nDiamond is a convenient benchmark, not a rule against equivalent modded weapons. This optional milestone will gain alternate gear after item registry inspection.\n\nField note: A diamond weapon is an early benchmark, not a permanent ban on alternative modded weapons.",
+  "chapter": "questlog:open_road",
+  "sort_order": 7,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Carry a sturdy primary weapon",
+      "objectives": [
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:diamond_sword",
+          "required_amount": 1,
+          "name": "Carry 1 × diamond sword"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:diamond_axe",
+          "required_amount": 1,
+          "name": "Carry 1 × diamond axe"
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 75
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

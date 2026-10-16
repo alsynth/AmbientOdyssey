@@ -1,0 +1,10 @@
+{
+  "name": "Unearthed Histories",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:brush"
+  },
+  "order": 4,
+  "default_chapter": false,
+  "hidden": false
+}

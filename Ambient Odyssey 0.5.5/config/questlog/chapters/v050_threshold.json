@@ -1,0 +1,10 @@
+{
+  "name": "The Threshold",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:blaze_rod"
+  },
+  "order": 17,
+  "default_chapter": false,
+  "hidden": false
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:pumpkin_patch",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:skyris_vale",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:maple_forest",
+    "regions_unexplored:orchard"
+  ]
+}

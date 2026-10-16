@@ -1,0 +1,30 @@
+{
+  "title": "A Pack for the Journey",
+  "description": "New loot is most useful when you can carry it home. An extra bag also makes it easier to separate emergency gear from what you hope to sell or study.\n\nStart by establishing a safe storage point. A wearable backpack is an optional upgrade: consult JEI before choosing one. Carrying a chest does not prove a modded backpack is equipped.\n\nField note: See the Field Manual for upgrades, filters and how the backpack interacts with your inventory.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 9,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:chest",
+      "required_amount": 1,
+      "name": "Carry 1 × chest"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

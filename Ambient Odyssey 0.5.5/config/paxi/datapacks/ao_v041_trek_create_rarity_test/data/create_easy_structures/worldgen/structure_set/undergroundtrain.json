@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "create_easy_structures:undergroundtrain",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 65,
+    "separation": 15,
+    "salt": 1719461658
+  }
+}

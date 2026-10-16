@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecells:cage"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecells:broken_cage"
+    },
+    {
+      "chance": 0.5,
+      "count": 1,
+      "id": "minecells:broken_cage"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "processing_time": 150
+}

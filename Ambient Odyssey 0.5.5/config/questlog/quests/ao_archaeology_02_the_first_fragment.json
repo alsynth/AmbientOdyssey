@@ -1,0 +1,64 @@
+{
+  "title": "A Story in Fragments",
+  "description": "One shard can tell a story, but the surrounding place matters as much as the object. Explore warm ocean ruins, trail ruins or suspicious sands with patience.\n\nCarry one of the four known vanilla pottery sherds listed below. This is an optional collecting goal, never a mandatory random drop gate. Archaeology will receive richer rewards only after actual loot tables and modded dig sites are inspected.",
+  "chapter": "questlog:archaeology",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:brick"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Recover one pottery sherd",
+      "objectives": [
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:angler_pottery_sherd",
+          "required_amount": 1,
+          "name": "Carry 1 × angler pottery sherd"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:archer_pottery_sherd",
+          "required_amount": 1,
+          "name": "Carry 1 × archer pottery sherd"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:prize_pottery_sherd",
+          "required_amount": 1,
+          "name": "Carry 1 × prize pottery sherd"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:skull_pottery_sherd",
+          "required_amount": 1,
+          "name": "Carry 1 × skull pottery sherd"
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:emerald",
+      "count": 8,
+      "auto_claim": false
+    },
+    {
+      "type": "questlog:experience",
+      "experience": 180
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_archaeology_01_a_delicate_tool"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Where the Grass Changes",
+  "description": "Beyond the safety of your first camp, the world changes. The next landscape may have new wildlife, unfamiliar materials and a new kind of danger.\n\nQuestlog's vanilla walking statistic is a proxy for beginning an expedition; it does not falsely claim to detect every modded biome. Explore any direction you like.\n\nField note: Only naturally visited, enabled biomes should count in the future Explorer's Journal.",
+  "chapter": "questlog:open_road",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:stat",
+      "stat": "minecraft:walk_one_cm",
+      "required_amount": 12000,
+      "name": "Explore at least 120 blocks on foot"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 25
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "adapt_noise": false,
+  "biomes": "#ambient_odyssey:sky_land",
+  "liquid_settings": "ignore_waterlogging",
+  "max_distance_from_center": 114,
+  "size": 7,
+  "spawn_overrides": {},
+  "start_height": {
+    "absolute": 200
+  },
+  "start_pool": "dungeons_arise:eerie/heavenly_challenger/heavenly_challenger_start",
+  "step": "surface_structures",
+  "type": "minecraft:jigsaw",
+  "use_expansion_hack": false
+}

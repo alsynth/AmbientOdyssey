@@ -1,0 +1,10 @@
+{
+  "name": "The Eyes of the End",
+  "translatable": false,
+  "icon": {
+    "item": "minecraft:ender_eye"
+  },
+  "order": 12,
+  "default_chapter": false,
+  "hidden": false
+}

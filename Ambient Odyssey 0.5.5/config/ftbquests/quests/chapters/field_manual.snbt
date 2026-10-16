@@ -1,0 +1,146 @@
+{
+	filename: "field_manual"
+	group: ""
+	id: "771970950CAF302D"
+	icon: { id: "minecraft:book" }
+	order_index: 1
+	progression_mode: "flexible"
+	default_hide_dependency_lines: true
+	quests: [
+		{
+			id: "9EABF83785B00368"
+			icon: { id: "minecraft:book" }
+			x: -6.0d
+			y: 0.0d
+			size: 2.0d
+			tasks: [{ id: "3066591A85B00368", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA88C8195DC0F0"
+			icon: { id: "minecraft:book" }
+			x: -2.0d
+			y: 0.0d
+			size: 1.0d
+			tasks: [{ id: "D41729E5195DC0F0", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA8BC8195DC609"
+			icon: { id: "minecraft:book" }
+			x: 2.0d
+			y: 0.0d
+			size: 1.0d
+			tasks: [{ id: "D4172AE5195DC609", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA8AC8195DC456"
+			icon: { id: "minecraft:book" }
+			x: 6.0d
+			y: 0.0d
+			size: 1.0d
+			tasks: [{ id: "D4172BE5195DC456", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA8DC8195DC96F"
+			icon: { id: "minecraft:book" }
+			x: -6.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [{ id: "D4172CE5195DC96F", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA8CC8195DC7BC"
+			icon: { id: "minecraft:book" }
+			x: -2.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [{ id: "D4172DE5195DC7BC", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA8FC8195DCCD5"
+			icon: { id: "minecraft:book" }
+			x: 2.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [{ id: "D4172EE5195DCCD5", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA8EC8195DCB22"
+			icon: { id: "minecraft:book" }
+			x: 6.0d
+			y: 3.0d
+			size: 1.0d
+			tasks: [{ id: "D4172FE5195DCB22", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA91C8195DD03B"
+			icon: { id: "minecraft:book" }
+			x: -6.0d
+			y: 6.0d
+			size: 1.0d
+			tasks: [{ id: "D41730E5195DD03B", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "7ADA90C8195DCE88"
+			icon: { id: "minecraft:book" }
+			x: -2.0d
+			y: 6.0d
+			size: 1.0d
+			tasks: [{ id: "D41731E5195DCE88", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "1F172C031A4E8640"
+			icon: { id: "minecraft:book" }
+			x: 2.0d
+			y: 6.0d
+			size: 1.0d
+			tasks: [{ id: "B1DA8D2E1A4E8640", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "1F172D031A4E87F3"
+			icon: { id: "minecraft:book" }
+			x: 6.0d
+			y: 6.0d
+			size: 1.0d
+			tasks: [{ id: "B1DA8C2E1A4E87F3", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "1F172E031A4E89A6"
+			icon: { id: "minecraft:book" }
+			x: -6.0d
+			y: 9.0d
+			size: 1.0d
+			tasks: [{ id: "B1DA8F2E1A4E89A6", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "1F172F031A4E8B59"
+			icon: { id: "minecraft:book" }
+			x: -2.0d
+			y: 9.0d
+			size: 1.0d
+			tasks: [{ id: "B1DA8E2E1A4E8B59", type: "checkmark" }]
+			rewards: [ ]
+		}
+		{
+			id: "1F1730031A4E8D0C"
+			icon: { id: "minecraft:book" }
+			x: 2.0d
+			y: 9.0d
+			size: 1.0d
+			tasks: [{ id: "B1DA912E1A4E8D0C", type: "checkmark" }]
+			rewards: [ ]
+		}
+	]
+}

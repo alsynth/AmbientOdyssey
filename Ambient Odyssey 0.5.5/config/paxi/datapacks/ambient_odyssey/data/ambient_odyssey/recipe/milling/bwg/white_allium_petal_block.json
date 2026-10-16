@@ -1,0 +1,21 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomeswevegone:white_allium_petal_block"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "count": 18,
+      "id": "minecraft:white_dye"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "biomeswevegone"
+    }
+  ]
+}

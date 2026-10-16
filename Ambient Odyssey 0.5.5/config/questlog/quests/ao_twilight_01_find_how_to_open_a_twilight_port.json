@@ -1,0 +1,28 @@
+{
+  "title": "A Forest Out of Place",
+  "description": "Some forests do not belong to this world. Their paths branch toward ruins and creatures that expect preparation rather than courage alone.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: Do not assume the first boss is optional to a specific Twilight portal progression gate until verified.",
+  "chapter": "questlog:twilight",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:oak_sapling"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the optional campaign introduction"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

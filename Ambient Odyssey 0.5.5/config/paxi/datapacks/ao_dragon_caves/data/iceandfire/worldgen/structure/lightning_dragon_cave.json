@@ -1,0 +1,6 @@
+{
+  "type": "iceandfire:lightning_dragon_cave",
+  "biomes": "#ambient_odyssey:fire_lightning_underground",
+  "spawn_overrides": {},
+  "step": "underground_structures"
+}
