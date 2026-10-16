@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:auroral_garden",
+    "biomesoplenty:snowblossom_grove",
+    "biomeswevegone:frosted_coniferous_forest",
+    "regions_unexplored:cold_deciduous_forest",
+    "regions_unexplored:frozen_pine_taiga"
+  ]
+}

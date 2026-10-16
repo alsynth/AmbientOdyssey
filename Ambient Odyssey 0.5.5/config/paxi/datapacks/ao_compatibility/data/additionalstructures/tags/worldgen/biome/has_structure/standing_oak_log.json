@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "regions_unexplored:maple_forest"
+  ]
+}

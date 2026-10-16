@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 8,
+      "other_set": "minecraft:villages"
+    },
+    "salt": 1984020002,
+    "separation": 21,
+    "spacing": 45,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "farmers_structures:aquacultures_beach",
+      "weight": 1
+    }
+  ]
+}

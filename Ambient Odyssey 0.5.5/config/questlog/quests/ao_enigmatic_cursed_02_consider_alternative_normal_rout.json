@@ -1,0 +1,28 @@
+{
+  "title": "An Unclaimed Oath",
+  "description": "Possessing an object and accepting its terms are different choices. The journal will never treat picking up the ring as consent.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: Keep normal artifact progression available whether or not the player chooses this branch.",
+  "chapter": "questlog:enigmatic_cursed",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the warning; no curse is activated by this quest"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_enigmatic_cursed_01_read_the_seven_curses_warning_an"
+    }
+  ]
+}

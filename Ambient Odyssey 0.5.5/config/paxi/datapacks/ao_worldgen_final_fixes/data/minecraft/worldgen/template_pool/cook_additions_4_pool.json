@@ -1,0 +1,132 @@
+{
+  "elements": [
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_1",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_2",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_3",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_4",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_5",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_6",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_7",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_8",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_9",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_10",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_11",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_12",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_13",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    },
+    {
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "farmers_structures:cook_houses/cook_additions_4_14",
+        "processors": "farmers_structures:random_crates",
+        "projection": "rigid"
+      },
+      "weight": 1
+    }
+  ],
+  "fallback": "minecraft:empty",
+  "name": "minecraft:cook_additions_4_pool"
+}

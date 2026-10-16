@@ -1,0 +1,28 @@
+{
+  "title": "The Sea Has Teeth",
+  "description": "A cold sea can conceal far more than ice and wreckage. Pack for the journey, and assume that the first strange shape beneath the water is a warning.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: Bring a safe return method. Swimming deeper is not the same as being ready for the thing living below.",
+  "chapter": "questlog:aquamirae",
+  "sort_order": 1,
+  "icon": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the optional campaign introduction"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

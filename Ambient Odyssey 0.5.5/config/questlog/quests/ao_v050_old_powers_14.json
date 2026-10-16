@@ -1,0 +1,36 @@
+{
+  "title": "Silence in the Deep",
+  "description": "Every sound can wake the Warden. Sneak past the sculk and loot a chest without calling it. Echo shards are found in the city chests.",
+  "chapter": "questlog:v050_old_powers",
+  "sort_order": 114,
+  "icon": {
+    "item": "minecraft:echo_shard"
+  },
+  "objectives": [
+    {
+      "type": "questlog:advancement",
+      "advancement": "minecraft:adventure/avoid_vibration",
+      "required_amount": 1,
+      "name": "Sneak near sculk without being heard"
+    },
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:echo_shard",
+      "required_amount": 1,
+      "name": "Carry 1 × echo shard"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": true,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_old_powers_13"
+    }
+  ]
+}

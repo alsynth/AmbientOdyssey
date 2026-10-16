@@ -1,0 +1,28 @@
+{
+  "title": "The Shape of Danger",
+  "description": "A massive citadel and a quiet roadside ruin should never feel equally threatening. Learn when to step inside—and when to return later.\n\nField note: Look at armor, support items and environmental hazards together. Retreating is preparation, not failure.",
+  "chapter": "questlog:open_road",
+  "sort_order": 12,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the warning signs of a major dungeon"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

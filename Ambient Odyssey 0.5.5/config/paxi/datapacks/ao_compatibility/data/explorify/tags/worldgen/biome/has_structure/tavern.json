@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:highland",
+    "biomesoplenty:pumpkin_patch",
+    "biomeswevegone:ebony_woods",
+    "biomeswevegone:prairie",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:skyris_vale",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:grassland",
+    "regions_unexplored:maple_forest",
+    "regions_unexplored:orchard",
+    "regions_unexplored:rocky_meadow"
+  ]
+}

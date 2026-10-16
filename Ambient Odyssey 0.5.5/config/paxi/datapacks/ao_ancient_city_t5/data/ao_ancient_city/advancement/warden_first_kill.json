@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "kill_warden": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:warden"
+            }
+          }
+        ],
+        "killing_blow": {
+          "source_entity": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "kill_warden"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "ao_ancient_city:rewards/warden_first_kill"
+    ]
+  }
+}

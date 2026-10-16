@@ -1,0 +1,28 @@
+{
+  "title": "Protection Is a Decision",
+  "description": "Armor makes room for mistakes, and enchantments make room for bigger ones. For the coming trials, enchantments matter as much as raw armor value.\n\nThe automatic criterion is one successful enchantment, NOT a fabricated check for Protection III on four equipped pieces.\n\nField note: AO's Tier 2 benchmark is enchanted diamond at roughly Protection III; do not require identical enchantments if equivalent protection exists.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:enchant",
+      "name": "Apply an enchantment to any item"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

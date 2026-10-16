@@ -1,0 +1,28 @@
+{
+  "title": "Test the boss first phase and retreat safely",
+  "description": "The Dead King and Kobolediator are Tier 6 journal milestones. Defeating one records progress in this journal only; native Apotheosis World Tier advancement, gem drops and gem crafting are unchanged and remain authoritative.\n\nTest the boss first phase and retreat safely.\n\nThis entry records that you read the advice. It does not detect a fight, gear quality, a completed expedition or a claimed reward.",
+  "chapter": "questlog:v050_legendary_hunt",
+  "sort_order": 104,
+  "icon": {
+    "item": "minecraft:nether_star"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read and acknowledge this expedition note"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_legendary_hunt_01"
+    }
+  ]
+}

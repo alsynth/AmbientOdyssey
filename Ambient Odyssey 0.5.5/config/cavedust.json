@@ -1,0 +1,10 @@
+{
+  "width": 10,
+  "caveDustEnabled": true,
+  "seaLevelCheck": true,
+  "superFlatStatus": false,
+  "upperLimit": 64.0,
+  "lowerLimit": -64.0,
+  "particleMultiplier": 14,
+  "newId": "cavedust:cave_dust_mote"
+}

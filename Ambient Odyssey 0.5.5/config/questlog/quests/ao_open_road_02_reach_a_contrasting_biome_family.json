@@ -1,0 +1,46 @@
+{
+  "title": "A Different Horizon",
+  "description": "A forest, a rocky peak and a wetland are not interchangeable places. Learning to recognize a region will matter when searching for unusual creatures and ruins.\n\nOptional demonstration of biome detection. Most AO biomes are modded, so this is deliberately not a requirement for any other quest.\n\nField note: Any suitable climate family should count; avoid sending a new player across thousands of blocks by chance.",
+  "chapter": "questlog:open_road",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Find one distinct vanilla region",
+      "objectives": [
+        {
+          "type": "questlog:visit_biome",
+          "biome": "minecraft:savanna"
+        },
+        {
+          "type": "questlog:visit_biome",
+          "biome": "minecraft:taiga"
+        },
+        {
+          "type": "questlog:visit_biome",
+          "biome": "minecraft:swamp"
+        },
+        {
+          "type": "questlog:visit_biome",
+          "biome": "minecraft:desert"
+        }
+      ]
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

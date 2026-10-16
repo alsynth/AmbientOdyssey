@@ -1,0 +1,32 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:blaze",
+    "minecraft:magma_cube",
+    "minecraft:strider",
+    {
+      "id": "cataclysm:ignis",
+      "required": false
+    },
+    {
+      "id": "cataclysm:netherite_monstrosity",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignited_berserker",
+      "required": false
+    },
+    {
+      "id": "cataclysm:ignited_revenant",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:pyromancer",
+      "required": false
+    },
+    {
+      "id": "iceandfire:fire_dragon",
+      "required": false
+    }
+  ]
+}

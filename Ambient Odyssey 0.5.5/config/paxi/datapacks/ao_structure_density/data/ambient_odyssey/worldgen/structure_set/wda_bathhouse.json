@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:bathhouse",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "integrated_api:advanced_random_spread",
+    "spacing": 112,
+    "separation": 48,
+    "salt": 1984010502,
+    "super_exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "#ambient_odyssey:large_land_avoid"
+    },
+    "frequency": 0.5
+  }
+}

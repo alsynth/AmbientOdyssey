@@ -1,0 +1,28 @@
+{
+  "title": "A Journal of Your Own",
+  "description": "Quests here follow the adventures you choose. Some are invitations rather than instructions; an unfamiliar ruin does not demand you conquer it immediately.\n\nField note: The journal records your story; it is not a checklist you must finish before exploring freely.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read how the journal handles optional adventures"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

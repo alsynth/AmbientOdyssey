@@ -1,0 +1,34 @@
+{
+  "title": "Lanterns Against the Dark",
+  "description": "Caves have no sympathy for the explorer who runs out of light. Carry enough torches to turn an unexpected retreat into a short walk.\n\nThis is a supply check, not a demand to mine a specific number of stone blocks.",
+  "chapter": "questlog:trail_notes",
+  "sort_order": 5,
+  "icon": {
+    "item": "minecraft:torch"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:torch",
+      "required_amount": 24,
+      "name": "Carry 24 × torch"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 30
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

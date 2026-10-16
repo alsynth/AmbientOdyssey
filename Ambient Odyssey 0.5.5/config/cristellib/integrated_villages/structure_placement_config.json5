@@ -1,0 +1,13 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "air_villages": {
+    "salt": 1982700828,
+    "separation": 45,
+    "spacing": 65
+  },
+  "regular_villages": {
+    "salt": 1982700828,
+    "separation": 14,
+    "spacing": 22
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:auroral_garden",
+    "biomesoplenty:highland",
+    "biomesoplenty:pumpkin_patch",
+    "biomesoplenty:snowblossom_grove",
+    "biomesoplenty:volcano",
+    "biomeswevegone:crag_gardens",
+    "biomeswevegone:frosted_coniferous_forest",
+    "biomeswevegone:prairie",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:shattered_glacier",
+    "natures_spirit:alpine_clearings",
+    "natures_spirit:floral_ridges",
+    "natures_spirit:windswept_sugi_forest",
+    "regions_unexplored:cold_deciduous_forest",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:frozen_pine_taiga",
+    "regions_unexplored:grassland",
+    "regions_unexplored:icy_heights",
+    "regions_unexplored:orchard",
+    "regions_unexplored:rocky_meadow",
+    "regions_unexplored:spires"
+  ]
+}

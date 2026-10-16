@@ -1,0 +1,19 @@
+==== Connector Mixin Patch Audit Summary ====
+Successful: 2
+Partial: 0
+Failed: 0
+Success rate: 100,00%        Accuracy: 100,00%
+=============================================
+
+Mixin method com/github/mim1q/minecells/mixin/client/HeldItemRendererMixin minecells$modifyIsCrossbowInRenderFirstPersonItem(ZLnet/minecraft/world/item/ItemStack;)Z
+  >> Using org.sinytra.adapter.patch.processor.MixinTypeProcessor
+     - Modify type to Lorg/sinytra/adapter/runtime/inject/ModifyInstanceofValue;
+  >> Using org.sinytra.adapter.patch.processor.PropertyProcessor
+     - Set property 'method' to: MethodQualifier[owner=Lnet/minecraft/client/renderer/ItemInHandRenderer;, name=renderArmWithItem, desc=(Lnet/minecraft/client/player/AbstractClientPlayer;FFLnet/minecraft/world/InteractionHand;FLnet/minecraft/world/item/ItemStack;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V]
+     - Set property 'at' to: AtData{target=net/minecraft/world/item/CrossbowItem, value=sinytra:INSTANCEOF}
+
+Mixin method com/github/mim1q/minecells/mixin/client/PlayerEntityRendererMixin minecells$modifyIsCrossbowInGetArmPose(ZLnet/minecraft/client/player/AbstractClientPlayer;Lnet/minecraft/world/InteractionHand;)Z
+  >> Using org.sinytra.adapter.patch.processor.PropertyProcessor
+     - Set property 'method' to: MethodQualifier[owner=Lnet/minecraft/client/renderer/entity/player/PlayerRenderer;, name=getArmPose, desc=(Lnet/minecraft/client/player/AbstractClientPlayer;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/client/model/HumanoidModel$ArmPose;]
+     - Set property 'at' to: AtData{target=Lnet/minecraft/world/item/CrossbowItem;isCharged(Lnet/minecraft/world/item/ItemStack;)Z, value=INVOKE}
+

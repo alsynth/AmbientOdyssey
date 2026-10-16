@@ -1,0 +1,28 @@
+{
+  "title": "The Return Journey",
+  "description": "The trip home is part of the expedition. With an established route, distance becomes an opportunity rather than a risk.\n\nField note: Carry supplies for the return trip. A Waystone is helpful, but not every expedition starts near one.",
+  "chapter": "questlog:open_road",
+  "sort_order": 10,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Plan a reliable route home or locate a Waystone"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

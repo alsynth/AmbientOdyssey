@@ -1,0 +1,48 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "cyclops_cave": {
+    "salt": 7407930,
+    "separation": 5,
+    "spacing": 14
+  },
+  "dragon_cave": {
+    "salt": 9821379,
+    "separation": 12,
+    "spacing": 18
+  },
+  "dragon_roost": {
+    "salt": 3747893,
+    "separation": 5,
+    "spacing": 13
+  },
+  "gorgon_temple": {
+    "salt": 76489509,
+    "separation": 10,
+    "spacing": 27
+  },
+  "graveyard": {
+    "salt": 44712661,
+    "separation": 12,
+    "spacing": 24
+  },
+  "hydra_cave": {
+    "salt": 8903243,
+    "separation": 5,
+    "spacing": 14
+  },
+  "mausoleum": {
+    "salt": 14200531,
+    "separation": 10,
+    "spacing": 27
+  },
+  "pixie_village": {
+    "salt": 7407930,
+    "separation": 4,
+    "spacing": 8
+  },
+  "siren_island": {
+    "salt": 9810327,
+    "separation": 12,
+    "spacing": 30
+  }
+}

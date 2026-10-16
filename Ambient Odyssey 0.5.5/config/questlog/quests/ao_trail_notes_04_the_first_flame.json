@@ -1,0 +1,33 @@
+{
+  "title": "Past the Red Threshold",
+  "description": "The Nether rewards preparation and punishes confidence. Bring fire protection, a return route and a spare set of supplies.\n\nCross the threshold when you choose. This is an optional journey, not the price of joining other campaigns.",
+  "chapter": "questlog:trail_notes",
+  "sort_order": 4,
+  "icon": {
+    "item": "minecraft:flint_and_steel"
+  },
+  "objectives": [
+    {
+      "type": "questlog:visit_dimension",
+      "dimension": "minecraft:the_nether",
+      "name": "Enter the Nether"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 75
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

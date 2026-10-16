@@ -1,0 +1,563 @@
+{
+  "meta": {
+    "sanitize_config": false,
+    "rounding_unit": 0.5,
+    "merge_item_modifiers": true
+  },
+  "announcement": {
+    "enabled": false,
+    "check_interval_seconds": 5,
+    "history_size": 2,
+    "roman_format": false
+  },
+  "player_effects": {
+    "enabled": false,
+    "duration_margin_seconds": 3,
+    "skip_creative": true,
+    "rules": []
+  },
+  "per_player_difficulty": {
+    "enabled": false,
+    "counting": "DIMENSION",
+    "cap": 3,
+    "entities": []
+  },
+  "difficulty_types": [
+    {
+      "name": "ao_tier_0",
+      "allow_loot_scaling": false,
+      "entities": []
+    },
+    {
+      "name": "ao_tier_1",
+      "allow_loot_scaling": false,
+      "entities": []
+    },
+    {
+      "name": "ao_tier_2",
+      "allow_loot_scaling": false,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$"
+          },
+          "spawners": {
+            "spawn_range_multiplier": 0.0,
+            "spawn_count_multiplier": 0.0,
+            "max_nearby_entities_multiplier": 0.0,
+            "min_spawn_delay_multiplier": 0.0,
+            "max_spawn_delay_multiplier": 0.0,
+            "required_player_range_multiplier": 0.0
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.max_health",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 1.0,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 0.4,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.armor",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 3.0,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.0
+        }
+      ]
+    },
+    {
+      "name": "ao_tier_3",
+      "allow_loot_scaling": false,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$"
+          },
+          "spawners": {
+            "spawn_range_multiplier": 0.0,
+            "spawn_count_multiplier": 0.0,
+            "max_nearby_entities_multiplier": 0.0,
+            "min_spawn_delay_multiplier": 0.0,
+            "max_spawn_delay_multiplier": 0.0,
+            "required_player_range_multiplier": 0.0
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.max_health",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 1.5,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 0.6,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.armor",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 5.0,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.0
+        }
+      ]
+    },
+    {
+      "name": "ao_tier_4",
+      "allow_loot_scaling": false,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$"
+          },
+          "spawners": {
+            "spawn_range_multiplier": 0.0,
+            "spawn_count_multiplier": 0.0,
+            "max_nearby_entities_multiplier": 0.0,
+            "min_spawn_delay_multiplier": 0.0,
+            "max_spawn_delay_multiplier": 0.0,
+            "required_player_range_multiplier": 0.0
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.max_health",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 2.0,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 0.8,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.armor",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 8.0,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.0
+        }
+      ]
+    },
+    {
+      "name": "ao_tier_5",
+      "allow_loot_scaling": false,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$"
+          },
+          "spawners": {
+            "spawn_range_multiplier": 0.0,
+            "spawn_count_multiplier": 0.0,
+            "max_nearby_entities_multiplier": 0.0,
+            "min_spawn_delay_multiplier": 0.0,
+            "max_spawn_delay_multiplier": 0.0,
+            "required_player_range_multiplier": 0.0
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.max_health",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 2.5,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 1.0,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.armor",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 11.0,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.0
+        }
+      ]
+    },
+    {
+      "name": "ao_tier_6",
+      "allow_loot_scaling": false,
+      "entities": [
+        {
+          "entity_matches": {
+            "attitude": "HOSTILE",
+            "type": "~^minecraft:(?:zombie|husk|drowned|zombie_villager|skeleton|stray|wither_skeleton|bogged|spider|cave_spider|pillager|vindicator|witch|silverfish|endermite|blaze|piglin_brute)$"
+          },
+          "spawners": {
+            "spawn_range_multiplier": 0.0,
+            "spawn_count_multiplier": 0.0,
+            "max_nearby_entities_multiplier": 0.0,
+            "min_spawn_delay_multiplier": 0.0,
+            "max_spawn_delay_multiplier": 0.0,
+            "required_player_range_multiplier": 0.0
+          },
+          "attributes": [
+            {
+              "attribute": "minecraft:generic.max_health",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 3.0,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.attack_damage",
+              "operation": "MULTIPLY_BASE",
+              "randomness": 0.0,
+              "value": 2.0,
+              "offset": 0.0
+            },
+            {
+              "attribute": "minecraft:generic.armor",
+              "operation": "ADDITION",
+              "randomness": 0.0,
+              "value": 15.0,
+              "offset": 0.0
+            }
+          ],
+          "experience_multiplier": 0.0
+        }
+      ]
+    }
+  ],
+  "loot_scaling": {
+    "armor": [],
+    "weapons": [],
+    "smithing_upgrade": {
+      "enabled": false,
+      "add_upon_upgrade": 0,
+      "multiply_upon_upgrade": 1.0
+    }
+  },
+  "dimensions": [
+    {
+      "world_matches": {
+        "dimension": "minecraft:overworld"
+      },
+      "zones": [
+        {
+          "zone_matches": {
+            "structure": "adventuredungeons:bygonedungeon"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "adventuredungeons:coldlair"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "adventuredungeons:murkydungeon"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "adventuredungeons:trialrooms"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:bandit_towers"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:foundry"
+          },
+          "difficulty": {
+            "name": "ao_tier_6",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:illager_fort"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:infested_temple"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:keep_kayra"
+          },
+          "difficulty": {
+            "name": "ao_tier_6",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:plague_asylum"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:thornborn_towers"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "floating_islands:spider_ruin"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "floating_islands:steampunk_island"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "irons_spellbooks:catacombs"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "irons_spellbooks:ice_spider_den"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:ancient_crypt"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:level_three_ruins"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:level_two_ruins"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:lost_soul_dungeon"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:ocean_ruins"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:rare_ruin"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "philipsruins:underground_structures"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeoncrawl:dungeon"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:abandoned_temple"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:kisegi_sanctuary"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise_seven_seas:corsair_corvette"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "iceandfire:mausoleum"
+          },
+          "difficulty": {
+            "name": "ao_tier_4",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "adventuredungeons:underground_camp"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:bandit_village"
+          },
+          "difficulty": {
+            "name": "ao_tier_2",
+            "level": 1
+          }
+        },
+        {
+          "zone_matches": {
+            "structure": "dungeons_arise:mining_complex"
+          },
+          "difficulty": {
+            "name": "ao_tier_3",
+            "level": 1
+          }
+        }
+      ],
+      "zone_specifiers": [],
+      "entities": []
+    },
+    {
+      "world_matches": {
+        "dimension": "minecraft:the_end"
+      },
+      "zones": [],
+      "zone_specifiers": [],
+      "entities": []
+    },
+    {
+      "world_matches": {
+        "dimension": "minecraft:the_nether"
+      },
+      "zones": [],
+      "zone_specifiers": [],
+      "entities": []
+    }
+  ]
+}

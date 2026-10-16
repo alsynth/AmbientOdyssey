@@ -1,0 +1,28 @@
+{
+  "title": "A Ruin Is Not a Dungeon",
+  "description": "One abandoned house may hold a little loot. Another structure can contain several floors of enemies and a boss. Knowing the difference is an exploration skill.\n\nField note: A location's tier means recommended preparation, not that you are forbidden to enter.",
+  "chapter": "questlog:open_road",
+  "sort_order": 5,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Learn how a landmark differs from a combat dungeon"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

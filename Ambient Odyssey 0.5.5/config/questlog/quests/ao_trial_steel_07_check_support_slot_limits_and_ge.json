@@ -1,0 +1,28 @@
+{
+  "title": "What Fits Together",
+  "description": "Two powerful items are not always stronger together. They can compete for a slot, overwrite an effect or multiply into something that needs rebalancing.\n\nField note: Open the Gear Atlas if you need to compare activated and passive effects.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 7,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Review Curios and Accessories slot compatibility"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

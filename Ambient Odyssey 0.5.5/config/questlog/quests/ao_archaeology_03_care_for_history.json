@@ -1,0 +1,27 @@
+{
+  "title": "Leave More Than Footprints",
+  "description": "A ruin is a place, not a quarry. Mark its location, take what you need and leave enough context to remember why it mattered.\n\nRead this note once you have tried a careful excavation. The journal cannot yet detect correct preservation or thoughtful behaviour; completion here is a reading acknowledgement.",
+  "chapter": "questlog:archaeology",
+  "sort_order": 3,
+  "icon": {
+    "item": "minecraft:written_book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the archaeological field ethic"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_archaeology_01_a_delicate_tool"
+    }
+  ]
+}

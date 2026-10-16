@@ -1,0 +1,30 @@
+{
+  "title": "Complete verified held-item Heirloom upgrade",
+  "description": "Tyros, Scylla and Obsidilith are optional superboss challenges. After a Tier 8 milestone and all three victories, hold one affixed equipment item below Heirloom and use /ao_mastery upgrade. This changes the held item once; it does not give a second item. Chesed, Malkuth and Geburah are exempt Tier 5 bosses.\n\nComplete verified held-item Heirloom upgrade.",
+  "chapter": "questlog:v050_final_horizon",
+  "sort_order": 104,
+  "icon": {
+    "item": "minecraft:dragon_egg"
+  },
+  "objectives": [
+    {
+      "type": "questlog:advancement",
+      "advancement": "ao_campaign:milestones/heirloom_upgrade",
+      "required_amount": 1,
+      "name": "Complete the heirloom upgrade milestone"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_final_horizon_01"
+    }
+  ]
+}

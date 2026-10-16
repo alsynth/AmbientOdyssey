@@ -1,0 +1,58 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "adoberuins": {
+    "salt": 1108054183,
+    "separation": 14,
+    "spacing": 21
+  },
+  "mudblacksmithruin": {
+    "salt": 1891367289,
+    "separation": 21,
+    "spacing": 24
+  },
+  "mudpotterruin": {
+    "salt": 1027327534,
+    "separation": 18,
+    "spacing": 24
+  },
+  "mudschoolruin": {
+    "salt": 1067233915,
+    "separation": 21,
+    "spacing": 28
+  },
+  "ocean_ruin": {
+    "salt": 2134590717,
+    "separation": 15,
+    "spacing": 25
+  },
+  "ruined_desert_pyramid": {
+    "salt": 93969674,
+    "separation": 18,
+    "spacing": 24
+  },
+  "ruined_ocean_monument": {
+    "salt": 96247560,
+    "separation": 35,
+    "spacing": 36
+  },
+  "ruinedjungletemple": {
+    "salt": 1955198292,
+    "separation": 14,
+    "spacing": 18
+  },
+  "small_ocean_ruin": {
+    "salt": 1664717944,
+    "separation": 25,
+    "spacing": 30
+  },
+  "smallmudruin": {
+    "salt": 963026644,
+    "separation": 10,
+    "spacing": 14
+  },
+  "warm_ocean_ruin": {
+    "salt": 1859338252,
+    "separation": 15,
+    "spacing": 20
+  }
+}

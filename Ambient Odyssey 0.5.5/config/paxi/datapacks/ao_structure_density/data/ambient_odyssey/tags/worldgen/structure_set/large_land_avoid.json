@@ -1,0 +1,8 @@
+{
+  "replace": true,
+  "values": [
+    "ambient_odyssey:wda_major_overworld",
+    "idas:idas_rare",
+    "integrated_villages:regular_villages"
+  ]
+}

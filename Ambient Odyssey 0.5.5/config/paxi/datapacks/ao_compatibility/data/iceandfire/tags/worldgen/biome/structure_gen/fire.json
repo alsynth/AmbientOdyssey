@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "biomesoplenty:highland",
+    "biomesoplenty:pumpkin_patch",
+    "biomeswevegone:bayou",
+    "biomeswevegone:sakura_grove",
+    "natures_spirit:alpine_clearings",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:grassland",
+    "regions_unexplored:marsh",
+    "regions_unexplored:orchard",
+    "regions_unexplored:rocky_meadow"
+  ]
+}

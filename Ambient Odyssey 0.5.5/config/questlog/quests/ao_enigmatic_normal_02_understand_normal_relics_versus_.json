@@ -1,0 +1,28 @@
+{
+  "title": "A Choice Not Yet Made",
+  "description": "The first useful relic should teach you how unusual equipment works before you make riskier decisions. Read its effect, slot and limits carefully.\n\nThis is an introductory reading entry ONLY. It does not claim the dimension was entered, a boss was defeated, a relic was equipped, or any reward has been earned. Runtime-verified item/structure objectives will be authored later.\n\nField note: An item's presence in JEI does not prove it is accessible without the cursed ring; verify crafting and drops.",
+  "chapter": "questlog:enigmatic_normal",
+  "sort_order": 2,
+  "icon": {
+    "item": "minecraft:enchanted_book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Read the optional campaign introduction"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_enigmatic_normal_01_discover_the_enigmatic_legacy_re"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "aethers_with_all": {
+    "salt": 1984020000,
+    "separation": 17,
+    "spacing": 31
+  },
+  "afterdark_farms_with_all": {
+    "salt": 1984020001,
+    "separation": 20,
+    "spacing": 45
+  },
+  "aquacultures_beach_with_all": {
+    "salt": 1984020002,
+    "separation": 21,
+    "spacing": 45
+  },
+  "aquacultures_cod_with_all": {
+    "salt": 1984020003,
+    "separation": 27,
+    "spacing": 55
+  },
+  "aquacultures_common_with_all": {
+    "salt": 1984020004,
+    "separation": 18,
+    "spacing": 33
+  },
+  "cacaos_with_all": {
+    "salt": 1984020005,
+    "separation": 21,
+    "spacing": 45
+  },
+  "cooks_moss_with_all": {
+    "salt": 1984020006,
+    "separation": 10,
+    "spacing": 11
+  },
+  "cooks_nether_1_with_all": {
+    "salt": 1984020007,
+    "separation": 15,
+    "spacing": 21
+  },
+  "cooks_nether_2_with_all": {
+    "salt": 1984020008,
+    "separation": 20,
+    "spacing": 26
+  },
+  "cooks_with_all": {
+    "salt": 1984020009,
+    "separation": 22,
+    "spacing": 28
+  },
+  "deeper_farms_with_all": {
+    "salt": 1984020010,
+    "separation": 20,
+    "spacing": 45
+  },
+  "fishs_stew_with_all": {
+    "salt": 1984020011,
+    "separation": 12,
+    "spacing": 25
+  },
+  "flesh_farms_with_all": {
+    "salt": 1984020012,
+    "separation": 20,
+    "spacing": 45
+  },
+  "honey_cake_farms_with_all": {
+    "salt": 1984020013,
+    "separation": 20,
+    "spacing": 45
+  },
+  "ratatouilles_with_all": {
+    "salt": 1984020014,
+    "separation": 20,
+    "spacing": 31
+  },
+  "shepherd_farms_with_all": {
+    "salt": 1984020015,
+    "separation": 85,
+    "spacing": 99
+  },
+  "squids_with_all": {
+    "salt": 1984020016,
+    "separation": 15,
+    "spacing": 26
+  },
+  "sushus_with_all": {
+    "salt": 1984020017,
+    "separation": 17,
+    "spacing": 38
+  },
+  "undergardens_sea_with_all": {
+    "salt": 1984020018,
+    "separation": 84,
+    "spacing": 109
+  },
+  "undergardens_with_all": {
+    "salt": 1984020019,
+    "separation": 56,
+    "spacing": 67
+  }
+}

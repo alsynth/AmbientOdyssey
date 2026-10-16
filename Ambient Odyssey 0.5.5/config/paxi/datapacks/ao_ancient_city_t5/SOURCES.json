@@ -1,0 +1,167 @@
+{
+  "jars": {
+    "irons_spellbooks": {
+      "file": "irons_spellbooks-1.21.1-3.16.3.jar",
+      "curseforge": [
+        855414,
+        8680204
+      ],
+      "sha256": "13d644474ddba4f8478b4ce68294687fd509c994b3f344a224142b102dbe6f73"
+    },
+    "celestisynth": {
+      "file": "celestisynth-1.21.1-1.3.9.jar",
+      "curseforge": [
+        1672331,
+        8867800
+      ],
+      "sha256": "03225d0ac3789f8cd1df90df1793f080ab36c4c1143a4f15b622f88bb41bd9de"
+    },
+    "irons_jewelry": {
+      "file": "irons_jewelry-1.21.1-2.0.2.jar",
+      "curseforge": [
+        1101111,
+        8365016
+      ],
+      "sha256": "7413dd081598337133e55dd7c42ac3adff5213bceb56f10da6cfb5b52d57958e"
+    },
+    "archaion": {
+      "file": "archaion-1.21.1-1.4.4.jar",
+      "curseforge": [
+        1620396,
+        8983496
+      ],
+      "sha256": "15431063b27f43aa5321100bc29acc9b49ab0c97e24e16627a759a0312ea0f11"
+    },
+    "artifacts": {
+      "file": "artifacts-neoforge-13.2.5.jar",
+      "curseforge": [
+        312353,
+        8791899
+      ],
+      "sha256": "e36a929420a0a616abdb28f5bbbdb866a426aa3bb78d1b39bc1183927c101ce6"
+    },
+    "deeperdarker": {
+      "file": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+      "curseforge": [
+        659011,
+        8201775
+      ],
+      "sha256": "eee3f51222b0bcc714def002ff089ac9e131d3cae4575b542fd0a7dd101fe0af"
+    },
+    "traveloptics": {
+      "file": "traveloptics-4.4.0.1-1.21.1.jar",
+      "curseforge": [
+        1046916,
+        6342780
+      ],
+      "sha256": "0372b4b8593288726fb0d6e8cdb86202a87677d0c2dafeb96cab50bf057ec298"
+    },
+    "lukis": {
+      "file": "lukis-ancient-cities-v1.2.jar",
+      "curseforge": [
+        1190728,
+        7179736
+      ],
+      "sha256": "b7ac57ef8f18a46ba2fbac4458450145153a77a28dd2071aba2959dff81ec574"
+    }
+  },
+  "paxi": {
+    "file": "Paxi-1.21.1-NeoForge-5.1.3.jar",
+    "curseforge": [
+      1015157,
+      6485740
+    ]
+  },
+  "sources": [
+    {
+      "mod": "irons_spellbooks",
+      "jar_member": "data/irons_spellbooks/loot_modifiers/chest_loot/ancient_city_modifier.json",
+      "sha256": "aee02dd074d2f153948b93aa27103440b0806140b85435ac3c952c7d62371b3c",
+      "pack_file": "data/irons_spellbooks/loot_modifiers/chest_loot/ancient_city_modifier.json"
+    },
+    {
+      "mod": "celestisynth",
+      "jar_member": "data/celestisynth/loot_modifiers/underground_dungeons_modifier.json",
+      "sha256": "b9290039b9522cad3250cfe50cd8391e9b8e0d78250ec4c296fe4315f6905595",
+      "pack_file": "data/celestisynth/loot_modifiers/underground_dungeons_modifier.json"
+    },
+    {
+      "mod": "irons_jewelry",
+      "jar_member": "data/irons_jewelry/loot_modifiers/chest_loot/gems/vanilla_generic_gems.json",
+      "sha256": "2c901d14fdf57ace5dd7567642a7d72712eb4c0f341954639f9a86bc00f05bdf",
+      "pack_file": "data/irons_jewelry/loot_modifiers/chest_loot/gems/vanilla_generic_gems.json"
+    },
+    {
+      "mod": "irons_jewelry",
+      "jar_member": "data/irons_jewelry/loot_modifiers/chest_loot/patterns/vanilla_generic_patterns.json",
+      "sha256": "798a344edad89bc49ce1a876e3a8cc3c219b26f803fe65cb3fa72f95790b58b9",
+      "pack_file": "data/irons_jewelry/loot_modifiers/chest_loot/patterns/vanilla_generic_patterns.json"
+    },
+    {
+      "mod": "archaion",
+      "jar_member": "data/archaion/loot_modifiers/ancient_keep_map_in_ancient_city.json",
+      "sha256": "172e45f16f360526979be23b6330b1a07d1c039505d204f9dd0515052307919f",
+      "pack_file": "data/archaion/loot_modifiers/ancient_keep_map_in_ancient_city.json"
+    },
+    {
+      "mod": "artifacts",
+      "jar_member": "data/artifacts/loot_modifiers/inject/chests/ancient_city.json",
+      "sha256": "07b0a6dc8a134c251e74da432a31e508a0c0986c11cd5c543afeaa8cb48643f6",
+      "pack_file": "data/artifacts/loot_modifiers/inject/chests/ancient_city.json"
+    },
+    {
+      "mod": "deeperdarker",
+      "jar_member": "data/deeperdarker/loot_modifiers/warden_carapace_from_ancient_city.json",
+      "sha256": "03122ec3216b2e7d6e2a5764ddec07ab399192aa49d4145a1d08cf7b7b80c00c",
+      "pack_file": "data/deeperdarker/loot_modifiers/warden_carapace_from_ancient_city.json"
+    },
+    {
+      "mod": "deeperdarker",
+      "jar_member": "data/deeperdarker/loot_modifiers/warden_upgrade_from_ancient_city.json",
+      "sha256": "7ea9f8c1fc3081966ed275ea8de92890e691aa05f5b328d37ef22ae07b3afe97",
+      "pack_file": "data/deeperdarker/loot_modifiers/warden_upgrade_from_ancient_city.json"
+    },
+    {
+      "mod": "deeperdarker",
+      "jar_member": "data/deeperdarker/loot_modifiers/resonarium_upgrade_from_ancient_city.json",
+      "sha256": "e3c60e7c6c7de99c0666608fe24e841af21489720a0be5ab44dad0d677da95fa",
+      "pack_file": "data/deeperdarker/loot_modifiers/resonarium_upgrade_from_ancient_city.json"
+    },
+    {
+      "mod": "traveloptics",
+      "jar_member": "data/traveloptics/loot_modifiers/traveloptics/chest/ancient_city_modifier.json",
+      "sha256": "05acd839f4f2a268bc279cdb05ca56b32a49ca6c49b14d0d6cfe1a65accf7fad",
+      "pack_file": "data/traveloptics/loot_modifiers/traveloptics/chest/ancient_city_modifier.json"
+    },
+    {
+      "mod": "lukis",
+      "jar_member": "data/ancient_cities/structure/buildings/freezer.nbt",
+      "sha256": "e68a7c9677f46c36d4869e369b51d900e44e5516854d1a9e3fe842424c81944b",
+      "pack_file": "data/ancient_cities/structure/buildings/freezer.nbt"
+    },
+    {
+      "mod": "lukis",
+      "jar_member": "data/ancient_cities/structure/buildings/house_1.nbt",
+      "sha256": "d391af01bcd686d8034f0c4eb8e1a9f8dd5e52b9b539e487cc9d4f29780baff9",
+      "pack_file": "data/ancient_cities/structure/buildings/house_1.nbt"
+    },
+    {
+      "mod": "lukis",
+      "jar_member": "data/ancient_cities/structure/buildings/house_4.nbt",
+      "sha256": "0deedc1f73d404afb80f44d8497587f757f54e35fb6993c8e6b24ac6f328d10d",
+      "pack_file": "data/ancient_cities/structure/buildings/house_4.nbt"
+    },
+    {
+      "mod": "lukis",
+      "jar_member": "data/ancient_cities/structure/buildings/watchtower.nbt",
+      "sha256": "c5200ff4f35fdd071fbf1af2a29d40257cdd1819bfb4b087c608863907c530ef",
+      "pack_file": "data/ancient_cities/structure/buildings/watchtower.nbt"
+    },
+    {
+      "mod": "lukis",
+      "jar_member": "data/minecraft/loot_table/chests/ancient_city.json",
+      "sha256": "083fd2b29787c4f8e8e66bcd3a25463a42774271c5aa8cc4c7f44784ca275911",
+      "pack_file": "data/minecraft/loot_table/chests/ancient_city_special_cache.json"
+    }
+  ]
+}

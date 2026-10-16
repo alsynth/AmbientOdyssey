@@ -1,0 +1,34 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:illager_campsite",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:illager_windmill",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:merchant_campsite",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:mushroom_house",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:greenwood_pub",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "type": "integrated_api:advanced_random_spread",
+    "spacing": 28,
+    "separation": 14,
+    "salt": 1984010501,
+    "super_exclusion_zone": {
+      "chunk_count": 6,
+      "other_set": "#ambient_odyssey:large_land_avoid"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Found, Fought, Finished",
+  "description": "Entering a ruined fortress is one achievement. Defeating its guardian is another. Finding every secret is a third, entirely optional goal.\n\nField note: Mastery is an optional bonus; it should never block normal chapter progression.",
+  "chapter": "questlog:trial_steel",
+  "sort_order": 11,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Learn the difference between finding and defeating a dungeon"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_open_road_01_record_your_first_new_biome"
+    }
+  ]
+}

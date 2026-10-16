@@ -1,0 +1,19 @@
+{
+  "type": "traveloptics:key_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/ancient_city"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/ancient_city_special_cache"
+        }
+      ]
+    }
+  ],
+  "key": "traveloptics:chests/ancient_city_additions"
+}

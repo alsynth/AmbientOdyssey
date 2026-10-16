@@ -1,0 +1,19 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "other": {
+    "salt": 213742069,
+    "separation": 10,
+    "spacing": 22
+  },
+  "towers": {
+    "frequency": 0.3,
+    "salt": 213742069,
+    "separation": 10,
+    "spacing": 32
+  },
+  "towns": {
+    "salt": 213742069,
+    "separation": 10,
+    "spacing": 30
+  }
+}

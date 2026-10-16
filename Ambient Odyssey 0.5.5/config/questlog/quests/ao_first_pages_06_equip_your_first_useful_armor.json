@@ -1,0 +1,53 @@
+{
+  "title": "Stronger Than Bare Hands",
+  "description": "Armor is your allowance for mistakes. Even ordinary pieces are worthwhile when your next cave contains creatures you have never seen.\n\nThis trial detects one of three vanilla chestplates; different modded armors will be added after exact registry verification. It does NOT verify a full armor set.\n\nField note: Begin with any armor that fits your playstyle. Rare items are not necessary for the first expedition.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 6,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Equip a practical piece of armor",
+      "objectives": [
+        {
+          "type": "questlog:item_equip",
+          "item": "minecraft:leather_chestplate",
+          "slot": "chest",
+          "name": "Equip leather armor"
+        },
+        {
+          "type": "questlog:item_equip",
+          "item": "minecraft:iron_chestplate",
+          "slot": "chest",
+          "name": "Equip iron armor"
+        },
+        {
+          "type": "questlog:item_equip",
+          "item": "minecraft:diamond_chestplate",
+          "slot": "chest",
+          "name": "Equip diamond armor"
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 25
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "chapter": "questlog:first_pages",
+  "toast_on_unlock": false,
+  "toast_on_complete": true,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ],
+  "title": "Your First Victory",
+  "description": "Defeat one hostile monster in your first adventure. Zombies, skeletons, creepers, spiders, drowned and endermen all count; passive animals do not. Modded monsters are not automatically counted by this initial vanilla-hostile pilot, so the detection is intentionally explicit rather than pretending any modded mob works. Take the supplies and press onward.",
+  "sort_order": 15,
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Defeat one hostile monster",
+      "objectives": [
+        {
+          "type": "questlog:entity_kill",
+          "entity": "minecraft:zombie",
+          "required_amount": 1
+        },
+        {
+          "type": "questlog:entity_kill",
+          "entity": "minecraft:skeleton",
+          "required_amount": 1
+        },
+        {
+          "type": "questlog:entity_kill",
+          "entity": "minecraft:creeper",
+          "required_amount": 1
+        },
+        {
+          "type": "questlog:entity_kill",
+          "entity": "minecraft:spider",
+          "required_amount": 1
+        },
+        {
+          "type": "questlog:entity_kill",
+          "entity": "minecraft:drowned",
+          "required_amount": 1
+        },
+        {
+          "type": "questlog:entity_kill",
+          "entity": "minecraft:enderman",
+          "required_amount": 1
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:torch",
+      "count": 8
+    },
+    {
+      "type": "questlog:item",
+      "item": "minecraft:cooked_beef",
+      "count": 3
+    }
+  ]
+}

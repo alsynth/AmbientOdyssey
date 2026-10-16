@@ -1,0 +1,29 @@
+{
+  "title": "Find an Ancient City",
+  "description": "Deep below the mountains, in the Deep Dark, lies a buried city. It is a Tier 5 structure. Bring light, food and a way out.",
+  "chapter": "questlog:v050_old_powers",
+  "sort_order": 113,
+  "icon": {
+    "item": "minecraft:sculk_catalyst"
+  },
+  "objectives": [
+    {
+      "type": "questlog:visit_structure",
+      "structure": "minecraft:ancient_city",
+      "name": "Enter an Ancient City"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": true,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_v050_old_powers_01"
+    }
+  ]
+}

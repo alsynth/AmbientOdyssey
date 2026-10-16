@@ -1,0 +1,28 @@
+{
+  "title": "The Shape of the World",
+  "description": "Not every great discovery contains a loot chest. A valley, a natural arch or a towering cliff can be worth recording simply because it exists.\n\nScreenshots, waypoints and your own notes count. No fabricated scenic biome registry is required.\n\nField note: For procedural terrain, use an opt-in journal mark or screenshot—not a fabricated structure detector.",
+  "chapter": "questlog:open_road",
+  "sort_order": 3,
+  "icon": {
+    "item": "minecraft:compass"
+  },
+  "objectives": [
+    {
+      "type": "questlog:read",
+      "name": "Note an interesting landscape or landmark"
+    }
+  ],
+  "rewards": [],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

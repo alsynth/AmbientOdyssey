@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "ars_nouveau:archwood_forest",
+    "biomesoplenty:ominous_woods",
+    "biomeswevegone:redwood_thicket",
+    "biomeswevegone:sakura_grove",
+    "biomeswevegone:skyris_vale",
+    "biomeswevegone:weeping_witch_forest",
+    "biomeswevegone:zelkova_forest",
+    "natures_spirit:windswept_sugi_forest",
+    "regions_unexplored:redwoods"
+  ]
+}

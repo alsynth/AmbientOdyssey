@@ -1,0 +1,28 @@
+/* Ambient Odyssey: Structure Test 5 placement. */
+{
+  "frozen_whale": {
+    "salt": 1132952700,
+    "separation": 24,
+    "spacing": 132
+  },
+  "whale": {
+    "salt": 1387282294,
+    "separation": 21,
+    "spacing": 114
+  },
+  "whalearena": {
+    "salt": 285035897,
+    "separation": 21,
+    "spacing": 110
+  },
+  "whalelight": {
+    "salt": 730522536,
+    "separation": 21,
+    "spacing": 103
+  },
+  "whaleship": {
+    "salt": 1027865011,
+    "separation": 21,
+    "spacing": 107
+  }
+}

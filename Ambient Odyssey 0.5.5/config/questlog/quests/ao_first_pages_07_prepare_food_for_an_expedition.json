@@ -1,0 +1,61 @@
+{
+  "title": "Provisions for the Road",
+  "description": "The first rule of a long expedition is to return from it. Take more food than you expect to need; it is much harder to gather when danger is already chasing you.\n\nField note: Cooked food lasts longer than relying on whatever you find underground. Exact amount will be set during balance QA.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 7,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:or",
+      "name": "Carry provisions for a short expedition",
+      "objectives": [
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:bread",
+          "required_amount": 8,
+          "name": "Carry 8 × bread"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:cooked_beef",
+          "required_amount": 8,
+          "name": "Carry 8 × cooked beef"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:cooked_chicken",
+          "required_amount": 8,
+          "name": "Carry 8 × cooked chicken"
+        },
+        {
+          "type": "questlog:item_obtain",
+          "item": "minecraft:baked_potato",
+          "required_amount": 8,
+          "name": "Carry 8 × baked potato"
+        }
+      ]
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:item",
+      "item": "minecraft:torch",
+      "count": 12,
+      "auto_claim": false
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

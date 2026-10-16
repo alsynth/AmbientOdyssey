@@ -1,0 +1,35 @@
+{
+  "title": "Behind the Shield",
+  "description": "An axe or sword can win a quick encounter; a shield may let you survive an unfamiliar one. Defense is worth more than one extra hit when you don't know the enemy.\n\nField note: Hold it in your off-hand and use its action key; some modded attacks may bypass a shield.",
+  "chapter": "questlog:first_pages",
+  "sort_order": 5,
+  "icon": {
+    "item": "minecraft:book"
+  },
+  "objectives": [
+    {
+      "type": "questlog:item_obtain",
+      "item": "minecraft:shield",
+      "required_amount": 1,
+      "name": "Carry 1 × shield"
+    }
+  ],
+  "rewards": [
+    {
+      "type": "questlog:experience",
+      "experience": 35
+    }
+  ],
+  "toast_on_unlock": false,
+  "toast_on_complete": false,
+  "show_popup_on_unlock": false,
+  "hide_when_completed": false,
+  "repeatable": false,
+  "global": false,
+  "prerequisites": [
+    {
+      "type": "questlog:quest_complete",
+      "quest": "questlog:ao_first_pages_01_welcome_to_ambient_odyssey"
+    }
+  ]
+}

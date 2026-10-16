@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "biomeswevegone:prairie",
+    "regions_unexplored:flower_fields",
+    "regions_unexplored:grassland"
+  ]
+}
