@@ -39,3 +39,10 @@ tools/audit_stellaria_server_paths.py reported:
 - common_boss_class_references_client_api: present
 
 These are source findings, not a runtime crash diagnosis. See BUGS_AND_PATCHES.md.
+
+## Retry on 17 October 2026, 14:02 Europe/Amsterdam
+
+- Rechecked installed runtimes: only OpenJDK 17.0.20 is present; no system Gradle or Java 21 installation was found.
+- Re-ran ./gradlew runServer; it again exited 1 before Gradle configuration with java.net.SocketException: Network is unreachable while fetching Gradle 9.5.0.
+- Followed the distribution redirect with curl; the release download timed out. No server process started.
+- Result is unchanged: build, NeoForge launch, server/client join, shader and gameplay gates remain NOT TESTED.
