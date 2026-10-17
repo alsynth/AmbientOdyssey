@@ -1,5 +1,10 @@
 # Ambient Odyssey — Current state
 
+## 17 October — Stellaria Connector probe
+
+An isolated source audit and runtime blocker report is on branch `experimental/stellaria-neoforge-probe-20261017`: [experiment verdict](../experiments/stellaria/README.md), [dependency provenance](../experiments/stellaria/DEPENDENCIES.md), [test matrix](../experiments/stellaria/TEST_MATRIX.md), and [server-side findings](../experiments/stellaria/BUGS_AND_PATCHES.md). Runtime launch and shader testing were blocked before startup because Java 21/Gradle 9.5.0 were unavailable and Gradle distribution download was unreachable. No Stellaria code or stable profile changed.
+
+
 > **CURRENT AUTHORITY (15 Oct 2026):** [Canonical Claude master handoff](../handoffs/CLAUDE_CANONICAL_MASTER_HANDOFF_20261015.md) and [PR64 implementation ledger](IMPLEMENTATION_PROGRESS.md). Latest full private import **R4**, not the Oct10 v0.4h / 331-reference or Oct14 PR57 build described farther below. Historical sections are preserved for evidence; do not follow their 'current' claims when rebuilding R4/R5.
 
 **15 October integration continuation:** use [Implementation progress](IMPLEMENTATION_PROGRESS.md) for the current source/package/test/blocker ledger on draft PR64. Historical entries below describe earlier baselines, not the active integration status.
